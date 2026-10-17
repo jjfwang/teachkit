@@ -1,0 +1,86 @@
+{
+  "level": "jc",
+  "questions": [
+    {
+      "choices": [
+        {
+          "text": "A steady voltage, because the flux inside the coil is large"
+        },
+        {
+          "text": "A voltage that slowly grows the longer the magnet sits there"
+        },
+        {
+          "correct": true,
+          "text": "No change in flux, no emf: the magnet sitting still gives zero - only motion makes the meter kick."
+        },
+        {
+          "text": "A voltage in the opposite direction to the one during insertion"
+        }
+      ],
+      "explanation": "The trap claim is: An emf flows as long as the magnet sits inside the coil. The flux looks large inside the coil, so voltage feels like it should be there. No change in flux, no emf: the magnet sitting still gives zero - only motion makes the meter kick. The meter kicked only while the magnet was moving in.",
+      "id": "q1",
+      "kind": "multiple-choice",
+      "misconception": "An emf flows as long as the magnet sits inside the coil.",
+      "prompt": "A bar magnet is pushed into a coil and then held perfectly still inside it, with a meter connected across the coil. A student claims an emf keeps flowing the whole time. What does the meter actually show?"
+    },
+    {
+      "choices": [
+        {
+          "text": "20 Wb, from A/B"
+        },
+        {
+          "correct": true,
+          "text": "0.0080 Wb, from Φ = BA = 0.40 x 0.020"
+        },
+        {
+          "text": "0.40 Wb, the field itself"
+        },
+        {
+          "text": "0 Wb, because the coil is not moving"
+        }
+      ],
+      "explanation": "Flux is Φ = BA when the field is at right angles to the coil: 0.40 x 0.020 = 0.0080 Wb. A steady flux like this induces no emf on its own - only a change in it does.",
+      "id": "q2",
+      "kind": "multiple-choice",
+      "prompt": "A coil of area 0.020 m^2 sits at right angles to a uniform magnetic field of 0.40 T. What is the magnetic flux through the coil?"
+    },
+    {
+      "answer": "emf = -N ΔΦ/Δt = 200 x 0.020 / 0.50 = 8.0 V (magnitude 8.0 V).",
+      "explanation": "ΔΦ = 0.030 - 0.010 = 0.020 Wb, so emf = 200 x 0.020 / 0.50 = 8.0 V. The minus sign in Faraday's law gives the direction: the induced emf opposes the change that made it (Lenz's law).",
+      "id": "q3",
+      "kind": "short-answer",
+      "prompt": "The flux through a 200-turn coil falls from 0.030 Wb to 0.010 Wb in 0.50 s. Calculate the induced emf, showing your working with Faraday's law."
+    },
+    {
+      "answer": "The emf follows the rate of change of flux, not the flux itself. As the coil turns edge-on the flux passes through zero but is changing fastest there, so the emf peaks; half a turn later the flux changes the other way, so the emf reverses and alternates with the spin.",
+      "explanation": "emf = -N dΦ/dt: the gauge in the animation swings hardest exactly when the flux curve is steepest, which is as the coil passes edge-on, and the sign flips every half turn.",
+      "id": "q4",
+      "kind": "short-answer",
+      "prompt": "In the generator scene the coil spins steadily in a magnetic field. Explain why the induced emf is greatest when the flux through the coil is passing through zero, and why the emf alternates."
+    },
+    {
+      "choices": [
+        {
+          "text": "The field gets stronger towards the negative plate"
+        },
+        {
+          "text": "The field exists only along the drawn lines"
+        },
+        {
+          "correct": true,
+          "text": "The field is uniform: E has the same size and direction everywhere between the plates"
+        },
+        {
+          "text": "Charges placed between the plates would not move"
+        }
+      ],
+      "explanation": "Field-line spacing encodes strength: evenly spaced lines mean a uniform field, so a positive charge anywhere between the plates is pushed towards the negative plate with the same force, exactly as the probe dot shows in scene s1.",
+      "id": "q5",
+      "kind": "multiple-choice",
+      "prompt": "Between two charged plates the field lines are drawn straight, parallel and evenly spaced, running from the positive plate to the negative plate. What does the even spacing tell you?"
+    }
+  ],
+  "subject": "science",
+  "title": "JC H2 physics — electromagnetism: fields, flux and induction",
+  "topic": "h2-em"
+}

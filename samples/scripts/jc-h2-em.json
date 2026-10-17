@@ -1,0 +1,54 @@
+{
+  "level": "jc",
+  "segments": [
+    {
+      "cue": "s1",
+      "minutes": 6,
+      "questions": [
+        "Why do the field lines run from the positive plate to the negative plate and not the other way?",
+        "What would closer-spaced lines between the plates tell you about the field?"
+      ],
+      "say": "Electric field lines run from + to -. Between the charged plates, watch each line draw itself straight from the positive plate down to the negative one, evenly spaced. Even spacing means a uniform field: E is the same everywhere between the plates. The probe dot rides one line down - that is the push a positive charge would feel. Keep your student notes open at the electric field definition for this scene."
+    },
+    {
+      "cue": "s2",
+      "minutes": 7,
+      "questions": [
+        "Where is the field strongest around the bar magnet, and how do the lines show it?",
+        "Why can two magnetic field lines never cross each other?"
+      ],
+      "say": "A bar magnet's field loops from N to S. Watch the probe dot ride the upper loop out of the north pole, round over the top and back into the south pole, then do the same underneath. The lines never cross and never stop in empty space: B always forms closed loops. Compare the magnetic field definition in your student notes before we thread a coil with this field."
+    },
+    {
+      "cue": "s3",
+      "minutes": 7,
+      "questions": [
+        "What happens to the needle if the magnet is pulled out of the coil instead of pushed in?",
+        "If the magnet is pushed in twice as fast, what happens to the size of the induced emf?"
+      ],
+      "say": "Moving the magnet changes the flux. Push the magnet towards the coil and the flux threading the coil grows - a voltage appears across the coil. Now hold the magnet perfectly still: the flux stays large, but the needle falls back to zero. The emf answers the change in flux, never the amount of flux. Now try the flux computation on the worksheet in pairs."
+    },
+    {
+      "cue": "s4",
+      "minutes": 6,
+      "questions": [
+        "Why does the induced emf reverse direction every half turn of the coil?",
+        "At what point in the turn is the flux through the coil exactly zero, and what is the emf doing there?"
+      ],
+      "say": "A generator spins the coil in the field. As the coil turns, the flux through it rises and falls between max and zero, and the gauge swings with the induced emf, kicking left then right. The emf is biggest not when the flux is biggest, but when the flux is changing fastest, as the coil passes edge-on. Check the Faraday's law definition in your student notes, then look ahead to the exit ticket question on this scene."
+    },
+    {
+      "cue": "s5",
+      "minutes": 8,
+      "questions": [
+        "In one sentence, what does the meter show the whole time the magnet sits inside the coil?",
+        "How would you correct a classmate who insists the emf flows because the coil is full of flux?"
+      ],
+      "say": "A common mistake: motion, not position. The animation holds the magnet still inside the coil and the needle holds flat, then moves the magnet out and the needle kicks. Finish the worksheet trap question now, then the exit ticket on your own - the first question revisits exactly this scene.",
+      "watchFor": "An emf flows as long as the magnet sits inside the coil. Listen and look for it on the worksheet and in pair talk: any answer giving the sitting magnet a steady emf shows the trap reading, not the change reading - send them back to the flat needle in this scene and to the correct turn: No change in flux, no emf: the magnet sitting still gives zero - only motion makes the meter kick."
+    }
+  ],
+  "subject": "science",
+  "title": "JC H2 physics — electromagnetism: fields, flux and induction",
+  "topic": "h2-em"
+}

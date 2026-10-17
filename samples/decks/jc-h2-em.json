@@ -1,0 +1,121 @@
+{
+  "level": "jc",
+  "slides": [
+    {
+      "bullets": [
+        "How field lines, magnetic flux and a changing flux turn magnetism into voltage: electric fields, magnetic fields, flux and electromagnetic induction"
+      ],
+      "heading": "JC H2 physics — electromagnetism: fields, flux and induction",
+      "kind": "title",
+      "notes": "Welcome everyone in and say: today we build electromagnetism from the ground up - field lines running from + to -, a bar magnet's looping field, flux threading a coil, a spinning generator - and the trap of the sitting magnet at the end."
+    },
+    {
+      "bullets": [
+        "Describe electric and magnetic fields from their field lines: E runs from + to -, B loops from N to S outside a magnet",
+        "Compute magnetic flux with Φ = BA and the induced emf with Faraday's law, emf = -N ΔΦ/Δt",
+        "Explain why a generator's emf alternates as its coil spins, and why a magnet sitting still inside a coil induces nothing"
+      ],
+      "heading": "What we will learn",
+      "kind": "objective",
+      "notes": "Read the three goals aloud slowly and tell the class: keep these in mind, because our exit ticket at the end will ask you to do exactly these things, including spotting the trap that a sitting magnet keeps an emf flowing."
+    },
+    {
+      "bullets": [
+        "A bar magnet is pushed into a coil and left sitting inside it, perfectly still, with a meter across the coil",
+        "Does the meter keep showing a voltage the whole time the magnet sits there, or does it fall back to zero?"
+      ],
+      "heading": "A magnet sits inside a coil, doing nothing. Is there a voltage?",
+      "kind": "hook",
+      "notes": "Ask the class to commit to a guess before any definitions: voltage while the magnet sits still, yes or no? Take two or three answers, then say: hold them, because the trap scene of the lesson settles this question completely."
+    },
+    {
+      "bullets": [
+        "Fields are drawn as lines: the line direction gives the field direction, and closer lines mean a stronger field",
+        "Flux counts how much field threads a coil, and an emf appears only while that flux is changing - position alone induces nothing"
+      ],
+      "heading": "One idea, five scenes: field lines, flux, change, spin, trap",
+      "kind": "concept",
+      "notes": "Say this part slowly, because it is the big idea of the whole lesson: induction is not about where the magnet is, it is about whether the flux through the coil is changing right now."
+    },
+    {
+      "bullets": [
+        "Between charged plates the field lines run straight from the positive plate to the negative one, evenly spaced",
+        "Even spacing means a uniform field E, and a positive test charge is pushed along the lines"
+      ],
+      "heading": "Electric field lines run from + to −",
+      "kind": "mechanism",
+      "notes": "Point at the animation and narrate what is happening: watch each line draw itself from the top plate to the bottom plate, then watch the probe dot ride straight down one line - that is the direction a positive charge would be pushed.",
+      "visual": "s1"
+    },
+    {
+      "bullets": [
+        "Outside a bar magnet the field lines leave the north pole, sweep round in loops and enter the south pole",
+        "The lines never cross and never end in empty space: B forms closed loops"
+      ],
+      "heading": "A bar magnet's field loops from N to S",
+      "kind": "mechanism",
+      "notes": "Follow the probe dot as it rides each loop from N back round to S, above the magnet and then below it. Say: a magnetic field line has no start or finish outside the magnet - it always loops back.",
+      "visual": "s2"
+    },
+    {
+      "bullets": [
+        "Push the magnet towards the coil and the flux threading the coil grows: a voltage appears across the coil",
+        "Hold the magnet still and the needle falls back to zero - the emf lasts only while the flux is changing"
+      ],
+      "heading": "Moving the magnet changes the flux",
+      "kind": "mechanism",
+      "notes": "Narrate the state change: magnet moving in, flux rising, needle kicked; magnet held still, flux steady, needle flat on zero. Say: the meter answers the change, not the position.",
+      "visual": "s3"
+    },
+    {
+      "bullets": [
+        "Spin the coil in the field and the flux through it rises and falls as the coil turns, swinging between max and zero",
+        "The induced emf alternates with the flux change, kicking the meter left then right: that alternating push is a.c. generation"
+      ],
+      "heading": "A generator spins the coil in the field",
+      "kind": "mechanism",
+      "notes": "Watch the gauge swing as the coil turns: flux is greatest when the coil faces the field and zero when it is edge-on, so the emf keeps reversing. Say: steady spinning turns a changing flux into a steady alternating voltage.",
+      "visual": "s4"
+    },
+    {
+      "bullets": [
+        "The imagined steady emf does not exist: a magnet sitting still inside the coil induces nothing",
+        "Only when the magnet moves again does the flux change and the needle kick - motion, not position, makes the emf"
+      ],
+      "heading": "A common mistake: motion, not position",
+      "kind": "mechanism",
+      "notes": "Name the trap out loud before anyone falls into it: the flux inside the coil is large while the magnet sits there, but a large steady flux induces exactly as much as a small steady flux - zero.",
+      "visual": "s5"
+    },
+    {
+      "bullets": [
+        "Step 1: a 200-turn coil sees its flux fall from 0.030 Wb to 0.010 Wb in 0.50 s, so ΔΦ = 0.020 Wb",
+        "Step 2: emf = -N ΔΦ/Δt = 200 x 0.020 / 0.50 = 8.0 V - and holding the coil still afterwards gives ΔΦ = 0 and emf = 0"
+      ],
+      "heading": "Worked example: flux change and induced emf",
+      "kind": "example",
+      "notes": "Talk through the two steps slowly and name each one as you write it; say: always find the change in flux first, then divide by the time - if nothing changed, there is nothing to divide and the emf is zero."
+    },
+    {
+      "bullets": [
+        "A 50-turn coil has flux through it increase by 0.012 Wb in 0.30 s. Find the induced emf and state what happens to it once the flux stops changing",
+        "Careful - a classmate says: An emf flows as long as the magnet sits inside the coil. Explain to them what the meter actually does while the magnet sits still"
+      ],
+      "heading": "Your turn: compute, then correct",
+      "kind": "practice",
+      "notes": "Give pairs three minutes, then cold-call one pair on each part: press them on emf = N ΔΦ/Δt = 50 x 0.012 / 0.30 = 2.0 V first, then on the exact sentence they used to talk their classmate out of the claim: An emf flows as long as the magnet sits inside the coil."
+    },
+    {
+      "bullets": [
+        "On your own: a magnet is moved into a coil twice, the second time twice as fast. How does the induced emf compare, and why?",
+        "Watch out for the trap one last time: An emf flows as long as the magnet sits inside the coil. Say what the meter shows while the magnet sits inside the coil, and what makes it kick"
+      ],
+      "heading": "Exit ticket: show what you know",
+      "kind": "exit-ticket",
+      "notes": "Collect these before anyone leaves and say: I am looking for the doubled emf from the doubled rate of flux change in your first answer and one clear sentence about the still magnet in your second. Anyone repeating the claim An emf flows as long as the magnet sits inside the coil. needs the trap scene again."
+    }
+  ],
+  "subject": "science",
+  "title": "JC H2 physics — electromagnetism: fields, flux and induction",
+  "topic": "h2-em"
+}
