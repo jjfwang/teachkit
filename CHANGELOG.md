@@ -12,6 +12,19 @@ version section when the release ships.
 
 ### Added
 
+- JC H2 mechanics lesson pack in the pack demo
+  (`player/pack-demo.html`): the JC H2 mechanics
+  gold lesson pack now appears on the same demo page as the other packs,
+  presenting all six jc-h2-mechanics materials (animation,
+  slides, worksheet, exit ticket, student notes, and teacher
+  script) under its own
+  mechanics-jc-manifest header (slug
+  `h2-mechanics-jc-science`, level jc, subject
+  science, topic `h2-mechanics`), stacked animation, slides, and printables sections, all
+  six materials validated before render for that pack, and
+  the shared teacher-keys toggle covering all twenty-three packs' print
+  stages, guarded by slice-scoped pack-demo tests (issue #881).
+
 - JC H2 mechanics gold lesson pack: five hand-authored gold
   samples for h2-mechanics in
   samples/decks|worksheets|tickets|notes|scripts/jc-h2-mechanics.json,
