@@ -12,6 +12,15 @@ version section when the release ships.
 
 ### Added
 
+- JC H2 electromagnetism gold lesson pack: five hand-authored gold
+  samples for h2-em in
+  samples/decks|worksheets|tickets|notes|scripts/jc-h2-em.json,
+  keyed to the jc-h2-em animation scenes and built around
+  the misconception bank trap reused verbatim: an emf flows
+  as long as the magnet sits inside the coil, guarded by
+  tests/gold-em-jc-pack.test.js with the full suite at 1884 tests
+  (issue #883).
+
 - JC H2 mechanics lesson pack in the pack demo
   (`player/pack-demo.html`): the JC H2 mechanics
   gold lesson pack now appears on the same demo page as the other packs,

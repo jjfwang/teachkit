@@ -1,0 +1,59 @@
+{
+  "level": "jc",
+  "questions": [
+    {
+      "choices": [
+        {
+          "text": "A steady voltage, because the coil is full of flux"
+        },
+        {
+          "correct": true,
+          "text": "Zero: the flux is not changing, so no emf is induced"
+        },
+        {
+          "text": "A voltage that grows slowly over time"
+        }
+      ],
+      "feedback": "That trap reading is the one to unlearn: An emf flows as long as the magnet sits inside the coil. Reteach point: No change in flux, no emf: the magnet sitting still gives zero - only motion makes the meter kick.",
+      "id": "q1",
+      "kind": "multiple-choice",
+      "misconception": "An emf flows as long as the magnet sits inside the coil.",
+      "prompt": "A magnet sits completely still inside a coil connected to a meter. What does the meter read?"
+    },
+    {
+      "answer": "emf = N ΔΦ/Δt = 50 x 0.012 / 0.30 = 2.0 V.",
+      "feedback": "Faraday's law: emf = -N ΔΦ/Δt - multiply the turns by the change in flux and divide by the time. If you forgot the N you under-counted by a factor of 50.",
+      "id": "q2",
+      "kind": "short-answer",
+      "prompt": "A 50-turn coil has the flux through it increase by 0.012 Wb in 0.30 s. Calculate the induced emf."
+    },
+    {
+      "choices": [
+        {
+          "text": "When the flux through the coil is at its maximum"
+        },
+        {
+          "correct": true,
+          "text": "When the flux is changing fastest, as the coil passes edge-on through zero flux"
+        },
+        {
+          "text": "When the coil stops turning"
+        }
+      ],
+      "feedback": "The emf tracks the rate of change of flux, not the flux: watch the gauge in scene s4 swing hardest as the coil passes edge-on, where the flux itself is zero but changing fastest.",
+      "id": "q3",
+      "kind": "multiple-choice",
+      "prompt": "A generator coil spins in a magnetic field. When is the induced emf at its maximum?"
+    },
+    {
+      "answer": "Electric field lines run from positive charges to negative charges; magnetic field lines outside a bar magnet run from the north pole round to the south pole.",
+      "feedback": "Both line patterns point along the field: E from + to - as the lines draw between the plates in scene s1, and B looping from N to S outside the magnet in scene s2.",
+      "id": "q4",
+      "kind": "short-answer",
+      "prompt": "State the direction of an electric field line and of a magnetic field line outside a bar magnet."
+    }
+  ],
+  "subject": "science",
+  "title": "JC H2 physics — electromagnetism: fields, flux and induction Exit Ticket",
+  "topic": "h2-em"
+}
