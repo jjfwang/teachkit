@@ -12,6 +12,14 @@ version section when the release ships.
 
 ### Added
 
+- JC H2 mechanics gold lesson pack: five hand-authored gold
+  samples for h2-mechanics in
+  samples/decks|worksheets|tickets|notes|scripts/jc-h2-mechanics.json,
+  keyed to the jc-h2-mechanics animation scenes and built around
+  the misconception that a centrifugal force flings you outward
+  in a sharp turn
+  (issue #879).
+
 - JC H2 statistics lesson pack in the pack demo
   (`player/pack-demo.html`): the JC H2 statistics
   gold lesson pack now appears on the same demo page as the other packs,
