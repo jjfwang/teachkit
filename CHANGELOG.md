@@ -12,6 +12,20 @@ version section when the release ships.
 
 ### Added
 
+- Primary mathematics model method lesson pack in the pack demo
+  (`player/pack-demo.html`): the Primary mathematics model method
+  gold lesson pack now appears on the same demo page as the other packs,
+  presenting all six primary-math-model-method materials (animation,
+  slides, worksheet, exit ticket, student notes, and teacher
+  script) under its own
+  model-method-primary-manifest header (slug
+  `model-method-primary-math`, level primary, subject
+  math, topic `model-method`), stacked animation, slides, and printables sections, all
+  six materials validated before render for that pack, and
+  the shared teacher-keys toggle covering all forty-three packs' print
+  stages, guarded by tests/pack-demo.test.js
+  (issue #961).
+
 - Primary mathematics model-method gold lesson pack: five hand-authored gold samples for model-method in samples/decks/primary-math-model-method.json, samples/worksheets/primary-math-model-method.json, samples/tickets/primary-math-model-method.json, samples/notes/primary-math-model-method.json and samples/scripts/primary-math-model-method.json, keyed to the primary-math-model-method animation scenes, misconception bank trap reused verbatim: Drawing unit boxes in any lengths, guessing the sizes., guarded by tests/gold-model-method-pack.test.js (issue #959).
 
 - Primary mathematics data graphs lesson pack in the pack demo
