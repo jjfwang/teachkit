@@ -1,0 +1,54 @@
+{
+  "level": "jc",
+  "segments": [
+    {
+      "cue": "s1",
+      "minutes": 6,
+      "questions": [
+        "Why does the frequency of the light, not its brightness, set the energy of each photon?",
+        "What does one photon do when it strikes the metal surface?"
+      ],
+      "say": "Light arrives as a stream of photons. Shining light on a metal is like raining tiny packets of energy onto its surface. Each photon carries energy h f, fixed by the light’s frequency, and when a photon strikes, one electron may absorb the whole packet. Keep your student notes open at the photon definition for this scene."
+    },
+    {
+      "cue": "s2",
+      "minutes": 7,
+      "questions": [
+        "Why does leaving dim red light on the metal for an hour still free no electrons?",
+        "At exactly the threshold frequency, how much kinetic energy do the emitted electrons have?"
+      ],
+      "say": "Below the threshold frequency, nothing happens. An electron needs a minimum kick to escape the metal - that minimum is the work function. Low-frequency photons, however many arrive, each carry too little energy and nothing escapes. Only when the frequency passes the threshold do electrons start to fly. Compare the threshold frequency definition in your student notes before we balance the energy books."
+    },
+    {
+      "cue": "s3",
+      "minutes": 7,
+      "questions": [
+        "If the frequency doubles, what happens to KE_max - does it exactly double, and why or why not?",
+        "Where does the minus-W term in the equation show up in the animation?"
+      ],
+      "say": "Einstein's photoelectric equation. The photon's energy h f first pays the work function W to free the electron, and whatever remains becomes the electron's kinetic energy: h f = W + KE_max. That is why brighter light cannot speed electrons up - each electron gets just one photon. Now try the photon energy computation on the worksheet in pairs."
+    },
+    {
+      "cue": "s4",
+      "minutes": 6,
+      "questions": [
+        "The beam gets brighter and the ammeter reading rises, but the stopping potential stays at 2.9 V. Why?",
+        "What single change would raise the stopping potential instead?"
+      ],
+      "say": "Brighter light: more photons, more electrons. Double the intensity at the same frequency and twice as many photons arrive per second. Each still carries the same energy h f, so twice as many electrons escape - but each with exactly the same speed as before: same-length arrows, twice as many. Check the stopping potential definition in your student notes, then look ahead to the exit ticket question on this scene."
+    },
+    {
+      "cue": "s5",
+      "minutes": 8,
+      "questions": [
+        "In one sentence, what does a brighter beam at the same frequency actually change?",
+        "How would you correct a classmate who insists brighter light must mean faster electrons?"
+      ],
+      "say": "Misconception: brighter light ejects faster electrons. The animation holds the frequency fixed as the beam brightens: more electrons stream off, every arrow the same length, and the dim violet beam still wins on speed. Finish the worksheet trap question now, then the exit ticket on your own - the first question revisits exactly this scene.",
+      "watchFor": "Brighter light ejects faster electrons. Listen and look for it on the worksheet and in pair talk: any answer giving the brighter beam faster electrons shows the trap reading, not the photon reading - send them back to the same-length arrows in this scene and to the correct turn: Brightness means more photons, not stronger ones: a dim violet beam ejects faster electrons than a bright red one."
+    }
+  ],
+  "subject": "science",
+  "title": "JC H2 physics — quantum: photons and the photoelectric effect",
+  "topic": "h2-quantum"
+}

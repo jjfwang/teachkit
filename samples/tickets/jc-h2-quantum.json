@@ -1,0 +1,59 @@
+{
+  "level": "jc",
+  "questions": [
+    {
+      "choices": [
+        {
+          "text": "Each electron leaves with twice the kinetic energy"
+        },
+        {
+          "correct": true,
+          "text": "Twice as many electrons are emitted, each with the same maximum kinetic energy"
+        },
+        {
+          "text": "The threshold frequency of the metal halves"
+        }
+      ],
+      "feedback": "That trap reading is the one to unlearn: Brighter light ejects faster electrons. Reteach point: Brightness means more photons, not stronger ones: a dim violet beam ejects faster electrons than a bright red one.",
+      "id": "q1",
+      "kind": "multiple-choice",
+      "misconception": "Brighter light ejects faster electrons.",
+      "prompt": "A beam of light on a metal is made twice as bright at the same frequency, and electrons were already being emitted. What changes?"
+    },
+    {
+      "answer": "V_s = KE_max / e = 4.65 x 10^-19 / 1.60 x 10^-19 = 2.9 V.",
+      "feedback": "The stopping potential turns the fastest electrons back: e V_s = KE_max, so divide the maximum kinetic energy by the electron charge. 4.65 / 1.60 = 2.9 V - if you used a brighter beam you would get the same 2.9 V, just more current to stop.",
+      "id": "q2",
+      "kind": "short-answer",
+      "prompt": "For the ultraviolet light and metal of the worked example (KE_max = 4.65 x 10^-19 J), calculate the stopping potential. (e = 1.60 x 10^-19 C)"
+    },
+    {
+      "choices": [
+        {
+          "text": "More electrons are emitted, at the same maximum kinetic energy"
+        },
+        {
+          "correct": true,
+          "text": "Electrons are emitted with a greater maximum kinetic energy, because each photon now carries more energy"
+        },
+        {
+          "text": "No electrons are emitted until the intensity also increases"
+        }
+      ],
+      "feedback": "Frequency writes the cheque: raise f and each photon carries more energy h f, so after paying the same work function the electrons keep more as kinetic energy. Intensity, not frequency, is the knob for how many electrons come out.",
+      "id": "q3",
+      "kind": "multiple-choice",
+      "prompt": "The frequency of the light on a metal plate is increased, staying above the threshold frequency. What happens to the emitted electrons?"
+    },
+    {
+      "answer": "The work function W is the minimum energy an electron needs to escape the metal surface. The threshold frequency f0 = W / h is the lowest frequency whose photons each carry at least W; below f0 no electrons are emitted, however bright the light.",
+      "feedback": "Both definitions live in scene s2: the work function is the exit fee, and the threshold frequency is where one photon exactly covers it, h f0 = W.",
+      "id": "q4",
+      "kind": "short-answer",
+      "prompt": "Define the work function of a metal and the threshold frequency of light for that metal."
+    }
+  ],
+  "subject": "science",
+  "title": "JC H2 physics — quantum: photons and the photoelectric effect Exit Ticket",
+  "topic": "h2-quantum"
+}

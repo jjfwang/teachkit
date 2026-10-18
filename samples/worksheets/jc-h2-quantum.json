@@ -1,0 +1,86 @@
+{
+  "level": "jc",
+  "questions": [
+    {
+      "choices": [
+        {
+          "text": "The electrons fly off faster, because the brighter beam hits harder"
+        },
+        {
+          "text": "The electrons fly off more slowly, because they share the extra light"
+        },
+        {
+          "correct": true,
+          "text": "Brightness means more photons, not stronger ones: a dim violet beam ejects faster electrons than a bright red one."
+        },
+        {
+          "text": "Emission stops, because the plate is overwhelmed by light"
+        }
+      ],
+      "explanation": "The trap claim is: Brighter light ejects faster electrons. Brightness feels like strength, so more light looks like harder hits. Brightness means more photons, not stronger ones: a dim violet beam ejects faster electrons than a bright red one. At the same frequency each photon still carries the same energy h f, so the brighter beam ejects more electrons, each with the same maximum kinetic energy as before.",
+      "id": "q1",
+      "kind": "multiple-choice",
+      "misconception": "Brighter light ejects faster electrons.",
+      "prompt": "Ultraviolet light shines on a metal plate and electrons are emitted. The lamp is made much brighter at exactly the same frequency. A student claims the electrons now fly off faster. What actually happens?"
+    },
+    {
+      "choices": [
+        {
+          "text": "8.8 x 10^-49 J, from f / h"
+        },
+        {
+          "correct": true,
+          "text": "4.97 x 10^-19 J, from E = h f = 6.63 x 10^-34 x 7.5 x 10^14"
+        },
+        {
+          "text": "7.5 x 10^14 J, the frequency itself"
+        },
+        {
+          "text": "0 J, because a single photon carries no energy"
+        }
+      ],
+      "explanation": "Photon energy is E = h f: 6.63 x 10^-34 x 7.5 x 10^14 = 4.97 x 10^-19 J. Frequency alone sets the size of the packet - brightness only changes how many such packets arrive each second.",
+      "id": "q2",
+      "kind": "multiple-choice",
+      "prompt": "What is the energy of one photon of light of frequency 7.5 x 10^14 Hz? (h = 6.63 x 10^-34 J s)"
+    },
+    {
+      "answer": "E = h f = 6.63 x 10^-34 x 1.20 x 10^15 = 7.96 x 10^-19 J, so KE_max = E - W = 7.96 x 10^-19 - 3.31 x 10^-19 = 4.65 x 10^-19 J.",
+      "explanation": "Einstein’s equation h f = W + KE_max balances the books: the photon energy first pays the work function, and the remainder is the electron’s maximum kinetic energy, 4.65 x 10^-19 J.",
+      "id": "q3",
+      "kind": "short-answer",
+      "prompt": "Ultraviolet light of frequency 1.20 x 10^15 Hz strikes a metal of work function 3.31 x 10^-19 J. Calculate the maximum kinetic energy of the emitted electrons, showing your working with Einstein’s photoelectric equation."
+    },
+    {
+      "answer": "λ = h / (m v) = 6.63 x 10^-34 / (9.11 x 10^-31 x 1.0 x 10^6) = 7.3 x 10^-10 m. A moving electron carries a wavelength just like a photon: matter shows wave-particle duality.",
+      "explanation": "de Broglie’s relation λ = h / (m v) gives every moving particle a wavelength; for this electron it is 7.3 x 10^-10 m, atomic in scale, which is why electron diffraction is observable.",
+      "id": "q4",
+      "kind": "short-answer",
+      "prompt": "An emitted electron moves at 1.0 x 10^6 m s^-1. Calculate its de Broglie wavelength and say what this wave behaviour of matter is evidence for. (m_e = 9.11 x 10^-31 kg, h = 6.63 x 10^-34 J s)"
+    },
+    {
+      "choices": [
+        {
+          "text": "The electrons need more time to soak up the light gradually"
+        },
+        {
+          "correct": true,
+          "text": "Each red photon carries less than the work function, and one electron absorbs only one photon, so no electron can pay the exit energy"
+        },
+        {
+          "text": "The red light is reflected before it can do anything"
+        },
+        {
+          "text": "The metal is already full of electrons at the surface"
+        }
+      ],
+      "explanation": "Emission is a one-photon, one-electron exchange: below the threshold frequency each photon carries h f < W, so however many arrive, and however long they arrive for, no single electron ever receives enough energy to escape - exactly the silence in scene s2.",
+      "id": "q5",
+      "kind": "multiple-choice",
+      "prompt": "Red light below the threshold frequency of a metal shines on it for a long time at high intensity, and no electrons are emitted. Why not?"
+    }
+  ],
+  "subject": "science",
+  "title": "JC H2 physics — quantum: photons and the photoelectric effect",
+  "topic": "h2-quantum"
+}

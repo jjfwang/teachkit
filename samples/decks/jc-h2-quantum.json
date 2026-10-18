@@ -1,0 +1,121 @@
+{
+  "level": "jc",
+  "slides": [
+    {
+      "bullets": [
+        "How light arrives as photons, why frequency alone frees electrons, and how Einstein’s equation balances the energy books: photons, threshold frequency, work function and the photoelectric effect"
+      ],
+      "heading": "JC H2 physics — quantum: photons and the photoelectric effect",
+      "kind": "title",
+      "notes": "Welcome everyone in and say: today we build quantum physics from the ground up - light arriving as a stream of photons, a threshold frequency below which nothing happens, Einstein’s photoelectric equation, brighter light making more electrons rather than faster ones - and the trap of the brighter beam at the end."
+    },
+    {
+      "bullets": [
+        "Describe light as a stream of photons, each carrying energy E = h f fixed by the frequency alone",
+        "Use Einstein’s photoelectric equation h f = W + KE_max, find the threshold frequency and the stopping potential, and compute a de Broglie wavelength with λ = h / (m v)",
+        "Explain why brighter light ejects more electrons but never faster ones, and why no electrons escape below the threshold frequency"
+      ],
+      "heading": "What we will learn",
+      "kind": "objective",
+      "notes": "Read the three goals aloud slowly and tell the class: keep these in mind, because our exit ticket at the end will ask you to do exactly these things, including spotting the trap that brighter light ejects faster electrons."
+    },
+    {
+      "bullets": [
+        "Ultraviolet light shines on a metal plate and electrons fly off it, each with a measurable top speed",
+        "The lamp is made twice as bright at exactly the same colour. Do the electrons now fly off twice as fast, or does something else change?"
+      ],
+      "heading": "The lamp gets brighter. Do the electrons fly out faster?",
+      "kind": "hook",
+      "notes": "Ask the class to commit to a guess before any definitions: brighter light, faster electrons, yes or no? Take two or three answers, then say: hold them, because the trap scene of the lesson settles this question completely."
+    },
+    {
+      "bullets": [
+        "Light arrives in packets: one photon gives all of its energy h f to one electron, and frequency alone sets how big that packet is",
+        "Brightness counts photons, it does not strengthen them - intensity changes how many electrons escape, never how fast each one flies"
+      ],
+      "heading": "One idea, five scenes: photons, threshold, equation, brightness, trap",
+      "kind": "concept",
+      "notes": "Say this part slowly, because it is the big idea of the whole lesson: the photoelectric effect is not about how much light arrives in total, it is about how much energy each single photon carries."
+    },
+    {
+      "bullets": [
+        "Photons rain onto the metal plate one packet at a time, and each photon carries energy E = h f fixed by the light’s frequency",
+        "When a photon strikes, one electron may absorb the whole packet in a single one-to-one exchange"
+      ],
+      "heading": "Light arrives as a stream of photons",
+      "kind": "mechanism",
+      "notes": "Point at the animation and narrate what is happening: watch the photons fall onto the plate one by one, then watch an electron leave after a single hit - that is the one-photon, one-electron exchange the whole effect rests on.",
+      "visual": "s1"
+    },
+    {
+      "bullets": [
+        "An electron needs a minimum kick to escape the metal: that minimum energy is the work function W of the surface",
+        "Photons below the threshold frequency each carry less than W, so however many arrive, no electron ever escapes"
+      ],
+      "heading": "Below the threshold frequency, nothing happens",
+      "kind": "mechanism",
+      "notes": "Narrate the state change: low-frequency photons striking again and again, and the surface staying silent. Say: a million weak packets free nobody, because escape is paid for one photon at a time.",
+      "visual": "s2"
+    },
+    {
+      "bullets": [
+        "The photon’s energy h f first pays the work function W to free the electron, and whatever remains becomes kinetic energy: h f = W + KE_max",
+        "That is why brighter light cannot speed electrons up - each electron gets just one photon, so its energy is set by frequency alone"
+      ],
+      "heading": "Einstein's photoelectric equation",
+      "kind": "mechanism",
+      "notes": "Talk through the energy books slowly: the photon pays the exit fee W first, and only the change left over shows up as speed. Say: frequency writes the cheque, the work function takes its cut, the electron keeps the rest.",
+      "visual": "s3"
+    },
+    {
+      "bullets": [
+        "Double the intensity at the same frequency and twice as many photons arrive per second, each still carrying the same energy h f",
+        "Twice as many electrons escape, but each with exactly the same speed as before - same-length arrows, twice as many"
+      ],
+      "heading": "Brighter light: more photons, more electrons",
+      "kind": "mechanism",
+      "notes": "Watch the arrows as the beam brightens: more electrons streaming off the plate, every arrow the same length as before. Say: brightness turns up the count, never the speed.",
+      "visual": "s4"
+    },
+    {
+      "bullets": [
+        "The imagined speed-up does not exist: a brighter beam at the same frequency ejects more electrons at the same top speed",
+        "Electron speed comes from frequency alone - a dim violet beam ejects faster electrons than a bright red one"
+      ],
+      "heading": "Misconception: brighter light ejects faster electrons",
+      "kind": "mechanism",
+      "notes": "Name the trap out loud before anyone falls into it: brightness feels like strength, but each photon in the brighter beam carries exactly the same energy as before - there are simply more of them.",
+      "visual": "s5"
+    },
+    {
+      "bullets": [
+        "Step 1: ultraviolet light of frequency 1.20 x 10^15 Hz strikes a metal of work function 3.31 x 10^-19 J, so the photon energy is E = h f = 6.63 x 10^-34 x 1.20 x 10^15 = 7.96 x 10^-19 J",
+        "Step 2: KE_max = E - W = 7.96 x 10^-19 - 3.31 x 10^-19 = 4.65 x 10^-19 J - and the threshold frequency is f0 = W / h = 3.31 x 10^-19 / 6.63 x 10^-34 = 5.0 x 10^14 Hz"
+      ],
+      "heading": "Worked example: photon energy and maximum kinetic energy",
+      "kind": "example",
+      "notes": "Talk through the two steps slowly and name each one as you write it; say: always find the photon energy first, then subtract the work function - if the photon cannot pay the work function, there is nothing left and no electron escapes."
+    },
+    {
+      "bullets": [
+        "Light of frequency 9.0 x 10^14 Hz strikes the same metal (work function 3.31 x 10^-19 J). Find the maximum kinetic energy of the emitted electrons and the stopping potential",
+        "Careful - a classmate says: Brighter light ejects faster electrons. Explain to them what actually increases when the beam gets brighter"
+      ],
+      "heading": "Your turn: compute, then correct",
+      "kind": "practice",
+      "notes": "Give pairs three minutes, then cold-call one pair on each part: press them on E = h f = 6.63 x 10^-34 x 9.0 x 10^14 = 5.97 x 10^-19 J and KE_max = 5.97 x 10^-19 - 3.31 x 10^-19 = 2.66 x 10^-19 J first, then on the exact sentence they used to talk their classmate out of the claim: Brighter light ejects faster electrons."
+    },
+    {
+      "bullets": [
+        "On your own: the frequency of the light on a metal is doubled. What happens to the maximum kinetic energy of the emitted electrons, and why?",
+        "Watch out for the trap one last time: Brighter light ejects faster electrons. Say what a brighter beam at the same frequency actually changes, and what sets the electrons’ top speed"
+      ],
+      "heading": "Exit ticket: show what you know",
+      "kind": "exit-ticket",
+      "notes": "Collect these before anyone leaves and say: I am looking for the photon energy doubling with the frequency in your first answer and one clear sentence about photon count in your second. Anyone repeating the claim Brighter light ejects faster electrons. needs the trap scene again."
+    }
+  ],
+  "subject": "science",
+  "title": "JC H2 physics — quantum: photons and the photoelectric effect",
+  "topic": "h2-quantum"
+}
