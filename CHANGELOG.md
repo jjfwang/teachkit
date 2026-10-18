@@ -12,6 +12,19 @@ version section when the release ships.
 
 ### Added
 
+- JC H2 genetics lesson pack in the pack demo
+  (`player/pack-demo.html`): the JC H2 genetics
+  gold lesson pack now appears on the same demo page as the other packs,
+  presenting all six jc-h2-genetics materials (animation,
+  slides, worksheet, exit ticket, student notes, and teacher
+  script) under its own
+  genetics-jc-manifest header (slug
+  `h2-genetics-jc-science`, level jc, subject
+  science, topic `h2-genetics`), stacked animation, slides, and printables sections, all
+  six materials validated before render for that pack, and
+  the shared teacher-keys toggle covering all thirty packs' print
+  stages, guarded by slice-scoped pack-demo tests (issue #909).
+
 - JC H2 genetics gold lesson pack: five hand-authored gold
   samples for h2-genetics in
   samples/decks/jc-h2-genetics.json,
