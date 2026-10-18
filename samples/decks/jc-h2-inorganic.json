@@ -1,0 +1,151 @@
+{
+  "level": "jc",
+  "slides": [
+    {
+      "bullets": [
+        "Periodicity across period 3 and down groups 2 and 17, then transition metals: colour, complexes, catalysis - and why zinc does not make the cut"
+      ],
+      "heading": "JC H2 chemistry — inorganic: periodicity, groups and transition metals",
+      "kind": "title",
+      "notes": "Welcome everyone in and say: today we read the periodic table as a set of trends with reasons - radius, melting point and ionisation energy across period 3, reactivity and oxidising power down the groups, and the d-orbital story that defines a transition metal."
+    },
+    {
+      "bullets": [
+        "Explain the period 3 trends in atomic radius, melting point and first ionisation energy, including the two ionisation-energy dips",
+        "Explain why reactivity rises down group 2 while oxidising power falls down group 17",
+        "Define a transition metal by its ions, explain complex formation and colour, and judge whether zinc qualifies"
+      ],
+      "heading": "What we will learn",
+      "kind": "objective",
+      "notes": "Read the three goals aloud slowly and tell the class: keep these in mind, because our exit ticket at the end will ask you to do exactly these things, including spotting the trap that zinc must be a transition metal."
+    },
+    {
+      "bullets": [
+        "Zinc sits in the d-block of the periodic table, between copper and gallium",
+        "Does its address in the table settle the question, or does the definition ask something else?"
+      ],
+      "heading": "Zinc sits in the d-block. Is it a transition metal?",
+      "kind": "hook",
+      "notes": "Ask the class to commit to a guess before any definitions: d-block address, transition metal, yes or no? Take two or three answers, then say: hold them, because the trap scene of the lesson settles this question completely."
+    },
+    {
+      "bullets": [
+        "Every periodic trend in this lesson is explained the same way: nuclear charge, atomic radius and shielding decide how strongly electrons are held, gained or lost",
+        "Transition-metal behaviour comes from a partially filled d subshell: colour, complexes, variable oxidation states and catalysis all trace back to it"
+      ],
+      "heading": "One idea, eight scenes: trends with reasons, metals with d-orbitals",
+      "kind": "concept",
+      "notes": "Say this part slowly, because it is the big idea of the whole lesson: trends are never memorised lists - each one is charge, size and shielding, and the d-subshell story is the same idea one shell deeper."
+    },
+    {
+      "bullets": [
+        "Across period 3 the nuclear charge rises from sodium to argon while the outer electrons stay in the same shell, so the pull on each electron grows",
+        "Shielding barely changes across the period, so atomic radius falls steadily from sodium to argon"
+      ],
+      "heading": "Across period 3, atoms shrink",
+      "kind": "mechanism",
+      "notes": "Follow the probe left to right and narrate the state change: same shell, rising nuclear charge, atoms drawn smaller and smaller. Say: it is the extra protons, not extra shells, that shrink the atom.",
+      "visual": "s1"
+    },
+    {
+      "bullets": [
+        "Melting point follows structure: sodium, magnesium and aluminium are metallic, silicon is a giant covalent lattice, and phosphorus to argon are simple molecular",
+        "The peak sits at silicon because melting a giant covalent lattice means breaking strong covalent bonds, not weak forces between molecules"
+      ],
+      "heading": "Melting point tells the structure story",
+      "kind": "mechanism",
+      "notes": "Narrate the bars in order: modest metals, the silicon peak, then the fall to the simple molecular elements. Say: read the structure off the melting point before you read anything else.",
+      "visual": "s2"
+    },
+    {
+      "bullets": [
+        "First ionisation energy rises across period 3 as nuclear charge grows and radius falls, so the outer electron is held ever tighter",
+        "Two dips break the rise: magnesium to aluminium (the electron leaves a higher-energy 3p orbital) and phosphorus to sulphur (paired-electron repulsion in the 3p orbital)"
+      ],
+      "heading": "First ionisation energy: the rise, and two dips",
+      "kind": "mechanism",
+      "notes": "Walk the rising curve, then pause at each dip and ask why before revealing it. Say: a dip never breaks the trend - it refines it, and each dip has an orbital reason.",
+      "visual": "s3"
+    },
+    {
+      "bullets": [
+        "Down group 2 the atoms get larger and the outer electrons sit further from the nucleus under more shielding, so they are lost more easily",
+        "Reactivity with water climbs from magnesium to barium: magnesium reacts slowly with cold water, barium vigorously"
+      ],
+      "heading": "Down group 2: reactivity climbs",
+      "kind": "mechanism",
+      "notes": "Narrate the climb down the group: bigger atoms, more shielding, electrons lost more readily. Say: reactivity down group 2 is atomic size and shielding doing the work.",
+      "visual": "s4"
+    },
+    {
+      "bullets": [
+        "Down group 17 the atoms get larger, so an incoming electron is gained further from the nucleus and held less strongly",
+        "Oxidising power falls from chlorine to iodine: chlorine displaces bromide and iodide, but iodine displaces neither"
+      ],
+      "heading": "Down group 17: oxidising power falls",
+      "kind": "mechanism",
+      "notes": "Follow the oxidising power falling down the group and tie it to the displacement reactions. Say: the halogen that wants the electron most is the smallest one at the top.",
+      "visual": "s5"
+    },
+    {
+      "bullets": [
+        "Transition-metal ions are coloured because partially filled d orbitals split into two energy levels and electrons absorb visible light jumping between them",
+        "The colour depends on the metal, its oxidation state and the ligands present - change any of them and the colour changes"
+      ],
+      "heading": "Colour comes from partially filled d-orbitals",
+      "kind": "mechanism",
+      "notes": "Point at the split d-orbitals and the absorbed colour. Say: no partially filled d subshell means no d-d transitions - keep that sentence ready for the zinc trap at the end.",
+      "visual": "s6"
+    },
+    {
+      "bullets": [
+        "Ligands donate lone pairs into empty metal orbitals, forming coordinate bonds in a complex ion such as [Cu(H2O)6]2+",
+        "Transition metals make good catalysts because they can flip between oxidation states, as iron(II) and iron(III) do, or provide a surface for reactants to adsorb onto, as iron does in the Haber process"
+      ],
+      "heading": "Ligands crowd the metal; catalysts flip oxidation states",
+      "kind": "mechanism",
+      "notes": "Narrate the ligands crowding in around the metal ion, then the catalyst flipping oxidation states. Say: variable oxidation states and complex formation are the two signatures of transition-metal behaviour.",
+      "visual": "s7"
+    },
+    {
+      "bullets": [
+        "A transition metal is defined by forming at least one stable ion with a partially filled d subshell - d-block position alone is not the definition",
+        "Zinc forms only Zn2+, which is 3d10: completely filled, so zinc shows none of the colour or complex behaviour that needs a d-orbital gap"
+      ],
+      "heading": "A common mistake: zinc is a transition metal",
+      "kind": "mechanism",
+      "notes": "Slow down for the trap scene. Say: the definition is about the ion's d subshell, not about where the element sits in the table - scene s6 already told us why that matters.",
+      "visual": "s8"
+    },
+    {
+      "bullets": [
+        "Step 1: magnesium to aluminium - magnesium's outer electron leaves the 3s orbital, aluminium's leaves the higher-energy 3p orbital, so less energy is needed even though nuclear charge has risen",
+        "Step 2: phosphorus to sulphur - phosphorus has three unpaired 3p electrons, sulphur has one paired 3p orbital, and the paired electrons repel, so one is removed more easily"
+      ],
+      "heading": "Worked example: explaining the two ionisation-energy dips",
+      "kind": "example",
+      "notes": "Talk through the two dips slowly and name the orbital reason for each as you write it; say: nuclear charge rises at both steps, so the dips must come from the orbitals, not from the trend reversing."
+    },
+    {
+      "bullets": [
+        "Explain, using charge, radius and shielding, why the first ionisation energy of potassium is lower than that of sodium",
+        "Careful - a classmate says: Zinc is a transition metal because it sits in the d-block. Explain to them what the definition of a transition metal actually requires"
+      ],
+      "heading": "Your turn: explain, then correct",
+      "kind": "practice",
+      "notes": "Give pairs three minutes, then cold-call one pair on each part: press them on bigger atom, more shielding, weaker hold first, then on the exact sentence they used to talk their classmate out of the claim: Zinc is a transition metal because it sits in the d-block."
+    },
+    {
+      "bullets": [
+        "On your own: chlorine displaces bromide from solution but bromine does not displace chloride. Explain this using oxidising power down group 17",
+        "Watch out for the trap one last time: Zinc is a transition metal because it sits in the d-block. Say what Zn2+ has in its 3d subshell, and what that means for the definition"
+      ],
+      "heading": "Exit ticket: show what you know",
+      "kind": "exit-ticket",
+      "notes": "Collect these before anyone leaves and say: I am looking for oxidising power falling down the group in your first answer and one clear sentence about the full 3d subshell in your second. Anyone repeating the claim Zinc is a transition metal because it sits in the d-block. needs the trap scene again."
+    }
+  ],
+  "subject": "science",
+  "title": "JC H2 chemistry — inorganic: periodicity, groups and transition metals",
+  "topic": "h2-inorganic"
+}

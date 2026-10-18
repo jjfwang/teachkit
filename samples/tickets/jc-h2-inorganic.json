@@ -1,0 +1,59 @@
+{
+  "level": "jc",
+  "questions": [
+    {
+      "choices": [
+        {
+          "text": "Zinc is a transition metal because it sits in the d-block"
+        },
+        {
+          "correct": true,
+          "text": "Zinc is not a transition metal because Zn2+ has a completely filled 3d subshell"
+        },
+        {
+          "text": "Zinc is a transition metal because it forms coloured complexes"
+        }
+      ],
+      "feedback": "That trap reading is the one to unlearn: Zinc is a transition metal because it sits in the d-block. Reteach point: Zinc(II) has a full 3d subshell: no partially filled d orbitals, so zinc is not a transition metal.",
+      "id": "q1",
+      "kind": "multiple-choice",
+      "misconception": "Zinc is a transition metal because it sits in the d-block.",
+      "prompt": "Which statement about zinc and transition metals is correct?"
+    },
+    {
+      "answer": "Sulphur has one paired 3p orbital; the repulsion between the paired electrons makes one of them easier to remove than an unpaired 3p electron in phosphorus, even though sulphur has the greater nuclear charge.",
+      "feedback": "The dip in scene s3 is an orbital effect, not a trend reversal: paired-electron repulsion in sulphur's 3p orbital outweighs the extra nuclear charge.",
+      "id": "q2",
+      "kind": "short-answer",
+      "prompt": "The first ionisation energy dips from phosphorus to sulphur. Explain why, in one or two sentences."
+    },
+    {
+      "choices": [
+        {
+          "text": "Nothing happens, because bromine is below iodine in group 17"
+        },
+        {
+          "correct": true,
+          "text": "The solution turns brown: bromine is a stronger oxidising agent than iodine, so it displaces iodide to form I2"
+        },
+        {
+          "text": "The solution turns orange, because iodine displaces bromide"
+        }
+      ],
+      "feedback": "Oxidising power falls down group 17 (scene s5): bromine sits above iodine, so bromine takes electrons from iodide and brown iodine forms.",
+      "id": "q3",
+      "kind": "multiple-choice",
+      "prompt": "Bromine water is added to aqueous potassium iodide. What happens, and why?"
+    },
+    {
+      "answer": "The ammonia molecules act as ligands: each donates a lone pair to the Cu2+ ion, forming coordinate bonds and replacing the water ligands in a ligand-exchange reaction, giving the deep blue [Cu(NH3)4(H2O)2]2+ complex.",
+      "feedback": "This is the crowding in scene s7: ligands donate lone pairs into the metal ion to form a complex, and a new ligand set means a new d-orbital split - and a new colour.",
+      "id": "q4",
+      "kind": "short-answer",
+      "prompt": "Excess ammonia is added to aqueous copper(II) sulfate and the pale blue solution turns deep blue. Explain what the ammonia molecules do."
+    }
+  ],
+  "subject": "science",
+  "title": "JC H2 chemistry — inorganic: periodicity, groups and transition metals Exit Ticket",
+  "topic": "h2-inorganic"
+}

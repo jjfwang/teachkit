@@ -12,6 +12,19 @@ version section when the release ships.
 
 ### Added
 
+- JC H2 inorganic gold lesson pack: five hand-authored gold
+  samples for h2-inorganic in
+  samples/decks/jc-h2-inorganic.json,
+  samples/worksheets/jc-h2-inorganic.json,
+  samples/tickets/jc-h2-inorganic.json,
+  samples/notes/jc-h2-inorganic.json and
+  samples/scripts/jc-h2-inorganic.json,
+  keyed to the jc-h2-inorganic animation scenes and built around
+  the misconception bank trap reused verbatim: Zinc is a
+  transition metal because it sits in the d-block., guarded by
+  tests/gold-inorganic-jc-pack.test.js
+  (issue #895).
+
 - JC H2 physical chemistry lesson pack in the pack demo
   (`player/pack-demo.html`): the JC H2 physical chemistry
   gold lesson pack now appears on the same demo page as the other packs,
