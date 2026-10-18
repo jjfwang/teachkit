@@ -106,7 +106,7 @@ describe('pack demo page', () => {
     assert.ok(demo.includes('.pr-teacher'));
     assert.equal((demo.match(/#toggle-teacher/g) || []).length, 1);
     assert.ok(demo.includes("document.querySelector('#complex-print .pr-stage') || document.querySelector('#complex-print')"));
-    assert.ok(demo.includes('[printStage, fractionsPrintStage, wavesPrintStage, complexPrintStage, trigPrintStage, thermalPrintStage, photosynthesisPrintStage, erosionPrintStage, chemMolePrintStage, differentiationPrintStage, integrationPrintStage, binomialPrintStage, kinematicsPrintStage, quadraticPrintStage, trigonometryAPrintStage, vectorsPrintStage, functionsGraphsPrintStage, sequencesPrintStage, differentiationJcPrintStage, integrationJcPrintStage, probabilityJcPrintStage, statisticsJcPrintStage, mechanicsJcPrintStage, emJcPrintStage, quantumJcPrintStage, physicalJcPrintStage, inorganicJcPrintStage]'));
+    assert.ok(demo.includes('[printStage, fractionsPrintStage, wavesPrintStage, complexPrintStage, trigPrintStage, thermalPrintStage, photosynthesisPrintStage, erosionPrintStage, chemMolePrintStage, differentiationPrintStage, integrationPrintStage, binomialPrintStage, kinematicsPrintStage, quadraticPrintStage, trigonometryAPrintStage, vectorsPrintStage, functionsGraphsPrintStage, sequencesPrintStage, differentiationJcPrintStage, integrationJcPrintStage, probabilityJcPrintStage, statisticsJcPrintStage, mechanicsJcPrintStage, emJcPrintStage, quantumJcPrintStage, physicalJcPrintStage, inorganicJcPrintStage, organicJcPrintStage]'));
   });
 
   test('complex manifest header names the slug, level, subject and six material keys', () => {
@@ -184,7 +184,7 @@ describe('pack demo page', () => {
     assert.ok(trigBlock.includes('AnimathPrintable.renderWorksheetAnswerKey'));
     assert.ok(trigBlock.includes('AnimathPrintable.renderExitTicketAnswerKey'));
     assert.ok(demo.includes("document.querySelector('#trig-print .pr-stage') || document.querySelector('#trig-print')"));
-    assert.ok(demo.includes('[printStage, fractionsPrintStage, wavesPrintStage, complexPrintStage, trigPrintStage, thermalPrintStage, photosynthesisPrintStage, erosionPrintStage, chemMolePrintStage, differentiationPrintStage, integrationPrintStage, binomialPrintStage, kinematicsPrintStage, quadraticPrintStage, trigonometryAPrintStage, vectorsPrintStage, functionsGraphsPrintStage, sequencesPrintStage, differentiationJcPrintStage, integrationJcPrintStage, probabilityJcPrintStage, statisticsJcPrintStage, mechanicsJcPrintStage, emJcPrintStage, quantumJcPrintStage, physicalJcPrintStage, inorganicJcPrintStage]'));
+    assert.ok(demo.includes('[printStage, fractionsPrintStage, wavesPrintStage, complexPrintStage, trigPrintStage, thermalPrintStage, photosynthesisPrintStage, erosionPrintStage, chemMolePrintStage, differentiationPrintStage, integrationPrintStage, binomialPrintStage, kinematicsPrintStage, quadraticPrintStage, trigonometryAPrintStage, vectorsPrintStage, functionsGraphsPrintStage, sequencesPrintStage, differentiationJcPrintStage, integrationJcPrintStage, probabilityJcPrintStage, statisticsJcPrintStage, mechanicsJcPrintStage, emJcPrintStage, quantumJcPrintStage, physicalJcPrintStage, inorganicJcPrintStage, organicJcPrintStage]'));
     assert.equal((demo.match(/#toggle-teacher/g) || []).length, 1);
   });
 
@@ -233,7 +233,7 @@ describe('pack demo page', () => {
     assert.ok(thermalBlock.includes('AnimathPrintable.renderWorksheetAnswerKey'));
     assert.ok(thermalBlock.includes('AnimathPrintable.renderExitTicketAnswerKey'));
     assert.ok(demo.includes("document.querySelector('#thermal-print .pr-stage') || document.querySelector('#thermal-print')"));
-    assert.ok(demo.includes('[printStage, fractionsPrintStage, wavesPrintStage, complexPrintStage, trigPrintStage, thermalPrintStage, photosynthesisPrintStage, erosionPrintStage, chemMolePrintStage, differentiationPrintStage, integrationPrintStage, binomialPrintStage, kinematicsPrintStage, quadraticPrintStage, trigonometryAPrintStage, vectorsPrintStage, functionsGraphsPrintStage, sequencesPrintStage, differentiationJcPrintStage, integrationJcPrintStage, probabilityJcPrintStage, statisticsJcPrintStage, mechanicsJcPrintStage, emJcPrintStage, quantumJcPrintStage, physicalJcPrintStage, inorganicJcPrintStage]'));
+    assert.ok(demo.includes('[printStage, fractionsPrintStage, wavesPrintStage, complexPrintStage, trigPrintStage, thermalPrintStage, photosynthesisPrintStage, erosionPrintStage, chemMolePrintStage, differentiationPrintStage, integrationPrintStage, binomialPrintStage, kinematicsPrintStage, quadraticPrintStage, trigonometryAPrintStage, vectorsPrintStage, functionsGraphsPrintStage, sequencesPrintStage, differentiationJcPrintStage, integrationJcPrintStage, probabilityJcPrintStage, statisticsJcPrintStage, mechanicsJcPrintStage, emJcPrintStage, quantumJcPrintStage, physicalJcPrintStage, inorganicJcPrintStage, organicJcPrintStage]'));
     assert.equal((demo.match(/#toggle-teacher/g) || []).length, 1);
   });
 
@@ -281,7 +281,7 @@ describe('pack demo page', () => {
     assert.ok(photosynthesisBlock.includes('AnimathPrintable.renderWorksheetAnswerKey'));
     assert.ok(photosynthesisBlock.includes('AnimathPrintable.renderExitTicketAnswerKey'));
     assert.ok(demo.includes("document.querySelector('#photosynthesis-print .pr-stage') || document.querySelector('#photosynthesis-print')"));
-    assert.ok(demo.includes('[printStage, fractionsPrintStage, wavesPrintStage, complexPrintStage, trigPrintStage, thermalPrintStage, photosynthesisPrintStage, erosionPrintStage, chemMolePrintStage, differentiationPrintStage, integrationPrintStage, binomialPrintStage, kinematicsPrintStage, quadraticPrintStage, trigonometryAPrintStage, vectorsPrintStage, functionsGraphsPrintStage, sequencesPrintStage, differentiationJcPrintStage, integrationJcPrintStage, probabilityJcPrintStage, statisticsJcPrintStage, mechanicsJcPrintStage, emJcPrintStage, quantumJcPrintStage, physicalJcPrintStage, inorganicJcPrintStage]'));
+    assert.ok(demo.includes('[printStage, fractionsPrintStage, wavesPrintStage, complexPrintStage, trigPrintStage, thermalPrintStage, photosynthesisPrintStage, erosionPrintStage, chemMolePrintStage, differentiationPrintStage, integrationPrintStage, binomialPrintStage, kinematicsPrintStage, quadraticPrintStage, trigonometryAPrintStage, vectorsPrintStage, functionsGraphsPrintStage, sequencesPrintStage, differentiationJcPrintStage, integrationJcPrintStage, probabilityJcPrintStage, statisticsJcPrintStage, mechanicsJcPrintStage, emJcPrintStage, quantumJcPrintStage, physicalJcPrintStage, inorganicJcPrintStage, organicJcPrintStage]'));
     assert.equal((demo.match(/#toggle-teacher/g) || []).length, 1);
   });
 
@@ -329,7 +329,7 @@ describe('pack demo page', () => {
     assert.ok(erosionBlock.includes('AnimathPrintable.renderWorksheetAnswerKey'));
     assert.ok(erosionBlock.includes('AnimathPrintable.renderExitTicketAnswerKey'));
     assert.ok(demo.includes("document.querySelector('#erosion-print .pr-stage') || document.querySelector('#erosion-print')"));
-    assert.ok(demo.includes('[printStage, fractionsPrintStage, wavesPrintStage, complexPrintStage, trigPrintStage, thermalPrintStage, photosynthesisPrintStage, erosionPrintStage, chemMolePrintStage, differentiationPrintStage, integrationPrintStage, binomialPrintStage, kinematicsPrintStage, quadraticPrintStage, trigonometryAPrintStage, vectorsPrintStage, functionsGraphsPrintStage, sequencesPrintStage, differentiationJcPrintStage, integrationJcPrintStage, probabilityJcPrintStage, statisticsJcPrintStage, mechanicsJcPrintStage, emJcPrintStage, quantumJcPrintStage, physicalJcPrintStage, inorganicJcPrintStage]'));
+    assert.ok(demo.includes('[printStage, fractionsPrintStage, wavesPrintStage, complexPrintStage, trigPrintStage, thermalPrintStage, photosynthesisPrintStage, erosionPrintStage, chemMolePrintStage, differentiationPrintStage, integrationPrintStage, binomialPrintStage, kinematicsPrintStage, quadraticPrintStage, trigonometryAPrintStage, vectorsPrintStage, functionsGraphsPrintStage, sequencesPrintStage, differentiationJcPrintStage, integrationJcPrintStage, probabilityJcPrintStage, statisticsJcPrintStage, mechanicsJcPrintStage, emJcPrintStage, quantumJcPrintStage, physicalJcPrintStage, inorganicJcPrintStage, organicJcPrintStage]'));
     assert.equal((demo.match(/#toggle-teacher/g) || []).length, 1);
   });
 
@@ -377,7 +377,7 @@ describe('pack demo page', () => {
     assert.ok(chemMoleBlock.includes('AnimathPrintable.renderWorksheetAnswerKey'));
     assert.ok(chemMoleBlock.includes('AnimathPrintable.renderExitTicketAnswerKey'));
     assert.ok(demo.includes("document.querySelector('#chem-mole-print .pr-stage') || document.querySelector('#chem-mole-print')"));
-    assert.ok(demo.includes('[printStage, fractionsPrintStage, wavesPrintStage, complexPrintStage, trigPrintStage, thermalPrintStage, photosynthesisPrintStage, erosionPrintStage, chemMolePrintStage, differentiationPrintStage, integrationPrintStage, binomialPrintStage, kinematicsPrintStage, quadraticPrintStage, trigonometryAPrintStage, vectorsPrintStage, functionsGraphsPrintStage, sequencesPrintStage, differentiationJcPrintStage, integrationJcPrintStage, probabilityJcPrintStage, statisticsJcPrintStage, mechanicsJcPrintStage, emJcPrintStage, quantumJcPrintStage, physicalJcPrintStage, inorganicJcPrintStage]'));
+    assert.ok(demo.includes('[printStage, fractionsPrintStage, wavesPrintStage, complexPrintStage, trigPrintStage, thermalPrintStage, photosynthesisPrintStage, erosionPrintStage, chemMolePrintStage, differentiationPrintStage, integrationPrintStage, binomialPrintStage, kinematicsPrintStage, quadraticPrintStage, trigonometryAPrintStage, vectorsPrintStage, functionsGraphsPrintStage, sequencesPrintStage, differentiationJcPrintStage, integrationJcPrintStage, probabilityJcPrintStage, statisticsJcPrintStage, mechanicsJcPrintStage, emJcPrintStage, quantumJcPrintStage, physicalJcPrintStage, inorganicJcPrintStage, organicJcPrintStage]'));
     assert.equal((demo.match(/#toggle-teacher/g) || []).length, 1);
   });
 
@@ -426,7 +426,7 @@ describe('pack demo page', () => {
     assert.ok(differentiationBlock.includes('AnimathPrintable.renderWorksheetAnswerKey'));
     assert.ok(differentiationBlock.includes('AnimathPrintable.renderExitTicketAnswerKey'));
     assert.ok(demo.includes("document.querySelector('#differentiation-print .pr-stage') || document.querySelector('#differentiation-print')"));
-    assert.ok(demo.includes('[printStage, fractionsPrintStage, wavesPrintStage, complexPrintStage, trigPrintStage, thermalPrintStage, photosynthesisPrintStage, erosionPrintStage, chemMolePrintStage, differentiationPrintStage, integrationPrintStage, binomialPrintStage, kinematicsPrintStage, quadraticPrintStage, trigonometryAPrintStage, vectorsPrintStage, functionsGraphsPrintStage, sequencesPrintStage, differentiationJcPrintStage, integrationJcPrintStage, probabilityJcPrintStage, statisticsJcPrintStage, mechanicsJcPrintStage, emJcPrintStage, quantumJcPrintStage, physicalJcPrintStage, inorganicJcPrintStage]'));
+    assert.ok(demo.includes('[printStage, fractionsPrintStage, wavesPrintStage, complexPrintStage, trigPrintStage, thermalPrintStage, photosynthesisPrintStage, erosionPrintStage, chemMolePrintStage, differentiationPrintStage, integrationPrintStage, binomialPrintStage, kinematicsPrintStage, quadraticPrintStage, trigonometryAPrintStage, vectorsPrintStage, functionsGraphsPrintStage, sequencesPrintStage, differentiationJcPrintStage, integrationJcPrintStage, probabilityJcPrintStage, statisticsJcPrintStage, mechanicsJcPrintStage, emJcPrintStage, quantumJcPrintStage, physicalJcPrintStage, inorganicJcPrintStage, organicJcPrintStage]'));
     assert.equal((demo.match(/#toggle-teacher/g) || []).length, 1);
   });
 
@@ -474,7 +474,7 @@ describe('pack demo page', () => {
     assert.ok(integrationBlock.includes('AnimathPrintable.renderWorksheetAnswerKey'));
     assert.ok(integrationBlock.includes('AnimathPrintable.renderExitTicketAnswerKey'));
     assert.ok(demo.includes("document.querySelector('#integration-print .pr-stage') || document.querySelector('#integration-print')"));
-    assert.ok(demo.includes('[printStage, fractionsPrintStage, wavesPrintStage, complexPrintStage, trigPrintStage, thermalPrintStage, photosynthesisPrintStage, erosionPrintStage, chemMolePrintStage, differentiationPrintStage, integrationPrintStage, binomialPrintStage, kinematicsPrintStage, quadraticPrintStage, trigonometryAPrintStage, vectorsPrintStage, functionsGraphsPrintStage, sequencesPrintStage, differentiationJcPrintStage, integrationJcPrintStage, probabilityJcPrintStage, statisticsJcPrintStage, mechanicsJcPrintStage, emJcPrintStage, quantumJcPrintStage, physicalJcPrintStage, inorganicJcPrintStage]'));
+    assert.ok(demo.includes('[printStage, fractionsPrintStage, wavesPrintStage, complexPrintStage, trigPrintStage, thermalPrintStage, photosynthesisPrintStage, erosionPrintStage, chemMolePrintStage, differentiationPrintStage, integrationPrintStage, binomialPrintStage, kinematicsPrintStage, quadraticPrintStage, trigonometryAPrintStage, vectorsPrintStage, functionsGraphsPrintStage, sequencesPrintStage, differentiationJcPrintStage, integrationJcPrintStage, probabilityJcPrintStage, statisticsJcPrintStage, mechanicsJcPrintStage, emJcPrintStage, quantumJcPrintStage, physicalJcPrintStage, inorganicJcPrintStage, organicJcPrintStage]'));
     assert.equal((demo.match(/#toggle-teacher/g) || []).length, 1);
   });
 
@@ -524,7 +524,7 @@ describe('pack demo page', () => {
     assert.equal(binomialBlock.split('../samples/').length - 1, 6);
     assert.ok(binomialBlock.includes('showError'));
     assert.ok(demo.includes("document.querySelector('#binomial-print .pr-stage') || document.querySelector('#binomial-print')"));
-    assert.ok(demo.includes('[printStage, fractionsPrintStage, wavesPrintStage, complexPrintStage, trigPrintStage, thermalPrintStage, photosynthesisPrintStage, erosionPrintStage, chemMolePrintStage, differentiationPrintStage, integrationPrintStage, binomialPrintStage, kinematicsPrintStage, quadraticPrintStage, trigonometryAPrintStage, vectorsPrintStage, functionsGraphsPrintStage, sequencesPrintStage, differentiationJcPrintStage, integrationJcPrintStage, probabilityJcPrintStage, statisticsJcPrintStage, mechanicsJcPrintStage, emJcPrintStage, quantumJcPrintStage, physicalJcPrintStage, inorganicJcPrintStage]'));
+    assert.ok(demo.includes('[printStage, fractionsPrintStage, wavesPrintStage, complexPrintStage, trigPrintStage, thermalPrintStage, photosynthesisPrintStage, erosionPrintStage, chemMolePrintStage, differentiationPrintStage, integrationPrintStage, binomialPrintStage, kinematicsPrintStage, quadraticPrintStage, trigonometryAPrintStage, vectorsPrintStage, functionsGraphsPrintStage, sequencesPrintStage, differentiationJcPrintStage, integrationJcPrintStage, probabilityJcPrintStage, statisticsJcPrintStage, mechanicsJcPrintStage, emJcPrintStage, quantumJcPrintStage, physicalJcPrintStage, inorganicJcPrintStage, organicJcPrintStage]'));
     assert.equal((demo.match(/#toggle-teacher/g) || []).length, 1);
   });
 
@@ -575,7 +575,7 @@ describe('pack demo page', () => {
     assert.equal(kinematicsBlock.split('../samples/').length - 1, 6);
     assert.ok(kinematicsBlock.includes('showError'));
     assert.ok(demo.includes("document.querySelector('#kinematics-print .pr-stage') || document.querySelector('#kinematics-print')"));
-    assert.ok(demo.includes('[printStage, fractionsPrintStage, wavesPrintStage, complexPrintStage, trigPrintStage, thermalPrintStage, photosynthesisPrintStage, erosionPrintStage, chemMolePrintStage, differentiationPrintStage, integrationPrintStage, binomialPrintStage, kinematicsPrintStage, quadraticPrintStage, trigonometryAPrintStage, vectorsPrintStage, functionsGraphsPrintStage, sequencesPrintStage, differentiationJcPrintStage, integrationJcPrintStage, probabilityJcPrintStage, statisticsJcPrintStage, mechanicsJcPrintStage, emJcPrintStage, quantumJcPrintStage, physicalJcPrintStage, inorganicJcPrintStage]'));
+    assert.ok(demo.includes('[printStage, fractionsPrintStage, wavesPrintStage, complexPrintStage, trigPrintStage, thermalPrintStage, photosynthesisPrintStage, erosionPrintStage, chemMolePrintStage, differentiationPrintStage, integrationPrintStage, binomialPrintStage, kinematicsPrintStage, quadraticPrintStage, trigonometryAPrintStage, vectorsPrintStage, functionsGraphsPrintStage, sequencesPrintStage, differentiationJcPrintStage, integrationJcPrintStage, probabilityJcPrintStage, statisticsJcPrintStage, mechanicsJcPrintStage, emJcPrintStage, quantumJcPrintStage, physicalJcPrintStage, inorganicJcPrintStage, organicJcPrintStage]'));
     assert.equal((demo.match(/#toggle-teacher/g) || []).length, 1);
   });
 
@@ -626,7 +626,7 @@ describe('pack demo page', () => {
     assert.equal(quadraticBlock.split('../samples/').length - 1, 6);
     assert.ok(quadraticBlock.includes('showError'));
     assert.ok(demo.includes("document.querySelector('#quadratic-print .pr-stage') || document.querySelector('#quadratic-print')"));
-    assert.ok(demo.includes('[printStage, fractionsPrintStage, wavesPrintStage, complexPrintStage, trigPrintStage, thermalPrintStage, photosynthesisPrintStage, erosionPrintStage, chemMolePrintStage, differentiationPrintStage, integrationPrintStage, binomialPrintStage, kinematicsPrintStage, quadraticPrintStage, trigonometryAPrintStage, vectorsPrintStage, functionsGraphsPrintStage, sequencesPrintStage, differentiationJcPrintStage, integrationJcPrintStage, probabilityJcPrintStage, statisticsJcPrintStage, mechanicsJcPrintStage, emJcPrintStage, quantumJcPrintStage, physicalJcPrintStage, inorganicJcPrintStage]'));
+    assert.ok(demo.includes('[printStage, fractionsPrintStage, wavesPrintStage, complexPrintStage, trigPrintStage, thermalPrintStage, photosynthesisPrintStage, erosionPrintStage, chemMolePrintStage, differentiationPrintStage, integrationPrintStage, binomialPrintStage, kinematicsPrintStage, quadraticPrintStage, trigonometryAPrintStage, vectorsPrintStage, functionsGraphsPrintStage, sequencesPrintStage, differentiationJcPrintStage, integrationJcPrintStage, probabilityJcPrintStage, statisticsJcPrintStage, mechanicsJcPrintStage, emJcPrintStage, quantumJcPrintStage, physicalJcPrintStage, inorganicJcPrintStage, organicJcPrintStage]'));
     assert.equal((demo.match(/#toggle-teacher/g) || []).length, 1);
   });
 
@@ -681,7 +681,7 @@ describe('pack demo page', () => {
     assert.equal(trigABlock.split('../samples/').length - 1, 6);
     assert.ok(trigABlock.includes('showError'));
     assert.ok(trigAHtml.includes("document.querySelector('#trigonometry-a-printables-stage .pr-stage') || document.querySelector('#trigonometry-a-printables-stage')"));
-    assert.ok(trigAHtml.includes('[printStage, fractionsPrintStage, wavesPrintStage, complexPrintStage, trigPrintStage, thermalPrintStage, photosynthesisPrintStage, erosionPrintStage, chemMolePrintStage, differentiationPrintStage, integrationPrintStage, binomialPrintStage, kinematicsPrintStage, quadraticPrintStage, trigonometryAPrintStage, vectorsPrintStage, functionsGraphsPrintStage, sequencesPrintStage, differentiationJcPrintStage, integrationJcPrintStage, probabilityJcPrintStage, statisticsJcPrintStage, mechanicsJcPrintStage, emJcPrintStage, quantumJcPrintStage, physicalJcPrintStage, inorganicJcPrintStage]'));
+    assert.ok(trigAHtml.includes('[printStage, fractionsPrintStage, wavesPrintStage, complexPrintStage, trigPrintStage, thermalPrintStage, photosynthesisPrintStage, erosionPrintStage, chemMolePrintStage, differentiationPrintStage, integrationPrintStage, binomialPrintStage, kinematicsPrintStage, quadraticPrintStage, trigonometryAPrintStage, vectorsPrintStage, functionsGraphsPrintStage, sequencesPrintStage, differentiationJcPrintStage, integrationJcPrintStage, probabilityJcPrintStage, statisticsJcPrintStage, mechanicsJcPrintStage, emJcPrintStage, quantumJcPrintStage, physicalJcPrintStage, inorganicJcPrintStage, organicJcPrintStage]'));
     assert.equal((trigAHtml.match(/#toggle-teacher/g) || []).length, 1);
   });
 
@@ -720,7 +720,7 @@ describe('pack demo page', () => {
     assert.equal(vectorsBlock.split('../samples/').length - 1, 6);
     assert.ok(vectorsBlock.includes('showError'));
     assert.ok(vectorsHtml.includes("document.querySelector('#vectors-printables-stage .pr-stage') || document.querySelector('#vectors-printables-stage')"));
-    assert.ok(vectorsHtml.includes('[printStage, fractionsPrintStage, wavesPrintStage, complexPrintStage, trigPrintStage, thermalPrintStage, photosynthesisPrintStage, erosionPrintStage, chemMolePrintStage, differentiationPrintStage, integrationPrintStage, binomialPrintStage, kinematicsPrintStage, quadraticPrintStage, trigonometryAPrintStage, vectorsPrintStage, functionsGraphsPrintStage, sequencesPrintStage, differentiationJcPrintStage, integrationJcPrintStage, probabilityJcPrintStage, statisticsJcPrintStage, mechanicsJcPrintStage, emJcPrintStage, quantumJcPrintStage, physicalJcPrintStage, inorganicJcPrintStage]'));
+    assert.ok(vectorsHtml.includes('[printStage, fractionsPrintStage, wavesPrintStage, complexPrintStage, trigPrintStage, thermalPrintStage, photosynthesisPrintStage, erosionPrintStage, chemMolePrintStage, differentiationPrintStage, integrationPrintStage, binomialPrintStage, kinematicsPrintStage, quadraticPrintStage, trigonometryAPrintStage, vectorsPrintStage, functionsGraphsPrintStage, sequencesPrintStage, differentiationJcPrintStage, integrationJcPrintStage, probabilityJcPrintStage, statisticsJcPrintStage, mechanicsJcPrintStage, emJcPrintStage, quantumJcPrintStage, physicalJcPrintStage, inorganicJcPrintStage, organicJcPrintStage]'));
     assert.equal((vectorsHtml.match(/#toggle-teacher/g) || []).length, 1);
   });
 
@@ -759,7 +759,7 @@ describe('pack demo page', () => {
     assert.equal(functionsGraphsBlock.split('../samples/').length - 1, 6);
     assert.ok(functionsGraphsBlock.includes('showError'));
     assert.ok(functionsGraphsHtml.includes("document.querySelector('#functions-graphs-printables-stage .pr-stage') || document.querySelector('#functions-graphs-printables-stage')"));
-    assert.ok(functionsGraphsHtml.includes('[printStage, fractionsPrintStage, wavesPrintStage, complexPrintStage, trigPrintStage, thermalPrintStage, photosynthesisPrintStage, erosionPrintStage, chemMolePrintStage, differentiationPrintStage, integrationPrintStage, binomialPrintStage, kinematicsPrintStage, quadraticPrintStage, trigonometryAPrintStage, vectorsPrintStage, functionsGraphsPrintStage, sequencesPrintStage, differentiationJcPrintStage, integrationJcPrintStage, probabilityJcPrintStage, statisticsJcPrintStage, mechanicsJcPrintStage, emJcPrintStage, quantumJcPrintStage, physicalJcPrintStage, inorganicJcPrintStage]'));
+    assert.ok(functionsGraphsHtml.includes('[printStage, fractionsPrintStage, wavesPrintStage, complexPrintStage, trigPrintStage, thermalPrintStage, photosynthesisPrintStage, erosionPrintStage, chemMolePrintStage, differentiationPrintStage, integrationPrintStage, binomialPrintStage, kinematicsPrintStage, quadraticPrintStage, trigonometryAPrintStage, vectorsPrintStage, functionsGraphsPrintStage, sequencesPrintStage, differentiationJcPrintStage, integrationJcPrintStage, probabilityJcPrintStage, statisticsJcPrintStage, mechanicsJcPrintStage, emJcPrintStage, quantumJcPrintStage, physicalJcPrintStage, inorganicJcPrintStage, organicJcPrintStage]'));
     assert.equal((functionsGraphsHtml.match(/#toggle-teacher/g) || []).length, 1);
   });
   test('sequences pack is stacked eighteenth with manifest, sections, six paths and validate-before-render', () => {
@@ -797,7 +797,7 @@ describe('pack demo page', () => {
     assert.equal(sequencesBlock.split('../samples/').length - 1, 6);
     assert.ok(sequencesBlock.includes('showError'));
     assert.ok(sequencesHtml.includes("document.querySelector('#sequences-printables-stage .pr-stage') || document.querySelector('#sequences-printables-stage')"));
-    assert.ok(sequencesHtml.includes('[printStage, fractionsPrintStage, wavesPrintStage, complexPrintStage, trigPrintStage, thermalPrintStage, photosynthesisPrintStage, erosionPrintStage, chemMolePrintStage, differentiationPrintStage, integrationPrintStage, binomialPrintStage, kinematicsPrintStage, quadraticPrintStage, trigonometryAPrintStage, vectorsPrintStage, functionsGraphsPrintStage, sequencesPrintStage, differentiationJcPrintStage, integrationJcPrintStage, probabilityJcPrintStage, statisticsJcPrintStage, mechanicsJcPrintStage, emJcPrintStage, quantumJcPrintStage, physicalJcPrintStage, inorganicJcPrintStage]'));
+    assert.ok(sequencesHtml.includes('[printStage, fractionsPrintStage, wavesPrintStage, complexPrintStage, trigPrintStage, thermalPrintStage, photosynthesisPrintStage, erosionPrintStage, chemMolePrintStage, differentiationPrintStage, integrationPrintStage, binomialPrintStage, kinematicsPrintStage, quadraticPrintStage, trigonometryAPrintStage, vectorsPrintStage, functionsGraphsPrintStage, sequencesPrintStage, differentiationJcPrintStage, integrationJcPrintStage, probabilityJcPrintStage, statisticsJcPrintStage, mechanicsJcPrintStage, emJcPrintStage, quantumJcPrintStage, physicalJcPrintStage, inorganicJcPrintStage, organicJcPrintStage]'));
     assert.equal((sequencesHtml.match(/#toggle-teacher/g) || []).length, 1);
   });
 
@@ -834,7 +834,7 @@ describe('pack demo page', () => {
     assert.equal(differentiationJcBlock.split('../samples/').length - 1, 6);
     assert.ok(differentiationJcBlock.includes('showError'));
     assert.ok(differentiationJcHtml.includes("document.querySelector('#differentiation-jc-printables-stage .pr-stage') || document.querySelector('#differentiation-jc-printables-stage')"));
-    assert.ok(differentiationJcHtml.includes('[printStage, fractionsPrintStage, wavesPrintStage, complexPrintStage, trigPrintStage, thermalPrintStage, photosynthesisPrintStage, erosionPrintStage, chemMolePrintStage, differentiationPrintStage, integrationPrintStage, binomialPrintStage, kinematicsPrintStage, quadraticPrintStage, trigonometryAPrintStage, vectorsPrintStage, functionsGraphsPrintStage, sequencesPrintStage, differentiationJcPrintStage, integrationJcPrintStage, probabilityJcPrintStage, statisticsJcPrintStage, mechanicsJcPrintStage, emJcPrintStage, quantumJcPrintStage, physicalJcPrintStage, inorganicJcPrintStage]'));
+    assert.ok(differentiationJcHtml.includes('[printStage, fractionsPrintStage, wavesPrintStage, complexPrintStage, trigPrintStage, thermalPrintStage, photosynthesisPrintStage, erosionPrintStage, chemMolePrintStage, differentiationPrintStage, integrationPrintStage, binomialPrintStage, kinematicsPrintStage, quadraticPrintStage, trigonometryAPrintStage, vectorsPrintStage, functionsGraphsPrintStage, sequencesPrintStage, differentiationJcPrintStage, integrationJcPrintStage, probabilityJcPrintStage, statisticsJcPrintStage, mechanicsJcPrintStage, emJcPrintStage, quantumJcPrintStage, physicalJcPrintStage, inorganicJcPrintStage, organicJcPrintStage]'));
     assert.equal((differentiationJcHtml.match(/#toggle-teacher/g) || []).length, 1);
   });
 test('JC integration pack is stacked twentieth with manifest, sections, six paths and validate-before-render', () => {
@@ -870,7 +870,7 @@ test('JC integration pack is stacked twentieth with manifest, sections, six path
     assert.equal(integrationJcBlock.split('../samples/').length - 1, 6);
     assert.ok(integrationJcBlock.includes('showError'));
     assert.ok(integrationJcHtml.includes("document.querySelector('#integration-jc-printables-stage .pr-stage') || document.querySelector('#integration-jc-printables-stage')"));
-    assert.ok(integrationJcHtml.includes('[printStage, fractionsPrintStage, wavesPrintStage, complexPrintStage, trigPrintStage, thermalPrintStage, photosynthesisPrintStage, erosionPrintStage, chemMolePrintStage, differentiationPrintStage, integrationPrintStage, binomialPrintStage, kinematicsPrintStage, quadraticPrintStage, trigonometryAPrintStage, vectorsPrintStage, functionsGraphsPrintStage, sequencesPrintStage, differentiationJcPrintStage, integrationJcPrintStage, probabilityJcPrintStage, statisticsJcPrintStage, mechanicsJcPrintStage, emJcPrintStage, quantumJcPrintStage, physicalJcPrintStage, inorganicJcPrintStage]'));
+    assert.ok(integrationJcHtml.includes('[printStage, fractionsPrintStage, wavesPrintStage, complexPrintStage, trigPrintStage, thermalPrintStage, photosynthesisPrintStage, erosionPrintStage, chemMolePrintStage, differentiationPrintStage, integrationPrintStage, binomialPrintStage, kinematicsPrintStage, quadraticPrintStage, trigonometryAPrintStage, vectorsPrintStage, functionsGraphsPrintStage, sequencesPrintStage, differentiationJcPrintStage, integrationJcPrintStage, probabilityJcPrintStage, statisticsJcPrintStage, mechanicsJcPrintStage, emJcPrintStage, quantumJcPrintStage, physicalJcPrintStage, inorganicJcPrintStage, organicJcPrintStage]'));
     assert.equal((integrationJcHtml.match(/#toggle-teacher/g) || []).length, 1);
   });
   test('JC probability pack is stacked twenty-first with manifest, sections, six paths and validate-before-render', () => {
@@ -906,7 +906,7 @@ test('JC integration pack is stacked twentieth with manifest, sections, six path
     assert.equal(probabilityJcBlock.split('../samples/').length - 1, 6);
     assert.ok(probabilityJcBlock.includes('showError'));
     assert.ok(demo.includes("document.querySelector('#probability-jc-printables-stage .pr-stage') || document.querySelector('#probability-jc-printables-stage')"));
-    assert.ok(demo.includes('[printStage, fractionsPrintStage, wavesPrintStage, complexPrintStage, trigPrintStage, thermalPrintStage, photosynthesisPrintStage, erosionPrintStage, chemMolePrintStage, differentiationPrintStage, integrationPrintStage, binomialPrintStage, kinematicsPrintStage, quadraticPrintStage, trigonometryAPrintStage, vectorsPrintStage, functionsGraphsPrintStage, sequencesPrintStage, differentiationJcPrintStage, integrationJcPrintStage, probabilityJcPrintStage, statisticsJcPrintStage, mechanicsJcPrintStage, emJcPrintStage, quantumJcPrintStage, physicalJcPrintStage, inorganicJcPrintStage]'));
+    assert.ok(demo.includes('[printStage, fractionsPrintStage, wavesPrintStage, complexPrintStage, trigPrintStage, thermalPrintStage, photosynthesisPrintStage, erosionPrintStage, chemMolePrintStage, differentiationPrintStage, integrationPrintStage, binomialPrintStage, kinematicsPrintStage, quadraticPrintStage, trigonometryAPrintStage, vectorsPrintStage, functionsGraphsPrintStage, sequencesPrintStage, differentiationJcPrintStage, integrationJcPrintStage, probabilityJcPrintStage, statisticsJcPrintStage, mechanicsJcPrintStage, emJcPrintStage, quantumJcPrintStage, physicalJcPrintStage, inorganicJcPrintStage, organicJcPrintStage]'));
     assert.equal((demo.match(/#toggle-teacher/g) || []).length, 1);
   });
   test('JC statistics pack is stacked twenty-second with manifest, sections, six paths and validate-before-render', () => {
@@ -942,7 +942,7 @@ test('JC integration pack is stacked twentieth with manifest, sections, six path
     assert.equal(statisticsJcBlock.split('../samples/').length - 1, 6);
     assert.ok(statisticsJcBlock.includes('showError'));
     assert.ok(demo.includes("document.querySelector('#statistics-jc-printables-stage .pr-stage') || document.querySelector('#statistics-jc-printables-stage')"));
-    assert.ok(demo.includes('[printStage, fractionsPrintStage, wavesPrintStage, complexPrintStage, trigPrintStage, thermalPrintStage, photosynthesisPrintStage, erosionPrintStage, chemMolePrintStage, differentiationPrintStage, integrationPrintStage, binomialPrintStage, kinematicsPrintStage, quadraticPrintStage, trigonometryAPrintStage, vectorsPrintStage, functionsGraphsPrintStage, sequencesPrintStage, differentiationJcPrintStage, integrationJcPrintStage, probabilityJcPrintStage, statisticsJcPrintStage, mechanicsJcPrintStage, emJcPrintStage, quantumJcPrintStage, physicalJcPrintStage, inorganicJcPrintStage]'));
+    assert.ok(demo.includes('[printStage, fractionsPrintStage, wavesPrintStage, complexPrintStage, trigPrintStage, thermalPrintStage, photosynthesisPrintStage, erosionPrintStage, chemMolePrintStage, differentiationPrintStage, integrationPrintStage, binomialPrintStage, kinematicsPrintStage, quadraticPrintStage, trigonometryAPrintStage, vectorsPrintStage, functionsGraphsPrintStage, sequencesPrintStage, differentiationJcPrintStage, integrationJcPrintStage, probabilityJcPrintStage, statisticsJcPrintStage, mechanicsJcPrintStage, emJcPrintStage, quantumJcPrintStage, physicalJcPrintStage, inorganicJcPrintStage, organicJcPrintStage]'));
     assert.equal((demo.match(/#toggle-teacher/g) || []).length, 1);
   });
   test('JC mechanics pack is stacked twenty-third with manifest, sections, six paths and validate-before-render', () => {
@@ -978,7 +978,7 @@ test('JC integration pack is stacked twentieth with manifest, sections, six path
     assert.equal(mechanicsJcBlock.split('../samples/').length - 1, 6);
     assert.ok(mechanicsJcBlock.includes('showError'));
     assert.ok(demo.includes("document.querySelector('#mechanics-jc-printables-stage .pr-stage') || document.querySelector('#mechanics-jc-printables-stage')"));
-    assert.ok(demo.includes('[printStage, fractionsPrintStage, wavesPrintStage, complexPrintStage, trigPrintStage, thermalPrintStage, photosynthesisPrintStage, erosionPrintStage, chemMolePrintStage, differentiationPrintStage, integrationPrintStage, binomialPrintStage, kinematicsPrintStage, quadraticPrintStage, trigonometryAPrintStage, vectorsPrintStage, functionsGraphsPrintStage, sequencesPrintStage, differentiationJcPrintStage, integrationJcPrintStage, probabilityJcPrintStage, statisticsJcPrintStage, mechanicsJcPrintStage, emJcPrintStage, quantumJcPrintStage, physicalJcPrintStage, inorganicJcPrintStage]'));
+    assert.ok(demo.includes('[printStage, fractionsPrintStage, wavesPrintStage, complexPrintStage, trigPrintStage, thermalPrintStage, photosynthesisPrintStage, erosionPrintStage, chemMolePrintStage, differentiationPrintStage, integrationPrintStage, binomialPrintStage, kinematicsPrintStage, quadraticPrintStage, trigonometryAPrintStage, vectorsPrintStage, functionsGraphsPrintStage, sequencesPrintStage, differentiationJcPrintStage, integrationJcPrintStage, probabilityJcPrintStage, statisticsJcPrintStage, mechanicsJcPrintStage, emJcPrintStage, quantumJcPrintStage, physicalJcPrintStage, inorganicJcPrintStage, organicJcPrintStage]'));
     assert.equal((demo.match(/#toggle-teacher/g) || []).length, 1);
   });
   test('JC electromagnetism pack is stacked twenty-fourth with manifest, sections, six paths and validate-before-render', () => {
@@ -1014,7 +1014,7 @@ test('JC integration pack is stacked twentieth with manifest, sections, six path
     assert.equal(emJcBlock.split('../samples/').length - 1, 6);
     assert.ok(emJcBlock.includes('showError'));
     assert.ok(demo.includes("document.querySelector('#em-jc-printables-stage .pr-stage') || document.querySelector('#em-jc-printables-stage')"));
-    assert.ok(demo.includes('[printStage, fractionsPrintStage, wavesPrintStage, complexPrintStage, trigPrintStage, thermalPrintStage, photosynthesisPrintStage, erosionPrintStage, chemMolePrintStage, differentiationPrintStage, integrationPrintStage, binomialPrintStage, kinematicsPrintStage, quadraticPrintStage, trigonometryAPrintStage, vectorsPrintStage, functionsGraphsPrintStage, sequencesPrintStage, differentiationJcPrintStage, integrationJcPrintStage, probabilityJcPrintStage, statisticsJcPrintStage, mechanicsJcPrintStage, emJcPrintStage, quantumJcPrintStage, physicalJcPrintStage, inorganicJcPrintStage]'));
+    assert.ok(demo.includes('[printStage, fractionsPrintStage, wavesPrintStage, complexPrintStage, trigPrintStage, thermalPrintStage, photosynthesisPrintStage, erosionPrintStage, chemMolePrintStage, differentiationPrintStage, integrationPrintStage, binomialPrintStage, kinematicsPrintStage, quadraticPrintStage, trigonometryAPrintStage, vectorsPrintStage, functionsGraphsPrintStage, sequencesPrintStage, differentiationJcPrintStage, integrationJcPrintStage, probabilityJcPrintStage, statisticsJcPrintStage, mechanicsJcPrintStage, emJcPrintStage, quantumJcPrintStage, physicalJcPrintStage, inorganicJcPrintStage, organicJcPrintStage]'));
     assert.equal((demo.match(/#toggle-teacher/g) || []).length, 1);
   });
   test('JC quantum pack is stacked twenty-fifth with manifest, sections, six paths and validate-before-render', () => {
@@ -1050,7 +1050,7 @@ test('JC integration pack is stacked twentieth with manifest, sections, six path
     assert.equal(quantumJcBlock.split('../samples/').length - 1, 6);
     assert.ok(quantumJcBlock.includes('showError'));
     assert.ok(demo.includes("document.querySelector('#quantum-jc-printables-stage .pr-stage') || document.querySelector('#quantum-jc-printables-stage')"));
-    assert.ok(demo.includes('[printStage, fractionsPrintStage, wavesPrintStage, complexPrintStage, trigPrintStage, thermalPrintStage, photosynthesisPrintStage, erosionPrintStage, chemMolePrintStage, differentiationPrintStage, integrationPrintStage, binomialPrintStage, kinematicsPrintStage, quadraticPrintStage, trigonometryAPrintStage, vectorsPrintStage, functionsGraphsPrintStage, sequencesPrintStage, differentiationJcPrintStage, integrationJcPrintStage, probabilityJcPrintStage, statisticsJcPrintStage, mechanicsJcPrintStage, emJcPrintStage, quantumJcPrintStage, physicalJcPrintStage, inorganicJcPrintStage]'));
+    assert.ok(demo.includes('[printStage, fractionsPrintStage, wavesPrintStage, complexPrintStage, trigPrintStage, thermalPrintStage, photosynthesisPrintStage, erosionPrintStage, chemMolePrintStage, differentiationPrintStage, integrationPrintStage, binomialPrintStage, kinematicsPrintStage, quadraticPrintStage, trigonometryAPrintStage, vectorsPrintStage, functionsGraphsPrintStage, sequencesPrintStage, differentiationJcPrintStage, integrationJcPrintStage, probabilityJcPrintStage, statisticsJcPrintStage, mechanicsJcPrintStage, emJcPrintStage, quantumJcPrintStage, physicalJcPrintStage, inorganicJcPrintStage, organicJcPrintStage]'));
     assert.equal((demo.match(/#toggle-teacher/g) || []).length, 1);
   });
   test('JC physical pack is stacked twenty-sixth with manifest, sections, six paths and validate-before-render', () => {
@@ -1086,14 +1086,14 @@ test('JC integration pack is stacked twentieth with manifest, sections, six path
     assert.equal(physicalJcBlock.split('../samples/').length - 1, 6);
     assert.ok(physicalJcBlock.includes('showError'));
     assert.ok(demo.includes("document.querySelector('#physical-jc-printables-stage .pr-stage') || document.querySelector('#physical-jc-printables-stage')"));
-    assert.ok(demo.includes('[printStage, fractionsPrintStage, wavesPrintStage, complexPrintStage, trigPrintStage, thermalPrintStage, photosynthesisPrintStage, erosionPrintStage, chemMolePrintStage, differentiationPrintStage, integrationPrintStage, binomialPrintStage, kinematicsPrintStage, quadraticPrintStage, trigonometryAPrintStage, vectorsPrintStage, functionsGraphsPrintStage, sequencesPrintStage, differentiationJcPrintStage, integrationJcPrintStage, probabilityJcPrintStage, statisticsJcPrintStage, mechanicsJcPrintStage, emJcPrintStage, quantumJcPrintStage, physicalJcPrintStage, inorganicJcPrintStage]'));
+    assert.ok(demo.includes('[printStage, fractionsPrintStage, wavesPrintStage, complexPrintStage, trigPrintStage, thermalPrintStage, photosynthesisPrintStage, erosionPrintStage, chemMolePrintStage, differentiationPrintStage, integrationPrintStage, binomialPrintStage, kinematicsPrintStage, quadraticPrintStage, trigonometryAPrintStage, vectorsPrintStage, functionsGraphsPrintStage, sequencesPrintStage, differentiationJcPrintStage, integrationJcPrintStage, probabilityJcPrintStage, statisticsJcPrintStage, mechanicsJcPrintStage, emJcPrintStage, quantumJcPrintStage, physicalJcPrintStage, inorganicJcPrintStage, organicJcPrintStage]'));
     assert.equal((demo.match(/#toggle-teacher/g) || []).length, 1);
   });
   test('JC inorganic pack is stacked twenty-seventh with manifest, sections, six paths and validate-before-render', () => {
     const demo = fs.readFileSync(path.join(ROOT, 'player', 'pack-demo.html'), 'utf8');
     const inorganicJcStart = demo.indexOf('id="inorganic-jc-manifest"');
     assert.ok(inorganicJcStart >= 0);
-    const inorganicJcPack = demo.slice(inorganicJcStart);
+    const inorganicJcPack = demo.slice(inorganicJcStart, demo.indexOf('var organicJcAnimUrl'));
     assert.ok(inorganicJcPack.includes('id="inorganic-jc-manifest"'));
     assert.ok(inorganicJcPack.includes('h2-inorganic-jc-science'));
     assert.ok(inorganicJcPack.includes('topic h2-inorganic \u00b7 level jc \u00b7 subject science \u00b7 deck jc-h2-inorganic'));
@@ -1110,7 +1110,7 @@ test('JC integration pack is stacked twentieth with manifest, sections, six path
     assert.ok(inorganicJcPack.includes('tickets/jc-h2-inorganic.json'));
     assert.ok(inorganicJcPack.includes('notes/jc-h2-inorganic.json'));
     assert.ok(inorganicJcPack.includes('scripts/jc-h2-inorganic.json'));
-    const inorganicJcBlock = inorganicJcPack.slice(inorganicJcPack.indexOf('inorganicJcAnimUrl'));
+    const inorganicJcBlock = inorganicJcPack.slice(inorganicJcPack.indexOf('inorganicJcAnimUrl'), inorganicJcPack.indexOf('var organicJcAnimUrl'));
     assert.ok(inorganicJcBlock.indexOf('AnimathValidate.validateSpec') < inorganicJcBlock.lastIndexOf('AnimathPlayer.mount'));
     assert.ok(inorganicJcBlock.indexOf('AnimathValidate.validateSlides') < inorganicJcBlock.lastIndexOf('AnimathSlidesPresenter.attachPresenter'));
     assert.ok(inorganicJcBlock.indexOf('AnimathValidate.validateWorksheet') < inorganicJcBlock.lastIndexOf('AnimathPrintable.renderWorksheet'));
@@ -1122,7 +1122,43 @@ test('JC integration pack is stacked twentieth with manifest, sections, six path
     assert.equal(inorganicJcBlock.split('../samples/').length - 1, 6);
     assert.ok(inorganicJcBlock.includes('showError'));
     assert.ok(demo.includes("document.querySelector('#inorganic-jc-printables-stage .pr-stage') || document.querySelector('#inorganic-jc-printables-stage')"));
-    assert.ok(demo.includes('[printStage, fractionsPrintStage, wavesPrintStage, complexPrintStage, trigPrintStage, thermalPrintStage, photosynthesisPrintStage, erosionPrintStage, chemMolePrintStage, differentiationPrintStage, integrationPrintStage, binomialPrintStage, kinematicsPrintStage, quadraticPrintStage, trigonometryAPrintStage, vectorsPrintStage, functionsGraphsPrintStage, sequencesPrintStage, differentiationJcPrintStage, integrationJcPrintStage, probabilityJcPrintStage, statisticsJcPrintStage, mechanicsJcPrintStage, emJcPrintStage, quantumJcPrintStage, physicalJcPrintStage, inorganicJcPrintStage]'));
+    assert.ok(demo.includes('[printStage, fractionsPrintStage, wavesPrintStage, complexPrintStage, trigPrintStage, thermalPrintStage, photosynthesisPrintStage, erosionPrintStage, chemMolePrintStage, differentiationPrintStage, integrationPrintStage, binomialPrintStage, kinematicsPrintStage, quadraticPrintStage, trigonometryAPrintStage, vectorsPrintStage, functionsGraphsPrintStage, sequencesPrintStage, differentiationJcPrintStage, integrationJcPrintStage, probabilityJcPrintStage, statisticsJcPrintStage, mechanicsJcPrintStage, emJcPrintStage, quantumJcPrintStage, physicalJcPrintStage, inorganicJcPrintStage, organicJcPrintStage]'));
+    assert.equal((demo.match(/#toggle-teacher/g) || []).length, 1);
+  });
+  test('JC organic pack is stacked twenty-eighth with manifest, sections, six paths and validate-before-render', () => {
+    const demo = fs.readFileSync(path.join(ROOT, 'player', 'pack-demo.html'), 'utf8');
+    const organicJcStart = demo.indexOf('id="organic-jc-manifest"');
+    assert.ok(organicJcStart >= 0);
+    const organicJcPack = demo.slice(organicJcStart);
+    assert.ok(organicJcPack.includes('id="organic-jc-manifest"'));
+    assert.ok(organicJcPack.includes('h2-organic-jc-science'));
+    assert.ok(organicJcPack.includes('topic h2-organic \u00b7 level jc \u00b7 subject science \u00b7 deck jc-h2-organic'));
+    assert.ok(organicJcPack.includes('id="organic-jc-animation"'));
+    assert.ok(organicJcPack.includes('id="organic-jc-stage"'));
+    assert.ok(organicJcPack.includes('id="organic-jc-captions"'));
+    assert.ok(organicJcPack.includes('id="organic-jc-slides"'));
+    assert.ok(organicJcPack.includes('id="organic-jc-slides-stage"'));
+    assert.ok(organicJcPack.includes('id="organic-jc-printables"'));
+    assert.ok(organicJcPack.includes('id="organic-jc-printables-stage"'));
+    assert.ok(organicJcPack.includes('jc-h2-organic.json'));
+    assert.ok(organicJcPack.includes('decks/jc-h2-organic.json'));
+    assert.ok(organicJcPack.includes('worksheets/jc-h2-organic.json'));
+    assert.ok(organicJcPack.includes('tickets/jc-h2-organic.json'));
+    assert.ok(organicJcPack.includes('notes/jc-h2-organic.json'));
+    assert.ok(organicJcPack.includes('scripts/jc-h2-organic.json'));
+    const organicJcBlock = organicJcPack.slice(organicJcPack.indexOf('var organicJcAnimUrl'));
+    assert.ok(organicJcBlock.indexOf('AnimathValidate.validateSpec') < organicJcBlock.lastIndexOf('AnimathPlayer.mount'));
+    assert.ok(organicJcBlock.indexOf('AnimathValidate.validateSlides') < organicJcBlock.lastIndexOf('AnimathSlidesPresenter.attachPresenter'));
+    assert.ok(organicJcBlock.indexOf('AnimathValidate.validateWorksheet') < organicJcBlock.lastIndexOf('AnimathPrintable.renderWorksheet'));
+    assert.ok(organicJcBlock.indexOf('AnimathValidate.validateExitTicket') < organicJcBlock.lastIndexOf('AnimathPrintable.renderExitTicket'));
+    assert.ok(organicJcBlock.indexOf('AnimathValidate.validateNotes') < organicJcBlock.lastIndexOf('AnimathPrintable.renderNotes'));
+    assert.ok(organicJcBlock.indexOf('AnimathValidate.validateScript') < organicJcBlock.lastIndexOf('AnimathPrintable.renderScript'));
+    assert.ok(organicJcBlock.includes('AnimathPrintable.renderWorksheetAnswerKey'));
+    assert.ok(organicJcBlock.includes('AnimathPrintable.renderExitTicketAnswerKey'));
+    assert.equal(organicJcBlock.split('../samples/').length - 1, 6);
+    assert.ok(organicJcBlock.includes('showError'));
+    assert.ok(demo.includes("document.querySelector('#organic-jc-printables-stage .pr-stage') || document.querySelector('#organic-jc-printables-stage')"));
+    assert.ok(demo.includes('[printStage, fractionsPrintStage, wavesPrintStage, complexPrintStage, trigPrintStage, thermalPrintStage, photosynthesisPrintStage, erosionPrintStage, chemMolePrintStage, differentiationPrintStage, integrationPrintStage, binomialPrintStage, kinematicsPrintStage, quadraticPrintStage, trigonometryAPrintStage, vectorsPrintStage, functionsGraphsPrintStage, sequencesPrintStage, differentiationJcPrintStage, integrationJcPrintStage, probabilityJcPrintStage, statisticsJcPrintStage, mechanicsJcPrintStage, emJcPrintStage, quantumJcPrintStage, physicalJcPrintStage, inorganicJcPrintStage, organicJcPrintStage]'));
     assert.equal((demo.match(/#toggle-teacher/g) || []).length, 1);
   });
 
