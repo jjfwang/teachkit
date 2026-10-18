@@ -12,6 +12,18 @@ version section when the release ships.
 
 ### Added
 
+- Primary mathematics algebra (intro) gold lesson pack: five hand-authored gold
+  samples for algebra (intro) in
+  samples/decks/primary-math-algebra-intro.json,
+  samples/worksheets/primary-math-algebra-intro.json,
+  samples/tickets/primary-math-algebra-intro.json,
+  samples/notes/primary-math-algebra-intro.json and
+  samples/scripts/primary-math-algebra-intro.json,
+  keyed to the primary-math-algebra-intro animation scenes and built around
+  the misconception bank trap reused verbatim: Treating x as a label for things, so 3x + 2x cannot be combined., guarded by
+  tests/gold-algebra-intro-pack.test.js
+  (issue #939).
+
 - Primary mathematics rate and speed gold lesson pack: five hand-authored gold
   samples for rate and speed in
   samples/decks/primary-math-rate-speed.json,
