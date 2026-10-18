@@ -12,6 +12,20 @@ version section when the release ships.
 
 ### Added
 
+- Primary mathematics area and perimeter lesson pack in the pack demo
+  (`player/pack-demo.html`): the Primary mathematics area and perimeter
+  gold lesson pack now appears on the same demo page as the other packs,
+  presenting all six primary-math-area-perimeter materials (animation,
+  slides, worksheet, exit ticket, student notes, and teacher
+  script) under its own
+  area-perimeter-primary-manifest header (slug
+  `area-perimeter-primary-math`, level primary, subject
+  math, topic `area-perimeter`), stacked animation, slides, and printables sections, all
+  six materials validated before render for that pack, and
+  the shared teacher-keys toggle covering all forty packs' print
+  stages, guarded by tests/pack-demo.test.js
+  (issue #949).
+
 - Primary mathematics area and perimeter gold lesson pack: five hand-authored gold
   samples for area-perimeter in
   samples/decks/primary-math-area-perimeter.json,
