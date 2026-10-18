@@ -1,0 +1,77 @@
+{
+  "level": "primary",
+  "questions": [
+    {
+      "choices": [
+        {
+          "text": "Nothing: the heart is supposed to use up blood"
+        },
+        {
+          "text": "The lungs have stopped working"
+        },
+        {
+          "correct": true,
+          "text": "Blood is not used up - it loops back to the heart and goes round again"
+        }
+      ],
+      "explanation": "The trap is: The heart uses up the blood it pumps, so the body must keep making fresh blood. Scene s4 shows why this is wrong: Blood is never used up: it keeps going round in a loop, coming back to the heart to be pushed around again.",
+      "id": "q1",
+      "kind": "multiple-choice",
+      "misconception": "The heart uses up the blood it pumps, so the body must keep making fresh blood.",
+      "prompt": "A pupil says: the heart uses up the blood it pumps, so the body must keep making fresh blood. What is wrong with this idea?"
+    },
+    {
+      "choices": [
+        {
+          "text": "Intestines, then stomach, then mouth"
+        },
+        {
+          "correct": true,
+          "text": "Mouth, then stomach, then intestines"
+        },
+        {
+          "text": "Stomach, then mouth, then intestines"
+        }
+      ],
+      "explanation": "Scene s1: chewed food travels from the mouth down to the stomach, where it is mixed, then on into the intestines, where the body takes out the good parts.",
+      "id": "q2",
+      "kind": "multiple-choice",
+      "prompt": "In which order does food travel through the digestive system?"
+    },
+    {
+      "answer": "The lungs fill with air and grow bigger, then shrink as the air flows back out.",
+      "explanation": "Scene s2: air travels down the windpipe into the lungs, the lungs fill and grow bigger, then they shrink as air flows back out.",
+      "id": "q3",
+      "kind": "short-answer",
+      "prompt": "What happens to the lungs when you breathe in, and what happens when you breathe out?"
+    },
+    {
+      "answer": "It travels back to the heart and goes round the loop again.",
+      "explanation": "Scene s3: the heart pumps blood out to the body, and the same blood travels back to the heart, keeping going round in a loop.",
+      "id": "q4",
+      "kind": "short-answer",
+      "prompt": "A drop of blood leaves the heart and travels to the body. What happens to that drop next?"
+    },
+    {
+      "choices": [
+        {
+          "text": "The stomach"
+        },
+        {
+          "correct": true,
+          "text": "The lungs"
+        },
+        {
+          "text": "The intestines"
+        }
+      ],
+      "explanation": "Scene s2: air moves in and out of the lungs through the windpipe; the stomach and intestines belong to the digestive system in scene s1.",
+      "id": "q5",
+      "kind": "multiple-choice",
+      "prompt": "Which organ fills with air when you breathe in?"
+    }
+  ],
+  "subject": "science",
+  "title": "Human body systems",
+  "topic": "human-body-systems"
+}
