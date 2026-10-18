@@ -1,0 +1,57 @@
+{
+  "definitions": [
+    {
+      "meaning": "The organelle where aerobic respiration rebuilds ATP, with a folded inner membrane.",
+      "term": "Mitochondrion"
+    },
+    {
+      "meaning": "The folds of the inner mitochondrial membrane, giving a huge surface area for respiratory enzymes.",
+      "term": "Cristae"
+    },
+    {
+      "meaning": "Adenosine triphosphate, the energy currency of the cell; its hydrolysis releases usable energy.",
+      "term": "ATP"
+    },
+    {
+      "meaning": "Adenosine diphosphate, the spent form left after ATP hydrolysis, rebuilt into ATP by respiration.",
+      "term": "ADP"
+    },
+    {
+      "meaning": "The complete breakdown of glucose using oxygen, to carbon dioxide and water, yielding about 32 ATP per glucose.",
+      "term": "Aerobic respiration"
+    },
+    {
+      "meaning": "The partial breakdown of glucose without oxygen: yeast makes ethanol and carbon dioxide, muscle makes lactic acid, with far less ATP.",
+      "term": "Anaerobic respiration"
+    },
+    {
+      "meaning": "The splitting of water by light energy in the thylakoids, releasing oxygen.",
+      "term": "Photolysis"
+    },
+    {
+      "meaning": "The cycle in the stroma that fixes carbon dioxide and builds it up into glucose.",
+      "term": "Calvin cycle"
+    }
+  ],
+  "level": "jc",
+  "mechanismSteps": [
+    "Mitochondria: folded cristae, huge surface area: the inner membrane folds into cristae, packing a huge surface area for the enzymes that make ATP.",
+    "A common mistake: plants only respire at night: aerobic respiration runs around the clock, glucose + oxygen -> carbon dioxide + water + energy, even while photosynthesis dominates by day.",
+    "ATP hydrolysis releases energy; respiration rebuilds ATP: hydrolysis splits ATP to ADP and releases energy, and respiration in the mitochondrion rebuilds ATP from ADP.",
+    "Anaerobic: yeast → ethanol + CO₂; muscle → lactic acid: without enough oxygen glucose is only partly broken down, yielding far less ATP either way.",
+    "Photolysis splits water; the Calvin cycle fixes CO₂: light splits water in the thylakoids and releases oxygen, then the Calvin cycle fixes carbon dioxide into glucose in the stroma.",
+    "Photosynthesis is limited by the factor in shortest supply: light intensity, carbon dioxide concentration or temperature - whichever is shortest caps the rate."
+  ],
+  "objectives": [
+    "Describe aerobic and anaerobic respiration and the ATP-ADP cycle",
+    "Explain photolysis, the Calvin cycle and limiting factors in photosynthesis"
+  ],
+  "subject": "science",
+  "title": "JC H2 biology — energetics: respiration and photosynthesis",
+  "topic": "h2-energetics",
+  "trap": {
+    "explanation": "During the day photosynthesis dominates, so respiration looks switched off. Plants respire around the clock: at night there is simply no photosynthesis to hide it. In the animation the respiration dot keeps moving inside the plant after the sun is replaced by the moon in scene s6: respiration never stops - photosynthesis just masks it by day.",
+    "misconception": "Plants only respire at night."
+  },
+  "workedExample": "In scenes s2 and s3, aerobic respiration follows the equation glucose + oxygen → carbon dioxide + water + energy (C6H12O6 + 6O2 → 6CO2 + 6H2O), and complete breakdown yields ~32 ATP per glucose. Each ATP is then hydrolysed to ADP to release energy for cell work, and respiration rebuilds it - so the ~32 ATP per glucose figure is the aerobic payoff the anaerobic pathways in scene s4 cannot match."
+}

@@ -1,0 +1,86 @@
+{
+  "level": "jc",
+  "questions": [
+    {
+      "choices": [
+        {
+          "text": "Plants only respire at night, because photosynthesis replaces respiration by day"
+        },
+        {
+          "text": "Plants respire only in bright light, when energy is available"
+        },
+        {
+          "correct": true,
+          "text": "Plants respire around the clock, day and night"
+        },
+        {
+          "text": "Plants never respire, because they make their own food"
+        }
+      ],
+      "explanation": "The trap claim is: Plants only respire at night. During the day photosynthesis dominates, so respiration looks switched off. Plants respire around the clock: at night there is simply no photosynthesis to hide it, as scene s2 shows.",
+      "id": "q1",
+      "kind": "multiple-choice",
+      "misconception": "Plants only respire at night.",
+      "prompt": "A student says a green plant only respires when it is dark. What is correct?"
+    },
+    {
+      "choices": [
+        {
+          "text": "Carbon dioxide + water -> glucose + oxygen"
+        },
+        {
+          "correct": true,
+          "text": "Glucose + oxygen -> carbon dioxide + water + energy"
+        },
+        {
+          "text": "Glucose -> ethanol + carbon dioxide"
+        },
+        {
+          "text": "Glucose -> lactic acid"
+        }
+      ],
+      "explanation": "Scene s2 gives the aerobic respiration equation: glucose + oxygen -> carbon dioxide + water + energy, yielding about 32 ATP per glucose.",
+      "id": "q2",
+      "kind": "multiple-choice",
+      "prompt": "Which is the correct word equation for aerobic respiration?"
+    },
+    {
+      "answer": "The folds give a huge surface area for respiratory enzymes, so more aerobic respiration and more ATP production can happen.",
+      "explanation": "Scene s1 shows cristae folding the inner membrane: folding means huge surface area, so more ATP is made.",
+      "id": "q3",
+      "kind": "short-answer",
+      "prompt": "Explain why the folded cristae of a mitochondrion help it make more ATP."
+    },
+    {
+      "answer": "Yeast: ethanol + carbon dioxide. Muscle: lactic acid. Both yield far less ATP than aerobic respiration because glucose is only partly broken down.",
+      "explanation": "Scene s4 forks one glucose two ways: yeast to ethanol + CO2, muscle to lactic acid, with far less ATP than aerobic either way.",
+      "id": "q4",
+      "kind": "short-answer",
+      "prompt": "Compare anaerobic respiration in yeast and in muscle: name the products of each and state the ATP yield compared with aerobic respiration."
+    },
+    {
+      "choices": [
+        {
+          "text": "The Calvin cycle, from carbon dioxide"
+        },
+        {
+          "correct": true,
+          "text": "Photolysis, from water"
+        },
+        {
+          "text": "Respiration, from glucose"
+        },
+        {
+          "text": "Photolysis, from carbon dioxide"
+        }
+      ],
+      "explanation": "Scene s5 shows photolysis splitting water in the thylakoids and releasing oxygen, while the Calvin cycle fixes carbon dioxide into glucose.",
+      "id": "q5",
+      "kind": "multiple-choice",
+      "prompt": "In photosynthesis, the oxygen released comes from which process and source?"
+    }
+  ],
+  "subject": "science",
+  "title": "JC H2 biology — energetics: respiration and photosynthesis",
+  "topic": "h2-energetics"
+}

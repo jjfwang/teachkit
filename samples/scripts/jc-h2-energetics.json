@@ -1,0 +1,63 @@
+{
+  "level": "jc",
+  "segments": [
+    {
+      "cue": "s1",
+      "minutes": 8,
+      "questions": [
+        "Why does folding the inner membrane increase ATP production?",
+        "Where in the mitochondrion are the respiratory enzymes held?"
+      ],
+      "say": "Mitochondria: folded cristae, huge surface area. Narrate the inner membrane folding into cristae and follow the energy dot along the folded path. Keep your student notes open at the mitochondrion and cristae definitions for this scene."
+    },
+    {
+      "cue": "s2",
+      "minutes": 8,
+      "questions": [
+        "What are the reactants and products of aerobic respiration?",
+        "Why does respiration look switched off during the day?"
+      ],
+      "say": "A common mistake: plants only respire at night. Play the trap, then show glucose and oxygen being rebuilt as carbon dioxide and water with about 32 ATP per glucose. Now try the respiration questions on the worksheet in pairs."
+    },
+    {
+      "cue": "s3",
+      "minutes": 8,
+      "questions": [
+        "What is released when ATP is hydrolysed, and what remains?",
+        "Why is ATP called the energy currency of the cell?"
+      ],
+      "say": "ATP hydrolysis releases energy; respiration rebuilds ATP. Follow ATP splitting to ADP at the work site, then ADP returning to the mitochondrion to pick up a phosphate. Check the ATP and ADP definitions in your student notes."
+    },
+    {
+      "cue": "s4",
+      "minutes": 8,
+      "questions": [
+        "How do the products in yeast differ from those in muscle?",
+        "Why does anaerobic respiration yield far less ATP than aerobic?"
+      ],
+      "say": "Anaerobic: yeast to ethanol and carbon dioxide; muscle to lactic acid. Follow one glucose down both branches and stress the low ATP yield. Finish the anaerobic comparison question on the worksheet now."
+    },
+    {
+      "cue": "s5",
+      "minutes": 8,
+      "questions": [
+        "What does photolysis split, and what gas does it release?",
+        "What does the Calvin cycle fix, and what does it build?"
+      ],
+      "say": "Photolysis splits water; the Calvin cycle fixes carbon dioxide. Track water into the thylakoid and oxygen out, then carbon dioxide into the stroma as glucose is built up. Compare this with the mechanism steps in your student notes."
+    },
+    {
+      "cue": "s6",
+      "minutes": 8,
+      "questions": [
+        "Which factor caps the rate when carbon dioxide is in shortest supply?",
+        "What evidence shows respiration continues at night?"
+      ],
+      "say": "Photosynthesis is limited by the factor in shortest supply. Watch the carbon dioxide bar shrink and cap the rate, then note respiration continuing after dark. Finish by taking the exit ticket on your own - its first question revisits exactly this trap.",
+      "watchFor": "Plants only respire at night. Listen and look for it in pair talk and on the worksheet: any answer treating respiration as a night-only process shows the trap reading - send them back to scene s2 and to the correct turn: Plants respire around the clock: at night there is simply no photosynthesis to hide it."
+    }
+  ],
+  "subject": "science",
+  "title": "JC H2 biology — energetics: respiration and photosynthesis",
+  "topic": "h2-energetics"
+}
