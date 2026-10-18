@@ -12,6 +12,18 @@ version section when the release ships.
 
 ### Added
 
+- Primary mathematics percentage gold lesson pack: five hand-authored gold
+  samples for percentage in
+  samples/decks/primary-math-percentage.json,
+  samples/worksheets/primary-math-percentage.json,
+  samples/tickets/primary-math-percentage.json,
+  samples/notes/primary-math-percentage.json and
+  samples/scripts/primary-math-percentage.json,
+  keyed to the primary-math-percentage-of-quantity animation scenes and built around
+  the misconception bank trap reused verbatim: 25% of 60 is just 25., guarded by
+  tests/gold-percentage-pack.test.js
+  (issue #927).
+
 - Primary mathematics decimals lesson pack in the pack demo
   (`player/pack-demo.html`): the Primary mathematics decimals
   gold lesson pack now appears on the same demo page as the other packs,
