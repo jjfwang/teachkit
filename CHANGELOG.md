@@ -12,6 +12,19 @@ version section when the release ships.
 
 ### Added
 
+- JC H2 quantum lesson pack in the pack demo
+  (`player/pack-demo.html`): the JC H2 quantum
+  gold lesson pack now appears on the same demo page as the other packs,
+  presenting all six jc-h2-quantum materials (animation,
+  slides, worksheet, exit ticket, student notes, and teacher
+  script) under its own
+  quantum-jc-manifest header (slug
+  `h2-quantum-jc-science`, level jc, subject
+  science, topic `h2-quantum`), stacked animation, slides, and printables sections, all
+  six materials validated before render for that pack, and
+  the shared teacher-keys toggle covering all twenty-five packs' print
+  stages, guarded by slice-scoped pack-demo tests (issue #889).
+
 - JC H2 quantum gold lesson pack: five hand-authored gold
   samples for h2-quantum in
   samples/decks|worksheets|tickets|notes|scripts/jc-h2-quantum.json,
