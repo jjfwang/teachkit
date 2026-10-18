@@ -1,0 +1,45 @@
+{
+  "level": "primary",
+  "segments": [
+    {
+      "cue": "s1",
+      "minutes": 7,
+      "questions": [
+        "What are the two rectangles that make the L, and what is each area?",
+        "Why do we split the shape before measuring it?"
+      ],
+      "say": "Two rectangles make one L. Show the L pulling apart into part A, 200 by 120, and part B, 120 by 140, then joining again: the areas are 24 000 and 16 800. Keep your student notes open at the area and composite shape definitions for this scene."
+    },
+    {
+      "cue": "s2",
+      "minutes": 8,
+      "questions": [
+        "Which edges are the inner steps of the L?",
+        "What is the perimeter if we add 200 + 120 + 80 + 140 + 120 + 260?"
+      ],
+      "say": "Trace the edge for the perimeter. Follow the arrow around all six edges - 200, 120, 80, 140, 120 and 260 - for a perimeter of 920, and stress the two inner steps. Now try the perimeter questions on the worksheet in pairs."
+    },
+    {
+      "cue": "s3",
+      "minutes": 7,
+      "questions": [
+        "The box is 200 by 260, so why is 52 000 not the area?",
+        "Which part of the box is not part of the L?"
+      ],
+      "say": "Watch out: the missing corner has no area. Show the 200 by 260 box around the L and point at its empty corner: the box overcounts, and the real area is 24 000 + 16 800 = 40 800."
+    },
+    {
+      "cue": "s4",
+      "minutes": 6,
+      "questions": [
+        "How do you find the area of any composite shape?",
+        "How is finding the perimeter different from finding the area?"
+      ],
+      "say": "The takeaway. Land the summary: add the areas of the parts, and walk every side for the perimeter. Finish by taking the exit ticket on your own - its first question revisits exactly this box trap.",
+      "watchFor": "The area of the L-shape is the length times the width of its bounding box. Listen and look for it in pair talk and on the worksheet: any answer of 52 000 shows the trap - send them back to scene s3 and to the correct turn: The empty corner of the L was never filled, so it adds no area; count only what is there."
+    }
+  ],
+  "subject": "math",
+  "title": "Area and perimeter of an L-shape",
+  "topic": "area-perimeter"
+}

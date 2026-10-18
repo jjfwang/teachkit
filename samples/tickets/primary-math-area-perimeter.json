@@ -1,0 +1,59 @@
+{
+  "level": "primary",
+  "questions": [
+    {
+      "choices": [
+        {
+          "text": "52 000"
+        },
+        {
+          "correct": true,
+          "text": "40 800"
+        },
+        {
+          "text": "920"
+        }
+      ],
+      "feedback": "That trap answer is the one to unlearn: The area of the L-shape is the length times the width of its bounding box. Reteach point: The empty corner of the L was never filled, so it adds no area; count only what is there. So the area is 24 000 + 16 800 = 40 800, not 52 000.",
+      "id": "q1",
+      "kind": "multiple-choice",
+      "misconception": "The area of the L-shape is the length times the width of its bounding box.",
+      "prompt": "An L-shape fits inside a box that is 200 by 260. Its two parts have areas 24 000 and 16 800. What is the area of the L?"
+    },
+    {
+      "answer": "920: 200 + 120 + 80 + 140 + 120 + 260 = 920.",
+      "feedback": "Scene s2 locks the method: walk every side, including the inner steps, and add them: 200 + 120 + 80 + 140 + 120 + 260 = 920.",
+      "id": "q2",
+      "kind": "short-answer",
+      "prompt": "The six edges of an L are 200, 120, 80, 140, 120 and 260. Find the perimeter, showing the working."
+    },
+    {
+      "choices": [
+        {
+          "text": "260"
+        },
+        {
+          "correct": true,
+          "text": "16 800"
+        },
+        {
+          "text": "24 000"
+        }
+      ],
+      "feedback": "Scene s1 fixes the working: area is length times width for a real rectangle, so 120 x 140 = 16 800.",
+      "id": "q3",
+      "kind": "multiple-choice",
+      "prompt": "What is the area of a rectangle 120 by 140?"
+    },
+    {
+      "answer": "The 200 by 260 box includes an empty corner that is not part of the L, so only the filled parts count.",
+      "feedback": "Scene s3 fixes the idea: the box counts the empty corner too, but the real area is only the two filled parts, 24 000 + 16 800 = 40 800.",
+      "id": "q4",
+      "kind": "short-answer",
+      "prompt": "Explain in one sentence why the area of the L is not 200 x 260."
+    }
+  ],
+  "subject": "math",
+  "title": "Area and perimeter of an L-shape Exit Ticket",
+  "topic": "area-perimeter"
+}

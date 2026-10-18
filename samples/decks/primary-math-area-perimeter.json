@@ -1,0 +1,111 @@
+{
+  "level": "primary",
+  "slides": [
+    {
+      "bullets": [
+        "How to split an L-shape into two rectangles to find its area, and walk every edge to find its perimeter"
+      ],
+      "heading": "Area and perimeter of an L-shape",
+      "kind": "title",
+      "notes": "Welcome everyone in and say: today we split an L-shape into two rectangles, add their areas to get 40 800, and walk all six edges to get a perimeter of 920 - and by the end you will be able to explain why the empty corner adds no area."
+    },
+    {
+      "bullets": [
+        "Split a composite shape into rectangles: part A is 200 by 120 and part B is 120 by 140",
+        "Add the part areas: 24 000 + 16 800 = 40 800",
+        "Walk every side for the perimeter, including the inner steps of the L"
+      ],
+      "heading": "What we will learn",
+      "kind": "objective",
+      "notes": "Read the three goals aloud and tell the class: keep these in mind, because the exit ticket at the end will ask you to do exactly these things."
+    },
+    {
+      "bullets": [
+        "The L-shape fits inside a box that is 200 by 260, and 200 x 260 = 52 000",
+        "But part of that box is empty - is 52 000 really the area of the L?"
+      ],
+      "heading": "Is the area just length times width?",
+      "kind": "hook",
+      "notes": "Ask for a show of hands: is the area 52 000, or is it smaller? Take two or three answers without judging them yet; say: hold on to your idea, because scene s3 settles this exactly."
+    },
+    {
+      "bullets": [
+        "Area counts only the filled parts: split the L into rectangles and add their areas",
+        "Perimeter is the walk around the whole edge: add all six side lengths"
+      ],
+      "heading": "Split for area, walk for perimeter",
+      "kind": "concept",
+      "notes": "Say this slowly, because it is the big idea of the whole lesson: split and add for area, and walk every edge - including the inner steps - for perimeter."
+    },
+    {
+      "bullets": [
+        "Part A is 200 by 120, so its area is 200 x 120 = 24 000",
+        "Part B is 120 by 140, so its area is 120 x 140 = 16 800"
+      ],
+      "heading": "Two rectangles make one L",
+      "kind": "mechanism",
+      "notes": "Narrate the L splitting apart into its two rectangles and coming back together: part A on top, part B below, with no overlap and nothing left over.",
+      "visual": "s1"
+    },
+    {
+      "bullets": [
+        "The six edges are 200, 120, 80, 140, 120 and 260",
+        "Perimeter = 200 + 120 + 80 + 140 + 120 + 260 = 920"
+      ],
+      "heading": "Trace the edge for the perimeter",
+      "kind": "mechanism",
+      "notes": "Follow the arrow around the edge slowly and call out each side as it is walked: do not skip the two inner steps of the L.",
+      "visual": "s2"
+    },
+    {
+      "bullets": [
+        "The bounding box is 200 by 260 = 52 000, but its corner is empty",
+        "The real area counts only the filled parts: 24 000 + 16 800 = 40 800"
+      ],
+      "heading": "Watch out: the missing corner has no area",
+      "kind": "mechanism",
+      "notes": "Hold the box outline up against the L: the box counts an empty corner that was never filled, so 52 000 overcounts the area.",
+      "visual": "s3"
+    },
+    {
+      "bullets": [
+        "For a composite figure, add the areas of the parts",
+        "Walk every side for the perimeter: this L has perimeter 920 and area 40 800"
+      ],
+      "heading": "The takeaway",
+      "kind": "mechanism",
+      "notes": "Land the summary: split and add for the area, walk every edge for the perimeter - the two jobs use different moves.",
+      "visual": "s4"
+    },
+    {
+      "bullets": [
+        "Part A: 200 x 120 = 24 000 and part B: 120 x 140 = 16 800",
+        "Total area = 24 000 + 16 800 = 40 800"
+      ],
+      "heading": "Worked example: split and add the area",
+      "kind": "example",
+      "notes": "Talk through the split-and-add working slowly as in scene s1 and name each step as you write it; say: adding the two part areas, never the box, gives 40 800."
+    },
+    {
+      "bullets": [
+        "Split the L into part A and part B and find the total area, showing the working",
+        "List all six edge lengths of the L and add them to find the perimeter"
+      ],
+      "heading": "Your turn: split, add and walk",
+      "kind": "practice",
+      "notes": "Give pairs three minutes, then cold-call one pair on each part: press them on the two part areas first, then on whether they counted the inner step edges."
+    },
+    {
+      "bullets": [
+        "On your own: find the area of the L by splitting it into two rectangles",
+        "Explain in one sentence why the empty corner adds no area"
+      ],
+      "heading": "Exit ticket: show what you know",
+      "kind": "exit-ticket",
+      "notes": "Collect these before anyone leaves and say: I am looking for the split-and-add working in your first answer, plus one clear sentence about the empty corner in your second."
+    }
+  ],
+  "subject": "math",
+  "title": "Area and perimeter of an L-shape",
+  "topic": "area-perimeter"
+}
