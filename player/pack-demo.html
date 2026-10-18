@@ -594,6 +594,24 @@
     <li><code>script</code> teacher script</li>
   </ul>
 </header>
+<header class="pack-manifest" id="whole-numbers-primary-manifest">
+  <h1>Lesson pack: Primary mathematics whole numbers: place value, adding, subtracting, multiplying</h1>
+  <dl>
+    <dt>Slug</dt><dd><code>whole-numbers-primary-math</code></dd>
+    <dt>Level</dt><dd>primary</dd>
+    <dt>Subject</dt><dd>math</dd>
+    <dt>Topic</dt><dd><code>whole-numbers</code></dd>
+  </dl>
+  <p>topic whole-numbers · level primary · subject math · deck primary-math-whole-numbers</p>
+  <ul class="pack-materials">
+    <li><code>animation</code></li>
+    <li><code>slides</code></li>
+    <li><code>worksheet</code></li>
+    <li><code>exitTicket</code> exit ticket</li>
+    <li><code>notes</code> student notes</li>
+    <li><code>script</code> teacher script</li>
+  </ul>
+</header>
 <section class="pack-section" id="animation-section">
   <h2>Animation</h2>
   <div id="anim-stage"></div>
@@ -996,6 +1014,19 @@
   <h2>JC H2 ecology printables</h2>
   <div id="ecology-jc-printables-stage"></div>
 </section>
+<section class="pack-section" id="whole-numbers-primary-animation">
+  <h2>Primary mathematics whole numbers animation</h2>
+  <div id="whole-numbers-primary-stage"></div>
+  <div id="whole-numbers-primary-captions"></div>
+</section>
+<section class="pack-section" id="whole-numbers-primary-slides">
+  <h2>Primary mathematics whole numbers slides</h2>
+  <div id="whole-numbers-primary-slides-stage"></div>
+</section>
+<section class="pack-section" id="whole-numbers-primary-printables">
+  <h2>Primary mathematics whole numbers printables</h2>
+  <div id="whole-numbers-primary-printables-stage"></div>
+</section>
 <div id="err"></div>
 <script src="validate.js"></script>
 <script src="player.js"></script>
@@ -1051,8 +1082,9 @@
     var geneticsJcPrintStage = document.querySelector('#genetics-jc-printables-stage .pr-stage') || document.querySelector('#genetics-jc-printables-stage');
     var energeticsJcPrintStage = document.querySelector('#energetics-jc-printables-stage .pr-stage') || document.querySelector('#energetics-jc-printables-stage');
     var ecologyJcPrintStage = document.querySelector('#ecology-jc-printables-stage .pr-stage') || document.querySelector('#ecology-jc-printables-stage');
+    var wholeNumbersPrimaryPrintStage = document.querySelector('#whole-numbers-primary-printables-stage .pr-stage') || document.querySelector('#whole-numbers-primary-printables-stage');
     var keys = [];
-    [printStage, fractionsPrintStage, wavesPrintStage, complexPrintStage, trigPrintStage, thermalPrintStage, photosynthesisPrintStage, erosionPrintStage, chemMolePrintStage, differentiationPrintStage, integrationPrintStage, binomialPrintStage, kinematicsPrintStage, quadraticPrintStage, trigonometryAPrintStage, vectorsPrintStage, functionsGraphsPrintStage, sequencesPrintStage, differentiationJcPrintStage, integrationJcPrintStage, probabilityJcPrintStage, statisticsJcPrintStage, mechanicsJcPrintStage, emJcPrintStage, quantumJcPrintStage, physicalJcPrintStage, inorganicJcPrintStage, organicJcPrintStage, cellBioJcPrintStage, geneticsJcPrintStage, energeticsJcPrintStage, ecologyJcPrintStage].forEach(function (stage) {
+    [printStage, fractionsPrintStage, wavesPrintStage, complexPrintStage, trigPrintStage, thermalPrintStage, photosynthesisPrintStage, erosionPrintStage, chemMolePrintStage, differentiationPrintStage, integrationPrintStage, binomialPrintStage, kinematicsPrintStage, quadraticPrintStage, trigonometryAPrintStage, vectorsPrintStage, functionsGraphsPrintStage, sequencesPrintStage, differentiationJcPrintStage, integrationJcPrintStage, probabilityJcPrintStage, statisticsJcPrintStage, mechanicsJcPrintStage, emJcPrintStage, quantumJcPrintStage, physicalJcPrintStage, inorganicJcPrintStage, organicJcPrintStage, cellBioJcPrintStage, geneticsJcPrintStage, energeticsJcPrintStage, ecologyJcPrintStage, wholeNumbersPrimaryPrintStage].forEach(function (stage) {
       if (stage) {
         keys = keys.concat(Array.prototype.slice.call(stage.querySelectorAll('.pr-teacher')));
       }
@@ -3348,6 +3380,79 @@
     ].join('');
   }).catch(function (err) {
     showError('JC H2 ecology pack failed to load: ' + err.message);
+  });
+})();
+</script>
+<script>
+(function () {
+  var presenter = document.getElementById('whole-numbers-primary-slides-stage');
+  var wholeNumbersPrimaryPrint = document.getElementById('whole-numbers-primary-printables-stage');
+  var errBox = document.getElementById('err');
+  var wholeNumbersPrimaryAnimUrl = '../samples/primary-math-whole-numbers.json';
+  var wholeNumbersPrimaryDeckUrl = '../samples/decks/primary-math-whole-numbers.json';
+  var wholeNumbersPrimaryWorksheetUrl = '../samples/worksheets/primary-math-whole-numbers.json';
+  var wholeNumbersPrimaryTicketUrl = '../samples/tickets/primary-math-whole-numbers.json';
+  var wholeNumbersPrimaryNotesUrl = '../samples/notes/primary-math-whole-numbers.json';
+  var wholeNumbersPrimaryScriptUrl = '../samples/scripts/primary-math-whole-numbers.json';
+
+  function showError(msg) {
+    errBox.textContent = String(msg);
+  }
+
+  Promise.all([
+    fetch(wholeNumbersPrimaryAnimUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + wholeNumbersPrimaryAnimUrl);
+      return r.json();
+    }),
+    fetch(wholeNumbersPrimaryDeckUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + wholeNumbersPrimaryDeckUrl);
+      return r.json();
+    }),
+    fetch(wholeNumbersPrimaryWorksheetUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + wholeNumbersPrimaryWorksheetUrl);
+      return r.json();
+    }),
+    fetch(wholeNumbersPrimaryTicketUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + wholeNumbersPrimaryTicketUrl);
+      return r.json();
+    }),
+    fetch(wholeNumbersPrimaryNotesUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + wholeNumbersPrimaryNotesUrl);
+      return r.json();
+    }),
+    fetch(wholeNumbersPrimaryScriptUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + wholeNumbersPrimaryScriptUrl);
+      return r.json();
+    })
+  ]).then(function (pack) {
+    var anim = pack[0];
+    var deck = pack[1];
+    var worksheet = pack[2];
+    var ticket = pack[3];
+    var notes = pack[4];
+    var script = pack[5];
+    var problems = AnimathValidate.validateSpec(anim)
+      .concat(AnimathValidate.validateSlides(deck))
+      .concat(AnimathValidate.validateWorksheet(worksheet))
+      .concat(AnimathValidate.validateExitTicket(ticket))
+      .concat(AnimathValidate.validateNotes(notes))
+      .concat(AnimathValidate.validateScript(script));
+    if (problems.length) {
+      showError('Primary mathematics whole numbers pack failed validation:\n' + problems.join('\n'));
+      return;
+    }
+    AnimathPlayer.mount(document.getElementById('whole-numbers-primary-stage'), anim, { autoplay: false });
+    AnimathSlidesPresenter.attachPresenter(document, presenter, deck, { animSpec: anim });
+    wholeNumbersPrimaryPrint.innerHTML = [
+      AnimathPrintable.renderWorksheet(worksheet),
+      AnimathPrintable.renderWorksheetAnswerKey(worksheet),
+      AnimathPrintable.renderExitTicket(ticket),
+      AnimathPrintable.renderExitTicketAnswerKey(ticket),
+      AnimathPrintable.renderNotes(notes),
+      AnimathPrintable.renderScript(script)
+    ].join('');
+  }).catch(function (err) {
+    showError('Primary mathematics whole numbers pack failed to load: ' + err.message);
   });
 })();
 </script>
