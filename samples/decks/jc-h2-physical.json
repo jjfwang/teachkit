@@ -1,0 +1,131 @@
+{
+  "level": "jc",
+  "slides": [
+    {
+      "bullets": [
+        "How energy changes sign a reaction exothermic or endothermic, why some collisions react and others bounce off, and how an equilibrium fights back: energetics, kinetics, catalysts and Le Chatelier"
+      ],
+      "heading": "JC H2 chemistry — physical: energetics, kinetics and equilibria",
+      "kind": "title",
+      "notes": "Welcome everyone in and say: today we build physical chemistry as one story - energy profiles and enthalpy change, rates and the Maxwell-Boltzmann distribution, equilibria that oppose every disturbance - and the catalyst trap at the end."
+    },
+    {
+      "bullets": [
+        "Read reaction profiles for exothermic and endothermic reactions, state the sign of the enthalpy change, and use bond enthalpies to calculate ΔH",
+        "Explain rate with collision theory and the Maxwell-Boltzmann distribution, including what temperature and a catalyst each change",
+        "Apply Le Chatelier's principle to concentration and pressure changes, write a Kc expression, and explain why a catalyst leaves the equilibrium position unchanged"
+      ],
+      "heading": "What we will learn",
+      "kind": "objective",
+      "notes": "Read the three goals aloud slowly and tell the class: keep these in mind, because our exit ticket at the end will ask you to do exactly these things, including spotting the trap that a catalyst pushes the equilibrium toward the products."
+    },
+    {
+      "bullets": [
+        "A Haber mixture sits at equilibrium. A catalyst is added and the forward reaction immediately runs faster",
+        "Does the mixture now make extra ammonia at equilibrium, or does something else change?"
+      ],
+      "heading": "A catalyst is added. Does the equilibrium make more product?",
+      "kind": "hook",
+      "notes": "Ask the class to commit to a guess before any definitions: catalyst in, more product out, yes or no? Take two or three answers, then say: hold them, because the trap scene of the lesson settles this question completely."
+    },
+    {
+      "bullets": [
+        "Energetics asks where the energy sits before and after; kinetics asks how fast the system gets there - the two questions never answer each other",
+        "Equilibrium is where the forward and reverse rates meet: change a condition and the system shifts to oppose the change, but a catalyst changes only how fast it gets there"
+      ],
+      "heading": "One idea, six scenes: energetics, kinetics, equilibria",
+      "kind": "concept",
+      "notes": "Say this part slowly, because it is the big idea of the whole lesson: how much energy changes, how fast the change happens, and where the balance settles are three separate questions."
+    },
+    {
+      "bullets": [
+        "For an exothermic reaction the products end up at a lower enthalpy than the reactants, so the enthalpy change is negative: heat leaves the system",
+        "Draw the reactants level, climb the activation-energy hump, then fall to the products level - the drop from reactants to products is ΔH"
+      ],
+      "heading": "Exothermic: products lie below reactants",
+      "kind": "mechanism",
+      "notes": "Point at the profile and narrate the state change: reactants level, up over the transition state, down to a lower products level. Say: the fall from reactants to products is why ΔH is negative here.",
+      "visual": "s1"
+    },
+    {
+      "bullets": [
+        "For an endothermic reaction the products end up at a higher enthalpy than the reactants, so the enthalpy change is positive: heat is absorbed from the surroundings",
+        "It still clears the same kind of activation-energy barrier - the sign of ΔH is set by where the products sit, not by the height of the hump"
+      ],
+      "heading": "Endothermic: products lie above reactants",
+      "kind": "mechanism",
+      "notes": "Narrate the climb this time: products sitting higher than reactants. Say: the reaction must take in heat to get there, so ΔH is positive - the barrier is climbed in both directions of the lesson.",
+      "visual": "s2"
+    },
+    {
+      "bullets": [
+        "Rate is how fast reactant concentration falls, rate = -Δ[R] / Δt: a steeper concentration-time curve means a faster reaction",
+        "Raise the temperature, or add a catalyst, and the same curve gets steeper - more collisions clear the activation energy each second"
+      ],
+      "heading": "Rate curves: steeper means faster",
+      "kind": "mechanism",
+      "notes": "Talk through the two curves: same starting concentration, different steepness. Say: steepness is speed - read the gradient, not the height of the curve.",
+      "visual": "s3"
+    },
+    {
+      "bullets": [
+        "Most molecules sit near the average energy; only the fast tail past Ea can react",
+        "Raise the temperature and the distribution flattens and shifts right, so a bigger fraction of molecules sits past the activation energy"
+      ],
+      "heading": "Maxwell–Boltzmann: more molecules past Ea at higher T",
+      "kind": "mechanism",
+      "notes": "Watch the curve flatten and shift right as the temperature rises. Say: the total number of molecules is unchanged - what changes is how many of them sit past Ea.",
+      "visual": "s4"
+    },
+    {
+      "bullets": [
+        "An equilibrium opposes any disturbance: add nitrogen to the Haber mixture and it makes more ammonia; raise the pressure and it shifts toward fewer gas moles",
+        "Watch the composition bars shift to oppose each change - and remember Kc itself only changes with temperature"
+      ],
+      "heading": "Le Chatelier: the system opposes the change",
+      "kind": "mechanism",
+      "notes": "Narrate each disturbance in turn: first the added nitrogen, then the compression. Say each time: the system opposes the change - and Kc has not moved, because the temperature has not changed.",
+      "visual": "s5"
+    },
+    {
+      "bullets": [
+        "The trap claim in full: A catalyst pushes the equilibrium toward the products. A faster forward reaction looks like the products are winning - but the bars in this scene never move",
+        "A catalyst speeds the forward and reverse reactions equally, so equilibrium is reached sooner but the position of equilibrium, and Kc, are unchanged"
+      ],
+      "heading": "A common mistake: a catalyst shifts equilibrium",
+      "kind": "mechanism",
+      "notes": "Name the trap out loud before anyone falls into it: A catalyst pushes the equilibrium toward the products. Then point at the still bars - both rates grew by the same factor, so nothing about the position changed.",
+      "visual": "s6"
+    },
+    {
+      "bullets": [
+        "Step 1: for H2 + Cl2 -> 2 HCl, breaking bonds takes in 436 + 242 = 678 kJ mol-1 (H-H and Cl-Cl)",
+        "Step 2: forming two H-Cl bonds gives out 2 x 431 = 862 kJ mol-1, so ΔH = 678 - 862 = -184 kJ mol-1 - exothermic, as the products sit lower"
+      ],
+      "heading": "Worked example: bond enthalpies and enthalpy change",
+      "kind": "example",
+      "notes": "Talk through the two steps slowly and name each one as you write it; say: bonds broken pay in, bonds made pay out, and ΔH is in minus out - a negative answer means the products lie below the reactants."
+    },
+    {
+      "bullets": [
+        "Using bond enthalpies (Br-Br 193, H-Br 366, H-H 436 kJ mol-1), calculate ΔH for H2 + Br2 -> 2 HBr and state whether the reaction is exothermic or endothermic",
+        "Careful - a classmate says: A catalyst pushes the equilibrium toward the products. Explain to them what a catalyst actually changes, and what it leaves alone"
+      ],
+      "heading": "Your turn: compute, then correct",
+      "kind": "practice",
+      "notes": "Give pairs three minutes, then cold-call one pair on each part: press them on in = 436 + 193 = 629 and out = 2 x 366 = 732, so ΔH = 629 - 732 = -103 kJ mol-1 first, then on the exact sentence they used to talk their classmate out of the claim: A catalyst pushes the equilibrium toward the products."
+    },
+    {
+      "bullets": [
+        "On your own: an exothermic equilibrium is heated. Which way does it shift, and what happens to Kc?",
+        "Watch out for the trap one last time: A catalyst pushes the equilibrium toward the products. Say what a catalyst actually speeds up, and what happens to the equilibrium position and Kc"
+      ],
+      "heading": "Exit ticket: show what you know",
+      "kind": "exit-ticket",
+      "notes": "Collect these before anyone leaves and say: I am looking for the shift away from the heat and a falling Kc in your first answer and one clear sentence about both rates in your second. Anyone repeating the claim A catalyst pushes the equilibrium toward the products. needs the trap scene again."
+    }
+  ],
+  "subject": "science",
+  "title": "JC H2 chemistry — physical: energetics, kinetics and equilibria",
+  "topic": "h2-physical"
+}

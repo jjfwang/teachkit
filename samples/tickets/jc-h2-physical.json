@@ -1,0 +1,59 @@
+{
+  "level": "jc",
+  "questions": [
+    {
+      "choices": [
+        {
+          "text": "It shifts toward the products, so the yield at equilibrium rises"
+        },
+        {
+          "correct": true,
+          "text": "It is reached sooner, with the same equilibrium position and the same Kc"
+        },
+        {
+          "text": "It shifts toward the reactants, because the reverse reaction is favoured"
+        }
+      ],
+      "feedback": "That trap reading is the one to unlearn: A catalyst pushes the equilibrium toward the products. Reteach point: A catalyst speeds the forward and reverse reactions equally: the position of equilibrium is unchanged.",
+      "id": "q1",
+      "kind": "multiple-choice",
+      "misconception": "A catalyst pushes the equilibrium toward the products.",
+      "prompt": "A catalyst is added to a reversible reaction already at equilibrium. What changes?"
+    },
+    {
+      "answer": "ΔH = (436 + 242) - 2 x 431 = 678 - 862 = -184 kJ mol-1.",
+      "feedback": "Bonds broken pay in, bonds made pay out: 678 in, 862 out, so ΔH = -184 kJ mol-1 and the reaction is exothermic - the products level in scene s1 sits below the reactants.",
+      "id": "q2",
+      "kind": "short-answer",
+      "prompt": "Calculate ΔH for H2 + Cl2 -> 2 HCl using bond enthalpies H-H 436, Cl-Cl 242 and H-Cl 431 kJ mol-1."
+    },
+    {
+      "choices": [
+        {
+          "text": "More ammonia is made, because the system shifts to the side with more gas moles"
+        },
+        {
+          "correct": true,
+          "text": "More ammonia is made, because the system shifts to the side with fewer gas moles - 2 moles against 4"
+        },
+        {
+          "text": "Less ammonia is made, because squeezing the mixture slows the forward reaction"
+        }
+      ],
+      "feedback": "Count the gas moles: N2 + 3 H2 is 4 moles of gas, 2 NH3 is 2 moles. Raising the pressure shifts the equilibrium to the fewer-moles side, to the right - the second disturbance in scene s5.",
+      "id": "q3",
+      "kind": "multiple-choice",
+      "prompt": "The pressure on the Haber equilibrium N2 + 3 H2 <-> 2 NH3 is raised at constant temperature. What happens, and why?"
+    },
+    {
+      "answer": "A dynamic equilibrium is a reversible reaction in a closed system where the forward and reverse rates are equal, so the concentrations stay constant even though both reactions keep running.",
+      "feedback": "Both halves live in scene s5: the rates are equal and the system is closed - the bars stop moving not because the reactions stop, but because they balance.",
+      "id": "q4",
+      "kind": "short-answer",
+      "prompt": "Define a dynamic equilibrium."
+    }
+  ],
+  "subject": "science",
+  "title": "JC H2 chemistry — physical: energetics, kinetics and equilibria Exit Ticket",
+  "topic": "h2-physical"
+}
