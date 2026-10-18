@@ -1,0 +1,59 @@
+{
+ "level": "primary",
+ "questions": [
+  {
+   "choices": [
+    {
+     "text": "25"
+    },
+    {
+     "correct": true,
+     "text": "15"
+    },
+    {
+     "text": "35"
+    }
+   ],
+   "feedback": "That trap answer is the one to unlearn: 25% of 60 is just 25. Reteach point: Percent means per hundred, and the whole here is 60: 25% of 60 is a quarter of 60, which is 15.",
+   "id": "q1",
+   "kind": "multiple-choice",
+   "misconception": "25% of 60 is just 25.",
+   "prompt": "What is 25% of 60?"
+  },
+  {
+   "answer": "25% is one quarter, and 60 / 4 = 15, so 25% of 60 = 15.",
+   "feedback": "Scene s3 locks the method: turn 25% into one quarter first, then divide the whole into quarters to reach 15.",
+   "id": "q2",
+   "kind": "short-answer",
+   "prompt": "Work out 25% of 60, showing the quarter step."
+  },
+  {
+   "choices": [
+    {
+     "correct": true,
+     "text": "1/4"
+    },
+    {
+     "text": "25/60"
+    },
+    {
+     "text": "1/25"
+    }
+   ],
+   "feedback": "Scene s1 and s3 fix the fraction: 25% is 25 out of 100, and 25/100 simplifies to 1/4 - one quarter of the whole.",
+   "id": "q3",
+   "kind": "multiple-choice",
+   "prompt": "25% as a fraction in its simplest form is..."
+  },
+  {
+   "answer": "The 25 in 25% counts out of one hundred, not out of 60: the answer is a share of 60, and one quarter of 60 is 15.",
+   "feedback": "Scene s2 names the mix-up: the 25 belongs to the hundred-grid, while the whole in this question is 60 - two different wholes.",
+   "id": "q4",
+   "kind": "short-answer",
+   "prompt": "Explain why 25% of 60 cannot be 25."
+  }
+ ],
+ "subject": "math",
+ "title": "Percentage: 25% of 60 Exit Ticket",
+ "topic": "percentage"
+}

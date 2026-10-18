@@ -1,0 +1,45 @@
+{
+ "level": "primary",
+ "segments": [
+  {
+   "cue": "s1",
+   "minutes": 6,
+   "questions": [
+    "How many cells are in the whole grid?",
+    "How many shaded cells make 25%?"
+   ],
+   "say": "Percent means per hundred. Shade twenty-five cells out of one hundred on the hundred-grid and name the amount: 25 percent. Keep your student notes open at the percent definition for this scene."
+  },
+  {
+   "cue": "s2",
+   "minutes": 7,
+   "questions": [
+    "What does the 25 in 25% count out of?",
+    "Why can 25% of 60 not simply be 25?"
+   ],
+   "say": "Watch out: 25% is not just 25. Put the claim on the board and test it against the grid: the 25 counts out of one hundred, and our whole is 60, so the answer must be a share of 60."
+  },
+  {
+   "cue": "s3",
+   "minutes": 8,
+   "questions": [
+    "What fraction is 25% in its simplest form?",
+    "How big is one quarter of 60, and how do you check it?"
+   ],
+   "say": "25% of 60: divide into quarters. Simplify 25 out of 100 to one quarter, split 60 into four equal parts, and take one part: 15. Now try the percent questions on the worksheet in pairs."
+  },
+  {
+   "cue": "s4",
+   "minutes": 7,
+   "questions": [
+    "What is 25% of 60, and what are the two steps?",
+    "What goes wrong if we read the 25 as a plain count?"
+   ],
+   "say": "The takeaway. Land the rule: a percent is out of one hundred, so turn it into a fraction of the whole first - 25% of 60 is one quarter of 60, which is 15. Finish by taking the exit ticket on your own - its first question revisits exactly this trap.",
+   "watchFor": "25% of 60 is just 25. Listen and look for it in pair talk and on the worksheet: any answer of 25 for 25% of 60 shows the trap - send them back to scene s3 and to the correct turn: Percent means per hundred, and the whole here is 60: 25% of 60 is a quarter of 60, which is 15."
+  }
+ ],
+ "subject": "math",
+ "title": "Percentage: 25% of 60",
+ "topic": "percentage"
+}

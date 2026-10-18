@@ -1,0 +1,86 @@
+{
+ "level": "primary",
+ "questions": [
+  {
+   "choices": [
+    {
+     "text": "25"
+    },
+    {
+     "correct": true,
+     "text": "15"
+    },
+    {
+     "text": "40"
+    },
+    {
+     "text": "240"
+    }
+   ],
+   "explanation": "The trap is: 25% of 60 is just 25. Percent means per hundred instead: 25% is one quarter, and one quarter of 60 is 60 / 4 = 15.",
+   "id": "q1",
+   "kind": "multiple-choice",
+   "misconception": "25% of 60 is just 25.",
+   "prompt": "What is 25% of 60?"
+  },
+  {
+   "choices": [
+    {
+     "correct": true,
+     "text": "25 out of 100"
+    },
+    {
+     "text": "25 out of 60"
+    },
+    {
+     "text": "The plain number 25"
+    },
+    {
+     "text": "25 out of 25"
+    }
+   ],
+   "explanation": "Scene s1 shades the hundred-grid: percent means per hundred, so 25% is twenty-five cells out of one hundred, whatever the whole in a question turns out to be.",
+   "id": "q2",
+   "kind": "multiple-choice",
+   "prompt": "What does 25% mean?"
+  },
+  {
+   "answer": "25% = 25/100 = 1/4: divide the top and the bottom by 25.",
+   "explanation": "Scene s3 makes the turn: 25 out of 100 simplifies to one quarter, which is the fraction that does the work in 25% of 60.",
+   "id": "q3",
+   "kind": "short-answer",
+   "prompt": "Write 25% as a fraction in its simplest form and explain the step."
+  },
+  {
+   "answer": "15: 60 / 4 = 15, and four quarters of 15 rebuild 60.",
+   "explanation": "Scene s3 divides the whole into four equal parts: each part is 15, so one quarter of 60 - and 25% of 60 - is 15.",
+   "id": "q4",
+   "kind": "short-answer",
+   "prompt": "Split 60 into quarters. How big is each quarter?"
+  },
+  {
+   "choices": [
+    {
+     "text": "10"
+    },
+    {
+     "correct": true,
+     "text": "6"
+    },
+    {
+     "text": "16"
+    },
+    {
+     "text": "50"
+    }
+   ],
+   "explanation": "Use the same per-hundred idea: 10% is 10 out of 100, which is one tenth, and one tenth of 60 is 60 / 10 = 6.",
+   "id": "q5",
+   "kind": "multiple-choice",
+   "prompt": "What is 10% of 60?"
+  }
+ ],
+ "subject": "math",
+ "title": "Percentage: 25% of 60",
+ "topic": "percentage"
+}

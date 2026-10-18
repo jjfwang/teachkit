@@ -1,0 +1,111 @@
+{
+ "level": "primary",
+ "slides": [
+  {
+   "bullets": [
+    "How percent means out of one hundred, and how to find 25% of 60 by seeing it as one quarter of the whole"
+   ],
+   "heading": "Percentage: 25% of 60",
+   "kind": "title",
+   "notes": "Welcome everyone in and say: today we work with percent - what 25% really means, and how to find 25% of 60 - and by the end you will be able to explain why the answer is not 25."
+  },
+  {
+   "bullets": [
+    "Read a percent as a count out of one hundred: 25% is 25 out of 100",
+    "See 25% as one quarter of the whole",
+    "Find 25% of 60 by dividing the whole into quarters: 60 / 4 = 15"
+   ],
+   "heading": "What we will learn",
+   "kind": "objective",
+   "notes": "Read the three goals aloud and tell the class: keep these in mind, because the exit ticket at the end will ask you to do exactly these things."
+  },
+  {
+   "bullets": [
+    "A classmate says 25% of 60 is just 25 - after all, the question says 25",
+    "Is that right? What does the 25 in 25% really count?"
+   ],
+   "heading": "Is 25% of 60 just 25?",
+   "kind": "hook",
+   "notes": "Ask for a show of hands: is 25% of 60 equal to 25, or something else? Take two or three answers without judging them yet; say: hold on to your idea, because scene s2 settles this exactly."
+  },
+  {
+   "bullets": [
+    "A percent counts out of one hundred: 25% is 25 out of every 100, not the plain number 25",
+    "The whole matters: here the whole is 60, so the answer is a share of 60"
+   ],
+   "heading": "A percent is a share of a whole",
+   "kind": "concept",
+   "notes": "Say this slowly, because it is the big idea of the whole lesson: the number in a percent counts out of one hundred, and the answer is always a share of the whole in the question."
+  },
+  {
+   "bullets": [
+    "On the hundred-grid, shade twenty-five cells out of one hundred - that shaded amount is 25%",
+    "25% is 25 out of 100: a rate per hundred, whatever the whole turns out to be"
+   ],
+   "heading": "Percent means per hundred",
+   "kind": "mechanism",
+   "notes": "Point at the grid as the cells shade in and narrate: each cell is one out of one hundred, and twenty-five of them make 25 percent.",
+   "visual": "s1"
+  },
+  {
+   "bullets": [
+    "Careful - the trap is: 25% of 60 is just 25.",
+    "The 25 counts out of one hundred, and the whole here is 60 - so the answer must be a share of 60, not 25 itself"
+   ],
+   "heading": "Watch out: 25% is not just 25",
+   "kind": "mechanism",
+   "notes": "Hold the claim up against the grid: the 25 belongs to the hundred, and our whole is 60, so answering 25 mixes up two different wholes.",
+   "visual": "s2"
+  },
+  {
+   "bullets": [
+    "25 out of 100 simplifies to one quarter, so 25% of 60 is one quarter of 60",
+    "Split 60 into four equal parts: 60 / 4 = 15, so 25% of 60 is 15"
+   ],
+   "heading": "25% of 60: divide into quarters",
+   "kind": "mechanism",
+   "notes": "Narrate the split slowly: one quarter means four equal parts, and each part of 60 is 15. The answer is 15.",
+   "visual": "s3"
+  },
+  {
+   "bullets": [
+    "A percent is out of one hundred, so first turn it into a fraction of the whole",
+    "25% of 60 is 15, because 25% means one quarter of the whole"
+   ],
+   "heading": "The takeaway",
+   "kind": "mechanism",
+   "notes": "Land the whole chain in one breath: per hundred, then one quarter, then divide the whole into quarters - 25% of 60 is 15.",
+   "visual": "s4"
+  },
+  {
+   "bullets": [
+    "Work 25% of 60 in two steps: first write 25% as one quarter, then divide the whole into quarters",
+    "60 / 4 = 15 - check by rebuilding: four quarters of 15 make 60 again"
+   ],
+   "heading": "Worked example: 25% of 60",
+   "kind": "example",
+   "notes": "Talk through the two steps slowly as in scene s3 and name each one as you write it; say: turning the percent into a fraction of the whole first keeps the working honest."
+  },
+  {
+   "bullets": [
+    "What is 50% of 60? Use the same idea: 50% is one half of the whole",
+    "Careful - a classmate says: 25% of 60 is just 25. Correct them in one sentence, naming what the 25 really counts"
+   ],
+   "heading": "Your turn: find a percent of a quantity",
+   "kind": "practice",
+   "notes": "Give pairs three minutes, then cold-call one pair on each part: press them on the fraction step first, then on the exact sentence they used to correct the claim."
+  },
+  {
+   "bullets": [
+    "On your own: work out 25% of 60, showing the quarter step",
+    "Watch out for the trap one last time: 25% of 60 is just 25. Say what 25% of 60 really is, and why"
+   ],
+   "heading": "Exit ticket: show what you know",
+   "kind": "exit-ticket",
+   "notes": "Collect these before anyone leaves and say: I am looking for the quarter step in your first answer, plus one clear sentence about per hundred in your second."
+  }
+ ],
+ "subject": "math",
+ "title": "Percentage: 25% of 60",
+ "topic": "percentage"
+}
