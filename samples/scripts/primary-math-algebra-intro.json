@@ -1,0 +1,45 @@
+{
+ "level": "primary",
+ "segments": [
+  {
+   "cue": "s1",
+   "minutes": 6,
+   "questions": [
+    "What number could x be hiding in the mystery box?",
+    "How is x different from a label on a box?"
+   ],
+   "say": "Letters can stand for unknown numbers. Show x as a mystery box that holds a number we do not know yet, and name the idea: x can stand for any number. Keep your student notes open at the variable definition for this scene."
+  },
+  {
+   "cue": "s2",
+   "minutes": 7,
+   "questions": [
+    "What must be true of the two sides of the scale?",
+    "What happens to the balance if we only change one side?"
+   ],
+   "say": "A balanced scale is an equation. Put x + 5 on the left pan and 8 on the right, and stress: whatever sits on the left must weigh the same as the right, and any change must be made to both sides."
+  },
+  {
+   "cue": "s3",
+   "minutes": 8,
+   "questions": [
+    "What operation do we undo to solve x + 5 = 8?",
+    "Why must we take 5 from both sides, not just the left?"
+   ],
+   "say": "Solve x + 5 = 8 — undo the +5. Take 5 from both sides so the scale stays balanced, leaving x = 3, and check 3 + 5 = 8. Now try the algebra questions on the worksheet in pairs."
+  },
+  {
+   "cue": "s4",
+   "minutes": 7,
+   "questions": [
+    "Why is 3x + 2x equal to 5x?",
+    "What goes wrong if we treat x as just a label?"
+   ],
+   "say": "Misconception: x is a number, not a label. Land the point: x stands for a number, so lots of x can be combined. Finish by taking the exit ticket on your own - its first question revisits exactly this trap.",
+   "watchFor": "Treating x as a label for things, so 3x + 2x cannot be combined. Listen and look for it in pair talk and on the worksheet: any answer that 3x + 2x cannot be combined shows the trap - send them back to scene s4 and to the correct turn: x stands for a number: 3x + 2x is 5x, like 3 mystery boxes plus 2 mystery boxes."
+  }
+ ],
+ "subject": "math",
+ "title": "Algebra: letters stand for numbers, balanced scales",
+ "topic": "algebra-intro"
+}

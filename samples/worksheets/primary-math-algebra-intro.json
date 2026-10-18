@@ -1,0 +1,86 @@
+{
+ "level": "primary",
+ "questions": [
+  {
+   "choices": [
+    {
+     "text": "Cannot be combined"
+    },
+    {
+     "text": "6x"
+    },
+    {
+     "correct": true,
+     "text": "5x"
+    },
+    {
+     "text": "5"
+    }
+   ],
+   "explanation": "The trap is: Treating x as a label for things, so 3x + 2x cannot be combined. x stands for a number: 3x + 2x is 5x, like 3 mystery boxes plus 2 mystery boxes.",
+   "id": "q1",
+   "kind": "multiple-choice",
+   "misconception": "Treating x as a label for things, so 3x + 2x cannot be combined.",
+   "prompt": "What is 3x + 2x?"
+  },
+  {
+   "choices": [
+    {
+     "correct": true,
+     "text": "An unknown number"
+    },
+    {
+     "text": "A label for a box"
+    },
+    {
+     "text": "The letter before y"
+    },
+    {
+     "text": "A multiplication sign"
+    }
+   ],
+   "explanation": "Scene s1 introduces x as a mystery box: the box holds a number - we just do not know which one yet.",
+   "id": "q2",
+   "kind": "multiple-choice",
+   "prompt": "What does x stand for in x + 5 = 8?"
+  },
+  {
+   "answer": "x = 3: undo the +5 by taking 5 from both sides, so x = 8 - 5 = 3.",
+   "explanation": "Scene s3 solves by undoing: to find x, undo the +5 - take 5 from both sides so the scale stays balanced, giving x = 3.",
+   "id": "q3",
+   "kind": "short-answer",
+   "prompt": "Solve x + 5 = 8. Show the working."
+  },
+  {
+   "answer": "x = 5: undo the +7 by taking 7 from both sides, so x = 12 - 7 = 5.",
+   "explanation": "Undo the +7 on both sides to keep the scale balanced: x = 12 - 7 = 5. Check: 5 + 7 = 12.",
+   "id": "q4",
+   "kind": "short-answer",
+   "prompt": "Solve x + 7 = 12."
+  },
+  {
+   "choices": [
+    {
+     "text": "x + 5 = 9 with x = 3"
+    },
+    {
+     "correct": true,
+     "text": "x + 5 = 8 with x = 3"
+    },
+    {
+     "text": "x + 5 = 8 with x = 5"
+    },
+    {
+     "text": "x + 5 = 7 with x = 3"
+    }
+   ],
+   "explanation": "Scene s2: an equation is a balanced scale, so both sides must be equal - 3 + 5 = 8 balances, the others do not.",
+   "id": "q5",
+   "kind": "multiple-choice",
+   "prompt": "Which equation shows a balanced scale?"
+  }
+ ],
+ "subject": "math",
+ "title": "Algebra: letters stand for numbers, balanced scales",
+ "topic": "algebra-intro"
+}

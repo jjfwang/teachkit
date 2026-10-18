@@ -1,0 +1,39 @@
+{
+ "definitions": [
+  {
+   "meaning": "A letter like x that stands for an unknown number: it hides a number we do not know yet.",
+   "term": "Variable"
+  },
+  {
+   "meaning": "A statement that two sides are equal, like a balanced scale: x + 5 = 8 says the left side weighs the same as the right.",
+   "term": "Equation"
+  },
+  {
+   "meaning": "To find the value of the unknown: solving x + 5 = 8 gives x = 3, because 3 + 5 = 8.",
+   "term": "Solve"
+  },
+  {
+   "meaning": "To reverse an operation on both sides: undo the +5 by taking 5 from both sides so the scale stays balanced.",
+   "term": "Undo"
+  }
+ ],
+ "level": "primary",
+ "mechanismSteps": [
+  "Letters can stand for unknown numbers: think of x as a mystery box - the box holds a number, we just do not know which one yet.",
+  "A balanced scale is an equation: whatever sits on the left must weigh the same as the right, and any change must be made to both sides.",
+  "Solve x + 5 = 8 — undo the +5: take 5 from both sides so the scale stays balanced, leaving x = 8 - 5 = 3.",
+  "Misconception: x is a number, not a label: x stands for a number, so 3x + 2x is 5x, like 3 mystery boxes plus 2 mystery boxes."
+ ],
+ "objectives": [
+  "Read a letter as an unknown number that can stand for any number",
+  "Solve a one-step equation like x + 5 = 8 by undoing the operation on both sides"
+ ],
+ "subject": "math",
+ "title": "Algebra: letters stand for numbers, balanced scales",
+ "topic": "algebra-intro",
+ "trap": {
+  "explanation": "Letters are first met as labels, so x feels like a name tag rather than a number. x stands for a number: 3x + 2x is 5x, like 3 mystery boxes plus 2 mystery boxes. In the animation scene s4 the claim is tested against the mystery boxes and fails: x is not a name tag - it stands for a number.",
+  "misconception": "Treating x as a label for things, so 3x + 2x cannot be combined."
+ },
+ "workedExample": "In scene s3, x + 5 = 8 is solved by undoing the +5: take 5 from both sides so the scale stays balanced, so x = 8 - 5 = 3. Check: 3 + 5 = 8, so the scale balances and x = 3 is correct."
+}

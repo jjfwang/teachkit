@@ -1,0 +1,111 @@
+{
+ "level": "primary",
+ "slides": [
+  {
+   "bullets": [
+    "How a letter can stand for an unknown number, and how a balanced scale solves x + 5 = 8"
+   ],
+   "heading": "Algebra: letters stand for numbers, balanced scales",
+   "kind": "title",
+   "notes": "Welcome everyone in and say: today we meet algebra - letters that stand for numbers, balanced scales that are equations, and how to solve x + 5 = 8 by undoing the +5 - and by the end you will be able to explain why x is a number, not a label."
+  },
+  {
+   "bullets": [
+    "Read a letter as an unknown number: x can stand for any number",
+    "See an equation as a balanced scale: both sides must weigh the same",
+    "Solve x + 5 = 8 by undoing the +5: x = 3"
+   ],
+   "heading": "What we will learn",
+   "kind": "objective",
+   "notes": "Read the three goals aloud and tell the class: keep these in mind, because the exit ticket at the end will ask you to do exactly these things."
+  },
+  {
+   "bullets": [
+    "A classmate says 3x + 2x cannot be combined because x is just a label for boxes",
+    "Is that right? What does x really stand for?"
+   ],
+   "heading": "Is x a label or a number?",
+   "kind": "hook",
+   "notes": "Ask for a show of hands: can 3x + 2x be combined, or must something be wrong? Take two or three answers without judging them yet; say: hold on to your idea, because scene s4 settles this exactly."
+  },
+  {
+   "bullets": [
+    "A letter like x stands for an unknown number: it hides a number we do not know yet",
+    "An equation is a balanced scale: whatever is on the left must equal what is on the right"
+   ],
+   "heading": "Letters stand for numbers: equations must balance",
+   "kind": "concept",
+   "notes": "Say this slowly, because it is the big idea of the whole lesson: x hides a number, and an equation only works when both sides balance."
+  },
+  {
+   "bullets": [
+    "Think of x as a mystery box: the box holds a number - we just do not know which one yet",
+    "x could be 5, or 3, or 8: the letter stands in for whichever number fits"
+   ],
+   "heading": "Letters can stand for unknown numbers",
+   "kind": "mechanism",
+   "notes": "Point at the mystery boxes as they appear and narrate: each box hides a number, and x is the name we give that hidden number until we find it.",
+   "visual": "s1"
+  },
+  {
+   "bullets": [
+    "An equation is a balanced scale: whatever sits on the left must weigh the same as the right",
+    "If you change one side, you must do the same to the other side to keep the balance"
+   ],
+   "heading": "A balanced scale is an equation",
+   "kind": "mechanism",
+   "notes": "Narrate the scale slowly: left and right pans level because both sides weigh the same - that balance is what the equals sign means.",
+   "visual": "s2"
+  },
+  {
+   "bullets": [
+    "To find x, undo the +5: take 5 from both sides so the scale stays balanced",
+    "x + 5 = 8, so x = 8 - 5 = 3"
+   ],
+   "heading": "Solve x + 5 = 8 — undo the +5",
+   "kind": "mechanism",
+   "notes": "Work the solving slowly: undo the +5 on the left by taking 5 from both sides, leaving x alone on one side and 3 on the other.",
+   "visual": "s3"
+  },
+  {
+   "bullets": [
+    "Careful - the trap is treating x as a label for things, so 3x + 2x cannot be combined",
+    "x stands for a number: 3x + 2x is 5x, like 3 mystery boxes plus 2 mystery boxes"
+   ],
+   "heading": "Misconception: x is a number, not a label",
+   "kind": "mechanism",
+   "notes": "Hold the claim up against the boxes: x is not a name tag for a thing - it stands for a number, so three lots of x plus two lots of x make five lots of x.",
+   "visual": "s4"
+  },
+  {
+   "bullets": [
+    "Undo the +5: take 5 from both sides, so x = 8 - 5",
+    "Answer: x = 3 - check: 3 + 5 = 8, so the scale balances"
+   ],
+   "heading": "Worked example: solve x + 5 = 8",
+   "kind": "example",
+   "notes": "Talk through the undoing slowly as in scene s3 and name each step as you write it; say: checking 3 + 5 = 8 keeps the working honest."
+  },
+  {
+   "bullets": [
+    "Solve x + 4 = 9 by undoing the +4. Show both sides of the scale",
+    "Combine 3x + 2x and explain in one sentence why you can"
+   ],
+   "heading": "Your turn: solve and combine",
+   "kind": "practice",
+   "notes": "Give pairs three minutes, then cold-call one pair on each part: press them on undoing on both sides first, then on the exact sentence they used to explain why 3x + 2x is 5x."
+  },
+  {
+   "bullets": [
+    "On your own: solve x + 5 = 8 and show the undoing step",
+    "Explain in one sentence why x is a number, not a label"
+   ],
+   "heading": "Exit ticket: show what you know",
+   "kind": "exit-ticket",
+   "notes": "Collect these before anyone leaves and say: I am looking for the undo-the-+5 working in your first answer, plus one clear sentence about x standing for a number in your second."
+  }
+ ],
+ "subject": "math",
+ "title": "Algebra: letters stand for numbers, balanced scales",
+ "topic": "algebra-intro"
+}

@@ -1,0 +1,59 @@
+{
+ "level": "primary",
+ "questions": [
+  {
+   "choices": [
+    {
+     "text": "Cannot be combined"
+    },
+    {
+     "correct": true,
+     "text": "5x"
+    },
+    {
+     "text": "6x"
+    }
+   ],
+   "feedback": "That trap answer is the one to unlearn: Treating x as a label for things, so 3x + 2x cannot be combined. Reteach point: x stands for a number: 3x + 2x is 5x, like 3 mystery boxes plus 2 mystery boxes.",
+   "id": "q1",
+   "kind": "multiple-choice",
+   "misconception": "Treating x as a label for things, so 3x + 2x cannot be combined.",
+   "prompt": "What is 3x + 2x?"
+  },
+  {
+   "answer": "x = 3: undo the +5 by taking 5 from both sides, so x = 8 - 5 = 3.",
+   "feedback": "Scene s3 locks the method: undo the +5 on both sides so the scale stays balanced, leaving x = 3. Check: 3 + 5 = 8.",
+   "id": "q2",
+   "kind": "short-answer",
+   "prompt": "Solve x + 5 = 8, showing the working."
+  },
+  {
+   "choices": [
+    {
+     "correct": true,
+     "text": "Take 4 from both sides: x = 6"
+    },
+    {
+     "text": "Add 4 to both sides: x = 14"
+    },
+    {
+     "text": "x = 4 + 10 = 14"
+    }
+   ],
+   "feedback": "Scene s3 fixes the method: undo the +4 by taking 4 from both sides, so x = 10 - 4 = 6.",
+   "id": "q3",
+   "kind": "multiple-choice",
+   "prompt": "Which working solves x + 4 = 10?"
+  },
+  {
+   "answer": "x stands for a number, so 3x means 3 times that number and can be combined with other lots of x.",
+   "feedback": "Scene s4 fixes the idea: x stands for a number, not a label - so 3x + 2x is 5x, like 3 mystery boxes plus 2 mystery boxes.",
+   "id": "q4",
+   "kind": "short-answer",
+   "prompt": "Explain in one sentence why x in 3x is not just a label."
+  }
+ ],
+ "subject": "math",
+ "title": "Algebra: letters stand for numbers, balanced scales Exit Ticket",
+ "topic": "algebra-intro"
+}
