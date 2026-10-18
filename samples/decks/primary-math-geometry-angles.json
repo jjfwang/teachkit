@@ -1,0 +1,121 @@
+{
+  "level": "primary",
+  "slides": [
+    {
+      "bullets": [
+        "How to name angles by size, measure them with a protractor, and add them on lines, at a point, and in triangles"
+      ],
+      "heading": "Angles: identify, measure, add",
+      "kind": "title",
+      "notes": "Welcome everyone in and say: today we learn to spot right, acute and obtuse angles, measure with a protractor, and add angles that sit on a straight line, at a point, and inside a triangle - and by the end you will be able to explain why longer arms do not make a bigger angle."
+    },
+    {
+      "bullets": [
+        "Name an angle by its size: acute is under 90 degrees, right is exactly 90, obtuse is over 90",
+        "Measure an angle with a protractor: centre on the vertex, baseline on one arm",
+        "Add angles: 180 degrees on a straight line, 360 at a point, 180 inside a triangle"
+      ],
+      "heading": "What we will learn",
+      "kind": "objective",
+      "notes": "Read the three goals aloud and tell the class: keep these in mind, because the exit ticket at the end will ask you to do exactly these things."
+    },
+    {
+      "bullets": [
+        "Two angles are both 45 degrees, but one is drawn with much longer arms",
+        "A classmate says the one with longer arms must be the bigger angle - is that right?"
+      ],
+      "heading": "Does a bigger drawing mean a bigger angle?",
+      "kind": "hook",
+      "notes": "Ask for a show of hands: is the long-armed angle bigger, or are they equal? Take two or three answers without judging them yet; say: hold on to your idea, because scene s5 settles this exactly."
+    },
+    {
+      "bullets": [
+        "An angle is the turn between two arms that meet at a vertex",
+        "Only the size of the turn matters - the lengths of the arms do not change the angle"
+      ],
+      "heading": "An angle measures a turn, not a length",
+      "kind": "concept",
+      "notes": "Say this slowly, because it is the big idea of the whole lesson: an angle is a turn, measured in degrees, and arm length never changes it."
+    },
+    {
+      "bullets": [
+        "A right angle is exactly 90 degrees; smaller than that is acute, bigger is obtuse",
+        "60 degrees is acute, 90 is right, and 120 is obtuse"
+      ],
+      "heading": "Right, acute, obtuse — spot the size",
+      "kind": "mechanism",
+      "notes": "Narrate the moving arm as it swings: under 90 the angle is acute, at exactly 90 it is right, and past 90 it turns obtuse.",
+      "visual": "s1"
+    },
+    {
+      "bullets": [
+        "Line the protractor centre dot up with the vertex, and the baseline with one arm",
+        "Read where the other arm crosses the scale - that number is the angle"
+      ],
+      "heading": "Measuring with a protractor",
+      "kind": "mechanism",
+      "notes": "Work the measuring slowly: centre on the vertex first, baseline along one arm, then read the scale where the second arm crosses it.",
+      "visual": "s2"
+    },
+    {
+      "bullets": [
+        "Two angles sharing a straight line always add to 180 degrees",
+        "A full spin around one point is 360 degrees"
+      ],
+      "heading": "Angles on a straight line, angles at a point",
+      "kind": "mechanism",
+      "notes": "Point at the straight line first: the two angles fill a half-turn, 180 degrees; then the full turn around a point, 360 degrees.",
+      "visual": "s3"
+    },
+    {
+      "bullets": [
+        "Tear the three corners off any triangle and they fit exactly onto a straight line: 180 degrees",
+        "The four corners of a quadrilateral add to 360 degrees, and in a parallelogram opposite angles match"
+      ],
+      "heading": "Triangle angle sum, quadrilateral corners",
+      "kind": "mechanism",
+      "notes": "Narrate the torn corners lining up on the straight line: every triangle hides the same 180-degree total, whatever its shape.",
+      "visual": "s4"
+    },
+    {
+      "bullets": [
+        "Careful - the trap is judging an angle by the drawing: The angle with longer arms is bigger.",
+        "Same turn, same angle: a 45-degree angle stays 45 degrees however long its arms are drawn"
+      ],
+      "heading": "Misconception: longer arms, same angle",
+      "kind": "mechanism",
+      "notes": "Hold the claim up against the two drawings: the arms grew, but the turn between them never changed, so the angle is still 45 degrees.",
+      "visual": "s5"
+    },
+    {
+      "bullets": [
+        "Angles on a straight line add to 180 degrees, so the missing angle is 180 - 65",
+        "Answer: 115 degrees - check: 115 + 65 = 180, so the line is complete"
+      ],
+      "heading": "Worked example: the missing angle on a straight line",
+      "kind": "example",
+      "notes": "Talk through the adding slowly as in scene s3 and name each step as you write it; say: checking 115 + 65 = 180 keeps the working honest."
+    },
+    {
+      "bullets": [
+        "Name each angle as acute, right or obtuse, then measure it with your protractor",
+        "A triangle has angles of 90 and 40 degrees - find the third angle and show the working"
+      ],
+      "heading": "Your turn: name, measure and add",
+      "kind": "practice",
+      "notes": "Give pairs three minutes, then cold-call one pair on each part: press them on the protractor steps first, then on using the 180-degree triangle total."
+    },
+    {
+      "bullets": [
+        "On your own: find the missing angle on a straight line and show the working",
+        "Explain in one sentence why longer arms do not make a bigger angle"
+      ],
+      "heading": "Exit ticket: show what you know",
+      "kind": "exit-ticket",
+      "notes": "Collect these before anyone leaves and say: I am looking for the adds-to-180 working in your first answer, plus one clear sentence about the turn between the arms in your second."
+    }
+  ],
+  "subject": "math",
+  "title": "Angles: identify, measure, add",
+  "topic": "geometry-angles"
+}

@@ -12,6 +12,18 @@ version section when the release ships.
 
 ### Added
 
+- Primary mathematics geometry (angles) gold lesson pack: five hand-authored gold
+  samples for geometry (angles) in
+  samples/decks/primary-math-geometry-angles.json,
+  samples/worksheets/primary-math-geometry-angles.json,
+  samples/tickets/primary-math-geometry-angles.json,
+  samples/notes/primary-math-geometry-angles.json and
+  samples/scripts/primary-math-geometry-angles.json,
+  keyed to the primary-math-geometry-angles animation scenes and built around
+  the misconception bank trap reused verbatim: The angle with longer arms is bigger., guarded by
+  tests/gold-geometry-angles-pack.test.js
+  (issue #943).
+
 - Primary mathematics algebra (intro) gold lesson pack: five hand-authored gold
   samples for algebra (intro) in
   samples/decks/primary-math-algebra-intro.json,
