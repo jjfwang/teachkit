@@ -25,6 +25,19 @@ version section when the release ships.
   tests/gold-energetics-jc-pack.test.js
   (issue #911).
 
+- JC H2 energetics lesson pack in the pack demo
+  (`player/pack-demo.html`): the JC H2 energetics
+  gold lesson pack now appears on the same demo page as the other packs,
+  presenting all six jc-h2-energetics materials (animation,
+  slides, worksheet, exit ticket, student notes, and teacher
+  script) under its own
+  energetics-jc-manifest header (slug
+  `h2-energetics-jc-science`, level jc, subject
+  science, topic `h2-energetics`), stacked animation, slides, and printables sections, all
+  six materials validated before render for that pack, and
+  the shared teacher-keys toggle covering all thirty-one packs' print
+  stages, guarded by slice-scoped pack-demo tests (issue #913).
+
 - JC H2 genetics lesson pack in the pack demo
   (`player/pack-demo.html`): the JC H2 genetics
   gold lesson pack now appears on the same demo page as the other packs,

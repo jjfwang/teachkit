@@ -558,6 +558,24 @@
     <li><code>script</code> teacher script</li>
   </ul>
 </header>
+<header class="pack-manifest" id="energetics-jc-manifest">
+  <h1>Lesson pack: JC H2 biology — energetics: respiration and photosynthesis</h1>
+  <dl>
+    <dt>Slug</dt><dd><code>h2-energetics-jc-science</code></dd>
+    <dt>Level</dt><dd>jc</dd>
+    <dt>Subject</dt><dd>science</dd>
+    <dt>Topic</dt><dd><code>h2-energetics</code></dd>
+  </dl>
+  <p>topic h2-energetics · level jc · subject science · deck jc-h2-energetics</p>
+  <ul class="pack-materials">
+    <li><code>animation</code></li>
+    <li><code>slides</code></li>
+    <li><code>worksheet</code></li>
+    <li><code>exitTicket</code> exit ticket</li>
+    <li><code>notes</code> student notes</li>
+    <li><code>script</code> teacher script</li>
+  </ul>
+</header>
 <section class="pack-section" id="animation-section">
   <h2>Animation</h2>
   <div id="anim-stage"></div>
@@ -934,6 +952,19 @@
   <h2>JC H2 genetics printables</h2>
   <div id="genetics-jc-printables-stage"></div>
 </section>
+<section class="pack-section" id="energetics-jc-animation">
+  <h2>JC H2 energetics animation</h2>
+  <div id="energetics-jc-stage"></div>
+  <div id="energetics-jc-captions"></div>
+</section>
+<section class="pack-section" id="energetics-jc-slides">
+  <h2>JC H2 energetics slides</h2>
+  <div id="energetics-jc-slides-stage"></div>
+</section>
+<section class="pack-section" id="energetics-jc-printables">
+  <h2>JC H2 energetics printables</h2>
+  <div id="energetics-jc-printables-stage"></div>
+</section>
 <div id="err"></div>
 <script src="validate.js"></script>
 <script src="player.js"></script>
@@ -987,8 +1018,9 @@
     var organicJcPrintStage = document.querySelector('#organic-jc-printables-stage .pr-stage') || document.querySelector('#organic-jc-printables-stage');
     var cellBioJcPrintStage = document.querySelector('#cell-bio-jc-printables-stage .pr-stage') || document.querySelector('#cell-bio-jc-printables-stage');
     var geneticsJcPrintStage = document.querySelector('#genetics-jc-printables-stage .pr-stage') || document.querySelector('#genetics-jc-printables-stage');
+    var energeticsJcPrintStage = document.querySelector('#energetics-jc-printables-stage .pr-stage') || document.querySelector('#energetics-jc-printables-stage');
     var keys = [];
-    [printStage, fractionsPrintStage, wavesPrintStage, complexPrintStage, trigPrintStage, thermalPrintStage, photosynthesisPrintStage, erosionPrintStage, chemMolePrintStage, differentiationPrintStage, integrationPrintStage, binomialPrintStage, kinematicsPrintStage, quadraticPrintStage, trigonometryAPrintStage, vectorsPrintStage, functionsGraphsPrintStage, sequencesPrintStage, differentiationJcPrintStage, integrationJcPrintStage, probabilityJcPrintStage, statisticsJcPrintStage, mechanicsJcPrintStage, emJcPrintStage, quantumJcPrintStage, physicalJcPrintStage, inorganicJcPrintStage, organicJcPrintStage, cellBioJcPrintStage, geneticsJcPrintStage].forEach(function (stage) {
+    [printStage, fractionsPrintStage, wavesPrintStage, complexPrintStage, trigPrintStage, thermalPrintStage, photosynthesisPrintStage, erosionPrintStage, chemMolePrintStage, differentiationPrintStage, integrationPrintStage, binomialPrintStage, kinematicsPrintStage, quadraticPrintStage, trigonometryAPrintStage, vectorsPrintStage, functionsGraphsPrintStage, sequencesPrintStage, differentiationJcPrintStage, integrationJcPrintStage, probabilityJcPrintStage, statisticsJcPrintStage, mechanicsJcPrintStage, emJcPrintStage, quantumJcPrintStage, physicalJcPrintStage, inorganicJcPrintStage, organicJcPrintStage, cellBioJcPrintStage, geneticsJcPrintStage, energeticsJcPrintStage].forEach(function (stage) {
       if (stage) {
         keys = keys.concat(Array.prototype.slice.call(stage.querySelectorAll('.pr-teacher')));
       }
@@ -3138,6 +3170,79 @@
     ].join('');
   }).catch(function (err) {
     showError('JC H2 genetics pack failed to load: ' + err.message);
+  });
+})();
+</script>
+<script>
+(function () {
+  var presenter = document.getElementById('energetics-jc-slides-stage');
+  var energeticsJcPrint = document.getElementById('energetics-jc-printables-stage');
+  var errBox = document.getElementById('err');
+  var energeticsJcAnimUrl = '../samples/jc-h2-energetics.json';
+  var energeticsJcDeckUrl = '../samples/decks/jc-h2-energetics.json';
+  var energeticsJcWorksheetUrl = '../samples/worksheets/jc-h2-energetics.json';
+  var energeticsJcTicketUrl = '../samples/tickets/jc-h2-energetics.json';
+  var energeticsJcNotesUrl = '../samples/notes/jc-h2-energetics.json';
+  var energeticsJcScriptUrl = '../samples/scripts/jc-h2-energetics.json';
+
+  function showError(msg) {
+    errBox.textContent = String(msg);
+  }
+
+  Promise.all([
+    fetch(energeticsJcAnimUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + energeticsJcAnimUrl);
+      return r.json();
+    }),
+    fetch(energeticsJcDeckUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + energeticsJcDeckUrl);
+      return r.json();
+    }),
+    fetch(energeticsJcWorksheetUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + energeticsJcWorksheetUrl);
+      return r.json();
+    }),
+    fetch(energeticsJcTicketUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + energeticsJcTicketUrl);
+      return r.json();
+    }),
+    fetch(energeticsJcNotesUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + energeticsJcNotesUrl);
+      return r.json();
+    }),
+    fetch(energeticsJcScriptUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + energeticsJcScriptUrl);
+      return r.json();
+    })
+  ]).then(function (pack) {
+    var anim = pack[0];
+    var deck = pack[1];
+    var worksheet = pack[2];
+    var ticket = pack[3];
+    var notes = pack[4];
+    var script = pack[5];
+    var problems = AnimathValidate.validateSpec(anim)
+      .concat(AnimathValidate.validateSlides(deck))
+      .concat(AnimathValidate.validateWorksheet(worksheet))
+      .concat(AnimathValidate.validateExitTicket(ticket))
+      .concat(AnimathValidate.validateNotes(notes))
+      .concat(AnimathValidate.validateScript(script));
+    if (problems.length) {
+      showError('JC H2 energetics pack failed validation:\n' + problems.join('\n'));
+      return;
+    }
+    AnimathPlayer.mount(document.getElementById('energetics-jc-stage'), anim, { autoplay: false });
+    AnimathSlidesPresenter.attachPresenter(document, presenter, deck, { animSpec: anim });
+    energeticsJcPrint.innerHTML = [
+      AnimathPrintable.renderWorksheet(worksheet),
+      AnimathPrintable.renderWorksheetAnswerKey(worksheet),
+      AnimathPrintable.renderExitTicket(ticket),
+      AnimathPrintable.renderExitTicketAnswerKey(ticket),
+      AnimathPrintable.renderNotes(notes),
+      AnimathPrintable.renderScript(script)
+    ].join('');
+  }).catch(function (err) {
+    showError('JC H2 energetics pack failed to load: ' + err.message);
   });
 })();
 </script>
