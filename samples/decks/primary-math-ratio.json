@@ -1,0 +1,111 @@
+{
+ "level": "primary",
+ "slides": [
+  {
+   "bullets": [
+    "How to share $48 in the ratio 2:3 by splitting the whole into 5 equal parts and finding one part first"
+   ],
+   "heading": "Ratio: sharing $48 in 2:3",
+   "kind": "title",
+   "notes": "Welcome everyone in and say: today we share money in a ratio - what 2:3 really means, and how to find each share - and by the end you will be able to explain why a share is never bigger than the whole."
+  },
+  {
+   "bullets": [
+    "Read a ratio as parts of one whole: 2:3 means 2 parts and 3 parts",
+    "Find the whole in parts first: 2 + 3 = 5 parts",
+    "Share $48 in 2:3 by finding one part, then multiplying: 1 part = $9.60"
+   ],
+   "heading": "What we will learn",
+   "kind": "objective",
+   "notes": "Read the three goals aloud and tell the class: keep these in mind, because the exit ticket at the end will ask you to do exactly these things."
+  },
+  {
+   "bullets": [
+    "A classmate says the 3-part share of $48 in the ratio 2:3 is 3/2 of $48, which is $72",
+    "Is that possible? Can one share be more than the whole $48?"
+   ],
+   "heading": "Can one share be $72?",
+   "kind": "hook",
+   "notes": "Ask for a show of hands: can a share of $48 be $72, or must something be wrong? Take two or three answers without judging them yet; say: hold on to your idea, because scene s2 settles this exactly."
+  },
+  {
+   "bullets": [
+    "A ratio of 2:3 splits one whole into 2 parts for one person and 3 parts for another, and every part is the same size",
+    "The whole matters: here the whole is $48 split into 5 equal parts, so each share is a part of the $48"
+   ],
+   "heading": "A ratio compares parts of one whole",
+   "kind": "concept",
+   "notes": "Say this slowly, because it is the big idea of the whole lesson: a ratio counts equal parts of one whole, and the shares must add back up to the whole."
+  },
+  {
+   "bullets": [
+    "Two children share $48 in the ratio 2:3: 2 parts for child A and 3 parts for child B",
+    "Add the parts to find the whole: 2 + 3 = 5 equal parts"
+   ],
+   "heading": "Sharing in a ratio",
+   "kind": "mechanism",
+   "notes": "Point at the parts as they appear and narrate: A takes two parts, B takes three parts, and every part is the same size.",
+   "visual": "s1"
+  },
+  {
+   "bullets": [
+    "Careful - the trap is: A ratio of 3:2 means 3/2 of the whole.",
+    "The whole is 5 parts, so 3 parts is 3 out of 5 - 3/5 of the whole, not 3/2 of it"
+   ],
+   "heading": "Watch out: 3:2 is not 3/2 of the whole",
+   "kind": "mechanism",
+   "notes": "Hold the claim up against the bar: 3/2 of $48 would be $72, more than the whole itself, so it cannot be a share of $48.",
+   "visual": "s2"
+  },
+  {
+   "bullets": [
+    "Five equal parts share $48, so 1 part = $48 / 5 = $9.60",
+    "Multiply for each share: A gets 2 x $9.60 = $19.20 and B gets 3 x $9.60 = $28.80"
+   ],
+   "heading": "One part, then multiply",
+   "kind": "mechanism",
+   "notes": "Narrate the split slowly: divide for one part first, then multiply by the number of parts each child takes. The shares are $19.20 and $28.80.",
+   "visual": "s3"
+  },
+  {
+   "bullets": [
+    "To share in a ratio: add the parts, divide to find one part, then multiply for each share",
+    "Check the answer: $19.20 + $28.80 = $48, the whole we started with"
+   ],
+   "heading": "The takeaway",
+   "kind": "mechanism",
+   "notes": "Land the whole chain in one breath: add for the whole in parts, divide for one part, multiply for each share - A gets $19.20 and B gets $28.80.",
+   "visual": "s4"
+  },
+  {
+   "bullets": [
+    "Work the share in three steps: add 2 + 3 = 5 parts, divide $48 / 5 = $9.60 for one part, then multiply for each share",
+    "A: 2 x $9.60 = $19.20, B: 3 x $9.60 = $28.80 - check by adding: $19.20 + $28.80 = $48"
+   ],
+   "heading": "Worked example: sharing $48 in 2:3",
+   "kind": "example",
+   "notes": "Talk through the three steps slowly as in scene s3 and name each one as you write it; say: finding one part first keeps the working honest."
+  },
+  {
+   "bullets": [
+    "Share $60 in the ratio 2:3. Use the same idea: find one part first",
+    "Careful - a classmate says the 3-part share is 3/2 of $60. Correct them in one sentence, naming what the whole in parts really is"
+   ],
+   "heading": "Your turn: share in a ratio",
+   "kind": "practice",
+   "notes": "Give pairs three minutes, then cold-call one pair on each part: press them on the one-part step first, then on the exact sentence they used to correct the claim."
+  },
+  {
+   "bullets": [
+    "On your own: share $48 in the ratio 2:3, showing the one-part step",
+    "Watch out for the trap one last time: say what fraction of the whole the 3-part share really is, and why"
+   ],
+   "heading": "Exit ticket: show what you know",
+   "kind": "exit-ticket",
+   "notes": "Collect these before anyone leaves and say: I am looking for the one-part step in your first answer, plus one clear sentence about the 5 parts in your second."
+  }
+ ],
+ "subject": "math",
+ "title": "Ratio: sharing $48 in 2:3",
+ "topic": "ratio"
+}

@@ -1,0 +1,39 @@
+{
+ "definitions": [
+  {
+   "meaning": "A comparison of parts of one whole: 2:3 means 2 parts for one share and 3 parts for the other, with every part the same size.",
+   "term": "Ratio"
+  },
+  {
+   "meaning": "One equal piece of the split whole: when $48 is shared in 2:3 there are 5 parts, and one part is $9.60.",
+   "term": "Part"
+  },
+  {
+   "meaning": "The full amount being shared: in sharing $48 in the ratio 2:3 the whole is $48, split into 5 equal parts.",
+   "term": "Whole"
+  },
+  {
+   "meaning": "The amount one person gets: the number of parts they take multiplied by one part, such as 3 x $9.60 = $28.80.",
+   "term": "Share"
+  }
+ ],
+ "level": "primary",
+ "mechanismSteps": [
+  "Sharing in a ratio: two children share $48 in the ratio 2:3 - split the money into 2 parts for child A and 3 parts for child B, 5 equal parts in all.",
+  "Watch out: 3:2 is not 3/2 of the whole: the parts are counted out of the 5 parts of the whole, so 3 parts is 3/5 of the whole, never 3/2 of it.",
+  "One part, then multiply: 5 equal parts share $48, so 1 part = $9.60 - then multiply: A gets 2 x $9.60 = $19.20 and B gets 3 x $9.60 = $28.80.",
+  "The takeaway: to share in a ratio, add the parts to find the whole in parts, divide to find one part, then multiply for each share."
+ ],
+ "objectives": [
+  "Read a ratio as equal parts of one whole: 2:3 as 2 parts and 3 parts of the same whole",
+  "Share an amount in a ratio by finding one part first: divide the whole by the total number of parts"
+ ],
+ "subject": "math",
+ "title": "Ratio: sharing $48 in 2:3",
+ "topic": "ratio",
+ "trap": {
+  "explanation": "The ratio parts are mistaken for a fraction of the whole. The whole is 5 parts, so 3 parts is 3 fifths of the whole. In the animation scene s2 the claim is tested against the whole bar and fails: 3/2 of $48 is $72, more than the whole $48, while 3 parts out of 5 is $28.80.",
+  "misconception": "A ratio of 3:2 means 3/2 of the whole."
+ },
+ "workedExample": "In scene s3, sharing $48 in the ratio 2:3 is worked by finding one part first: the whole is 2 + 3 = 5 parts, and 1 part = $9.60 (from $48 / 5). Step by step: A gets 2 x $9.60 = $19.20 and B gets 3 x $9.60 = $28.80, and the shares check: $19.20 + $28.80 = $48."
+}

@@ -12,6 +12,18 @@ version section when the release ships.
 
 ### Added
 
+- Primary mathematics ratio gold lesson pack: five hand-authored gold
+  samples for ratio in
+  samples/decks/primary-math-ratio.json,
+  samples/worksheets/primary-math-ratio.json,
+  samples/tickets/primary-math-ratio.json,
+  samples/notes/primary-math-ratio.json and
+  samples/scripts/primary-math-ratio.json,
+  keyed to the primary-math-ratio-sharing animation scenes and built around
+  the misconception bank trap reused verbatim: A ratio of 3:2 means 3/2 of the whole., guarded by
+  tests/gold-ratio-pack.test.js
+  (issue #931).
+
 - Primary mathematics percentage lesson pack in the pack demo
   (`player/pack-demo.html`): the Primary mathematics percentage
   gold lesson pack now appears on the same demo page as the other packs,
