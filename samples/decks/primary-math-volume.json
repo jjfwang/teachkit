@@ -1,0 +1,111 @@
+{
+  "level": "primary",
+  "slides": [
+    {
+      "bullets": [
+        "How to count unit cubes, find the volume of a cuboid, and measure liquids in millilitres and litres"
+      ],
+      "heading": "Volume: cubes, cuboids, litres",
+      "kind": "title",
+      "notes": "Welcome everyone in and say: today we count 6 unit cubes, build a cuboid with volume 4 × 3 × 2 = 24, and learn that 1 L = 1000 mL - and by the end you will be able to explain why a taller container does not always hold more."
+    },
+    {
+      "bullets": [
+        "Count unit cubes to find volume: 6 cubes fill the first shape",
+        "Find a cuboid volume with length × width × height: 4 × 3 × 2 = 24",
+        "Measure liquids in millilitres and litres: 1 L = 1000 mL"
+      ],
+      "heading": "What we will learn",
+      "kind": "objective",
+      "notes": "Read the three goals aloud and tell the class: keep these in mind, because the exit ticket at the end will ask you to do exactly these things."
+    },
+    {
+      "bullets": [
+        "Two arrangements are both made from exactly 6 unit cubes",
+        "One is stacked tall and one is spread wide - do they hold the same amount?"
+      ],
+      "heading": "Does the taller container hold more?",
+      "kind": "hook",
+      "notes": "Ask for a show of hands: does the tall stack hold more, or do both hold the same? Take two or three answers without judging them yet; say: hold on to your idea, because scene s4 settles this exactly."
+    },
+    {
+      "bullets": [
+        "Volume is how much space a shape takes up: count the unit cubes that fill it",
+        "For a cuboid, volume = length × width × height, and liquids are measured in millilitres and litres"
+      ],
+      "heading": "Count cubes for solids, measure liquids in mL and L",
+      "kind": "concept",
+      "notes": "Say this slowly, because it is the big idea of the whole lesson: count the cubes that fill a solid, and use millilitres for small liquid amounts and litres for big ones."
+    },
+    {
+      "bullets": [
+        "Count the cubes one by one: 1, 2, 3, 4, 5, 6",
+        "Volume = 6 unit cubes"
+      ],
+      "heading": "Volume as unit-cube counting",
+      "kind": "mechanism",
+      "notes": "Narrate the cubes arriving one at a time and joining the shape: count aloud with the class until all 6 unit cubes are in place.",
+      "visual": "s1"
+    },
+    {
+      "bullets": [
+        "One layer is 4 × 3 = 12 cubes",
+        "Two layers stacked give 4 × 3 × 2 = 24 unit cubes"
+      ],
+      "heading": "Cuboid volume = length × width × height",
+      "kind": "mechanism",
+      "notes": "Count one layer first - 4 by 3 is 12 cubes - then show the second layer stacking on top: 12 × 2 = 24, which is length × width × height.",
+      "visual": "s2"
+    },
+    {
+      "bullets": [
+        "A small cup holds 500 mL and a big jug holds 1 L",
+        "1 L = 1000 mL: millilitres for small amounts, litres for big ones"
+      ],
+      "heading": "Liquid volume: millilitres and litres",
+      "kind": "mechanism",
+      "notes": "Watch the two containers fill: 500 mL in the small cup and 1 L in the big jug, and stress the conversion 1 L = 1000 mL.",
+      "visual": "s3"
+    },
+    {
+      "bullets": [
+        "The tall stack and the wide row are both made of 6 cubes",
+        "Same 6 cubes means the same volume, whatever the shape"
+      ],
+      "heading": "Watch out: a taller container holds more",
+      "kind": "mechanism",
+      "notes": "Hold the tall stack up against the wide row: both are the same 6 cubes rearranged, so the volume has not changed.",
+      "visual": "s4"
+    },
+    {
+      "bullets": [
+        "One layer: 4 × 3 = 12 cubes, and there are 2 layers",
+        "Volume = 4 × 3 × 2 = 24 unit cubes"
+      ],
+      "heading": "Worked example: volume of a cuboid",
+      "kind": "example",
+      "notes": "Talk through the layer working slowly as in scene s2 and name each step as you write it; say: count one layer, then multiply by the number of layers."
+    },
+    {
+      "bullets": [
+        "Count the unit cubes in a shape and write its volume",
+        "Find the volume of a cuboid 4 by 3 by 2, and write 1 L in millilitres"
+      ],
+      "heading": "Your turn: count, build and convert",
+      "kind": "practice",
+      "notes": "Give pairs three minutes, then cold-call one pair on each part: press them on the layer count first, then on the conversion 1 L = 1000 mL."
+    },
+    {
+      "bullets": [
+        "On your own: find the volume of a cuboid using length × width × height",
+        "Explain in one sentence why a taller container does not always hold more"
+      ],
+      "heading": "Exit ticket: show what you know",
+      "kind": "exit-ticket",
+      "notes": "Collect these before anyone leaves and say: I am looking for the layer working in your first answer, plus one clear sentence about counting cubes in your second."
+    }
+  ],
+  "subject": "math",
+  "title": "Volume: cubes, cuboids, litres",
+  "topic": "volume"
+}

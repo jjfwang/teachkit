@@ -1,0 +1,45 @@
+{
+  "level": "primary",
+  "segments": [
+    {
+      "cue": "s1",
+      "minutes": 7,
+      "questions": [
+        "How many unit cubes fill the shape, and how do you know?",
+        "What does volume tell us about a shape?"
+      ],
+      "say": "Volume as unit-cube counting. Show the cubes arriving one at a time and count aloud to 6: the volume is 6 unit cubes. Keep your student notes open at the volume and unit cube definitions for this scene."
+    },
+    {
+      "cue": "s2",
+      "minutes": 8,
+      "questions": [
+        "How many cubes are in one layer, and how did you work it out?",
+        "What is 4 × 3 × 2, and what does each number stand for?"
+      ],
+      "say": "Cuboid volume = length × width × height. Count one layer, 4 × 3 = 12 cubes, then stack the second layer for 24 unit cubes. Now try the cuboid questions on the worksheet in pairs."
+    },
+    {
+      "cue": "s3",
+      "minutes": 7,
+      "questions": [
+        "How many millilitres are there in 1 L?",
+        "Would you measure a small cup in millilitres or litres, and why?"
+      ],
+      "say": "Liquid volume: millilitres and litres. Watch the small cup fill to 500 mL and the big jug fill to 1 L, and stress the conversion 1 L = 1000 mL: millilitres for small amounts, litres for big ones."
+    },
+    {
+      "cue": "s4",
+      "minutes": 6,
+      "questions": [
+        "The tall stack looks bigger - does it hold more?",
+        "How does counting the cubes settle the question?"
+      ],
+      "say": "Watch out: a taller container holds more - or does it? Show the 6 cubes in a tall stack, then rearranged wide: it is the same 6 cubes. Finish by taking the exit ticket on your own - its first question revisits exactly this trap.",
+      "watchFor": "The taller container holds more. Listen and look for it in pair talk and on the worksheet: Height dominates the eye, so taller looks like more. Send them back to scene s4 and to the correct turn: Count the unit cubes: six cubes is six cubes; shape never changes the amount."
+    }
+  ],
+  "subject": "math",
+  "title": "Volume: cubes, cuboids, litres",
+  "topic": "volume"
+}
