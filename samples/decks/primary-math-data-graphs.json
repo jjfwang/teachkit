@@ -1,0 +1,111 @@
+{
+  "level": "primary",
+  "slides": [
+    {
+      "bullets": [
+        "How to read pie charts, line graphs and bar charts, and how to compare data safely"
+      ],
+      "heading": "Data graphs: pie charts and line graphs",
+      "kind": "title",
+      "notes": "Welcome everyone in and say: today we read a pie chart of 12 pupils, follow a line graph of plants sold from January to April, compare bars for soccer and badminton, and learn why a steeper line is not always a bigger increase."
+    },
+    {
+      "bullets": [
+        "Read a pie chart: apples are 1/2 of 12 pupils, bananas and grapes are 1/4 each",
+        "Read a line graph: plants sold were Jan 20, Feb 35, Mar 30, Apr 50",
+        "Compare two bars by subtracting: 13 - 8 = 5 more chose soccer"
+      ],
+      "heading": "What we will learn",
+      "kind": "objective",
+      "notes": "Read the three goals aloud and tell the class: keep these in mind, because the exit ticket at the end will ask you to do exactly these things."
+    },
+    {
+      "bullets": [
+        "Two shops both rose from 20 to 40, but one line looks much steeper",
+        "Does the steeper line mean a bigger increase, or is the axis tricking us?"
+      ],
+      "heading": "Which graph is telling the truth?",
+      "kind": "hook",
+      "notes": "Show the two shop graphs from scene s4 without the axis labels first: ask for a show of hands on which rose faster, take two or three answers without judging them, and say scene s4 settles this exactly."
+    },
+    {
+      "bullets": [
+        "A pie chart shows fractions of a whole: the whole class is 12 pupils",
+        "A line or bar graph has an axis scale: read the numbers before the shape"
+      ],
+      "heading": "Every graph has parts to read first",
+      "kind": "concept",
+      "notes": "Say this slowly, because it is the big idea of the whole lesson: first find what the whole is or what the axis counts in, then read the wedges, line or bars."
+    },
+    {
+      "bullets": [
+        "6 of 12 pupils chose apples: the apple wedge is 1/2 of the pie",
+        "3 chose bananas and 3 chose grapes: each wedge is 1/4"
+      ],
+      "heading": "Reading a pie chart: who likes what?",
+      "kind": "mechanism",
+      "notes": "Narrate the twelve pupils gathering, then the wedges sweeping out: apples take half the circle, and bananas and grapes take a quarter each.",
+      "visual": "s1"
+    },
+    {
+      "bullets": [
+        "Plants sold: Jan 20, Feb 35, Mar 30, Apr 50",
+        "The line dips in March, then climbs to April: sales are rising overall"
+      ],
+      "heading": "Reading a line graph: a rising trend",
+      "kind": "mechanism",
+      "notes": "Follow the probe dot month to month as it draws the line: point out the small dip in March, then the climb to 50 in April.",
+      "visual": "s2"
+    },
+    {
+      "bullets": [
+        "Soccer bar: 13 votes, badminton bar: 8 votes, swimming bar: 3 votes",
+        "Read the heights, then subtract: 13 - 8 = 5"
+      ],
+      "heading": "Worked example: comparing two bars of data",
+      "kind": "mechanism",
+      "notes": "Watch the bars grow from the baseline, read the labels aloud, then follow the red chip as it travels the gap between the two bar tops.",
+      "visual": "s3"
+    },
+    {
+      "bullets": [
+        "Shop A and shop B both rose from 20 to 40: the same rise of +20",
+        "Graph A uses an axis of 0 to 50 and graph B uses 0 to 200, so B only looks flatter"
+      ],
+      "heading": "Watch out: a steeper line is not always bigger",
+      "kind": "mechanism",
+      "notes": "Hold the two graphs side by side and read the axes aloud before the lines: the same rise can look steep or flat depending on the scale.",
+      "visual": "s4"
+    },
+    {
+      "bullets": [
+        "Soccer: 13 votes, badminton: 8 votes",
+        "13 - 8 = 5 more chose soccer"
+      ],
+      "heading": "Worked example: how many more chose soccer?",
+      "kind": "example",
+      "notes": "Talk through the bar working slowly as in scene s3 and name each step: read both heights first, then subtract the smaller from the bigger."
+    },
+    {
+      "bullets": [
+        "What fraction of the class chose bananas in the pie chart?",
+        "How many plants were sold in April, and in which month did sales dip?"
+      ],
+      "heading": "Your turn: read, follow and compare",
+      "kind": "practice",
+      "notes": "Give pairs three minutes, then cold-call one pair on each part: press them on the whole of 12 for the fraction, and on reading the axis values for the line graph."
+    },
+    {
+      "bullets": [
+        "On your own: read values from a pie chart and a line graph",
+        "Explain in one sentence why a steeper line is not always a bigger increase"
+      ],
+      "heading": "Exit ticket: show what you know",
+      "kind": "exit-ticket",
+      "notes": "Collect these before anyone leaves and say: I am looking for axis values in your working, plus one clear sentence about axis scale in your explanation."
+    }
+  ],
+  "subject": "math",
+  "title": "Data graphs: pie charts and line graphs",
+  "topic": "data-graphs"
+}

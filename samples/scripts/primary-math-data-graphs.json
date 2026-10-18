@@ -1,0 +1,45 @@
+{
+  "level": "primary",
+  "segments": [
+    {
+      "cue": "s1",
+      "minutes": 7,
+      "questions": [
+        "How many pupils are in the whole class, and how do you know?",
+        "What fraction chose apples, and what fraction chose grapes?"
+      ],
+      "say": "Reading a pie chart: who likes what? Watch the twelve pupils gather into wedges: apples take half the pie, bananas and grapes a quarter each. Keep your student notes open at the pie chart definition for this scene."
+    },
+    {
+      "cue": "s2",
+      "minutes": 8,
+      "questions": [
+        "How many plants were sold in each month?",
+        "Where does the line dip, and is sales rising or falling overall?"
+      ],
+      "say": "Reading a line graph: a rising trend. Follow the probe dot as it draws the line month to month: Jan 20, Feb 35, a small dip in March to 30, then April 50. Now try the line graph questions on the worksheet in pairs."
+    },
+    {
+      "cue": "s3",
+      "minutes": 7,
+      "questions": [
+        "How many votes did soccer and badminton each get?",
+        "How do we find how many more chose soccer?"
+      ],
+      "say": "Worked example: comparing two bars of data. Watch the bars grow from the baseline, read the labels - soccer 13, badminton 8, swimming 3 - then follow the chip across the gap as we subtract: 13 - 8 = 5."
+    },
+    {
+      "cue": "s4",
+      "minutes": 6,
+      "questions": [
+        "Which shop looks like it rose faster?",
+        "What do the two axes tell us that the lines do not?"
+      ],
+      "say": "Watch out: a steeper line is not always bigger. Both shops rose from 20 to 40, but graph B uses an axis of 0 to 200 so its line looks flatter. Finish by taking the exit ticket on your own - its first question revisits exactly this trap.",
+      "watchFor": "A steeper line always means a bigger increase. Listen and look for it in pair talk and on the exit ticket: Steepness is judged by the drawing rather than the axis scale behind it. Send them back to scene s4 and to the correct turn: Slope depends on the axis scale: two graphs can have the same rise but look different."
+    }
+  ],
+  "subject": "math",
+  "title": "Data graphs: pie charts and line graphs",
+  "topic": "data-graphs"
+}

@@ -12,6 +12,8 @@ version section when the release ships.
 
 ### Added
 
+- Primary mathematics data-graphs gold lesson pack: five hand-authored gold samples for data-graphs in samples/decks/primary-math-data-graphs.json, samples/worksheets/primary-math-data-graphs.json, samples/tickets/primary-math-data-graphs.json, samples/notes/primary-math-data-graphs.json and samples/scripts/primary-math-data-graphs.json, keyed to the primary-math-data-graphs animation scenes, misconception bank trap reused verbatim: A steeper line always means a bigger increase., guarded by tests/gold-data-graphs-pack.test.js (issue #955).
+
 - Primary mathematics volume lesson pack in the pack demo
   (`player/pack-demo.html`): the Primary mathematics volume
   gold lesson pack now appears on the same demo page as the other packs,
