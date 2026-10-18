@@ -1,0 +1,59 @@
+{
+  "level": "jc",
+  "questions": [
+    {
+      "choices": [
+        {
+          "text": "Energy is recycled through the ecosystem"
+        },
+        {
+          "correct": true,
+          "text": "Energy flows one way and leaves as heat"
+        },
+        {
+          "text": "Energy cycles between air and plants like carbon"
+        }
+      ],
+      "feedback": "That trap reading is the one to unlearn: Energy is recycled through the ecosystem. Reteach point: Energy flows one way - sunlight in, heat out: what is recycled is matter - carbon, nitrogen and water.",
+      "id": "q1",
+      "kind": "multiple-choice",
+      "misconception": "Energy is recycled through the ecosystem.",
+      "prompt": "Which statement about energy in an ecosystem is true?"
+    },
+    {
+      "answer": "About 2 000 kJ reaches primary consumers and about 200 kJ reaches secondary consumers: about 10% moves up each level.",
+      "feedback": "Scene s3 locks the rule: only about 10% moves up each trophic level, so multiply by a tenth at each step and the dot shrinks as it climbs.",
+      "id": "q2",
+      "kind": "short-answer",
+      "prompt": "Producers hold 20 000 kJ. Estimate the energy reaching primary consumers and secondary consumers, showing the rule you used."
+    },
+    {
+      "choices": [
+        {
+          "text": "Respiration"
+        },
+        {
+          "correct": true,
+          "text": "Photosynthesis"
+        },
+        {
+          "text": "Combustion"
+        }
+      ],
+      "feedback": "Scene s4 shows the blue dot dropping into plants with photosynthesis, then rising back with respiration and combustion.",
+      "id": "q3",
+      "kind": "multiple-choice",
+      "prompt": "In the carbon cycle, which process draws carbon dioxide out of the air and into living tissue?"
+    },
+    {
+      "answer": "Corridors reconnect isolated fragments, so individuals and genes can move between populations again.",
+      "feedback": "Scene s5 ends with the protected corridor linking all three fragments: reconnecting habitat lets species move and interbreed again.",
+      "id": "q4",
+      "kind": "short-answer",
+      "prompt": "State how protected corridors help conserve species in fragmented habitats."
+    }
+  ],
+  "subject": "science",
+  "title": "JC H2 biology — ecology: energy flow and the carbon cycle Exit Ticket",
+  "topic": "h2-ecology"
+}

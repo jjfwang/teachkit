@@ -1,0 +1,131 @@
+{
+  "level": "jc",
+  "slides": [
+    {
+      "bullets": [
+        "How energy flows one way through food chains and webs, why only about 10% moves up each trophic level, and how carbon cycles while habitats must be protected"
+      ],
+      "heading": "JC H2 biology — ecology: energy flow and the carbon cycle",
+      "kind": "title",
+      "notes": "Welcome everyone in and say: today we trace energy and carbon through ecosystems - food chains and webs, the pyramid of energy, the carbon cycle, conservation, and the trap that energy is recycled."
+    },
+    {
+      "bullets": [
+        "Read food chains and food webs, explaining that arrows show energy flow from food to feeder",
+        "Explain the pyramid of energy and why only about 10% of energy moves up each trophic level",
+        "Describe the carbon cycle and conservation, and correct the claim that energy is recycled"
+      ],
+      "heading": "What we will learn",
+      "kind": "objective",
+      "notes": "Read the three goals aloud and tell the class: keep these in mind, because the exit ticket at the end will ask you to do exactly these things, including correcting the energy-recycling trap."
+    },
+    {
+      "bullets": [
+        "A rabbit eats grass, a fox eats the rabbit, and decomposers break down the dead",
+        "Does the energy in the grass come back round to the grass again, or does it leave for good?"
+      ],
+      "heading": "If energy kept looping round, would food chains ever run out?",
+      "kind": "hook",
+      "notes": "Ask the class to commit to a guess before any definitions: loops round forever, or flows one way and leaves as heat? Take two or three answers, then say: hold them, because scene s6 settles this exactly."
+    },
+    {
+      "bullets": [
+        "Energy enters as sunlight, moves from food to feeder along arrows, and leaves as heat - it is never recycled",
+        "Matter is different: carbon, nitrogen and water cycle between air, living organisms and decomposers"
+      ],
+      "heading": "One idea, six scenes: energy flows one way, matter cycles",
+      "kind": "concept",
+      "notes": "Say this slowly, because it is the big idea: energy flow is one-way and matter cycling is a loop, and confusing the two is the trap this whole lesson is built to correct."
+    },
+    {
+      "bullets": [
+        "A food chain is a sequence of trophic levels: producer, then primary consumer, then secondary consumer",
+        "Arrows point from food to feeder - grass to rabbit to fox - because they show the direction of energy flow"
+      ],
+      "heading": "Food chains: arrows follow energy flow",
+      "kind": "mechanism",
+      "notes": "Follow the red energy dot: it enters the grass, then moves with each feeding step. Say: arrows follow energy, so they point from the organism being eaten to the eater.",
+      "visual": "s1"
+    },
+    {
+      "bullets": [
+        "Real communities are webs, not single chains: grass feeds both rabbit and mouse, and mouse is eaten by both fox and owl",
+        "Because pathways interlink, removing one species sends ripples through the whole web"
+      ],
+      "heading": "Food webs: one dot splits into two",
+      "kind": "mechanism",
+      "notes": "Watch one energy dot split into two pathways through the web. Say: a web shows every feeding link at once, so a change to one species reaches them all.",
+      "visual": "s2"
+    },
+    {
+      "bullets": [
+        "Only about 10% of the energy at one trophic level becomes the next level; the rest is lost as heat, in waste and in life processes",
+        "That steep loss is why pyramids of energy narrow so fast and why food chains stay short"
+      ],
+      "heading": "Pyramid of energy: only 10% moves up",
+      "kind": "mechanism",
+      "notes": "Watch the energy dot shrink as it climbs the pyramid. Say: each level keeps only a tenth, so there is never enough energy left to support many levels above.",
+      "visual": "s3"
+    },
+    {
+      "bullets": [
+        "Photosynthesis draws carbon dioxide from the air into green plants, fixing carbon into food",
+        "Respiration and combustion return carbon dioxide to the air, and decomposers release carbon from dead matter - while burning fossil fuels releases ancient carbon all at once"
+      ],
+      "heading": "The carbon cycle: one dot, round and round",
+      "kind": "mechanism",
+      "notes": "Follow the blue carbon dot round the full loop and contrast it with energy: carbon really does cycle, travelling from air to plants and back to air again.",
+      "visual": "s4"
+    },
+    {
+      "bullets": [
+        "Habitat loss and fragmentation shrink populations: small isolated fragments cannot hold species that need large territories",
+        "Protected corridors reconnect fragments, letting individuals and genes move between them again"
+      ],
+      "heading": "Conservation: when habitat shrinks, species vanish",
+      "kind": "mechanism",
+      "notes": "Watch each patch shrink under pressure and its species label vanish with it. Say: the fastest way to lose species is to lose their habitat, and corridors fight back by reconnecting the fragments.",
+      "visual": "s5"
+    },
+    {
+      "bullets": [
+        "The trap claim in full: Energy is recycled through the ecosystem. It feels true because matter cycles - but the evidence in this scene says otherwise",
+        "Energy flows one way - sunlight in, heat out: what is recycled is matter - carbon, nitrogen and water."
+      ],
+      "heading": "A common mistake: energy is not recycled",
+      "kind": "mechanism",
+      "notes": "Name the trap out loud: Energy is recycled through the ecosystem. Then land the correction: Energy flows one way - sunlight in, heat out: what is recycled is matter - carbon, nitrogen and water.",
+      "visual": "s6"
+    },
+    {
+      "bullets": [
+        "If producers hold 10 000 kJ of energy, only about 1 000 kJ reaches primary consumers and about 100 kJ reaches secondary consumers",
+        "Work it level by level: multiply by a tenth at each trophic step, just as the shrinking dot shows in scene s3"
+      ],
+      "heading": "Worked example: the 10% energy payoff",
+      "kind": "example",
+      "notes": "Talk through the numbers level by level as in scene s3, then state the rule from the scene: about 10% moves up, so each level keeps only a tenth of the energy below it."
+    },
+    {
+      "bullets": [
+        "Draw the food chain grass -> rabbit -> fox with arrows in the energy-flow direction, then estimate how much of 10 000 kJ at the producers reaches the fox",
+        "Careful - a classmate says: Energy is recycled through the ecosystem. Correct them in one sentence, naming what is actually recycled"
+      ],
+      "heading": "Your turn: trace the flow, then judge the claim",
+      "kind": "practice",
+      "notes": "Give pairs three minutes, then cold-call one pair on each part: press them on the arrow direction and the 10% estimate first, then on the exact sentence they used to correct the claim: Energy is recycled through the ecosystem."
+    },
+    {
+      "bullets": [
+        "On your own: explain why food chains stay short, using the pyramid of energy and the 10% rule",
+        "Watch out for the trap one last time: Energy is recycled through the ecosystem. Say how energy really moves, and name what is recycled instead"
+      ],
+      "heading": "Exit ticket: show what you know",
+      "kind": "exit-ticket",
+      "notes": "Collect these before anyone leaves and say: I am looking for the 10% rule in your first answer, plus one clear one-way energy sentence in your second. Anyone repeating the claim Energy is recycled through the ecosystem. needs the trap scene again."
+    }
+  ],
+  "subject": "science",
+  "title": "JC H2 biology — ecology: energy flow and the carbon cycle",
+  "topic": "h2-ecology"
+}

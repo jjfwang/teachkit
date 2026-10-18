@@ -1,0 +1,57 @@
+{
+  "definitions": [
+    {
+      "meaning": "A feeding level in a food chain or web: producers are the first level, herbivores the second, and carnivores the levels above.",
+      "term": "Trophic level"
+    },
+    {
+      "meaning": "A sequence of trophic levels showing who eats whom, with arrows pointing in the direction of energy flow, from food to feeder.",
+      "term": "Food chain"
+    },
+    {
+      "meaning": "All the interlinked food chains in a community, showing every feeding pathway energy can take.",
+      "term": "Food web"
+    },
+    {
+      "meaning": "A diagram of the energy at each trophic level, narrowing upwards because only about 10% of energy moves up each level.",
+      "term": "Pyramid of energy"
+    },
+    {
+      "meaning": "An organism, usually a green plant, that captures sunlight by photosynthesis and feeds the whole food chain or web.",
+      "term": "Producer"
+    },
+    {
+      "meaning": "An organism that obtains energy by eating other organisms: primary consumers eat producers, secondary consumers eat herbivores.",
+      "term": "Consumer"
+    },
+    {
+      "meaning": "An organism that breaks down dead matter and waste, releasing carbon and other matter back into cycles.",
+      "term": "Decomposer"
+    },
+    {
+      "meaning": "The cycling of carbon between air, living organisms and decomposers: photosynthesis draws CO2 in, respiration and combustion return it.",
+      "term": "Carbon cycle"
+    }
+  ],
+  "level": "jc",
+  "mechanismSteps": [
+    "Food chains: arrows follow energy flow: a chain runs producer to primary consumer to secondary consumer, and arrows point from food to feeder, the way energy moves.",
+    "Food webs: one dot splits into two: one producer can feed several consumers and one consumer can have several foods, so energy splits across interlinked pathways.",
+    "Pyramid of energy: only 10% moves up: most energy is lost as heat and waste, so each level keeps only a tenth and food chains stay short.",
+    "The carbon cycle: one dot, round and round: photosynthesis draws CO2 into plants, respiration and combustion return it to the air, and decomposers release carbon from dead matter.",
+    "Conservation: when habitat shrinks, species vanish: fragmentation isolates small populations, and protected corridors reconnect fragments so species can move again.",
+    "A common mistake: energy is not recycled: energy flows one way and leaves as heat, while matter such as carbon is what actually cycles."
+  ],
+  "objectives": [
+    "Describe energy flow through food chains, food webs and pyramids of energy",
+    "Explain the carbon cycle, conservation and why energy is not recycled"
+  ],
+  "subject": "science",
+  "title": "JC H2 biology — ecology: energy flow and the carbon cycle",
+  "topic": "h2-ecology",
+  "trap": {
+    "explanation": "The \"cycle of life\" language makes energy sound like it loops round forever. Energy flows one way - sunlight in, heat out: what is recycled is matter - carbon, nitrogen and water. In the animation scene s6 the red energy dot enters as sunlight and leaves as heat, never returning, while the blue carbon dot loops round and round: matter cycles, energy does not.",
+    "misconception": "Energy is recycled through the ecosystem."
+  },
+  "workedExample": "In scenes s1 and s3, the chain grass -> rabbit -> fox follows the energy arrows, and if producers hold 10 000 kJ, only about 1 000 kJ reaches the rabbits and about 100 kJ reaches the foxes. Each step multiplies by a tenth - the 10% rule - so the pyramid narrows and there is too little energy left to support longer chains."
+}
