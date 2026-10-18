@@ -1,0 +1,54 @@
+{
+  "level": "primary",
+  "segments": [
+    {
+      "cue": "s1",
+      "minutes": 6,
+      "questions": [
+        "Is 60 degrees acute, right or obtuse? How do you know?",
+        "What makes 90 degrees special?"
+      ],
+      "say": "Right, acute, obtuse — spot the size. Show the arm swinging: a right angle is exactly 90 degrees, smaller than that is acute, bigger is obtuse. Keep your student notes open at the angle definitions for this scene."
+    },
+    {
+      "cue": "s2",
+      "minutes": 7,
+      "questions": [
+        "Where does the centre dot of the protractor go?",
+        "Which scale do you read if the baseline sits on the zero line?"
+      ],
+      "say": "Measuring with a protractor. Line the centre dot up with the vertex and the baseline with one arm, then read where the other arm crosses the scale. Stress: vertex first, baseline second, reading last."
+    },
+    {
+      "cue": "s3",
+      "minutes": 8,
+      "questions": [
+        "Two angles on a straight line are 65 degrees and one unknown - how do you find the unknown?",
+        "How many right angles make a full turn at a point?"
+      ],
+      "say": "Angles on a straight line, angles at a point. Two angles sharing a straight line always add to 180 degrees, and a full spin around one point is 360 degrees. Now try the angle questions on the worksheet in pairs."
+    },
+    {
+      "cue": "s4",
+      "minutes": 7,
+      "questions": [
+        "A triangle has angles of 90 and 40 degrees - what is the third angle?",
+        "Why does the corner-tearing trick prove the total is always 180 degrees?"
+      ],
+      "say": "Triangle angle sum, quadrilateral corners. Tear the three corners off a triangle and they fit exactly onto a straight line: 180 degrees. The four corners of a quadrilateral add to 360 degrees."
+    },
+    {
+      "cue": "s5",
+      "minutes": 7,
+      "questions": [
+        "Why does a longer-armed drawing of 45 degrees still measure 45 degrees?",
+        "What would you say to someone who judges an angle by its arm lengths?"
+      ],
+      "say": "Misconception: longer arms, same angle. Land the point: the angle measures the turn between the arms, not the drawing. Finish by taking the exit ticket on your own - its first question revisits exactly this trap.",
+      "watchFor": "The angle with longer arms is bigger. Listen and look for it in pair talk and on the worksheet: any answer that the longer-armed angle is bigger shows the trap - send them back to scene s5 and to the correct turn: An angle measures the turn between the arms: same turn, same angle, whatever the arm lengths."
+    }
+  ],
+  "subject": "math",
+  "title": "Angles: identify, measure, add",
+  "topic": "geometry-angles"
+}

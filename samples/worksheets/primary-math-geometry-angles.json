@@ -1,0 +1,77 @@
+{
+  "level": "primary",
+  "questions": [
+    {
+      "choices": [
+        {
+          "text": "The one with longer arms"
+        },
+        {
+          "text": "The one with shorter arms"
+        },
+        {
+          "correct": true,
+          "text": "Neither - both are 45 degrees"
+        }
+      ],
+      "explanation": "The trap is: The angle with longer arms is bigger. An angle measures the turn between the arms: same turn, same angle, whatever the arm lengths.",
+      "id": "q1",
+      "kind": "multiple-choice",
+      "misconception": "The angle with longer arms is bigger.",
+      "prompt": "Two angles are both 45 degrees. One is drawn with much longer arms. Which angle is bigger?"
+    },
+    {
+      "choices": [
+        {
+          "text": "Acute"
+        },
+        {
+          "text": "Right"
+        },
+        {
+          "correct": true,
+          "text": "Obtuse"
+        }
+      ],
+      "explanation": "Scene s1 names angles by size: 120 degrees is bigger than a right angle of 90 degrees, so it is obtuse.",
+      "id": "q2",
+      "kind": "multiple-choice",
+      "prompt": "An angle measures 120 degrees. What kind of angle is it?"
+    },
+    {
+      "answer": "115 degrees: angles on a straight line add to 180, so 180 - 65 = 115.",
+      "explanation": "Scene s3: two angles sharing a straight line always add to 180 degrees, so the missing angle is 180 - 65 = 115 degrees.",
+      "id": "q3",
+      "kind": "short-answer",
+      "prompt": "Two angles sit on a straight line. One is 65 degrees. Find the other angle."
+    },
+    {
+      "answer": "50 degrees: the angles in a triangle add to 180, so 180 - 90 - 40 = 50.",
+      "explanation": "Scene s4: the three corners of any triangle fit onto a straight line and add to 180 degrees, so the third angle is 180 - 90 - 40 = 50 degrees.",
+      "id": "q4",
+      "kind": "short-answer",
+      "prompt": "A triangle has angles of 90 degrees and 40 degrees. Find the third angle."
+    },
+    {
+      "choices": [
+        {
+          "correct": true,
+          "text": "Put the centre dot on the vertex"
+        },
+        {
+          "text": "Read any number on the scale"
+        },
+        {
+          "text": "Draw the arms longer"
+        }
+      ],
+      "explanation": "Scene s2: line the protractor centre dot up with the vertex, and the baseline with one arm, then read where the other arm crosses the scale.",
+      "id": "q5",
+      "kind": "multiple-choice",
+      "prompt": "Which step comes first when measuring an angle with a protractor?"
+    }
+  ],
+  "subject": "math",
+  "title": "Angles: identify, measure, add",
+  "topic": "geometry-angles"
+}

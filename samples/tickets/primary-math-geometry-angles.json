@@ -1,0 +1,59 @@
+{
+  "level": "primary",
+  "questions": [
+    {
+      "choices": [
+        {
+          "text": "The long-armed one"
+        },
+        {
+          "correct": true,
+          "text": "Neither - they are equal"
+        },
+        {
+          "text": "The short-armed one"
+        }
+      ],
+      "feedback": "That trap answer is the one to unlearn: The angle with longer arms is bigger. Reteach point: An angle measures the turn between the arms: same turn, same angle, whatever the arm lengths.",
+      "id": "q1",
+      "kind": "multiple-choice",
+      "misconception": "The angle with longer arms is bigger.",
+      "prompt": "One angle of 45 degrees is drawn with long arms and another 45-degree angle with short arms. Which is bigger?"
+    },
+    {
+      "answer": "70 degrees: 180 - 110 = 70.",
+      "feedback": "Scene s3 locks the method: angles on a straight line add to 180 degrees, so the missing angle is 180 - 110 = 70 degrees.",
+      "id": "q2",
+      "kind": "short-answer",
+      "prompt": "Two angles sit on a straight line. One is 110 degrees. Find the other angle, showing the working."
+    },
+    {
+      "choices": [
+        {
+          "text": "95 degrees"
+        },
+        {
+          "correct": true,
+          "text": "60 degrees"
+        },
+        {
+          "text": "90 degrees"
+        }
+      ],
+      "feedback": "Scene s1 fixes the names: acute is smaller than 90 degrees, so 60 degrees is acute; 90 is right and 95 is obtuse.",
+      "id": "q3",
+      "kind": "multiple-choice",
+      "prompt": "Which angle is acute?"
+    },
+    {
+      "answer": "An angle measures the turn between the arms, and the turn stays the same whatever the arm lengths.",
+      "feedback": "Scene s5 fixes the idea: only the turn between the arms matters - same turn, same angle, whatever the arm lengths.",
+      "id": "q4",
+      "kind": "short-answer",
+      "prompt": "Explain in one sentence why drawing an angle with longer arms does not make it bigger."
+    }
+  ],
+  "subject": "math",
+  "title": "Angles: identify, measure, add Exit Ticket",
+  "topic": "geometry-angles"
+}

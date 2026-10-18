@@ -1,0 +1,40 @@
+{
+  "definitions": [
+    {
+      "meaning": "The turn between two arms that meet at a point called the vertex, measured in degrees.",
+      "term": "Angle"
+    },
+    {
+      "meaning": "An angle of exactly 90 degrees; smaller than that is acute, and bigger is obtuse.",
+      "term": "Right angle"
+    },
+    {
+      "meaning": "The measuring tool for angles: put its centre dot on the vertex and its baseline along one arm, then read the scale.",
+      "term": "Protractor"
+    },
+    {
+      "meaning": "The corner point where the two arms of an angle meet.",
+      "term": "Vertex"
+    }
+  ],
+  "level": "primary",
+  "mechanismSteps": [
+    "Right, acute, obtuse — spot the size: a right angle is exactly 90 degrees, smaller than that is acute, and bigger is obtuse.",
+    "Measuring with a protractor: line the centre dot up with the vertex and the baseline with one arm, then read where the other arm crosses the scale.",
+    "Angles on a straight line, angles at a point: angles sharing a straight line add to 180 degrees, and a full spin around one point is 360 degrees.",
+    "Triangle angle sum, quadrilateral corners: the three corners of a triangle add to 180 degrees, and the four corners of a quadrilateral add to 360 degrees.",
+    "Misconception: longer arms, same angle: the long arms look bigger, but the angle only measures the turn between the arms."
+  ],
+  "objectives": [
+    "Name an angle as acute, right or obtuse from its size in degrees",
+    "Measure angles with a protractor and add angles on a straight line, at a point, and in a triangle"
+  ],
+  "subject": "math",
+  "title": "Angles: identify, measure, add",
+  "topic": "geometry-angles",
+  "trap": {
+    "explanation": "Longer arms look more impressive, and size is judged by the drawing rather than the turn. An angle measures the turn between the arms: same turn, same angle, whatever the arm lengths. In the animation scene s5 the same 45-degree angle is drawn twice, once with longer arms, and the turn between the arms never changes.",
+    "misconception": "The angle with longer arms is bigger."
+  },
+  "workedExample": "In scene s3, two angles sit on a straight line and one is 65 degrees. Angles on a straight line add to 180 degrees, so the missing angle is 180 - 65 = 115 degrees. Check: 115 + 65 = 180, so the line is complete and 115 degrees is correct."
+}
