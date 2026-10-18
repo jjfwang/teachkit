@@ -26,6 +26,19 @@ version section when the release ships.
   tests/gold-organic-jc-pack.test.js
   (issue #899).
 
+- JC H2 organic chemistry lesson pack in the pack demo
+  (`player/pack-demo.html`): the JC H2 organic chemistry
+  gold lesson pack now appears on the same demo page as the other packs,
+  presenting all six jc-h2-organic materials (animation,
+  slides, worksheet, exit ticket, student notes, and teacher
+  script) under its own
+  organic-jc-manifest header (slug
+  `h2-organic-jc-science`, level jc, subject
+  science, topic `h2-organic`), stacked animation, slides, and printables sections, all
+  six materials validated before render for that pack, and
+  the shared teacher-keys toggle covering all twenty-eight packs' print
+  stages, guarded by slice-scoped pack-demo tests (issue #901).
+
 - JC H2 inorganic chemistry lesson pack in the pack demo
   (`player/pack-demo.html`): the JC H2 inorganic chemistry
   gold lesson pack now appears on the same demo page as the other packs,
