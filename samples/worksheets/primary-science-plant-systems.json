@@ -1,0 +1,77 @@
+{
+  "level": "primary",
+  "questions": [
+    {
+      "choices": [
+        {
+          "text": "Nothing: the roots are the mouth of the plant and eat food from the soil"
+        },
+        {
+          "text": "The stem has stopped working"
+        },
+        {
+          "correct": true,
+          "text": "Plants do not eat food from the soil - roots drink water and minerals, and the leaves make the food with sunlight"
+        }
+      ],
+      "explanation": "The trap is: Plants take food from the soil through their roots, like we eat food. Scene s4 shows why this is wrong: Roots drink water and minerals; the leaves make the food with sunlight. The plant does not eat food like we do.",
+      "id": "q1",
+      "kind": "multiple-choice",
+      "misconception": "Plants take food from the soil through their roots, like we eat food.",
+      "prompt": "A pupil says: plants take food from the soil through their roots, like we eat food. What is wrong with this idea?"
+    },
+    {
+      "choices": [
+        {
+          "text": "Leaves, then stem, then roots"
+        },
+        {
+          "correct": true,
+          "text": "Roots, then stem, then leaves"
+        },
+        {
+          "text": "Stem, then leaves, then roots"
+        }
+      ],
+      "explanation": "Scenes s1 and s2: the roots drink water from the soil, then the water travels up the stem to the leaves.",
+      "id": "q2",
+      "kind": "multiple-choice",
+      "prompt": "In which order does water travel through the plant?"
+    },
+    {
+      "answer": "The roots hold the plant in place in the soil, and they drink up water for the whole plant.",
+      "explanation": "Scene s1: the roots grow down into the soil, hold the plant in place, and drink up water for the whole plant.",
+      "id": "q3",
+      "kind": "short-answer",
+      "prompt": "What two jobs do the roots do for the plant?"
+    },
+    {
+      "answer": "It travels up the stem to the leaves, where the leaves use it with sunlight to make food.",
+      "explanation": "Scenes s2 and s3: the stem carries the water up from the roots to the leaves, and the leaves use it with sunlight to make food.",
+      "id": "q4",
+      "kind": "short-answer",
+      "prompt": "A drop of water is taken in by the roots. What happens to that drop next?"
+    },
+    {
+      "choices": [
+        {
+          "text": "The roots"
+        },
+        {
+          "correct": true,
+          "text": "The leaves"
+        },
+        {
+          "text": "The stem"
+        }
+      ],
+      "explanation": "Scene s3: the leaves catch sunlight and make food for the plant; the roots in scene s1 only drink water and minerals.",
+      "id": "q5",
+      "kind": "multiple-choice",
+      "prompt": "Which part of the plant makes its food?"
+    }
+  ],
+  "subject": "science",
+  "title": "Plant systems",
+  "topic": "plant-systems"
+}

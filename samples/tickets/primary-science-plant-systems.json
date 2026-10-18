@@ -1,0 +1,59 @@
+{
+  "level": "primary",
+  "questions": [
+    {
+      "choices": [
+        {
+          "text": "Because the roots eat the food before it reaches the soil"
+        },
+        {
+          "correct": true,
+          "text": "They do not eat at all: roots drink water and minerals, and the leaves make the food with sunlight"
+        },
+        {
+          "text": "Because there is no water in the soil"
+        }
+      ],
+      "feedback": "That trap answer is the one to unlearn: Plants take food from the soil through their roots, like we eat food. Reteach point: Roots drink water and minerals; the leaves make the food with sunlight. The plant does not eat food like we do. Check scene s4: watch what the roots really take in, and what the leaves do with sunlight.",
+      "id": "q1",
+      "kind": "multiple-choice",
+      "misconception": "Plants take food from the soil through their roots, like we eat food.",
+      "prompt": "Why do plants NOT take food from the soil through their roots?"
+    },
+    {
+      "answer": "Roots, stem, leaves.",
+      "feedback": "Scenes s1 and s2 fix the order: the roots drink the water, the stem carries it up, and it arrives at the leaves.",
+      "id": "q2",
+      "kind": "short-answer",
+      "prompt": "Name, in order, the three parts of the plant that water passes through on its journey from the soil to the leaves."
+    },
+    {
+      "choices": [
+        {
+          "text": "It makes the food for the plant"
+        },
+        {
+          "correct": true,
+          "text": "It holds the plant up and carries water from the roots to the leaves"
+        },
+        {
+          "text": "It drinks water from the soil"
+        }
+      ],
+      "feedback": "Scene s2 fixes the picture: the stem is the lift and the road - it holds the plant up and water travels up it from the roots to the leaves.",
+      "id": "q3",
+      "kind": "multiple-choice",
+      "prompt": "What does the stem do for the plant?"
+    },
+    {
+      "answer": "Sunlight and water, which the roots drink and the stem carries up.",
+      "feedback": "Scene s3 fixes the method: the leaves catch sunlight and use it with water to make food - the plant makes its food instead of eating it.",
+      "id": "q4",
+      "kind": "short-answer",
+      "prompt": "What do the leaves use to make food for the plant?"
+    }
+  ],
+  "subject": "science",
+  "title": "Plant systems Exit Ticket",
+  "topic": "plant-systems"
+}

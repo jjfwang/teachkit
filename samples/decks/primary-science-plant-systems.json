@@ -1,0 +1,111 @@
+{
+  "level": "primary",
+  "slides": [
+    {
+      "bullets": [
+        "How the roots, stem and leaves work together, and why plants do not eat food from the soil"
+      ],
+      "heading": "Plant systems",
+      "kind": "title",
+      "notes": "Welcome everyone in and say: today we tour the plant system - the roots hold the plant and drink, the stem lifts it and carries water up, and the leaves make its food."
+    },
+    {
+      "bullets": [
+        "Follow water on its journey from the roots up the stem to the leaves",
+        "Watch the leaves catch sunlight and make food for the plant",
+        "Explain why plants do not take food from the soil through their roots"
+      ],
+      "heading": "What we will learn",
+      "kind": "objective",
+      "notes": "Read the three goals aloud and tell the class: keep these in mind, because the exit ticket at the end will ask you to trace the water journey and spot the mistake about plants eating from the soil."
+    },
+    {
+      "bullets": [
+        "A pupil says plants take food from the soil through their roots, like we eat food",
+        "Do the roots really eat, or do they only drink?"
+      ],
+      "heading": "Do plants eat food from the soil?",
+      "kind": "hook",
+      "notes": "Pose the claim from scene s4 without the verdict first: ask for a show of hands on whether roots eat food from the soil, take two or three answers without judging them, and say scene s3 and scene s4 settle this exactly."
+    },
+    {
+      "bullets": [
+        "Each part of the plant has its own job, and the parts work together as a system",
+        "The leaves make the food: roots drink water and minerals, and the stem carries the water up to the leaves"
+      ],
+      "heading": "Each plant part has its own job",
+      "kind": "concept",
+      "notes": "Say this slowly, because it is the big idea of the whole lesson: the roots and stem deliver water, and the leaves use that water with sunlight to make the food for the whole plant."
+    },
+    {
+      "bullets": [
+        "The roots grow down into the soil and hold the plant in place",
+        "The roots drink up water from the soil for the whole plant"
+      ],
+      "heading": "Roots: the plant holds on and drinks",
+      "kind": "mechanism",
+      "notes": "Narrate the roots growing down into the soil, watch them hold the plant steady, then follow the water as the roots drink it up for the whole plant.",
+      "visual": "s1"
+    },
+    {
+      "bullets": [
+        "The stem holds the plant up so the leaves can reach the light",
+        "Water travels up the stem from the roots to the leaves, like traffic on a road"
+      ],
+      "heading": "Stem: the plant's lift and road",
+      "kind": "mechanism",
+      "notes": "Follow a drop of water as it travels up the stem from the roots, and point out how the stem also holds the plant up so the leaves can reach the light.",
+      "visual": "s2"
+    },
+    {
+      "bullets": [
+        "The leaves catch sunlight",
+        "With sunlight and water, the leaves make food for the plant - the plant does not eat food like we do"
+      ],
+      "heading": "Leaves: the plant makes its own food",
+      "kind": "mechanism",
+      "notes": "Watch the leaves catch the sunlight, then show how they use the sunlight together with the water from the roots to make food for the plant.",
+      "visual": "s3"
+    },
+    {
+      "bullets": [
+        "The roots look like a mouth, but they are not: roots drink water and minerals, they do not eat",
+        "The leaves make the food with sunlight, so the plant takes no food from the soil"
+      ],
+      "heading": "Watch out: plants do not eat food from the soil",
+      "kind": "mechanism",
+      "notes": "Hold the mistake up first - plants take food from the soil through their roots - then watch what the roots really drink and what the leaves make, which proves the plant does not eat food from the soil.",
+      "visual": "s4"
+    },
+    {
+      "bullets": [
+        "Follow one drop: the roots drink it, the stem carries it up, and the leaves use it to make food",
+        "Each stop on the journey is a different plant part doing its own job"
+      ],
+      "heading": "Worked example: trace one drop of water",
+      "kind": "example",
+      "notes": "Talk through the journey in scenes s1 to s3 slowly and name each step: the roots drink the drop, the stem carries it up, and the leaves use it with sunlight to make food."
+    },
+    {
+      "bullets": [
+        "Put the water journey in order: roots, stem, leaves - what happens at each stop?",
+        "Explain to your partner why plants do not eat food from the soil, using the word leaves in your answer"
+      ],
+      "heading": "Your turn: explain the plant system",
+      "kind": "practice",
+      "notes": "Give pairs three minutes, then cold-call one pair on each part: press them to name the plant parts in order and to use the leaves making food as their evidence."
+    },
+    {
+      "bullets": [
+        "On your own: draw a plant and label the roots, stem and leaves",
+        "Explain in one sentence what the roots really take from the soil"
+      ],
+      "heading": "Exit ticket: show what you know",
+      "kind": "exit-ticket",
+      "notes": "Collect these before anyone leaves and say: I am looking for all three parts labelled, plus one clear sentence about roots drinking water and minerals, not eating food."
+    }
+  ],
+  "subject": "science",
+  "title": "Plant systems",
+  "topic": "plant-systems"
+}
