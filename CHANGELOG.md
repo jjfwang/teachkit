@@ -12,6 +12,19 @@ version section when the release ships.
 
 ### Added
 
+- JC H2 inorganic chemistry lesson pack in the pack demo
+  (`player/pack-demo.html`): the JC H2 inorganic chemistry
+  gold lesson pack now appears on the same demo page as the other packs,
+  presenting all six jc-h2-inorganic materials (animation,
+  slides, worksheet, exit ticket, student notes, and teacher
+  script) under its own
+  inorganic-jc-manifest header (slug
+  `h2-inorganic-jc-science`, level jc, subject
+  science, topic `h2-inorganic`), stacked animation, slides, and printables sections, all
+  six materials validated before render for that pack, and
+  the shared teacher-keys toggle covering all twenty-seven packs' print
+  stages, guarded by slice-scoped pack-demo tests (issue #897).
+
 - JC H2 inorganic gold lesson pack: five hand-authored gold
   samples for h2-inorganic in
   samples/decks/jc-h2-inorganic.json,
