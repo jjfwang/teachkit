@@ -792,6 +792,24 @@
     <li><code>script</code> teacher script</li>
   </ul>
 </header>
+<header class="pack-manifest" id="human-body-systems-primary-manifest">
+  <h1>Lesson pack: Primary science human body systems: Human body systems</h1>
+  <dl>
+    <dt>Slug</dt><dd><code>human-body-systems-primary-science</code></dd>
+    <dt>Level</dt><dd>primary</dd>
+    <dt>Subject</dt><dd>science</dd>
+    <dt>Topic</dt><dd><code>human-body-systems</code></dd>
+  </dl>
+  <p>topic human-body-systems · level primary · subject science · deck primary-science-human-body-systems</p>
+  <ul class="pack-materials">
+    <li><code>animation</code></li>
+    <li><code>slides</code></li>
+    <li><code>worksheet</code></li>
+    <li><code>exitTicket</code> exit ticket</li>
+    <li><code>notes</code> student notes</li>
+    <li><code>script</code> teacher script</li>
+  </ul>
+</header>
 <section class="pack-section" id="animation-section">
   <h2>Animation</h2>
   <div id="anim-stage"></div>
@@ -1337,6 +1355,19 @@
   <h2>Primary mathematics model method printables</h2>
   <div id="model-method-primary-printables-stage"></div>
 </section>
+<section class="pack-section" id="human-body-systems-primary-animation">
+  <h2>Primary science human body systems animation</h2>
+  <div id="human-body-systems-primary-stage"></div>
+  <div id="human-body-systems-primary-captions"></div>
+</section>
+<section class="pack-section" id="human-body-systems-primary-slides">
+  <h2>Primary science human body systems slides</h2>
+  <div id="human-body-systems-primary-slides-stage"></div>
+</section>
+<section class="pack-section" id="human-body-systems-primary-printables">
+  <h2>Primary science human body systems printables</h2>
+  <div id="human-body-systems-primary-printables-stage"></div>
+</section>
 <div id="err"></div>
 <script src="validate.js"></script>
 <script src="player.js"></script>
@@ -1403,8 +1434,9 @@
     var volumePrimaryPrintStage = document.querySelector('#volume-primary-printables-stage .pr-stage') || document.querySelector('#volume-primary-printables-stage');
     var dataGraphsPrimaryPrintStage = document.querySelector('#data-graphs-primary-printables-stage .pr-stage') || document.querySelector('#data-graphs-primary-printables-stage');
     var modelMethodPrimaryPrintStage = document.querySelector('#model-method-primary-printables-stage .pr-stage') || document.querySelector('#model-method-primary-printables-stage');
+    var humanBodySystemsPrimaryPrintStage = document.querySelector('#human-body-systems-primary-printables-stage .pr-stage') || document.querySelector('#human-body-systems-primary-printables-stage');
     var keys = [];
-    [printStage, fractionsPrintStage, wavesPrintStage, complexPrintStage, trigPrintStage, thermalPrintStage, photosynthesisPrintStage, erosionPrintStage, chemMolePrintStage, differentiationPrintStage, integrationPrintStage, binomialPrintStage, kinematicsPrintStage, quadraticPrintStage, trigonometryAPrintStage, vectorsPrintStage, functionsGraphsPrintStage, sequencesPrintStage, differentiationJcPrintStage, integrationJcPrintStage, probabilityJcPrintStage, statisticsJcPrintStage, mechanicsJcPrintStage, emJcPrintStage, quantumJcPrintStage, physicalJcPrintStage, inorganicJcPrintStage, organicJcPrintStage, cellBioJcPrintStage, geneticsJcPrintStage, energeticsJcPrintStage, ecologyJcPrintStage, wholeNumbersPrimaryPrintStage, decimalsPrimaryPrintStage, percentagePrimaryPrintStage, ratioPrimaryPrintStage, rateSpeedPrimaryPrintStage, algebraIntroPrimaryPrintStage, geometryAnglesPrimaryPrintStage, areaPerimeterPrimaryPrintStage, volumePrimaryPrintStage, dataGraphsPrimaryPrintStage, modelMethodPrimaryPrintStage].forEach(function (stage) {
+    [printStage, fractionsPrintStage, wavesPrintStage, complexPrintStage, trigPrintStage, thermalPrintStage, photosynthesisPrintStage, erosionPrintStage, chemMolePrintStage, differentiationPrintStage, integrationPrintStage, binomialPrintStage, kinematicsPrintStage, quadraticPrintStage, trigonometryAPrintStage, vectorsPrintStage, functionsGraphsPrintStage, sequencesPrintStage, differentiationJcPrintStage, integrationJcPrintStage, probabilityJcPrintStage, statisticsJcPrintStage, mechanicsJcPrintStage, emJcPrintStage, quantumJcPrintStage, physicalJcPrintStage, inorganicJcPrintStage, organicJcPrintStage, cellBioJcPrintStage, geneticsJcPrintStage, energeticsJcPrintStage, ecologyJcPrintStage, wholeNumbersPrimaryPrintStage, decimalsPrimaryPrintStage, percentagePrimaryPrintStage, ratioPrimaryPrintStage, rateSpeedPrimaryPrintStage, algebraIntroPrimaryPrintStage, geometryAnglesPrimaryPrintStage, areaPerimeterPrimaryPrintStage, volumePrimaryPrintStage, dataGraphsPrimaryPrintStage, modelMethodPrimaryPrintStage, humanBodySystemsPrimaryPrintStage].forEach(function (stage) {
       if (stage) {
         keys = keys.concat(Array.prototype.slice.call(stage.querySelectorAll('.pr-teacher')));
       }
@@ -4503,6 +4535,79 @@
     ].join('');
   }).catch(function (err) {
     showError('Primary mathematics model method pack failed to load: ' + err.message);
+  });
+})();
+</script>
+<script>
+(function () {
+  var presenter = document.getElementById('human-body-systems-primary-slides-stage');
+  var humanBodySystemsPrimaryPrint = document.getElementById('human-body-systems-primary-printables-stage');
+  var errBox = document.getElementById('err');
+  var humanBodySystemsPrimaryAnimUrl = '../samples/primary-science-human-body-systems.json';
+  var humanBodySystemsPrimaryDeckUrl = '../samples/decks/primary-science-human-body-systems.json';
+  var humanBodySystemsPrimaryWorksheetUrl = '../samples/worksheets/primary-science-human-body-systems.json';
+  var humanBodySystemsPrimaryTicketUrl = '../samples/tickets/primary-science-human-body-systems.json';
+  var humanBodySystemsPrimaryNotesUrl = '../samples/notes/primary-science-human-body-systems.json';
+  var humanBodySystemsPrimaryScriptUrl = '../samples/scripts/primary-science-human-body-systems.json';
+
+  function showError(msg) {
+    errBox.textContent = String(msg);
+  }
+
+  Promise.all([
+    fetch(humanBodySystemsPrimaryAnimUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + humanBodySystemsPrimaryAnimUrl);
+      return r.json();
+    }),
+    fetch(humanBodySystemsPrimaryDeckUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + humanBodySystemsPrimaryDeckUrl);
+      return r.json();
+    }),
+    fetch(humanBodySystemsPrimaryWorksheetUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + humanBodySystemsPrimaryWorksheetUrl);
+      return r.json();
+    }),
+    fetch(humanBodySystemsPrimaryTicketUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + humanBodySystemsPrimaryTicketUrl);
+      return r.json();
+    }),
+    fetch(humanBodySystemsPrimaryNotesUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + humanBodySystemsPrimaryNotesUrl);
+      return r.json();
+    }),
+    fetch(humanBodySystemsPrimaryScriptUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + humanBodySystemsPrimaryScriptUrl);
+      return r.json();
+    })
+  ]).then(function (pack) {
+    var anim = pack[0];
+    var deck = pack[1];
+    var worksheet = pack[2];
+    var ticket = pack[3];
+    var notes = pack[4];
+    var script = pack[5];
+    var problems = AnimathValidate.validateSpec(anim)
+      .concat(AnimathValidate.validateSlides(deck))
+      .concat(AnimathValidate.validateWorksheet(worksheet))
+      .concat(AnimathValidate.validateExitTicket(ticket))
+      .concat(AnimathValidate.validateNotes(notes))
+      .concat(AnimathValidate.validateScript(script));
+    if (problems.length) {
+      showError('Primary science human body systems pack failed validation:\n' + problems.join('\n'));
+      return;
+    }
+    AnimathPlayer.mount(document.getElementById('human-body-systems-primary-stage'), anim, { autoplay: false });
+    AnimathSlidesPresenter.attachPresenter(document, presenter, deck, { animSpec: anim });
+    humanBodySystemsPrimaryPrint.innerHTML = [
+      AnimathPrintable.renderWorksheet(worksheet),
+      AnimathPrintable.renderWorksheetAnswerKey(worksheet),
+      AnimathPrintable.renderExitTicket(ticket),
+      AnimathPrintable.renderExitTicketAnswerKey(ticket),
+      AnimathPrintable.renderNotes(notes),
+      AnimathPrintable.renderScript(script)
+    ].join('');
+  }).catch(function (err) {
+    showError('Primary science human body systems pack failed to load: ' + err.message);
   });
 })();
 </script>
