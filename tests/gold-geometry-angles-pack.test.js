@@ -33,7 +33,7 @@ const script = load('samples/scripts/primary-math-geometry-angles.json');
 const BANK_BEAT = MISCONCEPTIONS['geometry-angles'];
 const TITLE = 'Angles: identify, measure, add';
 const EXPECTED_KINDS = ['title', 'objective', 'hook', 'concept', 'mechanism',
-  'mechanism', 'mechanism', 'mechanism', 'mechanism', 'mechanism', 'example', 'practice', 'exit-ticket'];
+  'mechanism', 'mechanism', 'mechanism', 'mechanism', 'example', 'practice', 'exit-ticket'];
 const SCENE_IDS = animation.scenes.map((s) => s.id);
 
 test('geometry-angles animation carries scenes s1 to s5 with the brief captions', () => {
