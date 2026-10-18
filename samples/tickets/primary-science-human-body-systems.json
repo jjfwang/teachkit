@@ -1,0 +1,59 @@
+{
+  "level": "primary",
+  "questions": [
+    {
+      "choices": [
+        {
+          "text": "Because the heart burns blood like fuel"
+        },
+        {
+          "correct": true,
+          "text": "It cannot: blood is never used up, it loops back to the heart"
+        },
+        {
+          "text": "Because the body makes new blood every minute"
+        }
+      ],
+      "feedback": "That trap answer is the one to unlearn: The heart uses up the blood it pumps, so the body must keep making fresh blood. Reteach point: Blood is never used up: it keeps going round in a loop, coming back to the heart to be pushed around again. Check scene s3: follow one drop all the way round and watch it arrive back at the heart.",
+      "id": "q1",
+      "kind": "multiple-choice",
+      "misconception": "The heart uses up the blood it pumps, so the body must keep making fresh blood.",
+      "prompt": "Why can the heart NOT use up the blood it pumps?"
+    },
+    {
+      "answer": "Mouth, stomach, intestines.",
+      "feedback": "Scene s1 fixes the order: food is chewed in the mouth, mixed in the stomach, and the good parts are taken out in the intestines.",
+      "id": "q2",
+      "kind": "short-answer",
+      "prompt": "Name, in order, the three stops food makes on its digestion journey."
+    },
+    {
+      "choices": [
+        {
+          "text": "They stay the same size"
+        },
+        {
+          "correct": true,
+          "text": "They fill with air and grow bigger"
+        },
+        {
+          "text": "They fill with blood"
+        }
+      ],
+      "feedback": "Scene s2 fixes the picture: air travels down the windpipe, the lungs fill with air and grow bigger, then shrink as air flows back out.",
+      "id": "q3",
+      "kind": "multiple-choice",
+      "prompt": "What happens to the lungs when you breathe in?"
+    },
+    {
+      "answer": "It comes back to the heart and is pushed around the loop again.",
+      "feedback": "Scene s3 fixes the method: trace the drop out to the body and back again - the same blood returns to the heart, so it is never used up.",
+      "id": "q4",
+      "kind": "short-answer",
+      "prompt": "What happens to a drop of blood after it has visited the body?"
+    }
+  ],
+  "subject": "science",
+  "title": "Human body systems Exit Ticket",
+  "topic": "human-body-systems"
+}

@@ -1,0 +1,111 @@
+{
+  "level": "primary",
+  "slides": [
+    {
+      "bullets": [
+        "How the digestive, breathing and circulatory systems work together, and why blood is never used up"
+      ],
+      "heading": "Human body systems",
+      "kind": "title",
+      "notes": "Welcome everyone in and say: today we tour three body systems - digestion takes the good parts out of food, breathing moves air in and out of the lungs, and circulation carries blood round and round in a loop."
+    },
+    {
+      "bullets": [
+        "Follow food on its journey from the mouth through the stomach to the intestines",
+        "Watch air move in and out of the lungs as we breathe",
+        "Trace blood around its loop and explain why it is never used up"
+      ],
+      "heading": "What we will learn",
+      "kind": "objective",
+      "notes": "Read the three goals aloud and tell the class: keep these in mind, because the exit ticket at the end will ask you to trace the blood loop and spot the mistake about blood being used up."
+    },
+    {
+      "bullets": [
+        "A pupil says the heart uses up the blood it pumps, so the body must keep making fresh blood",
+        "Is the blood really gone after one trip, or does it come back to the heart?"
+      ],
+      "heading": "Does the heart use up our blood?",
+      "kind": "hook",
+      "notes": "Pose the claim from scene s4 without the verdict first: ask for a show of hands on whether blood is used up, take two or three answers without judging them, and say scene s3 and scene s4 settle this exactly."
+    },
+    {
+      "bullets": [
+        "Each body system has its own job, and the systems work together as a team",
+        "The circulatory system is a loop: blood leaves the heart, visits the body and returns to the heart"
+      ],
+      "heading": "Systems that work as a team",
+      "kind": "concept",
+      "notes": "Say this slowly, because it is the big idea of the whole lesson: digestion and breathing load the blood with good things, and circulation delivers them by going round the same loop again and again."
+    },
+    {
+      "bullets": [
+        "Food is chewed in the mouth, mixed in the stomach, and the good parts are taken out in the intestines",
+        "The journey is mouth, stomach, intestines - in that order"
+      ],
+      "heading": "Digestion: food travels mouth to intestines",
+      "kind": "mechanism",
+      "notes": "Narrate the pieces of chewed food travelling from the mouth down to the stomach, watch the stomach mix them, then follow the good parts as they are taken out in the intestines.",
+      "visual": "s1"
+    },
+    {
+      "bullets": [
+        "Air travels down the windpipe into the lungs, and the lungs fill and grow bigger",
+        "Then the lungs shrink as the air flows back out again"
+      ],
+      "heading": "Breathing: air moves in and out of the lungs",
+      "kind": "mechanism",
+      "notes": "Follow the air down the windpipe into both lungs, watch the lungs grow bigger as they fill, then shrink again as the air flows back out.",
+      "visual": "s2"
+    },
+    {
+      "bullets": [
+        "The heart pumps blood out to the body, and the same blood travels back to the heart",
+        "One full trip is a loop, and the blood is ready to go round again"
+      ],
+      "heading": "Circulation: blood loops round and round",
+      "kind": "mechanism",
+      "notes": "Watch the heart pump, follow a drop of blood out to the body, then trace the same drop all the way back to the heart, ready to be pushed around again.",
+      "visual": "s3"
+    },
+    {
+      "bullets": [
+        "The heart is a pump, not an engine that burns up the blood it moves",
+        "Blood returning to the heart proves the loop: nothing is used up on the trip"
+      ],
+      "heading": "A common mistake: blood is not used up",
+      "kind": "mechanism",
+      "notes": "Hold the mistake up first - the heart uses up the blood - then watch the drop travel out to the body and come straight back to the heart, which proves the blood is never used up.",
+      "visual": "s4"
+    },
+    {
+      "bullets": [
+        "Follow one drop: heart to body, body back to heart, then round again",
+        "Each return to the heart is proof that the same blood keeps circulating"
+      ],
+      "heading": "Worked example: trace one drop of blood",
+      "kind": "example",
+      "notes": "Talk through the loop in scene s3 slowly and name each step: the heart pumps the drop out, the drop visits the body, and the same drop comes back to the heart."
+    },
+    {
+      "bullets": [
+        "Put the digestion journey in order: mouth, stomach, intestines - what happens at each stop?",
+        "Explain to your partner why blood is not used up, using the word loop in your answer"
+      ],
+      "heading": "Your turn: explain the systems",
+      "kind": "practice",
+      "notes": "Give pairs three minutes, then cold-call one pair on each part: press them to name the organs in order and to use the returning blood as their evidence."
+    },
+    {
+      "bullets": [
+        "On your own: draw the blood loop and label the heart and the body",
+        "Explain in one sentence why the heart does not use up the blood"
+      ],
+      "heading": "Exit ticket: show what you know",
+      "kind": "exit-ticket",
+      "notes": "Collect these before anyone leaves and say: I am looking for a closed loop in your drawing, plus one clear sentence about blood coming back to the heart."
+    }
+  ],
+  "subject": "science",
+  "title": "Human body systems",
+  "topic": "human-body-systems"
+}

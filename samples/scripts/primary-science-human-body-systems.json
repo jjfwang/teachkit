@@ -1,0 +1,45 @@
+{
+  "level": "primary",
+  "segments": [
+    {
+      "cue": "s1",
+      "minutes": 7,
+      "questions": [
+        "Where does digestion start, and where is food mixed?",
+        "Where are the good parts of the food taken out?"
+      ],
+      "say": "Digestion: food travels mouth to intestines. Watch the chewed food travel from the mouth down to the stomach, see the stomach mix it, then follow the good parts as they are taken out in the intestines. Keep your student notes open at the digestive system definition for this scene."
+    },
+    {
+      "cue": "s2",
+      "minutes": 7,
+      "questions": [
+        "Which tube carries air down into the lungs?",
+        "What do the lungs do as they fill, and what do they do as they empty?"
+      ],
+      "say": "Breathing: air moves in and out of the lungs. Follow the air down the windpipe as the lungs fill and grow bigger, then watch them shrink as the air flows back out. Now try the breathing question on the worksheet in pairs."
+    },
+    {
+      "cue": "s3",
+      "minutes": 8,
+      "questions": [
+        "Where does the heart send the blood first?",
+        "How do we know the same blood comes back, instead of new blood being made?"
+      ],
+      "say": "Circulation: blood loops round and round. Watch the heart pump a drop of blood out to the body, then trace that same drop all the way back to the heart. Check this loop against the circulatory system definition in your student notes."
+    },
+    {
+      "cue": "s4",
+      "minutes": 6,
+      "questions": [
+        "What is the common mistake about the heart and blood?",
+        "What does the returning drop of blood prove?"
+      ],
+      "say": "A common mistake: blood is not used up. The heart pumps blood round a loop; it does not burn it up like fuel. Finish by taking the exit ticket on your own - its first question revisits exactly this trap.",
+      "watchFor": "The heart uses up the blood it pumps, so the body must keep making fresh blood. Listen and look for it in pair talk and on the exit ticket: A pump feels like it burns fuel, so the blood seems to disappear as it travels. Send them back to scene s3 and to the correct turn: Blood is never used up: it keeps going round in a loop, coming back to the heart to be pushed around again."
+    }
+  ],
+  "subject": "science",
+  "title": "Human body systems",
+  "topic": "human-body-systems"
+}
