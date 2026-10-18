@@ -1,0 +1,63 @@
+{
+  "level": "jc",
+  "segments": [
+    {
+      "cue": "s1",
+      "minutes": 6,
+      "questions": [
+        "What sets the sign of ΔH - the height of the hump or where the products sit?",
+        "Where does the activation energy appear on this profile?"
+      ],
+      "say": "Exothermic: products lie below reactants. Draw the reactants level, climb the activation-energy hump, then fall to the products: the enthalpy change is negative and heat leaves the system. Keep your student notes open at the enthalpy change definition for this scene."
+    },
+    {
+      "cue": "s2",
+      "minutes": 6,
+      "questions": [
+        "How is this profile different from the exothermic one, in one sentence?",
+        "Does an endothermic reaction still have an activation energy?"
+      ],
+      "say": "Endothermic: products lie above reactants. The reaction absorbs heat, ΔH is positive, and it still clears an activation-energy barrier. Compare the two profiles side by side in your student notes before we move from energy to speed."
+    },
+    {
+      "cue": "s3",
+      "minutes": 6,
+      "questions": [
+        "Which curve is the faster reaction, and what did you read to decide?",
+        "Name two changes that would make the gentle curve steeper."
+      ],
+      "say": "Rate curves: steeper means faster. Rate is the fall in reactant concentration over time, and the gradient of the curve is the rate. Raise the temperature or add a catalyst and the curve steepens. Now try the rate reading on the worksheet in pairs."
+    },
+    {
+      "cue": "s4",
+      "minutes": 7,
+      "questions": [
+        "What happens to the activation energy itself when the temperature rises?",
+        "Why does a small temperature rise make such a big difference to the rate?"
+      ],
+      "say": "Maxwell–Boltzmann: more molecules past Ea at higher T. Most molecules sit near the average energy and only the fast tail can react; heating flattens and shifts the distribution so that tail grows. Check the Maxwell-Boltzmann distribution definition in your student notes, then look ahead to the exit ticket question on this scene."
+    },
+    {
+      "cue": "s5",
+      "minutes": 7,
+      "questions": [
+        "Adding nitrogen made more ammonia - which principle predicts that?",
+        "If the temperature alone changes Kc, what must happen to Kc when only the pressure changes?"
+      ],
+      "say": "Le Chatelier: the system opposes the change. Add nitrogen and the Haber mixture makes more ammonia; compress it and it shifts toward fewer gas moles. Kc itself only changes with temperature. Work the Kc calculation on the worksheet now, in pairs."
+    },
+    {
+      "cue": "s6",
+      "minutes": 8,
+      "questions": [
+        "In one sentence, what does a catalyst actually change about an equilibrium?",
+        "How would you correct a classmate who insists a catalyst must mean more product at equilibrium?"
+      ],
+      "say": "A common mistake: a catalyst shifts equilibrium. The animation grows both rate arrows by the same factor and the equilibrium bars never move: equilibrium arrives sooner, in the same place, with the same Kc. Finish the worksheet trap question now, then the exit ticket on your own - the first question revisits exactly this scene.",
+      "watchFor": "A catalyst pushes the equilibrium toward the products. Listen and look for it on the worksheet and in pair talk: any answer giving the catalyst a shifted equilibrium shows the trap reading, not the rates reading - send them back to the two equally grown arrows in this scene and to the correct turn: A catalyst speeds the forward and reverse reactions equally: the position of equilibrium is unchanged."
+    }
+  ],
+  "subject": "science",
+  "title": "JC H2 chemistry — physical: energetics, kinetics and equilibria",
+  "topic": "h2-physical"
+}

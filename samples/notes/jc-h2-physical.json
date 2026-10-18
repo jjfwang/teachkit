@@ -1,0 +1,50 @@
+{
+  "definitions": [
+    {
+      "meaning": "The heat change at constant pressure, ΔH: products minus reactants on a reaction profile - negative for exothermic, positive for endothermic.",
+      "term": "Enthalpy change"
+    },
+    {
+      "meaning": "The minimum energy Ea a collision needs for reaction to occur: on a reaction profile it is the climb from the reactants level to the transition state.",
+      "term": "Activation energy"
+    },
+    {
+      "meaning": "How fast reactant concentration falls, rate = -Δ[R] / Δt: read from the gradient of a concentration-time curve, steeper meaning faster.",
+      "term": "Rate of reaction"
+    },
+    {
+      "meaning": "A substance that speeds up a reaction by providing a lower-activation-energy route, and is chemically unchanged at the end: it speeds forward and reverse reactions equally.",
+      "term": "Catalyst"
+    },
+    {
+      "meaning": "The state of a reversible reaction in a closed system where the forward and reverse rates are equal and concentrations stay constant.",
+      "term": "Dynamic equilibrium"
+    },
+    {
+      "meaning": "The spread of molecular kinetic energies at a temperature: most molecules sit near the average, and only the tail past Ea can react on collision.",
+      "term": "Maxwell-Boltzmann distribution"
+    }
+  ],
+  "level": "jc",
+  "mechanismSteps": [
+    "Exothermic: products lie below reactants: the profile falls from the reactants level to a lower products level, so ΔH is negative and heat leaves the system.",
+    "Endothermic: products lie above reactants: the profile climbs to a higher products level, so ΔH is positive and heat is absorbed from the surroundings.",
+    "Rate curves: steeper means faster: the gradient of the concentration-time curve is the rate, and higher temperature or a catalyst makes the curve steeper.",
+    "Maxwell–Boltzmann: more molecules past Ea at higher T: the distribution flattens and shifts right, so a bigger fraction of molecules can react on collision.",
+    "Le Chatelier: the system opposes the change: adding a reactant or raising the pressure shifts the Haber equilibrium to oppose the disturbance, while Kc changes only with temperature.",
+    "A common mistake: a catalyst shifts equilibrium: both rates grow by the same factor, the composition bars never move, and the equilibrium position and Kc stay unchanged."
+  ],
+  "objectives": [
+    "Read exothermic and endothermic reaction profiles and state the sign of ΔH",
+    "Calculate ΔH from bond enthalpies and explain rate with the Maxwell-Boltzmann distribution",
+    "Apply Le Chatelier's principle and Kc, and avoid the catalyst-shifts-equilibrium trap"
+  ],
+  "subject": "science",
+  "title": "JC H2 chemistry — physical: energetics, kinetics and equilibria",
+  "topic": "h2-physical",
+  "trap": {
+    "explanation": "A faster forward reaction looks like the products are winning. A catalyst speeds the forward and reverse reactions equally: the position of equilibrium is unchanged. In the animation both rate arrows grow by the same factor while the equilibrium bars never move: the catalyst shortens the journey to equilibrium, it does not move the destination, and Kc is unchanged.",
+    "misconception": "A catalyst pushes the equilibrium toward the products."
+  },
+  "workedExample": "For H2 + Cl2 -> 2 HCl, the energy taken in to break bonds is 436 + 242 = 678 kJ mol-1, and the energy given out when two H-Cl bonds form is 2 x 431 = 862 kJ mol-1, so ΔH = 678 - 862 = -184 kJ mol-1. The negative sign means the reaction is exothermic: the products lie below the reactants on the reaction profile, as in scene s1. Check the practice reaction the same way: for H2 + Br2 -> 2 HBr, in = 436 + 193 = 629 and out = 2 x 366 = 732, so ΔH = 629 - 732 = -103 kJ mol-1."
+}
