@@ -612,6 +612,24 @@
     <li><code>script</code> teacher script</li>
   </ul>
 </header>
+<header class="pack-manifest" id="decimals-primary-manifest">
+  <h1>Lesson pack: Primary mathematics decimals: place value and adding 0.4 + 0.25</h1>
+  <dl>
+    <dt>Slug</dt><dd><code>decimals-primary-math</code></dd>
+    <dt>Level</dt><dd>primary</dd>
+    <dt>Subject</dt><dd>math</dd>
+    <dt>Topic</dt><dd><code>decimals</code></dd>
+  </dl>
+  <p>topic decimals · level primary · subject math · deck primary-math-decimals</p>
+  <ul class="pack-materials">
+    <li><code>animation</code></li>
+    <li><code>slides</code></li>
+    <li><code>worksheet</code></li>
+    <li><code>exitTicket</code> exit ticket</li>
+    <li><code>notes</code> student notes</li>
+    <li><code>script</code> teacher script</li>
+  </ul>
+</header>
 <section class="pack-section" id="animation-section">
   <h2>Animation</h2>
   <div id="anim-stage"></div>
@@ -1027,6 +1045,19 @@
   <h2>Primary mathematics whole numbers printables</h2>
   <div id="whole-numbers-primary-printables-stage"></div>
 </section>
+<section class="pack-section" id="decimals-primary-animation">
+  <h2>Primary mathematics decimals animation</h2>
+  <div id="decimals-primary-stage"></div>
+  <div id="decimals-primary-captions"></div>
+</section>
+<section class="pack-section" id="decimals-primary-slides">
+  <h2>Primary mathematics decimals slides</h2>
+  <div id="decimals-primary-slides-stage"></div>
+</section>
+<section class="pack-section" id="decimals-primary-printables">
+  <h2>Primary mathematics decimals printables</h2>
+  <div id="decimals-primary-printables-stage"></div>
+</section>
 <div id="err"></div>
 <script src="validate.js"></script>
 <script src="player.js"></script>
@@ -1083,8 +1114,9 @@
     var energeticsJcPrintStage = document.querySelector('#energetics-jc-printables-stage .pr-stage') || document.querySelector('#energetics-jc-printables-stage');
     var ecologyJcPrintStage = document.querySelector('#ecology-jc-printables-stage .pr-stage') || document.querySelector('#ecology-jc-printables-stage');
     var wholeNumbersPrimaryPrintStage = document.querySelector('#whole-numbers-primary-printables-stage .pr-stage') || document.querySelector('#whole-numbers-primary-printables-stage');
+    var decimalsPrimaryPrintStage = document.querySelector('#decimals-primary-printables-stage .pr-stage') || document.querySelector('#decimals-primary-printables-stage');
     var keys = [];
-    [printStage, fractionsPrintStage, wavesPrintStage, complexPrintStage, trigPrintStage, thermalPrintStage, photosynthesisPrintStage, erosionPrintStage, chemMolePrintStage, differentiationPrintStage, integrationPrintStage, binomialPrintStage, kinematicsPrintStage, quadraticPrintStage, trigonometryAPrintStage, vectorsPrintStage, functionsGraphsPrintStage, sequencesPrintStage, differentiationJcPrintStage, integrationJcPrintStage, probabilityJcPrintStage, statisticsJcPrintStage, mechanicsJcPrintStage, emJcPrintStage, quantumJcPrintStage, physicalJcPrintStage, inorganicJcPrintStage, organicJcPrintStage, cellBioJcPrintStage, geneticsJcPrintStage, energeticsJcPrintStage, ecologyJcPrintStage, wholeNumbersPrimaryPrintStage].forEach(function (stage) {
+    [printStage, fractionsPrintStage, wavesPrintStage, complexPrintStage, trigPrintStage, thermalPrintStage, photosynthesisPrintStage, erosionPrintStage, chemMolePrintStage, differentiationPrintStage, integrationPrintStage, binomialPrintStage, kinematicsPrintStage, quadraticPrintStage, trigonometryAPrintStage, vectorsPrintStage, functionsGraphsPrintStage, sequencesPrintStage, differentiationJcPrintStage, integrationJcPrintStage, probabilityJcPrintStage, statisticsJcPrintStage, mechanicsJcPrintStage, emJcPrintStage, quantumJcPrintStage, physicalJcPrintStage, inorganicJcPrintStage, organicJcPrintStage, cellBioJcPrintStage, geneticsJcPrintStage, energeticsJcPrintStage, ecologyJcPrintStage, wholeNumbersPrimaryPrintStage, decimalsPrimaryPrintStage].forEach(function (stage) {
       if (stage) {
         keys = keys.concat(Array.prototype.slice.call(stage.querySelectorAll('.pr-teacher')));
       }
@@ -3453,6 +3485,79 @@
     ].join('');
   }).catch(function (err) {
     showError('Primary mathematics whole numbers pack failed to load: ' + err.message);
+  });
+})();
+</script>
+<script>
+(function () {
+  var presenter = document.getElementById('decimals-primary-slides-stage');
+  var decimalsPrimaryPrint = document.getElementById('decimals-primary-printables-stage');
+  var errBox = document.getElementById('err');
+  var decimalsPrimaryAnimUrl = '../samples/primary-math-decimals-place-value.json';
+  var decimalsPrimaryDeckUrl = '../samples/decks/primary-math-decimals.json';
+  var decimalsPrimaryWorksheetUrl = '../samples/worksheets/primary-math-decimals.json';
+  var decimalsPrimaryTicketUrl = '../samples/tickets/primary-math-decimals.json';
+  var decimalsPrimaryNotesUrl = '../samples/notes/primary-math-decimals.json';
+  var decimalsPrimaryScriptUrl = '../samples/scripts/primary-math-decimals.json';
+
+  function showError(msg) {
+    errBox.textContent = String(msg);
+  }
+
+  Promise.all([
+    fetch(decimalsPrimaryAnimUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + decimalsPrimaryAnimUrl);
+      return r.json();
+    }),
+    fetch(decimalsPrimaryDeckUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + decimalsPrimaryDeckUrl);
+      return r.json();
+    }),
+    fetch(decimalsPrimaryWorksheetUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + decimalsPrimaryWorksheetUrl);
+      return r.json();
+    }),
+    fetch(decimalsPrimaryTicketUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + decimalsPrimaryTicketUrl);
+      return r.json();
+    }),
+    fetch(decimalsPrimaryNotesUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + decimalsPrimaryNotesUrl);
+      return r.json();
+    }),
+    fetch(decimalsPrimaryScriptUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + decimalsPrimaryScriptUrl);
+      return r.json();
+    })
+  ]).then(function (pack) {
+    var anim = pack[0];
+    var deck = pack[1];
+    var worksheet = pack[2];
+    var ticket = pack[3];
+    var notes = pack[4];
+    var script = pack[5];
+    var problems = AnimathValidate.validateSpec(anim)
+      .concat(AnimathValidate.validateSlides(deck))
+      .concat(AnimathValidate.validateWorksheet(worksheet))
+      .concat(AnimathValidate.validateExitTicket(ticket))
+      .concat(AnimathValidate.validateNotes(notes))
+      .concat(AnimathValidate.validateScript(script));
+    if (problems.length) {
+      showError('Primary mathematics decimals pack failed validation:\n' + problems.join('\n'));
+      return;
+    }
+    AnimathPlayer.mount(document.getElementById('decimals-primary-stage'), anim, { autoplay: false });
+    AnimathSlidesPresenter.attachPresenter(document, presenter, deck, { animSpec: anim });
+    decimalsPrimaryPrint.innerHTML = [
+      AnimathPrintable.renderWorksheet(worksheet),
+      AnimathPrintable.renderWorksheetAnswerKey(worksheet),
+      AnimathPrintable.renderExitTicket(ticket),
+      AnimathPrintable.renderExitTicketAnswerKey(ticket),
+      AnimathPrintable.renderNotes(notes),
+      AnimathPrintable.renderScript(script)
+    ].join('');
+  }).catch(function (err) {
+    showError('Primary mathematics decimals pack failed to load: ' + err.message);
   });
 })();
 </script>

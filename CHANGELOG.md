@@ -12,6 +12,19 @@ version section when the release ships.
 
 ### Added
 
+- Primary mathematics decimals lesson pack in the pack demo
+  (`player/pack-demo.html`): the Primary mathematics decimals
+  gold lesson pack now appears on the same demo page as the other packs,
+  presenting all six primary-math-decimals materials (animation,
+  slides, worksheet, exit ticket, student notes, and teacher
+  script) under its own
+  decimals-primary-manifest header (slug
+  `decimals-primary-math`, level primary, subject
+  math, topic `decimals`), stacked animation, slides, and printables sections, all
+  six materials validated before render for that pack, and
+  the shared teacher-keys toggle covering all thirty-four packs' print
+  stages, guarded by slice-scoped pack-demo tests (issue #925).
+
 - Primary mathematics decimals gold lesson pack: five hand-authored gold
   samples for decimals in
   samples/decks/primary-math-decimals.json,
