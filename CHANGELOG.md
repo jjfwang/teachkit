@@ -36,6 +36,19 @@ version section when the release ships.
   tests/gold-rate-speed-pack.test.js
   (issue #935).
 
+- Primary mathematics algebra (intro) lesson pack in the pack demo
+  (`player/pack-demo.html`): the Primary mathematics algebra (intro)
+  gold lesson pack now appears on the same demo page as the other packs,
+  presenting all six primary-math-algebra-intro materials (animation,
+  slides, worksheet, exit ticket, student notes, and teacher
+  script) under its own
+  algebra-intro-primary-manifest header (slug
+  `algebra-intro-primary-math`, level primary, subject
+  math, topic `algebra-intro`), stacked animation, slides, and printables sections, all
+  six materials validated before render for that pack, and
+  the shared teacher-keys toggle covering all thirty-eight packs' print
+  stages, guarded by slice-scoped pack-demo tests (issue #941).
+
 - Primary mathematics rate and speed lesson pack in the pack demo
   (`player/pack-demo.html`): the Primary mathematics rate and speed
   gold lesson pack now appears on the same demo page as the other packs,
