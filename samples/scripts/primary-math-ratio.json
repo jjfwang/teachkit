@@ -1,0 +1,45 @@
+{
+ "level": "primary",
+ "segments": [
+  {
+   "cue": "s1",
+   "minutes": 6,
+   "questions": [
+    "How many parts does child A take, and how many does child B take?",
+    "How many equal parts is the whole split into?"
+   ],
+   "say": "Sharing in a ratio. Show $48 being split for two children in the ratio 2:3 - two parts for A, three parts for B - and name the whole: 5 equal parts. Keep your student notes open at the ratio definition for this scene."
+  },
+  {
+   "cue": "s2",
+   "minutes": 7,
+   "questions": [
+    "Out of how many parts do we count the 3 parts?",
+    "Why can a share of $48 never be $72?"
+   ],
+   "say": "Watch out: 3:2 is not 3/2 of the whole. Put the claim on the board and test it against the whole bar: counting 3 parts out of 2 would give $72, more than the $48 we started with, so the parts must be counted out of the 5 parts of the whole."
+  },
+  {
+   "cue": "s3",
+   "minutes": 8,
+   "questions": [
+    "What is one part worth, and how did you find it?",
+    "How much does each child get, and how do you check the shares?"
+   ],
+   "say": "One part, then multiply. Five equal parts share $48, so divide: one part is $9.60. Then multiply - two parts is $19.20 for A and three parts is $28.80 for B. Now try the sharing questions on the worksheet in pairs."
+  },
+  {
+   "cue": "s4",
+   "minutes": 7,
+   "questions": [
+    "What is each share when $48 is shared in 2:3, and what are the three steps?",
+    "What goes wrong if we count the parts out of 2 instead of out of 5?"
+   ],
+   "say": "The takeaway. Land the rule: add the parts, divide to find one part, then multiply for each share - A gets $19.20 and B gets $28.80. Finish by taking the exit ticket on your own - its first question revisits exactly this trap.",
+   "watchFor": "A ratio of 3:2 means 3/2 of the whole. Listen and look for it in pair talk and on the worksheet: any share of $72 for the 3-part share shows the trap - send them back to scene s3 and to the correct turn: The whole is 5 parts, so 3 parts is 3 fifths of the whole."
+  }
+ ],
+ "subject": "math",
+ "title": "Ratio: sharing $48 in 2:3",
+ "topic": "ratio"
+}

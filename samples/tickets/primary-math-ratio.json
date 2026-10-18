@@ -1,0 +1,59 @@
+{
+ "level": "primary",
+ "questions": [
+  {
+   "choices": [
+    {
+     "text": "$72"
+    },
+    {
+     "correct": true,
+     "text": "$28.80"
+    },
+    {
+     "text": "$19.20"
+    }
+   ],
+   "feedback": "That trap answer is the one to unlearn: A ratio of 3:2 means 3/2 of the whole. Reteach point: The whole is 5 parts, so 3 parts is 3 fifths of the whole. One part is $48 / 5 = $9.60, so 3 parts is $28.80.",
+   "id": "q1",
+   "kind": "multiple-choice",
+   "misconception": "A ratio of 3:2 means 3/2 of the whole.",
+   "prompt": "$48 is shared in the ratio 2:3. The child with 3 parts gets..."
+  },
+  {
+   "answer": "1 part = $48 / 5 = $9.60, so the shares are 2 x $9.60 = $19.20 and 3 x $9.60 = $28.80.",
+   "feedback": "Scene s3 locks the method: add the parts, divide for one part first, then multiply by 2 and by 3 to reach $19.20 and $28.80.",
+   "id": "q2",
+   "kind": "short-answer",
+   "prompt": "Work out both shares when $48 is shared in the ratio 2:3, showing the one-part step."
+  },
+  {
+   "choices": [
+    {
+     "correct": true,
+     "text": "3/5"
+    },
+    {
+     "text": "3/2"
+    },
+    {
+     "text": "2/3"
+    }
+   ],
+   "feedback": "Scene s1 and s2 fix the fraction: the whole is 5 parts, so 3 parts is 3 out of 5 - 3/5 of the whole.",
+   "id": "q3",
+   "kind": "multiple-choice",
+   "prompt": "3 parts out of a whole of 5 parts is what fraction of the whole?"
+  },
+  {
+   "answer": "$72 is more than the whole $48: the whole is 5 parts, so 3 parts is 3/5 of $48, which is $28.80.",
+   "feedback": "Scene s2 names the mix-up: 3/2 of $48 gives $72, more than the whole itself - the parts are counted out of 5, not out of 2.",
+   "id": "q4",
+   "kind": "short-answer",
+   "prompt": "Explain why the 3-part share of $48 cannot be $72."
+  }
+ ],
+ "subject": "math",
+ "title": "Ratio: sharing $48 in 2:3 Exit Ticket",
+ "topic": "ratio"
+}
