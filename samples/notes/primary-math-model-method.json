@@ -1,0 +1,45 @@
+{
+  "definitions": [
+    {
+      "meaning": "A drawing that solves a word problem with bars: one bar for each amount, split into unit boxes, so the relationships in the problem can be seen before calculating.",
+      "term": "Bar model (model method)"
+    },
+    {
+      "meaning": "One equal part of a bar: in the animation Mia has 2 unit boxes and Ben has 3, and every unit box is exactly the same length.",
+      "term": "Unit box"
+    },
+    {
+      "meaning": "One whole bar split into parts: the class bar of 7 units splits into 3 units of boys and 4 units of girls.",
+      "term": "Part-whole model"
+    },
+    {
+      "meaning": "Two bars for the same amount, before and after a change: Mia has 3 units before giving 1 away and 2 units after.",
+      "term": "Before-and-after model"
+    },
+    {
+      "meaning": "Drawn so lengths stand for amounts faithfully: two units is exactly twice one unit, never a guessed length.",
+      "term": "To scale"
+    }
+  ],
+  "level": "primary",
+  "mechanismSteps": [
+    "Unit bars: every unit is the same length: Mia has 2 units and Ben has 3 units, and the ruler checks that each unit box is the same length.",
+    "Before-and-after: the model shows what changed: Mia starts with 3 units, gives 1 unit away to her sister, and the after bar shows 2 units left.",
+    "Worked example: part-whole and difference: the whole class bar has 7 units, with 3 units of boys and 4 units of girls, so the difference is 1 unit.",
+    "Watch out: bars must be to scale: Sam draws 1 unit and 2 units with boxes that do not match, while the correct 2-unit bar is exactly twice the 1-unit bar."
+  ],
+  "objectives": [
+    "Draw a bar model with unit boxes that are all the same length",
+    "Use a before-and-after model to show what changed in a problem",
+    "Use a part-whole model to split a whole bar into parts and find a difference",
+    "Check that bars are to scale before trusting the lengths in a model"
+  ],
+  "subject": "math",
+  "title": "The model method: bar models for word problems",
+  "topic": "model-method",
+  "trap": {
+    "explanation": "The bar is treated as a rough sketch rather than a scale model. Every unit box must be exactly the same length: two units is exactly twice one unit. In the animation scene s4 the ruler proves Sam's units do not match, while the correct 2-unit bar is exactly twice the 1-unit bar.",
+    "misconception": "Drawing unit boxes in any lengths, guessing the sizes."
+  },
+  "workedExample": "In scene s3, draw the whole class bar first and split it into 7 equal units: 3 units are boys, so the girls are the other 4 units, and diff = 4 − 3 = 1 unit. Read the parts off the model first, then subtract the smaller part from the bigger part."
+}

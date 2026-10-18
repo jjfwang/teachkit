@@ -1,0 +1,111 @@
+{
+  "level": "primary",
+  "slides": [
+    {
+      "bullets": [
+        "How to draw bar models for word problems, with unit bars that are all the same length"
+      ],
+      "heading": "The model method: bar models for word problems",
+      "kind": "title",
+      "notes": "Welcome everyone in and say: today we learn the model method - we draw a bar for each amount, split it into equal unit boxes, and let the model show us part-whole, before-and-after and difference problems before we calculate."
+    },
+    {
+      "bullets": [
+        "Draw unit bars: Mia has 2 units and Ben has 3 units, and every unit box is the same length",
+        "Use a before-and-after model: Mia starts with 3 units, gives 1 away and has 2 units left",
+        "Use a part-whole model: a class bar of 7 units splits into 3 boy-units and 4 girl-units"
+      ],
+      "heading": "What we will learn",
+      "kind": "objective",
+      "notes": "Read the three goals aloud and tell the class: keep these in mind, because the exit ticket at the end will ask you to draw a model and spot a model that is not to scale."
+    },
+    {
+      "bullets": [
+        "Sam draws a 1-unit bar and a 2-unit bar, but the 2-unit bar is not twice as long",
+        "Does the drawing still tell the truth, or has guessing the sizes broken the model?"
+      ],
+      "heading": "Can this drawing be trusted?",
+      "kind": "hook",
+      "notes": "Show Sam's two bars from scene s4 without the verdict first: ask for a show of hands on whether the drawing is fair, take two or three answers without judging them, and say scene s4 settles this exactly."
+    },
+    {
+      "bullets": [
+        "Each amount gets a bar, and the bar is split into unit boxes of exactly the same length",
+        "Because the units match, lengths in the drawing stand for amounts in the problem"
+      ],
+      "heading": "A bar model is a scale drawing",
+      "kind": "concept",
+      "notes": "Say this slowly, because it is the big idea of the whole lesson: the model only works if every unit box is the same length, so two units is exactly twice one unit."
+    },
+    {
+      "bullets": [
+        "Mia has 2 units and Ben has 3 units: Ben has one more unit box than Mia",
+        "The ruler checks every box: each unit box is the same length"
+      ],
+      "heading": "Unit bars: every unit is the same length",
+      "kind": "mechanism",
+      "notes": "Narrate the unit boxes sliding into place for Mia and then for Ben, then follow the ruler as it checks box after box and finds every length equal.",
+      "visual": "s1"
+    },
+    {
+      "bullets": [
+        "Before: Mia has 3 units; she gives 1 unit away to her sister",
+        "After: 2 units are left, because 3 - 1 = 2"
+      ],
+      "heading": "Before-and-after: the model shows what changed",
+      "kind": "mechanism",
+      "notes": "Watch the before bar of 3 units, follow the arrow as one unit moves away to her sister, then compare it with the after bar of 2 units sitting underneath.",
+      "visual": "s2"
+    },
+    {
+      "bullets": [
+        "The whole class bar has 7 units: 3 units are boys and 4 units are girls",
+        "The difference is the gap between the parts: diff = 4 - 3 = 1 unit"
+      ],
+      "heading": "Worked example: part-whole and difference",
+      "kind": "mechanism",
+      "notes": "Draw the whole bar first and split it into sevenths, mark 3 units as boys, then read off the girls as the other 4 units and find the difference of 1 unit.",
+      "visual": "s3"
+    },
+    {
+      "bullets": [
+        "Sam's 1-unit bar is drawn too long, so his 2-unit bar is not twice one unit",
+        "Drawn properly, the 2-unit bar is exactly twice the 1-unit bar: 2 units = 2 x 1 unit"
+      ],
+      "heading": "Watch out: bars must be to scale",
+      "kind": "mechanism",
+      "notes": "Hold Sam's bars up against the ruler to prove the units do not match, then compare them with the correct bars underneath, where the 2-unit bar is exactly twice the 1-unit bar.",
+      "visual": "s4"
+    },
+    {
+      "bullets": [
+        "Mia: 2 units, Ben: 3 units, and every unit box is the same length",
+        "Line the bars up and count the gap: Ben has 1 more unit than Mia"
+      ],
+      "heading": "Worked example: how many more units does Ben have?",
+      "kind": "example",
+      "notes": "Talk through the unit-bar working slowly as in scene s1 and name each step: draw both bars with equal unit boxes first, then compare their lengths."
+    },
+    {
+      "bullets": [
+        "Draw a before-and-after model for: Ana has 4 units and gives 1 away. How many units are left?",
+        "Draw a part-whole bar of 5 units where 2 units are red pens. How many units are not red pens?"
+      ],
+      "heading": "Your turn: draw it before you work it out",
+      "kind": "practice",
+      "notes": "Give pairs three minutes, then cold-call one pair on each part: press them on drawing every unit box the same length before they write any numbers."
+    },
+    {
+      "bullets": [
+        "On your own: draw a bar model with equal unit boxes for a short word problem",
+        "Explain in one sentence why unit boxes must all be the same length"
+      ],
+      "heading": "Exit ticket: show what you know",
+      "kind": "exit-ticket",
+      "notes": "Collect these before anyone leaves and say: I am looking for unit boxes that are all the same length in your drawing, plus one clear sentence about scale in your explanation."
+    }
+  ],
+  "subject": "math",
+  "title": "The model method: bar models for word problems",
+  "topic": "model-method"
+}
