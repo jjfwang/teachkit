@@ -522,6 +522,24 @@
     <li><code>script</code> teacher script</li>
   </ul>
 </header>
+<header class="pack-manifest" id="cell-bio-jc-manifest">
+  <h1>Lesson pack: JC H2 biology — cell: ultrastructure and biomolecules</h1>
+  <dl>
+    <dt>Slug</dt><dd><code>h2-cell-bio-jc-science</code></dd>
+    <dt>Level</dt><dd>jc</dd>
+    <dt>Subject</dt><dd>science</dd>
+    <dt>Topic</dt><dd><code>h2-cell-bio</code></dd>
+  </dl>
+  <p>topic h2-cell-bio · level jc · subject science · deck jc-h2-cell-bio</p>
+  <ul class="pack-materials">
+    <li><code>animation</code></li>
+    <li><code>slides</code></li>
+    <li><code>worksheet</code></li>
+    <li><code>exitTicket</code> exit ticket</li>
+    <li><code>notes</code> student notes</li>
+    <li><code>script</code> teacher script</li>
+  </ul>
+</header>
 <section class="pack-section" id="animation-section">
   <h2>Animation</h2>
   <div id="anim-stage"></div>
@@ -872,6 +890,19 @@
   <h2>JC H2 organic chemistry printables</h2>
   <div id="organic-jc-printables-stage"></div>
 </section>
+<section class="pack-section" id="cell-bio-jc-animation">
+  <h2>JC H2 cell biology animation</h2>
+  <div id="cell-bio-jc-stage"></div>
+  <div id="cell-bio-jc-captions"></div>
+</section>
+<section class="pack-section" id="cell-bio-jc-slides">
+  <h2>JC H2 cell biology slides</h2>
+  <div id="cell-bio-jc-slides-stage"></div>
+</section>
+<section class="pack-section" id="cell-bio-jc-printables">
+  <h2>JC H2 cell biology printables</h2>
+  <div id="cell-bio-jc-printables-stage"></div>
+</section>
 <div id="err"></div>
 <script src="validate.js"></script>
 <script src="player.js"></script>
@@ -923,8 +954,9 @@
     var physicalJcPrintStage = document.querySelector('#physical-jc-printables-stage .pr-stage') || document.querySelector('#physical-jc-printables-stage');
     var inorganicJcPrintStage = document.querySelector('#inorganic-jc-printables-stage .pr-stage') || document.querySelector('#inorganic-jc-printables-stage');
     var organicJcPrintStage = document.querySelector('#organic-jc-printables-stage .pr-stage') || document.querySelector('#organic-jc-printables-stage');
+    var cellBioJcPrintStage = document.querySelector('#cell-bio-jc-printables-stage .pr-stage') || document.querySelector('#cell-bio-jc-printables-stage');
     var keys = [];
-    [printStage, fractionsPrintStage, wavesPrintStage, complexPrintStage, trigPrintStage, thermalPrintStage, photosynthesisPrintStage, erosionPrintStage, chemMolePrintStage, differentiationPrintStage, integrationPrintStage, binomialPrintStage, kinematicsPrintStage, quadraticPrintStage, trigonometryAPrintStage, vectorsPrintStage, functionsGraphsPrintStage, sequencesPrintStage, differentiationJcPrintStage, integrationJcPrintStage, probabilityJcPrintStage, statisticsJcPrintStage, mechanicsJcPrintStage, emJcPrintStage, quantumJcPrintStage, physicalJcPrintStage, inorganicJcPrintStage, organicJcPrintStage].forEach(function (stage) {
+    [printStage, fractionsPrintStage, wavesPrintStage, complexPrintStage, trigPrintStage, thermalPrintStage, photosynthesisPrintStage, erosionPrintStage, chemMolePrintStage, differentiationPrintStage, integrationPrintStage, binomialPrintStage, kinematicsPrintStage, quadraticPrintStage, trigonometryAPrintStage, vectorsPrintStage, functionsGraphsPrintStage, sequencesPrintStage, differentiationJcPrintStage, integrationJcPrintStage, probabilityJcPrintStage, statisticsJcPrintStage, mechanicsJcPrintStage, emJcPrintStage, quantumJcPrintStage, physicalJcPrintStage, inorganicJcPrintStage, organicJcPrintStage, cellBioJcPrintStage].forEach(function (stage) {
       if (stage) {
         keys = keys.concat(Array.prototype.slice.call(stage.querySelectorAll('.pr-teacher')));
       }
@@ -2928,6 +2960,79 @@
     ].join('');
   }).catch(function (err) {
     showError('JC H2 organic pack failed to load: ' + err.message);
+  });
+})();
+</script>
+<script>
+(function () {
+  var presenter = document.getElementById('cell-bio-jc-slides-stage');
+  var cellBioJcPrint = document.getElementById('cell-bio-jc-printables-stage');
+  var errBox = document.getElementById('err');
+  var cellBioJcAnimUrl = '../samples/jc-h2-cell-bio.json';
+  var cellBioJcDeckUrl = '../samples/decks/jc-h2-cell-bio.json';
+  var cellBioJcWorksheetUrl = '../samples/worksheets/jc-h2-cell-bio.json';
+  var cellBioJcTicketUrl = '../samples/tickets/jc-h2-cell-bio.json';
+  var cellBioJcNotesUrl = '../samples/notes/jc-h2-cell-bio.json';
+  var cellBioJcScriptUrl = '../samples/scripts/jc-h2-cell-bio.json';
+
+  function showError(msg) {
+    errBox.textContent = String(msg);
+  }
+
+  Promise.all([
+    fetch(cellBioJcAnimUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + cellBioJcAnimUrl);
+      return r.json();
+    }),
+    fetch(cellBioJcDeckUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + cellBioJcDeckUrl);
+      return r.json();
+    }),
+    fetch(cellBioJcWorksheetUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + cellBioJcWorksheetUrl);
+      return r.json();
+    }),
+    fetch(cellBioJcTicketUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + cellBioJcTicketUrl);
+      return r.json();
+    }),
+    fetch(cellBioJcNotesUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + cellBioJcNotesUrl);
+      return r.json();
+    }),
+    fetch(cellBioJcScriptUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + cellBioJcScriptUrl);
+      return r.json();
+    })
+  ]).then(function (pack) {
+    var anim = pack[0];
+    var deck = pack[1];
+    var worksheet = pack[2];
+    var ticket = pack[3];
+    var notes = pack[4];
+    var script = pack[5];
+    var problems = AnimathValidate.validateSpec(anim)
+      .concat(AnimathValidate.validateSlides(deck))
+      .concat(AnimathValidate.validateWorksheet(worksheet))
+      .concat(AnimathValidate.validateExitTicket(ticket))
+      .concat(AnimathValidate.validateNotes(notes))
+      .concat(AnimathValidate.validateScript(script));
+    if (problems.length) {
+      showError('JC H2 cell biology pack failed validation:\n' + problems.join('\n'));
+      return;
+    }
+    AnimathPlayer.mount(document.getElementById('cell-bio-jc-stage'), anim, { autoplay: false });
+    AnimathSlidesPresenter.attachPresenter(document, presenter, deck, { animSpec: anim });
+    cellBioJcPrint.innerHTML = [
+      AnimathPrintable.renderWorksheet(worksheet),
+      AnimathPrintable.renderWorksheetAnswerKey(worksheet),
+      AnimathPrintable.renderExitTicket(ticket),
+      AnimathPrintable.renderExitTicketAnswerKey(ticket),
+      AnimathPrintable.renderNotes(notes),
+      AnimathPrintable.renderScript(script)
+    ].join('');
+  }).catch(function (err) {
+    showError('JC H2 cell biology pack failed to load: ' + err.message);
   });
 })();
 </script>
