@@ -12,6 +12,18 @@ version section when the release ships.
 
 ### Added
 
+- Primary mathematics area and perimeter gold lesson pack: five hand-authored gold
+  samples for area-perimeter in
+  samples/decks/primary-math-area-perimeter.json,
+  samples/worksheets/primary-math-area-perimeter.json,
+  samples/tickets/primary-math-area-perimeter.json,
+  samples/notes/primary-math-area-perimeter.json and
+  samples/scripts/primary-math-area-perimeter.json,
+  keyed to the primary-math-area-perimeter animation scenes,
+  misconception bank trap reused verbatim: The area of the L-shape is the length times the width of its bounding box., guarded by
+  tests/gold-area-perimeter-pack.test.js
+  (issue #947).
+
 - Primary mathematics geometry (angles) lesson pack in the pack demo
   (`player/pack-demo.html`): the Primary mathematics geometry (angles)
   gold lesson pack now appears on the same demo page as the other packs,
