@@ -702,6 +702,24 @@
     <li><code>script</code> teacher script</li>
   </ul>
 </header>
+<header class="pack-manifest" id="geometry-angles-primary-manifest">
+  <h1>Lesson pack: Primary mathematics geometry (angles): Angles: identify, measure, add</h1>
+  <dl>
+    <dt>Slug</dt><dd><code>geometry-angles-primary-math</code></dd>
+    <dt>Level</dt><dd>primary</dd>
+    <dt>Subject</dt><dd>math</dd>
+    <dt>Topic</dt><dd><code>geometry-angles</code></dd>
+  </dl>
+  <p>topic geometry-angles · level primary · subject math · deck primary-math-geometry-angles</p>
+  <ul class="pack-materials">
+    <li><code>animation</code></li>
+    <li><code>slides</code></li>
+    <li><code>worksheet</code></li>
+    <li><code>exitTicket</code> exit ticket</li>
+    <li><code>notes</code> student notes</li>
+    <li><code>script</code> teacher script</li>
+  </ul>
+</header>
 <section class="pack-section" id="animation-section">
   <h2>Animation</h2>
   <div id="anim-stage"></div>
@@ -1182,6 +1200,19 @@
   <h2>Primary mathematics algebra (intro) printables</h2>
   <div id="algebra-intro-primary-printables-stage"></div>
 </section>
+<section class="pack-section" id="geometry-angles-primary-animation">
+  <h2>Primary mathematics geometry (angles) animation</h2>
+  <div id="geometry-angles-primary-stage"></div>
+  <div id="geometry-angles-primary-captions"></div>
+</section>
+<section class="pack-section" id="geometry-angles-primary-slides">
+  <h2>Primary mathematics geometry (angles) slides</h2>
+  <div id="geometry-angles-primary-slides-stage"></div>
+</section>
+<section class="pack-section" id="geometry-angles-primary-printables">
+  <h2>Primary mathematics geometry (angles) printables</h2>
+  <div id="geometry-angles-primary-printables-stage"></div>
+</section>
 <div id="err"></div>
 <script src="validate.js"></script>
 <script src="player.js"></script>
@@ -1243,8 +1274,9 @@
     var ratioPrimaryPrintStage = document.querySelector('#ratio-primary-printables-stage .pr-stage') || document.querySelector('#ratio-primary-printables-stage');
     var rateSpeedPrimaryPrintStage = document.querySelector('#rate-speed-primary-printables-stage .pr-stage') || document.querySelector('#rate-speed-primary-printables-stage');
     var algebraIntroPrimaryPrintStage = document.querySelector('#algebra-intro-primary-printables-stage .pr-stage') || document.querySelector('#algebra-intro-primary-printables-stage');
+    var geometryAnglesPrimaryPrintStage = document.querySelector('#geometry-angles-primary-printables-stage .pr-stage') || document.querySelector('#geometry-angles-primary-printables-stage');
     var keys = [];
-    [printStage, fractionsPrintStage, wavesPrintStage, complexPrintStage, trigPrintStage, thermalPrintStage, photosynthesisPrintStage, erosionPrintStage, chemMolePrintStage, differentiationPrintStage, integrationPrintStage, binomialPrintStage, kinematicsPrintStage, quadraticPrintStage, trigonometryAPrintStage, vectorsPrintStage, functionsGraphsPrintStage, sequencesPrintStage, differentiationJcPrintStage, integrationJcPrintStage, probabilityJcPrintStage, statisticsJcPrintStage, mechanicsJcPrintStage, emJcPrintStage, quantumJcPrintStage, physicalJcPrintStage, inorganicJcPrintStage, organicJcPrintStage, cellBioJcPrintStage, geneticsJcPrintStage, energeticsJcPrintStage, ecologyJcPrintStage, wholeNumbersPrimaryPrintStage, decimalsPrimaryPrintStage, percentagePrimaryPrintStage, ratioPrimaryPrintStage, rateSpeedPrimaryPrintStage, algebraIntroPrimaryPrintStage].forEach(function (stage) {
+    [printStage, fractionsPrintStage, wavesPrintStage, complexPrintStage, trigPrintStage, thermalPrintStage, photosynthesisPrintStage, erosionPrintStage, chemMolePrintStage, differentiationPrintStage, integrationPrintStage, binomialPrintStage, kinematicsPrintStage, quadraticPrintStage, trigonometryAPrintStage, vectorsPrintStage, functionsGraphsPrintStage, sequencesPrintStage, differentiationJcPrintStage, integrationJcPrintStage, probabilityJcPrintStage, statisticsJcPrintStage, mechanicsJcPrintStage, emJcPrintStage, quantumJcPrintStage, physicalJcPrintStage, inorganicJcPrintStage, organicJcPrintStage, cellBioJcPrintStage, geneticsJcPrintStage, energeticsJcPrintStage, ecologyJcPrintStage, wholeNumbersPrimaryPrintStage, decimalsPrimaryPrintStage, percentagePrimaryPrintStage, ratioPrimaryPrintStage, rateSpeedPrimaryPrintStage, algebraIntroPrimaryPrintStage, geometryAnglesPrimaryPrintStage].forEach(function (stage) {
       if (stage) {
         keys = keys.concat(Array.prototype.slice.call(stage.querySelectorAll('.pr-teacher')));
       }
@@ -3978,6 +4010,79 @@
     ].join('');
   }).catch(function (err) {
     showError('Primary mathematics algebra (intro) pack failed to load: ' + err.message);
+  });
+})();
+</script>
+<script>
+(function () {
+  var presenter = document.getElementById('geometry-angles-primary-slides-stage');
+  var geometryAnglesPrimaryPrint = document.getElementById('geometry-angles-primary-printables-stage');
+  var errBox = document.getElementById('err');
+  var geometryAnglesPrimaryAnimUrl = '../samples/primary-math-geometry-angles.json';
+  var geometryAnglesPrimaryDeckUrl = '../samples/decks/primary-math-geometry-angles.json';
+  var geometryAnglesPrimaryWorksheetUrl = '../samples/worksheets/primary-math-geometry-angles.json';
+  var geometryAnglesPrimaryTicketUrl = '../samples/tickets/primary-math-geometry-angles.json';
+  var geometryAnglesPrimaryNotesUrl = '../samples/notes/primary-math-geometry-angles.json';
+  var geometryAnglesPrimaryScriptUrl = '../samples/scripts/primary-math-geometry-angles.json';
+
+  function showError(msg) {
+    errBox.textContent = String(msg);
+  }
+
+  Promise.all([
+    fetch(geometryAnglesPrimaryAnimUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + geometryAnglesPrimaryAnimUrl);
+      return r.json();
+    }),
+    fetch(geometryAnglesPrimaryDeckUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + geometryAnglesPrimaryDeckUrl);
+      return r.json();
+    }),
+    fetch(geometryAnglesPrimaryWorksheetUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + geometryAnglesPrimaryWorksheetUrl);
+      return r.json();
+    }),
+    fetch(geometryAnglesPrimaryTicketUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + geometryAnglesPrimaryTicketUrl);
+      return r.json();
+    }),
+    fetch(geometryAnglesPrimaryNotesUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + geometryAnglesPrimaryNotesUrl);
+      return r.json();
+    }),
+    fetch(geometryAnglesPrimaryScriptUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + geometryAnglesPrimaryScriptUrl);
+      return r.json();
+    })
+  ]).then(function (pack) {
+    var anim = pack[0];
+    var deck = pack[1];
+    var worksheet = pack[2];
+    var ticket = pack[3];
+    var notes = pack[4];
+    var script = pack[5];
+    var problems = AnimathValidate.validateSpec(anim)
+      .concat(AnimathValidate.validateSlides(deck))
+      .concat(AnimathValidate.validateWorksheet(worksheet))
+      .concat(AnimathValidate.validateExitTicket(ticket))
+      .concat(AnimathValidate.validateNotes(notes))
+      .concat(AnimathValidate.validateScript(script));
+    if (problems.length) {
+      showError('Primary mathematics geometry (angles) pack failed validation:\n' + problems.join('\n'));
+      return;
+    }
+    AnimathPlayer.mount(document.getElementById('geometry-angles-primary-stage'), anim, { autoplay: false });
+    AnimathSlidesPresenter.attachPresenter(document, presenter, deck, { animSpec: anim });
+    geometryAnglesPrimaryPrint.innerHTML = [
+      AnimathPrintable.renderWorksheet(worksheet),
+      AnimathPrintable.renderWorksheetAnswerKey(worksheet),
+      AnimathPrintable.renderExitTicket(ticket),
+      AnimathPrintable.renderExitTicketAnswerKey(ticket),
+      AnimathPrintable.renderNotes(notes),
+      AnimathPrintable.renderScript(script)
+    ].join('');
+  }).catch(function (err) {
+    showError('Primary mathematics geometry (angles) pack failed to load: ' + err.message);
   });
 })();
 </script>

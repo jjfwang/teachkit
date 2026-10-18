@@ -12,6 +12,20 @@ version section when the release ships.
 
 ### Added
 
+- Primary mathematics geometry (angles) lesson pack in the pack demo
+  (`player/pack-demo.html`): the Primary mathematics geometry (angles)
+  gold lesson pack now appears on the same demo page as the other packs,
+  presenting all six primary-math-geometry-angles materials (animation,
+  slides, worksheet, exit ticket, student notes, and teacher
+  script) under its own
+  geometry-angles-primary-manifest header (slug
+  `geometry-angles-primary-math`, level primary, subject
+  math, topic `geometry-angles`), stacked animation, slides, and printables sections, all
+  six materials validated before render for that pack, and
+  the shared teacher-keys toggle covering all thirty-nine packs' print
+  stages, guarded by tests/pack-demo.test.js
+  (issue #945).
+
 - Primary mathematics geometry (angles) gold lesson pack: five hand-authored gold
   samples for geometry (angles) in
   samples/decks/primary-math-geometry-angles.json,
