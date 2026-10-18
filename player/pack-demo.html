@@ -755,6 +755,24 @@
     <li><code>script</code> teacher script</li>
   </ul>
 </header>
+<header class="pack-manifest" id="data-graphs-primary-manifest">
+  <h1>Lesson pack: Primary mathematics data graphs: Data graphs: pie charts and line graphs</h1>
+  <dl>
+    <dt>Slug</dt><dd><code>data-graphs-primary-math</code></dd>
+    <dt>Level</dt><dd>primary</dd>
+    <dt>Subject</dt><dd>math</dd>
+    <dt>Topic</dt><dd><code>data-graphs</code></dd>
+  </dl>
+  <p>topic data-graphs · level primary · subject math · deck primary-math-data-graphs</p>
+  <ul class="pack-materials">
+    <li><code>animation</code></li>
+    <li><code>slides</code></li>
+    <li><code>worksheet</code></li>
+    <li><code>exitTicket</code> exit ticket</li>
+    <li><code>notes</code> student notes</li>
+    <li><code>script</code> teacher script</li>
+  </ul>
+</header>
 </header>
 <section class="pack-section" id="animation-section">
   <h2>Animation</h2>
@@ -1275,6 +1293,19 @@
   <h2>Primary mathematics volume printables</h2>
   <div id="volume-primary-printables-stage"></div>
 </section>
+<section class="pack-section" id="data-graphs-primary-animation">
+  <h2>Primary mathematics data graphs animation</h2>
+  <div id="data-graphs-primary-stage"></div>
+  <div id="data-graphs-primary-captions"></div>
+</section>
+<section class="pack-section" id="data-graphs-primary-slides">
+  <h2>Primary mathematics data graphs slides</h2>
+  <div id="data-graphs-primary-slides-stage"></div>
+</section>
+<section class="pack-section" id="data-graphs-primary-printables">
+  <h2>Primary mathematics data graphs printables</h2>
+  <div id="data-graphs-primary-printables-stage"></div>
+</section>
 <div id="err"></div>
 <script src="validate.js"></script>
 <script src="player.js"></script>
@@ -1339,8 +1370,9 @@
     var geometryAnglesPrimaryPrintStage = document.querySelector('#geometry-angles-primary-printables-stage .pr-stage') || document.querySelector('#geometry-angles-primary-printables-stage');
     var areaPerimeterPrimaryPrintStage = document.querySelector('#area-perimeter-primary-printables-stage .pr-stage') || document.querySelector('#area-perimeter-primary-printables-stage');
     var volumePrimaryPrintStage = document.querySelector('#volume-primary-printables-stage .pr-stage') || document.querySelector('#volume-primary-printables-stage');
+    var dataGraphsPrimaryPrintStage = document.querySelector('#data-graphs-primary-printables-stage .pr-stage') || document.querySelector('#data-graphs-primary-printables-stage');
     var keys = [];
-    [printStage, fractionsPrintStage, wavesPrintStage, complexPrintStage, trigPrintStage, thermalPrintStage, photosynthesisPrintStage, erosionPrintStage, chemMolePrintStage, differentiationPrintStage, integrationPrintStage, binomialPrintStage, kinematicsPrintStage, quadraticPrintStage, trigonometryAPrintStage, vectorsPrintStage, functionsGraphsPrintStage, sequencesPrintStage, differentiationJcPrintStage, integrationJcPrintStage, probabilityJcPrintStage, statisticsJcPrintStage, mechanicsJcPrintStage, emJcPrintStage, quantumJcPrintStage, physicalJcPrintStage, inorganicJcPrintStage, organicJcPrintStage, cellBioJcPrintStage, geneticsJcPrintStage, energeticsJcPrintStage, ecologyJcPrintStage, wholeNumbersPrimaryPrintStage, decimalsPrimaryPrintStage, percentagePrimaryPrintStage, ratioPrimaryPrintStage, rateSpeedPrimaryPrintStage, algebraIntroPrimaryPrintStage, geometryAnglesPrimaryPrintStage, areaPerimeterPrimaryPrintStage, volumePrimaryPrintStage].forEach(function (stage) {
+    [printStage, fractionsPrintStage, wavesPrintStage, complexPrintStage, trigPrintStage, thermalPrintStage, photosynthesisPrintStage, erosionPrintStage, chemMolePrintStage, differentiationPrintStage, integrationPrintStage, binomialPrintStage, kinematicsPrintStage, quadraticPrintStage, trigonometryAPrintStage, vectorsPrintStage, functionsGraphsPrintStage, sequencesPrintStage, differentiationJcPrintStage, integrationJcPrintStage, probabilityJcPrintStage, statisticsJcPrintStage, mechanicsJcPrintStage, emJcPrintStage, quantumJcPrintStage, physicalJcPrintStage, inorganicJcPrintStage, organicJcPrintStage, cellBioJcPrintStage, geneticsJcPrintStage, energeticsJcPrintStage, ecologyJcPrintStage, wholeNumbersPrimaryPrintStage, decimalsPrimaryPrintStage, percentagePrimaryPrintStage, ratioPrimaryPrintStage, rateSpeedPrimaryPrintStage, algebraIntroPrimaryPrintStage, geometryAnglesPrimaryPrintStage, areaPerimeterPrimaryPrintStage, volumePrimaryPrintStage, dataGraphsPrimaryPrintStage].forEach(function (stage) {
       if (stage) {
         keys = keys.concat(Array.prototype.slice.call(stage.querySelectorAll('.pr-teacher')));
       }
@@ -4293,6 +4325,79 @@
     ].join('');
   }).catch(function (err) {
     showError('Primary mathematics volume pack failed to load: ' + err.message);
+  });
+})();
+</script>
+<script>
+(function () {
+  var presenter = document.getElementById('data-graphs-primary-slides-stage');
+  var dataGraphsPrimaryPrint = document.getElementById('data-graphs-primary-printables-stage');
+  var errBox = document.getElementById('err');
+  var dataGraphsPrimaryAnimUrl = '../samples/primary-math-data-graphs.json';
+  var dataGraphsPrimaryDeckUrl = '../samples/decks/primary-math-data-graphs.json';
+  var dataGraphsPrimaryWorksheetUrl = '../samples/worksheets/primary-math-data-graphs.json';
+  var dataGraphsPrimaryTicketUrl = '../samples/tickets/primary-math-data-graphs.json';
+  var dataGraphsPrimaryNotesUrl = '../samples/notes/primary-math-data-graphs.json';
+  var dataGraphsPrimaryScriptUrl = '../samples/scripts/primary-math-data-graphs.json';
+
+  function showError(msg) {
+    errBox.textContent = String(msg);
+  }
+
+  Promise.all([
+    fetch(dataGraphsPrimaryAnimUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + dataGraphsPrimaryAnimUrl);
+      return r.json();
+    }),
+    fetch(dataGraphsPrimaryDeckUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + dataGraphsPrimaryDeckUrl);
+      return r.json();
+    }),
+    fetch(dataGraphsPrimaryWorksheetUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + dataGraphsPrimaryWorksheetUrl);
+      return r.json();
+    }),
+    fetch(dataGraphsPrimaryTicketUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + dataGraphsPrimaryTicketUrl);
+      return r.json();
+    }),
+    fetch(dataGraphsPrimaryNotesUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + dataGraphsPrimaryNotesUrl);
+      return r.json();
+    }),
+    fetch(dataGraphsPrimaryScriptUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + dataGraphsPrimaryScriptUrl);
+      return r.json();
+    })
+  ]).then(function (pack) {
+    var anim = pack[0];
+    var deck = pack[1];
+    var worksheet = pack[2];
+    var ticket = pack[3];
+    var notes = pack[4];
+    var script = pack[5];
+    var problems = AnimathValidate.validateSpec(anim)
+      .concat(AnimathValidate.validateSlides(deck))
+      .concat(AnimathValidate.validateWorksheet(worksheet))
+      .concat(AnimathValidate.validateExitTicket(ticket))
+      .concat(AnimathValidate.validateNotes(notes))
+      .concat(AnimathValidate.validateScript(script));
+    if (problems.length) {
+      showError('Primary mathematics data graphs pack failed validation:\n' + problems.join('\n'));
+      return;
+    }
+    AnimathPlayer.mount(document.getElementById('data-graphs-primary-stage'), anim, { autoplay: false });
+    AnimathSlidesPresenter.attachPresenter(document, presenter, deck, { animSpec: anim });
+    dataGraphsPrimaryPrint.innerHTML = [
+      AnimathPrintable.renderWorksheet(worksheet),
+      AnimathPrintable.renderWorksheetAnswerKey(worksheet),
+      AnimathPrintable.renderExitTicket(ticket),
+      AnimathPrintable.renderExitTicketAnswerKey(ticket),
+      AnimathPrintable.renderNotes(notes),
+      AnimathPrintable.renderScript(script)
+    ].join('');
+  }).catch(function (err) {
+    showError('Primary mathematics data graphs pack failed to load: ' + err.message);
   });
 })();
 </script>
