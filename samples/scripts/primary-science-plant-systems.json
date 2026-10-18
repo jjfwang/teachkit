@@ -1,0 +1,45 @@
+{
+  "level": "primary",
+  "segments": [
+    {
+      "cue": "s1",
+      "minutes": 7,
+      "questions": [
+        "Where do the roots grow, and what do they hold?",
+        "What do the roots drink up from the soil?"
+      ],
+      "say": "Roots: the plant holds on and drinks. Watch the roots grow down into the soil, see how they hold the plant in place, then follow the water as the roots drink it up. Keep your student notes open at the roots definition for this scene."
+    },
+    {
+      "cue": "s2",
+      "minutes": 7,
+      "questions": [
+        "What two jobs does the stem do?",
+        "Where does the water in the stem come from, and where is it going?"
+      ],
+      "say": "Stem: the plant's lift and road. Follow a drop of water as it travels up the stem from the roots to the leaves, and notice how the stem holds the plant up so the leaves can reach the light. Now try the water journey question on the worksheet in pairs."
+    },
+    {
+      "cue": "s3",
+      "minutes": 8,
+      "questions": [
+        "What do the leaves catch from the sky?",
+        "What do the leaves use the water for?"
+      ],
+      "say": "Leaves: the plant makes its own food. Watch the leaves catch the sunlight, then show how they use the sunlight together with the water from the roots to make food for the whole plant. Check this against the leaves definition in your student notes."
+    },
+    {
+      "cue": "s4",
+      "minutes": 6,
+      "questions": [
+        "What is the common mistake about roots and food?",
+        "What do the roots really take from the soil?"
+      ],
+      "say": "Watch out: plants do not eat food from the soil. The roots are not a mouth: they drink water and minerals, and the leaves make the food with sunlight. Finish by taking the exit ticket on your own - its first question revisits exactly this trap.",
+      "watchFor": "Plants take food from the soil through their roots, like we eat food. Listen and look for it in pair talk and on the exit ticket: We eat through our mouths, so the roots look like a mouth for the plant. Send them back to scene s3 and to the correct turn: Roots drink water and minerals; the leaves make the food with sunlight. The plant does not eat food like we do."
+    }
+  ],
+  "subject": "science",
+  "title": "Plant systems",
+  "topic": "plant-systems"
+}

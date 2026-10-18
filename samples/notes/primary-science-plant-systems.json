@@ -1,0 +1,45 @@
+{
+  "definitions": [
+    {
+      "meaning": "The part of the plant that grows down into the soil: the roots hold the plant in place and drink up water and minerals for the whole plant.",
+      "term": "Roots"
+    },
+    {
+      "meaning": "The part of the plant that holds it up so the leaves can reach the light: it is also a road, carrying water up from the roots to the leaves.",
+      "term": "Stem"
+    },
+    {
+      "meaning": "The part of the plant that makes its food: the leaves catch sunlight and use it with water to make food for the plant.",
+      "term": "Leaves"
+    },
+    {
+      "meaning": "Useful substances dissolved in the water in the soil: the roots drink them up with the water, but they are not food for the plant.",
+      "term": "Minerals"
+    },
+    {
+      "meaning": "All the parts of the plant working together: roots drink, the stem carries and lifts, and the leaves make food, so the whole plant can live and grow.",
+      "term": "Plant system"
+    }
+  ],
+  "level": "primary",
+  "mechanismSteps": [
+    "Roots: the plant holds on and drinks: the roots grow down into the soil, hold the plant in place, and drink up water for the whole plant.",
+    "Stem: the plant's lift and road: the stem holds the plant up so the leaves can reach the light, and water travels up the stem from the roots to the leaves.",
+    "Leaves: the plant makes its own food: the leaves catch sunlight and use it with water to make food for the plant.",
+    "Watch out: plants do not eat food from the soil: the roots drink water and minerals only - the leaves make the food with sunlight, so the plant does not eat food like we do."
+  ],
+  "objectives": [
+    "Name the roots, stem and leaves and say what each part does",
+    "Trace water on its journey from the roots up the stem to the leaves",
+    "Explain how the leaves make food with sunlight and water",
+    "Explain why plants do not take food from the soil"
+  ],
+  "subject": "science",
+  "title": "Plant systems",
+  "topic": "plant-systems",
+  "trap": {
+    "explanation": "We eat through our mouths, so the roots look like a mouth for the plant. Roots drink water and minerals; the leaves make the food with sunlight. The plant does not eat food like we do. In the animation scene s4 the roots are shown drinking water and minerals while the leaves make the food with sunlight, which shows the plant never eats food from the soil.",
+    "misconception": "Plants take food from the soil through their roots, like we eat food."
+  },
+  "workedExample": "In scenes s1 to s3, follow one drop of water as a worked example: the roots drink the drop from the soil, the drop travels up the stem like traffic on a road, and then the same drop reaches the leaves, where the leaves use it with sunlight to make food for the plant. Each step shows a different plant part doing its own job."
+}
