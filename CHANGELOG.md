@@ -12,6 +12,19 @@ version section when the release ships.
 
 ### Added
 
+- JC H2 energetics gold lesson pack: five hand-authored gold
+  samples for h2-energetics in
+  samples/decks/jc-h2-energetics.json,
+  samples/worksheets/jc-h2-energetics.json,
+  samples/tickets/jc-h2-energetics.json,
+  samples/notes/jc-h2-energetics.json and
+  samples/scripts/jc-h2-energetics.json,
+  keyed to the jc-h2-energetics animation scenes and built around
+  the misconception bank trap reused verbatim: Plants only
+  respire at night., guarded by
+  tests/gold-energetics-jc-pack.test.js
+  (issue #911).
+
 - JC H2 genetics lesson pack in the pack demo
   (`player/pack-demo.html`): the JC H2 genetics
   gold lesson pack now appears on the same demo page as the other packs,

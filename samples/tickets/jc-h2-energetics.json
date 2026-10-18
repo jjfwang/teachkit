@@ -1,0 +1,59 @@
+{
+  "level": "jc",
+  "questions": [
+    {
+      "choices": [
+        {
+          "text": "Plants only respire at night"
+        },
+        {
+          "correct": true,
+          "text": "Plants respire around the clock"
+        },
+        {
+          "text": "Plants respire only when photosynthesis stops for a week"
+        }
+      ],
+      "feedback": "That trap reading is the one to unlearn: Plants only respire at night. Reteach point: Plants respire around the clock: at night there is simply no photosynthesis to hide it.",
+      "id": "q1",
+      "kind": "multiple-choice",
+      "misconception": "Plants only respire at night.",
+      "prompt": "Which statement about plant respiration is true?"
+    },
+    {
+      "answer": "Glucose + oxygen -> carbon dioxide + water + energy; about 32 ATP per glucose.",
+      "feedback": "Scene s2 locks the equation and the payoff: glucose + oxygen -> carbon dioxide + water + energy, about 32 ATP per glucose.",
+      "id": "q2",
+      "kind": "short-answer",
+      "prompt": "State the aerobic respiration equation and the approximate ATP yield per glucose."
+    },
+    {
+      "choices": [
+        {
+          "text": "Light intensity"
+        },
+        {
+          "correct": true,
+          "text": "Carbon dioxide concentration"
+        },
+        {
+          "text": "Temperature"
+        }
+      ],
+      "feedback": "Scene s6 shows the rate capped by the factor in shortest supply: here carbon dioxide is the shortest bar, so extra light cannot help.",
+      "id": "q3",
+      "kind": "multiple-choice",
+      "prompt": "A plant is given more light, but its photosynthesis rate does not rise. Carbon dioxide is very low. What is limiting the rate?"
+    },
+    {
+      "answer": "Photolysis splits water and releases oxygen; the Calvin cycle fixes carbon dioxide (into glucose).",
+      "feedback": "Scene s5 separates the two stages: photolysis splits water and releases oxygen in the thylakoids, and the Calvin cycle fixes CO2 in the stroma.",
+      "id": "q4",
+      "kind": "short-answer",
+      "prompt": "State what photolysis splits, what it releases, and what the Calvin cycle fixes."
+    }
+  ],
+  "subject": "science",
+  "title": "JC H2 biology — energetics: respiration and photosynthesis Exit Ticket",
+  "topic": "h2-energetics"
+}

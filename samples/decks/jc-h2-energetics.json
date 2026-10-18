@@ -1,0 +1,131 @@
+{
+  "level": "jc",
+  "slides": [
+    {
+      "bullets": [
+        "How cells release energy from glucose in respiration, rebuild ATP, and how photosynthesis in chloroplasts builds glucose in the first place"
+      ],
+      "heading": "JC H2 biology — energetics: respiration and photosynthesis",
+      "kind": "title",
+      "notes": "Welcome everyone in and say: today we link respiration and photosynthesis through energy - mitochondria and cristae, the ATP cycle, anaerobic pathways, photolysis and the Calvin cycle, and limiting factors."
+    },
+    {
+      "bullets": [
+        "Describe aerobic respiration and the ATP-ADP cycle, including why cristae give mitochondria a huge surface area",
+        "Compare anaerobic respiration in yeast and in muscle, and state the products of each pathway",
+        "Explain photolysis and the Calvin cycle, and judge photosynthesis claims using limiting factors"
+      ],
+      "heading": "What we will learn",
+      "kind": "objective",
+      "notes": "Read the three goals aloud and tell the class: keep these in mind, because the exit ticket at the end will ask you to do exactly these things, including correcting the respiration trap."
+    },
+    {
+      "bullets": [
+        "A green plant photosynthesises in bright light all day, then sits in darkness overnight",
+        "Is its respiration switched off in the light, on only at night, or running the whole time?"
+      ],
+      "heading": "A plant in the dark: is it still respiring?",
+      "kind": "hook",
+      "notes": "Ask the class to commit to a guess before any definitions: night only, day only, or around the clock? Take two or three answers, then say: hold them, because scene s2 settles this exactly."
+    },
+    {
+      "bullets": [
+        "Respiration transfers energy from glucose to ATP, and ATP hydrolysis releases that energy where the cell needs it",
+        "Photosynthesis does the reverse build: light energy drives photolysis and the Calvin cycle to build glucose from carbon dioxide and water"
+      ],
+      "heading": "One idea, six scenes: energy is transferred, never created",
+      "kind": "concept",
+      "notes": "Say this slowly, because it is the big idea: glucose is not spent directly - ATP is the energy currency, and photosynthesis and respiration are linked through glucose, oxygen, carbon dioxide and water."
+    },
+    {
+      "bullets": [
+        "The inner mitochondrial membrane folds into cristae, packing a huge surface area into a tiny space for respiratory enzymes",
+        "More surface area means more ATP can be made by aerobic respiration"
+      ],
+      "heading": "Mitochondria: folded cristae, huge surface area",
+      "kind": "mechanism",
+      "notes": "Narrate the folding: watch the cristae grow and the energy dot travel the folded path. Say: folding means huge surface area, so more ATP is made.",
+      "visual": "s1"
+    },
+    {
+      "bullets": [
+        "The trap claim in full: Plants only respire at night. It feels true because photosynthesis dominates by day - but the evidence in this scene says otherwise",
+        "Aerobic respiration runs around the clock: glucose + oxygen -> carbon dioxide + water + energy, releasing about 32 ATP per glucose"
+      ],
+      "heading": "A common mistake: plants only respire at night",
+      "kind": "mechanism",
+      "notes": "Name the trap out loud: Plants only respire at night. Then land the correction: Plants respire around the clock: at night there is simply no photosynthesis to hide it.",
+      "visual": "s2"
+    },
+    {
+      "bullets": [
+        "ATP hydrolysis splits off a phosphate and releases usable energy, leaving ADP",
+        "Respiration rebuilds ATP in the mitochondrion: ADP picks up a phosphate and becomes ATP again"
+      ],
+      "heading": "ATP hydrolysis releases energy; respiration rebuilds ATP",
+      "kind": "mechanism",
+      "notes": "Follow the cycle: ATP to ADP at the work site, then ADP back to the mitochondrion to be recharged. Say: ATP is the energy currency - cells spend ATP, never glucose directly.",
+      "visual": "s3"
+    },
+    {
+      "bullets": [
+        "Without enough oxygen, glucose is only partly broken down: yeast makes ethanol and carbon dioxide",
+        "Muscle makes lactic acid instead - and both anaerobic pathways yield far less ATP than aerobic respiration"
+      ],
+      "heading": "Anaerobic: yeast → ethanol + CO₂; muscle → lactic acid",
+      "kind": "mechanism",
+      "notes": "Follow the fork from one glucose down two paths. Stress the catch shown in the scene: far less ATP than aerobic, because glucose is only partly broken down.",
+      "visual": "s4"
+    },
+    {
+      "bullets": [
+        "Photolysis in the thylakoids splits water using light energy, releasing oxygen",
+        "In the stroma, the Calvin cycle fixes carbon dioxide and builds it up into glucose"
+      ],
+      "heading": "Photolysis splits water; the Calvin cycle fixes CO₂",
+      "kind": "mechanism",
+      "notes": "Track two inputs separately: water in for photolysis and oxygen out, then carbon dioxide in for the Calvin cycle and glucose built up piece by piece.",
+      "visual": "s5"
+    },
+    {
+      "bullets": [
+        "Photosynthesis is capped by whichever factor - light intensity, carbon dioxide concentration or temperature - is in shortest supply",
+        "Raising a factor that is not limiting does nothing: only the shortest bar caps the rate"
+      ],
+      "heading": "Photosynthesis is limited by the factor in shortest supply",
+      "kind": "mechanism",
+      "notes": "Watch the carbon dioxide bar shrink and the rate cap with it. Close the loop: respiration never stops inside the plant - photosynthesis just masks it by day.",
+      "visual": "s6"
+    },
+    {
+      "bullets": [
+        "Aerobic respiration equation: glucose + oxygen -> carbon dioxide + water + energy, balanced as C6H12O6 + 6O2 -> 6CO2 + 6H2O",
+        "Complete aerobic breakdown yields about 32 ATP per glucose - far more than the anaerobic pathways in scene s4"
+      ],
+      "heading": "Worked example: the aerobic respiration payoff",
+      "kind": "example",
+      "notes": "Talk through the equation atom by atom as in scene s2, then state the payoff from scene s3: about 32 ATP per glucose, rebuilt through the ATP-ADP cycle."
+    },
+    {
+      "bullets": [
+        "State the products of anaerobic respiration in yeast and in muscle, and explain why both yield far less ATP than aerobic respiration",
+        "Careful - a classmate says: Plants only respire at night. Correct them in one sentence, naming what plants do around the clock"
+      ],
+      "heading": "Your turn: compare the pathways, then judge the claim",
+      "kind": "practice",
+      "notes": "Give pairs three minutes, then cold-call one pair on each part: press them on the yeast and muscle products first, then on the exact sentence they used to correct the claim: Plants only respire at night."
+    },
+    {
+      "bullets": [
+        "On your own: write the aerobic respiration equation and state the ATP yield per glucose, then name the products of photolysis",
+        "Watch out for the trap one last time: Plants only respire at night. Say when plants respire, and why it looks switched off by day"
+      ],
+      "heading": "Exit ticket: show what you know",
+      "kind": "exit-ticket",
+      "notes": "Collect these before anyone leaves and say: I am looking for the balanced equation and about 32 ATP per glucose in your first answer, plus one clear around-the-clock respiration sentence in your second. Anyone repeating the claim Plants only respire at night. needs the trap scene again."
+    }
+  ],
+  "subject": "science",
+  "title": "JC H2 biology — energetics: respiration and photosynthesis",
+  "topic": "h2-energetics"
+}
