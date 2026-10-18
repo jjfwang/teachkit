@@ -1,0 +1,59 @@
+{
+  "level": "primary",
+  "questions": [
+    {
+      "choices": [
+        {
+          "text": "Graph A rose by more"
+        },
+        {
+          "correct": true,
+          "text": "Both rose by the same amount: 20"
+        },
+        {
+          "text": "Graph B rose by more"
+        }
+      ],
+      "feedback": "That trap answer is the one to unlearn: A steeper line always means a bigger increase. Reteach point: Slope depends on the axis scale: two graphs can have the same rise but look different. Both graphs rose by 20, so check the axis scale before comparing slopes.",
+      "id": "q1",
+      "kind": "multiple-choice",
+      "misconception": "A steeper line always means a bigger increase.",
+      "prompt": "Graph A looks steeper than graph B. Graph A has an axis of 0 to 50, graph B has an axis of 0 to 200, and both rose by 20. Which rose by more?"
+    },
+    {
+      "answer": "1/4 of the class chose grapes.",
+      "feedback": "Scene s1 fixes the method: 3 out of the whole of 12 is 1/4, the same size wedge as bananas.",
+      "id": "q2",
+      "kind": "short-answer",
+      "prompt": "In the pie chart, 3 of 12 pupils chose grapes. What fraction of the class chose grapes?"
+    },
+    {
+      "choices": [
+        {
+          "text": "Sales reached 50"
+        },
+        {
+          "correct": true,
+          "text": "Sales dipped to 30"
+        },
+        {
+          "text": "Sales stayed the same"
+        }
+      ],
+      "feedback": "Scene s2 fixes the reading: the line dips in March to 30, between 35 in February and 50 in April.",
+      "id": "q3",
+      "kind": "multiple-choice",
+      "prompt": "A line graph shows plants sold: Jan 20, Feb 35, Mar 30, Apr 50. What happened in March?"
+    },
+    {
+      "answer": "5 more votes: 13 - 8 = 5.",
+      "feedback": "Scene s3 fixes the method: read the heights of both bars, then subtract, 13 - 8 = 5.",
+      "id": "q4",
+      "kind": "short-answer",
+      "prompt": "Soccer got 13 votes and badminton got 8 votes. How many more votes did soccer get? Show the working."
+    }
+  ],
+  "subject": "math",
+  "title": "Data graphs: pie charts and line graphs Exit Ticket",
+  "topic": "data-graphs"
+}
