@@ -1,0 +1,86 @@
+{
+  "level": "jc",
+  "questions": [
+    {
+      "choices": [
+        {
+          "text": "Plant cells have no mitochondria, because chloroplasts release all their energy"
+        },
+        {
+          "text": "Plant cells have no mitochondria at night, but grow them during the day"
+        },
+        {
+          "correct": true,
+          "text": "Plant cells have mitochondria as well as chloroplasts, and respire day and night to release energy from sugar"
+        },
+        {
+          "text": "Plant cells have mitochondria only in their roots"
+        }
+      ],
+      "explanation": "The trap claim is: Plant cells have no mitochondria. Plant cells respire too, day and night: they have mitochondria as well - only the chloroplast is plant-only. Chloroplasts trap light energy in photosynthesis, but respiration in mitochondria is what releases that energy for cell activities, in plant and animal cells alike.",
+      "id": "q1",
+      "kind": "multiple-choice",
+      "misconception": "Plant cells have no mitochondria.",
+      "prompt": "A student claims plant cells do not need mitochondria because they have chloroplasts. What is correct?"
+    },
+    {
+      "choices": [
+        {
+          "text": "Iodine solution turns blue-black"
+        },
+        {
+          "correct": true,
+          "text": "Benedict's solution, heated, turns brick-red"
+        },
+        {
+          "text": "Biuret solution turns purple"
+        },
+        {
+          "text": "The emulsion test turns milky white"
+        }
+      ],
+      "explanation": "Benedict's test is the reducing-sugar test and it must be heated: blue to brick-red is positive, as in scene s6. Iodine tests for starch, Biuret for protein, and the emulsion test for lipid.",
+      "id": "q2",
+      "kind": "multiple-choice",
+      "prompt": "Which test and colour change shows that a sample contains reducing sugar?"
+    },
+    {
+      "answer": "Chloroplasts trap light energy to make sugar in photosynthesis; mitochondria release energy from that sugar as ATP in aerobic respiration, which continues day and night.",
+      "explanation": "The two organelles do different jobs: grana and stroma in the chloroplast build sugar (scene s4), cristae in the mitochondrion release its energy (scene s3). One does not replace the other.",
+      "id": "q3",
+      "kind": "short-answer",
+      "prompt": "A leaf cell contains both chloroplasts and mitochondria. Explain, in terms of photosynthesis and respiration, why it needs both."
+    },
+    {
+      "answer": "A phospholipid bilayer with hydrophilic heads facing outward and hydrophobic tails inside, with proteins drifting through it; channel proteins allow only selected substances to cross.",
+      "explanation": "Scene s1 shows heads facing water, tails hidden inside, and a channel protein spanning the membrane: small selected substances pass through channels while others are kept out.",
+      "id": "q4",
+      "kind": "short-answer",
+      "prompt": "Describe the structure of the cell membrane in the fluid mosaic model and explain how that structure makes it selectively permeable."
+    },
+    {
+      "choices": [
+        {
+          "text": "Smooth ER - studded with ribosomes that fold proteins"
+        },
+        {
+          "correct": true,
+          "text": "Golgi body - modifies, packages and ships proteins in vesicles"
+        },
+        {
+          "text": "Nucleolus - carries out aerobic respiration"
+        },
+        {
+          "text": "Chloroplast stroma - the light-dependent stage of photosynthesis"
+        }
+      ],
+      "explanation": "Scene s5 shows the export line: rough ER folds proteins, smooth ER makes lipids, and the Golgi body modifies, packages and ships them. The light-dependent stage is on the grana, not in the stroma.",
+      "id": "q5",
+      "kind": "multiple-choice",
+      "prompt": "Which pairing of organelle and function is correct?"
+    }
+  ],
+  "subject": "science",
+  "title": "JC H2 biology — cell: ultrastructure and biomolecules",
+  "topic": "h2-cell-bio"
+}

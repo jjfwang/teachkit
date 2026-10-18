@@ -1,0 +1,72 @@
+{
+  "level": "jc",
+  "segments": [
+    {
+      "cue": "s1",
+      "minutes": 6,
+      "questions": [
+        "Why do the phospholipid tails point inward, away from water?",
+        "What does a channel protein let the membrane do that a plain bilayer cannot?"
+      ],
+      "say": "Cell membrane: the fluid mosaic. Narrate heads facing water and tails hiding inside, then point at the channel protein as the selective gate. Keep your student notes open at the cell membrane definition for this scene."
+    },
+    {
+      "cue": "s2",
+      "minutes": 6,
+      "questions": [
+        "Why does mRNA, rather than DNA itself, leave the nucleus?",
+        "What is made in the nucleolus?"
+      ],
+      "say": "Nucleus: the control centre. Trace an instruction from chromatin to mRNA leaving through a nuclear pore, and name the nucleolus as the ribosomal RNA maker. Check the nucleus definition in your student notes before we move on."
+    },
+    {
+      "cue": "s3",
+      "minutes": 6,
+      "questions": [
+        "How do cristae help a mitochondrion make more ATP?",
+        "Which substances enter and leave the mitochondrion in aerobic respiration?"
+      ],
+      "say": "Mitochondria: releasing energy from food. Follow glucose in and carbon dioxide and water out, and stress the cristae folds as multiplied surface area. Now try the respiration reading on the worksheet in pairs."
+    },
+    {
+      "cue": "s4",
+      "minutes": 6,
+      "questions": [
+        "Which stage of photosynthesis needs light directly, and where does it run?",
+        "Where is sugar actually built in the chloroplast?"
+      ],
+      "say": "Chloroplast: capturing light energy. Watch light drive into the grana, then move to the stroma where the Calvin cycle fixes carbon dioxide into sugar. Compare the two stages in your student notes."
+    },
+    {
+      "cue": "s5",
+      "minutes": 6,
+      "questions": [
+        "How do rough and smooth ER differ in structure and job?",
+        "What does the Golgi body do to a protein before it leaves the cell?"
+      ],
+      "say": "RER, SER and Golgi: the export line. Follow one protein from ribosome folding on the rough ER to Golgi packaging and vesicle shipping, and contrast the smooth ER alongside it. Work the export-line question on the worksheet now."
+    },
+    {
+      "cue": "s6",
+      "minutes": 6,
+      "questions": [
+        "Which is the only test here that must be heated first?",
+        "A sample turns Biuret purple - what have you found?"
+      ],
+      "say": "Tests for biomolecules: four classics. Run the four tubes in order and chant the colour changes: brick-red, blue-black, purple, milky white. Finish the worksheet test questions now, in pairs."
+    },
+    {
+      "cue": "s7",
+      "minutes": 8,
+      "questions": [
+        "In one sentence, why does a plant cell need mitochondria as well as chloroplasts?",
+        "How would you correct a classmate who says chloroplasts replace mitochondria in plant cells?"
+      ],
+      "say": "Misconception: plant cells lack mitochondria. Strike through the trap claim, then show the plant cell holding both a chloroplast and a mitochondrion. Finish by taking the exit ticket on your own - its first question revisits exactly this scene.",
+      "watchFor": "Plant cells have no mitochondria. Listen and look for it on the worksheet and in pair talk: any answer handing respiration to chloroplasts alone shows the trap reading - send them back to scene s3 and to the correct turn: Plant cells respire too, day and night: they have mitochondria as well - only the chloroplast is plant-only."
+    }
+  ],
+  "subject": "science",
+  "title": "JC H2 biology — cell: ultrastructure and biomolecules",
+  "topic": "h2-cell-bio"
+}
