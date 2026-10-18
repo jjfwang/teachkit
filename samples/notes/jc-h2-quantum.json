@@ -1,0 +1,49 @@
+{
+  "definitions": [
+    {
+      "meaning": "A single packet of light energy, carrying E = h f where f is the light’s frequency: one photon is absorbed whole by one electron in the photoelectric effect.",
+      "term": "Photon"
+    },
+    {
+      "meaning": "The minimum energy W an electron needs to escape a metal surface, a property of the metal: the photon must pay at least W before any kinetic energy is left over.",
+      "term": "Work function"
+    },
+    {
+      "meaning": "The lowest frequency f0 = W / h whose photons can free an electron: below f0 no emission occurs at any intensity, at f0 the emitted electrons have zero kinetic energy.",
+      "term": "Threshold frequency"
+    },
+    {
+      "meaning": "The retarding potential V_s that just stops even the fastest emitted electrons, e V_s = KE_max: it measures the maximum kinetic energy and depends on frequency, not intensity.",
+      "term": "Stopping potential"
+    },
+    {
+      "meaning": "The emission of electrons when light above the threshold frequency strikes a metal, one photon freeing one electron: its frequency threshold and instant emission are evidence that light arrives as photons.",
+      "term": "Photoelectric effect"
+    },
+    {
+      "meaning": "The two-sided nature of light and matter: light travels as waves but exchanges energy as photons, and moving particles carry a de Broglie wavelength λ = h / (m v).",
+      "term": "Wave-particle duality"
+    }
+  ],
+  "level": "jc",
+  "mechanismSteps": [
+    "Light arrives as a stream of photons: photons rain onto the metal plate one packet at a time, each carrying energy h f fixed by the frequency, and one electron may absorb a whole packet in a single exchange.",
+    "Below the threshold frequency, nothing happens: the photons each carry less than the work function, so however many arrive the surface stays silent - only past the threshold do electrons start to fly.",
+    "Einstein's photoelectric equation: the photon energy h f first pays the work function W to free the electron, and whatever remains becomes the electron's kinetic energy, h f = W + KE_max.",
+    "Brighter light: more photons, more electrons: doubling the intensity doubles the photons arriving per second, so twice as many electrons escape, each with exactly the same speed as before - same-length arrows, twice as many.",
+    "Misconception: brighter light ejects faster electrons: the brighter beam only raises the electron count, and the dim violet beam still ejects faster electrons than the bright red one, because speed comes from frequency alone."
+  ],
+  "objectives": [
+    "Describe light as a stream of photons, each carrying energy E = h f",
+    "Use h f = W + KE_max, the threshold frequency f0 = W / h and the stopping potential e V_s = KE_max",
+    "Explain wave-particle duality with de Broglie's λ = h / (m v), and avoid the brighter-means-faster trap"
+  ],
+  "subject": "science",
+  "title": "JC H2 physics — quantum: photons and the photoelectric effect",
+  "topic": "h2-quantum",
+  "trap": {
+    "explanation": "Brightness feels like strength, so more light looks like harder hits. Brightness means more photons, not stronger ones: a dim violet beam ejects faster electrons than a bright red one. In the animation the brighter beam sends more electrons off the plate but every arrow keeps the same length, while the dim violet beam’s fewer electrons fly faster: the count answers the brightness, the speed answers the frequency.",
+    "misconception": "Brighter light ejects faster electrons."
+  },
+  "workedExample": "Ultraviolet light of frequency 1.20 x 10^15 Hz strikes a metal of work function 3.31 x 10^-19 J. The photon energy is E = h f = 6.63 x 10^-34 x 1.20 x 10^15 = 7.96 x 10^-19 J, so by Einstein’s equation KE_max = E - W = 7.96 x 10^-19 - 3.31 x 10^-19 = 4.65 x 10^-19 J. Check the threshold the same way: f0 = W / h = 3.31 x 10^-19 / 6.63 x 10^-34 = 5.0 x 10^14 Hz, so any light below 5.0 x 10^14 Hz frees no electrons from this metal at all - and the stopping potential for the fastest electrons is V_s = KE_max / e = 4.65 x 10^-19 / 1.60 x 10^-19 = 2.9 V."
+}

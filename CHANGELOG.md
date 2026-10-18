@@ -12,6 +12,15 @@ version section when the release ships.
 
 ### Added
 
+- JC H2 quantum gold lesson pack: five hand-authored gold
+  samples for h2-quantum in
+  samples/decks|worksheets|tickets|notes|scripts/jc-h2-quantum.json,
+  keyed to the jc-h2-quantum animation scenes and built around
+  the misconception bank trap reused verbatim: brighter light
+  ejects faster electrons, guarded by
+  tests/gold-quantum-jc-pack.test.js
+  (issue #887).
+
 - JC H2 electromagnetism lesson pack in the pack demo
   (`player/pack-demo.html`): the JC H2 electromagnetism
   gold lesson pack now appears on the same demo page as the other packs,
