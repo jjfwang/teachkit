@@ -1,0 +1,141 @@
+{
+  "level": "jc",
+  "slides": [
+    {
+      "bullets": [
+        "How a cell is built to do its jobs: membranes that select, a nucleus that controls, organelles that release and capture energy, an export line, and the biomolecule tests that identify what a sample contains"
+      ],
+      "heading": "JC H2 biology — cell: ultrastructure and biomolecules",
+      "kind": "title",
+      "notes": "Welcome everyone in and say: today we tour the cell from the outside in - membrane, nucleus, mitochondria, chloroplast and the export line - then test for biomolecules and finish by correcting a stubborn plant-cell trap."
+    },
+    {
+      "bullets": [
+        "Describe the ultrastructure of the cell membrane, nucleus, mitochondria, chloroplast, endoplasmic reticulum and Golgi body, linking each structure to its function",
+        "State what happens in aerobic respiration and photosynthesis and where each stage happens",
+        "Carry out and interpret the four classic tests for biomolecules: Benedict's, iodine, Biuret and the emulsion test"
+      ],
+      "heading": "What we will learn",
+      "kind": "objective",
+      "notes": "Read the three goals aloud and tell the class: keep these in mind, because the exit ticket at the end will ask you to do exactly these things, including spotting the plant-cell trap."
+    },
+    {
+      "bullets": [
+        "A leaf photosynthesises in daylight, making sugar in its chloroplasts",
+        "At midnight there is no light - is the leaf cell idle, or is something still releasing energy from that sugar?"
+      ],
+      "heading": "A leaf cell at midnight: is it still respiring?",
+      "kind": "hook",
+      "notes": "Ask the class to commit to a guess before any definitions: does a plant cell respire at night, yes or no? Take two or three answers, then say: hold them, because the final scene settles this completely."
+    },
+    {
+      "bullets": [
+        "Every organelle in this lesson earns its place by its structure: folded membranes multiply surface area, pores control traffic, and stacked membranes catch light",
+        "Photosynthesis and respiration are not opposites owned by different cells: a plant cell can do both, in different organelles"
+      ],
+      "heading": "One idea, seven scenes: structure fits function",
+      "kind": "concept",
+      "notes": "Say this slowly, because it is the big idea: do not memorise organelles as a list - for each one ask what its structure lets it do."
+    },
+    {
+      "bullets": [
+        "The membrane is a phospholipid bilayer: hydrophilic heads face the water on both sides, hydrophobic tails hide inside",
+        "Proteins drift in the bilayer - the fluid mosaic - and channel proteins let only selected substances cross, so the membrane is selectively permeable"
+      ],
+      "heading": "Cell membrane: the fluid mosaic",
+      "kind": "mechanism",
+      "notes": "Point at the bilayer and narrate: heads out, tails in, proteins floating in the sheet. Say: the structure decides what can cross, and channel proteins are the selective gates.",
+      "visual": "s1"
+    },
+    {
+      "bullets": [
+        "The nucleus stores DNA as chromatin and controls all cell activities",
+        "Its double nuclear envelope is punctured by pores that let mRNA out, while the nucleolus inside makes ribosomal RNA"
+      ],
+      "heading": "Nucleus: the control centre",
+      "kind": "mechanism",
+      "notes": "Narrate the traffic: instructions stay protected inside as chromatin, copies leave as mRNA through the pores, and the nucleolus builds the ribosome parts.",
+      "visual": "s2"
+    },
+    {
+      "bullets": [
+        "Mitochondria carry out aerobic respiration: glucose plus oxygen gives carbon dioxide, water and energy trapped as ATP",
+        "The inner membrane folds into cristae, packing a large surface area of ATP-making enzymes into a small organelle"
+      ],
+      "heading": "Mitochondria: releasing energy from food",
+      "kind": "mechanism",
+      "notes": "Talk through the flows: glucose in, carbon dioxide and water out. Say: folding is the trick - cristae multiply the working surface without making the cell bigger.",
+      "visual": "s3"
+    },
+    {
+      "bullets": [
+        "Chloroplasts trap light energy for photosynthesis: carbon dioxide plus water gives glucose and oxygen",
+        "The light-dependent stage runs on the grana, stacks of thylakoid membranes, while the Calvin cycle fixes carbon dioxide into sugar in the stroma"
+      ],
+      "heading": "Chloroplast: capturing light energy",
+      "kind": "mechanism",
+      "notes": "Watch light drive into the grana and sugar leave. Say: two stages, two places - grana catch the light, stroma builds the sugar.",
+      "visual": "s4"
+    },
+    {
+      "bullets": [
+        "Rough ER is studded with ribosomes that fold new proteins; smooth ER has no ribosomes and makes lipids and detoxifies",
+        "The Golgi body modifies, packages and ships proteins out of the cell in vesicles"
+      ],
+      "heading": "RER, SER and Golgi: the export line",
+      "kind": "mechanism",
+      "notes": "Follow one protein along the line: folded on the rough ER, carried to the Golgi, packaged and shipped in a vesicle. Say: ER makes, Golgi finishes and posts.",
+      "visual": "s5"
+    },
+    {
+      "bullets": [
+        "Benedict's test (heat first): blue to brick-red means reducing sugar; iodine: brown to blue-black means starch",
+        "Biuret: blue to purple means protein; emulsion test: clear to milky white means lipid"
+      ],
+      "heading": "Tests for biomolecules: four classics",
+      "kind": "mechanism",
+      "notes": "Run the four tubes in order and name the colour change each time. Say: only Benedict's needs heating before its colour can flip to brick-red.",
+      "visual": "s6"
+    },
+    {
+      "bullets": [
+        "The trap claim in full: Plant cells have no mitochondria. Mitochondria can look like animal-cell equipment - but the bars of this claim do not survive the respiration equation",
+        "Plant cells burn the sugar photosynthesis makes, day and night, so they need mitochondria as well: only the chloroplast is plant-only"
+      ],
+      "heading": "Misconception: plant cells lack mitochondria",
+      "kind": "mechanism",
+      "notes": "Name the trap out loud: Plant cells have no mitochondria. Then point at the plant cell holding both organelles and land the correction: plant cells respire too, day and night.",
+      "visual": "s7"
+    },
+    {
+      "bullets": [
+        "A muscle cell needs huge amounts of ATP for contraction, so it is packed with mitochondria whose cristae give a large surface area for respiration",
+        "A leaf mesophyll cell needs to trap light, so it is packed with chloroplasts whose grana give a large surface area of light-absorbing membranes"
+      ],
+      "heading": "Worked example: which organelle, and why?",
+      "kind": "example",
+      "notes": "Talk through both cells slowly: same principle, different organelle - match the job to the structure, then use that match in your explanation."
+    },
+    {
+      "bullets": [
+        "A food sample turns iodine blue-black and Biuret purple. Which two biomolecules are present, and what would Benedict's test add?",
+        "Careful - a classmate says: Plant cells have no mitochondria. Explain to them what a plant cell uses its mitochondria for, day and night"
+      ],
+      "heading": "Your turn: identify, then correct",
+      "kind": "practice",
+      "notes": "Give pairs three minutes, then cold-call one pair on each part: press them on starch and protein first, then on the exact sentence they used to correct the claim: Plant cells have no mitochondria."
+    },
+    {
+      "bullets": [
+        "On your own: name the organelle where the Calvin cycle happens, and the organelle where aerobic respiration happens in a leaf cell",
+        "Watch out for the trap one last time: Plant cells have no mitochondria. Say which organelles a plant cell actually has, and why"
+      ],
+      "heading": "Exit ticket: show what you know",
+      "kind": "exit-ticket",
+      "notes": "Collect these before anyone leaves and say: I am looking for stroma and mitochondria in your first answer and one clear respiration sentence in your second. Anyone repeating the claim Plant cells have no mitochondria. needs the trap scene again."
+    }
+  ],
+  "subject": "science",
+  "title": "JC H2 biology — cell: ultrastructure and biomolecules",
+  "topic": "h2-cell-bio"
+}

@@ -12,6 +12,19 @@ version section when the release ships.
 
 ### Added
 
+- JC H2 cell biology gold lesson pack: five hand-authored gold
+  samples for h2-cell-bio in
+  samples/decks/jc-h2-cell-bio.json,
+  samples/worksheets/jc-h2-cell-bio.json,
+  samples/tickets/jc-h2-cell-bio.json,
+  samples/notes/jc-h2-cell-bio.json and
+  samples/scripts/jc-h2-cell-bio.json,
+  keyed to the jc-h2-cell-bio animation scenes and built around
+  the misconception bank trap reused verbatim: Plant cells
+  have no mitochondria., guarded by
+  tests/gold-cell-bio-jc-pack.test.js
+  (issue #903).
+
 - JC H2 organic gold lesson pack: five hand-authored gold
   samples for h2-organic in
   samples/decks/jc-h2-organic.json,

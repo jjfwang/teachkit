@@ -1,0 +1,59 @@
+{
+  "level": "jc",
+  "questions": [
+    {
+      "choices": [
+        {
+          "text": "It has chloroplasts but no mitochondria"
+        },
+        {
+          "correct": true,
+          "text": "It has both chloroplasts and mitochondria, and respires day and night"
+        },
+        {
+          "text": "It respires only when the sun is shining"
+        }
+      ],
+      "feedback": "That trap reading is the one to unlearn: Plant cells have no mitochondria. Reteach point: Plant cells respire too, day and night: they have mitochondria as well - only the chloroplast is plant-only.",
+      "id": "q1",
+      "kind": "multiple-choice",
+      "misconception": "Plant cells have no mitochondria.",
+      "prompt": "Which statement about a plant cell is true?"
+    },
+    {
+      "answer": "Protein (Biuret purple) and lipid (milky white emulsion).",
+      "feedback": "Scene s6 locks the colours: Biuret blue to purple means protein, and the emulsion test turning milky white means lipid.",
+      "id": "q2",
+      "kind": "short-answer",
+      "prompt": "A sample turns Biuret solution purple and gives a milky white emulsion test. Which two biomolecules are present?"
+    },
+    {
+      "choices": [
+        {
+          "text": "In the stroma"
+        },
+        {
+          "correct": true,
+          "text": "On the grana, the stacks of thylakoid membranes"
+        },
+        {
+          "text": "In the mitochondria, on the cristae"
+        }
+      ],
+      "feedback": "Scene s4 places the stages: the light-dependent stage runs on the grana, while the Calvin cycle fixes carbon dioxide into sugar in the stroma.",
+      "id": "q3",
+      "kind": "multiple-choice",
+      "prompt": "Where does the light-dependent stage of photosynthesis take place?"
+    },
+    {
+      "answer": "Cristae fold the inner membrane to give a large surface area for the enzymes of aerobic respiration, so more ATP can be made in a small organelle.",
+      "feedback": "Scene s3 makes the link explicit: folding multiplies surface area, and a larger surface holds more ATP-making enzymes.",
+      "id": "q4",
+      "kind": "short-answer",
+      "prompt": "Explain how the folding of cristae helps a mitochondrion release energy efficiently."
+    }
+  ],
+  "subject": "science",
+  "title": "JC H2 biology — cell: ultrastructure and biomolecules Exit Ticket",
+  "topic": "h2-cell-bio"
+}

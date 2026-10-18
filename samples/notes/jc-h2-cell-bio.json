@@ -1,0 +1,70 @@
+{
+  "definitions": [
+    {
+      "meaning": "A selectively permeable phospholipid bilayer with drifting proteins (the fluid mosaic): hydrophilic heads face water, hydrophobic tails face inward.",
+      "term": "Cell membrane"
+    },
+    {
+      "meaning": "The control centre storing DNA as chromatin, enclosed by a double nuclear envelope with pores for mRNA, and containing the nucleolus that makes ribosomal RNA.",
+      "term": "Nucleus"
+    },
+    {
+      "meaning": "The site of aerobic respiration, with an inner membrane folded into cristae that give a large surface area for ATP-making enzymes.",
+      "term": "Mitochondrion"
+    },
+    {
+      "meaning": "The site of photosynthesis in plant cells: grana (thylakoid stacks) run the light-dependent stage and the stroma runs the Calvin cycle.",
+      "term": "Chloroplast"
+    },
+    {
+      "meaning": "ER studded with ribosomes, where new proteins are folded.",
+      "term": "Rough endoplasmic reticulum"
+    },
+    {
+      "meaning": "ER without ribosomes, where lipids are made and substances are detoxified.",
+      "term": "Smooth endoplasmic reticulum"
+    },
+    {
+      "meaning": "A stack that modifies, packages and ships proteins out of the cell in vesicles.",
+      "term": "Golgi body"
+    },
+    {
+      "meaning": "The test for reducing sugar: add Benedict's solution and heat; blue to brick-red is positive.",
+      "term": "Benedict's test"
+    },
+    {
+      "meaning": "The test for starch: iodine solution turns from brown to blue-black.",
+      "term": "Iodine test"
+    },
+    {
+      "meaning": "The test for protein: Biuret solution turns from blue to purple.",
+      "term": "Biuret test"
+    },
+    {
+      "meaning": "The test for lipid: mix with ethanol then water; a milky white emulsion is positive.",
+      "term": "Emulsion test"
+    }
+  ],
+  "level": "jc",
+  "mechanismSteps": [
+    "Cell membrane: the fluid mosaic: a phospholipid bilayer with hydrophilic heads out and hydrophobic tails in, with channel proteins giving selective passage.",
+    "Nucleus: the control centre: chromatin stores the instructions, nuclear pores let mRNA out, and the nucleolus makes ribosomal RNA.",
+    "Mitochondria: releasing energy from food: glucose and oxygen enter respiration on the cristae, whose folds multiply the surface area for ATP-making enzymes.",
+    "Chloroplast: capturing light energy: light drives into the grana for the light-dependent stage, while the stroma fixes carbon dioxide into sugar in the Calvin cycle.",
+    "RER, SER and Golgi: the export line: ribosomes on the rough ER fold proteins, the smooth ER makes lipids, and the Golgi body packages and ships proteins in vesicles.",
+    "Tests for biomolecules: four classics: Benedict's heated goes brick-red for reducing sugar, iodine blue-black for starch, Biuret purple for protein, and the emulsion test milky white for lipid.",
+    "Misconception: plant cells lack mitochondria: the claim fails because plant cells respire day and night, so a plant cell holds mitochondria alongside its chloroplasts."
+  ],
+  "objectives": [
+    "Describe the ultrastructure and function of the membrane, nucleus, mitochondria, chloroplast, ER and Golgi body",
+    "Explain where respiration and each stage of photosynthesis happen, and interpret the four biomolecule tests"
+  ],
+  "subject": "science",
+  "title": "JC H2 biology — cell: ultrastructure and biomolecules",
+  "topic": "h2-cell-bio",
+  "trap": {
+    "explanation": "Mitochondria feel like animal-cell equipment, and the chloroplast looks like the plant replacement. Plant cells respire too, day and night: they have mitochondria as well - only the chloroplast is plant-only. In the animation the plant cell is drawn with a chloroplast and then a mitochondrion moves in beside it: both organelles belong, because trapping energy and releasing it are two different jobs.",
+    "misconception": "Plant cells have no mitochondria."
+  },
+  "workedExample": "In scene s3, a mitochondrion takes in glucose and oxygen and releases carbon dioxide, water and energy as ATP: C6H12O6 + 6 O2 -> 6 CO2 + 6 H2O. Now apply the same reading to a leaf cell at midnight, as in scene s7: photosynthesis has stopped, but respiration on the cristae continues, which is why the leaf cell needs mitochondria even though it also has chloroplasts."
+}
