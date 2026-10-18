@@ -1,1 +1,86 @@
-{"level":"primary","questions":[{"choices":[{"text":"60 km"},{"text":"120 km"},{"correct":true,"text":"30 km"},{"text":"90 km"}],"explanation":"The trap is: 60 km/h means the bus has travelled 60 km. Speed is distance per hour, so in half an hour the bus goes half of 60 km: 60 × 1/2 = 30 km.","id":"q1","kind":"multiple-choice","misconception":"60 km/h means the bus has travelled 60 km.","prompt":"A bus travels at 60 km/h. How far has it really travelled after half an hour?"},{"choices":[{"correct":true,"text":"The bus covers 60 km in every hour"},{"text":"The bus has covered 60 km in total"},{"text":"The bus covers 60 km in every minute"},{"text":"The bus stops after 60 km"}],"explanation":"Scene s1 reads the rate per hour: at 60 km/h the bus covers 60 km in the first hour, 120 km after 2 hours and 180 km after 3 hours.","id":"q2","kind":"multiple-choice","prompt":"What does a speed of 60 km/h mean?"},{"answer":"150 km: distance = speed × time, so 60 × 2.5 = 150 km.","explanation":"Scene s2 multiplies speed by time: 60 km/h for 2.5 hours is 60 × 2.5 = 150 km - 60 km in each full hour plus 30 km in the half hour.","id":"q3","kind":"short-answer","prompt":"A bus travels at 60 km/h for 2.5 hours. How far does it go? Show the working."},{"answer":"60 km: distance = speed × time, so 15 × 4 = 60 km.","explanation":"Multiply the speed by the time: a cyclist at 15 km/h for 4 hours rides 15 × 4 = 60 km.","id":"q4","kind":"short-answer","prompt":"A cyclist rides at 15 km/h for 4 hours. How far does she ride?"},{"choices":[{"text":"80 km"},{"correct":true,"text":"120 km"},{"text":"40 km"},{"text":"160 km"}],"explanation":"Use distance = speed × time: 80 × 1.5 = 120 km - that is 80 km in the first hour plus half of 80 km, 40 km, in the half hour.","id":"q5","kind":"multiple-choice","prompt":"A car travels at 80 km/h for 1.5 hours. How far does it go?"}],"subject":"math","title":"Rate and speed: d = s × t","topic":"rate-speed"}
+{
+ "level": "primary",
+ "questions": [
+  {
+   "choices": [
+    {
+     "text": "60 km"
+    },
+    {
+     "text": "120 km"
+    },
+    {
+     "correct": true,
+     "text": "30 km"
+    },
+    {
+     "text": "90 km"
+    }
+   ],
+   "explanation": "The trap is: 60 km/h means the bus has travelled 60 km. Speed is distance per hour, so in half an hour the bus goes half of 60 km: 60 × 1/2 = 30 km.",
+   "id": "q1",
+   "kind": "multiple-choice",
+   "misconception": "60 km/h means the bus has travelled 60 km.",
+   "prompt": "A bus travels at 60 km/h. How far has it really travelled after half an hour?"
+  },
+  {
+   "choices": [
+    {
+     "correct": true,
+     "text": "The bus covers 60 km in every hour"
+    },
+    {
+     "text": "The bus has covered 60 km in total"
+    },
+    {
+     "text": "The bus covers 60 km in every minute"
+    },
+    {
+     "text": "The bus stops after 60 km"
+    }
+   ],
+   "explanation": "Scene s1 reads the rate per hour: at 60 km/h the bus covers 60 km in the first hour, 120 km after 2 hours and 180 km after 3 hours.",
+   "id": "q2",
+   "kind": "multiple-choice",
+   "prompt": "What does a speed of 60 km/h mean?"
+  },
+  {
+   "answer": "150 km: distance = speed × time, so 60 × 2.5 = 150 km.",
+   "explanation": "Scene s2 multiplies speed by time: 60 km/h for 2.5 hours is 60 × 2.5 = 150 km - 60 km in each full hour plus 30 km in the half hour.",
+   "id": "q3",
+   "kind": "short-answer",
+   "prompt": "A bus travels at 60 km/h for 2.5 hours. How far does it go? Show the working."
+  },
+  {
+   "answer": "60 km: distance = speed × time, so 15 × 4 = 60 km.",
+   "explanation": "Multiply the speed by the time: a cyclist at 15 km/h for 4 hours rides 15 × 4 = 60 km.",
+   "id": "q4",
+   "kind": "short-answer",
+   "prompt": "A cyclist rides at 15 km/h for 4 hours. How far does she ride?"
+  },
+  {
+   "choices": [
+    {
+     "text": "80 km"
+    },
+    {
+     "correct": true,
+     "text": "120 km"
+    },
+    {
+     "text": "40 km"
+    },
+    {
+     "text": "160 km"
+    }
+   ],
+   "explanation": "Use distance = speed × time: 80 × 1.5 = 120 km - that is 80 km in the first hour plus half of 80 km, 40 km, in the half hour.",
+   "id": "q5",
+   "kind": "multiple-choice",
+   "prompt": "A car travels at 80 km/h for 1.5 hours. How far does it go?"
+  }
+ ],
+ "subject": "math",
+ "title": "Rate and speed: d = s × t",
+ "topic": "rate-speed"
+}

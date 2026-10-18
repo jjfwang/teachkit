@@ -1,1 +1,59 @@
-{"level":"primary","questions":[{"choices":[{"text":"60 km"},{"correct":true,"text":"30 km"},{"text":"120 km"}],"feedback":"That trap answer is the one to unlearn: 60 km/h means the bus has travelled 60 km. Reteach point: Speed is distance per hour: after half an hour at 60 km/h the bus has gone 30 km, not 60.","id":"q1","kind":"multiple-choice","misconception":"60 km/h means the bus has travelled 60 km.","prompt":"A bus travels at 60 km/h for half an hour. How far has it travelled?"},{"answer":"150 km: distance = speed × time, so 60 × 2.5 = 150 km.","feedback":"Scene s2 locks the method: multiply speed by time - 60 km in each full hour plus 30 km in the half hour gives 150 km in 2.5 hours.","id":"q2","kind":"short-answer","prompt":"Work out how far a bus travelling at 60 km/h goes in 2.5 hours, showing the working."},{"choices":[{"correct":true,"text":"50 × 3 = 150 km"},{"text":"50 + 3 = 53 km"},{"text":"50 ÷ 3 km"}],"feedback":"Scene s4 fixes the formula: distance = speed × time, so at 50 km/h for 3 hours the distance is 50 × 3 = 150 km.","id":"q3","kind":"multiple-choice","prompt":"Which working finds the distance travelled at 50 km/h for 3 hours?"},{"answer":"60 km/h: speed = distance ÷ time, so 120 ÷ 2 = 60 km/h.","feedback":"Scene s4 flips the formula: cover the s in the triangle and divide distance by time - 120 km in 2 hours is 60 km/h.","id":"q4","kind":"short-answer","prompt":"A van travels 120 km in 2 hours. What is its speed?"}],"subject":"math","title":"Rate and speed: d = s × t Exit Ticket","topic":"rate-speed"}
+{
+ "level": "primary",
+ "questions": [
+  {
+   "choices": [
+    {
+     "text": "60 km"
+    },
+    {
+     "correct": true,
+     "text": "30 km"
+    },
+    {
+     "text": "120 km"
+    }
+   ],
+   "feedback": "That trap answer is the one to unlearn: 60 km/h means the bus has travelled 60 km. Reteach point: Speed is distance per hour: after half an hour at 60 km/h the bus has gone 30 km, not 60.",
+   "id": "q1",
+   "kind": "multiple-choice",
+   "misconception": "60 km/h means the bus has travelled 60 km.",
+   "prompt": "A bus travels at 60 km/h for half an hour. How far has it travelled?"
+  },
+  {
+   "answer": "150 km: distance = speed × time, so 60 × 2.5 = 150 km.",
+   "feedback": "Scene s2 locks the method: multiply speed by time - 60 km in each full hour plus 30 km in the half hour gives 150 km in 2.5 hours.",
+   "id": "q2",
+   "kind": "short-answer",
+   "prompt": "Work out how far a bus travelling at 60 km/h goes in 2.5 hours, showing the working."
+  },
+  {
+   "choices": [
+    {
+     "correct": true,
+     "text": "50 × 3 = 150 km"
+    },
+    {
+     "text": "50 + 3 = 53 km"
+    },
+    {
+     "text": "50 ÷ 3 km"
+    }
+   ],
+   "feedback": "Scene s4 fixes the formula: distance = speed × time, so at 50 km/h for 3 hours the distance is 50 × 3 = 150 km.",
+   "id": "q3",
+   "kind": "multiple-choice",
+   "prompt": "Which working finds the distance travelled at 50 km/h for 3 hours?"
+  },
+  {
+   "answer": "60 km/h: speed = distance ÷ time, so 120 ÷ 2 = 60 km/h.",
+   "feedback": "Scene s4 flips the formula: cover the s in the triangle and divide distance by time - 120 km in 2 hours is 60 km/h.",
+   "id": "q4",
+   "kind": "short-answer",
+   "prompt": "A van travels 120 km in 2 hours. What is its speed?"
+  }
+ ],
+ "subject": "math",
+ "title": "Rate and speed: d = s × t Exit Ticket",
+ "topic": "rate-speed"
+}

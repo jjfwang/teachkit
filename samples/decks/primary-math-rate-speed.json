@@ -1,1 +1,111 @@
-{"level":"primary","slides":[{"bullets":["How far a bus travelling at 60 km/h goes in 2.5 hours, using distance = speed × time"],"heading":"Rate and speed: d = s × t","kind":"title","notes":"Welcome everyone in and say: today we meet speed as a rate - what 60 km/h really means, and how to turn a speed and a time into a distance - and by the end you will be able to explain why a speed on its own is never a distance."},{"bullets":["Read speed as distance per hour: 60 km/h means 60 km in every hour","Find distance by multiplying: distance = speed × time","Work out 60 km/h for 2.5 hours: 60 × 2.5 = 150 km"],"heading":"What we will learn","kind":"objective","notes":"Read the three goals aloud and tell the class: keep these in mind, because the exit ticket at the end will ask you to do exactly these things."},{"bullets":["A classmate says a bus travelling at 60 km/h has already gone 60 km after only half an hour","Is that possible? What does the 60 in 60 km/h really count?"],"heading":"Has the bus already gone 60 km?","kind":"hook","notes":"Ask for a show of hands: has the bus gone 60 km after half an hour, or must something be wrong? Take two or three answers without judging them yet; say: hold on to your idea, because scene s3 settles this exactly."},{"bullets":["Speed is a rate: it tells the distance covered in one unit of time, so 60 km/h is 60 km in each hour","Distance, speed and time are linked: distance = speed × time, so the time always matters"],"heading":"Speed is a rate: distance per unit of time","kind":"concept","notes":"Say this slowly, because it is the big idea of the whole lesson: a speed counts distance per hour, and only a speed together with a time gives a distance."},{"bullets":["A bus at 60 km/h covers 60 km in the first hour, 120 km after 2 hours and 180 km after 3 hours","Each hour adds the same 60 km: the distance grows by the speed every hour"],"heading":"Speed is distance per hour","kind":"mechanism","notes":"Point at the distance chips as they appear and narrate: 60 km after one hour, 120 km after two, 180 km after three - the same 60 km landing every hour.","visual":"s1"},{"bullets":["Multiply speed by time: 60 × 2.5 = 150 km","Check by parts: 60 km in hour one, 60 km in hour two, and half of 60 km - 30 km - in the half hour: 60 + 60 + 30 = 150 km"],"heading":"60 km/h for 2.5 hours","kind":"mechanism","notes":"Narrate the journey slowly: the bus passes 60 km, then 120 km, then a shorter half-hour step lands it on 150 km. The bar underneath grows by a full 60 km block per hour and a half block for the half hour.","visual":"s2"},{"bullets":["Careful - the trap is reading 60 km/h as a distance travelled, whatever the time","After half an hour at 60 km/h the bus has gone 60 × 1/2 = 30 km, not 60 km"],"heading":"Watch out: speed is not distance","kind":"mechanism","notes":"Hold the claim up against the road: the bus stops at the half-hour mark, 30 km along, while the 60 km answer sits far ahead of it - half the time means half the distance.","visual":"s3"},{"bullets":["To find distance: distance = speed × time - cover the d in the triangle to see the working","Flip the formula either way: speed = distance ÷ time and time = distance ÷ speed"],"heading":"The takeaway","kind":"mechanism","notes":"Land the whole family in one breath: distance, speed and time are one family - multiply speed by time for distance, and divide to flip the formula for speed or for time.","visual":"s4"},{"bullets":["Work the distance in one step: distance = speed × time, so 60 × 2.5 = 150 km","Sanity-check by hours: 60 km + 60 km + 30 km for the half hour = 150 km"],"heading":"Worked example: 60 km/h for 2.5 hours","kind":"example","notes":"Talk through the multiplication slowly as in scene s2 and name each part as you write it; say: checking by hours - 60, 60, then half of 60 - keeps the working honest."},{"bullets":["A cyclist rides at 12 km/h for 3 hours. How far does she go? Use distance = speed × time","A car travels at 80 km/h for half an hour. How far does it go, and why is the answer not 80 km?"],"heading":"Your turn: find the distance","kind":"practice","notes":"Give pairs three minutes, then cold-call one pair on each part: press them on the multiplication first, then on the exact sentence they used to explain why half an hour cannot give 80 km."},{"bullets":["On your own: a train travels at 90 km/h for 2 hours - how far does it go?","Explain in one sentence why a speed on its own is not a distance"],"heading":"Exit ticket: show what you know","kind":"exit-ticket","notes":"Collect these before anyone leaves and say: I am looking for the distance = speed × time working in your first answer, plus one clear sentence about distance per hour in your second."}],"subject":"math","title":"Rate and speed: d = s × t","topic":"rate-speed"}
+{
+ "level": "primary",
+ "slides": [
+  {
+   "bullets": [
+    "How far a bus travelling at 60 km/h goes in 2.5 hours, using distance = speed × time"
+   ],
+   "heading": "Rate and speed: d = s × t",
+   "kind": "title",
+   "notes": "Welcome everyone in and say: today we meet speed as a rate - what 60 km/h really means, and how to turn a speed and a time into a distance - and by the end you will be able to explain why a speed on its own is never a distance."
+  },
+  {
+   "bullets": [
+    "Read speed as distance per hour: 60 km/h means 60 km in every hour",
+    "Find distance by multiplying: distance = speed × time",
+    "Work out 60 km/h for 2.5 hours: 60 × 2.5 = 150 km"
+   ],
+   "heading": "What we will learn",
+   "kind": "objective",
+   "notes": "Read the three goals aloud and tell the class: keep these in mind, because the exit ticket at the end will ask you to do exactly these things."
+  },
+  {
+   "bullets": [
+    "A classmate says a bus travelling at 60 km/h has already gone 60 km after only half an hour",
+    "Is that possible? What does the 60 in 60 km/h really count?"
+   ],
+   "heading": "Has the bus already gone 60 km?",
+   "kind": "hook",
+   "notes": "Ask for a show of hands: has the bus gone 60 km after half an hour, or must something be wrong? Take two or three answers without judging them yet; say: hold on to your idea, because scene s3 settles this exactly."
+  },
+  {
+   "bullets": [
+    "Speed is a rate: it tells the distance covered in one unit of time, so 60 km/h is 60 km in each hour",
+    "Distance, speed and time are linked: distance = speed × time, so the time always matters"
+   ],
+   "heading": "Speed is a rate: distance per unit of time",
+   "kind": "concept",
+   "notes": "Say this slowly, because it is the big idea of the whole lesson: a speed counts distance per hour, and only a speed together with a time gives a distance."
+  },
+  {
+   "bullets": [
+    "A bus at 60 km/h covers 60 km in the first hour, 120 km after 2 hours and 180 km after 3 hours",
+    "Each hour adds the same 60 km: the distance grows by the speed every hour"
+   ],
+   "heading": "Speed is distance per hour",
+   "kind": "mechanism",
+   "notes": "Point at the distance chips as they appear and narrate: 60 km after one hour, 120 km after two, 180 km after three - the same 60 km landing every hour.",
+   "visual": "s1"
+  },
+  {
+   "bullets": [
+    "Multiply speed by time: 60 × 2.5 = 150 km",
+    "Check by parts: 60 km in hour one, 60 km in hour two, and half of 60 km - 30 km - in the half hour: 60 + 60 + 30 = 150 km"
+   ],
+   "heading": "60 km/h for 2.5 hours",
+   "kind": "mechanism",
+   "notes": "Narrate the journey slowly: the bus passes 60 km, then 120 km, then a shorter half-hour step lands it on 150 km. The bar underneath grows by a full 60 km block per hour and a half block for the half hour.",
+   "visual": "s2"
+  },
+  {
+   "bullets": [
+    "Careful - the trap is reading 60 km/h as a distance travelled, whatever the time",
+    "After half an hour at 60 km/h the bus has gone 60 × 1/2 = 30 km, not 60 km"
+   ],
+   "heading": "Watch out: speed is not distance",
+   "kind": "mechanism",
+   "notes": "Hold the claim up against the road: the bus stops at the half-hour mark, 30 km along, while the 60 km answer sits far ahead of it - half the time means half the distance.",
+   "visual": "s3"
+  },
+  {
+   "bullets": [
+    "To find distance: distance = speed × time - cover the d in the triangle to see the working",
+    "Flip the formula either way: speed = distance ÷ time and time = distance ÷ speed"
+   ],
+   "heading": "The takeaway",
+   "kind": "mechanism",
+   "notes": "Land the whole family in one breath: distance, speed and time are one family - multiply speed by time for distance, and divide to flip the formula for speed or for time.",
+   "visual": "s4"
+  },
+  {
+   "bullets": [
+    "Work the distance in one step: distance = speed × time, so 60 × 2.5 = 150 km",
+    "Sanity-check by hours: 60 km + 60 km + 30 km for the half hour = 150 km"
+   ],
+   "heading": "Worked example: 60 km/h for 2.5 hours",
+   "kind": "example",
+   "notes": "Talk through the multiplication slowly as in scene s2 and name each part as you write it; say: checking by hours - 60, 60, then half of 60 - keeps the working honest."
+  },
+  {
+   "bullets": [
+    "A cyclist rides at 12 km/h for 3 hours. How far does she go? Use distance = speed × time",
+    "A car travels at 80 km/h for half an hour. How far does it go, and why is the answer not 80 km?"
+   ],
+   "heading": "Your turn: find the distance",
+   "kind": "practice",
+   "notes": "Give pairs three minutes, then cold-call one pair on each part: press them on the multiplication first, then on the exact sentence they used to explain why half an hour cannot give 80 km."
+  },
+  {
+   "bullets": [
+    "On your own: a train travels at 90 km/h for 2 hours - how far does it go?",
+    "Explain in one sentence why a speed on its own is not a distance"
+   ],
+   "heading": "Exit ticket: show what you know",
+   "kind": "exit-ticket",
+   "notes": "Collect these before anyone leaves and say: I am looking for the distance = speed × time working in your first answer, plus one clear sentence about distance per hour in your second."
+  }
+ ],
+ "subject": "math",
+ "title": "Rate and speed: d = s × t",
+ "topic": "rate-speed"
+}
