@@ -1,0 +1,111 @@
+{
+ "level": "primary",
+ "slides": [
+  {
+   "bullets": [
+    "How place value decides what each decimal digit is worth, and how to add 0.4 + 0.25 by lining up the places"
+   ],
+   "heading": "Decimals: place value and adding 0.4 + 0.25",
+   "kind": "title",
+   "notes": "Welcome everyone in and say: today we work with decimals - tenths, hundredths, and adding 0.4 + 0.25 - and by the end you will be able to explain why 0.25 is not bigger than 0.4."
+  },
+  {
+   "bullets": [
+    "Read decimals by naming the tenths and hundredths places",
+    "Write 0.4 as 0.40 so both numbers talk in hundredths",
+    "Add decimals place by place: tenths with tenths, hundredths with hundredths"
+   ],
+   "heading": "What we will learn",
+   "kind": "objective",
+   "notes": "Read the three goals aloud and tell the class: keep these in mind, because the exit ticket at the end will ask you to do exactly these things."
+  },
+  {
+   "bullets": [
+    "A classmate says 0.25 must be bigger than 0.4 because 25 is bigger than 4",
+    "Is that right? How big is each number really?"
+   ],
+   "heading": "More digits, bigger number?",
+   "kind": "hook",
+   "notes": "Ask for a show of hands: 0.25 or 0.4 - which is bigger? Take two or three answers without judging them yet; say: hold on to your idea, because scene s4 settles this exactly."
+  },
+  {
+   "bullets": [
+    "A digit is worth its face value times its place: the 4 in 0.4 is four tenths, the 2 in 0.25 is two tenths",
+    "Tenths are bigger pieces than hundredths: ten hundredths make exactly one tenth"
+   ],
+   "heading": "Place value decides what a digit is worth",
+   "kind": "concept",
+   "notes": "Say this slowly, because it is the big idea of the whole lesson: where a digit stands decides what it is worth, and counting digits never decides which decimal is bigger."
+  },
+  {
+   "bullets": [
+    "Split one whole bar into ten equal parts; four shaded parts is four tenths, written 0.4",
+    "The 4 sits in the tenths place, so 0.4 means 4 out of 10 equal parts"
+   ],
+   "heading": "Tenths: one bar, ten equal parts",
+   "kind": "mechanism",
+   "notes": "Point at the bar as the parts shade in and narrate: each part is one tenth of the whole, and four of them make 0.4.",
+   "visual": "s1"
+  },
+  {
+   "bullets": [
+    "Split the whole square into ten rows and ten columns: one hundred tiny parts",
+    "Twenty-five tiny parts is 0.25: twenty hundredths plus five more hundredths"
+   ],
+   "heading": "Hundredths: one square, one hundred tiny parts",
+   "kind": "mechanism",
+   "notes": "Count the columns with the class: each column is ten hundredths, so two columns and five more tiny parts make twenty-five hundredths.",
+   "visual": "s2"
+  },
+  {
+   "bullets": [
+    "Write 0.4 as 0.40 so both numbers talk in hundredths, then line up tenths under tenths",
+    "Forty hundredths plus twenty-five hundredths is sixty-five hundredths: 0.40 + 0.25 = 0.65"
+   ],
+   "heading": "Add: line up the places",
+   "kind": "mechanism",
+   "notes": "Narrate the extra zero slowly: writing 0.4 as 0.40 changes nothing, and now the places line up so the addition is honest. The answer is 0.65.",
+   "visual": "s3"
+  },
+  {
+   "bullets": [
+    "Careful - the trap is: Comparing decimals by digit count: 0.25 looks bigger than 0.4 because 25 > 4.",
+    "Place value decides: 0.4 is 0.40, and forty hundredths beats twenty-five hundredths"
+   ],
+   "heading": "Watch out: 0.25 is not bigger than 0.4",
+   "kind": "mechanism",
+   "notes": "Contrast the two bars side by side: the tenths bar and the hundredths square cover the same whole, and 0.4 covers more of it than 0.25 does.",
+   "visual": "s4"
+  },
+  {
+   "bullets": [
+    "Work 0.4 + 0.25 in two steps: first write 0.4 = 0.40, then add the hundredths",
+    "0.40 + 0.25 = 0.65 - check each place: 4 tenths plus 2 tenths, 0 hundredths plus 5 hundredths"
+   ],
+   "heading": "Worked example: 0.4 + 0.25",
+   "kind": "example",
+   "notes": "Talk through the two steps slowly as in scene s3 and name each one as you write it; say: matching the place values first keeps every place honest."
+  },
+  {
+   "bullets": [
+    "Which is bigger, 0.6 or 0.45? Explain using tenths and hundredths, not digit count",
+    "Careful - a classmate says: Comparing decimals by digit count: 0.25 looks bigger than 0.4 because 25 > 4. Correct them in one sentence, naming what place value does"
+   ],
+   "heading": "Your turn: compare, then add",
+   "kind": "practice",
+   "notes": "Give pairs three minutes, then cold-call one pair on each part: press them on the place-value sentence first, then on the exact sentence they used to correct the claim."
+  },
+  {
+   "bullets": [
+    "On your own: work out 0.4 + 0.25, showing the 0.40 step",
+    "Watch out for the trap one last time: Comparing decimals by digit count: 0.25 looks bigger than 0.4 because 25 > 4. Say which of 0.4 and 0.25 is really bigger, and why"
+   ],
+   "heading": "Exit ticket: show what you know",
+   "kind": "exit-ticket",
+   "notes": "Collect these before anyone leaves and say: I am looking for the 0.40 step in your first answer, plus one clear sentence about place value in your second."
+  }
+ ],
+ "subject": "math",
+ "title": "Decimals: place value and adding 0.4 + 0.25",
+ "topic": "decimals"
+}

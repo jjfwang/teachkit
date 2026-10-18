@@ -1,0 +1,45 @@
+{
+ "level": "primary",
+ "segments": [
+  {
+   "cue": "s1",
+   "minutes": 6,
+   "questions": [
+    "How many equal parts is the bar split into?",
+    "What is each part worth, and how many parts make 0.4?"
+   ],
+   "say": "Tenths: one bar, ten equal parts. Split the whole bar into ten equal parts as the shading lands on four of them, and name the amount: four tenths, 0.4. Keep your student notes open at the tenths definition for this scene."
+  },
+  {
+   "cue": "s2",
+   "minutes": 7,
+   "questions": [
+    "How many tiny parts are in the whole square?",
+    "How do twenty hundredths plus five hundredths make 0.25?"
+   ],
+   "say": "Hundredths: one square, one hundred tiny parts. Count the columns with the class - each column is ten hundredths - then shade twenty-five tiny parts to make 0.25. Compare this with the hundredths definition in your student notes."
+  },
+  {
+   "cue": "s3",
+   "minutes": 8,
+   "questions": [
+    "Why do we write 0.4 as 0.40 before adding?",
+    "Which places must line up, and what is the answer?"
+   ],
+   "say": "Add: line up the places. Write 0.4 as 0.40 so both numbers talk in hundredths, line up the places, and add to reach 0.65. Now try the addition questions on the worksheet in pairs."
+  },
+  {
+   "cue": "s4",
+   "minutes": 7,
+   "questions": [
+    "Which covers more of the whole, 0.4 or 0.25? How do you know?",
+    "What goes wrong if we judge by digit count?"
+   ],
+   "say": "Watch out: 0.25 is not bigger than 0.4. Lay the tenths bar over the hundredths square and contrast the covered amounts, then land the place-value rule. Finish by taking the exit ticket on your own - its first question revisits exactly this trap.",
+   "watchFor": "Comparing decimals by digit count: 0.25 looks bigger than 0.4 because 25 > 4. Listen and look for it in pair talk and on the worksheet: any claim that 0.25 beats 0.4 shows the trap - send them back to scene s4 and to the correct turn: Match the place values first: 0.4 is 0.40, then tenths under tenths and hundredths under hundredths."
+  }
+ ],
+ "subject": "math",
+ "title": "Decimals: place value and adding 0.4 + 0.25",
+ "topic": "decimals"
+}

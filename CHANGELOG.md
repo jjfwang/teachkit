@@ -12,6 +12,18 @@ version section when the release ships.
 
 ### Added
 
+- Primary mathematics decimals gold lesson pack: five hand-authored gold
+  samples for decimals in
+  samples/decks/primary-math-decimals.json,
+  samples/worksheets/primary-math-decimals.json,
+  samples/tickets/primary-math-decimals.json,
+  samples/notes/primary-math-decimals.json and
+  samples/scripts/primary-math-decimals.json,
+  keyed to the primary-math-decimals-place-value animation scenes and built around
+  the misconception bank trap reused verbatim: Comparing decimals by digit count: 0.25 looks bigger than 0.4 because 25 > 4., guarded by
+  tests/gold-decimals-pack.test.js
+  (issue #923).
+
 - Primary mathematics whole numbers lesson pack in the pack demo
   (`player/pack-demo.html`): the Primary mathematics whole numbers
   gold lesson pack now appears on the same demo page as the other packs,

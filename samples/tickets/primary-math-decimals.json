@@ -1,0 +1,59 @@
+{
+ "level": "primary",
+ "questions": [
+  {
+   "choices": [
+    {
+     "text": "0.25"
+    },
+    {
+     "correct": true,
+     "text": "0.4"
+    },
+    {
+     "text": "They are equal"
+    }
+   ],
+   "feedback": "That trap comparison is the one to unlearn: Comparing decimals by digit count: 0.25 looks bigger than 0.4 because 25 > 4. Reteach point: Match the place values first: 0.4 is 0.40, then tenths under tenths and hundredths under hundredths. Forty hundredths beats twenty-five hundredths, so 0.4 is bigger.",
+   "id": "q1",
+   "kind": "multiple-choice",
+   "misconception": "Comparing decimals by digit count: 0.25 looks bigger than 0.4 because 25 > 4.",
+   "prompt": "Which number is bigger, 0.4 or 0.25?"
+  },
+  {
+   "answer": "0.4 = 0.40, then 0.40 + 0.25 = 0.65.",
+   "feedback": "Scene s3 locks the method: rewrite 0.4 as 0.40 first so both numbers talk in hundredths, then add place by place to reach 0.65.",
+   "id": "q2",
+   "kind": "short-answer",
+   "prompt": "Work out 0.4 + 0.25, showing the step where you rewrite 0.4."
+  },
+  {
+   "choices": [
+    {
+     "text": "2 ones"
+    },
+    {
+     "correct": true,
+     "text": "2 tenths"
+    },
+    {
+     "text": "2 hundredths"
+    }
+   ],
+   "feedback": "Scene s1 and s2 fix the places: the first place after the decimal point is tenths, so the 2 in 0.25 is worth two tenths - twenty hundredths.",
+   "id": "q3",
+   "kind": "multiple-choice",
+   "prompt": "In 0.25, what is the 2 worth?"
+  },
+  {
+   "answer": "The whole split into hundredths has ten tiny parts in each tenth column, so ten hundredths fill exactly one tenth.",
+   "feedback": "Scene s2 shows the strip: ten hundredths in a row are exactly one tenth - that is why 0.4 can be written as 0.40 without changing its value.",
+   "id": "q4",
+   "kind": "short-answer",
+   "prompt": "Explain why ten hundredths is the same as one tenth."
+  }
+ ],
+ "subject": "math",
+ "title": "Decimals: place value and adding 0.4 + 0.25 Exit Ticket",
+ "topic": "decimals"
+}
