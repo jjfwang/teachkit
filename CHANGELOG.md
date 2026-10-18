@@ -12,6 +12,20 @@ version section when the release ships.
 
 ### Added
 
+- Primary science plant systems lesson pack in the pack demo
+  (`player/pack-demo.html`): the Primary science plant systems
+  gold lesson pack now appears on the same demo page as the other packs,
+  presenting all six primary-science-plant-systems materials (animation,
+  slides, worksheet, exit ticket, student notes, and teacher
+  script) under its own
+  plant-systems-primary-manifest header (slug
+  `plant-systems-primary-science`, level primary, subject
+  science, topic `plant-systems`), stacked animation, slides, and printables sections, all
+  six materials validated before render for that pack, and
+  the shared teacher-keys toggle covering all forty-five packs' print
+  stages, guarded by tests/pack-demo.test.js
+  (issue #969).
+
 - Primary science plant-systems gold lesson pack: five hand-authored gold samples for plant-systems in samples/decks/primary-science-plant-systems.json, samples/worksheets/primary-science-plant-systems.json, samples/tickets/primary-science-plant-systems.json, samples/notes/primary-science-plant-systems.json and samples/scripts/primary-science-plant-systems.json, keyed to the primary-science-plant-systems animation scenes, misconception bank trap reused verbatim: Plants take food from the soil through their roots, like we eat food., guarded by tests/gold-plant-systems-pack.test.js (issue #967).
 
 - Primary science human body systems lesson pack in the pack demo

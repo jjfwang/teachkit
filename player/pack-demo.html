@@ -810,6 +810,24 @@
     <li><code>script</code> teacher script</li>
   </ul>
 </header>
+<header class="pack-manifest" id="plant-systems-primary-manifest">
+  <h1>Lesson pack: Primary science plant systems: Plant systems</h1>
+  <dl>
+    <dt>Slug</dt><dd><code>plant-systems-primary-science</code></dd>
+    <dt>Level</dt><dd>primary</dd>
+    <dt>Subject</dt><dd>science</dd>
+    <dt>Topic</dt><dd><code>plant-systems</code></dd>
+  </dl>
+  <p>topic plant-systems · level primary · subject science · deck primary-science-plant-systems</p>
+  <ul class="pack-materials">
+    <li><code>animation</code></li>
+    <li><code>slides</code></li>
+    <li><code>worksheet</code></li>
+    <li><code>exitTicket</code> exit ticket</li>
+    <li><code>notes</code> student notes</li>
+    <li><code>script</code> teacher script</li>
+  </ul>
+</header>
 <section class="pack-section" id="animation-section">
   <h2>Animation</h2>
   <div id="anim-stage"></div>
@@ -1368,6 +1386,19 @@
   <h2>Primary science human body systems printables</h2>
   <div id="human-body-systems-primary-printables-stage"></div>
 </section>
+<section class="pack-section" id="plant-systems-primary-animation">
+  <h2>Primary science plant systems animation</h2>
+  <div id="plant-systems-primary-stage"></div>
+  <div id="plant-systems-primary-captions"></div>
+</section>
+<section class="pack-section" id="plant-systems-primary-slides">
+  <h2>Primary science plant systems slides</h2>
+  <div id="plant-systems-primary-slides-stage"></div>
+</section>
+<section class="pack-section" id="plant-systems-primary-printables">
+  <h2>Primary science plant systems printables</h2>
+  <div id="plant-systems-primary-printables-stage"></div>
+</section>
 <div id="err"></div>
 <script src="validate.js"></script>
 <script src="player.js"></script>
@@ -1435,8 +1466,9 @@
     var dataGraphsPrimaryPrintStage = document.querySelector('#data-graphs-primary-printables-stage .pr-stage') || document.querySelector('#data-graphs-primary-printables-stage');
     var modelMethodPrimaryPrintStage = document.querySelector('#model-method-primary-printables-stage .pr-stage') || document.querySelector('#model-method-primary-printables-stage');
     var humanBodySystemsPrimaryPrintStage = document.querySelector('#human-body-systems-primary-printables-stage .pr-stage') || document.querySelector('#human-body-systems-primary-printables-stage');
+    var plantSystemsPrimaryPrintStage = document.querySelector('#plant-systems-primary-printables-stage .pr-stage') || document.querySelector('#plant-systems-primary-printables-stage');
     var keys = [];
-    [printStage, fractionsPrintStage, wavesPrintStage, complexPrintStage, trigPrintStage, thermalPrintStage, photosynthesisPrintStage, erosionPrintStage, chemMolePrintStage, differentiationPrintStage, integrationPrintStage, binomialPrintStage, kinematicsPrintStage, quadraticPrintStage, trigonometryAPrintStage, vectorsPrintStage, functionsGraphsPrintStage, sequencesPrintStage, differentiationJcPrintStage, integrationJcPrintStage, probabilityJcPrintStage, statisticsJcPrintStage, mechanicsJcPrintStage, emJcPrintStage, quantumJcPrintStage, physicalJcPrintStage, inorganicJcPrintStage, organicJcPrintStage, cellBioJcPrintStage, geneticsJcPrintStage, energeticsJcPrintStage, ecologyJcPrintStage, wholeNumbersPrimaryPrintStage, decimalsPrimaryPrintStage, percentagePrimaryPrintStage, ratioPrimaryPrintStage, rateSpeedPrimaryPrintStage, algebraIntroPrimaryPrintStage, geometryAnglesPrimaryPrintStage, areaPerimeterPrimaryPrintStage, volumePrimaryPrintStage, dataGraphsPrimaryPrintStage, modelMethodPrimaryPrintStage, humanBodySystemsPrimaryPrintStage].forEach(function (stage) {
+    [printStage, fractionsPrintStage, wavesPrintStage, complexPrintStage, trigPrintStage, thermalPrintStage, photosynthesisPrintStage, erosionPrintStage, chemMolePrintStage, differentiationPrintStage, integrationPrintStage, binomialPrintStage, kinematicsPrintStage, quadraticPrintStage, trigonometryAPrintStage, vectorsPrintStage, functionsGraphsPrintStage, sequencesPrintStage, differentiationJcPrintStage, integrationJcPrintStage, probabilityJcPrintStage, statisticsJcPrintStage, mechanicsJcPrintStage, emJcPrintStage, quantumJcPrintStage, physicalJcPrintStage, inorganicJcPrintStage, organicJcPrintStage, cellBioJcPrintStage, geneticsJcPrintStage, energeticsJcPrintStage, ecologyJcPrintStage, wholeNumbersPrimaryPrintStage, decimalsPrimaryPrintStage, percentagePrimaryPrintStage, ratioPrimaryPrintStage, rateSpeedPrimaryPrintStage, algebraIntroPrimaryPrintStage, geometryAnglesPrimaryPrintStage, areaPerimeterPrimaryPrintStage, volumePrimaryPrintStage, dataGraphsPrimaryPrintStage, modelMethodPrimaryPrintStage, humanBodySystemsPrimaryPrintStage, plantSystemsPrimaryPrintStage].forEach(function (stage) {
       if (stage) {
         keys = keys.concat(Array.prototype.slice.call(stage.querySelectorAll('.pr-teacher')));
       }
@@ -4608,6 +4640,79 @@
     ].join('');
   }).catch(function (err) {
     showError('Primary science human body systems pack failed to load: ' + err.message);
+  });
+})();
+</script>
+<script>
+(function () {
+  var presenter = document.getElementById('plant-systems-primary-slides-stage');
+  var plantSystemsPrimaryPrint = document.getElementById('plant-systems-primary-printables-stage');
+  var errBox = document.getElementById('err');
+  var plantSystemsPrimaryAnimUrl = '../samples/primary-science-plant-systems.json';
+  var plantSystemsPrimaryDeckUrl = '../samples/decks/primary-science-plant-systems.json';
+  var plantSystemsPrimaryWorksheetUrl = '../samples/worksheets/primary-science-plant-systems.json';
+  var plantSystemsPrimaryTicketUrl = '../samples/tickets/primary-science-plant-systems.json';
+  var plantSystemsPrimaryNotesUrl = '../samples/notes/primary-science-plant-systems.json';
+  var plantSystemsPrimaryScriptUrl = '../samples/scripts/primary-science-plant-systems.json';
+
+  function showError(msg) {
+    errBox.textContent = String(msg);
+  }
+
+  Promise.all([
+    fetch(plantSystemsPrimaryAnimUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + plantSystemsPrimaryAnimUrl);
+      return r.json();
+    }),
+    fetch(plantSystemsPrimaryDeckUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + plantSystemsPrimaryDeckUrl);
+      return r.json();
+    }),
+    fetch(plantSystemsPrimaryWorksheetUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + plantSystemsPrimaryWorksheetUrl);
+      return r.json();
+    }),
+    fetch(plantSystemsPrimaryTicketUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + plantSystemsPrimaryTicketUrl);
+      return r.json();
+    }),
+    fetch(plantSystemsPrimaryNotesUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + plantSystemsPrimaryNotesUrl);
+      return r.json();
+    }),
+    fetch(plantSystemsPrimaryScriptUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + plantSystemsPrimaryScriptUrl);
+      return r.json();
+    })
+  ]).then(function (pack) {
+    var anim = pack[0];
+    var deck = pack[1];
+    var worksheet = pack[2];
+    var ticket = pack[3];
+    var notes = pack[4];
+    var script = pack[5];
+    var problems = AnimathValidate.validateSpec(anim)
+      .concat(AnimathValidate.validateSlides(deck))
+      .concat(AnimathValidate.validateWorksheet(worksheet))
+      .concat(AnimathValidate.validateExitTicket(ticket))
+      .concat(AnimathValidate.validateNotes(notes))
+      .concat(AnimathValidate.validateScript(script));
+    if (problems.length) {
+      showError('Primary science plant systems pack failed validation:\n' + problems.join('\n'));
+      return;
+    }
+    AnimathPlayer.mount(document.getElementById('plant-systems-primary-stage'), anim, { autoplay: false });
+    AnimathSlidesPresenter.attachPresenter(document, presenter, deck, { animSpec: anim });
+    plantSystemsPrimaryPrint.innerHTML = [
+      AnimathPrintable.renderWorksheet(worksheet),
+      AnimathPrintable.renderWorksheetAnswerKey(worksheet),
+      AnimathPrintable.renderExitTicket(ticket),
+      AnimathPrintable.renderExitTicketAnswerKey(ticket),
+      AnimathPrintable.renderNotes(notes),
+      AnimathPrintable.renderScript(script)
+    ].join('');
+  }).catch(function (err) {
+    showError('Primary science plant systems pack failed to load: ' + err.message);
   });
 })();
 </script>
