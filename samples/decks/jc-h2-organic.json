@@ -1,0 +1,151 @@
+{
+  "level": "jc",
+  "slides": [
+    {
+      "bullets": [
+        "Mechanisms, synthesis and the arrow language: homologous series and functional groups, electrophilic addition, SN1 and SN2 substitution, and planning a synthesis route"
+      ],
+      "heading": "JC H2 chemistry — organic: mechanisms, synthesis and the arrow language",
+      "kind": "title",
+      "notes": "Welcome everyone in and say: today we learn to read organic mechanisms as stories about electron pairs - chains and functional groups first, then addition and substitution, and finally how to chain reactions into a synthesis."
+    },
+    {
+      "bullets": [
+        "Describe homologous series and functional groups, and name the family a molecule belongs to",
+        "Explain electrophilic addition to ethene and the difference between SN1 and SN2 substitution, including their rate equations",
+        "Use curly arrows correctly and plan a short synthesis route, working backwards from the target"
+      ],
+      "heading": "What we will learn",
+      "kind": "objective",
+      "notes": "Read the three goals aloud slowly and tell the class: keep these in mind, because our exit ticket at the end will ask you to do exactly these things, including spotting the trap about which way a curly arrow points."
+    },
+    {
+      "bullets": [
+        "A curly arrow is drawn on almost every mechanism in this topic",
+        "Does it point toward the electrons, or away from them - and how would you know?"
+      ],
+      "heading": "Which way does a curly arrow point?",
+      "kind": "hook",
+      "notes": "Ask the class to commit to a guess before any definitions: does the arrow start at the electron-rich end or the electron-poor end? Take two or three answers, then say: hold them, because the arrow language runs through every scene of this lesson."
+    },
+    {
+      "bullets": [
+        "Every mechanism in this lesson is explained the same way: a curly arrow tracks one pair of electrons from where the pair starts to where it ends up",
+        "Reaction type follows the electrons: pi pairs attack electrophiles in addition, lone pairs attack carbon in substitution, and synthesis chains the reactions you already know"
+      ],
+      "heading": "One idea, eight scenes: follow the electron pairs",
+      "kind": "concept",
+      "notes": "Say this part slowly, because it is the big idea of the whole lesson: mechanisms are never memorised arrow patterns - each arrow is one electron pair moving, and the reaction type tells you where to look for it."
+    },
+    {
+      "bullets": [
+        "Methane, ethane, propane and butane form a homologous series: each member adds one CH2 group, so the whole family shares the general formula CnH2n+2",
+        "Members of a series share the same functional group and similar chemistry, with physical properties changing gradually along the chain"
+      ],
+      "heading": "Alkanes: one CH₂ group apart",
+      "kind": "mechanism",
+      "notes": "Follow the chain growing one CH2 group at a time and narrate the state change: same family, same general formula, one carbon longer each step. Say: the series is a family portrait, not four separate molecules to memorise.",
+      "visual": "s1"
+    },
+    {
+      "bullets": [
+        "The same three-carbon skeleton belongs to different families when a different functional group is attached: -OH makes an alcohol, -COOH makes a carboxylic acid",
+        "The functional group, not the carbon skeleton, decides the family's reactions - propan-1-ol and propanoic acid behave very differently"
+      ],
+      "heading": "Functional groups change the family",
+      "kind": "mechanism",
+      "notes": "Narrate the functional groups landing on the same skeleton: the carbons do not change, but the family and the chemistry do. Say: name the functional group first and you have named the reactions to expect.",
+      "visual": "s2"
+    },
+    {
+      "bullets": [
+        "Ethene's pi bond is electron-rich, so its electron pair attacks the slightly positive hydrogen of H-Br: the first curly arrow runs from the pi bond to H",
+        "The second curly arrow runs from the H-Br bond onto bromine, giving Br-, and the product is bromoethane: CH2=CH2 + HBr gives CH3CH2Br"
+      ],
+      "heading": "Electrophilic addition to alkenes",
+      "kind": "mechanism",
+      "notes": "Trace both curly arrows in order and name what each pair does: pi pair to hydrogen, bond pair onto bromine. Say: the arrows start where the electrons are - that sentence settles almost every arrow question in this topic.",
+      "visual": "s3"
+    },
+    {
+      "bullets": [
+        "Tertiary halogenoalkanes substitute in two steps: first the C-Br bond breaks on its own, slowly, leaving a planar carbocation and Br-",
+        "Hydroxide then attacks the carbocation fast, so the rate depends only on the halogenoalkane: rate = k[(CH3)3CBr]"
+      ],
+      "heading": "SN1: the slow step comes first",
+      "kind": "mechanism",
+      "notes": "Narrate the slow break first, then the fast attack. Say: the slow step is the bottleneck - hydroxide is not in it, so hydroxide cannot appear in the rate equation.",
+      "visual": "s4"
+    },
+    {
+      "bullets": [
+        "Primary halogenoalkanes substitute in one concerted step: hydroxide attacks the carbon from the back, opposite the C-Br bond, while bromide leaves",
+        "Both reactants meet in the single step, so the rate depends on both: rate = k[CH3Br][OH-]"
+      ],
+      "heading": "SN2: one step, backside attack",
+      "kind": "mechanism",
+      "notes": "Follow the hydroxide in from the back and the bromide out the front, all in one step through one transition state. Say: one step, two reactants, both in the rate equation - the exact opposite shape from SN1.",
+      "visual": "s5"
+    },
+    {
+      "bullets": [
+        "Real synthesis chains reactions you already know: ethene becomes bromoethane by electrophilic addition, then ethanol by nucleophilic substitution, then ethanal by partial oxidation",
+        "Retrosynthesis plans the route backwards: start from the target molecule and ask what it could be made from, one step at a time"
+      ],
+      "heading": "One route, three steps",
+      "kind": "mechanism",
+      "notes": "Walk the route forwards once, naming the reaction type on each arrow, then walk it backwards from ethanal. Say: every arrow in a route must be a reaction you can already explain.",
+      "visual": "s6"
+    },
+    {
+      "bullets": [
+        "The trap reading treats the curly arrow as an atom sliding along it - but atoms stay put; only electron pairs move",
+        "Read every arrow as a pair: the pair starts at a bond, a lone pair or a pi bond, and ends where the new bond forms or on the leaving atom"
+      ],
+      "heading": "A common mistake: atoms sliding along the arrow",
+      "kind": "mechanism",
+      "notes": "Slow down for the trap scene. Say: the bromine atom never travels along the arrow - the pair leaves the bond and ends on bromine, which is why Br- appears. Atoms stay put, pairs move.",
+      "visual": "s7"
+    },
+    {
+      "bullets": [
+        "Addition is pi electrons attacking an electrophile; substitution splits into SN1's slow carbocation step and SN2's single concerted step",
+        "Synthesis is chaining known reactions and planning backwards - and every arrow in every mechanism follows the electrons"
+      ],
+      "heading": "Organic mechanisms in one page",
+      "kind": "mechanism",
+      "notes": "Pull the whole lesson onto one page: addition, the two substitutions, and the route that chains them. Say: if you can say where each electron pair starts and ends, you can rebuild any mechanism in this topic.",
+      "visual": "s8"
+    },
+    {
+      "bullets": [
+        "Step 1: name each change - ethene to bromoethane adds HBr across the double bond, bromoethane to ethanol swaps Br for OH, ethanol to ethanal removes hydrogen",
+        "Step 2: match each change to a known reaction - electrophilic addition, nucleophilic substitution with aqueous NaOH and heat, then partial oxidation, stopping before ethanoic acid"
+      ],
+      "heading": "Worked example: planning the ethene to ethanal route",
+      "kind": "example",
+      "notes": "Talk through the route slowly and name the reaction type on each arrow as you write it; say: work backwards from ethanal if the forwards direction stalls - the last step must be an oxidation, so the step before it must make the alcohol."
+    },
+    {
+      "bullets": [
+        "Ethene reacts with HBr. Draw the two curly arrows of the mechanism and state, for each arrow, where its electron pair starts and where it ends",
+        "Careful - a classmate says: Curly arrows point from the electron-poor atom toward the electron-rich one. Explain to them where a curly arrow actually starts"
+      ],
+      "heading": "Your turn: explain, then correct",
+      "kind": "practice",
+      "notes": "Give pairs three minutes, then cold-call one pair on each part: press them on the pi pair first, then on the exact sentence they used to talk their classmate out of the claim: Curly arrows point from the electron-poor atom toward the electron-rich one."
+    },
+    {
+      "bullets": [
+        "On your own: a tertiary halogenoalkane reacts with aqueous NaOH and the rate does not change when the NaOH concentration doubles. Name the mechanism and explain the rate evidence",
+        "Watch out for the trap one last time: Curly arrows point from the electron-poor atom toward the electron-rich one. Say where the arrow in the ethene and HBr mechanism actually starts, and why"
+      ],
+      "heading": "Exit ticket: show what you know",
+      "kind": "exit-ticket",
+      "notes": "Collect these before anyone leaves and say: I am looking for SN1 with the slow-step reasoning in your first answer and one clear sentence about the electron-rich pi bond in your second. Anyone repeating the claim Curly arrows point from the electron-poor atom toward the electron-rich one. needs the arrow scenes again."
+    }
+  ],
+  "subject": "science",
+  "title": "JC H2 chemistry — organic: mechanisms, synthesis and the arrow language",
+  "topic": "h2-organic"
+}

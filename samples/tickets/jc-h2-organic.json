@@ -1,0 +1,59 @@
+{
+  "level": "jc",
+  "questions": [
+    {
+      "choices": [
+        {
+          "text": "Curly arrows point from the electron-poor atom toward the electron-rich one."
+        },
+        {
+          "correct": true,
+          "text": "Curly arrows start at an electron-rich region, such as a lone pair or a pi bond, and point to where the electrons go"
+        },
+        {
+          "text": "Curly arrows show which atom slides across to form the new bond"
+        }
+      ],
+      "feedback": "That trap reading is the one to unlearn: Curly arrows point from the electron-poor atom toward the electron-rich one. Reteach point: Curly arrows follow the electrons: they start at an electron-rich region (a lone pair or pi bond) and point to where the electrons go.",
+      "id": "q1",
+      "kind": "multiple-choice",
+      "misconception": "Curly arrows point from the electron-poor atom toward the electron-rich one.",
+      "prompt": "Which statement about curly arrows is correct?"
+    },
+    {
+      "answer": "Hydroxide attacks opposite the C-Br bond so its lone pair can form the new C-O bond as the C-Br pair leaves with bromine, through a single transition state. The rate equation, rate = k[CH3Br][OH-], includes both reactants, which shows both meet in the one slow step.",
+      "feedback": "This is the concerted step of scene s5: one step, backside attack, and both reactants in the rate equation - the mirror image of SN1.",
+      "id": "q2",
+      "kind": "short-answer",
+      "prompt": "In the SN2 reaction of CH3Br with OH-, why must the hydroxide attack from the back, and what does the rate equation tell you about the step?"
+    },
+    {
+      "choices": [
+        {
+          "text": "Ethene, by electrophilic addition"
+        },
+        {
+          "correct": true,
+          "text": "Ethanol, by nucleophilic substitution: OH- replaces Br on the carbon"
+        },
+        {
+          "text": "Ethanal, by free-radical substitution"
+        }
+      ],
+      "feedback": "Hydroxide is a nucleophile and bromine is the leaving group (scene s6, step B of the route): Br is substituted by OH to give ethanol, CH3CH2OH.",
+      "id": "q3",
+      "kind": "multiple-choice",
+      "prompt": "Bromoethane is warmed with aqueous sodium hydroxide. What is the product and the reaction type?"
+    },
+    {
+      "answer": "Atoms do not slide along curly arrows. The arrow tracks one pair of electrons: the H-Br bond pair moves onto bromine, which leaves as Br-, while the pi pair forms the new C-H bond.",
+      "feedback": "This is the trap scene s7: atoms stay put and only electron pairs move - the pair starts at the bond and ends on bromine.",
+      "id": "q4",
+      "kind": "short-answer",
+      "prompt": "A student writes that in the ethene and HBr mechanism, the bromine atom slides along the curly arrow onto the carbon. Correct the student's reading in one or two sentences."
+    }
+  ],
+  "subject": "science",
+  "title": "JC H2 chemistry — organic: mechanisms, synthesis and the arrow language Exit Ticket",
+  "topic": "h2-organic"
+}

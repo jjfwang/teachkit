@@ -1,0 +1,81 @@
+{
+  "level": "jc",
+  "segments": [
+    {
+      "cue": "s1",
+      "minutes": 5,
+      "questions": [
+        "Why do all four alkanes share one general formula even though their chains differ?",
+        "What would the fifth member of the series be, and how do you know?"
+      ],
+      "say": "Alkanes: one CH2 group apart. Methane, ethane, propane and butane climb by one CH2 group each under one general formula. Keep your student notes open at the homologous series definition for this scene."
+    },
+    {
+      "cue": "s2",
+      "minutes": 5,
+      "questions": [
+        "Which group turns the skeleton into propanoic acid, and which into propan-1-ol?",
+        "Why does changing one group change the whole family's reactions?"
+      ],
+      "say": "Functional groups change the family. The same three-carbon skeleton becomes an alcohol or a carboxylic acid depending on the group attached. Compare the two families against the definitions in your student notes."
+    },
+    {
+      "cue": "s3",
+      "minutes": 6,
+      "questions": [
+        "Where does the first curly arrow start, and what tells you that?",
+        "What is left on bromine at the end of the mechanism, and why?"
+      ],
+      "say": "Electrophilic addition to alkenes. The pi pair attacks the slightly positive hydrogen first, then the H-Br pair leaves on bromine. Now try the addition question on the worksheet in pairs, drawing both curly arrows."
+    },
+    {
+      "cue": "s4",
+      "minutes": 5,
+      "questions": [
+        "Why is hydroxide missing from the SN1 rate equation?",
+        "What shape is the carbocation, and why does that shape matter?"
+      ],
+      "say": "SN1: the slow step comes first. The C-Br bond breaks alone, the carbocation forms, and only then does hydroxide attack. Check the rate equation against the mechanism steps in your student notes."
+    },
+    {
+      "cue": "s5",
+      "minutes": 5,
+      "questions": [
+        "Why can the attack not come from the same side as the C-Br bond?",
+        "How does the rate equation prove the step is concerted?"
+      ],
+      "say": "SN2: one step, backside attack. Hydroxide comes in from the back while bromide leaves the front, all through one transition state. Work the SN2 question on the worksheet now."
+    },
+    {
+      "cue": "s6",
+      "minutes": 6,
+      "questions": [
+        "Plan the route backwards: what must the step before ethanal be, and why?",
+        "Which step changes the functional group without changing the carbon count?"
+      ],
+      "say": "One route, three steps. Addition, substitution, partial oxidation: a synthesis is a chain of reactions you already know. Finish the route question on the worksheet, then check your reagents against your student notes."
+    },
+    {
+      "cue": "s7",
+      "minutes": 6,
+      "questions": [
+        "If the atom does not move along the arrow, what does move?",
+        "Rewrite the trap sentence so it describes the pair, not the atom."
+      ],
+      "say": "A common mistake: atoms sliding along the arrow. Atoms stay put - the arrow tracks an electron pair from the bond onto bromine. Note this carefully, because the exit ticket will test exactly that reading."
+    },
+    {
+      "cue": "s8",
+      "minutes": 7,
+      "questions": [
+        "In one sentence, where does every curly arrow start?",
+        "How would you correct a classmate who points the arrow the wrong way?"
+      ],
+      "say": "Organic mechanisms in one page. Addition, SN1, SN2 and the route that chains them - every arrow follows the electrons. Finish the worksheet trap question now, then the exit ticket on your own - its first question revisits exactly this arrow.",
+      "watchFor": "Curly arrows point from the electron-poor atom toward the electron-rich one. Listen and look for it on the worksheet and in pair talk: any arrow drawn starting at an electron-poor atom shows the trap reading, not the electron story - send them back to the pi bond in scene s3 and to the correct turn: Curly arrows follow the electrons: they start at an electron-rich region (a lone pair or pi bond) and point to where the electrons go."
+    }
+  ],
+  "subject": "science",
+  "title": "JC H2 chemistry — organic: mechanisms, synthesis and the arrow language",
+  "topic": "h2-organic"
+}

@@ -1,0 +1,86 @@
+{
+  "level": "jc",
+  "questions": [
+    {
+      "choices": [
+        {
+          "text": "The arrow points from the electron-poor atom toward the electron-rich one"
+        },
+        {
+          "text": "The arrow points from the atom that moves toward the atom it joins"
+        },
+        {
+          "correct": true,
+          "text": "The arrow starts at an electron-rich region, such as a lone pair or a pi bond, and points to where the electron pair goes"
+        },
+        {
+          "text": "The arrow points from the product back toward the reactant"
+        }
+      ],
+      "explanation": "The trap claim is: Curly arrows point from the electron-poor atom toward the electron-rich one. The arrow is read like a direction pointer instead of tracking the electrons themselves. Curly arrows follow the electrons: they start at an electron-rich region (a lone pair or pi bond) and point to where the electrons go. In the ethene and HBr mechanism the first arrow starts at the electron-rich pi bond, not at any electron-poor atom.",
+      "id": "q1",
+      "kind": "multiple-choice",
+      "misconception": "Curly arrows point from the electron-poor atom toward the electron-rich one.",
+      "prompt": "A student is asked which way a curly arrow points in a reaction mechanism. Which statement is correct?"
+    },
+    {
+      "choices": [
+        {
+          "text": "The H-Br bond pair forms the new C-H bond and the pi pair moves onto bromine"
+        },
+        {
+          "correct": true,
+          "text": "The pi pair forms the new C-H bond and the H-Br bond pair moves onto bromine, giving Br-"
+        },
+        {
+          "text": "A hydrogen atom slides along the curly arrow onto the carbon"
+        },
+        {
+          "text": "The pi pair moves onto hydrogen and stays there as H-"
+        }
+      ],
+      "explanation": "The pi bond is electron-rich, so its pair attacks the slightly positive hydrogen and becomes the new C-H bond. The H-Br pair then leaves with bromine as Br-, as traced in scene s3.",
+      "id": "q2",
+      "kind": "multiple-choice",
+      "prompt": "Ethene reacts with hydrogen bromide to form bromoethane. What happens to the electron pairs in the mechanism?"
+    },
+    {
+      "answer": "The mechanism is SN1. The slow first step is the C-Br bond breaking on its own to form a planar carbocation and Br-, and hydroxide plays no part in that step, so the rate depends only on the halogenoalkane: rate = k[(CH3)3CBr]. Hydroxide attacks the carbocation in a second, fast step.",
+      "explanation": "A rate that ignores the nucleophile means the nucleophile is not in the slow step: the two-step SN1 shape of scene s4, not the one-step SN2 shape.",
+      "id": "q3",
+      "kind": "short-answer",
+      "prompt": "A tertiary halogenoalkane, (CH3)3CBr, reacts with aqueous hydroxide. The rate is unchanged when the hydroxide concentration is doubled. Name the mechanism and explain the rate evidence."
+    },
+    {
+      "answer": "Step 1: ethene + HBr gives bromoethane by electrophilic addition. Step 2: bromoethane + aqueous NaOH, heated, gives ethanol by nucleophilic substitution. Step 3: ethanol is partially oxidised with acidified K2Cr2O7 and heat, stopping at ethanal, CH3CHO, before further oxidation to ethanoic acid.",
+      "explanation": "The route chains the three mechanisms of the lesson - addition, substitution, oxidation - exactly as in scene s6, and it can be planned backwards from ethanal by retrosynthesis.",
+      "id": "q4",
+      "kind": "short-answer",
+      "prompt": "Plan a three-step synthesis of ethanal from ethene, naming the reaction type and the key reagent or condition for each step."
+    },
+    {
+      "choices": [
+        {
+          "text": "Propanoic acid has one more carbon atom than propan-1-ol"
+        },
+        {
+          "text": "Propan-1-ol is a longer homologous series than propanoic acid"
+        },
+        {
+          "correct": true,
+          "text": "They carry different functional groups, -OH in the alcohol and -COOH in the carboxylic acid, and the functional group decides the family's reactions"
+        },
+        {
+          "text": "Propanoic acid has no functional group, so it reacts on its own"
+        }
+      ],
+      "explanation": "The skeleton is the same; the functional group changes the family, as in scene s2. Alcohols and carboxylic acids are different homologous series with different characteristic reactions.",
+      "id": "q5",
+      "kind": "multiple-choice",
+      "prompt": "Propan-1-ol and propanoic acid share the same three-carbon skeleton but react very differently. What best explains the difference?"
+    }
+  ],
+  "subject": "science",
+  "title": "JC H2 chemistry — organic: mechanisms, synthesis and the arrow language",
+  "topic": "h2-organic"
+}
