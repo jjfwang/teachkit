@@ -1,0 +1,56 @@
+{
+  "definitions": [
+    {
+      "meaning": "The molecule that stores genetic instructions as a sequence of bases, organised into genes on chromosomes.",
+      "term": "DNA"
+    },
+    {
+      "meaning": "A length of DNA that codes for one polypeptide chain.",
+      "term": "Gene"
+    },
+    {
+      "meaning": "One of the alternative forms of a gene, found at the same locus on homologous chromosomes.",
+      "term": "Allele"
+    },
+    {
+      "meaning": "The alleles an organism carries for a gene, such as AA, Aa or aa.",
+      "term": "Genotype"
+    },
+    {
+      "meaning": "The observable trait an organism shows, produced by its genotype and environment.",
+      "term": "Phenotype"
+    },
+    {
+      "meaning": "An allele that shows in the phenotype whenever it is present, even in a heterozygote.",
+      "term": "Dominant allele"
+    },
+    {
+      "meaning": "An allele that shows in the phenotype only when no dominant allele is present.",
+      "term": "Recessive allele"
+    },
+    {
+      "meaning": "A change in the DNA base sequence; most mutations are neutral, some are harmful, and a rare few are beneficial.",
+      "term": "Mutation"
+    }
+  ],
+  "level": "jc",
+  "mechanismSteps": [
+    "Central dogma: DNA makes protein: DNA is transcribed into mRNA in the nucleus, and the mRNA is translated into a polypeptide at a ribosome.",
+    "Monohybrid cross: the 3:1 ratio: Aa x Aa gives genotypes 1 AA : 2 Aa : 1 aa in the Punnett square, which group into phenotypes in the ratio 3:1.",
+    "Dihybrid cross: 9:3:3:1: two genes on different chromosomes assort independently, so sixteen boxes give four phenotype classes in the ratio 9:3:3:1.",
+    "Sex-linked inheritance: a gene on the X chromosome is passed from a carrier mother to half her sons, who show the trait because the Y cannot mask it.",
+    "A common mistake: mutations are always harmful: most sequence changes are neutral because the protein still does its job, so harm is the exception, not the rule."
+  ],
+  "objectives": [
+    "Describe the central dogma and predict offspring ratios for monohybrid, dihybrid and sex-linked crosses",
+    "Evaluate claims about mutations, distinguishing neutral, harmful and beneficial changes"
+  ],
+  "subject": "science",
+  "title": "JC H2 biology -- genetics: from DNA to inheritance",
+  "topic": "h2-genetics",
+  "trap": {
+    "explanation": "Mutation sounds like damage. Most mutations are neutral: only some are harmful, and a rare few are the raw material of evolution. In the animation a mutated gene still builds a working protein with the same job: the sequence changed, but nothing that matters did - which is why the blanket claim fails.",
+    "misconception": "Every mutation harms the organism."
+  },
+  "workedExample": "In scene s2, a monohybrid cross Aa x Aa fills four Punnett boxes - AA, Aa, Aa, aa - so the genotype ratio is 1:2:1 while the phenotype ratio is 3:1, because both AA and Aa show the dominant trait. The same square gives each probability directly: 1 in 4 affected (aa), 1 in 2 a carrier (Aa), and 3 in 4 showing the dominant phenotype."
+}

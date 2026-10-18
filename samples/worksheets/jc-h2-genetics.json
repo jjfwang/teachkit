@@ -1,0 +1,86 @@
+{
+  "level": "jc",
+  "questions": [
+    {
+      "choices": [
+        {
+          "text": "Every mutation harms the organism, because any change to DNA breaks a protein"
+        },
+        {
+          "text": "Mutations are harmful only in body cells, never in gametes"
+        },
+        {
+          "correct": true,
+          "text": "Most mutations are neutral: only some are harmful, and a rare few are beneficial"
+        },
+        {
+          "text": "Mutations never affect the organism at all"
+        }
+      ],
+      "explanation": "The trap claim is: Every mutation harms the organism. Most mutations are neutral: only some are harmful, and a rare few are the raw material of evolution. A changed base may leave the amino acid - and the protein's job - unchanged, as in scene s5.",
+      "id": "q1",
+      "kind": "multiple-choice",
+      "misconception": "Every mutation harms the organism.",
+      "prompt": "A student says every change to a DNA sequence must damage the organism. What is correct?"
+    },
+    {
+      "choices": [
+        {
+          "text": "0"
+        },
+        {
+          "correct": true,
+          "text": "1 in 4"
+        },
+        {
+          "text": "1 in 2"
+        },
+        {
+          "text": "3 in 4"
+        }
+      ],
+      "explanation": "The Punnett square in scene s2 gives AA, Aa, Aa and aa: only the aa box (1 in 4) shows the recessive trait, while 3 in 4 show the dominant trait.",
+      "id": "q2",
+      "kind": "multiple-choice",
+      "prompt": "Two heterozygous parents (Aa x Aa) have a child. What is the probability the child shows the recessive trait?"
+    },
+    {
+      "answer": "DNA is transcribed into mRNA in the nucleus, and the mRNA is translated into a polypeptide at a ribosome in the cytoplasm.",
+      "explanation": "Scene s1 shows the one-way flow: transcription copies DNA into mRNA in the nucleus, then translation reads the mRNA at a ribosome to build the polypeptide chain.",
+      "id": "q3",
+      "kind": "short-answer",
+      "prompt": "Outline the central dogma in one or two sentences, naming where transcription and translation happen."
+    },
+    {
+      "answer": "A son has only one X chromosome, so the recessive h allele has no second allele to mask it and the trait shows; a daughter has a second X carrying H, which masks h, so she is a carrier without symptoms.",
+      "explanation": "Scene s4 makes the asymmetry explicit: sons receive their only X from their mother and a Y from their father, so there is no second X to mask a recessive allele; daughters receive an X from each parent.",
+      "id": "q4",
+      "kind": "short-answer",
+      "prompt": "A carrier mother (X^H X^h) and a normal father (X^H Y) have children. Explain why a son who inherits X^h has haemophilia, while a daughter who inherits X^h usually does not."
+    },
+    {
+      "choices": [
+        {
+          "text": "3:1"
+        },
+        {
+          "text": "1:2:1"
+        },
+        {
+          "correct": true,
+          "text": "9:3:3:1"
+        },
+        {
+          "text": "1:1:1:1"
+        }
+      ],
+      "explanation": "Independent assortment in scene s3 gives sixteen equally likely boxes in four phenotype classes: 9 both dominants, 3 and 3 for the mixed classes, and 1 double recessive - the 9:3:3:1 ratio.",
+      "id": "q5",
+      "kind": "multiple-choice",
+      "prompt": "A dihybrid cross between two double heterozygotes (RrYy x RrYy), with the genes on different chromosomes, produces offspring. What is the expected phenotype ratio?"
+    }
+  ],
+  "subject": "science",
+  "title": "JC H2 biology -- genetics: from DNA to inheritance",
+  "topic": "h2-genetics"
+}

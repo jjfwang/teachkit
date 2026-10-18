@@ -1,0 +1,121 @@
+{
+  "level": "jc",
+  "slides": [
+    {
+      "bullets": [
+        "How information in DNA becomes a protein, and how alleles are shuffled and passed on: monohybrid and dihybrid crosses, sex-linked inheritance, and what mutations really do"
+      ],
+      "heading": "JC H2 biology -- genetics: from DNA to inheritance",
+      "kind": "title",
+      "notes": "Welcome everyone in and say: today we follow one thread from DNA to inheritance - transcription and translation, two kinds of cross, a sex-linked case, and a mutation trap to correct at the end."
+    },
+    {
+      "bullets": [
+        "Describe the central dogma: DNA is transcribed into mRNA and translated into a polypeptide at a ribosome",
+        "Predict offspring genotypes and phenotypes for monohybrid crosses (3:1) and dihybrid crosses (9:3:3:1), including sex-linked inheritance",
+        "Judge claims about mutations using evidence: most are neutral, some are harmful, and a few are beneficial"
+      ],
+      "heading": "What we will learn",
+      "kind": "objective",
+      "notes": "Read the three goals aloud and tell the class: keep these in mind, because the exit ticket at the end will ask you to do exactly these things, including judging the mutation trap."
+    },
+    {
+      "bullets": [
+        "Both parents carry one faulty allele but show no symptoms themselves",
+        "Will every child be affected, none of them, or is it a matter of chance - and can you put a number on it?"
+      ],
+      "heading": "Two healthy carrier parents: what are the odds for their child?",
+      "kind": "hook",
+      "notes": "Ask the class to commit to a guess before any definitions: every child, no child, or one in four? Take two or three answers, then say: hold them, because the Punnett square in scene s2 settles this exactly."
+    },
+    {
+      "bullets": [
+        "Every cross in this lesson is the same move: each parent passes on one allele per gene, chosen at random, and the Punnett square lists every equally likely combination",
+        "Inheritance ratios are probabilities, not promises: 3:1 and 9:3:3:1 describe what large numbers of offspring approach"
+      ],
+      "heading": "One idea, five scenes: alleles combine by chance",
+      "kind": "concept",
+      "notes": "Say this slowly, because it is the big idea: do not memorise ratios as magic numbers - build the square, count the boxes, and the ratio falls out."
+    },
+    {
+      "bullets": [
+        "DNA is transcribed into mRNA in the nucleus: the mRNA carries one gene's instructions out through a nuclear pore",
+        "At a ribosome the mRNA is translated: its codons are read in order and amino acids are joined into a polypeptide chain"
+      ],
+      "heading": "Central dogma: DNA makes protein",
+      "kind": "mechanism",
+      "notes": "Narrate the information flow: DNA to mRNA to protein, one way only. Say: transcription copies, translation builds - keep those two words separate.",
+      "visual": "s1"
+    },
+    {
+      "bullets": [
+        "Cross two heterozygotes, Aa x Aa: each parent passes on A or a with equal chance, giving AA, Aa, Aa and aa in the four boxes",
+        "Three boxes in four show the dominant trait - a 3:1 phenotype ratio - while the genotypes underneath run 1 AA : 2 Aa : 1 aa"
+      ],
+      "heading": "Monohybrid cross: the 3:1 ratio",
+      "kind": "mechanism",
+      "notes": "Build the square box by box and count out loud. Say: the 3:1 you see hides a 1:2:1 you must be able to state.",
+      "visual": "s2"
+    },
+    {
+      "bullets": [
+        "Track two genes on different chromosomes at once, such as seed shape and seed colour: the genes assort independently, so each parent makes four gamete types",
+        "Sixteen equally likely boxes fall into four phenotype classes in the ratio 9:3:3:1 - both dominants, two mixed classes, and the double recessive"
+      ],
+      "heading": "Dihybrid cross: 9:3:3:1",
+      "kind": "mechanism",
+      "notes": "Stress the condition: independent assortment holds because the genes are on different chromosomes. Count the classes with the class: 9, then 3, then 3, then 1.",
+      "visual": "s3"
+    },
+    {
+      "bullets": [
+        "Haemophilia is carried on the X chromosome: a carrier mother (X^H X^h) crossed with a normal father (X^H Y) passes the faulty allele to half her sons on average",
+        "Sons show the trait when they inherit the faulty X because the Y carries no allele to mask it, while daughters who inherit it are usually carriers"
+      ],
+      "heading": "Sex-linked inheritance",
+      "kind": "mechanism",
+      "notes": "Follow the X chromosomes, not just the letters. Say: a son gets his only X from his mother, so her carrier status decides his risk.",
+      "visual": "s4"
+    },
+    {
+      "bullets": [
+        "The trap claim in full: Every mutation harms the organism. It feels true because the word mutation suggests breakage - but the evidence in this scene says otherwise",
+        "Most mutations are neutral: only some are harmful, and a rare few are the raw material of evolution"
+      ],
+      "heading": "A common mistake: mutations are always harmful",
+      "kind": "mechanism",
+      "notes": "Name the trap out loud: Every mutation harms the organism. Then land the correction with the scene: a changed protein can still do the same job, so most changes alter nothing that matters.",
+      "visual": "s5"
+    },
+    {
+      "bullets": [
+        "Gametes are A and a from each parent; the four boxes give AA, Aa, Aa, aa, so the chance of an affected (aa) child is 1 in 4 and of a carrier (Aa) child is 1 in 2",
+        "Phenotypes run 3 unaffected : 1 affected, matching the 3:1 ratio from scene s2 - the same square answers genotype and phenotype questions"
+      ],
+      "heading": "Worked example: the carrier cross, Aa x Aa",
+      "kind": "example",
+      "notes": "Talk through the square slowly and answer both questions from it: first count genotypes, then group them into phenotypes. Say: never quote 3:1 for a genotype question."
+    },
+    {
+      "bullets": [
+        "A carrier mother (X^H X^h) and a normal father (X^H Y) have a son. What is the chance he has haemophilia? Show the cross.",
+        "Careful - a classmate says: Every mutation harms the organism. Correct them in one sentence, naming what most mutations actually do"
+      ],
+      "heading": "Your turn: build the square, then judge the claim",
+      "kind": "practice",
+      "notes": "Give pairs three minutes, then cold-call one pair on each part: press them on the son's 1 in 2 chance first, then on the exact sentence they used to correct the claim: Every mutation harms the organism."
+    },
+    {
+      "bullets": [
+        "On your own: state the genotype and phenotype ratios for Aa x Aa, and the phenotype ratio for a dihybrid cross with independent assortment",
+        "Watch out for the trap one last time: Every mutation harms the organism. Say what most mutations do, and what a rare few provide"
+      ],
+      "heading": "Exit ticket: show what you know",
+      "kind": "exit-ticket",
+      "notes": "Collect these before anyone leaves and say: I am looking for 1:2:1 and 3:1 in your first answer and 9:3:3:1 alongside it, plus one clear neutral-mutation sentence in your second. Anyone repeating the claim Every mutation harms the organism. needs the trap scene again."
+    }
+  ],
+  "subject": "science",
+  "title": "JC H2 biology -- genetics: from DNA to inheritance",
+  "topic": "h2-genetics"
+}

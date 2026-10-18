@@ -1,0 +1,54 @@
+{
+  "level": "jc",
+  "segments": [
+    {
+      "cue": "s1",
+      "minutes": 8,
+      "questions": [
+        "Why does mRNA, rather than DNA itself, leave the nucleus?",
+        "What is built at the ribosome, and from what instructions?"
+      ],
+      "say": "Central dogma: DNA makes protein. Narrate transcription in the nucleus, then follow the mRNA out to a ribosome for translation. Keep your student notes open at the DNA and gene definitions for this scene."
+    },
+    {
+      "cue": "s2",
+      "minutes": 8,
+      "questions": [
+        "Why is the genotype ratio 1:2:1 when the phenotype ratio is 3:1?",
+        "What is the chance that a child of Aa x Aa is a carrier?"
+      ],
+      "say": "Monohybrid cross: the 3:1 ratio. Build the Aa x Aa square box by box, count genotypes 1:2:1 first, then group them into the 3:1 phenotypes. Now try the carrier-cross question on the worksheet in pairs."
+    },
+    {
+      "cue": "s3",
+      "minutes": 8,
+      "questions": [
+        "What must be true of the two genes for the 9:3:3:1 ratio to hold?",
+        "How many of the sixteen boxes show both recessive traits?"
+      ],
+      "say": "Dihybrid cross: 9:3:3:1. Add a second gene on a different chromosome and count the sixteen boxes into four classes. Check the worked example in your student notes before attempting the dihybrid worksheet question."
+    },
+    {
+      "cue": "s4",
+      "minutes": 8,
+      "questions": [
+        "Why can a father not pass haemophilia directly to his son?",
+        "What fraction of a carrier mother's daughters are expected to be carriers?"
+      ],
+      "say": "Sex-linked inheritance. Track the X chromosomes from a carrier mother and a normal father, and show why sons are at risk while daughters become carriers. Finish the sex-linked question on the worksheet now."
+    },
+    {
+      "cue": "s5",
+      "minutes": 8,
+      "questions": [
+        "Give one reason a mutation can be neutral.",
+        "In one sentence, what do a rare few mutations provide for evolution?"
+      ],
+      "say": "A common mistake: mutations are always harmful. Strike through the trap claim, then show the mutated gene still building a working protein. Finish by taking the exit ticket on your own - its first question revisits exactly this scene.",
+      "watchFor": "Every mutation harms the organism. Listen and look for it in pair talk and on the worksheet: any answer treating every sequence change as damage shows the trap reading - send them back to scene s5 and to the correct turn: Most mutations are neutral: only some are harmful, and a rare few are the raw material of evolution."
+    }
+  ],
+  "subject": "science",
+  "title": "JC H2 biology -- genetics: from DNA to inheritance",
+  "topic": "h2-genetics"
+}
