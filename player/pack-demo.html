@@ -486,6 +486,24 @@
     <li><code>script</code> teacher script</li>
   </ul>
 </header>
+<header class="pack-manifest" id="inorganic-jc-manifest">
+  <h1>Lesson pack: JC H2 chemistry — inorganic: periodicity, groups and transition metals</h1>
+  <dl>
+    <dt>Slug</dt><dd><code>h2-inorganic-jc-science</code></dd>
+    <dt>Level</dt><dd>jc</dd>
+    <dt>Subject</dt><dd>science</dd>
+    <dt>Topic</dt><dd><code>h2-inorganic</code></dd>
+  </dl>
+  <p>topic h2-inorganic · level jc · subject science · deck jc-h2-inorganic</p>
+  <ul class="pack-materials">
+    <li><code>animation</code></li>
+    <li><code>slides</code></li>
+    <li><code>worksheet</code></li>
+    <li><code>exitTicket</code> exit ticket</li>
+    <li><code>notes</code> student notes</li>
+    <li><code>script</code> teacher script</li>
+  </ul>
+</header>
 <section class="pack-section" id="animation-section">
   <h2>Animation</h2>
   <div id="anim-stage"></div>
@@ -810,6 +828,19 @@
   <h2>JC H2 physical chemistry printables</h2>
   <div id="physical-jc-printables-stage"></div>
 </section>
+<section class="pack-section" id="inorganic-jc-animation">
+  <h2>JC H2 inorganic chemistry animation</h2>
+  <div id="inorganic-jc-stage"></div>
+  <div id="inorganic-jc-captions"></div>
+</section>
+<section class="pack-section" id="inorganic-jc-slides">
+  <h2>JC H2 inorganic chemistry slides</h2>
+  <div id="inorganic-jc-slides-stage"></div>
+</section>
+<section class="pack-section" id="inorganic-jc-printables">
+  <h2>JC H2 inorganic chemistry printables</h2>
+  <div id="inorganic-jc-printables-stage"></div>
+</section>
 <div id="err"></div>
 <script src="validate.js"></script>
 <script src="player.js"></script>
@@ -859,8 +890,9 @@
     var emJcPrintStage = document.querySelector('#em-jc-printables-stage .pr-stage') || document.querySelector('#em-jc-printables-stage');
     var quantumJcPrintStage = document.querySelector('#quantum-jc-printables-stage .pr-stage') || document.querySelector('#quantum-jc-printables-stage');
     var physicalJcPrintStage = document.querySelector('#physical-jc-printables-stage .pr-stage') || document.querySelector('#physical-jc-printables-stage');
+    var inorganicJcPrintStage = document.querySelector('#inorganic-jc-printables-stage .pr-stage') || document.querySelector('#inorganic-jc-printables-stage');
     var keys = [];
-    [printStage, fractionsPrintStage, wavesPrintStage, complexPrintStage, trigPrintStage, thermalPrintStage, photosynthesisPrintStage, erosionPrintStage, chemMolePrintStage, differentiationPrintStage, integrationPrintStage, binomialPrintStage, kinematicsPrintStage, quadraticPrintStage, trigonometryAPrintStage, vectorsPrintStage, functionsGraphsPrintStage, sequencesPrintStage, differentiationJcPrintStage, integrationJcPrintStage, probabilityJcPrintStage, statisticsJcPrintStage, mechanicsJcPrintStage, emJcPrintStage, quantumJcPrintStage, physicalJcPrintStage].forEach(function (stage) {
+    [printStage, fractionsPrintStage, wavesPrintStage, complexPrintStage, trigPrintStage, thermalPrintStage, photosynthesisPrintStage, erosionPrintStage, chemMolePrintStage, differentiationPrintStage, integrationPrintStage, binomialPrintStage, kinematicsPrintStage, quadraticPrintStage, trigonometryAPrintStage, vectorsPrintStage, functionsGraphsPrintStage, sequencesPrintStage, differentiationJcPrintStage, integrationJcPrintStage, probabilityJcPrintStage, statisticsJcPrintStage, mechanicsJcPrintStage, emJcPrintStage, quantumJcPrintStage, physicalJcPrintStage, inorganicJcPrintStage].forEach(function (stage) {
       if (stage) {
         keys = keys.concat(Array.prototype.slice.call(stage.querySelectorAll('.pr-teacher')));
       }
@@ -2718,6 +2750,79 @@
     ].join('');
   }).catch(function (err) {
     showError('JC H2 physical pack failed to load: ' + err.message);
+  });
+})();
+</script>
+<script>
+(function () {
+  var presenter = document.getElementById('inorganic-jc-slides-stage');
+  var inorganicJcPrint = document.getElementById('inorganic-jc-printables-stage');
+  var errBox = document.getElementById('err');
+  var inorganicJcAnimUrl = '../samples/jc-h2-inorganic.json';
+  var inorganicJcDeckUrl = '../samples/decks/jc-h2-inorganic.json';
+  var inorganicJcWorksheetUrl = '../samples/worksheets/jc-h2-inorganic.json';
+  var inorganicJcTicketUrl = '../samples/tickets/jc-h2-inorganic.json';
+  var inorganicJcNotesUrl = '../samples/notes/jc-h2-inorganic.json';
+  var inorganicJcScriptUrl = '../samples/scripts/jc-h2-inorganic.json';
+
+  function showError(msg) {
+    errBox.textContent = String(msg);
+  }
+
+  Promise.all([
+    fetch(inorganicJcAnimUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + inorganicJcAnimUrl);
+      return r.json();
+    }),
+    fetch(inorganicJcDeckUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + inorganicJcDeckUrl);
+      return r.json();
+    }),
+    fetch(inorganicJcWorksheetUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + inorganicJcWorksheetUrl);
+      return r.json();
+    }),
+    fetch(inorganicJcTicketUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + inorganicJcTicketUrl);
+      return r.json();
+    }),
+    fetch(inorganicJcNotesUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + inorganicJcNotesUrl);
+      return r.json();
+    }),
+    fetch(inorganicJcScriptUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + inorganicJcScriptUrl);
+      return r.json();
+    })
+  ]).then(function (pack) {
+    var anim = pack[0];
+    var deck = pack[1];
+    var worksheet = pack[2];
+    var ticket = pack[3];
+    var notes = pack[4];
+    var script = pack[5];
+    var problems = AnimathValidate.validateSpec(anim)
+      .concat(AnimathValidate.validateSlides(deck))
+      .concat(AnimathValidate.validateWorksheet(worksheet))
+      .concat(AnimathValidate.validateExitTicket(ticket))
+      .concat(AnimathValidate.validateNotes(notes))
+      .concat(AnimathValidate.validateScript(script));
+    if (problems.length) {
+      showError('JC H2 inorganic pack failed validation:\n' + problems.join('\n'));
+      return;
+    }
+    AnimathPlayer.mount(document.getElementById('inorganic-jc-stage'), anim, { autoplay: false });
+    AnimathSlidesPresenter.attachPresenter(document, presenter, deck, { animSpec: anim });
+    inorganicJcPrint.innerHTML = [
+      AnimathPrintable.renderWorksheet(worksheet),
+      AnimathPrintable.renderWorksheetAnswerKey(worksheet),
+      AnimathPrintable.renderExitTicket(ticket),
+      AnimathPrintable.renderExitTicketAnswerKey(ticket),
+      AnimathPrintable.renderNotes(notes),
+      AnimathPrintable.renderScript(script)
+    ].join('');
+  }).catch(function (err) {
+    showError('JC H2 inorganic pack failed to load: ' + err.message);
   });
 })();
 </script>
