@@ -12,6 +12,18 @@ version section when the release ships.
 
 ### Added
 
+- Primary mathematics rate and speed gold lesson pack: five hand-authored gold
+  samples for rate and speed in
+  samples/decks/primary-math-rate-speed.json,
+  samples/worksheets/primary-math-rate-speed.json,
+  samples/tickets/primary-math-rate-speed.json,
+  samples/notes/primary-math-rate-speed.json and
+  samples/scripts/primary-math-rate-speed.json,
+  keyed to the primary-math-rate-speed animation scenes and built around
+  the misconception bank trap reused verbatim: 60 km/h means the bus has travelled 60 km., guarded by
+  tests/gold-rate-speed-pack.test.js
+  (issue #935).
+
 - Primary mathematics ratio lesson pack in the pack demo
   (`player/pack-demo.html`): the Primary mathematics ratio
   gold lesson pack now appears on the same demo page as the other packs,
