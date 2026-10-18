@@ -648,6 +648,24 @@
     <li><code>script</code> teacher script</li>
   </ul>
 </header>
+<header class="pack-manifest" id="ratio-primary-manifest">
+  <h1>Lesson pack: Primary mathematics ratio: sharing $48 in 2:3</h1>
+  <dl>
+    <dt>Slug</dt><dd><code>ratio-primary-math</code></dd>
+    <dt>Level</dt><dd>primary</dd>
+    <dt>Subject</dt><dd>math</dd>
+    <dt>Topic</dt><dd><code>ratio</code></dd>
+  </dl>
+  <p>topic ratio · level primary · subject math · deck primary-math-ratio</p>
+  <ul class="pack-materials">
+    <li><code>animation</code></li>
+    <li><code>slides</code></li>
+    <li><code>worksheet</code></li>
+    <li><code>exitTicket</code> exit ticket</li>
+    <li><code>notes</code> student notes</li>
+    <li><code>script</code> teacher script</li>
+  </ul>
+</header>
 <section class="pack-section" id="animation-section">
   <h2>Animation</h2>
   <div id="anim-stage"></div>
@@ -1089,6 +1107,19 @@
   <h2>Primary mathematics percentage printables</h2>
   <div id="percentage-primary-printables-stage"></div>
 </section>
+<section class="pack-section" id="ratio-primary-animation">
+  <h2>Primary mathematics ratio animation</h2>
+  <div id="ratio-primary-stage"></div>
+  <div id="ratio-primary-captions"></div>
+</section>
+<section class="pack-section" id="ratio-primary-slides">
+  <h2>Primary mathematics ratio slides</h2>
+  <div id="ratio-primary-slides-stage"></div>
+</section>
+<section class="pack-section" id="ratio-primary-printables">
+  <h2>Primary mathematics ratio printables</h2>
+  <div id="ratio-primary-printables-stage"></div>
+</section>
 <div id="err"></div>
 <script src="validate.js"></script>
 <script src="player.js"></script>
@@ -1147,8 +1178,9 @@
     var wholeNumbersPrimaryPrintStage = document.querySelector('#whole-numbers-primary-printables-stage .pr-stage') || document.querySelector('#whole-numbers-primary-printables-stage');
     var decimalsPrimaryPrintStage = document.querySelector('#decimals-primary-printables-stage .pr-stage') || document.querySelector('#decimals-primary-printables-stage');
     var percentagePrimaryPrintStage = document.querySelector('#percentage-primary-printables-stage .pr-stage') || document.querySelector('#percentage-primary-printables-stage');
+    var ratioPrimaryPrintStage = document.querySelector('#ratio-primary-printables-stage .pr-stage') || document.querySelector('#ratio-primary-printables-stage');
     var keys = [];
-    [printStage, fractionsPrintStage, wavesPrintStage, complexPrintStage, trigPrintStage, thermalPrintStage, photosynthesisPrintStage, erosionPrintStage, chemMolePrintStage, differentiationPrintStage, integrationPrintStage, binomialPrintStage, kinematicsPrintStage, quadraticPrintStage, trigonometryAPrintStage, vectorsPrintStage, functionsGraphsPrintStage, sequencesPrintStage, differentiationJcPrintStage, integrationJcPrintStage, probabilityJcPrintStage, statisticsJcPrintStage, mechanicsJcPrintStage, emJcPrintStage, quantumJcPrintStage, physicalJcPrintStage, inorganicJcPrintStage, organicJcPrintStage, cellBioJcPrintStage, geneticsJcPrintStage, energeticsJcPrintStage, ecologyJcPrintStage, wholeNumbersPrimaryPrintStage, decimalsPrimaryPrintStage, percentagePrimaryPrintStage].forEach(function (stage) {
+    [printStage, fractionsPrintStage, wavesPrintStage, complexPrintStage, trigPrintStage, thermalPrintStage, photosynthesisPrintStage, erosionPrintStage, chemMolePrintStage, differentiationPrintStage, integrationPrintStage, binomialPrintStage, kinematicsPrintStage, quadraticPrintStage, trigonometryAPrintStage, vectorsPrintStage, functionsGraphsPrintStage, sequencesPrintStage, differentiationJcPrintStage, integrationJcPrintStage, probabilityJcPrintStage, statisticsJcPrintStage, mechanicsJcPrintStage, emJcPrintStage, quantumJcPrintStage, physicalJcPrintStage, inorganicJcPrintStage, organicJcPrintStage, cellBioJcPrintStage, geneticsJcPrintStage, energeticsJcPrintStage, ecologyJcPrintStage, wholeNumbersPrimaryPrintStage, decimalsPrimaryPrintStage, percentagePrimaryPrintStage, ratioPrimaryPrintStage].forEach(function (stage) {
       if (stage) {
         keys = keys.concat(Array.prototype.slice.call(stage.querySelectorAll('.pr-teacher')));
       }
@@ -3663,6 +3695,79 @@
     ].join('');
   }).catch(function (err) {
     showError('Primary mathematics percentage pack failed to load: ' + err.message);
+  });
+})();
+</script>
+<script>
+(function () {
+  var presenter = document.getElementById('ratio-primary-slides-stage');
+  var ratioPrimaryPrint = document.getElementById('ratio-primary-printables-stage');
+  var errBox = document.getElementById('err');
+  var ratioPrimaryAnimUrl = '../samples/primary-math-ratio-sharing.json';
+  var ratioPrimaryDeckUrl = '../samples/decks/primary-math-ratio.json';
+  var ratioPrimaryWorksheetUrl = '../samples/worksheets/primary-math-ratio.json';
+  var ratioPrimaryTicketUrl = '../samples/tickets/primary-math-ratio.json';
+  var ratioPrimaryNotesUrl = '../samples/notes/primary-math-ratio.json';
+  var ratioPrimaryScriptUrl = '../samples/scripts/primary-math-ratio.json';
+
+  function showError(msg) {
+    errBox.textContent = String(msg);
+  }
+
+  Promise.all([
+    fetch(ratioPrimaryAnimUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + ratioPrimaryAnimUrl);
+      return r.json();
+    }),
+    fetch(ratioPrimaryDeckUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + ratioPrimaryDeckUrl);
+      return r.json();
+    }),
+    fetch(ratioPrimaryWorksheetUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + ratioPrimaryWorksheetUrl);
+      return r.json();
+    }),
+    fetch(ratioPrimaryTicketUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + ratioPrimaryTicketUrl);
+      return r.json();
+    }),
+    fetch(ratioPrimaryNotesUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + ratioPrimaryNotesUrl);
+      return r.json();
+    }),
+    fetch(ratioPrimaryScriptUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + ratioPrimaryScriptUrl);
+      return r.json();
+    })
+  ]).then(function (pack) {
+    var anim = pack[0];
+    var deck = pack[1];
+    var worksheet = pack[2];
+    var ticket = pack[3];
+    var notes = pack[4];
+    var script = pack[5];
+    var problems = AnimathValidate.validateSpec(anim)
+      .concat(AnimathValidate.validateSlides(deck))
+      .concat(AnimathValidate.validateWorksheet(worksheet))
+      .concat(AnimathValidate.validateExitTicket(ticket))
+      .concat(AnimathValidate.validateNotes(notes))
+      .concat(AnimathValidate.validateScript(script));
+    if (problems.length) {
+      showError('Primary mathematics ratio pack failed validation:\n' + problems.join('\n'));
+      return;
+    }
+    AnimathPlayer.mount(document.getElementById('ratio-primary-stage'), anim, { autoplay: false });
+    AnimathSlidesPresenter.attachPresenter(document, presenter, deck, { animSpec: anim });
+    ratioPrimaryPrint.innerHTML = [
+      AnimathPrintable.renderWorksheet(worksheet),
+      AnimathPrintable.renderWorksheetAnswerKey(worksheet),
+      AnimathPrintable.renderExitTicket(ticket),
+      AnimathPrintable.renderExitTicketAnswerKey(ticket),
+      AnimathPrintable.renderNotes(notes),
+      AnimathPrintable.renderScript(script)
+    ].join('');
+  }).catch(function (err) {
+    showError('Primary mathematics ratio pack failed to load: ' + err.message);
   });
 })();
 </script>

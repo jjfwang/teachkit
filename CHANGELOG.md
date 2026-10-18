@@ -12,6 +12,19 @@ version section when the release ships.
 
 ### Added
 
+- Primary mathematics ratio lesson pack in the pack demo
+  (`player/pack-demo.html`): the Primary mathematics ratio
+  gold lesson pack now appears on the same demo page as the other packs,
+  presenting all six primary-math-ratio materials (animation,
+  slides, worksheet, exit ticket, student notes, and teacher
+  script) under its own
+  ratio-primary-manifest header (slug
+  `ratio-primary-math`, level primary, subject
+  math, topic `ratio`), stacked animation, slides, and printables sections, all
+  six materials validated before render for that pack, and
+  the shared teacher-keys toggle covering all thirty-six packs' print
+  stages, guarded by slice-scoped pack-demo tests (issue #933).
+
 - Primary mathematics ratio gold lesson pack: five hand-authored gold
   samples for ratio in
   samples/decks/primary-math-ratio.json,
