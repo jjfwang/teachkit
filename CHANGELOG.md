@@ -12,6 +12,20 @@ version section when the release ships.
 
 ### Added
 
+- Primary science human body systems lesson pack in the pack demo
+  (`player/pack-demo.html`): the Primary science human body systems
+  gold lesson pack now appears on the same demo page as the other packs,
+  presenting all six primary-science-human-body-systems materials (animation,
+  slides, worksheet, exit ticket, student notes, and teacher
+  script) under its own
+  human-body-systems-primary-manifest header (slug
+  `human-body-systems-primary-science`, level primary, subject
+  science, topic `human-body-systems`), stacked animation, slides, and printables sections, all
+  six materials validated before render for that pack, and
+  the shared teacher-keys toggle covering all forty-four packs' print
+  stages, guarded by tests/pack-demo.test.js
+  (issue #965).
+
 - Primary science human-body-systems gold lesson pack: five hand-authored gold samples for human-body-systems in samples/decks/primary-science-human-body-systems.json, samples/worksheets/primary-science-human-body-systems.json, samples/tickets/primary-science-human-body-systems.json, samples/notes/primary-science-human-body-systems.json and samples/scripts/primary-science-human-body-systems.json, keyed to the primary-science-human-body-systems animation scenes, misconception bank trap reused verbatim: The heart uses up the blood it pumps, so the body must keep making fresh blood., guarded by tests/gold-human-body-systems-pack.test.js (issue #963).
 
 - Primary mathematics model method lesson pack in the pack demo
