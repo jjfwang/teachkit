@@ -774,6 +774,24 @@
   </ul>
 </header>
 </header>
+<header class="pack-manifest" id="model-method-primary-manifest">
+  <h1>Lesson pack: Primary mathematics model method: The model method: bar models for word problems</h1>
+  <dl>
+    <dt>Slug</dt><dd><code>model-method-primary-math</code></dd>
+    <dt>Level</dt><dd>primary</dd>
+    <dt>Subject</dt><dd>math</dd>
+    <dt>Topic</dt><dd><code>model-method</code></dd>
+  </dl>
+  <p>topic model-method · level primary · subject math · deck primary-math-model-method</p>
+  <ul class="pack-materials">
+    <li><code>animation</code></li>
+    <li><code>slides</code></li>
+    <li><code>worksheet</code></li>
+    <li><code>exitTicket</code> exit ticket</li>
+    <li><code>notes</code> student notes</li>
+    <li><code>script</code> teacher script</li>
+  </ul>
+</header>
 <section class="pack-section" id="animation-section">
   <h2>Animation</h2>
   <div id="anim-stage"></div>
@@ -1306,6 +1324,19 @@
   <h2>Primary mathematics data graphs printables</h2>
   <div id="data-graphs-primary-printables-stage"></div>
 </section>
+<section class="pack-section" id="model-method-primary-animation">
+  <h2>Primary mathematics model method animation</h2>
+  <div id="model-method-primary-stage"></div>
+  <div id="model-method-primary-captions"></div>
+</section>
+<section class="pack-section" id="model-method-primary-slides">
+  <h2>Primary mathematics model method slides</h2>
+  <div id="model-method-primary-slides-stage"></div>
+</section>
+<section class="pack-section" id="model-method-primary-printables">
+  <h2>Primary mathematics model method printables</h2>
+  <div id="model-method-primary-printables-stage"></div>
+</section>
 <div id="err"></div>
 <script src="validate.js"></script>
 <script src="player.js"></script>
@@ -1371,8 +1402,9 @@
     var areaPerimeterPrimaryPrintStage = document.querySelector('#area-perimeter-primary-printables-stage .pr-stage') || document.querySelector('#area-perimeter-primary-printables-stage');
     var volumePrimaryPrintStage = document.querySelector('#volume-primary-printables-stage .pr-stage') || document.querySelector('#volume-primary-printables-stage');
     var dataGraphsPrimaryPrintStage = document.querySelector('#data-graphs-primary-printables-stage .pr-stage') || document.querySelector('#data-graphs-primary-printables-stage');
+    var modelMethodPrimaryPrintStage = document.querySelector('#model-method-primary-printables-stage .pr-stage') || document.querySelector('#model-method-primary-printables-stage');
     var keys = [];
-    [printStage, fractionsPrintStage, wavesPrintStage, complexPrintStage, trigPrintStage, thermalPrintStage, photosynthesisPrintStage, erosionPrintStage, chemMolePrintStage, differentiationPrintStage, integrationPrintStage, binomialPrintStage, kinematicsPrintStage, quadraticPrintStage, trigonometryAPrintStage, vectorsPrintStage, functionsGraphsPrintStage, sequencesPrintStage, differentiationJcPrintStage, integrationJcPrintStage, probabilityJcPrintStage, statisticsJcPrintStage, mechanicsJcPrintStage, emJcPrintStage, quantumJcPrintStage, physicalJcPrintStage, inorganicJcPrintStage, organicJcPrintStage, cellBioJcPrintStage, geneticsJcPrintStage, energeticsJcPrintStage, ecologyJcPrintStage, wholeNumbersPrimaryPrintStage, decimalsPrimaryPrintStage, percentagePrimaryPrintStage, ratioPrimaryPrintStage, rateSpeedPrimaryPrintStage, algebraIntroPrimaryPrintStage, geometryAnglesPrimaryPrintStage, areaPerimeterPrimaryPrintStage, volumePrimaryPrintStage, dataGraphsPrimaryPrintStage].forEach(function (stage) {
+    [printStage, fractionsPrintStage, wavesPrintStage, complexPrintStage, trigPrintStage, thermalPrintStage, photosynthesisPrintStage, erosionPrintStage, chemMolePrintStage, differentiationPrintStage, integrationPrintStage, binomialPrintStage, kinematicsPrintStage, quadraticPrintStage, trigonometryAPrintStage, vectorsPrintStage, functionsGraphsPrintStage, sequencesPrintStage, differentiationJcPrintStage, integrationJcPrintStage, probabilityJcPrintStage, statisticsJcPrintStage, mechanicsJcPrintStage, emJcPrintStage, quantumJcPrintStage, physicalJcPrintStage, inorganicJcPrintStage, organicJcPrintStage, cellBioJcPrintStage, geneticsJcPrintStage, energeticsJcPrintStage, ecologyJcPrintStage, wholeNumbersPrimaryPrintStage, decimalsPrimaryPrintStage, percentagePrimaryPrintStage, ratioPrimaryPrintStage, rateSpeedPrimaryPrintStage, algebraIntroPrimaryPrintStage, geometryAnglesPrimaryPrintStage, areaPerimeterPrimaryPrintStage, volumePrimaryPrintStage, dataGraphsPrimaryPrintStage, modelMethodPrimaryPrintStage].forEach(function (stage) {
       if (stage) {
         keys = keys.concat(Array.prototype.slice.call(stage.querySelectorAll('.pr-teacher')));
       }
@@ -4398,6 +4430,79 @@
     ].join('');
   }).catch(function (err) {
     showError('Primary mathematics data graphs pack failed to load: ' + err.message);
+  });
+})();
+</script>
+<script>
+(function () {
+  var presenter = document.getElementById('model-method-primary-slides-stage');
+  var modelMethodPrimaryPrint = document.getElementById('model-method-primary-printables-stage');
+  var errBox = document.getElementById('err');
+  var modelMethodPrimaryAnimUrl = '../samples/primary-math-model-method.json';
+  var modelMethodPrimaryDeckUrl = '../samples/decks/primary-math-model-method.json';
+  var modelMethodPrimaryWorksheetUrl = '../samples/worksheets/primary-math-model-method.json';
+  var modelMethodPrimaryTicketUrl = '../samples/tickets/primary-math-model-method.json';
+  var modelMethodPrimaryNotesUrl = '../samples/notes/primary-math-model-method.json';
+  var modelMethodPrimaryScriptUrl = '../samples/scripts/primary-math-model-method.json';
+
+  function showError(msg) {
+    errBox.textContent = String(msg);
+  }
+
+  Promise.all([
+    fetch(modelMethodPrimaryAnimUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + modelMethodPrimaryAnimUrl);
+      return r.json();
+    }),
+    fetch(modelMethodPrimaryDeckUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + modelMethodPrimaryDeckUrl);
+      return r.json();
+    }),
+    fetch(modelMethodPrimaryWorksheetUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + modelMethodPrimaryWorksheetUrl);
+      return r.json();
+    }),
+    fetch(modelMethodPrimaryTicketUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + modelMethodPrimaryTicketUrl);
+      return r.json();
+    }),
+    fetch(modelMethodPrimaryNotesUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + modelMethodPrimaryNotesUrl);
+      return r.json();
+    }),
+    fetch(modelMethodPrimaryScriptUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + modelMethodPrimaryScriptUrl);
+      return r.json();
+    })
+  ]).then(function (pack) {
+    var anim = pack[0];
+    var deck = pack[1];
+    var worksheet = pack[2];
+    var ticket = pack[3];
+    var notes = pack[4];
+    var script = pack[5];
+    var problems = AnimathValidate.validateSpec(anim)
+      .concat(AnimathValidate.validateSlides(deck))
+      .concat(AnimathValidate.validateWorksheet(worksheet))
+      .concat(AnimathValidate.validateExitTicket(ticket))
+      .concat(AnimathValidate.validateNotes(notes))
+      .concat(AnimathValidate.validateScript(script));
+    if (problems.length) {
+      showError('Primary mathematics model method pack failed validation:\n' + problems.join('\n'));
+      return;
+    }
+    AnimathPlayer.mount(document.getElementById('model-method-primary-stage'), anim, { autoplay: false });
+    AnimathSlidesPresenter.attachPresenter(document, presenter, deck, { animSpec: anim });
+    modelMethodPrimaryPrint.innerHTML = [
+      AnimathPrintable.renderWorksheet(worksheet),
+      AnimathPrintable.renderWorksheetAnswerKey(worksheet),
+      AnimathPrintable.renderExitTicket(ticket),
+      AnimathPrintable.renderExitTicketAnswerKey(ticket),
+      AnimathPrintable.renderNotes(notes),
+      AnimathPrintable.renderScript(script)
+    ].join('');
+  }).catch(function (err) {
+    showError('Primary mathematics model method pack failed to load: ' + err.message);
   });
 })();
 </script>
