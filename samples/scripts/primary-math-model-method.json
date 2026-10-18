@@ -1,0 +1,45 @@
+{
+  "level": "primary",
+  "segments": [
+    {
+      "cue": "s1",
+      "minutes": 7,
+      "questions": [
+        "How many unit boxes does Mia have, and how many does Ben have?",
+        "How does the ruler prove that every unit box is the same length?"
+      ],
+      "say": "Unit bars: every unit is the same length. Watch Mia's 2 unit boxes and Ben's 3 unit boxes slide into place, then follow the ruler as it checks that every box matches. Keep your student notes open at the unit box definition for this scene."
+    },
+    {
+      "cue": "s2",
+      "minutes": 8,
+      "questions": [
+        "What does the before bar show, and what does the after bar show?",
+        "Which unit moved, and where did it go?"
+      ],
+      "say": "Before-and-after: the model shows what changed. Mia starts with 3 units, one unit moves away along the arrow to her sister, and the after bar shows 2 units left. Now try the before-and-after question on the worksheet in pairs."
+    },
+    {
+      "cue": "s3",
+      "minutes": 7,
+      "questions": [
+        "Why do we draw the whole bar before marking the parts?",
+        "How do we find the difference between the boys' units and the girls' units?"
+      ],
+      "say": "Worked example: part-whole and difference. Draw the whole class bar first, split it into 7 equal units, mark 3 units as boys, and read the girls off as the other 4 units - the difference is 1 unit. Check this against the part-whole model in your student notes."
+    },
+    {
+      "cue": "s4",
+      "minutes": 6,
+      "questions": [
+        "What is wrong with Sam's drawing of 1 unit and 2 units?",
+        "How long should a correct 2-unit bar be, compared with the 1-unit bar?"
+      ],
+      "say": "Watch out: bars must be to scale. Sam's unit boxes do not match, so his 2-unit bar is not twice his 1-unit bar; the correct bars underneath are exactly to scale. Finish by taking the exit ticket on your own - its first question revisits exactly this trap.",
+      "watchFor": "Drawing unit boxes in any lengths, guessing the sizes. Listen and look for it in pair talk and on the exit ticket: The bar is treated as a rough sketch rather than a scale model. Send them back to scene s4 and to the correct turn: Every unit box must be exactly the same length: two units is exactly twice one unit."
+    }
+  ],
+  "subject": "math",
+  "title": "The model method: bar models for word problems",
+  "topic": "model-method"
+}

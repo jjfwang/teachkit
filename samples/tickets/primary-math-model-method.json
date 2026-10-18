@@ -1,0 +1,59 @@
+{
+  "level": "primary",
+  "questions": [
+    {
+      "choices": [
+        {
+          "text": "Because the bars are the wrong colour"
+        },
+        {
+          "correct": true,
+          "text": "Because the unit boxes are not all the same length, so the bars are not to scale"
+        },
+        {
+          "text": "Because bar models must always use 7 units"
+        }
+      ],
+      "feedback": "That trap answer is the one to unlearn: Drawing unit boxes in any lengths, guessing the sizes. Reteach point: Every unit box must be exactly the same length: two units is exactly twice one unit. Check every unit box against the first one before you trust the lengths in a model.",
+      "id": "q1",
+      "kind": "multiple-choice",
+      "misconception": "Drawing unit boxes in any lengths, guessing the sizes.",
+      "prompt": "A pupil draws the unit boxes of a bar model in any lengths, guessing the sizes, so the 2-unit bar is only a little longer than the 1-unit bar. Why can this model not be trusted?"
+    },
+    {
+      "answer": "5 units altogether: 2 + 3 = 5.",
+      "feedback": "Scene s1 fixes the method: count the equal unit boxes in both bars - 2 for Mia and 3 for Ben - giving 5 units altogether.",
+      "id": "q2",
+      "kind": "short-answer",
+      "prompt": "Mia has 2 units and Ben has 3 units, drawn with equal unit boxes. How many units do Mia and Ben have altogether?"
+    },
+    {
+      "choices": [
+        {
+          "text": "3 units"
+        },
+        {
+          "correct": true,
+          "text": "2 units"
+        },
+        {
+          "text": "4 units"
+        }
+      ],
+      "feedback": "Scene s2 fixes the reading: one unit moves away from the before bar, so the after bar has 3 - 1 = 2 units.",
+      "id": "q3",
+      "kind": "multiple-choice",
+      "prompt": "Mia has 3 units and gives 1 unit away. Her before bar has 3 units. How many units does her after bar have?"
+    },
+    {
+      "answer": "1 unit: diff = 4 - 3 = 1 unit.",
+      "feedback": "Scene s3 fixes the method: compare the two parts of the part-whole bar and subtract, diff = 4 - 3 = 1 unit.",
+      "id": "q4",
+      "kind": "short-answer",
+      "prompt": "A whole bar has 7 units. 3 units are boys and 4 units are girls. What is the difference between the girls' units and the boys' units?"
+    }
+  ],
+  "subject": "math",
+  "title": "The model method: bar models for word problems Exit Ticket",
+  "topic": "model-method"
+}
