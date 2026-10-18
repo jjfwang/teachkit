@@ -12,6 +12,19 @@ version section when the release ships.
 
 ### Added
 
+- JC H2 ecology lesson pack in the pack demo
+  (`player/pack-demo.html`): the JC H2 ecology
+  gold lesson pack now appears on the same demo page as the other packs,
+  presenting all six jc-h2-ecology materials (animation,
+  slides, worksheet, exit ticket, student notes, and teacher
+  script) under its own
+  ecology-jc-manifest header (slug
+  `h2-ecology-jc-science`, level jc, subject
+  science, topic `h2-ecology`), stacked animation, slides, and printables sections, all
+  six materials validated before render for that pack, and
+  the shared teacher-keys toggle covering all thirty-two packs' print
+  stages, guarded by slice-scoped pack-demo tests (issue #917).
+
 - JC H2 ecology gold lesson pack: five hand-authored gold
   samples for h2-ecology in
   samples/decks/jc-h2-ecology.json,
