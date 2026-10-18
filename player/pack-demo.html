@@ -630,6 +630,24 @@
     <li><code>script</code> teacher script</li>
   </ul>
 </header>
+<header class="pack-manifest" id="percentage-primary-manifest">
+  <h1>Lesson pack: Primary mathematics percentage: 25% of 60</h1>
+  <dl>
+    <dt>Slug</dt><dd><code>percentage-primary-math</code></dd>
+    <dt>Level</dt><dd>primary</dd>
+    <dt>Subject</dt><dd>math</dd>
+    <dt>Topic</dt><dd><code>percentage</code></dd>
+  </dl>
+  <p>topic percentage · level primary · subject math · deck primary-math-percentage</p>
+  <ul class="pack-materials">
+    <li><code>animation</code></li>
+    <li><code>slides</code></li>
+    <li><code>worksheet</code></li>
+    <li><code>exitTicket</code> exit ticket</li>
+    <li><code>notes</code> student notes</li>
+    <li><code>script</code> teacher script</li>
+  </ul>
+</header>
 <section class="pack-section" id="animation-section">
   <h2>Animation</h2>
   <div id="anim-stage"></div>
@@ -1058,6 +1076,19 @@
   <h2>Primary mathematics decimals printables</h2>
   <div id="decimals-primary-printables-stage"></div>
 </section>
+<section class="pack-section" id="percentage-primary-animation">
+  <h2>Primary mathematics percentage animation</h2>
+  <div id="percentage-primary-stage"></div>
+  <div id="percentage-primary-captions"></div>
+</section>
+<section class="pack-section" id="percentage-primary-slides">
+  <h2>Primary mathematics percentage slides</h2>
+  <div id="percentage-primary-slides-stage"></div>
+</section>
+<section class="pack-section" id="percentage-primary-printables">
+  <h2>Primary mathematics percentage printables</h2>
+  <div id="percentage-primary-printables-stage"></div>
+</section>
 <div id="err"></div>
 <script src="validate.js"></script>
 <script src="player.js"></script>
@@ -1115,8 +1146,9 @@
     var ecologyJcPrintStage = document.querySelector('#ecology-jc-printables-stage .pr-stage') || document.querySelector('#ecology-jc-printables-stage');
     var wholeNumbersPrimaryPrintStage = document.querySelector('#whole-numbers-primary-printables-stage .pr-stage') || document.querySelector('#whole-numbers-primary-printables-stage');
     var decimalsPrimaryPrintStage = document.querySelector('#decimals-primary-printables-stage .pr-stage') || document.querySelector('#decimals-primary-printables-stage');
+    var percentagePrimaryPrintStage = document.querySelector('#percentage-primary-printables-stage .pr-stage') || document.querySelector('#percentage-primary-printables-stage');
     var keys = [];
-    [printStage, fractionsPrintStage, wavesPrintStage, complexPrintStage, trigPrintStage, thermalPrintStage, photosynthesisPrintStage, erosionPrintStage, chemMolePrintStage, differentiationPrintStage, integrationPrintStage, binomialPrintStage, kinematicsPrintStage, quadraticPrintStage, trigonometryAPrintStage, vectorsPrintStage, functionsGraphsPrintStage, sequencesPrintStage, differentiationJcPrintStage, integrationJcPrintStage, probabilityJcPrintStage, statisticsJcPrintStage, mechanicsJcPrintStage, emJcPrintStage, quantumJcPrintStage, physicalJcPrintStage, inorganicJcPrintStage, organicJcPrintStage, cellBioJcPrintStage, geneticsJcPrintStage, energeticsJcPrintStage, ecologyJcPrintStage, wholeNumbersPrimaryPrintStage, decimalsPrimaryPrintStage].forEach(function (stage) {
+    [printStage, fractionsPrintStage, wavesPrintStage, complexPrintStage, trigPrintStage, thermalPrintStage, photosynthesisPrintStage, erosionPrintStage, chemMolePrintStage, differentiationPrintStage, integrationPrintStage, binomialPrintStage, kinematicsPrintStage, quadraticPrintStage, trigonometryAPrintStage, vectorsPrintStage, functionsGraphsPrintStage, sequencesPrintStage, differentiationJcPrintStage, integrationJcPrintStage, probabilityJcPrintStage, statisticsJcPrintStage, mechanicsJcPrintStage, emJcPrintStage, quantumJcPrintStage, physicalJcPrintStage, inorganicJcPrintStage, organicJcPrintStage, cellBioJcPrintStage, geneticsJcPrintStage, energeticsJcPrintStage, ecologyJcPrintStage, wholeNumbersPrimaryPrintStage, decimalsPrimaryPrintStage, percentagePrimaryPrintStage].forEach(function (stage) {
       if (stage) {
         keys = keys.concat(Array.prototype.slice.call(stage.querySelectorAll('.pr-teacher')));
       }
@@ -3558,6 +3590,79 @@
     ].join('');
   }).catch(function (err) {
     showError('Primary mathematics decimals pack failed to load: ' + err.message);
+  });
+})();
+</script>
+<script>
+(function () {
+  var presenter = document.getElementById('percentage-primary-slides-stage');
+  var percentagePrimaryPrint = document.getElementById('percentage-primary-printables-stage');
+  var errBox = document.getElementById('err');
+  var percentagePrimaryAnimUrl = '../samples/primary-math-percentage-of-quantity.json';
+  var percentagePrimaryDeckUrl = '../samples/decks/primary-math-percentage.json';
+  var percentagePrimaryWorksheetUrl = '../samples/worksheets/primary-math-percentage.json';
+  var percentagePrimaryTicketUrl = '../samples/tickets/primary-math-percentage.json';
+  var percentagePrimaryNotesUrl = '../samples/notes/primary-math-percentage.json';
+  var percentagePrimaryScriptUrl = '../samples/scripts/primary-math-percentage.json';
+
+  function showError(msg) {
+    errBox.textContent = String(msg);
+  }
+
+  Promise.all([
+    fetch(percentagePrimaryAnimUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + percentagePrimaryAnimUrl);
+      return r.json();
+    }),
+    fetch(percentagePrimaryDeckUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + percentagePrimaryDeckUrl);
+      return r.json();
+    }),
+    fetch(percentagePrimaryWorksheetUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + percentagePrimaryWorksheetUrl);
+      return r.json();
+    }),
+    fetch(percentagePrimaryTicketUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + percentagePrimaryTicketUrl);
+      return r.json();
+    }),
+    fetch(percentagePrimaryNotesUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + percentagePrimaryNotesUrl);
+      return r.json();
+    }),
+    fetch(percentagePrimaryScriptUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + percentagePrimaryScriptUrl);
+      return r.json();
+    })
+  ]).then(function (pack) {
+    var anim = pack[0];
+    var deck = pack[1];
+    var worksheet = pack[2];
+    var ticket = pack[3];
+    var notes = pack[4];
+    var script = pack[5];
+    var problems = AnimathValidate.validateSpec(anim)
+      .concat(AnimathValidate.validateSlides(deck))
+      .concat(AnimathValidate.validateWorksheet(worksheet))
+      .concat(AnimathValidate.validateExitTicket(ticket))
+      .concat(AnimathValidate.validateNotes(notes))
+      .concat(AnimathValidate.validateScript(script));
+    if (problems.length) {
+      showError('Primary mathematics percentage pack failed validation:\n' + problems.join('\n'));
+      return;
+    }
+    AnimathPlayer.mount(document.getElementById('percentage-primary-stage'), anim, { autoplay: false });
+    AnimathSlidesPresenter.attachPresenter(document, presenter, deck, { animSpec: anim });
+    percentagePrimaryPrint.innerHTML = [
+      AnimathPrintable.renderWorksheet(worksheet),
+      AnimathPrintable.renderWorksheetAnswerKey(worksheet),
+      AnimathPrintable.renderExitTicket(ticket),
+      AnimathPrintable.renderExitTicketAnswerKey(ticket),
+      AnimathPrintable.renderNotes(notes),
+      AnimathPrintable.renderScript(script)
+    ].join('');
+  }).catch(function (err) {
+    showError('Primary mathematics percentage pack failed to load: ' + err.message);
   });
 })();
 </script>
