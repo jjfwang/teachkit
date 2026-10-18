@@ -468,6 +468,24 @@
     <li><code>script</code> teacher script</li>
   </ul>
 </header>
+<header class="pack-manifest" id="physical-jc-manifest">
+  <h1>Lesson pack: JC H2 chemistry — physical: energetics, kinetics and equilibria</h1>
+  <dl>
+    <dt>Slug</dt><dd><code>h2-physical-jc-science</code></dd>
+    <dt>Level</dt><dd>jc</dd>
+    <dt>Subject</dt><dd>science</dd>
+    <dt>Topic</dt><dd><code>h2-physical</code></dd>
+  </dl>
+  <p>topic h2-physical · level jc · subject science · deck jc-h2-physical</p>
+  <ul class="pack-materials">
+    <li><code>animation</code></li>
+    <li><code>slides</code></li>
+    <li><code>worksheet</code></li>
+    <li><code>exitTicket</code> exit ticket</li>
+    <li><code>notes</code> student notes</li>
+    <li><code>script</code> teacher script</li>
+  </ul>
+</header>
 <section class="pack-section" id="animation-section">
   <h2>Animation</h2>
   <div id="anim-stage"></div>
@@ -779,6 +797,19 @@
   <h2>JC H2 quantum printables</h2>
   <div id="quantum-jc-printables-stage"></div>
 </section>
+<section class="pack-section" id="physical-jc-animation">
+  <h2>JC H2 physical chemistry animation</h2>
+  <div id="physical-jc-stage"></div>
+  <div id="physical-jc-captions"></div>
+</section>
+<section class="pack-section" id="physical-jc-slides">
+  <h2>JC H2 physical chemistry slides</h2>
+  <div id="physical-jc-slides-stage"></div>
+</section>
+<section class="pack-section" id="physical-jc-printables">
+  <h2>JC H2 physical chemistry printables</h2>
+  <div id="physical-jc-printables-stage"></div>
+</section>
 <div id="err"></div>
 <script src="validate.js"></script>
 <script src="player.js"></script>
@@ -827,8 +858,9 @@
     var mechanicsJcPrintStage = document.querySelector('#mechanics-jc-printables-stage .pr-stage') || document.querySelector('#mechanics-jc-printables-stage');
     var emJcPrintStage = document.querySelector('#em-jc-printables-stage .pr-stage') || document.querySelector('#em-jc-printables-stage');
     var quantumJcPrintStage = document.querySelector('#quantum-jc-printables-stage .pr-stage') || document.querySelector('#quantum-jc-printables-stage');
+    var physicalJcPrintStage = document.querySelector('#physical-jc-printables-stage .pr-stage') || document.querySelector('#physical-jc-printables-stage');
     var keys = [];
-    [printStage, fractionsPrintStage, wavesPrintStage, complexPrintStage, trigPrintStage, thermalPrintStage, photosynthesisPrintStage, erosionPrintStage, chemMolePrintStage, differentiationPrintStage, integrationPrintStage, binomialPrintStage, kinematicsPrintStage, quadraticPrintStage, trigonometryAPrintStage, vectorsPrintStage, functionsGraphsPrintStage, sequencesPrintStage, differentiationJcPrintStage, integrationJcPrintStage, probabilityJcPrintStage, statisticsJcPrintStage, mechanicsJcPrintStage, emJcPrintStage, quantumJcPrintStage].forEach(function (stage) {
+    [printStage, fractionsPrintStage, wavesPrintStage, complexPrintStage, trigPrintStage, thermalPrintStage, photosynthesisPrintStage, erosionPrintStage, chemMolePrintStage, differentiationPrintStage, integrationPrintStage, binomialPrintStage, kinematicsPrintStage, quadraticPrintStage, trigonometryAPrintStage, vectorsPrintStage, functionsGraphsPrintStage, sequencesPrintStage, differentiationJcPrintStage, integrationJcPrintStage, probabilityJcPrintStage, statisticsJcPrintStage, mechanicsJcPrintStage, emJcPrintStage, quantumJcPrintStage, physicalJcPrintStage].forEach(function (stage) {
       if (stage) {
         keys = keys.concat(Array.prototype.slice.call(stage.querySelectorAll('.pr-teacher')));
       }
@@ -2613,6 +2645,79 @@
     ].join('');
   }).catch(function (err) {
     showError('JC H2 quantum pack failed to load: ' + err.message);
+  });
+})();
+</script>
+<script>
+(function () {
+  var presenter = document.getElementById('physical-jc-slides-stage');
+  var physicalJcPrint = document.getElementById('physical-jc-printables-stage');
+  var errBox = document.getElementById('err');
+  var physicalJcAnimUrl = '../samples/jc-h2-physical.json';
+  var physicalJcDeckUrl = '../samples/decks/jc-h2-physical.json';
+  var physicalJcWorksheetUrl = '../samples/worksheets/jc-h2-physical.json';
+  var physicalJcTicketUrl = '../samples/tickets/jc-h2-physical.json';
+  var physicalJcNotesUrl = '../samples/notes/jc-h2-physical.json';
+  var physicalJcScriptUrl = '../samples/scripts/jc-h2-physical.json';
+
+  function showError(msg) {
+    errBox.textContent = String(msg);
+  }
+
+  Promise.all([
+    fetch(physicalJcAnimUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + physicalJcAnimUrl);
+      return r.json();
+    }),
+    fetch(physicalJcDeckUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + physicalJcDeckUrl);
+      return r.json();
+    }),
+    fetch(physicalJcWorksheetUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + physicalJcWorksheetUrl);
+      return r.json();
+    }),
+    fetch(physicalJcTicketUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + physicalJcTicketUrl);
+      return r.json();
+    }),
+    fetch(physicalJcNotesUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + physicalJcNotesUrl);
+      return r.json();
+    }),
+    fetch(physicalJcScriptUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + physicalJcScriptUrl);
+      return r.json();
+    })
+  ]).then(function (pack) {
+    var anim = pack[0];
+    var deck = pack[1];
+    var worksheet = pack[2];
+    var ticket = pack[3];
+    var notes = pack[4];
+    var script = pack[5];
+    var problems = AnimathValidate.validateSpec(anim)
+      .concat(AnimathValidate.validateSlides(deck))
+      .concat(AnimathValidate.validateWorksheet(worksheet))
+      .concat(AnimathValidate.validateExitTicket(ticket))
+      .concat(AnimathValidate.validateNotes(notes))
+      .concat(AnimathValidate.validateScript(script));
+    if (problems.length) {
+      showError('JC H2 physical pack failed validation:\n' + problems.join('\n'));
+      return;
+    }
+    AnimathPlayer.mount(document.getElementById('physical-jc-stage'), anim, { autoplay: false });
+    AnimathSlidesPresenter.attachPresenter(document, presenter, deck, { animSpec: anim });
+    physicalJcPrint.innerHTML = [
+      AnimathPrintable.renderWorksheet(worksheet),
+      AnimathPrintable.renderWorksheetAnswerKey(worksheet),
+      AnimathPrintable.renderExitTicket(ticket),
+      AnimathPrintable.renderExitTicketAnswerKey(ticket),
+      AnimathPrintable.renderNotes(notes),
+      AnimathPrintable.renderScript(script)
+    ].join('');
+  }).catch(function (err) {
+    showError('JC H2 physical pack failed to load: ' + err.message);
   });
 })();
 </script>
