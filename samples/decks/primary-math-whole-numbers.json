@@ -1,0 +1,131 @@
+{
+  "level": "primary",
+  "slides": [
+    {
+      "bullets": [
+        "How place value decides what each digit is worth, how to add and subtract with regrouping, and why multiplication is repeated addition"
+      ],
+      "heading": "Whole numbers: place value, adding, subtracting, multiplying",
+      "kind": "title",
+      "notes": "Welcome everyone in and say: today we work with whole numbers - place value, adding, subtracting and multiplying - and by the end you will be able to explain why the zero in 5 0 6 7 matters so much."
+    },
+    {
+      "bullets": [
+        "Read any whole number by naming the thousands, hundreds, tens and ones places",
+        "Add and subtract column by column, regrouping when a column overflows or runs short",
+        "Explain multiplication as repeated addition of equal groups"
+      ],
+      "heading": "What we will learn",
+      "kind": "objective",
+      "notes": "Read the three goals aloud and tell the class: keep these in mind, because the exit ticket at the end will ask you to do exactly these things."
+    },
+    {
+      "bullets": [
+        "A shop sign reads 5 0 6 7 stickers in stock - but a classmate reads it as 567",
+        "How many stickers are really there, and what difference does one small zero make?"
+      ],
+      "heading": "Five thousand stickers, or five hundred?",
+      "kind": "hook",
+      "notes": "Ask for a show of hands: 567 or five thousand and sixty-seven? Take two or three answers without judging them yet; say: hold on to your idea, because scene s6 settles this exactly."
+    },
+    {
+      "bullets": [
+        "A digit is worth its face value times its place: the same 5 means 5000 in the thousands place and 5 in the ones place",
+        "When a column reaches ten, regroup: ten of one place become one of the next place up"
+      ],
+      "heading": "Place value decides what a digit is worth",
+      "kind": "concept",
+      "notes": "Say this slowly, because it is the big idea of the whole lesson: where a digit stands decides what it is worth, and regrouping is just trading ten small pieces for one bigger piece of equal value."
+    },
+    {
+      "bullets": [
+        "Write 3 452 and name each place: 3 thousands, 4 hundreds, 5 tens, 2 ones",
+        "Ten ones regroup into one ten - the first regrouping move of the lesson"
+      ],
+      "heading": "Thousands, hundreds, tens, ones",
+      "kind": "mechanism",
+      "notes": "Point at the columns as the digits drop in and narrate: watch the ten ones dots gather and become one ten-chip - nothing was added, the same amount changed shape.",
+      "visual": "s1"
+    },
+    {
+      "bullets": [
+        "Ones first: 7 + 5 = 12, so write 2 in the ones and carry 1 ten",
+        "Tens next: 4 + 8 + 1 carried = 13, so write 3 and carry 1 hundred; hundreds: 2 + 3 + 1 = 6"
+      ],
+      "heading": "Addition with regrouping: 247 + 385",
+      "kind": "mechanism",
+      "notes": "Count aloud with the class at each regrouping: twelve ones become one ten and two ones, thirteen tens become one hundred and three tens. The answer is 632.",
+      "visual": "s2"
+    },
+    {
+      "bullets": [
+        "Ones: 2 is too few to take 7, so borrow one ten and the ones become 12; 12 take away 7 is 5",
+        "Tens: 2 is too few to take 4, so borrow one hundred and the tens become 12; 12 take away 4 is 8; hundreds: 5 take away 2 is 3"
+      ],
+      "heading": "Subtraction with regrouping: 632 − 247",
+      "kind": "mechanism",
+      "notes": "Narrate both borrows slowly: each borrow trades one bigger piece for ten smaller ones, so the total never changes - only the shape of the number changes. The answer is 385.",
+      "visual": "s3"
+    },
+    {
+      "bullets": [
+        "Four groups of three dots gather into one array of twelve",
+        "Counting the array gives 3 + 3 + 3 + 3 = 12, which is what 4 x 3 means"
+      ],
+      "heading": "Multiplication is repeated addition",
+      "kind": "mechanism",
+      "notes": "Watch the four groups slide together into the array, then follow the counting probe dot by dot: multiplication is just a shortcut for adding the same group again and again.",
+      "visual": "s4"
+    },
+    {
+      "bullets": [
+        "Start with 45 stickers, add 25 more to reach 70, then give 30 away to land on 40",
+        "Work left to right: 45 + 25 = 70, then 70 - 30 = 40"
+      ],
+      "heading": "One worked example: 45 + 25 − 30",
+      "kind": "mechanism",
+      "notes": "Talk through the tens blocks and ones dots as they arrive and leave: first the total grows to 70 with ten ones regrouped into a ten, then three tens leave and 40 remains.",
+      "visual": "s5"
+    },
+    {
+      "bullets": [
+        "The trap claim in full: Reading 5 0 6 7 as 567, skipping the zero.",
+        "Zero holds its place: 5 0 6 7 is five thousand and sixty-seven, with the 0 keeping the hundreds empty"
+      ],
+      "heading": "Misconception: the zero in 5 0 6 7 holds its place",
+      "kind": "mechanism",
+      "notes": "Name the trap out loud: Reading 5 0 6 7 as 567, skipping the zero. Then land the correction: Zero holds its place: 5 0 6 7 is five thousand and sixty-seven, with the 0 keeping the hundreds empty.",
+      "visual": "s6"
+    },
+    {
+      "bullets": [
+        "Work 45 + 25 - 30 in two steps: first 45 + 25 = 70, then 70 - 30 = 40",
+        "Check each step with place value: 4 tens and 5 ones, then 7 tens, then 4 tens"
+      ],
+      "heading": "Worked example: 45 + 25 − 30",
+      "kind": "example",
+      "notes": "Talk through the two steps slowly as in scene s5 and name each one as you write it; say: doing one operation at a time, left to right, keeps every place honest."
+    },
+    {
+      "bullets": [
+        "Work out 247 + 385 on your whiteboards, regrouping in the ones and the tens",
+        "Careful - a classmate says: Reading 5 0 6 7 as 567, skipping the zero. Correct them in one sentence, naming what the zero does"
+      ],
+      "heading": "Your turn: add, then judge the claim",
+      "kind": "practice",
+      "notes": "Give pairs three minutes, then cold-call one pair on each part: press them on where each carried ten and hundred came from first, then on the exact sentence they used to correct the claim: Reading 5 0 6 7 as 567, skipping the zero."
+    },
+    {
+      "bullets": [
+        "On your own: work out 632 - 247, showing both borrows",
+        "Watch out for the trap one last time: Reading 5 0 6 7 as 567, skipping the zero. Say what 5 0 6 7 really is, and what the zero is doing"
+      ],
+      "heading": "Exit ticket: show what you know",
+      "kind": "exit-ticket",
+      "notes": "Collect these before anyone leaves and say: I am looking for both borrows in your first answer, plus one clear sentence about the zero holding its place in your second."
+    }
+  ],
+  "subject": "math",
+  "title": "Whole numbers: place value, adding, subtracting, multiplying",
+  "topic": "whole-numbers"
+}

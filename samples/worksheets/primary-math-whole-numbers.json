@@ -1,0 +1,86 @@
+{
+  "level": "primary",
+  "questions": [
+    {
+      "choices": [
+        {
+          "text": "567"
+        },
+        {
+          "correct": true,
+          "text": "5 0 6 7 - five thousand and sixty-seven"
+        },
+        {
+          "text": "5 067 read as five hundred and sixty-seven"
+        },
+        {
+          "text": "56 7 - fifty-six and seven"
+        }
+      ],
+      "explanation": "The trap is: Reading 5 0 6 7 as 567, skipping the zero. Zero holds its place: 5 0 6 7 is five thousand and sixty-seven, with the 0 keeping the hundreds empty. The number written 5 0 6 7 has four places - thousands, hundreds, tens, ones - so it is five thousand and sixty-seven, not 567.",
+      "id": "q1",
+      "kind": "multiple-choice",
+      "misconception": "Reading 5 0 6 7 as 567, skipping the zero.",
+      "prompt": "How do you read the number written 5 0 6 7?"
+    },
+    {
+      "choices": [
+        {
+          "text": "622"
+        },
+        {
+          "correct": true,
+          "text": "632"
+        },
+        {
+          "text": "532"
+        },
+        {
+          "text": "612"
+        }
+      ],
+      "explanation": "Scene s2 shows both regroupings: 7 + 5 = 12 gives 2 ones and a carried ten, 4 + 8 + 1 = 13 gives 3 tens and a carried hundred, and 2 + 3 + 1 = 6 hundreds, so 247 + 385 = 632.",
+      "id": "q2",
+      "kind": "multiple-choice",
+      "prompt": "What is 247 + 385?"
+    },
+    {
+      "answer": "Borrow one ten so the ones become 12, and 12 - 7 = 5. Then borrow one hundred so the tens become 12, and 12 - 4 = 8. Finally 5 - 2 = 3 in the hundreds, so 632 - 247 = 385.",
+      "explanation": "Scene s3 shows both borrows: each borrow trades one bigger piece for ten smaller ones, so the amount never changes - only the shape of the number changes.",
+      "id": "q3",
+      "kind": "short-answer",
+      "prompt": "Work out 632 - 247, explaining each borrow you make."
+    },
+    {
+      "answer": "3 + 3 + 3 + 3 = 12, so 4 x 3 = 12.",
+      "explanation": "Scene s4 gathers four groups of three dots into one array and counts them: multiplication is repeated addition of equal groups.",
+      "id": "q4",
+      "kind": "short-answer",
+      "prompt": "Write 4 x 3 as repeated addition and give the answer."
+    },
+    {
+      "choices": [
+        {
+          "text": "100"
+        },
+        {
+          "text": "30"
+        },
+        {
+          "correct": true,
+          "text": "40"
+        },
+        {
+          "text": "50"
+        }
+      ],
+      "explanation": "Scene s5 works left to right: 45 + 25 = 70 first, with ten ones regrouped into one ten, then 70 - 30 = 40 when three tens are given away.",
+      "id": "q5",
+      "kind": "multiple-choice",
+      "prompt": "What is 45 + 25 - 30?"
+    }
+  ],
+  "subject": "math",
+  "title": "Whole numbers: place value, adding, subtracting, multiplying",
+  "topic": "whole-numbers"
+}

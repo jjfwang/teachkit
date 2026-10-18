@@ -1,0 +1,53 @@
+{
+  "definitions": [
+    {
+      "meaning": "The value of a place in a number: ones are worth 1, tens 10, hundreds 100 and thousands 1000, and a digit is worth its face value times its place.",
+      "term": "Place value"
+    },
+    {
+      "meaning": "Trading ten of one place for one of the next place up when adding, or one of a place for ten of the place below when subtracting.",
+      "term": "Regrouping"
+    },
+    {
+      "meaning": "The ones place: the rightmost place in a whole number, where each digit counts single units.",
+      "term": "Ones"
+    },
+    {
+      "meaning": "The tens place: each digit here counts groups of ten, so a 5 in the tens place is worth 50.",
+      "term": "Tens"
+    },
+    {
+      "meaning": "The hundreds place: each digit here counts groups of a hundred, and a 0 here means the place is empty but still held.",
+      "term": "Hundreds"
+    },
+    {
+      "meaning": "The thousands place: each digit here counts groups of a thousand, so a 5 in the thousands place is worth 5000.",
+      "term": "Thousands"
+    },
+    {
+      "meaning": "A shortcut for repeated addition of equal groups: 4 x 3 means four groups of three, which is 3 + 3 + 3 + 3.",
+      "term": "Multiplication"
+    }
+  ],
+  "level": "primary",
+  "mechanismSteps": [
+    "Thousands, hundreds, tens, ones: write 3 452 and name each place - 3 thousands, 4 hundreds, 5 tens, 2 ones - and watch ten ones regroup into one ten.",
+    "Addition with regrouping: 247 + 385: add column by column from the ones - 7 + 5 = 12 regroups into one ten and 2 ones, then 4 + 8 + 1 = 13 regroups into one hundred and 3 tens, giving 632.",
+    "Subtraction with regrouping: 632 − 247: subtract column by column - borrow a ten so 12 - 7 = 5 in the ones, borrow a hundred so 12 - 4 = 8 in the tens, and 5 - 2 = 3 in the hundreds, giving 385.",
+    "Multiplication is repeated addition: four groups of three dots gather into one array and are counted one by one - 3 + 3 + 3 + 3 = 12.",
+    "One worked example: 45 + 25 − 30: start with 45, add 25 to reach 70 with ten ones regrouped into a ten, then take away 30 to land on 40.",
+    "Misconception: the zero in 5 0 6 7 holds its place: the digits 5 0 6 7 stand in the thousands, hundreds, tens and ones places - dropping the zero collapses the number to 567, so the zero must stay to hold the hundreds place."
+  ],
+  "objectives": [
+    "Read whole numbers by place value and explain regrouping in addition and subtraction",
+    "Use repeated addition to explain multiplication and work mixed addition and subtraction in steps"
+  ],
+  "subject": "math",
+  "title": "Whole numbers: place value, adding, subtracting, multiplying",
+  "topic": "whole-numbers",
+  "trap": {
+    "explanation": "Learners read the digits left to right and drop the 0, losing the hundreds place. Zero holds its place: 5 0 6 7 is five thousand and sixty-seven, with the 0 keeping the hundreds empty. In the animation scene s6 the digits 5 0 6 7 drop into the thousands, hundreds, tens and ones columns, and the wrong reading 567 slides away: keep the zero and the 5 stays worth five thousand.",
+    "misconception": "Reading 5 0 6 7 as 567, skipping the zero."
+  },
+  "workedExample": "In scene s5, 45 stickers plus 25 more make 70 - the ten ones regroup into one ten - and then 30 are given away, leaving 40. Step by step: 45 + 25 = 70, then 70 - 30 = 40."
+}

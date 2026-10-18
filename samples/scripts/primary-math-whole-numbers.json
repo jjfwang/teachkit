@@ -1,0 +1,63 @@
+{
+  "level": "primary",
+  "segments": [
+    {
+      "cue": "s1",
+      "minutes": 6,
+      "questions": [
+        "What is the 4 in 3 452 worth, and why?",
+        "What happens when the ones column collects ten ones?"
+      ],
+      "say": "Thousands, hundreds, tens, ones. Name each place in 3 452 as the digits drop into their columns, then watch ten ones regroup into one ten. Keep your student notes open at the place value definition for this scene."
+    },
+    {
+      "cue": "s2",
+      "minutes": 7,
+      "questions": [
+        "Why do we start adding from the ones, not the hundreds?",
+        "Where did the carried hundred in 247 + 385 come from?"
+      ],
+      "say": "Addition with regrouping: 247 + 385. Add column by column from the ones and narrate both regroupings as the chips appear. Now try the addition question on the worksheet in pairs."
+    },
+    {
+      "cue": "s3",
+      "minutes": 8,
+      "questions": [
+        "Why can we not take 7 ones away from 2 ones straight away?",
+        "Does borrowing change the value of 632? How do you know?"
+      ],
+      "say": "Subtraction with regrouping: 632 − 247. Narrate both borrows slowly - a ten for the ones, then a hundred for the tens. Check the regrouping definition in your student notes."
+    },
+    {
+      "cue": "s4",
+      "minutes": 6,
+      "questions": [
+        "How many groups are there, and how many dots in each group?",
+        "How is 4 x 3 the same as 3 + 3 + 3 + 3?"
+      ],
+      "say": "Multiplication is repeated addition. Watch four groups of three dots gather into one array and follow the counting probe. Compare this with the multiplication definition in your student notes."
+    },
+    {
+      "cue": "s5",
+      "minutes": 6,
+      "questions": [
+        "Why must we do the addition before the subtraction here?",
+        "What regrouping happened when 45 and 25 were added?"
+      ],
+      "say": "One worked example: 45 + 25 − 30. Work left to right with the class - add 25 to reach 70, then give 30 away to land on 40. Finish the mixed question on the worksheet now."
+    },
+    {
+      "cue": "s6",
+      "minutes": 7,
+      "questions": [
+        "What does the zero in 5 0 6 7 do?",
+        "What goes wrong if we drop the zero?"
+      ],
+      "say": "Misconception: the zero in 5 0 6 7 holds its place. Contrast the correct reading five thousand and sixty-seven with the wrong reading 567, then land the place-holding rule. Finish by taking the exit ticket on your own - its first question revisits exactly this trap.",
+      "watchFor": "Reading 5 0 6 7 as 567, skipping the zero. Listen and look for it in pair talk and on the worksheet: any reading of 5 0 6 7 as 567 shows the trap - send them back to scene s6 and to the correct turn: Zero holds its place: 5 0 6 7 is five thousand and sixty-seven, with the 0 keeping the hundreds empty."
+    }
+  ],
+  "subject": "math",
+  "title": "Whole numbers: place value, adding, subtracting, multiplying",
+  "topic": "whole-numbers"
+}

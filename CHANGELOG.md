@@ -12,6 +12,19 @@ version section when the release ships.
 
 ### Added
 
+- Primary mathematics whole numbers gold lesson pack: five hand-authored gold
+  samples for whole-numbers in
+  samples/decks/primary-math-whole-numbers.json,
+  samples/worksheets/primary-math-whole-numbers.json,
+  samples/tickets/primary-math-whole-numbers.json,
+  samples/notes/primary-math-whole-numbers.json and
+  samples/scripts/primary-math-whole-numbers.json,
+  keyed to the primary-math-whole-numbers animation scenes and built around
+  the misconception bank trap reused verbatim: Reading 5 0 6 7
+  as 567, skipping the zero., guarded by
+  tests/gold-whole-numbers-pack.test.js
+  (issue #919).
+
 - JC H2 ecology lesson pack in the pack demo
   (`player/pack-demo.html`): the JC H2 ecology
   gold lesson pack now appears on the same demo page as the other packs,
