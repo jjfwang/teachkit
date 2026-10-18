@@ -1,0 +1,59 @@
+{
+  "level": "primary",
+  "questions": [
+    {
+      "choices": [
+        {
+          "text": "The tall stack"
+        },
+        {
+          "correct": true,
+          "text": "Both have the same volume: 6 unit cubes"
+        },
+        {
+          "text": "The wide row"
+        }
+      ],
+      "feedback": "That trap answer is the one to unlearn: The taller container holds more. Reteach point: Count the unit cubes: six cubes is six cubes; shape never changes the amount. Both arrangements are the same 6 cubes, so the volume is the same.",
+      "id": "q1",
+      "kind": "multiple-choice",
+      "misconception": "The taller container holds more.",
+      "prompt": "A tall stack and a wide row are both made from 6 unit cubes. Which has the greater volume?"
+    },
+    {
+      "answer": "24 unit cubes: 4 × 3 × 2 = 24.",
+      "feedback": "Scene s2 locks the method: one layer is 4 × 3 = 12 cubes, and 2 layers give 4 × 3 × 2 = 24 unit cubes.",
+      "id": "q2",
+      "kind": "short-answer",
+      "prompt": "Find the volume of a cuboid that is 4 by 3 by 2, showing the working."
+    },
+    {
+      "choices": [
+        {
+          "text": "100 mL"
+        },
+        {
+          "correct": true,
+          "text": "1000 mL"
+        },
+        {
+          "text": "500 mL"
+        }
+      ],
+      "feedback": "Scene s3 fixes the conversion: 1 L = 1000 mL, and the small cup in the scene holds 500 mL.",
+      "id": "q3",
+      "kind": "multiple-choice",
+      "prompt": "How many millilitres are there in 1 L?"
+    },
+    {
+      "answer": "The same 6 cubes are used, so the amount of space they take up stays the same.",
+      "feedback": "Scene s4 fixes the idea: rearranging the cubes changes the shape, but the count is still 6 cubes, so the volume is unchanged.",
+      "id": "q4",
+      "kind": "short-answer",
+      "prompt": "Explain in one sentence why rearranging 6 unit cubes from a tall stack into a wide row does not change the volume."
+    }
+  ],
+  "subject": "math",
+  "title": "Volume: cubes, cuboids, litres Exit Ticket",
+  "topic": "volume"
+}

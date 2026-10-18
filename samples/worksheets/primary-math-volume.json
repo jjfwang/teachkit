@@ -1,0 +1,77 @@
+{
+  "level": "primary",
+  "questions": [
+    {
+      "choices": [
+        {
+          "text": "The tall container holds more"
+        },
+        {
+          "correct": true,
+          "text": "Both hold the same: 6 cubes"
+        },
+        {
+          "text": "The wide container holds more"
+        }
+      ],
+      "explanation": "The trap is: The taller container holds more. Count the unit cubes: six cubes is six cubes; shape never changes the amount. Both arrangements use exactly 6 cubes, so both hold the same amount.",
+      "id": "q1",
+      "kind": "multiple-choice",
+      "misconception": "The taller container holds more.",
+      "prompt": "Two containers are each filled with unit cubes. The tall container is filled with 6 cubes arranged in a tall stack, and the wide container is filled with the same 6 cubes spread out wide. Which container holds more?"
+    },
+    {
+      "choices": [
+        {
+          "text": "9 unit cubes"
+        },
+        {
+          "correct": true,
+          "text": "24 unit cubes"
+        },
+        {
+          "text": "12 unit cubes"
+        }
+      ],
+      "explanation": "Scene s2: one layer is 4 × 3 = 12 cubes, and 2 layers give 4 × 3 × 2 = 24 unit cubes.",
+      "id": "q2",
+      "kind": "multiple-choice",
+      "prompt": "What is the volume of a cuboid that is 4 cubes long, 3 cubes wide and 2 cubes high?"
+    },
+    {
+      "answer": "6 unit cubes.",
+      "explanation": "Scene s1: volume counts the unit cubes that fill a shape, and the count reaches 6, so the volume is 6 unit cubes.",
+      "id": "q3",
+      "kind": "short-answer",
+      "prompt": "A shape is filled with unit cubes counted one by one up to 6. What is its volume?"
+    },
+    {
+      "answer": "1 L = 1000 mL; the small cup holds 500 millilitres.",
+      "explanation": "Scene s3: 1 L = 1000 mL, and small amounts like the 500 mL cup are measured in millilitres.",
+      "id": "q4",
+      "kind": "short-answer",
+      "prompt": "Write 1 L in millilitres, and write 500 mL in words for a small cup."
+    },
+    {
+      "choices": [
+        {
+          "text": "14 unit cubes"
+        },
+        {
+          "correct": true,
+          "text": "24 unit cubes"
+        },
+        {
+          "text": "12 unit cubes"
+        }
+      ],
+      "explanation": "Scene s2: multiply the layer by the number of layers: 12 × 2 = 24 unit cubes, which is 4 × 3 × 2 = 24.",
+      "id": "q5",
+      "kind": "multiple-choice",
+      "prompt": "One layer of a cuboid has 12 cubes. The cuboid has 2 layers. What is its volume?"
+    }
+  ],
+  "subject": "math",
+  "title": "Volume: cubes, cuboids, litres",
+  "topic": "volume"
+}

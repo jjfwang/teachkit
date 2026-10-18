@@ -1,0 +1,40 @@
+{
+  "definitions": [
+    {
+      "meaning": "How much space a shape takes up, counted in unit cubes that fill the shape.",
+      "term": "Volume"
+    },
+    {
+      "meaning": "A single cube used as the counting unit for volume: the first shape is filled by 6 unit cubes.",
+      "term": "Unit cube"
+    },
+    {
+      "meaning": "A box shape whose volume is length × width × height: the cuboid in the animation is 4 by 3 by 2, giving 24 unit cubes.",
+      "term": "Cuboid"
+    },
+    {
+      "meaning": "Units for measuring liquids: 1 L = 1000 mL, with millilitres for small amounts like 500 mL and litres for big amounts.",
+      "term": "Litre and millilitre"
+    }
+  ],
+  "level": "primary",
+  "mechanismSteps": [
+    "Volume as unit-cube counting: count the cubes one by one - 1, 2, 3, 4, 5, 6 - so the volume is 6 unit cubes.",
+    "Cuboid volume = length × width × height: one layer is 4 × 3 = 12 cubes, and stacking 2 layers gives 4 × 3 × 2 = 24 unit cubes.",
+    "Liquid volume: millilitres and litres: a small cup holds 500 mL, a big jug holds 1 L, and 1 L = 1000 mL.",
+    "Watch out: a taller container holds more: the tall stack and the wide row both use 6 cubes, so rearranging them does not change the volume."
+  ],
+  "objectives": [
+    "Count unit cubes to find the volume of a shape",
+    "Find the volume of a cuboid using length × width × height",
+    "Convert between litres and millilitres: 1 L = 1000 mL"
+  ],
+  "subject": "math",
+  "title": "Volume: cubes, cuboids, litres",
+  "topic": "volume",
+  "trap": {
+    "explanation": "Height dominates the eye, so taller looks like more. Count the unit cubes: six cubes is six cubes; shape never changes the amount. In the animation scene s4 the tall stack and the wide row are both 6 cubes, so they have the same volume.",
+    "misconception": "The taller container holds more."
+  },
+  "workedExample": "In scene s1, 6 unit cubes fill the shape, so its volume is 6 unit cubes. In scene s2, one layer is 4 × 3 = 12 cubes and there are 2 layers, so the cuboid volume is 4 × 3 × 2 = 24 unit cubes. In scene s3, 1 L = 1000 mL."
+}
