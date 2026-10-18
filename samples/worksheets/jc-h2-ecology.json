@@ -1,0 +1,86 @@
+{
+  "level": "jc",
+  "questions": [
+    {
+      "choices": [
+        {
+          "text": "Energy is recycled through the ecosystem, so producers get it back again"
+        },
+        {
+          "text": "Energy cycles between producers and decomposers only"
+        },
+        {
+          "correct": true,
+          "text": "Energy flows one way through the ecosystem and leaves as heat"
+        },
+        {
+          "text": "Energy is destroyed at the top of the food chain"
+        }
+      ],
+      "explanation": "The trap claim is: Energy is recycled through the ecosystem. The \"cycle of life\" language makes energy sound like it loops round forever. Energy flows one way - sunlight in, heat out: what is recycled is matter - carbon, nitrogen and water, as scene s6 shows.",
+      "id": "q1",
+      "kind": "multiple-choice",
+      "misconception": "Energy is recycled through the ecosystem.",
+      "prompt": "A student says energy keeps cycling round an ecosystem forever, coming back to the producers. What is correct?"
+    },
+    {
+      "choices": [
+        {
+          "text": "From feeder to food, predator to prey"
+        },
+        {
+          "correct": true,
+          "text": "From food to feeder, in the direction of energy flow"
+        },
+        {
+          "text": "From the largest animal to the smallest"
+        },
+        {
+          "text": "In a circle, back to the producers"
+        }
+      ],
+      "explanation": "Scene s1 gives the rule: arrows follow energy flow, pointing from food to feeder - grass to rabbit to fox.",
+      "id": "q2",
+      "kind": "multiple-choice",
+      "prompt": "Which direction do arrows point in a food chain?"
+    },
+    {
+      "answer": "Most energy is lost as heat from respiration, in egestion and excretion, and in uneaten or undigested parts, so only about a tenth is built into new tissue that the next level can eat.",
+      "explanation": "Scene s3 shows the dot shrinking as it climbs the pyramid: each level keeps only a tenth of the energy, so the pyramid narrows fast.",
+      "id": "q3",
+      "kind": "short-answer",
+      "prompt": "Explain why only about 10% of the energy at one trophic level reaches the next level, and what happens to the rest."
+    },
+    {
+      "answer": "Energy flows one way: sunlight in, heat out. Carbon cycles: photosynthesis draws CO2 into plants, while respiration, combustion and decomposition return CO2 to the air.",
+      "explanation": "Scenes s4 and s6 separate the two: the carbon dot loops round and round, while the energy dot enters as sunlight and leaves as heat, never returning.",
+      "id": "q4",
+      "kind": "short-answer",
+      "prompt": "Compare how energy and carbon move through an ecosystem: state which one cycles and which flows one way, naming the processes involved."
+    },
+    {
+      "choices": [
+        {
+          "text": "The species moved because energy is recycled elsewhere"
+        },
+        {
+          "correct": true,
+          "text": "Habitat loss and fragmentation left fragments too small and isolated to support the species"
+        },
+        {
+          "text": "The pyramid of energy inverted in the fragments"
+        },
+        {
+          "text": "Decomposers stopped cycling carbon in the fragments"
+        }
+      ],
+      "explanation": "Scene s5 shows each patch shrinking under pressure and its species label vanishing with it: lose the habitat and the species that need it vanish too.",
+      "id": "q5",
+      "kind": "multiple-choice",
+      "prompt": "A forest is cleared into small isolated fragments and a wide-ranging species disappears. What is the best explanation?"
+    }
+  ],
+  "subject": "science",
+  "title": "JC H2 biology — ecology: energy flow and the carbon cycle",
+  "topic": "h2-ecology"
+}

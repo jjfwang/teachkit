@@ -1,0 +1,63 @@
+{
+  "level": "jc",
+  "segments": [
+    {
+      "cue": "s1",
+      "minutes": 8,
+      "questions": [
+        "Why do food-chain arrows point from food to feeder, not the other way?",
+        "What trophic levels are the grass, the rabbit and the fox?"
+      ],
+      "say": "Food chains: arrows follow energy flow. Follow the red energy dot from grass to rabbit to fox and stress that arrows point from food to feeder. Keep your student notes open at the trophic level and food chain definitions for this scene."
+    },
+    {
+      "cue": "s2",
+      "minutes": 8,
+      "questions": [
+        "How is a food web different from a single food chain?",
+        "What ripples follow if the mouse is removed from this web?"
+      ],
+      "say": "Food webs: one dot splits into two. Watch one energy dot split between the rabbit and mouse pathways and name every link in the web. Now try the energy-flow questions on the worksheet in pairs."
+    },
+    {
+      "cue": "s3",
+      "minutes": 8,
+      "questions": [
+        "Where does most of the energy at each level go?",
+        "Why does the 10% rule keep food chains short?"
+      ],
+      "say": "Pyramid of energy: only 10% moves up. Watch the energy dot shrink as it climbs and work the 10 000 kJ example level by level. Check the pyramid of energy definition in your student notes."
+    },
+    {
+      "cue": "s4",
+      "minutes": 8,
+      "questions": [
+        "Which processes draw CO2 out of the air, and which return it?",
+        "Why does burning fossil fuels upset the carbon cycle?"
+      ],
+      "say": "The carbon cycle: one dot, round and round. Track the blue carbon dot from air into plants and back to air, separating photosynthesis from respiration and combustion. Compare this loop with the mechanism steps in your student notes."
+    },
+    {
+      "cue": "s5",
+      "minutes": 8,
+      "questions": [
+        "Why can small isolated fragments not hold wide-ranging species?",
+        "How do protected corridors fight fragmentation?"
+      ],
+      "say": "Conservation: when habitat shrinks, species vanish. Watch each fragment shrink and its species vanish with it, then show how the protected corridor reconnects them. Finish the conservation question on the worksheet now."
+    },
+    {
+      "cue": "s6",
+      "minutes": 8,
+      "questions": [
+        "Which dot loops and which dot leaves - energy or carbon?",
+        "What is actually recycled in an ecosystem, if energy is not?"
+      ],
+      "say": "A common mistake: energy is not recycled. Contrast the red energy dot leaving as heat with the blue carbon dot looping round, then land the one-way rule. Finish by taking the exit ticket on your own - its first question revisits exactly this trap.",
+      "watchFor": "Energy is recycled through the ecosystem. Listen and look for it in pair talk and on the worksheet: any answer treating energy as looping back to producers shows the trap reading - send them back to scene s6 and to the correct turn: Energy flows one way - sunlight in, heat out: what is recycled is matter - carbon, nitrogen and water."
+    }
+  ],
+  "subject": "science",
+  "title": "JC H2 biology — ecology: energy flow and the carbon cycle",
+  "topic": "h2-ecology"
+}

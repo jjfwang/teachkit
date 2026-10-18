@@ -12,6 +12,19 @@ version section when the release ships.
 
 ### Added
 
+- JC H2 ecology gold lesson pack: five hand-authored gold
+  samples for h2-ecology in
+  samples/decks/jc-h2-ecology.json,
+  samples/worksheets/jc-h2-ecology.json,
+  samples/tickets/jc-h2-ecology.json,
+  samples/notes/jc-h2-ecology.json and
+  samples/scripts/jc-h2-ecology.json,
+  keyed to the jc-h2-ecology animation scenes and built around
+  the misconception bank trap reused verbatim: Energy is
+  recycled through the ecosystem., guarded by
+  tests/gold-ecology-jc-pack.test.js
+  (issue #915).
+
 - JC H2 energetics gold lesson pack: five hand-authored gold
   samples for h2-energetics in
   samples/decks/jc-h2-energetics.json,
