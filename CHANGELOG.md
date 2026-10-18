@@ -12,6 +12,20 @@ version section when the release ships.
 
 ### Added
 
+- JC H2 organic gold lesson pack: five hand-authored gold
+  samples for h2-organic in
+  samples/decks/jc-h2-organic.json,
+  samples/worksheets/jc-h2-organic.json,
+  samples/tickets/jc-h2-organic.json,
+  samples/notes/jc-h2-organic.json and
+  samples/scripts/jc-h2-organic.json,
+  keyed to the jc-h2-organic animation scenes and built around
+  the misconception bank trap reused verbatim: Curly arrows
+  point from the electron-poor atom toward the electron-rich
+  one., guarded by
+  tests/gold-organic-jc-pack.test.js
+  (issue #899).
+
 - JC H2 inorganic chemistry lesson pack in the pack demo
   (`player/pack-demo.html`): the JC H2 inorganic chemistry
   gold lesson pack now appears on the same demo page as the other packs,

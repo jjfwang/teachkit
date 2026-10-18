@@ -1,0 +1,52 @@
+{
+  "definitions": [
+    {
+      "meaning": "A family of compounds with the same functional group and the same general formula, where each member differs from the next by one CH2 group, as methane to butane do for the alkanes, CnH2n+2.",
+      "term": "Homologous series"
+    },
+    {
+      "meaning": "The atom or group of atoms that decides a molecule's family and its characteristic reactions: -OH for alcohols, -COOH for carboxylic acids, C=O for carbonyl compounds.",
+      "term": "Functional group"
+    },
+    {
+      "meaning": "An electron-pair acceptor: a species attracted to electron-rich regions such as a pi bond, for example the slightly positive hydrogen of H-Br in addition to ethene.",
+      "term": "Electrophile"
+    },
+    {
+      "meaning": "An electron-pair donor: a species with a lone pair that it donates to form a new bond to carbon, for example OH- in the substitution of halogenoalkanes.",
+      "term": "Nucleophile"
+    },
+    {
+      "meaning": "A positively charged carbon intermediate with only six outer electrons: in SN1 it forms in the slow step when the C-Br bond breaks, and its planar shape lets the nucleophile attack from either side.",
+      "term": "Carbocation"
+    },
+    {
+      "meaning": "The arrow drawn in a mechanism to track one pair of electrons: it starts where the pair starts - a lone pair, a bond or a pi bond - and its head points to where the pair ends up.",
+      "term": "Curly arrow"
+    }
+  ],
+  "level": "jc",
+  "mechanismSteps": [
+    "Alkanes: one CH₂ group apart: methane, ethane, propane and butane step up by one CH2 group each, sharing the general formula CnH2n+2 and the same family chemistry.",
+    "Functional groups change the family: the same carbon skeleton becomes an alcohol with -OH or a carboxylic acid with -COOH, and the functional group decides the reactions.",
+    "Electrophilic addition to alkenes: the electron-rich pi pair of ethene attacks the slightly positive hydrogen of H-Br, the H-Br pair moves onto bromine, and bromoethane forms.",
+    "SN1: the slow step comes first: the C-Br bond of a tertiary halogenoalkane breaks alone to give a planar carbocation, then OH- attacks fast, so rate = k[(CH3)3CBr].",
+    "SN2: one step, backside attack: OH- attacks a primary halogenoalkane from the back as Br- leaves in a single concerted step, so rate = k[CH3Br][OH-].",
+    "One route, three steps: ethene to bromoethane by addition, bromoethane to ethanol by substitution, ethanol to ethanal by partial oxidation - planned backwards by retrosynthesis.",
+    "A common mistake: atoms sliding along the arrow: atoms stay put in a mechanism; the curly arrow tracks one electron pair from where it starts to where it ends.",
+    "Organic mechanisms in one page: addition is pi electrons attacking an electrophile, substitution is SN1's slow carbocation step or SN2's one concerted step, and synthesis chains known reactions."
+  ],
+  "objectives": [
+    "Describe homologous series and functional groups, and name the family a molecule belongs to",
+    "Explain electrophilic addition to ethene and the SN1 and SN2 substitution mechanisms, including their rate equations",
+    "Use curly arrows correctly and plan a short synthesis route by retrosynthesis"
+  ],
+  "subject": "science",
+  "title": "JC H2 chemistry — organic: mechanisms, synthesis and the arrow language",
+  "topic": "h2-organic",
+  "trap": {
+    "explanation": "The arrow is read like a direction pointer instead of tracking the electrons themselves. Curly arrows follow the electrons: they start at an electron-rich region (a lone pair or pi bond) and point to where the electrons go. Take the first arrow of the ethene and HBr mechanism: it starts at the pi bond, the electron-rich region, and its head lands on hydrogen - the electrons move toward the electron-poor atom, which is exactly the reverse of the trap reading.",
+    "misconception": "Curly arrows point from the electron-poor atom toward the electron-rich one."
+  },
+  "workedExample": "Work through the three-step route from ethene to ethanal. Step 1: CH2=CH2 + HBr gives CH3CH2Br - the pi pair forms the new C-H bond and the H-Br pair leaves on bromine. Step 2: CH3CH2Br + NaOH(aq), heated, gives CH3CH2OH - hydroxide substitutes for bromine. Step 3: CH3CH2OH is partially oxidised to CH3CHO, ethanal, and the oxidation is stopped there before it runs on to ethanoic acid. Each arrow is one reaction from this lesson: electrophilic addition, nucleophilic substitution, partial oxidation."
+}
