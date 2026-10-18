@@ -12,6 +12,19 @@ version section when the release ships.
 
 ### Added
 
+- JC H2 electromagnetism lesson pack in the pack demo
+  (`player/pack-demo.html`): the JC H2 electromagnetism
+  gold lesson pack now appears on the same demo page as the other packs,
+  presenting all six jc-h2-em materials (animation,
+  slides, worksheet, exit ticket, student notes, and teacher
+  script) under its own
+  em-jc-manifest header (slug
+  `h2-em-jc-science`, level jc, subject
+  science, topic `h2-em`), stacked animation, slides, and printables sections, all
+  six materials validated before render for that pack, and
+  the shared teacher-keys toggle covering all twenty-four packs' print
+  stages, guarded by slice-scoped pack-demo tests (issue #885).
+
 - JC H2 electromagnetism gold lesson pack: five hand-authored gold
   samples for h2-em in
   samples/decks|worksheets|tickets|notes|scripts/jc-h2-em.json,
