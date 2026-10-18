@@ -1,0 +1,52 @@
+{
+  "definitions": [
+    {
+      "meaning": "Half the distance between the nuclei of two bonded atoms of the element: across period 3 it falls as nuclear charge rises at constant shielding.",
+      "term": "Atomic radius"
+    },
+    {
+      "meaning": "The energy needed to remove one mole of electrons from one mole of gaseous atoms to form gaseous 1+ ions: it rises across period 3, with dips at aluminium and sulphur.",
+      "term": "First ionisation energy"
+    },
+    {
+      "meaning": "The power of an atom to attract the electrons in a covalent bond: it rises across a period as radius falls and nuclear charge grows.",
+      "term": "Electronegativity"
+    },
+    {
+      "meaning": "A species that gains electrons and is itself reduced: the halogens are oxidising agents, strongest at the top of group 17 and weakening down the group.",
+      "term": "Oxidising agent"
+    },
+    {
+      "meaning": "A d-block element that forms at least one stable ion with a partially filled d subshell: the partial filling gives colour, variable oxidation states, complexes and catalysis.",
+      "term": "Transition metal"
+    },
+    {
+      "meaning": "A molecule or ion that donates a lone pair of electrons to a central metal ion, forming a coordinate bond in a complex ion.",
+      "term": "Ligand"
+    }
+  ],
+  "level": "jc",
+  "mechanismSteps": [
+    "Across period 3, atoms shrink: nuclear charge rises from sodium to argon at nearly constant shielding, so the outer electrons are pulled closer and the atoms get smaller.",
+    "Melting point tells the structure story: metallic structures for sodium to aluminium, a giant covalent lattice peaking at silicon, then simple molecular elements with weak intermolecular forces.",
+    "First ionisation energy: the rise, and two dips: the general rise follows rising nuclear charge and falling radius; the dips are magnesium to aluminium (3p electron removed) and phosphorus to sulphur (paired-electron repulsion).",
+    "Down group 2: reactivity climbs: atoms grow larger with more shielding down the group, the outer electrons are lost more easily, and reactivity with water climbs from magnesium to barium.",
+    "Down group 17: oxidising power falls: atoms grow larger down the group, an incoming electron is held less strongly, and oxidising power falls from chlorine to iodine.",
+    "Colour comes from partially filled d-orbitals: ligands split the d-orbitals into two energy levels, and electrons absorbing visible light as they jump between them give transition-metal ions their colour.",
+    "Ligands crowd the metal; catalysts flip oxidation states: ligands donate lone pairs to form complex ions, and variable oxidation states let transition metals catalyse reactions by flipping between states.",
+    "A common mistake: zinc is a transition metal: zinc forms only Zn2+, whose 3d subshell is completely filled, so by the ion-based definition zinc is a d-block element but not a transition metal."
+  ],
+  "objectives": [
+    "Explain the period 3 trends in atomic radius, melting point and first ionisation energy, including both dips",
+    "Explain reactivity down group 2 and oxidising power down group 17 using charge, radius and shielding",
+    "Define a transition metal by its ions and explain colour, complex formation and catalysis - and why zinc is excluded"
+  ],
+  "subject": "science",
+  "title": "JC H2 chemistry — inorganic: periodicity, groups and transition metals",
+  "topic": "h2-inorganic",
+  "trap": {
+    "explanation": "The d-block label reads as the definition of a transition metal. Zinc(II) has a full 3d subshell: no partially filled d orbitals, so zinc is not a transition metal. Zn2+ is [Ar] 3d10: with no partially filled d subshell there are no d-d transitions, which is why zinc compounds are colourless and form no coloured complexes - the behaviour in scenes s6 and s7 is exactly what zinc cannot do.",
+    "misconception": "Zinc is a transition metal because it sits in the d-block."
+  },
+  "workedExample": "Work through the first ionisation energies of magnesium and aluminium. Mg (738 kJ mol-1) has its outer electrons in the 3s orbital; Al (578 kJ mol-1) has one electron in the higher-energy 3p orbital. Aluminium has the greater nuclear charge, yet its first ionisation energy is lower by 738 - 578 = 160 kJ mol-1, because the 3p electron sits further from the nucleus and is shielded by the filled 3s orbital, so it is removed more easily. The same orbital logic explains the second dip: P (1012 kJ mol-1) to S (1000 kJ mol-1), where paired-electron repulsion in sulphur's 3p orbital does the work."
+}

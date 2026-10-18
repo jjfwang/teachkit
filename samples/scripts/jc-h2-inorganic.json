@@ -1,0 +1,81 @@
+{
+  "level": "jc",
+  "segments": [
+    {
+      "cue": "s1",
+      "minutes": 5,
+      "questions": [
+        "Why does the radius fall even though no electron shell is removed across the period?",
+        "Which period 3 element should be smallest, and how do you know?"
+      ],
+      "say": "Across period 3, atoms shrink. Nuclear charge rises from sodium to argon while shielding barely changes, so each atom holds its outer electrons tighter and smaller. Keep your student notes open at the atomic radius definition for this scene."
+    },
+    {
+      "cue": "s2",
+      "minutes": 5,
+      "questions": [
+        "Why does silicon melt so much higher than phosphorus, its neighbour?",
+        "What kind of force or bond must be broken to melt sulphur?"
+      ],
+      "say": "Melting point tells the structure story. Metals first, then the silicon peak from its giant covalent lattice, then the simple molecular elements falling away. Compare the bar heights with the structures listed in your student notes."
+    },
+    {
+      "cue": "s3",
+      "minutes": 6,
+      "questions": [
+        "Talk me through the magnesium to aluminium dip without using the word trend.",
+        "What stays the same and what changes at the phosphorus to sulphur dip?"
+      ],
+      "say": "First ionisation energy: the rise, and two dips. The rise is charge and radius; the dips are orbitals - 3p removal at aluminium, paired-electron repulsion at sulphur. Now try the ionisation-energy question on the worksheet in pairs."
+    },
+    {
+      "cue": "s4",
+      "minutes": 5,
+      "questions": [
+        "Why does reactivity rise down group 2 but oxidising power will fall down group 17?",
+        "Predict how radium would react with cold water, and justify it."
+      ],
+      "say": "Down group 2: reactivity climbs. Bigger atoms, more shielding, outer electrons lost more easily - magnesium barely reacts with cold water, barium reacts vigorously. Check the group 2 explanation against the definitions in your student notes."
+    },
+    {
+      "cue": "s5",
+      "minutes": 5,
+      "questions": [
+        "Chlorine turns potassium iodide solution brown - what formed, and who took electrons from whom?",
+        "Why can iodine never displace chloride from solution?"
+      ],
+      "say": "Down group 17: oxidising power falls. Larger atoms hold an incoming electron less strongly, so chlorine displaces bromide and iodide while iodine displaces neither. Work the displacement question on the worksheet now."
+    },
+    {
+      "cue": "s6",
+      "minutes": 6,
+      "questions": [
+        "Why does changing the ligand change the colour of the same metal ion?",
+        "A metal ion is 3d10. Predict its colour in solution and explain your prediction."
+      ],
+      "say": "Colour comes from partially filled d-orbitals. Ligands split the d-orbitals, electrons absorb visible light jumping the gap, and the colour you see is what is left over. Note the condition carefully - partially filled - because the exit ticket will test exactly that word."
+    },
+    {
+      "cue": "s7",
+      "minutes": 6,
+      "questions": [
+        "What does a ligand donate, and what kind of bond does it form?",
+        "Why does having several oxidation states make a metal a good catalyst?"
+      ],
+      "say": "Ligands crowd the metal; catalysts flip oxidation states. Ligands donate lone pairs to build complex ions, and variable oxidation states let metals like iron catalyse reactions. Finish the complex-ion question on the worksheet, then check your answer against your student notes."
+    },
+    {
+      "cue": "s8",
+      "minutes": 7,
+      "questions": [
+        "In one sentence, what does the definition of a transition metal actually require?",
+        "How would you correct a classmate who insists the d-block address settles the question?"
+      ],
+      "say": "A common mistake: zinc is a transition metal. The definition asks about the ion, not the address: a transition metal forms a stable ion with a partially filled d subshell. Finish the worksheet trap question now, then the exit ticket on your own - its first question revisits exactly this scene.",
+      "watchFor": "Zinc is a transition metal because it sits in the d-block. Listen and look for it on the worksheet and in pair talk: any answer resting on the d-block address alone shows the trap reading, not the definition - send them back to the Zn2+ electron configuration in this scene and to the correct turn: Zinc(II) has a full 3d subshell: no partially filled d orbitals, so zinc is not a transition metal."
+    }
+  ],
+  "subject": "science",
+  "title": "JC H2 chemistry — inorganic: periodicity, groups and transition metals",
+  "topic": "h2-inorganic"
+}
