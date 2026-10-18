@@ -12,6 +12,20 @@ version section when the release ships.
 
 ### Added
 
+- Primary mathematics volume lesson pack in the pack demo
+  (`player/pack-demo.html`): the Primary mathematics volume
+  gold lesson pack now appears on the same demo page as the other packs,
+  presenting all six primary-math-volume materials (animation,
+  slides, worksheet, exit ticket, student notes, and teacher
+  script) under its own
+  volume-primary-manifest header (slug
+  `volume-primary-math`, level primary, subject
+  math, topic `volume`), stacked animation, slides, and printables sections, all
+  six materials validated before render for that pack, and
+  the shared teacher-keys toggle covering all forty-one packs' print
+  stages, guarded by tests/pack-demo.test.js
+  (issue #953).
+
 - Primary mathematics volume gold lesson pack: five hand-authored gold samples for volume in samples/decks/primary-math-volume.json, samples/worksheets/primary-math-volume.json, samples/tickets/primary-math-volume.json, samples/notes/primary-math-volume.json and samples/scripts/primary-math-volume.json, keyed to the primary-math-volume animation scenes, misconception bank trap reused verbatim: The taller container holds more., guarded by tests/gold-volume-pack.test.js (issue #951).
 
 - Primary mathematics area and perimeter lesson pack in the pack demo
