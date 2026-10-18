@@ -1,0 +1,59 @@
+{
+  "level": "jc",
+  "questions": [
+    {
+      "choices": [
+        {
+          "text": "Every mutation harms the organism"
+        },
+        {
+          "correct": true,
+          "text": "Most mutations are neutral, some are harmful, and a rare few are beneficial"
+        },
+        {
+          "text": "Mutations only happen in gametes"
+        }
+      ],
+      "feedback": "That trap reading is the one to unlearn: Every mutation harms the organism. Reteach point: Most mutations are neutral: only some are harmful, and a rare few are the raw material of evolution.",
+      "id": "q1",
+      "kind": "multiple-choice",
+      "misconception": "Every mutation harms the organism.",
+      "prompt": "Which statement about mutations is true?"
+    },
+    {
+      "answer": "1 in 2 (two of the four Punnett boxes are Aa).",
+      "feedback": "Scene s2 locks the genotypes: AA, Aa, Aa, aa, so carriers are 2 boxes in 4 - a 1 in 2 chance, hidden inside the 3:1 phenotype ratio.",
+      "id": "q2",
+      "kind": "short-answer",
+      "prompt": "For the cross Aa x Aa, state the probability that a child is a carrier (Aa)."
+    },
+    {
+      "choices": [
+        {
+          "text": "9/16"
+        },
+        {
+          "text": "3/16"
+        },
+        {
+          "correct": true,
+          "text": "1/16"
+        }
+      ],
+      "feedback": "Scene s3 counts the classes 9:3:3:1 out of 16 boxes, so the double recessive is exactly 1 box in 16.",
+      "id": "q3",
+      "kind": "multiple-choice",
+      "prompt": "In a dihybrid cross with independent assortment, the double-recessive phenotype appears in what fraction of offspring?"
+    },
+    {
+      "answer": "DNA -> mRNA -> protein (transcription, then translation).",
+      "feedback": "Scene s1 shows information flowing one way: DNA is transcribed to mRNA, and mRNA is translated to protein - never the reverse.",
+      "id": "q4",
+      "kind": "short-answer",
+      "prompt": "State the correct order of information flow in the central dogma."
+    }
+  ],
+  "subject": "science",
+  "title": "JC H2 biology -- genetics: from DNA to inheritance Exit Ticket",
+  "topic": "h2-genetics"
+}

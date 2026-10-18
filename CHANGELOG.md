@@ -12,6 +12,19 @@ version section when the release ships.
 
 ### Added
 
+- JC H2 genetics gold lesson pack: five hand-authored gold
+  samples for h2-genetics in
+  samples/decks/jc-h2-genetics.json,
+  samples/worksheets/jc-h2-genetics.json,
+  samples/tickets/jc-h2-genetics.json,
+  samples/notes/jc-h2-genetics.json and
+  samples/scripts/jc-h2-genetics.json,
+  keyed to the jc-h2-genetics animation scenes and built around
+  the misconception bank trap reused verbatim: Every mutation
+  harms the organism., guarded by
+  tests/gold-genetics-jc-pack.test.js
+  (issue #907).
+
 - JC H2 cell biology lesson pack in the pack demo
   (`player/pack-demo.html`): the JC H2 cell biology
   gold lesson pack now appears on the same demo page as the other packs,
