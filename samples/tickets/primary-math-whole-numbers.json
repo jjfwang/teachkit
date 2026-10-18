@@ -1,0 +1,59 @@
+{
+  "level": "primary",
+  "questions": [
+    {
+      "choices": [
+        {
+          "text": "567"
+        },
+        {
+          "correct": true,
+          "text": "Five thousand and sixty-seven"
+        },
+        {
+          "text": "Five hundred and sixty-seven"
+        }
+      ],
+      "feedback": "That trap reading is the one to unlearn: Reading 5 0 6 7 as 567, skipping the zero. Reteach point: Zero holds its place: 5 0 6 7 is five thousand and sixty-seven, with the 0 keeping the hundreds empty.",
+      "id": "q1",
+      "kind": "multiple-choice",
+      "misconception": "Reading 5 0 6 7 as 567, skipping the zero.",
+      "prompt": "What number is written as 5 0 6 7?"
+    },
+    {
+      "answer": "45 + 25 = 70, then 70 - 30 = 40.",
+      "feedback": "Scene s5 locks the method: work left to right, one operation at a time - add the 25 first to reach 70, then take away the 30 to land on 40.",
+      "id": "q2",
+      "kind": "short-answer",
+      "prompt": "Work out 45 + 25 - 30, showing your two steps."
+    },
+    {
+      "choices": [
+        {
+          "text": "Adding the tops only and forgetting the carry"
+        },
+        {
+          "correct": true,
+          "text": "Regrouping ten ones into one ten and carrying it"
+        },
+        {
+          "text": "Reading the digits from left to right"
+        }
+      ],
+      "feedback": "Scene s2 shows twelve ones regrouping into one ten and two ones: whenever a column reaches ten, ten of that place become one of the next place up.",
+      "id": "q3",
+      "kind": "multiple-choice",
+      "prompt": "In 247 + 385, the ones add to 12. What happens next?"
+    },
+    {
+      "answer": "Four groups of three: 3 + 3 + 3 + 3 = 12.",
+      "feedback": "Scene s4 shows the array: four equal groups of three dots counted one by one give twelve, which is why 4 x 3 = 12.",
+      "id": "q4",
+      "kind": "short-answer",
+      "prompt": "Explain 4 x 3 using groups of dots."
+    }
+  ],
+  "subject": "math",
+  "title": "Whole numbers: place value, adding, subtracting, multiplying Exit Ticket",
+  "topic": "whole-numbers"
+}
