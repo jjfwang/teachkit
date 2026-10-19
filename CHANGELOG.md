@@ -12,6 +12,20 @@ version section when the release ships.
 
 ### Added
 
+- Primary science energy forms lesson pack in the pack demo
+  (`player/pack-demo.html`): the Primary science energy forms
+  gold lesson pack now appears on the same demo page as the other packs,
+  presenting all six primary-science-energy-forms materials (animation,
+  slides, worksheet, exit ticket, student notes, and teacher
+  script) under its own
+  energy-forms-primary-manifest header (slug
+  `energy-forms-primary-science`, level primary, subject
+  science, topic `energy-forms`), stacked animation, slides, and printables sections, all
+  six materials validated before render for that pack, and
+  the shared teacher-keys toggle covering all forty-seven packs' print
+  stages, guarded by tests/pack-demo.test.js
+  (issue #977).
+
 - Primary science energy-forms gold lesson pack: five hand-authored gold samples for energy-forms in samples/decks/primary-science-energy-forms.json, samples/worksheets/primary-science-energy-forms.json, samples/tickets/primary-science-energy-forms.json, samples/notes/primary-science-energy-forms.json and samples/scripts/primary-science-energy-forms.json, keyed to the primary-science-energy-forms animation scenes, misconception bank trap reused verbatim: Energy is used up, like fuel disappearing from a tank., guarded by tests/gold-energy-forms-pack.test.js (issue #975).
 
 - Primary science life-cycles gold lesson pack: five hand-authored gold samples for life-cycles in samples/decks/primary-science-life-cycles.json, samples/worksheets/primary-science-life-cycles.json, samples/tickets/primary-science-life-cycles.json, samples/notes/primary-science-life-cycles.json and samples/scripts/primary-science-life-cycles.json, keyed to the primary-science-life-cycles animation scenes, misconception bank trap reused verbatim: The flower is the end of the life of the plant., guarded by tests/gold-life-cycles-pack.test.js (issue #971).
