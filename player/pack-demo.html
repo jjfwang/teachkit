@@ -936,6 +936,24 @@
     <li><code>script</code> teacher script</li>
   </ul>
 </header>
+<header class="pack-manifest" id="weather-climate-primary-manifest">
+  <h1>Lesson pack: Primary geography weather-climate: Weather and climate: heat on the move</h1>
+  <dl>
+    <dt>Slug</dt><dd><code>weather-climate-primary-geography</code></dd>
+    <dt>Level</dt><dd>primary</dd>
+    <dt>Subject</dt><dd>geography</dd>
+    <dt>Topic</dt><dd><code>weather-climate</code></dd>
+  </dl>
+  <p>topic weather-climate · level primary · subject geography · deck primary-geog-weather-climate</p>
+  <ul class="pack-materials">
+    <li><code>animation</code></li>
+    <li><code>slides</code></li>
+    <li><code>worksheet</code></li>
+    <li><code>exitTicket</code> exit ticket</li>
+    <li><code>notes</code> student notes</li>
+    <li><code>script</code> teacher script</li>
+  </ul>
+</header>
 <section class="pack-section" id="animation-section">
   <h2>Animation</h2>
   <div id="anim-stage"></div>
@@ -1585,6 +1603,19 @@
   <h2>Primary geography plate tectonics printables</h2>
   <div id="plate-tectonics-primary-printables-stage"></div>
 </section>
+<section class="pack-section" id="weather-climate-primary-animation">
+  <h2>Primary geography weather climate animation</h2>
+  <div id="weather-climate-primary-stage"></div>
+  <div id="weather-climate-primary-captions"></div>
+</section>
+<section class="pack-section" id="weather-climate-primary-slides">
+  <h2>Primary geography weather climate slides</h2>
+  <div id="weather-climate-primary-slides-stage"></div>
+</section>
+<section class="pack-section" id="weather-climate-primary-printables">
+  <h2>Primary geography weather climate printables</h2>
+  <div id="weather-climate-primary-printables-stage"></div>
+</section>
 <div id="err"></div>
 <script src="validate.js"></script>
 <script src="player.js"></script>
@@ -1659,8 +1690,9 @@
     var forcesMagnetsPrimaryPrintStage = document.querySelector('#forces-magnets-primary-printables-stage .pr-stage') || document.querySelector('#forces-magnets-primary-printables-stage');
     var adaptationsPrimaryPrintStage = document.querySelector('#adaptations-primary-printables-stage .pr-stage') || document.querySelector('#adaptations-primary-printables-stage');
     var plateTectonicsPrimaryPrintStage = document.querySelector('#plate-tectonics-primary-printables-stage .pr-stage') || document.querySelector('#plate-tectonics-primary-printables-stage');
+    var weatherClimatePrimaryPrintStage = document.querySelector('#weather-climate-primary-printables-stage .pr-stage') || document.querySelector('#weather-climate-primary-printables-stage');
     var keys = [];
-    [printStage, fractionsPrintStage, wavesPrintStage, complexPrintStage, trigPrintStage, thermalPrintStage, photosynthesisPrintStage, erosionPrintStage, chemMolePrintStage, differentiationPrintStage, integrationPrintStage, binomialPrintStage, kinematicsPrintStage, quadraticPrintStage, trigonometryAPrintStage, vectorsPrintStage, functionsGraphsPrintStage, sequencesPrintStage, differentiationJcPrintStage, integrationJcPrintStage, probabilityJcPrintStage, statisticsJcPrintStage, mechanicsJcPrintStage, emJcPrintStage, quantumJcPrintStage, physicalJcPrintStage, inorganicJcPrintStage, organicJcPrintStage, cellBioJcPrintStage, geneticsJcPrintStage, energeticsJcPrintStage, ecologyJcPrintStage, wholeNumbersPrimaryPrintStage, decimalsPrimaryPrintStage, percentagePrimaryPrintStage, ratioPrimaryPrintStage, rateSpeedPrimaryPrintStage, algebraIntroPrimaryPrintStage, geometryAnglesPrimaryPrintStage, areaPerimeterPrimaryPrintStage, volumePrimaryPrintStage, dataGraphsPrimaryPrintStage, modelMethodPrimaryPrintStage, humanBodySystemsPrimaryPrintStage, plantSystemsPrimaryPrintStage, lifeCyclesPrimaryPrintStage, energyFormsPrimaryPrintStage, photosynthesisPrimaryPrintStage, forcesMagnetsPrimaryPrintStage, adaptationsPrimaryPrintStage, plateTectonicsPrimaryPrintStage].forEach(function (stage) {
+    [printStage, fractionsPrintStage, wavesPrintStage, complexPrintStage, trigPrintStage, thermalPrintStage, photosynthesisPrintStage, erosionPrintStage, chemMolePrintStage, differentiationPrintStage, integrationPrintStage, binomialPrintStage, kinematicsPrintStage, quadraticPrintStage, trigonometryAPrintStage, vectorsPrintStage, functionsGraphsPrintStage, sequencesPrintStage, differentiationJcPrintStage, integrationJcPrintStage, probabilityJcPrintStage, statisticsJcPrintStage, mechanicsJcPrintStage, emJcPrintStage, quantumJcPrintStage, physicalJcPrintStage, inorganicJcPrintStage, organicJcPrintStage, cellBioJcPrintStage, geneticsJcPrintStage, energeticsJcPrintStage, ecologyJcPrintStage, wholeNumbersPrimaryPrintStage, decimalsPrimaryPrintStage, percentagePrimaryPrintStage, ratioPrimaryPrintStage, rateSpeedPrimaryPrintStage, algebraIntroPrimaryPrintStage, geometryAnglesPrimaryPrintStage, areaPerimeterPrimaryPrintStage, volumePrimaryPrintStage, dataGraphsPrimaryPrintStage, modelMethodPrimaryPrintStage, humanBodySystemsPrimaryPrintStage, plantSystemsPrimaryPrintStage, lifeCyclesPrimaryPrintStage, energyFormsPrimaryPrintStage, photosynthesisPrimaryPrintStage, forcesMagnetsPrimaryPrintStage, adaptationsPrimaryPrintStage, plateTectonicsPrimaryPrintStage, weatherClimatePrimaryPrintStage].forEach(function (stage) {
       if (stage) {
         keys = keys.concat(Array.prototype.slice.call(stage.querySelectorAll('.pr-teacher')));
       }
@@ -5343,6 +5375,79 @@
     ].join('');
   }).catch(function (err) {
     showError('Primary geography plate tectonics pack failed to load: ' + err.message);
+  });
+})();
+</script>
+<script>
+(function () {
+  var presenter = document.getElementById('weather-climate-primary-slides-stage');
+  var weatherClimatePrimaryPrint = document.getElementById('weather-climate-primary-printables-stage');
+  var errBox = document.getElementById('err');
+  var weatherClimatePrimaryAnimUrl = '../samples/primary-geog-weather-climate.json';
+  var weatherClimatePrimaryDeckUrl = '../samples/decks/primary-geog-weather-climate.json';
+  var weatherClimatePrimaryWorksheetUrl = '../samples/worksheets/primary-geog-weather-climate.json';
+  var weatherClimatePrimaryTicketUrl = '../samples/tickets/primary-geog-weather-climate.json';
+  var weatherClimatePrimaryNotesUrl = '../samples/notes/primary-geog-weather-climate.json';
+  var weatherClimatePrimaryScriptUrl = '../samples/scripts/primary-geog-weather-climate.json';
+
+  function showError(msg) {
+    errBox.textContent = String(msg);
+  }
+
+  Promise.all([
+    fetch(weatherClimatePrimaryAnimUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + weatherClimatePrimaryAnimUrl);
+      return r.json();
+    }),
+    fetch(weatherClimatePrimaryDeckUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + weatherClimatePrimaryDeckUrl);
+      return r.json();
+    }),
+    fetch(weatherClimatePrimaryWorksheetUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + weatherClimatePrimaryWorksheetUrl);
+      return r.json();
+    }),
+    fetch(weatherClimatePrimaryTicketUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + weatherClimatePrimaryTicketUrl);
+      return r.json();
+    }),
+    fetch(weatherClimatePrimaryNotesUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + weatherClimatePrimaryNotesUrl);
+      return r.json();
+    }),
+    fetch(weatherClimatePrimaryScriptUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + weatherClimatePrimaryScriptUrl);
+      return r.json();
+    })
+  ]).then(function (pack) {
+    var anim = pack[0];
+    var deck = pack[1];
+    var worksheet = pack[2];
+    var ticket = pack[3];
+    var notes = pack[4];
+    var script = pack[5];
+    var problems = AnimathValidate.validateSpec(anim)
+      .concat(AnimathValidate.validateSlides(deck))
+      .concat(AnimathValidate.validateWorksheet(worksheet))
+      .concat(AnimathValidate.validateExitTicket(ticket))
+      .concat(AnimathValidate.validateNotes(notes))
+      .concat(AnimathValidate.validateScript(script));
+    if (problems.length) {
+      showError('Primary geography weather climate pack failed validation:\n' + problems.join('\n'));
+      return;
+    }
+    AnimathPlayer.mount(document.getElementById('weather-climate-primary-stage'), anim, { autoplay: false });
+    AnimathSlidesPresenter.attachPresenter(document, presenter, deck, { animSpec: anim });
+    weatherClimatePrimaryPrint.innerHTML = [
+      AnimathPrintable.renderWorksheet(worksheet),
+      AnimathPrintable.renderWorksheetAnswerKey(worksheet),
+      AnimathPrintable.renderExitTicket(ticket),
+      AnimathPrintable.renderExitTicketAnswerKey(ticket),
+      AnimathPrintable.renderNotes(notes),
+      AnimathPrintable.renderScript(script)
+    ].join('');
+  }).catch(function (err) {
+    showError('Primary geography weather climate pack failed to load: ' + err.message);
   });
 })();
 </script>
