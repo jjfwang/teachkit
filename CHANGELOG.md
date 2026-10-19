@@ -12,6 +12,20 @@ version section when the release ships.
 
 ### Added
 
+- Secondary E-Math algebra lesson pack in the pack demo
+  (`player/pack-demo.html`): the Secondary E-Math algebra
+  gold lesson pack now appears on the same demo page as the other packs,
+  presenting all six secondary-e-algebra materials (animation,
+  slides, worksheet, exit ticket, student notes, and teacher
+  script) under its own
+  e-algebra-secondary-manifest header (slug
+  `e-algebra-secondary-math`, level secondary, subject
+  math, topic `e-algebra`), stacked animation, slides, and printables sections, all
+  six materials validated before render for that pack, and
+  the shared teacher-keys toggle covering all fifty-four packs' print
+  stages, guarded by tests/pack-demo.test.js
+  (issue #1005).
+
 - Secondary E-Math e-algebra gold lesson pack: five hand-authored gold samples for e-algebra in samples/decks/secondary-e-algebra.json, samples/worksheets/secondary-e-algebra.json, samples/tickets/secondary-e-algebra.json, samples/notes/secondary-e-algebra.json and samples/scripts/secondary-e-algebra.json, keyed to the secondary-e-algebra animation scenes, misconception bank trap reused verbatim: (a + b)^2 = a^2 + b^2., guarded by tests/gold-e-algebra-pack.test.js (issue #1003).
 
 - Secondary E-Math numbers lesson pack in the pack demo
