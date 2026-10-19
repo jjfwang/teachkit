@@ -12,6 +12,20 @@ version section when the release ships.
 
 ### Added
 
+- Secondary E-Math numbers lesson pack in the pack demo
+  (`player/pack-demo.html`): the Secondary E-Math numbers
+  gold lesson pack now appears on the same demo page as the other packs,
+  presenting all six secondary-e-numbers materials (animation,
+  slides, worksheet, exit ticket, student notes, and teacher
+  script) under its own
+  e-numbers-secondary-manifest header (slug
+  `e-numbers-secondary-math`, level secondary, subject
+  math, topic `e-numbers`), stacked animation, slides, and printables sections, all
+  six materials validated before render for that pack, and
+  the shared teacher-keys toggle covering all fifty-three packs' print
+  stages, guarded by tests/pack-demo.test.js
+  (issue #1001).
+
 - Secondary E-Math e-numbers gold lesson pack: five hand-authored gold samples for e-numbers in samples/decks/secondary-e-numbers.json, samples/worksheets/secondary-e-numbers.json, samples/tickets/secondary-e-numbers.json, samples/notes/secondary-e-numbers.json and samples/scripts/secondary-e-numbers.json, keyed to the secondary-e-numbers animation scenes, misconception bank trap reused verbatim: Adding powers: 2^3 + 2^4 = 2^7., guarded by tests/gold-e-numbers-pack.test.js (issue #999).
 
 - Primary geography weather-climate lesson pack in the pack demo
