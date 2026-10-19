@@ -12,6 +12,20 @@ version section when the release ships.
 
 ### Added
 
+- Secondary E-Math functions and graphs lesson pack in the pack demo
+  (`player/pack-demo.html`): the Secondary E-Math functions and graphs
+  gold lesson pack now appears on the same demo page as the other packs,
+  presenting all six secondary-e-functions-graphs materials (animation,
+  slides, worksheet, exit ticket, student notes, and teacher
+  script) under its own
+  e-functions-graphs-secondary-manifest header (slug
+  `e-functions-graphs-secondary-math`, level secondary, subject
+  math, topic `e-functions-graphs`), stacked animation, slides, and printables sections, all
+  six materials validated before render for that pack, and
+  the shared teacher-keys toggle covering all fifty-five packs' print
+  stages, guarded by tests/pack-demo.test.js
+  (issue #1009).
+
 - Secondary E-Math e-functions-graphs gold lesson pack: five hand-authored gold samples for e-functions-graphs in samples/decks/secondary-e-functions-graphs.json, samples/worksheets/secondary-e-functions-graphs.json, samples/tickets/secondary-e-functions-graphs.json, samples/notes/secondary-e-functions-graphs.json and samples/scripts/secondary-e-functions-graphs.json, keyed to the secondary-e-functions-graphs animation scenes, misconception bank trap reused verbatim: The line with the bigger intercept is steeper., guarded by tests/gold-e-functions-graphs-pack.test.js (issue #1007).
 
 - Secondary E-Math algebra lesson pack in the pack demo
