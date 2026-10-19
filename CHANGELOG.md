@@ -12,6 +12,8 @@ version section when the release ships.
 
 ### Added
 
+- Secondary E-Math e-probability gold lesson pack: five hand-authored gold samples for e-probability in samples/decks/secondary-e-probability.json, samples/worksheets/secondary-e-probability.json, samples/tickets/secondary-e-probability.json, samples/notes/secondary-e-probability.json and samples/scripts/secondary-e-probability.json, keyed to the secondary-e-probability animation scenes, misconception bank trap reused verbatim: After three heads, tails is due., guarded by tests/gold-e-probability-pack.test.js (issue #1023).
+
 - Secondary E-Math statistics lesson pack in the pack demo
   (`player/pack-demo.html`): the Secondary E-Math statistics
   gold lesson pack now appears on the same demo page as the other packs,
