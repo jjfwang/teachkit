@@ -12,6 +12,20 @@ version section when the release ships.
 
 ### Added
 
+- Primary science photosynthesis lesson pack in the pack demo
+  (`player/pack-demo.html`): the Primary science photosynthesis
+  gold lesson pack now appears on the same demo page as the other packs,
+  presenting all six primary-science-photosynthesis materials (animation,
+  slides, worksheet, exit ticket, student notes, and teacher
+  script) under its own
+  photosynthesis-primary-manifest header (slug
+  `photosynthesis-primary-science`, level primary, subject
+  science, topic `photosynthesis`), stacked animation, slides, and printables sections, all
+  six materials validated before render for that pack, and
+  the shared teacher-keys toggle covering all forty-eight packs' print
+  stages, guarded by tests/pack-demo.test.js
+  (issue #981).
+
 - Primary science photosynthesis gold lesson pack: five hand-authored gold samples for photosynthesis in samples/decks/primary-science-photosynthesis.json, samples/worksheets/primary-science-photosynthesis.json, samples/tickets/primary-science-photosynthesis.json, samples/notes/primary-science-photosynthesis.json and samples/scripts/primary-science-photosynthesis.json, keyed to the primary-science-photosynthesis-intro animation scenes, misconception bank trap reused verbatim: Only animals breathe; plants do not., guarded by tests/gold-photosynthesis-primary-pack.test.js (issue #979).
 
 - Primary science energy forms lesson pack in the pack demo
