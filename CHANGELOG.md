@@ -12,6 +12,20 @@ version section when the release ships.
 
 ### Added
 
+- Secondary E-Math statistics lesson pack in the pack demo
+  (`player/pack-demo.html`): the Secondary E-Math statistics
+  gold lesson pack now appears on the same demo page as the other packs,
+  presenting all six secondary-e-statistics materials (animation,
+  slides, worksheet, exit ticket, student notes, and teacher
+  script) under its own
+  e-statistics-secondary-manifest header (slug
+  `e-statistics-secondary-math`, level secondary, subject
+  math, topic `e-statistics`), stacked animation, slides, and printables sections, all
+  six materials validated before render for that pack, and
+  the shared teacher-keys toggle covering all fifty-eight packs' print
+  stages, guarded by tests/pack-demo.test.js
+  (issue #1021).
+
 - Secondary E-Math mensuration lesson pack in the pack demo
   (`player/pack-demo.html`): the Secondary E-Math mensuration
   gold lesson pack now appears on the same demo page as the other packs,
