@@ -1080,6 +1080,24 @@
     <li><code>script</code> teacher script</li>
   </ul>
 </header>
+<header class="pack-manifest" id="phys-kinematics-secondary-manifest">
+  <h1>Lesson pack: Secondary science phys-kinematics: Motion: speed, velocity and graphs</h1>
+  <dl>
+    <dt>Slug</dt><dd><code>phys-kinematics-secondary-science</code></dd>
+    <dt>Level</dt><dd>secondary</dd>
+    <dt>Subject</dt><dd>science</dd>
+    <dt>Topic</dt><dd><code>phys-kinematics</code></dd>
+  </dl>
+  <p>topic phys-kinematics · level secondary · subject science · deck secondary-physics-kinematics</p>
+  <ul class="pack-materials">
+    <li><code>animation</code></li>
+    <li><code>slides</code></li>
+    <li><code>worksheet</code></li>
+    <li><code>exitTicket</code> exit ticket</li>
+    <li><code>notes</code> student notes</li>
+    <li><code>script</code> teacher script</li>
+  </ul>
+</header>
 <section class="pack-section" id="animation-section">
   <h2>Animation</h2>
   <div id="anim-stage"></div>
@@ -1833,6 +1851,19 @@
   <h2>Secondary E-Math probability printables</h2>
   <div id="e-probability-secondary-printables-stage"></div>
 </section>
+<section class="pack-section" id="phys-kinematics-secondary-animation">
+  <h2>Secondary Physics kinematics animation</h2>
+  <div id="phys-kinematics-secondary-stage"></div>
+  <div id="phys-kinematics-secondary-captions"></div>
+</section>
+<section class="pack-section" id="phys-kinematics-secondary-slides">
+  <h2>Secondary Physics kinematics slides</h2>
+  <div id="phys-kinematics-secondary-slides-stage"></div>
+</section>
+<section class="pack-section" id="phys-kinematics-secondary-printables">
+  <h2>Secondary Physics kinematics printables</h2>
+  <div id="phys-kinematics-secondary-printables-stage"></div>
+</section>
 <div id="err"></div>
 <script src="validate.js"></script>
 <script src="player.js"></script>
@@ -1915,8 +1946,9 @@
     var eMensurationSecondaryPrintStage = document.querySelector('#e-mensuration-secondary-printables-stage .pr-stage') || document.querySelector('#e-mensuration-secondary-printables-stage');
     var eStatisticsSecondaryPrintStage = document.querySelector('#e-statistics-secondary-printables-stage .pr-stage') || document.querySelector('#e-statistics-secondary-printables-stage');
     var eProbabilitySecondaryPrintStage = document.querySelector('#e-probability-secondary-printables-stage .pr-stage') || document.querySelector('#e-probability-secondary-printables-stage');
+    var physKinematicsSecondaryPrintStage = document.querySelector('#phys-kinematics-secondary-printables-stage .pr-stage') || document.querySelector('#phys-kinematics-secondary-printables-stage');
     var keys = [];
-    [printStage, fractionsPrintStage, wavesPrintStage, complexPrintStage, trigPrintStage, thermalPrintStage, photosynthesisPrintStage, erosionPrintStage, chemMolePrintStage, differentiationPrintStage, integrationPrintStage, binomialPrintStage, kinematicsPrintStage, quadraticPrintStage, trigonometryAPrintStage, vectorsPrintStage, functionsGraphsPrintStage, sequencesPrintStage, differentiationJcPrintStage, integrationJcPrintStage, probabilityJcPrintStage, statisticsJcPrintStage, mechanicsJcPrintStage, emJcPrintStage, quantumJcPrintStage, physicalJcPrintStage, inorganicJcPrintStage, organicJcPrintStage, cellBioJcPrintStage, geneticsJcPrintStage, energeticsJcPrintStage, ecologyJcPrintStage, wholeNumbersPrimaryPrintStage, decimalsPrimaryPrintStage, percentagePrimaryPrintStage, ratioPrimaryPrintStage, rateSpeedPrimaryPrintStage, algebraIntroPrimaryPrintStage, geometryAnglesPrimaryPrintStage, areaPerimeterPrimaryPrintStage, volumePrimaryPrintStage, dataGraphsPrimaryPrintStage, modelMethodPrimaryPrintStage, humanBodySystemsPrimaryPrintStage, plantSystemsPrimaryPrintStage, lifeCyclesPrimaryPrintStage, energyFormsPrimaryPrintStage, photosynthesisPrimaryPrintStage, forcesMagnetsPrimaryPrintStage, adaptationsPrimaryPrintStage, plateTectonicsPrimaryPrintStage, weatherClimatePrimaryPrintStage, eNumbersSecondaryPrintStage, eAlgebraSecondaryPrintStage, eFunctionsGraphsSecondaryPrintStage, eGeometrySecondaryPrintStage, eMensurationSecondaryPrintStage, eStatisticsSecondaryPrintStage, eProbabilitySecondaryPrintStage].forEach(function (stage) {
+    [printStage, fractionsPrintStage, wavesPrintStage, complexPrintStage, trigPrintStage, thermalPrintStage, photosynthesisPrintStage, erosionPrintStage, chemMolePrintStage, differentiationPrintStage, integrationPrintStage, binomialPrintStage, kinematicsPrintStage, quadraticPrintStage, trigonometryAPrintStage, vectorsPrintStage, functionsGraphsPrintStage, sequencesPrintStage, differentiationJcPrintStage, integrationJcPrintStage, probabilityJcPrintStage, statisticsJcPrintStage, mechanicsJcPrintStage, emJcPrintStage, quantumJcPrintStage, physicalJcPrintStage, inorganicJcPrintStage, organicJcPrintStage, cellBioJcPrintStage, geneticsJcPrintStage, energeticsJcPrintStage, ecologyJcPrintStage, wholeNumbersPrimaryPrintStage, decimalsPrimaryPrintStage, percentagePrimaryPrintStage, ratioPrimaryPrintStage, rateSpeedPrimaryPrintStage, algebraIntroPrimaryPrintStage, geometryAnglesPrimaryPrintStage, areaPerimeterPrimaryPrintStage, volumePrimaryPrintStage, dataGraphsPrimaryPrintStage, modelMethodPrimaryPrintStage, humanBodySystemsPrimaryPrintStage, plantSystemsPrimaryPrintStage, lifeCyclesPrimaryPrintStage, energyFormsPrimaryPrintStage, photosynthesisPrimaryPrintStage, forcesMagnetsPrimaryPrintStage, adaptationsPrimaryPrintStage, plateTectonicsPrimaryPrintStage, weatherClimatePrimaryPrintStage, eNumbersSecondaryPrintStage, eAlgebraSecondaryPrintStage, eFunctionsGraphsSecondaryPrintStage, eGeometrySecondaryPrintStage, eMensurationSecondaryPrintStage, eStatisticsSecondaryPrintStage, eProbabilitySecondaryPrintStage, physKinematicsSecondaryPrintStage].forEach(function (stage) {
       if (stage) {
         keys = keys.concat(Array.prototype.slice.call(stage.querySelectorAll('.pr-teacher')));
       }
@@ -6183,6 +6215,79 @@
     ].join('');
   }).catch(function (err) {
     showError('Secondary E-Math probability pack failed to load: ' + err.message);
+  });
+})();
+</script>
+<script>
+(function () {
+  var presenter = document.getElementById('phys-kinematics-secondary-slides-stage');
+  var physKinematicsSecondaryPrint = document.getElementById('phys-kinematics-secondary-printables-stage');
+  var errBox = document.getElementById('err');
+  var physKinematicsSecondaryAnimUrl = '../samples/secondary-physics-kinematics.json';
+  var physKinematicsSecondaryDeckUrl = '../samples/decks/secondary-physics-kinematics.json';
+  var physKinematicsSecondaryWorksheetUrl = '../samples/worksheets/secondary-physics-kinematics.json';
+  var physKinematicsSecondaryTicketUrl = '../samples/tickets/secondary-physics-kinematics.json';
+  var physKinematicsSecondaryNotesUrl = '../samples/notes/secondary-physics-kinematics.json';
+  var physKinematicsSecondaryScriptUrl = '../samples/scripts/secondary-physics-kinematics.json';
+
+  function showError(msg) {
+    errBox.textContent = String(msg);
+  }
+
+  Promise.all([
+    fetch(physKinematicsSecondaryAnimUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + physKinematicsSecondaryAnimUrl);
+      return r.json();
+    }),
+    fetch(physKinematicsSecondaryDeckUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + physKinematicsSecondaryDeckUrl);
+      return r.json();
+    }),
+    fetch(physKinematicsSecondaryWorksheetUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + physKinematicsSecondaryWorksheetUrl);
+      return r.json();
+    }),
+    fetch(physKinematicsSecondaryTicketUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + physKinematicsSecondaryTicketUrl);
+      return r.json();
+    }),
+    fetch(physKinematicsSecondaryNotesUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + physKinematicsSecondaryNotesUrl);
+      return r.json();
+    }),
+    fetch(physKinematicsSecondaryScriptUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + physKinematicsSecondaryScriptUrl);
+      return r.json();
+    })
+  ]).then(function (pack) {
+    var anim = pack[0];
+    var deck = pack[1];
+    var worksheet = pack[2];
+    var ticket = pack[3];
+    var notes = pack[4];
+    var script = pack[5];
+    var problems = AnimathValidate.validateSpec(anim)
+      .concat(AnimathValidate.validateSlides(deck))
+      .concat(AnimathValidate.validateWorksheet(worksheet))
+      .concat(AnimathValidate.validateExitTicket(ticket))
+      .concat(AnimathValidate.validateNotes(notes))
+      .concat(AnimathValidate.validateScript(script));
+    if (problems.length) {
+      showError('Secondary Physics kinematics pack failed validation:\n' + problems.join('\n'));
+      return;
+    }
+    AnimathPlayer.mount(document.getElementById('phys-kinematics-secondary-stage'), anim, { autoplay: false });
+    AnimathSlidesPresenter.attachPresenter(document, presenter, deck, { animSpec: anim });
+    physKinematicsSecondaryPrint.innerHTML = [
+      AnimathPrintable.renderWorksheet(worksheet),
+      AnimathPrintable.renderWorksheetAnswerKey(worksheet),
+      AnimathPrintable.renderExitTicket(ticket),
+      AnimathPrintable.renderExitTicketAnswerKey(ticket),
+      AnimathPrintable.renderNotes(notes),
+      AnimathPrintable.renderScript(script)
+    ].join('');
+  }).catch(function (err) {
+    showError('Secondary Physics kinematics pack failed to load: ' + err.message);
   });
 })();
 </script>
