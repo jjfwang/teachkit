@@ -918,6 +918,24 @@
     <li><code>script</code> teacher script</li>
   </ul>
 </header>
+<header class="pack-manifest" id="plate-tectonics-primary-manifest">
+  <h1>Lesson pack: Primary geography plate-tectonics: Plate tectonics: giant slabs on the move</h1>
+  <dl>
+    <dt>Slug</dt><dd><code>plate-tectonics-primary-geography</code></dd>
+    <dt>Level</dt><dd>primary</dd>
+    <dt>Subject</dt><dd>geography</dd>
+    <dt>Topic</dt><dd><code>plate-tectonics</code></dd>
+  </dl>
+  <p>topic plate-tectonics · level primary · subject geography · deck primary-geog-plate-tectonics</p>
+  <ul class="pack-materials">
+    <li><code>animation</code></li>
+    <li><code>slides</code></li>
+    <li><code>worksheet</code></li>
+    <li><code>exitTicket</code> exit ticket</li>
+    <li><code>notes</code> student notes</li>
+    <li><code>script</code> teacher script</li>
+  </ul>
+</header>
 <section class="pack-section" id="animation-section">
   <h2>Animation</h2>
   <div id="anim-stage"></div>
@@ -1554,6 +1572,19 @@
   <h2>Primary science adaptations printables</h2>
   <div id="adaptations-primary-printables-stage"></div>
 </section>
+<section class="pack-section" id="plate-tectonics-primary-animation">
+  <h2>Primary geography plate tectonics animation</h2>
+  <div id="plate-tectonics-primary-stage"></div>
+  <div id="plate-tectonics-primary-captions"></div>
+</section>
+<section class="pack-section" id="plate-tectonics-primary-slides">
+  <h2>Primary geography plate tectonics slides</h2>
+  <div id="plate-tectonics-primary-slides-stage"></div>
+</section>
+<section class="pack-section" id="plate-tectonics-primary-printables">
+  <h2>Primary geography plate tectonics printables</h2>
+  <div id="plate-tectonics-primary-printables-stage"></div>
+</section>
 <div id="err"></div>
 <script src="validate.js"></script>
 <script src="player.js"></script>
@@ -1627,8 +1658,9 @@
     var photosynthesisPrimaryPrintStage = document.querySelector('#photosynthesis-primary-printables-stage .pr-stage') || document.querySelector('#photosynthesis-primary-printables-stage');
     var forcesMagnetsPrimaryPrintStage = document.querySelector('#forces-magnets-primary-printables-stage .pr-stage') || document.querySelector('#forces-magnets-primary-printables-stage');
     var adaptationsPrimaryPrintStage = document.querySelector('#adaptations-primary-printables-stage .pr-stage') || document.querySelector('#adaptations-primary-printables-stage');
+    var plateTectonicsPrimaryPrintStage = document.querySelector('#plate-tectonics-primary-printables-stage .pr-stage') || document.querySelector('#plate-tectonics-primary-printables-stage');
     var keys = [];
-    [printStage, fractionsPrintStage, wavesPrintStage, complexPrintStage, trigPrintStage, thermalPrintStage, photosynthesisPrintStage, erosionPrintStage, chemMolePrintStage, differentiationPrintStage, integrationPrintStage, binomialPrintStage, kinematicsPrintStage, quadraticPrintStage, trigonometryAPrintStage, vectorsPrintStage, functionsGraphsPrintStage, sequencesPrintStage, differentiationJcPrintStage, integrationJcPrintStage, probabilityJcPrintStage, statisticsJcPrintStage, mechanicsJcPrintStage, emJcPrintStage, quantumJcPrintStage, physicalJcPrintStage, inorganicJcPrintStage, organicJcPrintStage, cellBioJcPrintStage, geneticsJcPrintStage, energeticsJcPrintStage, ecologyJcPrintStage, wholeNumbersPrimaryPrintStage, decimalsPrimaryPrintStage, percentagePrimaryPrintStage, ratioPrimaryPrintStage, rateSpeedPrimaryPrintStage, algebraIntroPrimaryPrintStage, geometryAnglesPrimaryPrintStage, areaPerimeterPrimaryPrintStage, volumePrimaryPrintStage, dataGraphsPrimaryPrintStage, modelMethodPrimaryPrintStage, humanBodySystemsPrimaryPrintStage, plantSystemsPrimaryPrintStage, lifeCyclesPrimaryPrintStage, energyFormsPrimaryPrintStage, photosynthesisPrimaryPrintStage, forcesMagnetsPrimaryPrintStage, adaptationsPrimaryPrintStage].forEach(function (stage) {
+    [printStage, fractionsPrintStage, wavesPrintStage, complexPrintStage, trigPrintStage, thermalPrintStage, photosynthesisPrintStage, erosionPrintStage, chemMolePrintStage, differentiationPrintStage, integrationPrintStage, binomialPrintStage, kinematicsPrintStage, quadraticPrintStage, trigonometryAPrintStage, vectorsPrintStage, functionsGraphsPrintStage, sequencesPrintStage, differentiationJcPrintStage, integrationJcPrintStage, probabilityJcPrintStage, statisticsJcPrintStage, mechanicsJcPrintStage, emJcPrintStage, quantumJcPrintStage, physicalJcPrintStage, inorganicJcPrintStage, organicJcPrintStage, cellBioJcPrintStage, geneticsJcPrintStage, energeticsJcPrintStage, ecologyJcPrintStage, wholeNumbersPrimaryPrintStage, decimalsPrimaryPrintStage, percentagePrimaryPrintStage, ratioPrimaryPrintStage, rateSpeedPrimaryPrintStage, algebraIntroPrimaryPrintStage, geometryAnglesPrimaryPrintStage, areaPerimeterPrimaryPrintStage, volumePrimaryPrintStage, dataGraphsPrimaryPrintStage, modelMethodPrimaryPrintStage, humanBodySystemsPrimaryPrintStage, plantSystemsPrimaryPrintStage, lifeCyclesPrimaryPrintStage, energyFormsPrimaryPrintStage, photosynthesisPrimaryPrintStage, forcesMagnetsPrimaryPrintStage, adaptationsPrimaryPrintStage, plateTectonicsPrimaryPrintStage].forEach(function (stage) {
       if (stage) {
         keys = keys.concat(Array.prototype.slice.call(stage.querySelectorAll('.pr-teacher')));
       }
@@ -5238,6 +5270,79 @@
     ].join('');
   }).catch(function (err) {
     showError('Primary science adaptations pack failed to load: ' + err.message);
+  });
+})();
+</script>
+<script>
+(function () {
+  var presenter = document.getElementById('plate-tectonics-primary-slides-stage');
+  var plateTectonicsPrimaryPrint = document.getElementById('plate-tectonics-primary-printables-stage');
+  var errBox = document.getElementById('err');
+  var plateTectonicsPrimaryAnimUrl = '../samples/primary-geog-plate-tectonics.json';
+  var plateTectonicsPrimaryDeckUrl = '../samples/decks/primary-geog-plate-tectonics.json';
+  var plateTectonicsPrimaryWorksheetUrl = '../samples/worksheets/primary-geog-plate-tectonics.json';
+  var plateTectonicsPrimaryTicketUrl = '../samples/tickets/primary-geog-plate-tectonics.json';
+  var plateTectonicsPrimaryNotesUrl = '../samples/notes/primary-geog-plate-tectonics.json';
+  var plateTectonicsPrimaryScriptUrl = '../samples/scripts/primary-geog-plate-tectonics.json';
+
+  function showError(msg) {
+    errBox.textContent = String(msg);
+  }
+
+  Promise.all([
+    fetch(plateTectonicsPrimaryAnimUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + plateTectonicsPrimaryAnimUrl);
+      return r.json();
+    }),
+    fetch(plateTectonicsPrimaryDeckUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + plateTectonicsPrimaryDeckUrl);
+      return r.json();
+    }),
+    fetch(plateTectonicsPrimaryWorksheetUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + plateTectonicsPrimaryWorksheetUrl);
+      return r.json();
+    }),
+    fetch(plateTectonicsPrimaryTicketUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + plateTectonicsPrimaryTicketUrl);
+      return r.json();
+    }),
+    fetch(plateTectonicsPrimaryNotesUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + plateTectonicsPrimaryNotesUrl);
+      return r.json();
+    }),
+    fetch(plateTectonicsPrimaryScriptUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + plateTectonicsPrimaryScriptUrl);
+      return r.json();
+    })
+  ]).then(function (pack) {
+    var anim = pack[0];
+    var deck = pack[1];
+    var worksheet = pack[2];
+    var ticket = pack[3];
+    var notes = pack[4];
+    var script = pack[5];
+    var problems = AnimathValidate.validateSpec(anim)
+      .concat(AnimathValidate.validateSlides(deck))
+      .concat(AnimathValidate.validateWorksheet(worksheet))
+      .concat(AnimathValidate.validateExitTicket(ticket))
+      .concat(AnimathValidate.validateNotes(notes))
+      .concat(AnimathValidate.validateScript(script));
+    if (problems.length) {
+      showError('Primary geography plate tectonics pack failed validation:\n' + problems.join('\n'));
+      return;
+    }
+    AnimathPlayer.mount(document.getElementById('plate-tectonics-primary-stage'), anim, { autoplay: false });
+    AnimathSlidesPresenter.attachPresenter(document, presenter, deck, { animSpec: anim });
+    plateTectonicsPrimaryPrint.innerHTML = [
+      AnimathPrintable.renderWorksheet(worksheet),
+      AnimathPrintable.renderWorksheetAnswerKey(worksheet),
+      AnimathPrintable.renderExitTicket(ticket),
+      AnimathPrintable.renderExitTicketAnswerKey(ticket),
+      AnimathPrintable.renderNotes(notes),
+      AnimathPrintable.renderScript(script)
+    ].join('');
+  }).catch(function (err) {
+    showError('Primary geography plate tectonics pack failed to load: ' + err.message);
   });
 })();
 </script>
