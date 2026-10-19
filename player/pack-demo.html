@@ -1062,6 +1062,24 @@
     <li><code>script</code> teacher script</li>
   </ul>
 </header>
+<header class="pack-manifest" id="e-probability-secondary-manifest">
+  <h1>Lesson pack: Secondary math e-probability: E-Math probability: single and combined events</h1>
+  <dl>
+    <dt>Slug</dt><dd><code>e-probability-secondary-math</code></dd>
+    <dt>Level</dt><dd>secondary</dd>
+    <dt>Subject</dt><dd>math</dd>
+    <dt>Topic</dt><dd><code>e-probability</code></dd>
+  </dl>
+  <p>topic e-probability · level secondary · subject math · deck secondary-e-probability</p>
+  <ul class="pack-materials">
+    <li><code>animation</code></li>
+    <li><code>slides</code></li>
+    <li><code>worksheet</code></li>
+    <li><code>exitTicket</code> exit ticket</li>
+    <li><code>notes</code> student notes</li>
+    <li><code>script</code> teacher script</li>
+  </ul>
+</header>
 <section class="pack-section" id="animation-section">
   <h2>Animation</h2>
   <div id="anim-stage"></div>
@@ -1802,6 +1820,19 @@
   <h2>Secondary E-Math statistics printables</h2>
   <div id="e-statistics-secondary-printables-stage"></div>
 </section>
+<section class="pack-section" id="e-probability-secondary-animation">
+  <h2>Secondary E-Math probability animation</h2>
+  <div id="e-probability-secondary-stage"></div>
+  <div id="e-probability-secondary-captions"></div>
+</section>
+<section class="pack-section" id="e-probability-secondary-slides">
+  <h2>Secondary E-Math probability slides</h2>
+  <div id="e-probability-secondary-slides-stage"></div>
+</section>
+<section class="pack-section" id="e-probability-secondary-printables">
+  <h2>Secondary E-Math probability printables</h2>
+  <div id="e-probability-secondary-printables-stage"></div>
+</section>
 <div id="err"></div>
 <script src="validate.js"></script>
 <script src="player.js"></script>
@@ -1883,8 +1914,9 @@
     var eGeometrySecondaryPrintStage = document.querySelector('#e-geometry-secondary-printables-stage .pr-stage') || document.querySelector('#e-geometry-secondary-printables-stage');
     var eMensurationSecondaryPrintStage = document.querySelector('#e-mensuration-secondary-printables-stage .pr-stage') || document.querySelector('#e-mensuration-secondary-printables-stage');
     var eStatisticsSecondaryPrintStage = document.querySelector('#e-statistics-secondary-printables-stage .pr-stage') || document.querySelector('#e-statistics-secondary-printables-stage');
+    var eProbabilitySecondaryPrintStage = document.querySelector('#e-probability-secondary-printables-stage .pr-stage') || document.querySelector('#e-probability-secondary-printables-stage');
     var keys = [];
-    [printStage, fractionsPrintStage, wavesPrintStage, complexPrintStage, trigPrintStage, thermalPrintStage, photosynthesisPrintStage, erosionPrintStage, chemMolePrintStage, differentiationPrintStage, integrationPrintStage, binomialPrintStage, kinematicsPrintStage, quadraticPrintStage, trigonometryAPrintStage, vectorsPrintStage, functionsGraphsPrintStage, sequencesPrintStage, differentiationJcPrintStage, integrationJcPrintStage, probabilityJcPrintStage, statisticsJcPrintStage, mechanicsJcPrintStage, emJcPrintStage, quantumJcPrintStage, physicalJcPrintStage, inorganicJcPrintStage, organicJcPrintStage, cellBioJcPrintStage, geneticsJcPrintStage, energeticsJcPrintStage, ecologyJcPrintStage, wholeNumbersPrimaryPrintStage, decimalsPrimaryPrintStage, percentagePrimaryPrintStage, ratioPrimaryPrintStage, rateSpeedPrimaryPrintStage, algebraIntroPrimaryPrintStage, geometryAnglesPrimaryPrintStage, areaPerimeterPrimaryPrintStage, volumePrimaryPrintStage, dataGraphsPrimaryPrintStage, modelMethodPrimaryPrintStage, humanBodySystemsPrimaryPrintStage, plantSystemsPrimaryPrintStage, lifeCyclesPrimaryPrintStage, energyFormsPrimaryPrintStage, photosynthesisPrimaryPrintStage, forcesMagnetsPrimaryPrintStage, adaptationsPrimaryPrintStage, plateTectonicsPrimaryPrintStage, weatherClimatePrimaryPrintStage, eNumbersSecondaryPrintStage, eAlgebraSecondaryPrintStage, eFunctionsGraphsSecondaryPrintStage, eGeometrySecondaryPrintStage, eMensurationSecondaryPrintStage, eStatisticsSecondaryPrintStage].forEach(function (stage) {
+    [printStage, fractionsPrintStage, wavesPrintStage, complexPrintStage, trigPrintStage, thermalPrintStage, photosynthesisPrintStage, erosionPrintStage, chemMolePrintStage, differentiationPrintStage, integrationPrintStage, binomialPrintStage, kinematicsPrintStage, quadraticPrintStage, trigonometryAPrintStage, vectorsPrintStage, functionsGraphsPrintStage, sequencesPrintStage, differentiationJcPrintStage, integrationJcPrintStage, probabilityJcPrintStage, statisticsJcPrintStage, mechanicsJcPrintStage, emJcPrintStage, quantumJcPrintStage, physicalJcPrintStage, inorganicJcPrintStage, organicJcPrintStage, cellBioJcPrintStage, geneticsJcPrintStage, energeticsJcPrintStage, ecologyJcPrintStage, wholeNumbersPrimaryPrintStage, decimalsPrimaryPrintStage, percentagePrimaryPrintStage, ratioPrimaryPrintStage, rateSpeedPrimaryPrintStage, algebraIntroPrimaryPrintStage, geometryAnglesPrimaryPrintStage, areaPerimeterPrimaryPrintStage, volumePrimaryPrintStage, dataGraphsPrimaryPrintStage, modelMethodPrimaryPrintStage, humanBodySystemsPrimaryPrintStage, plantSystemsPrimaryPrintStage, lifeCyclesPrimaryPrintStage, energyFormsPrimaryPrintStage, photosynthesisPrimaryPrintStage, forcesMagnetsPrimaryPrintStage, adaptationsPrimaryPrintStage, plateTectonicsPrimaryPrintStage, weatherClimatePrimaryPrintStage, eNumbersSecondaryPrintStage, eAlgebraSecondaryPrintStage, eFunctionsGraphsSecondaryPrintStage, eGeometrySecondaryPrintStage, eMensurationSecondaryPrintStage, eStatisticsSecondaryPrintStage, eProbabilitySecondaryPrintStage].forEach(function (stage) {
       if (stage) {
         keys = keys.concat(Array.prototype.slice.call(stage.querySelectorAll('.pr-teacher')));
       }
@@ -6078,6 +6110,79 @@
     ].join('');
   }).catch(function (err) {
     showError('Secondary E-Math statistics pack failed to load: ' + err.message);
+  });
+})();
+</script>
+<script>
+(function () {
+  var presenter = document.getElementById('e-probability-secondary-slides-stage');
+  var eProbabilitySecondaryPrint = document.getElementById('e-probability-secondary-printables-stage');
+  var errBox = document.getElementById('err');
+  var eProbabilitySecondaryAnimUrl = '../samples/secondary-e-probability.json';
+  var eProbabilitySecondaryDeckUrl = '../samples/decks/secondary-e-probability.json';
+  var eProbabilitySecondaryWorksheetUrl = '../samples/worksheets/secondary-e-probability.json';
+  var eProbabilitySecondaryTicketUrl = '../samples/tickets/secondary-e-probability.json';
+  var eProbabilitySecondaryNotesUrl = '../samples/notes/secondary-e-probability.json';
+  var eProbabilitySecondaryScriptUrl = '../samples/scripts/secondary-e-probability.json';
+
+  function showError(msg) {
+    errBox.textContent = String(msg);
+  }
+
+  Promise.all([
+    fetch(eProbabilitySecondaryAnimUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + eProbabilitySecondaryAnimUrl);
+      return r.json();
+    }),
+    fetch(eProbabilitySecondaryDeckUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + eProbabilitySecondaryDeckUrl);
+      return r.json();
+    }),
+    fetch(eProbabilitySecondaryWorksheetUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + eProbabilitySecondaryWorksheetUrl);
+      return r.json();
+    }),
+    fetch(eProbabilitySecondaryTicketUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + eProbabilitySecondaryTicketUrl);
+      return r.json();
+    }),
+    fetch(eProbabilitySecondaryNotesUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + eProbabilitySecondaryNotesUrl);
+      return r.json();
+    }),
+    fetch(eProbabilitySecondaryScriptUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + eProbabilitySecondaryScriptUrl);
+      return r.json();
+    })
+  ]).then(function (pack) {
+    var anim = pack[0];
+    var deck = pack[1];
+    var worksheet = pack[2];
+    var ticket = pack[3];
+    var notes = pack[4];
+    var script = pack[5];
+    var problems = AnimathValidate.validateSpec(anim)
+      .concat(AnimathValidate.validateSlides(deck))
+      .concat(AnimathValidate.validateWorksheet(worksheet))
+      .concat(AnimathValidate.validateExitTicket(ticket))
+      .concat(AnimathValidate.validateNotes(notes))
+      .concat(AnimathValidate.validateScript(script));
+    if (problems.length) {
+      showError('Secondary E-Math probability pack failed validation:\n' + problems.join('\n'));
+      return;
+    }
+    AnimathPlayer.mount(document.getElementById('e-probability-secondary-stage'), anim, { autoplay: false });
+    AnimathSlidesPresenter.attachPresenter(document, presenter, deck, { animSpec: anim });
+    eProbabilitySecondaryPrint.innerHTML = [
+      AnimathPrintable.renderWorksheet(worksheet),
+      AnimathPrintable.renderWorksheetAnswerKey(worksheet),
+      AnimathPrintable.renderExitTicket(ticket),
+      AnimathPrintable.renderExitTicketAnswerKey(ticket),
+      AnimathPrintable.renderNotes(notes),
+      AnimathPrintable.renderScript(script)
+    ].join('');
+  }).catch(function (err) {
+    showError('Secondary E-Math probability pack failed to load: ' + err.message);
   });
 })();
 </script>
