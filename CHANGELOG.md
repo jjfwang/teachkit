@@ -12,6 +12,20 @@ version section when the release ships.
 
 ### Added
 
+- Secondary E-Math mensuration lesson pack in the pack demo
+  (`player/pack-demo.html`): the Secondary E-Math mensuration
+  gold lesson pack now appears on the same demo page as the other packs,
+  presenting all six secondary-e-mensuration materials (animation,
+  slides, worksheet, exit ticket, student notes, and teacher
+  script) under its own
+  e-mensuration-secondary-manifest header (slug
+  `e-mensuration-secondary-math`, level secondary, subject
+  math, topic `e-mensuration`), stacked animation, slides, and printables sections, all
+  six materials validated before render for that pack, and
+  the shared teacher-keys toggle covering all fifty-seven packs' print
+  stages, guarded by tests/pack-demo.test.js
+  (issue #1017).
+
 - Secondary E-Math geometry lesson pack in the pack demo
   (`player/pack-demo.html`): the Secondary E-Math geometry
   gold lesson pack now appears on the same demo page as the other packs,
