@@ -828,6 +828,24 @@
     <li><code>script</code> teacher script</li>
   </ul>
 </header>
+<header class="pack-manifest" id="life-cycles-primary-manifest">
+  <h1>Lesson pack: Primary science life cycles: Life cycles: plants and animals</h1>
+  <dl>
+    <dt>Slug</dt><dd><code>life-cycles-primary-science</code></dd>
+    <dt>Level</dt><dd>primary</dd>
+    <dt>Subject</dt><dd>science</dd>
+    <dt>Topic</dt><dd><code>life-cycles</code></dd>
+  </dl>
+  <p>topic life-cycles · level primary · subject science · deck primary-science-life-cycles</p>
+  <ul class="pack-materials">
+    <li><code>animation</code></li>
+    <li><code>slides</code></li>
+    <li><code>worksheet</code></li>
+    <li><code>exitTicket</code> exit ticket</li>
+    <li><code>notes</code> student notes</li>
+    <li><code>script</code> teacher script</li>
+  </ul>
+</header>
 <section class="pack-section" id="animation-section">
   <h2>Animation</h2>
   <div id="anim-stage"></div>
@@ -1399,6 +1417,19 @@
   <h2>Primary science plant systems printables</h2>
   <div id="plant-systems-primary-printables-stage"></div>
 </section>
+<section class="pack-section" id="life-cycles-primary-animation">
+  <h2>Primary science life cycles animation</h2>
+  <div id="life-cycles-primary-stage"></div>
+  <div id="life-cycles-primary-captions"></div>
+</section>
+<section class="pack-section" id="life-cycles-primary-slides">
+  <h2>Primary science life cycles slides</h2>
+  <div id="life-cycles-primary-slides-stage"></div>
+</section>
+<section class="pack-section" id="life-cycles-primary-printables">
+  <h2>Primary science life cycles printables</h2>
+  <div id="life-cycles-primary-printables-stage"></div>
+</section>
 <div id="err"></div>
 <script src="validate.js"></script>
 <script src="player.js"></script>
@@ -1467,8 +1498,9 @@
     var modelMethodPrimaryPrintStage = document.querySelector('#model-method-primary-printables-stage .pr-stage') || document.querySelector('#model-method-primary-printables-stage');
     var humanBodySystemsPrimaryPrintStage = document.querySelector('#human-body-systems-primary-printables-stage .pr-stage') || document.querySelector('#human-body-systems-primary-printables-stage');
     var plantSystemsPrimaryPrintStage = document.querySelector('#plant-systems-primary-printables-stage .pr-stage') || document.querySelector('#plant-systems-primary-printables-stage');
+    var lifeCyclesPrimaryPrintStage = document.querySelector('#life-cycles-primary-printables-stage .pr-stage') || document.querySelector('#life-cycles-primary-printables-stage');
     var keys = [];
-    [printStage, fractionsPrintStage, wavesPrintStage, complexPrintStage, trigPrintStage, thermalPrintStage, photosynthesisPrintStage, erosionPrintStage, chemMolePrintStage, differentiationPrintStage, integrationPrintStage, binomialPrintStage, kinematicsPrintStage, quadraticPrintStage, trigonometryAPrintStage, vectorsPrintStage, functionsGraphsPrintStage, sequencesPrintStage, differentiationJcPrintStage, integrationJcPrintStage, probabilityJcPrintStage, statisticsJcPrintStage, mechanicsJcPrintStage, emJcPrintStage, quantumJcPrintStage, physicalJcPrintStage, inorganicJcPrintStage, organicJcPrintStage, cellBioJcPrintStage, geneticsJcPrintStage, energeticsJcPrintStage, ecologyJcPrintStage, wholeNumbersPrimaryPrintStage, decimalsPrimaryPrintStage, percentagePrimaryPrintStage, ratioPrimaryPrintStage, rateSpeedPrimaryPrintStage, algebraIntroPrimaryPrintStage, geometryAnglesPrimaryPrintStage, areaPerimeterPrimaryPrintStage, volumePrimaryPrintStage, dataGraphsPrimaryPrintStage, modelMethodPrimaryPrintStage, humanBodySystemsPrimaryPrintStage, plantSystemsPrimaryPrintStage].forEach(function (stage) {
+    [printStage, fractionsPrintStage, wavesPrintStage, complexPrintStage, trigPrintStage, thermalPrintStage, photosynthesisPrintStage, erosionPrintStage, chemMolePrintStage, differentiationPrintStage, integrationPrintStage, binomialPrintStage, kinematicsPrintStage, quadraticPrintStage, trigonometryAPrintStage, vectorsPrintStage, functionsGraphsPrintStage, sequencesPrintStage, differentiationJcPrintStage, integrationJcPrintStage, probabilityJcPrintStage, statisticsJcPrintStage, mechanicsJcPrintStage, emJcPrintStage, quantumJcPrintStage, physicalJcPrintStage, inorganicJcPrintStage, organicJcPrintStage, cellBioJcPrintStage, geneticsJcPrintStage, energeticsJcPrintStage, ecologyJcPrintStage, wholeNumbersPrimaryPrintStage, decimalsPrimaryPrintStage, percentagePrimaryPrintStage, ratioPrimaryPrintStage, rateSpeedPrimaryPrintStage, algebraIntroPrimaryPrintStage, geometryAnglesPrimaryPrintStage, areaPerimeterPrimaryPrintStage, volumePrimaryPrintStage, dataGraphsPrimaryPrintStage, modelMethodPrimaryPrintStage, humanBodySystemsPrimaryPrintStage, plantSystemsPrimaryPrintStage, lifeCyclesPrimaryPrintStage].forEach(function (stage) {
       if (stage) {
         keys = keys.concat(Array.prototype.slice.call(stage.querySelectorAll('.pr-teacher')));
       }
@@ -4713,6 +4745,79 @@
     ].join('');
   }).catch(function (err) {
     showError('Primary science plant systems pack failed to load: ' + err.message);
+  });
+})();
+</script>
+<script>
+(function () {
+  var presenter = document.getElementById('life-cycles-primary-slides-stage');
+  var lifeCyclesPrimaryPrint = document.getElementById('life-cycles-primary-printables-stage');
+  var errBox = document.getElementById('err');
+  var lifeCyclesPrimaryAnimUrl = '../samples/primary-science-life-cycles.json';
+  var lifeCyclesPrimaryDeckUrl = '../samples/decks/primary-science-life-cycles.json';
+  var lifeCyclesPrimaryWorksheetUrl = '../samples/worksheets/primary-science-life-cycles.json';
+  var lifeCyclesPrimaryTicketUrl = '../samples/tickets/primary-science-life-cycles.json';
+  var lifeCyclesPrimaryNotesUrl = '../samples/notes/primary-science-life-cycles.json';
+  var lifeCyclesPrimaryScriptUrl = '../samples/scripts/primary-science-life-cycles.json';
+
+  function showError(msg) {
+    errBox.textContent = String(msg);
+  }
+
+  Promise.all([
+    fetch(lifeCyclesPrimaryAnimUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + lifeCyclesPrimaryAnimUrl);
+      return r.json();
+    }),
+    fetch(lifeCyclesPrimaryDeckUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + lifeCyclesPrimaryDeckUrl);
+      return r.json();
+    }),
+    fetch(lifeCyclesPrimaryWorksheetUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + lifeCyclesPrimaryWorksheetUrl);
+      return r.json();
+    }),
+    fetch(lifeCyclesPrimaryTicketUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + lifeCyclesPrimaryTicketUrl);
+      return r.json();
+    }),
+    fetch(lifeCyclesPrimaryNotesUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + lifeCyclesPrimaryNotesUrl);
+      return r.json();
+    }),
+    fetch(lifeCyclesPrimaryScriptUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + lifeCyclesPrimaryScriptUrl);
+      return r.json();
+    })
+  ]).then(function (pack) {
+    var anim = pack[0];
+    var deck = pack[1];
+    var worksheet = pack[2];
+    var ticket = pack[3];
+    var notes = pack[4];
+    var script = pack[5];
+    var problems = AnimathValidate.validateSpec(anim)
+      .concat(AnimathValidate.validateSlides(deck))
+      .concat(AnimathValidate.validateWorksheet(worksheet))
+      .concat(AnimathValidate.validateExitTicket(ticket))
+      .concat(AnimathValidate.validateNotes(notes))
+      .concat(AnimathValidate.validateScript(script));
+    if (problems.length) {
+      showError('Primary science life cycles pack failed validation:\n' + problems.join('\n'));
+      return;
+    }
+    AnimathPlayer.mount(document.getElementById('life-cycles-primary-stage'), anim, { autoplay: false });
+    AnimathSlidesPresenter.attachPresenter(document, presenter, deck, { animSpec: anim });
+    lifeCyclesPrimaryPrint.innerHTML = [
+      AnimathPrintable.renderWorksheet(worksheet),
+      AnimathPrintable.renderWorksheetAnswerKey(worksheet),
+      AnimathPrintable.renderExitTicket(ticket),
+      AnimathPrintable.renderExitTicketAnswerKey(ticket),
+      AnimathPrintable.renderNotes(notes),
+      AnimathPrintable.renderScript(script)
+    ].join('');
+  }).catch(function (err) {
+    showError('Primary science life cycles pack failed to load: ' + err.message);
   });
 })();
 </script>
