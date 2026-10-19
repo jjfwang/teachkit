@@ -12,6 +12,8 @@ version section when the release ships.
 
 ### Added
 
+- Primary science adaptations gold lesson pack: five hand-authored gold samples for adaptations in samples/decks/primary-science-adaptations.json, samples/worksheets/primary-science-adaptations.json, samples/tickets/primary-science-adaptations.json, samples/notes/primary-science-adaptations.json and samples/scripts/primary-science-adaptations.json, keyed to the primary-science-adaptations animation scenes, misconception bank trap reused verbatim: An animal can decide to grow a new feature when it needs one., guarded by tests/gold-adaptations-pack.test.js (issue #987).
+
 - Primary science forces-magnets lesson pack in the pack demo
   (`player/pack-demo.html`): the Primary science forces and magnets
   gold lesson pack now appears on the same demo page as the other packs,
