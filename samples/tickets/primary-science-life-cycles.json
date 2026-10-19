@@ -1,0 +1,59 @@
+{
+  "level": "primary",
+  "questions": [
+    {
+      "choices": [
+        {
+          "text": "Because the flower falls off and disappears"
+        },
+        {
+          "correct": true,
+          "text": "Because new seeds are forming inside the flower, and the cycle starts again"
+        },
+        {
+          "text": "Because the plant grows a taller stem after flowering"
+        }
+      ],
+      "feedback": "That trap answer is the one to unlearn: The flower is the end of the life of the plant. Reteach point: The flower is not the end: inside the flower new seeds are forming, and the cycle starts again. Check scene s2: look inside the flower and watch the new seeds forming.",
+      "id": "q1",
+      "kind": "multiple-choice",
+      "misconception": "The flower is the end of the life of the plant.",
+      "prompt": "Why is the flower NOT the end of the life of the plant?"
+    },
+    {
+      "answer": "Egg, caterpillar, pupa, adult butterfly.",
+      "feedback": "Scenes s3 and s4 fix the order: the egg hatches into a caterpillar, the caterpillar changes inside a pupa, and an adult butterfly emerges.",
+      "id": "q2",
+      "kind": "short-answer",
+      "prompt": "Name, in order, the four stages of a butterfly's life cycle."
+    },
+    {
+      "choices": [
+        {
+          "text": "A flower"
+        },
+        {
+          "correct": true,
+          "text": "A seedling"
+        },
+        {
+          "text": "A pupa"
+        }
+      ],
+      "feedback": "Scene s1 fixes the picture: the seed wakes up and sprouts a root and a shoot, becoming a seedling - the baby plant.",
+      "id": "q3",
+      "kind": "multiple-choice",
+      "prompt": "What does a seed become right after it sprouts?"
+    },
+    {
+      "answer": "It lays eggs on a leaf, and the eggs hatch into caterpillars.",
+      "feedback": "Scene s4 fixes the loop: the adult butterfly lays eggs, so the cycle starts all over again - egg to caterpillar to pupa to butterfly.",
+      "id": "q4",
+      "kind": "short-answer",
+      "prompt": "After an adult butterfly emerges from its pupa, what does it do that starts the cycle again?"
+    }
+  ],
+  "subject": "science",
+  "title": "Life cycles: plants and animals Exit Ticket",
+  "topic": "life-cycles"
+}

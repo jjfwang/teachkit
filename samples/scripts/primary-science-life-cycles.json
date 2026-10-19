@@ -1,0 +1,45 @@
+{
+  "level": "primary",
+  "segments": [
+    {
+      "cue": "s1",
+      "minutes": 7,
+      "questions": [
+        "What three things wake the seed up?",
+        "What do we call the baby plant that sprouts from the seed?"
+      ],
+      "say": "A seed wakes up and sprouts. Watch the seed resting in the soil, see the water, warmth and light wake it up, then follow the first root growing down and the green shoot pushing up into a seedling. Keep your student notes open at the seed and seedling definitions for this scene."
+    },
+    {
+      "cue": "s2",
+      "minutes": 7,
+      "questions": [
+        "Why does the flower look like the finish of the plant?",
+        "What is forming inside the flower?"
+      ],
+      "say": "Watch out: the flower is not the end of the plant. Watch the seedling grow into an adult plant and open its big, showy flower - then look closely inside the flower, where new seeds are already forming. Now try the flower question on the worksheet in pairs."
+    },
+    {
+      "cue": "s3",
+      "minutes": 8,
+      "questions": [
+        "Where does a butterfly lay its eggs?",
+        "What hatches out of the egg, and what does it do to grow?"
+      ],
+      "say": "An egg hatches into a caterpillar. Watch the tiny eggs on the leaf, then follow one egg as it hatches: out comes a caterpillar, which munches leaves and grows bigger. Check this against the caterpillar definition in your student notes."
+    },
+    {
+      "cue": "s4",
+      "minutes": 6,
+      "questions": [
+        "What happens to the caterpillar inside the pupa?",
+        "What does the adult butterfly do that starts the cycle again?"
+      ],
+      "say": "The butterfly emerges and the cycle repeats. Follow the caterpillar into its pupa, wait while its body changes inside, then watch the adult butterfly come out - ready to lay eggs and start the whole cycle again. Finish by taking the exit ticket on your own - its first question revisits exactly the flower trap.",
+      "watchFor": "The flower is the end of the life of the plant. Listen and look for it in pair talk and on the exit ticket: The flower is the biggest, showiest and last part to appear, so it looks like the finish. Send them back to scene s2 and to the correct turn: The flower is not the end: inside the flower new seeds are forming, and the cycle starts again."
+    }
+  ],
+  "subject": "science",
+  "title": "Life cycles: plants and animals",
+  "topic": "life-cycles"
+}

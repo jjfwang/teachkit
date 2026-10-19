@@ -1,0 +1,111 @@
+{
+  "level": "primary",
+  "slides": [
+    {
+      "bullets": [
+        "How a plant grows from a seed and makes new seeds, and how a butterfly grows from an egg - two cycles that never stop"
+      ],
+      "heading": "Life cycles: plants and animals",
+      "kind": "title",
+      "notes": "Welcome everyone in and say: today we follow two life cycles - a seed that wakes up, sprouts and grows into a flowering plant that makes new seeds, and an egg that hatches into a caterpillar and changes into a butterfly."
+    },
+    {
+      "bullets": [
+        "Follow a seed as it sprouts, grows and flowers, then makes new seeds",
+        "Follow an egg as it hatches into a caterpillar, rests as a pupa and emerges as a butterfly",
+        "Explain why the flower is not the end of the life of the plant"
+      ],
+      "heading": "What we will learn",
+      "kind": "objective",
+      "notes": "Read the three goals aloud and tell the class: keep these in mind, because the exit ticket at the end will ask you to put both cycles in order and spot the mistake about the flower being the end."
+    },
+    {
+      "bullets": [
+        "A pupil says the flower is the end of the life of the plant, because it is the last part to appear",
+        "Is the flower really the finish, or does something new start inside it?"
+      ],
+      "heading": "Is the flower the end of the plant?",
+      "kind": "hook",
+      "notes": "Pose the claim from scene s2 without the verdict first: ask for a show of hands on whether the flower is the end of the plant, take two or three answers without judging them, and say scene s2 settles this exactly."
+    },
+    {
+      "bullets": [
+        "A life cycle is the circle of changes a living thing goes through as it grows",
+        "The cycle never just stops: the adult makes new young, and the circle starts again"
+      ],
+      "heading": "A life cycle goes round and round",
+      "kind": "concept",
+      "notes": "Say this slowly, because it is the big idea of the whole lesson: plants and animals grow and change in a circle - seed to plant to new seeds, egg to caterpillar to butterfly to new eggs."
+    },
+    {
+      "bullets": [
+        "A seed rests in the soil until water, warmth and light wake it up",
+        "The seed sprouts: a root grows down and a green shoot grows up into a seedling"
+      ],
+      "heading": "A seed wakes up and sprouts",
+      "kind": "mechanism",
+      "notes": "Narrate the seed waking up in the soil, watch the first root grow down and the shoot push up, and name the baby plant that appears: a seedling.",
+      "visual": "s1"
+    },
+    {
+      "bullets": [
+        "The seedling grows into an adult plant and opens a big, showy flower",
+        "Inside the flower, new seeds are forming - so the flower starts the next round instead of ending the cycle"
+      ],
+      "heading": "Watch out: the flower is not the end of the plant",
+      "kind": "mechanism",
+      "notes": "Hold the mistake up first - the flower looks like the finish because it is the biggest, showiest and last part to appear - then look inside the flower and watch the new seeds forming, which proves the cycle starts again.",
+      "visual": "s2"
+    },
+    {
+      "bullets": [
+        "A butterfly lays tiny eggs on a leaf",
+        "Each egg hatches into a caterpillar, which munches leaves and grows bigger"
+      ],
+      "heading": "An egg hatches into a caterpillar",
+      "kind": "mechanism",
+      "notes": "Watch the tiny eggs on the leaf, then follow one egg as it hatches: out comes a caterpillar, the growing-up stage of the butterfly, and it eats and grows.",
+      "visual": "s3"
+    },
+    {
+      "bullets": [
+        "The caterpillar rests inside a pupa while its body changes",
+        "An adult butterfly comes out, ready to lay eggs so the cycle repeats"
+      ],
+      "heading": "The butterfly emerges and the cycle repeats",
+      "kind": "mechanism",
+      "notes": "Follow the caterpillar into its pupa, wait while the body changes inside, then watch the adult butterfly emerge - and point out it will lay eggs, so the whole cycle starts again.",
+      "visual": "s4"
+    },
+    {
+      "bullets": [
+        "Start with one seed: it sprouts into a seedling, grows into a flowering plant, and its flower makes new seeds",
+        "Each stop is a state change: seed, seedling, adult plant, flower, new seeds"
+      ],
+      "heading": "Worked example: follow one seed all the way round",
+      "kind": "example",
+      "notes": "Talk through scenes s1 and s2 slowly and name each change of state: the seed wakes and sprouts, the seedling grows up and flowers, and inside the flower the next seeds are already forming."
+    },
+    {
+      "bullets": [
+        "Put the plant cycle in order: seed, seedling, adult plant, flower - then what comes next?",
+        "Explain to your partner why the flower is not the end, using the words new seeds in your answer"
+      ],
+      "heading": "Your turn: put both cycles in order",
+      "kind": "practice",
+      "notes": "Give pairs three minutes, then cold-call one pair on each cycle: press them to end the plant cycle with new seeds forming inside the flower, not with the flower itself."
+    },
+    {
+      "bullets": [
+        "On your own: draw the butterfly cycle and label egg, caterpillar, pupa and adult butterfly",
+        "Explain in one sentence why the flower is not the end of the life of the plant"
+      ],
+      "heading": "Exit ticket: show what you know",
+      "kind": "exit-ticket",
+      "notes": "Collect these before anyone leaves and say: I am looking for all four butterfly stages labelled in order, plus one clear sentence about new seeds forming inside the flower."
+    }
+  ],
+  "subject": "science",
+  "title": "Life cycles: plants and animals",
+  "topic": "life-cycles"
+}

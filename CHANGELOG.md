@@ -12,6 +12,8 @@ version section when the release ships.
 
 ### Added
 
+- Primary science life-cycles gold lesson pack: five hand-authored gold samples for life-cycles in samples/decks/primary-science-life-cycles.json, samples/worksheets/primary-science-life-cycles.json, samples/tickets/primary-science-life-cycles.json, samples/notes/primary-science-life-cycles.json and samples/scripts/primary-science-life-cycles.json, keyed to the primary-science-life-cycles animation scenes, misconception bank trap reused verbatim: The flower is the end of the life of the plant., guarded by tests/gold-life-cycles-pack.test.js (issue #971).
+
 - Primary science plant systems lesson pack in the pack demo
   (`player/pack-demo.html`): the Primary science plant systems
   gold lesson pack now appears on the same demo page as the other packs,
