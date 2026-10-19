@@ -882,6 +882,24 @@
     <li><code>script</code> teacher script</li>
   </ul>
 </header>
+<header class="pack-manifest" id="forces-magnets-primary-manifest">
+  <h1>Lesson pack: Primary science forces and magnets: Pushes, pulls, friction and magnets</h1>
+  <dl>
+    <dt>Slug</dt><dd><code>forces-magnets-primary-science</code></dd>
+    <dt>Level</dt><dd>primary</dd>
+    <dt>Subject</dt><dd>science</dd>
+    <dt>Topic</dt><dd><code>forces-magnets</code></dd>
+  </dl>
+  <p>topic forces-magnets · level primary · subject science · deck primary-science-forces-magnets</p>
+  <ul class="pack-materials">
+    <li><code>animation</code></li>
+    <li><code>slides</code></li>
+    <li><code>worksheet</code></li>
+    <li><code>exitTicket</code> exit ticket</li>
+    <li><code>notes</code> student notes</li>
+    <li><code>script</code> teacher script</li>
+  </ul>
+</header>
 <section class="pack-section" id="animation-section">
   <h2>Animation</h2>
   <div id="anim-stage"></div>
@@ -1492,6 +1510,19 @@
   <h2>Primary science photosynthesis printables</h2>
   <div id="photosynthesis-primary-printables-stage"></div>
 </section>
+<section class="pack-section" id="forces-magnets-primary-animation">
+  <h2>Primary science forces and magnets animation</h2>
+  <div id="forces-magnets-primary-stage"></div>
+  <div id="forces-magnets-primary-captions"></div>
+</section>
+<section class="pack-section" id="forces-magnets-primary-slides">
+  <h2>Primary science forces and magnets slides</h2>
+  <div id="forces-magnets-primary-slides-stage"></div>
+</section>
+<section class="pack-section" id="forces-magnets-primary-printables">
+  <h2>Primary science forces and magnets printables</h2>
+  <div id="forces-magnets-primary-printables-stage"></div>
+</section>
 <div id="err"></div>
 <script src="validate.js"></script>
 <script src="player.js"></script>
@@ -1563,8 +1594,9 @@
     var lifeCyclesPrimaryPrintStage = document.querySelector('#life-cycles-primary-printables-stage .pr-stage') || document.querySelector('#life-cycles-primary-printables-stage');
     var energyFormsPrimaryPrintStage = document.querySelector('#energy-forms-primary-printables-stage .pr-stage') || document.querySelector('#energy-forms-primary-printables-stage');
     var photosynthesisPrimaryPrintStage = document.querySelector('#photosynthesis-primary-printables-stage .pr-stage') || document.querySelector('#photosynthesis-primary-printables-stage');
+    var forcesMagnetsPrimaryPrintStage = document.querySelector('#forces-magnets-primary-printables-stage .pr-stage') || document.querySelector('#forces-magnets-primary-printables-stage');
     var keys = [];
-    [printStage, fractionsPrintStage, wavesPrintStage, complexPrintStage, trigPrintStage, thermalPrintStage, photosynthesisPrintStage, erosionPrintStage, chemMolePrintStage, differentiationPrintStage, integrationPrintStage, binomialPrintStage, kinematicsPrintStage, quadraticPrintStage, trigonometryAPrintStage, vectorsPrintStage, functionsGraphsPrintStage, sequencesPrintStage, differentiationJcPrintStage, integrationJcPrintStage, probabilityJcPrintStage, statisticsJcPrintStage, mechanicsJcPrintStage, emJcPrintStage, quantumJcPrintStage, physicalJcPrintStage, inorganicJcPrintStage, organicJcPrintStage, cellBioJcPrintStage, geneticsJcPrintStage, energeticsJcPrintStage, ecologyJcPrintStage, wholeNumbersPrimaryPrintStage, decimalsPrimaryPrintStage, percentagePrimaryPrintStage, ratioPrimaryPrintStage, rateSpeedPrimaryPrintStage, algebraIntroPrimaryPrintStage, geometryAnglesPrimaryPrintStage, areaPerimeterPrimaryPrintStage, volumePrimaryPrintStage, dataGraphsPrimaryPrintStage, modelMethodPrimaryPrintStage, humanBodySystemsPrimaryPrintStage, plantSystemsPrimaryPrintStage, lifeCyclesPrimaryPrintStage, energyFormsPrimaryPrintStage, photosynthesisPrimaryPrintStage].forEach(function (stage) {
+    [printStage, fractionsPrintStage, wavesPrintStage, complexPrintStage, trigPrintStage, thermalPrintStage, photosynthesisPrintStage, erosionPrintStage, chemMolePrintStage, differentiationPrintStage, integrationPrintStage, binomialPrintStage, kinematicsPrintStage, quadraticPrintStage, trigonometryAPrintStage, vectorsPrintStage, functionsGraphsPrintStage, sequencesPrintStage, differentiationJcPrintStage, integrationJcPrintStage, probabilityJcPrintStage, statisticsJcPrintStage, mechanicsJcPrintStage, emJcPrintStage, quantumJcPrintStage, physicalJcPrintStage, inorganicJcPrintStage, organicJcPrintStage, cellBioJcPrintStage, geneticsJcPrintStage, energeticsJcPrintStage, ecologyJcPrintStage, wholeNumbersPrimaryPrintStage, decimalsPrimaryPrintStage, percentagePrimaryPrintStage, ratioPrimaryPrintStage, rateSpeedPrimaryPrintStage, algebraIntroPrimaryPrintStage, geometryAnglesPrimaryPrintStage, areaPerimeterPrimaryPrintStage, volumePrimaryPrintStage, dataGraphsPrimaryPrintStage, modelMethodPrimaryPrintStage, humanBodySystemsPrimaryPrintStage, plantSystemsPrimaryPrintStage, lifeCyclesPrimaryPrintStage, energyFormsPrimaryPrintStage, photosynthesisPrimaryPrintStage, forcesMagnetsPrimaryPrintStage].forEach(function (stage) {
       if (stage) {
         keys = keys.concat(Array.prototype.slice.call(stage.querySelectorAll('.pr-teacher')));
       }
@@ -5028,6 +5060,79 @@
     ].join('');
   }).catch(function (err) {
     showError('Primary science photosynthesis pack failed to load: ' + err.message);
+  });
+})();
+</script>
+<script>
+(function () {
+  var presenter = document.getElementById('forces-magnets-primary-slides-stage');
+  var forcesMagnetsPrimaryPrint = document.getElementById('forces-magnets-primary-printables-stage');
+  var errBox = document.getElementById('err');
+  var forcesMagnetsPrimaryAnimUrl = '../samples/primary-science-forces-magnets.json';
+  var forcesMagnetsPrimaryDeckUrl = '../samples/decks/primary-science-forces-magnets.json';
+  var forcesMagnetsPrimaryWorksheetUrl = '../samples/worksheets/primary-science-forces-magnets.json';
+  var forcesMagnetsPrimaryTicketUrl = '../samples/tickets/primary-science-forces-magnets.json';
+  var forcesMagnetsPrimaryNotesUrl = '../samples/notes/primary-science-forces-magnets.json';
+  var forcesMagnetsPrimaryScriptUrl = '../samples/scripts/primary-science-forces-magnets.json';
+
+  function showError(msg) {
+    errBox.textContent = String(msg);
+  }
+
+  Promise.all([
+    fetch(forcesMagnetsPrimaryAnimUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + forcesMagnetsPrimaryAnimUrl);
+      return r.json();
+    }),
+    fetch(forcesMagnetsPrimaryDeckUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + forcesMagnetsPrimaryDeckUrl);
+      return r.json();
+    }),
+    fetch(forcesMagnetsPrimaryWorksheetUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + forcesMagnetsPrimaryWorksheetUrl);
+      return r.json();
+    }),
+    fetch(forcesMagnetsPrimaryTicketUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + forcesMagnetsPrimaryTicketUrl);
+      return r.json();
+    }),
+    fetch(forcesMagnetsPrimaryNotesUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + forcesMagnetsPrimaryNotesUrl);
+      return r.json();
+    }),
+    fetch(forcesMagnetsPrimaryScriptUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + forcesMagnetsPrimaryScriptUrl);
+      return r.json();
+    })
+  ]).then(function (pack) {
+    var anim = pack[0];
+    var deck = pack[1];
+    var worksheet = pack[2];
+    var ticket = pack[3];
+    var notes = pack[4];
+    var script = pack[5];
+    var problems = AnimathValidate.validateSpec(anim)
+      .concat(AnimathValidate.validateSlides(deck))
+      .concat(AnimathValidate.validateWorksheet(worksheet))
+      .concat(AnimathValidate.validateExitTicket(ticket))
+      .concat(AnimathValidate.validateNotes(notes))
+      .concat(AnimathValidate.validateScript(script));
+    if (problems.length) {
+      showError('Primary science forces and magnets pack failed validation:\n' + problems.join('\n'));
+      return;
+    }
+    AnimathPlayer.mount(document.getElementById('forces-magnets-primary-stage'), anim, { autoplay: false });
+    AnimathSlidesPresenter.attachPresenter(document, presenter, deck, { animSpec: anim });
+    forcesMagnetsPrimaryPrint.innerHTML = [
+      AnimathPrintable.renderWorksheet(worksheet),
+      AnimathPrintable.renderWorksheetAnswerKey(worksheet),
+      AnimathPrintable.renderExitTicket(ticket),
+      AnimathPrintable.renderExitTicketAnswerKey(ticket),
+      AnimathPrintable.renderNotes(notes),
+      AnimathPrintable.renderScript(script)
+    ].join('');
+  }).catch(function (err) {
+    showError('Primary science forces and magnets pack failed to load: ' + err.message);
   });
 })();
 </script>
