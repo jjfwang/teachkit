@@ -40,6 +40,8 @@ version section when the release ships.
   stages, guarded by tests/pack-demo.test.js
   (issue #1013).
 
+- Secondary E-Math e-statistics gold lesson pack: five hand-authored gold samples for e-statistics in samples/decks/secondary-e-statistics.json, samples/worksheets/secondary-e-statistics.json, samples/tickets/secondary-e-statistics.json, samples/notes/secondary-e-statistics.json and samples/scripts/secondary-e-statistics.json, keyed to the secondary-e-statistics animation scenes, misconception bank trap reused verbatim: The mean always describes the typical score., guarded by tests/gold-e-statistics-pack.test.js (issue #1019).
+
 - Secondary E-Math e-mensuration gold lesson pack: five hand-authored gold samples for e-mensuration in samples/decks/secondary-e-mensuration.json, samples/worksheets/secondary-e-mensuration.json, samples/tickets/secondary-e-mensuration.json, samples/notes/secondary-e-mensuration.json and samples/scripts/secondary-e-mensuration.json, keyed to the secondary-e-mensuration animation scenes, misconception bank trap reused verbatim: Doubling the radius doubles the area of a circle., guarded by tests/gold-e-mensuration-pack.test.js (issue #1015).
 
 - Secondary E-Math e-geometry gold lesson pack: five hand-authored gold samples for e-geometry in samples/decks/secondary-e-geometry.json, samples/worksheets/secondary-e-geometry.json, samples/tickets/secondary-e-geometry.json, samples/notes/secondary-e-geometry.json and samples/scripts/secondary-e-geometry.json, keyed to the secondary-e-geometry animation scenes, misconception bank trap reused verbatim: Two shapes with the same area are congruent., guarded by tests/gold-e-geometry-pack.test.js (issue #1011).
