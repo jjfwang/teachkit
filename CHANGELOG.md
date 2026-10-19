@@ -12,6 +12,20 @@ version section when the release ships.
 
 ### Added
 
+- Primary science adaptations lesson pack in the pack demo
+  (`player/pack-demo.html`): the Primary science adaptations
+  gold lesson pack now appears on the same demo page as the other packs,
+  presenting all six primary-science-adaptations materials (animation,
+  slides, worksheet, exit ticket, student notes, and teacher
+  script) under its own
+  adaptations-primary-manifest header (slug
+  `adaptations-primary-science`, level primary, subject
+  science, topic `adaptations`), stacked animation, slides, and printables sections, all
+  six materials validated before render for that pack, and
+  the shared teacher-keys toggle covering all fifty packs' print
+  stages, guarded by tests/pack-demo.test.js
+  (issue #989).
+
 - Primary science adaptations gold lesson pack: five hand-authored gold samples for adaptations in samples/decks/primary-science-adaptations.json, samples/worksheets/primary-science-adaptations.json, samples/tickets/primary-science-adaptations.json, samples/notes/primary-science-adaptations.json and samples/scripts/primary-science-adaptations.json, keyed to the primary-science-adaptations animation scenes, misconception bank trap reused verbatim: An animal can decide to grow a new feature when it needs one., guarded by tests/gold-adaptations-pack.test.js (issue #987).
 
 - Primary science forces-magnets lesson pack in the pack demo
