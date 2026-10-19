@@ -1,0 +1,59 @@
+{
+ "level": "primary",
+ "questions": [
+  {
+   "choices": [
+    {
+     "text": "One cold day proves the climate is colder"
+    },
+    {
+     "correct": true,
+     "text": "Today's weather is not the climate: climate is the pattern of weather over many years"
+    },
+    {
+     "text": "Climate means the weather this week"
+    }
+   ],
+   "feedback": "That trap answer is the one to unlearn: A cold day today means the climate is getting colder. Reteach point: Today's weather is not the climate: climate is the pattern of weather over many years, not one cold or hot day. One cold day is a single day of weather, so it cannot by itself show the long pattern changing.",
+   "id": "q1",
+   "kind": "multiple-choice",
+   "misconception": "A cold day today means the climate is getting colder.",
+   "prompt": "A pupil says a cold day today proves the climate is getting colder. What should they say instead?"
+  },
+  {
+   "answer": "The sun heats the land, and the land warms the air above it so the warm air begins to rise.",
+   "feedback": "Scene s1 fixes the start of the chain: the sun heats the land first, and only then does the warmed air rise.",
+   "id": "q2",
+   "kind": "short-answer",
+   "prompt": "In one sentence, say what the sun does at the start of the heat chain."
+  },
+  {
+   "choices": [
+    {
+     "text": "Nothing moves at all"
+    },
+    {
+     "correct": true,
+     "text": "Cool air flows in to take its place, and we feel it as wind"
+    },
+    {
+     "text": "The clouds fall down as rain at once"
+    }
+   ],
+   "feedback": "Scene s2 fixes the middle of the chain: warm air rises, cool air flows in, and that moving air is wind.",
+   "id": "q3",
+   "kind": "multiple-choice",
+   "prompt": "Warm air rises above the land. What happens next?"
+  },
+  {
+   "answer": "High up the warm air cools and gathers into clouds, and the heavy drops fall as rain.",
+   "feedback": "Scene s3 fixes the end of the chain: clouds gather, rain falls back to the ground.",
+   "id": "q4",
+   "kind": "short-answer",
+   "prompt": "In one sentence, say how the heat chain ends."
+  }
+ ],
+ "subject": "geography",
+ "title": "Weather and climate: heat on the move Exit Ticket",
+ "topic": "weather-climate"
+}

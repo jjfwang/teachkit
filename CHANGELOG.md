@@ -12,6 +12,8 @@ version section when the release ships.
 
 ### Added
 
+- Primary geography weather-climate gold lesson pack: five hand-authored gold samples for weather-climate in samples/decks/primary-geog-weather-climate.json, samples/worksheets/primary-geog-weather-climate.json, samples/tickets/primary-geog-weather-climate.json, samples/notes/primary-geog-weather-climate.json and samples/scripts/primary-geog-weather-climate.json, keyed to the primary-geog-weather-climate animation scenes, misconception bank trap reused verbatim: A cold day today means the climate is getting colder., guarded by tests/gold-weather-climate-pack.test.js (issue #995).
+
 - Primary geography plate-tectonics gold lesson pack: five hand-authored gold samples for plate-tectonics in samples/decks/primary-geog-plate-tectonics.json, samples/worksheets/primary-geog-plate-tectonics.json, samples/tickets/primary-geog-plate-tectonics.json, samples/notes/primary-geog-plate-tectonics.json and samples/scripts/primary-geog-plate-tectonics.json, keyed to the primary-geog-plate-tectonics animation scenes, misconception bank trap reused verbatim: Plates lurch in sudden jolts, snapping into new positions., guarded by tests/gold-plate-tectonics-pack.test.js (issue #991).
 
 - Primary geography plate-tectonics lesson pack in the pack demo
