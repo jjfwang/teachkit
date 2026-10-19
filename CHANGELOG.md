@@ -12,6 +12,8 @@ version section when the release ships.
 
 ### Added
 
+- Primary geography plate-tectonics gold lesson pack: five hand-authored gold samples for plate-tectonics in samples/decks/primary-geog-plate-tectonics.json, samples/worksheets/primary-geog-plate-tectonics.json, samples/tickets/primary-geog-plate-tectonics.json, samples/notes/primary-geog-plate-tectonics.json and samples/scripts/primary-geog-plate-tectonics.json, keyed to the primary-geog-plate-tectonics animation scenes, misconception bank trap reused verbatim: Plates lurch in sudden jolts, snapping into new positions., guarded by tests/gold-plate-tectonics-pack.test.js (issue #991).
+
 - Primary science adaptations lesson pack in the pack demo
   (`player/pack-demo.html`): the Primary science adaptations
   gold lesson pack now appears on the same demo page as the other packs,
