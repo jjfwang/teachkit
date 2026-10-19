@@ -12,6 +12,8 @@ version section when the release ships.
 
 ### Added
 
+- Primary science forces-magnets gold lesson pack: five hand-authored gold samples for forces-magnets in samples/decks/primary-science-forces-magnets.json, samples/worksheets/primary-science-forces-magnets.json, samples/tickets/primary-science-forces-magnets.json, samples/notes/primary-science-forces-magnets.json and samples/scripts/primary-science-forces-magnets.json, keyed to the primary-science-forces-magnets animation scenes, misconception bank trap reused verbatim: A magnet attracts every kind of metal., guarded by tests/gold-forces-magnets-pack.test.js (issue #983).
+
 - Primary science photosynthesis lesson pack in the pack demo
   (`player/pack-demo.html`): the Primary science photosynthesis
   gold lesson pack now appears on the same demo page as the other packs,
