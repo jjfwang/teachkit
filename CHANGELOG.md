@@ -12,6 +12,8 @@ version section when the release ships.
 
 ### Added
 
+- Secondary phys-energy gold lesson pack: five hand-authored gold samples for phys-energy in samples/decks/secondary-physics-energy.json, samples/worksheets/secondary-physics-energy.json, samples/tickets/secondary-physics-energy.json, samples/notes/secondary-physics-energy.json and samples/scripts/secondary-physics-energy.json, keyed to the secondary-physics-energy animation scenes, misconception bank trap reused verbatim: Energy gets used up when work is done., guarded by tests/gold-phys-energy-pack.test.js (issue #1035).
+
 - Secondary phys-forces gold lesson pack: five hand-authored gold samples for phys-forces in samples/decks/secondary-physics-forces.json, samples/worksheets/secondary-physics-forces.json, samples/tickets/secondary-physics-forces.json, samples/notes/secondary-physics-forces.json and samples/scripts/secondary-physics-forces.json, keyed to the secondary-physics-forces animation scenes, misconception bank trap reused verbatim: The same push gives the same pressure whether you stand flat or on tiptoes., guarded by tests/gold-phys-forces-pack.test.js (issue #1031).
 
 
