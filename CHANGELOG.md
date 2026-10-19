@@ -12,6 +12,8 @@ version section when the release ships.
 
 ### Added
 
+- Secondary phys-kinematics gold lesson pack: five hand-authored gold samples for phys-kinematics in samples/decks/secondary-physics-kinematics.json, samples/worksheets/secondary-physics-kinematics.json, samples/tickets/secondary-physics-kinematics.json, samples/notes/secondary-physics-kinematics.json and samples/scripts/secondary-physics-kinematics.json, keyed to the secondary-physics-kinematics animation scenes, misconception bank trap reused verbatim: A flat line on a velocity-time graph means the object has stopped., guarded by tests/gold-phys-kinematics-pack.test.js (issue #1027).
+
 - Secondary E-Math probability lesson pack in the pack demo
   (`player/pack-demo.html`): the Secondary E-Math probability
   gold lesson pack now appears on the same demo page as the other packs,
