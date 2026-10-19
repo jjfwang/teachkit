@@ -1116,6 +1116,24 @@
     <li><code>script</code> teacher script</li>
   </ul>
 </header>
+<header class="pack-manifest" id="phys-energy-secondary-manifest">
+  <h1>Lesson pack: Secondary science phys-energy: Energy: work, power and conservation</h1>
+  <dl>
+    <dt>Slug</dt><dd><code>phys-energy-secondary-science</code></dd>
+    <dt>Level</dt><dd>secondary</dd>
+    <dt>Subject</dt><dd>science</dd>
+    <dt>Topic</dt><dd><code>phys-energy</code></dd>
+  </dl>
+  <p>topic phys-energy · level secondary · subject science · deck secondary-physics-energy</p>
+  <ul class="pack-materials">
+    <li><code>animation</code></li>
+    <li><code>slides</code></li>
+    <li><code>worksheet</code></li>
+    <li><code>exitTicket</code> exit ticket</li>
+    <li><code>notes</code> student notes</li>
+    <li><code>script</code> teacher script</li>
+  </ul>
+</header>
 <section class="pack-section" id="animation-section">
   <h2>Animation</h2>
   <div id="anim-stage"></div>
@@ -1895,6 +1913,19 @@
   <h2>Secondary Physics forces printables</h2>
   <div id="phys-forces-secondary-printables-stage"></div>
 </section>
+<section class="pack-section" id="phys-energy-secondary-animation">
+  <h2>Secondary Physics energy animation</h2>
+  <div id="phys-energy-secondary-stage"></div>
+  <div id="phys-energy-secondary-captions"></div>
+</section>
+<section class="pack-section" id="phys-energy-secondary-slides">
+  <h2>Secondary Physics energy slides</h2>
+  <div id="phys-energy-secondary-slides-stage"></div>
+</section>
+<section class="pack-section" id="phys-energy-secondary-printables">
+  <h2>Secondary Physics energy printables</h2>
+  <div id="phys-energy-secondary-printables-stage"></div>
+</section>
 <div id="err"></div>
 <script src="validate.js"></script>
 <script src="player.js"></script>
@@ -1979,8 +2010,9 @@
     var eProbabilitySecondaryPrintStage = document.querySelector('#e-probability-secondary-printables-stage .pr-stage') || document.querySelector('#e-probability-secondary-printables-stage');
     var physKinematicsSecondaryPrintStage = document.querySelector('#phys-kinematics-secondary-printables-stage .pr-stage') || document.querySelector('#phys-kinematics-secondary-printables-stage');
     var physForcesSecondaryPrintStage = document.querySelector('#phys-forces-secondary-printables-stage .pr-stage') || document.querySelector('#phys-forces-secondary-printables-stage');
+    var physEnergySecondaryPrintStage = document.querySelector('#phys-energy-secondary-printables-stage .pr-stage') || document.querySelector('#phys-energy-secondary-printables-stage');
     var keys = [];
-    [printStage, fractionsPrintStage, wavesPrintStage, complexPrintStage, trigPrintStage, thermalPrintStage, photosynthesisPrintStage, erosionPrintStage, chemMolePrintStage, differentiationPrintStage, integrationPrintStage, binomialPrintStage, kinematicsPrintStage, quadraticPrintStage, trigonometryAPrintStage, vectorsPrintStage, functionsGraphsPrintStage, sequencesPrintStage, differentiationJcPrintStage, integrationJcPrintStage, probabilityJcPrintStage, statisticsJcPrintStage, mechanicsJcPrintStage, emJcPrintStage, quantumJcPrintStage, physicalJcPrintStage, inorganicJcPrintStage, organicJcPrintStage, cellBioJcPrintStage, geneticsJcPrintStage, energeticsJcPrintStage, ecologyJcPrintStage, wholeNumbersPrimaryPrintStage, decimalsPrimaryPrintStage, percentagePrimaryPrintStage, ratioPrimaryPrintStage, rateSpeedPrimaryPrintStage, algebraIntroPrimaryPrintStage, geometryAnglesPrimaryPrintStage, areaPerimeterPrimaryPrintStage, volumePrimaryPrintStage, dataGraphsPrimaryPrintStage, modelMethodPrimaryPrintStage, humanBodySystemsPrimaryPrintStage, plantSystemsPrimaryPrintStage, lifeCyclesPrimaryPrintStage, energyFormsPrimaryPrintStage, photosynthesisPrimaryPrintStage, forcesMagnetsPrimaryPrintStage, adaptationsPrimaryPrintStage, plateTectonicsPrimaryPrintStage, weatherClimatePrimaryPrintStage, eNumbersSecondaryPrintStage, eAlgebraSecondaryPrintStage, eFunctionsGraphsSecondaryPrintStage, eGeometrySecondaryPrintStage, eMensurationSecondaryPrintStage, eStatisticsSecondaryPrintStage, eProbabilitySecondaryPrintStage, physKinematicsSecondaryPrintStage, physForcesSecondaryPrintStage].forEach(function (stage) {
+    [printStage, fractionsPrintStage, wavesPrintStage, complexPrintStage, trigPrintStage, thermalPrintStage, photosynthesisPrintStage, erosionPrintStage, chemMolePrintStage, differentiationPrintStage, integrationPrintStage, binomialPrintStage, kinematicsPrintStage, quadraticPrintStage, trigonometryAPrintStage, vectorsPrintStage, functionsGraphsPrintStage, sequencesPrintStage, differentiationJcPrintStage, integrationJcPrintStage, probabilityJcPrintStage, statisticsJcPrintStage, mechanicsJcPrintStage, emJcPrintStage, quantumJcPrintStage, physicalJcPrintStage, inorganicJcPrintStage, organicJcPrintStage, cellBioJcPrintStage, geneticsJcPrintStage, energeticsJcPrintStage, ecologyJcPrintStage, wholeNumbersPrimaryPrintStage, decimalsPrimaryPrintStage, percentagePrimaryPrintStage, ratioPrimaryPrintStage, rateSpeedPrimaryPrintStage, algebraIntroPrimaryPrintStage, geometryAnglesPrimaryPrintStage, areaPerimeterPrimaryPrintStage, volumePrimaryPrintStage, dataGraphsPrimaryPrintStage, modelMethodPrimaryPrintStage, humanBodySystemsPrimaryPrintStage, plantSystemsPrimaryPrintStage, lifeCyclesPrimaryPrintStage, energyFormsPrimaryPrintStage, photosynthesisPrimaryPrintStage, forcesMagnetsPrimaryPrintStage, adaptationsPrimaryPrintStage, plateTectonicsPrimaryPrintStage, weatherClimatePrimaryPrintStage, eNumbersSecondaryPrintStage, eAlgebraSecondaryPrintStage, eFunctionsGraphsSecondaryPrintStage, eGeometrySecondaryPrintStage, eMensurationSecondaryPrintStage, eStatisticsSecondaryPrintStage, eProbabilitySecondaryPrintStage, physKinematicsSecondaryPrintStage, physForcesSecondaryPrintStage, physEnergySecondaryPrintStage].forEach(function (stage) {
       if (stage) {
         keys = keys.concat(Array.prototype.slice.call(stage.querySelectorAll('.pr-teacher')));
       }
@@ -6393,6 +6425,79 @@
     ].join('');
   }).catch(function (err) {
     showError('Secondary Physics forces pack failed to load: ' + err.message);
+  });
+})();
+</script>
+<script>
+(function () {
+  var presenter = document.getElementById('phys-energy-secondary-slides-stage');
+  var physEnergySecondaryPrint = document.getElementById('phys-energy-secondary-printables-stage');
+  var errBox = document.getElementById('err');
+  var physEnergySecondaryAnimUrl = '../samples/secondary-physics-energy.json';
+  var physEnergySecondaryDeckUrl = '../samples/decks/secondary-physics-energy.json';
+  var physEnergySecondaryWorksheetUrl = '../samples/worksheets/secondary-physics-energy.json';
+  var physEnergySecondaryTicketUrl = '../samples/tickets/secondary-physics-energy.json';
+  var physEnergySecondaryNotesUrl = '../samples/notes/secondary-physics-energy.json';
+  var physEnergySecondaryScriptUrl = '../samples/scripts/secondary-physics-energy.json';
+
+  function showError(msg) {
+    errBox.textContent = String(msg);
+  }
+
+  Promise.all([
+    fetch(physEnergySecondaryAnimUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + physEnergySecondaryAnimUrl);
+      return r.json();
+    }),
+    fetch(physEnergySecondaryDeckUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + physEnergySecondaryDeckUrl);
+      return r.json();
+    }),
+    fetch(physEnergySecondaryWorksheetUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + physEnergySecondaryWorksheetUrl);
+      return r.json();
+    }),
+    fetch(physEnergySecondaryTicketUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + physEnergySecondaryTicketUrl);
+      return r.json();
+    }),
+    fetch(physEnergySecondaryNotesUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + physEnergySecondaryNotesUrl);
+      return r.json();
+    }),
+    fetch(physEnergySecondaryScriptUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + physEnergySecondaryScriptUrl);
+      return r.json();
+    })
+  ]).then(function (pack) {
+    var anim = pack[0];
+    var deck = pack[1];
+    var worksheet = pack[2];
+    var ticket = pack[3];
+    var notes = pack[4];
+    var script = pack[5];
+    var problems = AnimathValidate.validateSpec(anim)
+      .concat(AnimathValidate.validateSlides(deck))
+      .concat(AnimathValidate.validateWorksheet(worksheet))
+      .concat(AnimathValidate.validateExitTicket(ticket))
+      .concat(AnimathValidate.validateNotes(notes))
+      .concat(AnimathValidate.validateScript(script));
+    if (problems.length) {
+      showError('Secondary Physics energy pack failed validation:\n' + problems.join('\n'));
+      return;
+    }
+    AnimathPlayer.mount(document.getElementById('phys-energy-secondary-stage'), anim, { autoplay: false });
+    AnimathSlidesPresenter.attachPresenter(document, presenter, deck, { animSpec: anim });
+    physEnergySecondaryPrint.innerHTML = [
+      AnimathPrintable.renderWorksheet(worksheet),
+      AnimathPrintable.renderWorksheetAnswerKey(worksheet),
+      AnimathPrintable.renderExitTicket(ticket),
+      AnimathPrintable.renderExitTicketAnswerKey(ticket),
+      AnimathPrintable.renderNotes(notes),
+      AnimathPrintable.renderScript(script)
+    ].join('');
+  }).catch(function (err) {
+    showError('Secondary Physics energy pack failed to load: ' + err.message);
   });
 })();
 </script>
