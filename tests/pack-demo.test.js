@@ -2535,7 +2535,7 @@ test('JC integration pack is stacked twentieth with manifest, sections, six path
     assert.ok(physForcesSecondaryPack.includes('tickets/secondary-physics-forces.json'));
     assert.ok(physForcesSecondaryPack.includes('notes/secondary-physics-forces.json'));
     assert.ok(physForcesSecondaryPack.includes('scripts/secondary-physics-forces.json'));
-    const physForcesSecondaryBlock = physForcesSecondaryPack.slice(physForcesSecondaryPack.indexOf('var physForcesSecondaryAnimUrl'), physForcesSecondaryPack.indexOf('var physForcesSecondaryAnimUrl'));
+    const physForcesSecondaryBlock = physForcesSecondaryPack.slice(physForcesSecondaryPack.indexOf('var physForcesSecondaryAnimUrl'));
     assert.ok(physForcesSecondaryBlock.indexOf('AnimathValidate.validateSpec') < physForcesSecondaryBlock.lastIndexOf('AnimathPlayer.mount'));
     assert.ok(physForcesSecondaryBlock.indexOf('AnimathValidate.validateSlides') < physForcesSecondaryBlock.lastIndexOf('AnimathSlidesPresenter.attachPresenter'));
     assert.ok(physForcesSecondaryBlock.indexOf('AnimathValidate.validateWorksheet') < physForcesSecondaryBlock.lastIndexOf('AnimathPrintable.renderWorksheet'));
