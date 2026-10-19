@@ -972,6 +972,24 @@
     <li><code>script</code> teacher script</li>
   </ul>
 </header>
+<header class="pack-manifest" id="e-algebra-secondary-manifest">
+  <h1>Lesson pack: Secondary math e-algebra: E-Math algebra: expansion, factorisation and changing the subject</h1>
+  <dl>
+    <dt>Slug</dt><dd><code>e-algebra-secondary-math</code></dd>
+    <dt>Level</dt><dd>secondary</dd>
+    <dt>Subject</dt><dd>math</dd>
+    <dt>Topic</dt><dd><code>e-algebra</code></dd>
+  </dl>
+  <p>topic e-algebra · level secondary · subject math · deck secondary-e-algebra</p>
+  <ul class="pack-materials">
+    <li><code>animation</code></li>
+    <li><code>slides</code></li>
+    <li><code>worksheet</code></li>
+    <li><code>exitTicket</code> exit ticket</li>
+    <li><code>notes</code> student notes</li>
+    <li><code>script</code> teacher script</li>
+  </ul>
+</header>
 <section class="pack-section" id="animation-section">
   <h2>Animation</h2>
   <div id="anim-stage"></div>
@@ -1647,6 +1665,19 @@
   <h2>Secondary E-Math numbers printables</h2>
   <div id="e-numbers-secondary-printables-stage"></div>
 </section>
+<section class="pack-section" id="e-algebra-secondary-animation">
+  <h2>Secondary E-Math algebra animation</h2>
+  <div id="e-algebra-secondary-stage"></div>
+  <div id="e-algebra-secondary-captions"></div>
+</section>
+<section class="pack-section" id="e-algebra-secondary-slides">
+  <h2>Secondary E-Math algebra slides</h2>
+  <div id="e-algebra-secondary-slides-stage"></div>
+</section>
+<section class="pack-section" id="e-algebra-secondary-printables">
+  <h2>Secondary E-Math algebra printables</h2>
+  <div id="e-algebra-secondary-printables-stage"></div>
+</section>
 <div id="err"></div>
 <script src="validate.js"></script>
 <script src="player.js"></script>
@@ -1723,8 +1754,9 @@
     var plateTectonicsPrimaryPrintStage = document.querySelector('#plate-tectonics-primary-printables-stage .pr-stage') || document.querySelector('#plate-tectonics-primary-printables-stage');
     var weatherClimatePrimaryPrintStage = document.querySelector('#weather-climate-primary-printables-stage .pr-stage') || document.querySelector('#weather-climate-primary-printables-stage');
     var eNumbersSecondaryPrintStage = document.querySelector('#e-numbers-secondary-printables-stage .pr-stage') || document.querySelector('#e-numbers-secondary-printables-stage');
+    var eAlgebraSecondaryPrintStage = document.querySelector('#e-algebra-secondary-printables-stage .pr-stage') || document.querySelector('#e-algebra-secondary-printables-stage');
     var keys = [];
-    [printStage, fractionsPrintStage, wavesPrintStage, complexPrintStage, trigPrintStage, thermalPrintStage, photosynthesisPrintStage, erosionPrintStage, chemMolePrintStage, differentiationPrintStage, integrationPrintStage, binomialPrintStage, kinematicsPrintStage, quadraticPrintStage, trigonometryAPrintStage, vectorsPrintStage, functionsGraphsPrintStage, sequencesPrintStage, differentiationJcPrintStage, integrationJcPrintStage, probabilityJcPrintStage, statisticsJcPrintStage, mechanicsJcPrintStage, emJcPrintStage, quantumJcPrintStage, physicalJcPrintStage, inorganicJcPrintStage, organicJcPrintStage, cellBioJcPrintStage, geneticsJcPrintStage, energeticsJcPrintStage, ecologyJcPrintStage, wholeNumbersPrimaryPrintStage, decimalsPrimaryPrintStage, percentagePrimaryPrintStage, ratioPrimaryPrintStage, rateSpeedPrimaryPrintStage, algebraIntroPrimaryPrintStage, geometryAnglesPrimaryPrintStage, areaPerimeterPrimaryPrintStage, volumePrimaryPrintStage, dataGraphsPrimaryPrintStage, modelMethodPrimaryPrintStage, humanBodySystemsPrimaryPrintStage, plantSystemsPrimaryPrintStage, lifeCyclesPrimaryPrintStage, energyFormsPrimaryPrintStage, photosynthesisPrimaryPrintStage, forcesMagnetsPrimaryPrintStage, adaptationsPrimaryPrintStage, plateTectonicsPrimaryPrintStage, weatherClimatePrimaryPrintStage, eNumbersSecondaryPrintStage].forEach(function (stage) {
+    [printStage, fractionsPrintStage, wavesPrintStage, complexPrintStage, trigPrintStage, thermalPrintStage, photosynthesisPrintStage, erosionPrintStage, chemMolePrintStage, differentiationPrintStage, integrationPrintStage, binomialPrintStage, kinematicsPrintStage, quadraticPrintStage, trigonometryAPrintStage, vectorsPrintStage, functionsGraphsPrintStage, sequencesPrintStage, differentiationJcPrintStage, integrationJcPrintStage, probabilityJcPrintStage, statisticsJcPrintStage, mechanicsJcPrintStage, emJcPrintStage, quantumJcPrintStage, physicalJcPrintStage, inorganicJcPrintStage, organicJcPrintStage, cellBioJcPrintStage, geneticsJcPrintStage, energeticsJcPrintStage, ecologyJcPrintStage, wholeNumbersPrimaryPrintStage, decimalsPrimaryPrintStage, percentagePrimaryPrintStage, ratioPrimaryPrintStage, rateSpeedPrimaryPrintStage, algebraIntroPrimaryPrintStage, geometryAnglesPrimaryPrintStage, areaPerimeterPrimaryPrintStage, volumePrimaryPrintStage, dataGraphsPrimaryPrintStage, modelMethodPrimaryPrintStage, humanBodySystemsPrimaryPrintStage, plantSystemsPrimaryPrintStage, lifeCyclesPrimaryPrintStage, energyFormsPrimaryPrintStage, photosynthesisPrimaryPrintStage, forcesMagnetsPrimaryPrintStage, adaptationsPrimaryPrintStage, plateTectonicsPrimaryPrintStage, weatherClimatePrimaryPrintStage, eNumbersSecondaryPrintStage, eAlgebraSecondaryPrintStage].forEach(function (stage) {
       if (stage) {
         keys = keys.concat(Array.prototype.slice.call(stage.querySelectorAll('.pr-teacher')));
       }
@@ -5553,6 +5585,79 @@
     ].join('');
   }).catch(function (err) {
     showError('Secondary E-Math numbers pack failed to load: ' + err.message);
+  });
+})();
+</script>
+<script>
+(function () {
+  var presenter = document.getElementById('e-algebra-secondary-slides-stage');
+  var eAlgebraSecondaryPrint = document.getElementById('e-algebra-secondary-printables-stage');
+  var errBox = document.getElementById('err');
+  var eAlgebraSecondaryAnimUrl = '../samples/secondary-e-algebra.json';
+  var eAlgebraSecondaryDeckUrl = '../samples/decks/secondary-e-algebra.json';
+  var eAlgebraSecondaryWorksheetUrl = '../samples/worksheets/secondary-e-algebra.json';
+  var eAlgebraSecondaryTicketUrl = '../samples/tickets/secondary-e-algebra.json';
+  var eAlgebraSecondaryNotesUrl = '../samples/notes/secondary-e-algebra.json';
+  var eAlgebraSecondaryScriptUrl = '../samples/scripts/secondary-e-algebra.json';
+
+  function showError(msg) {
+    errBox.textContent = String(msg);
+  }
+
+  Promise.all([
+    fetch(eAlgebraSecondaryAnimUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + eAlgebraSecondaryAnimUrl);
+      return r.json();
+    }),
+    fetch(eAlgebraSecondaryDeckUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + eAlgebraSecondaryDeckUrl);
+      return r.json();
+    }),
+    fetch(eAlgebraSecondaryWorksheetUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + eAlgebraSecondaryWorksheetUrl);
+      return r.json();
+    }),
+    fetch(eAlgebraSecondaryTicketUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + eAlgebraSecondaryTicketUrl);
+      return r.json();
+    }),
+    fetch(eAlgebraSecondaryNotesUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + eAlgebraSecondaryNotesUrl);
+      return r.json();
+    }),
+    fetch(eAlgebraSecondaryScriptUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + eAlgebraSecondaryScriptUrl);
+      return r.json();
+    })
+  ]).then(function (pack) {
+    var anim = pack[0];
+    var deck = pack[1];
+    var worksheet = pack[2];
+    var ticket = pack[3];
+    var notes = pack[4];
+    var script = pack[5];
+    var problems = AnimathValidate.validateSpec(anim)
+      .concat(AnimathValidate.validateSlides(deck))
+      .concat(AnimathValidate.validateWorksheet(worksheet))
+      .concat(AnimathValidate.validateExitTicket(ticket))
+      .concat(AnimathValidate.validateNotes(notes))
+      .concat(AnimathValidate.validateScript(script));
+    if (problems.length) {
+      showError('Secondary E-Math algebra pack failed validation:\n' + problems.join('\n'));
+      return;
+    }
+    AnimathPlayer.mount(document.getElementById('e-algebra-secondary-stage'), anim, { autoplay: false });
+    AnimathSlidesPresenter.attachPresenter(document, presenter, deck, { animSpec: anim });
+    eAlgebraSecondaryPrint.innerHTML = [
+      AnimathPrintable.renderWorksheet(worksheet),
+      AnimathPrintable.renderWorksheetAnswerKey(worksheet),
+      AnimathPrintable.renderExitTicket(ticket),
+      AnimathPrintable.renderExitTicketAnswerKey(ticket),
+      AnimathPrintable.renderNotes(notes),
+      AnimathPrintable.renderScript(script)
+    ].join('');
+  }).catch(function (err) {
+    showError('Secondary E-Math algebra pack failed to load: ' + err.message);
   });
 })();
 </script>
