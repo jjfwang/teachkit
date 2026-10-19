@@ -12,6 +12,8 @@ version section when the release ships.
 
 ### Added
 
+- Secondary E-Math e-geometry gold lesson pack: five hand-authored gold samples for e-geometry in samples/decks/secondary-e-geometry.json, samples/worksheets/secondary-e-geometry.json, samples/tickets/secondary-e-geometry.json, samples/notes/secondary-e-geometry.json and samples/scripts/secondary-e-geometry.json, keyed to the secondary-e-geometry animation scenes, misconception bank trap reused verbatim: Two shapes with the same area are congruent., guarded by tests/gold-e-geometry-pack.test.js (issue #1011).
+
 - Secondary E-Math functions and graphs lesson pack in the pack demo
   (`player/pack-demo.html`): the Secondary E-Math functions and graphs
   gold lesson pack now appears on the same demo page as the other packs,
