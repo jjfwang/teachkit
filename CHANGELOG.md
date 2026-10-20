@@ -45,6 +45,20 @@ version section when the release ships.
   stages, guarded by tests/pack-demo.test.js
   (issue #1057).
 
+- Secondary Biology ecology lesson pack in the pack demo
+  (`player/pack-demo.html`): the Secondary Biology ecology
+  gold lesson pack now appears on the same demo page as the other packs,
+  presenting all six secondary-science-bio-ecology materials (animation,
+  slides, worksheet, exit ticket, student notes, and teacher
+  script) under its own
+  bio-ecology-secondary-manifest header (slug
+  `bio-ecology-secondary-science`, level secondary, subject
+  science, topic `bio-ecology`), stacked animation, slides, and printables sections, all
+  six materials validated before render for that pack, and
+  the shared teacher-keys toggle covering all seventy packs' print
+  stages, guarded by tests/pack-demo.test.js
+  (issue #1069).
+
 - Secondary Biology reproduction lesson pack in the pack demo
   (`player/pack-demo.html`): the Secondary Biology reproduction
   gold lesson pack now appears on the same demo page as the other packs,
