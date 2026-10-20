@@ -1206,6 +1206,24 @@
     <li><code>script</code> teacher script</li>
   </ul>
 </header>
+<header class="pack-manifest" id="bio-cells-secondary-manifest">
+  <h1>Lesson pack: Secondary science bio-cells: Cells: structure and organisation</h1>
+  <dl>
+    <dt>Slug</dt><dd><code>bio-cells-secondary-science</code></dd>
+    <dt>Level</dt><dd>secondary</dd>
+    <dt>Subject</dt><dd>science</dd>
+    <dt>Topic</dt><dd><code>bio-cells</code></dd>
+  </dl>
+  <p>topic bio-cells · level secondary · subject science · deck secondary-science-cells</p>
+  <ul class="pack-materials">
+    <li><code>animation</code></li>
+    <li><code>slides</code></li>
+    <li><code>worksheet</code></li>
+    <li><code>exitTicket</code> exit ticket</li>
+    <li><code>notes</code> student notes</li>
+    <li><code>script</code> teacher script</li>
+  </ul>
+</header>
 <section class="pack-section" id="animation-section">
   <h2>Animation</h2>
   <div id="anim-stage"></div>
@@ -2050,6 +2068,19 @@
   <h2>Secondary Chemistry acids, bases and salts printables</h2>
   <div id="chem-acids-secondary-printables-stage"></div>
 </section>
+<section class="pack-section" id="bio-cells-secondary-animation">
+  <h2>Secondary Biology cells animation</h2>
+  <div id="bio-cells-secondary-stage"></div>
+  <div id="bio-cells-secondary-captions"></div>
+</section>
+<section class="pack-section" id="bio-cells-secondary-slides">
+  <h2>Secondary Biology cells slides</h2>
+  <div id="bio-cells-secondary-slides-stage"></div>
+</section>
+<section class="pack-section" id="bio-cells-secondary-printables">
+  <h2>Secondary Biology cells printables</h2>
+  <div id="bio-cells-secondary-printables-stage"></div>
+</section>
 <div id="err"></div>
 <script src="validate.js"></script>
 <script src="player.js"></script>
@@ -2139,8 +2170,9 @@ var physElectricitySecondaryPrintStage = document.querySelector('#phys-electrici
 var chemAtomicSecondaryPrintStage = document.querySelector('#chem-atomic-secondary-printables-stage .pr-stage') || document.querySelector('#chem-atomic-secondary-printables-stage');
 var chemBondingSecondaryPrintStage = document.querySelector('#chem-bonding-secondary-printables-stage .pr-stage') || document.querySelector('#chem-bonding-secondary-printables-stage');
 var chemAcidsSecondaryPrintStage = document.querySelector('#chem-acids-secondary-printables-stage .pr-stage') || document.querySelector('#chem-acids-secondary-printables-stage');
+var bioCellsSecondaryPrintStage = document.querySelector('#bio-cells-secondary-printables-stage .pr-stage') || document.querySelector('#bio-cells-secondary-printables-stage');
     var keys = [];
-    [printStage, fractionsPrintStage, wavesPrintStage, complexPrintStage, trigPrintStage, thermalPrintStage, photosynthesisPrintStage, erosionPrintStage, chemMolePrintStage, differentiationPrintStage, integrationPrintStage, binomialPrintStage, kinematicsPrintStage, quadraticPrintStage, trigonometryAPrintStage, vectorsPrintStage, functionsGraphsPrintStage, sequencesPrintStage, differentiationJcPrintStage, integrationJcPrintStage, probabilityJcPrintStage, statisticsJcPrintStage, mechanicsJcPrintStage, emJcPrintStage, quantumJcPrintStage, physicalJcPrintStage, inorganicJcPrintStage, organicJcPrintStage, cellBioJcPrintStage, geneticsJcPrintStage, energeticsJcPrintStage, ecologyJcPrintStage, wholeNumbersPrimaryPrintStage, decimalsPrimaryPrintStage, percentagePrimaryPrintStage, ratioPrimaryPrintStage, rateSpeedPrimaryPrintStage, algebraIntroPrimaryPrintStage, geometryAnglesPrimaryPrintStage, areaPerimeterPrimaryPrintStage, volumePrimaryPrintStage, dataGraphsPrimaryPrintStage, modelMethodPrimaryPrintStage, humanBodySystemsPrimaryPrintStage, plantSystemsPrimaryPrintStage, lifeCyclesPrimaryPrintStage, energyFormsPrimaryPrintStage, photosynthesisPrimaryPrintStage, forcesMagnetsPrimaryPrintStage, adaptationsPrimaryPrintStage, plateTectonicsPrimaryPrintStage, weatherClimatePrimaryPrintStage, eNumbersSecondaryPrintStage, eAlgebraSecondaryPrintStage, eFunctionsGraphsSecondaryPrintStage, eGeometrySecondaryPrintStage, eMensurationSecondaryPrintStage, eStatisticsSecondaryPrintStage, eProbabilitySecondaryPrintStage, physKinematicsSecondaryPrintStage, physForcesSecondaryPrintStage, physEnergySecondaryPrintStage, physElectricitySecondaryPrintStage, chemAtomicSecondaryPrintStage, chemBondingSecondaryPrintStage, chemAcidsSecondaryPrintStage].forEach(function (stage) {
+    [printStage, fractionsPrintStage, wavesPrintStage, complexPrintStage, trigPrintStage, thermalPrintStage, photosynthesisPrintStage, erosionPrintStage, chemMolePrintStage, differentiationPrintStage, integrationPrintStage, binomialPrintStage, kinematicsPrintStage, quadraticPrintStage, trigonometryAPrintStage, vectorsPrintStage, functionsGraphsPrintStage, sequencesPrintStage, differentiationJcPrintStage, integrationJcPrintStage, probabilityJcPrintStage, statisticsJcPrintStage, mechanicsJcPrintStage, emJcPrintStage, quantumJcPrintStage, physicalJcPrintStage, inorganicJcPrintStage, organicJcPrintStage, cellBioJcPrintStage, geneticsJcPrintStage, energeticsJcPrintStage, ecologyJcPrintStage, wholeNumbersPrimaryPrintStage, decimalsPrimaryPrintStage, percentagePrimaryPrintStage, ratioPrimaryPrintStage, rateSpeedPrimaryPrintStage, algebraIntroPrimaryPrintStage, geometryAnglesPrimaryPrintStage, areaPerimeterPrimaryPrintStage, volumePrimaryPrintStage, dataGraphsPrimaryPrintStage, modelMethodPrimaryPrintStage, humanBodySystemsPrimaryPrintStage, plantSystemsPrimaryPrintStage, lifeCyclesPrimaryPrintStage, energyFormsPrimaryPrintStage, photosynthesisPrimaryPrintStage, forcesMagnetsPrimaryPrintStage, adaptationsPrimaryPrintStage, plateTectonicsPrimaryPrintStage, weatherClimatePrimaryPrintStage, eNumbersSecondaryPrintStage, eAlgebraSecondaryPrintStage, eFunctionsGraphsSecondaryPrintStage, eGeometrySecondaryPrintStage, eMensurationSecondaryPrintStage, eStatisticsSecondaryPrintStage, eProbabilitySecondaryPrintStage, physKinematicsSecondaryPrintStage, physForcesSecondaryPrintStage, physEnergySecondaryPrintStage, physElectricitySecondaryPrintStage, chemAtomicSecondaryPrintStage, chemBondingSecondaryPrintStage, chemAcidsSecondaryPrintStage, bioCellsSecondaryPrintStage].forEach(function (stage) {
       if (stage) {
         keys = keys.concat(Array.prototype.slice.call(stage.querySelectorAll('.pr-teacher')));
       }
@@ -6918,6 +6950,79 @@ var chemAcidsSecondaryPrintStage = document.querySelector('#chem-acids-secondary
     ].join('');
   }).catch(function (err) {
     showError('Secondary Chemistry acids, bases and salts pack failed to load: ' + err.message);
+  });
+})();
+</script>
+<script>
+(function () {
+  var presenter = document.getElementById('bio-cells-secondary-slides-stage');
+  var bioCellsSecondaryPrint = document.getElementById('bio-cells-secondary-printables-stage');
+  var errBox = document.getElementById('err');
+  var bioCellsSecondaryAnimUrl = '../samples/secondary-science-cells.json';
+  var bioCellsSecondaryDeckUrl = '../samples/decks/secondary-science-cells.json';
+  var bioCellsSecondaryWorksheetUrl = '../samples/worksheets/secondary-science-cells.json';
+  var bioCellsSecondaryTicketUrl = '../samples/tickets/secondary-science-cells.json';
+  var bioCellsSecondaryNotesUrl = '../samples/notes/secondary-science-cells.json';
+  var bioCellsSecondaryScriptUrl = '../samples/scripts/secondary-science-cells.json';
+
+  function showError(msg) {
+    errBox.textContent = String(msg);
+  }
+
+  Promise.all([
+    fetch(bioCellsSecondaryAnimUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + bioCellsSecondaryAnimUrl);
+      return r.json();
+    }),
+    fetch(bioCellsSecondaryDeckUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + bioCellsSecondaryDeckUrl);
+      return r.json();
+    }),
+    fetch(bioCellsSecondaryWorksheetUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + bioCellsSecondaryWorksheetUrl);
+      return r.json();
+    }),
+    fetch(bioCellsSecondaryTicketUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + bioCellsSecondaryTicketUrl);
+      return r.json();
+    }),
+    fetch(bioCellsSecondaryNotesUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + bioCellsSecondaryNotesUrl);
+      return r.json();
+    }),
+    fetch(bioCellsSecondaryScriptUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + bioCellsSecondaryScriptUrl);
+      return r.json();
+    })
+  ]).then(function (pack) {
+    var anim = pack[0];
+    var deck = pack[1];
+    var worksheet = pack[2];
+    var ticket = pack[3];
+    var notes = pack[4];
+    var script = pack[5];
+    var problems = AnimathValidate.validateSpec(anim)
+      .concat(AnimathValidate.validateSlides(deck))
+      .concat(AnimathValidate.validateWorksheet(worksheet))
+      .concat(AnimathValidate.validateExitTicket(ticket))
+      .concat(AnimathValidate.validateNotes(notes))
+      .concat(AnimathValidate.validateScript(script));
+    if (problems.length) {
+      showError('Secondary Biology cells pack failed validation:\n' + problems.join('\n'));
+      return;
+    }
+    AnimathPlayer.mount(document.getElementById('bio-cells-secondary-stage'), anim, { autoplay: false });
+    AnimathSlidesPresenter.attachPresenter(document, presenter, deck, { animSpec: anim });
+    bioCellsSecondaryPrint.innerHTML = [
+      AnimathPrintable.renderWorksheet(worksheet),
+      AnimathPrintable.renderWorksheetAnswerKey(worksheet),
+      AnimathPrintable.renderExitTicket(ticket),
+      AnimathPrintable.renderExitTicketAnswerKey(ticket),
+      AnimathPrintable.renderNotes(notes),
+      AnimathPrintable.renderScript(script)
+    ].join('');
+  }).catch(function (err) {
+    showError('Secondary Biology cells pack failed to load: ' + err.message);
   });
 })();
 </script>
