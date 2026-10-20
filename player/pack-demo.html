@@ -1224,6 +1224,24 @@
     <li><code>script</code> teacher script</li>
   </ul>
 </header>
+<header class="pack-manifest" id="bio-transport-secondary-manifest">
+  <h1>Lesson pack: Secondary science bio-transport: Transport: blood and the double circulation</h1>
+  <dl>
+    <dt>Slug</dt><dd><code>bio-transport-secondary-science</code></dd>
+    <dt>Level</dt><dd>secondary</dd>
+    <dt>Subject</dt><dd>science</dd>
+    <dt>Topic</dt><dd><code>bio-transport</code></dd>
+  </dl>
+  <p>topic bio-transport · level secondary · subject science · deck secondary-science-bio-transport</p>
+  <ul class="pack-materials">
+    <li><code>animation</code></li>
+    <li><code>slides</code></li>
+    <li><code>worksheet</code></li>
+    <li><code>exitTicket</code> exit ticket</li>
+    <li><code>notes</code> student notes</li>
+    <li><code>script</code> teacher script</li>
+  </ul>
+</header>
 <section class="pack-section" id="animation-section">
   <h2>Animation</h2>
   <div id="anim-stage"></div>
@@ -2081,6 +2099,19 @@
   <h2>Secondary Biology cells printables</h2>
   <div id="bio-cells-secondary-printables-stage"></div>
 </section>
+<section class="pack-section" id="bio-transport-secondary-animation">
+  <h2>Secondary Biology transport animation</h2>
+  <div id="bio-transport-secondary-stage"></div>
+  <div id="bio-transport-secondary-captions"></div>
+</section>
+<section class="pack-section" id="bio-transport-secondary-slides">
+  <h2>Secondary Biology transport slides</h2>
+  <div id="bio-transport-secondary-slides-stage"></div>
+</section>
+<section class="pack-section" id="bio-transport-secondary-printables">
+  <h2>Secondary Biology transport printables</h2>
+  <div id="bio-transport-secondary-printables-stage"></div>
+</section>
 <div id="err"></div>
 <script src="validate.js"></script>
 <script src="player.js"></script>
@@ -2171,8 +2202,9 @@ var chemAtomicSecondaryPrintStage = document.querySelector('#chem-atomic-seconda
 var chemBondingSecondaryPrintStage = document.querySelector('#chem-bonding-secondary-printables-stage .pr-stage') || document.querySelector('#chem-bonding-secondary-printables-stage');
 var chemAcidsSecondaryPrintStage = document.querySelector('#chem-acids-secondary-printables-stage .pr-stage') || document.querySelector('#chem-acids-secondary-printables-stage');
 var bioCellsSecondaryPrintStage = document.querySelector('#bio-cells-secondary-printables-stage .pr-stage') || document.querySelector('#bio-cells-secondary-printables-stage');
+var bioTransportSecondaryPrintStage = document.querySelector('#bio-transport-secondary-printables-stage .pr-stage') || document.querySelector('#bio-transport-secondary-printables-stage');
     var keys = [];
-    [printStage, fractionsPrintStage, wavesPrintStage, complexPrintStage, trigPrintStage, thermalPrintStage, photosynthesisPrintStage, erosionPrintStage, chemMolePrintStage, differentiationPrintStage, integrationPrintStage, binomialPrintStage, kinematicsPrintStage, quadraticPrintStage, trigonometryAPrintStage, vectorsPrintStage, functionsGraphsPrintStage, sequencesPrintStage, differentiationJcPrintStage, integrationJcPrintStage, probabilityJcPrintStage, statisticsJcPrintStage, mechanicsJcPrintStage, emJcPrintStage, quantumJcPrintStage, physicalJcPrintStage, inorganicJcPrintStage, organicJcPrintStage, cellBioJcPrintStage, geneticsJcPrintStage, energeticsJcPrintStage, ecologyJcPrintStage, wholeNumbersPrimaryPrintStage, decimalsPrimaryPrintStage, percentagePrimaryPrintStage, ratioPrimaryPrintStage, rateSpeedPrimaryPrintStage, algebraIntroPrimaryPrintStage, geometryAnglesPrimaryPrintStage, areaPerimeterPrimaryPrintStage, volumePrimaryPrintStage, dataGraphsPrimaryPrintStage, modelMethodPrimaryPrintStage, humanBodySystemsPrimaryPrintStage, plantSystemsPrimaryPrintStage, lifeCyclesPrimaryPrintStage, energyFormsPrimaryPrintStage, photosynthesisPrimaryPrintStage, forcesMagnetsPrimaryPrintStage, adaptationsPrimaryPrintStage, plateTectonicsPrimaryPrintStage, weatherClimatePrimaryPrintStage, eNumbersSecondaryPrintStage, eAlgebraSecondaryPrintStage, eFunctionsGraphsSecondaryPrintStage, eGeometrySecondaryPrintStage, eMensurationSecondaryPrintStage, eStatisticsSecondaryPrintStage, eProbabilitySecondaryPrintStage, physKinematicsSecondaryPrintStage, physForcesSecondaryPrintStage, physEnergySecondaryPrintStage, physElectricitySecondaryPrintStage, chemAtomicSecondaryPrintStage, chemBondingSecondaryPrintStage, chemAcidsSecondaryPrintStage, bioCellsSecondaryPrintStage].forEach(function (stage) {
+    [printStage, fractionsPrintStage, wavesPrintStage, complexPrintStage, trigPrintStage, thermalPrintStage, photosynthesisPrintStage, erosionPrintStage, chemMolePrintStage, differentiationPrintStage, integrationPrintStage, binomialPrintStage, kinematicsPrintStage, quadraticPrintStage, trigonometryAPrintStage, vectorsPrintStage, functionsGraphsPrintStage, sequencesPrintStage, differentiationJcPrintStage, integrationJcPrintStage, probabilityJcPrintStage, statisticsJcPrintStage, mechanicsJcPrintStage, emJcPrintStage, quantumJcPrintStage, physicalJcPrintStage, inorganicJcPrintStage, organicJcPrintStage, cellBioJcPrintStage, geneticsJcPrintStage, energeticsJcPrintStage, ecologyJcPrintStage, wholeNumbersPrimaryPrintStage, decimalsPrimaryPrintStage, percentagePrimaryPrintStage, ratioPrimaryPrintStage, rateSpeedPrimaryPrintStage, algebraIntroPrimaryPrintStage, geometryAnglesPrimaryPrintStage, areaPerimeterPrimaryPrintStage, volumePrimaryPrintStage, dataGraphsPrimaryPrintStage, modelMethodPrimaryPrintStage, humanBodySystemsPrimaryPrintStage, plantSystemsPrimaryPrintStage, lifeCyclesPrimaryPrintStage, energyFormsPrimaryPrintStage, photosynthesisPrimaryPrintStage, forcesMagnetsPrimaryPrintStage, adaptationsPrimaryPrintStage, plateTectonicsPrimaryPrintStage, weatherClimatePrimaryPrintStage, eNumbersSecondaryPrintStage, eAlgebraSecondaryPrintStage, eFunctionsGraphsSecondaryPrintStage, eGeometrySecondaryPrintStage, eMensurationSecondaryPrintStage, eStatisticsSecondaryPrintStage, eProbabilitySecondaryPrintStage, physKinematicsSecondaryPrintStage, physForcesSecondaryPrintStage, physEnergySecondaryPrintStage, physElectricitySecondaryPrintStage, chemAtomicSecondaryPrintStage, chemBondingSecondaryPrintStage, chemAcidsSecondaryPrintStage, bioCellsSecondaryPrintStage, bioTransportSecondaryPrintStage].forEach(function (stage) {
       if (stage) {
         keys = keys.concat(Array.prototype.slice.call(stage.querySelectorAll('.pr-teacher')));
       }
@@ -7023,6 +7055,79 @@ var bioCellsSecondaryPrintStage = document.querySelector('#bio-cells-secondary-p
     ].join('');
   }).catch(function (err) {
     showError('Secondary Biology cells pack failed to load: ' + err.message);
+  });
+})();
+</script>
+<script>
+(function () {
+  var presenter = document.getElementById('bio-transport-secondary-slides-stage');
+  var bioTransportSecondaryPrint = document.getElementById('bio-transport-secondary-printables-stage');
+  var errBox = document.getElementById('err');
+  var bioTransportSecondaryAnimUrl = '../samples/secondary-science-bio-transport.json';
+  var bioTransportSecondaryDeckUrl = '../samples/decks/secondary-science-bio-transport.json';
+  var bioTransportSecondaryWorksheetUrl = '../samples/worksheets/secondary-science-bio-transport.json';
+  var bioTransportSecondaryTicketUrl = '../samples/tickets/secondary-science-bio-transport.json';
+  var bioTransportSecondaryNotesUrl = '../samples/notes/secondary-science-bio-transport.json';
+  var bioTransportSecondaryScriptUrl = '../samples/scripts/secondary-science-bio-transport.json';
+
+  function showError(msg) {
+    errBox.textContent = String(msg);
+  }
+
+  Promise.all([
+    fetch(bioTransportSecondaryAnimUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + bioTransportSecondaryAnimUrl);
+      return r.json();
+    }),
+    fetch(bioTransportSecondaryDeckUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + bioTransportSecondaryDeckUrl);
+      return r.json();
+    }),
+    fetch(bioTransportSecondaryWorksheetUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + bioTransportSecondaryWorksheetUrl);
+      return r.json();
+    }),
+    fetch(bioTransportSecondaryTicketUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + bioTransportSecondaryTicketUrl);
+      return r.json();
+    }),
+    fetch(bioTransportSecondaryNotesUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + bioTransportSecondaryNotesUrl);
+      return r.json();
+    }),
+    fetch(bioTransportSecondaryScriptUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + bioTransportSecondaryScriptUrl);
+      return r.json();
+    })
+  ]).then(function (pack) {
+    var anim = pack[0];
+    var deck = pack[1];
+    var worksheet = pack[2];
+    var ticket = pack[3];
+    var notes = pack[4];
+    var script = pack[5];
+    var problems = AnimathValidate.validateSpec(anim)
+      .concat(AnimathValidate.validateSlides(deck))
+      .concat(AnimathValidate.validateWorksheet(worksheet))
+      .concat(AnimathValidate.validateExitTicket(ticket))
+      .concat(AnimathValidate.validateNotes(notes))
+      .concat(AnimathValidate.validateScript(script));
+    if (problems.length) {
+      showError('Secondary Biology transport pack failed validation:\n' + problems.join('\n'));
+      return;
+    }
+    AnimathPlayer.mount(document.getElementById('bio-transport-secondary-stage'), anim, { autoplay: false });
+    AnimathSlidesPresenter.attachPresenter(document, presenter, deck, { animSpec: anim });
+    bioTransportSecondaryPrint.innerHTML = [
+      AnimathPrintable.renderWorksheet(worksheet),
+      AnimathPrintable.renderWorksheetAnswerKey(worksheet),
+      AnimathPrintable.renderExitTicket(ticket),
+      AnimathPrintable.renderExitTicketAnswerKey(ticket),
+      AnimathPrintable.renderNotes(notes),
+      AnimathPrintable.renderScript(script)
+    ].join('');
+  }).catch(function (err) {
+    showError('Secondary Biology transport pack failed to load: ' + err.message);
   });
 })();
 </script>
