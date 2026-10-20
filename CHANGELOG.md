@@ -12,6 +12,8 @@ version section when the release ships.
 
 ### Added
 
+- Secondary chem-atomic gold lesson pack: five hand-authored gold samples for chem-atomic in samples/decks/secondary-science-chem-atomic.json, samples/worksheets/secondary-science-chem-atomic.json, samples/tickets/secondary-science-chem-atomic.json, samples/notes/secondary-science-chem-atomic.json and samples/scripts/secondary-science-chem-atomic.json, keyed to the secondary-science-chem-atomic animation scenes, misconception bank trap reused verbatim: Atoms are solid balls., guarded by tests/gold-chem-atomic-pack.test.js (issue #1043).
+
 - Secondary phys-electricity gold lesson pack: five hand-authored gold samples for phys-electricity in samples/decks/secondary-science-electricity.json, samples/worksheets/secondary-science-electricity.json, samples/tickets/secondary-science-electricity.json, samples/notes/secondary-science-electricity.json and samples/scripts/secondary-science-electricity.json, keyed to the secondary-science-electricity animation scenes, misconception bank trap reused verbatim: The bulb uses up the current., guarded by tests/gold-phys-electricity-pack.test.js (issue #1039).
 
 - Secondary phys-energy gold lesson pack: five hand-authored gold samples for phys-energy in samples/decks/secondary-physics-energy.json, samples/worksheets/secondary-physics-energy.json, samples/tickets/secondary-physics-energy.json, samples/notes/secondary-physics-energy.json and samples/scripts/secondary-physics-energy.json, keyed to the secondary-physics-energy animation scenes, misconception bank trap reused verbatim: Energy gets used up when work is done., guarded by tests/gold-phys-energy-pack.test.js (issue #1035).
