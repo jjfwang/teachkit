@@ -34,7 +34,7 @@ All five packs shipped: 72 hand-authored samples, 70/70 syllabus slugs covered �
 ## R-3 — Generator capabilities
 
 - [x] Problem mode: question in → animated worked solution out (prompt + UI, shipped in the initial web UI + PROMPTS.md rule 7)
-- [x] Misconception library: per-topic "wrong turn" beats the LLM must animate (67 seed entries across all bands, issues #101 #103 #105 #107 #109)
+- [x] Misconception library: per-topic "wrong turn" beats the LLM must animate (70 seed entries across all bands, issues #101 #103 #105 #107 #109)
 - [x] Spec repair pass: validator errors fed back to the LLM automatically — issue #27
 - [x] Multi-model presets (OpenAI, Anthropic-via-proxy, local Ollama) — issue #99
 
