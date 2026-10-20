@@ -28,6 +28,20 @@ version section when the release ships.
 
 - Secondary phys-kinematics gold lesson pack: five hand-authored gold samples for phys-kinematics in samples/decks/secondary-physics-kinematics.json, samples/worksheets/secondary-physics-kinematics.json, samples/tickets/secondary-physics-kinematics.json, samples/notes/secondary-physics-kinematics.json and samples/scripts/secondary-physics-kinematics.json, keyed to the secondary-physics-kinematics animation scenes, misconception bank trap reused verbatim: A flat line on a velocity-time graph means the object has stopped., guarded by tests/gold-phys-kinematics-pack.test.js (issue #1027).
 
+- Secondary Biology cells lesson pack in the pack demo
+  (`player/pack-demo.html`): the Secondary Biology cells
+  gold lesson pack now appears on the same demo page as the other packs,
+  presenting all six secondary-science-cells materials (animation,
+  slides, worksheet, exit ticket, student notes, and teacher
+  script) under its own
+  bio-cells-secondary-manifest header (slug
+  `bio-cells-secondary-science`, level secondary, subject
+  science, topic `bio-cells`), stacked animation, slides, and printables sections, all
+  six materials validated before render for that pack, and
+  the shared teacher-keys toggle covering all sixty-seven packs' print
+  stages, guarded by tests/pack-demo.test.js
+  (issue #1057).
+
 - Secondary Chemistry acids, bases and salts lesson pack in the pack demo
   (`player/pack-demo.html`): the Secondary Chemistry acids, bases and salts
   gold lesson pack now appears on the same demo page as the other packs,
