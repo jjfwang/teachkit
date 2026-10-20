@@ -23,6 +23,20 @@ version section when the release ships.
 
 - Secondary phys-kinematics gold lesson pack: five hand-authored gold samples for phys-kinematics in samples/decks/secondary-physics-kinematics.json, samples/worksheets/secondary-physics-kinematics.json, samples/tickets/secondary-physics-kinematics.json, samples/notes/secondary-physics-kinematics.json and samples/scripts/secondary-physics-kinematics.json, keyed to the secondary-physics-kinematics animation scenes, misconception bank trap reused verbatim: A flat line on a velocity-time graph means the object has stopped., guarded by tests/gold-phys-kinematics-pack.test.js (issue #1027).
 
+- Secondary Chemistry atomic structure lesson pack in the pack demo
+  (`player/pack-demo.html`): the Secondary Chemistry atomic structure
+  gold lesson pack now appears on the same demo page as the other packs,
+  presenting all six secondary-science-chem-atomic materials (animation,
+  slides, worksheet, exit ticket, student notes, and teacher
+  script) under its own
+  chem-atomic-secondary-manifest header (slug
+  `chem-atomic-secondary-science`, level secondary, subject
+  science, topic `chem-atomic`), stacked animation, slides, and printables sections, all
+  six materials validated before render for that pack, and
+  the shared teacher-keys toggle covering all sixty-four packs' print
+  stages, guarded by tests/pack-demo.test.js
+  (issue #1045).
+
 - Secondary Physics electricity lesson pack in the pack demo
   (`player/pack-demo.html`): the Secondary Physics electricity
   gold lesson pack now appears on the same demo page as the other packs,

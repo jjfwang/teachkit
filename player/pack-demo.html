@@ -1152,6 +1152,24 @@
     <li><code>script</code> teacher script</li>
   </ul>
 </header>
+<header class="pack-manifest" id="chem-atomic-secondary-manifest">
+  <h1>Lesson pack: Secondary science chem-atomic: Atomic structure and the periodic table</h1>
+  <dl>
+    <dt>Slug</dt><dd><code>chem-atomic-secondary-science</code></dd>
+    <dt>Level</dt><dd>secondary</dd>
+    <dt>Subject</dt><dd>science</dd>
+    <dt>Topic</dt><dd><code>chem-atomic</code></dd>
+  </dl>
+  <p>topic chem-atomic · level secondary · subject science · deck secondary-science-chem-atomic</p>
+  <ul class="pack-materials">
+    <li><code>animation</code></li>
+    <li><code>slides</code></li>
+    <li><code>worksheet</code></li>
+    <li><code>exitTicket</code> exit ticket</li>
+    <li><code>notes</code> student notes</li>
+    <li><code>script</code> teacher script</li>
+  </ul>
+</header>
 <section class="pack-section" id="animation-section">
   <h2>Animation</h2>
   <div id="anim-stage"></div>
@@ -1957,6 +1975,19 @@
   <h2>Secondary Physics electricity printables</h2>
   <div id="phys-electricity-secondary-printables-stage"></div>
 </section>
+<section class="pack-section" id="chem-atomic-secondary-animation">
+  <h2>Secondary Chemistry atomic structure animation</h2>
+  <div id="chem-atomic-secondary-stage"></div>
+  <div id="chem-atomic-secondary-captions"></div>
+</section>
+<section class="pack-section" id="chem-atomic-secondary-slides">
+  <h2>Secondary Chemistry atomic structure slides</h2>
+  <div id="chem-atomic-secondary-slides-stage"></div>
+</section>
+<section class="pack-section" id="chem-atomic-secondary-printables">
+  <h2>Secondary Chemistry atomic structure printables</h2>
+  <div id="chem-atomic-secondary-printables-stage"></div>
+</section>
 <div id="err"></div>
 <script src="validate.js"></script>
 <script src="player.js"></script>
@@ -2043,8 +2074,9 @@
     var physForcesSecondaryPrintStage = document.querySelector('#phys-forces-secondary-printables-stage .pr-stage') || document.querySelector('#phys-forces-secondary-printables-stage');
     var physEnergySecondaryPrintStage = document.querySelector('#phys-energy-secondary-printables-stage .pr-stage') || document.querySelector('#phys-energy-secondary-printables-stage');
 var physElectricitySecondaryPrintStage = document.querySelector('#phys-electricity-secondary-printables-stage .pr-stage') || document.querySelector('#phys-electricity-secondary-printables-stage');
+var chemAtomicSecondaryPrintStage = document.querySelector('#chem-atomic-secondary-printables-stage .pr-stage') || document.querySelector('#chem-atomic-secondary-printables-stage');
     var keys = [];
-    [printStage, fractionsPrintStage, wavesPrintStage, complexPrintStage, trigPrintStage, thermalPrintStage, photosynthesisPrintStage, erosionPrintStage, chemMolePrintStage, differentiationPrintStage, integrationPrintStage, binomialPrintStage, kinematicsPrintStage, quadraticPrintStage, trigonometryAPrintStage, vectorsPrintStage, functionsGraphsPrintStage, sequencesPrintStage, differentiationJcPrintStage, integrationJcPrintStage, probabilityJcPrintStage, statisticsJcPrintStage, mechanicsJcPrintStage, emJcPrintStage, quantumJcPrintStage, physicalJcPrintStage, inorganicJcPrintStage, organicJcPrintStage, cellBioJcPrintStage, geneticsJcPrintStage, energeticsJcPrintStage, ecologyJcPrintStage, wholeNumbersPrimaryPrintStage, decimalsPrimaryPrintStage, percentagePrimaryPrintStage, ratioPrimaryPrintStage, rateSpeedPrimaryPrintStage, algebraIntroPrimaryPrintStage, geometryAnglesPrimaryPrintStage, areaPerimeterPrimaryPrintStage, volumePrimaryPrintStage, dataGraphsPrimaryPrintStage, modelMethodPrimaryPrintStage, humanBodySystemsPrimaryPrintStage, plantSystemsPrimaryPrintStage, lifeCyclesPrimaryPrintStage, energyFormsPrimaryPrintStage, photosynthesisPrimaryPrintStage, forcesMagnetsPrimaryPrintStage, adaptationsPrimaryPrintStage, plateTectonicsPrimaryPrintStage, weatherClimatePrimaryPrintStage, eNumbersSecondaryPrintStage, eAlgebraSecondaryPrintStage, eFunctionsGraphsSecondaryPrintStage, eGeometrySecondaryPrintStage, eMensurationSecondaryPrintStage, eStatisticsSecondaryPrintStage, eProbabilitySecondaryPrintStage, physKinematicsSecondaryPrintStage, physForcesSecondaryPrintStage, physEnergySecondaryPrintStage, physElectricitySecondaryPrintStage].forEach(function (stage) {
+    [printStage, fractionsPrintStage, wavesPrintStage, complexPrintStage, trigPrintStage, thermalPrintStage, photosynthesisPrintStage, erosionPrintStage, chemMolePrintStage, differentiationPrintStage, integrationPrintStage, binomialPrintStage, kinematicsPrintStage, quadraticPrintStage, trigonometryAPrintStage, vectorsPrintStage, functionsGraphsPrintStage, sequencesPrintStage, differentiationJcPrintStage, integrationJcPrintStage, probabilityJcPrintStage, statisticsJcPrintStage, mechanicsJcPrintStage, emJcPrintStage, quantumJcPrintStage, physicalJcPrintStage, inorganicJcPrintStage, organicJcPrintStage, cellBioJcPrintStage, geneticsJcPrintStage, energeticsJcPrintStage, ecologyJcPrintStage, wholeNumbersPrimaryPrintStage, decimalsPrimaryPrintStage, percentagePrimaryPrintStage, ratioPrimaryPrintStage, rateSpeedPrimaryPrintStage, algebraIntroPrimaryPrintStage, geometryAnglesPrimaryPrintStage, areaPerimeterPrimaryPrintStage, volumePrimaryPrintStage, dataGraphsPrimaryPrintStage, modelMethodPrimaryPrintStage, humanBodySystemsPrimaryPrintStage, plantSystemsPrimaryPrintStage, lifeCyclesPrimaryPrintStage, energyFormsPrimaryPrintStage, photosynthesisPrimaryPrintStage, forcesMagnetsPrimaryPrintStage, adaptationsPrimaryPrintStage, plateTectonicsPrimaryPrintStage, weatherClimatePrimaryPrintStage, eNumbersSecondaryPrintStage, eAlgebraSecondaryPrintStage, eFunctionsGraphsSecondaryPrintStage, eGeometrySecondaryPrintStage, eMensurationSecondaryPrintStage, eStatisticsSecondaryPrintStage, eProbabilitySecondaryPrintStage, physKinematicsSecondaryPrintStage, physForcesSecondaryPrintStage, physEnergySecondaryPrintStage, physElectricitySecondaryPrintStage, chemAtomicSecondaryPrintStage].forEach(function (stage) {
       if (stage) {
         keys = keys.concat(Array.prototype.slice.call(stage.querySelectorAll('.pr-teacher')));
       }
@@ -6603,6 +6635,79 @@ var physElectricitySecondaryPrintStage = document.querySelector('#phys-electrici
     ].join('');
   }).catch(function (err) {
     showError('Secondary Physics electricity pack failed to load: ' + err.message);
+  });
+})();
+</script>
+<script>
+(function () {
+  var presenter = document.getElementById('chem-atomic-secondary-slides-stage');
+  var chemAtomicSecondaryPrint = document.getElementById('chem-atomic-secondary-printables-stage');
+  var errBox = document.getElementById('err');
+  var chemAtomicSecondaryAnimUrl = '../samples/secondary-science-chem-atomic.json';
+  var chemAtomicSecondaryDeckUrl = '../samples/decks/secondary-science-chem-atomic.json';
+  var chemAtomicSecondaryWorksheetUrl = '../samples/worksheets/secondary-science-chem-atomic.json';
+  var chemAtomicSecondaryTicketUrl = '../samples/tickets/secondary-science-chem-atomic.json';
+  var chemAtomicSecondaryNotesUrl = '../samples/notes/secondary-science-chem-atomic.json';
+  var chemAtomicSecondaryScriptUrl = '../samples/scripts/secondary-science-chem-atomic.json';
+
+  function showError(msg) {
+    errBox.textContent = String(msg);
+  }
+
+  Promise.all([
+    fetch(chemAtomicSecondaryAnimUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + chemAtomicSecondaryAnimUrl);
+      return r.json();
+    }),
+    fetch(chemAtomicSecondaryDeckUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + chemAtomicSecondaryDeckUrl);
+      return r.json();
+    }),
+    fetch(chemAtomicSecondaryWorksheetUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + chemAtomicSecondaryWorksheetUrl);
+      return r.json();
+    }),
+    fetch(chemAtomicSecondaryTicketUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + chemAtomicSecondaryTicketUrl);
+      return r.json();
+    }),
+    fetch(chemAtomicSecondaryNotesUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + chemAtomicSecondaryNotesUrl);
+      return r.json();
+    }),
+    fetch(chemAtomicSecondaryScriptUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + chemAtomicSecondaryScriptUrl);
+      return r.json();
+    })
+  ]).then(function (pack) {
+    var anim = pack[0];
+    var deck = pack[1];
+    var worksheet = pack[2];
+    var ticket = pack[3];
+    var notes = pack[4];
+    var script = pack[5];
+    var problems = AnimathValidate.validateSpec(anim)
+      .concat(AnimathValidate.validateSlides(deck))
+      .concat(AnimathValidate.validateWorksheet(worksheet))
+      .concat(AnimathValidate.validateExitTicket(ticket))
+      .concat(AnimathValidate.validateNotes(notes))
+      .concat(AnimathValidate.validateScript(script));
+    if (problems.length) {
+      showError('Secondary Chemistry atomic structure pack failed validation:\n' + problems.join('\n'));
+      return;
+    }
+    AnimathPlayer.mount(document.getElementById('chem-atomic-secondary-stage'), anim, { autoplay: false });
+    AnimathSlidesPresenter.attachPresenter(document, presenter, deck, { animSpec: anim });
+    chemAtomicSecondaryPrint.innerHTML = [
+      AnimathPrintable.renderWorksheet(worksheet),
+      AnimathPrintable.renderWorksheetAnswerKey(worksheet),
+      AnimathPrintable.renderExitTicket(ticket),
+      AnimathPrintable.renderExitTicketAnswerKey(ticket),
+      AnimathPrintable.renderNotes(notes),
+      AnimathPrintable.renderScript(script)
+    ].join('');
+  }).catch(function (err) {
+    showError('Secondary Chemistry atomic structure pack failed to load: ' + err.message);
   });
 })();
 </script>
