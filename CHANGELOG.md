@@ -43,6 +43,20 @@ version section when the release ships.
   stages, guarded by tests/pack-demo.test.js
   (issue #1057).
 
+- Secondary Biology transport lesson pack in the pack demo
+  (`player/pack-demo.html`): the Secondary Biology transport
+  gold lesson pack now appears on the same demo page as the other packs,
+  presenting all six secondary-science-bio-transport materials (animation,
+  slides, worksheet, exit ticket, student notes, and teacher
+  script) under its own
+  bio-transport-secondary-manifest header (slug
+  `bio-transport-secondary-science`, level secondary, subject
+  science, topic `bio-transport`), stacked animation, slides, and printables sections, all
+  six materials validated before render for that pack, and
+  the shared teacher-keys toggle covering all sixty-eight packs' print
+  stages, guarded by tests/pack-demo.test.js
+  (issue #1061).
+
 - Secondary Chemistry acids, bases and salts lesson pack in the pack demo
   (`player/pack-demo.html`): the Secondary Chemistry acids, bases and salts
   gold lesson pack now appears on the same demo page as the other packs,
