@@ -70,5 +70,6 @@
   "primary-math-volume.json",
   "primary-geog-erosion.json",
   "primary-geog-plate-tectonics.json",
-  "primary-geog-weather-climate.json"
+  "primary-geog-weather-climate.json",
+  "secondary-geog-tectonics-subduction.json"
 ]

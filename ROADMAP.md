@@ -16,7 +16,7 @@ issue; items become GitHub issues (the umbrella is #1).
 
 ## R-1 — Sample packs (loop priority: coverage across the syllabus)
 
-All five packs shipped: 72 hand-authored samples, 70/70 syllabus slugs covered — including the Primary geography proof set from #644 (erosion, plate-tectonics, weather-climate). Languages and Literature stay out of #644's scope.
+All five packs shipped: 73 hand-authored samples, 71/71 syllabus slugs covered — including the Primary geography proof set from #644 (erosion, plate-tectonics, weather-climate). Languages and Literature stay out of #644's scope.
 
 - [x] Primary math pack: decimals, percentage, ratio, area, speed
 - [x] Primary science pack: water cycle, human body systems, forces
@@ -34,7 +34,7 @@ All five packs shipped: 72 hand-authored samples, 70/70 syllabus slugs covered �
 ## R-3 — Generator capabilities
 
 - [x] Problem mode: question in → animated worked solution out (prompt + UI, shipped in the initial web UI + PROMPTS.md rule 7)
-- [x] Misconception library: per-topic "wrong turn" beats the LLM must animate (70 seed entries across all bands, issues #101 #103 #105 #107 #109)
+- [x] Misconception library: per-topic "wrong turn" beats the LLM must animate (71 seed entries across all bands, issues #101 #103 #105 #107 #109)
 - [x] Spec repair pass: validator errors fed back to the LLM automatically — issue #27
 - [x] Multi-model presets (OpenAI, Anthropic-via-proxy, local Ollama) — issue #99
 
