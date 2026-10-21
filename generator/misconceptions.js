@@ -490,6 +490,12 @@
       wrongTurn: 'The continental plate pushes the oceanic plate down underneath it.',
       why: 'The overriding plate looks bigger and stronger, so it seems to do the pushing.',
       correctTurn: 'Nothing pushes it down: the cold, dense slab sinks under its own weight - slab-pull - and drags the rest of the plate behind it.'
+    },
+    // Slice 8 (issue #1090): Secondary Economics.
+    'demand-supply-equilibrium': {
+      wrongTurn: 'Higher income just slides buyers along the same demand curve to a bigger quantity.',
+      why: 'The quantity gets bigger either way, so a shift of the curve and a movement along it look like the same thing.',
+      correctTurn: 'A change in a condition of demand such as income shifts the whole demand curve; only a change in the good\'s own price moves along it - the shift opens a shortage at the old price, and competition bids the price up along supply to the new equilibrium.'
     }
   };
 

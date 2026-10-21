@@ -105,6 +105,12 @@ Geography:
 |---|---|
 | `tectonics-subduction` | Subduction (SEAB 2279 Topic 4.1): convergent boundaries powered by slab-pull - trench, earthquakes and volcanic arc |
 
+Economics:
+
+| slug | topic |
+|---|---|
+| `demand-supply-equilibrium` | Demand and supply equilibrium (SEAB 2286 section 2.3.4 conditions of demand, worked through section 2.6.2): a rise in consumer income for a normal good shifts demand right, opening a shortage at the old price until the price is bid up along supply to the new equilibrium |
+
 ## Junior College — H2
 
 Mathematics:
@@ -151,7 +157,7 @@ Biology:
 - `level` + `subject` on a spec are coarse (`primary|secondary|jc`,
   and `subject` per `SPEC.md` §subject — any non-empty string; the
   syllabus-covered subjects in `player/validate.js` SUBJECTS are currently
-  `math|science|geography`); the `topic` slug carries the precise syllabus
+  `math|science|geography|economics`); the `topic` slug carries the precise syllabus
   point. SUBJECTS is the syllabus-known list for gallery/coverage, not the
   validator's allowed set. When a new syllabus-covered subject lands, update
   this line against those sources; the syllabus.test.js SUBJECTS test fails

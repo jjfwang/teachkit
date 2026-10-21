@@ -71,5 +71,6 @@
   "primary-geog-erosion.json",
   "primary-geog-plate-tectonics.json",
   "primary-geog-weather-climate.json",
-  "secondary-geog-tectonics-subduction.json"
+  "secondary-geog-tectonics-subduction.json",
+  "secondary-econ-demand-supply-equilibrium.json"
 ]
