@@ -520,6 +520,12 @@
       wrongTurn: 'Adding more terms makes the polynomial match sin x everywhere, however far x gets from 0.',
       why: 'Each added term visibly extends the match with sin x, widening the accurate region around 0, so it looks as if the match becomes global.',
       correctTurn: 'More terms widen the accurate interval around 0 and improve accuracy there, but for any fixed polynomial the approximation still breaks down far from 0.'
+    },
+    // Slice 13 (issue #1111): Secondary Electronics.
+    'sensor-divider': {
+      wrongTurn: 'As it gets darker and the LDR\'s resistance rises, the voltage across the LDR falls, so the sensor output switches the lamp off.',
+      why: 'A bigger resistance is imagined to "block" voltage, so the LDR\'s share is expected to shrink as its resistance grows.',
+      correctTurn: 'In a series divider each resistor takes a share of the supply in proportion to its resistance, so as the LDR\'s resistance rises in the dark its share - the output voltage - climbs until it crosses the threshold and switches the lamp on.'
     }
   };
 

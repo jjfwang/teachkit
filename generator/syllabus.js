@@ -121,6 +121,11 @@
             id: 'computing', label: 'Computing', subject: 'computing', topics: [
             { slug: 'logic-gates', label: 'Logic gates' }
             ]
+          },
+          {
+            id: 'electronics', label: 'Electronics', subject: 'electronics', topics: [
+            { slug: 'sensor-divider', label: 'Sensor divider (LDR)' }
+            ]
           }
         ]
       },
