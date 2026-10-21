@@ -496,6 +496,12 @@
       wrongTurn: 'Higher income just slides buyers along the same demand curve to a bigger quantity.',
       why: 'The quantity gets bigger either way, so a shift of the curve and a movement along it look like the same thing.',
       correctTurn: 'A change in a condition of demand such as income shifts the whole demand curve; only a change in the good\'s own price moves along it - the shift opens a shortage at the old price, and competition bids the price up along supply to the new equilibrium.'
+    },
+    // Slice 9 (issue #1094): Secondary Computing.
+    'logic-gates': {
+      wrongTurn: 'The alarm is on whenever A is on, because OR works just like AND.',
+      why: 'Both gates seem to pass a signal onward, so OR and AND blur into one rule and the NOT on C is easy to overlook.',
+      correctTurn: 'Read the circuit gate by gate: the alarm is on only when (A AND B) are both 1 or NOT C is 1 - that is, when A and B are both on, or C is off (or both).'
     }
   };
 
