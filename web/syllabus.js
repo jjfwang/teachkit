@@ -116,6 +116,11 @@ window.ANIMATH_SYLLABUS = {
           id: 'design-technology', label: 'Design and Technology', subject: 'design-technology', topics: [
             { slug: 'vacuum-forming', label: 'Vacuum forming' }
           ]
+        },
+        {
+          id: 'nutrition-food-science', label: 'Nutrition and Food Science', subject: 'nutrition-food-science', topics: [
+            { slug: 'protein-denaturation', label: 'Protein denaturation' }
+          ]
         }
       ]
     },
