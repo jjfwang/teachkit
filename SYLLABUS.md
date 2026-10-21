@@ -158,6 +158,12 @@ Biology:
 | `h2-energetics` | Energetics: respiration, photosynthesis |
 | `h2-ecology` | Ecology and conservation |
 
+Economics:
+
+| slug | topic |
+|---|---|
+| `multiplier-process` | Multiplier process (SEAB 9570 Theme 3.1.2(e), anchored on the circular flow of Theme 3.1.1): one autonomous injection is re-spent in geometrically shrinking rounds as leakages bite each round, so national income settles at a multiple of the injection and aggregate demand shifts in shrinking steps |
+
 ## Notes for the generator
 
 - `level` + `subject` on a spec are coarse (`primary|secondary|jc`,
