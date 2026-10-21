@@ -111,6 +111,11 @@
             id: 'geography', label: 'Geography', subject: 'geography', topics: [
             { slug: 'tectonics-subduction', label: 'Subduction' }
             ]
+          },
+          {
+            id: 'economics', label: 'Economics', subject: 'economics', topics: [
+            { slug: 'demand-supply-equilibrium', label: 'Demand & supply equilibrium' }
+            ]
           }
         ]
       },
