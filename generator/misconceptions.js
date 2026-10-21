@@ -532,6 +532,12 @@
       wrongTurn: 'The vacuum sucks and pulls the soft plastic sheet down onto the mould.',
       why: 'A vacuum cannot pull - it only removes air. With the air gone from beneath the sheet, the ordinary air pressure outside, about 100,000 pascals on every square metre, is unopposed and pushes the soft sheet down onto every surface of the mould. Nothing reaches in to grab the plastic; it is the atmosphere doing the pushing.',
       correctTurn: 'The flat sheet is clamped in the frame and heated until pliable, the mould rises into the soft sheet, the vacuum then removes the air trapped beneath it, and the unopposed outside air pressure pushes the sheet onto every surface of the mould, where it cools, sets rigid, and is lifted off and trimmed.'
+    },
+    // Slice 1 (issue #1121): Secondary Nutrition and Food Science 6097.
+    'protein-denaturation': {
+      wrongTurn: 'The white sets because the heat dries the water out of it.',
+      why: 'The white does turn from clear and runny to opaque and firm as it cooks, so it is easy to assume the change must be water leaving - drying out feels like the obvious way for something runny to become solid.',
+      correctTurn: 'The water stays trapped in the protein network - heat unfolds the chains and they bond and set. Gentle heat unfolds the folded protein chains in the egg white, the unfolded chains bond to each other and form a network that traps the water inside it, and the white turns opaque and sets firm with its water still held in the network.'
     }
   };
 

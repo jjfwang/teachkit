@@ -1,0 +1,1464 @@
+{
+  "animath": "0.1",
+  "title": "Protein Denaturation: Egg White Sets",
+  "level": "secondary",
+  "subject": "nutrition-food-science",
+  "topic": "protein-denaturation",
+  "kind": "concept",
+  "canvas": {
+    "width": 960,
+    "height": 540
+  },
+  "scenes": [
+    {
+      "id": "s1",
+      "caption": "Raw: folded chains in clear runny white",
+      "narration": "Raw egg white is clear and runny. Inside it, each protein chain is folded into a tight coil, and the white spreads loosely in the pan.",
+      "duration_ms": 9000,
+      "steps": [
+        {
+          "at_ms": 0,
+          "do": "show",
+          "shape": {
+            "id": "title",
+            "kind": "text",
+            "x": 480,
+            "y": 34,
+            "text": "Protein denaturation: egg white sets",
+            "size": 22,
+            "color": "#1a1a1a",
+            "explain": "Title: protein denaturation, how egg white sets when it is heated.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 200,
+          "do": "show",
+          "shape": {
+            "id": "pan",
+            "kind": "rect",
+            "x": 260,
+            "y": 330,
+            "w": 440,
+            "h": 36,
+            "fill": "#424949",
+            "explain": "The pan: the egg white cooks in it over gentle heat."
+          }
+        },
+        {
+          "at_ms": 350,
+          "do": "show",
+          "shape": {
+            "id": "panHandle",
+            "kind": "rect",
+            "x": 700,
+            "y": 338,
+            "w": 140,
+            "h": 14,
+            "fill": "#424949",
+            "explain": "Pan handle: it stays clear of the heat."
+          }
+        },
+        {
+          "at_ms": 600,
+          "do": "show",
+          "shape": {
+            "id": "whiteRaw",
+            "kind": "polygon",
+            "points": [
+              [
+                300,
+                330
+              ],
+              [
+                330,
+                292
+              ],
+              [
+                430,
+                282
+              ],
+              [
+                540,
+                282
+              ],
+              [
+                640,
+                292
+              ],
+              [
+                665,
+                330
+              ]
+            ],
+            "fill": "#dfeef5",
+            "explain": "Raw egg white: clear and runny, spreading loosely in the pan."
+          }
+        },
+        {
+          "at_ms": 900,
+          "do": "show",
+          "shape": {
+            "id": "chain1",
+            "kind": "polygon",
+            "points": [
+              [
+                340,
+                314
+              ],
+              [
+                358,
+                302
+              ],
+              [
+                376,
+                314
+              ],
+              [
+                394,
+                302
+              ],
+              [
+                412,
+                314
+              ],
+              [
+                412,
+                321
+              ],
+              [
+                394,
+                309
+              ],
+              [
+                376,
+                321
+              ],
+              [
+                358,
+                309
+              ],
+              [
+                340,
+                321
+              ]
+            ],
+            "fill": "#2874a6",
+            "explain": "Folded protein chain: in raw white each chain is folded into a tight coil."
+          }
+        },
+        {
+          "at_ms": 1100,
+          "do": "show",
+          "shape": {
+            "id": "chain2",
+            "kind": "polygon",
+            "points": [
+              [
+                510,
+                314
+              ],
+              [
+                528,
+                302
+              ],
+              [
+                546,
+                314
+              ],
+              [
+                564,
+                302
+              ],
+              [
+                582,
+                314
+              ],
+              [
+                582,
+                321
+              ],
+              [
+                564,
+                309
+              ],
+              [
+                546,
+                321
+              ],
+              [
+                528,
+                309
+              ],
+              [
+                510,
+                321
+              ]
+            ],
+            "fill": "#2874a6",
+            "explain": "Folded protein chain: in raw white each chain is folded into a tight coil."
+          }
+        },
+        {
+          "at_ms": 1400,
+          "do": "show",
+          "shape": {
+            "id": "whiteLab",
+            "kind": "text",
+            "x": 480,
+            "y": 262,
+            "text": "raw white: clear and runny",
+            "size": 15,
+            "color": "#1a1a1a",
+            "explain": "Label: the raw white is clear and runny.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 1600,
+          "do": "show",
+          "shape": {
+            "id": "chainLab",
+            "kind": "text",
+            "x": 165,
+            "y": 310,
+            "text": "folded chains",
+            "size": 14,
+            "color": "#1a1a1a",
+            "explain": "Label: the folded protein chains in the raw white.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 3500,
+          "do": "move",
+          "target": "whiteRaw",
+          "to": {
+            "points": [
+              [
+                282,
+                330
+              ],
+              [
+                315,
+                298
+              ],
+              [
+                420,
+                288
+              ],
+              [
+                555,
+                288
+              ],
+              [
+                655,
+                298
+              ],
+              [
+                682,
+                330
+              ]
+            ]
+          },
+          "dur_ms": 1400
+        },
+        {
+          "at_ms": 5600,
+          "do": "emphasize",
+          "target": "chain1"
+        },
+        {
+          "at_ms": 7000,
+          "do": "caption",
+          "text": "Raw white spreads runny in the pan"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "caption": "Gentle heat: the folded chains unfold",
+      "narration": "The pan warms gently from below. The heat gives the folded chains energy to open out, and each tight coil unfolds into a long loose chain.",
+      "duration_ms": 10000,
+      "steps": [
+        {
+          "at_ms": 0,
+          "do": "show",
+          "shape": {
+            "id": "title",
+            "kind": "text",
+            "x": 480,
+            "y": 34,
+            "text": "Gentle heat: chains unfold",
+            "size": 22,
+            "color": "#1a1a1a",
+            "explain": "Title: protein denaturation, how egg white sets when it is heated.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 200,
+          "do": "show",
+          "shape": {
+            "id": "burner",
+            "kind": "rect",
+            "x": 300,
+            "y": 420,
+            "w": 360,
+            "h": 22,
+            "fill": "#616a6b",
+            "explain": "Burner: it warms the pan gently from below."
+          }
+        },
+        {
+          "at_ms": 400,
+          "do": "show",
+          "shape": {
+            "id": "pan",
+            "kind": "rect",
+            "x": 260,
+            "y": 330,
+            "w": 440,
+            "h": 36,
+            "fill": "#424949",
+            "explain": "The pan: the egg white cooks in it over gentle heat."
+          }
+        },
+        {
+          "at_ms": 550,
+          "do": "show",
+          "shape": {
+            "id": "panHandle",
+            "kind": "rect",
+            "x": 700,
+            "y": 338,
+            "w": 140,
+            "h": 14,
+            "fill": "#424949",
+            "explain": "Pan handle: it stays clear of the heat."
+          }
+        },
+        {
+          "at_ms": 800,
+          "do": "show",
+          "shape": {
+            "id": "whiteMid",
+            "kind": "polygon",
+            "points": [
+              [
+                282,
+                330
+              ],
+              [
+                315,
+                298
+              ],
+              [
+                420,
+                288
+              ],
+              [
+                555,
+                288
+              ],
+              [
+                655,
+                298
+              ],
+              [
+                682,
+                330
+              ]
+            ],
+            "fill": "#e8f0f2",
+            "explain": "Egg white: still clear as the gentle heating begins."
+          }
+        },
+        {
+          "at_ms": 1100,
+          "do": "show",
+          "shape": {
+            "id": "folded1",
+            "kind": "polygon",
+            "points": [
+              [
+                340,
+                314
+              ],
+              [
+                358,
+                302
+              ],
+              [
+                376,
+                314
+              ],
+              [
+                394,
+                302
+              ],
+              [
+                412,
+                314
+              ],
+              [
+                412,
+                321
+              ],
+              [
+                394,
+                309
+              ],
+              [
+                376,
+                321
+              ],
+              [
+                358,
+                309
+              ],
+              [
+                340,
+                321
+              ]
+            ],
+            "fill": "#2874a6",
+            "explain": "Folded protein chain: in raw white each chain is folded into a tight coil."
+          }
+        },
+        {
+          "at_ms": 1300,
+          "do": "show",
+          "shape": {
+            "id": "folded2",
+            "kind": "polygon",
+            "points": [
+              [
+                510,
+                314
+              ],
+              [
+                528,
+                302
+              ],
+              [
+                546,
+                314
+              ],
+              [
+                564,
+                302
+              ],
+              [
+                582,
+                314
+              ],
+              [
+                582,
+                321
+              ],
+              [
+                564,
+                309
+              ],
+              [
+                546,
+                321
+              ],
+              [
+                528,
+                309
+              ],
+              [
+                510,
+                321
+              ]
+            ],
+            "fill": "#2874a6",
+            "explain": "Folded protein chain: in raw white each chain is folded into a tight coil."
+          }
+        },
+        {
+          "at_ms": 1600,
+          "do": "show",
+          "shape": {
+            "id": "heat1",
+            "kind": "arrow",
+            "x1": 380,
+            "y1": 410,
+            "x2": 380,
+            "y2": 378,
+            "stroke": "#c0392b",
+            "strokeWidth": 4,
+            "explain": "Heat arrow: gentle heat rising from the burner into the pan."
+          }
+        },
+        {
+          "at_ms": 1750,
+          "do": "show",
+          "shape": {
+            "id": "heat2",
+            "kind": "arrow",
+            "x1": 480,
+            "y1": 410,
+            "x2": 480,
+            "y2": 378,
+            "stroke": "#c0392b",
+            "strokeWidth": 4,
+            "explain": "Heat arrow: gentle heat rising from the burner into the pan."
+          }
+        },
+        {
+          "at_ms": 1900,
+          "do": "show",
+          "shape": {
+            "id": "heat3",
+            "kind": "arrow",
+            "x1": 580,
+            "y1": 410,
+            "x2": 580,
+            "y2": 378,
+            "stroke": "#c0392b",
+            "strokeWidth": 4,
+            "explain": "Heat arrow: gentle heat rising from the burner into the pan."
+          }
+        },
+        {
+          "at_ms": 2200,
+          "do": "show",
+          "shape": {
+            "id": "heatLab",
+            "kind": "text",
+            "x": 480,
+            "y": 478,
+            "text": "gentle heat from below",
+            "size": 15,
+            "color": "#1a1a1a",
+            "explain": "Label: gentle heat rises from below.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 4200,
+          "do": "hide",
+          "target": "folded1"
+        },
+        {
+          "at_ms": 4600,
+          "do": "hide",
+          "target": "folded2"
+        },
+        {
+          "at_ms": 5000,
+          "do": "show",
+          "shape": {
+            "id": "unfolded1",
+            "kind": "polygon",
+            "points": [
+              [
+                330,
+                312
+              ],
+              [
+                370,
+                298
+              ],
+              [
+                410,
+                312
+              ],
+              [
+                450,
+                298
+              ],
+              [
+                490,
+                312
+              ],
+              [
+                530,
+                298
+              ],
+              [
+                570,
+                312
+              ],
+              [
+                570,
+                319
+              ],
+              [
+                530,
+                305
+              ],
+              [
+                490,
+                319
+              ],
+              [
+                450,
+                305
+              ],
+              [
+                410,
+                319
+              ],
+              [
+                370,
+                305
+              ],
+              [
+                330,
+                319
+              ]
+            ],
+            "fill": "#2874a6",
+            "explain": "Unfolded chain: gentle heat has opened the folded coil into a long loose chain."
+          }
+        },
+        {
+          "at_ms": 6500,
+          "do": "emphasize",
+          "target": "unfolded1"
+        },
+        {
+          "at_ms": 7200,
+          "do": "caption",
+          "text": "Gentle heat unfolds the folded chains"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "caption": "Bonding: chains net together, trap water",
+      "narration": "Magnified inside the white, the unfolded chains link to each other with new bonds. The bonds build a network, and the water is trapped in the pockets of the network as the white turns opaque.",
+      "duration_ms": 11000,
+      "steps": [
+        {
+          "at_ms": 0,
+          "do": "show",
+          "shape": {
+            "id": "title",
+            "kind": "text",
+            "x": 480,
+            "y": 34,
+            "text": "Chains bond into a network",
+            "size": 22,
+            "color": "#1a1a1a",
+            "explain": "Title: protein denaturation, how egg white sets when it is heated.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 200,
+          "do": "show",
+          "shape": {
+            "id": "zoomLab",
+            "kind": "text",
+            "x": 480,
+            "y": 70,
+            "text": "inside the white, magnified",
+            "size": 15,
+            "color": "#1a1a1a",
+            "explain": "Label: this view is magnified inside the egg white.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 400,
+          "do": "show",
+          "shape": {
+            "id": "panelOpaque",
+            "kind": "rect",
+            "x": 180,
+            "y": 90,
+            "w": 600,
+            "h": 360,
+            "fill": "#fbfcfc",
+            "stroke": "#616a6b",
+            "explain": "Set white: underneath, the white is turning opaque as the network forms."
+          }
+        },
+        {
+          "at_ms": 500,
+          "do": "show",
+          "shape": {
+            "id": "panelClear",
+            "kind": "rect",
+            "x": 180,
+            "y": 90,
+            "w": 600,
+            "h": 360,
+            "fill": "#e8f0f2",
+            "explain": "Clear white: at first the magnified white is still clear and pale."
+          }
+        },
+        {
+          "at_ms": 700,
+          "do": "show",
+          "shape": {
+            "id": "chainTop",
+            "kind": "polygon",
+            "points": [
+              [
+                240,
+                190
+              ],
+              [
+                280,
+                172
+              ],
+              [
+                320,
+                190
+              ],
+              [
+                360,
+                172
+              ],
+              [
+                400,
+                190
+              ],
+              [
+                440,
+                172
+              ],
+              [
+                480,
+                190
+              ],
+              [
+                520,
+                172
+              ],
+              [
+                560,
+                190
+              ],
+              [
+                600,
+                172
+              ],
+              [
+                640,
+                190
+              ],
+              [
+                680,
+                172
+              ],
+              [
+                720,
+                190
+              ],
+              [
+                720,
+                197
+              ],
+              [
+                680,
+                179
+              ],
+              [
+                640,
+                197
+              ],
+              [
+                600,
+                179
+              ],
+              [
+                560,
+                197
+              ],
+              [
+                520,
+                179
+              ],
+              [
+                480,
+                197
+              ],
+              [
+                440,
+                179
+              ],
+              [
+                400,
+                197
+              ],
+              [
+                360,
+                179
+              ],
+              [
+                320,
+                197
+              ],
+              [
+                280,
+                179
+              ],
+              [
+                240,
+                197
+              ]
+            ],
+            "fill": "#2874a6",
+            "explain": "Unfolded chain: a long opened chain across the top of the network."
+          }
+        },
+        {
+          "at_ms": 900,
+          "do": "show",
+          "shape": {
+            "id": "chainBottom",
+            "kind": "polygon",
+            "points": [
+              [
+                240,
+                305
+              ],
+              [
+                280,
+                287
+              ],
+              [
+                320,
+                305
+              ],
+              [
+                360,
+                287
+              ],
+              [
+                400,
+                305
+              ],
+              [
+                440,
+                287
+              ],
+              [
+                480,
+                305
+              ],
+              [
+                520,
+                287
+              ],
+              [
+                560,
+                305
+              ],
+              [
+                600,
+                287
+              ],
+              [
+                640,
+                305
+              ],
+              [
+                680,
+                287
+              ],
+              [
+                720,
+                305
+              ],
+              [
+                720,
+                312
+              ],
+              [
+                680,
+                294
+              ],
+              [
+                640,
+                312
+              ],
+              [
+                600,
+                294
+              ],
+              [
+                560,
+                312
+              ],
+              [
+                520,
+                294
+              ],
+              [
+                480,
+                312
+              ],
+              [
+                440,
+                294
+              ],
+              [
+                400,
+                312
+              ],
+              [
+                360,
+                294
+              ],
+              [
+                320,
+                312
+              ],
+              [
+                280,
+                294
+              ],
+              [
+                240,
+                312
+              ]
+            ],
+            "fill": "#2874a6",
+            "explain": "Unfolded chain: a long opened chain across the bottom of the network."
+          }
+        },
+        {
+          "at_ms": 3000,
+          "do": "show",
+          "shape": {
+            "id": "bond1",
+            "kind": "line",
+            "x1": 330,
+            "y1": 197,
+            "x2": 330,
+            "y2": 287,
+            "stroke": "#1a5276",
+            "strokeWidth": 4,
+            "explain": "Bond: a link joining two unfolded chains, building the network."
+          }
+        },
+        {
+          "at_ms": 3400,
+          "do": "show",
+          "shape": {
+            "id": "bond2",
+            "kind": "line",
+            "x1": 460,
+            "y1": 197,
+            "x2": 460,
+            "y2": 287,
+            "stroke": "#1a5276",
+            "strokeWidth": 4,
+            "explain": "Bond: a link joining two unfolded chains, building the network."
+          }
+        },
+        {
+          "at_ms": 3800,
+          "do": "show",
+          "shape": {
+            "id": "bond3",
+            "kind": "line",
+            "x1": 590,
+            "y1": 197,
+            "x2": 590,
+            "y2": 287,
+            "stroke": "#1a5276",
+            "strokeWidth": 4,
+            "explain": "Bond: a link joining two unfolded chains, building the network."
+          }
+        },
+        {
+          "at_ms": 4200,
+          "do": "show",
+          "shape": {
+            "id": "bond4",
+            "kind": "line",
+            "x1": 690,
+            "y1": 197,
+            "x2": 690,
+            "y2": 287,
+            "stroke": "#1a5276",
+            "strokeWidth": 4,
+            "explain": "Bond: a link joining two unfolded chains, building the network."
+          }
+        },
+        {
+          "at_ms": 4800,
+          "do": "show",
+          "shape": {
+            "id": "drop1",
+            "kind": "circle",
+            "cx": 285,
+            "cy": 242,
+            "r": 13,
+            "fill": "#5dade2",
+            "explain": "Trapped water: a drop held in a pocket of the protein network, not dried out."
+          }
+        },
+        {
+          "at_ms": 5100,
+          "do": "show",
+          "shape": {
+            "id": "drop2",
+            "kind": "circle",
+            "cx": 395,
+            "cy": 242,
+            "r": 13,
+            "fill": "#5dade2",
+            "explain": "Trapped water: a drop held in a pocket of the protein network, not dried out."
+          }
+        },
+        {
+          "at_ms": 5400,
+          "do": "show",
+          "shape": {
+            "id": "drop3",
+            "kind": "circle",
+            "cx": 525,
+            "cy": 242,
+            "r": 13,
+            "fill": "#5dade2",
+            "explain": "Trapped water: a drop held in a pocket of the protein network, not dried out."
+          }
+        },
+        {
+          "at_ms": 5700,
+          "do": "show",
+          "shape": {
+            "id": "drop4",
+            "kind": "circle",
+            "cx": 640,
+            "cy": 242,
+            "r": 13,
+            "fill": "#5dade2",
+            "explain": "Trapped water: a drop held in a pocket of the protein network, not dried out."
+          }
+        },
+        {
+          "at_ms": 6200,
+          "do": "hide",
+          "target": "panelClear"
+        },
+        {
+          "at_ms": 6800,
+          "do": "emphasize",
+          "target": "bond3"
+        },
+        {
+          "at_ms": 7200,
+          "do": "emphasize",
+          "target": "drop2"
+        },
+        {
+          "at_ms": 7800,
+          "do": "show",
+          "shape": {
+            "id": "bondLab",
+            "kind": "text",
+            "x": 480,
+            "y": 478,
+            "text": "bonds link the chains into a network",
+            "size": 15,
+            "color": "#1a1a1a",
+            "explain": "Label: bonds link the chains into a network.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 8100,
+          "do": "show",
+          "shape": {
+            "id": "waterLab",
+            "kind": "text",
+            "x": 480,
+            "y": 505,
+            "text": "water drops trapped in the pockets",
+            "size": 15,
+            "color": "#1a1a1a",
+            "explain": "Label: water drops are trapped in the pockets.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 8600,
+          "do": "caption",
+          "text": "Chains bond into a network and trap water"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "caption": "Set: firm white, water still trapped",
+      "narration": "The white is fully set: opaque, firm, and holding its shape. Lifted out of the pan it does not run, and the water is still trapped inside its network - it never dried out.",
+      "duration_ms": 10000,
+      "steps": [
+        {
+          "at_ms": 0,
+          "do": "show",
+          "shape": {
+            "id": "title",
+            "kind": "text",
+            "x": 480,
+            "y": 34,
+            "text": "Set: the white holds its shape",
+            "size": 22,
+            "color": "#1a1a1a",
+            "explain": "Title: protein denaturation, how egg white sets when it is heated.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 200,
+          "do": "show",
+          "shape": {
+            "id": "pan",
+            "kind": "rect",
+            "x": 260,
+            "y": 330,
+            "w": 440,
+            "h": 36,
+            "fill": "#424949",
+            "explain": "The pan: the egg white cooks in it over gentle heat."
+          }
+        },
+        {
+          "at_ms": 350,
+          "do": "show",
+          "shape": {
+            "id": "panHandle",
+            "kind": "rect",
+            "x": 700,
+            "y": 338,
+            "w": 140,
+            "h": 14,
+            "fill": "#424949",
+            "explain": "Pan handle: it stays clear of the heat."
+          }
+        },
+        {
+          "at_ms": 600,
+          "do": "show",
+          "shape": {
+            "id": "whiteSet",
+            "kind": "polygon",
+            "points": [
+              [
+                300,
+                330
+              ],
+              [
+                330,
+                278
+              ],
+              [
+                430,
+                268
+              ],
+              [
+                540,
+                268
+              ],
+              [
+                640,
+                278
+              ],
+              [
+                665,
+                330
+              ]
+            ],
+            "fill": "#fbfcfc",
+            "stroke": "#aeb6bf",
+            "explain": "Set egg white: opaque and firm, holding its shape."
+          }
+        },
+        {
+          "at_ms": 900,
+          "do": "show",
+          "shape": {
+            "id": "net1",
+            "kind": "line",
+            "x1": 340,
+            "y1": 300,
+            "x2": 625,
+            "y2": 300,
+            "stroke": "#2874a6",
+            "strokeWidth": 3,
+            "explain": "Protein network: bonded chains holding the set white in shape."
+          }
+        },
+        {
+          "at_ms": 1050,
+          "do": "show",
+          "shape": {
+            "id": "net2",
+            "kind": "line",
+            "x1": 340,
+            "y1": 318,
+            "x2": 625,
+            "y2": 318,
+            "stroke": "#2874a6",
+            "strokeWidth": 3,
+            "explain": "Protein network: bonded chains holding the set white in shape."
+          }
+        },
+        {
+          "at_ms": 1200,
+          "do": "show",
+          "shape": {
+            "id": "bondA",
+            "kind": "line",
+            "x1": 410,
+            "y1": 300,
+            "x2": 410,
+            "y2": 318,
+            "stroke": "#2874a6",
+            "strokeWidth": 3,
+            "explain": "Bond: a link joining two unfolded chains, building the network."
+          }
+        },
+        {
+          "at_ms": 1350,
+          "do": "show",
+          "shape": {
+            "id": "bondB",
+            "kind": "line",
+            "x1": 480,
+            "y1": 300,
+            "x2": 480,
+            "y2": 318,
+            "stroke": "#2874a6",
+            "strokeWidth": 3,
+            "explain": "Bond: a link joining two unfolded chains, building the network."
+          }
+        },
+        {
+          "at_ms": 1500,
+          "do": "show",
+          "shape": {
+            "id": "bondC",
+            "kind": "line",
+            "x1": 550,
+            "y1": 300,
+            "x2": 550,
+            "y2": 318,
+            "stroke": "#2874a6",
+            "strokeWidth": 3,
+            "explain": "Bond: a link joining two unfolded chains, building the network."
+          }
+        },
+        {
+          "at_ms": 1800,
+          "do": "show",
+          "shape": {
+            "id": "drop1",
+            "kind": "circle",
+            "cx": 445,
+            "cy": 309,
+            "r": 6,
+            "fill": "#5dade2",
+            "explain": "Trapped water: a drop held in a pocket of the protein network, not dried out."
+          }
+        },
+        {
+          "at_ms": 1950,
+          "do": "show",
+          "shape": {
+            "id": "drop2",
+            "kind": "circle",
+            "cx": 515,
+            "cy": 309,
+            "r": 6,
+            "fill": "#5dade2",
+            "explain": "Trapped water: a drop held in a pocket of the protein network, not dried out."
+          }
+        },
+        {
+          "at_ms": 2100,
+          "do": "show",
+          "shape": {
+            "id": "drop3",
+            "kind": "circle",
+            "cx": 590,
+            "cy": 309,
+            "r": 6,
+            "fill": "#5dade2",
+            "explain": "Trapped water: a drop held in a pocket of the protein network, not dried out."
+          }
+        },
+        {
+          "at_ms": 2400,
+          "do": "show",
+          "shape": {
+            "id": "setLab",
+            "kind": "text",
+            "x": 150,
+            "y": 300,
+            "text": "set and firm",
+            "size": 15,
+            "color": "#1a1a1a",
+            "explain": "Label: the white is set and firm.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 3400,
+          "do": "move",
+          "target": "whiteSet",
+          "to": {
+            "points": [
+              [
+                300,
+                270
+              ],
+              [
+                330,
+                218
+              ],
+              [
+                430,
+                208
+              ],
+              [
+                540,
+                208
+              ],
+              [
+                640,
+                218
+              ],
+              [
+                665,
+                270
+              ]
+            ]
+          },
+          "dur_ms": 1300
+        },
+        {
+          "at_ms": 3400,
+          "do": "move",
+          "target": "net1",
+          "to": {
+            "x1": 340,
+            "y1": 240,
+            "x2": 625,
+            "y2": 240
+          },
+          "dur_ms": 1300
+        },
+        {
+          "at_ms": 3400,
+          "do": "move",
+          "target": "net2",
+          "to": {
+            "x1": 340,
+            "y1": 258,
+            "x2": 625,
+            "y2": 258
+          },
+          "dur_ms": 1300
+        },
+        {
+          "at_ms": 3400,
+          "do": "move",
+          "target": "bondA",
+          "to": {
+            "x1": 410,
+            "y1": 240,
+            "x2": 410,
+            "y2": 258
+          },
+          "dur_ms": 1300
+        },
+        {
+          "at_ms": 3400,
+          "do": "move",
+          "target": "bondB",
+          "to": {
+            "x1": 480,
+            "y1": 240,
+            "x2": 480,
+            "y2": 258
+          },
+          "dur_ms": 1300
+        },
+        {
+          "at_ms": 3400,
+          "do": "move",
+          "target": "bondC",
+          "to": {
+            "x1": 550,
+            "y1": 240,
+            "x2": 550,
+            "y2": 258
+          },
+          "dur_ms": 1300
+        },
+        {
+          "at_ms": 3400,
+          "do": "move",
+          "target": "drop1",
+          "to": {
+            "cx": 445,
+            "cy": 249
+          },
+          "dur_ms": 1300
+        },
+        {
+          "at_ms": 3400,
+          "do": "move",
+          "target": "drop2",
+          "to": {
+            "cx": 515,
+            "cy": 249
+          },
+          "dur_ms": 1300
+        },
+        {
+          "at_ms": 3400,
+          "do": "move",
+          "target": "drop3",
+          "to": {
+            "cx": 590,
+            "cy": 249
+          },
+          "dur_ms": 1300
+        },
+        {
+          "at_ms": 5600,
+          "do": "show",
+          "shape": {
+            "id": "waterLab",
+            "kind": "text",
+            "x": 480,
+            "y": 470,
+            "text": "the water is still trapped inside",
+            "size": 16,
+            "color": "#1a1a1a",
+            "explain": "Label: the water is still trapped inside the set white.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 6200,
+          "do": "emphasize",
+          "target": "drop2"
+        },
+        {
+          "at_ms": 6800,
+          "do": "emphasize",
+          "target": "whiteSet"
+        },
+        {
+          "at_ms": 7400,
+          "do": "caption",
+          "text": "Set white holds its shape, water inside"
+        }
+      ]
+    }
+  ]
+}
