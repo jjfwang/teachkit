@@ -544,6 +544,12 @@
       wrongTurn: 'Buying equipment with cash makes the business poorer so total assets fall.',
       why: 'Cash has visibly left the business, so it is easy to feel that value has been lost - money paid out reads as the business ending up with less than it had before.',
       correctTurn: 'One asset is swapped for another of equal value, so total assets and the equation are unchanged. Paying $4,000 cash for equipment cuts the cash asset by $4,000 and raises the equipment asset by $4,000 at the same moment, total assets stay at $10,000, and Assets = Capital + Liabilities stays balanced - every transaction is recorded twice, once in each account it changes.'
+    },
+    // Slice 1 (issue #1131): Secondary Business Studies 7085.
+    'break-even': {
+      wrongTurn: 'Fixed costs rise as output rises, so total cost starts at zero like revenue.',
+      why: 'Fixed costs look like they should grow with activity, and total cost is conflated with variable cost, which really does start at zero and rise with output.',
+      correctTurn: 'Fixed costs stay flat at $2,000 at every output, so total cost starts at the fixed-cost intercept and rises only by the $10 variable cost per unit; total revenue starts at zero and rises faster at the $20 selling price, so the two lines cross once, at the break-even output of 200 units.'
     }
   };
 

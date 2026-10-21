@@ -1,0 +1,2058 @@
+{
+  "animath": "0.1",
+  "title": "Break-Even: Where Revenue Catches Total Cost",
+  "level": "secondary",
+  "subject": "business-studies",
+  "topic": "break-even",
+  "kind": "concept",
+  "canvas": {
+    "width": 960,
+    "height": 540
+  },
+  "scenes": [
+    {
+      "id": "s1",
+      "caption": "Axes first, then the flat fixed-cost line",
+      "narration": "Rent and insurance cost $2,000 however much the business makes. Watch the marker sweep across: output rises, but the fixed-cost line never leaves $2,000, because fixed costs do not change with output.",
+      "duration_ms": 9000,
+      "steps": [
+        {
+          "at_ms": 0,
+          "do": "show",
+          "shape": {
+            "id": "title",
+            "kind": "text",
+            "x": 480,
+            "y": 34,
+            "text": "Break-even: where revenue catches total cost",
+            "size": 20,
+            "color": "#1a1a1a",
+            "explain": "Title: break-even, where total revenue catches total cost for one product at a fixed price.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 200,
+          "do": "show",
+          "shape": {
+            "id": "yAxis",
+            "kind": "line",
+            "x1": 140,
+            "y1": 440,
+            "x2": 140,
+            "y2": 80,
+            "stroke": "#1a1a1a",
+            "strokeWidth": 3,
+            "explain": "The vertical axis: costs and revenue in dollars, from $0 at the origin to $8,000 at the top."
+          }
+        },
+        {
+          "at_ms": 350,
+          "do": "show",
+          "shape": {
+            "id": "xAxis",
+            "kind": "line",
+            "x1": 140,
+            "y1": 440,
+            "x2": 860,
+            "y2": 440,
+            "stroke": "#1a1a1a",
+            "strokeWidth": 3,
+            "explain": "The horizontal axis: output in units, from 0 at the origin to 400 units at the right."
+          }
+        },
+        {
+          "at_ms": 500,
+          "do": "show",
+          "shape": {
+            "id": "gridH6000",
+            "kind": "line",
+            "x1": 140,
+            "y1": 170,
+            "x2": 860,
+            "y2": 170,
+            "stroke": "#d5d8dc",
+            "strokeWidth": 1,
+            "explain": "Gridline at $6,000: a faint horizontal guide behind the data lines."
+          }
+        },
+        {
+          "at_ms": 600,
+          "do": "show",
+          "shape": {
+            "id": "gridH4000",
+            "kind": "line",
+            "x1": 140,
+            "y1": 260,
+            "x2": 860,
+            "y2": 260,
+            "stroke": "#d5d8dc",
+            "strokeWidth": 1,
+            "explain": "Gridline at $4,000: a faint horizontal guide behind the data lines."
+          }
+        },
+        {
+          "at_ms": 700,
+          "do": "show",
+          "shape": {
+            "id": "gridV100",
+            "kind": "line",
+            "x1": 320,
+            "y1": 440,
+            "x2": 320,
+            "y2": 80,
+            "stroke": "#d5d8dc",
+            "strokeWidth": 1,
+            "explain": "Gridline at 100 units: a faint vertical guide behind the data lines."
+          }
+        },
+        {
+          "at_ms": 800,
+          "do": "show",
+          "shape": {
+            "id": "gridV200",
+            "kind": "line",
+            "x1": 500,
+            "y1": 440,
+            "x2": 500,
+            "y2": 80,
+            "stroke": "#d5d8dc",
+            "strokeWidth": 1,
+            "explain": "Gridline at 200 units: a faint vertical guide behind the data lines."
+          }
+        },
+        {
+          "at_ms": 900,
+          "do": "show",
+          "shape": {
+            "id": "gridV300",
+            "kind": "line",
+            "x1": 680,
+            "y1": 440,
+            "x2": 680,
+            "y2": 80,
+            "stroke": "#d5d8dc",
+            "strokeWidth": 1,
+            "explain": "Gridline at 300 units: a faint vertical guide behind the data lines."
+          }
+        },
+        {
+          "at_ms": 1000,
+          "do": "show",
+          "shape": {
+            "id": "yTick0",
+            "kind": "text",
+            "x": 130,
+            "y": 445,
+            "text": "$0",
+            "size": 13,
+            "color": "#1a1a1a",
+            "explain": "Tick label: the money value $0 on the costs and revenue axis.",
+            "align": "end"
+          }
+        },
+        {
+          "at_ms": 1060,
+          "do": "show",
+          "shape": {
+            "id": "yTick1",
+            "kind": "text",
+            "x": 130,
+            "y": 355,
+            "text": "$2,000",
+            "size": 13,
+            "color": "#1a1a1a",
+            "explain": "Tick label: the money value $2,000 on the costs and revenue axis.",
+            "align": "end"
+          }
+        },
+        {
+          "at_ms": 1120,
+          "do": "show",
+          "shape": {
+            "id": "yTick2",
+            "kind": "text",
+            "x": 130,
+            "y": 265,
+            "text": "$4,000",
+            "size": 13,
+            "color": "#1a1a1a",
+            "explain": "Tick label: the money value $4,000 on the costs and revenue axis.",
+            "align": "end"
+          }
+        },
+        {
+          "at_ms": 1180,
+          "do": "show",
+          "shape": {
+            "id": "yTick3",
+            "kind": "text",
+            "x": 130,
+            "y": 175,
+            "text": "$6,000",
+            "size": 13,
+            "color": "#1a1a1a",
+            "explain": "Tick label: the money value $6,000 on the costs and revenue axis.",
+            "align": "end"
+          }
+        },
+        {
+          "at_ms": 1240,
+          "do": "show",
+          "shape": {
+            "id": "yTick4",
+            "kind": "text",
+            "x": 130,
+            "y": 85,
+            "text": "$8,000",
+            "size": 13,
+            "color": "#1a1a1a",
+            "explain": "Tick label: the money value $8,000 on the costs and revenue axis.",
+            "align": "end"
+          }
+        },
+        {
+          "at_ms": 1400,
+          "do": "show",
+          "shape": {
+            "id": "xTick0",
+            "kind": "text",
+            "x": 140,
+            "y": 462,
+            "text": "0",
+            "size": 13,
+            "color": "#1a1a1a",
+            "explain": "Tick label: the output value 0 units on the output axis.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 1460,
+          "do": "show",
+          "shape": {
+            "id": "xTick1",
+            "kind": "text",
+            "x": 320,
+            "y": 462,
+            "text": "100",
+            "size": 13,
+            "color": "#1a1a1a",
+            "explain": "Tick label: the output value 100 units on the output axis.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 1520,
+          "do": "show",
+          "shape": {
+            "id": "xTick2",
+            "kind": "text",
+            "x": 500,
+            "y": 462,
+            "text": "200",
+            "size": 13,
+            "color": "#1a1a1a",
+            "explain": "Tick label: the output value 200 units on the output axis.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 1580,
+          "do": "show",
+          "shape": {
+            "id": "xTick3",
+            "kind": "text",
+            "x": 680,
+            "y": 462,
+            "text": "300",
+            "size": 13,
+            "color": "#1a1a1a",
+            "explain": "Tick label: the output value 300 units on the output axis.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 1640,
+          "do": "show",
+          "shape": {
+            "id": "xTick4",
+            "kind": "text",
+            "x": 860,
+            "y": 462,
+            "text": "400",
+            "size": 13,
+            "color": "#1a1a1a",
+            "explain": "Tick label: the output value 400 units on the output axis.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 1750,
+          "do": "show",
+          "shape": {
+            "id": "yAxisTitle",
+            "kind": "text",
+            "x": 140,
+            "y": 62,
+            "text": "Costs and revenue ($)",
+            "size": 14,
+            "color": "#1a1a1a",
+            "explain": "Axis title: the vertical axis measures costs and revenue in dollars.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 1900,
+          "do": "show",
+          "shape": {
+            "id": "xAxisTitle",
+            "kind": "text",
+            "x": 500,
+            "y": 498,
+            "text": "Output (units)",
+            "size": 14,
+            "color": "#1a1a1a",
+            "explain": "Axis title: the horizontal axis measures output in units.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 2600,
+          "do": "show",
+          "shape": {
+            "id": "fcLine",
+            "kind": "line",
+            "x1": 140,
+            "y1": 350,
+            "x2": 860,
+            "y2": 350,
+            "stroke": "#2874a6",
+            "strokeWidth": 4,
+            "explain": "Fixed-cost line: fixed costs stay at $2,000 at every output, so the line is flat."
+          }
+        },
+        {
+          "at_ms": 2750,
+          "do": "show",
+          "shape": {
+            "id": "fcLab",
+            "kind": "text",
+            "x": 872,
+            "y": 358,
+            "text": "FC",
+            "size": 16,
+            "color": "#1a1a1a",
+            "explain": "Line label: FC, the fixed-cost line, flat at $2,000."
+          }
+        },
+        {
+          "at_ms": 2900,
+          "do": "show",
+          "shape": {
+            "id": "fcDot",
+            "kind": "circle",
+            "cx": 140,
+            "cy": 350,
+            "r": 8,
+            "fill": "#f39c12",
+            "explain": "Output marker: as it sweeps right, output rises but fixed costs stay at $2,000."
+          }
+        },
+        {
+          "at_ms": 3050,
+          "do": "show",
+          "shape": {
+            "id": "fcCall1",
+            "kind": "text",
+            "x": 335,
+            "y": 382,
+            "text": "Fixed costs (FC)",
+            "size": 15,
+            "color": "#1a1a1a",
+            "explain": "Fixed-cost callout: FC is the fixed-cost total, $2,000."
+          }
+        },
+        {
+          "at_ms": 3200,
+          "do": "show",
+          "shape": {
+            "id": "fcCall2",
+            "kind": "text",
+            "x": 335,
+            "y": 407,
+            "text": "Flat at $2,000",
+            "size": 14,
+            "color": "#1a1a1a",
+            "explain": "Fixed-cost callout: the fixed-cost line is flat at $2,000 at every output."
+          }
+        },
+        {
+          "at_ms": 4200,
+          "do": "move",
+          "target": "fcDot",
+          "to": {
+            "cx": 860
+          },
+          "dur_ms": 2200
+        },
+        {
+          "at_ms": 6600,
+          "do": "emphasize",
+          "target": "fcLine"
+        },
+        {
+          "at_ms": 7600,
+          "do": "caption",
+          "text": "Fixed costs stay flat at $2,000"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "caption": "Total cost starts at fixed costs, then rises",
+      "narration": "Total cost does not start at zero: at zero output the business still owes the $2,000 fixed costs. From that intercept the line rises only by the $10 variable cost of each unit made, as the marker climbs it.",
+      "duration_ms": 10000,
+      "steps": [
+        {
+          "at_ms": 0,
+          "do": "show",
+          "shape": {
+            "id": "title",
+            "kind": "text",
+            "x": 480,
+            "y": 34,
+            "text": "Break-even: where revenue catches total cost",
+            "size": 20,
+            "color": "#1a1a1a",
+            "explain": "Title: break-even, where total revenue catches total cost for one product at a fixed price.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 200,
+          "do": "show",
+          "shape": {
+            "id": "yAxis",
+            "kind": "line",
+            "x1": 140,
+            "y1": 440,
+            "x2": 140,
+            "y2": 80,
+            "stroke": "#1a1a1a",
+            "strokeWidth": 3,
+            "explain": "The vertical axis: costs and revenue in dollars, from $0 at the origin to $8,000 at the top."
+          }
+        },
+        {
+          "at_ms": 350,
+          "do": "show",
+          "shape": {
+            "id": "xAxis",
+            "kind": "line",
+            "x1": 140,
+            "y1": 440,
+            "x2": 860,
+            "y2": 440,
+            "stroke": "#1a1a1a",
+            "strokeWidth": 3,
+            "explain": "The horizontal axis: output in units, from 0 at the origin to 400 units at the right."
+          }
+        },
+        {
+          "at_ms": 500,
+          "do": "show",
+          "shape": {
+            "id": "gridH6000",
+            "kind": "line",
+            "x1": 140,
+            "y1": 170,
+            "x2": 860,
+            "y2": 170,
+            "stroke": "#d5d8dc",
+            "strokeWidth": 1,
+            "explain": "Gridline at $6,000: a faint horizontal guide behind the data lines."
+          }
+        },
+        {
+          "at_ms": 600,
+          "do": "show",
+          "shape": {
+            "id": "gridH4000",
+            "kind": "line",
+            "x1": 140,
+            "y1": 260,
+            "x2": 860,
+            "y2": 260,
+            "stroke": "#d5d8dc",
+            "strokeWidth": 1,
+            "explain": "Gridline at $4,000: a faint horizontal guide behind the data lines."
+          }
+        },
+        {
+          "at_ms": 700,
+          "do": "show",
+          "shape": {
+            "id": "gridV100",
+            "kind": "line",
+            "x1": 320,
+            "y1": 440,
+            "x2": 320,
+            "y2": 80,
+            "stroke": "#d5d8dc",
+            "strokeWidth": 1,
+            "explain": "Gridline at 100 units: a faint vertical guide behind the data lines."
+          }
+        },
+        {
+          "at_ms": 800,
+          "do": "show",
+          "shape": {
+            "id": "gridV200",
+            "kind": "line",
+            "x1": 500,
+            "y1": 440,
+            "x2": 500,
+            "y2": 80,
+            "stroke": "#d5d8dc",
+            "strokeWidth": 1,
+            "explain": "Gridline at 200 units: a faint vertical guide behind the data lines."
+          }
+        },
+        {
+          "at_ms": 900,
+          "do": "show",
+          "shape": {
+            "id": "gridV300",
+            "kind": "line",
+            "x1": 680,
+            "y1": 440,
+            "x2": 680,
+            "y2": 80,
+            "stroke": "#d5d8dc",
+            "strokeWidth": 1,
+            "explain": "Gridline at 300 units: a faint vertical guide behind the data lines."
+          }
+        },
+        {
+          "at_ms": 1000,
+          "do": "show",
+          "shape": {
+            "id": "yTick0",
+            "kind": "text",
+            "x": 130,
+            "y": 445,
+            "text": "$0",
+            "size": 13,
+            "color": "#1a1a1a",
+            "explain": "Tick label: the money value $0 on the costs and revenue axis.",
+            "align": "end"
+          }
+        },
+        {
+          "at_ms": 1060,
+          "do": "show",
+          "shape": {
+            "id": "yTick1",
+            "kind": "text",
+            "x": 130,
+            "y": 355,
+            "text": "$2,000",
+            "size": 13,
+            "color": "#1a1a1a",
+            "explain": "Tick label: the money value $2,000 on the costs and revenue axis.",
+            "align": "end"
+          }
+        },
+        {
+          "at_ms": 1120,
+          "do": "show",
+          "shape": {
+            "id": "yTick2",
+            "kind": "text",
+            "x": 130,
+            "y": 265,
+            "text": "$4,000",
+            "size": 13,
+            "color": "#1a1a1a",
+            "explain": "Tick label: the money value $4,000 on the costs and revenue axis.",
+            "align": "end"
+          }
+        },
+        {
+          "at_ms": 1180,
+          "do": "show",
+          "shape": {
+            "id": "yTick3",
+            "kind": "text",
+            "x": 130,
+            "y": 175,
+            "text": "$6,000",
+            "size": 13,
+            "color": "#1a1a1a",
+            "explain": "Tick label: the money value $6,000 on the costs and revenue axis.",
+            "align": "end"
+          }
+        },
+        {
+          "at_ms": 1240,
+          "do": "show",
+          "shape": {
+            "id": "yTick4",
+            "kind": "text",
+            "x": 130,
+            "y": 85,
+            "text": "$8,000",
+            "size": 13,
+            "color": "#1a1a1a",
+            "explain": "Tick label: the money value $8,000 on the costs and revenue axis.",
+            "align": "end"
+          }
+        },
+        {
+          "at_ms": 1400,
+          "do": "show",
+          "shape": {
+            "id": "xTick0",
+            "kind": "text",
+            "x": 140,
+            "y": 462,
+            "text": "0",
+            "size": 13,
+            "color": "#1a1a1a",
+            "explain": "Tick label: the output value 0 units on the output axis.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 1460,
+          "do": "show",
+          "shape": {
+            "id": "xTick1",
+            "kind": "text",
+            "x": 320,
+            "y": 462,
+            "text": "100",
+            "size": 13,
+            "color": "#1a1a1a",
+            "explain": "Tick label: the output value 100 units on the output axis.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 1520,
+          "do": "show",
+          "shape": {
+            "id": "xTick2",
+            "kind": "text",
+            "x": 500,
+            "y": 462,
+            "text": "200",
+            "size": 13,
+            "color": "#1a1a1a",
+            "explain": "Tick label: the output value 200 units on the output axis.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 1580,
+          "do": "show",
+          "shape": {
+            "id": "xTick3",
+            "kind": "text",
+            "x": 680,
+            "y": 462,
+            "text": "300",
+            "size": 13,
+            "color": "#1a1a1a",
+            "explain": "Tick label: the output value 300 units on the output axis.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 1640,
+          "do": "show",
+          "shape": {
+            "id": "xTick4",
+            "kind": "text",
+            "x": 860,
+            "y": 462,
+            "text": "400",
+            "size": 13,
+            "color": "#1a1a1a",
+            "explain": "Tick label: the output value 400 units on the output axis.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 1750,
+          "do": "show",
+          "shape": {
+            "id": "yAxisTitle",
+            "kind": "text",
+            "x": 140,
+            "y": 62,
+            "text": "Costs and revenue ($)",
+            "size": 14,
+            "color": "#1a1a1a",
+            "explain": "Axis title: the vertical axis measures costs and revenue in dollars.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 1900,
+          "do": "show",
+          "shape": {
+            "id": "xAxisTitle",
+            "kind": "text",
+            "x": 500,
+            "y": 498,
+            "text": "Output (units)",
+            "size": 14,
+            "color": "#1a1a1a",
+            "explain": "Axis title: the horizontal axis measures output in units.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 2400,
+          "do": "show",
+          "shape": {
+            "id": "fcLine",
+            "kind": "line",
+            "x1": 140,
+            "y1": 350,
+            "x2": 860,
+            "y2": 350,
+            "stroke": "#2874a6",
+            "strokeWidth": 4,
+            "explain": "Fixed-cost line: fixed costs stay at $2,000 at every output, so the line is flat."
+          }
+        },
+        {
+          "at_ms": 2500,
+          "do": "show",
+          "shape": {
+            "id": "fcLab",
+            "kind": "text",
+            "x": 872,
+            "y": 358,
+            "text": "FC",
+            "size": 16,
+            "color": "#1a1a1a",
+            "explain": "Line label: FC, the fixed-cost line, flat at $2,000."
+          }
+        },
+        {
+          "at_ms": 2700,
+          "do": "show",
+          "shape": {
+            "id": "ghostLine",
+            "kind": "line",
+            "x1": 140,
+            "y1": 440,
+            "x2": 860,
+            "y2": 260,
+            "stroke": "#808b96",
+            "strokeWidth": 3,
+            "explain": "The wrong turn, shown dashed: total cost wrongly drawn from zero, as if fixed costs rose with output.",
+            "dash": "6 4"
+          }
+        },
+        {
+          "at_ms": 2850,
+          "do": "show",
+          "shape": {
+            "id": "ghostLab",
+            "kind": "text",
+            "x": 690,
+            "y": 378,
+            "text": "Wrong: TC from zero",
+            "size": 13,
+            "color": "#1a1a1a",
+            "explain": "Wrong-turn label: total cost does not start at zero, because fixed costs are already $2,000 at zero output."
+          }
+        },
+        {
+          "at_ms": 3900,
+          "do": "hide",
+          "target": "ghostLine"
+        },
+        {
+          "at_ms": 3900,
+          "do": "hide",
+          "target": "ghostLab"
+        },
+        {
+          "at_ms": 4200,
+          "do": "show",
+          "shape": {
+            "id": "tcLine",
+            "kind": "line",
+            "x1": 140,
+            "y1": 350,
+            "x2": 860,
+            "y2": 170,
+            "stroke": "#b03a2e",
+            "strokeWidth": 4,
+            "explain": "Total-cost line: total cost starts at $2,000 and rises by $10 of variable cost per unit."
+          }
+        },
+        {
+          "at_ms": 4350,
+          "do": "show",
+          "shape": {
+            "id": "tcLab",
+            "kind": "text",
+            "x": 872,
+            "y": 178,
+            "text": "TC",
+            "size": 16,
+            "color": "#1a1a1a",
+            "explain": "Line label: TC, the total-cost line, rising from the $2,000 intercept."
+          }
+        },
+        {
+          "at_ms": 4500,
+          "do": "show",
+          "shape": {
+            "id": "tcHead",
+            "kind": "text",
+            "x": 330,
+            "y": 238,
+            "text": "TC starts at $2,000",
+            "size": 14,
+            "color": "#1a1a1a",
+            "explain": "Total-cost label: total cost starts at the $2,000 fixed-cost intercept, not at zero."
+          }
+        },
+        {
+          "at_ms": 4650,
+          "do": "show",
+          "shape": {
+            "id": "tcDot",
+            "kind": "circle",
+            "cx": 140,
+            "cy": 350,
+            "r": 9,
+            "fill": "#f39c12",
+            "explain": "Cost marker: it starts at the $2,000 intercept and climbs the total-cost line as output rises."
+          }
+        },
+        {
+          "at_ms": 4800,
+          "do": "show",
+          "shape": {
+            "id": "vcLab1",
+            "kind": "text",
+            "x": 690,
+            "y": 400,
+            "text": "Each unit adds $10",
+            "size": 14,
+            "color": "#1a1a1a",
+            "explain": "Variable-cost label: each unit made adds $10 of variable cost."
+          }
+        },
+        {
+          "at_ms": 4950,
+          "do": "show",
+          "shape": {
+            "id": "vcLab2",
+            "kind": "text",
+            "x": 690,
+            "y": 425,
+            "text": "of variable cost",
+            "size": 14,
+            "color": "#1a1a1a",
+            "explain": "Variable-cost label: the $10 per unit is the variable cost, the only part of total cost that rises."
+          }
+        },
+        {
+          "at_ms": 5200,
+          "do": "emphasize",
+          "target": "tcDot"
+        },
+        {
+          "at_ms": 5600,
+          "do": "move",
+          "target": "tcDot",
+          "to": {
+            "cx": 680,
+            "cy": 215
+          },
+          "dur_ms": 2400
+        },
+        {
+          "at_ms": 8400,
+          "do": "emphasize",
+          "target": "tcLine"
+        },
+        {
+          "at_ms": 9000,
+          "do": "caption",
+          "text": "Total cost starts at $2,000, then rises"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "caption": "Revenue rises faster, but still in loss",
+      "narration": "Total revenue starts at zero and rises faster, at $20 per unit, but at low output it is still below total cost. Follow the marker sweeping up: the shaded gap between the lines is the loss made at that output.",
+      "duration_ms": 10000,
+      "steps": [
+        {
+          "at_ms": 0,
+          "do": "show",
+          "shape": {
+            "id": "title",
+            "kind": "text",
+            "x": 480,
+            "y": 34,
+            "text": "Break-even: where revenue catches total cost",
+            "size": 20,
+            "color": "#1a1a1a",
+            "explain": "Title: break-even, where total revenue catches total cost for one product at a fixed price.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 200,
+          "do": "show",
+          "shape": {
+            "id": "yAxis",
+            "kind": "line",
+            "x1": 140,
+            "y1": 440,
+            "x2": 140,
+            "y2": 80,
+            "stroke": "#1a1a1a",
+            "strokeWidth": 3,
+            "explain": "The vertical axis: costs and revenue in dollars, from $0 at the origin to $8,000 at the top."
+          }
+        },
+        {
+          "at_ms": 350,
+          "do": "show",
+          "shape": {
+            "id": "xAxis",
+            "kind": "line",
+            "x1": 140,
+            "y1": 440,
+            "x2": 860,
+            "y2": 440,
+            "stroke": "#1a1a1a",
+            "strokeWidth": 3,
+            "explain": "The horizontal axis: output in units, from 0 at the origin to 400 units at the right."
+          }
+        },
+        {
+          "at_ms": 500,
+          "do": "show",
+          "shape": {
+            "id": "gridH6000",
+            "kind": "line",
+            "x1": 140,
+            "y1": 170,
+            "x2": 860,
+            "y2": 170,
+            "stroke": "#d5d8dc",
+            "strokeWidth": 1,
+            "explain": "Gridline at $6,000: a faint horizontal guide behind the data lines."
+          }
+        },
+        {
+          "at_ms": 600,
+          "do": "show",
+          "shape": {
+            "id": "gridH4000",
+            "kind": "line",
+            "x1": 140,
+            "y1": 260,
+            "x2": 860,
+            "y2": 260,
+            "stroke": "#d5d8dc",
+            "strokeWidth": 1,
+            "explain": "Gridline at $4,000: a faint horizontal guide behind the data lines."
+          }
+        },
+        {
+          "at_ms": 700,
+          "do": "show",
+          "shape": {
+            "id": "gridV100",
+            "kind": "line",
+            "x1": 320,
+            "y1": 440,
+            "x2": 320,
+            "y2": 80,
+            "stroke": "#d5d8dc",
+            "strokeWidth": 1,
+            "explain": "Gridline at 100 units: a faint vertical guide behind the data lines."
+          }
+        },
+        {
+          "at_ms": 800,
+          "do": "show",
+          "shape": {
+            "id": "gridV200",
+            "kind": "line",
+            "x1": 500,
+            "y1": 440,
+            "x2": 500,
+            "y2": 80,
+            "stroke": "#d5d8dc",
+            "strokeWidth": 1,
+            "explain": "Gridline at 200 units: a faint vertical guide behind the data lines."
+          }
+        },
+        {
+          "at_ms": 900,
+          "do": "show",
+          "shape": {
+            "id": "gridV300",
+            "kind": "line",
+            "x1": 680,
+            "y1": 440,
+            "x2": 680,
+            "y2": 80,
+            "stroke": "#d5d8dc",
+            "strokeWidth": 1,
+            "explain": "Gridline at 300 units: a faint vertical guide behind the data lines."
+          }
+        },
+        {
+          "at_ms": 1000,
+          "do": "show",
+          "shape": {
+            "id": "yTick0",
+            "kind": "text",
+            "x": 130,
+            "y": 445,
+            "text": "$0",
+            "size": 13,
+            "color": "#1a1a1a",
+            "explain": "Tick label: the money value $0 on the costs and revenue axis.",
+            "align": "end"
+          }
+        },
+        {
+          "at_ms": 1060,
+          "do": "show",
+          "shape": {
+            "id": "yTick1",
+            "kind": "text",
+            "x": 130,
+            "y": 355,
+            "text": "$2,000",
+            "size": 13,
+            "color": "#1a1a1a",
+            "explain": "Tick label: the money value $2,000 on the costs and revenue axis.",
+            "align": "end"
+          }
+        },
+        {
+          "at_ms": 1120,
+          "do": "show",
+          "shape": {
+            "id": "yTick2",
+            "kind": "text",
+            "x": 130,
+            "y": 265,
+            "text": "$4,000",
+            "size": 13,
+            "color": "#1a1a1a",
+            "explain": "Tick label: the money value $4,000 on the costs and revenue axis.",
+            "align": "end"
+          }
+        },
+        {
+          "at_ms": 1180,
+          "do": "show",
+          "shape": {
+            "id": "yTick3",
+            "kind": "text",
+            "x": 130,
+            "y": 175,
+            "text": "$6,000",
+            "size": 13,
+            "color": "#1a1a1a",
+            "explain": "Tick label: the money value $6,000 on the costs and revenue axis.",
+            "align": "end"
+          }
+        },
+        {
+          "at_ms": 1240,
+          "do": "show",
+          "shape": {
+            "id": "yTick4",
+            "kind": "text",
+            "x": 130,
+            "y": 85,
+            "text": "$8,000",
+            "size": 13,
+            "color": "#1a1a1a",
+            "explain": "Tick label: the money value $8,000 on the costs and revenue axis.",
+            "align": "end"
+          }
+        },
+        {
+          "at_ms": 1400,
+          "do": "show",
+          "shape": {
+            "id": "xTick0",
+            "kind": "text",
+            "x": 140,
+            "y": 462,
+            "text": "0",
+            "size": 13,
+            "color": "#1a1a1a",
+            "explain": "Tick label: the output value 0 units on the output axis.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 1460,
+          "do": "show",
+          "shape": {
+            "id": "xTick1",
+            "kind": "text",
+            "x": 320,
+            "y": 462,
+            "text": "100",
+            "size": 13,
+            "color": "#1a1a1a",
+            "explain": "Tick label: the output value 100 units on the output axis.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 1520,
+          "do": "show",
+          "shape": {
+            "id": "xTick2",
+            "kind": "text",
+            "x": 500,
+            "y": 462,
+            "text": "200",
+            "size": 13,
+            "color": "#1a1a1a",
+            "explain": "Tick label: the output value 200 units on the output axis.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 1580,
+          "do": "show",
+          "shape": {
+            "id": "xTick3",
+            "kind": "text",
+            "x": 680,
+            "y": 462,
+            "text": "300",
+            "size": 13,
+            "color": "#1a1a1a",
+            "explain": "Tick label: the output value 300 units on the output axis.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 1640,
+          "do": "show",
+          "shape": {
+            "id": "xTick4",
+            "kind": "text",
+            "x": 860,
+            "y": 462,
+            "text": "400",
+            "size": 13,
+            "color": "#1a1a1a",
+            "explain": "Tick label: the output value 400 units on the output axis.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 1750,
+          "do": "show",
+          "shape": {
+            "id": "yAxisTitle",
+            "kind": "text",
+            "x": 140,
+            "y": 62,
+            "text": "Costs and revenue ($)",
+            "size": 14,
+            "color": "#1a1a1a",
+            "explain": "Axis title: the vertical axis measures costs and revenue in dollars.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 1900,
+          "do": "show",
+          "shape": {
+            "id": "xAxisTitle",
+            "kind": "text",
+            "x": 500,
+            "y": 498,
+            "text": "Output (units)",
+            "size": 14,
+            "color": "#1a1a1a",
+            "explain": "Axis title: the horizontal axis measures output in units.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 2200,
+          "do": "show",
+          "shape": {
+            "id": "fcLine",
+            "kind": "line",
+            "x1": 140,
+            "y1": 350,
+            "x2": 860,
+            "y2": 350,
+            "stroke": "#2874a6",
+            "strokeWidth": 4,
+            "explain": "Fixed-cost line: fixed costs stay at $2,000 at every output, so the line is flat."
+          }
+        },
+        {
+          "at_ms": 2300,
+          "do": "show",
+          "shape": {
+            "id": "fcLab",
+            "kind": "text",
+            "x": 872,
+            "y": 358,
+            "text": "FC",
+            "size": 16,
+            "color": "#1a1a1a",
+            "explain": "Line label: FC, the fixed-cost line, flat at $2,000."
+          }
+        },
+        {
+          "at_ms": 2450,
+          "do": "show",
+          "shape": {
+            "id": "tcLine",
+            "kind": "line",
+            "x1": 140,
+            "y1": 350,
+            "x2": 860,
+            "y2": 170,
+            "stroke": "#b03a2e",
+            "strokeWidth": 4,
+            "explain": "Total-cost line: total cost starts at $2,000 and rises by $10 of variable cost per unit."
+          }
+        },
+        {
+          "at_ms": 2550,
+          "do": "show",
+          "shape": {
+            "id": "tcLab",
+            "kind": "text",
+            "x": 872,
+            "y": 178,
+            "text": "TC",
+            "size": 16,
+            "color": "#1a1a1a",
+            "explain": "Line label: TC, the total-cost line, rising from the $2,000 intercept."
+          }
+        },
+        {
+          "at_ms": 2700,
+          "do": "show",
+          "shape": {
+            "id": "trLine",
+            "kind": "line",
+            "x1": 140,
+            "y1": 440,
+            "x2": 860,
+            "y2": 80,
+            "stroke": "#1e8449",
+            "strokeWidth": 4,
+            "explain": "Total-revenue line: total revenue starts at zero and rises by the $20 selling price per unit."
+          }
+        },
+        {
+          "at_ms": 2850,
+          "do": "show",
+          "shape": {
+            "id": "trLab",
+            "kind": "text",
+            "x": 872,
+            "y": 88,
+            "text": "TR",
+            "size": 16,
+            "color": "#1a1a1a",
+            "explain": "Line label: TR, the total-revenue line, rising from zero."
+          }
+        },
+        {
+          "at_ms": 3000,
+          "do": "show",
+          "shape": {
+            "id": "note1",
+            "kind": "text",
+            "x": 335,
+            "y": 120,
+            "text": "At low output",
+            "size": 14,
+            "color": "#1a1a1a",
+            "explain": "Note: at low output the business is still below break-even."
+          }
+        },
+        {
+          "at_ms": 3150,
+          "do": "show",
+          "shape": {
+            "id": "note2",
+            "kind": "text",
+            "x": 335,
+            "y": 145,
+            "text": "TC sits above TR",
+            "size": 14,
+            "color": "#1a1a1a",
+            "explain": "Note: at low output total cost sits above total revenue, so the business makes a loss."
+          }
+        },
+        {
+          "at_ms": 3350,
+          "do": "show",
+          "shape": {
+            "id": "lossPoly",
+            "kind": "polygon",
+            "points": [
+              [
+                140,
+                350
+              ],
+              [
+                500,
+                260
+              ],
+              [
+                140,
+                440
+              ]
+            ],
+            "fill": "#fadbd8",
+            "explain": "Loss zone: the shaded gap where total cost sits above total revenue, so each sale still leaves a loss."
+          }
+        },
+        {
+          "at_ms": 3550,
+          "do": "show",
+          "shape": {
+            "id": "lossLab",
+            "kind": "text",
+            "x": 185,
+            "y": 398,
+            "text": "Loss",
+            "size": 15,
+            "color": "#1a1a1a",
+            "explain": "Zone label: this shaded zone is a loss, because total cost is above total revenue.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 3750,
+          "do": "show",
+          "shape": {
+            "id": "guideLine",
+            "kind": "line",
+            "x1": 230,
+            "y1": 328,
+            "x2": 230,
+            "y2": 440,
+            "stroke": "#616a6b",
+            "strokeWidth": 3,
+            "explain": "Output guide: it tracks the output marker up to the total-cost line.",
+            "dash": "6 4"
+          }
+        },
+        {
+          "at_ms": 3900,
+          "do": "show",
+          "shape": {
+            "id": "markerDot",
+            "kind": "circle",
+            "cx": 230,
+            "cy": 440,
+            "r": 9,
+            "fill": "#f39c12",
+            "explain": "Output marker: it sweeps along the output axis as output rises toward break-even."
+          }
+        },
+        {
+          "at_ms": 4200,
+          "do": "emphasize",
+          "target": "lossPoly"
+        },
+        {
+          "at_ms": 4600,
+          "do": "move",
+          "target": "markerDot",
+          "to": {
+            "cx": 428
+          },
+          "dur_ms": 2200
+        },
+        {
+          "at_ms": 4600,
+          "do": "move",
+          "target": "guideLine",
+          "to": {
+            "x1": 428,
+            "x2": 428,
+            "y1": 278
+          },
+          "dur_ms": 2200
+        },
+        {
+          "at_ms": 7200,
+          "do": "emphasize",
+          "target": "markerDot"
+        },
+        {
+          "at_ms": 8400,
+          "do": "caption",
+          "text": "Below break-even, total cost is above revenue"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "caption": "Break-even, then the profit zone opens",
+      "narration": "At 200 units the lines cross: total revenue equals total cost at $4,000, so there is no profit and no loss. Sweep past it and revenue pulls above total cost - the loss zone closes and the profit zone opens, with only one crossing.",
+      "duration_ms": 10000,
+      "steps": [
+        {
+          "at_ms": 0,
+          "do": "show",
+          "shape": {
+            "id": "title",
+            "kind": "text",
+            "x": 480,
+            "y": 34,
+            "text": "Break-even: where revenue catches total cost",
+            "size": 20,
+            "color": "#1a1a1a",
+            "explain": "Title: break-even, where total revenue catches total cost for one product at a fixed price.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 200,
+          "do": "show",
+          "shape": {
+            "id": "yAxis",
+            "kind": "line",
+            "x1": 140,
+            "y1": 440,
+            "x2": 140,
+            "y2": 80,
+            "stroke": "#1a1a1a",
+            "strokeWidth": 3,
+            "explain": "The vertical axis: costs and revenue in dollars, from $0 at the origin to $8,000 at the top."
+          }
+        },
+        {
+          "at_ms": 350,
+          "do": "show",
+          "shape": {
+            "id": "xAxis",
+            "kind": "line",
+            "x1": 140,
+            "y1": 440,
+            "x2": 860,
+            "y2": 440,
+            "stroke": "#1a1a1a",
+            "strokeWidth": 3,
+            "explain": "The horizontal axis: output in units, from 0 at the origin to 400 units at the right."
+          }
+        },
+        {
+          "at_ms": 500,
+          "do": "show",
+          "shape": {
+            "id": "gridH6000",
+            "kind": "line",
+            "x1": 140,
+            "y1": 170,
+            "x2": 860,
+            "y2": 170,
+            "stroke": "#d5d8dc",
+            "strokeWidth": 1,
+            "explain": "Gridline at $6,000: a faint horizontal guide behind the data lines."
+          }
+        },
+        {
+          "at_ms": 600,
+          "do": "show",
+          "shape": {
+            "id": "gridH4000",
+            "kind": "line",
+            "x1": 140,
+            "y1": 260,
+            "x2": 860,
+            "y2": 260,
+            "stroke": "#d5d8dc",
+            "strokeWidth": 1,
+            "explain": "Gridline at $4,000: a faint horizontal guide behind the data lines."
+          }
+        },
+        {
+          "at_ms": 700,
+          "do": "show",
+          "shape": {
+            "id": "gridV100",
+            "kind": "line",
+            "x1": 320,
+            "y1": 440,
+            "x2": 320,
+            "y2": 80,
+            "stroke": "#d5d8dc",
+            "strokeWidth": 1,
+            "explain": "Gridline at 100 units: a faint vertical guide behind the data lines."
+          }
+        },
+        {
+          "at_ms": 800,
+          "do": "show",
+          "shape": {
+            "id": "gridV200",
+            "kind": "line",
+            "x1": 500,
+            "y1": 440,
+            "x2": 500,
+            "y2": 80,
+            "stroke": "#d5d8dc",
+            "strokeWidth": 1,
+            "explain": "Gridline at 200 units: a faint vertical guide behind the data lines."
+          }
+        },
+        {
+          "at_ms": 900,
+          "do": "show",
+          "shape": {
+            "id": "gridV300",
+            "kind": "line",
+            "x1": 680,
+            "y1": 440,
+            "x2": 680,
+            "y2": 80,
+            "stroke": "#d5d8dc",
+            "strokeWidth": 1,
+            "explain": "Gridline at 300 units: a faint vertical guide behind the data lines."
+          }
+        },
+        {
+          "at_ms": 1000,
+          "do": "show",
+          "shape": {
+            "id": "yTick0",
+            "kind": "text",
+            "x": 130,
+            "y": 445,
+            "text": "$0",
+            "size": 13,
+            "color": "#1a1a1a",
+            "explain": "Tick label: the money value $0 on the costs and revenue axis.",
+            "align": "end"
+          }
+        },
+        {
+          "at_ms": 1060,
+          "do": "show",
+          "shape": {
+            "id": "yTick1",
+            "kind": "text",
+            "x": 130,
+            "y": 355,
+            "text": "$2,000",
+            "size": 13,
+            "color": "#1a1a1a",
+            "explain": "Tick label: the money value $2,000 on the costs and revenue axis.",
+            "align": "end"
+          }
+        },
+        {
+          "at_ms": 1120,
+          "do": "show",
+          "shape": {
+            "id": "yTick2",
+            "kind": "text",
+            "x": 130,
+            "y": 265,
+            "text": "$4,000",
+            "size": 13,
+            "color": "#1a1a1a",
+            "explain": "Tick label: the money value $4,000 on the costs and revenue axis.",
+            "align": "end"
+          }
+        },
+        {
+          "at_ms": 1180,
+          "do": "show",
+          "shape": {
+            "id": "yTick3",
+            "kind": "text",
+            "x": 130,
+            "y": 175,
+            "text": "$6,000",
+            "size": 13,
+            "color": "#1a1a1a",
+            "explain": "Tick label: the money value $6,000 on the costs and revenue axis.",
+            "align": "end"
+          }
+        },
+        {
+          "at_ms": 1240,
+          "do": "show",
+          "shape": {
+            "id": "yTick4",
+            "kind": "text",
+            "x": 130,
+            "y": 85,
+            "text": "$8,000",
+            "size": 13,
+            "color": "#1a1a1a",
+            "explain": "Tick label: the money value $8,000 on the costs and revenue axis.",
+            "align": "end"
+          }
+        },
+        {
+          "at_ms": 1400,
+          "do": "show",
+          "shape": {
+            "id": "xTick0",
+            "kind": "text",
+            "x": 140,
+            "y": 462,
+            "text": "0",
+            "size": 13,
+            "color": "#1a1a1a",
+            "explain": "Tick label: the output value 0 units on the output axis.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 1460,
+          "do": "show",
+          "shape": {
+            "id": "xTick1",
+            "kind": "text",
+            "x": 320,
+            "y": 462,
+            "text": "100",
+            "size": 13,
+            "color": "#1a1a1a",
+            "explain": "Tick label: the output value 100 units on the output axis.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 1520,
+          "do": "show",
+          "shape": {
+            "id": "xTick2",
+            "kind": "text",
+            "x": 500,
+            "y": 462,
+            "text": "200",
+            "size": 13,
+            "color": "#1a1a1a",
+            "explain": "Tick label: the output value 200 units on the output axis.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 1580,
+          "do": "show",
+          "shape": {
+            "id": "xTick3",
+            "kind": "text",
+            "x": 680,
+            "y": 462,
+            "text": "300",
+            "size": 13,
+            "color": "#1a1a1a",
+            "explain": "Tick label: the output value 300 units on the output axis.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 1640,
+          "do": "show",
+          "shape": {
+            "id": "xTick4",
+            "kind": "text",
+            "x": 860,
+            "y": 462,
+            "text": "400",
+            "size": 13,
+            "color": "#1a1a1a",
+            "explain": "Tick label: the output value 400 units on the output axis.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 1750,
+          "do": "show",
+          "shape": {
+            "id": "yAxisTitle",
+            "kind": "text",
+            "x": 140,
+            "y": 62,
+            "text": "Costs and revenue ($)",
+            "size": 14,
+            "color": "#1a1a1a",
+            "explain": "Axis title: the vertical axis measures costs and revenue in dollars.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 1900,
+          "do": "show",
+          "shape": {
+            "id": "xAxisTitle",
+            "kind": "text",
+            "x": 500,
+            "y": 498,
+            "text": "Output (units)",
+            "size": 14,
+            "color": "#1a1a1a",
+            "explain": "Axis title: the horizontal axis measures output in units.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 2000,
+          "do": "show",
+          "shape": {
+            "id": "fcLine",
+            "kind": "line",
+            "x1": 140,
+            "y1": 350,
+            "x2": 860,
+            "y2": 350,
+            "stroke": "#2874a6",
+            "strokeWidth": 4,
+            "explain": "Fixed-cost line: fixed costs stay at $2,000 at every output, so the line is flat."
+          }
+        },
+        {
+          "at_ms": 2100,
+          "do": "show",
+          "shape": {
+            "id": "fcLab",
+            "kind": "text",
+            "x": 872,
+            "y": 358,
+            "text": "FC",
+            "size": 16,
+            "color": "#1a1a1a",
+            "explain": "Line label: FC, the fixed-cost line, flat at $2,000."
+          }
+        },
+        {
+          "at_ms": 2250,
+          "do": "show",
+          "shape": {
+            "id": "tcLine",
+            "kind": "line",
+            "x1": 140,
+            "y1": 350,
+            "x2": 860,
+            "y2": 170,
+            "stroke": "#b03a2e",
+            "strokeWidth": 4,
+            "explain": "Total-cost line: total cost starts at $2,000 and rises by $10 of variable cost per unit."
+          }
+        },
+        {
+          "at_ms": 2350,
+          "do": "show",
+          "shape": {
+            "id": "tcLab",
+            "kind": "text",
+            "x": 872,
+            "y": 178,
+            "text": "TC",
+            "size": 16,
+            "color": "#1a1a1a",
+            "explain": "Line label: TC, the total-cost line, rising from the $2,000 intercept."
+          }
+        },
+        {
+          "at_ms": 2500,
+          "do": "show",
+          "shape": {
+            "id": "trLine",
+            "kind": "line",
+            "x1": 140,
+            "y1": 440,
+            "x2": 860,
+            "y2": 80,
+            "stroke": "#1e8449",
+            "strokeWidth": 4,
+            "explain": "Total-revenue line: total revenue starts at zero and rises by the $20 selling price per unit."
+          }
+        },
+        {
+          "at_ms": 2600,
+          "do": "show",
+          "shape": {
+            "id": "trLab",
+            "kind": "text",
+            "x": 872,
+            "y": 88,
+            "text": "TR",
+            "size": 16,
+            "color": "#1a1a1a",
+            "explain": "Line label: TR, the total-revenue line, rising from zero."
+          }
+        },
+        {
+          "at_ms": 2750,
+          "do": "show",
+          "shape": {
+            "id": "hGuide",
+            "kind": "line",
+            "x1": 140,
+            "y1": 260,
+            "x2": 500,
+            "y2": 260,
+            "stroke": "#616a6b",
+            "strokeWidth": 3,
+            "explain": "Break-even guide: the $4,000 money level of the crossing point, traced back to the axis.",
+            "dash": "6 4"
+          }
+        },
+        {
+          "at_ms": 2850,
+          "do": "show",
+          "shape": {
+            "id": "vGuide",
+            "kind": "line",
+            "x1": 500,
+            "y1": 260,
+            "x2": 500,
+            "y2": 440,
+            "stroke": "#616a6b",
+            "strokeWidth": 3,
+            "explain": "Break-even guide: the 200-unit output level of the crossing point, traced down to the axis.",
+            "dash": "6 4"
+          }
+        },
+        {
+          "at_ms": 3000,
+          "do": "show",
+          "shape": {
+            "id": "lossPoly",
+            "kind": "polygon",
+            "points": [
+              [
+                140,
+                350
+              ],
+              [
+                500,
+                260
+              ],
+              [
+                140,
+                440
+              ]
+            ],
+            "fill": "#fadbd8",
+            "explain": "Loss zone: below break-even, total cost sits above total revenue."
+          }
+        },
+        {
+          "at_ms": 3150,
+          "do": "show",
+          "shape": {
+            "id": "lossLab",
+            "kind": "text",
+            "x": 185,
+            "y": 398,
+            "text": "Loss",
+            "size": 15,
+            "color": "#1a1a1a",
+            "explain": "Zone label: this shaded zone is a loss, because total cost is above total revenue.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 3300,
+          "do": "show",
+          "shape": {
+            "id": "crossDot",
+            "kind": "circle",
+            "cx": 500,
+            "cy": 260,
+            "r": 10,
+            "fill": "#e74c3c",
+            "explain": "Break-even point: at 200 units total revenue equals total cost at $4,000, so there is no profit and no loss."
+          }
+        },
+        {
+          "at_ms": 3450,
+          "do": "show",
+          "shape": {
+            "id": "beLab1",
+            "kind": "text",
+            "x": 520,
+            "y": 120,
+            "text": "Break-even",
+            "size": 15,
+            "color": "#1a1a1a",
+            "explain": "Break-even label: the single crossing of total revenue and total cost."
+          }
+        },
+        {
+          "at_ms": 3600,
+          "do": "show",
+          "shape": {
+            "id": "beLab2",
+            "kind": "text",
+            "x": 520,
+            "y": 145,
+            "text": "200 units, $4,000",
+            "size": 14,
+            "color": "#1a1a1a",
+            "explain": "Break-even label: break-even output is 200 units, where both lines meet at $4,000."
+          }
+        },
+        {
+          "at_ms": 3800,
+          "do": "emphasize",
+          "target": "crossDot"
+        },
+        {
+          "at_ms": 3950,
+          "do": "show",
+          "shape": {
+            "id": "markerDot",
+            "kind": "circle",
+            "cx": 500,
+            "cy": 440,
+            "r": 9,
+            "fill": "#f39c12",
+            "explain": "Output marker: it starts at the break-even output and sweeps past it."
+          }
+        },
+        {
+          "at_ms": 4400,
+          "do": "hide",
+          "target": "lossPoly"
+        },
+        {
+          "at_ms": 4400,
+          "do": "hide",
+          "target": "lossLab"
+        },
+        {
+          "at_ms": 4700,
+          "do": "show",
+          "shape": {
+            "id": "profitPoly",
+            "kind": "polygon",
+            "points": [
+              [
+                500,
+                260
+              ],
+              [
+                860,
+                80
+              ],
+              [
+                860,
+                170
+              ]
+            ],
+            "fill": "#a9dfbf",
+            "explain": "Profit zone: past break-even, total revenue sits above total cost, so the shaded gap is profit."
+          }
+        },
+        {
+          "at_ms": 4900,
+          "do": "show",
+          "shape": {
+            "id": "profitLab",
+            "kind": "text",
+            "x": 790,
+            "y": 158,
+            "text": "Profit",
+            "size": 15,
+            "color": "#1a1a1a",
+            "explain": "Zone label: this shaded zone is a profit, because total revenue is above total cost.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 5200,
+          "do": "move",
+          "target": "markerDot",
+          "to": {
+            "cx": 770
+          },
+          "dur_ms": 2000
+        },
+        {
+          "at_ms": 6800,
+          "do": "show",
+          "shape": {
+            "id": "recapA1",
+            "kind": "text",
+            "x": 335,
+            "y": 382,
+            "text": "Fixed costs",
+            "size": 14,
+            "color": "#1a1a1a",
+            "explain": "Recap: fixed costs are still flat at $2,000, unchanged by output."
+          }
+        },
+        {
+          "at_ms": 6950,
+          "do": "show",
+          "shape": {
+            "id": "recapA2",
+            "kind": "text",
+            "x": 335,
+            "y": 407,
+            "text": "still flat",
+            "size": 14,
+            "color": "#1a1a1a",
+            "explain": "Recap: the fixed-cost line stayed flat through every scene."
+          }
+        },
+        {
+          "at_ms": 7100,
+          "do": "show",
+          "shape": {
+            "id": "recapB",
+            "kind": "text",
+            "x": 700,
+            "y": 408,
+            "text": "One crossing only",
+            "size": 14,
+            "color": "#1a1a1a",
+            "explain": "Recap: total revenue and total cost cross only once, at break-even."
+          }
+        },
+        {
+          "at_ms": 7400,
+          "do": "emphasize",
+          "target": "profitPoly"
+        },
+        {
+          "at_ms": 8600,
+          "do": "caption",
+          "text": "Past break-even, revenue is above total cost"
+        }
+      ]
+    }
+  ]
+}

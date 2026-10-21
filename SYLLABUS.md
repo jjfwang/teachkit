@@ -141,6 +141,12 @@ Principles of Accounts:
 |---|---|
 | `double-entry` | Double entry (SEAB 7087): one cash purchase of equipment changes two accounts at once - equipment rises and cash falls by the same amount, so the accounting equation Assets = Capital + Liabilities stays balanced and total assets are unchanged |
 
+Business Studies:
+
+| slug | topic |
+|---|---|
+| `break-even` | Break-even (SEAB 7085): for one product at a fixed price, fixed costs stay flat, total cost rises from the fixed-cost intercept and total revenue rises faster from zero, so the lines cross once at the break-even output - loss below it, profit above it |
+
 ## Junior College — H2
 
 Mathematics:
@@ -200,7 +206,7 @@ Further Mathematics:
 - `level` + `subject` on a spec are coarse (`primary|secondary|jc`,
   and `subject` per `SPEC.md` §subject — any non-empty string; the
   syllabus-covered subjects in `player/validate.js` SUBJECTS are currently
-  `math|science|geography|economics|computing|electronics|design-technology|nutrition-food-science|principles-of-accounts`); the `topic` slug carries the precise syllabus
+  `math|science|geography|economics|computing|electronics|design-technology|nutrition-food-science|principles-of-accounts|business-studies`); the `topic` slug carries the precise syllabus
   point. SUBJECTS is the syllabus-known list for gallery/coverage, not the
   validator's allowed set. When a new syllabus-covered subject lands, update
   this line against those sources; the syllabus.test.js SUBJECTS test fails
