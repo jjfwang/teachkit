@@ -514,6 +514,12 @@
       wrongTurn: 'The population keeps growing faster and faster like a pure exponential, so it never slows down or levels off.',
       why: 'Early on the logistic curve looks just like exponential growth, so it is tempting to extrapolate the steepening rise for ever.',
       correctTurn: 'As the population nears the carrying capacity K the growth rate falls to zero, so the curve bends over and levels at P = K, the stable equilibrium every starting population is funnelled to.'
+    },
+    // Slice 12 (issue #1106): JC H2 Mathematics.
+    'maclaurin-series': {
+      wrongTurn: 'Adding more terms makes the polynomial match sin x everywhere, however far x gets from 0.',
+      why: 'Each added term visibly extends the match with sin x, widening the accurate region around 0, so it looks as if the match becomes global.',
+      correctTurn: 'More terms widen the accurate interval around 0 and improve accuracy there, but for any fixed polynomial the approximation still breaks down far from 0.'
     }
   };
 

@@ -131,6 +131,7 @@ Mathematics:
 | `h2-integration` | Integration: techniques, volumes of revolution |
 | `h2-probability` | Probability: distributions |
 | `h2-statistics` | Statistics: sampling, hypothesis testing |
+| `maclaurin-series` | Maclaurin series (SEAB 9758 section 5.2 Maclaurin series, the concept bullet): sin x built term by term, each term widening the accurate region around 0, diverging far from 0 |
 
 Physics:
 
