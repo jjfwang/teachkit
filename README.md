@@ -162,7 +162,8 @@ and for JC H2 Mathematics Maclaurin series,
 and for Secondary Electronics sensor divider
 and for Secondary Design and Technology vacuum forming,
 and for Secondary Nutrition and Food Science protein denaturation,
-and for Secondary Principles of Accounts double entry
+and for Secondary Principles of Accounts double entry,
+and for Secondary Business Studies break-even
 (animation, slides, worksheet, notes, exit ticket, and script), each
 under its own pack manifest header.
 
