@@ -91,6 +91,11 @@ window.ANIMATH_SYLLABUS = {
             { slug: 'bio-reproduction', label: 'Reproduction' },
             { slug: 'bio-ecology', label: 'Ecology' }
           ]
+        },
+        {
+          id: 'geography', label: 'Geography', subject: 'geography', topics: [
+            { slug: 'tectonics-subduction', label: 'Subduction' }
+          ]
         }
       ]
     },

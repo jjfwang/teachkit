@@ -99,6 +99,12 @@ Biology:
 | `bio-reproduction` | Reproduction in humans and plants |
 | `bio-ecology` | Ecology: food webs, cycles |
 
+Geography:
+
+| slug | topic |
+|---|---|
+| `tectonics-subduction` | Subduction (SEAB 2279 Topic 4.1): convergent boundaries powered by slab-pull - trench, earthquakes and volcanic arc |
+
 ## Junior College — H2
 
 Mathematics:

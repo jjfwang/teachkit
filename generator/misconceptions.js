@@ -483,6 +483,13 @@
       wrongTurn: 'A cold day today means the climate is getting colder.',
       why: 'One day of weather feels like the whole climate, so a single day is read as the trend.',
       correctTurn: 'Today\'s weather is not the climate: climate is the pattern of weather over many years, not one cold or hot day.'
+    },
+    // Slice 7 (issue #1086): Secondary Geography (erosion, plate-tectonics and
+    // weather-climate above are the Primary Geography entries from slice 6).
+    'tectonics-subduction': {
+      wrongTurn: 'The continental plate pushes the oceanic plate down underneath it.',
+      why: 'The overriding plate looks bigger and stronger, so it seems to do the pushing.',
+      correctTurn: 'Nothing pushes it down: the cold, dense slab sinks under its own weight - slab-pull - and drags the rest of the plate behind it.'
     }
   };
 

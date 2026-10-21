@@ -48,12 +48,12 @@ const H2_SLUGS = [
 ];
 
 const GEOGRAPHY_SLUGS = [
-  'erosion', 'plate-tectonics', 'weather-climate'
+  'erosion', 'plate-tectonics', 'weather-climate', 'tectonics-subduction'
 ];
 
 const SEEDED_SLUGS = PRIMARY_MATH_SLUGS.concat(PRIMARY_SCIENCE_SLUGS, SECONDARY_MATH_SLUGS, SECONDARY_SCIENCE_SLUGS, H2_SLUGS, GEOGRAPHY_SLUGS);
 
-test('MISCONCEPTIONS holds exactly the 70 seeded topic slugs (12 Primary Math + 8 Primary Science + 14 Secondary Math + 14 Secondary Science + 19 H2 + 3 Geography)', () => {
+test('MISCONCEPTIONS holds exactly the 71 seeded topic slugs (12 Primary Math + 8 Primary Science + 14 Secondary Math + 14 Secondary Science + 19 H2 + 4 Geography)', () => {
   assert.deepStrictEqual(Object.keys(MISCONCEPTIONS).sort(), SEEDED_SLUGS.slice().sort());
 });
 
