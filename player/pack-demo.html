@@ -1314,6 +1314,24 @@
     <li><code>script</code> teacher script</li>
   </ul>
 </header>
+<header class="pack-manifest" id="demand-supply-equilibrium-secondary-manifest">
+  <h1>Lesson pack: Secondary economics demand-supply-equilibrium: Demand and supply: an income rise bids the price up</h1>
+  <dl>
+    <dt>Slug</dt><dd><code>demand-supply-equilibrium-secondary-economics</code></dd>
+    <dt>Level</dt><dd>secondary</dd>
+    <dt>Subject</dt><dd>economics</dd>
+    <dt>Topic</dt><dd><code>demand-supply-equilibrium</code></dd>
+  </dl>
+  <p>topic demand-supply-equilibrium · level secondary · subject economics · deck secondary-econ-demand-supply-equilibrium</p>
+  <ul class="pack-materials">
+    <li><code>animation</code></li>
+    <li><code>slides</code></li>
+    <li><code>worksheet</code></li>
+    <li><code>exitTicket</code> exit ticket</li>
+    <li><code>notes</code> student notes</li>
+    <li><code>script</code> teacher script</li>
+  </ul>
+</header>
 <section class="pack-section" id="animation-section">
   <h2>Animation</h2>
   <div id="anim-stage"></div>
@@ -2236,6 +2254,19 @@
   <h2>Secondary Geography tectonics-subduction printables</h2>
   <div id="tectonics-subduction-secondary-printables-stage"></div>
 </section>
+<section class="pack-section" id="demand-supply-equilibrium-secondary-animation">
+  <h2>Secondary Economics demand-supply-equilibrium animation</h2>
+  <div id="demand-supply-equilibrium-secondary-stage"></div>
+  <div id="demand-supply-equilibrium-secondary-captions"></div>
+</section>
+<section class="pack-section" id="demand-supply-equilibrium-secondary-slides">
+  <h2>Secondary Economics demand-supply-equilibrium slides</h2>
+  <div id="demand-supply-equilibrium-secondary-slides-stage"></div>
+</section>
+<section class="pack-section" id="demand-supply-equilibrium-secondary-printables">
+  <h2>Secondary Economics demand-supply-equilibrium printables</h2>
+  <div id="demand-supply-equilibrium-secondary-printables-stage"></div>
+</section>
 <div id="err"></div>
 <script src="validate.js"></script>
 <script src="player.js"></script>
@@ -2331,8 +2362,9 @@ var bioReproductionSecondaryPrintStage = document.querySelector('#bio-reproducti
 var bioEcologySecondaryPrintStage = document.querySelector('#bio-ecology-secondary-printables-stage .pr-stage') || document.querySelector('#bio-ecology-secondary-printables-stage');
 var bioNutritionDigestionSecondaryPrintStage = document.querySelector('#bio-nutrition-digestion-secondary-printables-stage .pr-stage') || document.querySelector('#bio-nutrition-digestion-secondary-printables-stage');
 var tectonicsSubductionSecondaryPrintStage = document.querySelector('#tectonics-subduction-secondary-printables-stage .pr-stage') || document.querySelector('#tectonics-subduction-secondary-printables-stage');
+var demandSupplyEquilibriumSecondaryPrintStage = document.querySelector('#demand-supply-equilibrium-secondary-printables-stage .pr-stage') || document.querySelector('#demand-supply-equilibrium-secondary-printables-stage');
     var keys = [];
-    [printStage, fractionsPrintStage, wavesPrintStage, complexPrintStage, trigPrintStage, thermalPrintStage, photosynthesisPrintStage, erosionPrintStage, chemMolePrintStage, differentiationPrintStage, integrationPrintStage, binomialPrintStage, kinematicsPrintStage, quadraticPrintStage, trigonometryAPrintStage, vectorsPrintStage, functionsGraphsPrintStage, sequencesPrintStage, differentiationJcPrintStage, integrationJcPrintStage, probabilityJcPrintStage, statisticsJcPrintStage, mechanicsJcPrintStage, emJcPrintStage, quantumJcPrintStage, physicalJcPrintStage, inorganicJcPrintStage, organicJcPrintStage, cellBioJcPrintStage, geneticsJcPrintStage, energeticsJcPrintStage, ecologyJcPrintStage, wholeNumbersPrimaryPrintStage, decimalsPrimaryPrintStage, percentagePrimaryPrintStage, ratioPrimaryPrintStage, rateSpeedPrimaryPrintStage, algebraIntroPrimaryPrintStage, geometryAnglesPrimaryPrintStage, areaPerimeterPrimaryPrintStage, volumePrimaryPrintStage, dataGraphsPrimaryPrintStage, modelMethodPrimaryPrintStage, humanBodySystemsPrimaryPrintStage, plantSystemsPrimaryPrintStage, lifeCyclesPrimaryPrintStage, energyFormsPrimaryPrintStage, photosynthesisPrimaryPrintStage, forcesMagnetsPrimaryPrintStage, adaptationsPrimaryPrintStage, plateTectonicsPrimaryPrintStage, weatherClimatePrimaryPrintStage, eNumbersSecondaryPrintStage, eAlgebraSecondaryPrintStage, eFunctionsGraphsSecondaryPrintStage, eGeometrySecondaryPrintStage, eMensurationSecondaryPrintStage, eStatisticsSecondaryPrintStage, eProbabilitySecondaryPrintStage, physKinematicsSecondaryPrintStage, physForcesSecondaryPrintStage, physEnergySecondaryPrintStage, physElectricitySecondaryPrintStage, chemAtomicSecondaryPrintStage, chemBondingSecondaryPrintStage, chemAcidsSecondaryPrintStage, bioCellsSecondaryPrintStage, bioTransportSecondaryPrintStage, bioReproductionSecondaryPrintStage, bioEcologySecondaryPrintStage, bioNutritionDigestionSecondaryPrintStage, tectonicsSubductionSecondaryPrintStage].forEach(function (stage) {
+    [printStage, fractionsPrintStage, wavesPrintStage, complexPrintStage, trigPrintStage, thermalPrintStage, photosynthesisPrintStage, erosionPrintStage, chemMolePrintStage, differentiationPrintStage, integrationPrintStage, binomialPrintStage, kinematicsPrintStage, quadraticPrintStage, trigonometryAPrintStage, vectorsPrintStage, functionsGraphsPrintStage, sequencesPrintStage, differentiationJcPrintStage, integrationJcPrintStage, probabilityJcPrintStage, statisticsJcPrintStage, mechanicsJcPrintStage, emJcPrintStage, quantumJcPrintStage, physicalJcPrintStage, inorganicJcPrintStage, organicJcPrintStage, cellBioJcPrintStage, geneticsJcPrintStage, energeticsJcPrintStage, ecologyJcPrintStage, wholeNumbersPrimaryPrintStage, decimalsPrimaryPrintStage, percentagePrimaryPrintStage, ratioPrimaryPrintStage, rateSpeedPrimaryPrintStage, algebraIntroPrimaryPrintStage, geometryAnglesPrimaryPrintStage, areaPerimeterPrimaryPrintStage, volumePrimaryPrintStage, dataGraphsPrimaryPrintStage, modelMethodPrimaryPrintStage, humanBodySystemsPrimaryPrintStage, plantSystemsPrimaryPrintStage, lifeCyclesPrimaryPrintStage, energyFormsPrimaryPrintStage, photosynthesisPrimaryPrintStage, forcesMagnetsPrimaryPrintStage, adaptationsPrimaryPrintStage, plateTectonicsPrimaryPrintStage, weatherClimatePrimaryPrintStage, eNumbersSecondaryPrintStage, eAlgebraSecondaryPrintStage, eFunctionsGraphsSecondaryPrintStage, eGeometrySecondaryPrintStage, eMensurationSecondaryPrintStage, eStatisticsSecondaryPrintStage, eProbabilitySecondaryPrintStage, physKinematicsSecondaryPrintStage, physForcesSecondaryPrintStage, physEnergySecondaryPrintStage, physElectricitySecondaryPrintStage, chemAtomicSecondaryPrintStage, chemBondingSecondaryPrintStage, chemAcidsSecondaryPrintStage, bioCellsSecondaryPrintStage, bioTransportSecondaryPrintStage, bioReproductionSecondaryPrintStage, bioEcologySecondaryPrintStage, bioNutritionDigestionSecondaryPrintStage, tectonicsSubductionSecondaryPrintStage, demandSupplyEquilibriumSecondaryPrintStage].forEach(function (stage) {
       if (stage) {
         keys = keys.concat(Array.prototype.slice.call(stage.querySelectorAll('.pr-teacher')));
       }
@@ -7546,6 +7578,77 @@ var tectonicsSubductionSecondaryPrintStage = document.querySelector('#tectonics-
     ].join('');
   }).catch(function (err) {
     showError('Secondary Geography tectonics-subduction pack failed to load: ' + err.message);
+  });
+})();
+(function () {
+  var presenter = document.getElementById('demand-supply-equilibrium-secondary-slides-stage');
+  var demandSupplyEquilibriumSecondaryPrint = document.getElementById('demand-supply-equilibrium-secondary-printables-stage');
+  var errBox = document.getElementById('err');
+  var demandSupplyEquilibriumSecondaryAnimUrl = '../samples/secondary-econ-demand-supply-equilibrium.json';
+  var demandSupplyEquilibriumSecondaryDeckUrl = '../samples/decks/secondary-econ-demand-supply-equilibrium.json';
+  var demandSupplyEquilibriumSecondaryWorksheetUrl = '../samples/worksheets/secondary-econ-demand-supply-equilibrium.json';
+  var demandSupplyEquilibriumSecondaryTicketUrl = '../samples/tickets/secondary-econ-demand-supply-equilibrium.json';
+  var demandSupplyEquilibriumSecondaryNotesUrl = '../samples/notes/secondary-econ-demand-supply-equilibrium.json';
+  var demandSupplyEquilibriumSecondaryScriptUrl = '../samples/scripts/secondary-econ-demand-supply-equilibrium.json';
+
+  function showError(msg) {
+    errBox.textContent = String(msg);
+  }
+
+  Promise.all([
+    fetch(demandSupplyEquilibriumSecondaryAnimUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + demandSupplyEquilibriumSecondaryAnimUrl);
+      return r.json();
+    }),
+    fetch(demandSupplyEquilibriumSecondaryDeckUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + demandSupplyEquilibriumSecondaryDeckUrl);
+      return r.json();
+    }),
+    fetch(demandSupplyEquilibriumSecondaryWorksheetUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + demandSupplyEquilibriumSecondaryWorksheetUrl);
+      return r.json();
+    }),
+    fetch(demandSupplyEquilibriumSecondaryTicketUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + demandSupplyEquilibriumSecondaryTicketUrl);
+      return r.json();
+    }),
+    fetch(demandSupplyEquilibriumSecondaryNotesUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + demandSupplyEquilibriumSecondaryNotesUrl);
+      return r.json();
+    }),
+    fetch(demandSupplyEquilibriumSecondaryScriptUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + demandSupplyEquilibriumSecondaryScriptUrl);
+      return r.json();
+    })
+  ]).then(function (pack) {
+    var anim = pack[0];
+    var deck = pack[1];
+    var worksheet = pack[2];
+    var ticket = pack[3];
+    var notes = pack[4];
+    var script = pack[5];
+    var problems = AnimathValidate.validateSpec(anim)
+      .concat(AnimathValidate.validateSlides(deck))
+      .concat(AnimathValidate.validateWorksheet(worksheet))
+      .concat(AnimathValidate.validateExitTicket(ticket))
+      .concat(AnimathValidate.validateNotes(notes))
+      .concat(AnimathValidate.validateScript(script));
+    if (problems.length) {
+      showError('Secondary Economics demand-supply-equilibrium pack failed validation:\n' + problems.join('\n'));
+      return;
+    }
+    AnimathPlayer.mount(document.getElementById('demand-supply-equilibrium-secondary-stage'), anim, { autoplay: false });
+    AnimathSlidesPresenter.attachPresenter(document, presenter, deck, { animSpec: anim });
+    demandSupplyEquilibriumSecondaryPrint.innerHTML = [
+      AnimathPrintable.renderWorksheet(worksheet),
+      AnimathPrintable.renderWorksheetAnswerKey(worksheet),
+      AnimathPrintable.renderExitTicket(ticket),
+      AnimathPrintable.renderExitTicketAnswerKey(ticket),
+      AnimathPrintable.renderNotes(notes),
+      AnimathPrintable.renderScript(script)
+    ].join('');
+  }).catch(function (err) {
+    showError('Secondary Economics demand-supply-equilibrium pack failed to load: ' + err.message);
   });
 })();
 </script>
