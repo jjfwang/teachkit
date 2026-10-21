@@ -1,0 +1,60 @@
+{
+ "level": "secondary",
+ "subject": "electronics",
+ "topic": "sensor-divider",
+ "title": "Sensor divider: darkness switches the lamp on",
+ "objectives": [
+  "Describe the sensor divider: a fixed resistor and an LDR in series across a 6 V supply, with the output taken across the LDR",
+  "Calculate the divided voltage V = 6 V x R_LDR / (R_fixed + R_LDR) at each light level: 1.2 V, 3.0 V, 4.2 V and 5.4 V",
+  "Use the 4.5 V threshold to predict when the sensor output switches the lamp on"
+ ],
+ "definitions": [
+  {
+   "term": "Sensor divider",
+   "meaning": "A potential divider whose one resistor is a sensor, here an LDR, so the divided voltage responds to the environment."
+  },
+  {
+   "term": "LDR",
+   "meaning": "A light-dependent resistor whose resistance rises as the light falling on it decreases."
+  },
+  {
+   "term": "Fixed resistor",
+   "meaning": "The constant 1 kOhm resistor in series with the LDR; its share of the supply falls as the LDR resistance rises."
+  },
+  {
+   "term": "Potential divider",
+   "meaning": "Two resistors in series that split the supply voltage in proportion to their resistances."
+  },
+  {
+   "term": "Divided voltage",
+   "meaning": "The output voltage taken across the LDR: 6 V x R_LDR / (R_fixed + R_LDR)."
+  },
+  {
+   "term": "Threshold",
+   "meaning": "The 4.5 V output level at which the sensor output switches the lamp on."
+  },
+  {
+   "term": "Bright daylight output",
+   "meaning": "The 1.2 V across the LDR in bright daylight, when its resistance is only 0.25 kOhm."
+  },
+  {
+   "term": "Dusk output",
+   "meaning": "The 4.2 V across the LDR at dusk, close to but still below the 4.5 V threshold."
+  },
+  {
+   "term": "Dark output",
+   "meaning": "The 5.4 V across the LDR in the dark, when its resistance is 9 kOhm and the lamp lights."
+  }
+ ],
+ "mechanismSteps": [
+  "Bright daylight, lamp off: the LDR resistance is low at 0.25 kOhm, so it takes only 1.2 V of the 6 V supply and the lamp stays off (s1).",
+  "Light falls, output climbs: the LDR resistance steps up to 1 kOhm, equal to the fixed resistor, so the supply splits evenly and the output climbs to 3.0 V (s2).",
+  "Dusk, just below the threshold: the LDR resistance steps up to 2.3 kOhm and its share climbs to 4.2 V, still just below the 4.5 V threshold (s3).",
+  "Dark, lamp on: the LDR resistance rises to 9 kOhm, it takes 5.4 V, the output crosses the 4.5 V threshold and the lamp lights (s4)."
+ ],
+ "workedExample": "Work the climb stage by stage with V = 6 V x R_LDR / (R_fixed + R_LDR). Step 1 (s1): R_LDR = 0.25 kOhm gives 6 x 0.25 / 1.25 = 1.2 V, lamp off. Step 2 (s2): R_LDR = 1 kOhm gives 6 x 1 / 2 = 3.0 V, lamp off. Step 3 (s3): R_LDR = 2.3 kOhm gives about 4.2 V, still below the 4.5 V threshold. Step 4 (s4): R_LDR = 9 kOhm gives 6 x 9 / 10 = 5.4 V, above the threshold, lamp on.",
+ "trap": {
+  "misconception": "As it gets darker and the LDR's resistance rises, the voltage across the LDR falls, so the sensor output switches the lamp off.",
+  "explanation": "The slip: A bigger resistance is imagined to \"block\" voltage, so the LDR's share is expected to shrink as its resistance grows. The fix: In a series divider each resistor takes a share of the supply in proportion to its resistance, so as the LDR's resistance rises in the dark its share - the output voltage - climbs until it crosses the threshold and switches the lamp on. In class, replay scene 4: freeze the voltmeter at 5.4 V and ask what the reading would be if a bigger resistance really took a smaller share - it would fall below the 4.5 V threshold and the lamp would stay off; it reads 5.4 V, so the bigger resistance must take the bigger share first."
+ }
+}

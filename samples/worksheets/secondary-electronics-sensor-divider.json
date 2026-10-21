@@ -1,0 +1,86 @@
+{
+ "level": "secondary",
+ "subject": "electronics",
+ "topic": "sensor-divider",
+ "title": "Sensor divider: darkness switches the lamp on",
+ "questions": [
+  {
+   "id": "q1",
+   "kind": "multiple-choice",
+   "prompt": "Which statement about the sensor divider is correct?",
+   "choices": [
+    {
+     "text": "As it gets darker the voltage across the LDR falls, so the lamp switches off"
+    },
+    {
+     "text": "The output voltage stays at 3.0 V whatever the light level"
+    },
+    {
+     "correct": true,
+     "text": "As the LDR resistance rises in the dark, its share of the 6 V supply rises until it crosses the 4.5 V threshold and switches the lamp on."
+    },
+    {
+     "text": "The fixed resistor always takes the bigger share of the supply"
+    }
+   ],
+   "misconception": "As it gets darker and the LDR's resistance rises, the voltage across the LDR falls, so the sensor output switches the lamp off.",
+   "explanation": "The trap claim is: As it gets darker and the LDR's resistance rises, the voltage across the LDR falls, so the sensor output switches the lamp off. In fact In a series divider each resistor takes a share of the supply in proportion to its resistance, so as the LDR's resistance rises in the dark its share - the output voltage - climbs until it crosses the threshold and switches the lamp on."
+  },
+  {
+   "id": "q2",
+   "kind": "multiple-choice",
+   "prompt": "Why does the output reach exactly 3.0 V when the light first falls?",
+   "choices": [
+    {
+     "text": "Because the threshold is set at 3.0 V"
+    },
+    {
+     "correct": true,
+     "text": "Because the LDR resistance steps up to 1 kOhm, equal to the fixed resistor, so equal resistances split the 6 V supply evenly"
+    },
+    {
+     "text": "Because the supply voltage drops to 3.0 V"
+    },
+    {
+     "text": "Because the lamp draws half the current"
+    }
+   ],
+   "explanation": "Scene 2 works this: equal resistances of 1 kOhm each split the supply evenly, so the output across the LDR climbs to 3.0 V."
+  },
+  {
+   "id": "q3",
+   "kind": "short-answer",
+   "prompt": "A student says the voltage across the LDR falls as it gets darker. Explain, in two sentences, what actually happens to the output as light falls.",
+   "answer": "In a series divider each resistor takes a share of the supply in proportion to its resistance, so as the LDR's resistance rises in the dark its share - the output voltage - climbs until it crosses the threshold and switches the lamp on.",
+   "explanation": "The share rule is the deciding habit: name the rising resistance first, then the rising share that crosses the threshold."
+  },
+  {
+   "id": "q4",
+   "kind": "short-answer",
+   "prompt": "In one sentence, state the output voltage at dusk and whether the lamp is on, and why.",
+   "answer": "At dusk the output is 4.2 V and the lamp stays off, because 4.2 V is still just below the 4.5 V threshold.",
+   "explanation": "Scene 3 shows dusk: the output climbs to 4.2 V, close to but still below the 4.5 V threshold."
+  },
+  {
+   "id": "q5",
+   "kind": "multiple-choice",
+   "prompt": "Which list gives the divided voltages across the LDR, in scene order?",
+   "choices": [
+    {
+     "correct": true,
+     "text": "1.2 V in bright daylight, 3.0 V as light falls, 4.2 V at dusk, 5.4 V in the dark"
+    },
+    {
+     "text": "5.4 V in bright daylight, 4.2 V as light falls, 3.0 V at dusk, 1.2 V in the dark"
+    },
+    {
+     "text": "3.0 V in bright daylight, 1.2 V as light falls, 5.4 V at dusk, 4.2 V in the dark"
+    },
+    {
+     "text": "4.2 V in bright daylight, 5.4 V as light falls, 1.2 V at dusk, 3.0 V in the dark"
+    }
+   ],
+   "explanation": "Scene 1 gives 1.2 V, scene 2 gives 3.0 V, scene 3 gives 4.2 V, and scene 4 gives 5.4 V as the LDR resistance climbs."
+  }
+ ]
+}

@@ -1,0 +1,111 @@
+{
+ "level": "secondary",
+ "subject": "electronics",
+ "topic": "sensor-divider",
+ "title": "Sensor divider: darkness switches the lamp on",
+ "slides": [
+  {
+   "kind": "title",
+   "heading": "Sensor divider: darkness switches the lamp on",
+   "bullets": [
+    "How a sensor divider switches a lamp on in the dark: as light falls the LDR resistance climbs, its share of the 6 V supply rises past the 4.5 V threshold"
+   ],
+   "notes": "Welcome everyone in and say: today we follow one sensor divider from bright daylight to darkness and watch the output climb until the lamp switches on."
+  },
+  {
+   "kind": "objective",
+   "heading": "What we will learn",
+   "bullets": [
+    "Describe the sensor divider: a fixed resistor and an LDR in series across 6 V, with the output taken across the LDR",
+    "Explain why the voltage across the LDR rises from 1.2 V to 5.4 V as light falls, crossing the 4.5 V threshold only in the dark"
+   ],
+   "notes": "Read the two goals aloud and tell the class: by the end you will be able to trace the divided voltage at every light level and predict when the lamp lights."
+  },
+  {
+   "kind": "hook",
+   "heading": "A lamp that lights itself - how?",
+   "bullets": [
+    "In bright daylight the lamp is off, with only 1.2 V across the LDR",
+    "So what changes as it gets dark - and why does the lamp switch on instead of off?"
+   ],
+   "notes": "Ask the class: nobody touches a switch, yet the lamp lights at night - what must be changing inside the circuit? Take two or three answers, then say: hold them, because resistance decides the voltage share."
+  },
+  {
+   "kind": "concept",
+   "heading": "Shares in proportion to resistance",
+   "bullets": [
+    "A potential divider splits the supply between series resistors in proportion to their resistances",
+    "Voltage across LDR = 6 V x R_LDR / (R_fixed + R_LDR), so the bigger resistance always takes the bigger share",
+    "An LDR's resistance rises as light falls, so its share - the output voltage - climbs in the dark"
+   ],
+   "notes": "Stress the deciding idea: share follows resistance. The output is taken across the LDR, so when the LDR resistance grows, the output grows with it."
+  },
+  {
+   "kind": "mechanism",
+   "heading": "Bright daylight: the circuit assembles, lamp off",
+   "visual": "s1",
+   "bullets": [
+    "In bright daylight the LDR resistance is low, at 0.25 kOhm against the 1 kOhm fixed resistor",
+    "Its share is only 6 V x 0.25 / 1.25 = 1.2 V, far below the 4.5 V threshold, so the lamp stays off"
+   ],
+   "notes": "Play scene 1 and point to the voltmeter: name the low LDR resistance and the small 1.2 V share it takes."
+  },
+  {
+   "kind": "mechanism",
+   "heading": "Light falls: resistance steps up, output climbs",
+   "visual": "s2",
+   "bullets": [
+    "As the light falls the LDR resistance steps up to 1 kOhm, equal to the fixed resistor",
+    "Equal resistances split the supply evenly, so the output climbs to 3.0 V - still below the threshold"
+   ],
+   "notes": "Play scene 2 and watch the resistance step up: equal resistances mean equal shares, 3.0 V each."
+  },
+  {
+   "kind": "mechanism",
+   "heading": "Dusk: the output stops just below the threshold",
+   "visual": "s3",
+   "bullets": [
+    "At dusk the LDR resistance steps up again to 2.3 kOhm, more than twice the fixed resistor",
+    "Its share climbs to 4.2 V - close to, but still just below, the 4.5 V threshold, so the lamp stays off"
+   ],
+   "notes": "Play scene 3 slowly: 4.2 V feels close, but close is not across - the lamp is still off."
+  },
+  {
+   "kind": "mechanism",
+   "heading": "Dark: the output crosses the threshold and the lamp lights",
+   "visual": "s4",
+   "bullets": [
+    "In the dark the LDR resistance rises to 9 kOhm, nine times the fixed resistor",
+    "It takes 5.4 V of the 6 V supply, crossing the 4.5 V threshold and switching the lamp on"
+   ],
+   "notes": "Play scene 4 and follow the voltmeter past 4.5 V: the bigger resistance takes the bigger share, so darkness lights the lamp."
+  },
+  {
+   "kind": "example",
+   "heading": "Worked example: reading the climb",
+   "bullets": [
+    "At each stage use V = 6 V x R_LDR / (R_fixed + R_LDR): 1.2 V, then 3.0 V, then 4.2 V, then 5.4 V",
+    "Only the final 5.4 V beats the 4.5 V threshold, so the lamp lights only in the dark scene"
+   ],
+   "notes": "Work it slowly: Step 1, bright daylight gives 1.2 V. Step 2, equal resistances give 3.0 V. Step 3, dusk gives 4.2 V, still short. Step 4, darkness gives 5.4 V and the lamp lights."
+  },
+  {
+   "kind": "practice",
+   "heading": "Your turn: predict the next stage",
+   "bullets": [
+    "In pairs: if the LDR resistance rose to 19 kOhm, predict the output voltage and whether the lamp stays on",
+    "Then swap and check: did your partner use the share formula instead of guessing the voltage falls?"
+   ],
+   "notes": "Give pairs three minutes. Listen for share-formula reasoning, then take two pairs answers: 6 V x 19 / 20 = 5.7 V, above the threshold, so the lamp stays on."
+  },
+  {
+   "kind": "exit-ticket",
+   "heading": "Exit ticket: prove it before you leave",
+   "bullets": [
+    "Your exit ticket asks you to correct a student who thinks the voltage across the LDR falls as it gets darker",
+    "Name the rising share and the 4.5 V threshold crossing to earn full credit"
+   ],
+   "notes": "Point to the exit ticket and remind the class: the strongest answers trace the share rising with resistance until it crosses the threshold."
+  }
+ ]
+}
