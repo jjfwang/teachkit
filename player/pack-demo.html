@@ -1422,6 +1422,24 @@
     <li><code>script</code> teacher script</li>
   </ul>
 </header>
+<header class="pack-manifest" id="vacuum-forming-secondary-manifest">
+  <h1>Lesson pack: Secondary Design and Technology vacuum-forming: Vacuum Forming a Plastic Shell</h1>
+  <dl>
+    <dt>Slug</dt><dd><code>vacuum-forming-secondary-design-technology</code></dd>
+    <dt>Level</dt><dd>secondary</dd>
+    <dt>Subject</dt><dd>design-technology</dd>
+    <dt>Topic</dt><dd><code>vacuum-forming</code></dd>
+  </dl>
+  <p>topic vacuum-forming · level secondary · subject design-technology · deck secondary-design-technology-vacuum-forming</p>
+  <ul class="pack-materials">
+    <li><code>animation</code></li>
+    <li><code>slides</code></li>
+    <li><code>worksheet</code></li>
+    <li><code>exitTicket</code> exit ticket</li>
+    <li><code>notes</code> student notes</li>
+    <li><code>script</code> teacher script</li>
+  </ul>
+</header>
 <section class="pack-section" id="animation-section">
   <h2>Animation</h2>
   <div id="anim-stage"></div>
@@ -2422,6 +2440,19 @@
   <h2>Secondary Electronics sensor-divider printables</h2>
   <div id="sensor-divider-secondary-printables-stage"></div>
 </section>
+<section class="pack-section" id="vacuum-forming-secondary-animation">
+  <h2>Secondary Design and Technology vacuum-forming animation</h2>
+  <div id="vacuum-forming-secondary-stage"></div>
+  <div id="vacuum-forming-secondary-captions"></div>
+</section>
+<section class="pack-section" id="vacuum-forming-secondary-slides">
+  <h2>Secondary Design and Technology vacuum-forming slides</h2>
+  <div id="vacuum-forming-secondary-slides-stage"></div>
+</section>
+<section class="pack-section" id="vacuum-forming-secondary-printables">
+  <h2>Secondary Design and Technology vacuum-forming printables</h2>
+  <div id="vacuum-forming-secondary-printables-stage"></div>
+</section>
 <div id="err"></div>
 <script src="validate.js"></script>
 <script src="player.js"></script>
@@ -2523,8 +2554,9 @@ var multiplierProcessJcPrintStage = document.querySelector('#multiplier-process-
 var logisticGrowthJcPrintStage = document.querySelector('#logistic-growth-jc-printables-stage .pr-stage') || document.querySelector('#logistic-growth-jc-printables-stage');
 var maclaurinSeriesJcPrintStage = document.querySelector('#maclaurin-series-jc-printables-stage .pr-stage') || document.querySelector('#maclaurin-series-jc-printables-stage');
 var sensorDividerSecondaryPrintStage = document.querySelector('#sensor-divider-secondary-printables-stage .pr-stage') || document.querySelector('#sensor-divider-secondary-printables-stage');
+var vacuumFormingSecondaryPrintStage = document.querySelector('#vacuum-forming-secondary-printables-stage .pr-stage') || document.querySelector('#vacuum-forming-secondary-printables-stage');
     var keys = [];
-    [printStage, fractionsPrintStage, wavesPrintStage, complexPrintStage, trigPrintStage, thermalPrintStage, photosynthesisPrintStage, erosionPrintStage, chemMolePrintStage, differentiationPrintStage, integrationPrintStage, binomialPrintStage, kinematicsPrintStage, quadraticPrintStage, trigonometryAPrintStage, vectorsPrintStage, functionsGraphsPrintStage, sequencesPrintStage, differentiationJcPrintStage, integrationJcPrintStage, probabilityJcPrintStage, statisticsJcPrintStage, mechanicsJcPrintStage, emJcPrintStage, quantumJcPrintStage, physicalJcPrintStage, inorganicJcPrintStage, organicJcPrintStage, cellBioJcPrintStage, geneticsJcPrintStage, energeticsJcPrintStage, ecologyJcPrintStage, wholeNumbersPrimaryPrintStage, decimalsPrimaryPrintStage, percentagePrimaryPrintStage, ratioPrimaryPrintStage, rateSpeedPrimaryPrintStage, algebraIntroPrimaryPrintStage, geometryAnglesPrimaryPrintStage, areaPerimeterPrimaryPrintStage, volumePrimaryPrintStage, dataGraphsPrimaryPrintStage, modelMethodPrimaryPrintStage, humanBodySystemsPrimaryPrintStage, plantSystemsPrimaryPrintStage, lifeCyclesPrimaryPrintStage, energyFormsPrimaryPrintStage, photosynthesisPrimaryPrintStage, forcesMagnetsPrimaryPrintStage, adaptationsPrimaryPrintStage, plateTectonicsPrimaryPrintStage, weatherClimatePrimaryPrintStage, eNumbersSecondaryPrintStage, eAlgebraSecondaryPrintStage, eFunctionsGraphsSecondaryPrintStage, eGeometrySecondaryPrintStage, eMensurationSecondaryPrintStage, eStatisticsSecondaryPrintStage, eProbabilitySecondaryPrintStage, physKinematicsSecondaryPrintStage, physForcesSecondaryPrintStage, physEnergySecondaryPrintStage, physElectricitySecondaryPrintStage, chemAtomicSecondaryPrintStage, chemBondingSecondaryPrintStage, chemAcidsSecondaryPrintStage, bioCellsSecondaryPrintStage, bioTransportSecondaryPrintStage, bioReproductionSecondaryPrintStage, bioEcologySecondaryPrintStage, bioNutritionDigestionSecondaryPrintStage, tectonicsSubductionSecondaryPrintStage, demandSupplyEquilibriumSecondaryPrintStage, logicGatesSecondaryPrintStage, multiplierProcessJcPrintStage, logisticGrowthJcPrintStage, maclaurinSeriesJcPrintStage, sensorDividerSecondaryPrintStage].forEach(function (stage) {
+    [printStage, fractionsPrintStage, wavesPrintStage, complexPrintStage, trigPrintStage, thermalPrintStage, photosynthesisPrintStage, erosionPrintStage, chemMolePrintStage, differentiationPrintStage, integrationPrintStage, binomialPrintStage, kinematicsPrintStage, quadraticPrintStage, trigonometryAPrintStage, vectorsPrintStage, functionsGraphsPrintStage, sequencesPrintStage, differentiationJcPrintStage, integrationJcPrintStage, probabilityJcPrintStage, statisticsJcPrintStage, mechanicsJcPrintStage, emJcPrintStage, quantumJcPrintStage, physicalJcPrintStage, inorganicJcPrintStage, organicJcPrintStage, cellBioJcPrintStage, geneticsJcPrintStage, energeticsJcPrintStage, ecologyJcPrintStage, wholeNumbersPrimaryPrintStage, decimalsPrimaryPrintStage, percentagePrimaryPrintStage, ratioPrimaryPrintStage, rateSpeedPrimaryPrintStage, algebraIntroPrimaryPrintStage, geometryAnglesPrimaryPrintStage, areaPerimeterPrimaryPrintStage, volumePrimaryPrintStage, dataGraphsPrimaryPrintStage, modelMethodPrimaryPrintStage, humanBodySystemsPrimaryPrintStage, plantSystemsPrimaryPrintStage, lifeCyclesPrimaryPrintStage, energyFormsPrimaryPrintStage, photosynthesisPrimaryPrintStage, forcesMagnetsPrimaryPrintStage, adaptationsPrimaryPrintStage, plateTectonicsPrimaryPrintStage, weatherClimatePrimaryPrintStage, eNumbersSecondaryPrintStage, eAlgebraSecondaryPrintStage, eFunctionsGraphsSecondaryPrintStage, eGeometrySecondaryPrintStage, eMensurationSecondaryPrintStage, eStatisticsSecondaryPrintStage, eProbabilitySecondaryPrintStage, physKinematicsSecondaryPrintStage, physForcesSecondaryPrintStage, physEnergySecondaryPrintStage, physElectricitySecondaryPrintStage, chemAtomicSecondaryPrintStage, chemBondingSecondaryPrintStage, chemAcidsSecondaryPrintStage, bioCellsSecondaryPrintStage, bioTransportSecondaryPrintStage, bioReproductionSecondaryPrintStage, bioEcologySecondaryPrintStage, bioNutritionDigestionSecondaryPrintStage, tectonicsSubductionSecondaryPrintStage, demandSupplyEquilibriumSecondaryPrintStage, logicGatesSecondaryPrintStage, multiplierProcessJcPrintStage, logisticGrowthJcPrintStage, maclaurinSeriesJcPrintStage, sensorDividerSecondaryPrintStage, vacuumFormingSecondaryPrintStage].forEach(function (stage) {
       if (stage) {
         keys = keys.concat(Array.prototype.slice.call(stage.querySelectorAll('.pr-teacher')));
       }
@@ -8165,6 +8197,77 @@ var sensorDividerSecondaryPrintStage = document.querySelector('#sensor-divider-s
     ].join('');
   }).catch(function (err) {
     showError('Secondary Electronics sensor-divider pack failed to load: ' + err.message);
+  });
+})();
+(function () {
+  var presenter = document.getElementById('vacuum-forming-secondary-slides-stage');
+  var vacuumFormingSecondaryPrint = document.getElementById('vacuum-forming-secondary-printables-stage');
+  var errBox = document.getElementById('err');
+  var vacuumFormingSecondaryAnimUrl = '../samples/secondary-design-technology-vacuum-forming.json';
+  var vacuumFormingSecondaryDeckUrl = '../samples/decks/secondary-design-technology-vacuum-forming.json';
+  var vacuumFormingSecondaryWorksheetUrl = '../samples/worksheets/secondary-design-technology-vacuum-forming.json';
+  var vacuumFormingSecondaryTicketUrl = '../samples/tickets/secondary-design-technology-vacuum-forming.json';
+  var vacuumFormingSecondaryNotesUrl = '../samples/notes/secondary-design-technology-vacuum-forming.json';
+  var vacuumFormingSecondaryScriptUrl = '../samples/scripts/secondary-design-technology-vacuum-forming.json';
+
+  function showError(msg) {
+    errBox.textContent = String(msg);
+  }
+
+  Promise.all([
+    fetch(vacuumFormingSecondaryAnimUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + vacuumFormingSecondaryAnimUrl);
+      return r.json();
+    }),
+    fetch(vacuumFormingSecondaryDeckUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + vacuumFormingSecondaryDeckUrl);
+      return r.json();
+    }),
+    fetch(vacuumFormingSecondaryWorksheetUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + vacuumFormingSecondaryWorksheetUrl);
+      return r.json();
+    }),
+    fetch(vacuumFormingSecondaryTicketUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + vacuumFormingSecondaryTicketUrl);
+      return r.json();
+    }),
+    fetch(vacuumFormingSecondaryNotesUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + vacuumFormingSecondaryNotesUrl);
+      return r.json();
+    }),
+    fetch(vacuumFormingSecondaryScriptUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + vacuumFormingSecondaryScriptUrl);
+      return r.json();
+    })
+  ]).then(function (pack) {
+    var anim = pack[0];
+    var deck = pack[1];
+    var worksheet = pack[2];
+    var ticket = pack[3];
+    var notes = pack[4];
+    var script = pack[5];
+    var problems = AnimathValidate.validateSpec(anim)
+      .concat(AnimathValidate.validateSlides(deck))
+      .concat(AnimathValidate.validateWorksheet(worksheet))
+      .concat(AnimathValidate.validateExitTicket(ticket))
+      .concat(AnimathValidate.validateNotes(notes))
+      .concat(AnimathValidate.validateScript(script));
+    if (problems.length) {
+      showError('Secondary Design and Technology vacuum-forming pack failed validation:\n' + problems.join('\n'));
+      return;
+    }
+    AnimathPlayer.mount(document.getElementById('vacuum-forming-secondary-stage'), anim, { autoplay: false });
+    AnimathSlidesPresenter.attachPresenter(document, presenter, deck, { animSpec: anim });
+    vacuumFormingSecondaryPrint.innerHTML = [
+      AnimathPrintable.renderWorksheet(worksheet),
+      AnimathPrintable.renderWorksheetAnswerKey(worksheet),
+      AnimathPrintable.renderExitTicket(ticket),
+      AnimathPrintable.renderExitTicketAnswerKey(ticket),
+      AnimathPrintable.renderNotes(notes),
+      AnimathPrintable.renderScript(script)
+    ].join('');
+  }).catch(function (err) {
+    showError('Secondary Design and Technology vacuum-forming pack failed to load: ' + err.message);
   });
 })();
 </script>
