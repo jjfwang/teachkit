@@ -111,6 +111,11 @@ window.ANIMATH_SYLLABUS = {
           id: 'electronics', label: 'Electronics', subject: 'electronics', topics: [
             { slug: 'sensor-divider', label: 'Sensor divider (LDR)' }
           ]
+        },
+        {
+          id: 'design-technology', label: 'Design and Technology', subject: 'design-technology', topics: [
+            { slug: 'vacuum-forming', label: 'Vacuum forming' }
+          ]
         }
       ]
     },

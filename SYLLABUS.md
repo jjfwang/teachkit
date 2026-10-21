@@ -123,6 +123,12 @@ Electronics:
 |---|---|
 | `sensor-divider` | Sensor divider (SEAB 6063): an LDR in series with a fixed resistor forms a potential divider - as light falls the LDR resistance rises, the voltage across the LDR climbs, and at the threshold the output switches a lamp on in the dark |
 
+Design and Technology:
+
+| slug | topic |
+|---|---|
+| `vacuum-forming` | Vacuum forming (SEAB 7059): a thermoplastic sheet is clamped and heated until pliable, the mould rises into it, a vacuum removes the air beneath, and outside air pressure pushes the sheet onto the mould before it cools rigid |
+
 ## Junior College — H2
 
 Mathematics:
@@ -182,7 +188,7 @@ Further Mathematics:
 - `level` + `subject` on a spec are coarse (`primary|secondary|jc`,
   and `subject` per `SPEC.md` §subject — any non-empty string; the
   syllabus-covered subjects in `player/validate.js` SUBJECTS are currently
-  `math|science|geography|economics|computing|electronics`); the `topic` slug carries the precise syllabus
+  `math|science|geography|economics|computing|electronics|design-technology`); the `topic` slug carries the precise syllabus
   point. SUBJECTS is the syllabus-known list for gallery/coverage, not the
   validator's allowed set. When a new syllabus-covered subject lands, update
   this line against those sources; the syllabus.test.js SUBJECTS test fails

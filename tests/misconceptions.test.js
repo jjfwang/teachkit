@@ -63,9 +63,13 @@ const ELECTRONICS_SLUGS = [
   'sensor-divider'
 ];
 
-const SEEDED_SLUGS = PRIMARY_MATH_SLUGS.concat(PRIMARY_SCIENCE_SLUGS, SECONDARY_MATH_SLUGS, SECONDARY_SCIENCE_SLUGS, H2_SLUGS, GEOGRAPHY_SLUGS, ECONOMICS_SLUGS, COMPUTING_SLUGS, ELECTRONICS_SLUGS);
+const DESIGN_TECHNOLOGY_SLUGS = [
+  'vacuum-forming'
+];
 
-test('MISCONCEPTIONS holds exactly the 77 seeded topic slugs (12 Primary Math + 8 Primary Science + 14 Secondary Math + 14 Secondary Science + 21 H2 + 4 Geography + 2 Economics + 1 Computing + 1 Electronics)', () => {
+const SEEDED_SLUGS = PRIMARY_MATH_SLUGS.concat(PRIMARY_SCIENCE_SLUGS, SECONDARY_MATH_SLUGS, SECONDARY_SCIENCE_SLUGS, H2_SLUGS, GEOGRAPHY_SLUGS, ECONOMICS_SLUGS, COMPUTING_SLUGS, ELECTRONICS_SLUGS, DESIGN_TECHNOLOGY_SLUGS);
+
+test('MISCONCEPTIONS holds exactly the 78 seeded topic slugs (12 Primary Math + 8 Primary Science + 14 Secondary Math + 14 Secondary Science + 21 H2 + 4 Geography + 2 Economics + 1 Computing + 1 Electronics + 1 Design and Technology)', () => {
   assert.deepStrictEqual(Object.keys(MISCONCEPTIONS).sort(), SEEDED_SLUGS.slice().sort());
 });
 

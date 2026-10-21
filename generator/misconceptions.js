@@ -526,6 +526,12 @@
       wrongTurn: 'As it gets darker and the LDR\'s resistance rises, the voltage across the LDR falls, so the sensor output switches the lamp off.',
       why: 'A bigger resistance is imagined to "block" voltage, so the LDR\'s share is expected to shrink as its resistance grows.',
       correctTurn: 'In a series divider each resistor takes a share of the supply in proportion to its resistance, so as the LDR\'s resistance rises in the dark its share - the output voltage - climbs until it crosses the threshold and switches the lamp on.'
+    },
+    // Slice 1 (issue #1116): Secondary Design and Technology 7059.
+    'vacuum-forming': {
+      wrongTurn: 'The vacuum sucks and pulls the soft plastic sheet down onto the mould.',
+      why: 'A vacuum cannot pull - it only removes air. With the air gone from beneath the sheet, the ordinary air pressure outside, about 100,000 pascals on every square metre, is unopposed and pushes the soft sheet down onto every surface of the mould. Nothing reaches in to grab the plastic; it is the atmosphere doing the pushing.',
+      correctTurn: 'The flat sheet is clamped in the frame and heated until pliable, the mould rises into the soft sheet, the vacuum then removes the air trapped beneath it, and the unopposed outside air pressure pushes the sheet onto every surface of the mould, where it cools, sets rigid, and is lifted off and trimmed.'
     }
   };
 
