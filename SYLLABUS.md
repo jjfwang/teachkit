@@ -117,6 +117,12 @@ Computing:
 |---|---|
 | `logic-gates` | Logic gates (SEAB 7155 Module 1.3 outcomes 1.3.5 and 1.3.2): one combined two-gate three-input circuit, alarm = (A AND B) OR (NOT C), where inputs cycle, the signal propagates gate by gate and the truth table fills row by row |
 
+Electronics:
+
+| slug | topic |
+|---|---|
+| `sensor-divider` | Sensor divider (SEAB 6063): an LDR in series with a fixed resistor forms a potential divider - as light falls the LDR resistance rises, the voltage across the LDR climbs, and at the threshold the output switches a lamp on in the dark |
+
 ## Junior College — H2
 
 Mathematics:
@@ -176,7 +182,7 @@ Further Mathematics:
 - `level` + `subject` on a spec are coarse (`primary|secondary|jc`,
   and `subject` per `SPEC.md` §subject — any non-empty string; the
   syllabus-covered subjects in `player/validate.js` SUBJECTS are currently
-  `math|science|geography|economics|computing`); the `topic` slug carries the precise syllabus
+  `math|science|geography|economics|computing|electronics`); the `topic` slug carries the precise syllabus
   point. SUBJECTS is the syllabus-known list for gallery/coverage, not the
   validator's allowed set. When a new syllabus-covered subject lands, update
   this line against those sources; the syllabus.test.js SUBJECTS test fails
