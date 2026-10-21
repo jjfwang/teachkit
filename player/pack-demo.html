@@ -1494,6 +1494,24 @@
     <li><code>script</code> teacher script</li>
   </ul>
 </header>
+<header class="pack-manifest" id="energy-systems-secondary-manifest">
+  <h1>Lesson pack: Secondary Exercise and Sports Science energy-systems: Energy Systems: Three Systems Sharing One Bout</h1>
+  <dl>
+    <dt>Slug</dt><dd><code>energy-systems-secondary-exercise-sports-science</code></dd>
+    <dt>Level</dt><dd>secondary</dd>
+    <dt>Subject</dt><dd>exercise-sports-science</dd>
+    <dt>Topic</dt><dd><code>energy-systems</code></dd>
+  </dl>
+  <p>topic energy-systems · level secondary · subject exercise-sports-science · deck secondary-exercise-sports-science-energy-systems</p>
+  <ul class="pack-materials">
+    <li><code>animation</code></li>
+    <li><code>slides</code></li>
+    <li><code>worksheet</code></li>
+    <li><code>exitTicket</code> exit ticket</li>
+    <li><code>notes</code> student notes</li>
+    <li><code>script</code> teacher script</li>
+  </ul>
+</header>
 <section class="pack-section" id="animation-section">
   <h2>Animation</h2>
   <div id="anim-stage"></div>
@@ -2546,6 +2564,19 @@
   <h2>Secondary Business Studies break-even printables</h2>
   <div id="break-even-secondary-printables-stage"></div>
 </section>
+<section class="pack-section" id="energy-systems-secondary-animation">
+  <h2>Secondary Exercise and Sports Science energy-systems animation</h2>
+  <div id="energy-systems-secondary-stage"></div>
+  <div id="energy-systems-secondary-captions"></div>
+</section>
+<section class="pack-section" id="energy-systems-secondary-slides">
+  <h2>Secondary Exercise and Sports Science energy-systems slides</h2>
+  <div id="energy-systems-secondary-slides-stage"></div>
+</section>
+<section class="pack-section" id="energy-systems-secondary-printables">
+  <h2>Secondary Exercise and Sports Science energy-systems printables</h2>
+  <div id="energy-systems-secondary-printables-stage"></div>
+</section>
 <div id="err"></div>
 <script src="validate.js"></script>
 <script src="player.js"></script>
@@ -2651,8 +2682,9 @@ var vacuumFormingSecondaryPrintStage = document.querySelector('#vacuum-forming-s
 var proteinDenaturationSecondaryPrintStage = document.querySelector('#protein-denaturation-secondary-printables-stage .pr-stage') || document.querySelector('#protein-denaturation-secondary-printables-stage');
 var doubleEntrySecondaryPrintStage = document.querySelector('#double-entry-secondary-printables-stage .pr-stage') || document.querySelector('#double-entry-secondary-printables-stage');
 var breakEvenSecondaryPrintStage = document.querySelector('#break-even-secondary-printables-stage .pr-stage') || document.querySelector('#break-even-secondary-printables-stage');
+var energySystemsSecondaryPrintStage = document.querySelector('#energy-systems-secondary-printables-stage .pr-stage') || document.querySelector('#energy-systems-secondary-printables-stage');
     var keys = [];
-    [printStage, fractionsPrintStage, wavesPrintStage, complexPrintStage, trigPrintStage, thermalPrintStage, photosynthesisPrintStage, erosionPrintStage, chemMolePrintStage, differentiationPrintStage, integrationPrintStage, binomialPrintStage, kinematicsPrintStage, quadraticPrintStage, trigonometryAPrintStage, vectorsPrintStage, functionsGraphsPrintStage, sequencesPrintStage, differentiationJcPrintStage, integrationJcPrintStage, probabilityJcPrintStage, statisticsJcPrintStage, mechanicsJcPrintStage, emJcPrintStage, quantumJcPrintStage, physicalJcPrintStage, inorganicJcPrintStage, organicJcPrintStage, cellBioJcPrintStage, geneticsJcPrintStage, energeticsJcPrintStage, ecologyJcPrintStage, wholeNumbersPrimaryPrintStage, decimalsPrimaryPrintStage, percentagePrimaryPrintStage, ratioPrimaryPrintStage, rateSpeedPrimaryPrintStage, algebraIntroPrimaryPrintStage, geometryAnglesPrimaryPrintStage, areaPerimeterPrimaryPrintStage, volumePrimaryPrintStage, dataGraphsPrimaryPrintStage, modelMethodPrimaryPrintStage, humanBodySystemsPrimaryPrintStage, plantSystemsPrimaryPrintStage, lifeCyclesPrimaryPrintStage, energyFormsPrimaryPrintStage, photosynthesisPrimaryPrintStage, forcesMagnetsPrimaryPrintStage, adaptationsPrimaryPrintStage, plateTectonicsPrimaryPrintStage, weatherClimatePrimaryPrintStage, eNumbersSecondaryPrintStage, eAlgebraSecondaryPrintStage, eFunctionsGraphsSecondaryPrintStage, eGeometrySecondaryPrintStage, eMensurationSecondaryPrintStage, eStatisticsSecondaryPrintStage, eProbabilitySecondaryPrintStage, physKinematicsSecondaryPrintStage, physForcesSecondaryPrintStage, physEnergySecondaryPrintStage, physElectricitySecondaryPrintStage, chemAtomicSecondaryPrintStage, chemBondingSecondaryPrintStage, chemAcidsSecondaryPrintStage, bioCellsSecondaryPrintStage, bioTransportSecondaryPrintStage, bioReproductionSecondaryPrintStage, bioEcologySecondaryPrintStage, bioNutritionDigestionSecondaryPrintStage, tectonicsSubductionSecondaryPrintStage, demandSupplyEquilibriumSecondaryPrintStage, logicGatesSecondaryPrintStage, multiplierProcessJcPrintStage, logisticGrowthJcPrintStage, maclaurinSeriesJcPrintStage, sensorDividerSecondaryPrintStage, vacuumFormingSecondaryPrintStage, proteinDenaturationSecondaryPrintStage, doubleEntrySecondaryPrintStage, breakEvenSecondaryPrintStage].forEach(function (stage) {
+    [printStage, fractionsPrintStage, wavesPrintStage, complexPrintStage, trigPrintStage, thermalPrintStage, photosynthesisPrintStage, erosionPrintStage, chemMolePrintStage, differentiationPrintStage, integrationPrintStage, binomialPrintStage, kinematicsPrintStage, quadraticPrintStage, trigonometryAPrintStage, vectorsPrintStage, functionsGraphsPrintStage, sequencesPrintStage, differentiationJcPrintStage, integrationJcPrintStage, probabilityJcPrintStage, statisticsJcPrintStage, mechanicsJcPrintStage, emJcPrintStage, quantumJcPrintStage, physicalJcPrintStage, inorganicJcPrintStage, organicJcPrintStage, cellBioJcPrintStage, geneticsJcPrintStage, energeticsJcPrintStage, ecologyJcPrintStage, wholeNumbersPrimaryPrintStage, decimalsPrimaryPrintStage, percentagePrimaryPrintStage, ratioPrimaryPrintStage, rateSpeedPrimaryPrintStage, algebraIntroPrimaryPrintStage, geometryAnglesPrimaryPrintStage, areaPerimeterPrimaryPrintStage, volumePrimaryPrintStage, dataGraphsPrimaryPrintStage, modelMethodPrimaryPrintStage, humanBodySystemsPrimaryPrintStage, plantSystemsPrimaryPrintStage, lifeCyclesPrimaryPrintStage, energyFormsPrimaryPrintStage, photosynthesisPrimaryPrintStage, forcesMagnetsPrimaryPrintStage, adaptationsPrimaryPrintStage, plateTectonicsPrimaryPrintStage, weatherClimatePrimaryPrintStage, eNumbersSecondaryPrintStage, eAlgebraSecondaryPrintStage, eFunctionsGraphsSecondaryPrintStage, eGeometrySecondaryPrintStage, eMensurationSecondaryPrintStage, eStatisticsSecondaryPrintStage, eProbabilitySecondaryPrintStage, physKinematicsSecondaryPrintStage, physForcesSecondaryPrintStage, physEnergySecondaryPrintStage, physElectricitySecondaryPrintStage, chemAtomicSecondaryPrintStage, chemBondingSecondaryPrintStage, chemAcidsSecondaryPrintStage, bioCellsSecondaryPrintStage, bioTransportSecondaryPrintStage, bioReproductionSecondaryPrintStage, bioEcologySecondaryPrintStage, bioNutritionDigestionSecondaryPrintStage, tectonicsSubductionSecondaryPrintStage, demandSupplyEquilibriumSecondaryPrintStage, logicGatesSecondaryPrintStage, multiplierProcessJcPrintStage, logisticGrowthJcPrintStage, maclaurinSeriesJcPrintStage, sensorDividerSecondaryPrintStage, vacuumFormingSecondaryPrintStage, proteinDenaturationSecondaryPrintStage, doubleEntrySecondaryPrintStage, breakEvenSecondaryPrintStage, energySystemsSecondaryPrintStage].forEach(function (stage) {
       if (stage) {
         keys = keys.concat(Array.prototype.slice.call(stage.querySelectorAll('.pr-teacher')));
       }
@@ -8577,6 +8609,77 @@ var breakEvenSecondaryPrintStage = document.querySelector('#break-even-secondary
     ].join('');
   }).catch(function (err) {
     showError('Secondary Business Studies break-even pack failed to load: ' + err.message);
+  });
+})();
+(function () {
+  var presenter = document.getElementById('energy-systems-secondary-slides-stage');
+  var energySystemsSecondaryPrint = document.getElementById('energy-systems-secondary-printables-stage');
+  var errBox = document.getElementById('err');
+  var energySystemsSecondaryAnimUrl = '../samples/secondary-exercise-sports-science-energy-systems.json';
+  var energySystemsSecondaryDeckUrl = '../samples/decks/secondary-exercise-sports-science-energy-systems.json';
+  var energySystemsSecondaryWorksheetUrl = '../samples/worksheets/secondary-exercise-sports-science-energy-systems.json';
+  var energySystemsSecondaryTicketUrl = '../samples/tickets/secondary-exercise-sports-science-energy-systems.json';
+  var energySystemsSecondaryNotesUrl = '../samples/notes/secondary-exercise-sports-science-energy-systems.json';
+  var energySystemsSecondaryScriptUrl = '../samples/scripts/secondary-exercise-sports-science-energy-systems.json';
+
+  function showError(msg) {
+    errBox.textContent = String(msg);
+  }
+
+  Promise.all([
+    fetch(energySystemsSecondaryAnimUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + energySystemsSecondaryAnimUrl);
+      return r.json();
+    }),
+    fetch(energySystemsSecondaryDeckUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + energySystemsSecondaryDeckUrl);
+      return r.json();
+    }),
+    fetch(energySystemsSecondaryWorksheetUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + energySystemsSecondaryWorksheetUrl);
+      return r.json();
+    }),
+    fetch(energySystemsSecondaryTicketUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + energySystemsSecondaryTicketUrl);
+      return r.json();
+    }),
+    fetch(energySystemsSecondaryNotesUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + energySystemsSecondaryNotesUrl);
+      return r.json();
+    }),
+    fetch(energySystemsSecondaryScriptUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + energySystemsSecondaryScriptUrl);
+      return r.json();
+    })
+  ]).then(function (pack) {
+    var anim = pack[0];
+    var deck = pack[1];
+    var worksheet = pack[2];
+    var ticket = pack[3];
+    var notes = pack[4];
+    var script = pack[5];
+    var problems = AnimathValidate.validateSpec(anim)
+      .concat(AnimathValidate.validateSlides(deck))
+      .concat(AnimathValidate.validateWorksheet(worksheet))
+      .concat(AnimathValidate.validateExitTicket(ticket))
+      .concat(AnimathValidate.validateNotes(notes))
+      .concat(AnimathValidate.validateScript(script));
+    if (problems.length) {
+      showError('Secondary Exercise and Sports Science energy-systems pack failed validation:\n' + problems.join('\n'));
+      return;
+    }
+    AnimathPlayer.mount(document.getElementById('energy-systems-secondary-stage'), anim, { autoplay: false });
+    AnimathSlidesPresenter.attachPresenter(document, presenter, deck, { animSpec: anim });
+    energySystemsSecondaryPrint.innerHTML = [
+      AnimathPrintable.renderWorksheet(worksheet),
+      AnimathPrintable.renderWorksheetAnswerKey(worksheet),
+      AnimathPrintable.renderExitTicket(ticket),
+      AnimathPrintable.renderExitTicketAnswerKey(ticket),
+      AnimathPrintable.renderNotes(notes),
+      AnimathPrintable.renderScript(script)
+    ].join('');
+  }).catch(function (err) {
+    showError('Secondary Exercise and Sports Science energy-systems pack failed to load: ' + err.message);
   });
 })();
 </script>
