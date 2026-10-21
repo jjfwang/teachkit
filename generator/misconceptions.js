@@ -550,6 +550,12 @@
       wrongTurn: 'Fixed costs rise as output rises, so total cost starts at zero like revenue.',
       why: 'Fixed costs look like they should grow with activity, and total cost is conflated with variable cost, which really does start at zero and rise with output.',
       correctTurn: 'Fixed costs stay flat at $2,000 at every output, so total cost starts at the fixed-cost intercept and rises only by the $10 variable cost per unit; total revenue starts at zero and rises faster at the $20 selling price, so the two lines cross once, at the break-even output of 200 units.'
+    },
+    // Slice 1 (issue #1136): Secondary Exercise and Sports Science 6081.
+    'energy-systems': {
+      wrongTurn: 'The body uses only one energy system at a time and switches cleanly to the next one when the first runs out.',
+      why: 'The systems feel sequential because textbooks list them in order and each one dominates at a different stage of the bout, so the handover reads as a clean switch rather than a shifting overlap.',
+      correctTurn: 'All three systems are active from the first second and overlap throughout the bout; only the largest contributor changes as the bout continues - ATP-PC fades as the phosphocreatine store drains, anaerobic glycolysis peaks as lactate builds, and the aerobic system rises to dominate longer work.'
     }
   };
 

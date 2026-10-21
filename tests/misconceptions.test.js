@@ -79,9 +79,13 @@ const BUSINESS_STUDIES_SLUGS = [
   'break-even'
 ];
 
-const SEEDED_SLUGS = PRIMARY_MATH_SLUGS.concat(PRIMARY_SCIENCE_SLUGS, SECONDARY_MATH_SLUGS, SECONDARY_SCIENCE_SLUGS, H2_SLUGS, GEOGRAPHY_SLUGS, ECONOMICS_SLUGS, COMPUTING_SLUGS, ELECTRONICS_SLUGS, DESIGN_TECHNOLOGY_SLUGS, NUTRITION_FOOD_SCIENCE_SLUGS, PRINCIPLES_OF_ACCOUNTS_SLUGS, BUSINESS_STUDIES_SLUGS);
+const EXERCISE_SPORTS_SCIENCE_SLUGS = [
+  'energy-systems'
+];
 
-test('MISCONCEPTIONS holds exactly the 81 seeded topic slugs (12 Primary Math + 8 Primary Science + 14 Secondary Math + 14 Secondary Science + 21 H2 + 4 Geography + 2 Economics + 1 Computing + 1 Electronics + 1 Design and Technology + 1 Nutrition and Food Science + 1 Principles of Accounts + 1 Business Studies)', () => {
+const SEEDED_SLUGS = PRIMARY_MATH_SLUGS.concat(PRIMARY_SCIENCE_SLUGS, SECONDARY_MATH_SLUGS, SECONDARY_SCIENCE_SLUGS, H2_SLUGS, GEOGRAPHY_SLUGS, ECONOMICS_SLUGS, COMPUTING_SLUGS, ELECTRONICS_SLUGS, DESIGN_TECHNOLOGY_SLUGS, NUTRITION_FOOD_SCIENCE_SLUGS, PRINCIPLES_OF_ACCOUNTS_SLUGS, BUSINESS_STUDIES_SLUGS, EXERCISE_SPORTS_SCIENCE_SLUGS);
+
+test('MISCONCEPTIONS holds exactly the 82 seeded topic slugs (12 Primary Math + 8 Primary Science + 14 Secondary Math + 14 Secondary Science + 21 H2 + 4 Geography + 2 Economics + 1 Computing + 1 Electronics + 1 Design and Technology + 1 Nutrition and Food Science + 1 Principles of Accounts + 1 Business Studies + 1 Exercise and Sports Science)', () => {
   assert.deepStrictEqual(Object.keys(MISCONCEPTIONS).sort(), SEEDED_SLUGS.slice().sort());
 });
 
