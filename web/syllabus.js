@@ -126,6 +126,11 @@ window.ANIMATH_SYLLABUS = {
           id: 'principles-of-accounts', label: 'Principles of Accounts', subject: 'principles-of-accounts', topics: [
             { slug: 'double-entry', label: 'Double entry' }
           ]
+        },
+        {
+          id: 'business-studies', label: 'Business Studies', subject: 'business-studies', topics: [
+            { slug: 'break-even', label: 'Break-even' }
+          ]
         }
       ]
     },
