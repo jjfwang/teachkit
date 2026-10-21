@@ -44,7 +44,7 @@ const H2_SLUGS = [
   'h2-differentiation', 'h2-integration', 'h2-probability', 'h2-statistics',
   'h2-mechanics', 'h2-em', 'h2-thermal', 'h2-quantum', 'h2-physical',
   'h2-inorganic', 'h2-organic', 'h2-cell-bio', 'h2-genetics', 'h2-energetics',
-  'h2-ecology'
+  'h2-ecology', 'logistic-growth'
 ];
 
 const GEOGRAPHY_SLUGS = [
@@ -61,7 +61,7 @@ const COMPUTING_SLUGS = [
 
 const SEEDED_SLUGS = PRIMARY_MATH_SLUGS.concat(PRIMARY_SCIENCE_SLUGS, SECONDARY_MATH_SLUGS, SECONDARY_SCIENCE_SLUGS, H2_SLUGS, GEOGRAPHY_SLUGS, ECONOMICS_SLUGS, COMPUTING_SLUGS);
 
-test('MISCONCEPTIONS holds exactly the 74 seeded topic slugs (12 Primary Math + 8 Primary Science + 14 Secondary Math + 14 Secondary Science + 19 H2 + 4 Geography + 2 Economics + 1 Computing)', () => {
+test('MISCONCEPTIONS holds exactly the 75 seeded topic slugs (12 Primary Math + 8 Primary Science + 14 Secondary Math + 14 Secondary Science + 20 H2 + 4 Geography + 2 Economics + 1 Computing)', () => {
   assert.deepStrictEqual(Object.keys(MISCONCEPTIONS).sort(), SEEDED_SLUGS.slice().sort());
 });
 

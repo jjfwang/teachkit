@@ -165,6 +165,11 @@
             id: 'h2-economics', label: 'H2 Economics', subject: 'economics', topics: [
             { slug: 'multiplier-process', label: 'Multiplier process' }
             ]
+          },
+          {
+            id: 'further-mathematics', label: 'Further Mathematics', subject: 'math', topics: [
+            { slug: 'logistic-growth', label: 'Logistic growth' }
+            ]
           }
         ]
       }

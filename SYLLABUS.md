@@ -164,6 +164,12 @@ Economics:
 |---|---|
 | `multiplier-process` | Multiplier process (SEAB 9570 Theme 3.1.2(e), anchored on the circular flow of Theme 3.1.1): one autonomous injection is re-spent in geometrically shrinking rounds as leakages bite each round, so national income settles at a multiple of the injection and aggregate demand shifts in shrinking steps |
 
+Further Mathematics:
+
+| slug | topic |
+|---|---|
+| `logistic-growth` | Logistic growth (SEAB 9649 section 1.5 Differential equations, the logistic growth bullet): the population curve bends and levels exactly at the carrying-capacity equilibrium, a slope field funnels starting curves to the same ceiling, and harvesting drags the equilibrium down |
+
 ## Notes for the generator
 
 - `level` + `subject` on a spec are coarse (`primary|secondary|jc`,

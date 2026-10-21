@@ -508,6 +508,12 @@
       wrongTurn: 'Every round re-spends the full injection, so national income grows by the same amount each round without limit.',
       why: 'The injection is spent in full in the first round, so it looks as if the same full amount keeps circulating round after round.',
       correctTurn: 'Only part of each round\'s income is re-spent - the rest leaks away as saving, tax and imports - so each round adds a geometrically smaller amount and national income settles at a multiple of the injection.'
+    },
+    // Slice 11 (issue #1102): JC Further Mathematics.
+    'logistic-growth': {
+      wrongTurn: 'The population keeps growing faster and faster like a pure exponential, so it never slows down or levels off.',
+      why: 'Early on the logistic curve looks just like exponential growth, so it is tempting to extrapolate the steepening rise for ever.',
+      correctTurn: 'As the population nears the carrying capacity K the growth rate falls to zero, so the curve bends over and levels at P = K, the stable equilibrium every starting population is funnelled to.'
     }
   };
 
