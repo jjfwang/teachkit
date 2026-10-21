@@ -147,6 +147,12 @@ Business Studies:
 |---|---|
 | `break-even` | Break-even (SEAB 7085): for one product at a fixed price, fixed costs stay flat, total cost rises from the fixed-cost intercept and total revenue rises faster from zero, so the lines cross once at the break-even output - loss below it, profit above it |
 
+Exercise and Sports Science:
+
+| slug | topic |
+|---|---|
+| `energy-systems` | Energy systems (SEAB 6081): during one continuous bout of exercise all three energy systems contribute throughout and only their shares change - ATP-PC dominates the first seconds while the phosphocreatine store drains, anaerobic glycolysis takes the largest share as lactate builds, then the aerobic system ramps up to supply most of the energy |
+
 ## Junior College — H2
 
 Mathematics:
@@ -206,7 +212,7 @@ Further Mathematics:
 - `level` + `subject` on a spec are coarse (`primary|secondary|jc`,
   and `subject` per `SPEC.md` §subject — any non-empty string; the
   syllabus-covered subjects in `player/validate.js` SUBJECTS are currently
-  `math|science|geography|economics|computing|electronics|design-technology|nutrition-food-science|principles-of-accounts|business-studies`); the `topic` slug carries the precise syllabus
+  `math|science|geography|economics|computing|electronics|design-technology|nutrition-food-science|principles-of-accounts|business-studies|exercise-sports-science`); the `topic` slug carries the precise syllabus
   point. SUBJECTS is the syllabus-known list for gallery/coverage, not the
   validator's allowed set. When a new syllabus-covered subject lands, update
   this line against those sources; the syllabus.test.js SUBJECTS test fails

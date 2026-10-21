@@ -146,6 +146,11 @@
             id: 'business-studies', label: 'Business Studies', subject: 'business-studies', topics: [
             { slug: 'break-even', label: 'Break-even' }
             ]
+          },
+          {
+            id: 'exercise-sports-science', label: 'Exercise and Sports Science', subject: 'exercise-sports-science', topics: [
+            { slug: 'energy-systems', label: 'Energy systems' }
+            ]
           }
         ]
       },
