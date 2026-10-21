@@ -120,7 +120,8 @@ window.ANIMATH_SYLLABUS = {
             { slug: 'h2-differentiation', label: 'Differentiation' },
             { slug: 'h2-integration', label: 'Integration' },
             { slug: 'h2-probability', label: 'Probability' },
-            { slug: 'h2-statistics', label: 'Statistics' }
+            { slug: 'h2-statistics', label: 'Statistics' },
+            { slug: 'maclaurin-series', label: 'Maclaurin series' }
           ]
         },
         {
