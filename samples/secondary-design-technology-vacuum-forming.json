@@ -1,0 +1,887 @@
+{
+  "animath": "0.1",
+  "title": "Vacuum Forming a Plastic Shell",
+  "level": "secondary",
+  "subject": "design-technology",
+  "topic": "vacuum-forming",
+  "kind": "concept",
+  "canvas": {
+    "width": 960,
+    "height": 540
+  },
+  "scenes": [
+    {
+      "id": "s1",
+      "caption": "Setup: sheet clamped above the mould",
+      "narration": "A flat thermoplastic sheet is clamped in a frame above a mould on the machine bed, with a heater panel overhead. The mould rises toward the sheet to start the cycle.",
+      "duration_ms": 8000,
+      "steps": [
+        {
+          "at_ms": 0,
+          "do": "show",
+          "shape": {
+            "id": "title",
+            "kind": "text",
+            "x": 480,
+            "y": 34,
+            "text": "Vacuum forming a plastic shell",
+            "size": 22,
+            "color": "#1a1a1a",
+            "explain": "Title: vacuum forming a plastic shell.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 200,
+          "do": "show",
+          "shape": {
+            "id": "heaterLab",
+            "kind": "text",
+            "x": 480,
+            "y": 76,
+            "text": "heater",
+            "size": 15,
+            "color": "#1a1a1a",
+            "explain": "Label: the heater panel.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 350,
+          "do": "show",
+          "shape": {
+            "id": "heater",
+            "kind": "rect",
+            "x": 360,
+            "y": 90,
+            "w": 240,
+            "h": 26,
+            "fill": "#e74c3c",
+            "explain": "Heater panel: it will warm the sheet until the plastic is pliable."
+          }
+        },
+        {
+          "at_ms": 600,
+          "do": "show",
+          "shape": {
+            "id": "sheetLab",
+            "kind": "text",
+            "x": 480,
+            "y": 170,
+            "text": "plastic sheet",
+            "size": 15,
+            "color": "#1a1a1a",
+            "explain": "Label: the flat thermoplastic sheet.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 750,
+          "do": "show",
+          "shape": {
+            "id": "sheet",
+            "kind": "rect",
+            "x": 300,
+            "y": 190,
+            "w": 360,
+            "h": 14,
+            "fill": "#85c1e9",
+            "explain": "Plastic sheet: a flat thermoplastic sheet clamped in the frame, still rigid."
+          }
+        },
+        {
+          "at_ms": 900,
+          "do": "show",
+          "shape": {
+            "id": "clampL",
+            "kind": "rect",
+            "x": 284,
+            "y": 182,
+            "w": 16,
+            "h": 30,
+            "fill": "#616a6b",
+            "explain": "Clamp: it grips the left edge of the sheet in the frame."
+          }
+        },
+        {
+          "at_ms": 1000,
+          "do": "show",
+          "shape": {
+            "id": "clampR",
+            "kind": "rect",
+            "x": 660,
+            "y": 182,
+            "w": 16,
+            "h": 30,
+            "fill": "#616a6b",
+            "explain": "Clamp: it grips the right edge of the sheet in the frame."
+          }
+        },
+        {
+          "at_ms": 1300,
+          "do": "show",
+          "shape": {
+            "id": "mould",
+            "kind": "rect",
+            "x": 390,
+            "y": 310,
+            "w": 180,
+            "h": 90,
+            "fill": "#af7ac5",
+            "explain": "Mould: the block whose shape the finished shell will copy."
+          }
+        },
+        {
+          "at_ms": 1500,
+          "do": "show",
+          "shape": {
+            "id": "mouldLab",
+            "kind": "text",
+            "x": 660,
+            "y": 360,
+            "text": "mould",
+            "size": 15,
+            "color": "#1a1a1a",
+            "explain": "Label: the mould block.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 1800,
+          "do": "show",
+          "shape": {
+            "id": "bed",
+            "kind": "rect",
+            "x": 180,
+            "y": 400,
+            "w": 600,
+            "h": 24,
+            "fill": "#bdc3c7",
+            "explain": "Machine bed: it supports the mould during forming."
+          }
+        },
+        {
+          "at_ms": 2000,
+          "do": "show",
+          "shape": {
+            "id": "bedLab",
+            "kind": "text",
+            "x": 480,
+            "y": 454,
+            "text": "machine bed",
+            "size": 15,
+            "color": "#1a1a1a",
+            "explain": "Label: the machine bed.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 5200,
+          "do": "move",
+          "target": "mould",
+          "to": {
+            "x": 390,
+            "y": 252
+          },
+          "dur_ms": 1300
+        },
+        {
+          "at_ms": 6700,
+          "do": "emphasize",
+          "target": "mould"
+        },
+        {
+          "at_ms": 6900,
+          "do": "caption",
+          "text": "Setup: sheet clamped, mould rises to meet it"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "caption": "Heating: the sheet softens and sags",
+      "narration": "The heater warms the clamped sheet. As the temperature rises the plastic becomes pliable and the sheet sags under its own weight, ready to be formed.",
+      "duration_ms": 8000,
+      "steps": [
+        {
+          "at_ms": 0,
+          "do": "show",
+          "shape": {
+            "id": "title",
+            "kind": "text",
+            "x": 480,
+            "y": 34,
+            "text": "Heating: the sheet softens and sags",
+            "size": 22,
+            "color": "#1a1a1a",
+            "explain": "Title: vacuum forming a plastic shell.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 200,
+          "do": "show",
+          "shape": {
+            "id": "glow",
+            "kind": "rect",
+            "x": 338,
+            "y": 82,
+            "w": 284,
+            "h": 42,
+            "fill": "#f9e79f",
+            "explain": "Heater glow: heat radiating from the panel onto the sheet."
+          }
+        },
+        {
+          "at_ms": 350,
+          "do": "show",
+          "shape": {
+            "id": "heater",
+            "kind": "rect",
+            "x": 360,
+            "y": 90,
+            "w": 240,
+            "h": 26,
+            "fill": "#e74c3c",
+            "explain": "Heater panel: it warms the sheet until the plastic is pliable."
+          }
+        },
+        {
+          "at_ms": 550,
+          "do": "show",
+          "shape": {
+            "id": "tempLab",
+            "kind": "text",
+            "x": 480,
+            "y": 152,
+            "text": "temperature rising",
+            "size": 15,
+            "color": "#1a1a1a",
+            "explain": "Label: the sheet temperature is rising.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 800,
+          "do": "show",
+          "shape": {
+            "id": "sheet",
+            "kind": "rect",
+            "x": 300,
+            "y": 190,
+            "w": 360,
+            "h": 14,
+            "fill": "#85c1e9",
+            "explain": "Plastic sheet: heating through, starting to soften."
+          }
+        },
+        {
+          "at_ms": 950,
+          "do": "show",
+          "shape": {
+            "id": "clampL",
+            "kind": "rect",
+            "x": 284,
+            "y": 182,
+            "w": 16,
+            "h": 30,
+            "fill": "#616a6b",
+            "explain": "Clamp: it grips the left edge of the sheet in the frame."
+          }
+        },
+        {
+          "at_ms": 1050,
+          "do": "show",
+          "shape": {
+            "id": "clampR",
+            "kind": "rect",
+            "x": 660,
+            "y": 182,
+            "w": 16,
+            "h": 30,
+            "fill": "#616a6b",
+            "explain": "Clamp: it grips the right edge of the sheet in the frame."
+          }
+        },
+        {
+          "at_ms": 1300,
+          "do": "show",
+          "shape": {
+            "id": "mould",
+            "kind": "rect",
+            "x": 390,
+            "y": 330,
+            "w": 180,
+            "h": 70,
+            "fill": "#af7ac5",
+            "explain": "Mould: waiting below for the softened sheet."
+          }
+        },
+        {
+          "at_ms": 1600,
+          "do": "show",
+          "shape": {
+            "id": "bed",
+            "kind": "rect",
+            "x": 180,
+            "y": 400,
+            "w": 600,
+            "h": 24,
+            "fill": "#bdc3c7",
+            "explain": "Machine bed: it supports the mould during forming."
+          }
+        },
+        {
+          "at_ms": 4200,
+          "do": "move",
+          "target": "sheet",
+          "to": {
+            "x": 300,
+            "y": 228
+          },
+          "dur_ms": 1300
+        },
+        {
+          "at_ms": 5800,
+          "do": "show",
+          "shape": {
+            "id": "softLab",
+            "kind": "text",
+            "x": 480,
+            "y": 292,
+            "text": "sheet is pliable",
+            "size": 15,
+            "color": "#1a1a1a",
+            "explain": "Label: the sheet is now soft and pliable.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 6400,
+          "do": "emphasize",
+          "target": "sheet"
+        },
+        {
+          "at_ms": 6700,
+          "do": "caption",
+          "text": "Heating: the sheet sags as it becomes pliable"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "caption": "Vacuum forming: air pressure pushes the sheet onto the mould",
+      "narration": "The mould rises into the soft sheet and the pump removes the air trapped beneath it. Outside air pressure, now unopposed, pushes the sheet down onto every surface of the mould. The vacuum does not pull the plastic; the atmosphere pushes it.",
+      "duration_ms": 11000,
+      "steps": [
+        {
+          "at_ms": 0,
+          "do": "show",
+          "shape": {
+            "id": "title",
+            "kind": "text",
+            "x": 480,
+            "y": 34,
+            "text": "Air pressure pushes the sheet onto the mould",
+            "size": 22,
+            "color": "#1a1a1a",
+            "explain": "Title: vacuum forming a plastic shell.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 200,
+          "do": "show",
+          "shape": {
+            "id": "mould",
+            "kind": "rect",
+            "x": 390,
+            "y": 300,
+            "w": 180,
+            "h": 100,
+            "fill": "#af7ac5",
+            "explain": "Mould: risen into the soft sheet, ready for forming."
+          }
+        },
+        {
+          "at_ms": 400,
+          "do": "show",
+          "shape": {
+            "id": "bed",
+            "kind": "rect",
+            "x": 180,
+            "y": 400,
+            "w": 600,
+            "h": 24,
+            "fill": "#bdc3c7",
+            "explain": "Machine bed: it supports the mould during forming."
+          }
+        },
+        {
+          "at_ms": 600,
+          "do": "show",
+          "shape": {
+            "id": "sheet",
+            "kind": "rect",
+            "x": 300,
+            "y": 210,
+            "w": 360,
+            "h": 14,
+            "fill": "#85c1e9",
+            "explain": "Plastic sheet: soft and pliable, sealing over the mould."
+          }
+        },
+        {
+          "at_ms": 800,
+          "do": "show",
+          "shape": {
+            "id": "air1",
+            "kind": "circle",
+            "cx": 420,
+            "cy": 268,
+            "r": 6,
+            "fill": "#5dade2",
+            "explain": "Trapped air: a pocket of air beneath the sheet."
+          }
+        },
+        {
+          "at_ms": 900,
+          "do": "show",
+          "shape": {
+            "id": "air2",
+            "kind": "circle",
+            "cx": 480,
+            "cy": 252,
+            "r": 6,
+            "fill": "#5dade2",
+            "explain": "Trapped air: a pocket of air beneath the sheet."
+          }
+        },
+        {
+          "at_ms": 1000,
+          "do": "show",
+          "shape": {
+            "id": "air3",
+            "kind": "circle",
+            "cx": 540,
+            "cy": 268,
+            "r": 6,
+            "fill": "#5dade2",
+            "explain": "Trapped air: a pocket of air beneath the sheet."
+          }
+        },
+        {
+          "at_ms": 1300,
+          "do": "show",
+          "shape": {
+            "id": "pump",
+            "kind": "rect",
+            "x": 110,
+            "y": 330,
+            "w": 110,
+            "h": 50,
+            "fill": "#f5b041",
+            "explain": "Vacuum pump: it removes the air from beneath the sheet."
+          }
+        },
+        {
+          "at_ms": 1500,
+          "do": "show",
+          "shape": {
+            "id": "pumpLab",
+            "kind": "text",
+            "x": 165,
+            "y": 314,
+            "text": "vacuum pump",
+            "size": 14,
+            "color": "#1a1a1a",
+            "explain": "Label: the vacuum pump.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 1650,
+          "do": "show",
+          "shape": {
+            "id": "hose",
+            "kind": "line",
+            "x1": 220,
+            "y1": 355,
+            "x2": 390,
+            "y2": 355,
+            "stroke": "#616a6b",
+            "strokeWidth": 3,
+            "explain": "Vacuum hose: it carries the removed air away from beneath the sheet."
+          }
+        },
+        {
+          "at_ms": 3200,
+          "do": "hide",
+          "target": "air1"
+        },
+        {
+          "at_ms": 3900,
+          "do": "hide",
+          "target": "air2"
+        },
+        {
+          "at_ms": 4600,
+          "do": "hide",
+          "target": "air3"
+        },
+        {
+          "at_ms": 5000,
+          "do": "show",
+          "shape": {
+            "id": "pressLab",
+            "kind": "text",
+            "x": 480,
+            "y": 92,
+            "text": "outside air pressure pushes",
+            "size": 16,
+            "color": "#1a1a1a",
+            "explain": "Label: outside air pressure pushes down on the sheet.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 5200,
+          "do": "show",
+          "shape": {
+            "id": "pressArrow",
+            "kind": "arrow",
+            "x1": 480,
+            "y1": 112,
+            "x2": 480,
+            "y2": 182,
+            "stroke": "#c0392b",
+            "strokeWidth": 5,
+            "explain": "Pressure arrow: outside air pressure pushing the sheet down onto the mould."
+          }
+        },
+        {
+          "at_ms": 6400,
+          "do": "hide",
+          "target": "sheet"
+        },
+        {
+          "at_ms": 6500,
+          "do": "show",
+          "shape": {
+            "id": "shellTop",
+            "kind": "rect",
+            "x": 380,
+            "y": 286,
+            "w": 200,
+            "h": 14,
+            "fill": "#85c1e9",
+            "explain": "Formed sheet: pushed down onto the top of the mould."
+          }
+        },
+        {
+          "at_ms": 6700,
+          "do": "show",
+          "shape": {
+            "id": "skirtL",
+            "kind": "rect",
+            "x": 366,
+            "y": 300,
+            "w": 14,
+            "h": 100,
+            "fill": "#85c1e9",
+            "explain": "Formed sheet: pushed down the left side of the mould."
+          }
+        },
+        {
+          "at_ms": 6900,
+          "do": "show",
+          "shape": {
+            "id": "skirtR",
+            "kind": "rect",
+            "x": 580,
+            "y": 300,
+            "w": 14,
+            "h": 100,
+            "fill": "#85c1e9",
+            "explain": "Formed sheet: pushed down the right side of the mould."
+          }
+        },
+        {
+          "at_ms": 7300,
+          "do": "show",
+          "shape": {
+            "id": "beat",
+            "kind": "text",
+            "x": 480,
+            "y": 472,
+            "text": "The vacuum only removes air - pressure does the pushing",
+            "size": 16,
+            "color": "#1a1a1a",
+            "explain": "Key point: the vacuum only removes air, and outside air pressure pushes the sheet onto the mould.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 8800,
+          "do": "emphasize",
+          "target": "shellTop"
+        },
+        {
+          "at_ms": 9200,
+          "do": "caption",
+          "text": "Forming: air removed below, air pressure pushes the sheet on"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "caption": "Cooling and release: the rigid shell lifts off",
+      "narration": "The formed sheet cools on the mould and sets rigid. The shell is lifted off, and the excess edge is trimmed away, leaving a finished plastic shell that keeps the shape of the mould.",
+      "duration_ms": 9000,
+      "steps": [
+        {
+          "at_ms": 0,
+          "do": "show",
+          "shape": {
+            "id": "title",
+            "kind": "text",
+            "x": 480,
+            "y": 34,
+            "text": "Cooling: the rigid shell is released",
+            "size": 22,
+            "color": "#1a1a1a",
+            "explain": "Title: vacuum forming a plastic shell.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 200,
+          "do": "show",
+          "shape": {
+            "id": "mould",
+            "kind": "rect",
+            "x": 390,
+            "y": 310,
+            "w": 180,
+            "h": 90,
+            "fill": "#af7ac5",
+            "explain": "Mould: the formed sheet cools against it and sets rigid."
+          }
+        },
+        {
+          "at_ms": 400,
+          "do": "show",
+          "shape": {
+            "id": "bed",
+            "kind": "rect",
+            "x": 180,
+            "y": 400,
+            "w": 600,
+            "h": 24,
+            "fill": "#bdc3c7",
+            "explain": "Machine bed: it supports the mould during forming."
+          }
+        },
+        {
+          "at_ms": 600,
+          "do": "show",
+          "shape": {
+            "id": "shellTop",
+            "kind": "rect",
+            "x": 380,
+            "y": 296,
+            "w": 200,
+            "h": 14,
+            "fill": "#2e86c1",
+            "explain": "Rigid shell: cooled and set, holding the shape of the mould top."
+          }
+        },
+        {
+          "at_ms": 750,
+          "do": "show",
+          "shape": {
+            "id": "skirtL",
+            "kind": "rect",
+            "x": 366,
+            "y": 310,
+            "w": 14,
+            "h": 90,
+            "fill": "#2e86c1",
+            "explain": "Rigid shell: cooled and set down the left side of the mould."
+          }
+        },
+        {
+          "at_ms": 900,
+          "do": "show",
+          "shape": {
+            "id": "skirtR",
+            "kind": "rect",
+            "x": 580,
+            "y": 310,
+            "w": 14,
+            "h": 90,
+            "fill": "#2e86c1",
+            "explain": "Rigid shell: cooled and set down the right side of the mould."
+          }
+        },
+        {
+          "at_ms": 1200,
+          "do": "show",
+          "shape": {
+            "id": "coolLab",
+            "kind": "text",
+            "x": 200,
+            "y": 330,
+            "text": "cooling: sets rigid",
+            "size": 15,
+            "color": "#1a1a1a",
+            "explain": "Label: the sheet cools and sets rigid.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 3400,
+          "do": "move",
+          "target": "shellTop",
+          "to": {
+            "x": 380,
+            "y": 176
+          },
+          "dur_ms": 1300
+        },
+        {
+          "at_ms": 3400,
+          "do": "move",
+          "target": "skirtL",
+          "to": {
+            "x": 366,
+            "y": 190
+          },
+          "dur_ms": 1300
+        },
+        {
+          "at_ms": 3400,
+          "do": "move",
+          "target": "skirtR",
+          "to": {
+            "x": 580,
+            "y": 190
+          },
+          "dur_ms": 1300
+        },
+        {
+          "at_ms": 5400,
+          "do": "show",
+          "shape": {
+            "id": "trimLine",
+            "kind": "line",
+            "x1": 700,
+            "y1": 180,
+            "x2": 700,
+            "y2": 320,
+            "stroke": "#c0392b",
+            "strokeWidth": 3,
+            "explain": "Trim line: the excess edge is cut away along this line."
+          }
+        },
+        {
+          "at_ms": 5600,
+          "do": "show",
+          "shape": {
+            "id": "trimLab",
+            "kind": "text",
+            "x": 700,
+            "y": 152,
+            "text": "trim line",
+            "size": 14,
+            "color": "#1a1a1a",
+            "explain": "Label: the trim line.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 5900,
+          "do": "show",
+          "shape": {
+            "id": "finalTop",
+            "kind": "rect",
+            "x": 730,
+            "y": 222,
+            "w": 150,
+            "h": 12,
+            "fill": "#2e86c1",
+            "explain": "Trimmed shell: the finished top of the released shell."
+          }
+        },
+        {
+          "at_ms": 6100,
+          "do": "show",
+          "shape": {
+            "id": "finalL",
+            "kind": "rect",
+            "x": 718,
+            "y": 234,
+            "w": 12,
+            "h": 58,
+            "fill": "#2e86c1",
+            "explain": "Trimmed shell: the finished left wall of the released shell."
+          }
+        },
+        {
+          "at_ms": 6300,
+          "do": "show",
+          "shape": {
+            "id": "finalR",
+            "kind": "rect",
+            "x": 880,
+            "y": 234,
+            "w": 12,
+            "h": 58,
+            "fill": "#2e86c1",
+            "explain": "Trimmed shell: the finished right wall of the released shell."
+          }
+        },
+        {
+          "at_ms": 6600,
+          "do": "show",
+          "shape": {
+            "id": "finalLab",
+            "kind": "text",
+            "x": 805,
+            "y": 336,
+            "text": "trimmed shell",
+            "size": 15,
+            "color": "#1a1a1a",
+            "explain": "Label: the trimmed finished shell.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 7000,
+          "do": "show",
+          "shape": {
+            "id": "endLab",
+            "kind": "text",
+            "x": 240,
+            "y": 472,
+            "text": "rigid shell keeps the mould shape",
+            "size": 16,
+            "color": "#1a1a1a",
+            "explain": "Final point: the rigid shell keeps the shape of the mould.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 7600,
+          "do": "emphasize",
+          "target": "finalTop"
+        },
+        {
+          "at_ms": 7900,
+          "do": "caption",
+          "text": "Release: cooled shell lifted off and trimmed"
+        }
+      ]
+    }
+  ]
+}

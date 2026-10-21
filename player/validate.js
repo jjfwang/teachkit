@@ -12,7 +12,7 @@
   var LEVELS = ['primary', 'secondary', 'jc'];
   // SUBJECTS is the syllabus-known list, used for gallery/coverage — NOT
   // an admission list: validateSpec accepts any non-empty subject string.
-  var SUBJECTS = ['math', 'science', 'geography', 'economics', 'computing', 'electronics'];
+  var SUBJECTS = ['math', 'science', 'geography', 'economics', 'computing', 'electronics', 'design-technology'];
   var KINDS = ['concept', 'problem'];
   var VERBS = ['show', 'hide', 'move', 'emphasize', 'caption'];
   var SHAPES = ['text', 'rect', 'circle', 'line', 'arrow', 'polygon', 'latex', 'sector'];
