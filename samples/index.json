@@ -73,5 +73,6 @@
   "primary-geog-weather-climate.json",
   "secondary-geog-tectonics-subduction.json",
   "secondary-econ-demand-supply-equilibrium.json",
-  "secondary-computing-logic-gates.json"
+  "secondary-computing-logic-gates.json",
+  "jc-h2-multiplier-process.json"
 ]

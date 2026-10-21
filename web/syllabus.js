@@ -145,6 +145,11 @@ window.ANIMATH_SYLLABUS = {
             { slug: 'h2-energetics', label: 'Energetics' },
             { slug: 'h2-ecology', label: 'Ecology' }
           ]
+        },
+        {
+          id: 'h2-economics', label: 'H2 Economics', subject: 'economics', topics: [
+            { slug: 'multiplier-process', label: 'Multiplier process' }
+          ]
         }
       ]
     }

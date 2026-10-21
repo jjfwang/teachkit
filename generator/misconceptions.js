@@ -502,6 +502,12 @@
       wrongTurn: 'The alarm is on whenever A is on, because OR works just like AND.',
       why: 'Both gates seem to pass a signal onward, so OR and AND blur into one rule and the NOT on C is easy to overlook.',
       correctTurn: 'Read the circuit gate by gate: the alarm is on only when (A AND B) are both 1 or NOT C is 1 - that is, when A and B are both on, or C is off (or both).'
+    },
+    // Slice 10 (issue #1098): JC H2 Economics.
+    'multiplier-process': {
+      wrongTurn: 'Every round re-spends the full injection, so national income grows by the same amount each round without limit.',
+      why: 'The injection is spent in full in the first round, so it looks as if the same full amount keeps circulating round after round.',
+      correctTurn: 'Only part of each round\'s income is re-spent - the rest leaks away as saving, tax and imports - so each round adds a geometrically smaller amount and national income settles at a multiple of the injection.'
     }
   };
 

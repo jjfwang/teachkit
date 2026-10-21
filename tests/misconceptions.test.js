@@ -52,7 +52,7 @@ const GEOGRAPHY_SLUGS = [
 ];
 
 const ECONOMICS_SLUGS = [
-  'demand-supply-equilibrium'
+  'demand-supply-equilibrium', 'multiplier-process'
 ];
 
 const COMPUTING_SLUGS = [
@@ -61,7 +61,7 @@ const COMPUTING_SLUGS = [
 
 const SEEDED_SLUGS = PRIMARY_MATH_SLUGS.concat(PRIMARY_SCIENCE_SLUGS, SECONDARY_MATH_SLUGS, SECONDARY_SCIENCE_SLUGS, H2_SLUGS, GEOGRAPHY_SLUGS, ECONOMICS_SLUGS, COMPUTING_SLUGS);
 
-test('MISCONCEPTIONS holds exactly the 73 seeded topic slugs (12 Primary Math + 8 Primary Science + 14 Secondary Math + 14 Secondary Science + 19 H2 + 4 Geography + 1 Economics + 1 Computing)', () => {
+test('MISCONCEPTIONS holds exactly the 74 seeded topic slugs (12 Primary Math + 8 Primary Science + 14 Secondary Math + 14 Secondary Science + 19 H2 + 4 Geography + 2 Economics + 1 Computing)', () => {
   assert.deepStrictEqual(Object.keys(MISCONCEPTIONS).sort(), SEEDED_SLUGS.slice().sort());
 });
 
