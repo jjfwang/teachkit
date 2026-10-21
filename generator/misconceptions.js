@@ -538,6 +538,12 @@
       wrongTurn: 'The white sets because the heat dries the water out of it.',
       why: 'The white does turn from clear and runny to opaque and firm as it cooks, so it is easy to assume the change must be water leaving - drying out feels like the obvious way for something runny to become solid.',
       correctTurn: 'The water stays trapped in the protein network - heat unfolds the chains and they bond and set. Gentle heat unfolds the folded protein chains in the egg white, the unfolded chains bond to each other and form a network that traps the water inside it, and the white turns opaque and sets firm with its water still held in the network.'
+    },
+    // Slice 1 (issue #1126): Secondary Principles of Accounts 7087.
+    'double-entry': {
+      wrongTurn: 'Buying equipment with cash makes the business poorer so total assets fall.',
+      why: 'Cash has visibly left the business, so it is easy to feel that value has been lost - money paid out reads as the business ending up with less than it had before.',
+      correctTurn: 'One asset is swapped for another of equal value, so total assets and the equation are unchanged. Paying $4,000 cash for equipment cuts the cash asset by $4,000 and raises the equipment asset by $4,000 at the same moment, total assets stay at $10,000, and Assets = Capital + Liabilities stays balanced - every transaction is recorded twice, once in each account it changes.'
     }
   };
 

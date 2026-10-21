@@ -136,6 +136,11 @@
             id: 'nutrition-food-science', label: 'Nutrition and Food Science', subject: 'nutrition-food-science', topics: [
             { slug: 'protein-denaturation', label: 'Protein denaturation' }
             ]
+          },
+          {
+            id: 'principles-of-accounts', label: 'Principles of Accounts', subject: 'principles-of-accounts', topics: [
+            { slug: 'double-entry', label: 'Double entry' }
+            ]
           }
         ]
       },
