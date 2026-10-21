@@ -1296,6 +1296,24 @@
     <li><code>script</code> teacher script</li>
   </ul>
 </header>
+<header class="pack-manifest" id="tectonics-subduction-secondary-manifest">
+  <h1>Lesson pack: Secondary geography tectonics-subduction: Subduction: slab-pull, trench and volcanic arc</h1>
+  <dl>
+    <dt>Slug</dt><dd><code>tectonics-subduction-secondary-geography</code></dd>
+    <dt>Level</dt><dd>secondary</dd>
+    <dt>Subject</dt><dd>geography</dd>
+    <dt>Topic</dt><dd><code>tectonics-subduction</code></dd>
+  </dl>
+  <p>topic tectonics-subduction · level secondary · subject geography · deck secondary-geog-tectonics-subduction</p>
+  <ul class="pack-materials">
+    <li><code>animation</code></li>
+    <li><code>slides</code></li>
+    <li><code>worksheet</code></li>
+    <li><code>exitTicket</code> exit ticket</li>
+    <li><code>notes</code> student notes</li>
+    <li><code>script</code> teacher script</li>
+  </ul>
+</header>
 <section class="pack-section" id="animation-section">
   <h2>Animation</h2>
   <div id="anim-stage"></div>
@@ -2205,6 +2223,19 @@
   <h2>Secondary Biology nutrition (diet and digestion) printables</h2>
   <div id="bio-nutrition-digestion-secondary-printables-stage"></div>
 </section>
+<section class="pack-section" id="tectonics-subduction-secondary-animation">
+  <h2>Secondary Geography tectonics-subduction animation</h2>
+  <div id="tectonics-subduction-secondary-stage"></div>
+  <div id="tectonics-subduction-secondary-captions"></div>
+</section>
+<section class="pack-section" id="tectonics-subduction-secondary-slides">
+  <h2>Secondary Geography tectonics-subduction slides</h2>
+  <div id="tectonics-subduction-secondary-slides-stage"></div>
+</section>
+<section class="pack-section" id="tectonics-subduction-secondary-printables">
+  <h2>Secondary Geography tectonics-subduction printables</h2>
+  <div id="tectonics-subduction-secondary-printables-stage"></div>
+</section>
 <div id="err"></div>
 <script src="validate.js"></script>
 <script src="player.js"></script>
@@ -2299,8 +2330,9 @@ var bioTransportSecondaryPrintStage = document.querySelector('#bio-transport-sec
 var bioReproductionSecondaryPrintStage = document.querySelector('#bio-reproduction-secondary-printables-stage .pr-stage') || document.querySelector('#bio-reproduction-secondary-printables-stage');
 var bioEcologySecondaryPrintStage = document.querySelector('#bio-ecology-secondary-printables-stage .pr-stage') || document.querySelector('#bio-ecology-secondary-printables-stage');
 var bioNutritionDigestionSecondaryPrintStage = document.querySelector('#bio-nutrition-digestion-secondary-printables-stage .pr-stage') || document.querySelector('#bio-nutrition-digestion-secondary-printables-stage');
+var tectonicsSubductionSecondaryPrintStage = document.querySelector('#tectonics-subduction-secondary-printables-stage .pr-stage') || document.querySelector('#tectonics-subduction-secondary-printables-stage');
     var keys = [];
-    [printStage, fractionsPrintStage, wavesPrintStage, complexPrintStage, trigPrintStage, thermalPrintStage, photosynthesisPrintStage, erosionPrintStage, chemMolePrintStage, differentiationPrintStage, integrationPrintStage, binomialPrintStage, kinematicsPrintStage, quadraticPrintStage, trigonometryAPrintStage, vectorsPrintStage, functionsGraphsPrintStage, sequencesPrintStage, differentiationJcPrintStage, integrationJcPrintStage, probabilityJcPrintStage, statisticsJcPrintStage, mechanicsJcPrintStage, emJcPrintStage, quantumJcPrintStage, physicalJcPrintStage, inorganicJcPrintStage, organicJcPrintStage, cellBioJcPrintStage, geneticsJcPrintStage, energeticsJcPrintStage, ecologyJcPrintStage, wholeNumbersPrimaryPrintStage, decimalsPrimaryPrintStage, percentagePrimaryPrintStage, ratioPrimaryPrintStage, rateSpeedPrimaryPrintStage, algebraIntroPrimaryPrintStage, geometryAnglesPrimaryPrintStage, areaPerimeterPrimaryPrintStage, volumePrimaryPrintStage, dataGraphsPrimaryPrintStage, modelMethodPrimaryPrintStage, humanBodySystemsPrimaryPrintStage, plantSystemsPrimaryPrintStage, lifeCyclesPrimaryPrintStage, energyFormsPrimaryPrintStage, photosynthesisPrimaryPrintStage, forcesMagnetsPrimaryPrintStage, adaptationsPrimaryPrintStage, plateTectonicsPrimaryPrintStage, weatherClimatePrimaryPrintStage, eNumbersSecondaryPrintStage, eAlgebraSecondaryPrintStage, eFunctionsGraphsSecondaryPrintStage, eGeometrySecondaryPrintStage, eMensurationSecondaryPrintStage, eStatisticsSecondaryPrintStage, eProbabilitySecondaryPrintStage, physKinematicsSecondaryPrintStage, physForcesSecondaryPrintStage, physEnergySecondaryPrintStage, physElectricitySecondaryPrintStage, chemAtomicSecondaryPrintStage, chemBondingSecondaryPrintStage, chemAcidsSecondaryPrintStage, bioCellsSecondaryPrintStage, bioTransportSecondaryPrintStage, bioReproductionSecondaryPrintStage, bioEcologySecondaryPrintStage, bioNutritionDigestionSecondaryPrintStage].forEach(function (stage) {
+    [printStage, fractionsPrintStage, wavesPrintStage, complexPrintStage, trigPrintStage, thermalPrintStage, photosynthesisPrintStage, erosionPrintStage, chemMolePrintStage, differentiationPrintStage, integrationPrintStage, binomialPrintStage, kinematicsPrintStage, quadraticPrintStage, trigonometryAPrintStage, vectorsPrintStage, functionsGraphsPrintStage, sequencesPrintStage, differentiationJcPrintStage, integrationJcPrintStage, probabilityJcPrintStage, statisticsJcPrintStage, mechanicsJcPrintStage, emJcPrintStage, quantumJcPrintStage, physicalJcPrintStage, inorganicJcPrintStage, organicJcPrintStage, cellBioJcPrintStage, geneticsJcPrintStage, energeticsJcPrintStage, ecologyJcPrintStage, wholeNumbersPrimaryPrintStage, decimalsPrimaryPrintStage, percentagePrimaryPrintStage, ratioPrimaryPrintStage, rateSpeedPrimaryPrintStage, algebraIntroPrimaryPrintStage, geometryAnglesPrimaryPrintStage, areaPerimeterPrimaryPrintStage, volumePrimaryPrintStage, dataGraphsPrimaryPrintStage, modelMethodPrimaryPrintStage, humanBodySystemsPrimaryPrintStage, plantSystemsPrimaryPrintStage, lifeCyclesPrimaryPrintStage, energyFormsPrimaryPrintStage, photosynthesisPrimaryPrintStage, forcesMagnetsPrimaryPrintStage, adaptationsPrimaryPrintStage, plateTectonicsPrimaryPrintStage, weatherClimatePrimaryPrintStage, eNumbersSecondaryPrintStage, eAlgebraSecondaryPrintStage, eFunctionsGraphsSecondaryPrintStage, eGeometrySecondaryPrintStage, eMensurationSecondaryPrintStage, eStatisticsSecondaryPrintStage, eProbabilitySecondaryPrintStage, physKinematicsSecondaryPrintStage, physForcesSecondaryPrintStage, physEnergySecondaryPrintStage, physElectricitySecondaryPrintStage, chemAtomicSecondaryPrintStage, chemBondingSecondaryPrintStage, chemAcidsSecondaryPrintStage, bioCellsSecondaryPrintStage, bioTransportSecondaryPrintStage, bioReproductionSecondaryPrintStage, bioEcologySecondaryPrintStage, bioNutritionDigestionSecondaryPrintStage, tectonicsSubductionSecondaryPrintStage].forEach(function (stage) {
       if (stage) {
         keys = keys.concat(Array.prototype.slice.call(stage.querySelectorAll('.pr-teacher')));
       }
@@ -7443,6 +7475,77 @@ var bioNutritionDigestionSecondaryPrintStage = document.querySelector('#bio-nutr
     ].join('');
   }).catch(function (err) {
     showError('Secondary Biology nutrition (diet and digestion) pack failed to load: ' + err.message);
+  });
+})();
+(function () {
+  var presenter = document.getElementById('tectonics-subduction-secondary-slides-stage');
+  var tectonicsSubductionSecondaryPrint = document.getElementById('tectonics-subduction-secondary-printables-stage');
+  var errBox = document.getElementById('err');
+  var tectonicsSubductionSecondaryAnimUrl = '../samples/secondary-geog-tectonics-subduction.json';
+  var tectonicsSubductionSecondaryDeckUrl = '../samples/decks/secondary-geog-tectonics-subduction.json';
+  var tectonicsSubductionSecondaryWorksheetUrl = '../samples/worksheets/secondary-geog-tectonics-subduction.json';
+  var tectonicsSubductionSecondaryTicketUrl = '../samples/tickets/secondary-geog-tectonics-subduction.json';
+  var tectonicsSubductionSecondaryNotesUrl = '../samples/notes/secondary-geog-tectonics-subduction.json';
+  var tectonicsSubductionSecondaryScriptUrl = '../samples/scripts/secondary-geog-tectonics-subduction.json';
+
+  function showError(msg) {
+    errBox.textContent = String(msg);
+  }
+
+  Promise.all([
+    fetch(tectonicsSubductionSecondaryAnimUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + tectonicsSubductionSecondaryAnimUrl);
+      return r.json();
+    }),
+    fetch(tectonicsSubductionSecondaryDeckUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + tectonicsSubductionSecondaryDeckUrl);
+      return r.json();
+    }),
+    fetch(tectonicsSubductionSecondaryWorksheetUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + tectonicsSubductionSecondaryWorksheetUrl);
+      return r.json();
+    }),
+    fetch(tectonicsSubductionSecondaryTicketUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + tectonicsSubductionSecondaryTicketUrl);
+      return r.json();
+    }),
+    fetch(tectonicsSubductionSecondaryNotesUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + tectonicsSubductionSecondaryNotesUrl);
+      return r.json();
+    }),
+    fetch(tectonicsSubductionSecondaryScriptUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + tectonicsSubductionSecondaryScriptUrl);
+      return r.json();
+    })
+  ]).then(function (pack) {
+    var anim = pack[0];
+    var deck = pack[1];
+    var worksheet = pack[2];
+    var ticket = pack[3];
+    var notes = pack[4];
+    var script = pack[5];
+    var problems = AnimathValidate.validateSpec(anim)
+      .concat(AnimathValidate.validateSlides(deck))
+      .concat(AnimathValidate.validateWorksheet(worksheet))
+      .concat(AnimathValidate.validateExitTicket(ticket))
+      .concat(AnimathValidate.validateNotes(notes))
+      .concat(AnimathValidate.validateScript(script));
+    if (problems.length) {
+      showError('Secondary Geography tectonics-subduction pack failed validation:\n' + problems.join('\n'));
+      return;
+    }
+    AnimathPlayer.mount(document.getElementById('tectonics-subduction-secondary-stage'), anim, { autoplay: false });
+    AnimathSlidesPresenter.attachPresenter(document, presenter, deck, { animSpec: anim });
+    tectonicsSubductionSecondaryPrint.innerHTML = [
+      AnimathPrintable.renderWorksheet(worksheet),
+      AnimathPrintable.renderWorksheetAnswerKey(worksheet),
+      AnimathPrintable.renderExitTicket(ticket),
+      AnimathPrintable.renderExitTicketAnswerKey(ticket),
+      AnimathPrintable.renderNotes(notes),
+      AnimathPrintable.renderScript(script)
+    ].join('');
+  }).catch(function (err) {
+    showError('Secondary Geography tectonics-subduction pack failed to load: ' + err.message);
   });
 })();
 </script>
