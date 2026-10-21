@@ -1350,6 +1350,24 @@
     <li><code>script</code> teacher script</li>
   </ul>
 </header>
+<header class="pack-manifest" id="multiplier-process-jc-manifest">
+  <h1>Lesson pack: JC H2 Economics multiplier-process: The multiplier process: one injection, shrinking rounds</h1>
+  <dl>
+    <dt>Slug</dt><dd><code>multiplier-process-jc-economics</code></dd>
+    <dt>Level</dt><dd>jc</dd>
+    <dt>Subject</dt><dd>economics</dd>
+    <dt>Topic</dt><dd><code>multiplier-process</code></dd>
+  </dl>
+  <p>topic multiplier-process · level jc · subject economics · deck jc-h2-multiplier-process</p>
+  <ul class="pack-materials">
+    <li><code>animation</code></li>
+    <li><code>slides</code></li>
+    <li><code>worksheet</code></li>
+    <li><code>exitTicket</code> exit ticket</li>
+    <li><code>notes</code> student notes</li>
+    <li><code>script</code> teacher script</li>
+  </ul>
+</header>
 <section class="pack-section" id="animation-section">
   <h2>Animation</h2>
   <div id="anim-stage"></div>
@@ -2298,6 +2316,19 @@
   <h2>Secondary Computing logic-gates printables</h2>
   <div id="logic-gates-secondary-printables-stage"></div>
 </section>
+<section class="pack-section" id="multiplier-process-jc-animation">
+  <h2>JC H2 Economics multiplier-process animation</h2>
+  <div id="multiplier-process-jc-stage"></div>
+  <div id="multiplier-process-jc-captions"></div>
+</section>
+<section class="pack-section" id="multiplier-process-jc-slides">
+  <h2>JC H2 Economics multiplier-process slides</h2>
+  <div id="multiplier-process-jc-slides-stage"></div>
+</section>
+<section class="pack-section" id="multiplier-process-jc-printables">
+  <h2>JC H2 Economics multiplier-process printables</h2>
+  <div id="multiplier-process-jc-printables-stage"></div>
+</section>
 <div id="err"></div>
 <script src="validate.js"></script>
 <script src="player.js"></script>
@@ -2395,8 +2426,9 @@ var bioNutritionDigestionSecondaryPrintStage = document.querySelector('#bio-nutr
 var tectonicsSubductionSecondaryPrintStage = document.querySelector('#tectonics-subduction-secondary-printables-stage .pr-stage') || document.querySelector('#tectonics-subduction-secondary-printables-stage');
 var demandSupplyEquilibriumSecondaryPrintStage = document.querySelector('#demand-supply-equilibrium-secondary-printables-stage .pr-stage') || document.querySelector('#demand-supply-equilibrium-secondary-printables-stage');
 var logicGatesSecondaryPrintStage = document.querySelector('#logic-gates-secondary-printables-stage .pr-stage') || document.querySelector('#logic-gates-secondary-printables-stage');
+var multiplierProcessJcPrintStage = document.querySelector('#multiplier-process-jc-printables-stage .pr-stage') || document.querySelector('#multiplier-process-jc-printables-stage');
     var keys = [];
-    [printStage, fractionsPrintStage, wavesPrintStage, complexPrintStage, trigPrintStage, thermalPrintStage, photosynthesisPrintStage, erosionPrintStage, chemMolePrintStage, differentiationPrintStage, integrationPrintStage, binomialPrintStage, kinematicsPrintStage, quadraticPrintStage, trigonometryAPrintStage, vectorsPrintStage, functionsGraphsPrintStage, sequencesPrintStage, differentiationJcPrintStage, integrationJcPrintStage, probabilityJcPrintStage, statisticsJcPrintStage, mechanicsJcPrintStage, emJcPrintStage, quantumJcPrintStage, physicalJcPrintStage, inorganicJcPrintStage, organicJcPrintStage, cellBioJcPrintStage, geneticsJcPrintStage, energeticsJcPrintStage, ecologyJcPrintStage, wholeNumbersPrimaryPrintStage, decimalsPrimaryPrintStage, percentagePrimaryPrintStage, ratioPrimaryPrintStage, rateSpeedPrimaryPrintStage, algebraIntroPrimaryPrintStage, geometryAnglesPrimaryPrintStage, areaPerimeterPrimaryPrintStage, volumePrimaryPrintStage, dataGraphsPrimaryPrintStage, modelMethodPrimaryPrintStage, humanBodySystemsPrimaryPrintStage, plantSystemsPrimaryPrintStage, lifeCyclesPrimaryPrintStage, energyFormsPrimaryPrintStage, photosynthesisPrimaryPrintStage, forcesMagnetsPrimaryPrintStage, adaptationsPrimaryPrintStage, plateTectonicsPrimaryPrintStage, weatherClimatePrimaryPrintStage, eNumbersSecondaryPrintStage, eAlgebraSecondaryPrintStage, eFunctionsGraphsSecondaryPrintStage, eGeometrySecondaryPrintStage, eMensurationSecondaryPrintStage, eStatisticsSecondaryPrintStage, eProbabilitySecondaryPrintStage, physKinematicsSecondaryPrintStage, physForcesSecondaryPrintStage, physEnergySecondaryPrintStage, physElectricitySecondaryPrintStage, chemAtomicSecondaryPrintStage, chemBondingSecondaryPrintStage, chemAcidsSecondaryPrintStage, bioCellsSecondaryPrintStage, bioTransportSecondaryPrintStage, bioReproductionSecondaryPrintStage, bioEcologySecondaryPrintStage, bioNutritionDigestionSecondaryPrintStage, tectonicsSubductionSecondaryPrintStage, demandSupplyEquilibriumSecondaryPrintStage, logicGatesSecondaryPrintStage].forEach(function (stage) {
+    [printStage, fractionsPrintStage, wavesPrintStage, complexPrintStage, trigPrintStage, thermalPrintStage, photosynthesisPrintStage, erosionPrintStage, chemMolePrintStage, differentiationPrintStage, integrationPrintStage, binomialPrintStage, kinematicsPrintStage, quadraticPrintStage, trigonometryAPrintStage, vectorsPrintStage, functionsGraphsPrintStage, sequencesPrintStage, differentiationJcPrintStage, integrationJcPrintStage, probabilityJcPrintStage, statisticsJcPrintStage, mechanicsJcPrintStage, emJcPrintStage, quantumJcPrintStage, physicalJcPrintStage, inorganicJcPrintStage, organicJcPrintStage, cellBioJcPrintStage, geneticsJcPrintStage, energeticsJcPrintStage, ecologyJcPrintStage, wholeNumbersPrimaryPrintStage, decimalsPrimaryPrintStage, percentagePrimaryPrintStage, ratioPrimaryPrintStage, rateSpeedPrimaryPrintStage, algebraIntroPrimaryPrintStage, geometryAnglesPrimaryPrintStage, areaPerimeterPrimaryPrintStage, volumePrimaryPrintStage, dataGraphsPrimaryPrintStage, modelMethodPrimaryPrintStage, humanBodySystemsPrimaryPrintStage, plantSystemsPrimaryPrintStage, lifeCyclesPrimaryPrintStage, energyFormsPrimaryPrintStage, photosynthesisPrimaryPrintStage, forcesMagnetsPrimaryPrintStage, adaptationsPrimaryPrintStage, plateTectonicsPrimaryPrintStage, weatherClimatePrimaryPrintStage, eNumbersSecondaryPrintStage, eAlgebraSecondaryPrintStage, eFunctionsGraphsSecondaryPrintStage, eGeometrySecondaryPrintStage, eMensurationSecondaryPrintStage, eStatisticsSecondaryPrintStage, eProbabilitySecondaryPrintStage, physKinematicsSecondaryPrintStage, physForcesSecondaryPrintStage, physEnergySecondaryPrintStage, physElectricitySecondaryPrintStage, chemAtomicSecondaryPrintStage, chemBondingSecondaryPrintStage, chemAcidsSecondaryPrintStage, bioCellsSecondaryPrintStage, bioTransportSecondaryPrintStage, bioReproductionSecondaryPrintStage, bioEcologySecondaryPrintStage, bioNutritionDigestionSecondaryPrintStage, tectonicsSubductionSecondaryPrintStage, demandSupplyEquilibriumSecondaryPrintStage, logicGatesSecondaryPrintStage, multiplierProcessJcPrintStage].forEach(function (stage) {
       if (stage) {
         keys = keys.concat(Array.prototype.slice.call(stage.querySelectorAll('.pr-teacher')));
       }
@@ -7752,6 +7784,77 @@ var logicGatesSecondaryPrintStage = document.querySelector('#logic-gates-seconda
     ].join('');
   }).catch(function (err) {
     showError('Secondary Computing logic-gates pack failed to load: ' + err.message);
+  });
+})();
+(function () {
+  var presenter = document.getElementById('multiplier-process-jc-slides-stage');
+  var multiplierProcessJcPrint = document.getElementById('multiplier-process-jc-printables-stage');
+  var errBox = document.getElementById('err');
+  var multiplierProcessJcAnimUrl = '../samples/jc-h2-multiplier-process.json';
+  var multiplierProcessJcDeckUrl = '../samples/decks/jc-h2-multiplier-process.json';
+  var multiplierProcessJcWorksheetUrl = '../samples/worksheets/jc-h2-multiplier-process.json';
+  var multiplierProcessJcTicketUrl = '../samples/tickets/jc-h2-multiplier-process.json';
+  var multiplierProcessJcNotesUrl = '../samples/notes/jc-h2-multiplier-process.json';
+  var multiplierProcessJcScriptUrl = '../samples/scripts/jc-h2-multiplier-process.json';
+
+  function showError(msg) {
+    errBox.textContent = String(msg);
+  }
+
+  Promise.all([
+    fetch(multiplierProcessJcAnimUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + multiplierProcessJcAnimUrl);
+      return r.json();
+    }),
+    fetch(multiplierProcessJcDeckUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + multiplierProcessJcDeckUrl);
+      return r.json();
+    }),
+    fetch(multiplierProcessJcWorksheetUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + multiplierProcessJcWorksheetUrl);
+      return r.json();
+    }),
+    fetch(multiplierProcessJcTicketUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + multiplierProcessJcTicketUrl);
+      return r.json();
+    }),
+    fetch(multiplierProcessJcNotesUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + multiplierProcessJcNotesUrl);
+      return r.json();
+    }),
+    fetch(multiplierProcessJcScriptUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + multiplierProcessJcScriptUrl);
+      return r.json();
+    })
+  ]).then(function (pack) {
+    var anim = pack[0];
+    var deck = pack[1];
+    var worksheet = pack[2];
+    var ticket = pack[3];
+    var notes = pack[4];
+    var script = pack[5];
+    var problems = AnimathValidate.validateSpec(anim)
+      .concat(AnimathValidate.validateSlides(deck))
+      .concat(AnimathValidate.validateWorksheet(worksheet))
+      .concat(AnimathValidate.validateExitTicket(ticket))
+      .concat(AnimathValidate.validateNotes(notes))
+      .concat(AnimathValidate.validateScript(script));
+    if (problems.length) {
+      showError('JC H2 Economics multiplier-process pack failed validation:\n' + problems.join('\n'));
+      return;
+    }
+    AnimathPlayer.mount(document.getElementById('multiplier-process-jc-stage'), anim, { autoplay: false });
+    AnimathSlidesPresenter.attachPresenter(document, presenter, deck, { animSpec: anim });
+    multiplierProcessJcPrint.innerHTML = [
+      AnimathPrintable.renderWorksheet(worksheet),
+      AnimathPrintable.renderWorksheetAnswerKey(worksheet),
+      AnimathPrintable.renderExitTicket(ticket),
+      AnimathPrintable.renderExitTicketAnswerKey(ticket),
+      AnimathPrintable.renderNotes(notes),
+      AnimathPrintable.renderScript(script)
+    ].join('');
+  }).catch(function (err) {
+    showError('JC H2 Economics multiplier-process pack failed to load: ' + err.message);
   });
 })();
 </script>
