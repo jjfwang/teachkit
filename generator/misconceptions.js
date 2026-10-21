@@ -556,6 +556,12 @@
       wrongTurn: 'The body uses only one energy system at a time and switches cleanly to the next one when the first runs out.',
       why: 'The systems feel sequential because textbooks list them in order and each one dominates at a different stage of the bout, so the handover reads as a clean switch rather than a shifting overlap.',
       correctTurn: 'All three systems are active from the first second and overlap throughout the bout; only the largest contributor changes as the bout continues - ATP-PC fades as the phosphocreatine store drains, anaerobic glycolysis peaks as lactate builds, and the aerobic system rises to dominate longer work.'
+    },
+    // Slice 1 (issue #1143): JC H2 Geography 9173.
+    'drainage-basin': {
+      wrongTurn: 'The river peaks when the rain is heaviest, because rain runs straight off the surface into the river.',
+      why: 'Rain visibly falls on the whole basin at once and the river visibly rises, so it looks as if the rain reaches the channel immediately and the highest discharge must match the heaviest rain.',
+      correctTurn: 'The basin stores fill in sequence - interception first, then the soil store, then groundwater - and overland flow only switches on once the soil saturates, so discharge peaks after the peak rain and then recedes slowly, sustained by groundwater baseflow.'
     }
   };
 
