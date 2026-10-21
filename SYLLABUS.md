@@ -135,6 +135,12 @@ Nutrition and Food Science:
 |---|---|
 | `protein-denaturation` | Protein denaturation (SEAB 6097): egg white heated in a pan - folded chains unfold in gentle heat, bond into a network trapping water, white turns opaque and sets |
 
+Principles of Accounts:
+
+| slug | topic |
+|---|---|
+| `double-entry` | Double entry (SEAB 7087): one cash purchase of equipment changes two accounts at once - equipment rises and cash falls by the same amount, so the accounting equation Assets = Capital + Liabilities stays balanced and total assets are unchanged |
+
 ## Junior College — H2
 
 Mathematics:
@@ -194,7 +200,7 @@ Further Mathematics:
 - `level` + `subject` on a spec are coarse (`primary|secondary|jc`,
   and `subject` per `SPEC.md` §subject — any non-empty string; the
   syllabus-covered subjects in `player/validate.js` SUBJECTS are currently
-  `math|science|geography|economics|computing|electronics|design-technology|nutrition-food-science`); the `topic` slug carries the precise syllabus
+  `math|science|geography|economics|computing|electronics|design-technology|nutrition-food-science|principles-of-accounts`); the `topic` slug carries the precise syllabus
   point. SUBJECTS is the syllabus-known list for gallery/coverage, not the
   validator's allowed set. When a new syllabus-covered subject lands, update
   this line against those sources; the syllabus.test.js SUBJECTS test fails

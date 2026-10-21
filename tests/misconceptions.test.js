@@ -71,9 +71,13 @@ const NUTRITION_FOOD_SCIENCE_SLUGS = [
   'protein-denaturation'
 ];
 
-const SEEDED_SLUGS = PRIMARY_MATH_SLUGS.concat(PRIMARY_SCIENCE_SLUGS, SECONDARY_MATH_SLUGS, SECONDARY_SCIENCE_SLUGS, H2_SLUGS, GEOGRAPHY_SLUGS, ECONOMICS_SLUGS, COMPUTING_SLUGS, ELECTRONICS_SLUGS, DESIGN_TECHNOLOGY_SLUGS, NUTRITION_FOOD_SCIENCE_SLUGS);
+const PRINCIPLES_OF_ACCOUNTS_SLUGS = [
+  'double-entry'
+];
 
-test('MISCONCEPTIONS holds exactly the 79 seeded topic slugs (12 Primary Math + 8 Primary Science + 14 Secondary Math + 14 Secondary Science + 21 H2 + 4 Geography + 2 Economics + 1 Computing + 1 Electronics + 1 Design and Technology + 1 Nutrition and Food Science)', () => {
+const SEEDED_SLUGS = PRIMARY_MATH_SLUGS.concat(PRIMARY_SCIENCE_SLUGS, SECONDARY_MATH_SLUGS, SECONDARY_SCIENCE_SLUGS, H2_SLUGS, GEOGRAPHY_SLUGS, ECONOMICS_SLUGS, COMPUTING_SLUGS, ELECTRONICS_SLUGS, DESIGN_TECHNOLOGY_SLUGS, NUTRITION_FOOD_SCIENCE_SLUGS, PRINCIPLES_OF_ACCOUNTS_SLUGS);
+
+test('MISCONCEPTIONS holds exactly the 80 seeded topic slugs (12 Primary Math + 8 Primary Science + 14 Secondary Math + 14 Secondary Science + 21 H2 + 4 Geography + 2 Economics + 1 Computing + 1 Electronics + 1 Design and Technology + 1 Nutrition and Food Science + 1 Principles of Accounts)', () => {
   assert.deepStrictEqual(Object.keys(MISCONCEPTIONS).sort(), SEEDED_SLUGS.slice().sort());
 });
 

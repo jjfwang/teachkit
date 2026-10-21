@@ -1,0 +1,1078 @@
+{
+  "animath": "0.1",
+  "title": "Double Entry: One Purchase, Two Accounts",
+  "level": "secondary",
+  "subject": "principles-of-accounts",
+  "topic": "double-entry",
+  "kind": "concept",
+  "canvas": {
+    "width": 960,
+    "height": 540
+  },
+  "scenes": [
+    {
+      "id": "s1",
+      "caption": "Opening position: the equation balances",
+      "narration": "The business opens with $10,000 cash, provided by the owner as capital, and owes nothing. Assets of $10,000 equal capital of $10,000 plus liabilities of $0, so the accounting equation balances.",
+      "duration_ms": 9000,
+      "steps": [
+        {
+          "at_ms": 0,
+          "do": "show",
+          "shape": {
+            "id": "title",
+            "kind": "text",
+            "x": 480,
+            "y": 34,
+            "text": "Double entry: one purchase, two accounts",
+            "size": 22,
+            "color": "#1a1a1a",
+            "explain": "Title: double entry, how one cash purchase of equipment changes two accounts at once.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 200,
+          "do": "show",
+          "shape": {
+            "id": "cashBox",
+            "kind": "rect",
+            "x": 30,
+            "y": 150,
+            "w": 240,
+            "h": 110,
+            "fill": "#d6eaf8",
+            "explain": "Cash box: the cash asset the business holds, $10,000 at the opening position."
+          }
+        },
+        {
+          "at_ms": 350,
+          "do": "show",
+          "shape": {
+            "id": "cashLab",
+            "kind": "text",
+            "x": 150,
+            "y": 195,
+            "text": "Cash $10,000",
+            "size": 20,
+            "color": "#1a1a1a",
+            "explain": "Cash label: the opening cash asset is $10,000.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 500,
+          "do": "show",
+          "shape": {
+            "id": "cashSub",
+            "kind": "text",
+            "x": 150,
+            "y": 228,
+            "text": "an asset",
+            "size": 15,
+            "color": "#1a1a1a",
+            "explain": "Cash is an asset: something of value the business owns.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 700,
+          "do": "show",
+          "shape": {
+            "id": "capBox",
+            "kind": "rect",
+            "x": 460,
+            "y": 150,
+            "w": 240,
+            "h": 110,
+            "fill": "#fdebd0",
+            "explain": "Capital box: the owner's stake in the business, $10,000."
+          }
+        },
+        {
+          "at_ms": 850,
+          "do": "show",
+          "shape": {
+            "id": "capLab",
+            "kind": "text",
+            "x": 580,
+            "y": 195,
+            "text": "Capital $10,000",
+            "size": 20,
+            "color": "#1a1a1a",
+            "explain": "Capital label: the owner put in $10,000.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 1000,
+          "do": "show",
+          "shape": {
+            "id": "capSub",
+            "kind": "text",
+            "x": 580,
+            "y": 228,
+            "text": "owner's stake",
+            "size": 15,
+            "color": "#1a1a1a",
+            "explain": "Capital is what the owner has invested in the business.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 1200,
+          "do": "show",
+          "shape": {
+            "id": "liabBox",
+            "kind": "rect",
+            "x": 710,
+            "y": 150,
+            "w": 180,
+            "h": 110,
+            "fill": "#e8daef",
+            "explain": "Liabilities box: amounts the business owes to others, $0 at the opening position."
+          }
+        },
+        {
+          "at_ms": 1350,
+          "do": "show",
+          "shape": {
+            "id": "liabLab",
+            "kind": "text",
+            "x": 800,
+            "y": 195,
+            "text": "Liabilities $0",
+            "size": 19,
+            "color": "#1a1a1a",
+            "explain": "Liabilities label: the business owes nothing at the opening position.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 1500,
+          "do": "show",
+          "shape": {
+            "id": "liabSub",
+            "kind": "text",
+            "x": 800,
+            "y": 228,
+            "text": "nothing owed",
+            "size": 15,
+            "color": "#1a1a1a",
+            "explain": "Liabilities are amounts owed to people other than the owner.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 1700,
+          "do": "show",
+          "shape": {
+            "id": "eqSign",
+            "kind": "text",
+            "x": 365,
+            "y": 205,
+            "text": "=",
+            "size": 26,
+            "color": "#1a1a1a",
+            "explain": "Equals sign: total assets must equal capital plus liabilities.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 1850,
+          "do": "show",
+          "shape": {
+            "id": "plusSign",
+            "kind": "text",
+            "x": 675,
+            "y": 205,
+            "text": "+",
+            "size": 26,
+            "color": "#1a1a1a",
+            "explain": "Plus sign: capital and liabilities add up to the total assets.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 3000,
+          "do": "move",
+          "target": "cashBox",
+          "to": {
+            "x": 90
+          },
+          "dur_ms": 900
+        },
+        {
+          "at_ms": 3000,
+          "do": "move",
+          "target": "cashLab",
+          "to": {
+            "x": 210
+          },
+          "dur_ms": 900
+        },
+        {
+          "at_ms": 3000,
+          "do": "move",
+          "target": "cashSub",
+          "to": {
+            "x": 210
+          },
+          "dur_ms": 900
+        },
+        {
+          "at_ms": 3900,
+          "do": "move",
+          "target": "capBox",
+          "to": {
+            "x": 400
+          },
+          "dur_ms": 900
+        },
+        {
+          "at_ms": 3900,
+          "do": "move",
+          "target": "capLab",
+          "to": {
+            "x": 520
+          },
+          "dur_ms": 900
+        },
+        {
+          "at_ms": 3900,
+          "do": "move",
+          "target": "capSub",
+          "to": {
+            "x": 520
+          },
+          "dur_ms": 900
+        },
+        {
+          "at_ms": 5200,
+          "do": "show",
+          "shape": {
+            "id": "totalLab",
+            "kind": "text",
+            "x": 480,
+            "y": 320,
+            "text": "Total assets $10,000 = Capital $10,000 + Liabilities $0",
+            "size": 18,
+            "color": "#1a1a1a",
+            "explain": "Equation check: $10,000 of assets equals $10,000 capital plus $0 liabilities, so the equation balances.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 6200,
+          "do": "emphasize",
+          "target": "totalLab"
+        },
+        {
+          "at_ms": 7200,
+          "do": "caption",
+          "text": "Opening: assets equal capital plus liabilities"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "caption": "The purchase: cash flows out, equipment arrives",
+      "narration": "The business pays $4,000 cash for equipment. The cash flows out to the seller and the equipment arrives in its place - one asset is swapped for another of equal value.",
+      "duration_ms": 10000,
+      "steps": [
+        {
+          "at_ms": 0,
+          "do": "show",
+          "shape": {
+            "id": "title",
+            "kind": "text",
+            "x": 480,
+            "y": 34,
+            "text": "Double entry: one purchase, two accounts",
+            "size": 22,
+            "color": "#1a1a1a",
+            "explain": "Title: double entry, how one cash purchase of equipment changes two accounts at once.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 200,
+          "do": "show",
+          "shape": {
+            "id": "cashBox",
+            "kind": "rect",
+            "x": 90,
+            "y": 170,
+            "w": 220,
+            "h": 100,
+            "fill": "#d6eaf8",
+            "explain": "Cash box: the business holds $10,000 cash before the purchase."
+          }
+        },
+        {
+          "at_ms": 350,
+          "do": "show",
+          "shape": {
+            "id": "cashLab",
+            "kind": "text",
+            "x": 200,
+            "y": 215,
+            "text": "Cash $10,000",
+            "size": 19,
+            "color": "#1a1a1a",
+            "explain": "Cash label: $10,000 cash before the purchase.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 500,
+          "do": "show",
+          "shape": {
+            "id": "cashSub",
+            "kind": "text",
+            "x": 200,
+            "y": 245,
+            "text": "before purchase",
+            "size": 14,
+            "color": "#1a1a1a",
+            "explain": "Before the purchase all of the business's assets are cash.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 700,
+          "do": "show",
+          "shape": {
+            "id": "coin",
+            "kind": "circle",
+            "cx": 200,
+            "cy": 330,
+            "r": 26,
+            "fill": "#f7dc6f",
+            "explain": "Cash payment: $4,000 of the cash flows out to pay for the equipment."
+          }
+        },
+        {
+          "at_ms": 850,
+          "do": "show",
+          "shape": {
+            "id": "coinLab",
+            "kind": "text",
+            "x": 200,
+            "y": 336,
+            "text": "$",
+            "size": 22,
+            "color": "#1a1a1a",
+            "explain": "Dollar sign on the payment: this is cash leaving the business.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 1000,
+          "do": "show",
+          "shape": {
+            "id": "flowArrow",
+            "kind": "arrow",
+            "x1": 330,
+            "y1": 330,
+            "x2": 600,
+            "y2": 330,
+            "stroke": "#2874a6",
+            "strokeWidth": 4,
+            "explain": "Payment arrow: the cash flows from the business to the seller."
+          }
+        },
+        {
+          "at_ms": 1150,
+          "do": "show",
+          "shape": {
+            "id": "payLab",
+            "kind": "text",
+            "x": 465,
+            "y": 268,
+            "text": "pays $4,000 cash",
+            "size": 16,
+            "color": "#1a1a1a",
+            "explain": "Payment label: the business pays $4,000 in cash for the equipment.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 2800,
+          "do": "move",
+          "target": "coin",
+          "to": {
+            "cx": 520
+          },
+          "dur_ms": 1600
+        },
+        {
+          "at_ms": 2800,
+          "do": "move",
+          "target": "coinLab",
+          "to": {
+            "x": 520
+          },
+          "dur_ms": 1600
+        },
+        {
+          "at_ms": 4800,
+          "do": "hide",
+          "target": "coin"
+        },
+        {
+          "at_ms": 4800,
+          "do": "hide",
+          "target": "coinLab"
+        },
+        {
+          "at_ms": 5200,
+          "do": "show",
+          "shape": {
+            "id": "equipBox",
+            "kind": "rect",
+            "x": 650,
+            "y": 170,
+            "w": 210,
+            "h": 110,
+            "fill": "#d5f5e3",
+            "explain": "Equipment: the new asset that arrives in place of the cash paid out."
+          }
+        },
+        {
+          "at_ms": 5350,
+          "do": "show",
+          "shape": {
+            "id": "equipLab",
+            "kind": "text",
+            "x": 755,
+            "y": 215,
+            "text": "Equipment",
+            "size": 19,
+            "color": "#1a1a1a",
+            "explain": "Equipment label: the machine the business has bought.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 5500,
+          "do": "show",
+          "shape": {
+            "id": "equipPrice",
+            "kind": "text",
+            "x": 755,
+            "y": 248,
+            "text": "$4,000",
+            "size": 16,
+            "color": "#1a1a1a",
+            "explain": "Equipment value: it is worth exactly the $4,000 cash that was paid for it.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 6400,
+          "do": "emphasize",
+          "target": "equipBox"
+        },
+        {
+          "at_ms": 7600,
+          "do": "caption",
+          "text": "Cash flows out as the equipment arrives"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "caption": "Both accounts change by the same $4,000",
+      "narration": "Double entry records the one transaction twice. The cash account falls by $4,000, from $10,000 to $6,000, and the equipment account rises by the same $4,000, from $0 to $4,000 - the same amount in opposite directions.",
+      "duration_ms": 10000,
+      "steps": [
+        {
+          "at_ms": 0,
+          "do": "show",
+          "shape": {
+            "id": "title",
+            "kind": "text",
+            "x": 480,
+            "y": 34,
+            "text": "Double entry: one purchase, two accounts",
+            "size": 22,
+            "color": "#1a1a1a",
+            "explain": "Title: double entry, how one cash purchase of equipment changes two accounts at once.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 200,
+          "do": "show",
+          "shape": {
+            "id": "cashPanel",
+            "kind": "rect",
+            "x": 80,
+            "y": 140,
+            "w": 360,
+            "h": 200,
+            "fill": "#d6eaf8",
+            "explain": "Cash account panel: the ledger account that records the cash asset."
+          }
+        },
+        {
+          "at_ms": 350,
+          "do": "show",
+          "shape": {
+            "id": "cashHead",
+            "kind": "text",
+            "x": 260,
+            "y": 172,
+            "text": "Cash account",
+            "size": 19,
+            "color": "#1a1a1a",
+            "explain": "Cash account heading: every cash movement is recorded in this account.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 500,
+          "do": "show",
+          "shape": {
+            "id": "cashBefore",
+            "kind": "text",
+            "x": 260,
+            "y": 218,
+            "text": "was $10,000",
+            "size": 17,
+            "color": "#1a1a1a",
+            "explain": "Cash before: the account held $10,000 before the purchase.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 700,
+          "do": "show",
+          "shape": {
+            "id": "equipPanel",
+            "kind": "rect",
+            "x": 520,
+            "y": 140,
+            "w": 360,
+            "h": 200,
+            "fill": "#d5f5e3",
+            "explain": "Equipment account panel: the ledger account that records the equipment asset."
+          }
+        },
+        {
+          "at_ms": 850,
+          "do": "show",
+          "shape": {
+            "id": "equipHead",
+            "kind": "text",
+            "x": 700,
+            "y": 172,
+            "text": "Equipment account",
+            "size": 19,
+            "color": "#1a1a1a",
+            "explain": "Equipment account heading: the new asset gets its own account.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 1000,
+          "do": "show",
+          "shape": {
+            "id": "equipBefore",
+            "kind": "text",
+            "x": 700,
+            "y": 218,
+            "text": "was $0",
+            "size": 17,
+            "color": "#1a1a1a",
+            "explain": "Equipment before: the business owned no equipment before the purchase.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 1300,
+          "do": "show",
+          "shape": {
+            "id": "coin",
+            "kind": "circle",
+            "cx": 260,
+            "cy": 430,
+            "r": 24,
+            "fill": "#f7dc6f",
+            "explain": "The $4,000: one amount that leaves the cash account and enters the equipment account."
+          }
+        },
+        {
+          "at_ms": 1450,
+          "do": "show",
+          "shape": {
+            "id": "coinLab",
+            "kind": "text",
+            "x": 260,
+            "y": 436,
+            "text": "$",
+            "size": 20,
+            "color": "#1a1a1a",
+            "explain": "Dollar sign: the single $4,000 amount behind both entries.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 2400,
+          "do": "move",
+          "target": "coin",
+          "to": {
+            "cx": 700
+          },
+          "dur_ms": 1500
+        },
+        {
+          "at_ms": 2400,
+          "do": "move",
+          "target": "coinLab",
+          "to": {
+            "x": 700
+          },
+          "dur_ms": 1500
+        },
+        {
+          "at_ms": 4300,
+          "do": "show",
+          "shape": {
+            "id": "cashAfter",
+            "kind": "text",
+            "x": 260,
+            "y": 262,
+            "text": "now $6,000",
+            "size": 17,
+            "color": "#1a1a1a",
+            "explain": "Cash after: $10,000 minus the $4,000 paid out leaves $6,000.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 4600,
+          "do": "show",
+          "shape": {
+            "id": "cashTag",
+            "kind": "text",
+            "x": 260,
+            "y": 302,
+            "text": "down $4,000",
+            "size": 16,
+            "color": "#b03a2e",
+            "explain": "Cash falls by $4,000: the same amount that was paid out.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 5200,
+          "do": "show",
+          "shape": {
+            "id": "equipAfter",
+            "kind": "text",
+            "x": 700,
+            "y": 262,
+            "text": "now $4,000",
+            "size": 17,
+            "color": "#1a1a1a",
+            "explain": "Equipment after: the account now holds the $4,000 machine.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 5500,
+          "do": "show",
+          "shape": {
+            "id": "equipTag",
+            "kind": "text",
+            "x": 700,
+            "y": 302,
+            "text": "up $4,000",
+            "size": 16,
+            "color": "#1e8449",
+            "explain": "Equipment rises by $4,000: the same amount that left cash.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 6300,
+          "do": "show",
+          "shape": {
+            "id": "sameLab",
+            "kind": "text",
+            "x": 480,
+            "y": 385,
+            "text": "Same amount, opposite directions",
+            "size": 18,
+            "color": "#1a1a1a",
+            "explain": "Double entry: one transaction, two entries of the same amount in opposite directions.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 7000,
+          "do": "emphasize",
+          "target": "sameLab"
+        },
+        {
+          "at_ms": 8000,
+          "do": "caption",
+          "text": "Cash down $4,000, equipment up $4,000"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "caption": "Re-checked: the equation still balances",
+      "narration": "After the purchase the assets are cash of $6,000 plus equipment of $4,000 - still $10,000 in total. Capital is still $10,000 and liabilities still $0, so the equation balances exactly as before: the business is not poorer, it just holds a different mix of assets.",
+      "duration_ms": 10000,
+      "steps": [
+        {
+          "at_ms": 0,
+          "do": "show",
+          "shape": {
+            "id": "title",
+            "kind": "text",
+            "x": 480,
+            "y": 34,
+            "text": "Double entry: one purchase, two accounts",
+            "size": 22,
+            "color": "#1a1a1a",
+            "explain": "Title: double entry, how one cash purchase of equipment changes two accounts at once.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 200,
+          "do": "show",
+          "shape": {
+            "id": "assetsHead",
+            "kind": "text",
+            "x": 295,
+            "y": 118,
+            "text": "Assets",
+            "size": 16,
+            "color": "#1a1a1a",
+            "explain": "Assets heading: everything of value the business owns after the purchase.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 350,
+          "do": "show",
+          "shape": {
+            "id": "cashBox",
+            "kind": "rect",
+            "x": 60,
+            "y": 150,
+            "w": 200,
+            "h": 90,
+            "fill": "#d6eaf8",
+            "explain": "Cash after the purchase: $6,000 remains of the original $10,000."
+          }
+        },
+        {
+          "at_ms": 500,
+          "do": "show",
+          "shape": {
+            "id": "cashLab",
+            "kind": "text",
+            "x": 160,
+            "y": 190,
+            "text": "Cash $6,000",
+            "size": 17,
+            "color": "#1a1a1a",
+            "explain": "Cash label: $6,000 cash after paying for the equipment.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 650,
+          "do": "show",
+          "shape": {
+            "id": "cashSub",
+            "kind": "text",
+            "x": 160,
+            "y": 218,
+            "text": "after purchase",
+            "size": 13,
+            "color": "#1a1a1a",
+            "explain": "The cash asset fell when $4,000 was paid out.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 800,
+          "do": "show",
+          "shape": {
+            "id": "equipBox",
+            "kind": "rect",
+            "x": 310,
+            "y": 150,
+            "w": 220,
+            "h": 90,
+            "fill": "#d5f5e3",
+            "explain": "Equipment after the purchase: the $4,000 asset that replaced the cash."
+          }
+        },
+        {
+          "at_ms": 950,
+          "do": "show",
+          "shape": {
+            "id": "equipLab",
+            "kind": "text",
+            "x": 420,
+            "y": 190,
+            "text": "Equipment $4,000",
+            "size": 17,
+            "color": "#1a1a1a",
+            "explain": "Equipment label: the new $4,000 asset.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 1100,
+          "do": "show",
+          "shape": {
+            "id": "equipSub",
+            "kind": "text",
+            "x": 420,
+            "y": 218,
+            "text": "new asset",
+            "size": 13,
+            "color": "#1a1a1a",
+            "explain": "The equipment asset rose by exactly what cash fell.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 1250,
+          "do": "show",
+          "shape": {
+            "id": "plusSign",
+            "kind": "text",
+            "x": 285,
+            "y": 195,
+            "text": "+",
+            "size": 24,
+            "color": "#1a1a1a",
+            "explain": "Plus sign: cash and equipment add up to the total assets.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 1400,
+          "do": "show",
+          "shape": {
+            "id": "eqSign",
+            "kind": "text",
+            "x": 565,
+            "y": 195,
+            "text": "=",
+            "size": 24,
+            "color": "#1a1a1a",
+            "explain": "Equals sign: total assets still equal capital plus liabilities.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 1550,
+          "do": "show",
+          "shape": {
+            "id": "capBox",
+            "kind": "rect",
+            "x": 600,
+            "y": 150,
+            "w": 200,
+            "h": 90,
+            "fill": "#fdebd0",
+            "explain": "Capital after the purchase: still the owner's $10,000 stake, untouched by the swap."
+          }
+        },
+        {
+          "at_ms": 1700,
+          "do": "show",
+          "shape": {
+            "id": "capLab",
+            "kind": "text",
+            "x": 700,
+            "y": 190,
+            "text": "Capital $10,000",
+            "size": 17,
+            "color": "#1a1a1a",
+            "explain": "Capital label: the owner's stake is unchanged at $10,000.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 1850,
+          "do": "show",
+          "shape": {
+            "id": "capSub",
+            "kind": "text",
+            "x": 700,
+            "y": 218,
+            "text": "unchanged",
+            "size": 13,
+            "color": "#1a1a1a",
+            "explain": "Capital does not change when one asset is swapped for another.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 2000,
+          "do": "show",
+          "shape": {
+            "id": "plusSign2",
+            "kind": "text",
+            "x": 822,
+            "y": 195,
+            "text": "+",
+            "size": 24,
+            "color": "#1a1a1a",
+            "explain": "Plus sign: capital plus liabilities make up the other side of the equation.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 2150,
+          "do": "show",
+          "shape": {
+            "id": "liabHead",
+            "kind": "text",
+            "x": 882,
+            "y": 172,
+            "text": "Liabilities",
+            "size": 13,
+            "color": "#1a1a1a",
+            "explain": "Liabilities heading: amounts owed to others.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 2300,
+          "do": "show",
+          "shape": {
+            "id": "liabLab",
+            "kind": "text",
+            "x": 882,
+            "y": 205,
+            "text": "$0",
+            "size": 17,
+            "color": "#1a1a1a",
+            "explain": "Liabilities after the purchase: still $0 owed.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 2800,
+          "do": "show",
+          "shape": {
+            "id": "totalLab",
+            "kind": "text",
+            "x": 480,
+            "y": 300,
+            "text": "Total assets $10,000 - unchanged",
+            "size": 19,
+            "color": "#1a1a1a",
+            "explain": "Total assets check: $6,000 cash plus $4,000 equipment is still $10,000 in total.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 3400,
+          "do": "show",
+          "shape": {
+            "id": "check1",
+            "kind": "line",
+            "x1": 150,
+            "y1": 362,
+            "x2": 178,
+            "y2": 388,
+            "stroke": "#1e8449",
+            "strokeWidth": 6,
+            "explain": "Tick, first stroke: the re-check confirms the equation balances."
+          }
+        },
+        {
+          "at_ms": 3550,
+          "do": "show",
+          "shape": {
+            "id": "check2",
+            "kind": "line",
+            "x1": 178,
+            "y1": 388,
+            "x2": 222,
+            "y2": 340,
+            "stroke": "#1e8449",
+            "strokeWidth": 6,
+            "explain": "Tick, second stroke: balanced, with total assets unchanged."
+          }
+        },
+        {
+          "at_ms": 4100,
+          "do": "show",
+          "shape": {
+            "id": "beam",
+            "kind": "line",
+            "x1": 200,
+            "y1": 428,
+            "x2": 760,
+            "y2": 452,
+            "stroke": "#424949",
+            "strokeWidth": 5,
+            "explain": "Balance beam: it starts tilted while the two sides are compared."
+          }
+        },
+        {
+          "at_ms": 4250,
+          "do": "show",
+          "shape": {
+            "id": "fulcrum",
+            "kind": "polygon",
+            "points": [
+              [
+                480,
+                440
+              ],
+              [
+                452,
+                480
+              ],
+              [
+                508,
+                480
+              ]
+            ],
+            "fill": "#424949",
+            "explain": "Fulcrum: the pivot the balance beam settles on."
+          }
+        },
+        {
+          "at_ms": 5000,
+          "do": "move",
+          "target": "beam",
+          "to": {
+            "x1": 200,
+            "y1": 440,
+            "x2": 760,
+            "y2": 440
+          },
+          "dur_ms": 1200
+        },
+        {
+          "at_ms": 6600,
+          "do": "emphasize",
+          "target": "totalLab"
+        },
+        {
+          "at_ms": 7800,
+          "do": "caption",
+          "text": "Total assets unchanged, equation balanced"
+        }
+      ]
+    }
+  ]
+}
