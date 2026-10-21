@@ -1,0 +1,45 @@
+{
+ "level": "secondary",
+ "subject": "electronics",
+ "topic": "sensor-divider",
+ "title": "Sensor divider: darkness switches the lamp on",
+ "segments": [
+  {
+   "cue": "s1",
+   "minutes": 5,
+   "say": "Bright daylight: the circuit assembles, lamp off. A 6 V supply drives a fixed resistor and an LDR in series, and the output is taken across the LDR. In bright daylight the LDR resistance is low, so it takes only a small share of the supply and the lamp stays off. Point at the 1.2 V voltmeter reading on your student notes diagram before the light changes.",
+   "questions": [
+    "What is the LDR resistance in bright daylight, and what share of the supply does it take?",
+    "Why does a low resistance take only a small share of the 6 V supply?"
+   ]
+  },
+  {
+   "cue": "s2",
+   "minutes": 5,
+   "say": "Light falls: resistance steps up, output climbs. The LDR resistance steps up to 1 kOhm, equal to the fixed resistor, so the supply splits evenly and the output climbs to 3.0 V - still below the threshold. Now try the divider questions on your worksheet.",
+   "questions": [
+    "Why does the output reach exactly 3.0 V at this stage?",
+    "Is 3.0 V enough to switch the lamp on, and how do you know?"
+   ]
+  },
+  {
+   "cue": "s3",
+   "minutes": 6,
+   "say": "Dusk: the output stops just below the threshold. The LDR resistance steps up to 2.3 kOhm and its share climbs to 4.2 V - close to, but still just below, the 4.5 V threshold, so the lamp stays off. Check the dusk reading against your student notes before moving on.",
+   "questions": [
+    "How close is the dusk output to the threshold, and why is close not enough?",
+    "What must happen to the LDR resistance for the output to cross 4.5 V?"
+   ]
+  },
+  {
+   "cue": "s4",
+   "minutes": 6,
+   "say": "Dark: the output crosses the threshold and the lamp lights. The LDR resistance rises to 9 kOhm, so it takes 5.4 V of the 6 V supply and switches the lamp on. Keep the rising-share order as you check your student notes and finish the exit ticket.",
+   "questions": [
+    "Why does the biggest resistance take the biggest share of the supply?",
+    "At which earlier stages was the lamp off, and what single number decides it?"
+   ],
+   "watchFor": "As it gets darker and the LDR's resistance rises, the voltage across the LDR falls, so the sensor output switches the lamp off. Listen for students who imagine a bigger resistance blocking voltage. Send them back to scene 4 and the 5.4 V voltmeter reading: In a series divider each resistor takes a share of the supply in proportion to its resistance, so as the LDR's resistance rises in the dark its share - the output voltage - climbs until it crosses the threshold and switches the lamp on."
+  }
+ ]
+}

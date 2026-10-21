@@ -1,0 +1,65 @@
+{
+ "level": "secondary",
+ "subject": "electronics",
+ "topic": "sensor-divider",
+ "title": "Sensor divider: darkness switches the lamp on Exit Ticket",
+ "questions": [
+  {
+   "id": "q1",
+   "kind": "multiple-choice",
+   "prompt": "A student says that as it gets darker the voltage across the LDR falls and the lamp switches off. What is the best correction?",
+   "choices": [
+    {
+     "text": "The student is right - darkness switches the lamp off"
+    },
+    {
+     "correct": true,
+     "text": "As the LDR resistance rises in the dark, its share of the supply rises until it crosses the 4.5 V threshold and switches the lamp on."
+    },
+    {
+     "text": "The output voltage never changes with light level"
+    },
+    {
+     "text": "The lamp is switched by the fixed resistor alone"
+    }
+   ],
+   "misconception": "As it gets darker and the LDR's resistance rises, the voltage across the LDR falls, so the sensor output switches the lamp off.",
+   "feedback": "If you agreed with the student, that is the trap: As it gets darker and the LDR's resistance rises, the voltage across the LDR falls, so the sensor output switches the lamp off. Reteach point: In a series divider each resistor takes a share of the supply in proportion to its resistance, so as the LDR's resistance rises in the dark its share - the output voltage - climbs until it crosses the threshold and switches the lamp on."
+  },
+  {
+   "id": "q2",
+   "kind": "short-answer",
+   "prompt": "In one sentence, explain why the output voltage rises as the light falls.",
+   "answer": "The LDR resistance rises as light falls, and each resistor takes a share of the supply in proportion to its resistance, so the LDR share - the output - climbs.",
+   "feedback": "A strong answer names the share rule: rising resistance means a rising share of the 6 V supply."
+  },
+  {
+   "id": "q3",
+   "kind": "multiple-choice",
+   "prompt": "At dusk the output is 4.2 V and the threshold is 4.5 V. What is the state of the lamp?",
+   "choices": [
+    {
+     "text": "On, because 4.2 V is close to the threshold"
+    },
+    {
+     "correct": true,
+     "text": "Off, because 4.2 V is still below the 4.5 V threshold"
+    },
+    {
+     "text": "Flashing, because the output is near the threshold"
+    },
+    {
+     "text": "On, because dusk is dark enough"
+    }
+   ],
+   "feedback": "Scene 3 shows dusk: 4.2 V is close to but still below the 4.5 V threshold, so the lamp stays off."
+  },
+  {
+   "id": "q4",
+   "kind": "short-answer",
+   "prompt": "State the output voltage in the dark and say why the lamp switches on at that stage only.",
+   "answer": "In the dark the output is 5.4 V, the first value above the 4.5 V threshold, so only then does the sensor output switch the lamp on.",
+   "feedback": "Credit the threshold reasoning: 5.4 V crosses 4.5 V, while 1.2 V, 3.0 V and 4.2 V all stay below it."
+  }
+ ]
+}

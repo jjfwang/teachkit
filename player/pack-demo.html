@@ -1404,6 +1404,24 @@
     <li><code>script</code> teacher script</li>
   </ul>
 </header>
+<header class="pack-manifest" id="sensor-divider-secondary-manifest">
+  <h1>Lesson pack: Secondary Electronics sensor-divider: Sensor divider: darkness switches the lamp on</h1>
+  <dl>
+    <dt>Slug</dt><dd><code>sensor-divider-secondary-electronics</code></dd>
+    <dt>Level</dt><dd>secondary</dd>
+    <dt>Subject</dt><dd>electronics</dd>
+    <dt>Topic</dt><dd><code>sensor-divider</code></dd>
+  </dl>
+  <p>topic sensor-divider · level secondary · subject electronics · deck secondary-electronics-sensor-divider</p>
+  <ul class="pack-materials">
+    <li><code>animation</code></li>
+    <li><code>slides</code></li>
+    <li><code>worksheet</code></li>
+    <li><code>exitTicket</code> exit ticket</li>
+    <li><code>notes</code> student notes</li>
+    <li><code>script</code> teacher script</li>
+  </ul>
+</header>
 <section class="pack-section" id="animation-section">
   <h2>Animation</h2>
   <div id="anim-stage"></div>
@@ -2391,6 +2409,19 @@
   <h2>JC H2 Mathematics maclaurin-series printables</h2>
   <div id="maclaurin-series-jc-printables-stage"></div>
 </section>
+<section class="pack-section" id="sensor-divider-secondary-animation">
+  <h2>Secondary Electronics sensor-divider animation</h2>
+  <div id="sensor-divider-secondary-stage"></div>
+  <div id="sensor-divider-secondary-captions"></div>
+</section>
+<section class="pack-section" id="sensor-divider-secondary-slides">
+  <h2>Secondary Electronics sensor-divider slides</h2>
+  <div id="sensor-divider-secondary-slides-stage"></div>
+</section>
+<section class="pack-section" id="sensor-divider-secondary-printables">
+  <h2>Secondary Electronics sensor-divider printables</h2>
+  <div id="sensor-divider-secondary-printables-stage"></div>
+</section>
 <div id="err"></div>
 <script src="validate.js"></script>
 <script src="player.js"></script>
@@ -2491,8 +2522,9 @@ var logicGatesSecondaryPrintStage = document.querySelector('#logic-gates-seconda
 var multiplierProcessJcPrintStage = document.querySelector('#multiplier-process-jc-printables-stage .pr-stage') || document.querySelector('#multiplier-process-jc-printables-stage');
 var logisticGrowthJcPrintStage = document.querySelector('#logistic-growth-jc-printables-stage .pr-stage') || document.querySelector('#logistic-growth-jc-printables-stage');
 var maclaurinSeriesJcPrintStage = document.querySelector('#maclaurin-series-jc-printables-stage .pr-stage') || document.querySelector('#maclaurin-series-jc-printables-stage');
+var sensorDividerSecondaryPrintStage = document.querySelector('#sensor-divider-secondary-printables-stage .pr-stage') || document.querySelector('#sensor-divider-secondary-printables-stage');
     var keys = [];
-    [printStage, fractionsPrintStage, wavesPrintStage, complexPrintStage, trigPrintStage, thermalPrintStage, photosynthesisPrintStage, erosionPrintStage, chemMolePrintStage, differentiationPrintStage, integrationPrintStage, binomialPrintStage, kinematicsPrintStage, quadraticPrintStage, trigonometryAPrintStage, vectorsPrintStage, functionsGraphsPrintStage, sequencesPrintStage, differentiationJcPrintStage, integrationJcPrintStage, probabilityJcPrintStage, statisticsJcPrintStage, mechanicsJcPrintStage, emJcPrintStage, quantumJcPrintStage, physicalJcPrintStage, inorganicJcPrintStage, organicJcPrintStage, cellBioJcPrintStage, geneticsJcPrintStage, energeticsJcPrintStage, ecologyJcPrintStage, wholeNumbersPrimaryPrintStage, decimalsPrimaryPrintStage, percentagePrimaryPrintStage, ratioPrimaryPrintStage, rateSpeedPrimaryPrintStage, algebraIntroPrimaryPrintStage, geometryAnglesPrimaryPrintStage, areaPerimeterPrimaryPrintStage, volumePrimaryPrintStage, dataGraphsPrimaryPrintStage, modelMethodPrimaryPrintStage, humanBodySystemsPrimaryPrintStage, plantSystemsPrimaryPrintStage, lifeCyclesPrimaryPrintStage, energyFormsPrimaryPrintStage, photosynthesisPrimaryPrintStage, forcesMagnetsPrimaryPrintStage, adaptationsPrimaryPrintStage, plateTectonicsPrimaryPrintStage, weatherClimatePrimaryPrintStage, eNumbersSecondaryPrintStage, eAlgebraSecondaryPrintStage, eFunctionsGraphsSecondaryPrintStage, eGeometrySecondaryPrintStage, eMensurationSecondaryPrintStage, eStatisticsSecondaryPrintStage, eProbabilitySecondaryPrintStage, physKinematicsSecondaryPrintStage, physForcesSecondaryPrintStage, physEnergySecondaryPrintStage, physElectricitySecondaryPrintStage, chemAtomicSecondaryPrintStage, chemBondingSecondaryPrintStage, chemAcidsSecondaryPrintStage, bioCellsSecondaryPrintStage, bioTransportSecondaryPrintStage, bioReproductionSecondaryPrintStage, bioEcologySecondaryPrintStage, bioNutritionDigestionSecondaryPrintStage, tectonicsSubductionSecondaryPrintStage, demandSupplyEquilibriumSecondaryPrintStage, logicGatesSecondaryPrintStage, multiplierProcessJcPrintStage, logisticGrowthJcPrintStage, maclaurinSeriesJcPrintStage].forEach(function (stage) {
+    [printStage, fractionsPrintStage, wavesPrintStage, complexPrintStage, trigPrintStage, thermalPrintStage, photosynthesisPrintStage, erosionPrintStage, chemMolePrintStage, differentiationPrintStage, integrationPrintStage, binomialPrintStage, kinematicsPrintStage, quadraticPrintStage, trigonometryAPrintStage, vectorsPrintStage, functionsGraphsPrintStage, sequencesPrintStage, differentiationJcPrintStage, integrationJcPrintStage, probabilityJcPrintStage, statisticsJcPrintStage, mechanicsJcPrintStage, emJcPrintStage, quantumJcPrintStage, physicalJcPrintStage, inorganicJcPrintStage, organicJcPrintStage, cellBioJcPrintStage, geneticsJcPrintStage, energeticsJcPrintStage, ecologyJcPrintStage, wholeNumbersPrimaryPrintStage, decimalsPrimaryPrintStage, percentagePrimaryPrintStage, ratioPrimaryPrintStage, rateSpeedPrimaryPrintStage, algebraIntroPrimaryPrintStage, geometryAnglesPrimaryPrintStage, areaPerimeterPrimaryPrintStage, volumePrimaryPrintStage, dataGraphsPrimaryPrintStage, modelMethodPrimaryPrintStage, humanBodySystemsPrimaryPrintStage, plantSystemsPrimaryPrintStage, lifeCyclesPrimaryPrintStage, energyFormsPrimaryPrintStage, photosynthesisPrimaryPrintStage, forcesMagnetsPrimaryPrintStage, adaptationsPrimaryPrintStage, plateTectonicsPrimaryPrintStage, weatherClimatePrimaryPrintStage, eNumbersSecondaryPrintStage, eAlgebraSecondaryPrintStage, eFunctionsGraphsSecondaryPrintStage, eGeometrySecondaryPrintStage, eMensurationSecondaryPrintStage, eStatisticsSecondaryPrintStage, eProbabilitySecondaryPrintStage, physKinematicsSecondaryPrintStage, physForcesSecondaryPrintStage, physEnergySecondaryPrintStage, physElectricitySecondaryPrintStage, chemAtomicSecondaryPrintStage, chemBondingSecondaryPrintStage, chemAcidsSecondaryPrintStage, bioCellsSecondaryPrintStage, bioTransportSecondaryPrintStage, bioReproductionSecondaryPrintStage, bioEcologySecondaryPrintStage, bioNutritionDigestionSecondaryPrintStage, tectonicsSubductionSecondaryPrintStage, demandSupplyEquilibriumSecondaryPrintStage, logicGatesSecondaryPrintStage, multiplierProcessJcPrintStage, logisticGrowthJcPrintStage, maclaurinSeriesJcPrintStage, sensorDividerSecondaryPrintStage].forEach(function (stage) {
       if (stage) {
         keys = keys.concat(Array.prototype.slice.call(stage.querySelectorAll('.pr-teacher')));
       }
@@ -2558,6 +2590,7 @@ var maclaurinSeriesJcPrintStage = document.querySelector('#maclaurin-series-jc-p
     showError(e);
   });
 })();
+
 </script>
 <script>
 (function () {
@@ -8061,6 +8094,77 @@ var maclaurinSeriesJcPrintStage = document.querySelector('#maclaurin-series-jc-p
     ].join('');
   }).catch(function (err) {
     showError('JC H2 Mathematics maclaurin-series pack failed to load: ' + err.message);
+  });
+})();
+(function () {
+  var presenter = document.getElementById('sensor-divider-secondary-slides-stage');
+  var sensorDividerSecondaryPrint = document.getElementById('sensor-divider-secondary-printables-stage');
+  var errBox = document.getElementById('err');
+  var sensorDividerSecondaryAnimUrl = '../samples/secondary-electronics-sensor-divider.json';
+  var sensorDividerSecondaryDeckUrl = '../samples/decks/secondary-electronics-sensor-divider.json';
+  var sensorDividerSecondaryWorksheetUrl = '../samples/worksheets/secondary-electronics-sensor-divider.json';
+  var sensorDividerSecondaryTicketUrl = '../samples/tickets/secondary-electronics-sensor-divider.json';
+  var sensorDividerSecondaryNotesUrl = '../samples/notes/secondary-electronics-sensor-divider.json';
+  var sensorDividerSecondaryScriptUrl = '../samples/scripts/secondary-electronics-sensor-divider.json';
+
+  function showError(msg) {
+    errBox.textContent = String(msg);
+  }
+
+  Promise.all([
+    fetch(sensorDividerSecondaryAnimUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + sensorDividerSecondaryAnimUrl);
+      return r.json();
+    }),
+    fetch(sensorDividerSecondaryDeckUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + sensorDividerSecondaryDeckUrl);
+      return r.json();
+    }),
+    fetch(sensorDividerSecondaryWorksheetUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + sensorDividerSecondaryWorksheetUrl);
+      return r.json();
+    }),
+    fetch(sensorDividerSecondaryTicketUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + sensorDividerSecondaryTicketUrl);
+      return r.json();
+    }),
+    fetch(sensorDividerSecondaryNotesUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + sensorDividerSecondaryNotesUrl);
+      return r.json();
+    }),
+    fetch(sensorDividerSecondaryScriptUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + sensorDividerSecondaryScriptUrl);
+      return r.json();
+    })
+  ]).then(function (pack) {
+    var anim = pack[0];
+    var deck = pack[1];
+    var worksheet = pack[2];
+    var ticket = pack[3];
+    var notes = pack[4];
+    var script = pack[5];
+    var problems = AnimathValidate.validateSpec(anim)
+      .concat(AnimathValidate.validateSlides(deck))
+      .concat(AnimathValidate.validateWorksheet(worksheet))
+      .concat(AnimathValidate.validateExitTicket(ticket))
+      .concat(AnimathValidate.validateNotes(notes))
+      .concat(AnimathValidate.validateScript(script));
+    if (problems.length) {
+      showError('Secondary Electronics sensor-divider pack failed validation:\n' + problems.join('\n'));
+      return;
+    }
+    AnimathPlayer.mount(document.getElementById('sensor-divider-secondary-stage'), anim, { autoplay: false });
+    AnimathSlidesPresenter.attachPresenter(document, presenter, deck, { animSpec: anim });
+    sensorDividerSecondaryPrint.innerHTML = [
+      AnimathPrintable.renderWorksheet(worksheet),
+      AnimathPrintable.renderWorksheetAnswerKey(worksheet),
+      AnimathPrintable.renderExitTicket(ticket),
+      AnimathPrintable.renderExitTicketAnswerKey(ticket),
+      AnimathPrintable.renderNotes(notes),
+      AnimathPrintable.renderScript(script)
+    ].join('');
+  }).catch(function (err) {
+    showError('Secondary Electronics sensor-divider pack failed to load: ' + err.message);
   });
 })();
 </script>
