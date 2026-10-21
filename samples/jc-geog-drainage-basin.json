@@ -1,0 +1,1839 @@
+{
+  "animath": "0.1",
+  "title": "Drainage Basin: Stores Fill in Sequence, the River Lags",
+  "level": "jc",
+  "subject": "geography",
+  "topic": "drainage-basin",
+  "kind": "concept",
+  "canvas": {
+    "width": 960,
+    "height": 540
+  },
+  "scenes": [
+    {
+      "id": "s1",
+      "caption": "The storm arrives and interception fills first",
+      "narration": "A storm pulse arrives over the basin. The rain falls, but the interception store catches it first and only begins to spill once it is full - the channel and the hydrograph stay flat.",
+      "duration_ms": 9500,
+      "steps": [
+        {
+          "at_ms": 0,
+          "do": "show",
+          "shape": {
+            "id": "title",
+            "kind": "text",
+            "x": 480,
+            "y": 32,
+            "text": "Drainage basin: stores fill in sequence, the river lags",
+            "size": 20,
+            "color": "#1a1a1a",
+            "explain": "Title: how a drainage basin delays a storm pulse before the river responds.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 150,
+          "do": "show",
+          "shape": {
+            "id": "stageLabel",
+            "kind": "text",
+            "x": 480,
+            "y": 58,
+            "text": "Stage 1: the storm arrives - interception fills first",
+            "size": 14,
+            "color": "#34495e",
+            "explain": "Stage label: the step of the store sequence shown in this scene.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 300,
+          "do": "show",
+          "shape": {
+            "id": "cloud",
+            "kind": "rect",
+            "x": 70,
+            "y": 84,
+            "w": 160,
+            "h": 34,
+            "fill": "#95a5a6",
+            "explain": "Storm cloud: the rain pulse arriving over the basin."
+          }
+        },
+        {
+          "at_ms": 420,
+          "do": "show",
+          "shape": {
+            "id": "cloudLabel",
+            "kind": "text",
+            "x": 150,
+            "y": 106,
+            "text": "Storm cloud",
+            "size": 13,
+            "color": "#ffffff",
+            "explain": "Label: the storm cloud.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 540,
+          "do": "show",
+          "shape": {
+            "id": "interceptionStore",
+            "kind": "rect",
+            "x": 60,
+            "y": 200,
+            "w": 260,
+            "h": 56,
+            "fill": "#d5f5e3",
+            "explain": "Interception store: leaves and surface litter that catch the first rain."
+          }
+        },
+        {
+          "at_ms": 660,
+          "do": "show",
+          "shape": {
+            "id": "interceptionLabel",
+            "kind": "text",
+            "x": 190,
+            "y": 216,
+            "text": "Interception store",
+            "size": 14,
+            "color": "#1e8449",
+            "explain": "Label: the interception store, the first store in the sequence.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 780,
+          "do": "show",
+          "shape": {
+            "id": "soilStore",
+            "kind": "rect",
+            "x": 60,
+            "y": 286,
+            "w": 260,
+            "h": 56,
+            "fill": "#fdebd0",
+            "explain": "Soil store: the pore spaces in the soil that fill by infiltration."
+          }
+        },
+        {
+          "at_ms": 900,
+          "do": "show",
+          "shape": {
+            "id": "soilLabel",
+            "kind": "text",
+            "x": 190,
+            "y": 302,
+            "text": "Soil store",
+            "size": 14,
+            "color": "#935116",
+            "explain": "Label: the soil store, the second store in the sequence.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 1020,
+          "do": "show",
+          "shape": {
+            "id": "groundwaterStore",
+            "kind": "rect",
+            "x": 60,
+            "y": 372,
+            "w": 260,
+            "h": 56,
+            "fill": "#d6eaf8",
+            "explain": "Groundwater store: water held in the rock, feeding the river slowly as baseflow."
+          }
+        },
+        {
+          "at_ms": 1140,
+          "do": "show",
+          "shape": {
+            "id": "groundwaterLabel",
+            "kind": "text",
+            "x": 190,
+            "y": 388,
+            "text": "Groundwater store",
+            "size": 14,
+            "color": "#1a5276",
+            "explain": "Label: the groundwater store, the last and slowest store.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 1260,
+          "do": "show",
+          "shape": {
+            "id": "channel",
+            "kind": "rect",
+            "x": 380,
+            "y": 372,
+            "w": 520,
+            "h": 56,
+            "fill": "#aed6f1",
+            "explain": "River channel: where discharge is measured, on the right of the basin diagram."
+          }
+        },
+        {
+          "at_ms": 1380,
+          "do": "show",
+          "shape": {
+            "id": "channelLabel",
+            "kind": "text",
+            "x": 640,
+            "y": 390,
+            "text": "River channel",
+            "size": 14,
+            "color": "#1a5276",
+            "explain": "Label: the river channel.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 1500,
+          "do": "show",
+          "shape": {
+            "id": "hydroY",
+            "kind": "line",
+            "x1": 580,
+            "y1": 150,
+            "x2": 580,
+            "y2": 330,
+            "stroke": "#34495e",
+            "width": 3,
+            "explain": "Hydrograph vertical axis: discharge, the flow in the river channel."
+          }
+        },
+        {
+          "at_ms": 1620,
+          "do": "show",
+          "shape": {
+            "id": "hydroX",
+            "kind": "line",
+            "x1": 580,
+            "y1": 330,
+            "x2": 900,
+            "y2": 330,
+            "stroke": "#34495e",
+            "width": 3,
+            "explain": "Hydrograph horizontal axis: time through the storm."
+          }
+        },
+        {
+          "at_ms": 1740,
+          "do": "show",
+          "shape": {
+            "id": "dischargeLabel",
+            "kind": "text",
+            "x": 572,
+            "y": 132,
+            "text": "Discharge",
+            "size": 13,
+            "color": "#34495e",
+            "explain": "Label: discharge, on the hydrograph vertical axis.",
+            "align": "start"
+          }
+        },
+        {
+          "at_ms": 1860,
+          "do": "show",
+          "shape": {
+            "id": "timeLabel",
+            "kind": "text",
+            "x": 740,
+            "y": 354,
+            "text": "time",
+            "size": 12,
+            "color": "#34495e",
+            "explain": "Label: time, on the hydrograph horizontal axis.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 2100,
+          "do": "show",
+          "shape": {
+            "id": "drop1",
+            "kind": "circle",
+            "cx": 100,
+            "cy": 140,
+            "r": 6,
+            "fill": "#3498db",
+            "explain": "Rain drop: part of the storm pulse falling on the basin."
+          }
+        },
+        {
+          "at_ms": 2220,
+          "do": "show",
+          "shape": {
+            "id": "drop2",
+            "kind": "circle",
+            "cx": 150,
+            "cy": 140,
+            "r": 6,
+            "fill": "#3498db",
+            "explain": "Rain drop: part of the storm pulse falling on the basin."
+          }
+        },
+        {
+          "at_ms": 2340,
+          "do": "show",
+          "shape": {
+            "id": "drop3",
+            "kind": "circle",
+            "cx": 200,
+            "cy": 140,
+            "r": 6,
+            "fill": "#3498db",
+            "explain": "Rain drop: part of the storm pulse falling on the basin."
+          }
+        },
+        {
+          "at_ms": 2460,
+          "do": "show",
+          "shape": {
+            "id": "rainBar1",
+            "kind": "rect",
+            "x": 610,
+            "y": 170,
+            "w": 24,
+            "h": 50,
+            "fill": "#5dade2",
+            "explain": "Rainfall bar: the heavy rain at the start of the storm."
+          }
+        },
+        {
+          "at_ms": 2580,
+          "do": "show",
+          "shape": {
+            "id": "rainBar2",
+            "kind": "rect",
+            "x": 650,
+            "y": 170,
+            "w": 24,
+            "h": 50,
+            "fill": "#5dade2",
+            "explain": "Rainfall bar: the heavy rain at the start of the storm."
+          }
+        },
+        {
+          "at_ms": 2700,
+          "do": "show",
+          "shape": {
+            "id": "rainBar3",
+            "kind": "rect",
+            "x": 690,
+            "y": 170,
+            "w": 24,
+            "h": 50,
+            "fill": "#5dade2",
+            "explain": "Rainfall bar: the heavy rain at the start of the storm."
+          }
+        },
+        {
+          "at_ms": 2820,
+          "do": "show",
+          "shape": {
+            "id": "rainfallLabel",
+            "kind": "text",
+            "x": 610,
+            "y": 158,
+            "text": "Rainfall",
+            "size": 12,
+            "color": "#1a5276",
+            "explain": "Label: rainfall bars at the top of the hydrograph.",
+            "align": "start"
+          }
+        },
+        {
+          "at_ms": 2940,
+          "do": "show",
+          "shape": {
+            "id": "interceptionFill",
+            "kind": "rect",
+            "x": 64,
+            "y": 240,
+            "w": 252,
+            "h": 12,
+            "fill": "#27ae60",
+            "explain": "Interception fill: the first rain held on leaves and litter."
+          }
+        },
+        {
+          "at_ms": 3060,
+          "do": "show",
+          "shape": {
+            "id": "hydroLine",
+            "kind": "line",
+            "x1": 580,
+            "y1": 318,
+            "x2": 900,
+            "y2": 318,
+            "stroke": "#2471a3",
+            "width": 4,
+            "explain": "Hydrograph: discharge stays flat while the first store fills - no water has reached the channel yet."
+          }
+        },
+        {
+          "at_ms": 3400,
+          "do": "move",
+          "target": "drop1",
+          "to": {
+            "cx": 100,
+            "cy": 185
+          },
+          "dur_ms": 1800
+        },
+        {
+          "at_ms": 3400,
+          "do": "move",
+          "target": "drop2",
+          "to": {
+            "cx": 150,
+            "cy": 185
+          },
+          "dur_ms": 1800
+        },
+        {
+          "at_ms": 3400,
+          "do": "move",
+          "target": "drop3",
+          "to": {
+            "cx": 200,
+            "cy": 185
+          },
+          "dur_ms": 1800
+        },
+        {
+          "at_ms": 4200,
+          "do": "move",
+          "target": "interceptionFill",
+          "to": {
+            "x": 64,
+            "y": 226,
+            "w": 252,
+            "h": 26
+          },
+          "dur_ms": 2200
+        },
+        {
+          "at_ms": 6600,
+          "do": "emphasize",
+          "target": "interceptionStore"
+        },
+        {
+          "at_ms": 8200,
+          "do": "caption",
+          "text": "The first rain is intercepted - the river does not rise yet"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "caption": "Soil fills next and groundwater starts last",
+      "narration": "The full interception store spills, the spill infiltrates, and the soil store fills next. Slow percolation only now starts feeding the groundwater store - still with very little flow reaching the channel.",
+      "duration_ms": 9500,
+      "steps": [
+        {
+          "at_ms": 0,
+          "do": "show",
+          "shape": {
+            "id": "title",
+            "kind": "text",
+            "x": 480,
+            "y": 32,
+            "text": "Drainage basin: stores fill in sequence, the river lags",
+            "size": 20,
+            "color": "#1a1a1a",
+            "explain": "Title: how a drainage basin delays a storm pulse before the river responds.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 150,
+          "do": "show",
+          "shape": {
+            "id": "stageLabel",
+            "kind": "text",
+            "x": 480,
+            "y": 58,
+            "text": "Stage 2: soil fills next, groundwater last",
+            "size": 14,
+            "color": "#34495e",
+            "explain": "Stage label: the step of the store sequence shown in this scene.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 300,
+          "do": "show",
+          "shape": {
+            "id": "cloud",
+            "kind": "rect",
+            "x": 70,
+            "y": 84,
+            "w": 160,
+            "h": 34,
+            "fill": "#95a5a6",
+            "explain": "Storm cloud: the rain pulse arriving over the basin."
+          }
+        },
+        {
+          "at_ms": 420,
+          "do": "show",
+          "shape": {
+            "id": "cloudLabel",
+            "kind": "text",
+            "x": 150,
+            "y": 106,
+            "text": "Storm cloud",
+            "size": 13,
+            "color": "#ffffff",
+            "explain": "Label: the storm cloud.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 540,
+          "do": "show",
+          "shape": {
+            "id": "interceptionStore",
+            "kind": "rect",
+            "x": 60,
+            "y": 200,
+            "w": 260,
+            "h": 56,
+            "fill": "#d5f5e3",
+            "explain": "Interception store: leaves and surface litter that catch the first rain."
+          }
+        },
+        {
+          "at_ms": 660,
+          "do": "show",
+          "shape": {
+            "id": "interceptionLabel",
+            "kind": "text",
+            "x": 190,
+            "y": 216,
+            "text": "Interception store",
+            "size": 14,
+            "color": "#1e8449",
+            "explain": "Label: the interception store, the first store in the sequence.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 780,
+          "do": "show",
+          "shape": {
+            "id": "soilStore",
+            "kind": "rect",
+            "x": 60,
+            "y": 286,
+            "w": 260,
+            "h": 56,
+            "fill": "#fdebd0",
+            "explain": "Soil store: the pore spaces in the soil that fill by infiltration."
+          }
+        },
+        {
+          "at_ms": 900,
+          "do": "show",
+          "shape": {
+            "id": "soilLabel",
+            "kind": "text",
+            "x": 190,
+            "y": 302,
+            "text": "Soil store",
+            "size": 14,
+            "color": "#935116",
+            "explain": "Label: the soil store, the second store in the sequence.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 1020,
+          "do": "show",
+          "shape": {
+            "id": "groundwaterStore",
+            "kind": "rect",
+            "x": 60,
+            "y": 372,
+            "w": 260,
+            "h": 56,
+            "fill": "#d6eaf8",
+            "explain": "Groundwater store: water held in the rock, feeding the river slowly as baseflow."
+          }
+        },
+        {
+          "at_ms": 1140,
+          "do": "show",
+          "shape": {
+            "id": "groundwaterLabel",
+            "kind": "text",
+            "x": 190,
+            "y": 388,
+            "text": "Groundwater store",
+            "size": 14,
+            "color": "#1a5276",
+            "explain": "Label: the groundwater store, the last and slowest store.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 1260,
+          "do": "show",
+          "shape": {
+            "id": "channel",
+            "kind": "rect",
+            "x": 380,
+            "y": 372,
+            "w": 520,
+            "h": 56,
+            "fill": "#aed6f1",
+            "explain": "River channel: where discharge is measured, on the right of the basin diagram."
+          }
+        },
+        {
+          "at_ms": 1380,
+          "do": "show",
+          "shape": {
+            "id": "channelLabel",
+            "kind": "text",
+            "x": 640,
+            "y": 390,
+            "text": "River channel",
+            "size": 14,
+            "color": "#1a5276",
+            "explain": "Label: the river channel.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 1500,
+          "do": "show",
+          "shape": {
+            "id": "hydroY",
+            "kind": "line",
+            "x1": 580,
+            "y1": 150,
+            "x2": 580,
+            "y2": 330,
+            "stroke": "#34495e",
+            "width": 3,
+            "explain": "Hydrograph vertical axis: discharge, the flow in the river channel."
+          }
+        },
+        {
+          "at_ms": 1620,
+          "do": "show",
+          "shape": {
+            "id": "hydroX",
+            "kind": "line",
+            "x1": 580,
+            "y1": 330,
+            "x2": 900,
+            "y2": 330,
+            "stroke": "#34495e",
+            "width": 3,
+            "explain": "Hydrograph horizontal axis: time through the storm."
+          }
+        },
+        {
+          "at_ms": 1740,
+          "do": "show",
+          "shape": {
+            "id": "dischargeLabel",
+            "kind": "text",
+            "x": 572,
+            "y": 132,
+            "text": "Discharge",
+            "size": 13,
+            "color": "#34495e",
+            "explain": "Label: discharge, on the hydrograph vertical axis.",
+            "align": "start"
+          }
+        },
+        {
+          "at_ms": 1860,
+          "do": "show",
+          "shape": {
+            "id": "timeLabel",
+            "kind": "text",
+            "x": 740,
+            "y": 354,
+            "text": "time",
+            "size": 12,
+            "color": "#34495e",
+            "explain": "Label: time, on the hydrograph horizontal axis.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 2100,
+          "do": "show",
+          "shape": {
+            "id": "drop1",
+            "kind": "circle",
+            "cx": 100,
+            "cy": 140,
+            "r": 6,
+            "fill": "#3498db",
+            "explain": "Rain drop: rain easing now, spilling from the full interception store."
+          }
+        },
+        {
+          "at_ms": 2220,
+          "do": "show",
+          "shape": {
+            "id": "drop2",
+            "kind": "circle",
+            "cx": 170,
+            "cy": 140,
+            "r": 6,
+            "fill": "#3498db",
+            "explain": "Rain drop: rain easing now, spilling from the full interception store."
+          }
+        },
+        {
+          "at_ms": 2340,
+          "do": "show",
+          "shape": {
+            "id": "interceptionFill",
+            "kind": "rect",
+            "x": 64,
+            "y": 226,
+            "w": 252,
+            "h": 26,
+            "fill": "#27ae60",
+            "explain": "Interception fill: full - this store now spills every extra drop downwards."
+          }
+        },
+        {
+          "at_ms": 2460,
+          "do": "show",
+          "shape": {
+            "id": "spillArrow",
+            "kind": "arrow",
+            "x1": 190,
+            "y1": 258,
+            "x2": 190,
+            "y2": 284,
+            "stroke": "#27ae60",
+            "width": 4,
+            "explain": "Spill arrow: once interception is full, water spills down and infiltrates into the soil."
+          }
+        },
+        {
+          "at_ms": 2580,
+          "do": "show",
+          "shape": {
+            "id": "soilFill",
+            "kind": "rect",
+            "x": 64,
+            "y": 324,
+            "w": 252,
+            "h": 14,
+            "fill": "#e67e22",
+            "explain": "Soil fill: infiltrated water filling the soil pore spaces."
+          }
+        },
+        {
+          "at_ms": 2700,
+          "do": "show",
+          "shape": {
+            "id": "percArrow",
+            "kind": "arrow",
+            "x1": 190,
+            "y1": 344,
+            "x2": 190,
+            "y2": 370,
+            "stroke": "#7d6608",
+            "width": 4,
+            "explain": "Percolation arrow: a slow trickle drains from the soil down towards the groundwater store."
+          }
+        },
+        {
+          "at_ms": 2820,
+          "do": "show",
+          "shape": {
+            "id": "percDrop",
+            "kind": "circle",
+            "cx": 250,
+            "cy": 350,
+            "r": 5,
+            "fill": "#2e86c1",
+            "explain": "Percolation drop: the first slow water reaching the groundwater store."
+          }
+        },
+        {
+          "at_ms": 2940,
+          "do": "show",
+          "shape": {
+            "id": "groundwaterFill",
+            "kind": "rect",
+            "x": 64,
+            "y": 408,
+            "w": 252,
+            "h": 16,
+            "fill": "#2e86c1",
+            "explain": "Groundwater fill: just starting, fed last and slowest by percolation."
+          }
+        },
+        {
+          "at_ms": 3060,
+          "do": "show",
+          "shape": {
+            "id": "rainBar1",
+            "kind": "rect",
+            "x": 610,
+            "y": 170,
+            "w": 24,
+            "h": 32,
+            "fill": "#5dade2",
+            "explain": "Rainfall bar: the rain is easing compared with the first stage."
+          }
+        },
+        {
+          "at_ms": 3180,
+          "do": "show",
+          "shape": {
+            "id": "rainBar2",
+            "kind": "rect",
+            "x": 650,
+            "y": 170,
+            "w": 24,
+            "h": 32,
+            "fill": "#5dade2",
+            "explain": "Rainfall bar: the rain is easing compared with the first stage."
+          }
+        },
+        {
+          "at_ms": 3300,
+          "do": "show",
+          "shape": {
+            "id": "rainfallLabel",
+            "kind": "text",
+            "x": 610,
+            "y": 158,
+            "text": "Rainfall",
+            "size": 12,
+            "color": "#1a5276",
+            "explain": "Label: rainfall bars at the top of the hydrograph.",
+            "align": "start"
+          }
+        },
+        {
+          "at_ms": 3420,
+          "do": "show",
+          "shape": {
+            "id": "hydroLine1",
+            "kind": "line",
+            "x1": 580,
+            "y1": 318,
+            "x2": 760,
+            "y2": 316,
+            "stroke": "#2471a3",
+            "width": 4,
+            "explain": "Hydrograph: discharge is still almost flat while the soil store fills."
+          }
+        },
+        {
+          "at_ms": 3540,
+          "do": "show",
+          "shape": {
+            "id": "hydroLine2",
+            "kind": "line",
+            "x1": 760,
+            "y1": 316,
+            "x2": 900,
+            "y2": 313,
+            "stroke": "#2471a3",
+            "width": 4,
+            "explain": "Hydrograph: only a slight rise - a little water is starting to reach the channel."
+          }
+        },
+        {
+          "at_ms": 3900,
+          "do": "move",
+          "target": "drop1",
+          "to": {
+            "cx": 100,
+            "cy": 185
+          },
+          "dur_ms": 1500
+        },
+        {
+          "at_ms": 3900,
+          "do": "move",
+          "target": "drop2",
+          "to": {
+            "cx": 170,
+            "cy": 185
+          },
+          "dur_ms": 1500
+        },
+        {
+          "at_ms": 4300,
+          "do": "move",
+          "target": "soilFill",
+          "to": {
+            "x": 64,
+            "y": 308,
+            "w": 252,
+            "h": 30
+          },
+          "dur_ms": 2400
+        },
+        {
+          "at_ms": 5000,
+          "do": "move",
+          "target": "percDrop",
+          "to": {
+            "cx": 250,
+            "cy": 366
+          },
+          "dur_ms": 1200
+        },
+        {
+          "at_ms": 5400,
+          "do": "move",
+          "target": "groundwaterFill",
+          "to": {
+            "x": 64,
+            "y": 400,
+            "w": 252,
+            "h": 24
+          },
+          "dur_ms": 1800
+        },
+        {
+          "at_ms": 7000,
+          "do": "emphasize",
+          "target": "soilStore"
+        },
+        {
+          "at_ms": 8400,
+          "do": "caption",
+          "text": "Stores fill in sequence - soil second, groundwater last"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "caption": "Soil saturates, overland flow peaks the river late",
+      "narration": "The soil store saturates, so overland flow switches on and runs over the surface to the channel. Discharge rises fast and peaks now - after the rain itself has already eased and shrunk.",
+      "duration_ms": 9500,
+      "steps": [
+        {
+          "at_ms": 0,
+          "do": "show",
+          "shape": {
+            "id": "title",
+            "kind": "text",
+            "x": 480,
+            "y": 32,
+            "text": "Drainage basin: stores fill in sequence, the river lags",
+            "size": 20,
+            "color": "#1a1a1a",
+            "explain": "Title: how a drainage basin delays a storm pulse before the river responds.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 150,
+          "do": "show",
+          "shape": {
+            "id": "stageLabel",
+            "kind": "text",
+            "x": 480,
+            "y": 58,
+            "text": "Stage 3: soil saturated - overland flow, discharge peaks late",
+            "size": 14,
+            "color": "#34495e",
+            "explain": "Stage label: the step of the store sequence shown in this scene.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 300,
+          "do": "show",
+          "shape": {
+            "id": "cloud",
+            "kind": "rect",
+            "x": 70,
+            "y": 84,
+            "w": 160,
+            "h": 34,
+            "fill": "#95a5a6",
+            "explain": "Storm cloud: the rain pulse arriving over the basin."
+          }
+        },
+        {
+          "at_ms": 420,
+          "do": "show",
+          "shape": {
+            "id": "cloudLabel",
+            "kind": "text",
+            "x": 150,
+            "y": 106,
+            "text": "Storm cloud",
+            "size": 13,
+            "color": "#ffffff",
+            "explain": "Label: the storm cloud.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 540,
+          "do": "show",
+          "shape": {
+            "id": "interceptionStore",
+            "kind": "rect",
+            "x": 60,
+            "y": 200,
+            "w": 260,
+            "h": 56,
+            "fill": "#d5f5e3",
+            "explain": "Interception store: leaves and surface litter that catch the first rain."
+          }
+        },
+        {
+          "at_ms": 660,
+          "do": "show",
+          "shape": {
+            "id": "interceptionLabel",
+            "kind": "text",
+            "x": 190,
+            "y": 216,
+            "text": "Interception store",
+            "size": 14,
+            "color": "#1e8449",
+            "explain": "Label: the interception store, the first store in the sequence.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 780,
+          "do": "show",
+          "shape": {
+            "id": "soilStore",
+            "kind": "rect",
+            "x": 60,
+            "y": 286,
+            "w": 260,
+            "h": 56,
+            "fill": "#fdebd0",
+            "explain": "Soil store: the pore spaces in the soil that fill by infiltration."
+          }
+        },
+        {
+          "at_ms": 900,
+          "do": "show",
+          "shape": {
+            "id": "soilLabel",
+            "kind": "text",
+            "x": 190,
+            "y": 302,
+            "text": "Soil store",
+            "size": 14,
+            "color": "#935116",
+            "explain": "Label: the soil store, the second store in the sequence.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 1020,
+          "do": "show",
+          "shape": {
+            "id": "groundwaterStore",
+            "kind": "rect",
+            "x": 60,
+            "y": 372,
+            "w": 260,
+            "h": 56,
+            "fill": "#d6eaf8",
+            "explain": "Groundwater store: water held in the rock, feeding the river slowly as baseflow."
+          }
+        },
+        {
+          "at_ms": 1140,
+          "do": "show",
+          "shape": {
+            "id": "groundwaterLabel",
+            "kind": "text",
+            "x": 190,
+            "y": 388,
+            "text": "Groundwater store",
+            "size": 14,
+            "color": "#1a5276",
+            "explain": "Label: the groundwater store, the last and slowest store.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 1260,
+          "do": "show",
+          "shape": {
+            "id": "channel",
+            "kind": "rect",
+            "x": 380,
+            "y": 372,
+            "w": 520,
+            "h": 56,
+            "fill": "#aed6f1",
+            "explain": "River channel: where discharge is measured, on the right of the basin diagram."
+          }
+        },
+        {
+          "at_ms": 1380,
+          "do": "show",
+          "shape": {
+            "id": "channelLabel",
+            "kind": "text",
+            "x": 640,
+            "y": 390,
+            "text": "River channel",
+            "size": 14,
+            "color": "#1a5276",
+            "explain": "Label: the river channel.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 1500,
+          "do": "show",
+          "shape": {
+            "id": "hydroY",
+            "kind": "line",
+            "x1": 580,
+            "y1": 150,
+            "x2": 580,
+            "y2": 330,
+            "stroke": "#34495e",
+            "width": 3,
+            "explain": "Hydrograph vertical axis: discharge, the flow in the river channel."
+          }
+        },
+        {
+          "at_ms": 1620,
+          "do": "show",
+          "shape": {
+            "id": "hydroX",
+            "kind": "line",
+            "x1": 580,
+            "y1": 330,
+            "x2": 900,
+            "y2": 330,
+            "stroke": "#34495e",
+            "width": 3,
+            "explain": "Hydrograph horizontal axis: time through the storm."
+          }
+        },
+        {
+          "at_ms": 1740,
+          "do": "show",
+          "shape": {
+            "id": "dischargeLabel",
+            "kind": "text",
+            "x": 572,
+            "y": 132,
+            "text": "Discharge",
+            "size": 13,
+            "color": "#34495e",
+            "explain": "Label: discharge, on the hydrograph vertical axis.",
+            "align": "start"
+          }
+        },
+        {
+          "at_ms": 1860,
+          "do": "show",
+          "shape": {
+            "id": "timeLabel",
+            "kind": "text",
+            "x": 740,
+            "y": 354,
+            "text": "time",
+            "size": 12,
+            "color": "#34495e",
+            "explain": "Label: time, on the hydrograph horizontal axis.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 2100,
+          "do": "show",
+          "shape": {
+            "id": "interceptionFill",
+            "kind": "rect",
+            "x": 64,
+            "y": 226,
+            "w": 252,
+            "h": 26,
+            "fill": "#27ae60",
+            "explain": "Interception fill: still full from the earlier rain."
+          }
+        },
+        {
+          "at_ms": 2220,
+          "do": "show",
+          "shape": {
+            "id": "soilFill",
+            "kind": "rect",
+            "x": 64,
+            "y": 308,
+            "w": 252,
+            "h": 30,
+            "fill": "#e67e22",
+            "explain": "Soil fill: the soil store is now saturated - it can hold no more water."
+          }
+        },
+        {
+          "at_ms": 2340,
+          "do": "show",
+          "shape": {
+            "id": "groundwaterFill",
+            "kind": "rect",
+            "x": 64,
+            "y": 396,
+            "w": 252,
+            "h": 28,
+            "fill": "#2e86c1",
+            "explain": "Groundwater fill: high after slow percolation, releasing baseflow to the channel."
+          }
+        },
+        {
+          "at_ms": 2460,
+          "do": "show",
+          "shape": {
+            "id": "overlandArrow",
+            "kind": "arrow",
+            "x1": 322,
+            "y1": 314,
+            "x2": 498,
+            "y2": 314,
+            "stroke": "#c0392b",
+            "width": 5,
+            "explain": "Overland flow arrow: with the soil saturated, new rain runs straight over the surface."
+          }
+        },
+        {
+          "at_ms": 2580,
+          "do": "show",
+          "shape": {
+            "id": "overlandDown",
+            "kind": "arrow",
+            "x1": 500,
+            "y1": 316,
+            "x2": 500,
+            "y2": 370,
+            "stroke": "#c0392b",
+            "width": 5,
+            "explain": "Overland flow arrow: surface runoff drops into the river channel."
+          }
+        },
+        {
+          "at_ms": 2700,
+          "do": "show",
+          "shape": {
+            "id": "baseflowArrow",
+            "kind": "arrow",
+            "x1": 322,
+            "y1": 400,
+            "x2": 378,
+            "y2": 400,
+            "stroke": "#2e86c1",
+            "width": 4,
+            "explain": "Baseflow arrow: groundwater slowly feeding the river channel."
+          }
+        },
+        {
+          "at_ms": 2820,
+          "do": "show",
+          "shape": {
+            "id": "channelFill",
+            "kind": "rect",
+            "x": 384,
+            "y": 398,
+            "w": 120,
+            "h": 30,
+            "fill": "#2e86c1",
+            "explain": "Channel water: discharge rising fast as overland flow arrives."
+          }
+        },
+        {
+          "at_ms": 2940,
+          "do": "show",
+          "shape": {
+            "id": "rainBar1",
+            "kind": "rect",
+            "x": 610,
+            "y": 170,
+            "w": 24,
+            "h": 18,
+            "fill": "#5dade2",
+            "explain": "Rainfall bar: the rain has eased and shrunk - yet discharge is about to peak."
+          }
+        },
+        {
+          "at_ms": 3060,
+          "do": "show",
+          "shape": {
+            "id": "rainfallLabel",
+            "kind": "text",
+            "x": 610,
+            "y": 158,
+            "text": "Rainfall",
+            "size": 12,
+            "color": "#1a5276",
+            "explain": "Label: rainfall bars at the top of the hydrograph.",
+            "align": "start"
+          }
+        },
+        {
+          "at_ms": 3180,
+          "do": "show",
+          "shape": {
+            "id": "hydroLine1",
+            "kind": "line",
+            "x1": 580,
+            "y1": 318,
+            "x2": 700,
+            "y2": 310,
+            "stroke": "#2471a3",
+            "width": 4,
+            "explain": "Hydrograph: discharge climbing as overland flow reaches the channel."
+          }
+        },
+        {
+          "at_ms": 3300,
+          "do": "show",
+          "shape": {
+            "id": "hydroLine2",
+            "kind": "line",
+            "x1": 700,
+            "y1": 316,
+            "x2": 800,
+            "y2": 312,
+            "stroke": "#2471a3",
+            "width": 4,
+            "explain": "Hydrograph rising limb: about to surge to its peak."
+          }
+        },
+        {
+          "at_ms": 3420,
+          "do": "show",
+          "shape": {
+            "id": "hydroLine3",
+            "kind": "line",
+            "x1": 800,
+            "y1": 312,
+            "x2": 900,
+            "y2": 306,
+            "stroke": "#2471a3",
+            "width": 4,
+            "explain": "Hydrograph: the peak arrives after the rain has eased."
+          }
+        },
+        {
+          "at_ms": 3900,
+          "do": "move",
+          "target": "hydroLine2",
+          "to": {
+            "x1": 700,
+            "y1": 310,
+            "x2": 800,
+            "y2": 240
+          },
+          "dur_ms": 2200
+        },
+        {
+          "at_ms": 3900,
+          "do": "move",
+          "target": "hydroLine3",
+          "to": {
+            "x1": 800,
+            "y1": 240,
+            "x2": 900,
+            "y2": 252
+          },
+          "dur_ms": 2200
+        },
+        {
+          "at_ms": 4300,
+          "do": "move",
+          "target": "channelFill",
+          "to": {
+            "x": 384,
+            "y": 398,
+            "w": 500,
+            "h": 30
+          },
+          "dur_ms": 2200
+        },
+        {
+          "at_ms": 6400,
+          "do": "show",
+          "shape": {
+            "id": "peakDot",
+            "kind": "circle",
+            "cx": 800,
+            "cy": 240,
+            "r": 7,
+            "fill": "#c0392b",
+            "explain": "Peak marker: the highest discharge of the storm, reached after the heaviest rain.",
+            "stroke": "#922b21",
+            "strokeWidth": 2
+          }
+        },
+        {
+          "at_ms": 6600,
+          "do": "show",
+          "shape": {
+            "id": "peakLabel",
+            "kind": "text",
+            "x": 700,
+            "y": 215,
+            "text": "Peak discharge - after the rain eased",
+            "size": 12,
+            "color": "#922b21",
+            "explain": "Label: the discharge peak, which lags behind the rain peak.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 7200,
+          "do": "emphasize",
+          "target": "peakDot"
+        },
+        {
+          "at_ms": 8400,
+          "do": "caption",
+          "text": "Soil saturated: overland flow switches on and discharge peaks late"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "caption": "Rain gone, the river recedes slowly on baseflow",
+      "narration": "The rain has gone and the surface stores drain, but the hydrograph recedes only slowly, sustained by groundwater baseflow. That delay is the lag: the river peaked after the rain, not with it.",
+      "duration_ms": 9500,
+      "steps": [
+        {
+          "at_ms": 0,
+          "do": "show",
+          "shape": {
+            "id": "title",
+            "kind": "text",
+            "x": 480,
+            "y": 32,
+            "text": "Drainage basin: stores fill in sequence, the river lags",
+            "size": 20,
+            "color": "#1a1a1a",
+            "explain": "Title: how a drainage basin delays a storm pulse before the river responds.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 150,
+          "do": "show",
+          "shape": {
+            "id": "stageLabel",
+            "kind": "text",
+            "x": 480,
+            "y": 58,
+            "text": "Stage 4: rain gone - the river recedes on baseflow",
+            "size": 14,
+            "color": "#34495e",
+            "explain": "Stage label: the step of the store sequence shown in this scene.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 300,
+          "do": "show",
+          "shape": {
+            "id": "cloud",
+            "kind": "rect",
+            "x": 70,
+            "y": 84,
+            "w": 160,
+            "h": 34,
+            "fill": "#95a5a6",
+            "explain": "Storm cloud: the rain pulse arriving over the basin."
+          }
+        },
+        {
+          "at_ms": 420,
+          "do": "show",
+          "shape": {
+            "id": "cloudLabel",
+            "kind": "text",
+            "x": 150,
+            "y": 106,
+            "text": "Storm cloud",
+            "size": 13,
+            "color": "#ffffff",
+            "explain": "Label: the storm cloud.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 540,
+          "do": "show",
+          "shape": {
+            "id": "interceptionStore",
+            "kind": "rect",
+            "x": 60,
+            "y": 200,
+            "w": 260,
+            "h": 56,
+            "fill": "#d5f5e3",
+            "explain": "Interception store: leaves and surface litter that catch the first rain."
+          }
+        },
+        {
+          "at_ms": 660,
+          "do": "show",
+          "shape": {
+            "id": "interceptionLabel",
+            "kind": "text",
+            "x": 190,
+            "y": 216,
+            "text": "Interception store",
+            "size": 14,
+            "color": "#1e8449",
+            "explain": "Label: the interception store, the first store in the sequence.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 780,
+          "do": "show",
+          "shape": {
+            "id": "soilStore",
+            "kind": "rect",
+            "x": 60,
+            "y": 286,
+            "w": 260,
+            "h": 56,
+            "fill": "#fdebd0",
+            "explain": "Soil store: the pore spaces in the soil that fill by infiltration."
+          }
+        },
+        {
+          "at_ms": 900,
+          "do": "show",
+          "shape": {
+            "id": "soilLabel",
+            "kind": "text",
+            "x": 190,
+            "y": 302,
+            "text": "Soil store",
+            "size": 14,
+            "color": "#935116",
+            "explain": "Label: the soil store, the second store in the sequence.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 1020,
+          "do": "show",
+          "shape": {
+            "id": "groundwaterStore",
+            "kind": "rect",
+            "x": 60,
+            "y": 372,
+            "w": 260,
+            "h": 56,
+            "fill": "#d6eaf8",
+            "explain": "Groundwater store: water held in the rock, feeding the river slowly as baseflow."
+          }
+        },
+        {
+          "at_ms": 1140,
+          "do": "show",
+          "shape": {
+            "id": "groundwaterLabel",
+            "kind": "text",
+            "x": 190,
+            "y": 388,
+            "text": "Groundwater store",
+            "size": 14,
+            "color": "#1a5276",
+            "explain": "Label: the groundwater store, the last and slowest store.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 1260,
+          "do": "show",
+          "shape": {
+            "id": "channel",
+            "kind": "rect",
+            "x": 380,
+            "y": 372,
+            "w": 520,
+            "h": 56,
+            "fill": "#aed6f1",
+            "explain": "River channel: where discharge is measured, on the right of the basin diagram."
+          }
+        },
+        {
+          "at_ms": 1380,
+          "do": "show",
+          "shape": {
+            "id": "channelLabel",
+            "kind": "text",
+            "x": 640,
+            "y": 390,
+            "text": "River channel",
+            "size": 14,
+            "color": "#1a5276",
+            "explain": "Label: the river channel.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 1500,
+          "do": "show",
+          "shape": {
+            "id": "hydroY",
+            "kind": "line",
+            "x1": 580,
+            "y1": 150,
+            "x2": 580,
+            "y2": 330,
+            "stroke": "#34495e",
+            "width": 3,
+            "explain": "Hydrograph vertical axis: discharge, the flow in the river channel."
+          }
+        },
+        {
+          "at_ms": 1620,
+          "do": "show",
+          "shape": {
+            "id": "hydroX",
+            "kind": "line",
+            "x1": 580,
+            "y1": 330,
+            "x2": 900,
+            "y2": 330,
+            "stroke": "#34495e",
+            "width": 3,
+            "explain": "Hydrograph horizontal axis: time through the storm."
+          }
+        },
+        {
+          "at_ms": 1740,
+          "do": "show",
+          "shape": {
+            "id": "dischargeLabel",
+            "kind": "text",
+            "x": 572,
+            "y": 132,
+            "text": "Discharge",
+            "size": 13,
+            "color": "#34495e",
+            "explain": "Label: discharge, on the hydrograph vertical axis.",
+            "align": "start"
+          }
+        },
+        {
+          "at_ms": 1860,
+          "do": "show",
+          "shape": {
+            "id": "timeLabel",
+            "kind": "text",
+            "x": 740,
+            "y": 354,
+            "text": "time",
+            "size": 12,
+            "color": "#34495e",
+            "explain": "Label: time, on the hydrograph horizontal axis.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 2100,
+          "do": "show",
+          "shape": {
+            "id": "interceptionFill",
+            "kind": "rect",
+            "x": 64,
+            "y": 234,
+            "w": 252,
+            "h": 18,
+            "fill": "#27ae60",
+            "explain": "Interception fill: draining now that the rain has stopped."
+          }
+        },
+        {
+          "at_ms": 2220,
+          "do": "show",
+          "shape": {
+            "id": "soilFill",
+            "kind": "rect",
+            "x": 64,
+            "y": 316,
+            "w": 252,
+            "h": 22,
+            "fill": "#e67e22",
+            "explain": "Soil fill: the soil store slowly draining after saturation."
+          }
+        },
+        {
+          "at_ms": 2340,
+          "do": "show",
+          "shape": {
+            "id": "groundwaterFill",
+            "kind": "rect",
+            "x": 64,
+            "y": 394,
+            "w": 252,
+            "h": 30,
+            "fill": "#2e86c1",
+            "explain": "Groundwater fill: still high - this store empties slowest of all."
+          }
+        },
+        {
+          "at_ms": 2460,
+          "do": "show",
+          "shape": {
+            "id": "baseflowArrow",
+            "kind": "arrow",
+            "x1": 322,
+            "y1": 400,
+            "x2": 378,
+            "y2": 400,
+            "stroke": "#2e86c1",
+            "width": 5,
+            "explain": "Baseflow arrow: groundwater keeps feeding the river long after the rain ends."
+          }
+        },
+        {
+          "at_ms": 2580,
+          "do": "show",
+          "shape": {
+            "id": "channelFill",
+            "kind": "rect",
+            "x": 384,
+            "y": 398,
+            "w": 500,
+            "h": 30,
+            "fill": "#2e86c1",
+            "explain": "Channel water: still flowing, sustained entirely by groundwater baseflow."
+          }
+        },
+        {
+          "at_ms": 2700,
+          "do": "show",
+          "shape": {
+            "id": "rainEnded",
+            "kind": "text",
+            "x": 610,
+            "y": 165,
+            "text": "Rain ended",
+            "size": 12,
+            "color": "#1a5276",
+            "explain": "Label: no rainfall bars remain - the storm is over.",
+            "align": "start"
+          }
+        },
+        {
+          "at_ms": 2820,
+          "do": "show",
+          "shape": {
+            "id": "hydroLine1",
+            "kind": "line",
+            "x1": 580,
+            "y1": 252,
+            "x2": 700,
+            "y2": 270,
+            "stroke": "#2471a3",
+            "width": 4,
+            "explain": "Hydrograph recession: discharge falling slowly from its late peak."
+          }
+        },
+        {
+          "at_ms": 2940,
+          "do": "show",
+          "shape": {
+            "id": "hydroLine2",
+            "kind": "line",
+            "x1": 700,
+            "y1": 270,
+            "x2": 820,
+            "y2": 298,
+            "stroke": "#2471a3",
+            "width": 4,
+            "explain": "Hydrograph recession: the fall is gentle because baseflow keeps supplying the channel."
+          }
+        },
+        {
+          "at_ms": 3060,
+          "do": "show",
+          "shape": {
+            "id": "hydroLine3",
+            "kind": "line",
+            "x1": 820,
+            "y1": 298,
+            "x2": 900,
+            "y2": 310,
+            "stroke": "#2471a3",
+            "width": 4,
+            "explain": "Hydrograph tail: flow eases back towards its starting level on baseflow alone."
+          }
+        },
+        {
+          "at_ms": 3600,
+          "do": "move",
+          "target": "hydroLine1",
+          "to": {
+            "x1": 580,
+            "y1": 262,
+            "x2": 700,
+            "y2": 282
+          },
+          "dur_ms": 2600
+        },
+        {
+          "at_ms": 3600,
+          "do": "move",
+          "target": "hydroLine2",
+          "to": {
+            "x1": 700,
+            "y1": 282,
+            "x2": 820,
+            "y2": 304
+          },
+          "dur_ms": 2600
+        },
+        {
+          "at_ms": 3600,
+          "do": "move",
+          "target": "channelFill",
+          "to": {
+            "x": 384,
+            "y": 398,
+            "w": 280,
+            "h": 30
+          },
+          "dur_ms": 2600
+        },
+        {
+          "at_ms": 6600,
+          "do": "emphasize",
+          "target": "baseflowArrow"
+        },
+        {
+          "at_ms": 8300,
+          "do": "caption",
+          "text": "The lag: discharge peaked after the rain and recedes on baseflow"
+        }
+      ]
+    }
+  ]
+}

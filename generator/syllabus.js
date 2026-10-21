@@ -201,6 +201,11 @@
             id: 'further-mathematics', label: 'Further Mathematics', subject: 'math', topics: [
             { slug: 'logistic-growth', label: 'Logistic growth' }
             ]
+          },
+          {
+            id: 'h2-geography', label: 'H2 Geography', subject: 'geography', topics: [
+            { slug: 'drainage-basin', label: 'Drainage basin' }
+            ]
           }
         ]
       }

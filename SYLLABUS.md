@@ -207,6 +207,12 @@ Further Mathematics:
 |---|---|
 | `logistic-growth` | Logistic growth (SEAB 9649 section 1.5 Differential equations, the logistic growth bullet): the population curve bends and levels exactly at the carrying-capacity equilibrium, a slope field funnels starting curves to the same ceiling, and harvesting drags the equilibrium down |
 
+Geography:
+
+| slug | topic |
+|---|---|
+| `drainage-basin` | Drainage basin (SEAB 9173): rain fills the basin stores in sequence - interception first, then soil, then groundwater - overland flow switches on only when the soil saturates, so river discharge peaks after the rain peak (the lag) and recedes slowly on groundwater baseflow |
+
 ## Notes for the generator
 
 - `level` + `subject` on a spec are coarse (`primary|secondary|jc`,
