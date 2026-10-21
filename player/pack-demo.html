@@ -1332,6 +1332,24 @@
     <li><code>script</code> teacher script</li>
   </ul>
 </header>
+<header class="pack-manifest" id="logic-gates-secondary-manifest">
+  <h1>Lesson pack: Secondary computing logic-gates: Logic gates: one circuit, alarm = (A AND B) OR (NOT C)</h1>
+  <dl>
+    <dt>Slug</dt><dd><code>logic-gates-secondary-computing</code></dd>
+    <dt>Level</dt><dd>secondary</dd>
+    <dt>Subject</dt><dd>computing</dd>
+    <dt>Topic</dt><dd><code>logic-gates</code></dd>
+  </dl>
+  <p>topic logic-gates · level secondary · subject computing · deck secondary-computing-logic-gates</p>
+  <ul class="pack-materials">
+    <li><code>animation</code></li>
+    <li><code>slides</code></li>
+    <li><code>worksheet</code></li>
+    <li><code>exitTicket</code> exit ticket</li>
+    <li><code>notes</code> student notes</li>
+    <li><code>script</code> teacher script</li>
+  </ul>
+</header>
 <section class="pack-section" id="animation-section">
   <h2>Animation</h2>
   <div id="anim-stage"></div>
@@ -2267,6 +2285,19 @@
   <h2>Secondary Economics demand-supply-equilibrium printables</h2>
   <div id="demand-supply-equilibrium-secondary-printables-stage"></div>
 </section>
+<section class="pack-section" id="logic-gates-secondary-animation">
+  <h2>Secondary Computing logic-gates animation</h2>
+  <div id="logic-gates-secondary-stage"></div>
+  <div id="logic-gates-secondary-captions"></div>
+</section>
+<section class="pack-section" id="logic-gates-secondary-slides">
+  <h2>Secondary Computing logic-gates slides</h2>
+  <div id="logic-gates-secondary-slides-stage"></div>
+</section>
+<section class="pack-section" id="logic-gates-secondary-printables">
+  <h2>Secondary Computing logic-gates printables</h2>
+  <div id="logic-gates-secondary-printables-stage"></div>
+</section>
 <div id="err"></div>
 <script src="validate.js"></script>
 <script src="player.js"></script>
@@ -2363,8 +2394,9 @@ var bioEcologySecondaryPrintStage = document.querySelector('#bio-ecology-seconda
 var bioNutritionDigestionSecondaryPrintStage = document.querySelector('#bio-nutrition-digestion-secondary-printables-stage .pr-stage') || document.querySelector('#bio-nutrition-digestion-secondary-printables-stage');
 var tectonicsSubductionSecondaryPrintStage = document.querySelector('#tectonics-subduction-secondary-printables-stage .pr-stage') || document.querySelector('#tectonics-subduction-secondary-printables-stage');
 var demandSupplyEquilibriumSecondaryPrintStage = document.querySelector('#demand-supply-equilibrium-secondary-printables-stage .pr-stage') || document.querySelector('#demand-supply-equilibrium-secondary-printables-stage');
+var logicGatesSecondaryPrintStage = document.querySelector('#logic-gates-secondary-printables-stage .pr-stage') || document.querySelector('#logic-gates-secondary-printables-stage');
     var keys = [];
-    [printStage, fractionsPrintStage, wavesPrintStage, complexPrintStage, trigPrintStage, thermalPrintStage, photosynthesisPrintStage, erosionPrintStage, chemMolePrintStage, differentiationPrintStage, integrationPrintStage, binomialPrintStage, kinematicsPrintStage, quadraticPrintStage, trigonometryAPrintStage, vectorsPrintStage, functionsGraphsPrintStage, sequencesPrintStage, differentiationJcPrintStage, integrationJcPrintStage, probabilityJcPrintStage, statisticsJcPrintStage, mechanicsJcPrintStage, emJcPrintStage, quantumJcPrintStage, physicalJcPrintStage, inorganicJcPrintStage, organicJcPrintStage, cellBioJcPrintStage, geneticsJcPrintStage, energeticsJcPrintStage, ecologyJcPrintStage, wholeNumbersPrimaryPrintStage, decimalsPrimaryPrintStage, percentagePrimaryPrintStage, ratioPrimaryPrintStage, rateSpeedPrimaryPrintStage, algebraIntroPrimaryPrintStage, geometryAnglesPrimaryPrintStage, areaPerimeterPrimaryPrintStage, volumePrimaryPrintStage, dataGraphsPrimaryPrintStage, modelMethodPrimaryPrintStage, humanBodySystemsPrimaryPrintStage, plantSystemsPrimaryPrintStage, lifeCyclesPrimaryPrintStage, energyFormsPrimaryPrintStage, photosynthesisPrimaryPrintStage, forcesMagnetsPrimaryPrintStage, adaptationsPrimaryPrintStage, plateTectonicsPrimaryPrintStage, weatherClimatePrimaryPrintStage, eNumbersSecondaryPrintStage, eAlgebraSecondaryPrintStage, eFunctionsGraphsSecondaryPrintStage, eGeometrySecondaryPrintStage, eMensurationSecondaryPrintStage, eStatisticsSecondaryPrintStage, eProbabilitySecondaryPrintStage, physKinematicsSecondaryPrintStage, physForcesSecondaryPrintStage, physEnergySecondaryPrintStage, physElectricitySecondaryPrintStage, chemAtomicSecondaryPrintStage, chemBondingSecondaryPrintStage, chemAcidsSecondaryPrintStage, bioCellsSecondaryPrintStage, bioTransportSecondaryPrintStage, bioReproductionSecondaryPrintStage, bioEcologySecondaryPrintStage, bioNutritionDigestionSecondaryPrintStage, tectonicsSubductionSecondaryPrintStage, demandSupplyEquilibriumSecondaryPrintStage].forEach(function (stage) {
+    [printStage, fractionsPrintStage, wavesPrintStage, complexPrintStage, trigPrintStage, thermalPrintStage, photosynthesisPrintStage, erosionPrintStage, chemMolePrintStage, differentiationPrintStage, integrationPrintStage, binomialPrintStage, kinematicsPrintStage, quadraticPrintStage, trigonometryAPrintStage, vectorsPrintStage, functionsGraphsPrintStage, sequencesPrintStage, differentiationJcPrintStage, integrationJcPrintStage, probabilityJcPrintStage, statisticsJcPrintStage, mechanicsJcPrintStage, emJcPrintStage, quantumJcPrintStage, physicalJcPrintStage, inorganicJcPrintStage, organicJcPrintStage, cellBioJcPrintStage, geneticsJcPrintStage, energeticsJcPrintStage, ecologyJcPrintStage, wholeNumbersPrimaryPrintStage, decimalsPrimaryPrintStage, percentagePrimaryPrintStage, ratioPrimaryPrintStage, rateSpeedPrimaryPrintStage, algebraIntroPrimaryPrintStage, geometryAnglesPrimaryPrintStage, areaPerimeterPrimaryPrintStage, volumePrimaryPrintStage, dataGraphsPrimaryPrintStage, modelMethodPrimaryPrintStage, humanBodySystemsPrimaryPrintStage, plantSystemsPrimaryPrintStage, lifeCyclesPrimaryPrintStage, energyFormsPrimaryPrintStage, photosynthesisPrimaryPrintStage, forcesMagnetsPrimaryPrintStage, adaptationsPrimaryPrintStage, plateTectonicsPrimaryPrintStage, weatherClimatePrimaryPrintStage, eNumbersSecondaryPrintStage, eAlgebraSecondaryPrintStage, eFunctionsGraphsSecondaryPrintStage, eGeometrySecondaryPrintStage, eMensurationSecondaryPrintStage, eStatisticsSecondaryPrintStage, eProbabilitySecondaryPrintStage, physKinematicsSecondaryPrintStage, physForcesSecondaryPrintStage, physEnergySecondaryPrintStage, physElectricitySecondaryPrintStage, chemAtomicSecondaryPrintStage, chemBondingSecondaryPrintStage, chemAcidsSecondaryPrintStage, bioCellsSecondaryPrintStage, bioTransportSecondaryPrintStage, bioReproductionSecondaryPrintStage, bioEcologySecondaryPrintStage, bioNutritionDigestionSecondaryPrintStage, tectonicsSubductionSecondaryPrintStage, demandSupplyEquilibriumSecondaryPrintStage, logicGatesSecondaryPrintStage].forEach(function (stage) {
       if (stage) {
         keys = keys.concat(Array.prototype.slice.call(stage.querySelectorAll('.pr-teacher')));
       }
@@ -7649,6 +7681,77 @@ var demandSupplyEquilibriumSecondaryPrintStage = document.querySelector('#demand
     ].join('');
   }).catch(function (err) {
     showError('Secondary Economics demand-supply-equilibrium pack failed to load: ' + err.message);
+  });
+})();
+(function () {
+  var presenter = document.getElementById('logic-gates-secondary-slides-stage');
+  var logicGatesSecondaryPrint = document.getElementById('logic-gates-secondary-printables-stage');
+  var errBox = document.getElementById('err');
+  var logicGatesSecondaryAnimUrl = '../samples/secondary-computing-logic-gates.json';
+  var logicGatesSecondaryDeckUrl = '../samples/decks/secondary-computing-logic-gates.json';
+  var logicGatesSecondaryWorksheetUrl = '../samples/worksheets/secondary-computing-logic-gates.json';
+  var logicGatesSecondaryTicketUrl = '../samples/tickets/secondary-computing-logic-gates.json';
+  var logicGatesSecondaryNotesUrl = '../samples/notes/secondary-computing-logic-gates.json';
+  var logicGatesSecondaryScriptUrl = '../samples/scripts/secondary-computing-logic-gates.json';
+
+  function showError(msg) {
+    errBox.textContent = String(msg);
+  }
+
+  Promise.all([
+    fetch(logicGatesSecondaryAnimUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + logicGatesSecondaryAnimUrl);
+      return r.json();
+    }),
+    fetch(logicGatesSecondaryDeckUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + logicGatesSecondaryDeckUrl);
+      return r.json();
+    }),
+    fetch(logicGatesSecondaryWorksheetUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + logicGatesSecondaryWorksheetUrl);
+      return r.json();
+    }),
+    fetch(logicGatesSecondaryTicketUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + logicGatesSecondaryTicketUrl);
+      return r.json();
+    }),
+    fetch(logicGatesSecondaryNotesUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + logicGatesSecondaryNotesUrl);
+      return r.json();
+    }),
+    fetch(logicGatesSecondaryScriptUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + logicGatesSecondaryScriptUrl);
+      return r.json();
+    })
+  ]).then(function (pack) {
+    var anim = pack[0];
+    var deck = pack[1];
+    var worksheet = pack[2];
+    var ticket = pack[3];
+    var notes = pack[4];
+    var script = pack[5];
+    var problems = AnimathValidate.validateSpec(anim)
+      .concat(AnimathValidate.validateSlides(deck))
+      .concat(AnimathValidate.validateWorksheet(worksheet))
+      .concat(AnimathValidate.validateExitTicket(ticket))
+      .concat(AnimathValidate.validateNotes(notes))
+      .concat(AnimathValidate.validateScript(script));
+    if (problems.length) {
+      showError('Secondary Computing logic-gates pack failed validation:\n' + problems.join('\n'));
+      return;
+    }
+    AnimathPlayer.mount(document.getElementById('logic-gates-secondary-stage'), anim, { autoplay: false });
+    AnimathSlidesPresenter.attachPresenter(document, presenter, deck, { animSpec: anim });
+    logicGatesSecondaryPrint.innerHTML = [
+      AnimathPrintable.renderWorksheet(worksheet),
+      AnimathPrintable.renderWorksheetAnswerKey(worksheet),
+      AnimathPrintable.renderExitTicket(ticket),
+      AnimathPrintable.renderExitTicketAnswerKey(ticket),
+      AnimathPrintable.renderNotes(notes),
+      AnimathPrintable.renderScript(script)
+    ].join('');
+  }).catch(function (err) {
+    showError('Secondary Computing logic-gates pack failed to load: ' + err.message);
   });
 })();
 </script>
