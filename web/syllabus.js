@@ -101,6 +101,11 @@ window.ANIMATH_SYLLABUS = {
           id: 'economics', label: 'Economics', subject: 'economics', topics: [
             { slug: 'demand-supply-equilibrium', label: 'Demand & supply equilibrium' }
           ]
+        },
+        {
+          id: 'computing', label: 'Computing', subject: 'computing', topics: [
+            { slug: 'logic-gates', label: 'Logic gates' }
+          ]
         }
       ]
     },

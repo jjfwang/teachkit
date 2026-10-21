@@ -111,6 +111,12 @@ Economics:
 |---|---|
 | `demand-supply-equilibrium` | Demand and supply equilibrium (SEAB 2286 section 2.3.4 conditions of demand, worked through section 2.6.2): a rise in consumer income for a normal good shifts demand right, opening a shortage at the old price until the price is bid up along supply to the new equilibrium |
 
+Computing:
+
+| slug | topic |
+|---|---|
+| `logic-gates` | Logic gates (SEAB 7155 Module 1.3 outcomes 1.3.5 and 1.3.2): one combined two-gate three-input circuit, alarm = (A AND B) OR (NOT C), where inputs cycle, the signal propagates gate by gate and the truth table fills row by row |
+
 ## Junior College — H2
 
 Mathematics:
@@ -157,7 +163,7 @@ Biology:
 - `level` + `subject` on a spec are coarse (`primary|secondary|jc`,
   and `subject` per `SPEC.md` §subject — any non-empty string; the
   syllabus-covered subjects in `player/validate.js` SUBJECTS are currently
-  `math|science|geography|economics`); the `topic` slug carries the precise syllabus
+  `math|science|geography|economics|computing`); the `topic` slug carries the precise syllabus
   point. SUBJECTS is the syllabus-known list for gallery/coverage, not the
   validator's allowed set. When a new syllabus-covered subject lands, update
   this line against those sources; the syllabus.test.js SUBJECTS test fails
