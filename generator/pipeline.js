@@ -56,6 +56,7 @@
         exitTicketPrompt: require('./build_exit_ticket_prompt.js'),
         notesPrompt: require('./build_notes_prompt.js'),
         scriptPrompt: require('./build_script_prompt.js'),
+        lessonPlanPrompt: require('./build_lesson_plan_prompt.js'),
         syllabus: require('./syllabus.js'),
         validate: require('../player/validate.js')
       };
@@ -69,6 +70,7 @@
       exitTicketPrompt: g.AnimathExitTicketPrompt,
       notesPrompt: g.AnimathNotesPrompt,
       scriptPrompt: g.AnimathScriptPrompt,
+      lessonPlanPrompt: g.AnimathLessonPlanPrompt,
       syllabus: g.AnimathSyllabus,
       validate: g.AnimathValidate
     };
@@ -113,6 +115,13 @@
     invalidLabel: 'The invalid teacher script you returned:',
     returnLine: 'Return ONLY the corrected teacher script as a single JSON object. No prose, no code fences.',
     rejectLabel: 'Teacher script'
+  };
+  var LESSON_PLAN_KIND = {
+    notJsonProblem: 'The response was not valid JSON. Return ONLY the corrected lesson plan as JSON.',
+    repairHeader: 'Your previous response did not produce a valid lesson plan. It had these problems:',
+    invalidLabel: 'The invalid lesson plan you returned:',
+    returnLine: 'Return ONLY the corrected lesson plan as a single JSON object. No prose, no code fences.',
+    rejectLabel: 'Lesson plan'
   };
   var EXIT_TICKET_KIND = {
     notJsonProblem: 'The response was not valid JSON. Return ONLY the corrected exit ticket as JSON.',
@@ -312,6 +321,15 @@
     if (typeof deps.validate === 'function') return deps.validate;
     if (SIBLINGS.validate && typeof SIBLINGS.validate.validateScript === 'function') {
       return SIBLINGS.validate.validateScript;
+    } /* node:coverage ignore next */
+    return null;
+  }
+
+  function resolveLessonPlanValidator(deps) {
+    if (typeof deps.validateLessonPlan === 'function') return deps.validateLessonPlan;
+    if (typeof deps.validate === 'function') return deps.validate;
+    if (SIBLINGS.validate && typeof SIBLINGS.validate.validateLessonPlan === 'function') {
+      return SIBLINGS.validate.validateLessonPlan;
     } /* node:coverage ignore next */
     return null;
   }
@@ -621,6 +639,56 @@
   }
 
   // opts:
+  //   {topic, topicLabel, level, subject, workedExample, maxRepairs}
+  //   (the buildLessonPlanPrompts option set; topic/subject required;
+  //   maxRepairs defaults to 3, 0 disables repair).
+  // deps:
+  //   {callChat(system, user) -> Promise<string>  (caller-supplied LLM call),
+  //    validateLessonPlan?(plan) -> string[] | Promise<string[]>,
+  //    validate?(plan) -> string[] | Promise<string[]>  (fallback validator),
+  //    onProgress?(stage, n, max)}  stages: 'unpack', 'author', 'repair'.
+  //
+  // Resolves with the first lesson plan that validates clean against
+  // validateLessonPlan; rejects with an Error carrying err.problems
+  // when every attempt failed. The unpack step degrades exactly like
+  // generateScript: a failed unpack authors WITHOUT transitions.
+  // Lesson-pack integration is slice-2 work (issue #1206); this
+  // generator authors a standalone plan.
+  function generateLessonPlan(opts, deps) {
+    opts = opts || {};
+    deps = deps || {};
+    if (typeof deps.callChat !== 'function') {
+      return Promise.reject(new Error('generateLessonPlan: deps.callChat(system, user) ' +
+        'must be a function returning a Promise of the raw response text'));
+    }
+    var validateFn = resolveLessonPlanValidator(deps);
+    /* node:coverage ignore next 5 */
+    if (!validateFn) {
+      return Promise.reject(new Error('generateLessonPlan: deps.validateLessonPlan(spec) ' +
+        'must be a function returning the problem list (or supply deps.validate, ' +
+        'or load player/validate.js so validateLessonPlan is available)'));
+    }
+    var progress = makeProgress(deps);
+    var maxRepairs = (opts.maxRepairs != null) ? opts.maxRepairs : DEFAULT_MAX_REPAIRS;
+
+    return unpackStage(deps, progress, opts).then(function (staged) {
+      var transitions = staged ? staged.transitions : null;
+      if (transitions) {
+        transitions = SIBLINGS.unpack.attachMisconceptions(transitions, opts.topic);
+      }
+      var prompts = SIBLINGS.lessonPlanPrompt.buildLessonPlanPrompts({
+        topic: opts.topic,
+        topicLabel: opts.topicLabel,
+        level: opts.level,
+        subject: opts.subject,
+        transitions: transitions,
+        workedExample: opts.workedExample
+      });
+      return authorAndRepair(deps, progress, maxRepairs, prompts, validateFn, LESSON_PLAN_KIND);
+    });
+  }
+
+  // opts:
   //   {topic, topicLabel, level, subject, workedExample, kind, focus,
   //    facet, maxRepairs, force}
   //   (the union of the six material option sets; topic/subject
@@ -761,5 +829,5 @@
     return generateLessonPack(merged, deps);
   }
 
-  return { generateAnimation: generateAnimation, generateSlides: generateSlides, generateWorksheet: generateWorksheet, generateExitTicket: generateExitTicket, generateNotes: generateNotes, generateScript: generateScript, generateLessonPack: generateLessonPack, generateLessonPackForSyllabus: generateLessonPackForSyllabus, clearPackCache: clearPackCache };
+  return { generateAnimation: generateAnimation, generateSlides: generateSlides, generateWorksheet: generateWorksheet, generateExitTicket: generateExitTicket, generateNotes: generateNotes, generateScript: generateScript, generateLessonPlan: generateLessonPlan, generateLessonPack: generateLessonPack, generateLessonPackForSyllabus: generateLessonPackForSyllabus, clearPackCache: clearPackCache };
 });

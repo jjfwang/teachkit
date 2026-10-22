@@ -351,6 +351,53 @@ Total timing: the `minutes` values of all segments must sum to
 5..120 minutes (inclusive). The total is only evaluated when every
 segment has a positive numeric `minutes` value.
 
+## Lesson plan spec
+
+A lesson plan is the plan a teacher script delivers from: the
+objectives for one lesson, how success on each objective is recognised
+and checked, and the timed activity sequence that delivers them.
+`validateLessonPlan` in `player/validate.js` enforces this contract
+and returns a `string[]` of errors, exactly like `validateScript`
+(empty = valid).
+
+Plan fields:
+
+| field             | type        | notes                                  |
+|-------------------|-------------|----------------------------------------|
+| `title`           | string      | required non-empty                     |
+| `level`           | `"primary"` \| `"secondary"` \| `"jc"` |                                        |
+| `subject`         | string      | required non-empty — any school subject, not restricted to the syllabus-known list |
+| `topic`           | string      | required non-empty                     |
+| `durationMinutes` | number      | required positive number — the lesson length |
+| `objectives`      | Objective[] | required non-empty array               |
+| `activities`      | Activity[]  | required non-empty array               |
+
+Objective fields:
+
+| field              | type     | notes |
+|--------------------|----------|-------|
+| `id`               | string   | required non-empty, unique within the plan |
+| `text`             | string   | required non-empty — what students will learn |
+| `successCriteria`  | string[] | required non-empty array of non-empty strings — I-can statements that show the objective is met |
+| `assessmentPoints` | string[] | required non-empty array of non-empty strings — where in the lesson the teacher checks this objective |
+
+Activity fields:
+
+| field            | type     | notes |
+|------------------|----------|-------|
+| `title`          | string   | required non-empty |
+| `minutes`        | number   | required positive number |
+| `objectiveIds`   | string[] | required non-empty array; every entry must reference a declared objective `id` |
+| `scriptCue`      | string   | optional; must be a non-empty string when present — the teacher-script segment cue the activity is delivered by |
+| `grouping`       | string   | optional; must be a non-empty string when present |
+| `resources`      | string[] | optional; must be an array when present, every entry a non-empty string |
+| `differentiation`| object   | optional; must be an object when present, with optional `support` and `stretch` fields, each a non-empty string when present |
+
+Total timing: the `minutes` values of all activities must sum exactly
+to `durationMinutes`. The total is only evaluated when every activity
+has a positive numeric `minutes` value and `durationMinutes` is a
+positive number.
+
 ## Lesson pack spec
 
 A lesson pack is the bundle `generateLessonPack` in
