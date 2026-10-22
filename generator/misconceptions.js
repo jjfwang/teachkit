@@ -594,6 +594,12 @@
       why: 'The finished phone is bought in one shop in one country and carries one brand, so it is easy to assume the whole product was made in that one place.',
       correctTurn: 'A global product crosses borders at every stage: raw materials are mined in one country, components are made in a second, the product is assembled in a third, and only then is it shipped to the shop shelf in Singapore - value is added at every handover along the chain.'
     },
+    // Slice 1 (issue #1178): Secondary Biotechnology NP04.
+    'fermentation': {
+      wrongTurn: 'The alcohol appears from nothing as the mixture ferments, because the glucose in the flask stays the same while ethanol and gas are produced.',
+      why: 'Ethanol and bubbles appear where none were visible before, so it is easy to think they were created from nothing while the glucose stayed unchanged.',
+      correctTurn: 'The yeast converts the glucose: as fermentation proceeds the glucose is used up, and that same material reappears as ethanol in the liquid and carbon dioxide gas collecting above it - glucose falls by the amount converted.'
+    },
     'oil-shock': {
       wrongTurn: 'The 1973 oil crisis pushed prices up because governments printed extra money to pay for dearer oil.',
       why: 'Prices did rise across the economy after 1973, and governments do print money - so it is easy to read the general inflation as money-printing that happened to coincide with dearer oil.',
