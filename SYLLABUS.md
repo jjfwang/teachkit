@@ -231,12 +231,18 @@ Management of Business:
 |---|---|
 | `inventory-control` | Inventory control (SEAB 9587): the sawtooth stock chart for one stocked item - stock falls at a steady usage rate from the maximum stock level of 1,000 units, the fall crossing the reorder level of 500 units triggers a new order, stock keeps falling through the 2-day lead time towards but never below the buffer stock of 250 units, and the delivery lands and jumps stock back to the maximum level so the sawtooth runs a second cycle |
 
+History:
+
+| slug | topic |
+|---|---|
+| `oil-shock` | Oil shock (SEAB 9174 Paper 1 Theme II): the 1973 OPEC embargo closes one supply flow, the world oil price jumps from about $3 to about $12 a barrel, and that one rise ripples in stages into transport costs, factory production costs and shop prices while spending falls back |
+
 ## Notes for the generator
 
 - `level` + `subject` on a spec are coarse (`primary|secondary|jc`,
   and `subject` per `SPEC.md` §subject — any non-empty string; the
   syllabus-covered subjects in `player/validate.js` SUBJECTS are currently
-  `math|science|geography|economics|computing|electronics|design-technology|nutrition-food-science|principles-of-accounts|business-studies|exercise-sports-science|management-of-business`); the `topic` slug carries the precise syllabus
+  `math|science|geography|economics|computing|electronics|design-technology|nutrition-food-science|principles-of-accounts|business-studies|exercise-sports-science|management-of-business|history`); the `topic` slug carries the precise syllabus
   point. SUBJECTS is the syllabus-known list for gallery/coverage, not the
   validator's allowed set. When a new syllabus-covered subject lands, update
   this line against those sources; the syllabus.test.js SUBJECTS test fails

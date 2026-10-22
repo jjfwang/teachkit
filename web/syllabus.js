@@ -206,6 +206,11 @@ window.ANIMATH_SYLLABUS = {
           id: 'h2-management-of-business', label: 'H2 Management of Business', subject: 'management-of-business', topics: [
             { slug: 'inventory-control', label: 'Inventory control' }
           ]
+        },
+        {
+          id: 'h2-history', label: 'H2 History', subject: 'history', topics: [
+            { slug: 'oil-shock', label: 'Oil shock' }
+          ]
         }
       ]
     }
