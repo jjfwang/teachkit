@@ -231,6 +231,23 @@ The worksheet answer key is the set of per-question `explanation` fields
 its answer is correct, and it may name the misconception it addresses via
 the question's `misconception` field.
 
+Worksheet questions may be tiered so one worksheet can serve support,
+core and extension learners together. A question's optional `tier` is
+one of `support`, `core` or `extension`, with normative meanings:
+`extension` means transfer and multi-step reasoning — never more volume
+or longer arithmetic; `support` means the same objective at reduced
+cognitive load (smaller numbers, scaffolded steps, worked-example
+proximity) — never a different or lesser objective; `core` is the
+standard objective at full load. A question's optional `difficulty` is
+an integer from 1 to 5, where 1 is the least demanding within its tier.
+Both fields are worksheet-only and optional: validation is strict when
+they are present (an unknown `tier` or a `difficulty` that is not an
+integer from 1 to 5 is an error), and a worksheet with neither field
+validates exactly as before. Exit-ticket questions do not carry `tier`
+or `difficulty`. The tier label shows on both the student sheet and the
+teacher answer key; the difficulty is authoring metadata and is not
+rendered.
+
 ## Exit ticket spec
 
 An exit ticket is the short end-of-lesson check for a topic: a small set
@@ -271,6 +288,8 @@ Worksheet and exit-ticket questions share one shape:
 | `marks`         | integer | optional; the total marks for the question — must be a positive integer when present |
 | `markScheme`    | object  | optional; the mark scheme — see below; requires `marks` |
 | `workedSolution` | string | optional; the step-by-step worked solution — must be a non-empty string when present, and is required on a short-answer question that carries a `markScheme` |
+| `tier`          | string  | worksheet questions only; optional; one of `"support"` \| `"core"` \| `"extension"` — see the Worksheet spec; must be one of these values when present |
+| `difficulty`    | integer | worksheet questions only; optional; an integer from 1 to 5 — see the Worksheet spec; must be an integer in that range when present |
 
 A `Choice` is an object `{text, correct}`: `text` is a required non-empty
 string, and `correct` marks the right answer — exactly one choice in a
