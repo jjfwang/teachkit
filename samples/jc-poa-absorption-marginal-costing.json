@@ -497,8 +497,8 @@
           "shape": {
             "id": "poolNote",
             "kind": "text",
-            "x": 480,
-            "y": 268,
+            "x": 330,
+            "y": 188,
             "text": "$12,000 / 1,000 units produced = $12 per unit",
             "size": 13,
             "color": "#1a5276",
