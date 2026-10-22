@@ -150,6 +150,32 @@
       if (q.misconception) {
         parts.push('<p class="pr-misconception">Misconception: ' + escapeHtml(q.misconception) + '</p>');
       }
+      if (q.marks !== undefined) {
+        parts.push('<p class="pr-marks">Marks: ' + q.marks + '</p>');
+      }
+      if (q.markScheme) {
+        parts.push('<ul class="pr-mark-scheme">');
+        q.markScheme.points.forEach(function (point) {
+          parts.push('<li class="pr-credit-point">' + escapeHtml(point.text) + ' (' + point.marks + ')</li>');
+        });
+        parts.push('</ul>');
+        if (q.markScheme.alternatives) {
+          q.markScheme.alternatives.forEach(function (alternative) {
+            parts.push('<p class="pr-alternative">Also accept: ' + escapeHtml(alternative) + '</p>');
+          });
+        }
+        if (q.markScheme.commonErrors) {
+          q.markScheme.commonErrors.forEach(function (commonError) {
+            parts.push('<p class="pr-common-error">Common error: ' + escapeHtml(commonError) + '</p>');
+          });
+        }
+        if (q.markScheme.ecf) {
+          parts.push('<p class="pr-ecf">Error carried forward: a later step built on an earlier wrong value can still earn its marks.</p>');
+        }
+      }
+      if (q.workedSolution) {
+        parts.push('<p class="pr-worked-solution">Worked solution: ' + escapeHtml(q.workedSolution) + '</p>');
+      }
       parts.push('</li>');
     });
     parts.push('</ol>');
