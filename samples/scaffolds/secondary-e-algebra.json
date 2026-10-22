@@ -1,0 +1,116 @@
+{
+  "title": "E-Math algebra: expansion, factorisation and changing the subject",
+  "level": "secondary",
+  "subject": "math",
+  "topic": "e-algebra",
+  "sets": [
+    {
+      "level": "full",
+      "wordBank": [
+        {
+          "term": "Expansion",
+          "gloss": "multiplying out brackets so every term multiplies every other term"
+        },
+        {
+          "term": "Factorisation",
+          "gloss": "writing an expression as a product of brackets, the reverse of expansion"
+        },
+        {
+          "term": "Subject of formula",
+          "gloss": "the variable a formula is rearranged to give on its own"
+        },
+        {
+          "term": "Identity",
+          "gloss": "a statement true for every value of the variables"
+        },
+        {
+          "term": "Middle term",
+          "gloss": "the term between the two squared terms when a bracket is squared"
+        }
+      ],
+      "starters": [
+        "To expand the brackets, I multiply...",
+        "To factorise by grouping, I first group...",
+        "To change the subject, I undo the operations by..."
+      ],
+      "frames": [
+        "Multiplying out brackets so every term multiplies every other term is called ___.",
+        "Writing an expression as a product of brackets, the reverse of expansion, is ___.",
+        "A statement that is true for every value of the variables is an ___."
+      ],
+      "cloze": [
+        {
+          "text": "The reverse of ___ is ___, which writes an expression as a product of brackets.",
+          "answers": [
+            "Expansion",
+            "Factorisation"
+          ]
+        },
+        {
+          "text": "In (a + b)^2 = a^2 + 2ab + b^2, the term 2ab is the ___, and the whole statement is an ___.",
+          "answers": [
+            "Middle term",
+            "Identity"
+          ]
+        }
+      ]
+    },
+    {
+      "level": "partial",
+      "wordBank": [
+        {
+          "term": "Expansion",
+          "gloss": "multiplying out brackets so every term multiplies every other term"
+        },
+        {
+          "term": "Factorisation",
+          "gloss": "writing an expression as a product of brackets, the reverse of expansion"
+        },
+        {
+          "term": "Middle term",
+          "gloss": "the term between the two squared terms when a bracket is squared"
+        }
+      ],
+      "starters": [
+        "I expand the brackets by multiplying...",
+        "The missing term when I square a bracket is..."
+      ],
+      "frames": [
+        "(x + 2)(x + 3) becomes x^2 + 5x + 6 by ___.",
+        "In the expansion of (a + b)^2, 2ab is the ___."
+      ],
+      "cloze": [
+        {
+          "text": "Going from (x + 2)(x + 3) to x^2 + 5x + 6 is ___, and going back is ___.",
+          "answers": [
+            "Expansion",
+            "Factorisation"
+          ]
+        }
+      ]
+    },
+    {
+      "level": "minimal",
+      "wordBank": [
+        {
+          "term": "Factorisation",
+          "gloss": "writing an expression as a product of brackets, the reverse of expansion"
+        }
+      ],
+      "starters": [
+        "To write this expression as a product of brackets, I..."
+      ],
+      "frames": [
+        "Writing 2x + 6 + xy + 3y as (x + 3)(2 + y) is an example of ___."
+      ],
+      "cloze": [
+        {
+          "text": "The reverse of expansion, writing an expression as a product of brackets, is ___.",
+          "answers": [
+            "Factorisation"
+          ]
+        }
+      ]
+    }
+  ]
+}

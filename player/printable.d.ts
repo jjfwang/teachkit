@@ -1,7 +1,8 @@
 // TypeScript definitions for player/printable.js - printable worksheet
 // and exit-ticket renderer: student sheets and teacher answer keys
 // (issue #758), plus student notes and teacher script (issue #766),
-// plus the lesson plan renderer (issue #1219).
+// plus the lesson plan renderer (issue #1219), plus the scaffolds
+// student sheet and answer key (issue #1233).
 export interface Choice {
   text: string;
   correct?: boolean;
@@ -116,4 +117,33 @@ export function renderExitTicketAnswerKey(spec: ExitTicketSpec): string;
 export function renderNotes(spec: NotesSpec): string;
 export function renderScript(spec: ScriptSpec): string;
 export function renderLessonPlan(spec: LessonPlanSpec): string;
+export interface WordBankEntry {
+  term: string;
+  gloss: string;
+  [key: string]: unknown;
+}
+export interface ClozeItem {
+  text: string;
+  answers: string[];
+  [key: string]: unknown;
+}
+export interface ScaffoldSet {
+  level: string;
+  wordBank: WordBankEntry[];
+  starters: string[];
+  frames: string[];
+  cloze: ClozeItem[];
+  [key: string]: unknown;
+}
+export interface ScaffoldsSpec {
+  title: string;
+  level: string;
+  subject: string;
+  topic: string;
+  instructions?: string;
+  sets: ScaffoldSet[];
+  [key: string]: unknown;
+}
+export function renderScaffolds(spec: ScaffoldsSpec): string;
+export function renderScaffoldsAnswerKey(spec: ScaffoldsSpec): string;
 export function escapeHtml(s: string): string;

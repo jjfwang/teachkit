@@ -1,0 +1,128 @@
+{
+  "title": "Energy: work, power and conservation",
+  "level": "secondary",
+  "subject": "science",
+  "topic": "phys-energy",
+  "sets": [
+    {
+      "level": "full",
+      "wordBank": [
+        {
+          "term": "Work",
+          "gloss": "energy transferred when a force moves its object"
+        },
+        {
+          "term": "Power",
+          "gloss": "how fast work is done; work divided by time"
+        },
+        {
+          "term": "Energy",
+          "gloss": "what work transfers between stores and forms; never created or destroyed"
+        },
+        {
+          "term": "Gravitational potential energy",
+          "gloss": "energy a raised mass stores because of its height"
+        },
+        {
+          "term": "Kinetic energy",
+          "gloss": "energy a moving object has because of its motion"
+        },
+        {
+          "term": "Joule",
+          "gloss": "the unit of work and energy"
+        },
+        {
+          "term": "Watt",
+          "gloss": "the unit of power; one joule of work every second"
+        }
+      ],
+      "starters": [
+        "The work done is calculated by multiplying...",
+        "Power tells us how fast...",
+        "As the mass falls, its stored energy changes into..."
+      ],
+      "frames": [
+        "___ is the energy transferred when a force moves its object.",
+        "The unit of work and energy is the ___.",
+        "A raised mass stores ___ because of its height."
+      ],
+      "cloze": [
+        {
+          "text": "A 50-newton force pushing a crate 4 metres does 200 units of ___, and that unit is the ___.",
+          "answers": [
+            "Work",
+            "Joule"
+          ]
+        },
+        {
+          "text": "As the mass falls, its ___ drains into ___.",
+          "answers": [
+            "Gravitational potential energy",
+            "Kinetic energy"
+          ]
+        }
+      ]
+    },
+    {
+      "level": "partial",
+      "wordBank": [
+        {
+          "term": "Work",
+          "gloss": "energy transferred when a force moves its object"
+        },
+        {
+          "term": "Power",
+          "gloss": "how fast work is done; work divided by time"
+        },
+        {
+          "term": "Joule",
+          "gloss": "the unit of work and energy"
+        },
+        {
+          "term": "Watt",
+          "gloss": "the unit of power; one joule of work every second"
+        }
+      ],
+      "starters": [
+        "To find the power, I divide...",
+        "The same work done in less time means..."
+      ],
+      "frames": [
+        "How fast work is done is called ___.",
+        "One ___ is one joule of work done every second."
+      ],
+      "cloze": [
+        {
+          "text": "Doing 200 joules of ___ in 2 seconds gives a ___ of 100 watts.",
+          "answers": [
+            "Work",
+            "Power"
+          ]
+        }
+      ]
+    },
+    {
+      "level": "minimal",
+      "wordBank": [
+        {
+          "term": "Power",
+          "gloss": "how fast work is done; work divided by time"
+        }
+      ],
+      "starters": [
+        "Power is worked out by..."
+      ],
+      "frames": [
+        "___ is work divided by time."
+      ],
+      "cloze": [
+        {
+          "text": "The same work done in less time shows greater ___.",
+          "answers": [
+            "Power"
+          ]
+        }
+      ]
+    }
+  ]
+}

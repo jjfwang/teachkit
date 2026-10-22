@@ -6,9 +6,11 @@
  * an exit ticket validated by AnimathValidate.validateExitTicket,
  * student notes validated by AnimathValidate.validateNotes, a
  * teacher script validated by AnimathValidate.validateScript, or a
- * lesson plan validated by AnimathValidate.validateLessonPlan
+ * lesson plan validated by AnimathValidate.validateLessonPlan, or a
+ * scaffolds material validated by AnimathValidate.validateScaffolds
  * (SPEC.md "Worksheet spec" / "Exit ticket spec" / "Student notes
- * spec" / "Teacher script spec" / "Lesson plan spec") to HTML strings.
+ * spec" / "Teacher script spec" / "Lesson plan spec" / "Scaffolds
+ * spec") to HTML strings.
  *
  * Student/teacher separation is structural (the presenter speaker-notes
  * precedent): the student functions never read choices[].correct,
@@ -55,6 +57,12 @@
     return typeof require !== 'undefined' ? require('./validate.js').validateLessonPlan : null;
   }
 
+  function getValidateScaffolds() {
+    var g = global.AnimathValidate;
+    if (g) return g.validateScaffolds || null;
+    return typeof require !== 'undefined' ? require('./validate.js').validateScaffolds : null;
+  }
+
   function assertValidWorksheet(spec) {
     var fn = getValidateWorksheet();
     if (!fn) throw new Error('animath printable: player/validate.js is missing - include it before printable.js so specs can be validated');
@@ -88,6 +96,13 @@
     if (!fn) throw new Error('animath printable: player/validate.js is missing - include it before printable.js so specs can be validated');
     var errors = fn(spec);
     if (errors.length) throw new Error('invalid lesson plan: ' + errors.join('; '));
+  }
+
+  function assertValidScaffolds(spec) {
+    var fn = getValidateScaffolds();
+    if (!fn) throw new Error('animath printable: player/validate.js is missing - include it before printable.js so specs can be validated');
+    var errors = fn(spec);
+    if (errors.length) throw new Error('invalid scaffolds: ' + errors.join('; '));
   }
 
   // HTML-escape for text content and double-quoted attribute values,
@@ -365,6 +380,76 @@
     return parts.join('\n');
   }
 
+  // Scaffolds set level labels (SPEC.md "Scaffolds spec"): mapped
+  // through this lookup so a raw level value is never emitted.
+  var SCAFFOLD_LEVEL_LABELS = { full: 'Full', partial: 'Partial', minimal: 'Minimal' };
+
+  // Student scaffolds sheet: for each set in fading order, the level
+  // label, the word bank (term plus gloss), the sentence starters,
+  // the sentence frames as-is, and the cloze text as-is. This
+  // function must never read cloze[].answers - see the header
+  // comment - so no cloze answer can leak into a student sheet.
+  function renderScaffolds(spec) {
+    assertValidScaffolds(spec);
+    var parts = sheetHeader(spec, 'pr-sheet pr-student pr-scaffolds', 'Scaffolds');
+    spec.sets.forEach(function (set) {
+      parts.push('<section class="pr-scaffold-set">');
+      parts.push('<h2 class="pr-set-level">' + SCAFFOLD_LEVEL_LABELS[set.level] + '</h2>');
+      parts.push('<h3 class="pr-scaffolds-heading">Word bank</h3>');
+      parts.push('<dl class="pr-word-bank">');
+      set.wordBank.forEach(function (entry) {
+        parts.push('<dt class="pr-term">' + escapeHtml(entry.term) + '</dt>');
+        parts.push('<dd class="pr-gloss">' + escapeHtml(entry.gloss) + '</dd>');
+      });
+      parts.push('</dl>');
+      parts.push('<h3 class="pr-scaffolds-heading">Sentence starters</h3>');
+      parts.push('<ul class="pr-starters">');
+      set.starters.forEach(function (starter) {
+        parts.push('<li class="pr-starter">' + escapeHtml(starter) + '</li>');
+      });
+      parts.push('</ul>');
+      parts.push('<h3 class="pr-scaffolds-heading">Sentence frames</h3>');
+      parts.push('<ul class="pr-frames">');
+      set.frames.forEach(function (frame) {
+        parts.push('<li class="pr-frame">' + escapeHtml(frame) + '</li>');
+      });
+      parts.push('</ul>');
+      parts.push('<h3 class="pr-scaffolds-heading">Cloze</h3>');
+      parts.push('<ol class="pr-cloze">');
+      set.cloze.forEach(function (item) {
+        parts.push('<li class="pr-cloze-item">' + escapeHtml(item.text) + '</li>');
+      });
+      parts.push('</ol>');
+      parts.push('</section>');
+    });
+    parts.push('</section>');
+    return parts.join('\n');
+  }
+
+  // Teacher scaffolds answer key: for each set in fading order, the
+  // level label and every cloze item with its answers - the answers
+  // the student sheet above never reads.
+  function renderScaffoldsAnswerKey(spec) {
+    assertValidScaffolds(spec);
+    var parts = sheetHeader(spec, 'pr-sheet pr-teacher pr-answer-key pr-scaffolds', 'Scaffolds answer key');
+    spec.sets.forEach(function (set) {
+      parts.push('<section class="pr-scaffold-set">');
+      parts.push('<h2 class="pr-set-level">' + SCAFFOLD_LEVEL_LABELS[set.level] + '</h2>');
+      parts.push('<ol class="pr-cloze">');
+      set.cloze.forEach(function (item) {
+        parts.push('<li class="pr-cloze-item">');
+        parts.push('<p class="pr-cloze-text">' + escapeHtml(item.text) + '</p>');
+        parts.push('<p class="pr-answer">Answer: ' +
+          item.answers.map(escapeHtml).join(', ') + '</p>');
+        parts.push('</li>');
+      });
+      parts.push('</ol>');
+      parts.push('</section>');
+    });
+    parts.push('</section>');
+    return parts.join('\n');
+  }
+
   var api = {
     renderWorksheet: renderWorksheet,
     renderWorksheetAnswerKey: renderWorksheetAnswerKey,
@@ -373,6 +458,8 @@
     renderNotes: renderNotes,
     renderScript: renderScript,
     renderLessonPlan: renderLessonPlan,
+    renderScaffolds: renderScaffolds,
+    renderScaffoldsAnswerKey: renderScaffoldsAnswerKey,
     escapeHtml: escapeHtml
   };
   global.AnimathPrintable = api;
