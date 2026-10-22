@@ -79,3 +79,16 @@ test('the gate spans Primary, Secondary and JC with maths and sciences at each l
   assert.deepEqual([...levels].sort(), ['jc', 'primary', 'secondary']);
   assert.equal(pairs.size, 6, 'maths and sciences at each of the three levels');
 });
+
+const printable = require('../player/printable.js');
+
+for (const stem of STEMS) {
+  test('gold lesson plan ' + stem + ': renders non-empty through renderLessonPlan', () => {
+    const plan = load('samples/plans/' + stem + '.json');
+    const html = printable.renderLessonPlan(plan);
+    assert.ok(html.length > 0, stem + ': renderLessonPlan output is non-empty');
+    assert.ok(html.includes(plan.title), stem + ': rendered plan carries its title');
+    assert.ok(html.includes('Total: ' + plan.durationMinutes + ' minutes'),
+      stem + ': rendered plan carries its duration total');
+  });
+}

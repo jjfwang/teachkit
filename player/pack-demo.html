@@ -43,6 +43,7 @@
     <li>notes</li>
     <li>exitTicket</li>
     <li>script</li>
+    <li>lessonPlan</li>
   </ul>
 </header>
 <header class="pack-manifest" id="fractions-manifest">
@@ -59,6 +60,7 @@
     <li>notes</li>
     <li>exitTicket</li>
     <li>script</li>
+    <li>lessonPlan</li>
   </ul>
 </header>
 <header class="pack-manifest" id="waves-manifest">
@@ -358,6 +360,7 @@
     <li><code>exitTicket</code> exit ticket</li>
     <li><code>notes</code> student notes</li>
     <li><code>script</code> teacher script</li>
+    <li><code>lessonPlan</code> lesson plan</li>
   </ul>
 </header>
 <header class="pack-manifest" id="integration-jc-manifest">
@@ -538,6 +541,7 @@
     <li><code>exitTicket</code> exit ticket</li>
     <li><code>notes</code> student notes</li>
     <li><code>script</code> teacher script</li>
+    <li><code>lessonPlan</code> lesson plan</li>
   </ul>
 </header>
 <header class="pack-manifest" id="genetics-jc-manifest">
@@ -988,6 +992,7 @@
     <li><code>exitTicket</code> exit ticket</li>
     <li><code>notes</code> student notes</li>
     <li><code>script</code> teacher script</li>
+    <li><code>lessonPlan</code> lesson plan</li>
   </ul>
 </header>
 <header class="pack-manifest" id="e-functions-graphs-secondary-manifest">
@@ -1132,6 +1137,7 @@
     <li><code>exitTicket</code> exit ticket</li>
     <li><code>notes</code> student notes</li>
     <li><code>script</code> teacher script</li>
+    <li><code>lessonPlan</code> lesson plan</li>
   </ul>
 </header>
 <header class="pack-manifest" id="phys-electricity-secondary-manifest">
@@ -2996,6 +3002,7 @@
   var notesUrl = '../samples/notes/primary-science-water-cycle.json';
   var ticketUrl = '../samples/tickets/primary-science-water-cycle.json';
   var scriptUrl = '../samples/scripts/primary-science-water-cycle.json';
+  var planUrl = '../samples/plans/primary-science-water-cycle.json';
 
   function showError(msg) {
     errBox.innerHTML = '<div class="ap-error">' + String(msg).replace(/</g, '&lt;') + '</div>';
@@ -3132,6 +3139,10 @@ var neighbourhoodChangePrimaryPrintStage = document.querySelector('#neighbourhoo
     fetch(scriptUrl).then(function (r) {
       if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + scriptUrl);
       return r.json();
+    }),
+    fetch(planUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + planUrl);
+      return r.json();
     })
   ]).then(function (pack) {
     var animSpec = pack[0];
@@ -3140,12 +3151,14 @@ var neighbourhoodChangePrimaryPrintStage = document.querySelector('#neighbourhoo
     var notes = pack[3];
     var ticket = pack[4];
     var script = pack[5];
+    var plan = pack[6];
     var problems = AnimathValidate.validateSpec(animSpec)
       .concat(AnimathValidate.validateSlides(deck))
       .concat(AnimathValidate.validateWorksheet(worksheet))
       .concat(AnimathValidate.validateExitTicket(ticket))
       .concat(AnimathValidate.validateNotes(notes))
-      .concat(AnimathValidate.validateScript(script));
+      .concat(AnimathValidate.validateScript(script))
+      .concat(AnimathValidate.validateLessonPlan(plan));
     if (problems.length) {
       showError('Lesson pack failed validation:\n' + problems.join('\n'));
       return;
@@ -3159,7 +3172,8 @@ var neighbourhoodChangePrimaryPrintStage = document.querySelector('#neighbourhoo
       AnimathPrintable.renderExitTicket(ticket) +
       AnimathPrintable.renderExitTicketAnswerKey(ticket) +
       AnimathPrintable.renderNotes(notes) +
-      AnimathPrintable.renderScript(script);
+      AnimathPrintable.renderScript(script) +
+      AnimathPrintable.renderLessonPlan(plan);
   }).catch(function (e) {
     showError(e);
   });
@@ -3178,6 +3192,7 @@ var neighbourhoodChangePrimaryPrintStage = document.querySelector('#neighbourhoo
   var fractionsNotesUrl = '../samples/notes/primary-math-fractions-addition.json';
   var fractionsTicketUrl = '../samples/tickets/primary-math-fractions-addition.json';
   var fractionsScriptUrl = '../samples/scripts/primary-math-fractions-addition.json';
+  var fractionsPlanUrl = '../samples/plans/primary-math-fractions-addition.json';
 
   function showError(msg) {
     fractionsErrBox.innerHTML = '<div class="ap-error">' + String(msg).replace(/</g, '&lt;') + '</div>';
@@ -3207,6 +3222,10 @@ var neighbourhoodChangePrimaryPrintStage = document.querySelector('#neighbourhoo
     fetch(fractionsScriptUrl).then(function (r) {
       if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + fractionsScriptUrl);
       return r.json();
+    }),
+    fetch(fractionsPlanUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + fractionsPlanUrl);
+      return r.json();
     })
   ]).then(function (pack) {
     var fractionsAnim = pack[0];
@@ -3215,12 +3234,14 @@ var neighbourhoodChangePrimaryPrintStage = document.querySelector('#neighbourhoo
     var fractionsNotes = pack[3];
     var fractionsTicket = pack[4];
     var fractionsScript = pack[5];
+    var fractionsPlan = pack[6];
     var problems = AnimathValidate.validateSpec(fractionsAnim)
       .concat(AnimathValidate.validateSlides(fractionsDeck))
       .concat(AnimathValidate.validateWorksheet(fractionsWorksheet))
       .concat(AnimathValidate.validateExitTicket(fractionsTicket))
       .concat(AnimathValidate.validateNotes(fractionsNotes))
-      .concat(AnimathValidate.validateScript(fractionsScript));
+      .concat(AnimathValidate.validateScript(fractionsScript))
+      .concat(AnimathValidate.validateLessonPlan(fractionsPlan));
     if (problems.length) {
       showError('Lesson pack failed validation:\n' + problems.join('\n'));
       return;
@@ -3234,7 +3255,8 @@ var neighbourhoodChangePrimaryPrintStage = document.querySelector('#neighbourhoo
       AnimathPrintable.renderExitTicket(fractionsTicket) +
       AnimathPrintable.renderExitTicketAnswerKey(fractionsTicket) +
       AnimathPrintable.renderNotes(fractionsNotes) +
-      AnimathPrintable.renderScript(fractionsScript);
+      AnimathPrintable.renderScript(fractionsScript) +
+      AnimathPrintable.renderLessonPlan(fractionsPlan);
   }).catch(function (e) {
     showError(e);
   });
@@ -4388,6 +4410,7 @@ var neighbourhoodChangePrimaryPrintStage = document.querySelector('#neighbourhoo
   var differentiationJcTicketUrl = '../samples/tickets/jc-h2-differentiation.json';
   var differentiationJcNotesUrl = '../samples/notes/jc-h2-differentiation.json';
   var differentiationJcScriptUrl = '../samples/scripts/jc-h2-differentiation.json';
+  var differentiationJcPlanUrl = '../samples/plans/jc-h2-differentiation.json';
 
   function showError(msg) {
     errBox.textContent = String(msg);
@@ -4417,6 +4440,10 @@ var neighbourhoodChangePrimaryPrintStage = document.querySelector('#neighbourhoo
     fetch(differentiationJcScriptUrl).then(function (r) {
       if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + differentiationJcScriptUrl);
       return r.json();
+    }),
+    fetch(differentiationJcPlanUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + differentiationJcPlanUrl);
+      return r.json();
     })
   ]).then(function (pack) {
     var anim = pack[0];
@@ -4425,12 +4452,14 @@ var neighbourhoodChangePrimaryPrintStage = document.querySelector('#neighbourhoo
     var ticket = pack[3];
     var notes = pack[4];
     var script = pack[5];
+    var plan = pack[6];
     var problems = AnimathValidate.validateSpec(anim)
       .concat(AnimathValidate.validateSlides(deck))
       .concat(AnimathValidate.validateWorksheet(worksheet))
       .concat(AnimathValidate.validateExitTicket(ticket))
       .concat(AnimathValidate.validateNotes(notes))
-      .concat(AnimathValidate.validateScript(script));
+      .concat(AnimathValidate.validateScript(script))
+      .concat(AnimathValidate.validateLessonPlan(plan));
     if (problems.length) {
       showError('JC H2 differentiation pack failed validation:\n' + problems.join('\n'));
       return;
@@ -4443,7 +4472,8 @@ var neighbourhoodChangePrimaryPrintStage = document.querySelector('#neighbourhoo
       AnimathPrintable.renderExitTicket(ticket),
       AnimathPrintable.renderExitTicketAnswerKey(ticket),
       AnimathPrintable.renderNotes(notes),
-      AnimathPrintable.renderScript(script)
+      AnimathPrintable.renderScript(script),
+      AnimathPrintable.renderLessonPlan(plan)
     ].join('');
   }).catch(function (err) {
     showError('JC H2 differentiation pack failed to load: ' + err.message);
@@ -5117,6 +5147,7 @@ var neighbourhoodChangePrimaryPrintStage = document.querySelector('#neighbourhoo
   var cellBioJcTicketUrl = '../samples/tickets/jc-h2-cell-bio.json';
   var cellBioJcNotesUrl = '../samples/notes/jc-h2-cell-bio.json';
   var cellBioJcScriptUrl = '../samples/scripts/jc-h2-cell-bio.json';
+  var cellBioJcPlanUrl = '../samples/plans/jc-h2-cell-bio.json';
 
   function showError(msg) {
     errBox.textContent = String(msg);
@@ -5146,6 +5177,10 @@ var neighbourhoodChangePrimaryPrintStage = document.querySelector('#neighbourhoo
     fetch(cellBioJcScriptUrl).then(function (r) {
       if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + cellBioJcScriptUrl);
       return r.json();
+    }),
+    fetch(cellBioJcPlanUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + cellBioJcPlanUrl);
+      return r.json();
     })
   ]).then(function (pack) {
     var anim = pack[0];
@@ -5154,12 +5189,14 @@ var neighbourhoodChangePrimaryPrintStage = document.querySelector('#neighbourhoo
     var ticket = pack[3];
     var notes = pack[4];
     var script = pack[5];
+    var plan = pack[6];
     var problems = AnimathValidate.validateSpec(anim)
       .concat(AnimathValidate.validateSlides(deck))
       .concat(AnimathValidate.validateWorksheet(worksheet))
       .concat(AnimathValidate.validateExitTicket(ticket))
       .concat(AnimathValidate.validateNotes(notes))
-      .concat(AnimathValidate.validateScript(script));
+      .concat(AnimathValidate.validateScript(script))
+      .concat(AnimathValidate.validateLessonPlan(plan));
     if (problems.length) {
       showError('JC H2 cell biology pack failed validation:\n' + problems.join('\n'));
       return;
@@ -5172,7 +5209,8 @@ var neighbourhoodChangePrimaryPrintStage = document.querySelector('#neighbourhoo
       AnimathPrintable.renderExitTicket(ticket),
       AnimathPrintable.renderExitTicketAnswerKey(ticket),
       AnimathPrintable.renderNotes(notes),
-      AnimathPrintable.renderScript(script)
+      AnimathPrintable.renderScript(script),
+      AnimathPrintable.renderLessonPlan(plan)
     ].join('');
   }).catch(function (err) {
     showError('JC H2 cell biology pack failed to load: ' + err.message);
@@ -6942,6 +6980,7 @@ var neighbourhoodChangePrimaryPrintStage = document.querySelector('#neighbourhoo
   var eAlgebraSecondaryTicketUrl = '../samples/tickets/secondary-e-algebra.json';
   var eAlgebraSecondaryNotesUrl = '../samples/notes/secondary-e-algebra.json';
   var eAlgebraSecondaryScriptUrl = '../samples/scripts/secondary-e-algebra.json';
+  var eAlgebraSecondaryPlanUrl = '../samples/plans/secondary-e-algebra.json';
 
   function showError(msg) {
     errBox.textContent = String(msg);
@@ -6971,6 +7010,10 @@ var neighbourhoodChangePrimaryPrintStage = document.querySelector('#neighbourhoo
     fetch(eAlgebraSecondaryScriptUrl).then(function (r) {
       if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + eAlgebraSecondaryScriptUrl);
       return r.json();
+    }),
+    fetch(eAlgebraSecondaryPlanUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + eAlgebraSecondaryPlanUrl);
+      return r.json();
     })
   ]).then(function (pack) {
     var anim = pack[0];
@@ -6979,12 +7022,14 @@ var neighbourhoodChangePrimaryPrintStage = document.querySelector('#neighbourhoo
     var ticket = pack[3];
     var notes = pack[4];
     var script = pack[5];
+    var plan = pack[6];
     var problems = AnimathValidate.validateSpec(anim)
       .concat(AnimathValidate.validateSlides(deck))
       .concat(AnimathValidate.validateWorksheet(worksheet))
       .concat(AnimathValidate.validateExitTicket(ticket))
       .concat(AnimathValidate.validateNotes(notes))
-      .concat(AnimathValidate.validateScript(script));
+      .concat(AnimathValidate.validateScript(script))
+      .concat(AnimathValidate.validateLessonPlan(plan));
     if (problems.length) {
       showError('Secondary E-Math algebra pack failed validation:\n' + problems.join('\n'));
       return;
@@ -6997,7 +7042,8 @@ var neighbourhoodChangePrimaryPrintStage = document.querySelector('#neighbourhoo
       AnimathPrintable.renderExitTicket(ticket),
       AnimathPrintable.renderExitTicketAnswerKey(ticket),
       AnimathPrintable.renderNotes(notes),
-      AnimathPrintable.renderScript(script)
+      AnimathPrintable.renderScript(script),
+      AnimathPrintable.renderLessonPlan(plan)
     ].join('');
   }).catch(function (err) {
     showError('Secondary E-Math algebra pack failed to load: ' + err.message);
@@ -7526,6 +7572,7 @@ var neighbourhoodChangePrimaryPrintStage = document.querySelector('#neighbourhoo
   var physEnergySecondaryTicketUrl = '../samples/tickets/secondary-physics-energy.json';
   var physEnergySecondaryNotesUrl = '../samples/notes/secondary-physics-energy.json';
   var physEnergySecondaryScriptUrl = '../samples/scripts/secondary-physics-energy.json';
+  var physEnergySecondaryPlanUrl = '../samples/plans/secondary-physics-energy.json';
 
   function showError(msg) {
     errBox.textContent = String(msg);
@@ -7555,6 +7602,10 @@ var neighbourhoodChangePrimaryPrintStage = document.querySelector('#neighbourhoo
     fetch(physEnergySecondaryScriptUrl).then(function (r) {
       if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + physEnergySecondaryScriptUrl);
       return r.json();
+    }),
+    fetch(physEnergySecondaryPlanUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + physEnergySecondaryPlanUrl);
+      return r.json();
     })
   ]).then(function (pack) {
     var anim = pack[0];
@@ -7563,12 +7614,14 @@ var neighbourhoodChangePrimaryPrintStage = document.querySelector('#neighbourhoo
     var ticket = pack[3];
     var notes = pack[4];
     var script = pack[5];
+    var plan = pack[6];
     var problems = AnimathValidate.validateSpec(anim)
       .concat(AnimathValidate.validateSlides(deck))
       .concat(AnimathValidate.validateWorksheet(worksheet))
       .concat(AnimathValidate.validateExitTicket(ticket))
       .concat(AnimathValidate.validateNotes(notes))
-      .concat(AnimathValidate.validateScript(script));
+      .concat(AnimathValidate.validateScript(script))
+      .concat(AnimathValidate.validateLessonPlan(plan));
     if (problems.length) {
       showError('Secondary Physics energy pack failed validation:\n' + problems.join('\n'));
       return;
@@ -7581,7 +7634,8 @@ var neighbourhoodChangePrimaryPrintStage = document.querySelector('#neighbourhoo
       AnimathPrintable.renderExitTicket(ticket),
       AnimathPrintable.renderExitTicketAnswerKey(ticket),
       AnimathPrintable.renderNotes(notes),
-      AnimathPrintable.renderScript(script)
+      AnimathPrintable.renderScript(script),
+      AnimathPrintable.renderLessonPlan(plan)
     ].join('');
   }).catch(function (err) {
     showError('Secondary Physics energy pack failed to load: ' + err.message);

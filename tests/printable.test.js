@@ -439,3 +439,130 @@ describe('printable.css print rules', () => {
     }
   });
 });
+
+describe('lesson plan renderer (issue #1219)', () => {
+  const plan = JSON.parse(fs.readFileSync(path.join(ROOT, 'samples/plans/primary-science-water-cycle.json'), 'utf8'));
+
+  test('gold lesson plan validates with zero errors and renders in full', () => {
+    assert.deepEqual(validate.validateLessonPlan(plan), []);
+    const html = printable.renderLessonPlan(plan);
+    assert.ok(html.length > 0);
+    assert.ok(html.includes('pr-sheet pr-lesson-plan'));
+    assert.ok(html.includes('Lesson plan'));
+    assert.ok(html.includes(plan.title), 'title present');
+    assert.ok(html.includes(plan.topic), 'topic present');
+    assert.ok(html.includes(plan.subject), 'subject present');
+    assert.ok(html.includes('Total: ' + plan.durationMinutes + ' minutes'), 'duration present');
+    for (const objective of plan.objectives) {
+      assert.ok(html.includes(objective.id), 'objective id present');
+      assert.ok(html.includes(objective.text), 'objective text present');
+      for (const criterion of objective.successCriteria) {
+        assert.ok(html.includes(criterion), 'success criterion present');
+      }
+      for (const point of objective.assessmentPoints) {
+        assert.ok(html.includes(point), 'assessment point present');
+      }
+    }
+    for (const activity of plan.activities) {
+      assert.ok(html.includes(activity.title), 'activity title present');
+      assert.ok(html.includes(activity.minutes + ' minutes'), 'activity minutes present');
+    }
+  });
+
+  test('optional activity fields render only when present', () => {
+    const bare = {
+      title: 'Bare Plan', level: 'primary', subject: 'math', topic: 'fractions',
+      durationMinutes: 10,
+      objectives: [{ id: 'o1', text: 'Add fractions', successCriteria: ['I can add halves'], assessmentPoints: ['Exit answers'] }],
+      activities: [{ title: 'Teach it', minutes: 10, objectiveIds: ['o1'] }],
+    };
+    const bareHtml = printable.renderLessonPlan(bare);
+    assert.ok(bareHtml.includes('Teach it'));
+    assert.ok(!bareHtml.includes('pr-script-cue'));
+    assert.ok(!bareHtml.includes('pr-grouping'));
+    assert.ok(!bareHtml.includes('pr-resources'));
+    assert.ok(!bareHtml.includes('pr-support'));
+    assert.ok(!bareHtml.includes('pr-stretch'));
+    const full = {
+      title: 'Full Plan', level: 'primary', subject: 'math', topic: 'fractions',
+      durationMinutes: 10,
+      objectives: [{ id: 'o1', text: 'Add fractions', successCriteria: ['I can add halves'], assessmentPoints: ['Exit answers'] }],
+      activities: [{
+        title: 'Teach it', minutes: 10, objectiveIds: ['o1'], scriptCue: 's1',
+        grouping: 'pairs', resources: ['fraction wall'],
+        differentiation: { support: 'Use the wall.', stretch: 'Try thirds.' },
+      }],
+    };
+    const fullHtml = printable.renderLessonPlan(full);
+    assert.ok(fullHtml.includes('Script cue: s1'));
+    assert.ok(fullHtml.includes('Grouping: pairs'));
+    assert.ok(fullHtml.includes('fraction wall'));
+    assert.ok(fullHtml.includes('Support: Use the wall.'));
+    assert.ok(fullHtml.includes('Stretch: Try thirds.'));
+  });
+
+  test('differentiation support-only, stretch-only and empty render their present fields', () => {
+    function planWith(diff) {
+      return {
+        title: 'Diff Plan', level: 'secondary', subject: 'math', topic: 'algebra',
+        durationMinutes: 5,
+        objectives: [{ id: 'o1', text: 'Solve equations', successCriteria: ['I can balance'], assessmentPoints: ['Board check'] }],
+        activities: [{ title: 'Drill', minutes: 5, objectiveIds: ['o1'], differentiation: diff }],
+      };
+    }
+    const supportOnly = printable.renderLessonPlan(planWith({ support: 'Hint cards.' }));
+    assert.ok(supportOnly.includes('Support: Hint cards.'));
+    assert.ok(!supportOnly.includes('pr-stretch'));
+    const stretchOnly = printable.renderLessonPlan(planWith({ stretch: 'Harder set.' }));
+    assert.ok(stretchOnly.includes('Stretch: Harder set.'));
+    assert.ok(!stretchOnly.includes('pr-support'));
+    const empty = printable.renderLessonPlan(planWith({}));
+    assert.ok(!empty.includes('pr-support'));
+    assert.ok(!empty.includes('pr-stretch'));
+  });
+
+  test('hostile lesson plan renders escaped with no raw script tag', () => {
+    const hostile = {
+      title: 'Evil <script>alert("x")</script> & Co',
+      level: 'primary', subject: 'science', topic: 'water-cycle',
+      durationMinutes: 5,
+      objectives: [{
+        id: 'o<1>', text: 'Learn <b>this</b> & "that"',
+        successCriteria: ['I can <script>say</script> it'], assessmentPoints: ['Ask <i>them</i>'],
+      }],
+      activities: [{
+        title: 'Do <script>bad()</script> & co', minutes: 5, objectiveIds: ['o<1>'],
+        scriptCue: '<b>cue</b>', grouping: 'pairs & "trios"', resources: ['<script>wall</script>'],
+        differentiation: { support: 'Help <i>now</i>', stretch: 'More & "harder"' },
+      }],
+    };
+    const html = printable.renderLessonPlan(hostile);
+    assert.ok(!html.includes('<script'), 'no raw script tag');
+    assert.ok(html.includes('&lt;script&gt;'), 'script escaped');
+    assert.ok(html.includes('&amp;'), 'ampersand escaped');
+    assert.ok(html.includes('&quot;'), 'quote escaped');
+  });
+
+  test('invalid lesson plans throw with the invalid lesson plan prefix', () => {
+    assert.throws(() => printable.renderLessonPlan({}), /invalid lesson plan:/);
+    assert.throws(() => printable.renderLessonPlan(null), /invalid lesson plan:/);
+  });
+
+  test('lesson plan validator resolves through the AnimathValidate global when present', () => {
+    globalThis.AnimathValidate = validate;
+    try {
+      assert.ok(printable.renderLessonPlan(plan).includes(plan.title));
+    } finally {
+      delete globalThis.AnimathValidate;
+    }
+  });
+
+  test('a global validator without validateLessonPlan throws the missing-validator error', () => {
+    globalThis.AnimathValidate = {};
+    try {
+      assert.throws(() => printable.renderLessonPlan(plan), /animath printable: player\/validate\.js is missing/);
+    } finally {
+      delete globalThis.AnimathValidate;
+    }
+  });
+});
