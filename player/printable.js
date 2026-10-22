@@ -4,10 +4,11 @@
  *
  * Renders a worksheet validated by AnimathValidate.validateWorksheet,
  * an exit ticket validated by AnimathValidate.validateExitTicket,
- * student notes validated by AnimathValidate.validateNotes, or a
- * teacher script validated by AnimathValidate.validateScript
+ * student notes validated by AnimathValidate.validateNotes, a
+ * teacher script validated by AnimathValidate.validateScript, or a
+ * lesson plan validated by AnimathValidate.validateLessonPlan
  * (SPEC.md "Worksheet spec" / "Exit ticket spec" / "Student notes
- * spec" / "Teacher script spec") to HTML strings.
+ * spec" / "Teacher script spec" / "Lesson plan spec") to HTML strings.
  *
  * Student/teacher separation is structural (the presenter speaker-notes
  * precedent): the student functions never read choices[].correct,
@@ -48,6 +49,12 @@
     return typeof require !== 'undefined' ? require('./validate.js').validateScript : null;
   }
 
+  function getValidateLessonPlan() {
+    var g = global.AnimathValidate;
+    if (g) return g.validateLessonPlan || null;
+    return typeof require !== 'undefined' ? require('./validate.js').validateLessonPlan : null;
+  }
+
   function assertValidWorksheet(spec) {
     var fn = getValidateWorksheet();
     if (!fn) throw new Error('animath printable: player/validate.js is missing - include it before printable.js so specs can be validated');
@@ -74,6 +81,13 @@
     if (!fn) throw new Error('animath printable: player/validate.js is missing - include it before printable.js so specs can be validated');
     var errors = fn(spec);
     if (errors.length) throw new Error('invalid script: ' + errors.join('; '));
+  }
+
+  function assertValidLessonPlan(spec) {
+    var fn = getValidateLessonPlan();
+    if (!fn) throw new Error('animath printable: player/validate.js is missing - include it before printable.js so specs can be validated');
+    var errors = fn(spec);
+    if (errors.length) throw new Error('invalid lesson plan: ' + errors.join('; '));
   }
 
   // HTML-escape for text content and double-quoted attribute values,
@@ -273,6 +287,69 @@
     return parts.join('\n');
   }
 
+  // Lesson plan: the duration total, every objective with its
+  // success criteria and assessment points, and every activity in
+  // order. Optional activity fields (scriptCue, grouping, resources,
+  // differentiation) render only when present on the activity.
+  function renderLessonPlan(spec) {
+    assertValidLessonPlan(spec);
+    var parts = sheetHeader(spec, 'pr-sheet pr-lesson-plan', 'Lesson plan');
+    parts.push('<p class="pr-total-minutes">Total: ' + spec.durationMinutes + ' minutes</p>');
+    parts.push('<h2 class="pr-plan-heading">Objectives</h2>');
+    parts.push('<ul class="pr-plan-objectives">');
+    spec.objectives.forEach(function (objective) {
+      parts.push('<li class="pr-plan-objective">');
+      parts.push('<p class="pr-objective-id">' + escapeHtml(objective.id) + '</p>');
+      parts.push('<p class="pr-objective-text">' + escapeHtml(objective.text) + '</p>');
+      parts.push('<ul class="pr-success-criteria">');
+      objective.successCriteria.forEach(function (criterion) {
+        parts.push('<li class="pr-success-criterion">' + escapeHtml(criterion) + '</li>');
+      });
+      parts.push('</ul>');
+      parts.push('<ul class="pr-assessment-points">');
+      objective.assessmentPoints.forEach(function (point) {
+        parts.push('<li class="pr-assessment-point">' + escapeHtml(point) + '</li>');
+      });
+      parts.push('</ul>');
+      parts.push('</li>');
+    });
+    parts.push('</ul>');
+    parts.push('<h2 class="pr-plan-heading">Activities</h2>');
+    parts.push('<ol class="pr-activities">');
+    spec.activities.forEach(function (activity) {
+      parts.push('<li class="pr-activity">');
+      parts.push('<p class="pr-activity-title">' + escapeHtml(activity.title) + '</p>');
+      parts.push('<p class="pr-activity-minutes">' + escapeHtml(activity.minutes) + ' minutes</p>');
+      parts.push('<p class="pr-activity-objectives">Objectives: ' +
+        activity.objectiveIds.map(escapeHtml).join(', ') + '</p>');
+      if (activity.scriptCue) {
+        parts.push('<p class="pr-script-cue">Script cue: ' + escapeHtml(activity.scriptCue) + '</p>');
+      }
+      if (activity.grouping) {
+        parts.push('<p class="pr-grouping">Grouping: ' + escapeHtml(activity.grouping) + '</p>');
+      }
+      if (activity.resources) {
+        parts.push('<ul class="pr-resources">');
+        activity.resources.forEach(function (resource) {
+          parts.push('<li class="pr-resource">' + escapeHtml(resource) + '</li>');
+        });
+        parts.push('</ul>');
+      }
+      if (activity.differentiation) {
+        if (activity.differentiation.support) {
+          parts.push('<p class="pr-support">Support: ' + escapeHtml(activity.differentiation.support) + '</p>');
+        }
+        if (activity.differentiation.stretch) {
+          parts.push('<p class="pr-stretch">Stretch: ' + escapeHtml(activity.differentiation.stretch) + '</p>');
+        }
+      }
+      parts.push('</li>');
+    });
+    parts.push('</ol>');
+    parts.push('</section>');
+    return parts.join('\n');
+  }
+
   var api = {
     renderWorksheet: renderWorksheet,
     renderWorksheetAnswerKey: renderWorksheetAnswerKey,
@@ -280,6 +357,7 @@
     renderExitTicketAnswerKey: renderExitTicketAnswerKey,
     renderNotes: renderNotes,
     renderScript: renderScript,
+    renderLessonPlan: renderLessonPlan,
     escapeHtml: escapeHtml
   };
   global.AnimathPrintable = api;

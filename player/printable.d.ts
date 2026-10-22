@@ -1,6 +1,7 @@
 // TypeScript definitions for player/printable.js - printable worksheet
 // and exit-ticket renderer: student sheets and teacher answer keys
-// (issue #758), plus student notes and teacher script (issue #766).
+// (issue #758), plus student notes and teacher script (issue #766),
+// plus the lesson plan renderer (issue #1219).
 export interface Choice {
   text: string;
   correct?: boolean;
@@ -73,10 +74,44 @@ export interface ScriptSpec {
   segments: Segment[];
   [key: string]: unknown;
 }
+export interface LessonPlanObjective {
+  id: string;
+  text: string;
+  successCriteria: string[];
+  assessmentPoints: string[];
+  [key: string]: unknown;
+}
+export interface LessonPlanDifferentiation {
+  support?: string;
+  stretch?: string;
+  [key: string]: unknown;
+}
+export interface LessonPlanActivity {
+  title: string;
+  minutes: number;
+  objectiveIds: string[];
+  scriptCue?: string;
+  grouping?: string;
+  resources?: string[];
+  differentiation?: LessonPlanDifferentiation;
+  [key: string]: unknown;
+}
+export interface LessonPlanSpec {
+  title: string;
+  level: string;
+  subject: string;
+  topic: string;
+  instructions?: string;
+  durationMinutes: number;
+  objectives: LessonPlanObjective[];
+  activities: LessonPlanActivity[];
+  [key: string]: unknown;
+}
 export function renderWorksheet(spec: WorksheetSpec): string;
 export function renderWorksheetAnswerKey(spec: WorksheetSpec): string;
 export function renderExitTicket(spec: ExitTicketSpec): string;
 export function renderExitTicketAnswerKey(spec: ExitTicketSpec): string;
 export function renderNotes(spec: NotesSpec): string;
 export function renderScript(spec: ScriptSpec): string;
+export function renderLessonPlan(spec: LessonPlanSpec): string;
 export function escapeHtml(s: string): string;
