@@ -58,6 +58,7 @@
         notesPrompt: require('./build_notes_prompt.js'),
         scriptPrompt: require('./build_script_prompt.js'),
         lessonPlanPrompt: require('./build_lesson_plan_prompt.js'),
+        scaffoldPrompt: require('./build_scaffold_prompt.js'),
         syllabus: require('./syllabus.js'),
         validate: require('../player/validate.js')
       };
@@ -72,6 +73,7 @@
       notesPrompt: g.AnimathNotesPrompt,
       scriptPrompt: g.AnimathScriptPrompt,
       lessonPlanPrompt: g.AnimathLessonPlanPrompt,
+      scaffoldPrompt: g.AnimathScaffoldPrompt,
       syllabus: g.AnimathSyllabus,
       validate: g.AnimathValidate
     };
@@ -123,6 +125,13 @@
     invalidLabel: 'The invalid lesson plan you returned:',
     returnLine: 'Return ONLY the corrected lesson plan as a single JSON object. No prose, no code fences.',
     rejectLabel: 'Lesson plan'
+  };
+  var SCAFFOLDS_KIND = {
+    notJsonProblem: 'The response was not valid JSON. Return ONLY the corrected scaffolds as JSON.',
+    repairHeader: 'Your previous response did not produce a valid scaffolds material. It had these problems:',
+    invalidLabel: 'The invalid scaffolds you returned:',
+    returnLine: 'Return ONLY the corrected scaffolds as a single JSON object. No prose, no code fences.',
+    rejectLabel: 'Scaffolds'
   };
   var EXIT_TICKET_KIND = {
     notJsonProblem: 'The response was not valid JSON. Return ONLY the corrected exit ticket as JSON.',
@@ -331,6 +340,15 @@
     if (typeof deps.validate === 'function') return deps.validate;
     if (SIBLINGS.validate && typeof SIBLINGS.validate.validateLessonPlan === 'function') {
       return SIBLINGS.validate.validateLessonPlan;
+    } /* node:coverage ignore next */
+    return null;
+  }
+
+  function resolveScaffoldsValidator(deps) {
+    if (typeof deps.validateScaffolds === 'function') return deps.validateScaffolds;
+    if (typeof deps.validate === 'function') return deps.validate;
+    if (SIBLINGS.validate && typeof SIBLINGS.validate.validateScaffolds === 'function') {
+      return SIBLINGS.validate.validateScaffolds;
     } /* node:coverage ignore next */
     return null;
   }
@@ -690,6 +708,60 @@
   }
 
   // opts:
+  //   {topic, topicLabel, level, subject, workedExample, definitions,
+  //    mechanismSteps, maxRepairs}
+  //   (the buildScaffoldPrompts option set; topic/subject required;
+  //   definitions/mechanismSteps carry the paired student notes the
+  //   scaffolds derive from; maxRepairs defaults to 3, 0 disables
+  //   repair).
+  // deps:
+  //   {callChat(system, user) -> Promise<string>  (caller-supplied LLM call),
+  //    validateScaffolds?(spec) -> string[] | Promise<string[]>,
+  //    validate?(spec) -> string[] | Promise<string[]>  (fallback validator),
+  //    onProgress?(stage, n, max)}  stages: 'unpack', 'author', 'repair'.
+  //
+  // Resolves with the first scaffolds material that validates clean
+  // against validateScaffolds; rejects with an Error carrying
+  // err.problems when every attempt failed. The unpack step degrades
+  // exactly like generateLessonPlan: a failed unpack authors WITHOUT
+  // transitions.
+  function generateScaffolds(opts, deps) {
+    opts = opts || {};
+    deps = deps || {};
+    if (typeof deps.callChat !== 'function') {
+      return Promise.reject(new Error('generateScaffolds: deps.callChat(system, user) ' +
+        'must be a function returning a Promise of the raw response text'));
+    }
+    var validateFn = resolveScaffoldsValidator(deps);
+    /* node:coverage ignore next 5 */
+    if (!validateFn) {
+      return Promise.reject(new Error('generateScaffolds: deps.validateScaffolds(spec) ' +
+        'must be a function returning the problem list (or supply deps.validate, ' +
+        'or load player/validate.js so validateScaffolds is available)'));
+    }
+    var progress = makeProgress(deps);
+    var maxRepairs = (opts.maxRepairs != null) ? opts.maxRepairs : DEFAULT_MAX_REPAIRS;
+
+    return unpackStage(deps, progress, opts).then(function (staged) {
+      var transitions = staged ? staged.transitions : null;
+      if (transitions) {
+        transitions = SIBLINGS.unpack.attachMisconceptions(transitions, opts.topic);
+      }
+      var prompts = SIBLINGS.scaffoldPrompt.buildScaffoldPrompts({
+        topic: opts.topic,
+        topicLabel: opts.topicLabel,
+        level: opts.level,
+        subject: opts.subject,
+        transitions: transitions,
+        definitions: opts.definitions,
+        mechanismSteps: opts.mechanismSteps,
+        workedExample: opts.workedExample
+      });
+      return authorAndRepair(deps, progress, maxRepairs, prompts, validateFn, SCAFFOLDS_KIND);
+    });
+  }
+
+  // opts:
   //   {topic, topicLabel, level, subject, workedExample, kind, focus,
   //    facet, maxRepairs, force}
   //   (the union of the seven material option sets; topic/subject
@@ -864,5 +936,5 @@
     return generateLessonPack(merged, deps);
   }
 
-  return { generateAnimation: generateAnimation, generateSlides: generateSlides, generateWorksheet: generateWorksheet, generateExitTicket: generateExitTicket, generateNotes: generateNotes, generateScript: generateScript, generateLessonPlan: generateLessonPlan, generateLessonPack: generateLessonPack, generateLessonPackForSyllabus: generateLessonPackForSyllabus, clearPackCache: clearPackCache };
+  return { generateAnimation: generateAnimation, generateSlides: generateSlides, generateWorksheet: generateWorksheet, generateExitTicket: generateExitTicket, generateNotes: generateNotes, generateScript: generateScript, generateLessonPlan: generateLessonPlan, generateScaffolds: generateScaffolds, generateLessonPack: generateLessonPack, generateLessonPackForSyllabus: generateLessonPackForSyllabus, clearPackCache: clearPackCache };
 });

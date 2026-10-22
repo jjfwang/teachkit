@@ -737,6 +737,163 @@
     return errors;
   }
 
+  // Scaffolds validator (SPEC.md "Scaffolds spec", issue #1231): the
+  // fading support sets paired with the student notes -- each set
+  // carries its own word bank, sentence starters, sentence frames and
+  // cloze items; support fades in the order full, partial, minimal and
+  // no support measure may grow as it fades. Cloze answers are
+  // teacher-key only (rendering lands in a later slice).
+  var SCAFFOLD_LEVELS = ['full', 'partial', 'minimal'];
+
+  function countGapMarkers(text) {
+    return text.split('___').length - 1;
+  }
+
+  function validateScaffolds(spec) {
+    var errors = [];
+    if (!spec || typeof spec !== 'object' || Array.isArray(spec)) return ['spec: must be an object'];
+    checkMaterialHeader(spec, errors);
+    if (!Array.isArray(spec.sets) || spec.sets.length < 2) {
+      errors.push('sets: required array of at least 2 scaffold sets');
+      return errors;
+    }
+    var countsComplete = true;
+    var counts = [];
+    spec.sets.forEach(function (set, i) {
+      var p = 'sets[' + i + ']';
+      if (!set || typeof set !== 'object' || Array.isArray(set)) {
+        errors.push(p + ': must be an object');
+        countsComplete = false;
+        counts.push(null);
+        return;
+      }
+      if (SCAFFOLD_LEVELS.indexOf(set.level) === -1) {
+        errors.push(p + '.level: must be one of full|partial|minimal');
+      }
+      var terms = {};
+      if (!Array.isArray(set.wordBank) || set.wordBank.length === 0) {
+        errors.push(p + '.wordBank: required non-empty array');
+      } else {
+        set.wordBank.forEach(function (entry, j) {
+          var q = p + '.wordBank[' + j + ']';
+          if (!entry || typeof entry !== 'object' || Array.isArray(entry)) {
+            errors.push(q + ': must be an object');
+            return;
+          }
+          if (typeof entry.term !== 'string' || !entry.term.trim()) {
+            errors.push(q + '.term: required non-empty string');
+          } else if (terms[entry.term]) {
+            errors.push(q + '.term: duplicate word-bank term');
+          } else {
+            terms[entry.term] = true;
+          }
+          if (typeof entry.gloss !== 'string' || !entry.gloss.trim()) {
+            errors.push(q + '.gloss: required non-empty string');
+          }
+        });
+      }
+      if (!Array.isArray(set.starters) || set.starters.length === 0) {
+        errors.push(p + '.starters: required non-empty array');
+      } else {
+        set.starters.forEach(function (starter, j) {
+          if (typeof starter !== 'string' || !starter.trim()) {
+            errors.push(p + '.starters[' + j + ']: required non-empty string');
+          }
+        });
+      }
+      if (!Array.isArray(set.frames) || set.frames.length === 0) {
+        errors.push(p + '.frames: required non-empty array');
+      } else {
+        set.frames.forEach(function (frame, j) {
+          if (typeof frame !== 'string' || !frame.trim()) {
+            errors.push(p + '.frames[' + j + ']: required non-empty string');
+          } else if (countGapMarkers(frame) === 0) {
+            errors.push(p + '.frames[' + j + ']: must contain a ___ gap marker');
+          }
+        });
+      }
+      if (!Array.isArray(set.cloze) || set.cloze.length === 0) {
+        errors.push(p + '.cloze: required non-empty array');
+      } else {
+        set.cloze.forEach(function (item, j) {
+          var q = p + '.cloze[' + j + ']';
+          if (!item || typeof item !== 'object' || Array.isArray(item)) {
+            errors.push(q + ': must be an object');
+            return;
+          }
+          var textOk = typeof item.text === 'string' && !!item.text.trim();
+          if (!textOk) {
+            errors.push(q + '.text: required non-empty string');
+          }
+          if (!Array.isArray(item.answers) || item.answers.length === 0) {
+            errors.push(q + '.answers: required non-empty array');
+          } else {
+            if (textOk && countGapMarkers(item.text) !== item.answers.length) {
+              errors.push(q + '.text: must contain a ___ gap marker for each answer');
+            }
+            item.answers.forEach(function (answer, k) {
+              if (typeof answer !== 'string' || !answer.trim()) {
+                errors.push(q + '.answers[' + k + ']: required non-empty string');
+              } else if (!terms[answer]) {
+                errors.push(q + '.answers[' + k + ']: must be a word-bank term of the same set');
+              }
+            });
+          }
+        });
+      }
+      if (Array.isArray(set.wordBank) && Array.isArray(set.starters) &&
+          Array.isArray(set.frames) && Array.isArray(set.cloze)) {
+        var gaps = 0;
+        set.cloze.forEach(function (item) {
+          if (item && Array.isArray(item.answers)) gaps += item.answers.length;
+        });
+        counts.push({
+          wordBank: set.wordBank.length, starters: set.starters.length,
+          frames: set.frames.length, gaps: gaps
+        });
+      } else {
+        countsComplete = false;
+        counts.push(null);
+      }
+    });
+    if (spec.sets[0] && typeof spec.sets[0] === 'object' && !Array.isArray(spec.sets[0]) &&
+        spec.sets[0].level !== 'full') {
+      errors.push('sets[0].level: first set must be full');
+    }
+    var lastIndex = spec.sets.length - 1;
+    var lastSet = spec.sets[lastIndex];
+    if (lastSet && typeof lastSet === 'object' && !Array.isArray(lastSet) &&
+        lastSet.level !== 'minimal') {
+      errors.push('sets[' + lastIndex + '].level: last set must be minimal');
+    }
+    for (var i = 1; i < spec.sets.length; i++) {
+      var prev = spec.sets[i - 1];
+      var curr = spec.sets[i];
+      var prevRank = prev && typeof prev === 'object' ? SCAFFOLD_LEVELS.indexOf(prev.level) : -1;
+      var currRank = curr && typeof curr === 'object' ? SCAFFOLD_LEVELS.indexOf(curr.level) : -1;
+      if (prevRank !== -1 && currRank !== -1 && currRank <= prevRank) {
+        errors.push('sets[' + i + '].level: levels must fade in order full, partial, minimal without repeats');
+      }
+    }
+    if (countsComplete) {
+      for (var c = 1; c < counts.length; c++) {
+        if (counts[c].wordBank > counts[c - 1].wordBank) {
+          errors.push('sets[' + c + ']: word bank must not grow as support fades');
+        }
+        if (counts[c].starters > counts[c - 1].starters) {
+          errors.push('sets[' + c + ']: starters must not grow as support fades');
+        }
+        if (counts[c].frames > counts[c - 1].frames) {
+          errors.push('sets[' + c + ']: frames must not grow as support fades');
+        }
+        if (counts[c].gaps > counts[c - 1].gaps) {
+          errors.push('sets[' + c + ']: cloze gaps must not grow as support fades');
+        }
+      }
+    }
+    return errors;
+  }
+
   // Pack metadata validator (SPEC.md "Lesson pack spec", issue #1221):
   // the transparency block every generated pack manifest carries -- the
   // syllabus mapping recorded as facts, the AI-generated label, the
@@ -787,7 +944,7 @@
     return errors;
   }
 
-  return { validateSpec: validateSpec, validateSlides: validateSlides, validateWorksheet: validateWorksheet, validateExitTicket: validateExitTicket, validateNotes: validateNotes, validateScript: validateScript, validateLessonPlan: validateLessonPlan, validatePackMetadata: validatePackMetadata, SUBJECTS: SUBJECTS };
+  return { validateSpec: validateSpec, validateSlides: validateSlides, validateWorksheet: validateWorksheet, validateExitTicket: validateExitTicket, validateNotes: validateNotes, validateScript: validateScript, validateLessonPlan: validateLessonPlan, validateScaffolds: validateScaffolds, validatePackMetadata: validatePackMetadata, SUBJECTS: SUBJECTS };
 });
 
 /* ------------------------------------------------------------------

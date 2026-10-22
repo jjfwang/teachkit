@@ -202,6 +202,44 @@ export function generateLessonPlan(
   opts: GenerateLessonPlanOptions,
   deps: GenerateLessonPlanDeps
 ): Promise<LessonPlanDocument>;
+// generateScaffolds options (issue #1231): the GenerateLessonPlanOptions
+// shape plus the paired student-notes derivation inputs — definitions
+// (the word bank is drawn from these) and mechanismSteps (the cloze is
+// built from these).
+export interface ScaffoldsDefinition {
+  term: string;
+  meaning: string;
+}
+export interface GenerateScaffoldsOptions {
+  topic: string;
+  topicLabel?: string;
+  level?: string;
+  subject: string;
+  /** Unpacked state transitions, attached by the shared unpack stage. */
+  transitions?: PipelineTransition[];
+  /** Paired student-notes definitions the word bank is drawn from. */
+  definitions?: ScaffoldsDefinition[];
+  /** Paired student-notes mechanism steps the cloze is built from. */
+  mechanismSteps?: string[];
+  /** Optional worked example for this topic, adapted by the author prompt. */
+  workedExample?: string;
+  /** Number of repair turns after the first attempt. Default 3; 0 disables repair. */
+  maxRepairs?: number;
+}
+export interface GenerateScaffoldsDeps {
+  callChat: PipelineCallChat;
+  /** Scaffolds validator; defaults to the built-in validateScaffolds when omitted. */
+  validateScaffolds?: PipelineValidate;
+  /** Fallback validator, used when validateScaffolds is not supplied. */
+  validate?: PipelineValidate;
+  onProgress?: PipelineProgress;
+}
+// The parsed animath scaffolds material that validated clean.
+export type ScaffoldsDocument = Record<string, unknown>;
+export function generateScaffolds(
+  opts: GenerateScaffoldsOptions,
+  deps: GenerateScaffoldsDeps
+): Promise<ScaffoldsDocument>;
 // generateLessonPack (issue #768): one shared unpack authors all seven
 // materials; packs are cached in memory by topic slug.
 export interface GenerateLessonPackOptions {
