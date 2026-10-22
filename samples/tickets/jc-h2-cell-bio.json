@@ -17,6 +17,19 @@
       "feedback": "That trap reading is the one to unlearn: Plant cells have no mitochondria. Reteach point: Plant cells respire too, day and night: they have mitochondria as well - only the chloroplast is plant-only.",
       "id": "q1",
       "kind": "multiple-choice",
+      "markScheme": {
+        "commonErrors": [
+          "Plant cells have no mitochondria."
+        ],
+        "ecf": false,
+        "points": [
+          {
+            "marks": 1,
+            "text": "Chooses 'It has both chloroplasts and mitochondria, and respires day and night'"
+          }
+        ]
+      },
+      "marks": 1,
       "misconception": "Plant cells have no mitochondria.",
       "prompt": "Which statement about a plant cell is true?"
     },
@@ -25,7 +38,22 @@
       "feedback": "Scene s6 locks the colours: Biuret blue to purple means protein, and the emulsion test turning milky white means lipid.",
       "id": "q2",
       "kind": "short-answer",
-      "prompt": "A sample turns Biuret solution purple and gives a milky white emulsion test. Which two biomolecules are present?"
+      "markScheme": {
+        "ecf": false,
+        "points": [
+          {
+            "marks": 1,
+            "text": "Scene s6 locks the colours: Biuret blue to purple means protein, and the emulsion test turning milky white means lipid"
+          },
+          {
+            "marks": 1,
+            "text": "Carries the working through to the correct final answer"
+          }
+        ]
+      },
+      "marks": 2,
+      "prompt": "A sample turns Biuret solution purple and gives a milky white emulsion test. Which two biomolecules are present?",
+      "workedSolution": "Protein (Biuret purple) and lipid (milky white emulsion)."
     },
     {
       "choices": [
@@ -43,6 +71,16 @@
       "feedback": "Scene s4 places the stages: the light-dependent stage runs on the grana, while the Calvin cycle fixes carbon dioxide into sugar in the stroma.",
       "id": "q3",
       "kind": "multiple-choice",
+      "markScheme": {
+        "ecf": false,
+        "points": [
+          {
+            "marks": 1,
+            "text": "Chooses 'On the grana, the stacks of thylakoid membranes'"
+          }
+        ]
+      },
+      "marks": 1,
       "prompt": "Where does the light-dependent stage of photosynthesis take place?"
     },
     {
@@ -50,7 +88,22 @@
       "feedback": "Scene s3 makes the link explicit: folding multiplies surface area, and a larger surface holds more ATP-making enzymes.",
       "id": "q4",
       "kind": "short-answer",
-      "prompt": "Explain how the folding of cristae helps a mitochondrion release energy efficiently."
+      "markScheme": {
+        "ecf": true,
+        "points": [
+          {
+            "marks": 1,
+            "text": "Scene s3 makes the link explicit: folding multiplies surface area, and a larger surface holds more ATP-making enzymes"
+          },
+          {
+            "marks": 2,
+            "text": "Carries the working through to the correct final answer"
+          }
+        ]
+      },
+      "marks": 3,
+      "prompt": "Explain how the folding of cristae helps a mitochondrion release energy efficiently.",
+      "workedSolution": "Cristae fold the inner membrane to give a large surface area for the enzymes of aerobic respiration, so more ATP can be made in a small organelle."
     }
   ],
   "subject": "science",
