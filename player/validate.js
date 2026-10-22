@@ -337,6 +337,67 @@
     if (typeof spec.topic !== 'string' || !spec.topic.trim()) errors.push('topic: required non-empty string');
   }
 
+  // Optional string-array fields on a markScheme (alternatives,
+  // commonErrors): when present, an array of non-empty strings.
+  function checkStringArray(value, errors, label) {
+    if (!Array.isArray(value)) {
+      errors.push(label + ': must be an array of non-empty strings when present');
+      return;
+    }
+    value.forEach(function (entry, j) {
+      if (typeof entry !== 'string' || !entry.trim()) {
+        errors.push(label + '[' + j + ']: must be a non-empty string');
+      }
+    });
+  }
+
+  // Mark scheme on a question (SPEC.md "Question"): credit points
+  // whose marks sum to the question marks, so a scheme without the
+  // question marks cannot be checked and is an error. Optional
+  // alternatives / commonErrors are string arrays; ecf is a boolean.
+  function checkMarkScheme(question, errors, p) {
+    var s = p + '.markScheme';
+    var scheme = question.markScheme;
+    if (!scheme || typeof scheme !== 'object' || Array.isArray(scheme)) {
+      errors.push(s + ': must be an object when present');
+      return;
+    }
+    if (question.marks === undefined) {
+      errors.push(s + ': requires the question marks, so the credit points can be checked against the total');
+    }
+    if (!Array.isArray(scheme.points) || scheme.points.length === 0) {
+      errors.push(s + '.points: required non-empty array of credit points');
+    } else {
+      var sum = 0;
+      var pointsValid = true;
+      scheme.points.forEach(function (point, j) {
+        var pp = s + '.points[' + j + ']';
+        if (!point || typeof point !== 'object') {
+          errors.push(pp + ': must be an object');
+          pointsValid = false;
+          return;
+        }
+        if (typeof point.text !== 'string' || !point.text.trim()) {
+          errors.push(pp + '.text: required non-empty string');
+        }
+        if (!Number.isInteger(point.marks) || point.marks <= 0) {
+          errors.push(pp + '.marks: must be a positive integer');
+          pointsValid = false;
+        } else {
+          sum += point.marks;
+        }
+      });
+      if (pointsValid && Number.isInteger(question.marks) && question.marks > 0 && sum !== question.marks) {
+        errors.push(s + '.points: credit point marks sum to ' + sum + ', not the question marks ' + question.marks);
+      }
+    }
+    if (scheme.alternatives !== undefined) checkStringArray(scheme.alternatives, errors, s + '.alternatives');
+    if (scheme.commonErrors !== undefined) checkStringArray(scheme.commonErrors, errors, s + '.commonErrors');
+    if (scheme.ecf !== undefined && typeof scheme.ecf !== 'boolean') {
+      errors.push(s + '.ecf: must be a boolean when present');
+    }
+  }
+
   // One worksheet / exit-ticket question (SPEC.md "Question"): the kind
   // decides which answer field is required — choices with exactly one
   // correct: true for multiple-choice, a non-empty answer for
@@ -361,6 +422,20 @@
         errors.push(p + '.' + f + ': must be a non-empty string when present');
       }
     });
+    if (question.marks !== undefined &&
+        (!Number.isInteger(question.marks) || question.marks <= 0)) {
+      errors.push(p + '.marks: must be a positive integer when present');
+    }
+    if (question.workedSolution !== undefined &&
+        (typeof question.workedSolution !== 'string' || !question.workedSolution.trim())) {
+      errors.push(p + '.workedSolution: must be a non-empty string when present');
+    }
+    if (question.markScheme !== undefined) {
+      checkMarkScheme(question, errors, p);
+      if (question.kind === 'short-answer' && question.workedSolution === undefined) {
+        errors.push(p + '.workedSolution: required on a short-answer question carrying a markScheme');
+      }
+    }
     if (QUESTION_KINDS.indexOf(question.kind) === -1) {
       errors.push(p + '.kind: must be ' + QUESTION_KINDS.join('|'));
       return;

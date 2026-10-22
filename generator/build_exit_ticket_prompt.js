@@ -67,17 +67,41 @@
           { text: 'It soaked away forever' }
         ],
         feedback: 'If you picked "disappeared for good", that is the evaporation trap: the water is still there as invisible vapour and will return as rain. Water disappears for good once it evaporates is the wrong turn - it never leaves the cycle.',
-        misconception: 'Water disappears for good once it evaporates.'
+        misconception: 'Water disappears for good once it evaporates.',
+        marks: 1,
+        markScheme: {
+          points: [
+            { text: 'Chooses that the water became invisible water vapour', marks: 1 }
+          ],
+          commonErrors: ['Choosing that the water disappeared for good']
+        }
       },
       {
         id: 'q2', prompt: 'Name the stage where water vapour cools into tiny drops and forms a cloud.', kind: 'short-answer',
         answer: 'Condensation',
-        feedback: 'Condensation is the cooling stage: vapour back into liquid drops. If you named evaporation, the cooling half of the loop needs reteaching.'
+        feedback: 'Condensation is the cooling stage: vapour back into liquid drops. If you named evaporation, the cooling half of the loop needs reteaching.',
+        marks: 2,
+        markScheme: {
+          points: [
+            { text: 'Identifies the cooling of the water vapour', marks: 1 },
+            { text: 'Names the stage condensation', marks: 1 }
+          ]
+        },
+        workedSolution: 'The vapour rises, cools and turns back into tiny liquid drops that gather as a cloud - that cooling stage is condensation.'
       },
       {
         id: 'q3', prompt: 'In one sentence, explain why rain shows evaporated water is not gone for good.', kind: 'short-answer',
         answer: 'Evaporated water becomes vapour, cools into clouds and falls back as rain, so it was never gone.',
-        feedback: 'A strong answer names vapour and the return as rain. An answer with no vapour means the evaporation step needs reteaching.'
+        feedback: 'A strong answer names vapour and the return as rain. An answer with no vapour means the evaporation step needs reteaching.',
+        marks: 2,
+        markScheme: {
+          points: [
+            { text: 'States the evaporated water became vapour', marks: 1 },
+            { text: 'States the vapour returns as rain', marks: 1 }
+          ],
+          alternatives: ['The water was never gone: it rose as vapour and fell back as rain.']
+        },
+        workedSolution: 'Evaporated water becomes vapour, cools into clouds and falls back as rain, so it was never gone.'
       }
     ]
   };
@@ -119,6 +143,14 @@
     '   to reteach next lesson. No long multi-part questions.',
     '10. Write for a {{LEVEL_LABEL}} student. Tone: {{TONE}}.',
     '    No jargon above the level. Short sentences.',
+    '11. Every question carries marks (a positive integer) and a',
+    '    markScheme: credit points whose marks sum exactly to the',
+    '    question marks, each point naming what earns it. Add',
+    '    alternatives (other acceptable answers) and commonErrors',
+    '    where they help the marker, and set ecf to true when a later',
+    '    step built on an earlier wrong value can still earn its',
+    '    marks. Every short-answer question also carries a',
+    '    workedSolution showing the steps to the expected answer.',
     '',
     'QUESTION DESIGN:',
     '- Cover the lesson objective and nothing else: each question checks',

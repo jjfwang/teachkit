@@ -268,11 +268,26 @@ Worksheet and exit-ticket questions share one shape:
 | `explanation`   | string  | optional; the worksheet answer-key explanation — must be a non-empty string when present |
 | `feedback`      | string  | optional; the exit-ticket per-answer feedback — must be a non-empty string when present |
 | `misconception` | string  | optional; names the misconception the `explanation` or `feedback` addresses — must be a non-empty string when present |
+| `marks`         | integer | optional; the total marks for the question — must be a positive integer when present |
+| `markScheme`    | object  | optional; the mark scheme — see below; requires `marks` |
+| `workedSolution` | string | optional; the step-by-step worked solution — must be a non-empty string when present, and is required on a short-answer question that carries a `markScheme` |
 
 A `Choice` is an object `{text, correct}`: `text` is a required non-empty
 string, and `correct` marks the right answer — exactly one choice in a
 multiple-choice question must carry `correct: true`; every other choice
 omits `correct` or sets it to `false`.
+
+A `markScheme` is an object `{points, alternatives, commonErrors, ecf}`.
+`points` is a required non-empty array of credit points `{text, marks}`:
+`text` is a required non-empty string naming what earns the credit, and
+`marks` is a positive integer; the points' marks must sum exactly to the
+question's `marks`, so a `markScheme` without `marks` is invalid.
+`alternatives` (other acceptable answers) and `commonErrors` are
+optional arrays of non-empty strings. `ecf` is an optional boolean:
+when true, error carried forward applies — a later step built on an
+earlier wrong value can still earn its marks. The mark scheme and the
+worked solution are teacher-key material: they render only in the
+teacher answer key, never on the student sheet.
 
 ## Student notes spec
 

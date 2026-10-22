@@ -66,12 +66,28 @@
           { text: 'It turns into soil' }
         ],
         explanation: 'The sun heats the water and it turns into invisible water vapour - it does not disappear for good. The choice "It disappears for good" encodes the misconception that water disappears for good once it evaporates: the water is still there as vapour and returns as rain.',
-        misconception: 'Water disappears for good once it evaporates.'
+        misconception: 'Water disappears for good once it evaporates.',
+        marks: 2,
+        markScheme: {
+          points: [
+            { text: 'Chooses that the water turns into water vapour', marks: 1 },
+            { text: 'The vapour is invisible water, not water gone for good', marks: 1 }
+          ],
+          commonErrors: ['Saying the water disappears for good once it evaporates']
+        }
       },
       {
         id: 'q2', prompt: 'Name the stage where water vapour cools and forms a cloud.', kind: 'short-answer',
         answer: 'Condensation',
-        explanation: 'High up the air is cold, so the vapour cools back into tiny liquid drops that gather as a cloud - that cooling stage is condensation.'
+        explanation: 'High up the air is cold, so the vapour cools back into tiny liquid drops that gather as a cloud - that cooling stage is condensation.',
+        marks: 2,
+        markScheme: {
+          points: [
+            { text: 'Identifies the cooling of the water vapour', marks: 1 },
+            { text: 'Names the stage condensation', marks: 1 }
+          ]
+        },
+        workedSolution: 'The vapour rises into cold air, cools and turns back into tiny liquid drops that gather as a cloud - that cooling stage is condensation.'
       }
     ]
   };
@@ -111,6 +127,14 @@
     '   misconception field wherever the question targets a misconception.',
     '9. Write for a {{LEVEL_LABEL}} student. Tone: {{TONE}}.',
     '   No jargon above the level. Short sentences.',
+    '10. Every question carries marks (a positive integer) and a',
+    '    markScheme: credit points whose marks sum exactly to the',
+    '    question marks, each point naming what earns it. Add',
+    '    alternatives (other acceptable answers) and commonErrors',
+    '    where they help the marker, and set ecf to true when a later',
+    '    step built on an earlier wrong value can still earn its',
+    '    marks. Every short-answer question also carries a',
+    '    workedSolution showing the steps to the expected answer.',
     '',
     'QUESTION DESIGN:',
     '- Mix multiple-choice and short-answer questions: multiple-choice for',
