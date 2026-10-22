@@ -67,6 +67,8 @@
         ],
         explanation: 'The sun heats the water and it turns into invisible water vapour - it does not disappear for good. The choice "It disappears for good" encodes the misconception that water disappears for good once it evaporates: the water is still there as vapour and returns as rain.',
         misconception: 'Water disappears for good once it evaporates.',
+        tier: 'core',
+        difficulty: 2,
         marks: 2,
         markScheme: {
           points: [
@@ -80,6 +82,8 @@
         id: 'q2', prompt: 'Name the stage where water vapour cools and forms a cloud.', kind: 'short-answer',
         answer: 'Condensation',
         explanation: 'High up the air is cold, so the vapour cools back into tiny liquid drops that gather as a cloud - that cooling stage is condensation.',
+        tier: 'support',
+        difficulty: 1,
         marks: 2,
         markScheme: {
           points: [
@@ -110,7 +114,8 @@
     '3. Question shape, exactly: id, prompt, kind, plus choices for a',
     '   multiple-choice question or answer for a short-answer question,',
     '   plus explanation on every question and misconception where the',
-    '   question targets one.',
+    '   question targets one, plus tier and difficulty on every question',
+    '   (rule 11).',
     '4. Question kinds, exactly: multiple-choice|short-answer.',
     '5. A multiple-choice question has at least 2 choices with exactly one',
     '   choice marked correct: true; every other choice omits correct or',
@@ -135,6 +140,15 @@
     '    step built on an earlier wrong value can still earn its',
     '    marks. Every short-answer question also carries a',
     '    workedSolution showing the steps to the expected answer.',
+    '11. Every question carries a tier (support|core|extension) and a',
+    '    difficulty (an integer from 1 to 5, 1 = least demanding within',
+    '    its tier). Extension means transfer and multi-step reasoning,',
+    '    never more volume or longer arithmetic. Support means the same',
+    '    objective at reduced cognitive load (smaller numbers, scaffolded',
+    '    steps, worked-example proximity), never a different or lesser',
+    '    objective. Core is the standard objective at full load. Tier a',
+    '    worksheet so support, core and extension learners all meet the',
+    '    same objectives.',
     '',
     'QUESTION DESIGN:',
     '- Mix multiple-choice and short-answer questions: multiple-choice for',

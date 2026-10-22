@@ -16,6 +16,8 @@ export interface Question {
   explanation?: string;
   feedback?: string;
   misconception?: string;
+  tier?: string;
+  difficulty?: number;
   [key: string]: unknown;
 }
 export interface WorksheetSpec {

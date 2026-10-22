@@ -327,6 +327,10 @@
 
   var QUESTION_KINDS = ['multiple-choice', 'short-answer'];
 
+  // Worksheet question tiers (SPEC.md "Worksheet spec"): support and
+  // extension serve the same objective at reduced / extended demand.
+  var QUESTION_TIERS = ['support', 'core', 'extension'];
+
   // Header shared by the worksheet and exit-ticket contracts (SPEC.md):
   // identical checks to validateSlides — subject is any non-empty string,
   // NOT checked against SUBJECTS.
@@ -404,7 +408,7 @@
   // short-answer. explanation (worksheet answer key), feedback
   // (exit-ticket per-answer feedback) and misconception are optional and
   // validated non-empty only where present.
-  function checkQuestion(question, errors, i, seenIds) {
+  function checkQuestion(question, errors, i, seenIds, tiered) {
     var p = 'questions[' + i + ']';
     if (!question || typeof question !== 'object') { errors.push(p + ': must be an object'); return; }
     if (typeof question.id !== 'string' || !question.id.trim()) {
@@ -425,6 +429,17 @@
     if (question.marks !== undefined &&
         (!Number.isInteger(question.marks) || question.marks <= 0)) {
       errors.push(p + '.marks: must be a positive integer when present');
+    }
+    // Tier and difficulty are worksheet-only (SPEC.md "Worksheet spec"):
+    // strict when present, and only checked when the caller is the
+    // worksheet validator, so exit-ticket validation is unchanged.
+    if (tiered && question.tier !== undefined &&
+        QUESTION_TIERS.indexOf(question.tier) === -1) {
+      errors.push(p + '.tier: must be ' + QUESTION_TIERS.join('|') + ' when present');
+    }
+    if (tiered && question.difficulty !== undefined &&
+        (!Number.isInteger(question.difficulty) || question.difficulty < 1 || question.difficulty > 5)) {
+      errors.push(p + '.difficulty: must be an integer from 1 to 5 when present');
     }
     if (question.workedSolution !== undefined &&
         (typeof question.workedSolution !== 'string' || !question.workedSolution.trim())) {
@@ -464,7 +479,7 @@
 
   // Shared worksheet / exit-ticket validator: the two contracts differ
   // only in the question-count bounds.
-  function validateMaterial(spec, min, max, rangeError) {
+  function validateMaterial(spec, min, max, rangeError, tiered) {
     var errors = [];
     if (!spec || typeof spec !== 'object') return ['spec: must be an object'];
     checkMaterialHeader(spec, errors);
@@ -474,7 +489,7 @@
     }
     var seenIds = {};
     spec.questions.forEach(function (question, i) {
-      checkQuestion(question, errors, i, seenIds);
+      checkQuestion(question, errors, i, seenIds, tiered);
     });
     return errors;
   }
@@ -482,13 +497,13 @@
   // Worksheet validator (SPEC.md "Worksheet spec"): at least 1 question;
   // the answer key is the per-question explanation / misconception fields.
   function validateWorksheet(spec) {
-    return validateMaterial(spec, 1, Infinity, 'questions: required array of 1 or more questions');
+    return validateMaterial(spec, 1, Infinity, 'questions: required array of 1 or more questions', true);
   }
 
   // Exit-ticket validator (SPEC.md "Exit ticket spec"): 3..5 questions;
   // per-answer feedback is keyed to misconceptions on each question.
   function validateExitTicket(spec) {
-    return validateMaterial(spec, 3, 5, 'questions: required array of 3..5 questions');
+    return validateMaterial(spec, 3, 5, 'questions: required array of 3..5 questions', false);
   }
 
   // Student notes validator (SPEC.md "Student notes spec"): study notes

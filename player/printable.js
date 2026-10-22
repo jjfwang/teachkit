@@ -110,15 +110,28 @@
     return parts;
   }
 
+  // Worksheet tier labels (SPEC.md "Worksheet spec"): the tier shows on
+  // both the student sheet and the teacher key - labels visible to
+  // students are the deliberate inclusion choice. Mapped through this
+  // lookup so a raw tier value is never emitted.
+  var TIER_LABELS = { support: 'Support', core: 'Core', extension: 'Extension' };
+
+  function tierLine(q, showTier) {
+    if (!showTier || !q.tier || !TIER_LABELS[q.tier]) return null;
+    return '<p class="pr-tier">Tier: ' + TIER_LABELS[q.tier] + '</p>';
+  }
+
   // Student sheet: prompts and choice texts only. This function must
   // never read choices[].correct, answer, explanation, feedback, or
   // misconception - see the header comment.
-  function renderStudentSheet(spec, kindClass, kindLabel) {
+  function renderStudentSheet(spec, kindClass, kindLabel, showTier) {
     var parts = sheetHeader(spec, kindClass, kindLabel);
     parts.push('<ol class="pr-questions">');
     spec.questions.forEach(function (q) {
       parts.push('<li class="pr-question">');
       parts.push('<p class="pr-prompt">' + escapeHtml(q.prompt) + '</p>');
+      var tier = tierLine(q, showTier);
+      if (tier) parts.push(tier);
       if (q.kind === 'multiple-choice') {
         parts.push('<ul class="pr-choices">');
         q.choices.forEach(function (choice) {
@@ -140,12 +153,14 @@
 
   // Teacher answer key: the correct/expected answer per question, plus
   // the explanation, feedback, and misconception where present.
-  function renderAnswerKey(spec, kindClass, kindLabel) {
+  function renderAnswerKey(spec, kindClass, kindLabel, showTier) {
     var parts = sheetHeader(spec, kindClass, kindLabel);
     parts.push('<ol class="pr-questions">');
     spec.questions.forEach(function (q) {
       parts.push('<li class="pr-question">');
       parts.push('<p class="pr-prompt">' + escapeHtml(q.prompt) + '</p>');
+      var tier = tierLine(q, showTier);
+      if (tier) parts.push(tier);
       if (q.kind === 'multiple-choice') {
         q.choices.forEach(function (choice) {
           if (choice.correct === true) {
@@ -199,22 +214,22 @@
 
   function renderWorksheet(spec) {
     assertValidWorksheet(spec);
-    return renderStudentSheet(spec, 'pr-sheet pr-student pr-worksheet', 'Worksheet');
+    return renderStudentSheet(spec, 'pr-sheet pr-student pr-worksheet', 'Worksheet', true);
   }
 
   function renderWorksheetAnswerKey(spec) {
     assertValidWorksheet(spec);
-    return renderAnswerKey(spec, 'pr-sheet pr-teacher pr-answer-key pr-worksheet', 'Worksheet answer key');
+    return renderAnswerKey(spec, 'pr-sheet pr-teacher pr-answer-key pr-worksheet', 'Worksheet answer key', true);
   }
 
   function renderExitTicket(spec) {
     assertValidExitTicket(spec);
-    return renderStudentSheet(spec, 'pr-sheet pr-student pr-exit-ticket', 'Exit ticket');
+    return renderStudentSheet(spec, 'pr-sheet pr-student pr-exit-ticket', 'Exit ticket', false);
   }
 
   function renderExitTicketAnswerKey(spec) {
     assertValidExitTicket(spec);
-    return renderAnswerKey(spec, 'pr-sheet pr-teacher pr-answer-key pr-exit-ticket', 'Exit ticket answer key');
+    return renderAnswerKey(spec, 'pr-sheet pr-teacher pr-answer-key pr-exit-ticket', 'Exit ticket answer key', false);
   }
 
   // Student notes: objectives, definitions, mechanism steps, a worked
