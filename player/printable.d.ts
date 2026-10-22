@@ -110,13 +110,18 @@ export interface LessonPlanSpec {
   activities: LessonPlanActivity[];
   [key: string]: unknown;
 }
-export function renderWorksheet(spec: WorksheetSpec): string;
-export function renderWorksheetAnswerKey(spec: WorksheetSpec): string;
-export function renderExitTicket(spec: ExitTicketSpec): string;
-export function renderExitTicketAnswerKey(spec: ExitTicketSpec): string;
-export function renderNotes(spec: NotesSpec): string;
-export function renderScript(spec: ScriptSpec): string;
-export function renderLessonPlan(spec: LessonPlanSpec): string;
+export interface PrintableOptions {
+  enlargedPrint?: boolean;
+  unclutteredLayout?: boolean;
+  chunkInstructions?: boolean;
+}
+export function renderWorksheet(spec: WorksheetSpec, options?: PrintableOptions): string;
+export function renderWorksheetAnswerKey(spec: WorksheetSpec, options?: PrintableOptions): string;
+export function renderExitTicket(spec: ExitTicketSpec, options?: PrintableOptions): string;
+export function renderExitTicketAnswerKey(spec: ExitTicketSpec, options?: PrintableOptions): string;
+export function renderNotes(spec: NotesSpec, options?: PrintableOptions): string;
+export function renderScript(spec: ScriptSpec, options?: PrintableOptions): string;
+export function renderLessonPlan(spec: LessonPlanSpec, options?: PrintableOptions): string;
 export interface WordBankEntry {
   term: string;
   gloss: string;
@@ -144,6 +149,6 @@ export interface ScaffoldsSpec {
   sets: ScaffoldSet[];
   [key: string]: unknown;
 }
-export function renderScaffolds(spec: ScaffoldsSpec): string;
-export function renderScaffoldsAnswerKey(spec: ScaffoldsSpec): string;
+export function renderScaffolds(spec: ScaffoldsSpec, options?: PrintableOptions): string;
+export function renderScaffoldsAnswerKey(spec: ScaffoldsSpec, options?: PrintableOptions): string;
 export function escapeHtml(s: string): string;
