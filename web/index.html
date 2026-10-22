@@ -438,6 +438,8 @@
     // like renderGeomAdvisory above, and reveal the five download controls.
     function renderPackManifest(pack) {
       var esc = function (s) { return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;'); };
+      var md = pack.manifest.metadata || {};
+      var ai = md.aiGenerated || {};
       var items = pack.manifest.materials.map(function (m) {
         return '<li>' + esc(m) + '</li>';
       }).join('');
@@ -446,6 +448,10 @@
         '<p>Topic: ' + esc(pack.manifest.topic) +
         ' · Level: ' + esc(pack.manifest.level) +
         ' · Subject: ' + esc(pack.manifest.subject) + '</p>' +
+        '<p>Syllabus year: ' + (md.syllabusYear == null ? 'not recorded' : esc(md.syllabusYear)) + '</p>' +
+        '<p>' + esc(ai.label || 'AI-generated') +
+        ' · Model: ' + esc(ai.model || 'unknown') +
+        ' · Generator version: ' + esc(ai.generatorVersion || 'unknown') + '</p>' +
         '<ul>' + items + '</ul>';
       packManifestEl.style.display = '';
       packDownloadsEl.style.display = 'flex';

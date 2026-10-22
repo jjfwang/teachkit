@@ -291,3 +291,17 @@ test('README and CHANGELOG document the pack mode', () => {
   assert.ok(unreleased.includes('In-app lesson-pack rendering in the web app'),
     'CHANGELOG [Unreleased] Added must carry the #782 in-app rendering bullet');
 });
+
+test('renderPackManifest displays the pack metadata block (#1223)', () => {
+  const start = html.indexOf('function renderPackManifest(pack) {');
+  assert.ok(start > -1, 'renderPackManifest must exist');
+  const fn = html.slice(start, html.indexOf('\n    }', start));
+  assert.ok(fn.includes('pack.manifest.metadata'), 'rendering reads the manifest metadata block');
+  assert.ok(fn.includes('md.aiGenerated'), 'rendering reads the aiGenerated label block');
+  assert.ok(fn.includes('Syllabus year: '), 'rendering shows the syllabus year');
+  assert.ok(fn.includes("'not recorded'"), 'a null syllabus year renders honestly as not recorded');
+  assert.ok(fn.includes('esc(md.syllabusYear)'), 'the syllabus year is escaped');
+  assert.ok(fn.includes('esc(ai.label'), 'the AI label is escaped');
+  assert.ok(fn.includes('esc(ai.model'), 'the model is escaped');
+  assert.ok(fn.includes('esc(ai.generatorVersion'), 'the generator version is escaped');
+});

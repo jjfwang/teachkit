@@ -4106,3 +4106,33 @@ describe('pack demo lesson plan wiring (issue #1219)', () => {
     });
   }
 });
+
+describe('pack metadata display (#1223, slice 2 of #1207)', () => {
+  const demo = fs.readFileSync(path.join(ROOT, 'player', 'pack-demo.html'), 'utf8');
+  const { topicFacts } = require('../generator/syllabus.js');
+  const GATE_META = [
+    ['pack-manifest', 'water-cycle'],
+    ['fractions-manifest', 'fractions'],
+    ['e-algebra-secondary-manifest', 'e-algebra'],
+    ['phys-energy-secondary-manifest', 'phys-energy'],
+    ['differentiation-jc-manifest', 'h2-differentiation'],
+    ['cell-bio-jc-manifest', 'h2-cell-bio'],
+  ];
+  for (const [manifestId, topic] of GATE_META) {
+    test('gate pack ' + manifestId + ' shows the topicFacts syllabus year and the AI-generated label', () => {
+      const facts = topicFacts(topic);
+      assert.ok(facts.syllabusYear !== null, 'topicFacts records a year for ' + topic);
+      const start = demo.indexOf('id="' + manifestId + '"');
+      assert.ok(start > -1, 'manifest found: ' + manifestId);
+      const header = demo.slice(start, demo.indexOf('</header>', start));
+      assert.ok(header.includes('<dt>Syllabus year</dt><dd>' + facts.syllabusYear + '</dd>'),
+        manifestId + ' displays the topicFacts year ' + facts.syllabusYear);
+      assert.ok(header.includes('<dt>AI-generated</dt><dd>AI-generated</dd>'),
+        manifestId + ' displays the AI-generated label');
+    });
+  }
+  test('only the six gate headers carry the metadata rows', () => {
+    assert.equal(demo.split('<dt>Syllabus year</dt>').length - 1, 6);
+    assert.equal(demo.split('<dt>AI-generated</dt>').length - 1, 6);
+  });
+});
