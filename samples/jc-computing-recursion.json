@@ -1,0 +1,1322 @@
+{
+  "animath": "0.1",
+  "title": "Recursion: factorial(4) — the Call Stack Grows, Then Unwinds",
+  "level": "jc",
+  "subject": "computing",
+  "topic": "recursion",
+  "kind": "concept",
+  "canvas": {
+    "width": 960,
+    "height": 540
+  },
+  "scenes": [
+    {
+      "id": "s1",
+      "caption": "The calls descend: each call pauses and stacks a new frame",
+      "narration": "factorial(4) is called first. It cannot finish yet, so it pauses and calls factorial(3); that call pauses too and calls factorial(2). Each caller stays on the call stack, suspended, while the stack grows.",
+      "duration_ms": 9500,
+      "steps": [
+        {
+          "at_ms": 0,
+          "do": "show",
+          "shape": {
+            "id": "title",
+            "kind": "text",
+            "x": 480,
+            "y": 32,
+            "text": "Recursion: factorial(4) - the call stack grows, then unwinds",
+            "size": 20,
+            "color": "#1a1a1a",
+            "explain": "Title: recursion traced through factorial(4), frame by frame.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 150,
+          "do": "show",
+          "shape": {
+            "id": "stageLabel",
+            "kind": "text",
+            "x": 480,
+            "y": 58,
+            "text": "Stage 1: the calls descend - each call pauses and stacks a new frame",
+            "size": 14,
+            "color": "#34495e",
+            "explain": "Stage label: the phase of the recursion shown in this scene.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 300,
+          "do": "show",
+          "shape": {
+            "id": "stackBase",
+            "kind": "rect",
+            "x": 320,
+            "y": 460,
+            "w": 320,
+            "h": 14,
+            "fill": "#7f8c8d",
+            "explain": "Call stack base: the bottom of the stack, where the first call sits."
+          }
+        },
+        {
+          "at_ms": 420,
+          "do": "show",
+          "shape": {
+            "id": "baseLabel",
+            "kind": "text",
+            "x": 480,
+            "y": 492,
+            "text": "Call stack: first call at the bottom",
+            "size": 12,
+            "color": "#34495e",
+            "explain": "Label: the call stack, with the first call at the bottom.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 500,
+          "do": "show",
+          "shape": {
+            "id": "chipHead",
+            "kind": "text",
+            "x": 760,
+            "y": 150,
+            "text": "Returned value",
+            "size": 13,
+            "color": "#34495e",
+            "explain": "Heading: the returned value column, on the right of the stack.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 560,
+          "do": "show",
+          "shape": {
+            "id": "readout",
+            "kind": "text",
+            "x": 660,
+            "y": 100,
+            "text": "Running product: none yet",
+            "size": 14,
+            "color": "#1a5276",
+            "explain": "Running product: the value accumulated so far as the stack unwinds."
+          }
+        },
+        {
+          "at_ms": 700,
+          "do": "show",
+          "shape": {
+            "id": "frameF4",
+            "kind": "rect",
+            "x": 340,
+            "y": 404,
+            "w": 280,
+            "h": 56,
+            "fill": "#d6eaf8",
+            "explain": "Call stack frame: one suspended call, waiting for the call above it to return."
+          }
+        },
+        {
+          "at_ms": 820,
+          "do": "show",
+          "shape": {
+            "id": "frameF4Label",
+            "kind": "text",
+            "x": 480,
+            "y": 440,
+            "text": "factorial(4) - waiting for factorial(3)",
+            "size": 13,
+            "color": "#1a1a1a",
+            "explain": "Label: this stack frame and what it is waiting for.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 1100,
+          "do": "show",
+          "shape": {
+            "id": "frameF3",
+            "kind": "rect",
+            "x": 340,
+            "y": 110,
+            "w": 280,
+            "h": 56,
+            "fill": "#d6eaf8",
+            "explain": "Call stack frame: one suspended call, waiting for the call above it to return."
+          }
+        },
+        {
+          "at_ms": 1220,
+          "do": "show",
+          "shape": {
+            "id": "frameF3Label",
+            "kind": "text",
+            "x": 480,
+            "y": 146,
+            "text": "factorial(3) - waiting for factorial(2)",
+            "size": 13,
+            "color": "#1a1a1a",
+            "explain": "Label: this stack frame and what it is waiting for.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 1600,
+          "do": "move",
+          "target": "frameF3",
+          "to": {
+            "x": 340,
+            "y": 336
+          },
+          "dur_ms": 1400
+        },
+        {
+          "at_ms": 1600,
+          "do": "move",
+          "target": "frameF3Label",
+          "to": {
+            "x": 480,
+            "y": 372
+          },
+          "dur_ms": 1400
+        },
+        {
+          "at_ms": 3300,
+          "do": "show",
+          "shape": {
+            "id": "frameF2",
+            "kind": "rect",
+            "x": 340,
+            "y": 110,
+            "w": 280,
+            "h": 56,
+            "fill": "#d6eaf8",
+            "explain": "Call stack frame: one suspended call, waiting for the call above it to return."
+          }
+        },
+        {
+          "at_ms": 3420,
+          "do": "show",
+          "shape": {
+            "id": "frameF2Label",
+            "kind": "text",
+            "x": 480,
+            "y": 146,
+            "text": "factorial(2) - waiting for factorial(1)",
+            "size": 13,
+            "color": "#1a1a1a",
+            "explain": "Label: this stack frame and what it is waiting for.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 3800,
+          "do": "move",
+          "target": "frameF2",
+          "to": {
+            "x": 340,
+            "y": 268
+          },
+          "dur_ms": 1400
+        },
+        {
+          "at_ms": 3800,
+          "do": "move",
+          "target": "frameF2Label",
+          "to": {
+            "x": 480,
+            "y": 304
+          },
+          "dur_ms": 1400
+        },
+        {
+          "at_ms": 5600,
+          "do": "emphasize",
+          "target": "frameF2"
+        },
+        {
+          "at_ms": 8800,
+          "do": "caption",
+          "text": "The calls descend: each call pauses and stacks a new frame"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "caption": "Down to the base case: factorial(1) calls nothing",
+      "narration": "factorial(2) calls factorial(1). With n equal to 1 the base case is reached: factorial(1) makes no further call and returns 1 at once. The stack is four frames deep and the descent stops.",
+      "duration_ms": 9500,
+      "steps": [
+        {
+          "at_ms": 0,
+          "do": "show",
+          "shape": {
+            "id": "title",
+            "kind": "text",
+            "x": 480,
+            "y": 32,
+            "text": "Recursion: factorial(4) - the call stack grows, then unwinds",
+            "size": 20,
+            "color": "#1a1a1a",
+            "explain": "Title: recursion traced through factorial(4), frame by frame.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 150,
+          "do": "show",
+          "shape": {
+            "id": "stageLabel",
+            "kind": "text",
+            "x": 480,
+            "y": 58,
+            "text": "Stage 2: down to the base case - factorial(1) calls nothing",
+            "size": 14,
+            "color": "#34495e",
+            "explain": "Stage label: the phase of the recursion shown in this scene.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 300,
+          "do": "show",
+          "shape": {
+            "id": "stackBase",
+            "kind": "rect",
+            "x": 320,
+            "y": 460,
+            "w": 320,
+            "h": 14,
+            "fill": "#7f8c8d",
+            "explain": "Call stack base: the bottom of the stack, where the first call sits."
+          }
+        },
+        {
+          "at_ms": 420,
+          "do": "show",
+          "shape": {
+            "id": "baseLabel",
+            "kind": "text",
+            "x": 480,
+            "y": 492,
+            "text": "Call stack: first call at the bottom",
+            "size": 12,
+            "color": "#34495e",
+            "explain": "Label: the call stack, with the first call at the bottom.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 500,
+          "do": "show",
+          "shape": {
+            "id": "chipHead",
+            "kind": "text",
+            "x": 760,
+            "y": 150,
+            "text": "Returned value",
+            "size": 13,
+            "color": "#34495e",
+            "explain": "Heading: the returned value column, on the right of the stack.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 560,
+          "do": "show",
+          "shape": {
+            "id": "readout",
+            "kind": "text",
+            "x": 660,
+            "y": 100,
+            "text": "Running product: none yet",
+            "size": 14,
+            "color": "#1a5276",
+            "explain": "Running product: the value accumulated so far as the stack unwinds."
+          }
+        },
+        {
+          "at_ms": 700,
+          "do": "show",
+          "shape": {
+            "id": "frameF4",
+            "kind": "rect",
+            "x": 340,
+            "y": 404,
+            "w": 280,
+            "h": 56,
+            "fill": "#d6eaf8",
+            "explain": "Call stack frame: one suspended call, waiting for the call above it to return."
+          }
+        },
+        {
+          "at_ms": 820,
+          "do": "show",
+          "shape": {
+            "id": "frameF4Label",
+            "kind": "text",
+            "x": 480,
+            "y": 440,
+            "text": "factorial(4) - waiting for factorial(3)",
+            "size": 13,
+            "color": "#1a1a1a",
+            "explain": "Label: this stack frame and what it is waiting for.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 1000,
+          "do": "show",
+          "shape": {
+            "id": "frameF3",
+            "kind": "rect",
+            "x": 340,
+            "y": 336,
+            "w": 280,
+            "h": 56,
+            "fill": "#d6eaf8",
+            "explain": "Call stack frame: one suspended call, waiting for the call above it to return."
+          }
+        },
+        {
+          "at_ms": 1120,
+          "do": "show",
+          "shape": {
+            "id": "frameF3Label",
+            "kind": "text",
+            "x": 480,
+            "y": 372,
+            "text": "factorial(3) - waiting for factorial(2)",
+            "size": 13,
+            "color": "#1a1a1a",
+            "explain": "Label: this stack frame and what it is waiting for.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 1300,
+          "do": "show",
+          "shape": {
+            "id": "frameF2",
+            "kind": "rect",
+            "x": 340,
+            "y": 268,
+            "w": 280,
+            "h": 56,
+            "fill": "#d6eaf8",
+            "explain": "Call stack frame: one suspended call, waiting for the call above it to return."
+          }
+        },
+        {
+          "at_ms": 1420,
+          "do": "show",
+          "shape": {
+            "id": "frameF2Label",
+            "kind": "text",
+            "x": 480,
+            "y": 304,
+            "text": "factorial(2) - waiting for factorial(1)",
+            "size": 13,
+            "color": "#1a1a1a",
+            "explain": "Label: this stack frame and what it is waiting for.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 1700,
+          "do": "show",
+          "shape": {
+            "id": "frameF1",
+            "kind": "rect",
+            "x": 340,
+            "y": 110,
+            "w": 280,
+            "h": 56,
+            "fill": "#d5f5e3",
+            "explain": "Call stack frame: one suspended call, waiting for the call above it to return."
+          }
+        },
+        {
+          "at_ms": 1820,
+          "do": "show",
+          "shape": {
+            "id": "frameF1Label",
+            "kind": "text",
+            "x": 480,
+            "y": 146,
+            "text": "factorial(1) - base case",
+            "size": 13,
+            "color": "#1a1a1a",
+            "explain": "Label: this stack frame and what it is waiting for.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 2200,
+          "do": "move",
+          "target": "frameF1",
+          "to": {
+            "x": 340,
+            "y": 200
+          },
+          "dur_ms": 1400
+        },
+        {
+          "at_ms": 2200,
+          "do": "move",
+          "target": "frameF1Label",
+          "to": {
+            "x": 480,
+            "y": 236
+          },
+          "dur_ms": 1400
+        },
+        {
+          "at_ms": 3800,
+          "do": "emphasize",
+          "target": "frameF1"
+        },
+        {
+          "at_ms": 4400,
+          "do": "show",
+          "shape": {
+            "id": "badge",
+            "kind": "rect",
+            "x": 60,
+            "y": 200,
+            "w": 220,
+            "h": 44,
+            "fill": "#d5f5e3",
+            "explain": "Base case badge: when n is 1 the function returns 1 without calling again."
+          }
+        },
+        {
+          "at_ms": 4520,
+          "do": "show",
+          "shape": {
+            "id": "badgeLabel",
+            "kind": "text",
+            "x": 170,
+            "y": 229,
+            "text": "n == 1 → return 1",
+            "size": 13,
+            "color": "#1e8449",
+            "explain": "Label: the base case, n == 1, returns 1.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 5000,
+          "do": "show",
+          "shape": {
+            "id": "chip",
+            "kind": "rect",
+            "x": 670,
+            "y": 198,
+            "w": 180,
+            "h": 44,
+            "fill": "#f9e79f",
+            "explain": "Returned value chip: the value handed back to the caller below."
+          }
+        },
+        {
+          "at_ms": 5120,
+          "do": "show",
+          "shape": {
+            "id": "chipLabel",
+            "kind": "text",
+            "x": 760,
+            "y": 227,
+            "text": "returns 1",
+            "size": 14,
+            "color": "#1a1a1a",
+            "explain": "Label: the value being returned to the caller below.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 6900,
+          "do": "emphasize",
+          "target": "badge"
+        },
+        {
+          "at_ms": 8800,
+          "do": "caption",
+          "text": "Down to the base case: factorial(1) calls nothing"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "caption": "The stack unwinds: each frame resumes and multiplies",
+      "narration": "The returned 1 reaches factorial(2), which resumes and multiplies: 2 times 1 is 2. Its frame pops and it returns 2 to factorial(3), which resumes and multiplies: 3 times 2 is 6. The stack shrinks from four frames to two.",
+      "duration_ms": 9500,
+      "steps": [
+        {
+          "at_ms": 0,
+          "do": "show",
+          "shape": {
+            "id": "title",
+            "kind": "text",
+            "x": 480,
+            "y": 32,
+            "text": "Recursion: factorial(4) - the call stack grows, then unwinds",
+            "size": 20,
+            "color": "#1a1a1a",
+            "explain": "Title: recursion traced through factorial(4), frame by frame.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 150,
+          "do": "show",
+          "shape": {
+            "id": "stageLabel",
+            "kind": "text",
+            "x": 480,
+            "y": 58,
+            "text": "Stage 3: the stack unwinds - each frame resumes and multiplies",
+            "size": 14,
+            "color": "#34495e",
+            "explain": "Stage label: the phase of the recursion shown in this scene.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 300,
+          "do": "show",
+          "shape": {
+            "id": "stackBase",
+            "kind": "rect",
+            "x": 320,
+            "y": 460,
+            "w": 320,
+            "h": 14,
+            "fill": "#7f8c8d",
+            "explain": "Call stack base: the bottom of the stack, where the first call sits."
+          }
+        },
+        {
+          "at_ms": 420,
+          "do": "show",
+          "shape": {
+            "id": "baseLabel",
+            "kind": "text",
+            "x": 480,
+            "y": 492,
+            "text": "Call stack: first call at the bottom",
+            "size": 12,
+            "color": "#34495e",
+            "explain": "Label: the call stack, with the first call at the bottom.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 500,
+          "do": "show",
+          "shape": {
+            "id": "chipHead",
+            "kind": "text",
+            "x": 760,
+            "y": 150,
+            "text": "Returned value",
+            "size": 13,
+            "color": "#34495e",
+            "explain": "Heading: the returned value column, on the right of the stack.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 560,
+          "do": "show",
+          "shape": {
+            "id": "readout",
+            "kind": "text",
+            "x": 660,
+            "y": 100,
+            "text": "Running product: none yet",
+            "size": 14,
+            "color": "#1a5276",
+            "explain": "Running product: the value accumulated so far as the stack unwinds."
+          }
+        },
+        {
+          "at_ms": 700,
+          "do": "show",
+          "shape": {
+            "id": "frameF4",
+            "kind": "rect",
+            "x": 340,
+            "y": 404,
+            "w": 280,
+            "h": 56,
+            "fill": "#d6eaf8",
+            "explain": "Call stack frame: one suspended call, waiting for the call above it to return."
+          }
+        },
+        {
+          "at_ms": 820,
+          "do": "show",
+          "shape": {
+            "id": "frameF4Label",
+            "kind": "text",
+            "x": 480,
+            "y": 440,
+            "text": "factorial(4) - waiting for factorial(3)",
+            "size": 13,
+            "color": "#1a1a1a",
+            "explain": "Label: this stack frame and what it is waiting for.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 1000,
+          "do": "show",
+          "shape": {
+            "id": "frameF3",
+            "kind": "rect",
+            "x": 340,
+            "y": 336,
+            "w": 280,
+            "h": 56,
+            "fill": "#d6eaf8",
+            "explain": "Call stack frame: one suspended call, waiting for the call above it to return."
+          }
+        },
+        {
+          "at_ms": 1120,
+          "do": "show",
+          "shape": {
+            "id": "frameF3Label",
+            "kind": "text",
+            "x": 480,
+            "y": 372,
+            "text": "factorial(3) - waiting for factorial(2)",
+            "size": 13,
+            "color": "#1a1a1a",
+            "explain": "Label: this stack frame and what it is waiting for.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 1300,
+          "do": "show",
+          "shape": {
+            "id": "frameF2",
+            "kind": "rect",
+            "x": 340,
+            "y": 268,
+            "w": 280,
+            "h": 56,
+            "fill": "#d6eaf8",
+            "explain": "Call stack frame: one suspended call, waiting for the call above it to return."
+          }
+        },
+        {
+          "at_ms": 1420,
+          "do": "show",
+          "shape": {
+            "id": "frameF2Label",
+            "kind": "text",
+            "x": 480,
+            "y": 304,
+            "text": "factorial(2) - waiting for factorial(1)",
+            "size": 13,
+            "color": "#1a1a1a",
+            "explain": "Label: this stack frame and what it is waiting for.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 1600,
+          "do": "show",
+          "shape": {
+            "id": "frameF1",
+            "kind": "rect",
+            "x": 340,
+            "y": 200,
+            "w": 280,
+            "h": 56,
+            "fill": "#d5f5e3",
+            "explain": "Call stack frame: one suspended call, waiting for the call above it to return."
+          }
+        },
+        {
+          "at_ms": 1720,
+          "do": "show",
+          "shape": {
+            "id": "frameF1Label",
+            "kind": "text",
+            "x": 480,
+            "y": 236,
+            "text": "factorial(1) - base case",
+            "size": 13,
+            "color": "#1a1a1a",
+            "explain": "Label: this stack frame and what it is waiting for.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 2000,
+          "do": "show",
+          "shape": {
+            "id": "chip",
+            "kind": "rect",
+            "x": 670,
+            "y": 198,
+            "w": 180,
+            "h": 44,
+            "fill": "#f9e79f",
+            "explain": "Returned value chip: the value handed back to the caller below."
+          }
+        },
+        {
+          "at_ms": 2120,
+          "do": "show",
+          "shape": {
+            "id": "chipLabel",
+            "kind": "text",
+            "x": 760,
+            "y": 227,
+            "text": "returns 1",
+            "size": 14,
+            "color": "#1a1a1a",
+            "explain": "Label: the value being returned to the caller below.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 2600,
+          "do": "hide",
+          "target": "frameF1"
+        },
+        {
+          "at_ms": 2600,
+          "do": "hide",
+          "target": "frameF1Label"
+        },
+        {
+          "at_ms": 2900,
+          "do": "move",
+          "target": "chip",
+          "to": {
+            "x": 670,
+            "y": 266
+          },
+          "dur_ms": 1000
+        },
+        {
+          "at_ms": 2900,
+          "do": "move",
+          "target": "chipLabel",
+          "to": {
+            "x": 760,
+            "y": 295
+          },
+          "dur_ms": 1000
+        },
+        {
+          "at_ms": 4100,
+          "do": "hide",
+          "target": "frameF2Label"
+        },
+        {
+          "at_ms": 4200,
+          "do": "show",
+          "shape": {
+            "id": "frameF2Done",
+            "kind": "text",
+            "x": 480,
+            "y": 304,
+            "text": "factorial(2) = 2 × 1 = 2",
+            "size": 13,
+            "color": "#1a1a1a",
+            "explain": "Label: factorial(2) resumed and multiplied 2 by the returned 1.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 4400,
+          "do": "hide",
+          "target": "readout"
+        },
+        {
+          "at_ms": 4500,
+          "do": "show",
+          "shape": {
+            "id": "readout2",
+            "kind": "text",
+            "x": 660,
+            "y": 100,
+            "text": "Running product: 2",
+            "size": 14,
+            "color": "#1a5276",
+            "explain": "Running product: the value accumulated so far as the stack unwinds."
+          }
+        },
+        {
+          "at_ms": 4700,
+          "do": "emphasize",
+          "target": "frameF2"
+        },
+        {
+          "at_ms": 5200,
+          "do": "hide",
+          "target": "frameF2"
+        },
+        {
+          "at_ms": 5200,
+          "do": "hide",
+          "target": "frameF2Done"
+        },
+        {
+          "at_ms": 5300,
+          "do": "hide",
+          "target": "chipLabel"
+        },
+        {
+          "at_ms": 5400,
+          "do": "show",
+          "shape": {
+            "id": "chipLabel2",
+            "kind": "text",
+            "x": 760,
+            "y": 295,
+            "text": "returns 2",
+            "size": 14,
+            "color": "#1a1a1a",
+            "explain": "Label: factorial(2) returns 2 to factorial(3).",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 5700,
+          "do": "move",
+          "target": "chip",
+          "to": {
+            "x": 670,
+            "y": 334
+          },
+          "dur_ms": 1000
+        },
+        {
+          "at_ms": 5700,
+          "do": "move",
+          "target": "chipLabel2",
+          "to": {
+            "x": 760,
+            "y": 363
+          },
+          "dur_ms": 1000
+        },
+        {
+          "at_ms": 6900,
+          "do": "hide",
+          "target": "frameF3Label"
+        },
+        {
+          "at_ms": 7000,
+          "do": "show",
+          "shape": {
+            "id": "frameF3Done",
+            "kind": "text",
+            "x": 480,
+            "y": 372,
+            "text": "factorial(3) = 3 × 2 = 6",
+            "size": 13,
+            "color": "#1a1a1a",
+            "explain": "Label: factorial(3) resumed and multiplied 3 by the returned 2.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 7200,
+          "do": "hide",
+          "target": "readout2"
+        },
+        {
+          "at_ms": 7300,
+          "do": "show",
+          "shape": {
+            "id": "readout3",
+            "kind": "text",
+            "x": 660,
+            "y": 100,
+            "text": "Running product: 6",
+            "size": 14,
+            "color": "#1a5276",
+            "explain": "Running product: the value accumulated so far as the stack unwinds."
+          }
+        },
+        {
+          "at_ms": 7500,
+          "do": "hide",
+          "target": "chipLabel2"
+        },
+        {
+          "at_ms": 7600,
+          "do": "show",
+          "shape": {
+            "id": "chipLabel3",
+            "kind": "text",
+            "x": 760,
+            "y": 363,
+            "text": "returns 6",
+            "size": 14,
+            "color": "#1a1a1a",
+            "explain": "Label: factorial(3) returns 6 to factorial(4).",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 7900,
+          "do": "emphasize",
+          "target": "frameF3"
+        },
+        {
+          "at_ms": 8800,
+          "do": "caption",
+          "text": "The stack unwinds: each frame resumes and multiplies"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "caption": "The outermost frame returns the answer",
+      "narration": "factorial(3) returns 6 and pops. The outermost frame, factorial(4), resumes at last and multiplies: 4 times 6 is 24. It pops too, the stack is empty, and one answer remains: factorial(4) equals 24.",
+      "duration_ms": 9500,
+      "steps": [
+        {
+          "at_ms": 0,
+          "do": "show",
+          "shape": {
+            "id": "title",
+            "kind": "text",
+            "x": 480,
+            "y": 32,
+            "text": "Recursion: factorial(4) - the call stack grows, then unwinds",
+            "size": 20,
+            "color": "#1a1a1a",
+            "explain": "Title: recursion traced through factorial(4), frame by frame.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 150,
+          "do": "show",
+          "shape": {
+            "id": "stageLabel",
+            "kind": "text",
+            "x": 480,
+            "y": 58,
+            "text": "Stage 4: the outermost frame returns the answer",
+            "size": 14,
+            "color": "#34495e",
+            "explain": "Stage label: the phase of the recursion shown in this scene.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 300,
+          "do": "show",
+          "shape": {
+            "id": "stackBase",
+            "kind": "rect",
+            "x": 320,
+            "y": 460,
+            "w": 320,
+            "h": 14,
+            "fill": "#7f8c8d",
+            "explain": "Call stack base: the bottom of the stack, where the first call sits."
+          }
+        },
+        {
+          "at_ms": 420,
+          "do": "show",
+          "shape": {
+            "id": "baseLabel",
+            "kind": "text",
+            "x": 480,
+            "y": 492,
+            "text": "Call stack: first call at the bottom",
+            "size": 12,
+            "color": "#34495e",
+            "explain": "Label: the call stack, with the first call at the bottom.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 500,
+          "do": "show",
+          "shape": {
+            "id": "chipHead",
+            "kind": "text",
+            "x": 760,
+            "y": 150,
+            "text": "Returned value",
+            "size": 13,
+            "color": "#34495e",
+            "explain": "Heading: the returned value column, on the right of the stack.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 560,
+          "do": "show",
+          "shape": {
+            "id": "readout",
+            "kind": "text",
+            "x": 660,
+            "y": 100,
+            "text": "Running product: 6",
+            "size": 14,
+            "color": "#1a5276",
+            "explain": "Running product: the value accumulated so far as the stack unwinds."
+          }
+        },
+        {
+          "at_ms": 700,
+          "do": "show",
+          "shape": {
+            "id": "frameF4",
+            "kind": "rect",
+            "x": 340,
+            "y": 404,
+            "w": 280,
+            "h": 56,
+            "fill": "#d6eaf8",
+            "explain": "Call stack frame: one suspended call, waiting for the call above it to return."
+          }
+        },
+        {
+          "at_ms": 820,
+          "do": "show",
+          "shape": {
+            "id": "frameF4Label",
+            "kind": "text",
+            "x": 480,
+            "y": 440,
+            "text": "factorial(4) - waiting for factorial(3)",
+            "size": 13,
+            "color": "#1a1a1a",
+            "explain": "Label: this stack frame and what it is waiting for.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 1000,
+          "do": "show",
+          "shape": {
+            "id": "frameF3",
+            "kind": "rect",
+            "x": 340,
+            "y": 336,
+            "w": 280,
+            "h": 56,
+            "fill": "#d6eaf8",
+            "explain": "Call stack frame: one suspended call, waiting for the call above it to return."
+          }
+        },
+        {
+          "at_ms": 1120,
+          "do": "show",
+          "shape": {
+            "id": "frameF3Done",
+            "kind": "text",
+            "x": 480,
+            "y": 372,
+            "text": "factorial(3) = 3 × 2 = 6",
+            "size": 13,
+            "color": "#1a1a1a",
+            "explain": "Label: factorial(3) resumed and multiplied 3 by the returned 2.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 1400,
+          "do": "show",
+          "shape": {
+            "id": "chip",
+            "kind": "rect",
+            "x": 670,
+            "y": 334,
+            "w": 180,
+            "h": 44,
+            "fill": "#f9e79f",
+            "explain": "Returned value chip: the value handed back to the caller below."
+          }
+        },
+        {
+          "at_ms": 1520,
+          "do": "show",
+          "shape": {
+            "id": "chipLabel",
+            "kind": "text",
+            "x": 760,
+            "y": 363,
+            "text": "returns 6",
+            "size": 14,
+            "color": "#1a1a1a",
+            "explain": "Label: the value being returned to the caller below.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 2100,
+          "do": "hide",
+          "target": "frameF3"
+        },
+        {
+          "at_ms": 2100,
+          "do": "hide",
+          "target": "frameF3Done"
+        },
+        {
+          "at_ms": 2400,
+          "do": "move",
+          "target": "chip",
+          "to": {
+            "x": 670,
+            "y": 402
+          },
+          "dur_ms": 1000
+        },
+        {
+          "at_ms": 2400,
+          "do": "move",
+          "target": "chipLabel",
+          "to": {
+            "x": 760,
+            "y": 431
+          },
+          "dur_ms": 1000
+        },
+        {
+          "at_ms": 3600,
+          "do": "hide",
+          "target": "frameF4Label"
+        },
+        {
+          "at_ms": 3700,
+          "do": "show",
+          "shape": {
+            "id": "frameF4Done",
+            "kind": "text",
+            "x": 480,
+            "y": 440,
+            "text": "factorial(4) = 4 × 6 = 24",
+            "size": 13,
+            "color": "#1a1a1a",
+            "explain": "Label: factorial(4) resumed and multiplied 4 by the returned 6.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 3900,
+          "do": "hide",
+          "target": "readout"
+        },
+        {
+          "at_ms": 4000,
+          "do": "show",
+          "shape": {
+            "id": "readout2",
+            "kind": "text",
+            "x": 660,
+            "y": 100,
+            "text": "Running product: 24",
+            "size": 14,
+            "color": "#1a5276",
+            "explain": "Running product: the value accumulated so far as the stack unwinds."
+          }
+        },
+        {
+          "at_ms": 4200,
+          "do": "hide",
+          "target": "chipLabel"
+        },
+        {
+          "at_ms": 4300,
+          "do": "show",
+          "shape": {
+            "id": "chipLabel2",
+            "kind": "text",
+            "x": 760,
+            "y": 431,
+            "text": "returns 24",
+            "size": 14,
+            "color": "#1a1a1a",
+            "explain": "Label: factorial(4) returns 24, the final answer.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 4600,
+          "do": "emphasize",
+          "target": "frameF4"
+        },
+        {
+          "at_ms": 5300,
+          "do": "hide",
+          "target": "frameF4"
+        },
+        {
+          "at_ms": 5300,
+          "do": "hide",
+          "target": "frameF4Done"
+        },
+        {
+          "at_ms": 5300,
+          "do": "hide",
+          "target": "chip"
+        },
+        {
+          "at_ms": 5300,
+          "do": "hide",
+          "target": "chipLabel2"
+        },
+        {
+          "at_ms": 5800,
+          "do": "show",
+          "shape": {
+            "id": "answer",
+            "kind": "rect",
+            "x": 280,
+            "y": 220,
+            "w": 400,
+            "h": 80,
+            "fill": "#27ae60",
+            "explain": "Answer panel: factorial(4) equals 24, the single value left when the stack empties."
+          }
+        },
+        {
+          "at_ms": 5920,
+          "do": "show",
+          "shape": {
+            "id": "answerLabel",
+            "kind": "text",
+            "x": 480,
+            "y": 268,
+            "text": "factorial(4) = 24",
+            "size": 24,
+            "color": "#ffffff",
+            "explain": "Label: the final answer, factorial(4) = 24.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 6400,
+          "do": "emphasize",
+          "target": "answer"
+        },
+        {
+          "at_ms": 8800,
+          "do": "caption",
+          "text": "The outermost frame returns the answer"
+        }
+      ]
+    }
+  ]
+}
