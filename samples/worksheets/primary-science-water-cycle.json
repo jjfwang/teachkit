@@ -17,6 +17,7 @@
           "text": "It was used up by the sun, like fuel in a lamp"
         }
       ],
+      "difficulty": 1,
       "explanation": "The sun heats the water and it evaporates: it turns into invisible water vapour, but it is still there and will cool into clouds and fall back as rain. The choice 'It disappeared for good and no longer exists' encodes the misconception: Water disappears for good once it evaporates. The water looks gone only because vapour is invisible. The 'used up by the sun' choice encodes the same wrong turn in another form: the sun drives the change, it does not consume the water.",
       "id": "q1",
       "kind": "multiple-choice",
@@ -34,7 +35,9 @@
       },
       "marks": 1,
       "misconception": "Water disappears for good once it evaporates.",
-      "prompt": "On a sunny morning, a puddle outside the classroom gets smaller and smaller until it is gone. What happened to the water?"
+      "objective": "o1",
+      "prompt": "On a sunny morning, a puddle outside the classroom gets smaller and smaller until it is gone. What happened to the water?",
+      "tier": "support"
     },
     {
       "choices": [
@@ -52,6 +55,7 @@
           "text": "Nothing - the vapour is gone for good"
         }
       ],
+      "difficulty": 2,
       "explanation": "Cooling turns the vapour back into tiny liquid drops, and billions of those drops gathered together are a cloud - this stage is condensation. The choice 'Nothing - the vapour is gone for good' encodes the misconception that water disappears for good once it evaporates: the vapour has not vanished, it has changed back into liquid drops.",
       "id": "q2",
       "kind": "multiple-choice",
@@ -69,10 +73,13 @@
       },
       "marks": 1,
       "misconception": "Water disappears for good once it evaporates.",
-      "prompt": "High up in the sky, water vapour cools down. What forms when the cooled vapour gathers as tiny liquid drops?"
+      "objective": "o1",
+      "prompt": "High up in the sky, water vapour cools down. What forms when the cooled vapour gathers as tiny liquid drops?",
+      "tier": "core"
     },
     {
       "answer": "Precipitation: the drops in the cloud join and grow bigger and heavier until gravity pulls them down as rain.",
+      "difficulty": 2,
       "explanation": "Falling water is called precipitation. The drops grow too heavy to float, so gravity - not the cloud spilling or bursting - pulls them down.",
       "id": "q3",
       "kind": "short-answer",
@@ -90,11 +97,14 @@
         ]
       },
       "marks": 2,
+      "objective": "o2",
       "prompt": "Name the stage of the water cycle where water falls back to the ground, and say what makes it fall.",
+      "tier": "core",
       "workedSolution": "Precipitation: the drops in the cloud join and grow bigger and heavier until gravity pulls them down as rain."
     },
     {
       "answer": "Evaporation, condensation, precipitation, collection.",
+      "difficulty": 3,
       "explanation": "The sun lifts water from the sea (evaporation), it cools into a cloud (condensation), falls as rain (precipitation), then gathers in rivers and the sea again (collection), ready to start over.",
       "id": "q4",
       "kind": "short-answer",
@@ -112,11 +122,14 @@
         ]
       },
       "marks": 2,
+      "objective": "o2",
       "prompt": "Put the four stages in order, starting from the sea: collection, condensation, evaporation, precipitation.",
+      "tier": "extension",
       "workedSolution": "Evaporation, condensation, precipitation, collection."
     },
     {
       "answer": "Evaporated water does not disappear: it becomes invisible water vapour. The vapour cools into clouds and falls back as rain, so rain is the same water returning, not new water.",
+      "difficulty": 3,
       "explanation": "The classmate holds the misconception that water disappears for good once it evaporates, because vapour is invisible. In fact the water only changes form: liquid to vapour to liquid again, going round and round in the cycle.",
       "id": "q5",
       "kind": "short-answer",
@@ -138,8 +151,44 @@
       },
       "marks": 3,
       "misconception": "Water disappears for good once it evaporates.",
+      "objective": "o1",
       "prompt": "A classmate says: 'Once water evaporates, it is gone for good, so rain must be brand-new water.' Explain in two or three sentences why your classmate is wrong.",
+      "tier": "extension",
       "workedSolution": "Evaporated water does not disappear: it becomes invisible water vapour. The vapour cools into clouds and falls back as rain, so rain is the same water returning, not new water."
+    },
+    {
+      "choices": [
+        {
+          "correct": true,
+          "text": "Precipitation"
+        },
+        {
+          "text": "Evaporation"
+        },
+        {
+          "text": "Condensation"
+        },
+        {
+          "text": "Collection"
+        }
+      ],
+      "difficulty": 1,
+      "explanation": "Water falling back to the ground as rain is precipitation; afterwards it collects in drains, rivers and the sea.",
+      "id": "q6",
+      "kind": "multiple-choice",
+      "markScheme": {
+        "ecf": false,
+        "points": [
+          {
+            "marks": 1,
+            "text": "Chooses 'Precipitation'"
+          }
+        ]
+      },
+      "marks": 1,
+      "objective": "o2",
+      "prompt": "Rain falls from a cloud onto a roof and runs down into a drain. Which stage of the water cycle is the falling rain?",
+      "tier": "support"
     }
   ],
   "subject": "science",

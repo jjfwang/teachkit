@@ -248,6 +248,14 @@ or `difficulty`. The tier label shows on both the student sheet and the
 teacher answer key; the difficulty is authoring metadata and is not
 rendered.
 
+A question's optional `objective` is the id of the lesson-plan
+objective the question serves (for example `o1` in the paired lesson
+plan). It is a coverage key only — facts, never rendered — and it is
+worksheet-only like `tier` and `difficulty`: validation is strict when
+it is present (a non-string or empty `objective` is an error), and a
+worksheet without it validates exactly as before. Exit-ticket questions
+do not carry `objective`.
+
 ## Exit ticket spec
 
 An exit ticket is the short end-of-lesson check for a topic: a small set
@@ -290,6 +298,7 @@ Worksheet and exit-ticket questions share one shape:
 | `workedSolution` | string | optional; the step-by-step worked solution — must be a non-empty string when present, and is required on a short-answer question that carries a `markScheme` |
 | `tier`          | string  | worksheet questions only; optional; one of `"support"` \| `"core"` \| `"extension"` — see the Worksheet spec; must be one of these values when present |
 | `difficulty`    | integer | worksheet questions only; optional; an integer from 1 to 5 — see the Worksheet spec; must be an integer in that range when present |
+| `objective`     | string  | worksheet questions only; optional; the id of the lesson-plan objective the question serves — see the Worksheet spec; must be a non-empty string when present |
 
 A `Choice` is an object `{text, correct}`: `text` is a required non-empty
 string, and `correct` marks the right answer — exactly one choice in a

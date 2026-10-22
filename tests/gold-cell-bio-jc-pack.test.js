@@ -112,9 +112,9 @@ test('gold cell-bio JC deck practice and exit-ticket slides address the plant-ce
 
 /* Worksheet */
 
-test('gold cell-bio JC worksheet has 5 mixed questions, each with an explanation', () => {
-  assert.equal(worksheet.questions.length, 5);
-  assert.deepEqual(worksheet.questions.map((q) => q.id), ['q1', 'q2', 'q3', 'q4', 'q5']);
+test('gold cell-bio JC worksheet has 15 mixed questions, each with an explanation', () => {
+  assert.equal(worksheet.questions.length, 15);
+  assert.deepEqual(worksheet.questions.map((q) => q.id), ['q1', 'q2', 'q3', 'q4', 'q5', 'q6', 'q7', 'q8', 'q9', 'q10', 'q11', 'q12', 'q13', 'q14', 'q15']);
   const kinds = new Set(worksheet.questions.map((q) => q.kind));
   assert.ok(kinds.has('multiple-choice') && kinds.has('short-answer'), 'worksheet mixes question kinds');
   for (const q of worksheet.questions) {
