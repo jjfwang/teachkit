@@ -574,6 +574,12 @@
       wrongTurn: 'Absorption and marginal costing always report the same profit, because fixed production overhead is a period cost under both methods.',
       why: 'Fixed production overhead is a real production cost either way, so it is easy to assume both methods must charge it to the same period and the choice of method cannot change profit.',
       correctTurn: 'The methods differ on timing: marginal costing expenses the full $12,000 of fixed production overhead in the period, but absorption costing attaches $12 per unit to inventory, so the 200 unsold units carry 200 x $12 = $2,400 of fixed overhead forward in closing inventory - which is why absorption profit of $9,400 exceeds marginal profit of $7,000 by exactly that $2,400 deferral.'
+    },
+    // Slice 1 (issue #1158): JC H2 Management of Business 9587.
+    'inventory-control': {
+      wrongTurn: 'Reorder only when stock runs out, because buffer stock is spare stock that should never be touched and deliveries arrive straight away.',
+      why: 'Buffer stock looks like spare stock sitting idle, and ordering looks like something you do when you have run out - so reordering earlier, while hundreds of units remain, feels wasteful.',
+      correctTurn: 'Reorder when falling stock reaches the reorder level, not when it runs out: deliveries take a lead time to arrive, during which stock keeps falling, and the reorder level is set at buffer stock plus lead-time usage precisely so stock bottoms out at the buffer - never below it - just as the delivery lands.'
     }
   };
 

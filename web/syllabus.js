@@ -201,6 +201,11 @@ window.ANIMATH_SYLLABUS = {
           id: 'h2-principles-of-accounts', label: 'H2 Principles of Accounting', subject: 'principles-of-accounts', topics: [
             { slug: 'absorption-marginal-costing', label: 'Absorption and marginal costing' }
           ]
+        },
+        {
+          id: 'h2-management-of-business', label: 'H2 Management of Business', subject: 'management-of-business', topics: [
+            { slug: 'inventory-control', label: 'Inventory control' }
+          ]
         }
       ]
     }

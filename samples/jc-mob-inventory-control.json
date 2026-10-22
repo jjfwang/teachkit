@@ -1,0 +1,570 @@
+{
+  "animath": "0.1",
+  "title": "Inventory Control: The Sawtooth Stock Chart",
+  "level": "jc",
+  "subject": "management-of-business",
+  "topic": "inventory-control",
+  "kind": "concept",
+  "canvas": {
+    "width": 960,
+    "height": 540
+  },
+  "scenes": [
+    {
+      "id": "s1",
+      "caption": "Three levels govern the chart: maximum, reorder, buffer",
+      "narration": "One stocked item, used at a steady 125 units a day. Stock starts full at the maximum level of 1,000 units. Two lower lines govern what happens next: at the reorder level of 500 units a new order must be placed, and the buffer stock of 250 units is the safety floor stock should never fall below.",
+      "duration_ms": 7000,
+      "steps": [
+        {
+          "at_ms": 0,
+          "do": "show",
+          "shape": {
+            "id": "title",
+            "kind": "text",
+            "x": 480,
+            "y": 34,
+            "text": "Inventory Control: The Sawtooth Stock Chart",
+            "size": 20,
+            "color": "#1a1a1a",
+            "explain": "Title: inventory control, the sawtooth stock chart for one stocked item.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 200,
+          "do": "show",
+          "shape": {
+            "id": "yAxis",
+            "kind": "line",
+            "x1": 140,
+            "y1": 440,
+            "x2": 140,
+            "y2": 80,
+            "stroke": "#1a1a1a",
+            "strokeWidth": 3,
+            "explain": "The vertical axis: stock level in units, from 0 at the origin to 1,000 units at the top."
+          }
+        },
+        {
+          "at_ms": 350,
+          "do": "show",
+          "shape": {
+            "id": "xAxis",
+            "kind": "line",
+            "x1": 140,
+            "y1": 440,
+            "x2": 860,
+            "y2": 440,
+            "stroke": "#1a1a1a",
+            "strokeWidth": 3,
+            "explain": "The horizontal axis: time in days, from day 0 at the origin to day 12 at the right."
+          }
+        },
+        {
+          "at_ms": 500,
+          "do": "show",
+          "shape": {
+            "id": "yLabel",
+            "kind": "text",
+            "x": 60,
+            "y": 260,
+            "text": "Stock (units)",
+            "size": 13,
+            "color": "#1a1a1a",
+            "explain": "Axis label: the vertical axis measures the stock level in units."
+          }
+        },
+        {
+          "at_ms": 650,
+          "do": "show",
+          "shape": {
+            "id": "xLabel",
+            "kind": "text",
+            "x": 860,
+            "y": 470,
+            "text": "Time (days)",
+            "size": 13,
+            "color": "#1a1a1a",
+            "explain": "Axis label: the horizontal axis measures time in days.",
+            "align": "end"
+          }
+        },
+        {
+          "at_ms": 800,
+          "do": "show",
+          "shape": {
+            "id": "maxLine",
+            "kind": "line",
+            "x1": 140,
+            "y1": 100,
+            "x2": 860,
+            "y2": 100,
+            "stroke": "#2980b9",
+            "strokeWidth": 2,
+            "explain": "The maximum stock level line at 1,000 units: stock never rises above this level."
+          }
+        },
+        {
+          "at_ms": 950,
+          "do": "show",
+          "shape": {
+            "id": "maxLabel",
+            "kind": "text",
+            "x": 150,
+            "y": 92,
+            "text": "Maximum stock level: 1,000 units",
+            "size": 13,
+            "color": "#2980b9",
+            "explain": "Label for the maximum stock level line at 1,000 units."
+          }
+        },
+        {
+          "at_ms": 1100,
+          "do": "show",
+          "shape": {
+            "id": "reorderLine",
+            "kind": "line",
+            "x1": 140,
+            "y1": 270,
+            "x2": 860,
+            "y2": 270,
+            "stroke": "#e67e22",
+            "strokeWidth": 2,
+            "explain": "The reorder level line at 500 units: when falling stock crosses this level, a new order is placed.",
+            "dash": "6 4"
+          }
+        },
+        {
+          "at_ms": 1250,
+          "do": "show",
+          "shape": {
+            "id": "reorderLabel",
+            "kind": "text",
+            "x": 150,
+            "y": 262,
+            "text": "Reorder level: 500 units",
+            "size": 13,
+            "color": "#e67e22",
+            "explain": "Label for the reorder level line at 500 units."
+          }
+        },
+        {
+          "at_ms": 1400,
+          "do": "show",
+          "shape": {
+            "id": "bufferLine",
+            "kind": "line",
+            "x1": 140,
+            "y1": 355,
+            "x2": 860,
+            "y2": 355,
+            "stroke": "#27ae60",
+            "strokeWidth": 2,
+            "explain": "The buffer stock line at 250 units: stock should never fall below this safety level.",
+            "dash": "6 4"
+          }
+        },
+        {
+          "at_ms": 1550,
+          "do": "show",
+          "shape": {
+            "id": "bufferLabel",
+            "kind": "text",
+            "x": 150,
+            "y": 347,
+            "text": "Buffer stock: 250 units",
+            "size": 13,
+            "color": "#27ae60",
+            "explain": "Label for the buffer stock line at 250 units."
+          }
+        },
+        {
+          "at_ms": 2000,
+          "do": "show",
+          "shape": {
+            "id": "stockDot",
+            "kind": "circle",
+            "cx": 140,
+            "cy": 100,
+            "r": 9,
+            "fill": "#c0392b",
+            "explain": "The stock marker: it rides the stock-level line as stock is used up and replenished."
+          }
+        },
+        {
+          "at_ms": 2600,
+          "do": "show",
+          "shape": {
+            "id": "startLabel",
+            "kind": "text",
+            "x": 170,
+            "y": 130,
+            "text": "Stock starts full: 1,000 units",
+            "size": 14,
+            "color": "#c0392b",
+            "explain": "Label: stock starts full at the maximum level of 1,000 units on day 0."
+          }
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "caption": "Stock falls steadily - crossing the reorder level fires the order",
+      "narration": "Sales use stock at a steady rate, so the stock line falls in a straight slope. Watch the marker ride it down: the moment the falling line crosses the reorder level of 500 units on day 4, a new order is placed - not when stock runs out.",
+      "duration_ms": 10000,
+      "steps": [
+        {
+          "at_ms": 0,
+          "do": "show",
+          "shape": {
+            "id": "fall1a",
+            "kind": "line",
+            "x1": 140,
+            "y1": 100,
+            "x2": 260,
+            "y2": 185,
+            "stroke": "#c0392b",
+            "strokeWidth": 4,
+            "explain": "First stretch of the falling stock line: steady usage pulls stock down from 1,000 units."
+          }
+        },
+        {
+          "at_ms": 300,
+          "do": "show",
+          "shape": {
+            "id": "fall1b",
+            "kind": "line",
+            "x1": 260,
+            "y1": 185,
+            "x2": 380,
+            "y2": 270,
+            "stroke": "#c0392b",
+            "strokeWidth": 4,
+            "explain": "Second stretch of the falling stock line, reaching the reorder level of 500 units on day 4."
+          }
+        },
+        {
+          "at_ms": 600,
+          "do": "show",
+          "shape": {
+            "id": "stockDot",
+            "kind": "circle",
+            "cx": 140,
+            "cy": 100,
+            "r": 9,
+            "fill": "#c0392b",
+            "explain": "The stock marker riding the falling stock line towards the reorder level."
+          }
+        },
+        {
+          "at_ms": 900,
+          "do": "move",
+          "target": "stockDot",
+          "to": {
+            "cx": 380,
+            "cy": 270
+          },
+          "dur_ms": 3600
+        },
+        {
+          "at_ms": 2600,
+          "do": "show",
+          "shape": {
+            "id": "halfLabel",
+            "kind": "text",
+            "x": 600,
+            "y": 140,
+            "text": "Halfway down: 750 units left",
+            "size": 13,
+            "color": "#1a1a1a",
+            "explain": "Label: halfway through the fall, 750 units remain before stock reaches the reorder level.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 4700,
+          "do": "show",
+          "shape": {
+            "id": "orderMarker",
+            "kind": "circle",
+            "cx": 380,
+            "cy": 270,
+            "r": 13,
+            "fill": "#e67e22",
+            "explain": "The order marker: it fires at the exact point where the falling stock line crosses the reorder level."
+          }
+        },
+        {
+          "at_ms": 5100,
+          "do": "show",
+          "shape": {
+            "id": "orderLabel",
+            "kind": "text",
+            "x": 395,
+            "y": 250,
+            "text": "Order placed (day 4)",
+            "size": 14,
+            "color": "#e67e22",
+            "explain": "Label: a new order is placed on day 4, the moment stock falls to the reorder level of 500 units."
+          }
+        },
+        {
+          "at_ms": 5800,
+          "do": "show",
+          "shape": {
+            "id": "useLabel",
+            "kind": "text",
+            "x": 600,
+            "y": 180,
+            "text": "Steady usage: 125 units a day",
+            "size": 13,
+            "color": "#1a1a1a",
+            "explain": "Label: steady usage of 125 units a day is what makes the stock line fall in a straight slope.",
+            "align": "middle"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "caption": "Through the lead time to the buffer - then the delivery jumps stock back up",
+      "narration": "The order takes a 2-day lead time to arrive, and stock keeps falling while it is waited for - down towards the buffer stock, but never below it. On day 6 the delivery lands and the stock line jumps straight back up to the maximum level of 1,000 units.",
+      "duration_ms": 11000,
+      "steps": [
+        {
+          "at_ms": 0,
+          "do": "show",
+          "shape": {
+            "id": "fall1c",
+            "kind": "line",
+            "x1": 380,
+            "y1": 270,
+            "x2": 500,
+            "y2": 355,
+            "stroke": "#c0392b",
+            "strokeWidth": 4,
+            "explain": "The lead-time stretch of the falling stock line: stock keeps falling for 2 more days while the order is in transit, down to the buffer stock."
+          }
+        },
+        {
+          "at_ms": 300,
+          "do": "show",
+          "shape": {
+            "id": "stockDot",
+            "kind": "circle",
+            "cx": 380,
+            "cy": 270,
+            "r": 9,
+            "fill": "#c0392b",
+            "explain": "The stock marker at the reorder level, about to keep falling through the lead time."
+          }
+        },
+        {
+          "at_ms": 600,
+          "do": "move",
+          "target": "stockDot",
+          "to": {
+            "cx": 500,
+            "cy": 355
+          },
+          "dur_ms": 3200
+        },
+        {
+          "at_ms": 4000,
+          "do": "show",
+          "shape": {
+            "id": "leadLabel",
+            "kind": "text",
+            "x": 530,
+            "y": 320,
+            "text": "Lead time: 2 days",
+            "size": 13,
+            "color": "#1a1a1a",
+            "explain": "Label: the lead time is the 2 days between placing the order and the delivery arriving, during which stock keeps falling."
+          }
+        },
+        {
+          "at_ms": 4600,
+          "do": "show",
+          "shape": {
+            "id": "bufferMarker",
+            "kind": "circle",
+            "cx": 500,
+            "cy": 355,
+            "r": 13,
+            "fill": "#27ae60",
+            "explain": "The buffer marker: stock reaches the buffer level of 250 units exactly as the delivery arrives, and never falls below it."
+          }
+        },
+        {
+          "at_ms": 5200,
+          "do": "show",
+          "shape": {
+            "id": "jumpLine",
+            "kind": "line",
+            "x1": 500,
+            "y1": 355,
+            "x2": 500,
+            "y2": 100,
+            "stroke": "#2980b9",
+            "strokeWidth": 4,
+            "explain": "The delivery jump: the arriving delivery lifts the stock line straight back up to the maximum level of 1,000 units."
+          }
+        },
+        {
+          "at_ms": 5600,
+          "do": "move",
+          "target": "stockDot",
+          "to": {
+            "cx": 500,
+            "cy": 100
+          },
+          "dur_ms": 1800
+        },
+        {
+          "at_ms": 7600,
+          "do": "show",
+          "shape": {
+            "id": "deliveryLabel",
+            "kind": "text",
+            "x": 520,
+            "y": 90,
+            "text": "Delivery arrives (day 6): back to maximum",
+            "size": 14,
+            "color": "#2980b9",
+            "explain": "Label: the delivery arrives on day 6 and stock jumps back to the maximum level of 1,000 units."
+          }
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "caption": "The sawtooth repeats: fall, reorder, wait, delivery, jump",
+      "narration": "Nothing has changed - usage is still steady - so the pattern repeats exactly: stock falls again, crosses the reorder level on day 10 to fire the next order, and will jump again when that delivery lands. That repeating zigzag is why this is called the sawtooth chart.",
+      "duration_ms": 11000,
+      "steps": [
+        {
+          "at_ms": 0,
+          "do": "show",
+          "shape": {
+            "id": "fall2a",
+            "kind": "line",
+            "x1": 500,
+            "y1": 100,
+            "x2": 680,
+            "y2": 228,
+            "stroke": "#c0392b",
+            "strokeWidth": 4,
+            "explain": "First stretch of the second fall: the new cycle's stock line falls from the maximum level at the same steady rate."
+          }
+        },
+        {
+          "at_ms": 300,
+          "do": "show",
+          "shape": {
+            "id": "fall2b",
+            "kind": "line",
+            "x1": 680,
+            "y1": 228,
+            "x2": 860,
+            "y2": 355,
+            "stroke": "#c0392b",
+            "strokeWidth": 4,
+            "explain": "Second stretch of the second fall, running down towards the buffer stock by day 12."
+          }
+        },
+        {
+          "at_ms": 600,
+          "do": "show",
+          "shape": {
+            "id": "stockDot",
+            "kind": "circle",
+            "cx": 500,
+            "cy": 100,
+            "r": 9,
+            "fill": "#c0392b",
+            "explain": "The stock marker at the maximum level, starting the second sawtooth cycle."
+          }
+        },
+        {
+          "at_ms": 900,
+          "do": "move",
+          "target": "stockDot",
+          "to": {
+            "cx": 740,
+            "cy": 270
+          },
+          "dur_ms": 3400
+        },
+        {
+          "at_ms": 2600,
+          "do": "show",
+          "shape": {
+            "id": "againLabel",
+            "kind": "text",
+            "x": 700,
+            "y": 140,
+            "text": "Falling again at the same steady rate",
+            "size": 13,
+            "color": "#1a1a1a",
+            "explain": "Label: the second cycle falls at the same steady usage rate as the first.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 4500,
+          "do": "show",
+          "shape": {
+            "id": "orderMarker2",
+            "kind": "circle",
+            "cx": 740,
+            "cy": 270,
+            "r": 13,
+            "fill": "#e67e22",
+            "explain": "The second order marker: falling stock crosses the reorder level again on day 10 and fires the next order."
+          }
+        },
+        {
+          "at_ms": 4900,
+          "do": "show",
+          "shape": {
+            "id": "orderLabel2",
+            "kind": "text",
+            "x": 560,
+            "y": 300,
+            "text": "Order placed again (day 10)",
+            "size": 14,
+            "color": "#e67e22",
+            "explain": "Label: the second order is placed on day 10 when stock again falls to the reorder level."
+          }
+        },
+        {
+          "at_ms": 5600,
+          "do": "move",
+          "target": "stockDot",
+          "to": {
+            "cx": 860,
+            "cy": 355
+          },
+          "dur_ms": 1800
+        },
+        {
+          "at_ms": 7800,
+          "do": "show",
+          "shape": {
+            "id": "summaryLabel",
+            "kind": "text",
+            "x": 480,
+            "y": 495,
+            "text": "The sawtooth repeats: fall, reorder, wait, delivery, jump.",
+            "size": 15,
+            "color": "#1a1a1a",
+            "explain": "Summary: the sawtooth cycle repeats - stock falls at the usage rate, crossing the reorder level fires an order, stock falls through the lead time to the buffer, and the delivery jumps it back to maximum.",
+            "align": "middle"
+          }
+        }
+      ]
+    }
+  ]
+}
