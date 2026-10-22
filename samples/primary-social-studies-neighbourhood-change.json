@@ -1,0 +1,1229 @@
+{
+  "animath": "0.1",
+  "title": "How a Neighbourhood Changes, Stage by Stage",
+  "level": "primary",
+  "subject": "social-studies",
+  "topic": "neighbourhood-change",
+  "kind": "concept",
+  "canvas": {
+    "width": 960,
+    "height": 540
+  },
+  "scenes": [
+    {
+      "id": "s1",
+      "caption": "Stage 1: the site as found - houses and open ground",
+      "narration": "At the start, this site is a quiet corner of the neighbourhood: a few low-rise houses stand on open ground, and only a few families live here, so the population bar is at its lowest.",
+      "duration_ms": 6500,
+      "steps": [
+        {
+          "at_ms": 0,
+          "do": "show",
+          "shape": {
+            "id": "title",
+            "kind": "text",
+            "x": 480,
+            "y": 34,
+            "text": "How a Neighbourhood Changes: One Site, Stage by Stage",
+            "size": 20,
+            "color": "#1a1a1a",
+            "explain": "Label: How a Neighbourhood Changes: One Site, Stage by Stage",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 150,
+          "do": "show",
+          "shape": {
+            "id": "stage",
+            "kind": "text",
+            "x": 480,
+            "y": 70,
+            "text": "Stage 1: A few houses on open ground",
+            "size": 16,
+            "color": "#1a1a1a",
+            "explain": "Label: Stage 1: A few houses on open ground",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 500,
+          "do": "show",
+          "shape": {
+            "id": "popLabel",
+            "kind": "text",
+            "x": 60,
+            "y": 112,
+            "text": "People living here",
+            "size": 15,
+            "color": "#1a1a1a",
+            "explain": "Label: People living here"
+          }
+        },
+        {
+          "at_ms": 600,
+          "do": "show",
+          "shape": {
+            "id": "popBg",
+            "kind": "rect",
+            "x": 60,
+            "y": 122,
+            "w": 300,
+            "h": 16,
+            "fill": "#dddddd",
+            "explain": "The empty bar: how many people live here, out of the later total."
+          }
+        },
+        {
+          "at_ms": 800,
+          "do": "show",
+          "shape": {
+            "id": "popFill",
+            "kind": "rect",
+            "x": 60,
+            "y": 122,
+            "w": 20,
+            "h": 16,
+            "fill": "#e07b39",
+            "explain": "The population bar: it climbs only when a new stage brings more families in."
+          }
+        },
+        {
+          "at_ms": 950,
+          "do": "show",
+          "shape": {
+            "id": "ground",
+            "kind": "rect",
+            "x": 40,
+            "y": 430,
+            "w": 880,
+            "h": 40,
+            "fill": "#d8bd8a",
+            "explain": "The ground: every stage of the change is built on this same site."
+          }
+        },
+        {
+          "at_ms": 1100,
+          "do": "move",
+          "target": "popFill",
+          "to": {
+            "w": 45
+          },
+          "dur_ms": 900
+        },
+        {
+          "at_ms": 1500,
+          "do": "show",
+          "shape": {
+            "id": "house1roof",
+            "kind": "polygon",
+            "points": [
+              [
+                110,
+                330
+              ],
+              [
+                150,
+                296
+              ],
+              [
+                190,
+                330
+              ]
+            ],
+            "fill": "#8a5a2b",
+            "explain": "A house roof: the first homes here are small low-rise houses."
+          }
+        },
+        {
+          "at_ms": 1700,
+          "do": "show",
+          "shape": {
+            "id": "house1",
+            "kind": "rect",
+            "x": 118,
+            "y": 330,
+            "w": 64,
+            "h": 100,
+            "fill": "#b08954",
+            "explain": "A low-rise house: a few families live on this site at the start."
+          }
+        },
+        {
+          "at_ms": 2100,
+          "do": "show",
+          "shape": {
+            "id": "house2roof",
+            "kind": "polygon",
+            "points": [
+              [
+                240,
+                344
+              ],
+              [
+                272,
+                314
+              ],
+              [
+                304,
+                344
+              ]
+            ],
+            "fill": "#8a5a2b",
+            "explain": "Another house roof: the site starts as a small cluster of houses."
+          }
+        },
+        {
+          "at_ms": 2300,
+          "do": "show",
+          "shape": {
+            "id": "house2",
+            "kind": "rect",
+            "x": 248,
+            "y": 344,
+            "w": 48,
+            "h": 86,
+            "fill": "#b08954",
+            "explain": "A second house: most of the site is still open ground."
+          }
+        },
+        {
+          "at_ms": 2700,
+          "do": "show",
+          "shape": {
+            "id": "grass",
+            "kind": "rect",
+            "x": 420,
+            "y": 398,
+            "w": 260,
+            "h": 30,
+            "fill": "#a8c686",
+            "explain": "The open ground: most of the site is still empty grass, waiting to be built on."
+          }
+        },
+        {
+          "at_ms": 2900,
+          "do": "show",
+          "shape": {
+            "id": "grassLabel",
+            "kind": "text",
+            "x": 420,
+            "y": 388,
+            "text": "Open ground",
+            "size": 14,
+            "color": "#1a1a1a",
+            "explain": "Label: Open ground"
+          }
+        },
+        {
+          "at_ms": 4600,
+          "do": "emphasize",
+          "target": "popFill"
+        },
+        {
+          "at_ms": 5200,
+          "do": "caption",
+          "text": "Only a few families live here - most of the site is open ground"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "caption": "Stage 2: transport arrives first - MRT station and bus stop",
+      "narration": "The first change is transport: an MRT station and a bus stop arrive, so the site is easy to reach. More people can now live and travel here, and the population bar climbs one step.",
+      "duration_ms": 7000,
+      "steps": [
+        {
+          "at_ms": 0,
+          "do": "show",
+          "shape": {
+            "id": "title",
+            "kind": "text",
+            "x": 480,
+            "y": 34,
+            "text": "How a Neighbourhood Changes: One Site, Stage by Stage",
+            "size": 20,
+            "color": "#1a1a1a",
+            "explain": "Label: How a Neighbourhood Changes: One Site, Stage by Stage",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 150,
+          "do": "show",
+          "shape": {
+            "id": "stage",
+            "kind": "text",
+            "x": 480,
+            "y": 70,
+            "text": "Stage 2: Transport arrives first",
+            "size": 16,
+            "color": "#1a1a1a",
+            "explain": "Label: Stage 2: Transport arrives first",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 500,
+          "do": "show",
+          "shape": {
+            "id": "popLabel",
+            "kind": "text",
+            "x": 60,
+            "y": 112,
+            "text": "People living here",
+            "size": 15,
+            "color": "#1a1a1a",
+            "explain": "Label: People living here"
+          }
+        },
+        {
+          "at_ms": 600,
+          "do": "show",
+          "shape": {
+            "id": "popBg",
+            "kind": "rect",
+            "x": 60,
+            "y": 122,
+            "w": 300,
+            "h": 16,
+            "fill": "#dddddd",
+            "explain": "The empty bar: how many people live here, out of the later total."
+          }
+        },
+        {
+          "at_ms": 800,
+          "do": "show",
+          "shape": {
+            "id": "popFill",
+            "kind": "rect",
+            "x": 60,
+            "y": 122,
+            "w": 45,
+            "h": 16,
+            "fill": "#e07b39",
+            "explain": "The population bar: it climbs only when a new stage brings more families in."
+          }
+        },
+        {
+          "at_ms": 950,
+          "do": "show",
+          "shape": {
+            "id": "ground",
+            "kind": "rect",
+            "x": 40,
+            "y": 430,
+            "w": 880,
+            "h": 40,
+            "fill": "#d8bd8a",
+            "explain": "The ground: every stage of the change is built on this same site."
+          }
+        },
+        {
+          "at_ms": 1200,
+          "do": "show",
+          "shape": {
+            "id": "house1roof",
+            "kind": "polygon",
+            "points": [
+              [
+                110,
+                330
+              ],
+              [
+                150,
+                296
+              ],
+              [
+                190,
+                330
+              ]
+            ],
+            "fill": "#8a5a2b",
+            "explain": "A house roof: the first homes here are small low-rise houses."
+          }
+        },
+        {
+          "at_ms": 1400,
+          "do": "show",
+          "shape": {
+            "id": "house1",
+            "kind": "rect",
+            "x": 118,
+            "y": 330,
+            "w": 64,
+            "h": 100,
+            "fill": "#b08954",
+            "explain": "A low-rise house: a few families live on this site at the start."
+          }
+        },
+        {
+          "at_ms": 1700,
+          "do": "show",
+          "shape": {
+            "id": "house2roof",
+            "kind": "polygon",
+            "points": [
+              [
+                240,
+                344
+              ],
+              [
+                272,
+                314
+              ],
+              [
+                304,
+                344
+              ]
+            ],
+            "fill": "#8a5a2b",
+            "explain": "Another house roof: the site starts as a small cluster of houses."
+          }
+        },
+        {
+          "at_ms": 1900,
+          "do": "show",
+          "shape": {
+            "id": "house2",
+            "kind": "rect",
+            "x": 248,
+            "y": 344,
+            "w": 48,
+            "h": 86,
+            "fill": "#b08954",
+            "explain": "A second house: most of the site is still open ground."
+          }
+        },
+        {
+          "at_ms": 2300,
+          "do": "show",
+          "shape": {
+            "id": "road",
+            "kind": "rect",
+            "x": 40,
+            "y": 406,
+            "w": 880,
+            "h": 12,
+            "fill": "#999999",
+            "explain": "The road: buses and cars can now reach the site along it."
+          }
+        },
+        {
+          "at_ms": 2600,
+          "do": "show",
+          "shape": {
+            "id": "station",
+            "kind": "rect",
+            "x": 600,
+            "y": 300,
+            "w": 180,
+            "h": 130,
+            "fill": "#c9d6e8",
+            "explain": "The MRT station: trains connect this site to the rest of Singapore."
+          }
+        },
+        {
+          "at_ms": 2750,
+          "do": "show",
+          "shape": {
+            "id": "stationLabel",
+            "kind": "text",
+            "x": 600,
+            "y": 292,
+            "text": "MRT station",
+            "size": 15,
+            "color": "#1a1a1a",
+            "explain": "Label: MRT station"
+          }
+        },
+        {
+          "at_ms": 3000,
+          "do": "show",
+          "shape": {
+            "id": "train",
+            "kind": "rect",
+            "x": 640,
+            "y": 330,
+            "w": 100,
+            "h": 36,
+            "fill": "#315fd6",
+            "explain": "A train at the station: it carries people to and from the neighbourhood."
+          }
+        },
+        {
+          "at_ms": 3300,
+          "do": "move",
+          "target": "train",
+          "to": {
+            "x": 690
+          },
+          "dur_ms": 1200
+        },
+        {
+          "at_ms": 3900,
+          "do": "show",
+          "shape": {
+            "id": "busPole",
+            "kind": "rect",
+            "x": 420,
+            "y": 360,
+            "w": 14,
+            "h": 70,
+            "fill": "#888888",
+            "explain": "The bus stop pole: buses stop here on their route past the site."
+          }
+        },
+        {
+          "at_ms": 4000,
+          "do": "show",
+          "shape": {
+            "id": "busSign",
+            "kind": "circle",
+            "cx": 427,
+            "cy": 350,
+            "r": 10,
+            "fill": "#e07b39",
+            "explain": "The bus stop sign: it marks where the bus pulls in."
+          }
+        },
+        {
+          "at_ms": 4150,
+          "do": "show",
+          "shape": {
+            "id": "busLabel",
+            "kind": "text",
+            "x": 396,
+            "y": 328,
+            "text": "Bus stop",
+            "size": 14,
+            "color": "#1a1a1a",
+            "explain": "Label: Bus stop"
+          }
+        },
+        {
+          "at_ms": 4600,
+          "do": "move",
+          "target": "popFill",
+          "to": {
+            "w": 110
+          },
+          "dur_ms": 900
+        },
+        {
+          "at_ms": 5500,
+          "do": "emphasize",
+          "target": "station"
+        },
+        {
+          "at_ms": 5900,
+          "do": "caption",
+          "text": "Transport comes first - the station and bus stop arrive"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "caption": "Stage 3: blocks rise, then shops, a market and a school open",
+      "narration": "Housing blocks rise plot by plot on the open ground. As families move into the flats, shops, a market and a school open to serve them, and the population bar climbs again.",
+      "duration_ms": 8000,
+      "steps": [
+        {
+          "at_ms": 0,
+          "do": "show",
+          "shape": {
+            "id": "title",
+            "kind": "text",
+            "x": 480,
+            "y": 34,
+            "text": "How a Neighbourhood Changes: One Site, Stage by Stage",
+            "size": 20,
+            "color": "#1a1a1a",
+            "explain": "Label: How a Neighbourhood Changes: One Site, Stage by Stage",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 150,
+          "do": "show",
+          "shape": {
+            "id": "stage",
+            "kind": "text",
+            "x": 480,
+            "y": 70,
+            "text": "Stage 3: Homes rise, then shops and a school",
+            "size": 16,
+            "color": "#1a1a1a",
+            "explain": "Label: Stage 3: Homes rise, then shops and a school",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 500,
+          "do": "show",
+          "shape": {
+            "id": "popLabel",
+            "kind": "text",
+            "x": 60,
+            "y": 112,
+            "text": "People living here",
+            "size": 15,
+            "color": "#1a1a1a",
+            "explain": "Label: People living here"
+          }
+        },
+        {
+          "at_ms": 600,
+          "do": "show",
+          "shape": {
+            "id": "popBg",
+            "kind": "rect",
+            "x": 60,
+            "y": 122,
+            "w": 300,
+            "h": 16,
+            "fill": "#dddddd",
+            "explain": "The empty bar: how many people live here, out of the later total."
+          }
+        },
+        {
+          "at_ms": 800,
+          "do": "show",
+          "shape": {
+            "id": "popFill",
+            "kind": "rect",
+            "x": 60,
+            "y": 122,
+            "w": 110,
+            "h": 16,
+            "fill": "#e07b39",
+            "explain": "The population bar: it climbs only when a new stage brings more families in."
+          }
+        },
+        {
+          "at_ms": 950,
+          "do": "show",
+          "shape": {
+            "id": "ground",
+            "kind": "rect",
+            "x": 40,
+            "y": 430,
+            "w": 880,
+            "h": 40,
+            "fill": "#d8bd8a",
+            "explain": "The ground: every stage of the change is built on this same site."
+          }
+        },
+        {
+          "at_ms": 1200,
+          "do": "show",
+          "shape": {
+            "id": "road",
+            "kind": "rect",
+            "x": 40,
+            "y": 406,
+            "w": 880,
+            "h": 12,
+            "fill": "#999999",
+            "explain": "The road: it runs past the new blocks, shops and school."
+          }
+        },
+        {
+          "at_ms": 1400,
+          "do": "show",
+          "shape": {
+            "id": "station",
+            "kind": "rect",
+            "x": 700,
+            "y": 300,
+            "w": 180,
+            "h": 130,
+            "fill": "#c9d6e8",
+            "explain": "The MRT station: the transport from the earlier stage is still here, carrying the bigger population."
+          }
+        },
+        {
+          "at_ms": 1550,
+          "do": "show",
+          "shape": {
+            "id": "stationLabel",
+            "kind": "text",
+            "x": 700,
+            "y": 292,
+            "text": "MRT station",
+            "size": 15,
+            "color": "#1a1a1a",
+            "explain": "Label: MRT station"
+          }
+        },
+        {
+          "at_ms": 2000,
+          "do": "show",
+          "shape": {
+            "id": "block1",
+            "kind": "rect",
+            "x": 80,
+            "y": 250,
+            "w": 90,
+            "h": 180,
+            "fill": "#89abff",
+            "explain": "Housing block 1: flats rise on the first plot as more homes are needed."
+          }
+        },
+        {
+          "at_ms": 2400,
+          "do": "show",
+          "shape": {
+            "id": "block2",
+            "kind": "rect",
+            "x": 190,
+            "y": 220,
+            "w": 90,
+            "h": 210,
+            "fill": "#6f97e8",
+            "explain": "Housing block 2: a taller block rises on the next plot, one plot at a time."
+          }
+        },
+        {
+          "at_ms": 2750,
+          "do": "show",
+          "shape": {
+            "id": "flatsLabel",
+            "kind": "text",
+            "x": 80,
+            "y": 240,
+            "text": "New flats",
+            "size": 14,
+            "color": "#1a1a1a",
+            "explain": "Label: New flats"
+          }
+        },
+        {
+          "at_ms": 3100,
+          "do": "show",
+          "shape": {
+            "id": "shop",
+            "kind": "rect",
+            "x": 300,
+            "y": 360,
+            "w": 90,
+            "h": 70,
+            "fill": "#f2d492",
+            "explain": "The shops: small shops open to serve the families who have moved in."
+          }
+        },
+        {
+          "at_ms": 3250,
+          "do": "show",
+          "shape": {
+            "id": "shopLabel",
+            "kind": "text",
+            "x": 300,
+            "y": 352,
+            "text": "Shops",
+            "size": 14,
+            "color": "#1a1a1a",
+            "explain": "Label: Shops"
+          }
+        },
+        {
+          "at_ms": 3600,
+          "do": "show",
+          "shape": {
+            "id": "market",
+            "kind": "rect",
+            "x": 410,
+            "y": 340,
+            "w": 120,
+            "h": 90,
+            "fill": "#a8c686",
+            "explain": "The market: stalls sell fresh food close to the new homes."
+          }
+        },
+        {
+          "at_ms": 3750,
+          "do": "show",
+          "shape": {
+            "id": "marketLabel",
+            "kind": "text",
+            "x": 410,
+            "y": 332,
+            "text": "Market",
+            "size": 14,
+            "color": "#1a1a1a",
+            "explain": "Label: Market"
+          }
+        },
+        {
+          "at_ms": 4100,
+          "do": "show",
+          "shape": {
+            "id": "school",
+            "kind": "rect",
+            "x": 560,
+            "y": 320,
+            "w": 110,
+            "h": 110,
+            "fill": "#e8b4b8",
+            "explain": "The school: it opens so the children of the new families can learn nearby."
+          }
+        },
+        {
+          "at_ms": 4250,
+          "do": "show",
+          "shape": {
+            "id": "schoolLabel",
+            "kind": "text",
+            "x": 560,
+            "y": 312,
+            "text": "School",
+            "size": 14,
+            "color": "#1a1a1a",
+            "explain": "Label: School"
+          }
+        },
+        {
+          "at_ms": 4700,
+          "do": "move",
+          "target": "popFill",
+          "to": {
+            "w": 210
+          },
+          "dur_ms": 900
+        },
+        {
+          "at_ms": 5800,
+          "do": "emphasize",
+          "target": "school"
+        },
+        {
+          "at_ms": 6300,
+          "do": "caption",
+          "text": "Blocks rise plot by plot - then shops, a market and a school open"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "caption": "Stage 4: the wrong turn, corrected - change happens stage by stage",
+      "narration": "The wrong turn is that a neighbourhood changes all at once, with the flats, shops and MRT station appearing in a single step. It is played out and corrected here: everything flashes in together, then the true sequence is replayed - transport first, blocks plot by plot, then shops, market and school as families arrive.",
+      "duration_ms": 8200,
+      "steps": [
+        {
+          "at_ms": 0,
+          "do": "show",
+          "shape": {
+            "id": "title",
+            "kind": "text",
+            "x": 480,
+            "y": 34,
+            "text": "How a Neighbourhood Changes: One Site, Stage by Stage",
+            "size": 20,
+            "color": "#1a1a1a",
+            "explain": "Label: How a Neighbourhood Changes: One Site, Stage by Stage",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 150,
+          "do": "show",
+          "shape": {
+            "id": "stage",
+            "kind": "text",
+            "x": 480,
+            "y": 70,
+            "text": "Stage 4: Not all at once - stage by stage",
+            "size": 16,
+            "color": "#1a1a1a",
+            "explain": "Label: Stage 4: Not all at once - stage by stage",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 500,
+          "do": "show",
+          "shape": {
+            "id": "popLabel",
+            "kind": "text",
+            "x": 60,
+            "y": 112,
+            "text": "People living here",
+            "size": 15,
+            "color": "#1a1a1a",
+            "explain": "Label: People living here"
+          }
+        },
+        {
+          "at_ms": 600,
+          "do": "show",
+          "shape": {
+            "id": "popBg",
+            "kind": "rect",
+            "x": 60,
+            "y": 122,
+            "w": 300,
+            "h": 16,
+            "fill": "#dddddd",
+            "explain": "The empty bar: how many people live here, out of the later total."
+          }
+        },
+        {
+          "at_ms": 800,
+          "do": "show",
+          "shape": {
+            "id": "popFill",
+            "kind": "rect",
+            "x": 60,
+            "y": 122,
+            "w": 20,
+            "h": 16,
+            "fill": "#e07b39",
+            "explain": "The population bar: it climbs only when a new stage brings more families in."
+          }
+        },
+        {
+          "at_ms": 950,
+          "do": "show",
+          "shape": {
+            "id": "ground",
+            "kind": "rect",
+            "x": 40,
+            "y": 430,
+            "w": 880,
+            "h": 40,
+            "fill": "#d8bd8a",
+            "explain": "The ground: every stage of the change is built on this same site."
+          }
+        },
+        {
+          "at_ms": 975,
+          "do": "show",
+          "shape": {
+            "id": "road",
+            "kind": "rect",
+            "x": 40,
+            "y": 406,
+            "w": 880,
+            "h": 12,
+            "fill": "#999999",
+            "explain": "The road: it is part of the finished neighbourhood, but it arrived at its own stage."
+          }
+        },
+        {
+          "at_ms": 1000,
+          "do": "show",
+          "shape": {
+            "id": "block1",
+            "kind": "rect",
+            "x": 80,
+            "y": 250,
+            "w": 90,
+            "h": 180,
+            "fill": "#89abff",
+            "explain": "Housing block 1: flats rise on the first plot as more homes are needed."
+          }
+        },
+        {
+          "at_ms": 1000,
+          "do": "show",
+          "shape": {
+            "id": "block2",
+            "kind": "rect",
+            "x": 190,
+            "y": 220,
+            "w": 90,
+            "h": 210,
+            "fill": "#6f97e8",
+            "explain": "Housing block 2: a taller block rises on the next plot, one plot at a time."
+          }
+        },
+        {
+          "at_ms": 1000,
+          "do": "show",
+          "shape": {
+            "id": "station",
+            "kind": "rect",
+            "x": 700,
+            "y": 300,
+            "w": 180,
+            "h": 130,
+            "fill": "#c9d6e8",
+            "explain": "The MRT station: the transport from the earlier stage is still here, carrying the bigger population."
+          }
+        },
+        {
+          "at_ms": 1000,
+          "do": "show",
+          "shape": {
+            "id": "shop",
+            "kind": "rect",
+            "x": 300,
+            "y": 360,
+            "w": 90,
+            "h": 70,
+            "fill": "#f2d492",
+            "explain": "The shops: small shops open to serve the families who have moved in."
+          }
+        },
+        {
+          "at_ms": 1000,
+          "do": "show",
+          "shape": {
+            "id": "market",
+            "kind": "rect",
+            "x": 410,
+            "y": 340,
+            "w": 120,
+            "h": 90,
+            "fill": "#a8c686",
+            "explain": "The market: stalls sell fresh food close to the new homes."
+          }
+        },
+        {
+          "at_ms": 1000,
+          "do": "show",
+          "shape": {
+            "id": "school",
+            "kind": "rect",
+            "x": 560,
+            "y": 320,
+            "w": 110,
+            "h": 110,
+            "fill": "#e8b4b8",
+            "explain": "The school: it opens so the children of the new families can learn nearby."
+          }
+        },
+        {
+          "at_ms": 1000,
+          "do": "move",
+          "target": "popFill",
+          "to": {
+            "w": 300
+          },
+          "dur_ms": 300
+        },
+        {
+          "at_ms": 1500,
+          "do": "show",
+          "shape": {
+            "id": "wrongNote",
+            "kind": "text",
+            "x": 60,
+            "y": 490,
+            "text": "Wrong turn: did it all appear at once?",
+            "size": 15,
+            "color": "#1a1a1a",
+            "explain": "Label: Wrong turn: did it all appear at once?"
+          }
+        },
+        {
+          "at_ms": 2500,
+          "do": "hide",
+          "target": "block1"
+        },
+        {
+          "at_ms": 2550,
+          "do": "hide",
+          "target": "block2"
+        },
+        {
+          "at_ms": 2600,
+          "do": "hide",
+          "target": "station"
+        },
+        {
+          "at_ms": 2650,
+          "do": "hide",
+          "target": "shop"
+        },
+        {
+          "at_ms": 2700,
+          "do": "hide",
+          "target": "market"
+        },
+        {
+          "at_ms": 2750,
+          "do": "hide",
+          "target": "school"
+        },
+        {
+          "at_ms": 2800,
+          "do": "hide",
+          "target": "wrongNote"
+        },
+        {
+          "at_ms": 2850,
+          "do": "move",
+          "target": "popFill",
+          "to": {
+            "w": 20
+          },
+          "dur_ms": 300
+        },
+        {
+          "at_ms": 3200,
+          "do": "show",
+          "shape": {
+            "id": "replayNote",
+            "kind": "text",
+            "x": 60,
+            "y": 490,
+            "text": "Corrected: it changed stage by stage",
+            "size": 15,
+            "color": "#1a1a1a",
+            "explain": "Label: Corrected: it changed stage by stage"
+          }
+        },
+        {
+          "at_ms": 3500,
+          "do": "show",
+          "shape": {
+            "id": "stationR",
+            "kind": "rect",
+            "x": 700,
+            "y": 300,
+            "w": 180,
+            "h": 130,
+            "fill": "#c9d6e8",
+            "explain": "The MRT station: the transport from the earlier stage is still here, carrying the bigger population."
+          }
+        },
+        {
+          "at_ms": 3650,
+          "do": "show",
+          "shape": {
+            "id": "stationLabel",
+            "kind": "text",
+            "x": 700,
+            "y": 292,
+            "text": "MRT station",
+            "size": 15,
+            "color": "#1a1a1a",
+            "explain": "Label: MRT station"
+          }
+        },
+        {
+          "at_ms": 3900,
+          "do": "move",
+          "target": "popFill",
+          "to": {
+            "w": 110
+          },
+          "dur_ms": 800
+        },
+        {
+          "at_ms": 4400,
+          "do": "show",
+          "shape": {
+            "id": "block1R",
+            "kind": "rect",
+            "x": 80,
+            "y": 250,
+            "w": 90,
+            "h": 180,
+            "fill": "#89abff",
+            "explain": "Housing block 1: flats rise on the first plot as more homes are needed."
+          }
+        },
+        {
+          "at_ms": 4700,
+          "do": "show",
+          "shape": {
+            "id": "block2R",
+            "kind": "rect",
+            "x": 190,
+            "y": 220,
+            "w": 90,
+            "h": 210,
+            "fill": "#6f97e8",
+            "explain": "Housing block 2: a taller block rises on the next plot, one plot at a time."
+          }
+        },
+        {
+          "at_ms": 4950,
+          "do": "show",
+          "shape": {
+            "id": "flatsLabel",
+            "kind": "text",
+            "x": 80,
+            "y": 240,
+            "text": "New flats",
+            "size": 14,
+            "color": "#1a1a1a",
+            "explain": "Label: New flats"
+          }
+        },
+        {
+          "at_ms": 5100,
+          "do": "move",
+          "target": "popFill",
+          "to": {
+            "w": 190
+          },
+          "dur_ms": 800
+        },
+        {
+          "at_ms": 5500,
+          "do": "show",
+          "shape": {
+            "id": "shopR",
+            "kind": "rect",
+            "x": 300,
+            "y": 360,
+            "w": 90,
+            "h": 70,
+            "fill": "#f2d492",
+            "explain": "The shops: small shops open to serve the families who have moved in."
+          }
+        },
+        {
+          "at_ms": 5800,
+          "do": "show",
+          "shape": {
+            "id": "marketR",
+            "kind": "rect",
+            "x": 410,
+            "y": 340,
+            "w": 120,
+            "h": 90,
+            "fill": "#a8c686",
+            "explain": "The market: stalls sell fresh food close to the new homes."
+          }
+        },
+        {
+          "at_ms": 6100,
+          "do": "show",
+          "shape": {
+            "id": "schoolR",
+            "kind": "rect",
+            "x": 560,
+            "y": 320,
+            "w": 110,
+            "h": 110,
+            "fill": "#e8b4b8",
+            "explain": "The school: it opens so the children of the new families can learn nearby."
+          }
+        },
+        {
+          "at_ms": 6400,
+          "do": "move",
+          "target": "popFill",
+          "to": {
+            "w": 280
+          },
+          "dur_ms": 800
+        },
+        {
+          "at_ms": 7000,
+          "do": "emphasize",
+          "target": "schoolR"
+        },
+        {
+          "at_ms": 7400,
+          "do": "caption",
+          "text": "Change happens stage by stage - transport, homes, then shops and school"
+        }
+      ]
+    }
+  ]
+}

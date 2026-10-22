@@ -48,6 +48,7 @@ MOE syllabus bands: Primary (PSLE), Secondary (O/N-level), Junior College
 |---|---|
 | `landscape-change` | Singapore's landscape changing over time (MOE Primary Social Studies, Understanding Singapore in the Past and Present): one coastal site at the Singapore River mouth transforming stage by stage - a fishing village of huts and small boats becomes a trading port with godowns, a jetty and larger ships as trade grows, then a modern city with tall buildings, roads and container ships - buildings rise, vessel types change and the population bar climbs at every stage |
 | `water-supply` | Singapore's water supply (MOE Primary Social Studies): one body of water moving through the supply chain stage by stage - rain is collected in a reservoir, raw water is drawn off to the treatment works, treatment stages remove dirt and germs one stage at a time so a cleanliness bar climbs at every stage, and the cleaned water is stored and piped to home taps |
+| `neighbourhood-change` | How a Singapore neighbourhood changes over time (MOE Primary Social Studies, Understanding Singapore in the Past and Present): one neighbourhood site transforming stage by stage - a small area of low-rise houses and open ground first gains transport links as an MRT station and bus stop arrive, then housing blocks rise plot by plot, and shops, a market and a school open as families move in - the population bar climbs at every stage |
 
 ## Secondary — Mathematics
 

@@ -606,6 +606,12 @@
       why: 'Rain looks clean as it falls and reservoir water looks clear in photographs, so it is easy to assume collected water is already safe to drink with no further steps.',
       correctTurn: 'Collected water is raw water, not tap water: it is drawn from the reservoir to the treatment works, where treatment stages remove dirt and germs step by step, and only the cleaned water is stored and piped to home taps.'
     },
+    // Slice 1 (issue #1203): Primary Social Studies neighbourhood change.
+    'neighbourhood-change': {
+      wrongTurn: 'A neighbourhood changes all at once, because the new flats, shops and MRT station all appear in a single step.',
+      why: 'Before-and-after photographs of a neighbourhood look completely different, so it is easy to imagine the old houses were swept away and the flats, shops and station put in their place overnight.',
+      correctTurn: 'A neighbourhood changes stage by stage: transport links arrive first as the MRT station and bus stop open, housing blocks then rise plot by plot, and only as families move in do the shops, market and school open - the population grows at every stage, not in one jump.'
+    },
     // Slice 1 (issue #1193): JC H2 China Studies in English 9628.
     'urbanisation': {
       wrongTurn: 'A Chinese city becomes urban in one sudden leap, because its farmland is replaced by built-up districts all at once.',
