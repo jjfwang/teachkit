@@ -1691,6 +1691,24 @@
     <li><code>script</code> teacher script</li>
   </ul>
 </header>
+<header class="pack-manifest" id="urbanisation-jc-manifest">
+  <h1>Lesson pack: JC China Studies urbanisation: Urbanisation: One Chinese City Changes Across the Decades</h1>
+  <dl>
+    <dt>Slug</dt><dd><code>urbanisation-jc-china-studies</code></dd>
+    <dt>Level</dt><dd>jc</dd>
+    <dt>Subject</dt><dd>china-studies</dd>
+    <dt>Topic</dt><dd><code>urbanisation</code></dd>
+  </dl>
+  <p>topic urbanisation · level jc · subject china-studies · deck jc-china-studies-urbanisation</p>
+  <ul class="pack-materials">
+    <li><code>animation</code></li>
+    <li><code>slides</code></li>
+    <li><code>worksheet</code></li>
+    <li><code>exitTicket</code> exit ticket</li>
+    <li><code>notes</code> student notes</li>
+    <li><code>script</code> teacher script</li>
+  </ul>
+</header>
 <section class="pack-section" id="animation-section">
   <h2>Animation</h2>
   <div id="anim-stage"></div>
@@ -2885,6 +2903,19 @@
   <h2>Secondary Design Studies ergonomic-dimensions printables</h2>
   <div id="ergonomic-dimensions-secondary-printables-stage"></div>
 </section>
+<section class="pack-section" id="urbanisation-jc-animation">
+  <h2>JC China Studies urbanisation animation</h2>
+  <div id="urbanisation-jc-stage"></div>
+  <div id="urbanisation-jc-captions"></div>
+</section>
+<section class="pack-section" id="urbanisation-jc-slides">
+  <h2>JC China Studies urbanisation slides</h2>
+  <div id="urbanisation-jc-slides-stage"></div>
+</section>
+<section class="pack-section" id="urbanisation-jc-printables">
+  <h2>JC China Studies urbanisation printables</h2>
+  <div id="urbanisation-jc-printables-stage"></div>
+</section>
 <div id="err"></div>
 <script src="validate.js"></script>
 <script src="player.js"></script>
@@ -3001,8 +3032,9 @@ var globalisationSupplyChainSecondaryPrintStage = document.querySelector('#globa
 var fermentationSecondaryPrintStage = document.querySelector('#fermentation-secondary-printables-stage .pr-stage') || document.querySelector('#fermentation-secondary-printables-stage');
 var landscapeChangePrimaryPrintStage = document.querySelector('#landscape-change-primary-printables-stage .pr-stage') || document.querySelector('#landscape-change-primary-printables-stage');
 var ergonomicDimensionsSecondaryPrintStage = document.querySelector('#ergonomic-dimensions-secondary-printables-stage .pr-stage') || document.querySelector('#ergonomic-dimensions-secondary-printables-stage');
+var urbanisationJcPrintStage = document.querySelector('#urbanisation-jc-printables-stage .pr-stage') || document.querySelector('#urbanisation-jc-printables-stage');
     var keys = [];
-    [printStage, fractionsPrintStage, wavesPrintStage, complexPrintStage, trigPrintStage, thermalPrintStage, photosynthesisPrintStage, erosionPrintStage, chemMolePrintStage, differentiationPrintStage, integrationPrintStage, binomialPrintStage, kinematicsPrintStage, quadraticPrintStage, trigonometryAPrintStage, vectorsPrintStage, functionsGraphsPrintStage, sequencesPrintStage, differentiationJcPrintStage, integrationJcPrintStage, probabilityJcPrintStage, statisticsJcPrintStage, mechanicsJcPrintStage, emJcPrintStage, quantumJcPrintStage, physicalJcPrintStage, inorganicJcPrintStage, organicJcPrintStage, cellBioJcPrintStage, geneticsJcPrintStage, energeticsJcPrintStage, ecologyJcPrintStage, wholeNumbersPrimaryPrintStage, decimalsPrimaryPrintStage, percentagePrimaryPrintStage, ratioPrimaryPrintStage, rateSpeedPrimaryPrintStage, algebraIntroPrimaryPrintStage, geometryAnglesPrimaryPrintStage, areaPerimeterPrimaryPrintStage, volumePrimaryPrintStage, dataGraphsPrimaryPrintStage, modelMethodPrimaryPrintStage, humanBodySystemsPrimaryPrintStage, plantSystemsPrimaryPrintStage, lifeCyclesPrimaryPrintStage, energyFormsPrimaryPrintStage, photosynthesisPrimaryPrintStage, forcesMagnetsPrimaryPrintStage, adaptationsPrimaryPrintStage, plateTectonicsPrimaryPrintStage, weatherClimatePrimaryPrintStage, eNumbersSecondaryPrintStage, eAlgebraSecondaryPrintStage, eFunctionsGraphsSecondaryPrintStage, eGeometrySecondaryPrintStage, eMensurationSecondaryPrintStage, eStatisticsSecondaryPrintStage, eProbabilitySecondaryPrintStage, physKinematicsSecondaryPrintStage, physForcesSecondaryPrintStage, physEnergySecondaryPrintStage, physElectricitySecondaryPrintStage, chemAtomicSecondaryPrintStage, chemBondingSecondaryPrintStage, chemAcidsSecondaryPrintStage, bioCellsSecondaryPrintStage, bioTransportSecondaryPrintStage, bioReproductionSecondaryPrintStage, bioEcologySecondaryPrintStage, bioNutritionDigestionSecondaryPrintStage, tectonicsSubductionSecondaryPrintStage, demandSupplyEquilibriumSecondaryPrintStage, logicGatesSecondaryPrintStage, multiplierProcessJcPrintStage, logisticGrowthJcPrintStage, maclaurinSeriesJcPrintStage, sensorDividerSecondaryPrintStage, vacuumFormingSecondaryPrintStage, proteinDenaturationSecondaryPrintStage, doubleEntrySecondaryPrintStage, breakEvenSecondaryPrintStage, energySystemsSecondaryPrintStage, drainageBasinJcPrintStage, recursionJcPrintStage, absorptionMarginalCostingJcPrintStage, inventoryControlJcPrintStage, oilShockJcPrintStage, decolonisationChainSecondaryPrintStage, globalisationSupplyChainSecondaryPrintStage, fermentationSecondaryPrintStage, landscapeChangePrimaryPrintStage, ergonomicDimensionsSecondaryPrintStage].forEach(function (stage) {
+    [printStage, fractionsPrintStage, wavesPrintStage, complexPrintStage, trigPrintStage, thermalPrintStage, photosynthesisPrintStage, erosionPrintStage, chemMolePrintStage, differentiationPrintStage, integrationPrintStage, binomialPrintStage, kinematicsPrintStage, quadraticPrintStage, trigonometryAPrintStage, vectorsPrintStage, functionsGraphsPrintStage, sequencesPrintStage, differentiationJcPrintStage, integrationJcPrintStage, probabilityJcPrintStage, statisticsJcPrintStage, mechanicsJcPrintStage, emJcPrintStage, quantumJcPrintStage, physicalJcPrintStage, inorganicJcPrintStage, organicJcPrintStage, cellBioJcPrintStage, geneticsJcPrintStage, energeticsJcPrintStage, ecologyJcPrintStage, wholeNumbersPrimaryPrintStage, decimalsPrimaryPrintStage, percentagePrimaryPrintStage, ratioPrimaryPrintStage, rateSpeedPrimaryPrintStage, algebraIntroPrimaryPrintStage, geometryAnglesPrimaryPrintStage, areaPerimeterPrimaryPrintStage, volumePrimaryPrintStage, dataGraphsPrimaryPrintStage, modelMethodPrimaryPrintStage, humanBodySystemsPrimaryPrintStage, plantSystemsPrimaryPrintStage, lifeCyclesPrimaryPrintStage, energyFormsPrimaryPrintStage, photosynthesisPrimaryPrintStage, forcesMagnetsPrimaryPrintStage, adaptationsPrimaryPrintStage, plateTectonicsPrimaryPrintStage, weatherClimatePrimaryPrintStage, eNumbersSecondaryPrintStage, eAlgebraSecondaryPrintStage, eFunctionsGraphsSecondaryPrintStage, eGeometrySecondaryPrintStage, eMensurationSecondaryPrintStage, eStatisticsSecondaryPrintStage, eProbabilitySecondaryPrintStage, physKinematicsSecondaryPrintStage, physForcesSecondaryPrintStage, physEnergySecondaryPrintStage, physElectricitySecondaryPrintStage, chemAtomicSecondaryPrintStage, chemBondingSecondaryPrintStage, chemAcidsSecondaryPrintStage, bioCellsSecondaryPrintStage, bioTransportSecondaryPrintStage, bioReproductionSecondaryPrintStage, bioEcologySecondaryPrintStage, bioNutritionDigestionSecondaryPrintStage, tectonicsSubductionSecondaryPrintStage, demandSupplyEquilibriumSecondaryPrintStage, logicGatesSecondaryPrintStage, multiplierProcessJcPrintStage, logisticGrowthJcPrintStage, maclaurinSeriesJcPrintStage, sensorDividerSecondaryPrintStage, vacuumFormingSecondaryPrintStage, proteinDenaturationSecondaryPrintStage, doubleEntrySecondaryPrintStage, breakEvenSecondaryPrintStage, energySystemsSecondaryPrintStage, drainageBasinJcPrintStage, recursionJcPrintStage, absorptionMarginalCostingJcPrintStage, inventoryControlJcPrintStage, oilShockJcPrintStage, decolonisationChainSecondaryPrintStage, globalisationSupplyChainSecondaryPrintStage, fermentationSecondaryPrintStage, landscapeChangePrimaryPrintStage, ergonomicDimensionsSecondaryPrintStage, urbanisationJcPrintStage].forEach(function (stage) {
       if (stage) {
         keys = keys.concat(Array.prototype.slice.call(stage.querySelectorAll('.pr-teacher')));
       }
@@ -9738,6 +9770,79 @@ var ergonomicDimensionsSecondaryPrintStage = document.querySelector('#ergonomic-
     ].join('');
   }).catch(function (err) {
     showError('Secondary Design Studies ergonomic-dimensions pack failed to load: ' + err.message);
+  });
+})();
+
+<script>
+(function () {
+  var presenter = document.getElementById('urbanisation-jc-slides-stage');
+  var urbanisationJcPrint = document.getElementById('urbanisation-jc-printables-stage');
+  var errBox = document.getElementById('err');
+  var urbanisationJcAnimUrl = '../samples/jc-china-studies-urbanisation.json';
+  var urbanisationJcDeckUrl = '../samples/decks/jc-china-studies-urbanisation.json';
+  var urbanisationJcWorksheetUrl = '../samples/worksheets/jc-china-studies-urbanisation.json';
+  var urbanisationJcTicketUrl = '../samples/tickets/jc-china-studies-urbanisation.json';
+  var urbanisationJcNotesUrl = '../samples/notes/jc-china-studies-urbanisation.json';
+  var urbanisationJcScriptUrl = '../samples/scripts/jc-china-studies-urbanisation.json';
+
+  function showError(msg) {
+    errBox.textContent = String(msg);
+  }
+
+  Promise.all([
+    fetch(urbanisationJcAnimUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + urbanisationJcAnimUrl);
+      return r.json();
+    }),
+    fetch(urbanisationJcDeckUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + urbanisationJcDeckUrl);
+      return r.json();
+    }),
+    fetch(urbanisationJcWorksheetUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + urbanisationJcWorksheetUrl);
+      return r.json();
+    }),
+    fetch(urbanisationJcTicketUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + urbanisationJcTicketUrl);
+      return r.json();
+    }),
+    fetch(urbanisationJcNotesUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + urbanisationJcNotesUrl);
+      return r.json();
+    }),
+    fetch(urbanisationJcScriptUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + urbanisationJcScriptUrl);
+      return r.json();
+    })
+  ]).then(function (pack) {
+    var anim = pack[0];
+    var deck = pack[1];
+    var worksheet = pack[2];
+    var ticket = pack[3];
+    var notes = pack[4];
+    var script = pack[5];
+    var problems = AnimathValidate.validateSpec(anim)
+      .concat(AnimathValidate.validateSlides(deck))
+      .concat(AnimathValidate.validateWorksheet(worksheet))
+      .concat(AnimathValidate.validateExitTicket(ticket))
+      .concat(AnimathValidate.validateNotes(notes))
+      .concat(AnimathValidate.validateScript(script));
+    if (problems.length) {
+      showError('JC China Studies urbanisation pack failed validation:\\n' + problems.join('\\n'));
+      return;
+    }
+    AnimathPlayer.mount(document.getElementById('urbanisation-jc-stage'), anim, { autoplay: false });
+    AnimathSlidesPresenter.attachPresenter(document, presenter, deck, { animSpec: anim });
+    urbanisationJcPrint.innerHTML = [
+      AnimathPrintable.renderWorksheet(worksheet),
+      AnimathPrintable.renderWorksheetAnswerKey(worksheet),
+      AnimathPrintable.renderExitTicket(ticket),
+      AnimathPrintable.renderExitTicketAnswerKey(ticket),
+      AnimathPrintable.renderNotes(notes),
+      AnimathPrintable.renderScript(script)
+    ].join('');
+  }).catch(function (err) {
+    showError('JC China Studies urbanisation pack failed to load: ' + err.message);
   });
 })();
 
