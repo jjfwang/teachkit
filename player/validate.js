@@ -714,7 +714,57 @@
     return errors;
   }
 
-  return { validateSpec: validateSpec, validateSlides: validateSlides, validateWorksheet: validateWorksheet, validateExitTicket: validateExitTicket, validateNotes: validateNotes, validateScript: validateScript, validateLessonPlan: validateLessonPlan, SUBJECTS: SUBJECTS };
+  // Pack metadata validator (SPEC.md "Lesson pack spec", issue #1221):
+  // the transparency block every generated pack manifest carries -- the
+  // syllabus mapping recorded as facts, the AI-generated label, the
+  // review sign-off (null until signed) and the moderation state.
+  function checkCodeList(list, errors, p) {
+    if (!Array.isArray(list)) { errors.push(p + ': required array'); return; }
+    list.forEach(function (entry, i) {
+      var q = p + '[' + i + ']';
+      if (!entry || typeof entry !== 'object' || Array.isArray(entry)) {
+        errors.push(q + ': must be an object');
+        return;
+      }
+      if (typeof entry.code !== 'string' || !entry.code.trim()) errors.push(q + '.code: required non-empty string');
+      if (typeof entry.title !== 'string' || !entry.title.trim()) errors.push(q + '.title: required non-empty string');
+    });
+  }
+
+  var MODERATION_STATES = ['unreviewed', 'in-moderation', 'approved', 'rejected'];
+
+  function validatePackMetadata(metadata) {
+    var errors = [];
+    if (!metadata || typeof metadata !== 'object' || Array.isArray(metadata)) return ['metadata: must be an object'];
+    if (metadata.syllabusYear !== null && (!isNum(metadata.syllabusYear) || Math.floor(metadata.syllabusYear) !== metadata.syllabusYear || metadata.syllabusYear <= 0)) {
+      errors.push('metadata.syllabusYear: must be null or a positive integer year');
+    }
+    checkCodeList(metadata.outcomeCodes, errors, 'metadata.outcomeCodes');
+    checkCodeList(metadata.assessmentObjectives, errors, 'metadata.assessmentObjectives');
+    if (!metadata.aiGenerated || typeof metadata.aiGenerated !== 'object' || Array.isArray(metadata.aiGenerated)) {
+      errors.push('metadata.aiGenerated: must be an object');
+    } else {
+      if (typeof metadata.aiGenerated.label !== 'string' || !metadata.aiGenerated.label.trim()) errors.push('metadata.aiGenerated.label: required non-empty string');
+      if (typeof metadata.aiGenerated.model !== 'string' || !metadata.aiGenerated.model.trim()) errors.push('metadata.aiGenerated.model: required non-empty string');
+      if (typeof metadata.aiGenerated.generatorVersion !== 'string' || !metadata.aiGenerated.generatorVersion.trim()) errors.push('metadata.aiGenerated.generatorVersion: required non-empty string');
+    }
+    if (metadata.review !== null) {
+      if (!metadata.review || typeof metadata.review !== 'object' || Array.isArray(metadata.review)) {
+        errors.push('metadata.review: must be null or an object');
+      } else {
+        if (typeof metadata.review.reviewer !== 'string' || !metadata.review.reviewer.trim()) errors.push('metadata.review.reviewer: required non-empty string');
+        if (typeof metadata.review.reviewDate !== 'string' || !metadata.review.reviewDate.trim()) errors.push('metadata.review.reviewDate: required non-empty string');
+      }
+    }
+    if (!metadata.moderation || typeof metadata.moderation !== 'object' || Array.isArray(metadata.moderation)) {
+      errors.push('metadata.moderation: must be an object');
+    } else if (MODERATION_STATES.indexOf(metadata.moderation.state) === -1) {
+      errors.push('metadata.moderation.state: must be one of ' + MODERATION_STATES.join('|'));
+    }
+    return errors;
+  }
+
+  return { validateSpec: validateSpec, validateSlides: validateSlides, validateWorksheet: validateWorksheet, validateExitTicket: validateExitTicket, validateNotes: validateNotes, validateScript: validateScript, validateLessonPlan: validateLessonPlan, validatePackMetadata: validatePackMetadata, SUBJECTS: SUBJECTS };
 });
 
 /* ------------------------------------------------------------------

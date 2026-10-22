@@ -4,6 +4,19 @@
 export interface SyllabusTopic {
   slug: string;
   label: string;
+  /** Pack-metadata facts (issue #1221); present on gate topics only. */
+  syllabusYear?: number;
+  outcomeCodes?: SyllabusCode[];
+  assessmentObjectives?: SyllabusCode[];
+}
+export interface SyllabusCode {
+  code: string;
+  title: string;
+}
+export interface SyllabusTopicFacts {
+  syllabusYear: number | null;
+  outcomeCodes: SyllabusCode[];
+  assessmentObjectives: SyllabusCode[];
 }
 export interface SyllabusTrack {
   id: string;
@@ -37,3 +50,13 @@ export function resolveSyllabusTopic(
   id: string,
   data?: SyllabusData
 ): ResolvedSyllabusTopic;
+/**
+ * The pack-metadata facts recorded for a syllabus topic (issue #1221):
+ * resolves id exactly like resolveSyllabusTopic (throwing on unknown,
+ * malformed, or ambiguous ids) and returns fresh copies, with null /
+ * empty defaults for topics carrying no recorded facts yet.
+ */
+export function topicFacts(
+  id: string,
+  data?: SyllabusData
+): SyllabusTopicFacts;
