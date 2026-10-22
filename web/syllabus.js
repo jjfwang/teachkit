@@ -236,6 +236,11 @@ window.ANIMATH_SYLLABUS = {
           id: 'h2-history', label: 'H2 History', subject: 'history', topics: [
             { slug: 'oil-shock', label: 'Oil shock' }
           ]
+        },
+        {
+          id: 'h2-china-studies', label: 'H2 China Studies', subject: 'china-studies', topics: [
+            { slug: 'urbanisation', label: 'Urbanisation' }
+          ]
         }
       ]
     }
