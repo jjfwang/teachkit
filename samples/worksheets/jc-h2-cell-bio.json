@@ -17,6 +17,7 @@
           "text": "Plant cells have mitochondria only in their roots"
         }
       ],
+      "difficulty": 1,
       "explanation": "The trap claim is: Plant cells have no mitochondria. Plant cells respire too, day and night: they have mitochondria as well - only the chloroplast is plant-only. Chloroplasts trap light energy in photosynthesis, but respiration in mitochondria is what releases that energy for cell activities, in plant and animal cells alike.",
       "id": "q1",
       "kind": "multiple-choice",
@@ -34,7 +35,9 @@
       },
       "marks": 1,
       "misconception": "Plant cells have no mitochondria.",
-      "prompt": "A student claims plant cells do not need mitochondria because they have chloroplasts. What is correct?"
+      "objective": "o5",
+      "prompt": "A student claims plant cells do not need mitochondria because they have chloroplasts. What is correct?",
+      "tier": "support"
     },
     {
       "choices": [
@@ -52,6 +55,7 @@
           "text": "The emulsion test turns milky white"
         }
       ],
+      "difficulty": 2,
       "explanation": "Benedict's test is the reducing-sugar test and it must be heated: blue to brick-red is positive, as in scene s6. Iodine tests for starch, Biuret for protein, and the emulsion test for lipid.",
       "id": "q2",
       "kind": "multiple-choice",
@@ -65,10 +69,13 @@
         ]
       },
       "marks": 1,
-      "prompt": "Which test and colour change shows that a sample contains reducing sugar?"
+      "objective": "o4",
+      "prompt": "Which test and colour change shows that a sample contains reducing sugar?",
+      "tier": "core"
     },
     {
       "answer": "Chloroplasts trap light energy to make sugar in photosynthesis; mitochondria release energy from that sugar as ATP in aerobic respiration, which continues day and night.",
+      "difficulty": 3,
       "explanation": "The two organelles do different jobs: grana and stroma in the chloroplast build sugar (scene s4), cristae in the mitochondrion release its energy (scene s3). One does not replace the other.",
       "id": "q3",
       "kind": "short-answer",
@@ -86,11 +93,14 @@
         ]
       },
       "marks": 3,
+      "objective": "o2",
       "prompt": "A leaf cell contains both chloroplasts and mitochondria. Explain, in terms of photosynthesis and respiration, why it needs both.",
+      "tier": "core",
       "workedSolution": "Chloroplasts trap light energy to make sugar in photosynthesis; mitochondria release energy from that sugar as ATP in aerobic respiration, which continues day and night."
     },
     {
       "answer": "A phospholipid bilayer with hydrophilic heads facing outward and hydrophobic tails inside, with proteins drifting through it; channel proteins allow only selected substances to cross.",
+      "difficulty": 3,
       "explanation": "Scene s1 shows heads facing water, tails hidden inside, and a channel protein spanning the membrane: small selected substances pass through channels while others are kept out.",
       "id": "q4",
       "kind": "short-answer",
@@ -108,7 +118,9 @@
         ]
       },
       "marks": 3,
+      "objective": "o1",
       "prompt": "Describe the structure of the cell membrane in the fluid mosaic model and explain how that structure makes it selectively permeable.",
+      "tier": "core",
       "workedSolution": "A phospholipid bilayer with hydrophilic heads facing outward and hydrophobic tails inside, with proteins drifting through it; channel proteins allow only selected substances to cross."
     },
     {
@@ -127,6 +139,7 @@
           "text": "Chloroplast stroma - the light-dependent stage of photosynthesis"
         }
       ],
+      "difficulty": 1,
       "explanation": "Scene s5 shows the export line: rough ER folds proteins, smooth ER makes lipids, and the Golgi body modifies, packages and ships them. The light-dependent stage is on the grana, not in the stroma.",
       "id": "q5",
       "kind": "multiple-choice",
@@ -140,7 +153,310 @@
         ]
       },
       "marks": 1,
-      "prompt": "Which pairing of organelle and function is correct?"
+      "objective": "o1",
+      "prompt": "Which pairing of organelle and function is correct?",
+      "tier": "support"
+    },
+    {
+      "choices": [
+        {
+          "correct": true,
+          "text": "Mitochondrion"
+        },
+        {
+          "text": "Chloroplast"
+        },
+        {
+          "text": "Nucleus"
+        },
+        {
+          "text": "Golgi apparatus"
+        }
+      ],
+      "difficulty": 1,
+      "explanation": "Respiration happens in mitochondria in every eukaryotic cell; chloroplasts only capture light energy in photosynthesis.",
+      "id": "q6",
+      "kind": "multiple-choice",
+      "markScheme": {
+        "ecf": false,
+        "points": [
+          {
+            "marks": 1,
+            "text": "Chooses 'Mitochondrion'"
+          }
+        ]
+      },
+      "marks": 1,
+      "objective": "o2",
+      "prompt": "Which organelle releases energy from glucose during respiration in both plant and animal cells?",
+      "tier": "support"
+    },
+    {
+      "choices": [
+        {
+          "correct": true,
+          "text": "Golgi apparatus"
+        },
+        {
+          "text": "Nucleus"
+        },
+        {
+          "text": "Mitochondrion"
+        },
+        {
+          "text": "Vacuole"
+        }
+      ],
+      "difficulty": 1,
+      "explanation": "Vesicles carry the new protein from the rough ER to the Golgi apparatus, which modifies, packages and labels it for its destination.",
+      "id": "q7",
+      "kind": "multiple-choice",
+      "markScheme": {
+        "ecf": false,
+        "points": [
+          {
+            "marks": 1,
+            "text": "Chooses 'Golgi apparatus'"
+          }
+        ]
+      },
+      "marks": 1,
+      "objective": "o3",
+      "prompt": "A protein is made on ribosomes attached to the rough endoplasmic reticulum. To which structure is it transported next for modification and packaging?",
+      "tier": "support"
+    },
+    {
+      "choices": [
+        {
+          "correct": true,
+          "text": "Biuret test"
+        },
+        {
+          "text": "Benedict's test"
+        },
+        {
+          "text": "Iodine test"
+        },
+        {
+          "text": "Ethanol emulsion test"
+        }
+      ],
+      "difficulty": 1,
+      "explanation": "Biuret reagent turns from blue to purple in the presence of protein (peptide bonds). Benedict's tests reducing sugars, iodine tests starch, and the emulsion test detects fats.",
+      "id": "q8",
+      "kind": "multiple-choice",
+      "markScheme": {
+        "ecf": false,
+        "points": [
+          {
+            "marks": 1,
+            "text": "Chooses 'Biuret test'"
+          }
+        ]
+      },
+      "marks": 1,
+      "objective": "o4",
+      "prompt": "Which test shows that a food sample contains protein?",
+      "tier": "support"
+    },
+    {
+      "answer": "The root hair cell respires glucose in its mitochondria to release energy (ATP). This shows plant cells contain mitochondria whether or not they photosynthesise - every living plant cell must respire.",
+      "difficulty": 2,
+      "explanation": "Chloroplasts are only for capturing light energy; energy release from glucose is respiration, which happens in mitochondria in all plant cells, including non-photosynthetic ones like root hair cells.",
+      "id": "q9",
+      "kind": "short-answer",
+      "markScheme": {
+        "ecf": false,
+        "points": [
+          {
+            "marks": 1,
+            "text": "States the energy comes from respiration of glucose in mitochondria"
+          },
+          {
+            "marks": 1,
+            "text": "Concludes all living plant cells have mitochondria, not only photosynthetic cells"
+          }
+        ]
+      },
+      "marks": 2,
+      "objective": "o5",
+      "prompt": "A root hair cell has no chloroplasts. Explain where it obtains its energy, and what this shows about mitochondria in plant cells.",
+      "tier": "core",
+      "workedSolution": "Glucose is respired in the mitochondria of the root hair cell, releasing energy for uptake of mineral ions. Plant cells therefore carry mitochondria as well as (or instead of) chloroplasts."
+    },
+    {
+      "answer": "Ribosomes on the rough ER synthesise the protein into the ER lumen; vesicles carry it to the Golgi apparatus, which modifies and packages it; a secretory vesicle then carries it to the cell membrane, where it is released by exocytosis. (The smooth ER is not on the protein line - it makes lipids.)",
+      "difficulty": 2,
+      "explanation": "The export line runs RER (synthesis) -> vesicle -> Golgi (modification and packaging) -> secretory vesicle -> cell membrane (export).",
+      "id": "q10",
+      "kind": "short-answer",
+      "markScheme": {
+        "ecf": false,
+        "points": [
+          {
+            "marks": 1,
+            "text": "Synthesis on ribosomes of the rough ER, entering the ER"
+          },
+          {
+            "marks": 1,
+            "text": "Transport by vesicle to the Golgi apparatus for modification and packaging"
+          },
+          {
+            "marks": 1,
+            "text": "Export in a secretory vesicle fusing with the cell membrane (exocytosis)"
+          }
+        ]
+      },
+      "marks": 3,
+      "objective": "o3",
+      "prompt": "Trace the path of one newly made protein from its synthesis to its export from the cell, naming each structure in order and the job it does.",
+      "tier": "core",
+      "workedSolution": "Ribosome (rough ER) makes the protein -> vesicle buds off the ER -> Golgi apparatus modifies and packages it -> secretory vesicle fuses with the cell membrane and releases it outside."
+    },
+    {
+      "answer": "The phospholipid bilayer is partially permeable: its hydrophobic core lets small non-polar molecules through but blocks ions and large polar molecules. Channel and carrier proteins spanning the bilayer provide selective routes for specific ions and molecules, and carrier proteins can use ATP for active transport against a gradient - so the cell admits what it needs and excludes the rest.",
+      "difficulty": 4,
+      "explanation": "Structure fits function: the bilayer is a barrier to most dissolved substances, while specific protein channels and carriers give controlled, selective passage, including active uptake.",
+      "id": "q11",
+      "kind": "short-answer",
+      "markScheme": {
+        "ecf": false,
+        "points": [
+          {
+            "marks": 1,
+            "text": "Bilayer forms a partially permeable barrier (hydrophobic core blocks ions / large polar molecules)"
+          },
+          {
+            "marks": 1,
+            "text": "Channel / carrier proteins give selective passage for specific substances"
+          },
+          {
+            "marks": 1,
+            "text": "Links control to a function, e.g. active transport with ATP or exclusion of unwanted substances"
+          }
+        ]
+      },
+      "marks": 3,
+      "objective": "o1",
+      "prompt": "Explain how the structure of the cell membrane enables it to control what enters and leaves the cell. Refer to the phospholipid bilayer and to membrane proteins in your answer.",
+      "tier": "extension",
+      "workedSolution": "Bilayer: two phospholipid layers with hydrophobic tails inward - small non-polar molecules diffuse through, ions cannot. Proteins: channels and carriers span the membrane, each specific to one substance, and carriers can pump substances in by active transport. Together they make the membrane selectively (partially) permeable."
+    },
+    {
+      "answer": "Midday: photosynthesis in the chloroplasts uses CO2 and releases O2 faster than respiration in the mitochondria releases CO2 and uses O2, so the net exchange is CO2 in and O2 out. Midnight: with no light there is no photosynthesis, so only mitochondrial respiration runs - net O2 in and CO2 out. Both organelles work in the same cell; the balance between them sets the net exchange.",
+      "difficulty": 4,
+      "explanation": "The two processes run simultaneously in daylight and partly cancel; the net direction depends on which rate is larger. At night respiration stands alone.",
+      "id": "q12",
+      "kind": "short-answer",
+      "markScheme": {
+        "ecf": false,
+        "points": [
+          {
+            "marks": 1,
+            "text": "Midday: photosynthesis rate exceeds respiration rate, so net CO2 uptake and O2 release"
+          },
+          {
+            "marks": 1,
+            "text": "Midnight: no photosynthesis, respiration alone gives net O2 uptake and CO2 release"
+          },
+          {
+            "marks": 1,
+            "text": "Explains both organelles operate in the same cell and the net exchange is the balance of the two rates"
+          }
+        ]
+      },
+      "marks": 3,
+      "objective": "o2",
+      "prompt": "At midday a leaf cell photosynthesises faster than it respires; at midnight it only respires. Explain the net gas exchange in each case, in terms of the chloroplasts and mitochondria.",
+      "tier": "extension",
+      "workedSolution": "Day: chloroplast CO2 + water -> glucose + O2 outruns mitochondrial glucose + O2 -> CO2 + water, so net CO2 in, O2 out. Night: only the mitochondrial reaction runs, so net O2 in, CO2 out."
+    },
+    {
+      "answer": "Reducing sugar is present (Benedict's orange precipitate). Starch is absent (iodine stayed yellow-brown instead of turning blue-black). Protein is present (Biuret turned purple).",
+      "difficulty": 4,
+      "explanation": "Each test is specific: Benedict's detects reducing sugars, iodine detects starch, Biuret detects protein - read each result against its own test only.",
+      "id": "q13",
+      "kind": "short-answer",
+      "markScheme": {
+        "ecf": false,
+        "points": [
+          {
+            "marks": 1,
+            "text": "Reducing sugar present, justified by the orange Benedict's precipitate"
+          },
+          {
+            "marks": 1,
+            "text": "Starch absent, justified by iodine staying yellow-brown (no blue-black)"
+          },
+          {
+            "marks": 1,
+            "text": "Protein present, justified by the purple Biuret result"
+          }
+        ]
+      },
+      "marks": 3,
+      "objective": "o4",
+      "prompt": "A food sample is tested three ways: Benedict's test gives an orange precipitate, iodine solution stays yellow-brown, and the Biuret test turns purple. State which biomolecules are present and which are absent, justifying each conclusion from its test result.",
+      "tier": "extension",
+      "workedSolution": "Benedict's orange = reducing sugar present. Iodine yellow-brown (not blue-black) = starch absent. Biuret purple = protein present."
+    },
+    {
+      "answer": "(a) Enzyme secretion falls sharply: proteins from the rough ER can still be made, but without Golgi modification, packaging into secretory vesicles and labelling, they are not exported efficiently. (b) Lipids from the smooth ER are likewise not modified, packaged or dispatched, so membrane and export lipids accumulate or are misdirected - the whole export line backs up behind the damaged Golgi.",
+      "difficulty": 4,
+      "explanation": "The Golgi is the single dispatch point of the export line: both protein cargo (from the RER) and lipid cargo (from the SER) pass through it, so damaging it blocks both streams even though synthesis continues.",
+      "id": "q14",
+      "kind": "short-answer",
+      "markScheme": {
+        "ecf": false,
+        "points": [
+          {
+            "marks": 1,
+            "text": "Predicts enzyme secretion drops because packaging into secretory vesicles happens in the Golgi"
+          },
+          {
+            "marks": 1,
+            "text": "Explains synthesis in the RER / SER continues but export is blocked downstream"
+          },
+          {
+            "marks": 1,
+            "text": "Applies the same blockage to SER lipids: no modification, packaging or dispatch"
+          }
+        ]
+      },
+      "marks": 3,
+      "objective": "o3",
+      "prompt": "A toxin damages a cell's Golgi apparatus. Predict and explain the effect on (a) the secretion of digestive enzymes and (b) the finishing of lipids made in the smooth ER.",
+      "tier": "extension",
+      "workedSolution": "RER still makes enzymes and SER still makes lipids, but both are normally finished and packaged by the Golgi. With the Golgi damaged, secretory vesicles are not formed, so enzyme secretion collapses and lipids are not dispatched."
+    },
+    {
+      "answer": "The claim is false. Chloroplasts capture light energy into glucose only when light is available; the cell still needs mitochondria to respire that glucose and release usable energy (ATP) continuously, including at night and in tissues that never see light. Leaf cells contain both organelles, and survival through the night - when photosynthesis stops but respiration continues - is direct evidence that mitochondria are essential.",
+      "difficulty": 5,
+      "explanation": "Energy capture (chloroplast) and energy release (mitochondrion) are different jobs. A cell with only chloroplasts would have no way to release energy in the dark, which is why every leaf cell also carries mitochondria.",
+      "id": "q15",
+      "kind": "short-answer",
+      "markScheme": {
+        "ecf": false,
+        "points": [
+          {
+            "marks": 1,
+            "text": "Rejects the claim: chloroplasts capture energy into glucose but do not release it as ATP"
+          },
+          {
+            "marks": 1,
+            "text": "Mitochondria respire glucose to release energy continuously, including at night"
+          },
+          {
+            "marks": 1,
+            "text": "Supports the evaluation with evidence, e.g. leaf cells contain both organelles / cells survive and function in the dark"
+          }
+        ]
+      },
+      "marks": 3,
+      "objective": "o5",
+      "prompt": "Evaluate the claim: \"A leaf cell does not need mitochondria, because its chloroplasts supply all its energy.\"",
+      "tier": "extension",
+      "workedSolution": "Photosynthesis stores energy in glucose; respiration in mitochondria releases it. At night photosynthesis stops, yet the leaf cell stays alive on respiration alone - so mitochondria are indispensable, and real leaf cells contain both organelles."
     }
   ],
   "subject": "science",

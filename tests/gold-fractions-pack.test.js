@@ -106,7 +106,7 @@ test('gold fractions deck practice and exit-ticket slides address the 2/6 wrong 
 /* Worksheet */
 
 test('gold fractions worksheet has 5 mixed questions, each with an explanation', () => {
-  assert.equal(worksheet.questions.length, 5);
+  assert.equal(worksheet.questions.length, 9);
   assert.deepEqual(worksheet.questions.map((q) => q.id), ['q1', 'q2', 'q3', 'q4', 'q5']);
   const kinds = new Set(worksheet.questions.map((q) => q.kind));
   assert.ok(kinds.has('multiple-choice') && kinds.has('short-answer'), 'worksheet mixes question kinds');

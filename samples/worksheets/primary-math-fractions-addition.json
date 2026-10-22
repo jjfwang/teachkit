@@ -17,6 +17,7 @@
           "text": "1/6"
         }
       ],
+      "difficulty": 2,
       "explanation": "Convert the half into quarters first: 1/2 = 2/4, then 2/4 + 1/4 = 3/4. The choice '2/6' encodes the misconception: Adding tops and bottoms: 1/2 + 1/4 = 2/6. The bottom number names the piece size, so it cannot be added like the tops.",
       "id": "q1",
       "kind": "multiple-choice",
@@ -34,7 +35,9 @@
       },
       "marks": 1,
       "misconception": "Adding tops and bottoms: 1/2 + 1/4 = 2/6.",
-      "prompt": "What is 1/2 + 1/4?"
+      "objective": "o2",
+      "prompt": "What is 1/2 + 1/4?",
+      "tier": "core"
     },
     {
       "choices": [
@@ -52,6 +55,7 @@
           "text": "4/4"
         }
       ],
+      "difficulty": 1,
       "explanation": "A quarter fits inside a half exactly twice, so one half is the same amount as two quarters: 1/2 = 2/4. The amount has not changed - only the piece size has.",
       "id": "q2",
       "kind": "multiple-choice",
@@ -65,10 +69,13 @@
         ]
       },
       "marks": 1,
-      "prompt": "1/2 is the same amount as how many quarters?"
+      "objective": "o1",
+      "prompt": "1/2 is the same amount as how many quarters?",
+      "tier": "support"
     },
     {
       "answer": "1/2 = 2/4, so 2/4 + 1/4 = 3/4.",
+      "difficulty": 2,
       "explanation": "The half must be re-cut into quarters before the pieces can be counted together. Once every piece is a quarter, add the tops: 2 + 1 = 3 quarters.",
       "id": "q3",
       "kind": "short-answer",
@@ -86,11 +93,14 @@
         ]
       },
       "marks": 2,
+      "objective": "o1",
       "prompt": "Write 1/2 as quarters, then use your answer to work out 1/2 + 1/4.",
+      "tier": "core",
       "workedSolution": "1/2 = 2/4, so 2/4 + 1/4 = 3/4."
     },
     {
       "answer": "3/4. The bottom number stays 4 because the pieces are still quarters - the piece size never changed, so only the tops are added.",
+      "difficulty": 3,
       "explanation": "When the bottom numbers already match, the pieces are already the same size: add the tops (2 + 1 = 3) and keep the bottom number, which only names the piece size.",
       "id": "q4",
       "kind": "short-answer",
@@ -108,11 +118,14 @@
         ]
       },
       "marks": 3,
+      "objective": "o3",
       "prompt": "What is 2/4 + 1/4? Explain in one sentence why the bottom number does not change.",
+      "tier": "core",
       "workedSolution": "3/4. The bottom number stays 4 because the pieces are still quarters - the piece size never changed, so only the tops are added."
     },
     {
       "answer": "The classmate added the bottoms as well as the tops, but the bottom number names the piece size and the pieces stayed quarters. Convert first: 1/2 = 2/4, so 1/2 + 1/4 = 2/4 + 1/4 = 3/4, not 2/6.",
+      "difficulty": 3,
       "explanation": "The classmate holds the misconception: Adding tops and bottoms: 1/2 + 1/4 = 2/6. The bottom number names the piece size, so it cannot be added like the tops. The bottom number stays 4 because the piece size never changed: 1/2 + 1/4 = 2/4 + 1/4 = 3/4.",
       "id": "q5",
       "kind": "short-answer",
@@ -134,8 +147,132 @@
       },
       "marks": 3,
       "misconception": "Adding tops and bottoms: 1/2 + 1/4 = 2/6.",
+      "objective": "o3",
       "prompt": "A classmate says: '1/2 + 1/4 = 2/6, because 1 + 1 = 2 and 2 + 4 = 6.' Explain in two or three sentences why your classmate is wrong.",
+      "tier": "extension",
       "workedSolution": "The classmate added the bottoms as well as the tops, but the bottom number names the piece size and the pieces stayed quarters. Convert first: 1/2 = 2/4, so 1/2 + 1/4 = 2/4 + 1/4 = 3/4, not 2/6."
+    },
+    {
+      "choices": [
+        {
+          "correct": true,
+          "text": "2/4"
+        },
+        {
+          "text": "2/8"
+        },
+        {
+          "text": "1/8"
+        },
+        {
+          "text": "2/6"
+        }
+      ],
+      "difficulty": 1,
+      "explanation": "Both pieces are quarters, so count them: 1 + 1 = 2 quarters. The denominator stays 4 because the size of each piece does not change.",
+      "id": "q6",
+      "kind": "multiple-choice",
+      "markScheme": {
+        "ecf": false,
+        "points": [
+          {
+            "marks": 1,
+            "text": "Chooses '2/4'"
+          }
+        ]
+      },
+      "marks": 1,
+      "objective": "o2",
+      "prompt": "What is 1/4 + 1/4?",
+      "tier": "support"
+    },
+    {
+      "choices": [
+        {
+          "correct": true,
+          "text": "It stays 4"
+        },
+        {
+          "text": "It becomes 8, because 4 + 4 = 8"
+        },
+        {
+          "text": "It becomes 6, because 4 + 2 = 6"
+        },
+        {
+          "text": "It becomes 2, because the pieces get bigger"
+        }
+      ],
+      "difficulty": 1,
+      "explanation": "The denominator names the size of the pieces - quarters - and adding pieces never changes their size, so it stays 4.",
+      "id": "q7",
+      "kind": "multiple-choice",
+      "markScheme": {
+        "ecf": false,
+        "points": [
+          {
+            "marks": 1,
+            "text": "Chooses 'It stays 4'"
+          }
+        ]
+      },
+      "marks": 1,
+      "objective": "o3",
+      "prompt": "When you add 1/4 + 2/4, what happens to the denominator (the bottom number)?",
+      "tier": "support"
+    },
+    {
+      "answer": "1/2 = 2/4, so 2/4 + 3/4 = 5/4 (or 1 1/4).",
+      "difficulty": 4,
+      "explanation": "The half must first be re-cut into quarters: 1/2 = 2/4. Then the quarters can be counted together: 2 + 3 = 5 quarters.",
+      "id": "q8",
+      "kind": "short-answer",
+      "markScheme": {
+        "ecf": false,
+        "points": [
+          {
+            "marks": 1,
+            "text": "Converts 1/2 into 2/4 so both fractions are in quarters"
+          },
+          {
+            "marks": 1,
+            "text": "Adds the numerators to reach 5/4 (accept 1 1/4)"
+          }
+        ]
+      },
+      "marks": 2,
+      "objective": "o1",
+      "prompt": "Use quarters to work out 1/2 + 3/4. Show the conversion step in your working.",
+      "tier": "extension",
+      "workedSolution": "1/2 = 2/4, so 2/4 + 3/4 = 5/4 = 1 1/4."
+    },
+    {
+      "answer": "1 litre: 2/4 + 1/4 + 1/4 = 4/4 = 1 litre.",
+      "difficulty": 4,
+      "explanation": "Convert the half litre into quarters first (1/2 = 2/4), then count all the quarters together: 2 + 1 + 1 = 4 quarters, and 4/4 is one whole litre.",
+      "id": "q9",
+      "kind": "short-answer",
+      "markScheme": {
+        "ecf": false,
+        "points": [
+          {
+            "marks": 1,
+            "text": "Converts 1/2 litre into 2/4 litre"
+          },
+          {
+            "marks": 1,
+            "text": "Adds the three amounts of quarters: 2 + 1 + 1 = 4"
+          },
+          {
+            "marks": 1,
+            "text": "States the total as 4/4 litre = 1 litre"
+          }
+        ]
+      },
+      "marks": 3,
+      "objective": "o2",
+      "prompt": "Mei pours 1/2 litre of water into a jug that already holds 1/4 litre, then pours in another 1/4 litre. How much water is in the jug now? Show your working in quarters.",
+      "tier": "extension",
+      "workedSolution": "1/2 = 2/4, so the jug holds 2/4 + 1/4 + 1/4 = 4/4 = 1 litre."
     }
   ],
   "subject": "math",

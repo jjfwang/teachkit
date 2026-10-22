@@ -441,6 +441,14 @@
         (!Number.isInteger(question.difficulty) || question.difficulty < 1 || question.difficulty > 5)) {
       errors.push(p + '.difficulty: must be an integer from 1 to 5 when present');
     }
+    // Objective is worksheet-only too (SPEC.md "Worksheet spec"): the id
+    // of the lesson-plan objective the question serves, a coverage key
+    // that is never rendered. Strict when present, worksheets only, so
+    // exit-ticket validation is unchanged.
+    if (tiered && question.objective !== undefined &&
+        (typeof question.objective !== 'string' || !question.objective.trim())) {
+      errors.push(p + '.objective: must be a non-empty string when present');
+    }
     if (question.workedSolution !== undefined &&
         (typeof question.workedSolution !== 'string' || !question.workedSolution.trim())) {
       errors.push(p + '.workedSolution: must be a non-empty string when present');
