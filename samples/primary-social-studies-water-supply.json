@@ -1,0 +1,1130 @@
+{
+  "animath": "0.1",
+  "title": "From Rain to Tap: Singapore's Water Supply",
+  "level": "primary",
+  "subject": "social-studies",
+  "topic": "water-supply",
+  "kind": "concept",
+  "canvas": {
+    "width": 960,
+    "height": 540
+  },
+  "scenes": [
+    {
+      "id": "s1",
+      "caption": "Stage 1: rain is collected in a reservoir",
+      "narration": "Rain falls on the catchment and is collected in a reservoir. This raw water is stored, but it is not yet safe to drink - it still carries dirt and germs.",
+      "duration_ms": 7000,
+      "steps": [
+        {
+          "at_ms": 0,
+          "do": "show",
+          "shape": {
+            "id": "title",
+            "kind": "text",
+            "x": 480,
+            "y": 34,
+            "text": "How Singapore Gets Clean Water: The Water Supply",
+            "size": 20,
+            "color": "#1a1a1a",
+            "explain": "Label: How Singapore Gets Clean Water: The Water Supply",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 150,
+          "do": "show",
+          "shape": {
+            "id": "stage",
+            "kind": "text",
+            "x": 480,
+            "y": 70,
+            "text": "Stage 1: Rain is collected in a reservoir",
+            "size": 16,
+            "color": "#1a1a1a",
+            "explain": "Label: Stage 1: Rain is collected in a reservoir",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 500,
+          "do": "show",
+          "shape": {
+            "id": "cleanLabel",
+            "kind": "text",
+            "x": 60,
+            "y": 112,
+            "text": "How clean the water is",
+            "size": 15,
+            "color": "#1a1a1a",
+            "explain": "Label: How clean the water is"
+          }
+        },
+        {
+          "at_ms": 600,
+          "do": "show",
+          "shape": {
+            "id": "cleanBg",
+            "kind": "rect",
+            "x": 60,
+            "y": 122,
+            "w": 300,
+            "h": 16,
+            "fill": "#dddddd",
+            "explain": "The empty bar: how clean the water is, out of completely clean."
+          }
+        },
+        {
+          "at_ms": 800,
+          "do": "show",
+          "shape": {
+            "id": "cleanFill",
+            "kind": "rect",
+            "x": 60,
+            "y": 122,
+            "w": 20,
+            "h": 16,
+            "fill": "#315fd6",
+            "explain": "The cleanliness bar: it climbs only when a treatment stage removes dirt and germs."
+          }
+        },
+        {
+          "at_ms": 1000,
+          "do": "show",
+          "shape": {
+            "id": "cloud1",
+            "kind": "circle",
+            "cx": 190,
+            "cy": 165,
+            "r": 26,
+            "fill": "#cccccc",
+            "explain": "A rain cloud: rain falling on the catchment is the start of the supply chain."
+          }
+        },
+        {
+          "at_ms": 1150,
+          "do": "show",
+          "shape": {
+            "id": "cloud2",
+            "kind": "circle",
+            "cx": 230,
+            "cy": 155,
+            "r": 32,
+            "fill": "#bbbbbb",
+            "explain": "The rain cloud: it drops rain over the land that drains into the reservoir."
+          }
+        },
+        {
+          "at_ms": 1300,
+          "do": "show",
+          "shape": {
+            "id": "cloud3",
+            "kind": "circle",
+            "cx": 270,
+            "cy": 165,
+            "r": 26,
+            "fill": "#cccccc",
+            "explain": "Another part of the cloud: the rain it drops is collected, not drunk straight away."
+          }
+        },
+        {
+          "at_ms": 1500,
+          "do": "show",
+          "shape": {
+            "id": "drop1",
+            "kind": "circle",
+            "cx": 195,
+            "cy": 205,
+            "r": 5,
+            "fill": "#315fd6",
+            "explain": "A raindrop: it falls from the cloud towards the reservoir."
+          }
+        },
+        {
+          "at_ms": 1600,
+          "do": "show",
+          "shape": {
+            "id": "drop2",
+            "kind": "circle",
+            "cx": 230,
+            "cy": 205,
+            "r": 5,
+            "fill": "#315fd6",
+            "explain": "Another raindrop: every drop is on its way to be collected."
+          }
+        },
+        {
+          "at_ms": 1700,
+          "do": "show",
+          "shape": {
+            "id": "drop3",
+            "kind": "circle",
+            "cx": 265,
+            "cy": 205,
+            "r": 5,
+            "fill": "#315fd6",
+            "explain": "A third raindrop: rain is the raw water Singapore starts with."
+          }
+        },
+        {
+          "at_ms": 2000,
+          "do": "move",
+          "target": "drop1",
+          "to": {
+            "cy": 295
+          },
+          "dur_ms": 1100
+        },
+        {
+          "at_ms": 2100,
+          "do": "move",
+          "target": "drop2",
+          "to": {
+            "cy": 295
+          },
+          "dur_ms": 1100
+        },
+        {
+          "at_ms": 2200,
+          "do": "move",
+          "target": "drop3",
+          "to": {
+            "cy": 295
+          },
+          "dur_ms": 1100
+        },
+        {
+          "at_ms": 2600,
+          "do": "show",
+          "shape": {
+            "id": "reservoir",
+            "kind": "rect",
+            "x": 140,
+            "y": 330,
+            "w": 520,
+            "h": 80,
+            "fill": "#7fb2d9",
+            "explain": "The reservoir: rain water is collected and stored here as raw water."
+          }
+        },
+        {
+          "at_ms": 2800,
+          "do": "show",
+          "shape": {
+            "id": "resLabel",
+            "kind": "text",
+            "x": 480,
+            "y": 322,
+            "text": "Reservoir",
+            "size": 15,
+            "color": "#1a1a1a",
+            "explain": "Label: Reservoir"
+          }
+        },
+        {
+          "at_ms": 3000,
+          "do": "show",
+          "shape": {
+            "id": "ground",
+            "kind": "rect",
+            "x": 40,
+            "y": 410,
+            "w": 880,
+            "h": 40,
+            "fill": "#d8bd8a",
+            "explain": "The ground: the reservoir sits in the catchment where the rain fell."
+          }
+        },
+        {
+          "at_ms": 3600,
+          "do": "move",
+          "target": "cleanFill",
+          "to": {
+            "w": 45
+          },
+          "dur_ms": 900
+        },
+        {
+          "at_ms": 5200,
+          "do": "emphasize",
+          "target": "reservoir"
+        },
+        {
+          "at_ms": 5600,
+          "do": "caption",
+          "text": "Rain fills the reservoir - but this water is not yet safe to drink"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "caption": "Stage 2: raw water is drawn to the treatment works",
+      "narration": "Pipes draw the raw water out of the reservoir and carry it to the treatment works. Moving the water does not clean it - the cleanliness bar barely moves.",
+      "duration_ms": 7000,
+      "steps": [
+        {
+          "at_ms": 0,
+          "do": "show",
+          "shape": {
+            "id": "title",
+            "kind": "text",
+            "x": 480,
+            "y": 34,
+            "text": "How Singapore Gets Clean Water: The Water Supply",
+            "size": 20,
+            "color": "#1a1a1a",
+            "explain": "Label: How Singapore Gets Clean Water: The Water Supply",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 150,
+          "do": "show",
+          "shape": {
+            "id": "stage",
+            "kind": "text",
+            "x": 480,
+            "y": 70,
+            "text": "Stage 2: Raw water is drawn to the treatment works",
+            "size": 16,
+            "color": "#1a1a1a",
+            "explain": "Label: Stage 2: Raw water is drawn to the treatment works",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 500,
+          "do": "show",
+          "shape": {
+            "id": "cleanLabel",
+            "kind": "text",
+            "x": 60,
+            "y": 112,
+            "text": "How clean the water is",
+            "size": 15,
+            "color": "#1a1a1a",
+            "explain": "Label: How clean the water is"
+          }
+        },
+        {
+          "at_ms": 600,
+          "do": "show",
+          "shape": {
+            "id": "cleanBg",
+            "kind": "rect",
+            "x": 60,
+            "y": 122,
+            "w": 300,
+            "h": 16,
+            "fill": "#dddddd",
+            "explain": "The empty bar: how clean the water is, out of completely clean."
+          }
+        },
+        {
+          "at_ms": 800,
+          "do": "show",
+          "shape": {
+            "id": "cleanFill",
+            "kind": "rect",
+            "x": 60,
+            "y": 122,
+            "w": 45,
+            "h": 16,
+            "fill": "#315fd6",
+            "explain": "The cleanliness bar: it climbs only when a treatment stage removes dirt and germs."
+          }
+        },
+        {
+          "at_ms": 1000,
+          "do": "show",
+          "shape": {
+            "id": "reservoir",
+            "kind": "rect",
+            "x": 60,
+            "y": 300,
+            "w": 220,
+            "h": 95,
+            "fill": "#7fb2d9",
+            "explain": "The reservoir: stored raw water waits to be drawn off."
+          }
+        },
+        {
+          "at_ms": 1150,
+          "do": "show",
+          "shape": {
+            "id": "resLabel",
+            "kind": "text",
+            "x": 60,
+            "y": 292,
+            "text": "Reservoir",
+            "size": 15,
+            "color": "#1a1a1a",
+            "explain": "Label: Reservoir"
+          }
+        },
+        {
+          "at_ms": 1400,
+          "do": "show",
+          "shape": {
+            "id": "pipe",
+            "kind": "rect",
+            "x": 280,
+            "y": 340,
+            "w": 240,
+            "h": 14,
+            "fill": "#888888",
+            "explain": "The pipe: it carries raw water from the reservoir to the treatment works."
+          }
+        },
+        {
+          "at_ms": 1600,
+          "do": "show",
+          "shape": {
+            "id": "flowArrow",
+            "kind": "arrow",
+            "x1": 300,
+            "y1": 347,
+            "x2": 500,
+            "y2": 347,
+            "stroke": "#315fd6",
+            "width": 3,
+            "explain": "The flow arrow: raw water moves along the pipe towards treatment."
+          }
+        },
+        {
+          "at_ms": 1900,
+          "do": "show",
+          "shape": {
+            "id": "tank",
+            "kind": "rect",
+            "x": 520,
+            "y": 280,
+            "w": 280,
+            "h": 115,
+            "fill": "#c9d6e8",
+            "explain": "The treatment works: the raw water arrives here to be cleaned."
+          }
+        },
+        {
+          "at_ms": 2050,
+          "do": "show",
+          "shape": {
+            "id": "tankLabel",
+            "kind": "text",
+            "x": 520,
+            "y": 272,
+            "text": "Treatment works",
+            "size": 15,
+            "color": "#1a1a1a",
+            "explain": "Label: Treatment works"
+          }
+        },
+        {
+          "at_ms": 2400,
+          "do": "show",
+          "shape": {
+            "id": "blob",
+            "kind": "circle",
+            "cx": 170,
+            "cy": 347,
+            "r": 12,
+            "fill": "#315fd6",
+            "explain": "A blob of raw water: follow it as it travels from the reservoir to the treatment works."
+          }
+        },
+        {
+          "at_ms": 2800,
+          "do": "move",
+          "target": "blob",
+          "to": {
+            "cx": 660
+          },
+          "dur_ms": 1800
+        },
+        {
+          "at_ms": 4800,
+          "do": "move",
+          "target": "cleanFill",
+          "to": {
+            "w": 70
+          },
+          "dur_ms": 800
+        },
+        {
+          "at_ms": 5400,
+          "do": "emphasize",
+          "target": "tank"
+        },
+        {
+          "at_ms": 5800,
+          "do": "caption",
+          "text": "Raw water travels to the treatment works - moving it does not clean it"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "caption": "Stage 3: treatment cleans the water, stage by stage",
+      "narration": "At the treatment works the water passes through stages one at a time. Dirt settles and sinks, germs are trapped and removed, and the cleanliness bar climbs at every stage.",
+      "duration_ms": 9000,
+      "steps": [
+        {
+          "at_ms": 0,
+          "do": "show",
+          "shape": {
+            "id": "title",
+            "kind": "text",
+            "x": 480,
+            "y": 34,
+            "text": "How Singapore Gets Clean Water: The Water Supply",
+            "size": 20,
+            "color": "#1a1a1a",
+            "explain": "Label: How Singapore Gets Clean Water: The Water Supply",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 150,
+          "do": "show",
+          "shape": {
+            "id": "stage",
+            "kind": "text",
+            "x": 480,
+            "y": 70,
+            "text": "Stage 3: Treatment cleans the water, stage by stage",
+            "size": 16,
+            "color": "#1a1a1a",
+            "explain": "Label: Stage 3: Treatment cleans the water, stage by stage",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 500,
+          "do": "show",
+          "shape": {
+            "id": "cleanLabel",
+            "kind": "text",
+            "x": 60,
+            "y": 112,
+            "text": "How clean the water is",
+            "size": 15,
+            "color": "#1a1a1a",
+            "explain": "Label: How clean the water is"
+          }
+        },
+        {
+          "at_ms": 600,
+          "do": "show",
+          "shape": {
+            "id": "cleanBg",
+            "kind": "rect",
+            "x": 60,
+            "y": 122,
+            "w": 300,
+            "h": 16,
+            "fill": "#dddddd",
+            "explain": "The empty bar: how clean the water is, out of completely clean."
+          }
+        },
+        {
+          "at_ms": 800,
+          "do": "show",
+          "shape": {
+            "id": "cleanFill",
+            "kind": "rect",
+            "x": 60,
+            "y": 122,
+            "w": 70,
+            "h": 16,
+            "fill": "#315fd6",
+            "explain": "The cleanliness bar: it climbs only when a treatment stage removes dirt and germs."
+          }
+        },
+        {
+          "at_ms": 1000,
+          "do": "show",
+          "shape": {
+            "id": "tank1",
+            "kind": "rect",
+            "x": 70,
+            "y": 280,
+            "w": 200,
+            "h": 115,
+            "fill": "#a8c4e0",
+            "explain": "Treatment tank 1: here the water settles and dirt sinks to the bottom."
+          }
+        },
+        {
+          "at_ms": 1100,
+          "do": "show",
+          "shape": {
+            "id": "label1",
+            "kind": "text",
+            "x": 70,
+            "y": 272,
+            "text": "1. Settle: dirt sinks",
+            "size": 14,
+            "color": "#1a1a1a",
+            "explain": "Label: 1. Settle: dirt sinks"
+          }
+        },
+        {
+          "at_ms": 1300,
+          "do": "show",
+          "shape": {
+            "id": "dirt1",
+            "kind": "circle",
+            "cx": 120,
+            "cy": 340,
+            "r": 7,
+            "fill": "#8a5a2b",
+            "explain": "A speck of dirt: it is carried in the raw water."
+          }
+        },
+        {
+          "at_ms": 1400,
+          "do": "show",
+          "shape": {
+            "id": "dirt2",
+            "kind": "circle",
+            "cx": 170,
+            "cy": 355,
+            "r": 6,
+            "fill": "#8a5a2b",
+            "explain": "Another speck of dirt: settling lets it sink away from the water."
+          }
+        },
+        {
+          "at_ms": 1500,
+          "do": "show",
+          "shape": {
+            "id": "dirt3",
+            "kind": "circle",
+            "cx": 220,
+            "cy": 335,
+            "r": 6,
+            "fill": "#8a5a2b",
+            "explain": "A third speck of dirt: it will sink with the others."
+          }
+        },
+        {
+          "at_ms": 1700,
+          "do": "show",
+          "shape": {
+            "id": "blob",
+            "kind": "circle",
+            "cx": 170,
+            "cy": 315,
+            "r": 12,
+            "fill": "#5b8cc0",
+            "explain": "The water blob: it enters the first treatment stage still dirty."
+          }
+        },
+        {
+          "at_ms": 2000,
+          "do": "move",
+          "target": "dirt1",
+          "to": {
+            "cy": 382
+          },
+          "dur_ms": 800
+        },
+        {
+          "at_ms": 2050,
+          "do": "move",
+          "target": "dirt2",
+          "to": {
+            "cy": 385
+          },
+          "dur_ms": 800
+        },
+        {
+          "at_ms": 2100,
+          "do": "move",
+          "target": "dirt3",
+          "to": {
+            "cy": 380
+          },
+          "dur_ms": 800
+        },
+        {
+          "at_ms": 2400,
+          "do": "move",
+          "target": "cleanFill",
+          "to": {
+            "w": 140
+          },
+          "dur_ms": 900
+        },
+        {
+          "at_ms": 3000,
+          "do": "show",
+          "shape": {
+            "id": "tank2",
+            "kind": "rect",
+            "x": 330,
+            "y": 280,
+            "w": 200,
+            "h": 115,
+            "fill": "#bcd2ec",
+            "explain": "Treatment tank 2: here the water is filtered and germs are trapped."
+          }
+        },
+        {
+          "at_ms": 3100,
+          "do": "show",
+          "shape": {
+            "id": "label2",
+            "kind": "text",
+            "x": 330,
+            "y": 272,
+            "text": "2. Filter: germs trapped",
+            "size": 14,
+            "color": "#1a1a1a",
+            "explain": "Label: 2. Filter: germs trapped"
+          }
+        },
+        {
+          "at_ms": 3300,
+          "do": "show",
+          "shape": {
+            "id": "germ1",
+            "kind": "circle",
+            "cx": 380,
+            "cy": 330,
+            "r": 5,
+            "fill": "#d9534f",
+            "explain": "A germ: too small to settle out, it must be trapped by the filter."
+          }
+        },
+        {
+          "at_ms": 3400,
+          "do": "show",
+          "shape": {
+            "id": "germ2",
+            "kind": "circle",
+            "cx": 430,
+            "cy": 355,
+            "r": 5,
+            "fill": "#d9534f",
+            "explain": "Another germ: the filter catches germs like these."
+          }
+        },
+        {
+          "at_ms": 3500,
+          "do": "show",
+          "shape": {
+            "id": "germ3",
+            "kind": "circle",
+            "cx": 480,
+            "cy": 335,
+            "r": 5,
+            "fill": "#d9534f",
+            "explain": "A third germ: removing germs makes the water safer."
+          }
+        },
+        {
+          "at_ms": 3800,
+          "do": "move",
+          "target": "blob",
+          "to": {
+            "cx": 430
+          },
+          "dur_ms": 1200
+        },
+        {
+          "at_ms": 5100,
+          "do": "hide",
+          "target": "germ1"
+        },
+        {
+          "at_ms": 5150,
+          "do": "hide",
+          "target": "germ2"
+        },
+        {
+          "at_ms": 5200,
+          "do": "hide",
+          "target": "germ3"
+        },
+        {
+          "at_ms": 5400,
+          "do": "move",
+          "target": "cleanFill",
+          "to": {
+            "w": 210
+          },
+          "dur_ms": 900
+        },
+        {
+          "at_ms": 6000,
+          "do": "show",
+          "shape": {
+            "id": "tank3",
+            "kind": "rect",
+            "x": 590,
+            "y": 280,
+            "w": 200,
+            "h": 115,
+            "fill": "#d6e6f7",
+            "explain": "Treatment tank 3: the final stage leaves the water clean and safe."
+          }
+        },
+        {
+          "at_ms": 6100,
+          "do": "show",
+          "shape": {
+            "id": "label3",
+            "kind": "text",
+            "x": 590,
+            "y": 272,
+            "text": "3. Clean: safe to store",
+            "size": 14,
+            "color": "#1a1a1a",
+            "explain": "Label: 3. Clean: safe to store"
+          }
+        },
+        {
+          "at_ms": 6400,
+          "do": "move",
+          "target": "blob",
+          "to": {
+            "cx": 690
+          },
+          "dur_ms": 1200
+        },
+        {
+          "at_ms": 7700,
+          "do": "move",
+          "target": "cleanFill",
+          "to": {
+            "w": 280
+          },
+          "dur_ms": 900
+        },
+        {
+          "at_ms": 8400,
+          "do": "caption",
+          "text": "Each treatment stage removes more dirt and germs"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "caption": "Stage 4: clean water is stored and piped to home taps",
+      "narration": "Only after treatment is the cleaned water stored and piped to home taps. The wrong turn - drinking it straight from the reservoir - skips every cleaning stage, so it is played out and corrected: treatment comes first.",
+      "duration_ms": 9500,
+      "steps": [
+        {
+          "at_ms": 0,
+          "do": "show",
+          "shape": {
+            "id": "title",
+            "kind": "text",
+            "x": 480,
+            "y": 34,
+            "text": "How Singapore Gets Clean Water: The Water Supply",
+            "size": 20,
+            "color": "#1a1a1a",
+            "explain": "Label: How Singapore Gets Clean Water: The Water Supply",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 150,
+          "do": "show",
+          "shape": {
+            "id": "stage",
+            "kind": "text",
+            "x": 480,
+            "y": 70,
+            "text": "Stage 4: Clean water is stored and piped to homes",
+            "size": 16,
+            "color": "#1a1a1a",
+            "explain": "Label: Stage 4: Clean water is stored and piped to homes",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 500,
+          "do": "show",
+          "shape": {
+            "id": "cleanLabel",
+            "kind": "text",
+            "x": 60,
+            "y": 112,
+            "text": "How clean the water is",
+            "size": 15,
+            "color": "#1a1a1a",
+            "explain": "Label: How clean the water is"
+          }
+        },
+        {
+          "at_ms": 600,
+          "do": "show",
+          "shape": {
+            "id": "cleanBg",
+            "kind": "rect",
+            "x": 60,
+            "y": 122,
+            "w": 300,
+            "h": 16,
+            "fill": "#dddddd",
+            "explain": "The empty bar: how clean the water is, out of completely clean."
+          }
+        },
+        {
+          "at_ms": 800,
+          "do": "show",
+          "shape": {
+            "id": "cleanFill",
+            "kind": "rect",
+            "x": 60,
+            "y": 122,
+            "w": 280,
+            "h": 16,
+            "fill": "#315fd6",
+            "explain": "The cleanliness bar: it climbs only when a treatment stage removes dirt and germs."
+          }
+        },
+        {
+          "at_ms": 1000,
+          "do": "show",
+          "shape": {
+            "id": "storage",
+            "kind": "rect",
+            "x": 60,
+            "y": 280,
+            "w": 220,
+            "h": 115,
+            "fill": "#d6e6f7",
+            "explain": "The storage tank: cleaned water is stored here after treatment, ready to be piped out."
+          }
+        },
+        {
+          "at_ms": 1150,
+          "do": "show",
+          "shape": {
+            "id": "storLabel",
+            "kind": "text",
+            "x": 60,
+            "y": 272,
+            "text": "Storage tank",
+            "size": 15,
+            "color": "#1a1a1a",
+            "explain": "Label: Storage tank"
+          }
+        },
+        {
+          "at_ms": 1400,
+          "do": "show",
+          "shape": {
+            "id": "pipe",
+            "kind": "rect",
+            "x": 280,
+            "y": 345,
+            "w": 360,
+            "h": 12,
+            "fill": "#888888",
+            "explain": "The pipe to homes: it carries only treated, cleaned water."
+          }
+        },
+        {
+          "at_ms": 1600,
+          "do": "show",
+          "shape": {
+            "id": "roof",
+            "kind": "polygon",
+            "points": [
+              [
+                630,
+                310
+              ],
+              [
+                740,
+                260
+              ],
+              [
+                850,
+                310
+              ]
+            ],
+            "fill": "#b08954",
+            "explain": "The house roof: the cleaned water is heading for homes like this one."
+          }
+        },
+        {
+          "at_ms": 1750,
+          "do": "show",
+          "shape": {
+            "id": "house",
+            "kind": "rect",
+            "x": 640,
+            "y": 310,
+            "w": 200,
+            "h": 85,
+            "fill": "#f2d492",
+            "explain": "A home: its taps receive the treated water at the end of the chain."
+          }
+        },
+        {
+          "at_ms": 1900,
+          "do": "show",
+          "shape": {
+            "id": "homeLabel",
+            "kind": "text",
+            "x": 640,
+            "y": 252,
+            "text": "Home",
+            "size": 15,
+            "color": "#1a1a1a",
+            "explain": "Label: Home"
+          }
+        },
+        {
+          "at_ms": 2200,
+          "do": "show",
+          "shape": {
+            "id": "bypass",
+            "kind": "line",
+            "x1": 170,
+            "y1": 430,
+            "x2": 740,
+            "y2": 430,
+            "stroke": "#d9534f",
+            "width": 3,
+            "explain": "The wrong-turn bypass: a shortcut straight from collection to the tap, skipping every treatment stage."
+          }
+        },
+        {
+          "at_ms": 2350,
+          "do": "show",
+          "shape": {
+            "id": "wrongNote",
+            "kind": "text",
+            "x": 60,
+            "y": 470,
+            "text": "Wrong turn: drink it straight from the reservoir?",
+            "size": 15,
+            "color": "#1a1a1a",
+            "explain": "Label: Wrong turn: drink it straight from the reservoir?"
+          }
+        },
+        {
+          "at_ms": 2600,
+          "do": "show",
+          "shape": {
+            "id": "wrongDrop",
+            "kind": "circle",
+            "cx": 170,
+            "cy": 430,
+            "r": 7,
+            "fill": "#d9534f",
+            "explain": "The wrong-turn drop: untreated water taking the shortcut to the home."
+          }
+        },
+        {
+          "at_ms": 2900,
+          "do": "move",
+          "target": "wrongDrop",
+          "to": {
+            "cx": 740
+          },
+          "dur_ms": 1300
+        },
+        {
+          "at_ms": 4500,
+          "do": "hide",
+          "target": "bypass"
+        },
+        {
+          "at_ms": 4550,
+          "do": "hide",
+          "target": "wrongDrop"
+        },
+        {
+          "at_ms": 4600,
+          "do": "hide",
+          "target": "wrongNote"
+        },
+        {
+          "at_ms": 4900,
+          "do": "show",
+          "shape": {
+            "id": "replayNote",
+            "kind": "text",
+            "x": 60,
+            "y": 505,
+            "text": "Corrected: water is treated first, then stored and piped home",
+            "size": 15,
+            "color": "#1a1a1a",
+            "explain": "Label: Corrected: water is treated first, then stored and piped home"
+          }
+        },
+        {
+          "at_ms": 5300,
+          "do": "show",
+          "shape": {
+            "id": "blob",
+            "kind": "circle",
+            "cx": 170,
+            "cy": 351,
+            "r": 12,
+            "fill": "#315fd6",
+            "explain": "The cleaned water blob: it leaves storage and travels the pipe to the home."
+          }
+        },
+        {
+          "at_ms": 5700,
+          "do": "move",
+          "target": "blob",
+          "to": {
+            "cx": 700
+          },
+          "dur_ms": 1600
+        },
+        {
+          "at_ms": 7400,
+          "do": "show",
+          "shape": {
+            "id": "tapDrop",
+            "kind": "circle",
+            "cx": 740,
+            "cy": 330,
+            "r": 8,
+            "fill": "#315fd6",
+            "explain": "A drop at the tap: treated water arrives ready to drink."
+          }
+        },
+        {
+          "at_ms": 7700,
+          "do": "move",
+          "target": "tapDrop",
+          "to": {
+            "cy": 375
+          },
+          "dur_ms": 900
+        },
+        {
+          "at_ms": 8000,
+          "do": "move",
+          "target": "cleanFill",
+          "to": {
+            "w": 300
+          },
+          "dur_ms": 800
+        },
+        {
+          "at_ms": 8600,
+          "do": "emphasize",
+          "target": "tapDrop"
+        },
+        {
+          "at_ms": 8900,
+          "do": "caption",
+          "text": "Treated first, then stored and piped - tap water is safe to drink"
+        }
+      ]
+    }
+  ]
+}

@@ -600,6 +600,12 @@
       why: 'Photographs of the old village and the modern city look completely different, so it is easy to imagine one was swept away and the other put in its place overnight.',
       correctTurn: 'The change was gradual and driven by growing trade: the fishing village first became a trading port with godowns and a jetty, the port then expanded with warehouses and steamships, and only later did the modern city of tall buildings, roads and container ships rise - stage by stage at the same site, with the population growing at every stage.'
     },
+    // Slice 1 (issue #1198): Primary Social Studies water supply.
+    'water-supply': {
+      wrongTurn: 'Tap water is clean as soon as it is collected, because rainwater and reservoir water are already safe to drink.',
+      why: 'Rain looks clean as it falls and reservoir water looks clear in photographs, so it is easy to assume collected water is already safe to drink with no further steps.',
+      correctTurn: 'Collected water is raw water, not tap water: it is drawn from the reservoir to the treatment works, where treatment stages remove dirt and germs step by step, and only the cleaned water is stored and piped to home taps.'
+    },
     // Slice 1 (issue #1193): JC H2 China Studies in English 9628.
     'urbanisation': {
       wrongTurn: 'A Chinese city becomes urban in one sudden leap, because its farmland is replaced by built-up districts all at once.',

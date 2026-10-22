@@ -57,7 +57,8 @@
           },
           {
             id: 'p-social-studies', label: 'Social Studies', subject: 'social-studies', topics: [
-            { slug: 'landscape-change', label: 'Landscape change' }
+            { slug: 'landscape-change', label: 'Landscape change' },
+            { slug: 'water-supply', label: 'Water supply' }
             ]
           }
         ]
