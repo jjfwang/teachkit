@@ -1,0 +1,120 @@
+{
+  "title": "The Water Cycle",
+  "level": "primary",
+  "subject": "science",
+  "topic": "water-cycle",
+  "sets": [
+    {
+      "level": "full",
+      "wordBank": [
+        {
+          "term": "Evaporation",
+          "gloss": "liquid water turning into invisible vapour when it is heated"
+        },
+        {
+          "term": "Water vapour",
+          "gloss": "water in its gas form, invisible but still in the air"
+        },
+        {
+          "term": "Condensation",
+          "gloss": "vapour cooling and turning back into tiny liquid drops"
+        },
+        {
+          "term": "Precipitation",
+          "gloss": "water falling back to the ground, most often as rain"
+        },
+        {
+          "term": "Collection",
+          "gloss": "fallen water gathering again in rivers, lakes and the sea"
+        }
+      ],
+      "starters": [
+        "When the sun heats the water in the sea, it...",
+        "High up, the air is cold, so the vapour...",
+        "When the drops grow too heavy, they fall and..."
+      ],
+      "frames": [
+        "___ is liquid water turning into invisible vapour when it is heated.",
+        "The gas form of water floating in the air is called ___.",
+        "Water falling back to the ground as rain is ___."
+      ],
+      "cloze": [
+        {
+          "text": "The sun heats the sea and ___ turns the liquid water into ___.",
+          "answers": [
+            "Evaporation",
+            "Water vapour"
+          ]
+        },
+        {
+          "text": "The vapour cools into drops by ___, and later the water falls as ___.",
+          "answers": [
+            "Condensation",
+            "Precipitation"
+          ]
+        }
+      ]
+    },
+    {
+      "level": "partial",
+      "wordBank": [
+        {
+          "term": "Evaporation",
+          "gloss": "liquid water turning into invisible vapour when it is heated"
+        },
+        {
+          "term": "Condensation",
+          "gloss": "vapour cooling and turning back into tiny liquid drops"
+        },
+        {
+          "term": "Precipitation",
+          "gloss": "water falling back to the ground, most often as rain"
+        }
+      ],
+      "starters": [
+        "The water cycle starts when the sun...",
+        "After the drops form a cloud, they..."
+      ],
+      "frames": [
+        "Water turns into vapour by ___.",
+        "Vapour turns back into tiny drops by ___."
+      ],
+      "cloze": [
+        {
+          "text": "After ___ lifts water into the air as vapour, cooling causes ___ high up.",
+          "answers": [
+            "Evaporation",
+            "Condensation"
+          ]
+        }
+      ]
+    },
+    {
+      "level": "minimal",
+      "wordBank": [
+        {
+          "term": "Evaporation",
+          "gloss": "liquid water turning into invisible vapour when it is heated"
+        },
+        {
+          "term": "Condensation",
+          "gloss": "vapour cooling and turning back into tiny liquid drops"
+        }
+      ],
+      "starters": [
+        "In the water cycle, water first..."
+      ],
+      "frames": [
+        "___ is vapour cooling and turning back into liquid drops."
+      ],
+      "cloze": [
+        {
+          "text": "Heated water rises into the air by ___.",
+          "answers": [
+            "Evaporation"
+          ]
+        }
+      ]
+    }
+  ]
+}

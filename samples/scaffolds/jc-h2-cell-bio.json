@@ -1,0 +1,153 @@
+{
+  "title": "JC H2 biology — cell: ultrastructure and biomolecules",
+  "level": "jc",
+  "subject": "science",
+  "topic": "h2-cell-bio",
+  "sets": [
+    {
+      "level": "full",
+      "wordBank": [
+        {
+          "term": "Cell membrane",
+          "gloss": "the selectively permeable bilayer that controls what enters and leaves the cell"
+        },
+        {
+          "term": "Nucleus",
+          "gloss": "the control centre storing DNA as chromatin"
+        },
+        {
+          "term": "Mitochondrion",
+          "gloss": "the site of aerobic respiration, folded into cristae for ATP-making enzymes"
+        },
+        {
+          "term": "Chloroplast",
+          "gloss": "the site of photosynthesis in plant cells"
+        },
+        {
+          "term": "Rough endoplasmic reticulum",
+          "gloss": "ER studded with ribosomes, where new proteins are folded"
+        },
+        {
+          "term": "Smooth endoplasmic reticulum",
+          "gloss": "ER without ribosomes, where lipids are made"
+        },
+        {
+          "term": "Golgi body",
+          "gloss": "the stack that modifies, packages and ships proteins in vesicles"
+        },
+        {
+          "term": "Benedict's test",
+          "gloss": "the heated test for reducing sugar; blue to brick-red is positive"
+        },
+        {
+          "term": "Iodine test",
+          "gloss": "the test for starch; brown to blue-black is positive"
+        },
+        {
+          "term": "Biuret test",
+          "gloss": "the test for protein; blue to purple is positive"
+        },
+        {
+          "term": "Emulsion test",
+          "gloss": "the test for lipid; a milky white emulsion is positive"
+        }
+      ],
+      "starters": [
+        "The structure that controls what enters and leaves the cell is...",
+        "Energy is released for the cell in the...",
+        "To test a food sample for reducing sugar, I would..."
+      ],
+      "frames": [
+        "The selectively permeable bilayer around the cell is the ___.",
+        "The site of aerobic respiration, with cristae for ATP-making enzymes, is the ___.",
+        "The stack that modifies, packages and ships proteins is the ___."
+      ],
+      "cloze": [
+        {
+          "text": "Proteins are folded on the ___, lipids are made on the ___, and both pass to the ___ for packaging.",
+          "answers": [
+            "Rough endoplasmic reticulum",
+            "Smooth endoplasmic reticulum",
+            "Golgi body"
+          ]
+        },
+        {
+          "text": "A blue-to-brick-red change on heating identifies reducing sugar in the ___, while starch turns iodine blue-black in the ___.",
+          "answers": [
+            "Benedict's test",
+            "Iodine test"
+          ]
+        }
+      ]
+    },
+    {
+      "level": "partial",
+      "wordBank": [
+        {
+          "term": "Cell membrane",
+          "gloss": "the selectively permeable bilayer that controls what enters and leaves the cell"
+        },
+        {
+          "term": "Nucleus",
+          "gloss": "the control centre storing DNA as chromatin"
+        },
+        {
+          "term": "Mitochondrion",
+          "gloss": "the site of aerobic respiration, folded into cristae for ATP-making enzymes"
+        },
+        {
+          "term": "Golgi body",
+          "gloss": "the stack that modifies, packages and ships proteins in vesicles"
+        },
+        {
+          "term": "Benedict's test",
+          "gloss": "the heated test for reducing sugar; blue to brick-red is positive"
+        },
+        {
+          "term": "Iodine test",
+          "gloss": "the test for starch; brown to blue-black is positive"
+        }
+      ],
+      "starters": [
+        "The control centre of the cell is...",
+        "For a positive starch result, the iodine turns..."
+      ],
+      "frames": [
+        "DNA is stored as chromatin inside the ___.",
+        "Proteins are packaged and shipped by the ___."
+      ],
+      "cloze": [
+        {
+          "text": "Aerobic respiration happens in the ___, and the test for starch is the ___.",
+          "answers": [
+            "Mitochondrion",
+            "Iodine test"
+          ]
+        }
+      ]
+    },
+    {
+      "level": "minimal",
+      "wordBank": [
+        {
+          "term": "Mitochondrion",
+          "gloss": "the site of aerobic respiration, folded into cristae for ATP-making enzymes"
+        }
+      ],
+      "starters": [
+        "A plant cell still needs this structure at night because..."
+      ],
+      "frames": [
+        "Respiration continues at night in the ___, even when photosynthesis has stopped."
+      ],
+      "cloze": [
+        {
+          "text": "The site of aerobic respiration in both plant and animal cells is the ___.",
+          "answers": [
+            "Mitochondrion"
+          ]
+        }
+      ]
+    }
+  ]
+}

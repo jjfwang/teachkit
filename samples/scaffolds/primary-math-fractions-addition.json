@@ -1,0 +1,116 @@
+{
+  "title": "Adding fractions: 1/2 + 1/4",
+  "level": "primary",
+  "subject": "math",
+  "topic": "fractions",
+  "sets": [
+    {
+      "level": "full",
+      "wordBank": [
+        {
+          "term": "Fraction",
+          "gloss": "a part of a whole, written as one number over another"
+        },
+        {
+          "term": "Numerator",
+          "gloss": "the top number of a fraction; it counts the pieces you have"
+        },
+        {
+          "term": "Denominator",
+          "gloss": "the bottom number of a fraction; it names the piece size"
+        },
+        {
+          "term": "Equivalent fraction",
+          "gloss": "a fraction naming the same amount with different numbers"
+        },
+        {
+          "term": "Common denominator",
+          "gloss": "a shared piece size that lets two fractions be added"
+        }
+      ],
+      "starters": [
+        "To add fractions with different denominators, first I need to...",
+        "I can rewrite 1/2 as quarters by...",
+        "When I add the numerators, the denominator stays..."
+      ],
+      "frames": [
+        "A ___ is a part of a whole written as one number over another.",
+        "The ___ is the top number of a fraction and counts the pieces I have.",
+        "Fractions can only be added directly when they share a ___."
+      ],
+      "cloze": [
+        {
+          "text": "To add 1/2 + 1/4, first rewrite 1/2 as an ___ so both fractions share a ___.",
+          "answers": [
+            "Equivalent fraction",
+            "Common denominator"
+          ]
+        },
+        {
+          "text": "Now add the ___ of each fraction and keep the ___ the same.",
+          "answers": [
+            "Numerator",
+            "Denominator"
+          ]
+        }
+      ]
+    },
+    {
+      "level": "partial",
+      "wordBank": [
+        {
+          "term": "Numerator",
+          "gloss": "the top number of a fraction; it counts the pieces you have"
+        },
+        {
+          "term": "Denominator",
+          "gloss": "the bottom number of a fraction; it names the piece size"
+        },
+        {
+          "term": "Common denominator",
+          "gloss": "a shared piece size that lets two fractions be added"
+        }
+      ],
+      "starters": [
+        "First I make the denominators the same by...",
+        "Then I add the tops and keep..."
+      ],
+      "frames": [
+        "Before adding, both fractions must share a ___.",
+        "The ___ names the piece size, so it does not change when I add."
+      ],
+      "cloze": [
+        {
+          "text": "Quarters are the ___ for 1/2 and 1/4, so 2/4 + 1/4 adds the ___ values to give 3/4.",
+          "answers": [
+            "Common denominator",
+            "Numerator"
+          ]
+        }
+      ]
+    },
+    {
+      "level": "minimal",
+      "wordBank": [
+        {
+          "term": "Common denominator",
+          "gloss": "a shared piece size that lets two fractions be added"
+        }
+      ],
+      "starters": [
+        "To add these fractions, I first..."
+      ],
+      "frames": [
+        "I cannot add the fractions until they share a ___."
+      ],
+      "cloze": [
+        {
+          "text": "The shared piece size that lets 1/2 and 1/4 be added is the ___.",
+          "answers": [
+            "Common denominator"
+          ]
+        }
+      ]
+    }
+  ]
+}

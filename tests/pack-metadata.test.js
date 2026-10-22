@@ -153,7 +153,8 @@ const GOLD = {
   notes: gold('samples/notes/primary-science-water-cycle.json'),
   exitTicket: gold('samples/tickets/primary-science-water-cycle.json'),
   script: gold('samples/scripts/primary-science-water-cycle.json'),
-  lessonPlan: gold('samples/plans/primary-science-water-cycle.json')
+  lessonPlan: gold('samples/plans/primary-science-water-cycle.json'),
+  scaffolds: gold('samples/scaffolds/primary-science-water-cycle.json')
 };
 const TRANSITIONS_TEXT = JSON.stringify([
   { name: 'evaporation', from_state: 'liquid water', to_state: 'water vapour', driver: "the sun's heat" },
@@ -169,6 +170,7 @@ function route(system) {
   if (system.indexOf('exit-ticket author') !== -1) return JSON.stringify(GOLD.exitTicket);
   if (system.indexOf('script author') !== -1) return JSON.stringify(GOLD.script);
   if (system.indexOf('lesson plan author') !== -1) return JSON.stringify(GOLD.lessonPlan);
+  if (system.indexOf('scaffolds author') !== -1) return JSON.stringify(GOLD.scaffolds);
   throw new Error('unrouted system prompt: ' + system.slice(0, 60));
 }
 const callChat = (system) => Promise.resolve(route(system));

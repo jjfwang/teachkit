@@ -1,0 +1,120 @@
+{
+  "title": "JC H2 differentiation: connected rates of change",
+  "level": "jc",
+  "subject": "math",
+  "topic": "h2-differentiation",
+  "sets": [
+    {
+      "level": "full",
+      "wordBank": [
+        {
+          "term": "Connected rates of change",
+          "gloss": "rates of linked quantities, tied together by a relation"
+        },
+        {
+          "term": "Chain rule",
+          "gloss": "the rule for differentiating a quantity through a link"
+        },
+        {
+          "term": "Derivative",
+          "gloss": "the rate of change of one quantity with respect to another, defined as a limit"
+        },
+        {
+          "term": "Rate of change",
+          "gloss": "how fast a quantity changes per unit of time"
+        },
+        {
+          "term": "Limit",
+          "gloss": "the value approached as an interval shrinks toward zero"
+        },
+        {
+          "term": "Snapshot values",
+          "gloss": "the values of the variables at the one instant asked about"
+        }
+      ],
+      "starters": [
+        "Because the radius and area are linked, their rates...",
+        "To differentiate A with respect to time, I use...",
+        "I substitute the given values only after..."
+      ],
+      "frames": [
+        "Rates of linked quantities, tied together by a relation, are ___.",
+        "The rule that differentiates a quantity through a link is the ___.",
+        "The ___ is defined as a limit as the interval shrinks to zero."
+      ],
+      "cloze": [
+        {
+          "text": "For A = pi r^2 changing with time, the ___ gives dA/dt = dA/dr x dr/dt, an example of ___.",
+          "answers": [
+            "Chain rule",
+            "Connected rates of change"
+          ]
+        },
+        {
+          "text": "The ___ is the ___ of the average rate as the interval shrinks to zero.",
+          "answers": [
+            "Derivative",
+            "Limit"
+          ]
+        }
+      ]
+    },
+    {
+      "level": "partial",
+      "wordBank": [
+        {
+          "term": "Connected rates of change",
+          "gloss": "rates of linked quantities, tied together by a relation"
+        },
+        {
+          "term": "Chain rule",
+          "gloss": "the rule for differentiating a quantity through a link"
+        },
+        {
+          "term": "Snapshot values",
+          "gloss": "the values of the variables at the one instant asked about"
+        }
+      ],
+      "starters": [
+        "I link the two rates by differentiating...",
+        "The values at the instant asked about are substituted..."
+      ],
+      "frames": [
+        "The ___ lets me differentiate a quantity through a link to another quantity.",
+        "The values at the one instant asked about are the ___."
+      ],
+      "cloze": [
+        {
+          "text": "In connected-rates problems I apply the ___ first and substitute the ___ only afterwards.",
+          "answers": [
+            "Chain rule",
+            "Snapshot values"
+          ]
+        }
+      ]
+    },
+    {
+      "level": "minimal",
+      "wordBank": [
+        {
+          "term": "Chain rule",
+          "gloss": "the rule for differentiating a quantity through a link"
+        }
+      ],
+      "starters": [
+        "To differentiate this with respect to time, I..."
+      ],
+      "frames": [
+        "Differentiating a quantity through a link uses the ___."
+      ],
+      "cloze": [
+        {
+          "text": "For a quantity that depends on r, which itself changes with time, I use the ___.",
+          "answers": [
+            "Chain rule"
+          ]
+        }
+      ]
+    }
+  ]
+}

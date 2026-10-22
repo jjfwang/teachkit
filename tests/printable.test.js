@@ -566,3 +566,126 @@ describe('lesson plan renderer (issue #1219)', () => {
     }
   });
 });
+
+describe('scaffolds renderer (issue #1233)', () => {
+  const scaffolds = JSON.parse(fs.readFileSync(path.join(ROOT, 'samples/scaffolds/primary-science-water-cycle.json'), 'utf8'));
+
+  test('gold scaffolds validate with zero errors and render in full', () => {
+    assert.deepEqual(validate.validateScaffolds(scaffolds), []);
+    const html = printable.renderScaffolds(scaffolds);
+    assert.ok(html.length > 0);
+    assert.ok(html.includes('pr-sheet pr-student pr-scaffolds'));
+    assert.ok(html.includes('Scaffolds'));
+    assert.ok(html.includes(scaffolds.title), 'title present');
+    assert.ok(html.includes(scaffolds.topic), 'topic present');
+    assert.ok(html.includes(scaffolds.subject), 'subject present');
+    const labels = { full: 'Full', partial: 'Partial', minimal: 'Minimal' };
+    for (const set of scaffolds.sets) {
+      assert.ok(html.includes(labels[set.level]), 'set level label present: ' + set.level);
+      for (const entry of set.wordBank) {
+        assert.ok(html.includes(entry.term), 'word-bank term present: ' + entry.term);
+        assert.ok(html.includes(entry.gloss), 'word-bank gloss present: ' + entry.gloss);
+      }
+      for (const starter of set.starters) {
+        assert.ok(html.includes(starter), 'starter present');
+      }
+      for (const frame of set.frames) {
+        assert.ok(html.includes(frame), 'frame present');
+      }
+      for (const item of set.cloze) {
+        assert.ok(html.includes(item.text), 'cloze text present');
+      }
+    }
+  });
+
+  test('student sheet carries no answer-key rendering of the cloze answers', () => {
+    const html = printable.renderScaffolds(scaffolds);
+    assert.ok(!html.includes('pr-answer'), 'student sheet has no answer markup');
+    assert.ok(!html.includes('Answer:'), 'student sheet has no Answer line');
+    for (const set of scaffolds.sets) {
+      for (const item of set.cloze) {
+        const joined = 'Answer: ' + item.answers.join(', ');
+        assert.ok(!html.includes(joined),
+          'student sheet never contains the joined answers rendering: ' + joined);
+      }
+    }
+  });
+
+  test('teacher answer key contains every cloze answer', () => {
+    const html = printable.renderScaffoldsAnswerKey(scaffolds);
+    assert.ok(html.includes('pr-sheet pr-teacher pr-answer-key pr-scaffolds'));
+    assert.ok(html.includes('Scaffolds answer key'));
+    assert.ok(html.includes(scaffolds.title), 'title present');
+    for (const set of scaffolds.sets) {
+      for (const item of set.cloze) {
+        assert.ok(html.includes(item.text), 'cloze text present in the key');
+        for (const answer of item.answers) {
+          assert.ok(html.includes(answer), 'answer present in the key: ' + answer);
+        }
+        assert.ok(html.includes('Answer: ' + item.answers.join(', ')),
+          'joined answers line present in the key');
+      }
+    }
+  });
+
+  test('hostile scaffolds render escaped with no raw script tag', () => {
+    const evilTerm = 'Evil <script>alert("x")</script> & Co';
+    const hostile = {
+      title: 'Evil <script>alert("x")</script> & Co',
+      level: 'primary', subject: 'science', topic: 'water-cycle',
+      sets: [
+        {
+          level: 'full',
+          wordBank: [
+            { term: evilTerm, gloss: 'A <b>bad</b> & "quoted" gloss' },
+            { term: 'Plain term', gloss: 'A plain gloss' },
+          ],
+          starters: ['Start <script>here</script> & go'],
+          frames: ['___ is <i>framed</i> & "quoted".'],
+          cloze: [{ text: 'The gap is ___ here.', answers: [evilTerm] }],
+        },
+        {
+          level: 'minimal',
+          wordBank: [{ term: 'Plain term', gloss: 'A plain gloss' }],
+          starters: ['Start plainly'],
+          frames: ['___ is plain.'],
+          cloze: [{ text: 'The plain gap is ___.', answers: ['Plain term'] }],
+        },
+      ],
+    };
+    assert.deepEqual(validate.validateScaffolds(hostile), []);
+    for (const html of [printable.renderScaffolds(hostile), printable.renderScaffoldsAnswerKey(hostile)]) {
+      assert.ok(!html.includes('<script'), 'no raw script tag');
+      assert.ok(html.includes('&lt;script&gt;'), 'script escaped');
+      assert.ok(html.includes('&amp;'), 'ampersand escaped');
+      assert.ok(html.includes('&quot;'), 'quote escaped');
+    }
+  });
+
+  test('invalid scaffolds throw with the invalid scaffolds prefix', () => {
+    assert.throws(() => printable.renderScaffolds({}), /invalid scaffolds:/);
+    assert.throws(() => printable.renderScaffolds(null), /invalid scaffolds:/);
+    assert.throws(() => printable.renderScaffoldsAnswerKey({}), /invalid scaffolds:/);
+    assert.throws(() => printable.renderScaffoldsAnswerKey(null), /invalid scaffolds:/);
+  });
+
+  test('scaffolds validator resolves through the AnimathValidate global when present', () => {
+    globalThis.AnimathValidate = validate;
+    try {
+      assert.ok(printable.renderScaffolds(scaffolds).includes(scaffolds.title));
+      assert.ok(printable.renderScaffoldsAnswerKey(scaffolds).includes(scaffolds.title));
+    } finally {
+      delete globalThis.AnimathValidate;
+    }
+  });
+
+  test('a global validator without validateScaffolds throws the missing-validator error', () => {
+    globalThis.AnimathValidate = {};
+    try {
+      assert.throws(() => printable.renderScaffolds(scaffolds), /animath printable: player\/validate\.js is missing/);
+      assert.throws(() => printable.renderScaffoldsAnswerKey(scaffolds), /animath printable: player\/validate\.js is missing/);
+    } finally {
+      delete globalThis.AnimathValidate;
+    }
+  });
+});

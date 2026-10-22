@@ -240,7 +240,7 @@ export function generateScaffolds(
   opts: GenerateScaffoldsOptions,
   deps: GenerateScaffoldsDeps
 ): Promise<ScaffoldsDocument>;
-// generateLessonPack (issue #768): one shared unpack authors all seven
+// generateLessonPack (issue #768): one shared unpack authors all eight
 // materials; packs are cached in memory by topic slug.
 export interface GenerateLessonPackOptions {
   topic: string;
@@ -268,6 +268,7 @@ export interface GenerateLessonPackDeps {
   validateExitTicket?: PipelineValidate;
   validateScript?: PipelineValidate;
   validateLessonPlan?: PipelineValidate;
+  validateScaffolds?: PipelineValidate;
   onProgress?: PipelineProgress;
 }
 export interface PackMetadataCode {
@@ -300,6 +301,7 @@ export interface LessonPackResult {
   exitTicket: ExitTicketDocument;
   script: ScriptDocument;
   lessonPlan: LessonPlanDocument;
+  scaffolds: ScaffoldsDocument;
 }
 export function generateLessonPack(
   opts: GenerateLessonPackOptions,
