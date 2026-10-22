@@ -175,6 +175,33 @@ export function generateScript(
   opts: GenerateScriptOptions,
   deps: GenerateScriptDeps
 ): Promise<ScriptDocument>;
+// generateLessonPlan options (issue #1215): the GenerateScriptOptions
+// shape — topic, optional topicLabel/level, subject, and an optional
+// worked example handed to the lesson plan prompt builder.
+export interface GenerateLessonPlanOptions {
+  topic: string;
+  topicLabel?: string;
+  level?: string;
+  subject: string;
+  /** Optional worked example for this topic, adapted by the author prompt. */
+  workedExample?: string;
+  /** Number of repair turns after the first attempt. Default 3; 0 disables repair. */
+  maxRepairs?: number;
+}
+export interface GenerateLessonPlanDeps {
+  callChat: PipelineCallChat;
+  /** Lesson-plan validator; defaults to the built-in validateLessonPlan when omitted. */
+  validateLessonPlan?: PipelineValidate;
+  /** Fallback validator, used when validateLessonPlan is not supplied. */
+  validate?: PipelineValidate;
+  onProgress?: PipelineProgress;
+}
+// The parsed animath lesson plan that validated clean.
+export type LessonPlanDocument = Record<string, unknown>;
+export function generateLessonPlan(
+  opts: GenerateLessonPlanOptions,
+  deps: GenerateLessonPlanDeps
+): Promise<LessonPlanDocument>;
 // generateLessonPack (issue #768): one shared unpack authors all six
 // materials; packs are cached in memory by topic slug.
 export interface GenerateLessonPackOptions {

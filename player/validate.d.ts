@@ -6,5 +6,6 @@ export function validateWorksheet(spec: unknown): string[];
 export function validateExitTicket(spec: unknown): string[];
 export function validateNotes(spec: unknown): string[];
 export function validateScript(spec: unknown): string[];
+export function validateLessonPlan(spec: unknown): string[];
 // Syllabus-known subjects; validateSpec accepts any non-empty subject string.
 export const SUBJECTS: string[];

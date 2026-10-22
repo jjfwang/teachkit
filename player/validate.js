@@ -603,7 +603,118 @@
     return errors;
   }
 
-  return { validateSpec: validateSpec, validateSlides: validateSlides, validateWorksheet: validateWorksheet, validateExitTicket: validateExitTicket, validateNotes: validateNotes, validateScript: validateScript, SUBJECTS: SUBJECTS };
+  // Required string-array fields on a lesson plan (an objective's
+  // successCriteria / assessmentPoints): a non-empty array whose every
+  // entry is a non-empty string.
+  function checkRequiredStringArray(value, errors, label) {
+    if (!Array.isArray(value) || value.length === 0) {
+      errors.push(label + ': required non-empty array of non-empty strings');
+      return;
+    }
+    value.forEach(function (entry, j) {
+      if (typeof entry !== 'string' || !entry.trim()) {
+        errors.push(label + '[' + j + ']: must be a non-empty string');
+      }
+    });
+  }
+
+  // Lesson plan validator (SPEC.md "Lesson plan spec"): the plan a
+  // teacher script delivers from -- objectives with unique ids, success
+  // criteria and assessment points, and an activity sequence whose
+  // minutes sum exactly to durationMinutes.
+  function validateLessonPlan(spec) {
+    var errors = [];
+    if (!spec || typeof spec !== 'object') return ['spec: must be an object'];
+    checkMaterialHeader(spec, errors);
+    if (!isNum(spec.durationMinutes) || spec.durationMinutes <= 0) {
+      errors.push('durationMinutes: required positive number');
+    }
+    var objectiveIds = {};
+    if (!Array.isArray(spec.objectives) || spec.objectives.length === 0) {
+      errors.push('objectives: required non-empty array');
+    } else {
+      spec.objectives.forEach(function (objective, i) {
+        var p = 'objectives[' + i + ']';
+        if (!objective || typeof objective !== 'object') {
+          errors.push(p + ': must be an object');
+          return;
+        }
+        if (typeof objective.id !== 'string' || !objective.id.trim()) {
+          errors.push(p + '.id: required non-empty string');
+        } else if (objectiveIds[objective.id]) {
+          errors.push(p + '.id: duplicate objective id');
+        } else {
+          objectiveIds[objective.id] = true;
+        }
+        if (typeof objective.text !== 'string' || !objective.text.trim()) {
+          errors.push(p + '.text: required non-empty string');
+        }
+        checkRequiredStringArray(objective.successCriteria, errors, p + '.successCriteria');
+        checkRequiredStringArray(objective.assessmentPoints, errors, p + '.assessmentPoints');
+      });
+    }
+    if (!Array.isArray(spec.activities) || spec.activities.length === 0) {
+      errors.push('activities: required non-empty array');
+      return errors;
+    }
+    var allMinutesValid = true;
+    var totalMinutes = 0;
+    spec.activities.forEach(function (activity, i) {
+      var p = 'activities[' + i + ']';
+      if (!activity || typeof activity !== 'object') {
+        errors.push(p + ': must be an object');
+        allMinutesValid = false;
+        return;
+      }
+      if (typeof activity.title !== 'string' || !activity.title.trim()) {
+        errors.push(p + '.title: required non-empty string');
+      }
+      if (!isNum(activity.minutes) || activity.minutes <= 0) {
+        errors.push(p + '.minutes: required positive number');
+        allMinutesValid = false;
+      } else {
+        totalMinutes += activity.minutes;
+      }
+      if (!Array.isArray(activity.objectiveIds) || activity.objectiveIds.length === 0) {
+        errors.push(p + '.objectiveIds: required non-empty array');
+      } else {
+        activity.objectiveIds.forEach(function (id, j) {
+          if (typeof id !== 'string' || !id.trim()) {
+            errors.push(p + '.objectiveIds[' + j + ']: required non-empty string');
+          } else if (!objectiveIds[id]) {
+            errors.push(p + '.objectiveIds[' + j + ']: unknown objective id');
+          }
+        });
+      }
+      if (activity.scriptCue !== undefined && (typeof activity.scriptCue !== 'string' || !activity.scriptCue.trim())) {
+        errors.push(p + '.scriptCue: must be a non-empty string when present');
+      }
+      if (activity.grouping !== undefined && (typeof activity.grouping !== 'string' || !activity.grouping.trim())) {
+        errors.push(p + '.grouping: must be a non-empty string when present');
+      }
+      if (activity.resources !== undefined) {
+        checkStringArray(activity.resources, errors, p + '.resources');
+      }
+      if (activity.differentiation !== undefined) {
+        if (!activity.differentiation || typeof activity.differentiation !== 'object' || Array.isArray(activity.differentiation)) {
+          errors.push(p + '.differentiation: must be an object when present');
+        } else {
+          if (activity.differentiation.support !== undefined && (typeof activity.differentiation.support !== 'string' || !activity.differentiation.support.trim())) {
+            errors.push(p + '.differentiation.support: must be a non-empty string when present');
+          }
+          if (activity.differentiation.stretch !== undefined && (typeof activity.differentiation.stretch !== 'string' || !activity.differentiation.stretch.trim())) {
+            errors.push(p + '.differentiation.stretch: must be a non-empty string when present');
+          }
+        }
+      }
+    });
+    if (allMinutesValid && isNum(spec.durationMinutes) && spec.durationMinutes > 0 && totalMinutes !== spec.durationMinutes) {
+      errors.push('activities: minutes must sum to durationMinutes');
+    }
+    return errors;
+  }
+
+  return { validateSpec: validateSpec, validateSlides: validateSlides, validateWorksheet: validateWorksheet, validateExitTicket: validateExitTicket, validateNotes: validateNotes, validateScript: validateScript, validateLessonPlan: validateLessonPlan, SUBJECTS: SUBJECTS };
 });
 
 /* ------------------------------------------------------------------
