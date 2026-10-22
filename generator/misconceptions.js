@@ -600,6 +600,12 @@
       why: 'Photographs of the old village and the modern city look completely different, so it is easy to imagine one was swept away and the other put in its place overnight.',
       correctTurn: 'The change was gradual and driven by growing trade: the fishing village first became a trading port with godowns and a jetty, the port then expanded with warehouses and steamships, and only later did the modern city of tall buildings, roads and container ships rise - stage by stage at the same site, with the population growing at every stage.'
     },
+    // Slice 1 (issue #1188): Secondary Design Studies NP05.
+    'ergonomic-dimensions': {
+      wrongTurn: 'One standard size fits every user, because a chair built to average measurements fits each person who sits in it.',
+      why: 'A standard chair looks like it fits because most people can sit on it, so it is easy to assume the average size is close enough for every body.',
+      correctTurn: 'Ergonomic design sizes the product from the user\'s own measurements: the seat height is set to the lower-leg height so the feet rest flat, the seat width to the hip breadth plus clearance, and the desk height to the seat height plus the seated elbow height - a chair built to the average leaves every gap open for anyone who is not average.'
+    },
     // Slice 1 (issue #1178): Secondary Biotechnology NP04.
     'fermentation': {
       wrongTurn: 'The alcohol appears from nothing as the mixture ferments, because the glucose in the flask stays the same while ethanol and gas are produced.',

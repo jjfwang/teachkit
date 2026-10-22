@@ -177,6 +177,12 @@ Biotechnology:
 |---|---|
 | `fermentation` | Fermentation (Secondary Biotechnology NP04): yeast in one flask converting glucose to ethanol and carbon dioxide over time - the glucose bar falls as the yeast consumes it, the ethanol bar rises, and carbon dioxide bubbles form, rise and collect in the gas space |
 
+Design Studies:
+
+| slug | topic |
+|---|---|
+| `ergonomic-dimensions` | Ergonomic dimensions (Secondary Design Studies NP05): one chair-and-desk set sized for one student stage by stage - the lower-leg height sets the seat height so the feet rest flat, the hip breadth plus clearance sets the seat width, the seated elbow height sets the desk height, and a fit bar climbs as each fit gap closes |
+
 ## Junior College — H2
 
 Mathematics:
@@ -266,7 +272,7 @@ History:
 - `level` + `subject` on a spec are coarse (`primary|secondary|jc`,
   and `subject` per `SPEC.md` §subject — any non-empty string; the
   syllabus-covered subjects in `player/validate.js` SUBJECTS are currently
-  `math|science|geography|economics|computing|electronics|design-technology|nutrition-food-science|principles-of-accounts|business-studies|exercise-sports-science|management-of-business|history|social-studies|biotechnology`); the `topic` slug carries the precise syllabus
+  `math|science|geography|economics|computing|electronics|design-technology|nutrition-food-science|principles-of-accounts|business-studies|exercise-sports-science|management-of-business|history|social-studies|biotechnology|design-studies`); the `topic` slug carries the precise syllabus
   point. SUBJECTS is the syllabus-known list for gallery/coverage, not the
   validator's allowed set. When a new syllabus-covered subject lands, update
   this line against those sources; the syllabus.test.js SUBJECTS test fails

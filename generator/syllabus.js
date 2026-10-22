@@ -171,6 +171,11 @@
             id: 'biotechnology', label: 'Biotechnology', subject: 'biotechnology', topics: [
             { slug: 'fermentation', label: 'Fermentation' }
             ]
+          },
+          {
+            id: 'design-studies', label: 'Design Studies', subject: 'design-studies', topics: [
+            { slug: 'ergonomic-dimensions', label: 'Ergonomic dimensions' }
+            ]
           }
         ]
       },
