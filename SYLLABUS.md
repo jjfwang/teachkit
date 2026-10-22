@@ -225,12 +225,18 @@ Principles of Accounting:
 |---|---|
 | `absorption-marginal-costing` | Absorption and marginal costing (SEAB 9593): direct materials $10 + direct labour $6 + variable production overhead $4 gives a marginal unit cost of $20, fixed production overhead of $12,000 over 1,000 units produced adds $12 per unit for an absorption unit cost of $32 - with 800 units sold, the 200-unit closing inventory carries 200 x $12 = $2,400 of fixed overhead forward under absorption costing while marginal costing expenses the full $12,000 in the period, so at a $50 selling price absorption profit of $9,400 exceeds marginal profit of $7,000 by exactly $2,400 |
 
+Management of Business:
+
+| slug | topic |
+|---|---|
+| `inventory-control` | Inventory control (SEAB 9587): the sawtooth stock chart for one stocked item - stock falls at a steady usage rate from the maximum stock level of 1,000 units, the fall crossing the reorder level of 500 units triggers a new order, stock keeps falling through the 2-day lead time towards but never below the buffer stock of 250 units, and the delivery lands and jumps stock back to the maximum level so the sawtooth runs a second cycle |
+
 ## Notes for the generator
 
 - `level` + `subject` on a spec are coarse (`primary|secondary|jc`,
   and `subject` per `SPEC.md` §subject — any non-empty string; the
   syllabus-covered subjects in `player/validate.js` SUBJECTS are currently
-  `math|science|geography|economics|computing|electronics|design-technology|nutrition-food-science|principles-of-accounts|business-studies|exercise-sports-science`); the `topic` slug carries the precise syllabus
+  `math|science|geography|economics|computing|electronics|design-technology|nutrition-food-science|principles-of-accounts|business-studies|exercise-sports-science|management-of-business`); the `topic` slug carries the precise syllabus
   point. SUBJECTS is the syllabus-known list for gallery/coverage, not the
   validator's allowed set. When a new syllabus-covered subject lands, update
   this line against those sources; the syllabus.test.js SUBJECTS test fails
