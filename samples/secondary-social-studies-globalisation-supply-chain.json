@@ -1,0 +1,1229 @@
+{
+  "animath": "0.1",
+  "title": "The Globalisation Supply Chain of One Smartphone",
+  "level": "secondary",
+  "subject": "social-studies",
+  "topic": "globalisation-supply-chain",
+  "kind": "concept",
+  "canvas": {
+    "width": 960,
+    "height": 540
+  },
+  "scenes": [
+    {
+      "id": "s1",
+      "caption": "Mine raw materials: value rises to $10 of value",
+      "narration": "Lithium and metals are dug out of the ground in Country A. The phone exists only as raw material, worth the least it will ever be worth.",
+      "duration_ms": 7000,
+      "steps": [
+        {
+          "at_ms": 0,
+          "do": "show",
+          "shape": {
+            "id": "title",
+            "kind": "text",
+            "x": 480,
+            "y": 34,
+            "text": "One Smartphone, Four Countries",
+            "size": 20,
+            "color": "#1a1a1a",
+            "align": "middle",
+            "explain": "Label: One Smartphone, Four Countries"
+          }
+        },
+        {
+          "at_ms": 150,
+          "do": "show",
+          "shape": {
+            "id": "stage",
+            "kind": "text",
+            "x": 480,
+            "y": 74,
+            "text": "Stage 1: Mine raw materials - Country A",
+            "size": 16,
+            "color": "#1a1a1a",
+            "align": "middle",
+            "explain": "Label: Stage 1: Mine raw materials - Country A"
+          }
+        },
+        {
+          "at_ms": 300,
+          "do": "show",
+          "shape": {
+            "id": "track",
+            "kind": "line",
+            "x1": 60,
+            "y1": 270,
+            "x2": 900,
+            "y2": 270,
+            "stroke": "#888888",
+            "width": 2,
+            "explain": "Route line: the supply chain route the product travels along."
+          }
+        },
+        {
+          "at_ms": 350,
+          "do": "show",
+          "shape": {
+            "id": "arr0",
+            "kind": "arrow",
+            "x1": 220,
+            "y1": 270,
+            "x2": 280,
+            "y2": 270,
+            "stroke": "#315fd6",
+            "width": 3,
+            "explain": "Route arrow: the product is carried on to the next country."
+          }
+        },
+        {
+          "at_ms": 400,
+          "do": "show",
+          "shape": {
+            "id": "arr1",
+            "kind": "arrow",
+            "x1": 450,
+            "y1": 270,
+            "x2": 510,
+            "y2": 270,
+            "stroke": "#315fd6",
+            "width": 3,
+            "explain": "Route arrow: the product is carried on to the next country."
+          }
+        },
+        {
+          "at_ms": 400,
+          "do": "show",
+          "shape": {
+            "id": "box0",
+            "kind": "rect",
+            "x": 60,
+            "y": 170,
+            "w": 150,
+            "h": 60,
+            "fill": "#89abff",
+            "explain": "Stage box: Mine raw materials in Country A."
+          }
+        },
+        {
+          "at_ms": 450,
+          "do": "show",
+          "shape": {
+            "id": "arr2",
+            "kind": "arrow",
+            "x1": 680,
+            "y1": 270,
+            "x2": 740,
+            "y2": 270,
+            "stroke": "#315fd6",
+            "width": 3,
+            "explain": "Route arrow: the product is carried on to the next country."
+          }
+        },
+        {
+          "at_ms": 450,
+          "do": "show",
+          "shape": {
+            "id": "boxLab0",
+            "kind": "text",
+            "x": 135,
+            "y": 150,
+            "text": "Country A",
+            "size": 14,
+            "color": "#1a1a1a",
+            "align": "middle",
+            "explain": "Label: Country A"
+          }
+        },
+        {
+          "at_ms": 480,
+          "do": "show",
+          "shape": {
+            "id": "box1",
+            "kind": "rect",
+            "x": 290,
+            "y": 170,
+            "w": 150,
+            "h": 60,
+            "fill": "#dddddd",
+            "explain": "Stage box: Make the components in Country B."
+          }
+        },
+        {
+          "at_ms": 530,
+          "do": "show",
+          "shape": {
+            "id": "boxLab1",
+            "kind": "text",
+            "x": 365,
+            "y": 150,
+            "text": "Country B",
+            "size": 14,
+            "color": "#1a1a1a",
+            "align": "middle",
+            "explain": "Label: Country B"
+          }
+        },
+        {
+          "at_ms": 560,
+          "do": "show",
+          "shape": {
+            "id": "box2",
+            "kind": "rect",
+            "x": 520,
+            "y": 170,
+            "w": 150,
+            "h": 60,
+            "fill": "#dddddd",
+            "explain": "Stage box: Assemble the phone in Country C."
+          }
+        },
+        {
+          "at_ms": 610,
+          "do": "show",
+          "shape": {
+            "id": "boxLab2",
+            "kind": "text",
+            "x": 595,
+            "y": 150,
+            "text": "Country C",
+            "size": 14,
+            "color": "#1a1a1a",
+            "align": "middle",
+            "explain": "Label: Country C"
+          }
+        },
+        {
+          "at_ms": 640,
+          "do": "show",
+          "shape": {
+            "id": "box3",
+            "kind": "rect",
+            "x": 750,
+            "y": 170,
+            "w": 150,
+            "h": 60,
+            "fill": "#dddddd",
+            "explain": "Stage box: Sell it in Singapore in Singapore."
+          }
+        },
+        {
+          "at_ms": 690,
+          "do": "show",
+          "shape": {
+            "id": "boxLab3",
+            "kind": "text",
+            "x": 825,
+            "y": 150,
+            "text": "Singapore",
+            "size": 14,
+            "color": "#1a1a1a",
+            "align": "middle",
+            "explain": "Label: Singapore"
+          }
+        },
+        {
+          "at_ms": 900,
+          "do": "show",
+          "shape": {
+            "id": "prod",
+            "kind": "rect",
+            "x": 115,
+            "y": 260,
+            "w": 40,
+            "h": 20,
+            "fill": "#b00020",
+            "explain": "The product: one smartphone (or its materials) travelling along the chain."
+          }
+        },
+        {
+          "at_ms": 1500,
+          "do": "show",
+          "shape": {
+            "id": "valLab",
+            "kind": "text",
+            "x": 480,
+            "y": 330,
+            "text": "Value added so far",
+            "size": 14,
+            "color": "#1a1a1a",
+            "align": "middle",
+            "explain": "Label: Value added so far"
+          }
+        },
+        {
+          "at_ms": 1650,
+          "do": "show",
+          "shape": {
+            "id": "valBar",
+            "kind": "rect",
+            "x": 450,
+            "y": 450,
+            "w": 60,
+            "h": 10,
+            "fill": "#2e7d32",
+            "explain": "Value-added bar: it grows at every handover as each stage adds value."
+          }
+        },
+        {
+          "at_ms": 1800,
+          "do": "move",
+          "target": "valBar",
+          "to": {
+            "y": 410,
+            "h": 40
+          },
+          "dur_ms": 1500
+        },
+        {
+          "at_ms": 3400,
+          "do": "show",
+          "shape": {
+            "id": "valAmt",
+            "kind": "text",
+            "x": 780,
+            "y": 400,
+            "text": "$10 of value",
+            "size": 16,
+            "color": "#1a1a1a",
+            "align": "middle",
+            "explain": "Label: $10 of value"
+          }
+        },
+        {
+          "at_ms": 3600,
+          "do": "show",
+          "shape": {
+            "id": "outcome",
+            "kind": "text",
+            "x": 480,
+            "y": 505,
+            "text": "Raw materials leave the mine - the chain has begun.",
+            "size": 13,
+            "color": "#1a1a1a",
+            "align": "middle",
+            "explain": "Outcome: Raw materials leave the mine - the chain has begun."
+          }
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "caption": "Make the components: value rises to $35 of value",
+      "narration": "The raw materials travel to Country B, where factories turn them into chips, screens and batteries. Making parts adds value.",
+      "duration_ms": 7000,
+      "steps": [
+        {
+          "at_ms": 0,
+          "do": "show",
+          "shape": {
+            "id": "title",
+            "kind": "text",
+            "x": 480,
+            "y": 34,
+            "text": "One Smartphone, Four Countries",
+            "size": 20,
+            "color": "#1a1a1a",
+            "align": "middle",
+            "explain": "Label: One Smartphone, Four Countries"
+          }
+        },
+        {
+          "at_ms": 150,
+          "do": "show",
+          "shape": {
+            "id": "stage",
+            "kind": "text",
+            "x": 480,
+            "y": 74,
+            "text": "Stage 2: Make the components - Country B",
+            "size": 16,
+            "color": "#1a1a1a",
+            "align": "middle",
+            "explain": "Label: Stage 2: Make the components - Country B"
+          }
+        },
+        {
+          "at_ms": 300,
+          "do": "show",
+          "shape": {
+            "id": "track",
+            "kind": "line",
+            "x1": 60,
+            "y1": 270,
+            "x2": 900,
+            "y2": 270,
+            "stroke": "#888888",
+            "width": 2,
+            "explain": "Route line: the supply chain route the product travels along."
+          }
+        },
+        {
+          "at_ms": 350,
+          "do": "show",
+          "shape": {
+            "id": "arr0",
+            "kind": "arrow",
+            "x1": 220,
+            "y1": 270,
+            "x2": 280,
+            "y2": 270,
+            "stroke": "#315fd6",
+            "width": 3,
+            "explain": "Route arrow: the product is carried on to the next country."
+          }
+        },
+        {
+          "at_ms": 400,
+          "do": "show",
+          "shape": {
+            "id": "arr1",
+            "kind": "arrow",
+            "x1": 450,
+            "y1": 270,
+            "x2": 510,
+            "y2": 270,
+            "stroke": "#315fd6",
+            "width": 3,
+            "explain": "Route arrow: the product is carried on to the next country."
+          }
+        },
+        {
+          "at_ms": 400,
+          "do": "show",
+          "shape": {
+            "id": "box0",
+            "kind": "rect",
+            "x": 60,
+            "y": 170,
+            "w": 150,
+            "h": 60,
+            "fill": "#dddddd",
+            "explain": "Stage box: Mine raw materials in Country A."
+          }
+        },
+        {
+          "at_ms": 450,
+          "do": "show",
+          "shape": {
+            "id": "arr2",
+            "kind": "arrow",
+            "x1": 680,
+            "y1": 270,
+            "x2": 740,
+            "y2": 270,
+            "stroke": "#315fd6",
+            "width": 3,
+            "explain": "Route arrow: the product is carried on to the next country."
+          }
+        },
+        {
+          "at_ms": 450,
+          "do": "show",
+          "shape": {
+            "id": "boxLab0",
+            "kind": "text",
+            "x": 135,
+            "y": 150,
+            "text": "Country A",
+            "size": 14,
+            "color": "#1a1a1a",
+            "align": "middle",
+            "explain": "Label: Country A"
+          }
+        },
+        {
+          "at_ms": 480,
+          "do": "show",
+          "shape": {
+            "id": "box1",
+            "kind": "rect",
+            "x": 290,
+            "y": 170,
+            "w": 150,
+            "h": 60,
+            "fill": "#89abff",
+            "explain": "Stage box: Make the components in Country B."
+          }
+        },
+        {
+          "at_ms": 530,
+          "do": "show",
+          "shape": {
+            "id": "boxLab1",
+            "kind": "text",
+            "x": 365,
+            "y": 150,
+            "text": "Country B",
+            "size": 14,
+            "color": "#1a1a1a",
+            "align": "middle",
+            "explain": "Label: Country B"
+          }
+        },
+        {
+          "at_ms": 560,
+          "do": "show",
+          "shape": {
+            "id": "box2",
+            "kind": "rect",
+            "x": 520,
+            "y": 170,
+            "w": 150,
+            "h": 60,
+            "fill": "#dddddd",
+            "explain": "Stage box: Assemble the phone in Country C."
+          }
+        },
+        {
+          "at_ms": 610,
+          "do": "show",
+          "shape": {
+            "id": "boxLab2",
+            "kind": "text",
+            "x": 595,
+            "y": 150,
+            "text": "Country C",
+            "size": 14,
+            "color": "#1a1a1a",
+            "align": "middle",
+            "explain": "Label: Country C"
+          }
+        },
+        {
+          "at_ms": 640,
+          "do": "show",
+          "shape": {
+            "id": "box3",
+            "kind": "rect",
+            "x": 750,
+            "y": 170,
+            "w": 150,
+            "h": 60,
+            "fill": "#dddddd",
+            "explain": "Stage box: Sell it in Singapore in Singapore."
+          }
+        },
+        {
+          "at_ms": 690,
+          "do": "show",
+          "shape": {
+            "id": "boxLab3",
+            "kind": "text",
+            "x": 825,
+            "y": 150,
+            "text": "Singapore",
+            "size": 14,
+            "color": "#1a1a1a",
+            "align": "middle",
+            "explain": "Label: Singapore"
+          }
+        },
+        {
+          "at_ms": 900,
+          "do": "show",
+          "shape": {
+            "id": "prod",
+            "kind": "rect",
+            "x": 115,
+            "y": 260,
+            "w": 40,
+            "h": 20,
+            "fill": "#b00020",
+            "explain": "The product: one smartphone (or its materials) travelling along the chain."
+          }
+        },
+        {
+          "at_ms": 1100,
+          "do": "move",
+          "target": "prod",
+          "to": {
+            "x": 345
+          },
+          "dur_ms": 1600
+        },
+        {
+          "at_ms": 1500,
+          "do": "show",
+          "shape": {
+            "id": "valLab",
+            "kind": "text",
+            "x": 480,
+            "y": 330,
+            "text": "Value added so far",
+            "size": 14,
+            "color": "#1a1a1a",
+            "align": "middle",
+            "explain": "Label: Value added so far"
+          }
+        },
+        {
+          "at_ms": 1650,
+          "do": "show",
+          "shape": {
+            "id": "valBar",
+            "kind": "rect",
+            "x": 450,
+            "y": 450,
+            "w": 60,
+            "h": 10,
+            "fill": "#2e7d32",
+            "explain": "Value-added bar: it grows at every handover as each stage adds value."
+          }
+        },
+        {
+          "at_ms": 1800,
+          "do": "move",
+          "target": "valBar",
+          "to": {
+            "y": 360,
+            "h": 90
+          },
+          "dur_ms": 1500
+        },
+        {
+          "at_ms": 3400,
+          "do": "show",
+          "shape": {
+            "id": "valAmt",
+            "kind": "text",
+            "x": 780,
+            "y": 400,
+            "text": "$35 of value",
+            "size": 16,
+            "color": "#1a1a1a",
+            "align": "middle",
+            "explain": "Label: $35 of value"
+          }
+        },
+        {
+          "at_ms": 3600,
+          "do": "show",
+          "shape": {
+            "id": "outcome",
+            "kind": "text",
+            "x": 480,
+            "y": 505,
+            "text": "Components are made - the bar rises.",
+            "size": 13,
+            "color": "#1a1a1a",
+            "align": "middle",
+            "explain": "Outcome: Components are made - the bar rises."
+          }
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "caption": "Assemble the phone: value rises to $70 of value",
+      "narration": "Components travel on to Country C, where workers assemble them into a finished smartphone. Assembly adds more value.",
+      "duration_ms": 7000,
+      "steps": [
+        {
+          "at_ms": 0,
+          "do": "show",
+          "shape": {
+            "id": "title",
+            "kind": "text",
+            "x": 480,
+            "y": 34,
+            "text": "One Smartphone, Four Countries",
+            "size": 20,
+            "color": "#1a1a1a",
+            "align": "middle",
+            "explain": "Label: One Smartphone, Four Countries"
+          }
+        },
+        {
+          "at_ms": 150,
+          "do": "show",
+          "shape": {
+            "id": "stage",
+            "kind": "text",
+            "x": 480,
+            "y": 74,
+            "text": "Stage 3: Assemble the phone - Country C",
+            "size": 16,
+            "color": "#1a1a1a",
+            "align": "middle",
+            "explain": "Label: Stage 3: Assemble the phone - Country C"
+          }
+        },
+        {
+          "at_ms": 300,
+          "do": "show",
+          "shape": {
+            "id": "track",
+            "kind": "line",
+            "x1": 60,
+            "y1": 270,
+            "x2": 900,
+            "y2": 270,
+            "stroke": "#888888",
+            "width": 2,
+            "explain": "Route line: the supply chain route the product travels along."
+          }
+        },
+        {
+          "at_ms": 350,
+          "do": "show",
+          "shape": {
+            "id": "arr0",
+            "kind": "arrow",
+            "x1": 220,
+            "y1": 270,
+            "x2": 280,
+            "y2": 270,
+            "stroke": "#315fd6",
+            "width": 3,
+            "explain": "Route arrow: the product is carried on to the next country."
+          }
+        },
+        {
+          "at_ms": 400,
+          "do": "show",
+          "shape": {
+            "id": "arr1",
+            "kind": "arrow",
+            "x1": 450,
+            "y1": 270,
+            "x2": 510,
+            "y2": 270,
+            "stroke": "#315fd6",
+            "width": 3,
+            "explain": "Route arrow: the product is carried on to the next country."
+          }
+        },
+        {
+          "at_ms": 400,
+          "do": "show",
+          "shape": {
+            "id": "box0",
+            "kind": "rect",
+            "x": 60,
+            "y": 170,
+            "w": 150,
+            "h": 60,
+            "fill": "#dddddd",
+            "explain": "Stage box: Mine raw materials in Country A."
+          }
+        },
+        {
+          "at_ms": 450,
+          "do": "show",
+          "shape": {
+            "id": "arr2",
+            "kind": "arrow",
+            "x1": 680,
+            "y1": 270,
+            "x2": 740,
+            "y2": 270,
+            "stroke": "#315fd6",
+            "width": 3,
+            "explain": "Route arrow: the product is carried on to the next country."
+          }
+        },
+        {
+          "at_ms": 450,
+          "do": "show",
+          "shape": {
+            "id": "boxLab0",
+            "kind": "text",
+            "x": 135,
+            "y": 150,
+            "text": "Country A",
+            "size": 14,
+            "color": "#1a1a1a",
+            "align": "middle",
+            "explain": "Label: Country A"
+          }
+        },
+        {
+          "at_ms": 480,
+          "do": "show",
+          "shape": {
+            "id": "box1",
+            "kind": "rect",
+            "x": 290,
+            "y": 170,
+            "w": 150,
+            "h": 60,
+            "fill": "#dddddd",
+            "explain": "Stage box: Make the components in Country B."
+          }
+        },
+        {
+          "at_ms": 530,
+          "do": "show",
+          "shape": {
+            "id": "boxLab1",
+            "kind": "text",
+            "x": 365,
+            "y": 150,
+            "text": "Country B",
+            "size": 14,
+            "color": "#1a1a1a",
+            "align": "middle",
+            "explain": "Label: Country B"
+          }
+        },
+        {
+          "at_ms": 560,
+          "do": "show",
+          "shape": {
+            "id": "box2",
+            "kind": "rect",
+            "x": 520,
+            "y": 170,
+            "w": 150,
+            "h": 60,
+            "fill": "#89abff",
+            "explain": "Stage box: Assemble the phone in Country C."
+          }
+        },
+        {
+          "at_ms": 610,
+          "do": "show",
+          "shape": {
+            "id": "boxLab2",
+            "kind": "text",
+            "x": 595,
+            "y": 150,
+            "text": "Country C",
+            "size": 14,
+            "color": "#1a1a1a",
+            "align": "middle",
+            "explain": "Label: Country C"
+          }
+        },
+        {
+          "at_ms": 640,
+          "do": "show",
+          "shape": {
+            "id": "box3",
+            "kind": "rect",
+            "x": 750,
+            "y": 170,
+            "w": 150,
+            "h": 60,
+            "fill": "#dddddd",
+            "explain": "Stage box: Sell it in Singapore in Singapore."
+          }
+        },
+        {
+          "at_ms": 690,
+          "do": "show",
+          "shape": {
+            "id": "boxLab3",
+            "kind": "text",
+            "x": 825,
+            "y": 150,
+            "text": "Singapore",
+            "size": 14,
+            "color": "#1a1a1a",
+            "align": "middle",
+            "explain": "Label: Singapore"
+          }
+        },
+        {
+          "at_ms": 900,
+          "do": "show",
+          "shape": {
+            "id": "prod",
+            "kind": "rect",
+            "x": 115,
+            "y": 260,
+            "w": 40,
+            "h": 20,
+            "fill": "#b00020",
+            "explain": "The product: one smartphone (or its materials) travelling along the chain."
+          }
+        },
+        {
+          "at_ms": 1100,
+          "do": "move",
+          "target": "prod",
+          "to": {
+            "x": 575
+          },
+          "dur_ms": 1600
+        },
+        {
+          "at_ms": 1500,
+          "do": "show",
+          "shape": {
+            "id": "valLab",
+            "kind": "text",
+            "x": 480,
+            "y": 330,
+            "text": "Value added so far",
+            "size": 14,
+            "color": "#1a1a1a",
+            "align": "middle",
+            "explain": "Label: Value added so far"
+          }
+        },
+        {
+          "at_ms": 1650,
+          "do": "show",
+          "shape": {
+            "id": "valBar",
+            "kind": "rect",
+            "x": 450,
+            "y": 450,
+            "w": 60,
+            "h": 10,
+            "fill": "#2e7d32",
+            "explain": "Value-added bar: it grows at every handover as each stage adds value."
+          }
+        },
+        {
+          "at_ms": 1800,
+          "do": "move",
+          "target": "valBar",
+          "to": {
+            "y": 300,
+            "h": 150
+          },
+          "dur_ms": 1500
+        },
+        {
+          "at_ms": 3400,
+          "do": "show",
+          "shape": {
+            "id": "valAmt",
+            "kind": "text",
+            "x": 780,
+            "y": 400,
+            "text": "$70 of value",
+            "size": 16,
+            "color": "#1a1a1a",
+            "align": "middle",
+            "explain": "Label: $70 of value"
+          }
+        },
+        {
+          "at_ms": 3600,
+          "do": "show",
+          "shape": {
+            "id": "outcome",
+            "kind": "text",
+            "x": 480,
+            "y": 505,
+            "text": "A finished phone rolls off the line - the bar rises again.",
+            "size": 13,
+            "color": "#1a1a1a",
+            "align": "middle",
+            "explain": "Outcome: A finished phone rolls off the line - the bar rises again."
+          }
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "caption": "Sell it in Singapore: value rises to $120 of value",
+      "narration": "The finished phone is shipped to a shop shelf in Singapore, where it is sold. Transport, branding and retail add the final value.",
+      "duration_ms": 7000,
+      "steps": [
+        {
+          "at_ms": 0,
+          "do": "show",
+          "shape": {
+            "id": "title",
+            "kind": "text",
+            "x": 480,
+            "y": 34,
+            "text": "One Smartphone, Four Countries",
+            "size": 20,
+            "color": "#1a1a1a",
+            "align": "middle",
+            "explain": "Label: One Smartphone, Four Countries"
+          }
+        },
+        {
+          "at_ms": 150,
+          "do": "show",
+          "shape": {
+            "id": "stage",
+            "kind": "text",
+            "x": 480,
+            "y": 74,
+            "text": "Stage 4: Sell it in Singapore - Singapore",
+            "size": 16,
+            "color": "#1a1a1a",
+            "align": "middle",
+            "explain": "Label: Stage 4: Sell it in Singapore - Singapore"
+          }
+        },
+        {
+          "at_ms": 300,
+          "do": "show",
+          "shape": {
+            "id": "track",
+            "kind": "line",
+            "x1": 60,
+            "y1": 270,
+            "x2": 900,
+            "y2": 270,
+            "stroke": "#888888",
+            "width": 2,
+            "explain": "Route line: the supply chain route the product travels along."
+          }
+        },
+        {
+          "at_ms": 350,
+          "do": "show",
+          "shape": {
+            "id": "arr0",
+            "kind": "arrow",
+            "x1": 220,
+            "y1": 270,
+            "x2": 280,
+            "y2": 270,
+            "stroke": "#315fd6",
+            "width": 3,
+            "explain": "Route arrow: the product is carried on to the next country."
+          }
+        },
+        {
+          "at_ms": 400,
+          "do": "show",
+          "shape": {
+            "id": "arr1",
+            "kind": "arrow",
+            "x1": 450,
+            "y1": 270,
+            "x2": 510,
+            "y2": 270,
+            "stroke": "#315fd6",
+            "width": 3,
+            "explain": "Route arrow: the product is carried on to the next country."
+          }
+        },
+        {
+          "at_ms": 400,
+          "do": "show",
+          "shape": {
+            "id": "box0",
+            "kind": "rect",
+            "x": 60,
+            "y": 170,
+            "w": 150,
+            "h": 60,
+            "fill": "#dddddd",
+            "explain": "Stage box: Mine raw materials in Country A."
+          }
+        },
+        {
+          "at_ms": 450,
+          "do": "show",
+          "shape": {
+            "id": "arr2",
+            "kind": "arrow",
+            "x1": 680,
+            "y1": 270,
+            "x2": 740,
+            "y2": 270,
+            "stroke": "#315fd6",
+            "width": 3,
+            "explain": "Route arrow: the product is carried on to the next country."
+          }
+        },
+        {
+          "at_ms": 450,
+          "do": "show",
+          "shape": {
+            "id": "boxLab0",
+            "kind": "text",
+            "x": 135,
+            "y": 150,
+            "text": "Country A",
+            "size": 14,
+            "color": "#1a1a1a",
+            "align": "middle",
+            "explain": "Label: Country A"
+          }
+        },
+        {
+          "at_ms": 480,
+          "do": "show",
+          "shape": {
+            "id": "box1",
+            "kind": "rect",
+            "x": 290,
+            "y": 170,
+            "w": 150,
+            "h": 60,
+            "fill": "#dddddd",
+            "explain": "Stage box: Make the components in Country B."
+          }
+        },
+        {
+          "at_ms": 530,
+          "do": "show",
+          "shape": {
+            "id": "boxLab1",
+            "kind": "text",
+            "x": 365,
+            "y": 150,
+            "text": "Country B",
+            "size": 14,
+            "color": "#1a1a1a",
+            "align": "middle",
+            "explain": "Label: Country B"
+          }
+        },
+        {
+          "at_ms": 560,
+          "do": "show",
+          "shape": {
+            "id": "box2",
+            "kind": "rect",
+            "x": 520,
+            "y": 170,
+            "w": 150,
+            "h": 60,
+            "fill": "#dddddd",
+            "explain": "Stage box: Assemble the phone in Country C."
+          }
+        },
+        {
+          "at_ms": 610,
+          "do": "show",
+          "shape": {
+            "id": "boxLab2",
+            "kind": "text",
+            "x": 595,
+            "y": 150,
+            "text": "Country C",
+            "size": 14,
+            "color": "#1a1a1a",
+            "align": "middle",
+            "explain": "Label: Country C"
+          }
+        },
+        {
+          "at_ms": 640,
+          "do": "show",
+          "shape": {
+            "id": "box3",
+            "kind": "rect",
+            "x": 750,
+            "y": 170,
+            "w": 150,
+            "h": 60,
+            "fill": "#89abff",
+            "explain": "Stage box: Sell it in Singapore in Singapore."
+          }
+        },
+        {
+          "at_ms": 690,
+          "do": "show",
+          "shape": {
+            "id": "boxLab3",
+            "kind": "text",
+            "x": 825,
+            "y": 150,
+            "text": "Singapore",
+            "size": 14,
+            "color": "#1a1a1a",
+            "align": "middle",
+            "explain": "Label: Singapore"
+          }
+        },
+        {
+          "at_ms": 900,
+          "do": "show",
+          "shape": {
+            "id": "prod",
+            "kind": "rect",
+            "x": 115,
+            "y": 260,
+            "w": 40,
+            "h": 20,
+            "fill": "#b00020",
+            "explain": "The product: one smartphone (or its materials) travelling along the chain."
+          }
+        },
+        {
+          "at_ms": 1100,
+          "do": "move",
+          "target": "prod",
+          "to": {
+            "x": 805
+          },
+          "dur_ms": 1600
+        },
+        {
+          "at_ms": 1500,
+          "do": "show",
+          "shape": {
+            "id": "valLab",
+            "kind": "text",
+            "x": 480,
+            "y": 330,
+            "text": "Value added so far",
+            "size": 14,
+            "color": "#1a1a1a",
+            "align": "middle",
+            "explain": "Label: Value added so far"
+          }
+        },
+        {
+          "at_ms": 1650,
+          "do": "show",
+          "shape": {
+            "id": "valBar",
+            "kind": "rect",
+            "x": 450,
+            "y": 450,
+            "w": 60,
+            "h": 10,
+            "fill": "#2e7d32",
+            "explain": "Value-added bar: it grows at every handover as each stage adds value."
+          }
+        },
+        {
+          "at_ms": 1800,
+          "do": "move",
+          "target": "valBar",
+          "to": {
+            "y": 240,
+            "h": 210
+          },
+          "dur_ms": 1500
+        },
+        {
+          "at_ms": 3400,
+          "do": "show",
+          "shape": {
+            "id": "valAmt",
+            "kind": "text",
+            "x": 780,
+            "y": 400,
+            "text": "$120 of value",
+            "size": 16,
+            "color": "#1a1a1a",
+            "align": "middle",
+            "explain": "Label: $120 of value"
+          }
+        },
+        {
+          "at_ms": 3600,
+          "do": "show",
+          "shape": {
+            "id": "outcome",
+            "kind": "text",
+            "x": 480,
+            "y": 505,
+            "text": "On a Singapore shelf - every stage added value.",
+            "size": 13,
+            "color": "#1a1a1a",
+            "align": "middle",
+            "explain": "Outcome: On a Singapore shelf - every stage added value."
+          }
+        }
+      ]
+    }
+  ]
+}

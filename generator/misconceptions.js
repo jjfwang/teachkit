@@ -588,6 +588,12 @@
       why: 'Each independence has its own local leaders, parties and negotiations, so it is easy to treat every territory as a separate story with no connection to its neighbours.',
       correctTurn: 'The territories were linked by a chain: independence in one raised nationalist pressure in the next, because campaigners could point to a neighbour that had already won, colonial control weakened stage by stage, and the example was carried on - Philippines 1946, Indonesia recognised 1949, Malaya 1957, Singapore internal self-government 1959.'
     },
+    // Slice 1 (issue #1173): Secondary Social Studies 2260-2265.
+    'globalisation-supply-chain': {
+      wrongTurn: 'A global product is made entirely in the country where it is sold, because every stage of making it happens in one place.',
+      why: 'The finished phone is bought in one shop in one country and carries one brand, so it is easy to assume the whole product was made in that one place.',
+      correctTurn: 'A global product crosses borders at every stage: raw materials are mined in one country, components are made in a second, the product is assembled in a third, and only then is it shipped to the shop shelf in Singapore - value is added at every handover along the chain.'
+    },
     'oil-shock': {
       wrongTurn: 'The 1973 oil crisis pushed prices up because governments printed extra money to pay for dearer oil.',
       why: 'Prices did rise across the economy after 1973, and governments do print money - so it is easy to read the general inflation as money-printing that happened to coincide with dearer oil.',

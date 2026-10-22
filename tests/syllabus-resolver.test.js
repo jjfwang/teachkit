@@ -1,5 +1,5 @@
 /* Tests for generator/syllabus.js resolveSyllabusTopic (issue #770):
- * every one of the 88 taxonomy slugs resolves bare AND in the composite
+ * every one of the 89 taxonomy slugs resolves bare AND in the composite
  * level/track/slug form to the same {topic, topicLabel, level, subject,
  * track}; unknown, malformed, and ambiguous ids throw synchronously
  * naming the raw id verbatim.
@@ -29,9 +29,9 @@ function allTopics() {
   return out;
 }
 
-test('all 88 slugs resolve bare and composite to the same topic', () => {
+test('all 89 slugs resolve bare and composite to the same topic', () => {
   const topics = allTopics();
-  assert.equal(topics.length, 88);
+  assert.equal(topics.length, 89);
   for (const expected of topics) {
     assert.deepEqual(resolveSyllabusTopic(expected.topic), expected,
       'bare slug resolves: ' + expected.topic);
