@@ -600,6 +600,12 @@
       why: 'Photographs of the old village and the modern city look completely different, so it is easy to imagine one was swept away and the other put in its place overnight.',
       correctTurn: 'The change was gradual and driven by growing trade: the fishing village first became a trading port with godowns and a jetty, the port then expanded with warehouses and steamships, and only later did the modern city of tall buildings, roads and container ships rise - stage by stage at the same site, with the population growing at every stage.'
     },
+    // Slice 1 (issue #1193): JC H2 China Studies in English 9628.
+    'urbanisation': {
+      wrongTurn: 'A Chinese city becomes urban in one sudden leap, because its farmland is replaced by built-up districts all at once.',
+      why: 'Photographs of the same city decades apart look completely different, so it is easy to imagine the farmland was swept away and the city put in its place in a single step.',
+      correctTurn: 'Urbanisation is gradual and driven by people moving in: factories and the first housing blocks are built on farmland at the edge as migrants arrive for jobs, the built-up districts then spread outward stage by stage, and the urban population share climbs - and the rural share falls - at every stage until the city is mostly built-up.'
+    },
     // Slice 1 (issue #1188): Secondary Design Studies NP05.
     'ergonomic-dimensions': {
       wrongTurn: 'One standard size fits every user, because a chair built to average measurements fits each person who sits in it.',

@@ -267,12 +267,18 @@ History:
 |---|---|
 | `oil-shock` | Oil shock (SEAB 9174 Paper 1 Theme II): the 1973 OPEC embargo closes one supply flow, the world oil price jumps from about $3 to about $12 a barrel, and that one rise ripples in stages into transport costs, factory production costs and shop prices while spending falls back |
 
+China Studies:
+
+| slug | topic |
+|---|---|
+| `urbanisation` | Urbanisation (SEAB 9628, China's social development): one Chinese city transforming across decades as people move in - farmland at the edge is built over stage by stage, the built-up area spreads outward, the urban population share climbs and the rural share falls at every stage |
+
 ## Notes for the generator
 
 - `level` + `subject` on a spec are coarse (`primary|secondary|jc`,
   and `subject` per `SPEC.md` §subject — any non-empty string; the
   syllabus-covered subjects in `player/validate.js` SUBJECTS are currently
-  `math|science|geography|economics|computing|electronics|design-technology|nutrition-food-science|principles-of-accounts|business-studies|exercise-sports-science|management-of-business|history|social-studies|biotechnology|design-studies`); the `topic` slug carries the precise syllabus
+  `math|science|geography|economics|computing|electronics|design-technology|nutrition-food-science|principles-of-accounts|business-studies|exercise-sports-science|management-of-business|history|social-studies|biotechnology|design-studies|china-studies`); the `topic` slug carries the precise syllabus
   point. SUBJECTS is the syllabus-known list for gallery/coverage, not the
   validator's allowed set. When a new syllabus-covered subject lands, update
   this line against those sources; the syllabus.test.js SUBJECTS test fails

@@ -1,0 +1,2150 @@
+{
+  "animath": "0.1",
+  "title": "Urbanisation: One Chinese City Changes Across the Decades",
+  "level": "jc",
+  "subject": "china-studies",
+  "topic": "urbanisation",
+  "kind": "concept",
+  "canvas": {
+    "width": 960,
+    "height": 540
+  },
+  "scenes": [
+    {
+      "id": "s1",
+      "caption": "Stage 1: farmland and a small town",
+      "narration": "At the first stage the map is mostly farmland. A small town stands where the roads cross, and only 15 of every 100 people live in the town - the rest live and work in the countryside.",
+      "duration_ms": 7000,
+      "steps": [
+        {
+          "at_ms": 0,
+          "do": "show",
+          "shape": {
+            "id": "title",
+            "kind": "text",
+            "x": 480,
+            "y": 34,
+            "text": "Urbanisation: One Chinese City Changes",
+            "size": 20,
+            "color": "#1a1a1a",
+            "explain": "Label: Urbanisation: One Chinese City Changes",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 150,
+          "do": "show",
+          "shape": {
+            "id": "stage",
+            "kind": "text",
+            "x": 480,
+            "y": 68,
+            "text": "Stage 1: Farmland and a small town",
+            "size": 16,
+            "color": "#1a1a1a",
+            "explain": "Label: Stage 1: Farmland and a small town",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 300,
+          "do": "show",
+          "shape": {
+            "id": "farm",
+            "kind": "rect",
+            "x": 40,
+            "y": 110,
+            "w": 600,
+            "h": 260,
+            "fill": "#a8c686",
+            "explain": "The farmland around the city at the start of the stage: watch how much of it is left by the end."
+          }
+        },
+        {
+          "at_ms": 400,
+          "do": "show",
+          "shape": {
+            "id": "roadH",
+            "kind": "rect",
+            "x": 40,
+            "y": 232,
+            "w": 600,
+            "h": 6,
+            "fill": "#8d8d8d",
+            "explain": "The main road through the city: new districts are built along it."
+          }
+        },
+        {
+          "at_ms": 450,
+          "do": "show",
+          "shape": {
+            "id": "roadV",
+            "kind": "rect",
+            "x": 332,
+            "y": 110,
+            "w": 6,
+            "h": 260,
+            "fill": "#8d8d8d",
+            "explain": "The road north out of the city: factories and housing appear along it."
+          }
+        },
+        {
+          "at_ms": 500,
+          "do": "show",
+          "shape": {
+            "id": "panelLabel",
+            "kind": "text",
+            "x": 690,
+            "y": 128,
+            "text": "Who lives here?",
+            "size": 15,
+            "color": "#1a1a1a",
+            "explain": "Label: Who lives here?"
+          }
+        },
+        {
+          "at_ms": 550,
+          "do": "show",
+          "shape": {
+            "id": "urbanLabel",
+            "kind": "text",
+            "x": 690,
+            "y": 158,
+            "text": "Urban share",
+            "size": 14,
+            "color": "#1a1a1a",
+            "explain": "Label: Urban share"
+          }
+        },
+        {
+          "at_ms": 600,
+          "do": "show",
+          "shape": {
+            "id": "urbanBg",
+            "kind": "rect",
+            "x": 690,
+            "y": 166,
+            "w": 220,
+            "h": 18,
+            "fill": "#dddddd",
+            "explain": "The track for the urban share bar: the full width stands for everyone who lives here."
+          }
+        },
+        {
+          "at_ms": 650,
+          "do": "show",
+          "shape": {
+            "id": "urbanFill",
+            "kind": "rect",
+            "x": 690,
+            "y": 166,
+            "w": 4,
+            "h": 18,
+            "fill": "#e07b39",
+            "explain": "The urban share bar: it grows at every stage as more people live in built-up districts."
+          }
+        },
+        {
+          "at_ms": 700,
+          "do": "show",
+          "shape": {
+            "id": "ruralLabel",
+            "kind": "text",
+            "x": 690,
+            "y": 218,
+            "text": "Rural share",
+            "size": 14,
+            "color": "#1a1a1a",
+            "explain": "Label: Rural share"
+          }
+        },
+        {
+          "at_ms": 750,
+          "do": "show",
+          "shape": {
+            "id": "ruralBg",
+            "kind": "rect",
+            "x": 690,
+            "y": 226,
+            "w": 220,
+            "h": 18,
+            "fill": "#dddddd",
+            "explain": "The track for the rural share bar: the full width stands for everyone who lives here."
+          }
+        },
+        {
+          "at_ms": 800,
+          "do": "show",
+          "shape": {
+            "id": "ruralFill",
+            "kind": "rect",
+            "x": 690,
+            "y": 226,
+            "w": 216,
+            "h": 18,
+            "fill": "#6a994e",
+            "explain": "The rural share bar: it shrinks at every stage as people move off the farmland."
+          }
+        },
+        {
+          "at_ms": 850,
+          "do": "show",
+          "shape": {
+            "id": "builtLabel",
+            "kind": "text",
+            "x": 690,
+            "y": 278,
+            "text": "Built-up land",
+            "size": 14,
+            "color": "#1a1a1a",
+            "explain": "Label: Built-up land"
+          }
+        },
+        {
+          "at_ms": 900,
+          "do": "show",
+          "shape": {
+            "id": "builtBg",
+            "kind": "rect",
+            "x": 690,
+            "y": 286,
+            "w": 220,
+            "h": 18,
+            "fill": "#dddddd",
+            "explain": "The track for the built-up land bar: the full width stands for all the land on the map."
+          }
+        },
+        {
+          "at_ms": 950,
+          "do": "show",
+          "shape": {
+            "id": "builtFill",
+            "kind": "rect",
+            "x": 690,
+            "y": 286,
+            "w": 4,
+            "h": 18,
+            "fill": "#777777",
+            "explain": "The built-up land bar: it grows as farmland is built over, stage by stage."
+          }
+        },
+        {
+          "at_ms": 1000,
+          "do": "show",
+          "shape": {
+            "id": "farmSwatch",
+            "kind": "rect",
+            "x": 40,
+            "y": 388,
+            "w": 16,
+            "h": 16,
+            "fill": "#a8c686",
+            "explain": "Legend swatch: green stands for farmland."
+          }
+        },
+        {
+          "at_ms": 1050,
+          "do": "show",
+          "shape": {
+            "id": "farmLegend",
+            "kind": "text",
+            "x": 64,
+            "y": 402,
+            "text": "Farmland",
+            "size": 13,
+            "color": "#1a1a1a",
+            "explain": "Label: Farmland"
+          }
+        },
+        {
+          "at_ms": 1100,
+          "do": "show",
+          "shape": {
+            "id": "builtSwatch",
+            "kind": "rect",
+            "x": 190,
+            "y": 388,
+            "w": 16,
+            "h": 16,
+            "fill": "#b08968",
+            "explain": "Legend swatch: brown-grey stands for built-up districts."
+          }
+        },
+        {
+          "at_ms": 1150,
+          "do": "show",
+          "shape": {
+            "id": "builtLegend",
+            "kind": "text",
+            "x": 214,
+            "y": 402,
+            "text": "Built-up area",
+            "size": 13,
+            "color": "#1a1a1a",
+            "explain": "Label: Built-up area"
+          }
+        },
+        {
+          "at_ms": 1200,
+          "do": "show",
+          "shape": {
+            "id": "peopleSwatch",
+            "kind": "circle",
+            "cx": 368,
+            "cy": 396,
+            "r": 8,
+            "fill": "#e07b39",
+            "explain": "Legend swatch: an orange dot stands for people moving into the city."
+          }
+        },
+        {
+          "at_ms": 1250,
+          "do": "show",
+          "shape": {
+            "id": "peopleLegend",
+            "kind": "text",
+            "x": 384,
+            "y": 402,
+            "text": "New arrivals",
+            "size": 13,
+            "color": "#1a1a1a",
+            "explain": "Label: New arrivals"
+          }
+        },
+        {
+          "at_ms": 1500,
+          "do": "show",
+          "shape": {
+            "id": "fieldLine1",
+            "kind": "line",
+            "x1": 40,
+            "y1": 175,
+            "x2": 300,
+            "y2": 175,
+            "stroke": "#7a9a52",
+            "stroke_width": 2,
+            "explain": "A field boundary on the farmland: most of the map is still fields."
+          }
+        },
+        {
+          "at_ms": 1600,
+          "do": "show",
+          "shape": {
+            "id": "fieldLine2",
+            "kind": "line",
+            "x1": 120,
+            "y1": 110,
+            "x2": 120,
+            "y2": 232,
+            "stroke": "#7a9a52",
+            "stroke_width": 2,
+            "explain": "A field boundary on the farmland: most of the map is still fields."
+          }
+        },
+        {
+          "at_ms": 1700,
+          "do": "show",
+          "shape": {
+            "id": "fieldLine3",
+            "kind": "line",
+            "x1": 380,
+            "y1": 300,
+            "x2": 640,
+            "y2": 300,
+            "stroke": "#7a9a52",
+            "stroke_width": 2,
+            "explain": "A field boundary on the farmland: most of the map is still fields."
+          }
+        },
+        {
+          "at_ms": 1900,
+          "do": "show",
+          "shape": {
+            "id": "townA",
+            "kind": "rect",
+            "x": 292,
+            "y": 196,
+            "w": 34,
+            "h": 36,
+            "fill": "#b08968",
+            "explain": "One of the small town's first buildings at the road crossing."
+          }
+        },
+        {
+          "at_ms": 2050,
+          "do": "show",
+          "shape": {
+            "id": "townB",
+            "kind": "rect",
+            "x": 344,
+            "y": 196,
+            "w": 30,
+            "h": 36,
+            "fill": "#b08968",
+            "explain": "One of the small town's first buildings at the road crossing."
+          }
+        },
+        {
+          "at_ms": 2200,
+          "do": "show",
+          "shape": {
+            "id": "townC",
+            "kind": "rect",
+            "x": 300,
+            "y": 246,
+            "w": 40,
+            "h": 30,
+            "fill": "#b08968",
+            "explain": "A small town building south of the main road."
+          }
+        },
+        {
+          "at_ms": 2600,
+          "do": "show",
+          "shape": {
+            "id": "dotA",
+            "kind": "circle",
+            "cx": 90,
+            "cy": 150,
+            "r": 7,
+            "fill": "#e07b39",
+            "explain": "A person living on the farmland at this stage."
+          }
+        },
+        {
+          "at_ms": 2750,
+          "do": "show",
+          "shape": {
+            "id": "dotB",
+            "kind": "circle",
+            "cx": 180,
+            "cy": 320,
+            "r": 7,
+            "fill": "#e07b39",
+            "explain": "A person living on the farmland at this stage."
+          }
+        },
+        {
+          "at_ms": 3200,
+          "do": "move",
+          "target": "urbanFill",
+          "to": {
+            "w": 33
+          },
+          "dur_ms": 1100
+        },
+        {
+          "at_ms": 3350,
+          "do": "move",
+          "target": "ruralFill",
+          "to": {
+            "w": 187
+          },
+          "dur_ms": 1100
+        },
+        {
+          "at_ms": 3500,
+          "do": "move",
+          "target": "builtFill",
+          "to": {
+            "w": 22
+          },
+          "dur_ms": 1100
+        },
+        {
+          "at_ms": 4800,
+          "do": "show",
+          "shape": {
+            "id": "urbanValue",
+            "kind": "text",
+            "x": 690,
+            "y": 348,
+            "text": "Urban: 15 of every 100 people",
+            "size": 13,
+            "color": "#1a1a1a",
+            "explain": "Label: Urban: 15 of every 100 people"
+          }
+        },
+        {
+          "at_ms": 4950,
+          "do": "show",
+          "shape": {
+            "id": "ruralValue",
+            "kind": "text",
+            "x": 690,
+            "y": 372,
+            "text": "Rural: 85 of every 100 people",
+            "size": 13,
+            "color": "#1a1a1a",
+            "explain": "Label: Rural: 85 of every 100 people"
+          }
+        },
+        {
+          "at_ms": 5100,
+          "do": "show",
+          "shape": {
+            "id": "builtValue",
+            "kind": "text",
+            "x": 690,
+            "y": 396,
+            "text": "Built-up: about a tenth of the land",
+            "size": 13,
+            "color": "#1a1a1a",
+            "explain": "Label: Built-up: about a tenth of the land"
+          }
+        },
+        {
+          "at_ms": 5600,
+          "do": "show",
+          "shape": {
+            "id": "note",
+            "kind": "text",
+            "x": 480,
+            "y": 505,
+            "text": "Most land is farmland and most people live in the countryside.",
+            "size": 15,
+            "color": "#1a1a1a",
+            "explain": "Label: Most land is farmland and most people live in the countryside.",
+            "align": "middle"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "caption": "Stage 2: factories and first housing appear",
+      "narration": "Factories are built on farmland at the town's edge, and their jobs pull people in from the countryside. The first housing blocks rise beside them, the built-up area spreads, and the urban share climbs to 38 of every 100 people.",
+      "duration_ms": 8800,
+      "steps": [
+        {
+          "at_ms": 0,
+          "do": "show",
+          "shape": {
+            "id": "title",
+            "kind": "text",
+            "x": 480,
+            "y": 34,
+            "text": "Urbanisation: One Chinese City Changes",
+            "size": 20,
+            "color": "#1a1a1a",
+            "explain": "Label: Urbanisation: One Chinese City Changes",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 150,
+          "do": "show",
+          "shape": {
+            "id": "stage",
+            "kind": "text",
+            "x": 480,
+            "y": 68,
+            "text": "Stage 2: Factories and first housing appear",
+            "size": 16,
+            "color": "#1a1a1a",
+            "explain": "Label: Stage 2: Factories and first housing appear",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 300,
+          "do": "show",
+          "shape": {
+            "id": "farm",
+            "kind": "rect",
+            "x": 40,
+            "y": 110,
+            "w": 600,
+            "h": 260,
+            "fill": "#a8c686",
+            "explain": "The farmland around the city at the start of the stage: watch how much of it is left by the end."
+          }
+        },
+        {
+          "at_ms": 400,
+          "do": "show",
+          "shape": {
+            "id": "roadH",
+            "kind": "rect",
+            "x": 40,
+            "y": 232,
+            "w": 600,
+            "h": 6,
+            "fill": "#8d8d8d",
+            "explain": "The main road through the city: new districts are built along it."
+          }
+        },
+        {
+          "at_ms": 450,
+          "do": "show",
+          "shape": {
+            "id": "roadV",
+            "kind": "rect",
+            "x": 332,
+            "y": 110,
+            "w": 6,
+            "h": 260,
+            "fill": "#8d8d8d",
+            "explain": "The road north out of the city: factories and housing appear along it."
+          }
+        },
+        {
+          "at_ms": 500,
+          "do": "show",
+          "shape": {
+            "id": "panelLabel",
+            "kind": "text",
+            "x": 690,
+            "y": 128,
+            "text": "Who lives here?",
+            "size": 15,
+            "color": "#1a1a1a",
+            "explain": "Label: Who lives here?"
+          }
+        },
+        {
+          "at_ms": 550,
+          "do": "show",
+          "shape": {
+            "id": "urbanLabel",
+            "kind": "text",
+            "x": 690,
+            "y": 158,
+            "text": "Urban share",
+            "size": 14,
+            "color": "#1a1a1a",
+            "explain": "Label: Urban share"
+          }
+        },
+        {
+          "at_ms": 600,
+          "do": "show",
+          "shape": {
+            "id": "urbanBg",
+            "kind": "rect",
+            "x": 690,
+            "y": 166,
+            "w": 220,
+            "h": 18,
+            "fill": "#dddddd",
+            "explain": "The track for the urban share bar: the full width stands for everyone who lives here."
+          }
+        },
+        {
+          "at_ms": 650,
+          "do": "show",
+          "shape": {
+            "id": "urbanFill",
+            "kind": "rect",
+            "x": 690,
+            "y": 166,
+            "w": 4,
+            "h": 18,
+            "fill": "#e07b39",
+            "explain": "The urban share bar: it grows at every stage as more people live in built-up districts."
+          }
+        },
+        {
+          "at_ms": 700,
+          "do": "show",
+          "shape": {
+            "id": "ruralLabel",
+            "kind": "text",
+            "x": 690,
+            "y": 218,
+            "text": "Rural share",
+            "size": 14,
+            "color": "#1a1a1a",
+            "explain": "Label: Rural share"
+          }
+        },
+        {
+          "at_ms": 750,
+          "do": "show",
+          "shape": {
+            "id": "ruralBg",
+            "kind": "rect",
+            "x": 690,
+            "y": 226,
+            "w": 220,
+            "h": 18,
+            "fill": "#dddddd",
+            "explain": "The track for the rural share bar: the full width stands for everyone who lives here."
+          }
+        },
+        {
+          "at_ms": 800,
+          "do": "show",
+          "shape": {
+            "id": "ruralFill",
+            "kind": "rect",
+            "x": 690,
+            "y": 226,
+            "w": 216,
+            "h": 18,
+            "fill": "#6a994e",
+            "explain": "The rural share bar: it shrinks at every stage as people move off the farmland."
+          }
+        },
+        {
+          "at_ms": 850,
+          "do": "show",
+          "shape": {
+            "id": "builtLabel",
+            "kind": "text",
+            "x": 690,
+            "y": 278,
+            "text": "Built-up land",
+            "size": 14,
+            "color": "#1a1a1a",
+            "explain": "Label: Built-up land"
+          }
+        },
+        {
+          "at_ms": 900,
+          "do": "show",
+          "shape": {
+            "id": "builtBg",
+            "kind": "rect",
+            "x": 690,
+            "y": 286,
+            "w": 220,
+            "h": 18,
+            "fill": "#dddddd",
+            "explain": "The track for the built-up land bar: the full width stands for all the land on the map."
+          }
+        },
+        {
+          "at_ms": 950,
+          "do": "show",
+          "shape": {
+            "id": "builtFill",
+            "kind": "rect",
+            "x": 690,
+            "y": 286,
+            "w": 4,
+            "h": 18,
+            "fill": "#777777",
+            "explain": "The built-up land bar: it grows as farmland is built over, stage by stage."
+          }
+        },
+        {
+          "at_ms": 1000,
+          "do": "show",
+          "shape": {
+            "id": "farmSwatch",
+            "kind": "rect",
+            "x": 40,
+            "y": 388,
+            "w": 16,
+            "h": 16,
+            "fill": "#a8c686",
+            "explain": "Legend swatch: green stands for farmland."
+          }
+        },
+        {
+          "at_ms": 1050,
+          "do": "show",
+          "shape": {
+            "id": "farmLegend",
+            "kind": "text",
+            "x": 64,
+            "y": 402,
+            "text": "Farmland",
+            "size": 13,
+            "color": "#1a1a1a",
+            "explain": "Label: Farmland"
+          }
+        },
+        {
+          "at_ms": 1100,
+          "do": "show",
+          "shape": {
+            "id": "builtSwatch",
+            "kind": "rect",
+            "x": 190,
+            "y": 388,
+            "w": 16,
+            "h": 16,
+            "fill": "#b08968",
+            "explain": "Legend swatch: brown-grey stands for built-up districts."
+          }
+        },
+        {
+          "at_ms": 1150,
+          "do": "show",
+          "shape": {
+            "id": "builtLegend",
+            "kind": "text",
+            "x": 214,
+            "y": 402,
+            "text": "Built-up area",
+            "size": 13,
+            "color": "#1a1a1a",
+            "explain": "Label: Built-up area"
+          }
+        },
+        {
+          "at_ms": 1200,
+          "do": "show",
+          "shape": {
+            "id": "peopleSwatch",
+            "kind": "circle",
+            "cx": 368,
+            "cy": 396,
+            "r": 8,
+            "fill": "#e07b39",
+            "explain": "Legend swatch: an orange dot stands for people moving into the city."
+          }
+        },
+        {
+          "at_ms": 1250,
+          "do": "show",
+          "shape": {
+            "id": "peopleLegend",
+            "kind": "text",
+            "x": 384,
+            "y": 402,
+            "text": "New arrivals",
+            "size": 13,
+            "color": "#1a1a1a",
+            "explain": "Label: New arrivals"
+          }
+        },
+        {
+          "at_ms": 1500,
+          "do": "show",
+          "shape": {
+            "id": "factoryA",
+            "kind": "rect",
+            "x": 520,
+            "y": 140,
+            "w": 90,
+            "h": 44,
+            "fill": "#8d6e63",
+            "explain": "A new factory at the edge of the town: its jobs pull people in from the countryside."
+          }
+        },
+        {
+          "at_ms": 1650,
+          "do": "show",
+          "shape": {
+            "id": "chimneyA",
+            "kind": "rect",
+            "x": 540,
+            "y": 116,
+            "w": 12,
+            "h": 24,
+            "fill": "#6d4c41",
+            "explain": "The factory chimney: the factory is built on what was farmland last stage."
+          }
+        },
+        {
+          "at_ms": 1800,
+          "do": "show",
+          "shape": {
+            "id": "factoryB",
+            "kind": "rect",
+            "x": 520,
+            "y": 262,
+            "w": 90,
+            "h": 44,
+            "fill": "#8d6e63",
+            "explain": "A second factory south of the main road, also built on farmland."
+          }
+        },
+        {
+          "at_ms": 2000,
+          "do": "show",
+          "shape": {
+            "id": "housingA",
+            "kind": "rect",
+            "x": 420,
+            "y": 140,
+            "w": 44,
+            "h": 60,
+            "fill": "#b08968",
+            "explain": "One of the first housing blocks for the workers arriving from the countryside."
+          }
+        },
+        {
+          "at_ms": 2150,
+          "do": "show",
+          "shape": {
+            "id": "housingB",
+            "kind": "rect",
+            "x": 420,
+            "y": 262,
+            "w": 44,
+            "h": 56,
+            "fill": "#b08968",
+            "explain": "One of the first housing blocks for the workers arriving from the countryside."
+          }
+        },
+        {
+          "at_ms": 2300,
+          "do": "show",
+          "shape": {
+            "id": "townA",
+            "kind": "rect",
+            "x": 292,
+            "y": 196,
+            "w": 34,
+            "h": 36,
+            "fill": "#b08968",
+            "explain": "The old town core, still standing at the road crossing."
+          }
+        },
+        {
+          "at_ms": 2450,
+          "do": "show",
+          "shape": {
+            "id": "townB",
+            "kind": "rect",
+            "x": 344,
+            "y": 196,
+            "w": 30,
+            "h": 36,
+            "fill": "#b08968",
+            "explain": "The old town core, still standing at the road crossing."
+          }
+        },
+        {
+          "at_ms": 2900,
+          "do": "show",
+          "shape": {
+            "id": "dotA",
+            "kind": "circle",
+            "cx": 90,
+            "cy": 150,
+            "r": 7,
+            "fill": "#e07b39",
+            "explain": "A new arrival walking in from the farmland to the factory jobs."
+          }
+        },
+        {
+          "at_ms": 3050,
+          "do": "show",
+          "shape": {
+            "id": "dotB",
+            "kind": "circle",
+            "cx": 150,
+            "cy": 330,
+            "r": 7,
+            "fill": "#e07b39",
+            "explain": "A new arrival walking in from the farmland to the new housing."
+          }
+        },
+        {
+          "at_ms": 3400,
+          "do": "move",
+          "target": "dotA",
+          "to": {
+            "cx": 470,
+            "cy": 170
+          },
+          "dur_ms": 1200
+        },
+        {
+          "at_ms": 3550,
+          "do": "move",
+          "target": "dotB",
+          "to": {
+            "cx": 445,
+            "cy": 300
+          },
+          "dur_ms": 1200
+        },
+        {
+          "at_ms": 5000,
+          "do": "move",
+          "target": "urbanFill",
+          "to": {
+            "w": 84
+          },
+          "dur_ms": 1100
+        },
+        {
+          "at_ms": 5150,
+          "do": "move",
+          "target": "ruralFill",
+          "to": {
+            "w": 136
+          },
+          "dur_ms": 1100
+        },
+        {
+          "at_ms": 5300,
+          "do": "move",
+          "target": "builtFill",
+          "to": {
+            "w": 77
+          },
+          "dur_ms": 1100
+        },
+        {
+          "at_ms": 6600,
+          "do": "show",
+          "shape": {
+            "id": "urbanValue",
+            "kind": "text",
+            "x": 690,
+            "y": 348,
+            "text": "Urban: 38 of every 100 people",
+            "size": 13,
+            "color": "#1a1a1a",
+            "explain": "Label: Urban: 38 of every 100 people"
+          }
+        },
+        {
+          "at_ms": 6750,
+          "do": "show",
+          "shape": {
+            "id": "ruralValue",
+            "kind": "text",
+            "x": 690,
+            "y": 372,
+            "text": "Rural: 62 of every 100 people",
+            "size": 13,
+            "color": "#1a1a1a",
+            "explain": "Label: Rural: 62 of every 100 people"
+          }
+        },
+        {
+          "at_ms": 6900,
+          "do": "show",
+          "shape": {
+            "id": "builtValue",
+            "kind": "text",
+            "x": 690,
+            "y": 396,
+            "text": "Built-up: about a third of the land",
+            "size": 13,
+            "color": "#1a1a1a",
+            "explain": "Label: Built-up: about a third of the land"
+          }
+        },
+        {
+          "at_ms": 7400,
+          "do": "show",
+          "shape": {
+            "id": "note",
+            "kind": "text",
+            "x": 480,
+            "y": 505,
+            "text": "Factory jobs pull people in - the built-up edge grows first.",
+            "size": 15,
+            "color": "#1a1a1a",
+            "explain": "Label: Factory jobs pull people in - the built-up edge grows first.",
+            "align": "middle"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "caption": "Stage 3: built-up districts spread outward",
+      "narration": "The built-up districts spread outward from the core and the factories, and the farmland shrinks to a strip in the west. Most people now live in the city: the urban share reaches 62 of every 100 people.",
+      "duration_ms": 8800,
+      "steps": [
+        {
+          "at_ms": 0,
+          "do": "show",
+          "shape": {
+            "id": "title",
+            "kind": "text",
+            "x": 480,
+            "y": 34,
+            "text": "Urbanisation: One Chinese City Changes",
+            "size": 20,
+            "color": "#1a1a1a",
+            "explain": "Label: Urbanisation: One Chinese City Changes",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 150,
+          "do": "show",
+          "shape": {
+            "id": "stage",
+            "kind": "text",
+            "x": 480,
+            "y": 68,
+            "text": "Stage 3: Built-up districts spread outward",
+            "size": 16,
+            "color": "#1a1a1a",
+            "explain": "Label: Stage 3: Built-up districts spread outward",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 300,
+          "do": "show",
+          "shape": {
+            "id": "farm",
+            "kind": "rect",
+            "x": 40,
+            "y": 110,
+            "w": 600,
+            "h": 260,
+            "fill": "#a8c686",
+            "explain": "The farmland around the city at the start of the stage: watch how much of it is left by the end."
+          }
+        },
+        {
+          "at_ms": 400,
+          "do": "show",
+          "shape": {
+            "id": "roadH",
+            "kind": "rect",
+            "x": 40,
+            "y": 232,
+            "w": 600,
+            "h": 6,
+            "fill": "#8d8d8d",
+            "explain": "The main road through the city: new districts are built along it."
+          }
+        },
+        {
+          "at_ms": 450,
+          "do": "show",
+          "shape": {
+            "id": "roadV",
+            "kind": "rect",
+            "x": 332,
+            "y": 110,
+            "w": 6,
+            "h": 260,
+            "fill": "#8d8d8d",
+            "explain": "The road north out of the city: factories and housing appear along it."
+          }
+        },
+        {
+          "at_ms": 500,
+          "do": "show",
+          "shape": {
+            "id": "panelLabel",
+            "kind": "text",
+            "x": 690,
+            "y": 128,
+            "text": "Who lives here?",
+            "size": 15,
+            "color": "#1a1a1a",
+            "explain": "Label: Who lives here?"
+          }
+        },
+        {
+          "at_ms": 550,
+          "do": "show",
+          "shape": {
+            "id": "urbanLabel",
+            "kind": "text",
+            "x": 690,
+            "y": 158,
+            "text": "Urban share",
+            "size": 14,
+            "color": "#1a1a1a",
+            "explain": "Label: Urban share"
+          }
+        },
+        {
+          "at_ms": 600,
+          "do": "show",
+          "shape": {
+            "id": "urbanBg",
+            "kind": "rect",
+            "x": 690,
+            "y": 166,
+            "w": 220,
+            "h": 18,
+            "fill": "#dddddd",
+            "explain": "The track for the urban share bar: the full width stands for everyone who lives here."
+          }
+        },
+        {
+          "at_ms": 650,
+          "do": "show",
+          "shape": {
+            "id": "urbanFill",
+            "kind": "rect",
+            "x": 690,
+            "y": 166,
+            "w": 4,
+            "h": 18,
+            "fill": "#e07b39",
+            "explain": "The urban share bar: it grows at every stage as more people live in built-up districts."
+          }
+        },
+        {
+          "at_ms": 700,
+          "do": "show",
+          "shape": {
+            "id": "ruralLabel",
+            "kind": "text",
+            "x": 690,
+            "y": 218,
+            "text": "Rural share",
+            "size": 14,
+            "color": "#1a1a1a",
+            "explain": "Label: Rural share"
+          }
+        },
+        {
+          "at_ms": 750,
+          "do": "show",
+          "shape": {
+            "id": "ruralBg",
+            "kind": "rect",
+            "x": 690,
+            "y": 226,
+            "w": 220,
+            "h": 18,
+            "fill": "#dddddd",
+            "explain": "The track for the rural share bar: the full width stands for everyone who lives here."
+          }
+        },
+        {
+          "at_ms": 800,
+          "do": "show",
+          "shape": {
+            "id": "ruralFill",
+            "kind": "rect",
+            "x": 690,
+            "y": 226,
+            "w": 216,
+            "h": 18,
+            "fill": "#6a994e",
+            "explain": "The rural share bar: it shrinks at every stage as people move off the farmland."
+          }
+        },
+        {
+          "at_ms": 850,
+          "do": "show",
+          "shape": {
+            "id": "builtLabel",
+            "kind": "text",
+            "x": 690,
+            "y": 278,
+            "text": "Built-up land",
+            "size": 14,
+            "color": "#1a1a1a",
+            "explain": "Label: Built-up land"
+          }
+        },
+        {
+          "at_ms": 900,
+          "do": "show",
+          "shape": {
+            "id": "builtBg",
+            "kind": "rect",
+            "x": 690,
+            "y": 286,
+            "w": 220,
+            "h": 18,
+            "fill": "#dddddd",
+            "explain": "The track for the built-up land bar: the full width stands for all the land on the map."
+          }
+        },
+        {
+          "at_ms": 950,
+          "do": "show",
+          "shape": {
+            "id": "builtFill",
+            "kind": "rect",
+            "x": 690,
+            "y": 286,
+            "w": 4,
+            "h": 18,
+            "fill": "#777777",
+            "explain": "The built-up land bar: it grows as farmland is built over, stage by stage."
+          }
+        },
+        {
+          "at_ms": 1000,
+          "do": "show",
+          "shape": {
+            "id": "farmSwatch",
+            "kind": "rect",
+            "x": 40,
+            "y": 388,
+            "w": 16,
+            "h": 16,
+            "fill": "#a8c686",
+            "explain": "Legend swatch: green stands for farmland."
+          }
+        },
+        {
+          "at_ms": 1050,
+          "do": "show",
+          "shape": {
+            "id": "farmLegend",
+            "kind": "text",
+            "x": 64,
+            "y": 402,
+            "text": "Farmland",
+            "size": 13,
+            "color": "#1a1a1a",
+            "explain": "Label: Farmland"
+          }
+        },
+        {
+          "at_ms": 1100,
+          "do": "show",
+          "shape": {
+            "id": "builtSwatch",
+            "kind": "rect",
+            "x": 190,
+            "y": 388,
+            "w": 16,
+            "h": 16,
+            "fill": "#b08968",
+            "explain": "Legend swatch: brown-grey stands for built-up districts."
+          }
+        },
+        {
+          "at_ms": 1150,
+          "do": "show",
+          "shape": {
+            "id": "builtLegend",
+            "kind": "text",
+            "x": 214,
+            "y": 402,
+            "text": "Built-up area",
+            "size": 13,
+            "color": "#1a1a1a",
+            "explain": "Label: Built-up area"
+          }
+        },
+        {
+          "at_ms": 1200,
+          "do": "show",
+          "shape": {
+            "id": "peopleSwatch",
+            "kind": "circle",
+            "cx": 368,
+            "cy": 396,
+            "r": 8,
+            "fill": "#e07b39",
+            "explain": "Legend swatch: an orange dot stands for people moving into the city."
+          }
+        },
+        {
+          "at_ms": 1250,
+          "do": "show",
+          "shape": {
+            "id": "peopleLegend",
+            "kind": "text",
+            "x": 384,
+            "y": 402,
+            "text": "New arrivals",
+            "size": 13,
+            "color": "#1a1a1a",
+            "explain": "Label: New arrivals"
+          }
+        },
+        {
+          "at_ms": 1500,
+          "do": "show",
+          "shape": {
+            "id": "districtA",
+            "kind": "rect",
+            "x": 420,
+            "y": 128,
+            "w": 220,
+            "h": 88,
+            "fill": "#b08968",
+            "explain": "A whole built-up district across the east of the map: streets of housing and factories where fields stood."
+          }
+        },
+        {
+          "at_ms": 1700,
+          "do": "show",
+          "shape": {
+            "id": "districtB",
+            "kind": "rect",
+            "x": 420,
+            "y": 252,
+            "w": 220,
+            "h": 104,
+            "fill": "#b08968",
+            "explain": "A second built-up district in the south-east, also built over farmland."
+          }
+        },
+        {
+          "at_ms": 1900,
+          "do": "show",
+          "shape": {
+            "id": "districtC",
+            "kind": "rect",
+            "x": 250,
+            "y": 128,
+            "w": 150,
+            "h": 88,
+            "fill": "#bcaaa0",
+            "explain": "Newer blocks spreading west from the old town core."
+          }
+        },
+        {
+          "at_ms": 2100,
+          "do": "show",
+          "shape": {
+            "id": "townA",
+            "kind": "rect",
+            "x": 292,
+            "y": 196,
+            "w": 34,
+            "h": 36,
+            "fill": "#8d6e63",
+            "explain": "The old town core, now surrounded by built-up districts."
+          }
+        },
+        {
+          "at_ms": 2250,
+          "do": "show",
+          "shape": {
+            "id": "townB",
+            "kind": "rect",
+            "x": 344,
+            "y": 196,
+            "w": 30,
+            "h": 36,
+            "fill": "#8d6e63",
+            "explain": "The old town core, now surrounded by built-up districts."
+          }
+        },
+        {
+          "at_ms": 2500,
+          "do": "show",
+          "shape": {
+            "id": "fieldLine1",
+            "kind": "line",
+            "x1": 40,
+            "y1": 175,
+            "x2": 200,
+            "y2": 175,
+            "stroke": "#7a9a52",
+            "stroke_width": 2,
+            "explain": "One of the few field boundaries left: the farmland has shrunk to the west strip."
+          }
+        },
+        {
+          "at_ms": 2900,
+          "do": "show",
+          "shape": {
+            "id": "dotA",
+            "kind": "circle",
+            "cx": 90,
+            "cy": 150,
+            "r": 7,
+            "fill": "#e07b39",
+            "explain": "A new arrival walking in from the shrinking farmland."
+          }
+        },
+        {
+          "at_ms": 3050,
+          "do": "show",
+          "shape": {
+            "id": "dotB",
+            "kind": "circle",
+            "cx": 120,
+            "cy": 320,
+            "r": 7,
+            "fill": "#e07b39",
+            "explain": "A new arrival walking in from the shrinking farmland."
+          }
+        },
+        {
+          "at_ms": 3400,
+          "do": "move",
+          "target": "dotA",
+          "to": {
+            "cx": 300,
+            "cy": 170
+          },
+          "dur_ms": 1200
+        },
+        {
+          "at_ms": 3550,
+          "do": "move",
+          "target": "dotB",
+          "to": {
+            "cx": 470,
+            "cy": 300
+          },
+          "dur_ms": 1200
+        },
+        {
+          "at_ms": 5000,
+          "do": "move",
+          "target": "urbanFill",
+          "to": {
+            "w": 136
+          },
+          "dur_ms": 1100
+        },
+        {
+          "at_ms": 5150,
+          "do": "move",
+          "target": "ruralFill",
+          "to": {
+            "w": 84
+          },
+          "dur_ms": 1100
+        },
+        {
+          "at_ms": 5300,
+          "do": "move",
+          "target": "builtFill",
+          "to": {
+            "w": 143
+          },
+          "dur_ms": 1100
+        },
+        {
+          "at_ms": 6600,
+          "do": "show",
+          "shape": {
+            "id": "urbanValue",
+            "kind": "text",
+            "x": 690,
+            "y": 348,
+            "text": "Urban: 62 of every 100 people",
+            "size": 13,
+            "color": "#1a1a1a",
+            "explain": "Label: Urban: 62 of every 100 people"
+          }
+        },
+        {
+          "at_ms": 6750,
+          "do": "show",
+          "shape": {
+            "id": "ruralValue",
+            "kind": "text",
+            "x": 690,
+            "y": 372,
+            "text": "Rural: 38 of every 100 people",
+            "size": 13,
+            "color": "#1a1a1a",
+            "explain": "Label: Rural: 38 of every 100 people"
+          }
+        },
+        {
+          "at_ms": 6900,
+          "do": "show",
+          "shape": {
+            "id": "builtValue",
+            "kind": "text",
+            "x": 690,
+            "y": 396,
+            "text": "Built-up: about two thirds of the land",
+            "size": 13,
+            "color": "#1a1a1a",
+            "explain": "Label: Built-up: about two thirds of the land"
+          }
+        },
+        {
+          "at_ms": 7400,
+          "do": "show",
+          "shape": {
+            "id": "note",
+            "kind": "text",
+            "x": 480,
+            "y": 505,
+            "text": "Districts spread outward - now most people live in the city.",
+            "size": 15,
+            "color": "#1a1a1a",
+            "explain": "Label: Districts spread outward - now most people live in the city.",
+            "align": "middle"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "caption": "Stage 4: a mostly built-up city, reached in stages",
+      "narration": "The city is now mostly built-up: 85 of every 100 people live in urban districts and only a small farmland remnant is left. But it did not happen in one sudden leap - replay the stages and the built-up area grows step by step, exactly as the earlier scenes showed.",
+      "duration_ms": 11500,
+      "steps": [
+        {
+          "at_ms": 0,
+          "do": "show",
+          "shape": {
+            "id": "title",
+            "kind": "text",
+            "x": 480,
+            "y": 34,
+            "text": "Urbanisation: One Chinese City Changes",
+            "size": 20,
+            "color": "#1a1a1a",
+            "explain": "Label: Urbanisation: One Chinese City Changes",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 150,
+          "do": "show",
+          "shape": {
+            "id": "stage",
+            "kind": "text",
+            "x": 480,
+            "y": 68,
+            "text": "Stage 4: A mostly built-up city - but not in one leap",
+            "size": 16,
+            "color": "#1a1a1a",
+            "explain": "Label: Stage 4: A mostly built-up city - but not in one leap",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 300,
+          "do": "show",
+          "shape": {
+            "id": "farm",
+            "kind": "rect",
+            "x": 40,
+            "y": 110,
+            "w": 600,
+            "h": 260,
+            "fill": "#a8c686",
+            "explain": "The farmland around the city at the start of the stage: watch how much of it is left by the end."
+          }
+        },
+        {
+          "at_ms": 400,
+          "do": "show",
+          "shape": {
+            "id": "roadH",
+            "kind": "rect",
+            "x": 40,
+            "y": 232,
+            "w": 600,
+            "h": 6,
+            "fill": "#8d8d8d",
+            "explain": "The main road through the city: new districts are built along it."
+          }
+        },
+        {
+          "at_ms": 450,
+          "do": "show",
+          "shape": {
+            "id": "roadV",
+            "kind": "rect",
+            "x": 332,
+            "y": 110,
+            "w": 6,
+            "h": 260,
+            "fill": "#8d8d8d",
+            "explain": "The road north out of the city: factories and housing appear along it."
+          }
+        },
+        {
+          "at_ms": 500,
+          "do": "show",
+          "shape": {
+            "id": "panelLabel",
+            "kind": "text",
+            "x": 690,
+            "y": 128,
+            "text": "Who lives here?",
+            "size": 15,
+            "color": "#1a1a1a",
+            "explain": "Label: Who lives here?"
+          }
+        },
+        {
+          "at_ms": 550,
+          "do": "show",
+          "shape": {
+            "id": "urbanLabel",
+            "kind": "text",
+            "x": 690,
+            "y": 158,
+            "text": "Urban share",
+            "size": 14,
+            "color": "#1a1a1a",
+            "explain": "Label: Urban share"
+          }
+        },
+        {
+          "at_ms": 600,
+          "do": "show",
+          "shape": {
+            "id": "urbanBg",
+            "kind": "rect",
+            "x": 690,
+            "y": 166,
+            "w": 220,
+            "h": 18,
+            "fill": "#dddddd",
+            "explain": "The track for the urban share bar: the full width stands for everyone who lives here."
+          }
+        },
+        {
+          "at_ms": 650,
+          "do": "show",
+          "shape": {
+            "id": "urbanFill",
+            "kind": "rect",
+            "x": 690,
+            "y": 166,
+            "w": 4,
+            "h": 18,
+            "fill": "#e07b39",
+            "explain": "The urban share bar: it grows at every stage as more people live in built-up districts."
+          }
+        },
+        {
+          "at_ms": 700,
+          "do": "show",
+          "shape": {
+            "id": "ruralLabel",
+            "kind": "text",
+            "x": 690,
+            "y": 218,
+            "text": "Rural share",
+            "size": 14,
+            "color": "#1a1a1a",
+            "explain": "Label: Rural share"
+          }
+        },
+        {
+          "at_ms": 750,
+          "do": "show",
+          "shape": {
+            "id": "ruralBg",
+            "kind": "rect",
+            "x": 690,
+            "y": 226,
+            "w": 220,
+            "h": 18,
+            "fill": "#dddddd",
+            "explain": "The track for the rural share bar: the full width stands for everyone who lives here."
+          }
+        },
+        {
+          "at_ms": 800,
+          "do": "show",
+          "shape": {
+            "id": "ruralFill",
+            "kind": "rect",
+            "x": 690,
+            "y": 226,
+            "w": 216,
+            "h": 18,
+            "fill": "#6a994e",
+            "explain": "The rural share bar: it shrinks at every stage as people move off the farmland."
+          }
+        },
+        {
+          "at_ms": 850,
+          "do": "show",
+          "shape": {
+            "id": "builtLabel",
+            "kind": "text",
+            "x": 690,
+            "y": 278,
+            "text": "Built-up land",
+            "size": 14,
+            "color": "#1a1a1a",
+            "explain": "Label: Built-up land"
+          }
+        },
+        {
+          "at_ms": 900,
+          "do": "show",
+          "shape": {
+            "id": "builtBg",
+            "kind": "rect",
+            "x": 690,
+            "y": 286,
+            "w": 220,
+            "h": 18,
+            "fill": "#dddddd",
+            "explain": "The track for the built-up land bar: the full width stands for all the land on the map."
+          }
+        },
+        {
+          "at_ms": 950,
+          "do": "show",
+          "shape": {
+            "id": "builtFill",
+            "kind": "rect",
+            "x": 690,
+            "y": 286,
+            "w": 4,
+            "h": 18,
+            "fill": "#777777",
+            "explain": "The built-up land bar: it grows as farmland is built over, stage by stage."
+          }
+        },
+        {
+          "at_ms": 1000,
+          "do": "show",
+          "shape": {
+            "id": "farmSwatch",
+            "kind": "rect",
+            "x": 40,
+            "y": 388,
+            "w": 16,
+            "h": 16,
+            "fill": "#a8c686",
+            "explain": "Legend swatch: green stands for farmland."
+          }
+        },
+        {
+          "at_ms": 1050,
+          "do": "show",
+          "shape": {
+            "id": "farmLegend",
+            "kind": "text",
+            "x": 64,
+            "y": 402,
+            "text": "Farmland",
+            "size": 13,
+            "color": "#1a1a1a",
+            "explain": "Label: Farmland"
+          }
+        },
+        {
+          "at_ms": 1100,
+          "do": "show",
+          "shape": {
+            "id": "builtSwatch",
+            "kind": "rect",
+            "x": 190,
+            "y": 388,
+            "w": 16,
+            "h": 16,
+            "fill": "#b08968",
+            "explain": "Legend swatch: brown-grey stands for built-up districts."
+          }
+        },
+        {
+          "at_ms": 1150,
+          "do": "show",
+          "shape": {
+            "id": "builtLegend",
+            "kind": "text",
+            "x": 214,
+            "y": 402,
+            "text": "Built-up area",
+            "size": 13,
+            "color": "#1a1a1a",
+            "explain": "Label: Built-up area"
+          }
+        },
+        {
+          "at_ms": 1200,
+          "do": "show",
+          "shape": {
+            "id": "peopleSwatch",
+            "kind": "circle",
+            "cx": 368,
+            "cy": 396,
+            "r": 8,
+            "fill": "#e07b39",
+            "explain": "Legend swatch: an orange dot stands for people moving into the city."
+          }
+        },
+        {
+          "at_ms": 1250,
+          "do": "show",
+          "shape": {
+            "id": "peopleLegend",
+            "kind": "text",
+            "x": 384,
+            "y": 402,
+            "text": "New arrivals",
+            "size": 13,
+            "color": "#1a1a1a",
+            "explain": "Label: New arrivals"
+          }
+        },
+        {
+          "at_ms": 1500,
+          "do": "show",
+          "shape": {
+            "id": "districtA",
+            "kind": "rect",
+            "x": 420,
+            "y": 128,
+            "w": 220,
+            "h": 88,
+            "fill": "#b08968",
+            "explain": "The eastern districts of the mostly built-up city."
+          }
+        },
+        {
+          "at_ms": 1650,
+          "do": "show",
+          "shape": {
+            "id": "districtB",
+            "kind": "rect",
+            "x": 420,
+            "y": 252,
+            "w": 220,
+            "h": 104,
+            "fill": "#b08968",
+            "explain": "The south-eastern districts of the mostly built-up city."
+          }
+        },
+        {
+          "at_ms": 1800,
+          "do": "show",
+          "shape": {
+            "id": "districtC",
+            "kind": "rect",
+            "x": 250,
+            "y": 128,
+            "w": 150,
+            "h": 88,
+            "fill": "#bcaaa0",
+            "explain": "The newer blocks west of the old town core."
+          }
+        },
+        {
+          "at_ms": 1950,
+          "do": "show",
+          "shape": {
+            "id": "districtD",
+            "kind": "rect",
+            "x": 250,
+            "y": 252,
+            "w": 150,
+            "h": 104,
+            "fill": "#bcaaa0",
+            "explain": "The south-western blocks: only a small farmland remnant is left, in the far west."
+          }
+        },
+        {
+          "at_ms": 2100,
+          "do": "show",
+          "shape": {
+            "id": "townA",
+            "kind": "rect",
+            "x": 292,
+            "y": 196,
+            "w": 34,
+            "h": 36,
+            "fill": "#8d6e63",
+            "explain": "The old town core at the heart of the city."
+          }
+        },
+        {
+          "at_ms": 2250,
+          "do": "show",
+          "shape": {
+            "id": "townB",
+            "kind": "rect",
+            "x": 344,
+            "y": 196,
+            "w": 30,
+            "h": 36,
+            "fill": "#8d6e63",
+            "explain": "The old town core at the heart of the city."
+          }
+        },
+        {
+          "at_ms": 2600,
+          "do": "move",
+          "target": "urbanFill",
+          "to": {
+            "w": 187
+          },
+          "dur_ms": 1100
+        },
+        {
+          "at_ms": 2750,
+          "do": "move",
+          "target": "ruralFill",
+          "to": {
+            "w": 33
+          },
+          "dur_ms": 1100
+        },
+        {
+          "at_ms": 2900,
+          "do": "move",
+          "target": "builtFill",
+          "to": {
+            "w": 198
+          },
+          "dur_ms": 1100
+        },
+        {
+          "at_ms": 4200,
+          "do": "show",
+          "shape": {
+            "id": "urbanValue",
+            "kind": "text",
+            "x": 690,
+            "y": 348,
+            "text": "Urban: 85 of every 100 people",
+            "size": 13,
+            "color": "#1a1a1a",
+            "explain": "Label: Urban: 85 of every 100 people"
+          }
+        },
+        {
+          "at_ms": 4350,
+          "do": "show",
+          "shape": {
+            "id": "ruralValue",
+            "kind": "text",
+            "x": 690,
+            "y": 372,
+            "text": "Rural: 15 of every 100 people",
+            "size": 13,
+            "color": "#1a1a1a",
+            "explain": "Label: Rural: 15 of every 100 people"
+          }
+        },
+        {
+          "at_ms": 4500,
+          "do": "show",
+          "shape": {
+            "id": "builtValue",
+            "kind": "text",
+            "x": 690,
+            "y": 396,
+            "text": "Built-up: about nine tenths of the land",
+            "size": 13,
+            "color": "#1a1a1a",
+            "explain": "Label: Built-up: about nine tenths of the land"
+          }
+        },
+        {
+          "at_ms": 5200,
+          "do": "show",
+          "shape": {
+            "id": "wrongNote",
+            "kind": "text",
+            "x": 480,
+            "y": 448,
+            "text": "Wrong turn check: did it all appear at once, in one leap?",
+            "size": 15,
+            "color": "#1a1a1a",
+            "explain": "Label: Wrong turn check: did it all appear at once, in one leap?",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 5800,
+          "do": "hide",
+          "target": "districtA"
+        },
+        {
+          "at_ms": 5850,
+          "do": "hide",
+          "target": "districtB"
+        },
+        {
+          "at_ms": 5900,
+          "do": "hide",
+          "target": "districtC"
+        },
+        {
+          "at_ms": 5950,
+          "do": "hide",
+          "target": "districtD"
+        },
+        {
+          "at_ms": 6350,
+          "do": "hide",
+          "target": "wrongNote"
+        },
+        {
+          "at_ms": 6400,
+          "do": "show",
+          "shape": {
+            "id": "replayNote",
+            "kind": "text",
+            "x": 480,
+            "y": 478,
+            "text": "No - replay the stages: town, factories, districts, city.",
+            "size": 15,
+            "color": "#1a1a1a",
+            "explain": "Label: No - replay the stages: town, factories, districts, city.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 6800,
+          "do": "show",
+          "shape": {
+            "id": "replayC",
+            "kind": "rect",
+            "x": 250,
+            "y": 128,
+            "w": 150,
+            "h": 88,
+            "fill": "#bcaaa0",
+            "explain": "Replay stage 1 to 2: blocks spread from the town core first."
+          }
+        },
+        {
+          "at_ms": 7600,
+          "do": "show",
+          "shape": {
+            "id": "replayA",
+            "kind": "rect",
+            "x": 420,
+            "y": 128,
+            "w": 220,
+            "h": 88,
+            "fill": "#b08968",
+            "explain": "Replay stage 2 to 3: the eastern districts are built over farmland next."
+          }
+        },
+        {
+          "at_ms": 8400,
+          "do": "show",
+          "shape": {
+            "id": "replayB",
+            "kind": "rect",
+            "x": 420,
+            "y": 252,
+            "w": 220,
+            "h": 104,
+            "fill": "#b08968",
+            "explain": "Replay stage 3: the south-eastern districts follow."
+          }
+        },
+        {
+          "at_ms": 9200,
+          "do": "show",
+          "shape": {
+            "id": "replayD",
+            "kind": "rect",
+            "x": 250,
+            "y": 252,
+            "w": 150,
+            "h": 104,
+            "fill": "#bcaaa0",
+            "explain": "Replay stage 4: the south-western blocks complete the mostly built-up city."
+          }
+        },
+        {
+          "at_ms": 10000,
+          "do": "emphasize",
+          "target": "builtFill"
+        },
+        {
+          "at_ms": 10300,
+          "do": "show",
+          "shape": {
+            "id": "note",
+            "kind": "text",
+            "x": 480,
+            "y": 505,
+            "text": "The city grew stage by stage over decades - never in one sudden leap.",
+            "size": 15,
+            "color": "#1a1a1a",
+            "explain": "Label: The city grew stage by stage over decades - never in one sudden leap.",
+            "align": "middle"
+          }
+        }
+      ]
+    }
+  ]
+}
