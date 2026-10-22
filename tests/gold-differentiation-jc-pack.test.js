@@ -108,9 +108,9 @@ test('gold differentiation JC deck practice and exit-ticket slides address the c
 
 /* Worksheet */
 
-test('gold differentiation JC worksheet has 5 mixed questions, each with an explanation', () => {
+test('gold differentiation JC worksheet has 12 mixed questions, each with an explanation', () => {
   assert.equal(worksheet.questions.length, 12);
-  assert.deepEqual(worksheet.questions.map((q) => q.id), ['q1', 'q2', 'q3', 'q4', 'q5']);
+  assert.deepEqual(worksheet.questions.map((q) => q.id), ['q1', 'q2', 'q3', 'q4', 'q5', 'q6', 'q7', 'q8', 'q9', 'q10', 'q11', 'q12']);
   const kinds = new Set(worksheet.questions.map((q) => q.kind));
   assert.ok(kinds.has('multiple-choice') && kinds.has('short-answer'), 'worksheet mixes question kinds');
   for (const q of worksheet.questions) {
