@@ -213,6 +213,12 @@ Geography:
 |---|---|
 | `drainage-basin` | Drainage basin (SEAB 9173): rain fills the basin stores in sequence - interception first, then soil, then groundwater - overland flow switches on only when the soil saturates, so river discharge peaks after the rain peak (the lag) and recedes slowly on groundwater baseflow |
 
+Computing:
+
+| slug | topic |
+|---|---|
+| `recursion` | Recursion (SEAB 9569): one recursive evaluation of factorial(4) - the call stack grows frame by frame as each call suspends its caller, the factorial(1) base case returns 1 without calling further, and the stack unwinds as each frame resumes and multiplies 1, 2, 6, 24 |
+
 ## Notes for the generator
 
 - `level` + `subject` on a spec are coarse (`primary|secondary|jc`,

@@ -206,6 +206,11 @@
             id: 'h2-geography', label: 'H2 Geography', subject: 'geography', topics: [
             { slug: 'drainage-basin', label: 'Drainage basin' }
             ]
+          },
+          {
+            id: 'h2-computing', label: 'H2 Computing', subject: 'computing', topics: [
+            { slug: 'recursion', label: 'Recursion' }
+            ]
           }
         ]
       }

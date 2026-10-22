@@ -562,6 +562,12 @@
       wrongTurn: 'The river peaks when the rain is heaviest, because rain runs straight off the surface into the river.',
       why: 'Rain visibly falls on the whole basin at once and the river visibly rises, so it looks as if the rain reaches the channel immediately and the highest discharge must match the heaviest rain.',
       correctTurn: 'The basin stores fill in sequence - interception first, then the soil store, then groundwater - and overland flow only switches on once the soil saturates, so discharge peaks after the peak rain and then recedes slowly, sustained by groundwater baseflow.'
+    },
+    // Slice 1 (issue #1148): JC H2 Computing 9569.
+    'recursion': {
+      wrongTurn: 'A recursive call replaces the caller, so factorial(4) is finished and gone once factorial(3) starts.',
+      why: 'The caller visibly pauses and the new call takes over the screen, so it reads as a replacement - the suspended caller is out of sight while the callee runs, and nothing seems to remain of it.',
+      correctTurn: 'The caller is not replaced: it is suspended on the call stack, still holding its place and its pending multiplication, and it resumes exactly where it stopped when the callee returns - which is why the stack unwinds in reverse order, multiplying 1, 2, 6, 24.'
     }
   };
 
