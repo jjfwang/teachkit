@@ -1,0 +1,826 @@
+{
+  "animath": "0.1",
+  "title": "The Decolonisation Chain in Southeast Asia",
+  "level": "secondary",
+  "subject": "history",
+  "topic": "decolonisation-chain",
+  "kind": "concept",
+  "canvas": {
+    "width": 960,
+    "height": 540
+  },
+  "scenes": [
+    {
+      "id": "s1",
+      "caption": "Philippines, 1946: pressure crosses the line",
+      "narration": "In 1946 the Philippines becomes independent from the United States. Nationalist pressure there had risen past the point where colonial rule could hold, and neighbours watch the example closely.",
+      "duration_ms": 7500,
+      "steps": [
+        {
+          "at_ms": 0,
+          "do": "show",
+          "shape": {
+            "id": "title",
+            "kind": "text",
+            "x": 480,
+            "y": 34,
+            "text": "The Decolonisation Chain in Southeast Asia",
+            "size": 20,
+            "color": "#1a1a1a",
+            "align": "middle",
+            "explain": "Title: the decolonisation chain in Southeast Asia after the Second World War."
+          }
+        },
+        {
+          "at_ms": 150,
+          "do": "show",
+          "shape": {
+            "id": "stage",
+            "kind": "text",
+            "x": 480,
+            "y": 78,
+            "text": "Stage 1: Philippines wins independence, 1946",
+            "size": 16,
+            "color": "#1a1a1a",
+            "align": "middle",
+            "explain": "Stage label: Stage 1: Philippines wins independence, 1946."
+          }
+        },
+        {
+          "at_ms": 300,
+          "do": "show",
+          "shape": {
+            "id": "pLabel",
+            "kind": "text",
+            "x": 180,
+            "y": 130,
+            "text": "Nationalist pressure",
+            "size": 14,
+            "color": "#1a1a1a",
+            "align": "middle",
+            "explain": "Label: nationalist pressure in this territory."
+          }
+        },
+        {
+          "at_ms": 450,
+          "do": "show",
+          "shape": {
+            "id": "pBar",
+            "kind": "rect",
+            "x": 130,
+            "y": 320,
+            "w": 100,
+            "h": 30,
+            "fill": "#c0392b",
+            "explain": "The pressure bar: nationalist pressure starts low and rises in this stage."
+          }
+        },
+        {
+          "at_ms": 600,
+          "do": "show",
+          "shape": {
+            "id": "thresh",
+            "kind": "line",
+            "x1": 105,
+            "y1": 200,
+            "x2": 255,
+            "y2": 200,
+            "stroke": "#1a1a1a",
+            "strokeWidth": 3,
+            "explain": "The threshold line: when pressure rises past it, independence follows."
+          }
+        },
+        {
+          "at_ms": 750,
+          "do": "show",
+          "shape": {
+            "id": "tLabel",
+            "kind": "text",
+            "x": 270,
+            "y": 204,
+            "text": "threshold",
+            "size": 13,
+            "color": "#1a1a1a",
+            "align": "start",
+            "explain": "Label: the independence threshold."
+          }
+        },
+        {
+          "at_ms": 1000,
+          "do": "move",
+          "target": "pBar",
+          "to": {
+            "y": 180,
+            "h": 170
+          },
+          "dur_ms": 1600
+        },
+        {
+          "at_ms": 2800,
+          "do": "show",
+          "shape": {
+            "id": "cLabel",
+            "kind": "text",
+            "x": 660,
+            "y": 130,
+            "text": "Colonial control",
+            "size": 14,
+            "color": "#1a1a1a",
+            "align": "middle",
+            "explain": "Label: colonial control in this territory."
+          }
+        },
+        {
+          "at_ms": 2950,
+          "do": "show",
+          "shape": {
+            "id": "cBar",
+            "kind": "rect",
+            "x": 610,
+            "y": 180,
+            "w": 100,
+            "h": 170,
+            "fill": "#2e86ab",
+            "explain": "The control bar: colonial control starts high and falls as pressure rises."
+          }
+        },
+        {
+          "at_ms": 3200,
+          "do": "move",
+          "target": "cBar",
+          "to": {
+            "y": 300,
+            "h": 50
+          },
+          "dur_ms": 1400
+        },
+        {
+          "at_ms": 4800,
+          "do": "emphasize",
+          "target": "pBar"
+        },
+        {
+          "at_ms": 5000,
+          "do": "show",
+          "shape": {
+            "id": "arrow",
+            "kind": "arrow",
+            "x1": 300,
+            "y1": 440,
+            "x2": 640,
+            "y2": 440,
+            "stroke": "#27ae60",
+            "strokeWidth": 4,
+            "explain": "The transmission arrow: the example of independence is carried to the next territory."
+          }
+        },
+        {
+          "at_ms": 5150,
+          "do": "show",
+          "shape": {
+            "id": "dot",
+            "kind": "circle",
+            "cx": 320,
+            "cy": 440,
+            "r": 12,
+            "fill": "#27ae60",
+            "explain": "The carried example: a marker that moves along the arrow to the next territory."
+          }
+        },
+        {
+          "at_ms": 5300,
+          "do": "move",
+          "target": "dot",
+          "to": {
+            "cx": 620
+          },
+          "dur_ms": 1200
+        },
+        {
+          "at_ms": 5600,
+          "do": "show",
+          "shape": {
+            "id": "nLabel",
+            "kind": "text",
+            "x": 480,
+            "y": 485,
+            "text": "Example passes on to Indonesia",
+            "size": 14,
+            "color": "#1a1a1a",
+            "align": "middle",
+            "explain": "Label: the example passes on to Indonesia."
+          }
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "caption": "Indonesia, 1949: the example raises pressure",
+      "narration": "Indonesia proclaimed independence in 1945 and Dutch recognition followed in 1949. The Philippine example helped raise nationalist pressure until it too crossed the threshold.",
+      "duration_ms": 7500,
+      "steps": [
+        {
+          "at_ms": 0,
+          "do": "show",
+          "shape": {
+            "id": "title",
+            "kind": "text",
+            "x": 480,
+            "y": 34,
+            "text": "The Decolonisation Chain in Southeast Asia",
+            "size": 20,
+            "color": "#1a1a1a",
+            "align": "middle",
+            "explain": "Title: the decolonisation chain in Southeast Asia after the Second World War."
+          }
+        },
+        {
+          "at_ms": 150,
+          "do": "show",
+          "shape": {
+            "id": "stage",
+            "kind": "text",
+            "x": 480,
+            "y": 78,
+            "text": "Stage 2: Indonesia is recognised, 1949",
+            "size": 16,
+            "color": "#1a1a1a",
+            "align": "middle",
+            "explain": "Stage label: Stage 2: Indonesia is recognised, 1949."
+          }
+        },
+        {
+          "at_ms": 300,
+          "do": "show",
+          "shape": {
+            "id": "pLabel",
+            "kind": "text",
+            "x": 180,
+            "y": 130,
+            "text": "Nationalist pressure",
+            "size": 14,
+            "color": "#1a1a1a",
+            "align": "middle",
+            "explain": "Label: nationalist pressure in this territory."
+          }
+        },
+        {
+          "at_ms": 450,
+          "do": "show",
+          "shape": {
+            "id": "pBar",
+            "kind": "rect",
+            "x": 130,
+            "y": 320,
+            "w": 100,
+            "h": 30,
+            "fill": "#c0392b",
+            "explain": "The pressure bar: nationalist pressure starts low and rises in this stage."
+          }
+        },
+        {
+          "at_ms": 600,
+          "do": "show",
+          "shape": {
+            "id": "thresh",
+            "kind": "line",
+            "x1": 105,
+            "y1": 200,
+            "x2": 255,
+            "y2": 200,
+            "stroke": "#1a1a1a",
+            "strokeWidth": 3,
+            "explain": "The threshold line: when pressure rises past it, independence follows."
+          }
+        },
+        {
+          "at_ms": 750,
+          "do": "show",
+          "shape": {
+            "id": "tLabel",
+            "kind": "text",
+            "x": 270,
+            "y": 204,
+            "text": "threshold",
+            "size": 13,
+            "color": "#1a1a1a",
+            "align": "start",
+            "explain": "Label: the independence threshold."
+          }
+        },
+        {
+          "at_ms": 1000,
+          "do": "move",
+          "target": "pBar",
+          "to": {
+            "y": 180,
+            "h": 170
+          },
+          "dur_ms": 1600
+        },
+        {
+          "at_ms": 2800,
+          "do": "show",
+          "shape": {
+            "id": "cLabel",
+            "kind": "text",
+            "x": 660,
+            "y": 130,
+            "text": "Colonial control",
+            "size": 14,
+            "color": "#1a1a1a",
+            "align": "middle",
+            "explain": "Label: colonial control in this territory."
+          }
+        },
+        {
+          "at_ms": 2950,
+          "do": "show",
+          "shape": {
+            "id": "cBar",
+            "kind": "rect",
+            "x": 610,
+            "y": 180,
+            "w": 100,
+            "h": 170,
+            "fill": "#2e86ab",
+            "explain": "The control bar: colonial control starts high and falls as pressure rises."
+          }
+        },
+        {
+          "at_ms": 3200,
+          "do": "move",
+          "target": "cBar",
+          "to": {
+            "y": 300,
+            "h": 50
+          },
+          "dur_ms": 1400
+        },
+        {
+          "at_ms": 4800,
+          "do": "emphasize",
+          "target": "pBar"
+        },
+        {
+          "at_ms": 5000,
+          "do": "show",
+          "shape": {
+            "id": "arrow",
+            "kind": "arrow",
+            "x1": 300,
+            "y1": 440,
+            "x2": 640,
+            "y2": 440,
+            "stroke": "#27ae60",
+            "strokeWidth": 4,
+            "explain": "The transmission arrow: the example of independence is carried to the next territory."
+          }
+        },
+        {
+          "at_ms": 5150,
+          "do": "show",
+          "shape": {
+            "id": "dot",
+            "kind": "circle",
+            "cx": 320,
+            "cy": 440,
+            "r": 12,
+            "fill": "#27ae60",
+            "explain": "The carried example: a marker that moves along the arrow to the next territory."
+          }
+        },
+        {
+          "at_ms": 5300,
+          "do": "move",
+          "target": "dot",
+          "to": {
+            "cx": 620
+          },
+          "dur_ms": 1200
+        },
+        {
+          "at_ms": 5600,
+          "do": "show",
+          "shape": {
+            "id": "nLabel",
+            "kind": "text",
+            "x": 480,
+            "y": 485,
+            "text": "Example passes on to Malaya",
+            "size": 14,
+            "color": "#1a1a1a",
+            "align": "middle",
+            "explain": "Label: the example passes on to Malaya."
+          }
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "caption": "Malaya, 1957: pressure rises, control falls",
+      "narration": "In Malaya the chain continues: each independence nearby raises nationalist pressure at home, colonial control weakens, and the Federation of Malaya becomes independent in 1957.",
+      "duration_ms": 7500,
+      "steps": [
+        {
+          "at_ms": 0,
+          "do": "show",
+          "shape": {
+            "id": "title",
+            "kind": "text",
+            "x": 480,
+            "y": 34,
+            "text": "The Decolonisation Chain in Southeast Asia",
+            "size": 20,
+            "color": "#1a1a1a",
+            "align": "middle",
+            "explain": "Title: the decolonisation chain in Southeast Asia after the Second World War."
+          }
+        },
+        {
+          "at_ms": 150,
+          "do": "show",
+          "shape": {
+            "id": "stage",
+            "kind": "text",
+            "x": 480,
+            "y": 78,
+            "text": "Stage 3: Malaya becomes independent, 1957",
+            "size": 16,
+            "color": "#1a1a1a",
+            "align": "middle",
+            "explain": "Stage label: Stage 3: Malaya becomes independent, 1957."
+          }
+        },
+        {
+          "at_ms": 300,
+          "do": "show",
+          "shape": {
+            "id": "pLabel",
+            "kind": "text",
+            "x": 180,
+            "y": 130,
+            "text": "Nationalist pressure",
+            "size": 14,
+            "color": "#1a1a1a",
+            "align": "middle",
+            "explain": "Label: nationalist pressure in this territory."
+          }
+        },
+        {
+          "at_ms": 450,
+          "do": "show",
+          "shape": {
+            "id": "pBar",
+            "kind": "rect",
+            "x": 130,
+            "y": 320,
+            "w": 100,
+            "h": 30,
+            "fill": "#c0392b",
+            "explain": "The pressure bar: nationalist pressure starts low and rises in this stage."
+          }
+        },
+        {
+          "at_ms": 600,
+          "do": "show",
+          "shape": {
+            "id": "thresh",
+            "kind": "line",
+            "x1": 105,
+            "y1": 200,
+            "x2": 255,
+            "y2": 200,
+            "stroke": "#1a1a1a",
+            "strokeWidth": 3,
+            "explain": "The threshold line: when pressure rises past it, independence follows."
+          }
+        },
+        {
+          "at_ms": 750,
+          "do": "show",
+          "shape": {
+            "id": "tLabel",
+            "kind": "text",
+            "x": 270,
+            "y": 204,
+            "text": "threshold",
+            "size": 13,
+            "color": "#1a1a1a",
+            "align": "start",
+            "explain": "Label: the independence threshold."
+          }
+        },
+        {
+          "at_ms": 1000,
+          "do": "move",
+          "target": "pBar",
+          "to": {
+            "y": 180,
+            "h": 170
+          },
+          "dur_ms": 1600
+        },
+        {
+          "at_ms": 2800,
+          "do": "show",
+          "shape": {
+            "id": "cLabel",
+            "kind": "text",
+            "x": 660,
+            "y": 130,
+            "text": "Colonial control",
+            "size": 14,
+            "color": "#1a1a1a",
+            "align": "middle",
+            "explain": "Label: colonial control in this territory."
+          }
+        },
+        {
+          "at_ms": 2950,
+          "do": "show",
+          "shape": {
+            "id": "cBar",
+            "kind": "rect",
+            "x": 610,
+            "y": 180,
+            "w": 100,
+            "h": 170,
+            "fill": "#2e86ab",
+            "explain": "The control bar: colonial control starts high and falls as pressure rises."
+          }
+        },
+        {
+          "at_ms": 3200,
+          "do": "move",
+          "target": "cBar",
+          "to": {
+            "y": 300,
+            "h": 50
+          },
+          "dur_ms": 1400
+        },
+        {
+          "at_ms": 4800,
+          "do": "emphasize",
+          "target": "pBar"
+        },
+        {
+          "at_ms": 5000,
+          "do": "show",
+          "shape": {
+            "id": "arrow",
+            "kind": "arrow",
+            "x1": 300,
+            "y1": 440,
+            "x2": 640,
+            "y2": 440,
+            "stroke": "#27ae60",
+            "strokeWidth": 4,
+            "explain": "The transmission arrow: the example of independence is carried to the next territory."
+          }
+        },
+        {
+          "at_ms": 5150,
+          "do": "show",
+          "shape": {
+            "id": "dot",
+            "kind": "circle",
+            "cx": 320,
+            "cy": 440,
+            "r": 12,
+            "fill": "#27ae60",
+            "explain": "The carried example: a marker that moves along the arrow to the next territory."
+          }
+        },
+        {
+          "at_ms": 5300,
+          "do": "move",
+          "target": "dot",
+          "to": {
+            "cx": 620
+          },
+          "dur_ms": 1200
+        },
+        {
+          "at_ms": 5600,
+          "do": "show",
+          "shape": {
+            "id": "nLabel",
+            "kind": "text",
+            "x": 480,
+            "y": 485,
+            "text": "Example passes on to Singapore",
+            "size": 14,
+            "color": "#1a1a1a",
+            "align": "middle",
+            "explain": "Label: the example passes on to Singapore."
+          }
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "caption": "Singapore, 1959: the chain reaches home",
+      "narration": "Singapore gains internal self-government in 1959. The chain is the mechanism: no territory acted alone, because each independence raised pressure in the next.",
+      "duration_ms": 7500,
+      "steps": [
+        {
+          "at_ms": 0,
+          "do": "show",
+          "shape": {
+            "id": "title",
+            "kind": "text",
+            "x": 480,
+            "y": 34,
+            "text": "The Decolonisation Chain in Southeast Asia",
+            "size": 20,
+            "color": "#1a1a1a",
+            "align": "middle",
+            "explain": "Title: the decolonisation chain in Southeast Asia after the Second World War."
+          }
+        },
+        {
+          "at_ms": 150,
+          "do": "show",
+          "shape": {
+            "id": "stage",
+            "kind": "text",
+            "x": 480,
+            "y": 78,
+            "text": "Stage 4: Singapore gains self-government, 1959",
+            "size": 16,
+            "color": "#1a1a1a",
+            "align": "middle",
+            "explain": "Stage label: Stage 4: Singapore gains self-government, 1959."
+          }
+        },
+        {
+          "at_ms": 300,
+          "do": "show",
+          "shape": {
+            "id": "pLabel",
+            "kind": "text",
+            "x": 180,
+            "y": 130,
+            "text": "Nationalist pressure",
+            "size": 14,
+            "color": "#1a1a1a",
+            "align": "middle",
+            "explain": "Label: nationalist pressure in this territory."
+          }
+        },
+        {
+          "at_ms": 450,
+          "do": "show",
+          "shape": {
+            "id": "pBar",
+            "kind": "rect",
+            "x": 130,
+            "y": 320,
+            "w": 100,
+            "h": 30,
+            "fill": "#c0392b",
+            "explain": "The pressure bar: nationalist pressure starts low and rises in this stage."
+          }
+        },
+        {
+          "at_ms": 600,
+          "do": "show",
+          "shape": {
+            "id": "thresh",
+            "kind": "line",
+            "x1": 105,
+            "y1": 200,
+            "x2": 255,
+            "y2": 200,
+            "stroke": "#1a1a1a",
+            "strokeWidth": 3,
+            "explain": "The threshold line: when pressure rises past it, independence follows."
+          }
+        },
+        {
+          "at_ms": 750,
+          "do": "show",
+          "shape": {
+            "id": "tLabel",
+            "kind": "text",
+            "x": 270,
+            "y": 204,
+            "text": "threshold",
+            "size": 13,
+            "color": "#1a1a1a",
+            "align": "start",
+            "explain": "Label: the independence threshold."
+          }
+        },
+        {
+          "at_ms": 1000,
+          "do": "move",
+          "target": "pBar",
+          "to": {
+            "y": 180,
+            "h": 170
+          },
+          "dur_ms": 1600
+        },
+        {
+          "at_ms": 2800,
+          "do": "show",
+          "shape": {
+            "id": "cLabel",
+            "kind": "text",
+            "x": 660,
+            "y": 130,
+            "text": "Colonial control",
+            "size": 14,
+            "color": "#1a1a1a",
+            "align": "middle",
+            "explain": "Label: colonial control in this territory."
+          }
+        },
+        {
+          "at_ms": 2950,
+          "do": "show",
+          "shape": {
+            "id": "cBar",
+            "kind": "rect",
+            "x": 610,
+            "y": 180,
+            "w": 100,
+            "h": 170,
+            "fill": "#2e86ab",
+            "explain": "The control bar: colonial control starts high and falls as pressure rises."
+          }
+        },
+        {
+          "at_ms": 3200,
+          "do": "move",
+          "target": "cBar",
+          "to": {
+            "y": 300,
+            "h": 50
+          },
+          "dur_ms": 1400
+        },
+        {
+          "at_ms": 4800,
+          "do": "emphasize",
+          "target": "pBar"
+        },
+        {
+          "at_ms": 5000,
+          "do": "show",
+          "shape": {
+            "id": "arrow",
+            "kind": "arrow",
+            "x1": 300,
+            "y1": 440,
+            "x2": 640,
+            "y2": 440,
+            "stroke": "#27ae60",
+            "strokeWidth": 4,
+            "explain": "The transmission arrow: the example of independence is carried to the next territory."
+          }
+        },
+        {
+          "at_ms": 5150,
+          "do": "show",
+          "shape": {
+            "id": "dot",
+            "kind": "circle",
+            "cx": 320,
+            "cy": 440,
+            "r": 12,
+            "fill": "#27ae60",
+            "explain": "The carried example: a marker that moves along the arrow to the next territory."
+          }
+        },
+        {
+          "at_ms": 5300,
+          "do": "move",
+          "target": "dot",
+          "to": {
+            "cx": 620
+          },
+          "dur_ms": 1200
+        },
+        {
+          "at_ms": 5600,
+          "do": "show",
+          "shape": {
+            "id": "nLabel",
+            "kind": "text",
+            "x": 480,
+            "y": 485,
+            "text": "Example passes on to The next territory",
+            "size": 14,
+            "color": "#1a1a1a",
+            "align": "middle",
+            "explain": "Label: the example passes on to The next territory."
+          }
+        }
+      ]
+    }
+  ]
+}

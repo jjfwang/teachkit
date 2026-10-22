@@ -582,6 +582,12 @@
       correctTurn: 'Reorder when falling stock reaches the reorder level, not when it runs out: deliveries take a lead time to arrive, during which stock keeps falling, and the reorder level is set at buffer stock plus lead-time usage precisely so stock bottoms out at the buffer - never below it - just as the delivery lands.'
     },
     // Slice 1 (issue #1163): JC H2 History 9174.
+    // Slice 1 (issue #1168): Secondary History 2174.
+    'decolonisation-chain': {
+      wrongTurn: 'Each colony won independence on its own, because what happened in a neighbouring territory made no difference to nationalist pressure at home.',
+      why: 'Each independence has its own local leaders, parties and negotiations, so it is easy to treat every territory as a separate story with no connection to its neighbours.',
+      correctTurn: 'The territories were linked by a chain: independence in one raised nationalist pressure in the next, because campaigners could point to a neighbour that had already won, colonial control weakened stage by stage, and the example was carried on - Philippines 1946, Indonesia recognised 1949, Malaya 1957, Singapore internal self-government 1959.'
+    },
     'oil-shock': {
       wrongTurn: 'The 1973 oil crisis pushed prices up because governments printed extra money to pay for dearer oil.',
       why: 'Prices did rise across the economy after 1973, and governments do print money - so it is easy to read the general inflation as money-printing that happened to coincide with dearer oil.',

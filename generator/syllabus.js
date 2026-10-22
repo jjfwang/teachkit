@@ -151,6 +151,11 @@
             id: 'exercise-sports-science', label: 'Exercise and Sports Science', subject: 'exercise-sports-science', topics: [
             { slug: 'energy-systems', label: 'Energy systems' }
             ]
+          },
+          {
+            id: 'history', label: 'History', subject: 'history', topics: [
+            { slug: 'decolonisation-chain', label: 'Decolonisation chain' }
+            ]
           }
         ]
       },
