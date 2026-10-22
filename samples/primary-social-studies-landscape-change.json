@@ -1,0 +1,1225 @@
+{
+  "animath": "0.1",
+  "title": "How One Place Changed: The Singapore River Mouth",
+  "level": "primary",
+  "subject": "social-studies",
+  "topic": "landscape-change",
+  "kind": "concept",
+  "canvas": {
+    "width": 960,
+    "height": 540
+  },
+  "scenes": [
+    {
+      "id": "s1",
+      "caption": "Stage 1: a fishing village at the river mouth",
+      "narration": "Long ago, this place at the mouth of the Singapore River was a small fishing village. A few families lived in huts and fished from small boats.",
+      "duration_ms": 6500,
+      "steps": [
+        {
+          "at_ms": 0,
+          "do": "show",
+          "shape": {
+            "id": "title",
+            "kind": "text",
+            "x": 480,
+            "y": 34,
+            "text": "One Place, Many Years: The Singapore River Mouth",
+            "size": 20,
+            "color": "#1a1a1a",
+            "align": "middle",
+            "explain": "Label: One Place, Many Years: The Singapore River Mouth"
+          }
+        },
+        {
+          "at_ms": 150,
+          "do": "show",
+          "shape": {
+            "id": "stage",
+            "kind": "text",
+            "x": 480,
+            "y": 70,
+            "text": "Stage 1: A fishing village, long ago",
+            "size": 16,
+            "color": "#1a1a1a",
+            "align": "middle",
+            "explain": "Label: Stage 1: A fishing village, long ago"
+          }
+        },
+        {
+          "at_ms": 300,
+          "do": "show",
+          "shape": {
+            "id": "land",
+            "kind": "rect",
+            "x": 40,
+            "y": 360,
+            "w": 560,
+            "h": 90,
+            "fill": "#d8bd8a",
+            "explain": "The land at the river mouth: every stage is built on this same shore."
+          }
+        },
+        {
+          "at_ms": 400,
+          "do": "show",
+          "shape": {
+            "id": "sea",
+            "kind": "rect",
+            "x": 600,
+            "y": 360,
+            "w": 320,
+            "h": 90,
+            "fill": "#7fb2d9",
+            "explain": "The sea and river mouth: boats and ships arrive here in every stage."
+          }
+        },
+        {
+          "at_ms": 500,
+          "do": "show",
+          "shape": {
+            "id": "popLabel",
+            "kind": "text",
+            "x": 60,
+            "y": 112,
+            "text": "People living here",
+            "size": 15,
+            "color": "#1a1a1a",
+            "explain": "Label: People living here"
+          }
+        },
+        {
+          "at_ms": 600,
+          "do": "show",
+          "shape": {
+            "id": "popBg",
+            "kind": "rect",
+            "x": 60,
+            "y": 122,
+            "w": 300,
+            "h": 16,
+            "fill": "#dddddd",
+            "explain": "The empty bar: how many people live here, out of the modern total."
+          }
+        },
+        {
+          "at_ms": 800,
+          "do": "show",
+          "shape": {
+            "id": "popFill",
+            "kind": "rect",
+            "x": 60,
+            "y": 122,
+            "w": 20,
+            "h": 16,
+            "fill": "#e07b39",
+            "explain": "The population bar: only a few families live here in the village stage."
+          }
+        },
+        {
+          "at_ms": 1000,
+          "do": "move",
+          "target": "popFill",
+          "to": {
+            "w": 45
+          },
+          "dur_ms": 900
+        },
+        {
+          "at_ms": 1400,
+          "do": "show",
+          "shape": {
+            "id": "hut1roof",
+            "kind": "polygon",
+            "points": [
+              [
+                110,
+                300
+              ],
+              [
+                150,
+                262
+              ],
+              [
+                190,
+                300
+              ]
+            ],
+            "fill": "#8a5a2b",
+            "explain": "A hut roof: the first homes are small huts made of wood and attap."
+          }
+        },
+        {
+          "at_ms": 1600,
+          "do": "show",
+          "shape": {
+            "id": "hut1",
+            "kind": "rect",
+            "x": 118,
+            "y": 300,
+            "w": 64,
+            "h": 60,
+            "fill": "#b08954",
+            "explain": "A fishing hut: families live here and fish for a living."
+          }
+        },
+        {
+          "at_ms": 1900,
+          "do": "show",
+          "shape": {
+            "id": "hut2roof",
+            "kind": "polygon",
+            "points": [
+              [
+                230,
+                312
+              ],
+              [
+                262,
+                280
+              ],
+              [
+                294,
+                312
+              ]
+            ],
+            "fill": "#8a5a2b",
+            "explain": "Another hut roof: the village is only a few homes."
+          }
+        },
+        {
+          "at_ms": 2100,
+          "do": "show",
+          "shape": {
+            "id": "hut2",
+            "kind": "rect",
+            "x": 238,
+            "y": 312,
+            "w": 48,
+            "h": 48,
+            "fill": "#b08954",
+            "explain": "A second hut: the village grows one home at a time."
+          }
+        },
+        {
+          "at_ms": 2500,
+          "do": "show",
+          "shape": {
+            "id": "boat",
+            "kind": "polygon",
+            "points": [
+              [
+                640,
+                338
+              ],
+              [
+                700,
+                338
+              ],
+              [
+                688,
+                356
+              ],
+              [
+                652,
+                356
+              ]
+            ],
+            "fill": "#8a5a2b",
+            "explain": "A small fishing boat: it carries a few people and their catch."
+          }
+        },
+        {
+          "at_ms": 2700,
+          "do": "show",
+          "shape": {
+            "id": "mast",
+            "kind": "line",
+            "x1": 670,
+            "y1": 338,
+            "x2": 670,
+            "y2": 306,
+            "stroke": "#555555",
+            "width": 2,
+            "explain": "The boat mast: small boats like this are the only vessels here."
+          }
+        },
+        {
+          "at_ms": 3000,
+          "do": "move",
+          "target": "boat",
+          "to": {
+            "points": [
+              [
+                700,
+                338
+              ],
+              [
+                760,
+                338
+              ],
+              [
+                748,
+                356
+              ],
+              [
+                712,
+                356
+              ]
+            ]
+          },
+          "dur_ms": 1600
+        },
+        {
+          "at_ms": 4800,
+          "do": "emphasize",
+          "target": "popFill"
+        },
+        {
+          "at_ms": 5200,
+          "do": "caption",
+          "text": "Only a few families - change here is slow"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "caption": "Stage 2: trade grows and a port is built",
+      "narration": "As more ships came to trade, godowns were built to store goods and a jetty reached into the water. More people arrived to work at the busy port.",
+      "duration_ms": 6500,
+      "steps": [
+        {
+          "at_ms": 0,
+          "do": "show",
+          "shape": {
+            "id": "title",
+            "kind": "text",
+            "x": 480,
+            "y": 34,
+            "text": "One Place, Many Years: The Singapore River Mouth",
+            "size": 20,
+            "color": "#1a1a1a",
+            "align": "middle",
+            "explain": "Label: One Place, Many Years: The Singapore River Mouth"
+          }
+        },
+        {
+          "at_ms": 150,
+          "do": "show",
+          "shape": {
+            "id": "stage",
+            "kind": "text",
+            "x": 480,
+            "y": 70,
+            "text": "Stage 2: Trade grows - a trading port",
+            "size": 16,
+            "color": "#1a1a1a",
+            "align": "middle",
+            "explain": "Label: Stage 2: Trade grows - a trading port"
+          }
+        },
+        {
+          "at_ms": 300,
+          "do": "show",
+          "shape": {
+            "id": "land",
+            "kind": "rect",
+            "x": 40,
+            "y": 360,
+            "w": 560,
+            "h": 90,
+            "fill": "#d8bd8a",
+            "explain": "The land at the river mouth: every stage is built on this same shore."
+          }
+        },
+        {
+          "at_ms": 400,
+          "do": "show",
+          "shape": {
+            "id": "sea",
+            "kind": "rect",
+            "x": 600,
+            "y": 360,
+            "w": 320,
+            "h": 90,
+            "fill": "#7fb2d9",
+            "explain": "The sea and river mouth: boats and ships arrive here in every stage."
+          }
+        },
+        {
+          "at_ms": 500,
+          "do": "show",
+          "shape": {
+            "id": "popLabel",
+            "kind": "text",
+            "x": 60,
+            "y": 112,
+            "text": "People living here",
+            "size": 15,
+            "color": "#1a1a1a",
+            "explain": "Label: People living here"
+          }
+        },
+        {
+          "at_ms": 600,
+          "do": "show",
+          "shape": {
+            "id": "popBg",
+            "kind": "rect",
+            "x": 60,
+            "y": 122,
+            "w": 300,
+            "h": 16,
+            "fill": "#dddddd",
+            "explain": "The empty bar: how many people live here, out of the modern total."
+          }
+        },
+        {
+          "at_ms": 800,
+          "do": "show",
+          "shape": {
+            "id": "popFill",
+            "kind": "rect",
+            "x": 60,
+            "y": 122,
+            "w": 45,
+            "h": 16,
+            "fill": "#e07b39",
+            "explain": "The population bar: more people arrive as trade grows."
+          }
+        },
+        {
+          "at_ms": 1000,
+          "do": "move",
+          "target": "popFill",
+          "to": {
+            "w": 120
+          },
+          "dur_ms": 1100
+        },
+        {
+          "at_ms": 1400,
+          "do": "show",
+          "shape": {
+            "id": "godown1",
+            "kind": "rect",
+            "x": 100,
+            "y": 272,
+            "w": 110,
+            "h": 88,
+            "fill": "#9c6b30",
+            "explain": "A godown: goods from arriving ships are stored in warehouses like this."
+          }
+        },
+        {
+          "at_ms": 1700,
+          "do": "show",
+          "shape": {
+            "id": "godown2",
+            "kind": "rect",
+            "x": 240,
+            "y": 288,
+            "w": 96,
+            "h": 72,
+            "fill": "#a9773a",
+            "explain": "Another godown: more storage is built as more ships come to trade."
+          }
+        },
+        {
+          "at_ms": 2000,
+          "do": "show",
+          "shape": {
+            "id": "jetty",
+            "kind": "rect",
+            "x": 520,
+            "y": 344,
+            "w": 150,
+            "h": 10,
+            "fill": "#777777",
+            "explain": "The jetty: it reaches into the water so larger ships can unload."
+          }
+        },
+        {
+          "at_ms": 2400,
+          "do": "show",
+          "shape": {
+            "id": "ship",
+            "kind": "polygon",
+            "points": [
+              [
+                660,
+                330
+              ],
+              [
+                790,
+                330
+              ],
+              [
+                770,
+                352
+              ],
+              [
+                680,
+                352
+              ]
+            ],
+            "fill": "#6b4a26",
+            "explain": "A sailing ship: bigger than the fishing boats, it carries goods from far away."
+          }
+        },
+        {
+          "at_ms": 2600,
+          "do": "show",
+          "shape": {
+            "id": "sail",
+            "kind": "polygon",
+            "points": [
+              [
+                715,
+                330
+              ],
+              [
+                715,
+                272
+              ],
+              [
+                758,
+                330
+              ]
+            ],
+            "fill": "#f2ead8",
+            "explain": "The ship sail: wind carries trading ships across the sea."
+          }
+        },
+        {
+          "at_ms": 2900,
+          "do": "move",
+          "target": "ship",
+          "to": {
+            "points": [
+              [
+                620,
+                330
+              ],
+              [
+                750,
+                330
+              ],
+              [
+                730,
+                352
+              ],
+              [
+                640,
+                352
+              ]
+            ]
+          },
+          "dur_ms": 1500
+        },
+        {
+          "at_ms": 2950,
+          "do": "move",
+          "target": "sail",
+          "to": {
+            "points": [
+              [
+                675,
+                330
+              ],
+              [
+                675,
+                272
+              ],
+              [
+                718,
+                330
+              ]
+            ]
+          },
+          "dur_ms": 1500
+        },
+        {
+          "at_ms": 4600,
+          "do": "emphasize",
+          "target": "godown1"
+        },
+        {
+          "at_ms": 5000,
+          "do": "caption",
+          "text": "Trade grows - godowns and a jetty are built"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "caption": "Stage 3: the port expands with steamships",
+      "narration": "Later, steamships replaced sailing ships. The port expanded with long rows of warehouses, and the population grew as the port offered more work.",
+      "duration_ms": 6800,
+      "steps": [
+        {
+          "at_ms": 0,
+          "do": "show",
+          "shape": {
+            "id": "title",
+            "kind": "text",
+            "x": 480,
+            "y": 34,
+            "text": "One Place, Many Years: The Singapore River Mouth",
+            "size": 20,
+            "color": "#1a1a1a",
+            "align": "middle",
+            "explain": "Label: One Place, Many Years: The Singapore River Mouth"
+          }
+        },
+        {
+          "at_ms": 150,
+          "do": "show",
+          "shape": {
+            "id": "stage",
+            "kind": "text",
+            "x": 480,
+            "y": 70,
+            "text": "Stage 3: The port expands - steamships arrive",
+            "size": 16,
+            "color": "#1a1a1a",
+            "align": "middle",
+            "explain": "Label: Stage 3: The port expands - steamships arrive"
+          }
+        },
+        {
+          "at_ms": 300,
+          "do": "show",
+          "shape": {
+            "id": "land",
+            "kind": "rect",
+            "x": 40,
+            "y": 360,
+            "w": 560,
+            "h": 90,
+            "fill": "#d8bd8a",
+            "explain": "The land at the river mouth: every stage is built on this same shore."
+          }
+        },
+        {
+          "at_ms": 400,
+          "do": "show",
+          "shape": {
+            "id": "sea",
+            "kind": "rect",
+            "x": 600,
+            "y": 360,
+            "w": 320,
+            "h": 90,
+            "fill": "#7fb2d9",
+            "explain": "The sea and river mouth: boats and ships arrive here in every stage."
+          }
+        },
+        {
+          "at_ms": 500,
+          "do": "show",
+          "shape": {
+            "id": "popLabel",
+            "kind": "text",
+            "x": 60,
+            "y": 112,
+            "text": "People living here",
+            "size": 15,
+            "color": "#1a1a1a",
+            "explain": "Label: People living here"
+          }
+        },
+        {
+          "at_ms": 600,
+          "do": "show",
+          "shape": {
+            "id": "popBg",
+            "kind": "rect",
+            "x": 60,
+            "y": 122,
+            "w": 300,
+            "h": 16,
+            "fill": "#dddddd",
+            "explain": "The empty bar: how many people live here, out of the modern total."
+          }
+        },
+        {
+          "at_ms": 800,
+          "do": "show",
+          "shape": {
+            "id": "popFill",
+            "kind": "rect",
+            "x": 60,
+            "y": 122,
+            "w": 120,
+            "h": 16,
+            "fill": "#e07b39",
+            "explain": "The population bar: the growing port draws many more people."
+          }
+        },
+        {
+          "at_ms": 1000,
+          "do": "move",
+          "target": "popFill",
+          "to": {
+            "w": 210
+          },
+          "dur_ms": 1100
+        },
+        {
+          "at_ms": 1400,
+          "do": "show",
+          "shape": {
+            "id": "wh1",
+            "kind": "rect",
+            "x": 84,
+            "y": 252,
+            "w": 120,
+            "h": 108,
+            "fill": "#8a5f2e",
+            "explain": "A large warehouse: the port expands with bigger storage for world trade."
+          }
+        },
+        {
+          "at_ms": 1700,
+          "do": "show",
+          "shape": {
+            "id": "wh2",
+            "kind": "rect",
+            "x": 224,
+            "y": 268,
+            "w": 104,
+            "h": 92,
+            "fill": "#96682f",
+            "explain": "Another warehouse: rows of them now line the shore."
+          }
+        },
+        {
+          "at_ms": 1950,
+          "do": "show",
+          "shape": {
+            "id": "wh3",
+            "kind": "rect",
+            "x": 348,
+            "y": 284,
+            "w": 88,
+            "h": 76,
+            "fill": "#a9773a",
+            "explain": "A third warehouse: the shoreline is now a working port, not a village."
+          }
+        },
+        {
+          "at_ms": 2200,
+          "do": "show",
+          "shape": {
+            "id": "jetty",
+            "kind": "rect",
+            "x": 500,
+            "y": 344,
+            "w": 170,
+            "h": 10,
+            "fill": "#777777",
+            "explain": "The longer jetty: steamships need deeper, longer berths."
+          }
+        },
+        {
+          "at_ms": 2500,
+          "do": "show",
+          "shape": {
+            "id": "steam",
+            "kind": "polygon",
+            "points": [
+              [
+                650,
+                328
+              ],
+              [
+                810,
+                328
+              ],
+              [
+                786,
+                352
+              ],
+              [
+                674,
+                352
+              ]
+            ],
+            "fill": "#5a3d20",
+            "explain": "A steamship: larger and faster than sailing ships, driven by an engine."
+          }
+        },
+        {
+          "at_ms": 2700,
+          "do": "show",
+          "shape": {
+            "id": "funnel",
+            "kind": "rect",
+            "x": 716,
+            "y": 296,
+            "w": 16,
+            "h": 32,
+            "fill": "#333333",
+            "explain": "The steamship funnel: smoke from its coal engine rises here."
+          }
+        },
+        {
+          "at_ms": 2900,
+          "do": "show",
+          "shape": {
+            "id": "smoke",
+            "kind": "circle",
+            "cx": 724,
+            "cy": 282,
+            "r": 9,
+            "fill": "#bbbbbb",
+            "explain": "A puff of smoke: the engine burns coal to drive the ship."
+          }
+        },
+        {
+          "at_ms": 3050,
+          "do": "move",
+          "target": "smoke",
+          "to": {
+            "cy": 246
+          },
+          "dur_ms": 1000
+        },
+        {
+          "at_ms": 3200,
+          "do": "move",
+          "target": "steam",
+          "to": {
+            "points": [
+              [
+                600,
+                328
+              ],
+              [
+                760,
+                328
+              ],
+              [
+                736,
+                352
+              ],
+              [
+                624,
+                352
+              ]
+            ]
+          },
+          "dur_ms": 1500
+        },
+        {
+          "at_ms": 3250,
+          "do": "move",
+          "target": "funnel",
+          "to": {
+            "x": 666
+          },
+          "dur_ms": 1500
+        },
+        {
+          "at_ms": 4900,
+          "do": "emphasize",
+          "target": "popFill"
+        },
+        {
+          "at_ms": 5300,
+          "do": "caption",
+          "text": "Steamships arrive - the port grows bigger still"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "caption": "Stage 4: the modern city, built stage by stage",
+      "narration": "Today the same shore holds tall buildings, busy roads and container ships. It did not change in one sudden jump - the village became a port, then a bigger port, then a city, one stage at a time.",
+      "duration_ms": 8000,
+      "steps": [
+        {
+          "at_ms": 0,
+          "do": "show",
+          "shape": {
+            "id": "title",
+            "kind": "text",
+            "x": 480,
+            "y": 34,
+            "text": "One Place, Many Years: The Singapore River Mouth",
+            "size": 20,
+            "color": "#1a1a1a",
+            "align": "middle",
+            "explain": "Label: One Place, Many Years: The Singapore River Mouth"
+          }
+        },
+        {
+          "at_ms": 150,
+          "do": "show",
+          "shape": {
+            "id": "stage",
+            "kind": "text",
+            "x": 480,
+            "y": 70,
+            "text": "Stage 4: The modern city today",
+            "size": 16,
+            "color": "#1a1a1a",
+            "align": "middle",
+            "explain": "Label: Stage 4: The modern city today"
+          }
+        },
+        {
+          "at_ms": 300,
+          "do": "show",
+          "shape": {
+            "id": "land",
+            "kind": "rect",
+            "x": 40,
+            "y": 360,
+            "w": 560,
+            "h": 90,
+            "fill": "#d8bd8a",
+            "explain": "The land at the river mouth: every stage is built on this same shore."
+          }
+        },
+        {
+          "at_ms": 400,
+          "do": "show",
+          "shape": {
+            "id": "sea",
+            "kind": "rect",
+            "x": 600,
+            "y": 360,
+            "w": 320,
+            "h": 90,
+            "fill": "#7fb2d9",
+            "explain": "The sea and river mouth: boats and ships arrive here in every stage."
+          }
+        },
+        {
+          "at_ms": 500,
+          "do": "show",
+          "shape": {
+            "id": "popLabel",
+            "kind": "text",
+            "x": 60,
+            "y": 112,
+            "text": "People living here",
+            "size": 15,
+            "color": "#1a1a1a",
+            "explain": "Label: People living here"
+          }
+        },
+        {
+          "at_ms": 600,
+          "do": "show",
+          "shape": {
+            "id": "popBg",
+            "kind": "rect",
+            "x": 60,
+            "y": 122,
+            "w": 300,
+            "h": 16,
+            "fill": "#dddddd",
+            "explain": "The empty bar: how many people live here, out of the modern total."
+          }
+        },
+        {
+          "at_ms": 800,
+          "do": "show",
+          "shape": {
+            "id": "popFill",
+            "kind": "rect",
+            "x": 60,
+            "y": 122,
+            "w": 210,
+            "h": 16,
+            "fill": "#e07b39",
+            "explain": "The population bar: today, very many people live and work here."
+          }
+        },
+        {
+          "at_ms": 1000,
+          "do": "move",
+          "target": "popFill",
+          "to": {
+            "w": 300
+          },
+          "dur_ms": 1100
+        },
+        {
+          "at_ms": 1400,
+          "do": "show",
+          "shape": {
+            "id": "tall1",
+            "kind": "rect",
+            "x": 92,
+            "y": 168,
+            "w": 64,
+            "h": 192,
+            "fill": "#7f9bb3",
+            "explain": "A tall office building: the modern city rises high above the old shore."
+          }
+        },
+        {
+          "at_ms": 1750,
+          "do": "show",
+          "shape": {
+            "id": "tall2",
+            "kind": "rect",
+            "x": 176,
+            "y": 208,
+            "w": 56,
+            "h": 152,
+            "fill": "#93a9bd",
+            "explain": "Another tall building: buildings rose one by one over many years."
+          }
+        },
+        {
+          "at_ms": 2100,
+          "do": "show",
+          "shape": {
+            "id": "tall3",
+            "kind": "rect",
+            "x": 252,
+            "y": 188,
+            "w": 60,
+            "h": 172,
+            "fill": "#829cb2",
+            "explain": "A third tall building: the skyline grew stage by stage, never in one jump."
+          }
+        },
+        {
+          "at_ms": 2450,
+          "do": "show",
+          "shape": {
+            "id": "road",
+            "kind": "line",
+            "x1": 60,
+            "y1": 352,
+            "x2": 560,
+            "y2": 352,
+            "stroke": "#666666",
+            "width": 5,
+            "explain": "The road: cars and buses now cross the shore where huts once stood."
+          }
+        },
+        {
+          "at_ms": 2650,
+          "do": "show",
+          "shape": {
+            "id": "truck",
+            "kind": "rect",
+            "x": 150,
+            "y": 330,
+            "w": 44,
+            "h": 20,
+            "fill": "#d9534f",
+            "explain": "A truck: it carries goods along the road to the port and city."
+          }
+        },
+        {
+          "at_ms": 2900,
+          "do": "move",
+          "target": "truck",
+          "to": {
+            "x": 260
+          },
+          "dur_ms": 1600
+        },
+        {
+          "at_ms": 3300,
+          "do": "show",
+          "shape": {
+            "id": "cship",
+            "kind": "polygon",
+            "points": [
+              [
+                640,
+                326
+              ],
+              [
+                850,
+                326
+              ],
+              [
+                822,
+                354
+              ],
+              [
+                668,
+                354
+              ]
+            ],
+            "fill": "#4a3421",
+            "explain": "A container ship: today's biggest vessels carry goods in stacked boxes."
+          }
+        },
+        {
+          "at_ms": 3500,
+          "do": "show",
+          "shape": {
+            "id": "box1",
+            "kind": "rect",
+            "x": 690,
+            "y": 302,
+            "w": 52,
+            "h": 24,
+            "fill": "#d9534f",
+            "explain": "A shipping container: goods travel the world stacked in these boxes."
+          }
+        },
+        {
+          "at_ms": 3650,
+          "do": "show",
+          "shape": {
+            "id": "box2",
+            "kind": "rect",
+            "x": 752,
+            "y": 302,
+            "w": 52,
+            "h": 24,
+            "fill": "#315fd6",
+            "explain": "Another container: cranes stack them high on the ship."
+          }
+        },
+        {
+          "at_ms": 3900,
+          "do": "move",
+          "target": "cship",
+          "to": {
+            "points": [
+              [
+                595,
+                326
+              ],
+              [
+                805,
+                326
+              ],
+              [
+                777,
+                354
+              ],
+              [
+                623,
+                354
+              ]
+            ]
+          },
+          "dur_ms": 1500
+        },
+        {
+          "at_ms": 3950,
+          "do": "move",
+          "target": "box1",
+          "to": {
+            "x": 645
+          },
+          "dur_ms": 1500
+        },
+        {
+          "at_ms": 4000,
+          "do": "move",
+          "target": "box2",
+          "to": {
+            "x": 707
+          },
+          "dur_ms": 1500
+        },
+        {
+          "at_ms": 5000,
+          "do": "show",
+          "shape": {
+            "id": "arrA",
+            "kind": "arrow",
+            "x1": 120,
+            "y1": 492,
+            "x2": 250,
+            "y2": 492,
+            "stroke": "#315fd6",
+            "width": 3,
+            "explain": "The timeline arrow: time moves forward stage by stage."
+          }
+        },
+        {
+          "at_ms": 5200,
+          "do": "show",
+          "shape": {
+            "id": "dot1",
+            "kind": "circle",
+            "cx": 120,
+            "cy": 492,
+            "r": 8,
+            "fill": "#e07b39",
+            "explain": "Timeline dot: stage 1, the fishing village."
+          }
+        },
+        {
+          "at_ms": 5450,
+          "do": "show",
+          "shape": {
+            "id": "dot2",
+            "kind": "circle",
+            "cx": 280,
+            "cy": 492,
+            "r": 8,
+            "fill": "#e07b39",
+            "explain": "Timeline dot: stage 2, the trading port."
+          }
+        },
+        {
+          "at_ms": 5700,
+          "do": "show",
+          "shape": {
+            "id": "dot3",
+            "kind": "circle",
+            "cx": 440,
+            "cy": 492,
+            "r": 8,
+            "fill": "#e07b39",
+            "explain": "Timeline dot: stage 3, the expanding port."
+          }
+        },
+        {
+          "at_ms": 5950,
+          "do": "show",
+          "shape": {
+            "id": "dot4",
+            "kind": "circle",
+            "cx": 600,
+            "cy": 492,
+            "r": 8,
+            "fill": "#e07b39",
+            "explain": "Timeline dot: stage 4, the modern city."
+          }
+        },
+        {
+          "at_ms": 6200,
+          "do": "show",
+          "shape": {
+            "id": "tlLabel",
+            "kind": "text",
+            "x": 660,
+            "y": 497,
+            "text": "one stage at a time",
+            "size": 15,
+            "color": "#1a1a1a",
+            "explain": "Label: one stage at a time"
+          }
+        },
+        {
+          "at_ms": 6500,
+          "do": "emphasize",
+          "target": "dot4"
+        },
+        {
+          "at_ms": 6800,
+          "do": "caption",
+          "text": "Not one sudden jump - it changed stage by stage"
+        }
+      ]
+    }
+  ]
+}

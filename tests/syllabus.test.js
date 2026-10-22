@@ -56,18 +56,18 @@ function collectPickerSlugs(data) {
   return { slugs, subjects };
 }
 
-const EXPECTED_SLUG_COUNT = 90;
+const EXPECTED_SLUG_COUNT = 91;
 
-test('SYLLABUS.md and web/syllabus.js hold the same 90 topic slugs, 1:1', () => {
+test('SYLLABUS.md and web/syllabus.js hold the same 91 topic slugs, 1:1', () => {
   const mdSlugs = parseSyllabusSlugs(syllabusMd);
   const { slugs: pickerSlugs, subjects } = collectPickerSlugs(loadPickerData());
 
   // Locks the expected count on both sides so a future drop/add of a whole
   // band cannot pass with two empty sets still "matching".
   assert.equal(mdSlugs.length, EXPECTED_SLUG_COUNT,
-    'SYLLABUS.md band tables must carry exactly 90 topic slugs');
+    'SYLLABUS.md band tables must carry exactly 91 topic slugs');
   assert.equal(pickerSlugs.length, EXPECTED_SLUG_COUNT,
-    'web/syllabus.js must carry exactly 90 topic slugs');
+    'web/syllabus.js must carry exactly 91 topic slugs');
 
   const dupes = (list) => {
     const seen = new Set();
@@ -125,7 +125,8 @@ const LEVEL_BY_BAND = {
 const PRIMARY_TRACK_BY_HEADING = {
   Mathematics: ['p-math', 'math'],
   Science: ['p-sci', 'science'],
-  Geography: ['p-geog', 'geography']
+  Geography: ['p-geog', 'geography'],
+  'Social Studies': ['p-social-studies', 'social-studies']
 };
 // Secondary / JC tracks are named by a plain "Name:" line above each
 // table; the same subject name maps to different track ids per level
@@ -225,7 +226,7 @@ function flattenSyllabusData(data) {
 test('SYLLABUS.md, web/syllabus.js and generator SYLLABUS agree 1:1 (slug, level, track, subject)', () => {
   const mdEntries = parseSyllabusEntries(syllabusMd);
   assert.equal(mdEntries.length, EXPECTED_SLUG_COUNT,
-    'SYLLABUS.md heading-context parse must yield exactly 90 entries');
+    'SYLLABUS.md heading-context parse must yield exactly 91 entries');
   assert.deepEqual(flattenSyllabusData(loadPickerData()), mdEntries,
     'web/syllabus.js flattened (slug, level, track, subject) sequence must match SYLLABUS.md in document order');
   const { SYLLABUS } = require('../generator/syllabus.js');
@@ -236,7 +237,7 @@ test('SYLLABUS.md, web/syllabus.js and generator SYLLABUS agree 1:1 (slug, level
 // Issue #497 regression: a shipped sample declared topic "ratio-sharing",
 // which matches no taxonomy slug, so the taxonomy's "ratio" topic read as
 // uncovered. This test locks every sample's topic to the 70 slugs parsed
-// from SYLLABUS.md, and locks the full 90/90 slug coverage.
+// from SYLLABUS.md, and locks the full 91/91 slug coverage.
 test('every sample topic is a taxonomy slug, and every slug has a sample', () => {
   const mdSlugs = parseSyllabusSlugs(syllabusMd);
   const slugSet = new Set(mdSlugs);

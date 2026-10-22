@@ -594,6 +594,12 @@
       why: 'The finished phone is bought in one shop in one country and carries one brand, so it is easy to assume the whole product was made in that one place.',
       correctTurn: 'A global product crosses borders at every stage: raw materials are mined in one country, components are made in a second, the product is assembled in a third, and only then is it shipped to the shop shelf in Singapore - value is added at every handover along the chain.'
     },
+    // Slice 1 (issue #1183): Primary Social Studies.
+    'landscape-change': {
+      wrongTurn: 'Singapore\'s landscape changed in one sudden jump, because the fishing village was replaced by the modern city in a single step.',
+      why: 'Photographs of the old village and the modern city look completely different, so it is easy to imagine one was swept away and the other put in its place overnight.',
+      correctTurn: 'The change was gradual and driven by growing trade: the fishing village first became a trading port with godowns and a jetty, the port then expanded with warehouses and steamships, and only later did the modern city of tall buildings, roads and container ships rise - stage by stage at the same site, with the population growing at every stage.'
+    },
     // Slice 1 (issue #1178): Secondary Biotechnology NP04.
     'fermentation': {
       wrongTurn: 'The alcohol appears from nothing as the mixture ferments, because the glucose in the flask stays the same while ethanol and gas are produced.',
