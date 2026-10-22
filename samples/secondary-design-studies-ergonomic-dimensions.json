@@ -1,0 +1,1739 @@
+{
+  "animath": "0.1",
+  "title": "Ergonomic Dimensions: Fit the Chair and Desk to the Student",
+  "level": "secondary",
+  "subject": "design-studies",
+  "topic": "ergonomic-dimensions",
+  "kind": "concept",
+  "canvas": {
+    "width": 960,
+    "height": 540
+  },
+  "scenes": [
+    {
+      "id": "s1",
+      "caption": "Measure the student: lower leg, hips and seated elbow",
+      "narration": "One student is measured before anything is built: the lower-leg height is 40 cm, the hip breadth is 36 cm, and the seated elbow rests 24 cm above the seat. The fit bar starts empty.",
+      "duration_ms": 6000,
+      "steps": [
+        {
+          "at_ms": 0,
+          "do": "show",
+          "shape": {
+            "id": "title",
+            "kind": "text",
+            "x": 480,
+            "y": 34,
+            "text": "Ergonomic Dimensions: Fit the Chair and Desk to the Student",
+            "size": 20,
+            "color": "#1a1a1a",
+            "align": "middle",
+            "explain": "Label: Ergonomic Dimensions: Fit the Chair and Desk to the Student"
+          }
+        },
+        {
+          "at_ms": 150,
+          "do": "show",
+          "shape": {
+            "id": "stage",
+            "kind": "text",
+            "x": 480,
+            "y": 74,
+            "text": "Stage 1: Measure the student",
+            "size": 16,
+            "color": "#1a1a1a",
+            "align": "middle",
+            "explain": "Label: Stage 1: Measure the student"
+          }
+        },
+        {
+          "at_ms": 300,
+          "do": "show",
+          "shape": {
+            "id": "floorLine",
+            "kind": "line",
+            "x1": 60,
+            "y1": 460,
+            "x2": 470,
+            "y2": 460,
+            "stroke": "#888888",
+            "width": 2,
+            "explain": "The floor: every height in this scene is measured up from the floor."
+          }
+        },
+        {
+          "at_ms": 400,
+          "do": "show",
+          "shape": {
+            "id": "fitBar",
+            "kind": "rect",
+            "x": 860,
+            "y": 450,
+            "w": 50,
+            "h": 0,
+            "fill": "#2e7d32",
+            "explain": "The fit bar: it climbs as each fit gap closes, and is full only when every dimension fits the student."
+          }
+        },
+        {
+          "at_ms": 500,
+          "do": "show",
+          "shape": {
+            "id": "fitLabel",
+            "kind": "text",
+            "x": 885,
+            "y": 485,
+            "text": "Fit bar",
+            "size": 14,
+            "color": "#1a1a1a",
+            "align": "middle",
+            "explain": "Label: Fit bar"
+          }
+        },
+        {
+          "at_ms": 600,
+          "do": "show",
+          "shape": {
+            "id": "chairLabel",
+            "kind": "text",
+            "x": 205,
+            "y": 485,
+            "text": "Chair",
+            "size": 14,
+            "color": "#1a1a1a",
+            "align": "middle",
+            "explain": "Label: Chair"
+          }
+        },
+        {
+          "at_ms": 700,
+          "do": "show",
+          "shape": {
+            "id": "deskLabel",
+            "kind": "text",
+            "x": 375,
+            "y": 485,
+            "text": "Desk",
+            "size": 14,
+            "color": "#1a1a1a",
+            "align": "middle",
+            "explain": "Label: Desk"
+          }
+        },
+        {
+          "at_ms": 800,
+          "do": "show",
+          "shape": {
+            "id": "chairBack",
+            "kind": "rect",
+            "x": 136,
+            "y": 210,
+            "w": 14,
+            "h": 120,
+            "fill": "#8a5a2b",
+            "explain": "The chair back: it supports the student's back once the seat is at the right height."
+          }
+        },
+        {
+          "at_ms": 900,
+          "do": "show",
+          "shape": {
+            "id": "chairLegB",
+            "kind": "rect",
+            "x": 158,
+            "y": 344,
+            "w": 10,
+            "h": 116,
+            "fill": "#555555",
+            "explain": "A chair leg: the legs lengthen or shorten as the seat height is set."
+          }
+        },
+        {
+          "at_ms": 1000,
+          "do": "show",
+          "shape": {
+            "id": "chairLegF",
+            "kind": "rect",
+            "x": 252,
+            "y": 344,
+            "w": 10,
+            "h": 116,
+            "fill": "#555555",
+            "explain": "A chair leg: the legs lengthen or shorten as the seat height is set."
+          }
+        },
+        {
+          "at_ms": 1100,
+          "do": "show",
+          "shape": {
+            "id": "chairSeat",
+            "kind": "rect",
+            "x": 150,
+            "y": 330,
+            "w": 120,
+            "h": 14,
+            "fill": "#315fd6",
+            "explain": "The seat: its height and width are the first two dimensions set from the student's body."
+          }
+        },
+        {
+          "at_ms": 1400,
+          "do": "show",
+          "shape": {
+            "id": "deskTop",
+            "kind": "rect",
+            "x": 300,
+            "y": 292,
+            "w": 150,
+            "h": 12,
+            "fill": "#8a5a2b",
+            "explain": "The desk top: its height is set last, from the seated elbow height."
+          }
+        },
+        {
+          "at_ms": 1500,
+          "do": "show",
+          "shape": {
+            "id": "deskLeg",
+            "kind": "rect",
+            "x": 428,
+            "y": 304,
+            "w": 12,
+            "h": 156,
+            "fill": "#555555",
+            "explain": "The desk leg: it lengthens or shortens as the desk height is set."
+          }
+        },
+        {
+          "at_ms": 1700,
+          "do": "show",
+          "shape": {
+            "id": "head",
+            "kind": "circle",
+            "cx": 185,
+            "cy": 185,
+            "r": 22,
+            "fill": "#f5d67a",
+            "explain": "The student's head: one student is measured and fitted in this sample."
+          }
+        },
+        {
+          "at_ms": 1800,
+          "do": "show",
+          "shape": {
+            "id": "torso",
+            "kind": "rect",
+            "x": 178,
+            "y": 207,
+            "w": 14,
+            "h": 123,
+            "fill": "#315fd6",
+            "explain": "The student's torso: it sits upright once every dimension fits."
+          }
+        },
+        {
+          "at_ms": 1900,
+          "do": "show",
+          "shape": {
+            "id": "thigh",
+            "kind": "rect",
+            "x": 185,
+            "y": 323,
+            "w": 82,
+            "h": 14,
+            "fill": "#333333",
+            "explain": "The student's thigh: it rests level on the seat when the seat height matches the lower-leg height."
+          }
+        },
+        {
+          "at_ms": 2000,
+          "do": "show",
+          "shape": {
+            "id": "shin",
+            "kind": "rect",
+            "x": 260,
+            "y": 330,
+            "w": 14,
+            "h": 120,
+            "fill": "#333333",
+            "explain": "The student's lower leg: its height is the measurement that sets the seat height."
+          }
+        },
+        {
+          "at_ms": 2100,
+          "do": "show",
+          "shape": {
+            "id": "foot",
+            "kind": "rect",
+            "x": 260,
+            "y": 450,
+            "w": 34,
+            "h": 10,
+            "fill": "#111111",
+            "explain": "The student's foot: it must rest flat on the floor, not dangle."
+          }
+        },
+        {
+          "at_ms": 2300,
+          "do": "show",
+          "shape": {
+            "id": "legMeasure",
+            "kind": "line",
+            "x1": 315,
+            "y1": 330,
+            "x2": 315,
+            "y2": 460,
+            "stroke": "#b00020",
+            "width": 2,
+            "explain": "The lower-leg measure: from the back of the knee down to the floor, 40 cm."
+          }
+        },
+        {
+          "at_ms": 2600,
+          "do": "show",
+          "shape": {
+            "id": "hipMeasure",
+            "kind": "line",
+            "x1": 150,
+            "y1": 312,
+            "x2": 270,
+            "y2": 312,
+            "stroke": "#b00020",
+            "width": 2,
+            "explain": "The hip measure: the breadth of the hips, 36 cm, which sets the seat width."
+          }
+        },
+        {
+          "at_ms": 2900,
+          "do": "show",
+          "shape": {
+            "id": "elbowMeasure",
+            "kind": "line",
+            "x1": 290,
+            "y1": 294,
+            "x2": 290,
+            "y2": 330,
+            "stroke": "#b00020",
+            "width": 2,
+            "explain": "The elbow measure: the seated elbow rests 24 cm above the seat, which sets the desk height."
+          }
+        },
+        {
+          "at_ms": 3200,
+          "do": "show",
+          "shape": {
+            "id": "armUpper",
+            "kind": "line",
+            "x1": 190,
+            "y1": 248,
+            "x2": 238,
+            "y2": 294,
+            "stroke": "#333333",
+            "width": 5,
+            "explain": "The student's upper arm: it hangs level when the desk height is right."
+          }
+        },
+        {
+          "at_ms": 3300,
+          "do": "show",
+          "shape": {
+            "id": "armFore",
+            "kind": "line",
+            "x1": 238,
+            "y1": 294,
+            "x2": 298,
+            "y2": 294,
+            "stroke": "#333333",
+            "width": 5,
+            "explain": "The student's forearm: it rests level on the desk when the desk height matches the elbow height."
+          }
+        },
+        {
+          "at_ms": 3600,
+          "do": "show",
+          "shape": {
+            "id": "m1",
+            "kind": "text",
+            "x": 520,
+            "y": 150,
+            "text": "Lower-leg height: 40 cm",
+            "size": 14,
+            "color": "#1a1a1a",
+            "align": "start",
+            "explain": "Label: Lower-leg height: 40 cm"
+          }
+        },
+        {
+          "at_ms": 3900,
+          "do": "show",
+          "shape": {
+            "id": "m2",
+            "kind": "text",
+            "x": 520,
+            "y": 190,
+            "text": "Hip breadth: 36 cm",
+            "size": 14,
+            "color": "#1a1a1a",
+            "align": "start",
+            "explain": "Label: Hip breadth: 36 cm"
+          }
+        },
+        {
+          "at_ms": 4200,
+          "do": "show",
+          "shape": {
+            "id": "m3",
+            "kind": "text",
+            "x": 520,
+            "y": 230,
+            "text": "Seated elbow height: 24 cm above seat",
+            "size": 14,
+            "color": "#1a1a1a",
+            "align": "start",
+            "explain": "Label: Seated elbow height: 24 cm above seat"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "caption": "Set the seat height: it rises to the lower-leg height",
+      "narration": "The seat starts too low, leaving a gap under the thigh. It rises until its height equals the lower-leg height of 40 cm: the feet rest flat on the floor, the gap closes, and the fit bar climbs to one third.",
+      "duration_ms": 7000,
+      "steps": [
+        {
+          "at_ms": 0,
+          "do": "show",
+          "shape": {
+            "id": "title",
+            "kind": "text",
+            "x": 480,
+            "y": 34,
+            "text": "Ergonomic Dimensions: Fit the Chair and Desk to the Student",
+            "size": 20,
+            "color": "#1a1a1a",
+            "align": "middle",
+            "explain": "Label: Ergonomic Dimensions: Fit the Chair and Desk to the Student"
+          }
+        },
+        {
+          "at_ms": 150,
+          "do": "show",
+          "shape": {
+            "id": "stage",
+            "kind": "text",
+            "x": 480,
+            "y": 74,
+            "text": "Stage 2: Raise the seat to the lower-leg height",
+            "size": 16,
+            "color": "#1a1a1a",
+            "align": "middle",
+            "explain": "Label: Stage 2: Raise the seat to the lower-leg height"
+          }
+        },
+        {
+          "at_ms": 300,
+          "do": "show",
+          "shape": {
+            "id": "floorLine",
+            "kind": "line",
+            "x1": 60,
+            "y1": 460,
+            "x2": 470,
+            "y2": 460,
+            "stroke": "#888888",
+            "width": 2,
+            "explain": "The floor: every height in this scene is measured up from the floor."
+          }
+        },
+        {
+          "at_ms": 400,
+          "do": "show",
+          "shape": {
+            "id": "fitBar",
+            "kind": "rect",
+            "x": 860,
+            "y": 450,
+            "w": 50,
+            "h": 0,
+            "fill": "#2e7d32",
+            "explain": "The fit bar: it climbs as each fit gap closes, and is full only when every dimension fits the student."
+          }
+        },
+        {
+          "at_ms": 500,
+          "do": "show",
+          "shape": {
+            "id": "fitLabel",
+            "kind": "text",
+            "x": 885,
+            "y": 485,
+            "text": "Fit bar",
+            "size": 14,
+            "color": "#1a1a1a",
+            "align": "middle",
+            "explain": "Label: Fit bar"
+          }
+        },
+        {
+          "at_ms": 600,
+          "do": "show",
+          "shape": {
+            "id": "chairLabel",
+            "kind": "text",
+            "x": 205,
+            "y": 485,
+            "text": "Chair",
+            "size": 14,
+            "color": "#1a1a1a",
+            "align": "middle",
+            "explain": "Label: Chair"
+          }
+        },
+        {
+          "at_ms": 700,
+          "do": "show",
+          "shape": {
+            "id": "deskLabel",
+            "kind": "text",
+            "x": 375,
+            "y": 485,
+            "text": "Desk",
+            "size": 14,
+            "color": "#1a1a1a",
+            "align": "middle",
+            "explain": "Label: Desk"
+          }
+        },
+        {
+          "at_ms": 800,
+          "do": "show",
+          "shape": {
+            "id": "chairBack",
+            "kind": "rect",
+            "x": 136,
+            "y": 266,
+            "w": 14,
+            "h": 120,
+            "fill": "#8a5a2b",
+            "explain": "The chair back: it supports the student's back once the seat is at the right height."
+          }
+        },
+        {
+          "at_ms": 900,
+          "do": "show",
+          "shape": {
+            "id": "chairLegB",
+            "kind": "rect",
+            "x": 158,
+            "y": 400,
+            "w": 10,
+            "h": 60,
+            "fill": "#555555",
+            "explain": "A chair leg: the legs lengthen or shorten as the seat height is set."
+          }
+        },
+        {
+          "at_ms": 1000,
+          "do": "show",
+          "shape": {
+            "id": "chairLegF",
+            "kind": "rect",
+            "x": 252,
+            "y": 400,
+            "w": 10,
+            "h": 60,
+            "fill": "#555555",
+            "explain": "A chair leg: the legs lengthen or shorten as the seat height is set."
+          }
+        },
+        {
+          "at_ms": 1100,
+          "do": "show",
+          "shape": {
+            "id": "chairSeat",
+            "kind": "rect",
+            "x": 150,
+            "y": 386,
+            "w": 120,
+            "h": 14,
+            "fill": "#315fd6",
+            "explain": "The seat: its height and width are the first two dimensions set from the student's body."
+          }
+        },
+        {
+          "at_ms": 1400,
+          "do": "show",
+          "shape": {
+            "id": "deskTop",
+            "kind": "rect",
+            "x": 300,
+            "y": 292,
+            "w": 150,
+            "h": 12,
+            "fill": "#8a5a2b",
+            "explain": "The desk top: its height is set last, from the seated elbow height."
+          }
+        },
+        {
+          "at_ms": 1500,
+          "do": "show",
+          "shape": {
+            "id": "deskLeg",
+            "kind": "rect",
+            "x": 428,
+            "y": 304,
+            "w": 12,
+            "h": 156,
+            "fill": "#555555",
+            "explain": "The desk leg: it lengthens or shortens as the desk height is set."
+          }
+        },
+        {
+          "at_ms": 1700,
+          "do": "show",
+          "shape": {
+            "id": "head",
+            "kind": "circle",
+            "cx": 185,
+            "cy": 185,
+            "r": 22,
+            "fill": "#f5d67a",
+            "explain": "The student's head: one student is measured and fitted in this sample."
+          }
+        },
+        {
+          "at_ms": 1800,
+          "do": "show",
+          "shape": {
+            "id": "torso",
+            "kind": "rect",
+            "x": 178,
+            "y": 207,
+            "w": 14,
+            "h": 123,
+            "fill": "#315fd6",
+            "explain": "The student's torso: it sits upright once every dimension fits."
+          }
+        },
+        {
+          "at_ms": 1900,
+          "do": "show",
+          "shape": {
+            "id": "thigh",
+            "kind": "rect",
+            "x": 185,
+            "y": 323,
+            "w": 82,
+            "h": 14,
+            "fill": "#333333",
+            "explain": "The student's thigh: it rests level on the seat when the seat height matches the lower-leg height."
+          }
+        },
+        {
+          "at_ms": 2000,
+          "do": "show",
+          "shape": {
+            "id": "shin",
+            "kind": "rect",
+            "x": 260,
+            "y": 330,
+            "w": 14,
+            "h": 120,
+            "fill": "#333333",
+            "explain": "The student's lower leg: its height is the measurement that sets the seat height."
+          }
+        },
+        {
+          "at_ms": 2100,
+          "do": "show",
+          "shape": {
+            "id": "foot",
+            "kind": "rect",
+            "x": 260,
+            "y": 450,
+            "w": 34,
+            "h": 10,
+            "fill": "#111111",
+            "explain": "The student's foot: it must rest flat on the floor, not dangle."
+          }
+        },
+        {
+          "at_ms": 2200,
+          "do": "show",
+          "shape": {
+            "id": "gapRect",
+            "kind": "rect",
+            "x": 160,
+            "y": 344,
+            "w": 100,
+            "h": 42,
+            "fill": "#b00020",
+            "explain": "The gap: the seat sits too low, leaving a gap under the thigh."
+          }
+        },
+        {
+          "at_ms": 2500,
+          "do": "show",
+          "shape": {
+            "id": "armUpper",
+            "kind": "line",
+            "x1": 190,
+            "y1": 248,
+            "x2": 238,
+            "y2": 294,
+            "stroke": "#333333",
+            "width": 5,
+            "explain": "The student's upper arm: it hangs level when the desk height is right."
+          }
+        },
+        {
+          "at_ms": 2600,
+          "do": "show",
+          "shape": {
+            "id": "armFore",
+            "kind": "line",
+            "x1": 238,
+            "y1": 294,
+            "x2": 298,
+            "y2": 294,
+            "stroke": "#333333",
+            "width": 5,
+            "explain": "The student's forearm: it rests level on the desk when the desk height matches the elbow height."
+          }
+        },
+        {
+          "at_ms": 2900,
+          "do": "show",
+          "shape": {
+            "id": "t1",
+            "kind": "text",
+            "x": 520,
+            "y": 150,
+            "text": "The seat is too low: a gap opens under the thigh",
+            "size": 14,
+            "color": "#1a1a1a",
+            "align": "start",
+            "explain": "Label: The seat is too low: a gap opens under the thigh"
+          }
+        },
+        {
+          "at_ms": 3200,
+          "do": "show",
+          "shape": {
+            "id": "t2",
+            "kind": "text",
+            "x": 520,
+            "y": 190,
+            "text": "Raise the seat to the lower-leg height: 40 cm",
+            "size": 14,
+            "color": "#1a1a1a",
+            "align": "start",
+            "explain": "Label: Raise the seat to the lower-leg height: 40 cm"
+          }
+        },
+        {
+          "at_ms": 3600,
+          "do": "move",
+          "target": "chairSeat",
+          "to": {
+            "y": 330
+          },
+          "dur_ms": 1600
+        },
+        {
+          "at_ms": 3600,
+          "do": "move",
+          "target": "chairBack",
+          "to": {
+            "y": 210
+          },
+          "dur_ms": 1600
+        },
+        {
+          "at_ms": 3600,
+          "do": "move",
+          "target": "chairLegB",
+          "to": {
+            "y": 344,
+            "h": 116
+          },
+          "dur_ms": 1600
+        },
+        {
+          "at_ms": 3600,
+          "do": "move",
+          "target": "chairLegF",
+          "to": {
+            "y": 344,
+            "h": 116
+          },
+          "dur_ms": 1600
+        },
+        {
+          "at_ms": 3600,
+          "do": "move",
+          "target": "fitBar",
+          "to": {
+            "y": 383,
+            "h": 67
+          },
+          "dur_ms": 1600
+        },
+        {
+          "at_ms": 3800,
+          "do": "hide",
+          "target": "gapRect"
+        },
+        {
+          "at_ms": 5400,
+          "do": "show",
+          "shape": {
+            "id": "t3",
+            "kind": "text",
+            "x": 520,
+            "y": 230,
+            "text": "Feet rest flat and the gap closes",
+            "size": 14,
+            "color": "#1a1a1a",
+            "align": "start",
+            "explain": "Label: Feet rest flat and the gap closes"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "caption": "Set the seat width and the desk height from the body",
+      "narration": "The seat widens to the hip breadth plus clearance, 36 + 4 cm. The desk top drops until it sits at the seat height plus the seated elbow height, so the forearms rest level: the fit bar climbs to two thirds.",
+      "duration_ms": 7000,
+      "steps": [
+        {
+          "at_ms": 0,
+          "do": "show",
+          "shape": {
+            "id": "title",
+            "kind": "text",
+            "x": 480,
+            "y": 34,
+            "text": "Ergonomic Dimensions: Fit the Chair and Desk to the Student",
+            "size": 20,
+            "color": "#1a1a1a",
+            "align": "middle",
+            "explain": "Label: Ergonomic Dimensions: Fit the Chair and Desk to the Student"
+          }
+        },
+        {
+          "at_ms": 150,
+          "do": "show",
+          "shape": {
+            "id": "stage",
+            "kind": "text",
+            "x": 480,
+            "y": 74,
+            "text": "Stage 3: Widen the seat, set the desk to elbow height",
+            "size": 16,
+            "color": "#1a1a1a",
+            "align": "middle",
+            "explain": "Label: Stage 3: Widen the seat, set the desk to elbow height"
+          }
+        },
+        {
+          "at_ms": 300,
+          "do": "show",
+          "shape": {
+            "id": "floorLine",
+            "kind": "line",
+            "x1": 60,
+            "y1": 460,
+            "x2": 470,
+            "y2": 460,
+            "stroke": "#888888",
+            "width": 2,
+            "explain": "The floor: every height in this scene is measured up from the floor."
+          }
+        },
+        {
+          "at_ms": 400,
+          "do": "show",
+          "shape": {
+            "id": "fitBar",
+            "kind": "rect",
+            "x": 860,
+            "y": 450,
+            "w": 50,
+            "h": 0,
+            "fill": "#2e7d32",
+            "explain": "The fit bar: it climbs as each fit gap closes, and is full only when every dimension fits the student."
+          }
+        },
+        {
+          "at_ms": 500,
+          "do": "show",
+          "shape": {
+            "id": "fitLabel",
+            "kind": "text",
+            "x": 885,
+            "y": 485,
+            "text": "Fit bar",
+            "size": 14,
+            "color": "#1a1a1a",
+            "align": "middle",
+            "explain": "Label: Fit bar"
+          }
+        },
+        {
+          "at_ms": 600,
+          "do": "show",
+          "shape": {
+            "id": "chairLabel",
+            "kind": "text",
+            "x": 205,
+            "y": 485,
+            "text": "Chair",
+            "size": 14,
+            "color": "#1a1a1a",
+            "align": "middle",
+            "explain": "Label: Chair"
+          }
+        },
+        {
+          "at_ms": 700,
+          "do": "show",
+          "shape": {
+            "id": "deskLabel",
+            "kind": "text",
+            "x": 375,
+            "y": 485,
+            "text": "Desk",
+            "size": 14,
+            "color": "#1a1a1a",
+            "align": "middle",
+            "explain": "Label: Desk"
+          }
+        },
+        {
+          "at_ms": 800,
+          "do": "show",
+          "shape": {
+            "id": "chairBack",
+            "kind": "rect",
+            "x": 136,
+            "y": 210,
+            "w": 14,
+            "h": 120,
+            "fill": "#8a5a2b",
+            "explain": "The chair back: it supports the student's back once the seat is at the right height."
+          }
+        },
+        {
+          "at_ms": 900,
+          "do": "show",
+          "shape": {
+            "id": "chairLegB",
+            "kind": "rect",
+            "x": 158,
+            "y": 344,
+            "w": 10,
+            "h": 116,
+            "fill": "#555555",
+            "explain": "A chair leg: the legs lengthen or shorten as the seat height is set."
+          }
+        },
+        {
+          "at_ms": 1000,
+          "do": "show",
+          "shape": {
+            "id": "chairLegF",
+            "kind": "rect",
+            "x": 252,
+            "y": 344,
+            "w": 10,
+            "h": 116,
+            "fill": "#555555",
+            "explain": "A chair leg: the legs lengthen or shorten as the seat height is set."
+          }
+        },
+        {
+          "at_ms": 1100,
+          "do": "show",
+          "shape": {
+            "id": "chairSeat",
+            "kind": "rect",
+            "x": 166,
+            "y": 330,
+            "w": 88,
+            "h": 14,
+            "fill": "#315fd6",
+            "explain": "The seat: its height and width are the first two dimensions set from the student's body."
+          }
+        },
+        {
+          "at_ms": 1400,
+          "do": "show",
+          "shape": {
+            "id": "deskTop",
+            "kind": "rect",
+            "x": 300,
+            "y": 246,
+            "w": 150,
+            "h": 12,
+            "fill": "#8a5a2b",
+            "explain": "The desk top: its height is set last, from the seated elbow height."
+          }
+        },
+        {
+          "at_ms": 1500,
+          "do": "show",
+          "shape": {
+            "id": "deskLeg",
+            "kind": "rect",
+            "x": 428,
+            "y": 258,
+            "w": 12,
+            "h": 202,
+            "fill": "#555555",
+            "explain": "The desk leg: it lengthens or shortens as the desk height is set."
+          }
+        },
+        {
+          "at_ms": 1700,
+          "do": "show",
+          "shape": {
+            "id": "head",
+            "kind": "circle",
+            "cx": 185,
+            "cy": 185,
+            "r": 22,
+            "fill": "#f5d67a",
+            "explain": "The student's head: one student is measured and fitted in this sample."
+          }
+        },
+        {
+          "at_ms": 1800,
+          "do": "show",
+          "shape": {
+            "id": "torso",
+            "kind": "rect",
+            "x": 178,
+            "y": 207,
+            "w": 14,
+            "h": 123,
+            "fill": "#315fd6",
+            "explain": "The student's torso: it sits upright once every dimension fits."
+          }
+        },
+        {
+          "at_ms": 1900,
+          "do": "show",
+          "shape": {
+            "id": "thigh",
+            "kind": "rect",
+            "x": 185,
+            "y": 323,
+            "w": 82,
+            "h": 14,
+            "fill": "#333333",
+            "explain": "The student's thigh: it rests level on the seat when the seat height matches the lower-leg height."
+          }
+        },
+        {
+          "at_ms": 2000,
+          "do": "show",
+          "shape": {
+            "id": "shin",
+            "kind": "rect",
+            "x": 260,
+            "y": 330,
+            "w": 14,
+            "h": 120,
+            "fill": "#333333",
+            "explain": "The student's lower leg: its height is the measurement that sets the seat height."
+          }
+        },
+        {
+          "at_ms": 2100,
+          "do": "show",
+          "shape": {
+            "id": "foot",
+            "kind": "rect",
+            "x": 260,
+            "y": 450,
+            "w": 34,
+            "h": 10,
+            "fill": "#111111",
+            "explain": "The student's foot: it must rest flat on the floor, not dangle."
+          }
+        },
+        {
+          "at_ms": 2200,
+          "do": "show",
+          "shape": {
+            "id": "hipGuideL",
+            "kind": "line",
+            "x1": 178,
+            "y1": 306,
+            "x2": 178,
+            "y2": 344,
+            "stroke": "#b00020",
+            "width": 2,
+            "explain": "A hip guide: the seat must be at least as wide as the hips."
+          }
+        },
+        {
+          "at_ms": 2300,
+          "do": "show",
+          "shape": {
+            "id": "hipGuideR",
+            "kind": "line",
+            "x1": 262,
+            "y1": 306,
+            "x2": 262,
+            "y2": 344,
+            "stroke": "#b00020",
+            "width": 2,
+            "explain": "A hip guide: the seat must be at least as wide as the hips, plus clearance."
+          }
+        },
+        {
+          "at_ms": 2400,
+          "do": "show",
+          "shape": {
+            "id": "gapRect2",
+            "kind": "rect",
+            "x": 310,
+            "y": 262,
+            "w": 120,
+            "h": 28,
+            "fill": "#b00020",
+            "explain": "The desk gap: the desk top sits too high, leaving a gap above the forearm."
+          }
+        },
+        {
+          "at_ms": 2500,
+          "do": "show",
+          "shape": {
+            "id": "armUpper",
+            "kind": "line",
+            "x1": 190,
+            "y1": 248,
+            "x2": 238,
+            "y2": 294,
+            "stroke": "#333333",
+            "width": 5,
+            "explain": "The student's upper arm: it hangs level when the desk height is right."
+          }
+        },
+        {
+          "at_ms": 2600,
+          "do": "show",
+          "shape": {
+            "id": "armFore",
+            "kind": "line",
+            "x1": 238,
+            "y1": 294,
+            "x2": 298,
+            "y2": 294,
+            "stroke": "#333333",
+            "width": 5,
+            "explain": "The student's forearm: it rests level on the desk when the desk height matches the elbow height."
+          }
+        },
+        {
+          "at_ms": 2900,
+          "do": "show",
+          "shape": {
+            "id": "t1",
+            "kind": "text",
+            "x": 520,
+            "y": 150,
+            "text": "Seat width = hip breadth + clearance: 36 + 4 cm",
+            "size": 14,
+            "color": "#1a1a1a",
+            "align": "start",
+            "explain": "Label: Seat width = hip breadth + clearance: 36 + 4 cm"
+          }
+        },
+        {
+          "at_ms": 3200,
+          "do": "show",
+          "shape": {
+            "id": "t2",
+            "kind": "text",
+            "x": 520,
+            "y": 190,
+            "text": "Desk height = seat height + elbow height",
+            "size": 14,
+            "color": "#1a1a1a",
+            "align": "start",
+            "explain": "Label: Desk height = seat height + elbow height"
+          }
+        },
+        {
+          "at_ms": 3600,
+          "do": "move",
+          "target": "chairSeat",
+          "to": {
+            "x": 150,
+            "w": 120
+          },
+          "dur_ms": 1600
+        },
+        {
+          "at_ms": 3600,
+          "do": "move",
+          "target": "deskTop",
+          "to": {
+            "y": 292
+          },
+          "dur_ms": 1600
+        },
+        {
+          "at_ms": 3600,
+          "do": "move",
+          "target": "deskLeg",
+          "to": {
+            "y": 304,
+            "h": 156
+          },
+          "dur_ms": 1600
+        },
+        {
+          "at_ms": 3600,
+          "do": "move",
+          "target": "fitBar",
+          "to": {
+            "y": 317,
+            "h": 133
+          },
+          "dur_ms": 1600
+        },
+        {
+          "at_ms": 3800,
+          "do": "hide",
+          "target": "gapRect2"
+        },
+        {
+          "at_ms": 3900,
+          "do": "hide",
+          "target": "hipGuideL"
+        },
+        {
+          "at_ms": 3900,
+          "do": "hide",
+          "target": "hipGuideR"
+        },
+        {
+          "at_ms": 5400,
+          "do": "show",
+          "shape": {
+            "id": "t3",
+            "kind": "text",
+            "x": 520,
+            "y": 230,
+            "text": "Forearms rest level on the desk",
+            "size": 14,
+            "color": "#1a1a1a",
+            "align": "start",
+            "explain": "Label: Forearms rest level on the desk"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "caption": "Wrong turn: one standard size leaves feet dangling",
+      "narration": "The wrong turn is one standard size built to average measurements: this student's feet dangle above the floor and the desk sits too high. The fitted sizes are then restored - seat, width and desk each set from the student's own measurements - and the fit bar fills.",
+      "duration_ms": 8000,
+      "steps": [
+        {
+          "at_ms": 0,
+          "do": "show",
+          "shape": {
+            "id": "title",
+            "kind": "text",
+            "x": 480,
+            "y": 34,
+            "text": "Ergonomic Dimensions: Fit the Chair and Desk to the Student",
+            "size": 20,
+            "color": "#1a1a1a",
+            "align": "middle",
+            "explain": "Label: Ergonomic Dimensions: Fit the Chair and Desk to the Student"
+          }
+        },
+        {
+          "at_ms": 150,
+          "do": "show",
+          "shape": {
+            "id": "stage",
+            "kind": "text",
+            "x": 480,
+            "y": 74,
+            "text": "Stage 4: The wrong turn - one standard size",
+            "size": 16,
+            "color": "#1a1a1a",
+            "align": "middle",
+            "explain": "Label: Stage 4: The wrong turn - one standard size"
+          }
+        },
+        {
+          "at_ms": 300,
+          "do": "show",
+          "shape": {
+            "id": "floorLine",
+            "kind": "line",
+            "x1": 60,
+            "y1": 460,
+            "x2": 470,
+            "y2": 460,
+            "stroke": "#888888",
+            "width": 2,
+            "explain": "The floor: every height in this scene is measured up from the floor."
+          }
+        },
+        {
+          "at_ms": 400,
+          "do": "show",
+          "shape": {
+            "id": "fitBar",
+            "kind": "rect",
+            "x": 860,
+            "y": 450,
+            "w": 50,
+            "h": 0,
+            "fill": "#2e7d32",
+            "explain": "The fit bar: it climbs as each fit gap closes, and is full only when every dimension fits the student."
+          }
+        },
+        {
+          "at_ms": 500,
+          "do": "show",
+          "shape": {
+            "id": "fitLabel",
+            "kind": "text",
+            "x": 885,
+            "y": 485,
+            "text": "Fit bar",
+            "size": 14,
+            "color": "#1a1a1a",
+            "align": "middle",
+            "explain": "Label: Fit bar"
+          }
+        },
+        {
+          "at_ms": 600,
+          "do": "show",
+          "shape": {
+            "id": "chairLabel",
+            "kind": "text",
+            "x": 205,
+            "y": 485,
+            "text": "Chair",
+            "size": 14,
+            "color": "#1a1a1a",
+            "align": "middle",
+            "explain": "Label: Chair"
+          }
+        },
+        {
+          "at_ms": 700,
+          "do": "show",
+          "shape": {
+            "id": "deskLabel",
+            "kind": "text",
+            "x": 375,
+            "y": 485,
+            "text": "Desk",
+            "size": 14,
+            "color": "#1a1a1a",
+            "align": "middle",
+            "explain": "Label: Desk"
+          }
+        },
+        {
+          "at_ms": 800,
+          "do": "show",
+          "shape": {
+            "id": "chairBack",
+            "kind": "rect",
+            "x": 136,
+            "y": 176,
+            "w": 14,
+            "h": 120,
+            "fill": "#8a5a2b",
+            "explain": "The chair back: on the standard chair it sits at the standard height, not the student's."
+          }
+        },
+        {
+          "at_ms": 900,
+          "do": "show",
+          "shape": {
+            "id": "chairLegB",
+            "kind": "rect",
+            "x": 178,
+            "y": 310,
+            "w": 10,
+            "h": 150,
+            "fill": "#555555",
+            "explain": "A chair leg: the standard chair has one fixed leg length for everyone."
+          }
+        },
+        {
+          "at_ms": 1000,
+          "do": "show",
+          "shape": {
+            "id": "chairLegF",
+            "kind": "rect",
+            "x": 244,
+            "y": 310,
+            "w": 10,
+            "h": 150,
+            "fill": "#555555",
+            "explain": "A chair leg: the standard chair has one fixed leg length for everyone."
+          }
+        },
+        {
+          "at_ms": 1100,
+          "do": "show",
+          "shape": {
+            "id": "chairSeat",
+            "kind": "rect",
+            "x": 170,
+            "y": 296,
+            "w": 92,
+            "h": 14,
+            "fill": "#315fd6",
+            "explain": "The seat: its height and width are the first two dimensions set from the student's body."
+          }
+        },
+        {
+          "at_ms": 1400,
+          "do": "show",
+          "shape": {
+            "id": "deskTop",
+            "kind": "rect",
+            "x": 300,
+            "y": 240,
+            "w": 150,
+            "h": 12,
+            "fill": "#8a5a2b",
+            "explain": "The desk top: the standard desk sits too high for this student."
+          }
+        },
+        {
+          "at_ms": 1500,
+          "do": "show",
+          "shape": {
+            "id": "deskLeg",
+            "kind": "rect",
+            "x": 428,
+            "y": 252,
+            "w": 12,
+            "h": 208,
+            "fill": "#555555",
+            "explain": "The desk leg: the standard desk has one fixed height for everyone."
+          }
+        },
+        {
+          "at_ms": 1700,
+          "do": "show",
+          "shape": {
+            "id": "head",
+            "kind": "circle",
+            "cx": 185,
+            "cy": 151,
+            "r": 22,
+            "fill": "#f5d67a",
+            "explain": "The student's head: one student is measured and fitted in this sample."
+          }
+        },
+        {
+          "at_ms": 1800,
+          "do": "show",
+          "shape": {
+            "id": "torso",
+            "kind": "rect",
+            "x": 178,
+            "y": 173,
+            "w": 14,
+            "h": 123,
+            "fill": "#315fd6",
+            "explain": "The student's torso: it sits upright once every dimension fits."
+          }
+        },
+        {
+          "at_ms": 1900,
+          "do": "show",
+          "shape": {
+            "id": "thigh",
+            "kind": "rect",
+            "x": 185,
+            "y": 289,
+            "w": 82,
+            "h": 14,
+            "fill": "#333333",
+            "explain": "The student's thigh: it rests level on the seat when the seat height matches the lower-leg height."
+          }
+        },
+        {
+          "at_ms": 2000,
+          "do": "show",
+          "shape": {
+            "id": "shin",
+            "kind": "rect",
+            "x": 260,
+            "y": 303,
+            "w": 14,
+            "h": 97,
+            "fill": "#333333",
+            "explain": "The student's lower leg: its height is the measurement that sets the seat height."
+          }
+        },
+        {
+          "at_ms": 2100,
+          "do": "show",
+          "shape": {
+            "id": "foot",
+            "kind": "rect",
+            "x": 260,
+            "y": 400,
+            "w": 34,
+            "h": 10,
+            "fill": "#111111",
+            "explain": "The student's foot: it must rest flat on the floor, not dangle."
+          }
+        },
+        {
+          "at_ms": 2200,
+          "do": "show",
+          "shape": {
+            "id": "armUpperR",
+            "kind": "rect",
+            "x": 228,
+            "y": 214,
+            "w": 12,
+            "h": 26,
+            "fill": "#333333",
+            "explain": "The student's upper arm: the high desk forces it up at an angle."
+          }
+        },
+        {
+          "at_ms": 2300,
+          "do": "show",
+          "shape": {
+            "id": "armForeR",
+            "kind": "rect",
+            "x": 228,
+            "y": 228,
+            "w": 70,
+            "h": 12,
+            "fill": "#333333",
+            "explain": "The student's forearm: it is pushed up by the too-high standard desk."
+          }
+        },
+        {
+          "at_ms": 2400,
+          "do": "show",
+          "shape": {
+            "id": "gapRect",
+            "kind": "rect",
+            "x": 252,
+            "y": 414,
+            "w": 30,
+            "h": 42,
+            "fill": "#b00020",
+            "explain": "The dangling gap: the standard seat is too high, so the feet hang above the floor."
+          }
+        },
+        {
+          "at_ms": 2700,
+          "do": "show",
+          "shape": {
+            "id": "w1",
+            "kind": "text",
+            "x": 520,
+            "y": 150,
+            "text": "Wrong turn: one standard size for everyone",
+            "size": 14,
+            "color": "#1a1a1a",
+            "align": "start",
+            "explain": "Label: Wrong turn: one standard size for everyone"
+          }
+        },
+        {
+          "at_ms": 3000,
+          "do": "show",
+          "shape": {
+            "id": "w2",
+            "kind": "text",
+            "x": 520,
+            "y": 190,
+            "text": "Feet dangle and the desk sits too high",
+            "size": 14,
+            "color": "#1a1a1a",
+            "align": "start",
+            "explain": "Label: Feet dangle and the desk sits too high"
+          }
+        },
+        {
+          "at_ms": 3600,
+          "do": "move",
+          "target": "chairSeat",
+          "to": {
+            "x": 150,
+            "y": 330,
+            "w": 120
+          },
+          "dur_ms": 1600
+        },
+        {
+          "at_ms": 3600,
+          "do": "move",
+          "target": "chairBack",
+          "to": {
+            "y": 210
+          },
+          "dur_ms": 1600
+        },
+        {
+          "at_ms": 3600,
+          "do": "move",
+          "target": "chairLegB",
+          "to": {
+            "x": 158,
+            "y": 344,
+            "h": 116
+          },
+          "dur_ms": 1600
+        },
+        {
+          "at_ms": 3600,
+          "do": "move",
+          "target": "chairLegF",
+          "to": {
+            "x": 252,
+            "y": 344,
+            "h": 116
+          },
+          "dur_ms": 1600
+        },
+        {
+          "at_ms": 3600,
+          "do": "move",
+          "target": "deskTop",
+          "to": {
+            "y": 292
+          },
+          "dur_ms": 1600
+        },
+        {
+          "at_ms": 3600,
+          "do": "move",
+          "target": "deskLeg",
+          "to": {
+            "y": 304,
+            "h": 156
+          },
+          "dur_ms": 1600
+        },
+        {
+          "at_ms": 3600,
+          "do": "move",
+          "target": "head",
+          "to": {
+            "cy": 185
+          },
+          "dur_ms": 1600
+        },
+        {
+          "at_ms": 3600,
+          "do": "move",
+          "target": "torso",
+          "to": {
+            "y": 207
+          },
+          "dur_ms": 1600
+        },
+        {
+          "at_ms": 3600,
+          "do": "move",
+          "target": "thigh",
+          "to": {
+            "y": 323
+          },
+          "dur_ms": 1600
+        },
+        {
+          "at_ms": 3600,
+          "do": "move",
+          "target": "shin",
+          "to": {
+            "y": 330,
+            "h": 120
+          },
+          "dur_ms": 1600
+        },
+        {
+          "at_ms": 3600,
+          "do": "move",
+          "target": "foot",
+          "to": {
+            "y": 450
+          },
+          "dur_ms": 1600
+        },
+        {
+          "at_ms": 3600,
+          "do": "move",
+          "target": "armUpperR",
+          "to": {
+            "y": 248,
+            "h": 46
+          },
+          "dur_ms": 1600
+        },
+        {
+          "at_ms": 3600,
+          "do": "move",
+          "target": "armForeR",
+          "to": {
+            "x": 234,
+            "y": 286,
+            "w": 64
+          },
+          "dur_ms": 1600
+        },
+        {
+          "at_ms": 3600,
+          "do": "move",
+          "target": "fitBar",
+          "to": {
+            "y": 250,
+            "h": 200
+          },
+          "dur_ms": 1600
+        },
+        {
+          "at_ms": 3800,
+          "do": "hide",
+          "target": "gapRect"
+        },
+        {
+          "at_ms": 5600,
+          "do": "show",
+          "shape": {
+            "id": "f1",
+            "kind": "text",
+            "x": 520,
+            "y": 230,
+            "text": "Fitted sizes restored: every gap closed",
+            "size": 14,
+            "color": "#1a1a1a",
+            "align": "start",
+            "explain": "Label: Fitted sizes restored: every gap closed"
+          }
+        }
+      ]
+    }
+  ]
+}
