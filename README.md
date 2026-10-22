@@ -168,6 +168,7 @@ and for Secondary Exercise and Sports Science energy systems
 and for JC H2 Geography drainage basin
 and for JC H2 Computing recursion
 and for JC H2 Principles of Accounting absorption and marginal costing
+and for JC H2 Management of Business inventory control
 (animation, slides, worksheet, notes, exit ticket, and script), each
 under its own pack manifest header.
 
