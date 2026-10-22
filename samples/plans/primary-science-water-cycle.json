@@ -1,0 +1,90 @@
+{
+  "title": "The Water Cycle",
+  "level": "primary",
+  "subject": "science",
+  "topic": "water-cycle",
+  "durationMinutes": 35,
+  "objectives": [
+    {
+      "id": "o1",
+      "text": "Explain evaporation and condensation in the water cycle",
+      "successCriteria": [
+        "I can say where puddle water goes when it dries up",
+        "I can name the process that turns vapour back into drops"
+      ],
+      "assessmentPoints": [
+        "Opening answers to where the puddle water went",
+        "Partner recap of the first two stages"
+      ]
+    },
+    {
+      "id": "o2",
+      "text": "Trace precipitation and collection as the same water returning",
+      "successCriteria": [
+        "I can explain why drops fall as rain",
+        "I can say where rain water gathers"
+      ],
+      "assessmentPoints": [
+        "Answers to what makes the drops fall",
+        "Notes-handout check on where the rain gathers"
+      ]
+    }
+  ],
+  "activities": [
+    {
+      "title": "Surface prior ideas: the vanished puddle",
+      "minutes": 5,
+      "objectiveIds": [
+        "o1"
+      ],
+      "scriptCue": "s1",
+      "grouping": "whole class",
+      "resources": [
+        "board"
+      ]
+    },
+    {
+      "title": "Teach evaporation and condensation",
+      "minutes": 10,
+      "objectiveIds": [
+        "o1"
+      ],
+      "scriptCue": "s2",
+      "grouping": "pairs",
+      "differentiation": {
+        "support": "Sentence starters for the vapour step.",
+        "stretch": "Ask pairs to predict where condensation happens fastest and why."
+      }
+    },
+    {
+      "title": "Teach precipitation: drops grow and fall",
+      "minutes": 7,
+      "objectiveIds": [
+        "o2"
+      ],
+      "scriptCue": "s3",
+      "grouping": "whole class"
+    },
+    {
+      "title": "Collection: where the rain gathers",
+      "minutes": 8,
+      "objectiveIds": [
+        "o2"
+      ],
+      "scriptCue": "student notes handout",
+      "grouping": "individual",
+      "resources": [
+        "student notes handout"
+      ]
+    },
+    {
+      "title": "Recap the loop in order",
+      "minutes": 5,
+      "objectiveIds": [
+        "o1",
+        "o2"
+      ],
+      "grouping": "whole class"
+    }
+  ]
+}

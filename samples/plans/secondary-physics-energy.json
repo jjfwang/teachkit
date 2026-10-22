@@ -1,0 +1,99 @@
+{
+  "title": "Energy: work, power and conservation",
+  "level": "secondary",
+  "subject": "science",
+  "topic": "phys-energy",
+  "durationMinutes": 45,
+  "objectives": [
+    {
+      "id": "o1",
+      "text": "Calculate work done as force times distance",
+      "successCriteria": [
+        "I can calculate the work done pushing a crate with W = F x d",
+        "I can state the unit of work and when it is zero"
+      ],
+      "assessmentPoints": [
+        "Class answers during the crate walkthrough",
+        "First answers in the closing recap"
+      ]
+    },
+    {
+      "id": "o2",
+      "text": "Calculate power as work done divided by time",
+      "successCriteria": [
+        "I can calculate power for the same work done in two different times",
+        "I can explain why the faster lift is more powerful"
+      ],
+      "assessmentPoints": [
+        "Comparison answers in the power activity",
+        "Closing recap power question"
+      ]
+    },
+    {
+      "id": "o3",
+      "text": "Apply conservation of energy to GPE becoming KE",
+      "successCriteria": [
+        "I can equate lost GPE to gained KE for a falling mass",
+        "I can compute the speed from mgh = 1/2 mv^2"
+      ],
+      "assessmentPoints": [
+        "Worked-example answers in the conservation activity",
+        "Thinking-check responses on the car and petrol"
+      ]
+    }
+  ],
+  "activities": [
+    {
+      "title": "Work done: push the crate",
+      "minutes": 10,
+      "objectiveIds": [
+        "o1"
+      ],
+      "scriptCue": "s1",
+      "grouping": "whole class",
+      "resources": [
+        "board"
+      ]
+    },
+    {
+      "title": "Power: the same work in different times",
+      "minutes": 10,
+      "objectiveIds": [
+        "o2"
+      ],
+      "scriptCue": "s2",
+      "grouping": "pairs"
+    },
+    {
+      "title": "Conservation: GPE becomes KE",
+      "minutes": 12,
+      "objectiveIds": [
+        "o3"
+      ],
+      "scriptCue": "s3",
+      "grouping": "whole class",
+      "differentiation": {
+        "support": "Give the mgh = 1/2 mv^2 scaffold with the mass already cancelled."
+      }
+    },
+    {
+      "title": "Check the thinking: the car and the petrol",
+      "minutes": 8,
+      "objectiveIds": [
+        "o3"
+      ],
+      "scriptCue": "s4",
+      "grouping": "pairs"
+    },
+    {
+      "title": "Recap the three formulas",
+      "minutes": 5,
+      "objectiveIds": [
+        "o1",
+        "o2",
+        "o3"
+      ],
+      "grouping": "whole class"
+    }
+  ]
+}
