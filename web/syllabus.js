@@ -146,6 +146,11 @@ window.ANIMATH_SYLLABUS = {
           id: 'social-studies', label: 'Social Studies', subject: 'social-studies', topics: [
             { slug: 'globalisation-supply-chain', label: 'Globalisation supply chain' }
           ]
+        },
+        {
+          id: 'biotechnology', label: 'Biotechnology', subject: 'biotechnology', topics: [
+            { slug: 'fermentation', label: 'Fermentation' }
+          ]
         }
       ]
     },

@@ -165,6 +165,12 @@ Social Studies:
 |---|---|
 | `globalisation-supply-chain` | Globalisation supply chain (SEAB 2260-2265, Combined Humanities Issue 3 Being Part of a Globalised World): one smartphone supply chain crossing borders stage by stage - raw materials mined in one country, components made in a second, assembly in a third, shipped to a Singapore shop shelf - a value-added bar rising at every handover and route arrows carrying the product on |
 
+Biotechnology:
+
+| slug | topic |
+|---|---|
+| `fermentation` | Fermentation (Secondary Biotechnology NP04): yeast in one flask converting glucose to ethanol and carbon dioxide over time - the glucose bar falls as the yeast consumes it, the ethanol bar rises, and carbon dioxide bubbles form, rise and collect in the gas space |
+
 ## Junior College — H2
 
 Mathematics:
@@ -254,7 +260,7 @@ History:
 - `level` + `subject` on a spec are coarse (`primary|secondary|jc`,
   and `subject` per `SPEC.md` §subject — any non-empty string; the
   syllabus-covered subjects in `player/validate.js` SUBJECTS are currently
-  `math|science|geography|economics|computing|electronics|design-technology|nutrition-food-science|principles-of-accounts|business-studies|exercise-sports-science|management-of-business|history|social-studies`); the `topic` slug carries the precise syllabus
+  `math|science|geography|economics|computing|electronics|design-technology|nutrition-food-science|principles-of-accounts|business-studies|exercise-sports-science|management-of-business|history|social-studies|biotechnology`); the `topic` slug carries the precise syllabus
   point. SUBJECTS is the syllabus-known list for gallery/coverage, not the
   validator's allowed set. When a new syllabus-covered subject lands, update
   this line against those sources; the syllabus.test.js SUBJECTS test fails

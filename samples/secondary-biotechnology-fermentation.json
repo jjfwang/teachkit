@@ -1,0 +1,1176 @@
+{
+  "animath": "0.1",
+  "title": "Fermentation: Yeast Converts Glucose to Ethanol and Carbon Dioxide",
+  "level": "secondary",
+  "subject": "biotechnology",
+  "topic": "fermentation",
+  "kind": "concept",
+  "canvas": {
+    "width": 960,
+    "height": 540
+  },
+  "scenes": [
+    {
+      "id": "s1",
+      "caption": "Add yeast: living cells enter the glucose solution",
+      "narration": "Yeast is added to a flask of glucose solution. Nothing has been converted yet: the glucose bar is full and there is no ethanol.",
+      "duration_ms": 7000,
+      "steps": [
+        {
+          "at_ms": 0,
+          "do": "show",
+          "shape": {
+            "id": "title",
+            "kind": "text",
+            "x": 480,
+            "y": 34,
+            "text": "Fermentation: Yeast Turns Glucose into Ethanol",
+            "size": 20,
+            "color": "#1a1a1a",
+            "align": "middle",
+            "explain": "Label: Fermentation: Yeast Turns Glucose into Ethanol"
+          }
+        },
+        {
+          "at_ms": 150,
+          "do": "show",
+          "shape": {
+            "id": "stage",
+            "kind": "text",
+            "x": 480,
+            "y": 74,
+            "text": "Stage 1: Add yeast to the glucose solution",
+            "size": 16,
+            "color": "#1a1a1a",
+            "align": "middle",
+            "explain": "Label: Stage 1: Add yeast to the glucose solution"
+          }
+        },
+        {
+          "at_ms": 300,
+          "do": "show",
+          "shape": {
+            "id": "flask",
+            "kind": "rect",
+            "x": 140,
+            "y": 170,
+            "w": 160,
+            "h": 280,
+            "fill": "none",
+            "explain": "Bar or vessel: flask",
+            "stroke": "#315fd6",
+            "strokeWidth": 3
+          }
+        },
+        {
+          "at_ms": 400,
+          "do": "show",
+          "shape": {
+            "id": "liquid",
+            "kind": "rect",
+            "x": 152,
+            "y": 262,
+            "w": 136,
+            "h": 176,
+            "fill": "#f5d67a",
+            "explain": "Bar or vessel: liquid"
+          }
+        },
+        {
+          "at_ms": 500,
+          "do": "show",
+          "shape": {
+            "id": "flaskLabel",
+            "kind": "text",
+            "x": 220,
+            "y": 485,
+            "text": "Flask: glucose + yeast",
+            "size": 14,
+            "color": "#1a1a1a",
+            "align": "middle",
+            "explain": "Label: Flask: glucose + yeast"
+          }
+        },
+        {
+          "at_ms": 550,
+          "do": "show",
+          "shape": {
+            "id": "gasLabel",
+            "kind": "text",
+            "x": 130,
+            "y": 195,
+            "text": "Gas space",
+            "size": 14,
+            "color": "#1a1a1a",
+            "align": "end",
+            "explain": "Label: Gas space"
+          }
+        },
+        {
+          "at_ms": 600,
+          "do": "show",
+          "shape": {
+            "id": "glucoseBar",
+            "kind": "rect",
+            "x": 520,
+            "y": 250,
+            "w": 80,
+            "h": 200,
+            "fill": "#b00020",
+            "explain": "Bar or vessel: glucoseBar"
+          }
+        },
+        {
+          "at_ms": 700,
+          "do": "show",
+          "shape": {
+            "id": "ethanolBar",
+            "kind": "rect",
+            "x": 660,
+            "y": 450,
+            "w": 80,
+            "h": 0,
+            "fill": "#315fd6",
+            "explain": "Bar or vessel: ethanolBar"
+          }
+        },
+        {
+          "at_ms": 800,
+          "do": "show",
+          "shape": {
+            "id": "glucoseVal",
+            "kind": "text",
+            "x": 560,
+            "y": 205,
+            "text": "Glucose: 100%",
+            "size": 16,
+            "color": "#1a1a1a",
+            "align": "middle",
+            "explain": "Label: Glucose: 100%"
+          }
+        },
+        {
+          "at_ms": 850,
+          "do": "show",
+          "shape": {
+            "id": "ethanolVal",
+            "kind": "text",
+            "x": 700,
+            "y": 205,
+            "text": "Ethanol: 0%",
+            "size": 16,
+            "color": "#1a1a1a",
+            "align": "middle",
+            "explain": "Label: Ethanol: 0%"
+          }
+        },
+        {
+          "at_ms": 900,
+          "do": "show",
+          "shape": {
+            "id": "glucoseLabel",
+            "kind": "text",
+            "x": 560,
+            "y": 485,
+            "text": "Glucose",
+            "size": 14,
+            "color": "#1a1a1a",
+            "align": "middle",
+            "explain": "Label: Glucose"
+          }
+        },
+        {
+          "at_ms": 950,
+          "do": "show",
+          "shape": {
+            "id": "ethanolLabel",
+            "kind": "text",
+            "x": 700,
+            "y": 485,
+            "text": "Ethanol",
+            "size": 14,
+            "color": "#1a1a1a",
+            "align": "middle",
+            "explain": "Label: Ethanol"
+          }
+        },
+        {
+          "at_ms": 1100,
+          "do": "show",
+          "shape": {
+            "id": "yeast1",
+            "kind": "circle",
+            "cx": 190,
+            "cy": 120,
+            "r": 10,
+            "fill": "#8a6d00",
+            "explain": "Bubble or yeast cell: yeast1"
+          }
+        },
+        {
+          "at_ms": 1200,
+          "do": "show",
+          "shape": {
+            "id": "yeast2",
+            "kind": "circle",
+            "cx": 220,
+            "cy": 110,
+            "r": 10,
+            "fill": "#8a6d00",
+            "explain": "Bubble or yeast cell: yeast2"
+          }
+        },
+        {
+          "at_ms": 1300,
+          "do": "show",
+          "shape": {
+            "id": "yeast3",
+            "kind": "circle",
+            "cx": 250,
+            "cy": 120,
+            "r": 10,
+            "fill": "#8a6d00",
+            "explain": "Bubble or yeast cell: yeast3"
+          }
+        },
+        {
+          "at_ms": 1800,
+          "do": "move",
+          "target": "yeast1",
+          "to": {
+            "cy": 320
+          },
+          "dur_ms": 1400
+        },
+        {
+          "at_ms": 1900,
+          "do": "move",
+          "target": "yeast2",
+          "to": {
+            "cy": 350
+          },
+          "dur_ms": 1400
+        },
+        {
+          "at_ms": 2000,
+          "do": "move",
+          "target": "yeast3",
+          "to": {
+            "cy": 320
+          },
+          "dur_ms": 1400
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "caption": "Fermentation begins: glucose falls, ethanol and gas appear",
+      "narration": "The yeast takes in glucose. As it is consumed, ethanol appears in the liquid and carbon dioxide bubbles form, rise through the liquid and reach the gas space.",
+      "duration_ms": 8000,
+      "steps": [
+        {
+          "at_ms": 0,
+          "do": "show",
+          "shape": {
+            "id": "title",
+            "kind": "text",
+            "x": 480,
+            "y": 34,
+            "text": "Fermentation: Yeast Turns Glucose into Ethanol",
+            "size": 20,
+            "color": "#1a1a1a",
+            "align": "middle",
+            "explain": "Label: Fermentation: Yeast Turns Glucose into Ethanol"
+          }
+        },
+        {
+          "at_ms": 150,
+          "do": "show",
+          "shape": {
+            "id": "stage",
+            "kind": "text",
+            "x": 480,
+            "y": 74,
+            "text": "Stage 2: Yeast consumes glucose, bubbles form",
+            "size": 16,
+            "color": "#1a1a1a",
+            "align": "middle",
+            "explain": "Label: Stage 2: Yeast consumes glucose, bubbles form"
+          }
+        },
+        {
+          "at_ms": 300,
+          "do": "show",
+          "shape": {
+            "id": "flask",
+            "kind": "rect",
+            "x": 140,
+            "y": 170,
+            "w": 160,
+            "h": 280,
+            "fill": "none",
+            "explain": "Bar or vessel: flask",
+            "stroke": "#315fd6",
+            "strokeWidth": 3
+          }
+        },
+        {
+          "at_ms": 400,
+          "do": "show",
+          "shape": {
+            "id": "liquid",
+            "kind": "rect",
+            "x": 152,
+            "y": 262,
+            "w": 136,
+            "h": 176,
+            "fill": "#f5d67a",
+            "explain": "Bar or vessel: liquid"
+          }
+        },
+        {
+          "at_ms": 500,
+          "do": "show",
+          "shape": {
+            "id": "flaskLabel",
+            "kind": "text",
+            "x": 220,
+            "y": 485,
+            "text": "Flask: glucose + yeast",
+            "size": 14,
+            "color": "#1a1a1a",
+            "align": "middle",
+            "explain": "Label: Flask: glucose + yeast"
+          }
+        },
+        {
+          "at_ms": 550,
+          "do": "show",
+          "shape": {
+            "id": "gasLabel",
+            "kind": "text",
+            "x": 130,
+            "y": 195,
+            "text": "Gas space",
+            "size": 14,
+            "color": "#1a1a1a",
+            "align": "end",
+            "explain": "Label: Gas space"
+          }
+        },
+        {
+          "at_ms": 600,
+          "do": "show",
+          "shape": {
+            "id": "glucoseBar",
+            "kind": "rect",
+            "x": 520,
+            "y": 250,
+            "w": 80,
+            "h": 200,
+            "fill": "#b00020",
+            "explain": "Bar or vessel: glucoseBar"
+          }
+        },
+        {
+          "at_ms": 700,
+          "do": "show",
+          "shape": {
+            "id": "ethanolBar",
+            "kind": "rect",
+            "x": 660,
+            "y": 450,
+            "w": 80,
+            "h": 0,
+            "fill": "#315fd6",
+            "explain": "Bar or vessel: ethanolBar"
+          }
+        },
+        {
+          "at_ms": 800,
+          "do": "show",
+          "shape": {
+            "id": "glucoseVal",
+            "kind": "text",
+            "x": 560,
+            "y": 205,
+            "text": "Glucose: 100%",
+            "size": 16,
+            "color": "#1a1a1a",
+            "align": "middle",
+            "explain": "Label: Glucose: 100%"
+          }
+        },
+        {
+          "at_ms": 850,
+          "do": "show",
+          "shape": {
+            "id": "ethanolVal",
+            "kind": "text",
+            "x": 700,
+            "y": 205,
+            "text": "Ethanol: 0%",
+            "size": 16,
+            "color": "#1a1a1a",
+            "align": "middle",
+            "explain": "Label: Ethanol: 0%"
+          }
+        },
+        {
+          "at_ms": 900,
+          "do": "show",
+          "shape": {
+            "id": "glucoseLabel",
+            "kind": "text",
+            "x": 560,
+            "y": 485,
+            "text": "Glucose",
+            "size": 14,
+            "color": "#1a1a1a",
+            "align": "middle",
+            "explain": "Label: Glucose"
+          }
+        },
+        {
+          "at_ms": 950,
+          "do": "show",
+          "shape": {
+            "id": "ethanolLabel",
+            "kind": "text",
+            "x": 700,
+            "y": 485,
+            "text": "Ethanol",
+            "size": 14,
+            "color": "#1a1a1a",
+            "align": "middle",
+            "explain": "Label: Ethanol"
+          }
+        },
+        {
+          "at_ms": 1100,
+          "do": "show",
+          "shape": {
+            "id": "yeast1",
+            "kind": "circle",
+            "cx": 190,
+            "cy": 330,
+            "r": 10,
+            "fill": "#8a6d00",
+            "explain": "Bubble or yeast cell: yeast1"
+          }
+        },
+        {
+          "at_ms": 1150,
+          "do": "show",
+          "shape": {
+            "id": "yeast2",
+            "kind": "circle",
+            "cx": 230,
+            "cy": 360,
+            "r": 10,
+            "fill": "#8a6d00",
+            "explain": "Bubble or yeast cell: yeast2"
+          }
+        },
+        {
+          "at_ms": 1300,
+          "do": "show",
+          "shape": {
+            "id": "bub1",
+            "kind": "circle",
+            "cx": 185,
+            "cy": 410,
+            "r": 8,
+            "fill": "#ffffff",
+            "explain": "Bubble or yeast cell: bub1"
+          }
+        },
+        {
+          "at_ms": 1400,
+          "do": "show",
+          "shape": {
+            "id": "bub2",
+            "kind": "circle",
+            "cx": 225,
+            "cy": 420,
+            "r": 7,
+            "fill": "#ffffff",
+            "explain": "Bubble or yeast cell: bub2"
+          }
+        },
+        {
+          "at_ms": 1500,
+          "do": "show",
+          "shape": {
+            "id": "bub3",
+            "kind": "circle",
+            "cx": 255,
+            "cy": 405,
+            "r": 6,
+            "fill": "#ffffff",
+            "explain": "Bubble or yeast cell: bub3"
+          }
+        },
+        {
+          "at_ms": 2000,
+          "do": "move",
+          "target": "glucoseBar",
+          "to": {
+            "y": 310,
+            "h": 140
+          },
+          "dur_ms": 1800
+        },
+        {
+          "at_ms": 2000,
+          "do": "move",
+          "target": "ethanolBar",
+          "to": {
+            "y": 380,
+            "h": 70
+          },
+          "dur_ms": 1800
+        },
+        {
+          "at_ms": 2100,
+          "do": "move",
+          "target": "bub1",
+          "to": {
+            "cy": 205
+          },
+          "dur_ms": 1800
+        },
+        {
+          "at_ms": 2200,
+          "do": "move",
+          "target": "bub2",
+          "to": {
+            "cy": 215
+          },
+          "dur_ms": 1800
+        },
+        {
+          "at_ms": 2300,
+          "do": "move",
+          "target": "bub3",
+          "to": {
+            "cy": 200
+          },
+          "dur_ms": 1800
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "caption": "Conversion continues: glucose low, ethanol and gas grow",
+      "narration": "More glucose is converted. The ethanol bar keeps rising, and more carbon dioxide bubbles rise and collect in the gas space above the liquid.",
+      "duration_ms": 8000,
+      "steps": [
+        {
+          "at_ms": 0,
+          "do": "show",
+          "shape": {
+            "id": "title",
+            "kind": "text",
+            "x": 480,
+            "y": 34,
+            "text": "Fermentation: Yeast Turns Glucose into Ethanol",
+            "size": 20,
+            "color": "#1a1a1a",
+            "align": "middle",
+            "explain": "Label: Fermentation: Yeast Turns Glucose into Ethanol"
+          }
+        },
+        {
+          "at_ms": 150,
+          "do": "show",
+          "shape": {
+            "id": "stage",
+            "kind": "text",
+            "x": 480,
+            "y": 74,
+            "text": "Stage 3: Conversion continues, gas collects",
+            "size": 16,
+            "color": "#1a1a1a",
+            "align": "middle",
+            "explain": "Label: Stage 3: Conversion continues, gas collects"
+          }
+        },
+        {
+          "at_ms": 300,
+          "do": "show",
+          "shape": {
+            "id": "flask",
+            "kind": "rect",
+            "x": 140,
+            "y": 170,
+            "w": 160,
+            "h": 280,
+            "fill": "none",
+            "explain": "Bar or vessel: flask",
+            "stroke": "#315fd6",
+            "strokeWidth": 3
+          }
+        },
+        {
+          "at_ms": 400,
+          "do": "show",
+          "shape": {
+            "id": "liquid",
+            "kind": "rect",
+            "x": 152,
+            "y": 262,
+            "w": 136,
+            "h": 176,
+            "fill": "#f5d67a",
+            "explain": "Bar or vessel: liquid"
+          }
+        },
+        {
+          "at_ms": 500,
+          "do": "show",
+          "shape": {
+            "id": "flaskLabel",
+            "kind": "text",
+            "x": 220,
+            "y": 485,
+            "text": "Flask: glucose + yeast",
+            "size": 14,
+            "color": "#1a1a1a",
+            "align": "middle",
+            "explain": "Label: Flask: glucose + yeast"
+          }
+        },
+        {
+          "at_ms": 550,
+          "do": "show",
+          "shape": {
+            "id": "gasLabel",
+            "kind": "text",
+            "x": 130,
+            "y": 195,
+            "text": "Gas space",
+            "size": 14,
+            "color": "#1a1a1a",
+            "align": "end",
+            "explain": "Label: Gas space"
+          }
+        },
+        {
+          "at_ms": 600,
+          "do": "show",
+          "shape": {
+            "id": "glucoseBar",
+            "kind": "rect",
+            "x": 520,
+            "y": 310,
+            "w": 80,
+            "h": 140,
+            "fill": "#b00020",
+            "explain": "Bar or vessel: glucoseBar"
+          }
+        },
+        {
+          "at_ms": 700,
+          "do": "show",
+          "shape": {
+            "id": "ethanolBar",
+            "kind": "rect",
+            "x": 660,
+            "y": 380,
+            "w": 80,
+            "h": 70,
+            "fill": "#315fd6",
+            "explain": "Bar or vessel: ethanolBar"
+          }
+        },
+        {
+          "at_ms": 800,
+          "do": "show",
+          "shape": {
+            "id": "glucoseVal",
+            "kind": "text",
+            "x": 560,
+            "y": 205,
+            "text": "Glucose: 70%",
+            "size": 16,
+            "color": "#1a1a1a",
+            "align": "middle",
+            "explain": "Label: Glucose: 70%"
+          }
+        },
+        {
+          "at_ms": 850,
+          "do": "show",
+          "shape": {
+            "id": "ethanolVal",
+            "kind": "text",
+            "x": 700,
+            "y": 205,
+            "text": "Ethanol: 35%",
+            "size": 16,
+            "color": "#1a1a1a",
+            "align": "middle",
+            "explain": "Label: Ethanol: 35%"
+          }
+        },
+        {
+          "at_ms": 900,
+          "do": "show",
+          "shape": {
+            "id": "glucoseLabel",
+            "kind": "text",
+            "x": 560,
+            "y": 485,
+            "text": "Glucose",
+            "size": 14,
+            "color": "#1a1a1a",
+            "align": "middle",
+            "explain": "Label: Glucose"
+          }
+        },
+        {
+          "at_ms": 950,
+          "do": "show",
+          "shape": {
+            "id": "ethanolLabel",
+            "kind": "text",
+            "x": 700,
+            "y": 485,
+            "text": "Ethanol",
+            "size": 14,
+            "color": "#1a1a1a",
+            "align": "middle",
+            "explain": "Label: Ethanol"
+          }
+        },
+        {
+          "at_ms": 1100,
+          "do": "show",
+          "shape": {
+            "id": "yeast1",
+            "kind": "circle",
+            "cx": 190,
+            "cy": 330,
+            "r": 10,
+            "fill": "#8a6d00",
+            "explain": "Bubble or yeast cell: yeast1"
+          }
+        },
+        {
+          "at_ms": 1150,
+          "do": "show",
+          "shape": {
+            "id": "yeast2",
+            "kind": "circle",
+            "cx": 230,
+            "cy": 360,
+            "r": 10,
+            "fill": "#8a6d00",
+            "explain": "Bubble or yeast cell: yeast2"
+          }
+        },
+        {
+          "at_ms": 1250,
+          "do": "show",
+          "shape": {
+            "id": "col1",
+            "kind": "circle",
+            "cx": 185,
+            "cy": 205,
+            "r": 8,
+            "fill": "#cfe3ff",
+            "explain": "Bubble or yeast cell: col1"
+          }
+        },
+        {
+          "at_ms": 1300,
+          "do": "show",
+          "shape": {
+            "id": "col2",
+            "kind": "circle",
+            "cx": 225,
+            "cy": 215,
+            "r": 7,
+            "fill": "#cfe3ff",
+            "explain": "Bubble or yeast cell: col2"
+          }
+        },
+        {
+          "at_ms": 1350,
+          "do": "show",
+          "shape": {
+            "id": "col3",
+            "kind": "circle",
+            "cx": 255,
+            "cy": 200,
+            "r": 6,
+            "fill": "#cfe3ff",
+            "explain": "Bubble or yeast cell: col3"
+          }
+        },
+        {
+          "at_ms": 1500,
+          "do": "show",
+          "shape": {
+            "id": "bub1",
+            "kind": "circle",
+            "cx": 200,
+            "cy": 415,
+            "r": 8,
+            "fill": "#ffffff",
+            "explain": "Bubble or yeast cell: bub1"
+          }
+        },
+        {
+          "at_ms": 1600,
+          "do": "show",
+          "shape": {
+            "id": "bub2",
+            "kind": "circle",
+            "cx": 245,
+            "cy": 425,
+            "r": 7,
+            "fill": "#ffffff",
+            "explain": "Bubble or yeast cell: bub2"
+          }
+        },
+        {
+          "at_ms": 2100,
+          "do": "move",
+          "target": "glucoseBar",
+          "to": {
+            "y": 390,
+            "h": 60
+          },
+          "dur_ms": 1800
+        },
+        {
+          "at_ms": 2100,
+          "do": "move",
+          "target": "ethanolBar",
+          "to": {
+            "y": 300,
+            "h": 150
+          },
+          "dur_ms": 1800
+        },
+        {
+          "at_ms": 2200,
+          "do": "move",
+          "target": "bub1",
+          "to": {
+            "cy": 225
+          },
+          "dur_ms": 1800
+        },
+        {
+          "at_ms": 2300,
+          "do": "move",
+          "target": "bub2",
+          "to": {
+            "cy": 195
+          },
+          "dur_ms": 1800
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "caption": "Complete: glucose used up, ethanol and carbon dioxide produced",
+      "narration": "The glucose is almost gone because it was converted: the ethanol bar is high and the gas space is full of collected carbon dioxide. Nothing appeared from nothing.",
+      "duration_ms": 7000,
+      "steps": [
+        {
+          "at_ms": 0,
+          "do": "show",
+          "shape": {
+            "id": "title",
+            "kind": "text",
+            "x": 480,
+            "y": 34,
+            "text": "Fermentation: Yeast Turns Glucose into Ethanol",
+            "size": 20,
+            "color": "#1a1a1a",
+            "align": "middle",
+            "explain": "Label: Fermentation: Yeast Turns Glucose into Ethanol"
+          }
+        },
+        {
+          "at_ms": 150,
+          "do": "show",
+          "shape": {
+            "id": "stage",
+            "kind": "text",
+            "x": 480,
+            "y": 74,
+            "text": "Stage 4: Conversion complete, glucose near zero",
+            "size": 16,
+            "color": "#1a1a1a",
+            "align": "middle",
+            "explain": "Label: Stage 4: Conversion complete, glucose near zero"
+          }
+        },
+        {
+          "at_ms": 300,
+          "do": "show",
+          "shape": {
+            "id": "flask",
+            "kind": "rect",
+            "x": 140,
+            "y": 170,
+            "w": 160,
+            "h": 280,
+            "fill": "none",
+            "explain": "Bar or vessel: flask",
+            "stroke": "#315fd6",
+            "strokeWidth": 3
+          }
+        },
+        {
+          "at_ms": 400,
+          "do": "show",
+          "shape": {
+            "id": "liquid",
+            "kind": "rect",
+            "x": 152,
+            "y": 262,
+            "w": 136,
+            "h": 176,
+            "fill": "#f5d67a",
+            "explain": "Bar or vessel: liquid"
+          }
+        },
+        {
+          "at_ms": 500,
+          "do": "show",
+          "shape": {
+            "id": "flaskLabel",
+            "kind": "text",
+            "x": 220,
+            "y": 485,
+            "text": "Flask: glucose + yeast",
+            "size": 14,
+            "color": "#1a1a1a",
+            "align": "middle",
+            "explain": "Label: Flask: glucose + yeast"
+          }
+        },
+        {
+          "at_ms": 550,
+          "do": "show",
+          "shape": {
+            "id": "gasLabel",
+            "kind": "text",
+            "x": 130,
+            "y": 195,
+            "text": "Gas space",
+            "size": 14,
+            "color": "#1a1a1a",
+            "align": "end",
+            "explain": "Label: Gas space"
+          }
+        },
+        {
+          "at_ms": 600,
+          "do": "show",
+          "shape": {
+            "id": "glucoseBar",
+            "kind": "rect",
+            "x": 520,
+            "y": 390,
+            "w": 80,
+            "h": 60,
+            "fill": "#b00020",
+            "explain": "Bar or vessel: glucoseBar"
+          }
+        },
+        {
+          "at_ms": 700,
+          "do": "show",
+          "shape": {
+            "id": "ethanolBar",
+            "kind": "rect",
+            "x": 660,
+            "y": 300,
+            "w": 80,
+            "h": 150,
+            "fill": "#315fd6",
+            "explain": "Bar or vessel: ethanolBar"
+          }
+        },
+        {
+          "at_ms": 800,
+          "do": "show",
+          "shape": {
+            "id": "glucoseVal",
+            "kind": "text",
+            "x": 560,
+            "y": 205,
+            "text": "Glucose: 30%",
+            "size": 16,
+            "color": "#1a1a1a",
+            "align": "middle",
+            "explain": "Label: Glucose: 30%"
+          }
+        },
+        {
+          "at_ms": 850,
+          "do": "show",
+          "shape": {
+            "id": "ethanolVal",
+            "kind": "text",
+            "x": 700,
+            "y": 205,
+            "text": "Ethanol: 75%",
+            "size": 16,
+            "color": "#1a1a1a",
+            "align": "middle",
+            "explain": "Label: Ethanol: 75%"
+          }
+        },
+        {
+          "at_ms": 900,
+          "do": "show",
+          "shape": {
+            "id": "glucoseLabel",
+            "kind": "text",
+            "x": 560,
+            "y": 485,
+            "text": "Glucose",
+            "size": 14,
+            "color": "#1a1a1a",
+            "align": "middle",
+            "explain": "Label: Glucose"
+          }
+        },
+        {
+          "at_ms": 950,
+          "do": "show",
+          "shape": {
+            "id": "ethanolLabel",
+            "kind": "text",
+            "x": 700,
+            "y": 485,
+            "text": "Ethanol",
+            "size": 14,
+            "color": "#1a1a1a",
+            "align": "middle",
+            "explain": "Label: Ethanol"
+          }
+        },
+        {
+          "at_ms": 1100,
+          "do": "show",
+          "shape": {
+            "id": "yeast1",
+            "kind": "circle",
+            "cx": 190,
+            "cy": 330,
+            "r": 10,
+            "fill": "#8a6d00",
+            "explain": "Bubble or yeast cell: yeast1"
+          }
+        },
+        {
+          "at_ms": 1150,
+          "do": "show",
+          "shape": {
+            "id": "yeast2",
+            "kind": "circle",
+            "cx": 230,
+            "cy": 360,
+            "r": 10,
+            "fill": "#8a6d00",
+            "explain": "Bubble or yeast cell: yeast2"
+          }
+        },
+        {
+          "at_ms": 1250,
+          "do": "show",
+          "shape": {
+            "id": "col1",
+            "kind": "circle",
+            "cx": 180,
+            "cy": 205,
+            "r": 8,
+            "fill": "#cfe3ff",
+            "explain": "Bubble or yeast cell: col1"
+          }
+        },
+        {
+          "at_ms": 1280,
+          "do": "show",
+          "shape": {
+            "id": "col2",
+            "kind": "circle",
+            "cx": 210,
+            "cy": 220,
+            "r": 7,
+            "fill": "#cfe3ff",
+            "explain": "Bubble or yeast cell: col2"
+          }
+        },
+        {
+          "at_ms": 1310,
+          "do": "show",
+          "shape": {
+            "id": "col3",
+            "kind": "circle",
+            "cx": 240,
+            "cy": 200,
+            "r": 7,
+            "fill": "#cfe3ff",
+            "explain": "Bubble or yeast cell: col3"
+          }
+        },
+        {
+          "at_ms": 1340,
+          "do": "show",
+          "shape": {
+            "id": "col4",
+            "kind": "circle",
+            "cx": 265,
+            "cy": 218,
+            "r": 6,
+            "fill": "#cfe3ff",
+            "explain": "Bubble or yeast cell: col4"
+          }
+        },
+        {
+          "at_ms": 1370,
+          "do": "show",
+          "shape": {
+            "id": "col5",
+            "kind": "circle",
+            "cx": 200,
+            "cy": 185,
+            "r": 6,
+            "fill": "#cfe3ff",
+            "explain": "Bubble or yeast cell: col5"
+          }
+        },
+        {
+          "at_ms": 2000,
+          "do": "move",
+          "target": "glucoseBar",
+          "to": {
+            "y": 435,
+            "h": 15
+          },
+          "dur_ms": 1600
+        },
+        {
+          "at_ms": 2000,
+          "do": "move",
+          "target": "ethanolBar",
+          "to": {
+            "y": 255,
+            "h": 195
+          },
+          "dur_ms": 1600
+        }
+      ]
+    }
+  ]
+}
