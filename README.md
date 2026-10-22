@@ -174,6 +174,7 @@ and for Secondary History decolonisation chain
 and for Secondary Social Studies globalisation supply chain
 and for Secondary Biotechnology fermentation
 and for Primary Social Studies landscape change
+and for Secondary Design Studies ergonomic dimensions
 (animation, slides, worksheet, notes, exit ticket, and script), each
 under its own pack manifest header.
 
