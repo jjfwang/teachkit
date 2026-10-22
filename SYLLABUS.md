@@ -153,6 +153,12 @@ Exercise and Sports Science:
 |---|---|
 | `energy-systems` | Energy systems (SEAB 6081): during one continuous bout of exercise all three energy systems contribute throughout and only their shares change - ATP-PC dominates the first seconds while the phosphocreatine store drains, anaerobic glycolysis takes the largest share as lactate builds, then the aerobic system ramps up to supply most of the energy |
 
+History:
+
+| slug | topic |
+|---|---|
+| `decolonisation-chain` | Decolonisation chain (SEAB 2174): after the Second World War, independence in one Southeast Asian territory raises nationalist pressure in the next, worked stage by stage - Philippines 1946, Indonesia recognised 1949, Malaya 1957, Singapore internal self-government 1959 - each stage a pressure bar rising past a threshold, a colonial control bar falling and a transmission arrow carrying the example on |
+
 ## Junior College — H2
 
 Mathematics:
