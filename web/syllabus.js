@@ -8,7 +8,7 @@ window.ANIMATH_SYLLABUS = {
         {
           id: 'p-math', label: 'Mathematics', subject: 'math', topics: [
             { slug: 'whole-numbers', label: 'Whole numbers' },
-            { slug: 'fractions', label: 'Fractions' },
+            { slug: 'fractions', label: 'Fractions', syllabusYear: 2021, outcomeCodes: [{ code: 'PMATH-2021-FRACTIONS', title: 'Fractions' }], assessmentObjectives: [] },
             { slug: 'decimals', label: 'Decimals' },
             { slug: 'percentage', label: 'Percentage' },
             { slug: 'ratio', label: 'Ratio' },
@@ -26,7 +26,7 @@ window.ANIMATH_SYLLABUS = {
             { slug: 'human-body-systems', label: 'Human body systems' },
             { slug: 'plant-systems', label: 'Plant parts & functions' },
             { slug: 'life-cycles', label: 'Life cycles' },
-            { slug: 'water-cycle', label: 'Water cycle' },
+            { slug: 'water-cycle', label: 'Water cycle', syllabusYear: 2023, outcomeCodes: [{ code: 'PSCI-2023-WATER-CYCLE', title: 'Water cycle' }], assessmentObjectives: [] },
             { slug: 'energy-forms', label: 'Forms of energy' },
             { slug: 'photosynthesis', label: 'Photosynthesis (intro)' },
             { slug: 'forces-magnets', label: 'Forces & magnets' },
@@ -54,7 +54,7 @@ window.ANIMATH_SYLLABUS = {
         {
           id: 'e-math', label: 'E-Math', subject: 'math', topics: [
             { slug: 'e-numbers', label: 'Numbers' },
-            { slug: 'e-algebra', label: 'Algebra' },
+            { slug: 'e-algebra', label: 'Algebra', syllabusYear: 2020, outcomeCodes: [{ code: '4052-ALGEBRA', title: 'Algebra' }], assessmentObjectives: [{ code: 'AO1', title: 'Knowledge and understanding' }, { code: 'AO2', title: 'Handling information and solving problems' }] },
             { slug: 'e-functions-graphs', label: 'Functions & graphs' },
             { slug: 'e-geometry', label: 'Geometry' },
             { slug: 'e-trigonometry', label: 'Trigonometry' },
@@ -77,7 +77,7 @@ window.ANIMATH_SYLLABUS = {
           id: 'physics', label: 'Physics', subject: 'science', topics: [
             { slug: 'phys-kinematics', label: 'Kinematics' },
             { slug: 'phys-forces', label: 'Forces' },
-            { slug: 'phys-energy', label: 'Energy, work & power' },
+            { slug: 'phys-energy', label: 'Energy, work & power', syllabusYear: 2023, outcomeCodes: [{ code: '6091-ENERGY', title: 'Energy, work and power' }], assessmentObjectives: [{ code: 'AO1', title: 'Knowledge and understanding' }, { code: 'AO2', title: 'Handling information and solving problems' }, { code: 'AO3', title: 'Experimental skills and investigations' }] },
             { slug: 'phys-electricity', label: 'Electricity' },
             { slug: 'phys-waves', label: 'Waves' }
           ]
@@ -174,7 +174,7 @@ window.ANIMATH_SYLLABUS = {
             { slug: 'h2-sequences', label: 'Sequences & series' },
             { slug: 'h2-vectors', label: 'Vectors' },
             { slug: 'h2-complex', label: 'Complex numbers' },
-            { slug: 'h2-differentiation', label: 'Differentiation' },
+            { slug: 'h2-differentiation', label: 'Differentiation', syllabusYear: 2017, outcomeCodes: [{ code: '9758-DIFFERENTIATION', title: 'Differentiation' }], assessmentObjectives: [{ code: 'AO1', title: 'Knowledge and understanding' }, { code: 'AO2', title: 'Handling information and solving problems' }, { code: 'AO3', title: 'Mathematical modelling and problem solving' }] },
             { slug: 'h2-integration', label: 'Integration' },
             { slug: 'h2-probability', label: 'Probability' },
             { slug: 'h2-statistics', label: 'Statistics' },
@@ -198,7 +198,7 @@ window.ANIMATH_SYLLABUS = {
         },
         {
           id: 'h2-biology', label: 'H2 Biology', subject: 'science', topics: [
-            { slug: 'h2-cell-bio', label: 'Cell biology' },
+            { slug: 'h2-cell-bio', label: 'Cell biology', syllabusYear: 2016, outcomeCodes: [{ code: '9648-CELL-BIO', title: 'Cell biology' }], assessmentObjectives: [{ code: 'AO1', title: 'Knowledge and understanding' }, { code: 'AO2', title: 'Handling information and solving problems' }, { code: 'AO3', title: 'Experimental skills and investigations' }] },
             { slug: 'h2-genetics', label: 'Genetics' },
             { slug: 'h2-energetics', label: 'Energetics' },
             { slug: 'h2-ecology', label: 'Ecology' }

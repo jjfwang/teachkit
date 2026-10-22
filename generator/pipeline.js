@@ -711,9 +711,38 @@
   // err.problems carried). Resolves with
   // {manifest, animation, slides, worksheet, notes, exitTicket, script,
   // lessonPlan}
-  // where manifest = {slug, topic, level, subject, version, materials}.
+  // where manifest = {slug, topic, level, subject, version, materials,
+  // metadata} (metadata per packMetadataFor above, issue #1221).
   // Packs are cached in memory by slug: a repeat call with the same
   // slug resolves the cached pack with zero further callChat calls.
+  // Pack metadata (issue #1221): the deterministic transparency block on
+  // every pack manifest. Syllabus facts come from syllabus resolution --
+  // the topic verbatim first, then its slugified form -- never from the
+  // LLM; an unresolved topic still emits a valid block with a null year
+  // and empty code lists. The AI label names the model identity available
+  // to the call (opts.model, default 'unknown') and the generator
+  // version; review starts null (unsigned) and moderation unreviewed.
+  function packMetadataFor(opts) {
+    var facts = null;
+    try { facts = SIBLINGS.syllabus.topicFacts(opts.topic); } catch (err) { facts = null; }
+    if (!facts) {
+      try { facts = SIBLINGS.syllabus.topicFacts(topicSlug(opts.topic)); } catch (err) { facts = null; }
+    }
+    if (!facts) facts = { syllabusYear: null, outcomeCodes: [], assessmentObjectives: [] };
+    return {
+      syllabusYear: facts.syllabusYear,
+      outcomeCodes: facts.outcomeCodes,
+      assessmentObjectives: facts.assessmentObjectives,
+      aiGenerated: {
+        label: 'AI-generated',
+        model: (typeof opts.model === 'string' && opts.model) ? opts.model : 'unknown',
+        generatorVersion: GENERATOR_VERSION
+      },
+      review: null,
+      moderation: { state: 'unreviewed' }
+    };
+  }
+
   function generateLessonPack(opts, deps) {
     opts = opts || {};
     deps = deps || {};
@@ -785,7 +814,8 @@
           level: opts.level,
           subject: opts.subject,
           version: GENERATOR_VERSION,
-          materials: ['animation', 'slides', 'worksheet', 'notes', 'exitTicket', 'script', 'lessonPlan']
+          materials: ['animation', 'slides', 'worksheet', 'notes', 'exitTicket', 'script', 'lessonPlan'],
+          metadata: packMetadataFor(opts)
         }
       };
       var chain = Promise.resolve();

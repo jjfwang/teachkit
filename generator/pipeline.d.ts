@@ -218,6 +218,8 @@ export interface GenerateLessonPackOptions {
   maxRepairs?: number;
   /** Bypass the in-memory pack cache and regenerate, replacing the cached entry. */
   force?: boolean;
+  /** Model identity recorded on the pack manifest metadata (issue #1221). */
+  model?: string;
 }
 export interface GenerateLessonPackDeps {
   callChat: PipelineCallChat;
@@ -230,6 +232,18 @@ export interface GenerateLessonPackDeps {
   validateLessonPlan?: PipelineValidate;
   onProgress?: PipelineProgress;
 }
+export interface PackMetadataCode {
+  code: string;
+  title: string;
+}
+export interface PackMetadata {
+  syllabusYear: number | null;
+  outcomeCodes: PackMetadataCode[];
+  assessmentObjectives: PackMetadataCode[];
+  aiGenerated: { label: string; model: string; generatorVersion: string };
+  review: { reviewer: string; reviewDate: string } | null;
+  moderation: { state: string };
+}
 export interface LessonPackManifest {
   slug: string;
   topic: string;
@@ -237,6 +251,7 @@ export interface LessonPackManifest {
   subject: string;
   version: string;
   materials: string[];
+  metadata: PackMetadata;
 }
 export interface LessonPackResult {
   manifest: LessonPackManifest;

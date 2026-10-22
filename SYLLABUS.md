@@ -290,3 +290,18 @@ China Studies:
 - New topics: add the slug here first, then teach the prompt builder about any
   level-specific wording. The validator only checks that `topic` is a
   non-empty string.
+
+## Pack metadata facts
+
+Pack metadata (issue #1221) records syllabus facts for generated lesson
+packs as code identifiers plus short titles only; syllabus text is never
+reproduced. The same facts live in generator/syllabus.js and
+web/syllabus.js on the topic entries. Recorded so far, for the six
+Phase A gate topics:
+
+- fractions (Primary Mathematics): syllabus year 2021; outcome code PMATH-2021-FRACTIONS (Fractions); no SEAB assessment objectives at Primary.
+- water-cycle (Primary Science): syllabus year 2023; outcome code PSCI-2023-WATER-CYCLE (Water cycle); no SEAB assessment objectives at Primary.
+- e-algebra (Secondary E-Math 4052): syllabus year 2020; outcome code 4052-ALGEBRA (Algebra); assessment objectives AO1 (Knowledge and understanding), AO2 (Handling information and solving problems).
+- phys-energy (Secondary Physics 6091): syllabus year 2023; outcome code 6091-ENERGY (Energy, work and power); assessment objectives AO1 (Knowledge and understanding), AO2 (Handling information and solving problems), AO3 (Experimental skills and investigations).
+- h2-differentiation (JC H2 Mathematics 9758): syllabus year 2017; outcome code 9758-DIFFERENTIATION (Differentiation); assessment objectives AO1 (Knowledge and understanding), AO2 (Handling information and solving problems), AO3 (Mathematical modelling and problem solving).
+- h2-cell-bio (JC H2 Biology 9648): syllabus year 2016; outcome code 9648-CELL-BIO (Cell biology); assessment objectives AO1 (Knowledge and understanding), AO2 (Handling information and solving problems), AO3 (Experimental skills and investigations).

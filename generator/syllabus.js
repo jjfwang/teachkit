@@ -9,6 +9,8 @@
  * (primary/p-sci/water-cycle). It returns
  * {topic, topicLabel, level, subject, track} and throws synchronously
  * on unknown, malformed, or ambiguous ids, naming the raw id verbatim.
+ * topicFacts(id, data?) resolves the same way and returns the topic's
+ * recorded pack-metadata facts (issue #1221).
  */
 (function (global, factory) {
   var api = factory();
@@ -23,7 +25,7 @@
           {
             id: 'p-math', label: 'Mathematics', subject: 'math', topics: [
             { slug: 'whole-numbers', label: 'Whole numbers' },
-            { slug: 'fractions', label: 'Fractions' },
+            { slug: 'fractions', label: 'Fractions', syllabusYear: 2021, outcomeCodes: [{ code: 'PMATH-2021-FRACTIONS', title: 'Fractions' }], assessmentObjectives: [] },
             { slug: 'decimals', label: 'Decimals' },
             { slug: 'percentage', label: 'Percentage' },
             { slug: 'ratio', label: 'Ratio' },
@@ -41,7 +43,7 @@
             { slug: 'human-body-systems', label: 'Human body systems' },
             { slug: 'plant-systems', label: 'Plant parts & functions' },
             { slug: 'life-cycles', label: 'Life cycles' },
-            { slug: 'water-cycle', label: 'Water cycle' },
+            { slug: 'water-cycle', label: 'Water cycle', syllabusYear: 2023, outcomeCodes: [{ code: 'PSCI-2023-WATER-CYCLE', title: 'Water cycle' }], assessmentObjectives: [] },
             { slug: 'energy-forms', label: 'Forms of energy' },
             { slug: 'photosynthesis', label: 'Photosynthesis (intro)' },
             { slug: 'forces-magnets', label: 'Forces & magnets' },
@@ -69,7 +71,7 @@
           {
             id: 'e-math', label: 'E-Math', subject: 'math', topics: [
             { slug: 'e-numbers', label: 'Numbers' },
-            { slug: 'e-algebra', label: 'Algebra' },
+            { slug: 'e-algebra', label: 'Algebra', syllabusYear: 2020, outcomeCodes: [{ code: '4052-ALGEBRA', title: 'Algebra' }], assessmentObjectives: [{ code: 'AO1', title: 'Knowledge and understanding' }, { code: 'AO2', title: 'Handling information and solving problems' }] },
             { slug: 'e-functions-graphs', label: 'Functions & graphs' },
             { slug: 'e-geometry', label: 'Geometry' },
             { slug: 'e-trigonometry', label: 'Trigonometry' },
@@ -92,7 +94,7 @@
             id: 'physics', label: 'Physics', subject: 'science', topics: [
             { slug: 'phys-kinematics', label: 'Kinematics' },
             { slug: 'phys-forces', label: 'Forces' },
-            { slug: 'phys-energy', label: 'Energy, work & power' },
+            { slug: 'phys-energy', label: 'Energy, work & power', syllabusYear: 2023, outcomeCodes: [{ code: '6091-ENERGY', title: 'Energy, work and power' }], assessmentObjectives: [{ code: 'AO1', title: 'Knowledge and understanding' }, { code: 'AO2', title: 'Handling information and solving problems' }, { code: 'AO3', title: 'Experimental skills and investigations' }] },
             { slug: 'phys-electricity', label: 'Electricity' },
             { slug: 'phys-waves', label: 'Waves' }
             ]
@@ -189,7 +191,7 @@
             { slug: 'h2-sequences', label: 'Sequences & series' },
             { slug: 'h2-vectors', label: 'Vectors' },
             { slug: 'h2-complex', label: 'Complex numbers' },
-            { slug: 'h2-differentiation', label: 'Differentiation' },
+            { slug: 'h2-differentiation', label: 'Differentiation', syllabusYear: 2017, outcomeCodes: [{ code: '9758-DIFFERENTIATION', title: 'Differentiation' }], assessmentObjectives: [{ code: 'AO1', title: 'Knowledge and understanding' }, { code: 'AO2', title: 'Handling information and solving problems' }, { code: 'AO3', title: 'Mathematical modelling and problem solving' }] },
             { slug: 'h2-integration', label: 'Integration' },
             { slug: 'h2-probability', label: 'Probability' },
             { slug: 'h2-statistics', label: 'Statistics' },
@@ -213,7 +215,7 @@
           },
           {
             id: 'h2-biology', label: 'H2 Biology', subject: 'science', topics: [
-            { slug: 'h2-cell-bio', label: 'Cell biology' },
+            { slug: 'h2-cell-bio', label: 'Cell biology', syllabusYear: 2016, outcomeCodes: [{ code: '9648-CELL-BIO', title: 'Cell biology' }], assessmentObjectives: [{ code: 'AO1', title: 'Knowledge and understanding' }, { code: 'AO2', title: 'Handling information and solving problems' }, { code: 'AO3', title: 'Experimental skills and investigations' }] },
             { slug: 'h2-genetics', label: 'Genetics' },
             { slug: 'h2-energetics', label: 'Energetics' },
             { slug: 'h2-ecology', label: 'Ecology' }
@@ -334,5 +336,34 @@
     throw malformedError(id);
   }
 
-  return { SYLLABUS: SYLLABUS, resolveSyllabusTopic: resolveSyllabusTopic };
+  // topicFacts(id, data?) (issue #1221): the pack-metadata facts recorded
+  // for a syllabus topic -- syllabusYear, outcomeCodes and
+  // assessmentObjectives (code identifiers plus short titles, recorded as
+  // facts only; syllabus text is never reproduced). Resolves id exactly
+  // like resolveSyllabusTopic (throwing on unknown, malformed or ambiguous
+  // ids) and returns fresh copies, with null / empty defaults for topics
+  // that carry no recorded facts yet.
+  function topicFacts(id, data) {
+    var resolved = resolveSyllabusTopic(id, data);
+    var source = data === undefined ? SYLLABUS : data;
+    for (var i = 0; i < source.levels.length; i++) {
+      if (source.levels[i].id !== resolved.level) continue;
+      for (var j = 0; j < source.levels[i].tracks.length; j++) {
+        var track = source.levels[i].tracks[j];
+        if (track.id !== resolved.track) continue;
+        for (var k = 0; k < track.topics.length; k++) {
+          var topic = track.topics[k];
+          if (topic.slug !== resolved.topic) continue;
+          return {
+            syllabusYear: topic.syllabusYear != null ? topic.syllabusYear : null,
+            outcomeCodes: (topic.outcomeCodes || []).map(function (c) { return { code: c.code, title: c.title }; }),
+            assessmentObjectives: (topic.assessmentObjectives || []).map(function (c) { return { code: c.code, title: c.title }; })
+          };
+        }
+      }
+    } /* node:coverage ignore next */
+    return { syllabusYear: null, outcomeCodes: [], assessmentObjectives: [] };
+  }
+
+  return { SYLLABUS: SYLLABUS, resolveSyllabusTopic: resolveSyllabusTopic, topicFacts: topicFacts };
 });

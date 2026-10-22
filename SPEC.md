@@ -415,7 +415,7 @@ via `validateNotes`, `exitTicket` via `validateExitTicket`, `script`
 via `validateScript`, and `lessonPlan` via `validateLessonPlan`.
 
 Manifest shape: `manifest` has exactly the keys `slug`, `topic`,
-`level`, `subject`, `version`, `materials`.
+`level`, `subject`, `version`, `materials`, `metadata`.
 
 - `slug` is derived deterministically from the call's `topic`,
   `level`, and `subject` options, in that order. Each part is
@@ -430,6 +430,28 @@ Manifest shape: `manifest` has exactly the keys `slug`, `topic`,
 - `materials` is exactly the seven material keys in pack order:
   `animation`, `slides`, `worksheet`, `notes`, `exitTicket`,
   `script`, `lessonPlan`.
+- `metadata` is the pack's transparency block, emitted deterministically
+  by `generateLessonPack` (never authored by the LLM) and validated by
+  `validatePackMetadata` in `player/validate.js`. It has exactly the keys
+  `syllabusYear`, `outcomeCodes`, `assessmentObjectives`, `aiGenerated`,
+  `review`, `moderation`:
+  - `syllabusYear` is the year of the syllabus edition the topic maps
+    to, or `null` when the topic does not resolve against the syllabus
+    data.
+  - `outcomeCodes` and `assessmentObjectives` are arrays of
+    `{code, title}` entries: official MOE/SEAB code identifiers plus
+    short titles, recorded as facts only -- syllabus text is never
+    reproduced (Copyright Act 2021). Facts are recorded in the syllabus
+    data (`generator/syllabus.js`, mirrored in `web/syllabus.js` and
+    `SYLLABUS.md`); a topic with no recorded facts emits empty lists.
+  - `aiGenerated` is `{label, model, generatorVersion}`: the label
+    states the pack is AI-generated, `model` is the model identity
+    available to the call (`unknown` when none is supplied), and
+    `generatorVersion` is the generator (package) version.
+  - `review` is the human sign-off block, `null` until signed; when
+    signed it is `{reviewer, reviewDate}`.
+  - `moderation` is `{state}`, one of `unreviewed`, `in-moderation`,
+    `approved`, `rejected`; generated packs start `unreviewed`.
 
 Shared unpack: one shared unpack stage authors all seven materials, so
 the whole pack shares one set of transitions (with the topic's
