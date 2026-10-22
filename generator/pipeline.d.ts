@@ -202,7 +202,7 @@ export function generateLessonPlan(
   opts: GenerateLessonPlanOptions,
   deps: GenerateLessonPlanDeps
 ): Promise<LessonPlanDocument>;
-// generateLessonPack (issue #768): one shared unpack authors all six
+// generateLessonPack (issue #768): one shared unpack authors all seven
 // materials; packs are cached in memory by topic slug.
 export interface GenerateLessonPackOptions {
   topic: string;
@@ -227,6 +227,7 @@ export interface GenerateLessonPackDeps {
   validateNotes?: PipelineValidate;
   validateExitTicket?: PipelineValidate;
   validateScript?: PipelineValidate;
+  validateLessonPlan?: PipelineValidate;
   onProgress?: PipelineProgress;
 }
 export interface LessonPackManifest {
@@ -245,6 +246,7 @@ export interface LessonPackResult {
   notes: NotesDocument;
   exitTicket: ExitTicketDocument;
   script: ScriptDocument;
+  lessonPlan: LessonPlanDocument;
 }
 export function generateLessonPack(
   opts: GenerateLessonPackOptions,

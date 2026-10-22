@@ -401,18 +401,18 @@ positive number.
 ## Lesson pack spec
 
 A lesson pack is the bundle `generateLessonPack` in
-`generator/pipeline.js` returns for one topic: all six teaching
+`generator/pipeline.js` returns for one topic: all seven teaching
 materials for the topic, authored together so they agree with each
 other. `generateLessonPackForSyllabus` is the syllabus-keyed entry
 point to the same contract (see Cache below).
 
 Pack shape: an object with exactly the keys `manifest`, `animation`,
-`slides`, `worksheet`, `notes`, `exitTicket`, `script`. Each material
-value is a spec that validates clean against its own section of this
-document: `animation` via `validateSpec`, `slides` via
-`validateSlides`, `worksheet` via `validateWorksheet`, `notes` via
-`validateNotes`, `exitTicket` via `validateExitTicket`, and `script`
-via `validateScript`.
+`slides`, `worksheet`, `notes`, `exitTicket`, `script`, `lessonPlan`.
+Each material value is a spec that validates clean against its own
+section of this document: `animation` via `validateSpec`, `slides`
+via `validateSlides`, `worksheet` via `validateWorksheet`, `notes`
+via `validateNotes`, `exitTicket` via `validateExitTicket`, `script`
+via `validateScript`, and `lessonPlan` via `validateLessonPlan`.
 
 Manifest shape: `manifest` has exactly the keys `slug`, `topic`,
 `level`, `subject`, `version`, `materials`.
@@ -427,11 +427,11 @@ Manifest shape: `manifest` has exactly the keys `slug`, `topic`,
 - `version` is the generator (package) version in Node, and the
   string `unknown` in the browser, where no package version is
   available.
-- `materials` is exactly the six material keys in pack order:
+- `materials` is exactly the seven material keys in pack order:
   `animation`, `slides`, `worksheet`, `notes`, `exitTicket`,
-  `script`.
+  `script`, `lessonPlan`.
 
-Shared unpack: one shared unpack stage authors all six materials, so
+Shared unpack: one shared unpack stage authors all seven materials, so
 the whole pack shares one set of transitions (with the topic's
 misconceptions attached), one worked example, and one misconception
 set. Materials are authored sequentially in pack order.

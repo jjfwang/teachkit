@@ -1,0 +1,115 @@
+{
+  "title": "JC H2 differentiation: connected rates of change",
+  "level": "jc",
+  "subject": "math",
+  "topic": "h2-differentiation",
+  "durationMinutes": 50,
+  "objectives": [
+    {
+      "id": "o1",
+      "text": "Set up a connected-rates problem from a relating equation",
+      "successCriteria": [
+        "I can write the relation between the two quantities before differentiating",
+        "I can state which rate is given and which rate is wanted"
+      ],
+      "assessmentPoints": [
+        "Setup answers in the opening activity",
+        "First lines of the circle and ladder solutions"
+      ]
+    },
+    {
+      "id": "o2",
+      "text": "Solve expanding-circle rate problems via the chain rule in time",
+      "successCriteria": [
+        "I can differentiate A = pi r^2 with respect to time",
+        "I can substitute the given radius and rate to find dA/dt"
+      ],
+      "assessmentPoints": [
+        "Board solution steps in the circle activity",
+        "Toolkit recap answers"
+      ]
+    },
+    {
+      "id": "o3",
+      "text": "Solve sliding-ladder problems using Pythagoras as the relation",
+      "successCriteria": [
+        "I can use x^2 + y^2 = 25 as the relation for the ladder",
+        "I can find dy/dt when dx/dt and the position are given"
+      ],
+      "assessmentPoints": [
+        "Board solution steps in the ladder activity",
+        "Toolkit recap answers"
+      ]
+    },
+    {
+      "id": "o4",
+      "text": "Explain why dy/dx is not a fraction that can be cancelled",
+      "successCriteria": [
+        "I can say what the d-notation actually records",
+        "I can explain why cancelling the d symbols gives a wrong method"
+      ],
+      "assessmentPoints": [
+        "Responses when the trap is sprung",
+        "Toolkit recap explanation"
+      ]
+    }
+  ],
+  "activities": [
+    {
+      "title": "Connected rates: one quantity drags another",
+      "minutes": 6,
+      "objectiveIds": [
+        "o1"
+      ],
+      "scriptCue": "s1",
+      "grouping": "whole class"
+    },
+    {
+      "title": "The expanding circle",
+      "minutes": 12,
+      "objectiveIds": [
+        "o1",
+        "o2"
+      ],
+      "scriptCue": "s2",
+      "grouping": "individual",
+      "differentiation": {
+        "support": "Provide the chain-rule scaffold: dA/dt = dA/dr x dr/dt."
+      }
+    },
+    {
+      "title": "The sliding ladder",
+      "minutes": 12,
+      "objectiveIds": [
+        "o1",
+        "o3"
+      ],
+      "scriptCue": "s3",
+      "grouping": "pairs"
+    },
+    {
+      "title": "Spring the fraction trap",
+      "minutes": 8,
+      "objectiveIds": [
+        "o4"
+      ],
+      "scriptCue": "s4",
+      "grouping": "whole class"
+    },
+    {
+      "title": "Assemble the toolkit",
+      "minutes": 12,
+      "objectiveIds": [
+        "o1",
+        "o2",
+        "o3",
+        "o4"
+      ],
+      "scriptCue": "s5",
+      "grouping": "individual",
+      "resources": [
+        "worksheet"
+      ]
+    }
+  ]
+}

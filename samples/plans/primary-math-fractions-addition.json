@@ -1,0 +1,121 @@
+{
+  "title": "Adding fractions: 1/2 + 1/4",
+  "level": "primary",
+  "subject": "math",
+  "topic": "fractions",
+  "durationMinutes": 40,
+  "objectives": [
+    {
+      "id": "o1",
+      "text": "Convert a half into quarters to find equivalent fractions with a common unit",
+      "successCriteria": [
+        "I can show that 1/2 is the same amount as 2/4",
+        "I can say why the pieces must be the same size before I count them"
+      ],
+      "assessmentPoints": [
+        "Opening answers about how much pizza was eaten in total",
+        "Thumbs check after the animation: is 1/2 equal to 2/4?"
+      ]
+    },
+    {
+      "id": "o2",
+      "text": "Add fractions with related denominators by counting unit pieces",
+      "successCriteria": [
+        "I can work out 1/2 + 1/4 = 3/4 by counting quarters",
+        "I can write the working in one line: convert first, then count"
+      ],
+      "assessmentPoints": [
+        "Guided count-along answers in the third activity",
+        "Worksheet answers in the paired practice"
+      ]
+    },
+    {
+      "id": "o3",
+      "text": "Explain why the denominators are never added",
+      "successCriteria": [
+        "I can say what goes wrong if I add the bottom numbers",
+        "I can spot the trap answer 2/6 and explain why it is too small"
+      ],
+      "assessmentPoints": [
+        "Responses when the trap is sprung in the fourth activity",
+        "Exit recap answers naming the rule"
+      ]
+    }
+  ],
+  "activities": [
+    {
+      "title": "Surface prior ideas: how much pizza in total?",
+      "minutes": 5,
+      "objectiveIds": [
+        "o1"
+      ],
+      "scriptCue": "s1",
+      "grouping": "whole class",
+      "resources": [
+        "board"
+      ],
+      "differentiation": {
+        "support": "Sentence starter: I think the total is ... because ..."
+      }
+    },
+    {
+      "title": "Watch a quarter fit inside a half",
+      "minutes": 8,
+      "objectiveIds": [
+        "o1"
+      ],
+      "scriptCue": "s2",
+      "grouping": "pairs",
+      "resources": [
+        "fraction wall chart"
+      ],
+      "differentiation": {
+        "stretch": "Ask pairs how many eighths would fit inside a half, and why."
+      }
+    },
+    {
+      "title": "Count the quarters together",
+      "minutes": 7,
+      "objectiveIds": [
+        "o2"
+      ],
+      "scriptCue": "s3",
+      "grouping": "whole class"
+    },
+    {
+      "title": "Spring the add-the-denominators trap",
+      "minutes": 8,
+      "objectiveIds": [
+        "o3"
+      ],
+      "scriptCue": "s4",
+      "grouping": "pairs",
+      "differentiation": {
+        "support": "Compare the trap answer with the pizza picture side by side."
+      }
+    },
+    {
+      "title": "Paired worksheet practice",
+      "minutes": 8,
+      "objectiveIds": [
+        "o1",
+        "o2",
+        "o3"
+      ],
+      "scriptCue": "worksheet",
+      "grouping": "pairs",
+      "resources": [
+        "worksheet"
+      ]
+    },
+    {
+      "title": "Recap: convert first, then count",
+      "minutes": 4,
+      "objectiveIds": [
+        "o2",
+        "o3"
+      ],
+      "grouping": "whole class"
+    }
+  ]
+}

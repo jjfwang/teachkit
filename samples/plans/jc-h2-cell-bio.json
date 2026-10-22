@@ -1,0 +1,140 @@
+{
+  "title": "JC H2 biology — cell: ultrastructure and biomolecules",
+  "level": "jc",
+  "subject": "science",
+  "topic": "h2-cell-bio",
+  "durationMinutes": 60,
+  "objectives": [
+    {
+      "id": "o1",
+      "text": "Relate membrane and nucleus structure to function",
+      "successCriteria": [
+        "I can explain why phospholipid tails face inward in the fluid mosaic",
+        "I can trace an instruction from chromatin to mRNA leaving the nucleus"
+      ],
+      "assessmentPoints": [
+        "Opening questions in the membrane activity",
+        "Nucleus trace answers"
+      ]
+    },
+    {
+      "id": "o2",
+      "text": "Trace energy release in mitochondria and energy capture in chloroplasts",
+      "successCriteria": [
+        "I can follow glucose in and carbon dioxide out of the mitochondrion",
+        "I can say where in the chloroplast light energy is captured"
+      ],
+      "assessmentPoints": [
+        "Mitochondria walkthrough answers",
+        "Chloroplast check in the recap"
+      ]
+    },
+    {
+      "id": "o3",
+      "text": "Follow one protein along the RER, SER and Golgi export line",
+      "successCriteria": [
+        "I can order the organelles a secreted protein passes through",
+        "I can state what changes at the Golgi apparatus"
+      ],
+      "assessmentPoints": [
+        "Export-line ordering answers",
+        "Recap ordering check"
+      ]
+    },
+    {
+      "id": "o4",
+      "text": "Choose and interpret the four classic biomolecule tests",
+      "successCriteria": [
+        "I can pick the correct test for each biomolecule",
+        "I can state the positive result colour for each test"
+      ],
+      "assessmentPoints": [
+        "Test-selection answers in the tests activity",
+        "Recap test questions"
+      ]
+    },
+    {
+      "id": "o5",
+      "text": "Correct the misconception that plant cells lack mitochondria",
+      "successCriteria": [
+        "I can explain why plant cells need mitochondria as well as chloroplasts",
+        "I can name the process mitochondria carry out in plant cells"
+      ],
+      "assessmentPoints": [
+        "Responses when the trap is sprung"
+      ]
+    }
+  ],
+  "activities": [
+    {
+      "title": "Cell membrane: the fluid mosaic",
+      "minutes": 8,
+      "objectiveIds": [
+        "o1"
+      ],
+      "scriptCue": "s1",
+      "grouping": "whole class"
+    },
+    {
+      "title": "Nucleus: the control centre",
+      "minutes": 8,
+      "objectiveIds": [
+        "o1"
+      ],
+      "scriptCue": "s2",
+      "grouping": "pairs"
+    },
+    {
+      "title": "Mitochondria: releasing energy from food",
+      "minutes": 12,
+      "objectiveIds": [
+        "o2"
+      ],
+      "scriptCue": "s3",
+      "grouping": "whole class",
+      "differentiation": {
+        "stretch": "Ask why muscle cells carry far more mitochondria than skin cells."
+      }
+    },
+    {
+      "title": "The protein export line",
+      "minutes": 10,
+      "objectiveIds": [
+        "o3"
+      ],
+      "scriptCue": "s5",
+      "grouping": "pairs"
+    },
+    {
+      "title": "Tests for biomolecules",
+      "minutes": 10,
+      "objectiveIds": [
+        "o4"
+      ],
+      "scriptCue": "s6",
+      "grouping": "individual",
+      "resources": [
+        "worksheet"
+      ]
+    },
+    {
+      "title": "Spring the plant-cell mitochondria trap",
+      "minutes": 7,
+      "objectiveIds": [
+        "o5"
+      ],
+      "scriptCue": "s7",
+      "grouping": "whole class"
+    },
+    {
+      "title": "Recap the cell as a system",
+      "minutes": 5,
+      "objectiveIds": [
+        "o1",
+        "o2",
+        "o3"
+      ],
+      "grouping": "whole class"
+    }
+  ]
+}

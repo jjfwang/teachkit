@@ -1,0 +1,118 @@
+{
+  "title": "E-Math algebra: expansion, factorisation and changing the subject",
+  "level": "secondary",
+  "subject": "math",
+  "topic": "e-algebra",
+  "durationMinutes": 45,
+  "objectives": [
+    {
+      "id": "o1",
+      "text": "Expand brackets using the area model",
+      "successCriteria": [
+        "I can expand (x + 3)(x + 2) into three terms using the tiles",
+        "I can say where each term in the expansion comes from"
+      ],
+      "assessmentPoints": [
+        "Board answers during the area-model walkthrough",
+        "First drill set in the closing activity"
+      ]
+    },
+    {
+      "id": "o2",
+      "text": "Factorise by grouping",
+      "successCriteria": [
+        "I can group 2x + 6 + xy + 3y into pairs and take out the common factors",
+        "I can check a factorisation by expanding it back"
+      ],
+      "assessmentPoints": [
+        "Pair answers in the grouping activity",
+        "Closing drill factorisation answers"
+      ]
+    },
+    {
+      "id": "o3",
+      "text": "Change the subject of a formula by undoing operations in reverse",
+      "successCriteria": [
+        "I can make x the subject of y = 3x + 5",
+        "I can state the inverse operation at each step"
+      ],
+      "assessmentPoints": [
+        "Step-by-step class responses during the worked example",
+        "Closing drill rearrangement answers"
+      ]
+    },
+    {
+      "id": "o4",
+      "text": "Explain why (a + b)^2 has three terms, not two",
+      "successCriteria": [
+        "I can expand (a + b)^2 and name the middle term 2ab",
+        "I can explain why a^2 + b^2 is too small"
+      ],
+      "assessmentPoints": [
+        "Responses when the trap is sprung",
+        "Closing drill answers on the trap variant"
+      ]
+    }
+  ],
+  "activities": [
+    {
+      "title": "Expand with the area model",
+      "minutes": 10,
+      "objectiveIds": [
+        "o1"
+      ],
+      "scriptCue": "s1",
+      "grouping": "whole class",
+      "resources": [
+        "board"
+      ]
+    },
+    {
+      "title": "Factorise by grouping",
+      "minutes": 10,
+      "objectiveIds": [
+        "o2"
+      ],
+      "scriptCue": "s2",
+      "grouping": "pairs",
+      "differentiation": {
+        "support": "Colour-code the two pairs before taking out the common factors."
+      }
+    },
+    {
+      "title": "Change the subject",
+      "minutes": 10,
+      "objectiveIds": [
+        "o3"
+      ],
+      "scriptCue": "s3",
+      "grouping": "whole class"
+    },
+    {
+      "title": "Spring the (a + b)^2 trap",
+      "minutes": 8,
+      "objectiveIds": [
+        "o4"
+      ],
+      "scriptCue": "s4",
+      "grouping": "pairs",
+      "differentiation": {
+        "stretch": "Ask pairs to find the error in (x + 5)^2 = x^2 + 25 in one line."
+      }
+    },
+    {
+      "title": "Mixed drill and recap",
+      "minutes": 7,
+      "objectiveIds": [
+        "o1",
+        "o2",
+        "o3",
+        "o4"
+      ],
+      "grouping": "individual",
+      "resources": [
+        "worksheet"
+      ]
+    }
+  ]
+}
