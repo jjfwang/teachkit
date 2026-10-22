@@ -42,6 +42,8 @@
     "./script": "./generator/pipeline.js",
     "./lesson-plan-prompt": "./generator/build_lesson_plan_prompt.js",
     "./lesson-plan": "./generator/pipeline.js",
+    "./scaffold-prompt": "./generator/build_scaffold_prompt.js",
+    "./scaffolds": "./generator/pipeline.js",
     "./lesson-pack": "./generator/pipeline.js"
   },
   "files": [

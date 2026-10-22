@@ -426,6 +426,65 @@ to `durationMinutes`. The total is only evaluated when every activity
 has a positive numeric `minutes` value and `durationMinutes` is a
 positive number.
 
+## Scaffolds spec
+
+A scaffolds material is the fading support paired with the student
+notes for one topic: the language support a learner starts with,
+withdrawn in ordered sets so the learner ends up writing unaided.
+`validateScaffolds` in `player/validate.js` enforces this contract
+and returns a `string[]` of errors, exactly like `validateNotes`
+(empty = valid).
+
+Material fields:
+
+| field     | type          | notes                                  |
+|-----------|---------------|----------------------------------------|
+| `title`   | string        | required non-empty                     |
+| `level`   | `"primary"` \| `"secondary"` \| `"jc"` |                                        |
+| `subject` | string        | required non-empty — any school subject, not restricted to the syllabus-known list |
+| `topic`   | string        | required non-empty                     |
+| `sets`    | ScaffoldSet[] | required array of at least 2 sets      |
+
+The sets array is in strictly fading order: the first set's `level`
+is `full`, the last set's `level` is `minimal`, and set levels
+advance through `full`, `partial`, `minimal` with no level repeated
+and no level rising. Support is withdrawn across the sequence, never
+within one labelled sheet.
+
+Set fields:
+
+| field      | type           | notes |
+|------------|----------------|-------|
+| `level`    | `"full"` \| `"partial"` \| `"minimal"` | the set's support level |
+| `wordBank` | WordBankEntry[] | required non-empty array |
+| `starters` | string[]       | required non-empty array of non-empty sentence starters |
+| `frames`   | string[]       | required non-empty array of non-empty sentence frames, each containing at least one `___` gap marker |
+| `cloze`    | ClozeItem[]    | required non-empty array |
+
+WordBankEntry fields:
+
+| field   | type   | notes |
+|---------|--------|-------|
+| `term`  | string | required non-empty, unique within the set — drawn from the paired student notes definitions |
+| `gloss` | string | required non-empty — a short learner-facing meaning |
+
+ClozeItem fields:
+
+| field     | type     | notes |
+|-----------|----------|-------|
+| `text`    | string   | required non-empty — built from the paired notes mechanism steps and definitions, carrying one `___` gap marker per answer |
+| `answers` | string[] | required non-empty array, one answer per gap marker in order; every answer is a `term` of the same set's word bank |
+
+The gap marker is exactly `___` (three underscores) in frames and
+cloze text alike. Cloze answers are teacher-key only: they are part
+of the material's shape here, and any rendering of a scaffolds
+material must keep them out of the student-facing text.
+
+Fading counts: along the sets sequence, the counts of word-bank
+terms, starters, frames and cloze gaps (the total number of cloze
+answers in the set) must each be non-increasing — support never
+grows as it fades.
+
 ## Lesson pack spec
 
 A lesson pack is the bundle `generateLessonPack` in
