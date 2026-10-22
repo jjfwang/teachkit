@@ -568,6 +568,12 @@
       wrongTurn: 'A recursive call replaces the caller, so factorial(4) is finished and gone once factorial(3) starts.',
       why: 'The caller visibly pauses and the new call takes over the screen, so it reads as a replacement - the suspended caller is out of sight while the callee runs, and nothing seems to remain of it.',
       correctTurn: 'The caller is not replaced: it is suspended on the call stack, still holding its place and its pending multiplication, and it resumes exactly where it stopped when the callee returns - which is why the stack unwinds in reverse order, multiplying 1, 2, 6, 24.'
+    },
+    // Slice 1 (issue #1153): JC H2 Principles of Accounting 9593.
+    'absorption-marginal-costing': {
+      wrongTurn: 'Absorption and marginal costing always report the same profit, because fixed production overhead is a period cost under both methods.',
+      why: 'Fixed production overhead is a real production cost either way, so it is easy to assume both methods must charge it to the same period and the choice of method cannot change profit.',
+      correctTurn: 'The methods differ on timing: marginal costing expenses the full $12,000 of fixed production overhead in the period, but absorption costing attaches $12 per unit to inventory, so the 200 unsold units carry 200 x $12 = $2,400 of fixed overhead forward in closing inventory - which is why absorption profit of $9,400 exceeds marginal profit of $7,000 by exactly that $2,400 deferral.'
     }
   };
 

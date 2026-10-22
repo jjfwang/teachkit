@@ -211,6 +211,11 @@
             id: 'h2-computing', label: 'H2 Computing', subject: 'computing', topics: [
             { slug: 'recursion', label: 'Recursion' }
             ]
+          },
+          {
+            id: 'h2-principles-of-accounts', label: 'H2 Principles of Accounting', subject: 'principles-of-accounts', topics: [
+            { slug: 'absorption-marginal-costing', label: 'Absorption and marginal costing' }
+            ]
           }
         ]
       }
