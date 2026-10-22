@@ -485,6 +485,57 @@ terms, starters, frames and cloze gaps (the total number of cloze
 answers in the set) must each be non-increasing — support never
 grows as it fades.
 
+## Accessible variants
+
+Every printable renderer in `player/printable.js` (`renderWorksheet`,
+`renderWorksheetAnswerKey`, `renderExitTicket`,
+`renderExitTicketAnswerKey`, `renderNotes`, `renderScript`,
+`renderLessonPlan`, `renderScaffolds`, `renderScaffoldsAnswerKey`)
+accepts an optional second argument, an options object with three
+boolean fields: `enlargedPrint`, `unclutteredLayout` and
+`chunkInstructions`. A field is on only when it is exactly `true`.
+An absent options argument, `null`, a non-object value, an empty
+object and an all-false object all mean every variant is off, and
+unknown fields are ignored; passing options never throws. Every
+renderer renders the spec's `instructions` in its sheet header, and
+that header is the only place the variants take effect.
+
+- `enlargedPrint` appends the `pr-enlarged` class to the sheet's
+  outer `section` element, after the existing kind classes. No other
+  markup changes. In `player/printable.css`, `.pr-enlarged` renders
+  the title at 32px and the body text classes (prompt, instructions,
+  choice, answer, objective, mechanism step, say, term, meaning and
+  worked example) at roughly 25% larger than the default sizes
+  (16px to 20px, 15px to 19px) with `line-height: 1.7`.
+- `unclutteredLayout` appends the `pr-uncluttered` class to the
+  sheet's outer `section` element, after `pr-enlarged` when both are
+  on (the class order is fixed: `pr-enlarged` before
+  `pr-uncluttered`). No content is removed or hidden. In
+  `player/printable.css`, `.pr-uncluttered` removes the decorative
+  framing (the sheet renders with a white background, no border and
+  no border radius, and the notes trap box loses its border and
+  padding) and increases the spacing between questions and script
+  segments (margin-bottom 20px to 36px).
+- `chunkInstructions` changes only how the spec's `instructions`
+  render. Instead of the default single
+  `<p class="pr-instructions">` paragraph, the raw instruction text
+  is split into sentences and rendered as
+  `<ul class="pr-instructions pr-instructions-chunked">` with one
+  `<li class="pr-instruction">` per sentence, each sentence
+  HTML-escaped individually after splitting. A split happens at a
+  sentence terminator (`.`, `!` or `?`) followed by whitespace and an
+  uppercase letter or a digit, so decimals such as `1.5` and
+  abbreviations such as `e.g.` do not split, and a trailing sentence
+  with no terminator is a single chunk. When the spec has no
+  instructions (or an empty string), no instructions markup renders,
+  exactly as without the option.
+
+Byte-identity contract: with no options, or with every option off,
+each renderer returns output byte-identical to the un-optioned
+rendering. The class variants change nothing but the outer section's
+class attribute; stylesheets and consumers key the enlarged and
+uncluttered presentation off those classes.
+
 ## Lesson pack spec
 
 A lesson pack is the bundle `generateLessonPack` in

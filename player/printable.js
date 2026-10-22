@@ -112,15 +112,52 @@
       .replace(/>/g, '&gt;').replace(/"/g, '&quot;');
   }
 
-  function sheetHeader(spec, kindClass, kindLabel) {
+  // Accessible-variant options (SPEC.md "Accessible variants"): an
+  // optional second argument on every public renderer. Normalising
+  // never throws - undefined, null, a non-object, {} and an all-false
+  // object all normalise to all-off, unknown keys are ignored, and a
+  // flag is on only when it is exactly true.
+  function normalizeOptions(options) {
+    if (!options || typeof options !== 'object') {
+      return { enlargedPrint: false, unclutteredLayout: false, chunkInstructions: false };
+    }
+    return {
+      enlargedPrint: options.enlargedPrint === true,
+      unclutteredLayout: options.unclutteredLayout === true,
+      chunkInstructions: options.chunkInstructions === true
+    };
+  }
+
+  function variantClasses(opts) {
+    var suffix = '';
+    if (opts.enlargedPrint) suffix += ' pr-enlarged';
+    if (opts.unclutteredLayout) suffix += ' pr-uncluttered';
+    return suffix;
+  }
+
+  function sheetHeader(spec, kindClass, kindLabel, opts) {
     var parts = [];
-    parts.push('<section class="' + kindClass + '">');
+    parts.push('<section class="' + kindClass + variantClasses(opts) + '">');
     parts.push('<h1 class="pr-title">' + escapeHtml(spec.title) + '</h1>');
     parts.push('<p class="pr-meta">' + escapeHtml(spec.subject) + ' · ' +
       escapeHtml(spec.topic) + ' · ' + escapeHtml(spec.level) + '</p>');
     parts.push('<p class="pr-kind">' + kindLabel + '</p>');
     if (typeof spec.instructions === 'string' && spec.instructions.length > 0) {
-      parts.push('<p class="pr-instructions">' + escapeHtml(spec.instructions) + '</p>');
+      if (opts.chunkInstructions) {
+        // Split the raw text into sentences: a terminator (. ! ?)
+        // followed by whitespace and an uppercase letter or digit, so
+        // decimals (1.5) and abbreviations (e.g.) never split, and a
+        // trailing sentence with no terminator stays one chunk. Each
+        // sentence is escaped individually after splitting.
+        var sentences = spec.instructions.split(/(?<=[.!?])\s+(?=[A-Z0-9])/);
+        parts.push('<ul class="pr-instructions pr-instructions-chunked">');
+        sentences.forEach(function (sentence) {
+          parts.push('<li class="pr-instruction">' + escapeHtml(sentence) + '</li>');
+        });
+        parts.push('</ul>');
+      } else {
+        parts.push('<p class="pr-instructions">' + escapeHtml(spec.instructions) + '</p>');
+      }
     }
     return parts;
   }
@@ -139,8 +176,8 @@
   // Student sheet: prompts and choice texts only. This function must
   // never read choices[].correct, answer, explanation, feedback, or
   // misconception - see the header comment.
-  function renderStudentSheet(spec, kindClass, kindLabel, showTier) {
-    var parts = sheetHeader(spec, kindClass, kindLabel);
+  function renderStudentSheet(spec, kindClass, kindLabel, showTier, opts) {
+    var parts = sheetHeader(spec, kindClass, kindLabel, opts);
     parts.push('<ol class="pr-questions">');
     spec.questions.forEach(function (q) {
       parts.push('<li class="pr-question">');
@@ -168,8 +205,8 @@
 
   // Teacher answer key: the correct/expected answer per question, plus
   // the explanation, feedback, and misconception where present.
-  function renderAnswerKey(spec, kindClass, kindLabel, showTier) {
-    var parts = sheetHeader(spec, kindClass, kindLabel);
+  function renderAnswerKey(spec, kindClass, kindLabel, showTier, opts) {
+    var parts = sheetHeader(spec, kindClass, kindLabel, opts);
     parts.push('<ol class="pr-questions">');
     spec.questions.forEach(function (q) {
       parts.push('<li class="pr-question">');
@@ -227,31 +264,31 @@
     return parts.join('\n');
   }
 
-  function renderWorksheet(spec) {
+  function renderWorksheet(spec, options) {
     assertValidWorksheet(spec);
-    return renderStudentSheet(spec, 'pr-sheet pr-student pr-worksheet', 'Worksheet', true);
+    return renderStudentSheet(spec, 'pr-sheet pr-student pr-worksheet', 'Worksheet', true, normalizeOptions(options));
   }
 
-  function renderWorksheetAnswerKey(spec) {
+  function renderWorksheetAnswerKey(spec, options) {
     assertValidWorksheet(spec);
-    return renderAnswerKey(spec, 'pr-sheet pr-teacher pr-answer-key pr-worksheet', 'Worksheet answer key', true);
+    return renderAnswerKey(spec, 'pr-sheet pr-teacher pr-answer-key pr-worksheet', 'Worksheet answer key', true, normalizeOptions(options));
   }
 
-  function renderExitTicket(spec) {
+  function renderExitTicket(spec, options) {
     assertValidExitTicket(spec);
-    return renderStudentSheet(spec, 'pr-sheet pr-student pr-exit-ticket', 'Exit ticket', false);
+    return renderStudentSheet(spec, 'pr-sheet pr-student pr-exit-ticket', 'Exit ticket', false, normalizeOptions(options));
   }
 
-  function renderExitTicketAnswerKey(spec) {
+  function renderExitTicketAnswerKey(spec, options) {
     assertValidExitTicket(spec);
-    return renderAnswerKey(spec, 'pr-sheet pr-teacher pr-answer-key pr-exit-ticket', 'Exit ticket answer key', false);
+    return renderAnswerKey(spec, 'pr-sheet pr-teacher pr-answer-key pr-exit-ticket', 'Exit ticket answer key', false, normalizeOptions(options));
   }
 
   // Student notes: objectives, definitions, mechanism steps, a worked
   // example, and the trap (misconception plus why it is wrong).
-  function renderNotes(spec) {
+  function renderNotes(spec, options) {
     assertValidNotes(spec);
-    var parts = sheetHeader(spec, 'pr-sheet pr-notes', 'Student notes');
+    var parts = sheetHeader(spec, 'pr-sheet pr-notes', 'Student notes', normalizeOptions(options));
     parts.push('<h2 class="pr-notes-heading">Objectives</h2>');
     parts.push('<ul class="pr-objectives">');
     spec.objectives.forEach(function (objective) {
@@ -285,9 +322,9 @@
   // Teacher script: timed segments in order, with the total lesson
   // time summed from the segment minutes. Cue, questions, and watchFor
   // render only when present on a segment.
-  function renderScript(spec) {
+  function renderScript(spec, options) {
     assertValidScript(spec);
-    var parts = sheetHeader(spec, 'pr-sheet pr-script', 'Teacher script');
+    var parts = sheetHeader(spec, 'pr-sheet pr-script', 'Teacher script', normalizeOptions(options));
     var totalMinutes = spec.segments.reduce(function (sum, segment) {
       return sum + segment.minutes;
     }, 0);
@@ -321,9 +358,9 @@
   // success criteria and assessment points, and every activity in
   // order. Optional activity fields (scriptCue, grouping, resources,
   // differentiation) render only when present on the activity.
-  function renderLessonPlan(spec) {
+  function renderLessonPlan(spec, options) {
     assertValidLessonPlan(spec);
-    var parts = sheetHeader(spec, 'pr-sheet pr-lesson-plan', 'Lesson plan');
+    var parts = sheetHeader(spec, 'pr-sheet pr-lesson-plan', 'Lesson plan', normalizeOptions(options));
     parts.push('<p class="pr-total-minutes">Total: ' + spec.durationMinutes + ' minutes</p>');
     parts.push('<h2 class="pr-plan-heading">Objectives</h2>');
     parts.push('<ul class="pr-plan-objectives">');
@@ -389,9 +426,9 @@
   // the sentence frames as-is, and the cloze text as-is. This
   // function must never read cloze[].answers - see the header
   // comment - so no cloze answer can leak into a student sheet.
-  function renderScaffolds(spec) {
+  function renderScaffolds(spec, options) {
     assertValidScaffolds(spec);
-    var parts = sheetHeader(spec, 'pr-sheet pr-student pr-scaffolds', 'Scaffolds');
+    var parts = sheetHeader(spec, 'pr-sheet pr-student pr-scaffolds', 'Scaffolds', normalizeOptions(options));
     spec.sets.forEach(function (set) {
       parts.push('<section class="pr-scaffold-set">');
       parts.push('<h2 class="pr-set-level">' + SCAFFOLD_LEVEL_LABELS[set.level] + '</h2>');
@@ -429,9 +466,9 @@
   // Teacher scaffolds answer key: for each set in fading order, the
   // level label and every cloze item with its answers - the answers
   // the student sheet above never reads.
-  function renderScaffoldsAnswerKey(spec) {
+  function renderScaffoldsAnswerKey(spec, options) {
     assertValidScaffolds(spec);
-    var parts = sheetHeader(spec, 'pr-sheet pr-teacher pr-answer-key pr-scaffolds', 'Scaffolds answer key');
+    var parts = sheetHeader(spec, 'pr-sheet pr-teacher pr-answer-key pr-scaffolds', 'Scaffolds answer key', normalizeOptions(options));
     spec.sets.forEach(function (set) {
       parts.push('<section class="pr-scaffold-set">');
       parts.push('<h2 class="pr-set-level">' + SCAFFOLD_LEVEL_LABELS[set.level] + '</h2>');

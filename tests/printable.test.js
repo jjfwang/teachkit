@@ -438,6 +438,16 @@ describe('printable.css print rules', () => {
       assert.ok(css.includes('.' + cls), 'css covers .' + cls);
     }
   });
+
+  test('accessible variant classes are styled (issue #1236)', () => {
+    assert.ok(/\.pr-enlarged \.pr-title\s*\{\s*font-size:\s*32px/.test(css), 'enlarged title at 32px');
+    assert.ok(/\.pr-enlarged \.pr-prompt\s*\{\s*font-size:\s*20px/.test(css), 'enlarged prompt at 20px');
+    assert.ok(css.includes('.pr-enlarged .pr-instructions'), 'enlarged covers instructions');
+    assert.ok(css.includes('.pr-enlarged .pr-worked-example'), 'enlarged covers worked example');
+    assert.ok(/\.pr-uncluttered\s*\{\s*background:\s*#fff;\s*border:\s*none/.test(css), 'uncluttered drops sheet framing');
+    assert.ok(/\.pr-uncluttered \.pr-trap\s*\{\s*border:\s*none/.test(css), 'uncluttered drops trap border');
+    assert.ok(/\.pr-uncluttered \.pr-question,\s*\.pr-uncluttered \.pr-segment\s*\{\s*margin-bottom:\s*36px/.test(css), 'uncluttered widens block spacing');
+  });
 });
 
 describe('lesson plan renderer (issue #1219)', () => {
@@ -687,5 +697,307 @@ describe('scaffolds renderer (issue #1233)', () => {
     } finally {
       delete globalThis.AnimathValidate;
     }
+  });
+});
+
+describe('accessible variants (issue #1236)', () => {
+  const plan = JSON.parse(fs.readFileSync(path.join(ROOT, 'samples/plans/primary-science-water-cycle.json'), 'utf8'));
+  const scaffoldsGold = JSON.parse(fs.readFileSync(path.join(ROOT, 'samples/scaffolds/primary-science-water-cycle.json'), 'utf8'));
+  const ALL_FALSE = { enlargedPrint: false, unclutteredLayout: false, chunkInstructions: false };
+  const variantWorksheet = {
+    title: 'Variant Worksheet',
+    level: 'primary', subject: 'math', topic: 'fractions',
+    instructions: 'Read the question. Choose one answer. Show your working!',
+    questions: [
+      { id: 'q1', kind: 'multiple-choice', prompt: 'What is half of 4?', choices: [{ text: '2', correct: true }, { text: '3' }] },
+    ],
+  };
+
+  const PIN_STUDENT_DEFAULT = [
+    "<section class=\"pr-sheet pr-student pr-worksheet\">",
+    "<h1 class=\"pr-title\">Variant Worksheet</h1>",
+    "<p class=\"pr-meta\">math · fractions · primary</p>",
+    "<p class=\"pr-kind\">Worksheet</p>",
+    "<p class=\"pr-instructions\">Read the question. Choose one answer. Show your working!</p>",
+    "<ol class=\"pr-questions\">",
+    "<li class=\"pr-question\">",
+    "<p class=\"pr-prompt\">What is half of 4?</p>",
+    "<ul class=\"pr-choices\">",
+    "<li class=\"pr-choice\">2</li>",
+    "<li class=\"pr-choice\">3</li>",
+    "</ul>",
+    "</li>",
+    "</ol>",
+    "</section>"
+  ].join('\n');
+  const PIN_KEY_DEFAULT = [
+    "<section class=\"pr-sheet pr-teacher pr-answer-key pr-worksheet\">",
+    "<h1 class=\"pr-title\">Variant Worksheet</h1>",
+    "<p class=\"pr-meta\">math · fractions · primary</p>",
+    "<p class=\"pr-kind\">Worksheet answer key</p>",
+    "<p class=\"pr-instructions\">Read the question. Choose one answer. Show your working!</p>",
+    "<ol class=\"pr-questions\">",
+    "<li class=\"pr-question\">",
+    "<p class=\"pr-prompt\">What is half of 4?</p>",
+    "<p class=\"pr-answer\">Answer: 2</p>",
+    "</li>",
+    "</ol>",
+    "</section>"
+  ].join('\n');
+  const PIN_STUDENT_ENLARGED = [
+    "<section class=\"pr-sheet pr-student pr-worksheet pr-enlarged\">",
+    "<h1 class=\"pr-title\">Variant Worksheet</h1>",
+    "<p class=\"pr-meta\">math · fractions · primary</p>",
+    "<p class=\"pr-kind\">Worksheet</p>",
+    "<p class=\"pr-instructions\">Read the question. Choose one answer. Show your working!</p>",
+    "<ol class=\"pr-questions\">",
+    "<li class=\"pr-question\">",
+    "<p class=\"pr-prompt\">What is half of 4?</p>",
+    "<ul class=\"pr-choices\">",
+    "<li class=\"pr-choice\">2</li>",
+    "<li class=\"pr-choice\">3</li>",
+    "</ul>",
+    "</li>",
+    "</ol>",
+    "</section>"
+  ].join('\n');
+  const PIN_STUDENT_UNCLUTTERED = [
+    "<section class=\"pr-sheet pr-student pr-worksheet pr-uncluttered\">",
+    "<h1 class=\"pr-title\">Variant Worksheet</h1>",
+    "<p class=\"pr-meta\">math · fractions · primary</p>",
+    "<p class=\"pr-kind\">Worksheet</p>",
+    "<p class=\"pr-instructions\">Read the question. Choose one answer. Show your working!</p>",
+    "<ol class=\"pr-questions\">",
+    "<li class=\"pr-question\">",
+    "<p class=\"pr-prompt\">What is half of 4?</p>",
+    "<ul class=\"pr-choices\">",
+    "<li class=\"pr-choice\">2</li>",
+    "<li class=\"pr-choice\">3</li>",
+    "</ul>",
+    "</li>",
+    "</ol>",
+    "</section>"
+  ].join('\n');
+  const PIN_STUDENT_CHUNKED = [
+    "<section class=\"pr-sheet pr-student pr-worksheet\">",
+    "<h1 class=\"pr-title\">Variant Worksheet</h1>",
+    "<p class=\"pr-meta\">math · fractions · primary</p>",
+    "<p class=\"pr-kind\">Worksheet</p>",
+    "<ul class=\"pr-instructions pr-instructions-chunked\">",
+    "<li class=\"pr-instruction\">Read the question.</li>",
+    "<li class=\"pr-instruction\">Choose one answer.</li>",
+    "<li class=\"pr-instruction\">Show your working!</li>",
+    "</ul>",
+    "<ol class=\"pr-questions\">",
+    "<li class=\"pr-question\">",
+    "<p class=\"pr-prompt\">What is half of 4?</p>",
+    "<ul class=\"pr-choices\">",
+    "<li class=\"pr-choice\">2</li>",
+    "<li class=\"pr-choice\">3</li>",
+    "</ul>",
+    "</li>",
+    "</ol>",
+    "</section>"
+  ].join('\n');
+  const PIN_STUDENT_COMBINED = [
+    "<section class=\"pr-sheet pr-student pr-worksheet pr-enlarged pr-uncluttered\">",
+    "<h1 class=\"pr-title\">Variant Worksheet</h1>",
+    "<p class=\"pr-meta\">math · fractions · primary</p>",
+    "<p class=\"pr-kind\">Worksheet</p>",
+    "<ul class=\"pr-instructions pr-instructions-chunked\">",
+    "<li class=\"pr-instruction\">Read the question.</li>",
+    "<li class=\"pr-instruction\">Choose one answer.</li>",
+    "<li class=\"pr-instruction\">Show your working!</li>",
+    "</ul>",
+    "<ol class=\"pr-questions\">",
+    "<li class=\"pr-question\">",
+    "<p class=\"pr-prompt\">What is half of 4?</p>",
+    "<ul class=\"pr-choices\">",
+    "<li class=\"pr-choice\">2</li>",
+    "<li class=\"pr-choice\">3</li>",
+    "</ul>",
+    "</li>",
+    "</ol>",
+    "</section>"
+  ].join('\n');
+
+  function worksheetWithInstructions(instructions) {
+    return {
+      title: 'Chunk Worksheet', level: 'primary', subject: 'math', topic: 'fractions',
+      instructions: instructions,
+      questions: [{ id: 'q1', kind: 'short-answer', prompt: 'What is half of 4?', answer: '2' }],
+    };
+  }
+
+  function chunkCount(html) {
+    return (html.match(/<li class="pr-instruction">/g) || []).length;
+  }
+
+  test('default rendering is byte-identical with empty, all-false, null and undefined options on every renderer', () => {
+    const cases = [
+      [printable.renderWorksheet, worksheet],
+      [printable.renderWorksheetAnswerKey, worksheet],
+      [printable.renderExitTicket, ticket],
+      [printable.renderExitTicketAnswerKey, ticket],
+      [printable.renderNotes, notes],
+      [printable.renderScript, script],
+      [printable.renderLessonPlan, plan],
+      [printable.renderScaffolds, scaffoldsGold],
+      [printable.renderScaffoldsAnswerKey, scaffoldsGold],
+    ];
+    for (const [fn, spec] of cases) {
+      assert.equal(fn(spec, {}), fn(spec));
+      assert.equal(fn(spec, ALL_FALSE), fn(spec));
+      assert.equal(fn(spec, null), fn(spec));
+      assert.equal(fn(spec, undefined), fn(spec));
+    }
+  });
+
+  test('full-string pins captured from pre-change code: synthetic worksheet with no options', () => {
+    assert.equal(printable.renderWorksheet(variantWorksheet), PIN_STUDENT_DEFAULT);
+    assert.equal(printable.renderWorksheetAnswerKey(variantWorksheet), PIN_KEY_DEFAULT);
+  });
+
+  test('full-string pins: each variant alone and all three combined on the student sheet', () => {
+    assert.equal(printable.renderWorksheet(variantWorksheet, { enlargedPrint: true }), PIN_STUDENT_ENLARGED);
+    assert.equal(printable.renderWorksheet(variantWorksheet, { unclutteredLayout: true }), PIN_STUDENT_UNCLUTTERED);
+    assert.equal(printable.renderWorksheet(variantWorksheet, { chunkInstructions: true }), PIN_STUDENT_CHUNKED);
+    assert.equal(printable.renderWorksheet(variantWorksheet, { enlargedPrint: true, unclutteredLayout: true, chunkInstructions: true }), PIN_STUDENT_COMBINED);
+  });
+
+  test('enlarged and uncluttered outputs equal the default with only the section class replaced', () => {
+    const base = printable.renderWorksheet(variantWorksheet);
+    assert.equal(
+      printable.renderWorksheet(variantWorksheet, { enlargedPrint: true }),
+      base.replace('pr-sheet pr-student pr-worksheet', 'pr-sheet pr-student pr-worksheet pr-enlarged'));
+    assert.equal(
+      printable.renderWorksheet(variantWorksheet, { unclutteredLayout: true }),
+      base.replace('pr-sheet pr-student pr-worksheet', 'pr-sheet pr-student pr-worksheet pr-uncluttered'));
+    const both = printable.renderWorksheet(variantWorksheet, { enlargedPrint: true, unclutteredLayout: true });
+    assert.ok(both.startsWith('<section class="pr-sheet pr-student pr-worksheet pr-enlarged pr-uncluttered">'),
+      'fixed class order: pr-enlarged before pr-uncluttered');
+    assert.equal(both,
+      base.replace('pr-sheet pr-student pr-worksheet', 'pr-sheet pr-student pr-worksheet pr-enlarged pr-uncluttered'));
+  });
+
+  test('each flag works independently on the answer key and chunking adds no class', () => {
+    const key = printable.renderWorksheetAnswerKey(variantWorksheet, { enlargedPrint: true });
+    assert.ok(key.includes('<section class="pr-sheet pr-teacher pr-answer-key pr-worksheet pr-enlarged">'));
+    assert.ok(!key.includes('pr-uncluttered'));
+    const keyUncluttered = printable.renderWorksheetAnswerKey(variantWorksheet, { unclutteredLayout: true });
+    assert.ok(keyUncluttered.includes('<section class="pr-sheet pr-teacher pr-answer-key pr-worksheet pr-uncluttered">'));
+    assert.ok(!keyUncluttered.includes('pr-enlarged'));
+    const keyChunked = printable.renderWorksheetAnswerKey(variantWorksheet, { chunkInstructions: true });
+    assert.ok(keyChunked.includes('<section class="pr-sheet pr-teacher pr-answer-key pr-worksheet">'));
+    assert.ok(keyChunked.includes('<ul class="pr-instructions pr-instructions-chunked">'));
+    assert.equal(chunkCount(keyChunked), 3);
+    assert.ok(!keyChunked.includes('<p class="pr-instructions">'));
+  });
+
+  test('chunking splits on question and exclamation terminators and keeps the punctuation', () => {
+    const html = printable.renderWorksheet(
+      worksheetWithInstructions('Are you sure? Yes you are! Good.'), { chunkInstructions: true });
+    assert.equal(chunkCount(html), 3);
+    assert.ok(html.includes('<li class="pr-instruction">Are you sure?</li>'));
+    assert.ok(html.includes('<li class="pr-instruction">Yes you are!</li>'));
+    assert.ok(html.includes('<li class="pr-instruction">Good.</li>'));
+  });
+
+  test('chunking a single sentence and a sentence with no terminator each give one chunk', () => {
+    const single = printable.renderWorksheet(worksheetWithInstructions('Just do it.'), { chunkInstructions: true });
+    assert.equal(chunkCount(single), 1);
+    assert.ok(single.includes('<li class="pr-instruction">Just do it.</li>'));
+    const bare = printable.renderWorksheet(worksheetWithInstructions('Just do it'), { chunkInstructions: true });
+    assert.equal(chunkCount(bare), 1);
+    assert.ok(bare.includes('<li class="pr-instruction">Just do it</li>'));
+  });
+
+  test('chunking does not split decimals or abbreviations but splits before a digit', () => {
+    const decimal = printable.renderWorksheet(
+      worksheetWithInstructions('Use 1.5 litres. Then stir it well.'), { chunkInstructions: true });
+    assert.equal(chunkCount(decimal), 2);
+    assert.ok(decimal.includes('<li class="pr-instruction">Use 1.5 litres.</li>'));
+    const abbrev = printable.renderWorksheet(
+      worksheetWithInstructions('Pick a fruit, e.g. an apple. Eat it now.'), { chunkInstructions: true });
+    assert.equal(chunkCount(abbrev), 2);
+    assert.ok(abbrev.includes('<li class="pr-instruction">Pick a fruit, e.g. an apple.</li>'));
+    const digit = printable.renderWorksheet(
+      worksheetWithInstructions('Count the blocks. 3 are red.'), { chunkInstructions: true });
+    assert.equal(chunkCount(digit), 2);
+    assert.ok(digit.includes('<li class="pr-instruction">3 are red.</li>'));
+  });
+
+  test('chunking with no instructions is a no-op and empty instructions render nothing', () => {
+    const noInstr = worksheetWithInstructions('x');
+    delete noInstr.instructions;
+    assert.equal(printable.renderWorksheet(noInstr, { chunkInstructions: true }), printable.renderWorksheet(noInstr));
+    assert.ok(!printable.renderWorksheet(noInstr, { chunkInstructions: true }).includes('pr-instructions'));
+    const empty = printable.renderWorksheet(worksheetWithInstructions(''), { chunkInstructions: true });
+    assert.ok(!empty.includes('pr-instructions'));
+  });
+
+  test('hostile HTML inside a chunked sentence is escaped per sentence', () => {
+    const html = printable.renderWorksheet(
+      worksheetWithInstructions('Use <b>bold</b> & "care". Then stop.'), { chunkInstructions: true });
+    assert.ok(!html.includes('<b>bold</b>'));
+    assert.ok(html.includes('<li class="pr-instruction">Use &lt;b&gt;bold&lt;/b&gt; &amp; &quot;care&quot;.</li>'));
+    assert.ok(html.includes('<li class="pr-instruction">Then stop.</li>'));
+  });
+
+  test('truthy non-true flags are off, unknown keys are ignored and a non-object argument is all-off', () => {
+    const base = printable.renderWorksheet(variantWorksheet);
+    assert.equal(printable.renderWorksheet(variantWorksheet, { enlargedPrint: 1 }), base);
+    assert.equal(printable.renderWorksheet(variantWorksheet, { enlargedPrint: 'yes' }), base);
+    assert.equal(printable.renderWorksheet(variantWorksheet, { chunkInstructions: 1 }), base);
+    assert.equal(printable.renderWorksheet(variantWorksheet, { bogus: true }), base);
+    assert.equal(printable.renderWorksheet(variantWorksheet, 'yes'), base);
+    assert.equal(printable.renderWorksheet(variantWorksheet, 42), base);
+  });
+
+  test('options apply on notes, script, lesson plan and scaffolds renders', () => {
+    const notesHtml = printable.renderNotes(notes, { enlargedPrint: true });
+    assert.ok(notesHtml.includes('<section class="pr-sheet pr-notes pr-enlarged">'));
+    const scriptHtml = printable.renderScript(script, { unclutteredLayout: true });
+    assert.ok(scriptHtml.includes('<section class="pr-sheet pr-script pr-uncluttered">'));
+    const planHtml = printable.renderLessonPlan(plan, { enlargedPrint: true, unclutteredLayout: true });
+    assert.ok(planHtml.includes('<section class="pr-sheet pr-lesson-plan pr-enlarged pr-uncluttered">'));
+    const exitHtml = printable.renderExitTicket(ticket, { enlargedPrint: true });
+    assert.ok(exitHtml.includes('<section class="pr-sheet pr-student pr-exit-ticket pr-enlarged">'));
+  });
+
+  test('scaffolds variant classes land on the outer section only, never on the inner sets', () => {
+    for (const [fn, kindClass] of [
+      [printable.renderScaffolds, 'pr-sheet pr-student pr-scaffolds'],
+      [printable.renderScaffoldsAnswerKey, 'pr-sheet pr-teacher pr-answer-key pr-scaffolds'],
+    ]) {
+      const html = fn(scaffoldsGold, { enlargedPrint: true, unclutteredLayout: true });
+      assert.ok(html.includes('<section class="' + kindClass + ' pr-enlarged pr-uncluttered">'), 'outer section carries the variants');
+      const innerCount = (html.match(/<section class="pr-scaffold-set">/g) || []).length;
+      assert.equal(innerCount, scaffoldsGold.sets.length, 'every inner set section is unclassed');
+      assert.ok(!html.includes('pr-scaffold-set pr-'), 'no inner set carries a variant class');
+    }
+  });
+
+  test('chunking applies in the notes header', () => {
+    const chunkNotes = {
+      title: 'Chunk Notes', level: 'primary', subject: 'math', topic: 'fractions',
+      instructions: 'Read these notes first. Keep them open during practice!',
+      objectives: ['Add fractions'],
+      definitions: [{ term: 'Half', meaning: 'One of two equal parts' }],
+      mechanismSteps: ['Find a common denominator'],
+      workedExample: '1/2 + 1/2 = 1',
+      trap: { misconception: 'Add the denominators', explanation: 'Denominators name the part size' },
+    };
+    const html = printable.renderNotes(chunkNotes, { chunkInstructions: true });
+    assert.equal(chunkCount(html), 2);
+    assert.ok(html.includes('<li class="pr-instruction">Read these notes first.</li>'));
+    assert.ok(html.includes('<li class="pr-instruction">Keep them open during practice!</li>'));
+    assert.ok(!html.includes('<p class="pr-instructions">'));
+  });
+
+  test('validation still throws on an invalid spec when options are passed', () => {
+    assert.throws(() => printable.renderWorksheet({}, { enlargedPrint: true }), /invalid worksheet:/);
+    assert.throws(() => printable.renderNotes(null, { chunkInstructions: true }), /invalid notes:/);
+    assert.throws(() => printable.renderScaffolds({}, { unclutteredLayout: true }), /invalid scaffolds:/);
   });
 });

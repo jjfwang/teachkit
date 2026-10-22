@@ -171,6 +171,43 @@
   line-height: 1.6;
 }
 
+/* Accessible variants (SPEC.md "Accessible variants", issue #1236):
+ * enlarged print raises the title and body text sizes with looser
+ * leading; the uncluttered layout drops the decorative framing and
+ * widens the spacing between blocks. Content is never removed. */
+.pr-enlarged .pr-title {
+  font-size: 32px;
+}
+.pr-enlarged .pr-prompt {
+  font-size: 20px;
+  line-height: 1.7;
+}
+.pr-enlarged .pr-instructions,
+.pr-enlarged .pr-choice,
+.pr-enlarged .pr-answer,
+.pr-enlarged .pr-objective,
+.pr-enlarged .pr-mechanism-step,
+.pr-enlarged .pr-say,
+.pr-enlarged .pr-term,
+.pr-enlarged .pr-meaning,
+.pr-enlarged .pr-worked-example {
+  font-size: 19px;
+  line-height: 1.7;
+}
+.pr-uncluttered {
+  background: #fff;
+  border: none;
+  border-radius: 0;
+}
+.pr-uncluttered .pr-trap {
+  border: none;
+  padding: 0;
+}
+.pr-uncluttered .pr-question,
+.pr-uncluttered .pr-segment {
+  margin-bottom: 36px;
+}
+
 /* Print: screen-only controls never print, and the teacher answer key
  * always starts on a fresh page after the student sheet. */
 @media print {
