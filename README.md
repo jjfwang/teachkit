@@ -167,6 +167,7 @@ and for Secondary Business Studies break-even,
 and for Secondary Exercise and Sports Science energy systems
 and for JC H2 Geography drainage basin
 and for JC H2 Computing recursion
+and for JC H2 Principles of Accounting absorption and marginal costing
 (animation, slides, worksheet, notes, exit ticket, and script), each
 under its own pack manifest header.
 
