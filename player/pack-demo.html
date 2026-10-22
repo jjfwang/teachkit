@@ -1529,6 +1529,23 @@
     <li><code>notes</code> student notes</li>
     <li><code>script</code> teacher script</li>
   </ul>
+<header class="pack-manifest" id="recursion-jc-manifest">
+  <h1>Lesson pack: JC H2 Computing recursion: Recursion: factorial(4) — the Call Stack Grows, Then Unwinds</h1>
+  <dl>
+    <dt>Slug</dt><dd><code>recursion-jc-computing</code></dd>
+    <dt>Level</dt><dd>jc</dd>
+    <dt>Subject</dt><dd>computing</dd>
+    <dt>Topic</dt><dd><code>recursion</code></dd>
+  </dl>
+  <p>topic recursion · level jc · subject computing · deck jc-computing-recursion</p>
+  <ul class="pack-materials">
+    <li><code>animation</code></li>
+    <li><code>slides</code></li>
+    <li><code>worksheet</code></li>
+    <li><code>exitTicket</code> exit ticket</li>
+    <li><code>notes</code> student notes</li>
+    <li><code>script</code> teacher script</li>
+  </ul>
 </header>
 <section class="pack-section" id="animation-section">
   <h2>Animation</h2>
@@ -2607,6 +2624,18 @@
 <section class="pack-section" id="drainage-basin-jc-printables">
   <h2>JC H2 Geography drainage-basin printables</h2>
   <div id="drainage-basin-jc-printables-stage"></div>
+<section class="pack-section" id="recursion-jc-animation">
+  <h2>JC H2 Computing recursion animation</h2>
+  <div id="recursion-jc-stage"></div>
+  <div id="recursion-jc-captions"></div>
+</section>
+<section class="pack-section" id="recursion-jc-slides">
+  <h2>JC H2 Computing recursion slides</h2>
+  <div id="recursion-jc-slides-stage"></div>
+</section>
+<section class="pack-section" id="recursion-jc-printables">
+  <h2>JC H2 Computing recursion printables</h2>
+  <div id="recursion-jc-printables-stage"></div>
 </section>
 <div id="err"></div>
 <script src="validate.js"></script>
@@ -2715,8 +2744,9 @@ var doubleEntrySecondaryPrintStage = document.querySelector('#double-entry-secon
 var breakEvenSecondaryPrintStage = document.querySelector('#break-even-secondary-printables-stage .pr-stage') || document.querySelector('#break-even-secondary-printables-stage');
 var energySystemsSecondaryPrintStage = document.querySelector('#energy-systems-secondary-printables-stage .pr-stage') || document.querySelector('#energy-systems-secondary-printables-stage');
 var drainageBasinJcPrintStage = document.querySelector('#drainage-basin-jc-printables-stage .pr-stage') || document.querySelector('#drainage-basin-jc-printables-stage');
+var recursionJcPrintStage = document.querySelector('#recursion-jc-printables-stage .pr-stage') || document.querySelector('#recursion-jc-printables-stage');
     var keys = [];
-    [printStage, fractionsPrintStage, wavesPrintStage, complexPrintStage, trigPrintStage, thermalPrintStage, photosynthesisPrintStage, erosionPrintStage, chemMolePrintStage, differentiationPrintStage, integrationPrintStage, binomialPrintStage, kinematicsPrintStage, quadraticPrintStage, trigonometryAPrintStage, vectorsPrintStage, functionsGraphsPrintStage, sequencesPrintStage, differentiationJcPrintStage, integrationJcPrintStage, probabilityJcPrintStage, statisticsJcPrintStage, mechanicsJcPrintStage, emJcPrintStage, quantumJcPrintStage, physicalJcPrintStage, inorganicJcPrintStage, organicJcPrintStage, cellBioJcPrintStage, geneticsJcPrintStage, energeticsJcPrintStage, ecologyJcPrintStage, wholeNumbersPrimaryPrintStage, decimalsPrimaryPrintStage, percentagePrimaryPrintStage, ratioPrimaryPrintStage, rateSpeedPrimaryPrintStage, algebraIntroPrimaryPrintStage, geometryAnglesPrimaryPrintStage, areaPerimeterPrimaryPrintStage, volumePrimaryPrintStage, dataGraphsPrimaryPrintStage, modelMethodPrimaryPrintStage, humanBodySystemsPrimaryPrintStage, plantSystemsPrimaryPrintStage, lifeCyclesPrimaryPrintStage, energyFormsPrimaryPrintStage, photosynthesisPrimaryPrintStage, forcesMagnetsPrimaryPrintStage, adaptationsPrimaryPrintStage, plateTectonicsPrimaryPrintStage, weatherClimatePrimaryPrintStage, eNumbersSecondaryPrintStage, eAlgebraSecondaryPrintStage, eFunctionsGraphsSecondaryPrintStage, eGeometrySecondaryPrintStage, eMensurationSecondaryPrintStage, eStatisticsSecondaryPrintStage, eProbabilitySecondaryPrintStage, physKinematicsSecondaryPrintStage, physForcesSecondaryPrintStage, physEnergySecondaryPrintStage, physElectricitySecondaryPrintStage, chemAtomicSecondaryPrintStage, chemBondingSecondaryPrintStage, chemAcidsSecondaryPrintStage, bioCellsSecondaryPrintStage, bioTransportSecondaryPrintStage, bioReproductionSecondaryPrintStage, bioEcologySecondaryPrintStage, bioNutritionDigestionSecondaryPrintStage, tectonicsSubductionSecondaryPrintStage, demandSupplyEquilibriumSecondaryPrintStage, logicGatesSecondaryPrintStage, multiplierProcessJcPrintStage, logisticGrowthJcPrintStage, maclaurinSeriesJcPrintStage, sensorDividerSecondaryPrintStage, vacuumFormingSecondaryPrintStage, proteinDenaturationSecondaryPrintStage, doubleEntrySecondaryPrintStage, breakEvenSecondaryPrintStage, energySystemsSecondaryPrintStage, drainageBasinJcPrintStage].forEach(function (stage) {
+    [printStage, fractionsPrintStage, wavesPrintStage, complexPrintStage, trigPrintStage, thermalPrintStage, photosynthesisPrintStage, erosionPrintStage, chemMolePrintStage, differentiationPrintStage, integrationPrintStage, binomialPrintStage, kinematicsPrintStage, quadraticPrintStage, trigonometryAPrintStage, vectorsPrintStage, functionsGraphsPrintStage, sequencesPrintStage, differentiationJcPrintStage, integrationJcPrintStage, probabilityJcPrintStage, statisticsJcPrintStage, mechanicsJcPrintStage, emJcPrintStage, quantumJcPrintStage, physicalJcPrintStage, inorganicJcPrintStage, organicJcPrintStage, cellBioJcPrintStage, geneticsJcPrintStage, energeticsJcPrintStage, ecologyJcPrintStage, wholeNumbersPrimaryPrintStage, decimalsPrimaryPrintStage, percentagePrimaryPrintStage, ratioPrimaryPrintStage, rateSpeedPrimaryPrintStage, algebraIntroPrimaryPrintStage, geometryAnglesPrimaryPrintStage, areaPerimeterPrimaryPrintStage, volumePrimaryPrintStage, dataGraphsPrimaryPrintStage, modelMethodPrimaryPrintStage, humanBodySystemsPrimaryPrintStage, plantSystemsPrimaryPrintStage, lifeCyclesPrimaryPrintStage, energyFormsPrimaryPrintStage, photosynthesisPrimaryPrintStage, forcesMagnetsPrimaryPrintStage, adaptationsPrimaryPrintStage, plateTectonicsPrimaryPrintStage, weatherClimatePrimaryPrintStage, eNumbersSecondaryPrintStage, eAlgebraSecondaryPrintStage, eFunctionsGraphsSecondaryPrintStage, eGeometrySecondaryPrintStage, eMensurationSecondaryPrintStage, eStatisticsSecondaryPrintStage, eProbabilitySecondaryPrintStage, physKinematicsSecondaryPrintStage, physForcesSecondaryPrintStage, physEnergySecondaryPrintStage, physElectricitySecondaryPrintStage, chemAtomicSecondaryPrintStage, chemBondingSecondaryPrintStage, chemAcidsSecondaryPrintStage, bioCellsSecondaryPrintStage, bioTransportSecondaryPrintStage, bioReproductionSecondaryPrintStage, bioEcologySecondaryPrintStage, bioNutritionDigestionSecondaryPrintStage, tectonicsSubductionSecondaryPrintStage, demandSupplyEquilibriumSecondaryPrintStage, logicGatesSecondaryPrintStage, multiplierProcessJcPrintStage, logisticGrowthJcPrintStage, maclaurinSeriesJcPrintStage, sensorDividerSecondaryPrintStage, vacuumFormingSecondaryPrintStage, proteinDenaturationSecondaryPrintStage, doubleEntrySecondaryPrintStage, breakEvenSecondaryPrintStage, energySystemsSecondaryPrintStage, drainageBasinJcPrintStage, recursionJcPrintStage].forEach(function (stage) {
       if (stage) {
         keys = keys.concat(Array.prototype.slice.call(stage.querySelectorAll('.pr-teacher')));
       }
@@ -8785,6 +8815,80 @@ var drainageBasinJcPrintStage = document.querySelector('#drainage-basin-jc-print
     ].join('');
   }).catch(function (err) {
     showError('JC H2 Geography drainage-basin pack failed to load: ' + err.message);
+  });
+})();
+
+</script>
+<script>
+(function () {
+  var presenter = document.getElementById('recursion-jc-slides-stage');
+  var recursionJcPrint = document.getElementById('recursion-jc-printables-stage');
+  var errBox = document.getElementById('err');
+  var recursionJcAnimUrl = '../samples/jc-computing-recursion.json';
+  var recursionJcDeckUrl = '../samples/decks/jc-computing-recursion.json';
+  var recursionJcWorksheetUrl = '../samples/worksheets/jc-computing-recursion.json';
+  var recursionJcTicketUrl = '../samples/tickets/jc-computing-recursion.json';
+  var recursionJcNotesUrl = '../samples/notes/jc-computing-recursion.json';
+  var recursionJcScriptUrl = '../samples/scripts/jc-computing-recursion.json';
+
+  function showError(msg) {
+    errBox.textContent = String(msg);
+  }
+
+  Promise.all([
+    fetch(recursionJcAnimUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + recursionJcAnimUrl);
+      return r.json();
+    }),
+    fetch(recursionJcDeckUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + recursionJcDeckUrl);
+      return r.json();
+    }),
+    fetch(recursionJcWorksheetUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + recursionJcWorksheetUrl);
+      return r.json();
+    }),
+    fetch(recursionJcTicketUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + recursionJcTicketUrl);
+      return r.json();
+    }),
+    fetch(recursionJcNotesUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + recursionJcNotesUrl);
+      return r.json();
+    }),
+    fetch(recursionJcScriptUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + recursionJcScriptUrl);
+      return r.json();
+    })
+  ]).then(function (pack) {
+    var anim = pack[0];
+    var deck = pack[1];
+    var worksheet = pack[2];
+    var ticket = pack[3];
+    var notes = pack[4];
+    var script = pack[5];
+    var problems = AnimathValidate.validateSpec(anim)
+      .concat(AnimathValidate.validateSlides(deck))
+      .concat(AnimathValidate.validateWorksheet(worksheet))
+      .concat(AnimathValidate.validateExitTicket(ticket))
+      .concat(AnimathValidate.validateNotes(notes))
+      .concat(AnimathValidate.validateScript(script));
+    if (problems.length) {
+      showError('JC H2 Computing recursion pack failed validation:\n' + problems.join('\n'));
+      return;
+    }
+    AnimathPlayer.mount(document.getElementById('recursion-jc-stage'), anim, { autoplay: false });
+    AnimathSlidesPresenter.attachPresenter(document, presenter, deck, { animSpec: anim });
+    recursionJcPrint.innerHTML = [
+      AnimathPrintable.renderWorksheet(worksheet),
+      AnimathPrintable.renderWorksheetAnswerKey(worksheet),
+      AnimathPrintable.renderExitTicket(ticket),
+      AnimathPrintable.renderExitTicketAnswerKey(ticket),
+      AnimathPrintable.renderNotes(notes),
+      AnimathPrintable.renderScript(script)
+    ].join('');
+  }).catch(function (err) {
+    showError('JC H2 Computing recursion pack failed to load: ' + err.message);
   });
 })();
 
