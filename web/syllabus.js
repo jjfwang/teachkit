@@ -39,6 +39,11 @@ window.ANIMATH_SYLLABUS = {
             { slug: 'plate-tectonics', label: 'Plate tectonics' },
             { slug: 'weather-climate', label: 'Weather & climate' }
           ]
+        },
+        {
+          id: 'p-social-studies', label: 'Social Studies', subject: 'social-studies', topics: [
+            { slug: 'landscape-change', label: 'Landscape change' }
+          ]
         }
       ]
     },

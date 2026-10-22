@@ -42,6 +42,12 @@ MOE syllabus bands: Primary (PSLE), Secondary (O/N-level), Junior College
 | `plate-tectonics` | Plate tectonics: plates moving and colliding |
 | `weather-climate` | Weather and climate: heat, wind and rain |
 
+## Primary — Social Studies (PSLE)
+
+| slug | topic |
+|---|---|
+| `landscape-change` | Singapore's landscape changing over time (MOE Primary Social Studies, Understanding Singapore in the Past and Present): one coastal site at the Singapore River mouth transforming stage by stage - a fishing village of huts and small boats becomes a trading port with godowns, a jetty and larger ships as trade grows, then a modern city with tall buildings, roads and container ships - buildings rise, vessel types change and the population bar climbs at every stage |
+
 ## Secondary — Mathematics
 
 E-Math:
