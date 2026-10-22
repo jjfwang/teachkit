@@ -536,6 +536,25 @@ rendering. The class variants change nothing but the outer section's
 class attribute; stylesheets and consumers key the enlarged and
 uncluttered presentation off those classes.
 
+Materials are scored by `scoreMaterial` in
+`generator/materials-rubric.js`, which returns the animation-rubric
+shape (`score`, `maxScore`, `dimensions`, plus `kind` and `stats`)
+measured over student-facing text only: worksheet and exit-ticket
+instructions and question prompts, notes titles, body sections,
+definitions and mechanism steps, scaffold word banks, starters,
+frames and cloze text, and deck slide titles, headings, body text,
+bullets and lines. Teacher-only text is never measured — per-question
+answer fields, `markScheme` and `workedSolution`, deck speaker notes,
+and teacher-script segments (including `watchFor`) are never read, so
+a teacher script extracts no student text at all. The reading-age
+dimension uses the Flesch Reading Ease formula
+206.835 − 1.015×(words/sentences) − 84.6×(syllables/words), with
+syllables counted by the documented approximate rule in the module
+header (vowel runs with silent-e and -ed/-es adjustments and a final
+'ia' hiatus), and a grade level of approximately (110 − ease)/10
+clamped to 3–18 and rounded to 1 decimal place. The reading age is a
+heuristic signal for a human reviewer only; it is never a gate.
+
 ## Lesson pack spec
 
 A lesson pack is the bundle `generateLessonPack` in
