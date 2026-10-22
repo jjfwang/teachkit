@@ -580,6 +580,12 @@
       wrongTurn: 'Reorder only when stock runs out, because buffer stock is spare stock that should never be touched and deliveries arrive straight away.',
       why: 'Buffer stock looks like spare stock sitting idle, and ordering looks like something you do when you have run out - so reordering earlier, while hundreds of units remain, feels wasteful.',
       correctTurn: 'Reorder when falling stock reaches the reorder level, not when it runs out: deliveries take a lead time to arrive, during which stock keeps falling, and the reorder level is set at buffer stock plus lead-time usage precisely so stock bottoms out at the buffer - never below it - just as the delivery lands.'
+    },
+    // Slice 1 (issue #1163): JC H2 History 9174.
+    'oil-shock': {
+      wrongTurn: 'The 1973 oil crisis pushed prices up because governments printed extra money to pay for dearer oil.',
+      why: 'Prices did rise across the economy after 1973, and governments do print money - so it is easy to read the general inflation as money-printing that happened to coincide with dearer oil.',
+      correctTurn: 'The price rises started on the supply side, not the money side: the OPEC embargo cut the flow of oil, the world oil price jumped from about $3 to about $12 a barrel, and because oil and transport are inputs to almost everything, that one rise was passed on stage by stage into transport costs, factory costs and shop prices while households cut spending back.'
     }
   };
 

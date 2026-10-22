@@ -1,0 +1,845 @@
+{
+  "animath": "0.1",
+  "title": "The 1973 Oil Shock: One Cut, One Price Jump",
+  "level": "jc",
+  "subject": "history",
+  "topic": "oil-shock",
+  "kind": "concept",
+  "canvas": {
+    "width": 960,
+    "height": 540
+  },
+  "scenes": [
+    {
+      "id": "s1",
+      "caption": "Before the shock: oil flows freely at about $3 a barrel",
+      "narration": "In the early 1970s crude oil flows steadily from OPEC oil fields to importing countries along one supply route. Tankers and pipelines move it without interruption, and the world price sits at about $3 a barrel.",
+      "duration_ms": 8000,
+      "steps": [
+        {
+          "at_ms": 0,
+          "do": "show",
+          "shape": {
+            "id": "title",
+            "kind": "text",
+            "x": 480,
+            "y": 34,
+            "text": "The 1973 Oil Shock: One Cut, One Price Jump",
+            "size": 20,
+            "color": "#1a1a1a",
+            "explain": "Title: the 1973 oil shock, one supply cut and one price jump.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 200,
+          "do": "show",
+          "shape": {
+            "id": "source",
+            "kind": "rect",
+            "x": 110,
+            "y": 190,
+            "fill": "#2e86ab",
+            "explain": "The source: OPEC oil fields, drawn as a store the supply flow leaves from.",
+            "w": 150,
+            "h": 80
+          }
+        },
+        {
+          "at_ms": 350,
+          "do": "show",
+          "shape": {
+            "id": "importer",
+            "kind": "rect",
+            "x": 700,
+            "y": 190,
+            "fill": "#27ae60",
+            "explain": "The destination: an importing country that receives the oil flow.",
+            "w": 150,
+            "h": 80
+          }
+        },
+        {
+          "at_ms": 500,
+          "do": "show",
+          "shape": {
+            "id": "pipe",
+            "kind": "line",
+            "x1": 260,
+            "y1": 230,
+            "x2": 700,
+            "y2": 230,
+            "stroke": "#1a1a1a",
+            "strokeWidth": 4,
+            "explain": "The supply route: one flow line carrying oil from the fields to the importer."
+          }
+        },
+        {
+          "at_ms": 650,
+          "do": "show",
+          "shape": {
+            "id": "srcLabel",
+            "kind": "text",
+            "x": 185,
+            "y": 170,
+            "text": "OPEC oil fields",
+            "size": 14,
+            "color": "#1a1a1a",
+            "explain": "Label: the OPEC oil fields at the start of the supply flow.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 800,
+          "do": "show",
+          "shape": {
+            "id": "impLabel",
+            "kind": "text",
+            "x": 775,
+            "y": 170,
+            "text": "Importing country",
+            "size": 14,
+            "color": "#1a1a1a",
+            "explain": "Label: the importing country at the end of the supply flow.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 1000,
+          "do": "show",
+          "shape": {
+            "id": "drop1",
+            "kind": "circle",
+            "cx": 285,
+            "cy": 230,
+            "r": 11,
+            "fill": "#f39c12",
+            "explain": "A unit of oil setting out along the supply route."
+          }
+        },
+        {
+          "at_ms": 1300,
+          "do": "move",
+          "target": "drop1",
+          "to": {
+            "cx": 460,
+            "cy": 230
+          },
+          "dur_ms": 2200
+        },
+        {
+          "at_ms": 3600,
+          "do": "show",
+          "shape": {
+            "id": "drop2",
+            "kind": "circle",
+            "cx": 285,
+            "cy": 230,
+            "r": 11,
+            "fill": "#f39c12",
+            "explain": "A second unit of oil following the first along the open route."
+          }
+        },
+        {
+          "at_ms": 3900,
+          "do": "move",
+          "target": "drop2",
+          "to": {
+            "cx": 660,
+            "cy": 230
+          },
+          "dur_ms": 2200
+        },
+        {
+          "at_ms": 6300,
+          "do": "show",
+          "shape": {
+            "id": "priceTag",
+            "kind": "text",
+            "x": 480,
+            "y": 330,
+            "text": "World price: about $3 a barrel",
+            "size": 16,
+            "color": "#1a1a1a",
+            "explain": "Label: with the flow open, the world oil price is about $3 a barrel.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 6800,
+          "do": "show",
+          "shape": {
+            "id": "flowLabel",
+            "kind": "text",
+            "x": 480,
+            "y": 290,
+            "text": "Oil flows without interruption",
+            "size": 13,
+            "color": "#1a1a1a",
+            "explain": "Label: the supply flow runs without interruption before the embargo.",
+            "align": "middle"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "caption": "October 1973: the embargo closes the valve on the flow",
+      "narration": "In October 1973 OPEC embargoes oil exports to selected importing countries. The valve on this supply flow closes: the oil stops moving, and with far less oil reaching the market the world price jumps from about $3 to about $12 a barrel - roughly four times higher.",
+      "duration_ms": 10000,
+      "steps": [
+        {
+          "at_ms": 0,
+          "do": "show",
+          "shape": {
+            "id": "title2",
+            "kind": "text",
+            "x": 480,
+            "y": 34,
+            "text": "October 1973: The Embargo Closes the Valve",
+            "size": 20,
+            "color": "#1a1a1a",
+            "explain": "Title: October 1973, the embargo closes the valve on the supply flow.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 200,
+          "do": "show",
+          "shape": {
+            "id": "source2",
+            "kind": "rect",
+            "x": 110,
+            "y": 190,
+            "fill": "#2e86ab",
+            "explain": "The OPEC oil fields again, still holding oil that can no longer leave.",
+            "w": 150,
+            "h": 80
+          }
+        },
+        {
+          "at_ms": 350,
+          "do": "show",
+          "shape": {
+            "id": "importer2",
+            "kind": "rect",
+            "x": 700,
+            "y": 190,
+            "fill": "#27ae60",
+            "explain": "The importing country again, now cut off from this supply flow.",
+            "w": 150,
+            "h": 80
+          }
+        },
+        {
+          "at_ms": 500,
+          "do": "show",
+          "shape": {
+            "id": "pipe2",
+            "kind": "line",
+            "x1": 260,
+            "y1": 230,
+            "x2": 700,
+            "y2": 230,
+            "stroke": "#1a1a1a",
+            "strokeWidth": 4,
+            "explain": "The same supply route, about to be closed at the valve."
+          }
+        },
+        {
+          "at_ms": 650,
+          "do": "show",
+          "shape": {
+            "id": "srcLabel2",
+            "kind": "text",
+            "x": 185,
+            "y": 170,
+            "text": "OPEC oil fields",
+            "size": 14,
+            "color": "#1a1a1a",
+            "explain": "Label: the OPEC oil fields.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 800,
+          "do": "show",
+          "shape": {
+            "id": "impLabel2",
+            "kind": "text",
+            "x": 775,
+            "y": 170,
+            "text": "Importing country",
+            "size": 14,
+            "color": "#1a1a1a",
+            "explain": "Label: the importing country.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 1000,
+          "do": "show",
+          "shape": {
+            "id": "dropS",
+            "kind": "circle",
+            "cx": 285,
+            "cy": 230,
+            "r": 11,
+            "fill": "#f39c12",
+            "explain": "A unit of oil setting out just as the embargo lands."
+          }
+        },
+        {
+          "at_ms": 1200,
+          "do": "move",
+          "target": "dropS",
+          "to": {
+            "cx": 395,
+            "cy": 230
+          },
+          "dur_ms": 1500
+        },
+        {
+          "at_ms": 2800,
+          "do": "show",
+          "shape": {
+            "id": "valve",
+            "kind": "rect",
+            "x": 420,
+            "y": 200,
+            "fill": "#c0392b",
+            "explain": "The closed valve: a solid block across the supply route, the embargo made visible.",
+            "w": 60,
+            "h": 60
+          }
+        },
+        {
+          "at_ms": 3000,
+          "do": "show",
+          "shape": {
+            "id": "valveLabel",
+            "kind": "text",
+            "x": 450,
+            "y": 290,
+            "text": "Valve closed: embargo",
+            "size": 14,
+            "color": "#c0392b",
+            "explain": "Label: the valve is closed - the embargo stops this flow.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 3600,
+          "do": "show",
+          "shape": {
+            "id": "barLow",
+            "kind": "rect",
+            "x": 640,
+            "y": 360,
+            "fill": "#f39c12",
+            "explain": "The price bar at the old price: a short bar for about $3 a barrel.",
+            "w": 70,
+            "h": 40
+          }
+        },
+        {
+          "at_ms": 3800,
+          "do": "show",
+          "shape": {
+            "id": "barLowLabel",
+            "kind": "text",
+            "x": 560,
+            "y": 385,
+            "text": "$3",
+            "size": 16,
+            "color": "#1a1a1a",
+            "explain": "Label: the old price, about $3 a barrel.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 4600,
+          "do": "hide",
+          "target": "barLow"
+        },
+        {
+          "at_ms": 4800,
+          "do": "show",
+          "shape": {
+            "id": "barHigh",
+            "kind": "rect",
+            "x": 640,
+            "y": 240,
+            "fill": "#c0392b",
+            "explain": "The price bar at the new price: a tall bar for about $12 a barrel, four times the old height.",
+            "w": 70,
+            "h": 160
+          }
+        },
+        {
+          "at_ms": 5000,
+          "do": "show",
+          "shape": {
+            "id": "barHighLabel",
+            "kind": "text",
+            "x": 560,
+            "y": 265,
+            "text": "$12",
+            "size": 16,
+            "color": "#c0392b",
+            "explain": "Label: the new price, about $12 a barrel.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 5600,
+          "do": "show",
+          "shape": {
+            "id": "priceJump",
+            "kind": "text",
+            "x": 300,
+            "y": 330,
+            "text": "Price jumps: $3 to $12 a barrel",
+            "size": 16,
+            "color": "#1a1a1a",
+            "explain": "Label: the world oil price jumps from about $3 to about $12 a barrel.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 6400,
+          "do": "show",
+          "shape": {
+            "id": "noFlow",
+            "kind": "text",
+            "x": 300,
+            "y": 370,
+            "text": "No oil crosses the closed valve",
+            "size": 13,
+            "color": "#1a1a1a",
+            "explain": "Label: with the valve closed, no oil crosses to the importer.",
+            "align": "middle"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "caption": "Stage by stage: dearer oil becomes dearer everything",
+      "narration": "Nothing else has changed - but oil is an input to almost everything. Dearer fuel raises transport costs first; dearer transport and energy raise factory production costs next; and factories pass those costs on, so shop prices rise last. One jump in the oil price becomes a chain of higher prices.",
+      "duration_ms": 11000,
+      "steps": [
+        {
+          "at_ms": 0,
+          "do": "show",
+          "shape": {
+            "id": "title3",
+            "kind": "text",
+            "x": 480,
+            "y": 34,
+            "text": "The Rise Ripples: Transport, Factories, Shops",
+            "size": 20,
+            "color": "#1a1a1a",
+            "explain": "Title: the oil price rise ripples into transport, factory and shop prices.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 200,
+          "do": "show",
+          "shape": {
+            "id": "chainLabel",
+            "kind": "text",
+            "x": 480,
+            "y": 80,
+            "text": "One rise, passed on stage by stage",
+            "size": 13,
+            "color": "#1a1a1a",
+            "explain": "Label: the one oil price rise is passed on stage by stage.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 400,
+          "do": "show",
+          "shape": {
+            "id": "marker",
+            "kind": "circle",
+            "cx": 150,
+            "cy": 120,
+            "r": 10,
+            "fill": "#c0392b",
+            "explain": "A marker carrying the price rise along the chain from stage to stage."
+          }
+        },
+        {
+          "at_ms": 700,
+          "do": "move",
+          "target": "marker",
+          "to": {
+            "cx": 770,
+            "cy": 120
+          },
+          "dur_ms": 5200
+        },
+        {
+          "at_ms": 900,
+          "do": "show",
+          "shape": {
+            "id": "tLabel",
+            "kind": "text",
+            "x": 195,
+            "y": 250,
+            "text": "Transport costs",
+            "size": 14,
+            "color": "#1a1a1a",
+            "explain": "Label: stage one, transport costs - fuel is a direct input to every lorry, ship and aircraft.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 1100,
+          "do": "show",
+          "shape": {
+            "id": "tLow",
+            "kind": "rect",
+            "x": 150,
+            "y": 380,
+            "fill": "#2e86ab",
+            "explain": "Transport costs before the shock: a short bar.",
+            "w": 90,
+            "h": 40
+          }
+        },
+        {
+          "at_ms": 2400,
+          "do": "hide",
+          "target": "tLow"
+        },
+        {
+          "at_ms": 2600,
+          "do": "show",
+          "shape": {
+            "id": "tHigh",
+            "kind": "rect",
+            "x": 150,
+            "y": 300,
+            "fill": "#c0392b",
+            "explain": "Transport costs after the shock: the bar grows as dearer fuel is charged on.",
+            "w": 90,
+            "h": 120
+          }
+        },
+        {
+          "at_ms": 2900,
+          "do": "show",
+          "shape": {
+            "id": "fLabel",
+            "kind": "text",
+            "x": 480,
+            "y": 250,
+            "text": "Factory costs",
+            "size": 14,
+            "color": "#1a1a1a",
+            "explain": "Label: stage two, factory production costs - energy and transport feed into making goods.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 3100,
+          "do": "show",
+          "shape": {
+            "id": "fLow",
+            "kind": "rect",
+            "x": 435,
+            "y": 380,
+            "fill": "#2e86ab",
+            "explain": "Factory costs before the shock: a short bar.",
+            "w": 90,
+            "h": 40
+          }
+        },
+        {
+          "at_ms": 4400,
+          "do": "hide",
+          "target": "fLow"
+        },
+        {
+          "at_ms": 4600,
+          "do": "show",
+          "shape": {
+            "id": "fHigh",
+            "kind": "rect",
+            "x": 435,
+            "y": 310,
+            "fill": "#c0392b",
+            "explain": "Factory costs after the shock: the bar grows as dearer energy and transport feed in.",
+            "w": 90,
+            "h": 110
+          }
+        },
+        {
+          "at_ms": 4900,
+          "do": "show",
+          "shape": {
+            "id": "sLabel",
+            "kind": "text",
+            "x": 765,
+            "y": 250,
+            "text": "Shop prices",
+            "size": 14,
+            "color": "#1a1a1a",
+            "explain": "Label: stage three, shop prices - factories pass their higher costs on to the goods in shops.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 5100,
+          "do": "show",
+          "shape": {
+            "id": "sLow",
+            "kind": "rect",
+            "x": 720,
+            "y": 380,
+            "fill": "#2e86ab",
+            "explain": "Shop prices before the shock: a short bar.",
+            "w": 90,
+            "h": 40
+          }
+        },
+        {
+          "at_ms": 6400,
+          "do": "hide",
+          "target": "sLow"
+        },
+        {
+          "at_ms": 6600,
+          "do": "show",
+          "shape": {
+            "id": "sHigh",
+            "kind": "rect",
+            "x": 720,
+            "y": 320,
+            "fill": "#c0392b",
+            "explain": "Shop prices after the shock: the bar grows as higher factory costs reach the shelf.",
+            "w": 90,
+            "h": 100
+          }
+        },
+        {
+          "at_ms": 7200,
+          "do": "show",
+          "shape": {
+            "id": "tName",
+            "kind": "text",
+            "x": 195,
+            "y": 450,
+            "text": "Transport",
+            "size": 13,
+            "color": "#1a1a1a",
+            "explain": "Label: the first bar is transport costs.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 7400,
+          "do": "show",
+          "shape": {
+            "id": "fName",
+            "kind": "text",
+            "x": 480,
+            "y": 450,
+            "text": "Factories",
+            "size": 13,
+            "color": "#1a1a1a",
+            "explain": "Label: the second bar is factory costs.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 7600,
+          "do": "show",
+          "shape": {
+            "id": "sName",
+            "kind": "text",
+            "x": 765,
+            "y": 450,
+            "text": "Shops",
+            "size": 13,
+            "color": "#1a1a1a",
+            "explain": "Label: the third bar is shop prices.",
+            "align": "middle"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "caption": "Spending falls back: households buy less",
+      "narration": "Faced with higher prices for fuel, transport and goods, households cut back. The demand bar falls: spending shrinks, and importing economies slow. The whole chain - one embargo, one price jump, rising costs stage by stage, then falling demand - is the 1973 oil shock.",
+      "duration_ms": 10000,
+      "steps": [
+        {
+          "at_ms": 0,
+          "do": "show",
+          "shape": {
+            "id": "title4",
+            "kind": "text",
+            "x": 480,
+            "y": 34,
+            "text": "Spending Falls Back: Demand Shrinks",
+            "size": 20,
+            "color": "#1a1a1a",
+            "explain": "Title: spending falls back and demand shrinks.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 200,
+          "do": "show",
+          "shape": {
+            "id": "dLabel",
+            "kind": "text",
+            "x": 260,
+            "y": 200,
+            "text": "Spending on goods",
+            "size": 14,
+            "color": "#1a1a1a",
+            "explain": "Label: household spending on goods, before it falls back.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 400,
+          "do": "show",
+          "shape": {
+            "id": "dTall",
+            "kind": "rect",
+            "x": 215,
+            "y": 240,
+            "fill": "#2e86ab",
+            "explain": "Spending before the price rises bite: a tall demand bar.",
+            "w": 90,
+            "h": 180
+          }
+        },
+        {
+          "at_ms": 600,
+          "do": "show",
+          "shape": {
+            "id": "pLabel",
+            "kind": "text",
+            "x": 700,
+            "y": 200,
+            "text": "Prices households face",
+            "size": 14,
+            "color": "#1a1a1a",
+            "explain": "Label: the prices households face, after the chain of rises.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 800,
+          "do": "show",
+          "shape": {
+            "id": "pHigh",
+            "kind": "rect",
+            "x": 655,
+            "y": 240,
+            "fill": "#c0392b",
+            "explain": "Prices after the shock: a tall bar that stays up while spending falls.",
+            "w": 90,
+            "h": 180
+          }
+        },
+        {
+          "at_ms": 2600,
+          "do": "hide",
+          "target": "dTall"
+        },
+        {
+          "at_ms": 2800,
+          "do": "show",
+          "shape": {
+            "id": "dShort",
+            "kind": "rect",
+            "x": 215,
+            "y": 350,
+            "fill": "#7fb3d5",
+            "explain": "Spending after households cut back: the demand bar falls to less than half its height.",
+            "w": 90,
+            "h": 70
+          }
+        },
+        {
+          "at_ms": 3200,
+          "do": "show",
+          "shape": {
+            "id": "fallDot",
+            "kind": "circle",
+            "cx": 370,
+            "cy": 260,
+            "r": 10,
+            "fill": "#1a1a1a",
+            "explain": "A marker tracing the fall in spending from the tall bar down to the short one."
+          }
+        },
+        {
+          "at_ms": 3500,
+          "do": "move",
+          "target": "fallDot",
+          "to": {
+            "cx": 370,
+            "cy": 370
+          },
+          "dur_ms": 1800
+        },
+        {
+          "at_ms": 5600,
+          "do": "show",
+          "shape": {
+            "id": "dName",
+            "kind": "text",
+            "x": 260,
+            "y": 450,
+            "text": "Demand falls back",
+            "size": 13,
+            "color": "#1a1a1a",
+            "explain": "Label: demand falls back as households buy less.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 5800,
+          "do": "show",
+          "shape": {
+            "id": "pName",
+            "kind": "text",
+            "x": 700,
+            "y": 450,
+            "text": "Prices stay high",
+            "size": 13,
+            "color": "#1a1a1a",
+            "explain": "Label: prices stay high while demand falls.",
+            "align": "middle"
+          }
+        },
+        {
+          "at_ms": 6400,
+          "do": "show",
+          "shape": {
+            "id": "chainSummary",
+            "kind": "text",
+            "x": 480,
+            "y": 500,
+            "text": "One cut, one jump, a chain of higher prices, then less spending",
+            "size": 14,
+            "color": "#1a1a1a",
+            "explain": "Label: the whole mechanism in one line - one cut, one jump, a chain of higher prices, then less spending.",
+            "align": "middle"
+          }
+        }
+      ]
+    }
+  ]
+}
