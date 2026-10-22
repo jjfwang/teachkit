@@ -176,6 +176,7 @@ and for Secondary Biotechnology fermentation
 and for Primary Social Studies landscape change
 and for Secondary Design Studies ergonomic dimensions
 and for JC China Studies urbanisation
+and for Primary Social Studies water supply
 (animation, slides, worksheet, notes, exit ticket, and script), each
 under its own pack manifest header.
 

@@ -1709,6 +1709,24 @@
     <li><code>script</code> teacher script</li>
   </ul>
 </header>
+<header class="pack-manifest" id="water-supply-primary-manifest">
+  <h1>Lesson pack: Primary Social Studies water-supply: Water Supply: From Rain to Tap, Stage by Stage</h1>
+  <dl>
+    <dt>Slug</dt><dd><code>water-supply-primary-social-studies</code></dd>
+    <dt>Level</dt><dd>primary</dd>
+    <dt>Subject</dt><dd>social-studies</dd>
+    <dt>Topic</dt><dd><code>water-supply</code></dd>
+  </dl>
+  <p>topic water-supply · level primary · subject social-studies · deck primary-social-studies-water-supply</p>
+  <ul class="pack-materials">
+    <li><code>animation</code></li>
+    <li><code>slides</code></li>
+    <li><code>worksheet</code></li>
+    <li><code>exitTicket</code> exit ticket</li>
+    <li><code>notes</code> student notes</li>
+    <li><code>script</code> teacher script</li>
+  </ul>
+</header>
 <section class="pack-section" id="animation-section">
   <h2>Animation</h2>
   <div id="anim-stage"></div>
@@ -2916,6 +2934,19 @@
   <h2>JC China Studies urbanisation printables</h2>
   <div id="urbanisation-jc-printables-stage"></div>
 </section>
+<section class="pack-section" id="water-supply-primary-animation">
+  <h2>Primary Social Studies water-supply animation</h2>
+  <div id="water-supply-primary-stage"></div>
+  <div id="water-supply-primary-captions"></div>
+</section>
+<section class="pack-section" id="water-supply-primary-slides">
+  <h2>Primary Social Studies water-supply slides</h2>
+  <div id="water-supply-primary-slides-stage"></div>
+</section>
+<section class="pack-section" id="water-supply-primary-printables">
+  <h2>Primary Social Studies water-supply printables</h2>
+  <div id="water-supply-primary-printables-stage"></div>
+</section>
 <div id="err"></div>
 <script src="validate.js"></script>
 <script src="player.js"></script>
@@ -3033,8 +3064,9 @@ var fermentationSecondaryPrintStage = document.querySelector('#fermentation-seco
 var landscapeChangePrimaryPrintStage = document.querySelector('#landscape-change-primary-printables-stage .pr-stage') || document.querySelector('#landscape-change-primary-printables-stage');
 var ergonomicDimensionsSecondaryPrintStage = document.querySelector('#ergonomic-dimensions-secondary-printables-stage .pr-stage') || document.querySelector('#ergonomic-dimensions-secondary-printables-stage');
 var urbanisationJcPrintStage = document.querySelector('#urbanisation-jc-printables-stage .pr-stage') || document.querySelector('#urbanisation-jc-printables-stage');
+var waterSupplyPrimaryPrintStage = document.querySelector('#water-supply-primary-printables-stage .pr-stage') || document.querySelector('#water-supply-primary-printables-stage');
     var keys = [];
-    [printStage, fractionsPrintStage, wavesPrintStage, complexPrintStage, trigPrintStage, thermalPrintStage, photosynthesisPrintStage, erosionPrintStage, chemMolePrintStage, differentiationPrintStage, integrationPrintStage, binomialPrintStage, kinematicsPrintStage, quadraticPrintStage, trigonometryAPrintStage, vectorsPrintStage, functionsGraphsPrintStage, sequencesPrintStage, differentiationJcPrintStage, integrationJcPrintStage, probabilityJcPrintStage, statisticsJcPrintStage, mechanicsJcPrintStage, emJcPrintStage, quantumJcPrintStage, physicalJcPrintStage, inorganicJcPrintStage, organicJcPrintStage, cellBioJcPrintStage, geneticsJcPrintStage, energeticsJcPrintStage, ecologyJcPrintStage, wholeNumbersPrimaryPrintStage, decimalsPrimaryPrintStage, percentagePrimaryPrintStage, ratioPrimaryPrintStage, rateSpeedPrimaryPrintStage, algebraIntroPrimaryPrintStage, geometryAnglesPrimaryPrintStage, areaPerimeterPrimaryPrintStage, volumePrimaryPrintStage, dataGraphsPrimaryPrintStage, modelMethodPrimaryPrintStage, humanBodySystemsPrimaryPrintStage, plantSystemsPrimaryPrintStage, lifeCyclesPrimaryPrintStage, energyFormsPrimaryPrintStage, photosynthesisPrimaryPrintStage, forcesMagnetsPrimaryPrintStage, adaptationsPrimaryPrintStage, plateTectonicsPrimaryPrintStage, weatherClimatePrimaryPrintStage, eNumbersSecondaryPrintStage, eAlgebraSecondaryPrintStage, eFunctionsGraphsSecondaryPrintStage, eGeometrySecondaryPrintStage, eMensurationSecondaryPrintStage, eStatisticsSecondaryPrintStage, eProbabilitySecondaryPrintStage, physKinematicsSecondaryPrintStage, physForcesSecondaryPrintStage, physEnergySecondaryPrintStage, physElectricitySecondaryPrintStage, chemAtomicSecondaryPrintStage, chemBondingSecondaryPrintStage, chemAcidsSecondaryPrintStage, bioCellsSecondaryPrintStage, bioTransportSecondaryPrintStage, bioReproductionSecondaryPrintStage, bioEcologySecondaryPrintStage, bioNutritionDigestionSecondaryPrintStage, tectonicsSubductionSecondaryPrintStage, demandSupplyEquilibriumSecondaryPrintStage, logicGatesSecondaryPrintStage, multiplierProcessJcPrintStage, logisticGrowthJcPrintStage, maclaurinSeriesJcPrintStage, sensorDividerSecondaryPrintStage, vacuumFormingSecondaryPrintStage, proteinDenaturationSecondaryPrintStage, doubleEntrySecondaryPrintStage, breakEvenSecondaryPrintStage, energySystemsSecondaryPrintStage, drainageBasinJcPrintStage, recursionJcPrintStage, absorptionMarginalCostingJcPrintStage, inventoryControlJcPrintStage, oilShockJcPrintStage, decolonisationChainSecondaryPrintStage, globalisationSupplyChainSecondaryPrintStage, fermentationSecondaryPrintStage, landscapeChangePrimaryPrintStage, ergonomicDimensionsSecondaryPrintStage, urbanisationJcPrintStage].forEach(function (stage) {
+    [printStage, fractionsPrintStage, wavesPrintStage, complexPrintStage, trigPrintStage, thermalPrintStage, photosynthesisPrintStage, erosionPrintStage, chemMolePrintStage, differentiationPrintStage, integrationPrintStage, binomialPrintStage, kinematicsPrintStage, quadraticPrintStage, trigonometryAPrintStage, vectorsPrintStage, functionsGraphsPrintStage, sequencesPrintStage, differentiationJcPrintStage, integrationJcPrintStage, probabilityJcPrintStage, statisticsJcPrintStage, mechanicsJcPrintStage, emJcPrintStage, quantumJcPrintStage, physicalJcPrintStage, inorganicJcPrintStage, organicJcPrintStage, cellBioJcPrintStage, geneticsJcPrintStage, energeticsJcPrintStage, ecologyJcPrintStage, wholeNumbersPrimaryPrintStage, decimalsPrimaryPrintStage, percentagePrimaryPrintStage, ratioPrimaryPrintStage, rateSpeedPrimaryPrintStage, algebraIntroPrimaryPrintStage, geometryAnglesPrimaryPrintStage, areaPerimeterPrimaryPrintStage, volumePrimaryPrintStage, dataGraphsPrimaryPrintStage, modelMethodPrimaryPrintStage, humanBodySystemsPrimaryPrintStage, plantSystemsPrimaryPrintStage, lifeCyclesPrimaryPrintStage, energyFormsPrimaryPrintStage, photosynthesisPrimaryPrintStage, forcesMagnetsPrimaryPrintStage, adaptationsPrimaryPrintStage, plateTectonicsPrimaryPrintStage, weatherClimatePrimaryPrintStage, eNumbersSecondaryPrintStage, eAlgebraSecondaryPrintStage, eFunctionsGraphsSecondaryPrintStage, eGeometrySecondaryPrintStage, eMensurationSecondaryPrintStage, eStatisticsSecondaryPrintStage, eProbabilitySecondaryPrintStage, physKinematicsSecondaryPrintStage, physForcesSecondaryPrintStage, physEnergySecondaryPrintStage, physElectricitySecondaryPrintStage, chemAtomicSecondaryPrintStage, chemBondingSecondaryPrintStage, chemAcidsSecondaryPrintStage, bioCellsSecondaryPrintStage, bioTransportSecondaryPrintStage, bioReproductionSecondaryPrintStage, bioEcologySecondaryPrintStage, bioNutritionDigestionSecondaryPrintStage, tectonicsSubductionSecondaryPrintStage, demandSupplyEquilibriumSecondaryPrintStage, logicGatesSecondaryPrintStage, multiplierProcessJcPrintStage, logisticGrowthJcPrintStage, maclaurinSeriesJcPrintStage, sensorDividerSecondaryPrintStage, vacuumFormingSecondaryPrintStage, proteinDenaturationSecondaryPrintStage, doubleEntrySecondaryPrintStage, breakEvenSecondaryPrintStage, energySystemsSecondaryPrintStage, drainageBasinJcPrintStage, recursionJcPrintStage, absorptionMarginalCostingJcPrintStage, inventoryControlJcPrintStage, oilShockJcPrintStage, decolonisationChainSecondaryPrintStage, globalisationSupplyChainSecondaryPrintStage, fermentationSecondaryPrintStage, landscapeChangePrimaryPrintStage, ergonomicDimensionsSecondaryPrintStage, urbanisationJcPrintStage, waterSupplyPrimaryPrintStage].forEach(function (stage) {
       if (stage) {
         keys = keys.concat(Array.prototype.slice.call(stage.querySelectorAll('.pr-teacher')));
       }
@@ -9843,6 +9875,79 @@ var urbanisationJcPrintStage = document.querySelector('#urbanisation-jc-printabl
     ].join('');
   }).catch(function (err) {
     showError('JC China Studies urbanisation pack failed to load: ' + err.message);
+  });
+})();
+
+<script>
+(function () {
+  var presenter = document.getElementById('water-supply-primary-slides-stage');
+  var waterSupplyPrimaryPrint = document.getElementById('water-supply-primary-printables-stage');
+  var errBox = document.getElementById('err');
+  var waterSupplyPrimaryAnimUrl = '../samples/primary-social-studies-water-supply.json';
+  var waterSupplyPrimaryDeckUrl = '../samples/decks/primary-social-studies-water-supply.json';
+  var waterSupplyPrimaryWorksheetUrl = '../samples/worksheets/primary-social-studies-water-supply.json';
+  var waterSupplyPrimaryTicketUrl = '../samples/tickets/primary-social-studies-water-supply.json';
+  var waterSupplyPrimaryNotesUrl = '../samples/notes/primary-social-studies-water-supply.json';
+  var waterSupplyPrimaryScriptUrl = '../samples/scripts/primary-social-studies-water-supply.json';
+
+  function showError(msg) {
+    errBox.textContent = String(msg);
+  }
+
+  Promise.all([
+    fetch(waterSupplyPrimaryAnimUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + waterSupplyPrimaryAnimUrl);
+      return r.json();
+    }),
+    fetch(waterSupplyPrimaryDeckUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + waterSupplyPrimaryDeckUrl);
+      return r.json();
+    }),
+    fetch(waterSupplyPrimaryWorksheetUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + waterSupplyPrimaryWorksheetUrl);
+      return r.json();
+    }),
+    fetch(waterSupplyPrimaryTicketUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + waterSupplyPrimaryTicketUrl);
+      return r.json();
+    }),
+    fetch(waterSupplyPrimaryNotesUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + waterSupplyPrimaryNotesUrl);
+      return r.json();
+    }),
+    fetch(waterSupplyPrimaryScriptUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + waterSupplyPrimaryScriptUrl);
+      return r.json();
+    })
+  ]).then(function (pack) {
+    var anim = pack[0];
+    var deck = pack[1];
+    var worksheet = pack[2];
+    var ticket = pack[3];
+    var notes = pack[4];
+    var script = pack[5];
+    var problems = AnimathValidate.validateSpec(anim)
+      .concat(AnimathValidate.validateSlides(deck))
+      .concat(AnimathValidate.validateWorksheet(worksheet))
+      .concat(AnimathValidate.validateExitTicket(ticket))
+      .concat(AnimathValidate.validateNotes(notes))
+      .concat(AnimathValidate.validateScript(script));
+    if (problems.length) {
+      showError('Primary Social Studies water-supply pack failed validation:\n' + problems.join('\n'));
+      return;
+    }
+    AnimathPlayer.mount(document.getElementById('water-supply-primary-stage'), anim, { autoplay: false });
+    AnimathSlidesPresenter.attachPresenter(document, presenter, deck, { animSpec: anim });
+    waterSupplyPrimaryPrint.innerHTML = [
+      AnimathPrintable.renderWorksheet(worksheet),
+      AnimathPrintable.renderWorksheetAnswerKey(worksheet),
+      AnimathPrintable.renderExitTicket(ticket),
+      AnimathPrintable.renderExitTicketAnswerKey(ticket),
+      AnimathPrintable.renderNotes(notes),
+      AnimathPrintable.renderScript(script)
+    ].join('');
+  }).catch(function (err) {
+    showError('Primary Social Studies water-supply pack failed to load: ' + err.message);
   });
 })();
 
