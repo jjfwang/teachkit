@@ -1673,6 +1673,24 @@
     <li><code>script</code> teacher script</li>
   </ul>
 </header>
+<header class="pack-manifest" id="ergonomic-dimensions-secondary-manifest">
+  <h1>Lesson pack: Secondary Design Studies ergonomic-dimensions: Ergonomic Dimensions: Fit the Chair and Desk to the Student</h1>
+  <dl>
+    <dt>Slug</dt><dd><code>ergonomic-dimensions-secondary-design-studies</code></dd>
+    <dt>Level</dt><dd>secondary</dd>
+    <dt>Subject</dt><dd>design-studies</dd>
+    <dt>Topic</dt><dd><code>ergonomic-dimensions</code></dd>
+  </dl>
+  <p>topic ergonomic-dimensions · level secondary · subject design-studies · deck secondary-design-studies-ergonomic-dimensions</p>
+  <ul class="pack-materials">
+    <li><code>animation</code></li>
+    <li><code>slides</code></li>
+    <li><code>worksheet</code></li>
+    <li><code>exitTicket</code> exit ticket</li>
+    <li><code>notes</code> student notes</li>
+    <li><code>script</code> teacher script</li>
+  </ul>
+</header>
 <section class="pack-section" id="animation-section">
   <h2>Animation</h2>
   <div id="anim-stage"></div>
@@ -2854,6 +2872,19 @@
   <h2>Primary Social Studies landscape-change printables</h2>
   <div id="landscape-change-primary-printables-stage"></div>
 </section>
+<section class="pack-section" id="ergonomic-dimensions-secondary-animation">
+  <h2>Secondary Design Studies ergonomic-dimensions animation</h2>
+  <div id="ergonomic-dimensions-secondary-stage"></div>
+  <div id="ergonomic-dimensions-secondary-captions"></div>
+</section>
+<section class="pack-section" id="ergonomic-dimensions-secondary-slides">
+  <h2>Secondary Design Studies ergonomic-dimensions slides</h2>
+  <div id="ergonomic-dimensions-secondary-slides-stage"></div>
+</section>
+<section class="pack-section" id="ergonomic-dimensions-secondary-printables">
+  <h2>Secondary Design Studies ergonomic-dimensions printables</h2>
+  <div id="ergonomic-dimensions-secondary-printables-stage"></div>
+</section>
 <div id="err"></div>
 <script src="validate.js"></script>
 <script src="player.js"></script>
@@ -2969,8 +3000,9 @@ var decolonisationChainSecondaryPrintStage = document.querySelector('#decolonisa
 var globalisationSupplyChainSecondaryPrintStage = document.querySelector('#globalisation-supply-chain-secondary-printables-stage .pr-stage') || document.querySelector('#globalisation-supply-chain-secondary-printables-stage');
 var fermentationSecondaryPrintStage = document.querySelector('#fermentation-secondary-printables-stage .pr-stage') || document.querySelector('#fermentation-secondary-printables-stage');
 var landscapeChangePrimaryPrintStage = document.querySelector('#landscape-change-primary-printables-stage .pr-stage') || document.querySelector('#landscape-change-primary-printables-stage');
+var ergonomicDimensionsSecondaryPrintStage = document.querySelector('#ergonomic-dimensions-secondary-printables-stage .pr-stage') || document.querySelector('#ergonomic-dimensions-secondary-printables-stage');
     var keys = [];
-    [printStage, fractionsPrintStage, wavesPrintStage, complexPrintStage, trigPrintStage, thermalPrintStage, photosynthesisPrintStage, erosionPrintStage, chemMolePrintStage, differentiationPrintStage, integrationPrintStage, binomialPrintStage, kinematicsPrintStage, quadraticPrintStage, trigonometryAPrintStage, vectorsPrintStage, functionsGraphsPrintStage, sequencesPrintStage, differentiationJcPrintStage, integrationJcPrintStage, probabilityJcPrintStage, statisticsJcPrintStage, mechanicsJcPrintStage, emJcPrintStage, quantumJcPrintStage, physicalJcPrintStage, inorganicJcPrintStage, organicJcPrintStage, cellBioJcPrintStage, geneticsJcPrintStage, energeticsJcPrintStage, ecologyJcPrintStage, wholeNumbersPrimaryPrintStage, decimalsPrimaryPrintStage, percentagePrimaryPrintStage, ratioPrimaryPrintStage, rateSpeedPrimaryPrintStage, algebraIntroPrimaryPrintStage, geometryAnglesPrimaryPrintStage, areaPerimeterPrimaryPrintStage, volumePrimaryPrintStage, dataGraphsPrimaryPrintStage, modelMethodPrimaryPrintStage, humanBodySystemsPrimaryPrintStage, plantSystemsPrimaryPrintStage, lifeCyclesPrimaryPrintStage, energyFormsPrimaryPrintStage, photosynthesisPrimaryPrintStage, forcesMagnetsPrimaryPrintStage, adaptationsPrimaryPrintStage, plateTectonicsPrimaryPrintStage, weatherClimatePrimaryPrintStage, eNumbersSecondaryPrintStage, eAlgebraSecondaryPrintStage, eFunctionsGraphsSecondaryPrintStage, eGeometrySecondaryPrintStage, eMensurationSecondaryPrintStage, eStatisticsSecondaryPrintStage, eProbabilitySecondaryPrintStage, physKinematicsSecondaryPrintStage, physForcesSecondaryPrintStage, physEnergySecondaryPrintStage, physElectricitySecondaryPrintStage, chemAtomicSecondaryPrintStage, chemBondingSecondaryPrintStage, chemAcidsSecondaryPrintStage, bioCellsSecondaryPrintStage, bioTransportSecondaryPrintStage, bioReproductionSecondaryPrintStage, bioEcologySecondaryPrintStage, bioNutritionDigestionSecondaryPrintStage, tectonicsSubductionSecondaryPrintStage, demandSupplyEquilibriumSecondaryPrintStage, logicGatesSecondaryPrintStage, multiplierProcessJcPrintStage, logisticGrowthJcPrintStage, maclaurinSeriesJcPrintStage, sensorDividerSecondaryPrintStage, vacuumFormingSecondaryPrintStage, proteinDenaturationSecondaryPrintStage, doubleEntrySecondaryPrintStage, breakEvenSecondaryPrintStage, energySystemsSecondaryPrintStage, drainageBasinJcPrintStage, recursionJcPrintStage, absorptionMarginalCostingJcPrintStage, inventoryControlJcPrintStage, oilShockJcPrintStage, decolonisationChainSecondaryPrintStage, globalisationSupplyChainSecondaryPrintStage, fermentationSecondaryPrintStage, landscapeChangePrimaryPrintStage].forEach(function (stage) {
+    [printStage, fractionsPrintStage, wavesPrintStage, complexPrintStage, trigPrintStage, thermalPrintStage, photosynthesisPrintStage, erosionPrintStage, chemMolePrintStage, differentiationPrintStage, integrationPrintStage, binomialPrintStage, kinematicsPrintStage, quadraticPrintStage, trigonometryAPrintStage, vectorsPrintStage, functionsGraphsPrintStage, sequencesPrintStage, differentiationJcPrintStage, integrationJcPrintStage, probabilityJcPrintStage, statisticsJcPrintStage, mechanicsJcPrintStage, emJcPrintStage, quantumJcPrintStage, physicalJcPrintStage, inorganicJcPrintStage, organicJcPrintStage, cellBioJcPrintStage, geneticsJcPrintStage, energeticsJcPrintStage, ecologyJcPrintStage, wholeNumbersPrimaryPrintStage, decimalsPrimaryPrintStage, percentagePrimaryPrintStage, ratioPrimaryPrintStage, rateSpeedPrimaryPrintStage, algebraIntroPrimaryPrintStage, geometryAnglesPrimaryPrintStage, areaPerimeterPrimaryPrintStage, volumePrimaryPrintStage, dataGraphsPrimaryPrintStage, modelMethodPrimaryPrintStage, humanBodySystemsPrimaryPrintStage, plantSystemsPrimaryPrintStage, lifeCyclesPrimaryPrintStage, energyFormsPrimaryPrintStage, photosynthesisPrimaryPrintStage, forcesMagnetsPrimaryPrintStage, adaptationsPrimaryPrintStage, plateTectonicsPrimaryPrintStage, weatherClimatePrimaryPrintStage, eNumbersSecondaryPrintStage, eAlgebraSecondaryPrintStage, eFunctionsGraphsSecondaryPrintStage, eGeometrySecondaryPrintStage, eMensurationSecondaryPrintStage, eStatisticsSecondaryPrintStage, eProbabilitySecondaryPrintStage, physKinematicsSecondaryPrintStage, physForcesSecondaryPrintStage, physEnergySecondaryPrintStage, physElectricitySecondaryPrintStage, chemAtomicSecondaryPrintStage, chemBondingSecondaryPrintStage, chemAcidsSecondaryPrintStage, bioCellsSecondaryPrintStage, bioTransportSecondaryPrintStage, bioReproductionSecondaryPrintStage, bioEcologySecondaryPrintStage, bioNutritionDigestionSecondaryPrintStage, tectonicsSubductionSecondaryPrintStage, demandSupplyEquilibriumSecondaryPrintStage, logicGatesSecondaryPrintStage, multiplierProcessJcPrintStage, logisticGrowthJcPrintStage, maclaurinSeriesJcPrintStage, sensorDividerSecondaryPrintStage, vacuumFormingSecondaryPrintStage, proteinDenaturationSecondaryPrintStage, doubleEntrySecondaryPrintStage, breakEvenSecondaryPrintStage, energySystemsSecondaryPrintStage, drainageBasinJcPrintStage, recursionJcPrintStage, absorptionMarginalCostingJcPrintStage, inventoryControlJcPrintStage, oilShockJcPrintStage, decolonisationChainSecondaryPrintStage, globalisationSupplyChainSecondaryPrintStage, fermentationSecondaryPrintStage, landscapeChangePrimaryPrintStage, ergonomicDimensionsSecondaryPrintStage].forEach(function (stage) {
       if (stage) {
         keys = keys.concat(Array.prototype.slice.call(stage.querySelectorAll('.pr-teacher')));
       }
@@ -9633,6 +9665,79 @@ var landscapeChangePrimaryPrintStage = document.querySelector('#landscape-change
     ].join('');
   }).catch(function (err) {
     showError('Primary Social Studies landscape-change pack failed to load: ' + err.message);
+  });
+})();
+
+<script>
+(function () {
+  var presenter = document.getElementById('ergonomic-dimensions-secondary-slides-stage');
+  var ergonomicDimensionsSecondaryPrint = document.getElementById('ergonomic-dimensions-secondary-printables-stage');
+  var errBox = document.getElementById('err');
+  var ergonomicDimensionsSecondaryAnimUrl = '../samples/secondary-design-studies-ergonomic-dimensions.json';
+  var ergonomicDimensionsSecondaryDeckUrl = '../samples/decks/secondary-design-studies-ergonomic-dimensions.json';
+  var ergonomicDimensionsSecondaryWorksheetUrl = '../samples/worksheets/secondary-design-studies-ergonomic-dimensions.json';
+  var ergonomicDimensionsSecondaryTicketUrl = '../samples/tickets/secondary-design-studies-ergonomic-dimensions.json';
+  var ergonomicDimensionsSecondaryNotesUrl = '../samples/notes/secondary-design-studies-ergonomic-dimensions.json';
+  var ergonomicDimensionsSecondaryScriptUrl = '../samples/scripts/secondary-design-studies-ergonomic-dimensions.json';
+
+  function showError(msg) {
+    errBox.textContent = String(msg);
+  }
+
+  Promise.all([
+    fetch(ergonomicDimensionsSecondaryAnimUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + ergonomicDimensionsSecondaryAnimUrl);
+      return r.json();
+    }),
+    fetch(ergonomicDimensionsSecondaryDeckUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + ergonomicDimensionsSecondaryDeckUrl);
+      return r.json();
+    }),
+    fetch(ergonomicDimensionsSecondaryWorksheetUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + ergonomicDimensionsSecondaryWorksheetUrl);
+      return r.json();
+    }),
+    fetch(ergonomicDimensionsSecondaryTicketUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + ergonomicDimensionsSecondaryTicketUrl);
+      return r.json();
+    }),
+    fetch(ergonomicDimensionsSecondaryNotesUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + ergonomicDimensionsSecondaryNotesUrl);
+      return r.json();
+    }),
+    fetch(ergonomicDimensionsSecondaryScriptUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + ergonomicDimensionsSecondaryScriptUrl);
+      return r.json();
+    })
+  ]).then(function (pack) {
+    var anim = pack[0];
+    var deck = pack[1];
+    var worksheet = pack[2];
+    var ticket = pack[3];
+    var notes = pack[4];
+    var script = pack[5];
+    var problems = AnimathValidate.validateSpec(anim)
+      .concat(AnimathValidate.validateSlides(deck))
+      .concat(AnimathValidate.validateWorksheet(worksheet))
+      .concat(AnimathValidate.validateExitTicket(ticket))
+      .concat(AnimathValidate.validateNotes(notes))
+      .concat(AnimathValidate.validateScript(script));
+    if (problems.length) {
+      showError('Secondary Design Studies ergonomic-dimensions pack failed validation:\n' + problems.join('\n'));
+      return;
+    }
+    AnimathPlayer.mount(document.getElementById('ergonomic-dimensions-secondary-stage'), anim, { autoplay: false });
+    AnimathSlidesPresenter.attachPresenter(document, presenter, deck, { animSpec: anim });
+    ergonomicDimensionsSecondaryPrint.innerHTML = [
+      AnimathPrintable.renderWorksheet(worksheet),
+      AnimathPrintable.renderWorksheetAnswerKey(worksheet),
+      AnimathPrintable.renderExitTicket(ticket),
+      AnimathPrintable.renderExitTicketAnswerKey(ticket),
+      AnimathPrintable.renderNotes(notes),
+      AnimathPrintable.renderScript(script)
+    ].join('');
+  }).catch(function (err) {
+    showError('Secondary Design Studies ergonomic-dimensions pack failed to load: ' + err.message);
   });
 })();
 
