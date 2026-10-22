@@ -1601,6 +1601,24 @@
     <li><code>script</code> teacher script</li>
   </ul>
 </header>
+<header class="pack-manifest" id="decolonisation-chain-secondary-manifest">
+  <h1>Lesson pack: Secondary History decolonisation-chain: The Decolonisation Chain in Southeast Asia</h1>
+  <dl>
+    <dt>Slug</dt><dd><code>decolonisation-chain-secondary-history</code></dd>
+    <dt>Level</dt><dd>secondary</dd>
+    <dt>Subject</dt><dd>history</dd>
+    <dt>Topic</dt><dd><code>decolonisation-chain</code></dd>
+  </dl>
+  <p>topic decolonisation-chain · level secondary · subject history · deck secondary-history-decolonisation-chain</p>
+  <ul class="pack-materials">
+    <li><code>animation</code></li>
+    <li><code>slides</code></li>
+    <li><code>worksheet</code></li>
+    <li><code>exitTicket</code> exit ticket</li>
+    <li><code>notes</code> student notes</li>
+    <li><code>script</code> teacher script</li>
+  </ul>
+</header>
 <section class="pack-section" id="animation-section">
   <h2>Animation</h2>
   <div id="anim-stage"></div>
@@ -2730,6 +2748,19 @@
   <h2>JC H2 History oil-shock printables</h2>
   <div id="oil-shock-jc-printables-stage"></div>
 </section>
+<section class="pack-section" id="decolonisation-chain-secondary-animation">
+  <h2>Secondary History decolonisation-chain animation</h2>
+  <div id="decolonisation-chain-secondary-stage"></div>
+  <div id="decolonisation-chain-secondary-captions"></div>
+</section>
+<section class="pack-section" id="decolonisation-chain-secondary-slides">
+  <h2>Secondary History decolonisation-chain slides</h2>
+  <div id="decolonisation-chain-secondary-slides-stage"></div>
+</section>
+<section class="pack-section" id="decolonisation-chain-secondary-printables">
+  <h2>Secondary History decolonisation-chain printables</h2>
+  <div id="decolonisation-chain-secondary-printables-stage"></div>
+</section>
 <div id="err"></div>
 <script src="validate.js"></script>
 <script src="player.js"></script>
@@ -2841,8 +2872,9 @@ var recursionJcPrintStage = document.querySelector('#recursion-jc-printables-sta
 var absorptionMarginalCostingJcPrintStage = document.querySelector('#absorption-marginal-costing-jc-printables-stage .pr-stage') || document.querySelector('#absorption-marginal-costing-jc-printables-stage');
 var inventoryControlJcPrintStage = document.querySelector('#inventory-control-jc-printables-stage .pr-stage') || document.querySelector('#inventory-control-jc-printables-stage');
 var oilShockJcPrintStage = document.querySelector('#oil-shock-jc-printables-stage .pr-stage') || document.querySelector('#oil-shock-jc-printables-stage');
+var decolonisationChainSecondaryPrintStage = document.querySelector('#decolonisation-chain-secondary-printables-stage .pr-stage') || document.querySelector('#decolonisation-chain-secondary-printables-stage');
     var keys = [];
-    [printStage, fractionsPrintStage, wavesPrintStage, complexPrintStage, trigPrintStage, thermalPrintStage, photosynthesisPrintStage, erosionPrintStage, chemMolePrintStage, differentiationPrintStage, integrationPrintStage, binomialPrintStage, kinematicsPrintStage, quadraticPrintStage, trigonometryAPrintStage, vectorsPrintStage, functionsGraphsPrintStage, sequencesPrintStage, differentiationJcPrintStage, integrationJcPrintStage, probabilityJcPrintStage, statisticsJcPrintStage, mechanicsJcPrintStage, emJcPrintStage, quantumJcPrintStage, physicalJcPrintStage, inorganicJcPrintStage, organicJcPrintStage, cellBioJcPrintStage, geneticsJcPrintStage, energeticsJcPrintStage, ecologyJcPrintStage, wholeNumbersPrimaryPrintStage, decimalsPrimaryPrintStage, percentagePrimaryPrintStage, ratioPrimaryPrintStage, rateSpeedPrimaryPrintStage, algebraIntroPrimaryPrintStage, geometryAnglesPrimaryPrintStage, areaPerimeterPrimaryPrintStage, volumePrimaryPrintStage, dataGraphsPrimaryPrintStage, modelMethodPrimaryPrintStage, humanBodySystemsPrimaryPrintStage, plantSystemsPrimaryPrintStage, lifeCyclesPrimaryPrintStage, energyFormsPrimaryPrintStage, photosynthesisPrimaryPrintStage, forcesMagnetsPrimaryPrintStage, adaptationsPrimaryPrintStage, plateTectonicsPrimaryPrintStage, weatherClimatePrimaryPrintStage, eNumbersSecondaryPrintStage, eAlgebraSecondaryPrintStage, eFunctionsGraphsSecondaryPrintStage, eGeometrySecondaryPrintStage, eMensurationSecondaryPrintStage, eStatisticsSecondaryPrintStage, eProbabilitySecondaryPrintStage, physKinematicsSecondaryPrintStage, physForcesSecondaryPrintStage, physEnergySecondaryPrintStage, physElectricitySecondaryPrintStage, chemAtomicSecondaryPrintStage, chemBondingSecondaryPrintStage, chemAcidsSecondaryPrintStage, bioCellsSecondaryPrintStage, bioTransportSecondaryPrintStage, bioReproductionSecondaryPrintStage, bioEcologySecondaryPrintStage, bioNutritionDigestionSecondaryPrintStage, tectonicsSubductionSecondaryPrintStage, demandSupplyEquilibriumSecondaryPrintStage, logicGatesSecondaryPrintStage, multiplierProcessJcPrintStage, logisticGrowthJcPrintStage, maclaurinSeriesJcPrintStage, sensorDividerSecondaryPrintStage, vacuumFormingSecondaryPrintStage, proteinDenaturationSecondaryPrintStage, doubleEntrySecondaryPrintStage, breakEvenSecondaryPrintStage, energySystemsSecondaryPrintStage, drainageBasinJcPrintStage, recursionJcPrintStage, absorptionMarginalCostingJcPrintStage, inventoryControlJcPrintStage, oilShockJcPrintStage].forEach(function (stage) {
+    [printStage, fractionsPrintStage, wavesPrintStage, complexPrintStage, trigPrintStage, thermalPrintStage, photosynthesisPrintStage, erosionPrintStage, chemMolePrintStage, differentiationPrintStage, integrationPrintStage, binomialPrintStage, kinematicsPrintStage, quadraticPrintStage, trigonometryAPrintStage, vectorsPrintStage, functionsGraphsPrintStage, sequencesPrintStage, differentiationJcPrintStage, integrationJcPrintStage, probabilityJcPrintStage, statisticsJcPrintStage, mechanicsJcPrintStage, emJcPrintStage, quantumJcPrintStage, physicalJcPrintStage, inorganicJcPrintStage, organicJcPrintStage, cellBioJcPrintStage, geneticsJcPrintStage, energeticsJcPrintStage, ecologyJcPrintStage, wholeNumbersPrimaryPrintStage, decimalsPrimaryPrintStage, percentagePrimaryPrintStage, ratioPrimaryPrintStage, rateSpeedPrimaryPrintStage, algebraIntroPrimaryPrintStage, geometryAnglesPrimaryPrintStage, areaPerimeterPrimaryPrintStage, volumePrimaryPrintStage, dataGraphsPrimaryPrintStage, modelMethodPrimaryPrintStage, humanBodySystemsPrimaryPrintStage, plantSystemsPrimaryPrintStage, lifeCyclesPrimaryPrintStage, energyFormsPrimaryPrintStage, photosynthesisPrimaryPrintStage, forcesMagnetsPrimaryPrintStage, adaptationsPrimaryPrintStage, plateTectonicsPrimaryPrintStage, weatherClimatePrimaryPrintStage, eNumbersSecondaryPrintStage, eAlgebraSecondaryPrintStage, eFunctionsGraphsSecondaryPrintStage, eGeometrySecondaryPrintStage, eMensurationSecondaryPrintStage, eStatisticsSecondaryPrintStage, eProbabilitySecondaryPrintStage, physKinematicsSecondaryPrintStage, physForcesSecondaryPrintStage, physEnergySecondaryPrintStage, physElectricitySecondaryPrintStage, chemAtomicSecondaryPrintStage, chemBondingSecondaryPrintStage, chemAcidsSecondaryPrintStage, bioCellsSecondaryPrintStage, bioTransportSecondaryPrintStage, bioReproductionSecondaryPrintStage, bioEcologySecondaryPrintStage, bioNutritionDigestionSecondaryPrintStage, tectonicsSubductionSecondaryPrintStage, demandSupplyEquilibriumSecondaryPrintStage, logicGatesSecondaryPrintStage, multiplierProcessJcPrintStage, logisticGrowthJcPrintStage, maclaurinSeriesJcPrintStage, sensorDividerSecondaryPrintStage, vacuumFormingSecondaryPrintStage, proteinDenaturationSecondaryPrintStage, doubleEntrySecondaryPrintStage, breakEvenSecondaryPrintStage, energySystemsSecondaryPrintStage, drainageBasinJcPrintStage, recursionJcPrintStage, absorptionMarginalCostingJcPrintStage, inventoryControlJcPrintStage, oilShockJcPrintStage, decolonisationChainSecondaryPrintStage].forEach(function (stage) {
       if (stage) {
         keys = keys.concat(Array.prototype.slice.call(stage.querySelectorAll('.pr-teacher')));
       }
@@ -9211,5 +9243,80 @@ var oilShockJcPrintStage = document.querySelector('#oil-shock-jc-printables-stag
 })();
 
 </script>
+
+</script>
+<script>
+(function () {
+  var presenter = document.getElementById('decolonisation-chain-secondary-slides-stage');
+  var decolonisationChainSecondaryPrint = document.getElementById('decolonisation-chain-secondary-printables-stage');
+  var errBox = document.getElementById('err');
+  var decolonisationChainSecondaryAnimUrl = '../samples/secondary-history-decolonisation-chain.json';
+  var decolonisationChainSecondaryDeckUrl = '../samples/decks/secondary-history-decolonisation-chain.json';
+  var decolonisationChainSecondaryWorksheetUrl = '../samples/worksheets/secondary-history-decolonisation-chain.json';
+  var decolonisationChainSecondaryTicketUrl = '../samples/tickets/secondary-history-decolonisation-chain.json';
+  var decolonisationChainSecondaryNotesUrl = '../samples/notes/secondary-history-decolonisation-chain.json';
+  var decolonisationChainSecondaryScriptUrl = '../samples/scripts/secondary-history-decolonisation-chain.json';
+
+  function showError(msg) {
+    errBox.textContent = String(msg);
+  }
+
+  Promise.all([
+    fetch(decolonisationChainSecondaryAnimUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + decolonisationChainSecondaryAnimUrl);
+      return r.json();
+    }),
+    fetch(decolonisationChainSecondaryDeckUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + decolonisationChainSecondaryDeckUrl);
+      return r.json();
+    }),
+    fetch(decolonisationChainSecondaryWorksheetUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + decolonisationChainSecondaryWorksheetUrl);
+      return r.json();
+    }),
+    fetch(decolonisationChainSecondaryTicketUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + decolonisationChainSecondaryTicketUrl);
+      return r.json();
+    }),
+    fetch(decolonisationChainSecondaryNotesUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + decolonisationChainSecondaryNotesUrl);
+      return r.json();
+    }),
+    fetch(decolonisationChainSecondaryScriptUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + decolonisationChainSecondaryScriptUrl);
+      return r.json();
+    })
+  ]).then(function (pack) {
+    var anim = pack[0];
+    var deck = pack[1];
+    var worksheet = pack[2];
+    var ticket = pack[3];
+    var notes = pack[4];
+    var script = pack[5];
+    var problems = AnimathValidate.validateSpec(anim)
+      .concat(AnimathValidate.validateSlides(deck))
+      .concat(AnimathValidate.validateWorksheet(worksheet))
+      .concat(AnimathValidate.validateExitTicket(ticket))
+      .concat(AnimathValidate.validateNotes(notes))
+      .concat(AnimathValidate.validateScript(script));
+    if (problems.length) {
+      showError('Secondary History decolonisation-chain pack failed validation:\n' + problems.join('\n'));
+      return;
+    }
+    AnimathPlayer.mount(document.getElementById('decolonisation-chain-secondary-stage'), anim, { autoplay: false });
+    AnimathSlidesPresenter.attachPresenter(document, presenter, deck, { animSpec: anim });
+    decolonisationChainSecondaryPrint.innerHTML = [
+      AnimathPrintable.renderWorksheet(worksheet),
+      AnimathPrintable.renderWorksheetAnswerKey(worksheet),
+      AnimathPrintable.renderExitTicket(ticket),
+      AnimathPrintable.renderExitTicketAnswerKey(ticket),
+      AnimathPrintable.renderNotes(notes),
+      AnimathPrintable.renderScript(script)
+    ].join('');
+  }).catch(function (err) {
+    showError('Secondary History decolonisation-chain pack failed to load: ' + err.message);
+  });
+})();
+
 </body>
 </html>

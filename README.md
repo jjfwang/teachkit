@@ -170,6 +170,7 @@ and for JC H2 Computing recursion
 and for JC H2 Principles of Accounting absorption and marginal costing
 and for JC H2 Management of Business inventory control
 and for JC H2 History oil shock
+and for Secondary History decolonisation chain
 (animation, slides, worksheet, notes, exit ticket, and script), each
 under its own pack manifest header.
 
