@@ -299,7 +299,7 @@ export function generateWorkedExamples(
   opts: GenerateWorkedExamplesOptions,
   deps: GenerateWorkedExamplesDeps
 ): Promise<WorkedExamplesDocument>;
-// generateLessonPack (issue #768): one shared unpack authors all nine
+// generateLessonPack (issue #768): one shared unpack authors all ten
 // materials; packs are cached in memory by topic slug.
 export interface GenerateLessonPackOptions {
   topic: string;
@@ -329,6 +329,7 @@ export interface GenerateLessonPackDeps {
   validateLessonPlan?: PipelineValidate;
   validateScaffolds?: PipelineValidate;
   validateDiagnostics?: PipelineValidate;
+  validateWorkedExamples?: PipelineValidate;
   onProgress?: PipelineProgress;
 }
 export interface PackMetadataCode {
@@ -363,6 +364,7 @@ export interface LessonPackResult {
   lessonPlan: LessonPlanDocument;
   scaffolds: ScaffoldsDocument;
   diagnostics: DiagnosticsDocument;
+  workedExamples: WorkedExamplesDocument;
 }
 export function generateLessonPack(
   opts: GenerateLessonPackOptions,

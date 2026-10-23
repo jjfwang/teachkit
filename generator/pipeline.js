@@ -30,9 +30,9 @@
  * generateNotes and generateScript (issue #768) are the same kind of
  * sibling (build_notes_prompt.js / build_script_prompt.js, validateNotes
  * / validateScript). generateLessonPack (issue #768) runs ONE shared
- * unpack stage, then authors all nine materials from it (animation,
+ * unpack stage, then authors all ten materials from it (animation,
  * slides, worksheet, notes, exit ticket, teacher script, lesson plan,
- * scaffolds, diagnostics)
+ * scaffolds, diagnostics, worked examples)
  * and resolves with a pack manifest; packs are cached in memory by
  * topic slug.
  */
@@ -912,25 +912,26 @@
   // opts:
   //   {topic, topicLabel, level, subject, workedExample, kind, focus,
   //    facet, maxRepairs, force}
-  //   (the union of the nine material option sets; topic/subject
+  //   (the union of the ten material option sets; topic/subject
   //   required; maxRepairs defaults to 3; force === true bypasses the
   //   pack cache and regenerates, replacing the cached entry).
   // deps:
   //   {callChat(system, user) -> Promise<string>  (caller-supplied LLM call),
   //    validate?(spec) / validateSlides? / validateWorksheet? /
   //    validateNotes? / validateExitTicket? / validateScript? /
-  //    validateLessonPlan? / validateScaffolds? / validateDiagnostics?
+  //    validateLessonPlan? / validateScaffolds? / validateDiagnostics? /
+  //    validateWorkedExamples?
   //      (per-material validators, resolved like the single-material
   //      generators; the built-in player/validate.js validators are the
   //      defaults), onProgress?(stage, n, max)}.
   //
-  // Runs ONE shared unpack stage, then authors all nine materials from
+  // Runs ONE shared unpack stage, then authors all ten materials from
   // that single unpack, each through its existing builder + validator +
   // repair discipline. A material that exhausts its repair cap rejects
   // the whole pack with that material named on err.material (and
   // err.problems carried). Resolves with
   // {manifest, animation, slides, worksheet, notes, exitTicket, script,
-  // lessonPlan, scaffolds, diagnostics}
+  // lessonPlan, scaffolds, diagnostics, workedExamples}
   // where manifest = {slug, topic, level, subject, version, materials,
   // metadata} (metadata per packMetadataFor above, issue #1221).
   // Packs are cached in memory by slug: a repeat call with the same
@@ -1006,7 +1007,8 @@
       script: resolveScriptValidator(deps),
       lessonPlan: resolveLessonPlanValidator(deps),
       scaffolds: resolveScaffoldsValidator(deps),
-      diagnostics: resolveDiagnosticsValidator(deps)
+      diagnostics: resolveDiagnosticsValidator(deps),
+      workedExamples: resolveWorkedExamplesValidator(deps)
     };
     var missing = Object.keys(validators).filter(function (k) { return !validators[k]; });
     /* node:coverage ignore next 5 */
@@ -1019,7 +1021,7 @@
     // (generateDiagnostics semantics): resolve the topic's bank entry
     // before any authoring, and reject a bank-less topic outright - the
     // pack never invents misconceptions and never silently omits its
-    // ninth material. The bank is keyed by topic slug, while pack
+    // diagnostics material. The bank is keyed by topic slug, while pack
     // callers pass free-text topics, so resolution tries the topic
     // verbatim, then its slugified forms (topic only, topic only minus
     // a leading article, and the full pack slug, whose longest-prefix
@@ -1068,7 +1070,16 @@
           transitions: transitions,
           bank: { wrongTurn: bankEntry.wrongTurn, why: bankEntry.why, correctTurn: bankEntry.correctTurn },
           workedExample: opts.workedExample
-        }), validators.diagnostics, DIAGNOSTICS_KIND]
+        }), validators.diagnostics, DIAGNOSTICS_KIND],
+        ['workedExamples', SIBLINGS.workedExamplesPrompt.buildWorkedExamplesPrompts({
+          topic: opts.topic,
+          topicLabel: opts.topicLabel,
+          level: opts.level,
+          subject: opts.subject,
+          focus: opts.focus,
+          transitions: transitions,
+          workedExample: opts.workedExample
+        }), validators.workedExamples, WORKED_EXAMPLES_KIND]
       ];
       var pack = {
         manifest: {
@@ -1077,7 +1088,7 @@
           level: opts.level,
           subject: opts.subject,
           version: GENERATOR_VERSION,
-          materials: ['animation', 'slides', 'worksheet', 'notes', 'exitTicket', 'script', 'lessonPlan', 'scaffolds', 'diagnostics'],
+          materials: ['animation', 'slides', 'worksheet', 'notes', 'exitTicket', 'script', 'lessonPlan', 'scaffolds', 'diagnostics', 'workedExamples'],
           metadata: packMetadataFor(opts)
         }
       };
