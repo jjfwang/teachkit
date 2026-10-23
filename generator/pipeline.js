@@ -62,6 +62,7 @@
         scaffoldPrompt: require('./build_scaffold_prompt.js'),
         diagnosticsPrompt: require('./build_diagnostics_prompt.js'),
         workedExamplesPrompt: require('./build_worked_examples_prompt.js'),
+        quizBankPrompt: require('./build_quiz_bank_prompt.js'),
         syllabus: require('./syllabus.js'),
         validate: require('../player/validate.js')
       };
@@ -79,6 +80,7 @@
       scaffoldPrompt: g.AnimathScaffoldPrompt,
       diagnosticsPrompt: g.AnimathDiagnosticsPrompt,
       workedExamplesPrompt: g.AnimathWorkedExamplesPrompt,
+      quizBankPrompt: g.AnimathQuizBankPrompt,
       syllabus: g.AnimathSyllabus,
       validate: g.AnimathValidate
     };
@@ -151,6 +153,13 @@
     invalidLabel: 'The invalid worked-example set you returned:',
     returnLine: 'Return ONLY the corrected worked-example set as a single JSON object. No prose, no code fences.',
     rejectLabel: 'Worked-example set'
+  };
+  var QUIZ_BANK_KIND = {
+    notJsonProblem: 'The response was not valid JSON. Return ONLY the corrected quiz bank as JSON.',
+    repairHeader: 'Your previous response did not produce a valid quiz bank. It had these problems:',
+    invalidLabel: 'The invalid quiz bank you returned:',
+    returnLine: 'Return ONLY the corrected quiz bank as a single JSON object. No prose, no code fences.',
+    rejectLabel: 'Quiz bank'
   };
   var EXIT_TICKET_KIND = {
     notJsonProblem: 'The response was not valid JSON. Return ONLY the corrected exit ticket as JSON.',
@@ -386,6 +395,15 @@
     if (typeof deps.validate === 'function') return deps.validate;
     if (SIBLINGS.validate && typeof SIBLINGS.validate.validateWorkedExamples === 'function') {
       return SIBLINGS.validate.validateWorkedExamples;
+    } /* node:coverage ignore next */
+    return null;
+  }
+
+  function resolveQuizBankValidator(deps) {
+    if (typeof deps.validateQuizBank === 'function') return deps.validateQuizBank;
+    if (typeof deps.validate === 'function') return deps.validate;
+    if (SIBLINGS.validate && typeof SIBLINGS.validate.validateQuizBank === 'function') {
+      return SIBLINGS.validate.validateQuizBank;
     } /* node:coverage ignore next */
     return null;
   }
@@ -910,6 +928,68 @@
   }
 
   // opts:
+  //   {topic, topicLabel, level, subject, facet, focus, workedExample,
+  //    maxRepairs}
+  //   (the buildQuizBankPrompts option set; topic/subject required;
+  //   maxRepairs defaults to 3, 0 disables repair).
+  // deps:
+  //   {callChat(system, user) -> Promise<string>  (caller-supplied LLM call),
+  //    validateQuizBank?(spec) -> string[] | Promise<string[]>,
+  //    validate?(spec) -> string[] | Promise<string[]>  (fallback validator),
+  //    onProgress?(stage, n, max)}  stages: 'unpack', 'author', 'repair'.
+  //
+  // Quiz banks are generated FROM the misconception bank: the topic's
+  // bank entry is resolved first (the topic verbatim, then its
+  // slugified forms, facet carried - the resolvePackBankEntry order),
+  // and a topic with no bank entry rejects before any LLM call naming
+  // quizBank - the generator never invents misconceptions. Resolves
+  // with the first quiz bank that validates clean against
+  // validateQuizBank; rejects with an Error carrying err.problems when
+  // every attempt failed. The unpack step degrades exactly like
+  // generateDiagnostics: a failed unpack authors WITHOUT transitions.
+  function generateQuizBank(opts, deps) {
+    opts = opts || {};
+    deps = deps || {};
+    var entry = resolvePackBankEntry(opts);
+    if (!entry) {
+      return Promise.reject(new Error('generateQuizBank: no misconception bank entry for topic \"' +
+        opts.topic + '\" - quizBank materials are generated from the bank and never invent misconceptions'));
+    }
+    if (typeof deps.callChat !== 'function') {
+      return Promise.reject(new Error('generateQuizBank: deps.callChat(system, user) ' +
+        'must be a function returning a Promise of the raw response text'));
+    }
+    var validateFn = resolveQuizBankValidator(deps);
+    /* node:coverage ignore next 5 */
+    if (!validateFn) {
+      return Promise.reject(new Error('generateQuizBank: deps.validateQuizBank(spec) ' +
+        'must be a function returning the problem list (or supply deps.validate, ' +
+        'or load player/validate.js so validateQuizBank is available)'));
+    }
+    var progress = makeProgress(deps);
+    var maxRepairs = (opts.maxRepairs != null) ? opts.maxRepairs : DEFAULT_MAX_REPAIRS;
+
+    return unpackStage(deps, progress, opts).then(function (staged) {
+      var transitions = staged ? staged.transitions : null;
+      if (transitions) {
+        transitions = SIBLINGS.unpack.attachMisconceptions(transitions, opts.topic);
+      }
+      var prompts = SIBLINGS.quizBankPrompt.buildQuizBankPrompts({
+        topic: opts.topic,
+        topicLabel: opts.topicLabel,
+        level: opts.level,
+        subject: opts.subject,
+        facet: opts.facet,
+        focus: opts.focus,
+        transitions: transitions,
+        bank: { wrongTurn: entry.wrongTurn, why: entry.why, correctTurn: entry.correctTurn },
+        workedExample: opts.workedExample
+      });
+      return authorAndRepair(deps, progress, maxRepairs, prompts, validateFn, QUIZ_BANK_KIND);
+    });
+  }
+
+  // opts:
   //   {topic, topicLabel, level, subject, workedExample, kind, focus,
   //    facet, maxRepairs, force}
   //   (the union of the ten material option sets; topic/subject
@@ -1138,5 +1218,5 @@
     return generateLessonPack(merged, deps);
   }
 
-  return { generateAnimation: generateAnimation, generateSlides: generateSlides, generateWorksheet: generateWorksheet, generateExitTicket: generateExitTicket, generateNotes: generateNotes, generateScript: generateScript, generateLessonPlan: generateLessonPlan, generateScaffolds: generateScaffolds, generateDiagnostics: generateDiagnostics, generateWorkedExamples: generateWorkedExamples, generateLessonPack: generateLessonPack, generateLessonPackForSyllabus: generateLessonPackForSyllabus, clearPackCache: clearPackCache };
+  return { generateAnimation: generateAnimation, generateSlides: generateSlides, generateWorksheet: generateWorksheet, generateExitTicket: generateExitTicket, generateNotes: generateNotes, generateScript: generateScript, generateLessonPlan: generateLessonPlan, generateScaffolds: generateScaffolds, generateDiagnostics: generateDiagnostics, generateWorkedExamples: generateWorkedExamples, generateQuizBank: generateQuizBank, generateLessonPack: generateLessonPack, generateLessonPackForSyllabus: generateLessonPackForSyllabus, clearPackCache: clearPackCache };
 });

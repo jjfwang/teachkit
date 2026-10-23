@@ -299,6 +299,38 @@ export function generateWorkedExamples(
   opts: GenerateWorkedExamplesOptions,
   deps: GenerateWorkedExamplesDeps
 ): Promise<WorkedExamplesDocument>;
+// generateQuizBank options (issue #1255): the GenerateDiagnosticsOptions
+// shape plus an optional focus. Quiz banks are generated from the
+// misconception bank: a topic with no bank entry rejects before any
+// LLM call.
+export interface GenerateQuizBankOptions {
+  topic: string;
+  topicLabel?: string;
+  level?: string;
+  subject: string;
+  /** Facet hint for a faceted misconception bank entry; the primary facet resolves when omitted. */
+  facet?: string;
+  /** The student's focus for the bank, when given. */
+  focus?: string;
+  /** Optional worked example for this topic, adapted by the author prompt. */
+  workedExample?: string;
+  /** Number of repair turns after the first attempt. Default 3; 0 disables repair. */
+  maxRepairs?: number;
+}
+export interface GenerateQuizBankDeps {
+  callChat: PipelineCallChat;
+  /** Quiz bank validator; defaults to the built-in validateQuizBank when omitted. */
+  validateQuizBank?: PipelineValidate;
+  /** Fallback validator, used when validateQuizBank is not supplied. */
+  validate?: PipelineValidate;
+  onProgress?: PipelineProgress;
+}
+// The parsed animath quiz bank that validated clean.
+export type QuizBankDocument = Record<string, unknown>;
+export function generateQuizBank(
+  opts: GenerateQuizBankOptions,
+  deps: GenerateQuizBankDeps
+): Promise<QuizBankDocument>;
 // generateLessonPack (issue #768): one shared unpack authors all ten
 // materials; packs are cached in memory by topic slug.
 export interface GenerateLessonPackOptions {
