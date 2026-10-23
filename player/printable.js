@@ -332,11 +332,21 @@
 
   function renderWorksheet(spec, options) {
     assertValidWorksheet(spec);
-    return renderStudentSheet(spec, 'pr-sheet pr-student pr-worksheet', 'Worksheet', true, normalizeOptions(options));
+    var opts = normalizeOptions(options);
+    if (spec.variant === 'homework') {
+      var parts = renderStudentSheet(spec, 'pr-sheet pr-student pr-worksheet', 'Worksheet', true, opts).split('\n');
+      var kindIdx = parts.findIndex(function (line) { return line.indexOf('pr-kind') !== -1; });
+      parts.splice(kindIdx + 1, 0, '<p class="pr-homework">Homework: low-stakes practice - try it on your own, then check yourself with the self-mark key.</p>');
+      return parts.join('\n');
+    }
+    return renderStudentSheet(spec, 'pr-sheet pr-student pr-worksheet', 'Worksheet', true, opts);
   }
 
   function renderWorksheetAnswerKey(spec, options) {
     assertValidWorksheet(spec);
+    if (spec.variant === 'homework') {
+      return renderAnswerKey(spec, 'pr-sheet pr-teacher pr-answer-key pr-worksheet', 'Homework self-mark key', true, normalizeOptions(options));
+    }
     return renderAnswerKey(spec, 'pr-sheet pr-teacher pr-answer-key pr-worksheet', 'Worksheet answer key', true, normalizeOptions(options));
   }
 

@@ -1,0 +1,139 @@
+{
+  "level": "jc",
+  "questions": [
+    {
+      "choices": [
+        {
+          "text": "Nothing - the d symbols are factors, so they cancel like any fraction"
+        },
+        {
+          "correct": true,
+          "text": "dy/dx is one symbol for a limit, not a fraction, so there is nothing to cancel"
+        },
+        {
+          "text": "The d symbols cancel only when x and y are both positive"
+        },
+        {
+          "text": "dy/dx is a fraction, but cancelling is saved for the last step"
+        }
+      ],
+      "difficulty": 1,
+      "explanation": "The trap claim is: Cancelling the d symbols in dy/dx. dy/dx looks like a fraction, so the d symbols look like they can cancel. dy/dx is one symbol for a limit, not a fraction: cancelling the d symbols breaks the mathematics.",
+      "id": "q1",
+      "kind": "multiple-choice",
+      "markScheme": {
+        "commonErrors": [
+          "Cancelling the d symbols in dy/dx."
+        ],
+        "ecf": false,
+        "points": [
+          {
+            "marks": 1,
+            "text": "Chooses 'dy/dx is one symbol for a limit, not a fraction, so there is nothing to cancel'"
+          }
+        ]
+      },
+      "marks": 1,
+      "misconception": "Cancelling the d symbols in dy/dx.",
+      "objective": "o4",
+      "prompt": "A student looks at dy/dx and treats it as an ordinary fraction. What is wrong with that move?",
+      "tier": "support"
+    },
+    {
+      "choices": [
+        {
+          "text": "dA/dt = pi r^2 dr/dt"
+        },
+        {
+          "text": "dA/dt = 2 pi r"
+        },
+        {
+          "correct": true,
+          "text": "dA/dt = 2 pi r dr/dt"
+        },
+        {
+          "text": "dA/dt = dr/dt / (2 pi r)"
+        }
+      ],
+      "difficulty": 1,
+      "explanation": "Differentiate A with respect to r first: dA/dr = 2 pi r. The chain rule then attaches the radius rate: dA/dt = dA/dr x dr/dt = 2 pi r dr/dt. The middle option forgets dr/dt - a rate with respect to time must carry the per-second factor.",
+      "id": "q5",
+      "kind": "multiple-choice",
+      "markScheme": {
+        "ecf": false,
+        "points": [
+          {
+            "marks": 1,
+            "text": "Chooses 'dA/dt = 2 pi r dr/dt'"
+          }
+        ]
+      },
+      "marks": 1,
+      "objective": "o2",
+      "prompt": "For a circle of area A = pi r^2, which equation correctly links the connected rates?",
+      "tier": "support"
+    },
+    {
+      "answer": "dr/dt = 2 cm/s when r = 3 cm. dr/dt does not stay constant: for a fixed dA/dt, dr/dt = (dA/dt) / (2 pi r) falls as r grows.",
+      "difficulty": 4,
+      "explanation": "From A = pi r^2, dA/dt = 2 pi r dr/dt. Substituting dA/dt = 12 pi and r = 3 gives dr/dt = 2 cm/s, and the formula shows dr/dt shrinks as r increases.",
+      "id": "q9",
+      "kind": "short-answer",
+      "markScheme": {
+        "ecf": false,
+        "points": [
+          {
+            "marks": 1,
+            "text": "Differentiates A = pi r^2 to get dA/dt = 2 pi r dr/dt"
+          },
+          {
+            "marks": 1,
+            "text": "Substitutes to find dr/dt = 2 cm/s at r = 3 cm"
+          },
+          {
+            "marks": 1,
+            "text": "States dr/dt decreases as r grows because it is inversely proportional to r for fixed dA/dt"
+          }
+        ]
+      },
+      "marks": 3,
+      "objective": "o2",
+      "prompt": "A circular oil slick grows so that its area increases at a constant 12 pi cm^2/s. Find dr/dt when the radius is 3 cm, and state whether dr/dt stays constant as the slick keeps growing at the same area rate.",
+      "tier": "extension",
+      "workedSolution": "dA/dt = 2 pi r dr/dt, so 12 pi = 2 pi (3) dr/dt and dr/dt = 2 cm/s. Since dr/dt = 6 / r here, it falls as r grows."
+    },
+    {
+      "answer": "The true derivative is dy/dx = 2x = 6 at x = 3, but y/x = 9/3 = 3, so the claimed value disagrees with the derivative. The error is treating dy/dx as a fraction of two numbers that can be cancelled; it is a single limit symbol.",
+      "difficulty": 4,
+      "explanation": "Checking against the actual derivative exposes the claim: 2x gives 6, not 3. Cancellation would only be valid if dy/dx were an ordinary quotient, which it is not.",
+      "id": "q12",
+      "kind": "short-answer",
+      "markScheme": {
+        "ecf": false,
+        "points": [
+          {
+            "marks": 1,
+            "text": "Computes the true derivative dy/dx = 2x = 6 at x = 3"
+          },
+          {
+            "marks": 1,
+            "text": "Computes the claimed y/x = 3 and shows it differs from 6"
+          },
+          {
+            "marks": 1,
+            "text": "Explains dy/dx is a single limit symbol, not a cancellable fraction"
+          }
+        ]
+      },
+      "marks": 3,
+      "objective": "o4",
+      "prompt": "A student works with y = x^2 and claims dy/dx = y/x, by \"cancelling the d's\", so at x = 3 the gradient is 3. Show that this claim is wrong at x = 3 and explain the error.",
+      "tier": "extension",
+      "workedSolution": "y = x^2 gives dy/dx = 2x, so at x = 3 the gradient is 6. The claim gives y/x = 9/3 = 3, which is not 6 - so \"cancelling the d's\" fails, because dy/dx is one symbol for a limit, not a fraction."
+    }
+  ],
+  "subject": "math",
+  "title": "JC H2 differentiation: connected rates of change",
+  "topic": "h2-differentiation",
+  "variant": "homework"
+}

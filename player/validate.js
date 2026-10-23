@@ -505,13 +505,21 @@
   // Worksheet validator (SPEC.md "Worksheet spec"): at least 1 question;
   // the answer key is the per-question explanation / misconception fields.
   function validateWorksheet(spec) {
-    return validateMaterial(spec, 1, Infinity, 'questions: required array of 1 or more questions', true);
+    var errors = validateMaterial(spec, 1, Infinity, 'questions: required array of 1 or more questions', true);
+    if (spec && typeof spec === 'object' && spec.variant !== undefined && spec.variant !== 'homework') {
+      errors.push('variant: must be homework when present');
+    }
+    return errors;
   }
 
   // Exit-ticket validator (SPEC.md "Exit ticket spec"): 3..5 questions;
   // per-answer feedback is keyed to misconceptions on each question.
   function validateExitTicket(spec) {
-    return validateMaterial(spec, 3, 5, 'questions: required array of 3..5 questions', false);
+    var errors = validateMaterial(spec, 3, 5, 'questions: required array of 3..5 questions', false);
+    if (spec && typeof spec === 'object' && spec.variant !== undefined) {
+      errors.push('variant: exit tickets do not carry a variant');
+    }
+    return errors;
   }
 
   // Student notes validator (SPEC.md "Student notes spec"): study notes

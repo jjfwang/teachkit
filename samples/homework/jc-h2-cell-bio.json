@@ -1,0 +1,139 @@
+{
+  "level": "jc",
+  "questions": [
+    {
+      "choices": [
+        {
+          "text": "Plant cells have no mitochondria, because chloroplasts release all their energy"
+        },
+        {
+          "text": "Plant cells have no mitochondria at night, but grow them during the day"
+        },
+        {
+          "correct": true,
+          "text": "Plant cells have mitochondria as well as chloroplasts, and respire day and night to release energy from sugar"
+        },
+        {
+          "text": "Plant cells have mitochondria only in their roots"
+        }
+      ],
+      "difficulty": 1,
+      "explanation": "The trap claim is: Plant cells have no mitochondria. Plant cells respire too, day and night: they have mitochondria as well - only the chloroplast is plant-only. Chloroplasts trap light energy in photosynthesis, but respiration in mitochondria is what releases that energy for cell activities, in plant and animal cells alike.",
+      "id": "q1",
+      "kind": "multiple-choice",
+      "markScheme": {
+        "commonErrors": [
+          "Plant cells have no mitochondria."
+        ],
+        "ecf": false,
+        "points": [
+          {
+            "marks": 1,
+            "text": "Chooses 'Plant cells have mitochondria as well as chloroplasts, and respire day and night to release energy from sugar'"
+          }
+        ]
+      },
+      "marks": 1,
+      "misconception": "Plant cells have no mitochondria.",
+      "objective": "o5",
+      "prompt": "A student claims plant cells do not need mitochondria because they have chloroplasts. What is correct?",
+      "tier": "support"
+    },
+    {
+      "choices": [
+        {
+          "correct": true,
+          "text": "Mitochondrion"
+        },
+        {
+          "text": "Chloroplast"
+        },
+        {
+          "text": "Nucleus"
+        },
+        {
+          "text": "Golgi apparatus"
+        }
+      ],
+      "difficulty": 1,
+      "explanation": "Respiration happens in mitochondria in every eukaryotic cell; chloroplasts only capture light energy in photosynthesis.",
+      "id": "q6",
+      "kind": "multiple-choice",
+      "markScheme": {
+        "ecf": false,
+        "points": [
+          {
+            "marks": 1,
+            "text": "Chooses 'Mitochondrion'"
+          }
+        ]
+      },
+      "marks": 1,
+      "objective": "o2",
+      "prompt": "Which organelle releases energy from glucose during respiration in both plant and animal cells?",
+      "tier": "support"
+    },
+    {
+      "answer": "The phospholipid bilayer is partially permeable: its hydrophobic core lets small non-polar molecules through but blocks ions and large polar molecules. Channel and carrier proteins spanning the bilayer provide selective routes for specific ions and molecules, and carrier proteins can use ATP for active transport against a gradient - so the cell admits what it needs and excludes the rest.",
+      "difficulty": 4,
+      "explanation": "Structure fits function: the bilayer is a barrier to most dissolved substances, while specific protein channels and carriers give controlled, selective passage, including active uptake.",
+      "id": "q11",
+      "kind": "short-answer",
+      "markScheme": {
+        "ecf": false,
+        "points": [
+          {
+            "marks": 1,
+            "text": "Bilayer forms a partially permeable barrier (hydrophobic core blocks ions / large polar molecules)"
+          },
+          {
+            "marks": 1,
+            "text": "Channel / carrier proteins give selective passage for specific substances"
+          },
+          {
+            "marks": 1,
+            "text": "Links control to a function, e.g. active transport with ATP or exclusion of unwanted substances"
+          }
+        ]
+      },
+      "marks": 3,
+      "objective": "o1",
+      "prompt": "Explain how the structure of the cell membrane enables it to control what enters and leaves the cell. Refer to the phospholipid bilayer and to membrane proteins in your answer.",
+      "tier": "extension",
+      "workedSolution": "Bilayer: two phospholipid layers with hydrophobic tails inward - small non-polar molecules diffuse through, ions cannot. Proteins: channels and carriers span the membrane, each specific to one substance, and carriers can pump substances in by active transport. Together they make the membrane selectively (partially) permeable."
+    },
+    {
+      "answer": "The claim is false. Chloroplasts capture light energy into glucose only when light is available; the cell still needs mitochondria to respire that glucose and release usable energy (ATP) continuously, including at night and in tissues that never see light. Leaf cells contain both organelles, and survival through the night - when photosynthesis stops but respiration continues - is direct evidence that mitochondria are essential.",
+      "difficulty": 5,
+      "explanation": "Energy capture (chloroplast) and energy release (mitochondrion) are different jobs. A cell with only chloroplasts would have no way to release energy in the dark, which is why every leaf cell also carries mitochondria.",
+      "id": "q15",
+      "kind": "short-answer",
+      "markScheme": {
+        "ecf": false,
+        "points": [
+          {
+            "marks": 1,
+            "text": "Rejects the claim: chloroplasts capture energy into glucose but do not release it as ATP"
+          },
+          {
+            "marks": 1,
+            "text": "Mitochondria respire glucose to release energy continuously, including at night"
+          },
+          {
+            "marks": 1,
+            "text": "Supports the evaluation with evidence, e.g. leaf cells contain both organelles / cells survive and function in the dark"
+          }
+        ]
+      },
+      "marks": 3,
+      "objective": "o5",
+      "prompt": "Evaluate the claim: \"A leaf cell does not need mitochondria, because its chloroplasts supply all its energy.\"",
+      "tier": "extension",
+      "workedSolution": "Photosynthesis stores energy in glucose; respiration in mitochondria releases it. At night photosynthesis stops, yet the leaf cell stays alive on respiration alone - so mitochondria are indispensable, and real leaf cells contain both organelles."
+    }
+  ],
+  "subject": "science",
+  "title": "JC H2 biology \u2014 cell: ultrastructure and biomolecules",
+  "topic": "h2-cell-bio",
+  "variant": "homework"
+}

@@ -28,6 +28,7 @@ export interface WorksheetSpec {
   level: string;
   subject: string;
   topic: string;
+  variant?: string;
   questions: Question[];
   [key: string]: unknown;
 }
