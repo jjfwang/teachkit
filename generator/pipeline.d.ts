@@ -548,7 +548,7 @@ export function generateFeedback(
   opts: GenerateFeedbackOptions,
   deps: GenerateFeedbackDeps
 ): Promise<FeedbackDocument>;
-// generateLessonPack (issue #768): one shared unpack authors all thirteen
+// generateLessonPack (issue #768): one shared unpack authors all fourteen
 // materials; packs are cached in memory by topic slug.
 export interface GenerateLessonPackOptions {
   topic: string;
@@ -582,6 +582,7 @@ export interface GenerateLessonPackDeps {
   validateQuizBank?: PipelineValidate;
   validateRevision?: PipelineValidate;
   validateOrganisers?: PipelineValidate;
+  validateFeedback?: PipelineValidate;
   onProgress?: PipelineProgress;
 }
 export interface PackMetadataCode {
@@ -620,6 +621,7 @@ export interface LessonPackResult {
   quizBank: QuizBankDocument;
   revision: RevisionDocument;
   organisers: OrganisersDocument;
+  feedback: FeedbackDocument;
 }
 export function generateLessonPack(
   opts: GenerateLessonPackOptions,

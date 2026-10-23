@@ -30,9 +30,10 @@
  * generateNotes and generateScript (issue #768) are the same kind of
  * sibling (build_notes_prompt.js / build_script_prompt.js, validateNotes
  * / validateScript). generateLessonPack (issue #768) runs ONE shared
- * unpack stage, then authors all thirteen materials from it (animation,
+ * unpack stage, then authors all fourteen materials from it (animation,
  * slides, worksheet, notes, exit ticket, teacher script, lesson plan,
- * scaffolds, diagnostics, worked examples, quiz bank, revision, organisers)
+ * scaffolds, diagnostics, worked examples, quiz bank, revision, organisers,
+ * feedback)
  * and resolves with a pack manifest; packs are cached in memory by
  * topic slug.
  */
@@ -1457,7 +1458,7 @@
   // opts:
   //   {topic, topicLabel, level, subject, workedExample, kind, focus,
   //    facet, maxRepairs, force}
-  //   (the union of the thirteen material option sets; topic/subject
+  //   (the union of the fourteen material option sets; topic/subject
   //   required; maxRepairs defaults to 3; force === true bypasses the
   //   pack cache and regenerates, replacing the cached entry).
   // deps:
@@ -1466,19 +1467,19 @@
   //    validateNotes? / validateExitTicket? / validateScript? /
   //    validateLessonPlan? / validateScaffolds? / validateDiagnostics? /
   //    validateWorkedExamples? / validateQuizBank? / validateRevision? /
-  //    validateOrganisers?
+  //    validateOrganisers? / validateFeedback?
   //      (per-material validators, resolved like the single-material
   //      generators; the built-in player/validate.js validators are the
   //      defaults), onProgress?(stage, n, max)}.
   //
-  // Runs ONE shared unpack stage, then authors all thirteen materials from
+  // Runs ONE shared unpack stage, then authors all fourteen materials from
   // that single unpack, each through its existing builder + validator +
   // repair discipline. A material that exhausts its repair cap rejects
   // the whole pack with that material named on err.material (and
   // err.problems carried). Resolves with
   // {manifest, animation, slides, worksheet, notes, exitTicket, script,
   // lessonPlan, scaffolds, diagnostics, workedExamples, quizBank, revision,
-  // organisers}
+  // organisers, feedback}
   // where manifest = {slug, topic, level, subject, version, materials,
   // metadata} (metadata per packMetadataFor above, issue #1221).
   // Packs are cached in memory by slug: a repeat call with the same
@@ -1558,7 +1559,8 @@
       workedExamples: resolveWorkedExamplesValidator(deps),
       quizBank: resolveQuizBankValidator(deps),
       revision: resolveRevisionValidator(deps),
-      organisers: resolveOrganisersValidator(deps)
+      organisers: resolveOrganisersValidator(deps),
+      feedback: resolveFeedbackValidator(deps)
     };
     var missing = Object.keys(validators).filter(function (k) { return !validators[k]; });
     /* node:coverage ignore next 5 */
@@ -1659,7 +1661,7 @@
           level: opts.level,
           subject: opts.subject,
           version: GENERATOR_VERSION,
-          materials: ['animation', 'slides', 'worksheet', 'notes', 'exitTicket', 'script', 'lessonPlan', 'scaffolds', 'diagnostics', 'workedExamples', 'quizBank', 'revision', 'organisers'],
+          materials: ['animation', 'slides', 'worksheet', 'notes', 'exitTicket', 'script', 'lessonPlan', 'scaffolds', 'diagnostics', 'workedExamples', 'quizBank', 'revision', 'organisers', 'feedback'],
           metadata: packMetadataFor(opts)
         }
       };
@@ -1696,6 +1698,34 @@
         return authorAndRepair(deps, progress, maxRepairs, prompts, validators.organisers, ORGANISERS_KIND)
           .then(function (doc) { pack.organisers = doc; }, function (err) {
             if (err && typeof err === 'object' && err.material == null) err.material = 'organisers';
+            throw err;
+          });
+      });
+      // The feedback job runs after organisers, LAST in pack order:
+      // its prompts are built from the pack's OWN authored paired
+      // assessment materials (the worksheet questions, exit-ticket
+      // questions, quiz-bank items and notes trap, issue #1299 on the
+      // #1294 decomposition), which only exist once those jobs above
+      // have completed - so like organisers it cannot be built up
+      // front. No bank resolution and no new failure mode: repair
+      // exhaustion names feedback via err.material like every other
+      // material.
+      chain = chain.then(function () {
+        var prompts = SIBLINGS.feedbackPrompt.buildFeedbackPrompts({
+          topic: opts.topic,
+          topicLabel: opts.topicLabel,
+          level: opts.level,
+          subject: opts.subject,
+          facet: opts.facet,
+          focus: opts.focus,
+          exitTicketQuestions: pack.exitTicket ? pack.exitTicket.questions : undefined,
+          worksheetQuestions: pack.worksheet ? pack.worksheet.questions : undefined,
+          quizItems: pack.quizBank ? pack.quizBank.items : undefined,
+          notesTrap: pack.notes ? pack.notes.trap : undefined
+        });
+        return authorAndRepair(deps, progress, maxRepairs, prompts, validators.feedback, FEEDBACK_KIND)
+          .then(function (doc) { pack.feedback = doc; }, function (err) {
+            if (err && typeof err === 'object' && err.material == null) err.material = 'feedback';
             throw err;
           });
       });

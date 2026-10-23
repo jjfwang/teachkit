@@ -1,8 +1,8 @@
 /* animath generateLessonPack pipeline tests — zero network.
  * Guards generator/pipeline.js generateLessonPack (issue #768): ONE
- * shared unpack authors all thirteen materials (animation, slides,
+ * shared unpack authors all fourteen materials (animation, slides,
  * worksheet, notes, exit ticket, teacher script, lesson plan, scaffolds,
- * diagnostics, worked examples, quiz bank, revision, organisers), each through its
+ * diagnostics, worked examples, quiz bank, revision, organisers, feedback), each through its
  * existing builder + validator + repair discipline; the resolved pack
  * carries a manifest (slug, topic, level, subject, generator version,
  * material keys) and is cached in memory by slug — a repeat call makes
@@ -36,6 +36,7 @@ const GOLD_WORKED = gold('samples/worked-examples/primary-science-water-cycle.js
 const GOLD_QUIZBANK = gold('samples/quiz-banks/primary-science-water-cycle.json');
 const GOLD_REVISION = gold('samples/revision/primary-science-water-cycle.json');
 const GOLD_ORGANISERS = gold('samples/organisers/primary-science-water-cycle.json');
+const GOLD_FEEDBACK = gold('samples/feedback/primary-science-water-cycle.json');
 
 const TRANSITIONS = [
   { name: 'evaporation', from_state: 'liquid water', to_state: 'water vapour', driver: "the sun's heat" },
@@ -66,6 +67,7 @@ function route(system) {
   if (system.indexOf('quiz bank author') !== -1) return JSON.stringify(GOLD_QUIZBANK);
   if (system.indexOf('revision author') !== -1) return JSON.stringify(GOLD_REVISION);
   if (system.indexOf('organisers author') !== -1) return JSON.stringify(GOLD_ORGANISERS);
+  if (system.indexOf('feedback author') !== -1) return JSON.stringify(GOLD_FEEDBACK);
   throw new Error('unrouted system prompt: ' + system.slice(0, 60));
 }
 
@@ -78,14 +80,14 @@ function stubChat(handler) {
   return { calls, callChat };
 }
 
-test('full pack: one unpack, thirteen validate-clean materials, manifest correct', async () => {
+test('full pack: one unpack, fourteen validate-clean materials, manifest correct', async () => {
   PIPELINE.clearPackCache();
   const { calls, callChat } = stubChat(route);
   const pack = await PIPELINE.generateLessonPack(OPTS, { callChat });
 
   const unpackCalls = calls.filter((c) => c.system.indexOf('topic unpacker') !== -1);
   assert.equal(unpackCalls.length, 1, 'exactly one shared unpack call');
-  assert.equal(calls.length, 14, 'one unpack + thirteen author calls, no repairs');
+  assert.equal(calls.length, 15, 'one unpack + fourteen author calls, no repairs');
 
   assert.deepEqual(validate.validateSpec(pack.animation), [], 'animation validates clean');
   assert.deepEqual(validate.validateSlides(pack.slides), [], 'slides validate clean');
@@ -100,6 +102,7 @@ test('full pack: one unpack, thirteen validate-clean materials, manifest correct
   assert.deepEqual(validate.validateQuizBank(pack.quizBank), [], 'quiz bank validates clean');
   assert.deepEqual(validate.validateRevision(pack.revision), [], 'revision validates clean');
   assert.deepEqual(validate.validateOrganisers(pack.organisers), [], 'organisers validates clean');
+  assert.deepEqual(validate.validateFeedback(pack.feedback), [], 'feedback validates clean');
   assert.deepEqual(pack.animation, GOLD_ANIMATION);
   assert.deepEqual(pack.notes, GOLD_NOTES);
   assert.deepEqual(pack.script, GOLD_SCRIPT);
@@ -110,10 +113,10 @@ test('full pack: one unpack, thirteen validate-clean materials, manifest correct
   assert.deepEqual(pack.quizBank, GOLD_QUIZBANK);
   assert.deepEqual(pack.revision, GOLD_REVISION);
   assert.deepEqual(pack.organisers, GOLD_ORGANISERS);
+  assert.deepEqual(pack.feedback, GOLD_FEEDBACK);
 
   const organisersCalls = calls.filter((c) => c.system.indexOf('organisers author') !== -1);
   assert.equal(organisersCalls.length, 1, 'exactly one organisers author call');
-  assert.equal(calls[calls.length - 1], organisersCalls[0], 'the organisers author call is the last call');
   for (const d of GOLD_NOTES.definitions) {
     assert.ok(organisersCalls[0].user.includes(d.term + ': ' + d.meaning),
       'the organisers prompt carries the pack-authored notes definition for ' + d.term);
@@ -123,16 +126,34 @@ test('full pack: one unpack, thirteen validate-clean materials, manifest correct
       'the organisers prompt carries the pack-authored notes mechanism step ' + (i + 1));
   });
 
+  const feedbackCalls = calls.filter((c) => c.system.indexOf('feedback author') !== -1);
+  assert.equal(feedbackCalls.length, 1, 'exactly one feedback author call');
+  assert.equal(calls[calls.length - 1], feedbackCalls[0], 'the feedback author call is the last call');
+  for (const q of GOLD_WORKSHEET.questions) {
+    assert.ok(feedbackCalls[0].user.includes(q.prompt),
+      'the feedback prompt carries the pack-authored worksheet question: ' + q.prompt);
+  }
+  for (const q of GOLD_TICKET.questions) {
+    assert.ok(feedbackCalls[0].user.includes(q.prompt),
+      'the feedback prompt carries the pack-authored exit-ticket question: ' + q.prompt);
+  }
+  for (const item of GOLD_QUIZBANK.items) {
+    assert.ok(feedbackCalls[0].user.includes(item.prompt),
+      'the feedback prompt carries the pack-authored quiz-bank item: ' + item.prompt);
+  }
+  assert.ok(feedbackCalls[0].user.includes('Misconception: ' + GOLD_NOTES.trap.misconception),
+    'the feedback prompt carries the pack-authored notes trap misconception');
+
   assert.equal(pack.manifest.slug, EXPECTED_SLUG, 'slug derived from topic + level + subject');
   assert.equal(pack.manifest.topic, 'The Water Cycle');
   assert.equal(pack.manifest.level, 'Primary Science');
   assert.equal(pack.manifest.subject, 'Science');
   assert.equal(pack.manifest.version, pkg.version, 'manifest names the generator version');
   assert.deepEqual(pack.manifest.materials,
-    ['animation', 'slides', 'worksheet', 'notes', 'exitTicket', 'script', 'lessonPlan', 'scaffolds', 'diagnostics', 'workedExamples', 'quizBank', 'revision', 'organisers']);
+    ['animation', 'slides', 'worksheet', 'notes', 'exitTicket', 'script', 'lessonPlan', 'scaffolds', 'diagnostics', 'workedExamples', 'quizBank', 'revision', 'organisers', 'feedback']);
   assert.deepEqual(Object.keys(pack).sort(),
-    ['animation', 'diagnostics', 'exitTicket', 'lessonPlan', 'manifest', 'notes', 'organisers', 'quizBank', 'revision', 'scaffolds', 'script', 'slides', 'workedExamples', 'worksheet'],
-    'the pack carries exactly the manifest plus the thirteen materials');
+    ['animation', 'diagnostics', 'exitTicket', 'feedback', 'lessonPlan', 'manifest', 'notes', 'organisers', 'quizBank', 'revision', 'scaffolds', 'script', 'slides', 'workedExamples', 'worksheet'],
+    'the pack carries exactly the manifest plus the fourteen materials');
 });
 
 test('cache: second identical call makes zero additional callChat calls', async () => {
@@ -241,6 +262,7 @@ test('by syllabus id: composite id authors a validate-clean pack with the resolv
   assert.deepEqual(validate.validateQuizBank(pack.quizBank), [], 'quiz bank validates clean');
   assert.deepEqual(validate.validateRevision(pack.revision), [], 'revision validates clean');
   assert.deepEqual(validate.validateOrganisers(pack.organisers), [], 'organisers validates clean');
+  assert.deepEqual(validate.validateFeedback(pack.feedback), [], 'feedback validates clean');
 
   assert.equal(pack.manifest.slug, 'water-cycle-primary-science');
   assert.equal(pack.manifest.topic, 'water-cycle');
@@ -356,6 +378,22 @@ test('organisers failure rejects the pack naming organisers with err.problems', 
       assert.equal(err.material, 'organisers', 'the failing material is named');
       assert.deepEqual(err.problems, validate.validateOrganisers({}),
         'err.problems comes from validateOrganisers');
+      return true;
+    });
+});
+
+test('feedback failure rejects the pack naming feedback with err.problems', async () => {
+  PIPELINE.clearPackCache();
+  const { callChat } = stubChat((system) => {
+    if (system.indexOf('feedback author') !== -1) return '{}';
+    return route(system);
+  });
+  await assert.rejects(
+    () => PIPELINE.generateLessonPack({ ...OPTS, maxRepairs: 0 }, { callChat }),
+    (err) => {
+      assert.equal(err.material, 'feedback', 'the failing material is named');
+      assert.deepEqual(err.problems, validate.validateFeedback({}),
+        'err.problems comes from validateFeedback');
       return true;
     });
 });
