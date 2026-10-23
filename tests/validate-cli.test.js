@@ -86,6 +86,6 @@ test('CLI: invalid JSON exits 1 naming the file', () => {
 test('require: still exposes validateSpec with no CLI side effects', () => {
   const v = require('../player/validate.js');
   assert.equal(typeof v.validateSpec, 'function');
-  assert.deepEqual(Object.keys(v).sort(), ['SUBJECTS', 'validateDiagnostics', 'validateExitTicket', 'validateLessonPlan', 'validateNotes', 'validatePackMetadata', 'validateQuizBank', 'validateScaffolds', 'validateScript', 'validateSlides', 'validateSpec', 'validateWorkedExamples', 'validateWorksheet']);
+  assert.deepEqual(Object.keys(v).sort(), ['SUBJECTS', 'validateDiagnostics', 'validateExitTicket', 'validateLessonPlan', 'validateNotes', 'validatePackMetadata', 'validateQuizBank', 'validateScaffolds', 'validateScript', 'validateSlides', 'validateSpec', 'validateSummative', 'validateWorkedExamples', 'validateWorksheet']);
   assert.deepEqual(v.validateSpec(null), ['spec: must be an object']);
 });

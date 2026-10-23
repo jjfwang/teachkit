@@ -51,6 +51,8 @@
     "./worked-examples": "./generator/pipeline.js",
     "./quiz-bank-prompt": "./generator/build_quiz_bank_prompt.js",
     "./quiz-bank": "./generator/pipeline.js",
+    "./summative-prompt": "./generator/build_summative_prompt.js",
+    "./summative": "./generator/pipeline.js",
     "./lesson-pack": "./generator/pipeline.js"
   },
   "files": [
