@@ -1,0 +1,50 @@
+{
+  "title": "The Water Cycle",
+  "level": "primary",
+  "subject": "science",
+  "topic": "water-cycle",
+  "items": [
+    {
+      "prompt": "What happens to liquid water when the sun heats it in a puddle?",
+      "answer": "It evaporates into invisible water vapour.",
+      "choices": [
+        "It evaporates into invisible water vapour.",
+        "It disappears for good.",
+        "It stops being water."
+      ],
+      "misconceptionCode": "Water disappears for good once it evaporates."
+    },
+    {
+      "prompt": "What is water vapour?",
+      "answer": "Water in its gas form, invisible but still water.",
+      "choices": [
+        "Water in its gas form, invisible but still water.",
+        "Water that no longer exists.",
+        "Dry air with no water in it."
+      ],
+      "misconceptionCode": "Water disappears for good once it evaporates."
+    },
+    {
+      "prompt": "Name the change that turns water vapour back into tiny liquid droplets high in the air.",
+      "answer": "Condensation"
+    },
+    {
+      "prompt": "What do we call water falling from clouds to the ground?",
+      "answer": "Precipitation"
+    },
+    {
+      "prompt": "A puddle dries up on a hot day. Where has the water gone?",
+      "answer": "It evaporated into the air as water vapour.",
+      "choices": [
+        "It evaporated into the air as water vapour.",
+        "It disappeared for good.",
+        "It was destroyed by the heat."
+      ],
+      "misconceptionCode": "Water disappears for good once it evaporates."
+    },
+    {
+      "prompt": "Write the four stages of the water cycle in order, starting with evaporation.",
+      "answer": "Evaporation, condensation, precipitation, collection"
+    }
+  ]
+}

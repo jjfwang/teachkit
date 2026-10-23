@@ -1,0 +1,49 @@
+{
+  "title": "E-Math algebra: expansion, factorisation and changing the subject",
+  "level": "secondary",
+  "subject": "math",
+  "topic": "e-algebra",
+  "items": [
+    {
+      "prompt": "Expand (x + 3)^2.",
+      "answer": "x^2 + 6x + 9",
+      "choices": [
+        "x^2 + 6x + 9",
+        "x^2 + 9",
+        "x^2 + 3x + 9"
+      ],
+      "misconceptionCode": "(a + b)^2 = a^2 + b^2."
+    },
+    {
+      "prompt": "Expand (a + b)^2.",
+      "answer": "a^2 + 2ab + b^2",
+      "choices": [
+        "a^2 + 2ab + b^2",
+        "a^2 + b^2",
+        "a^2 + ab + b^2"
+      ],
+      "misconceptionCode": "(a + b)^2 = a^2 + b^2."
+    },
+    {
+      "prompt": "Factorise x^2 + 5x + 6.",
+      "answer": "(x + 2)(x + 3)"
+    },
+    {
+      "prompt": "Make x the subject of y = 3x + 7.",
+      "answer": "x = (y - 7) / 3"
+    },
+    {
+      "prompt": "Expand (x - 4)(x + 4).",
+      "answer": "x^2 - 16",
+      "choices": [
+        "x^2 - 16",
+        "x^2 + 16",
+        "x^2 - 8x - 16"
+      ]
+    },
+    {
+      "prompt": "Expand (2x + 1)(x + 5).",
+      "answer": "2x^2 + 11x + 5"
+    }
+  ]
+}

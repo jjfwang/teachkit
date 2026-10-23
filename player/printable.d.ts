@@ -3,7 +3,8 @@
 // (issue #758), plus student notes and teacher script (issue #766),
 // plus the lesson plan renderer (issue #1219), plus the scaffolds
 // student sheet and answer key (issue #1233), plus the diagnostics
-// student sheet and answer key (issue #1243).
+// student sheet and answer key (issue #1243), plus the quiz bank
+// student sheet and answer key (issue #1257).
 export interface Choice {
   text: string;
   correct?: boolean;
@@ -210,4 +211,23 @@ export interface WorkedExamplesSpec {
 }
 export function renderWorkedExamples(spec: WorkedExamplesSpec, options?: PrintableOptions): string;
 export function renderWorkedExamplesAnswerKey(spec: WorkedExamplesSpec, options?: PrintableOptions): string;
+export interface QuizBankItem {
+  prompt: string;
+  answer: string;
+  choices?: string[];
+  misconceptionCode?: string;
+  outcomeCode?: string;
+  [key: string]: unknown;
+}
+export interface QuizBankSpec {
+  title: string;
+  level: string;
+  subject: string;
+  topic: string;
+  instructions?: string;
+  items: QuizBankItem[];
+  [key: string]: unknown;
+}
+export function renderQuizBank(spec: QuizBankSpec, options?: PrintableOptions): string;
+export function renderQuizBankAnswerKey(spec: QuizBankSpec, options?: PrintableOptions): string;
 export function escapeHtml(s: string): string;
