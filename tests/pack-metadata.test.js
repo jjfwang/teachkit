@@ -157,7 +157,8 @@ const GOLD = {
   scaffolds: gold('samples/scaffolds/primary-science-water-cycle.json'),
   diagnostics: gold('samples/diagnostics/primary-science-water-cycle.json'),
   workedExamples: gold('samples/worked-examples/primary-science-water-cycle.json'),
-  quizBank: gold('samples/quiz-banks/primary-science-water-cycle.json')
+  quizBank: gold('samples/quiz-banks/primary-science-water-cycle.json'),
+  revision: gold('samples/revision/primary-science-water-cycle.json')
 };
 const TRANSITIONS_TEXT = JSON.stringify([
   { name: 'evaporation', from_state: 'liquid water', to_state: 'water vapour', driver: "the sun's heat" },
@@ -177,6 +178,7 @@ function route(system) {
   if (system.indexOf('diagnostics author') !== -1) return JSON.stringify(GOLD.diagnostics);
   if (system.indexOf('worked-examples author') !== -1) return JSON.stringify(GOLD.workedExamples);
   if (system.indexOf('quiz bank author') !== -1) return JSON.stringify(GOLD.quizBank);
+  if (system.indexOf('revision author') !== -1) return JSON.stringify(GOLD.revision);
   throw new Error('unrouted system prompt: ' + system.slice(0, 60));
 }
 const callChat = (system) => Promise.resolve(route(system));

@@ -390,7 +390,7 @@ export function generateSummative(
   opts: GenerateSummativeOptions,
   deps: GenerateSummativeDeps
 ): Promise<SummativeDocument>;
-// generateLessonPack (issue #768): one shared unpack authors all eleven
+// generateLessonPack (issue #768): one shared unpack authors all twelve
 // materials; packs are cached in memory by topic slug.
 export interface GenerateLessonPackOptions {
   topic: string;
@@ -422,6 +422,7 @@ export interface GenerateLessonPackDeps {
   validateDiagnostics?: PipelineValidate;
   validateWorkedExamples?: PipelineValidate;
   validateQuizBank?: PipelineValidate;
+  validateRevision?: PipelineValidate;
   onProgress?: PipelineProgress;
 }
 export interface PackMetadataCode {
@@ -458,6 +459,7 @@ export interface LessonPackResult {
   diagnostics: DiagnosticsDocument;
   workedExamples: WorkedExamplesDocument;
   quizBank: QuizBankDocument;
+  revision: RevisionDocument;
 }
 export function generateLessonPack(
   opts: GenerateLessonPackOptions,
