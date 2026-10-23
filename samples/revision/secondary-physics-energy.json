@@ -1,0 +1,61 @@
+{
+  "title": "Energy: work, power and conservation",
+  "level": "secondary",
+  "subject": "science",
+  "topic": "phys-energy",
+  "flashcards": [
+    {
+      "front": "Work",
+      "back": "The energy transferred when a force moves its object, calculated as force times distance in the force's direction, measured in joules.",
+      "source": "definition"
+    },
+    {
+      "front": "Power",
+      "back": "How fast work is done, calculated as work divided by time, measured in watts: the same 200 J in 2 s is 100 W, in 10 s only 20 W.",
+      "source": "definition"
+    },
+    {
+      "front": "Energy gets used up when work is done.",
+      "back": "The car runs out of petrol and stops, so the energy feels destroyed. Energy is never used up: it changes form, like chemical energy becoming kinetic energy plus heat. In class, follow the falling mass: 98 J of GPE at the top becomes 98 J of KE at the bottom - the form changed, the total did not.",
+      "source": "trap"
+    },
+    {
+      "front": "A 2 kg book is lifted 1.5 m. Taking g = 10 N/kg, how much gravitational potential energy does it gain?",
+      "back": "30 J",
+      "source": "quiz-bank"
+    },
+    {
+      "front": "A machine does 600 J of work in 20 s. What is its power?",
+      "back": "30 W",
+      "source": "quiz-bank"
+    }
+  ],
+  "practiceSets": [
+    {
+      "dayOffset": 1,
+      "items": [
+        {
+          "prompt": "A moving car brakes to a stop. What happens to its kinetic energy?",
+          "answer": "It changes into heat and sound; the total energy stays the same."
+        },
+        {
+          "prompt": "Which statement about energy is correct?",
+          "answer": "Energy is never created or destroyed; it only changes form."
+        }
+      ]
+    },
+    {
+      "dayOffset": 3,
+      "items": [
+        {
+          "prompt": "State the equation linking work done, force and distance.",
+          "answer": "Work done = force x distance"
+        },
+        {
+          "prompt": "A lamp changes electrical energy into light. Where does the rest of the energy go?",
+          "answer": "It becomes heat, so no energy is lost overall."
+        }
+      ]
+    }
+  ]
+}

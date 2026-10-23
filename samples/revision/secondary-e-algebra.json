@@ -1,0 +1,61 @@
+{
+  "title": "E-Math algebra: expansion, factorisation and changing the subject",
+  "level": "secondary",
+  "subject": "math",
+  "topic": "e-algebra",
+  "flashcards": [
+    {
+      "front": "Expansion",
+      "back": "Multiplying out brackets so every term in one bracket multiplies every term in the other: (x + 2)(x + 3) expands to x^2 + 5x + 6.",
+      "source": "definition"
+    },
+    {
+      "front": "Factorisation",
+      "back": "Writing an expression as a product of brackets, the reverse of expansion: 2x + 6 + xy + 3y factorises to (x + 3)(2 + y).",
+      "source": "definition"
+    },
+    {
+      "front": "(a + b)^2 = a^2 + b^2.",
+      "back": "The power looks like it lands on each term of the sum. That is why the two-term answer feels right, but expanding the whole bracket gives three terms. The full expansion has three terms: check a = 2, b = 3, and 25 is not 13. In class, expand (a + b)(a + b) with the area model so the middle term 2ab is visible as a region.",
+      "source": "trap"
+    },
+    {
+      "front": "Factorise x^2 + 5x + 6.",
+      "back": "(x + 2)(x + 3)",
+      "source": "quiz-bank"
+    },
+    {
+      "front": "Expand (2x + 1)(x + 5).",
+      "back": "2x^2 + 11x + 5",
+      "source": "quiz-bank"
+    }
+  ],
+  "practiceSets": [
+    {
+      "dayOffset": 1,
+      "items": [
+        {
+          "prompt": "Expand (x + 3)^2.",
+          "answer": "x^2 + 6x + 9"
+        },
+        {
+          "prompt": "Expand (a + b)^2.",
+          "answer": "a^2 + 2ab + b^2"
+        }
+      ]
+    },
+    {
+      "dayOffset": 3,
+      "items": [
+        {
+          "prompt": "Make x the subject of y = 3x + 7.",
+          "answer": "x = (y - 7) / 3"
+        },
+        {
+          "prompt": "Expand (x - 4)(x + 4).",
+          "answer": "x^2 - 16"
+        }
+      ]
+    }
+  ]
+}

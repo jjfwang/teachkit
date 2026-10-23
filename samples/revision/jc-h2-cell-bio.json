@@ -1,0 +1,61 @@
+{
+  "title": "JC H2 biology — cell: ultrastructure and biomolecules",
+  "level": "jc",
+  "subject": "science",
+  "topic": "h2-cell-bio",
+  "flashcards": [
+    {
+      "front": "Cell membrane",
+      "back": "A selectively permeable phospholipid bilayer with drifting proteins (the fluid mosaic): hydrophilic heads face water, hydrophobic tails face inward.",
+      "source": "definition"
+    },
+    {
+      "front": "Nucleus",
+      "back": "The control centre storing DNA as chromatin, enclosed by a double nuclear envelope with pores for mRNA, and containing the nucleolus that makes ribosomal RNA.",
+      "source": "definition"
+    },
+    {
+      "front": "Plant cells have no mitochondria.",
+      "back": "Mitochondria feel like animal-cell equipment, and the chloroplast looks like the plant replacement. Plant cells respire too, day and night: they have mitochondria as well - only the chloroplast is plant-only. In the animation the plant cell is drawn with a chloroplast and then a mitochondrion moves in beside it: both organelles belong, because trapping energy and releasing it are two different jobs.",
+      "source": "trap"
+    },
+    {
+      "front": "Name the bond that joins two amino acids in a polypeptide.",
+      "back": "Peptide bond",
+      "source": "quiz-bank"
+    },
+    {
+      "front": "Which structure controls the entry and exit of substances in both plant and animal cells?",
+      "back": "Cell surface membrane",
+      "source": "quiz-bank"
+    }
+  ],
+  "practiceSets": [
+    {
+      "dayOffset": 1,
+      "items": [
+        {
+          "prompt": "Which organelles does a mature plant leaf cell contain?",
+          "answer": "Both chloroplasts and mitochondria"
+        },
+        {
+          "prompt": "What is the function of the rough endoplasmic reticulum?",
+          "answer": "It is studded with ribosomes and folds proteins for secretion."
+        }
+      ]
+    },
+    {
+      "dayOffset": 3,
+      "items": [
+        {
+          "prompt": "A protein is heated and loses its three-dimensional shape while its amino acid sequence stays intact. What is this change called?",
+          "answer": "Denaturation"
+        },
+        {
+          "prompt": "Why does a plant cell need mitochondria when it already has chloroplasts?",
+          "answer": "It respires day and night to release energy, and only mitochondria carry out respiration."
+        }
+      ]
+    }
+  ]
+}
