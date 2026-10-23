@@ -1503,6 +1503,87 @@
     return errors;
   }
 
+  // Scheme of work validator (SPEC.md "Scheme of work spec",
+  // issue #1290): a unit-level term plan whose sequence orders at
+  // least 2 topics in teaching order. Structural rules beyond
+  // presence and shape: every entry week lies within the term
+  // (1..weeks), and every prerequisite names the topic of an
+  // EARLIER entry - no self, forward or duplicate prerequisites.
+  // Assessment points reference materials by kind, never by id.
+  var ASSESSMENT_POINT_KINDS = ['diagnostics', 'quizBank', 'summative', 'review'];
+  function validateScheme(spec) {
+    var errors = [];
+    if (!spec || typeof spec !== 'object' || Array.isArray(spec)) return ['spec: must be an object'];
+    if (typeof spec.title !== 'string' || !spec.title.trim()) errors.push('title: required non-empty string');
+    if (LEVELS.indexOf(spec.level) === -1) errors.push('level: must be ' + LEVELS.join('|'));
+    if (typeof spec.subject !== 'string' || !spec.subject.trim()) errors.push('subject: required non-empty string');
+    if (typeof spec.unitTitle !== 'string' || !spec.unitTitle.trim()) errors.push('unitTitle: required non-empty string');
+    if (typeof spec.term !== 'string' || !spec.term.trim()) errors.push('term: required non-empty string');
+    var weeksValid = Number.isInteger(spec.weeks) && spec.weeks > 0;
+    if (!weeksValid) errors.push('weeks: must be a positive integer');
+    if (!Array.isArray(spec.sequence) || spec.sequence.length < 2) {
+      errors.push('sequence: required array of at least 2 entries in teaching order');
+    } else {
+      var seenTopics = [];
+      spec.sequence.forEach(function (entry, i) {
+        var p = 'sequence[' + i + ']';
+        if (!entry || typeof entry !== 'object' || Array.isArray(entry)) {
+          errors.push(p + ': must be an object');
+          return;
+        }
+        var topicOk = typeof entry.topic === 'string' && !!entry.topic.trim();
+        if (!topicOk) errors.push(p + '.topic: required non-empty string');
+        if (!Number.isInteger(entry.week) || entry.week <= 0) {
+          errors.push(p + '.week: must be a positive integer');
+        } else if (weeksValid && entry.week > spec.weeks) {
+          errors.push(p + '.week: must be at most weeks (' + spec.weeks + ')');
+        }
+        if (!Number.isInteger(entry.lessons) || entry.lessons <= 0) {
+          errors.push(p + '.lessons: must be a positive integer');
+        }
+        if (!Array.isArray(entry.prerequisites)) {
+          errors.push(p + '.prerequisites: required array of topic strings');
+        } else {
+          var seenPrereqs = [];
+          entry.prerequisites.forEach(function (prereq, j) {
+            var q = p + '.prerequisites[' + j + ']';
+            if (typeof prereq !== 'string' || !prereq.trim()) {
+              errors.push(q + ': must be a non-empty string');
+              return;
+            }
+            if (seenPrereqs.indexOf(prereq) !== -1) {
+              errors.push(q + ': duplicate prerequisite ' + prereq);
+              return;
+            }
+            seenPrereqs.push(prereq);
+            if (seenTopics.indexOf(prereq) === -1) {
+              errors.push(q + ': prerequisite ' + prereq + ' does not name an earlier entry topic');
+            }
+          });
+        }
+        if (!Array.isArray(entry.assessmentPoints)) {
+          errors.push(p + '.assessmentPoints: required array of assessment points');
+        } else {
+          entry.assessmentPoints.forEach(function (point, j) {
+            var q = p + '.assessmentPoints[' + j + ']';
+            if (!point || typeof point !== 'object' || Array.isArray(point)) {
+              errors.push(q + ': must be an object');
+              return;
+            }
+            if (ASSESSMENT_POINT_KINDS.indexOf(point.kind) === -1) {
+              errors.push(q + '.kind: must be one of ' + ASSESSMENT_POINT_KINDS.join('|'));
+            }
+            if (typeof point.title !== 'string' || !point.title.trim()) {
+              errors.push(q + '.title: required non-empty string');
+            }
+          });
+        }
+        if (topicOk) seenTopics.push(entry.topic);
+      });
+    }
+    return errors;
+  }
+
   // Pack metadata validator (SPEC.md "Lesson pack spec", issue #1221):
   // the transparency block every generated pack manifest carries -- the
   // syllabus mapping recorded as facts, the AI-generated label, the
@@ -1553,7 +1634,7 @@
     return errors;
   }
 
-  return { validateSpec: validateSpec, validateSlides: validateSlides, validateWorksheet: validateWorksheet, validateExitTicket: validateExitTicket, validateNotes: validateNotes, validateScript: validateScript, validateLessonPlan: validateLessonPlan, validateScaffolds: validateScaffolds, validateDiagnostics: validateDiagnostics, validateWorkedExamples: validateWorkedExamples, validateQuizBank: validateQuizBank, validateRevision: validateRevision, validateOrganisers: validateOrganisers, validateGlossary: validateGlossary, validateSummative: validateSummative, validatePackMetadata: validatePackMetadata, SUBJECTS: SUBJECTS };
+  return { validateSpec: validateSpec, validateSlides: validateSlides, validateWorksheet: validateWorksheet, validateExitTicket: validateExitTicket, validateNotes: validateNotes, validateScript: validateScript, validateLessonPlan: validateLessonPlan, validateScaffolds: validateScaffolds, validateDiagnostics: validateDiagnostics, validateWorkedExamples: validateWorkedExamples, validateQuizBank: validateQuizBank, validateRevision: validateRevision, validateOrganisers: validateOrganisers, validateGlossary: validateGlossary, validateSummative: validateSummative, validateScheme: validateScheme, validatePackMetadata: validatePackMetadata, SUBJECTS: SUBJECTS };
 });
 
 /* ------------------------------------------------------------------
