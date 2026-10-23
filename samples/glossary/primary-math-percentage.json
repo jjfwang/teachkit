@@ -1,0 +1,28 @@
+{
+  "title": "Percentage: 25% of 60",
+  "level": "primary",
+  "subject": "math",
+  "topic": "percentage",
+  "entries": [
+    {
+      "term": "Percent",
+      "meaning": "A count out of one hundred: 25% is 25 out of 100, whatever the whole in the question is.",
+      "example": "Percent means per hundred: shade twenty-five cells out of one hundred on the hundred-grid - that shaded amount is 25%."
+    },
+    {
+      "term": "Hundred-grid",
+      "meaning": "A square split into one hundred equal cells for picturing a percent: twenty-five shaded cells out of one hundred is 25%.",
+      "example": "Percent means per hundred: shade twenty-five cells out of one hundred on the hundred-grid - that shaded amount is 25%."
+    },
+    {
+      "term": "One quarter",
+      "meaning": "One of four equal parts of a whole: 25 out of 100 simplifies to one quarter, so 25% of a quantity is a quarter of it.",
+      "example": "In scene s3, 25% of 60 is worked by seeing the percent as a fraction first: 25% is 25 out of 100, which simplifies to one quarter. Step by step: 25% = 1/4, then 60 / 4 = 15."
+    },
+    {
+      "term": "Whole",
+      "meaning": "The full amount the percent is taken of: in 25% of 60 the whole is 60, so the answer is a share of 60.",
+      "example": "Find a percent of a quantity by turning it into a fraction of the whole: 25% as one quarter"
+    }
+  ]
+}

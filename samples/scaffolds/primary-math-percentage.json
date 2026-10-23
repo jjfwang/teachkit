@@ -1,0 +1,112 @@
+{
+  "title": "Percentage: 25% of 60",
+  "level": "primary",
+  "subject": "math",
+  "topic": "percentage",
+  "sets": [
+    {
+      "level": "full",
+      "wordBank": [
+        {
+          "term": "Percent",
+          "gloss": "a count out of one hundred"
+        },
+        {
+          "term": "Hundred-grid",
+          "gloss": "a square split into one hundred equal cells for picturing a percent"
+        },
+        {
+          "term": "One quarter",
+          "gloss": "one of four equal parts of a whole"
+        },
+        {
+          "term": "Whole",
+          "gloss": "the full amount the percent is taken of"
+        }
+      ],
+      "starters": [
+        "Percent means a count out of...",
+        "To find 25% of 60, I first turn 25% into...",
+        "The whole in this question is..."
+      ],
+      "frames": [
+        "A count out of one hundred is a ___.",
+        "A square split into one hundred equal cells is a ___.",
+        "One of four equal parts of a whole is ___."
+      ],
+      "cloze": [
+        {
+          "text": "25% is a ___ pictured on a ___.",
+          "answers": [
+            "Percent",
+            "Hundred-grid"
+          ]
+        },
+        {
+          "text": "As a fraction 25% is ___, taken of the ___ which is 60.",
+          "answers": [
+            "One quarter",
+            "Whole"
+          ]
+        }
+      ]
+    },
+    {
+      "level": "partial",
+      "wordBank": [
+        {
+          "term": "Percent",
+          "gloss": "a count out of one hundred"
+        },
+        {
+          "term": "Hundred-grid",
+          "gloss": "a square split into one hundred equal cells for picturing a percent"
+        },
+        {
+          "term": "One quarter",
+          "gloss": "one of four equal parts of a whole"
+        }
+      ],
+      "starters": [
+        "A percent counts out of...",
+        "25% of a quantity is one..."
+      ],
+      "frames": [
+        "Twenty-five out of one hundred is a ___.",
+        "The grid with one hundred cells is a ___."
+      ],
+      "cloze": [
+        {
+          "text": "25% is a ___ shown on a ___.",
+          "answers": [
+            "Percent",
+            "Hundred-grid"
+          ]
+        }
+      ]
+    },
+    {
+      "level": "minimal",
+      "wordBank": [
+        {
+          "term": "Percent",
+          "gloss": "a count out of one hundred"
+        }
+      ],
+      "starters": [
+        "25% means twenty-five out of..."
+      ],
+      "frames": [
+        "A count out of one hundred is a ___."
+      ],
+      "cloze": [
+        {
+          "text": "25 out of 100 is a ___.",
+          "answers": [
+            "Percent"
+          ]
+        }
+      ]
+    }
+  ]
+}
