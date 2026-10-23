@@ -1,0 +1,74 @@
+{
+  "title": "Percentage: 25% of 60",
+  "level": "primary",
+  "subject": "math",
+  "topic": "percentage",
+  "templates": [
+    {
+      "kind": "flow",
+      "slots": [
+        {
+          "label": "Percent means per hundred",
+          "entries": [
+            "Percent means per hundred: shade twenty-five cells out of one hundred on the hundred-grid - that shaded amount is 25%."
+          ],
+          "studentPrompt": "Explain this step in your own words."
+        },
+        {
+          "label": "Watch out: 25% is not just 25",
+          "entries": [
+            "Watch out: 25% is not just 25: the 25 counts out of one hundred, and the whole here is 60, so the answer is a share of 60, not 25 itself."
+          ],
+          "studentPrompt": "Explain this step in your own words."
+        },
+        {
+          "label": "25% of 60: divide into quarters",
+          "entries": [
+            "25% of 60: divide into quarters: 25 out of 100 simplifies to one quarter, so split 60 into four equal parts and take one: 60 / 4 = 15."
+          ],
+          "studentPrompt": "Explain this step in your own words."
+        },
+        {
+          "label": "The takeaway",
+          "entries": [
+            "The takeaway: a percent is out of one hundred - turn it into a fraction of the whole first, and 25% of 60 comes out as one quarter of 60, which is 15."
+          ],
+          "studentPrompt": "Explain this step in your own words."
+        }
+      ]
+    },
+    {
+      "kind": "frayer",
+      "slots": [
+        {
+          "label": "Percent",
+          "entries": [
+            "A count out of one hundred: 25% is 25 out of 100, whatever the whole in the question is."
+          ],
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "label": "Hundred-grid",
+          "entries": [
+            "A square split into one hundred equal cells for picturing a percent: twenty-five shaded cells out of one hundred is 25%."
+          ],
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "label": "One quarter",
+          "entries": [
+            "One of four equal parts of a whole: 25 out of 100 simplifies to one quarter, so 25% of a quantity is a quarter of it."
+          ],
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "label": "Whole",
+          "entries": [
+            "The full amount the percent is taken of: in 25% of 60 the whole is 60, so the answer is a share of 60."
+          ],
+          "studentPrompt": "Give your own example of this term."
+        }
+      ]
+    }
+  ]
+}
