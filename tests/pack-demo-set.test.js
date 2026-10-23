@@ -60,6 +60,60 @@ test('pack demo references every gold file exactly once and no phantom gold file
     'pack-demo.html must not reference the same gold file twice');
 });
 
+/* Clean-up (ii) of epic #1204 (issue #1306): four gold packs join to their
+ * animations only by differing filenames, so a filename-equality join
+ * silently misses them. Their manifest headers pin the pairing explicitly
+ * ("deck <pack> · animation <file>"); every other pack joins by the
+ * same-name convention. These assertions derive the full pack-to-animation
+ * map from the manifest surface so a future differing-filename pack added
+ * without a manifest entry fails here. */
+const DIFFERING_PAIRS = {
+  'primary-math-decimals': 'primary-math-decimals-place-value.json',
+  'primary-math-percentage': 'primary-math-percentage-of-quantity.json',
+  'primary-math-ratio': 'primary-math-ratio-sharing.json',
+  'primary-science-photosynthesis': 'primary-science-photosynthesis-intro.json',
+};
+
+function explicitAnimationPins(html) {
+  const pins = {};
+  const re = /· deck ([A-Za-z0-9._-]+) · animation ([A-Za-z0-9._-]+\.json)/g;
+  let m;
+  while ((m = re.exec(html)) !== null) pins[m[1]] = m[2];
+  return pins;
+}
+
+function packBases() {
+  return fs.readdirSync(path.join(ROOT, 'samples', 'decks'))
+    .filter((name) => name.endsWith('.json'))
+    .map((name) => name.slice(0, -'.json'.length))
+    .sort();
+}
+
+test('pack manifest pins the four differing-filename pack-to-animation pairs explicitly', () => {
+  assert.deepStrictEqual(explicitAnimationPins(packDemoHtml()), DIFFERING_PAIRS,
+    'the four differing-filename pairs must be named in the manifest headers, and no other pack may carry an animation pin');
+});
+
+test('every gold pack resolves through the manifest to an existing animation file', () => {
+  const pins = explicitAnimationPins(packDemoHtml());
+  for (const base of packBases()) {
+    const anim = pins[base] || base + '.json';
+    assert.ok(fs.existsSync(path.join(ROOT, 'samples', anim)),
+      'gold pack ' + base + ' resolves to missing animation ' + anim +
+      ' — a differing-filename pack needs an explicit animation pin in its manifest header');
+  }
+});
+
+test('no animation with a gold pack is left unjoined by the manifest pairs', () => {
+  const pins = explicitAnimationPins(packDemoHtml());
+  const joined = new Set(packBases().map((base) => pins[base] || base + '.json'));
+  const animations = fs.readdirSync(path.join(ROOT, 'samples'))
+    .filter((name) => name.endsWith('.json') && name !== 'index.json');
+  const unjoined = animations.filter((name) => !joined.has(name)).sort();
+  assert.deepStrictEqual(unjoined, ['secondary-math-pythagoras.json'],
+    'the only animation without a gold pack is secondary-math-pythagoras (a separate gap, out of scope for #1306)');
+});
+
 test('pack demo carries exactly one unique manifest header per gold pack', () => {
   const packCount = goldFiles().filter((f) => f.startsWith('decks/')).length;
   const ids = manifestIdsIn(packDemoHtml());
