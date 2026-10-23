@@ -70,6 +70,7 @@
         feedbackPrompt: require('./build_feedback_prompt.js'),
         summativePrompt: require('./build_summative_prompt.js'),
         schemePrompt: require('./build_scheme_prompt.js'),
+        guidePrompt: require('./build_guide_prompt.js'),
         syllabus: require('./syllabus.js'),
         validate: require('../player/validate.js')
       };
@@ -94,6 +95,7 @@
       feedbackPrompt: g.AnimathFeedbackPrompt,
       summativePrompt: g.AnimathSummativePrompt,
       schemePrompt: g.AnimathSchemePrompt,
+      guidePrompt: g.AnimathGuidePrompt,
       syllabus: g.AnimathSyllabus,
       validate: g.AnimathValidate
     };
@@ -215,6 +217,13 @@
     invalidLabel: 'The invalid scheme of work you returned:',
     returnLine: 'Return ONLY the corrected scheme of work as a single JSON object. No prose, no code fences.',
     rejectLabel: 'Scheme of work'
+  };
+  var GUIDE_KIND = {
+    notJsonProblem: 'The response was not valid JSON. Return ONLY the corrected guide material as JSON.',
+    repairHeader: 'Your previous response did not produce a valid guide material. It had these problems:',
+    invalidLabel: 'The invalid guide material you returned:',
+    returnLine: 'Return ONLY the corrected guide material as a single JSON object. No prose, no code fences.',
+    rejectLabel: 'Guide material'
   };
   var EXIT_TICKET_KIND = {
     notJsonProblem: 'The response was not valid JSON. Return ONLY the corrected exit ticket as JSON.',
@@ -513,6 +522,15 @@
     if (typeof deps.validate === 'function') return deps.validate;
     if (SIBLINGS.validate && typeof SIBLINGS.validate.validateScheme === 'function') {
       return SIBLINGS.validate.validateScheme;
+    } /* node:coverage ignore next */
+    return null;
+  }
+
+  function resolveGuideValidator(deps) {
+    if (typeof deps.validateGuide === 'function') return deps.validateGuide;
+    if (typeof deps.validate === 'function') return deps.validate;
+    if (SIBLINGS.validate && typeof SIBLINGS.validate.validateGuide === 'function') {
+      return SIBLINGS.validate.validateGuide;
     } /* node:coverage ignore next */
     return null;
   }
@@ -1456,6 +1474,71 @@
   }
 
   // opts:
+  //   {topics, unitTitle, term, level, subject, focus,
+  //    notesByTopic, revisionPracticeSets, quizItems,
+  //    exitTicketQuestions, feedbackCommonErrors, maxRepairs}
+  //   (the buildGuidePrompts option set; topics/subject required;
+  //   maxRepairs defaults to 3, 0 disables repair).
+  // deps:
+  //   {callChat(system, user) -> Promise<string>  (caller-supplied LLM call),
+  //    validateGuide?(spec) -> string[] | Promise<string[]>,
+  //    validate?(spec) -> string[] | Promise<string[]>  (fallback validator),
+  //    onProgress?(stage, n, max)}  stages: 'author', 'repair'.
+  //
+  // Guide materials are generated on the feedback notes-content
+  // model extended to unit level (issue #1302, on the
+  // generateFeedback precedent): the caller supplies the paired
+  // unit content (the scheme sequence, the per-topic notes
+  // definitions and traps, and the gate topic's revision,
+  // quiz-bank, exit-ticket and feedback content), passed through
+  // to buildGuidePrompts, which renders it into the author prompt.
+  // There is no shared unpack, no misconception bank gate and no
+  // cache - a unit with paired materials but no bank entry still
+  // grows a guide material, and the material holds no student
+  // data. A guide is standalone, never folded into the lesson
+  // pack. Rejects only on a missing callChat or a missing
+  // validator, naming generateGuide / validateGuide. Resolves
+  // with the first guide material that validates clean against
+  // validateGuide; rejects with an Error carrying err.problems
+  // when every attempt failed.
+  function generateGuide(opts, deps) {
+    opts = opts || {};
+    deps = deps || {};
+    if (typeof deps.callChat !== 'function') {
+      return Promise.reject(new Error('generateGuide: deps.callChat(system, user) ' +
+        'must be a function returning a Promise of the raw response text'));
+    }
+    var validateFn = resolveGuideValidator(deps);
+    /* node:coverage ignore next 5 */
+    if (!validateFn) {
+      return Promise.reject(new Error('generateGuide: deps.validateGuide(spec) ' +
+        'must be a function returning the problem list (or supply deps.validate, ' +
+        'or load player/validate.js so validateGuide is available)'));
+    }
+    var progress = makeProgress(deps);
+    var maxRepairs = (opts.maxRepairs != null) ? opts.maxRepairs : DEFAULT_MAX_REPAIRS;
+    var prompts;
+    try {
+      prompts = SIBLINGS.guidePrompt.buildGuidePrompts({
+        topics: opts.topics,
+        unitTitle: opts.unitTitle,
+        term: opts.term,
+        level: opts.level,
+        subject: opts.subject,
+        focus: opts.focus,
+        notesByTopic: opts.notesByTopic,
+        revisionPracticeSets: opts.revisionPracticeSets,
+        quizItems: opts.quizItems,
+        exitTicketQuestions: opts.exitTicketQuestions,
+        feedbackCommonErrors: opts.feedbackCommonErrors
+      });
+    } catch (err) {
+      return Promise.reject(err);
+    }
+    return authorAndRepair(deps, progress, maxRepairs, prompts, validateFn, GUIDE_KIND);
+  }
+
+  // opts:
   //   {topic, topicLabel, level, subject, workedExample, kind, focus,
   //    facet, maxRepairs, force}
   //   (the union of the fourteen material option sets; topic/subject
@@ -1765,5 +1848,5 @@
     return generateLessonPack(merged, deps);
   }
 
-  return { generateAnimation: generateAnimation, generateSlides: generateSlides, generateWorksheet: generateWorksheet, generateExitTicket: generateExitTicket, generateNotes: generateNotes, generateScript: generateScript, generateLessonPlan: generateLessonPlan, generateScaffolds: generateScaffolds, generateDiagnostics: generateDiagnostics, generateWorkedExamples: generateWorkedExamples, generateQuizBank: generateQuizBank, generateRevision: generateRevision, generateOrganisers: generateOrganisers, generateGlossary: generateGlossary, generateSummative: generateSummative, generateScheme: generateScheme, generateFeedback: generateFeedback, generateLessonPack: generateLessonPack, generateLessonPackForSyllabus: generateLessonPackForSyllabus, clearPackCache: clearPackCache };
+  return { generateAnimation: generateAnimation, generateSlides: generateSlides, generateWorksheet: generateWorksheet, generateExitTicket: generateExitTicket, generateNotes: generateNotes, generateScript: generateScript, generateLessonPlan: generateLessonPlan, generateScaffolds: generateScaffolds, generateDiagnostics: generateDiagnostics, generateWorkedExamples: generateWorkedExamples, generateQuizBank: generateQuizBank, generateRevision: generateRevision, generateOrganisers: generateOrganisers, generateGlossary: generateGlossary, generateSummative: generateSummative, generateScheme: generateScheme, generateFeedback: generateFeedback, generateGuide: generateGuide, generateLessonPack: generateLessonPack, generateLessonPackForSyllabus: generateLessonPackForSyllabus, clearPackCache: clearPackCache };
 });

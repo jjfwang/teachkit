@@ -548,6 +548,56 @@ export function generateFeedback(
   opts: GenerateFeedbackOptions,
   deps: GenerateFeedbackDeps
 ): Promise<FeedbackDocument>;
+// generateGuide options (issue #1302): the feedback notes-content
+// model extended to unit level - the caller supplies the paired
+// unit content the guide is derived from; no bank entry is
+// required, there is no unpack and no cache, and a guide material
+// is standalone, never folded into the lesson pack.
+export interface GuideTopicNotes {
+  topic: string;
+  definitions?: { term: string; meaning: string }[];
+  trap?: { misconception: string; explanation?: string };
+}
+export interface GuidePracticeSet {
+  dayOffset: number;
+  items?: { prompt: string; answer?: string }[];
+}
+export interface GenerateGuideOptions {
+  /** The paired scheme sequence topics, in order; at least 2 slugs. */
+  topics: string[];
+  unitTitle?: string;
+  term?: string;
+  level?: string;
+  subject: string;
+  /** The student's focus for the guide, when given. */
+  focus?: string;
+  /** Per-topic paired notes content the key ideas and traps derive from. */
+  notesByTopic?: GuideTopicNotes[];
+  /** Gate-topic paired revision practice sets the revision plan pins to. */
+  revisionPracticeSets?: GuidePracticeSet[];
+  /** Gate-topic paired quiz-bank items the parent questions may come from. */
+  quizItems?: FeedbackPairedQuizItem[];
+  /** Gate-topic paired exit-ticket questions the parent questions may come from. */
+  exitTicketQuestions?: FeedbackPairedQuestion[];
+  /** Gate-topic paired feedback common-error misconceptions, verbatim. */
+  feedbackCommonErrors?: string[];
+  /** Number of repair turns after the first attempt. Default 3; 0 disables repair. */
+  maxRepairs?: number;
+}
+export interface GenerateGuideDeps {
+  callChat: PipelineCallChat;
+  /** Guide validator; defaults to the built-in validateGuide when omitted. */
+  validateGuide?: PipelineValidate;
+  /** Fallback validator, used when validateGuide is not supplied. */
+  validate?: PipelineValidate;
+  onProgress?: PipelineProgress;
+}
+// The parsed animath guide material that validated clean.
+export type GuideDocument = Record<string, unknown>;
+export function generateGuide(
+  opts: GenerateGuideOptions,
+  deps: GenerateGuideDeps
+): Promise<GuideDocument>;
 // generateLessonPack (issue #768): one shared unpack authors all fourteen
 // materials; packs are cached in memory by topic slug.
 export interface GenerateLessonPackOptions {

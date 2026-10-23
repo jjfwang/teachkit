@@ -63,6 +63,8 @@
     "./glossary": "./generator/pipeline.js",
     "./feedback-prompt": "./generator/build_feedback_prompt.js",
     "./feedback": "./generator/pipeline.js",
+    "./guide-prompt": "./generator/build_guide_prompt.js",
+    "./guide": "./generator/pipeline.js",
     "./lesson-pack": "./generator/pipeline.js"
   },
   "files": [
