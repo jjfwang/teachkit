@@ -2,7 +2,8 @@
 // and exit-ticket renderer: student sheets and teacher answer keys
 // (issue #758), plus student notes and teacher script (issue #766),
 // plus the lesson plan renderer (issue #1219), plus the scaffolds
-// student sheet and answer key (issue #1233).
+// student sheet and answer key (issue #1233), plus the diagnostics
+// student sheet and answer key (issue #1243).
 export interface Choice {
   text: string;
   correct?: boolean;
@@ -151,4 +152,37 @@ export interface ScaffoldsSpec {
 }
 export function renderScaffolds(spec: ScaffoldsSpec, options?: PrintableOptions): string;
 export function renderScaffoldsAnswerKey(spec: ScaffoldsSpec, options?: PrintableOptions): string;
+export interface DiagnosticsRationale {
+  chose: string;
+  thinks: string;
+  reteach: string;
+  [key: string]: unknown;
+}
+export interface DiagnosticsChoice {
+  text: string;
+  correct?: boolean;
+  misconception?: string;
+  rationale?: DiagnosticsRationale;
+  [key: string]: unknown;
+}
+export interface DiagnosticsQuestion {
+  id: string;
+  prompt: string;
+  kind: string;
+  choices: DiagnosticsChoice[];
+  scriptCue?: string;
+  [key: string]: unknown;
+}
+export interface DiagnosticsSpec {
+  title: string;
+  level: string;
+  subject: string;
+  topic: string;
+  instructions?: string;
+  doNow: DiagnosticsQuestion[];
+  hingeQuestions: DiagnosticsQuestion[];
+  [key: string]: unknown;
+}
+export function renderDiagnostics(spec: DiagnosticsSpec, options?: PrintableOptions): string;
+export function renderDiagnosticsAnswerKey(spec: DiagnosticsSpec, options?: PrintableOptions): string;
 export function escapeHtml(s: string): string;

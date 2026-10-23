@@ -1,0 +1,202 @@
+{
+  "title": "Energy: work, power and conservation",
+  "level": "secondary",
+  "subject": "science",
+  "topic": "phys-energy",
+  "doNow": [
+    {
+      "id": "dn1",
+      "prompt": "A motor does work lifting a load. What happens to the energy?",
+      "kind": "multiple-choice",
+      "choices": [
+        {
+          "text": "It is transferred to the load as gravitational potential energy, with some wasted as heat and sound.",
+          "correct": true
+        },
+        {
+          "text": "It gets used up completely.",
+          "misconception": "Energy gets used up when work is done.",
+          "rationale": {
+            "chose": "The learner selected option It gets used up completely. as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents.",
+            "reteach": "Reteach with an energy transfer diagram showing the input energy equals the useful output plus the wasted transfer, so nothing is used up."
+          }
+        },
+        {
+          "text": "It disappears once the work is done.",
+          "misconception": "Energy gets used up when work is done.",
+          "rationale": {
+            "chose": "The learner selected option It disappears once the work is done. as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents.",
+            "reteach": "Reteach with an energy transfer diagram showing the input energy equals the useful output plus the wasted transfer, so nothing is used up."
+          }
+        },
+        {
+          "text": "It is destroyed by friction.",
+          "misconception": "Energy gets used up when work is done.",
+          "rationale": {
+            "chose": "The learner selected option It is destroyed by friction. as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents.",
+            "reteach": "Reteach with an energy transfer diagram showing the input energy equals the useful output plus the wasted transfer, so nothing is used up."
+          }
+        }
+      ]
+    },
+    {
+      "id": "dn2",
+      "prompt": "What does conservation of energy say?",
+      "kind": "multiple-choice",
+      "choices": [
+        {
+          "text": "Energy cannot be created or destroyed, only transferred or stored differently.",
+          "correct": true
+        },
+        {
+          "text": "Energy is used up when work is done.",
+          "misconception": "Energy gets used up when work is done.",
+          "rationale": {
+            "chose": "The learner selected option Energy is used up when work is done. as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents.",
+            "reteach": "Reteach with an energy transfer diagram showing the input energy equals the useful output plus the wasted transfer, so nothing is used up."
+          }
+        },
+        {
+          "text": "Energy vanishes when a machine stops.",
+          "misconception": "Energy gets used up when work is done.",
+          "rationale": {
+            "chose": "The learner selected option Energy vanishes when a machine stops. as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents.",
+            "reteach": "Reteach with an energy transfer diagram showing the input energy equals the useful output plus the wasted transfer, so nothing is used up."
+          }
+        },
+        {
+          "text": "Energy only exists while something moves.",
+          "misconception": "Energy gets used up when work is done.",
+          "rationale": {
+            "chose": "The learner selected option Energy only exists while something moves. as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents.",
+            "reteach": "Reteach with an energy transfer diagram showing the input energy equals the useful output plus the wasted transfer, so nothing is used up."
+          }
+        }
+      ]
+    },
+    {
+      "id": "dn3",
+      "prompt": "A car brakes to a stop. Where does its kinetic energy go?",
+      "kind": "multiple-choice",
+      "choices": [
+        {
+          "text": "Mostly into heat in the brakes and surroundings.",
+          "correct": true
+        },
+        {
+          "text": "It is used up and ceases to exist.",
+          "misconception": "Energy gets used up when work is done.",
+          "rationale": {
+            "chose": "The learner selected option It is used up and ceases to exist. as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents.",
+            "reteach": "Reteach with an energy transfer diagram showing the input energy equals the useful output plus the wasted transfer, so nothing is used up."
+          }
+        },
+        {
+          "text": "It disappears with the motion.",
+          "misconception": "Energy gets used up when work is done.",
+          "rationale": {
+            "chose": "The learner selected option It disappears with the motion. as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents.",
+            "reteach": "Reteach with an energy transfer diagram showing the input energy equals the useful output plus the wasted transfer, so nothing is used up."
+          }
+        },
+        {
+          "text": "It turns into nothing as speed falls.",
+          "misconception": "Energy gets used up when work is done.",
+          "rationale": {
+            "chose": "The learner selected option It turns into nothing as speed falls. as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents.",
+            "reteach": "Reteach with an energy transfer diagram showing the input energy equals the useful output plus the wasted transfer, so nothing is used up."
+          }
+        }
+      ]
+    }
+  ],
+  "hingeQuestions": [
+    {
+      "id": "h1",
+      "prompt": "A lamp takes in 100 J of electrical energy and gives out 15 J of light. How much energy is transferred as heat?",
+      "kind": "multiple-choice",
+      "choices": [
+        {
+          "text": "85 J",
+          "correct": true
+        },
+        {
+          "text": "0 J, because the rest was used up.",
+          "misconception": "Energy gets used up when work is done.",
+          "rationale": {
+            "chose": "The learner selected option 0 J, because the rest was used up. as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents.",
+            "reteach": "Reteach with an energy transfer diagram showing the input energy equals the useful output plus the wasted transfer, so nothing is used up."
+          }
+        },
+        {
+          "text": "100 J",
+          "misconception": "Energy gets used up when work is done.",
+          "rationale": {
+            "chose": "The learner selected option 100 J as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents.",
+            "reteach": "Reteach with an energy transfer diagram showing the input energy equals the useful output plus the wasted transfer, so nothing is used up."
+          }
+        },
+        {
+          "text": "15 J",
+          "misconception": "Energy gets used up when work is done.",
+          "rationale": {
+            "chose": "The learner selected option 15 J as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents.",
+            "reteach": "Reteach with an energy transfer diagram showing the input energy equals the useful output plus the wasted transfer, so nothing is used up."
+          }
+        }
+      ],
+      "scriptCue": "s2"
+    },
+    {
+      "id": "h2",
+      "prompt": "Why is no machine 100 percent efficient?",
+      "kind": "multiple-choice",
+      "choices": [
+        {
+          "text": "Some input energy is always transferred wastefully, for example as heat or sound.",
+          "correct": true
+        },
+        {
+          "text": "Because energy gets used up in every machine.",
+          "misconception": "Energy gets used up when work is done.",
+          "rationale": {
+            "chose": "The learner selected option Because energy gets used up in every machine. as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents.",
+            "reteach": "Reteach with an energy transfer diagram showing the input energy equals the useful output plus the wasted transfer, so nothing is used up."
+          }
+        },
+        {
+          "text": "Because work destroys energy.",
+          "misconception": "Energy gets used up when work is done.",
+          "rationale": {
+            "chose": "The learner selected option Because work destroys energy. as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents.",
+            "reteach": "Reteach with an energy transfer diagram showing the input energy equals the useful output plus the wasted transfer, so nothing is used up."
+          }
+        },
+        {
+          "text": "Because efficiency deletes the leftover energy.",
+          "misconception": "Energy gets used up when work is done.",
+          "rationale": {
+            "chose": "The learner selected option Because efficiency deletes the leftover energy. as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents.",
+            "reteach": "Reteach with an energy transfer diagram showing the input energy equals the useful output plus the wasted transfer, so nothing is used up."
+          }
+        }
+      ],
+      "scriptCue": "s4"
+    }
+  ]
+}

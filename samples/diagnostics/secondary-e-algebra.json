@@ -1,0 +1,202 @@
+{
+  "title": "E-Math algebra: expansion, factorisation and changing the subject",
+  "level": "secondary",
+  "subject": "math",
+  "topic": "e-algebra",
+  "doNow": [
+    {
+      "id": "dn1",
+      "prompt": "Expand (a + b)^2.",
+      "kind": "multiple-choice",
+      "choices": [
+        {
+          "text": "a^2 + 2ab + b^2",
+          "correct": true
+        },
+        {
+          "text": "a^2 + b^2",
+          "misconception": "(a + b)^2 = a^2 + b^2.",
+          "rationale": {
+            "chose": "The learner selected option a^2 + b^2 as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents.",
+            "reteach": "Reteach by substituting a = 2 and b = 3 to show 25 is not 13, then expand with the grid so the middle term 2ab is visible."
+          }
+        },
+        {
+          "text": "a^2 + ab + b^2",
+          "misconception": "(a + b)^2 = a^2 + b^2.",
+          "rationale": {
+            "chose": "The learner selected option a^2 + ab + b^2 as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents.",
+            "reteach": "Reteach by substituting a = 2 and b = 3 to show 25 is not 13, then expand with the grid so the middle term 2ab is visible."
+          }
+        },
+        {
+          "text": "2a + 2b",
+          "misconception": "(a + b)^2 = a^2 + b^2.",
+          "rationale": {
+            "chose": "The learner selected option 2a + 2b as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents.",
+            "reteach": "Reteach by substituting a = 2 and b = 3 to show 25 is not 13, then expand with the grid so the middle term 2ab is visible."
+          }
+        }
+      ]
+    },
+    {
+      "id": "dn2",
+      "prompt": "If a = 2 and b = 3, what is (a + b)^2?",
+      "kind": "multiple-choice",
+      "choices": [
+        {
+          "text": "25",
+          "correct": true
+        },
+        {
+          "text": "13",
+          "misconception": "(a + b)^2 = a^2 + b^2.",
+          "rationale": {
+            "chose": "The learner selected option 13 as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents.",
+            "reteach": "Reteach by substituting a = 2 and b = 3 to show 25 is not 13, then expand with the grid so the middle term 2ab is visible."
+          }
+        },
+        {
+          "text": "10",
+          "misconception": "(a + b)^2 = a^2 + b^2.",
+          "rationale": {
+            "chose": "The learner selected option 10 as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents.",
+            "reteach": "Reteach by substituting a = 2 and b = 3 to show 25 is not 13, then expand with the grid so the middle term 2ab is visible."
+          }
+        },
+        {
+          "text": "36",
+          "misconception": "(a + b)^2 = a^2 + b^2.",
+          "rationale": {
+            "chose": "The learner selected option 36 as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents.",
+            "reteach": "Reteach by substituting a = 2 and b = 3 to show 25 is not 13, then expand with the grid so the middle term 2ab is visible."
+          }
+        }
+      ]
+    },
+    {
+      "id": "dn3",
+      "prompt": "Expand (x + 4)^2.",
+      "kind": "multiple-choice",
+      "choices": [
+        {
+          "text": "x^2 + 8x + 16",
+          "correct": true
+        },
+        {
+          "text": "x^2 + 16",
+          "misconception": "(a + b)^2 = a^2 + b^2.",
+          "rationale": {
+            "chose": "The learner selected option x^2 + 16 as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents.",
+            "reteach": "Reteach by substituting a = 2 and b = 3 to show 25 is not 13, then expand with the grid so the middle term 2ab is visible."
+          }
+        },
+        {
+          "text": "x^2 + 4x + 16",
+          "misconception": "(a + b)^2 = a^2 + b^2.",
+          "rationale": {
+            "chose": "The learner selected option x^2 + 4x + 16 as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents.",
+            "reteach": "Reteach by substituting a = 2 and b = 3 to show 25 is not 13, then expand with the grid so the middle term 2ab is visible."
+          }
+        },
+        {
+          "text": "x^2 + 8x + 8",
+          "misconception": "(a + b)^2 = a^2 + b^2.",
+          "rationale": {
+            "chose": "The learner selected option x^2 + 8x + 8 as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents.",
+            "reteach": "Reteach by substituting a = 2 and b = 3 to show 25 is not 13, then expand with the grid so the middle term 2ab is visible."
+          }
+        }
+      ]
+    }
+  ],
+  "hingeQuestions": [
+    {
+      "id": "h1",
+      "prompt": "Which term is missing from a^2 + b^2 as an expansion of (a + b)^2?",
+      "kind": "multiple-choice",
+      "choices": [
+        {
+          "text": "2ab",
+          "correct": true
+        },
+        {
+          "text": "No term is missing.",
+          "misconception": "(a + b)^2 = a^2 + b^2.",
+          "rationale": {
+            "chose": "The learner selected option No term is missing. as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents.",
+            "reteach": "Reteach by substituting a = 2 and b = 3 to show 25 is not 13, then expand with the grid so the middle term 2ab is visible."
+          }
+        },
+        {
+          "text": "ab only, counted once.",
+          "misconception": "(a + b)^2 = a^2 + b^2.",
+          "rationale": {
+            "chose": "The learner selected option ab only, counted once. as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents.",
+            "reteach": "Reteach by substituting a = 2 and b = 3 to show 25 is not 13, then expand with the grid so the middle term 2ab is visible."
+          }
+        },
+        {
+          "text": "a + b",
+          "misconception": "(a + b)^2 = a^2 + b^2.",
+          "rationale": {
+            "chose": "The learner selected option a + b as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents.",
+            "reteach": "Reteach by substituting a = 2 and b = 3 to show 25 is not 13, then expand with the grid so the middle term 2ab is visible."
+          }
+        }
+      ],
+      "scriptCue": "s2"
+    },
+    {
+      "id": "h2",
+      "prompt": "Expand (y - 3)^2.",
+      "kind": "multiple-choice",
+      "choices": [
+        {
+          "text": "y^2 - 6y + 9",
+          "correct": true
+        },
+        {
+          "text": "y^2 + 9",
+          "misconception": "(a + b)^2 = a^2 + b^2.",
+          "rationale": {
+            "chose": "The learner selected option y^2 + 9 as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents.",
+            "reteach": "Reteach by substituting a = 2 and b = 3 to show 25 is not 13, then expand with the grid so the middle term 2ab is visible."
+          }
+        },
+        {
+          "text": "y^2 - 9",
+          "misconception": "(a + b)^2 = a^2 + b^2.",
+          "rationale": {
+            "chose": "The learner selected option y^2 - 9 as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents.",
+            "reteach": "Reteach by substituting a = 2 and b = 3 to show 25 is not 13, then expand with the grid so the middle term 2ab is visible."
+          }
+        },
+        {
+          "text": "y^2 - 3y + 9",
+          "misconception": "(a + b)^2 = a^2 + b^2.",
+          "rationale": {
+            "chose": "The learner selected option y^2 - 3y + 9 as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents.",
+            "reteach": "Reteach by substituting a = 2 and b = 3 to show 25 is not 13, then expand with the grid so the middle term 2ab is visible."
+          }
+        }
+      ],
+      "scriptCue": "s3"
+    }
+  ]
+}

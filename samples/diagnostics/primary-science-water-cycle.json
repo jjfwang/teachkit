@@ -1,0 +1,202 @@
+{
+  "title": "The Water Cycle",
+  "level": "primary",
+  "subject": "science",
+  "topic": "water-cycle",
+  "doNow": [
+    {
+      "id": "dn1",
+      "prompt": "What happens to liquid water when the sun heats it in a puddle?",
+      "kind": "multiple-choice",
+      "choices": [
+        {
+          "text": "It evaporates into invisible water vapour.",
+          "correct": true
+        },
+        {
+          "text": "It disappears for good.",
+          "misconception": "Water disappears for good once it evaporates.",
+          "rationale": {
+            "chose": "The learner selected option It disappears for good. as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents.",
+            "reteach": "Reteach by tracing one drop through evaporation into invisible vapour, condensation into a cloud, and rain back into collection."
+          }
+        },
+        {
+          "text": "It vanishes and is gone from the cycle.",
+          "misconception": "Water disappears for good once it evaporates.",
+          "rationale": {
+            "chose": "The learner selected option It vanishes and is gone from the cycle. as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents.",
+            "reteach": "Reteach by tracing one drop through evaporation into invisible vapour, condensation into a cloud, and rain back into collection."
+          }
+        },
+        {
+          "text": "It stops being water altogether.",
+          "misconception": "Water disappears for good once it evaporates.",
+          "rationale": {
+            "chose": "The learner selected option It stops being water altogether. as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents.",
+            "reteach": "Reteach by tracing one drop through evaporation into invisible vapour, condensation into a cloud, and rain back into collection."
+          }
+        }
+      ]
+    },
+    {
+      "id": "dn2",
+      "prompt": "What is water vapour?",
+      "kind": "multiple-choice",
+      "choices": [
+        {
+          "text": "Water in its gas form, invisible but still water.",
+          "correct": true
+        },
+        {
+          "text": "Water that no longer exists.",
+          "misconception": "Water disappears for good once it evaporates.",
+          "rationale": {
+            "chose": "The learner selected option Water that no longer exists. as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents.",
+            "reteach": "Reteach by tracing one drop through evaporation into invisible vapour, condensation into a cloud, and rain back into collection."
+          }
+        },
+        {
+          "text": "Dry air with no water in it.",
+          "misconception": "Water disappears for good once it evaporates.",
+          "rationale": {
+            "chose": "The learner selected option Dry air with no water in it. as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents.",
+            "reteach": "Reteach by tracing one drop through evaporation into invisible vapour, condensation into a cloud, and rain back into collection."
+          }
+        },
+        {
+          "text": "Smoke rising from the sea.",
+          "misconception": "Water disappears for good once it evaporates.",
+          "rationale": {
+            "chose": "The learner selected option Smoke rising from the sea. as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents.",
+            "reteach": "Reteach by tracing one drop through evaporation into invisible vapour, condensation into a cloud, and rain back into collection."
+          }
+        }
+      ]
+    },
+    {
+      "id": "dn3",
+      "prompt": "After evaporation, where does the water go next in the cycle?",
+      "kind": "multiple-choice",
+      "choices": [
+        {
+          "text": "It cools and condenses into tiny drops that form a cloud.",
+          "correct": true
+        },
+        {
+          "text": "Nowhere, because it has disappeared.",
+          "misconception": "Water disappears for good once it evaporates.",
+          "rationale": {
+            "chose": "The learner selected option Nowhere, because it has disappeared. as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents.",
+            "reteach": "Reteach by tracing one drop through evaporation into invisible vapour, condensation into a cloud, and rain back into collection."
+          }
+        },
+        {
+          "text": "It is used up by the sun.",
+          "misconception": "Water disappears for good once it evaporates.",
+          "rationale": {
+            "chose": "The learner selected option It is used up by the sun. as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents.",
+            "reteach": "Reteach by tracing one drop through evaporation into invisible vapour, condensation into a cloud, and rain back into collection."
+          }
+        },
+        {
+          "text": "It falls straight back as snow only.",
+          "misconception": "Water disappears for good once it evaporates.",
+          "rationale": {
+            "chose": "The learner selected option It falls straight back as snow only. as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents.",
+            "reteach": "Reteach by tracing one drop through evaporation into invisible vapour, condensation into a cloud, and rain back into collection."
+          }
+        }
+      ]
+    }
+  ],
+  "hingeQuestions": [
+    {
+      "id": "h1",
+      "prompt": "A puddle dries up on a hot day. Which statement is correct?",
+      "kind": "multiple-choice",
+      "choices": [
+        {
+          "text": "The water evaporated into vapour and is still in the air.",
+          "correct": true
+        },
+        {
+          "text": "The water disappeared for good.",
+          "misconception": "Water disappears for good once it evaporates.",
+          "rationale": {
+            "chose": "The learner selected option The water disappeared for good. as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents.",
+            "reteach": "Reteach by tracing one drop through evaporation into invisible vapour, condensation into a cloud, and rain back into collection."
+          }
+        },
+        {
+          "text": "The water was destroyed by heat.",
+          "misconception": "Water disappears for good once it evaporates.",
+          "rationale": {
+            "chose": "The learner selected option The water was destroyed by heat. as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents.",
+            "reteach": "Reteach by tracing one drop through evaporation into invisible vapour, condensation into a cloud, and rain back into collection."
+          }
+        },
+        {
+          "text": "The water turned into nothing.",
+          "misconception": "Water disappears for good once it evaporates.",
+          "rationale": {
+            "chose": "The learner selected option The water turned into nothing. as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents.",
+            "reteach": "Reteach by tracing one drop through evaporation into invisible vapour, condensation into a cloud, and rain back into collection."
+          }
+        }
+      ],
+      "scriptCue": "s1"
+    },
+    {
+      "id": "h2",
+      "prompt": "Why does rain return water to the sea?",
+      "kind": "multiple-choice",
+      "choices": [
+        {
+          "text": "Cooled vapour condenses into drops that fall as precipitation and collect again.",
+          "correct": true
+        },
+        {
+          "text": "New water is made each time it rains.",
+          "misconception": "Water disappears for good once it evaporates.",
+          "rationale": {
+            "chose": "The learner selected option New water is made each time it rains. as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents.",
+            "reteach": "Reteach by tracing one drop through evaporation into invisible vapour, condensation into a cloud, and rain back into collection."
+          }
+        },
+        {
+          "text": "Evaporated water comes back because it never left the sea.",
+          "misconception": "Water disappears for good once it evaporates.",
+          "rationale": {
+            "chose": "The learner selected option Evaporated water comes back because it never left the sea. as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents.",
+            "reteach": "Reteach by tracing one drop through evaporation into invisible vapour, condensation into a cloud, and rain back into collection."
+          }
+        },
+        {
+          "text": "The sea creates fresh water after evaporation ends it.",
+          "misconception": "Water disappears for good once it evaporates.",
+          "rationale": {
+            "chose": "The learner selected option The sea creates fresh water after evaporation ends it. as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents.",
+            "reteach": "Reteach by tracing one drop through evaporation into invisible vapour, condensation into a cloud, and rain back into collection."
+          }
+        }
+      ],
+      "scriptCue": "s3"
+    }
+  ]
+}

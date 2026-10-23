@@ -1,0 +1,202 @@
+{
+  "title": "JC H2 differentiation: connected rates of change",
+  "level": "jc",
+  "subject": "math",
+  "topic": "h2-differentiation",
+  "doNow": [
+    {
+      "id": "dn1",
+      "prompt": "What does dy/dx represent?",
+      "kind": "multiple-choice",
+      "choices": [
+        {
+          "text": "The rate of change of y with respect to x, as a single limit symbol.",
+          "correct": true
+        },
+        {
+          "text": "A fraction d times y divided by d times x, so the d symbols cancel.",
+          "misconception": "Cancelling the d symbols in dy/dx.",
+          "rationale": {
+            "chose": "The learner selected option A fraction d times y divided by d times x, so the d symbols cancel. as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents.",
+            "reteach": "Reteach by writing dy/dx as the limit of delta y over delta x, stressing it is one symbol for a rate, not a fraction to cancel."
+          }
+        },
+        {
+          "text": "The letter d multiplied by y over x.",
+          "misconception": "Cancelling the d symbols in dy/dx.",
+          "rationale": {
+            "chose": "The learner selected option The letter d multiplied by y over x. as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents.",
+            "reteach": "Reteach by writing dy/dx as the limit of delta y over delta x, stressing it is one symbol for a rate, not a fraction to cancel."
+          }
+        },
+        {
+          "text": "Two separate d values that cancel out.",
+          "misconception": "Cancelling the d symbols in dy/dx.",
+          "rationale": {
+            "chose": "The learner selected option Two separate d values that cancel out. as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents.",
+            "reteach": "Reteach by writing dy/dx as the limit of delta y over delta x, stressing it is one symbol for a rate, not a fraction to cancel."
+          }
+        }
+      ]
+    },
+    {
+      "id": "dn2",
+      "prompt": "If y = x^2, what is dy/dx?",
+      "kind": "multiple-choice",
+      "choices": [
+        {
+          "text": "2x",
+          "correct": true
+        },
+        {
+          "text": "x",
+          "misconception": "Cancelling the d symbols in dy/dx.",
+          "rationale": {
+            "chose": "The learner selected option x as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents.",
+            "reteach": "Reteach by writing dy/dx as the limit of delta y over delta x, stressing it is one symbol for a rate, not a fraction to cancel."
+          }
+        },
+        {
+          "text": "2",
+          "misconception": "Cancelling the d symbols in dy/dx.",
+          "rationale": {
+            "chose": "The learner selected option 2 as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents.",
+            "reteach": "Reteach by writing dy/dx as the limit of delta y over delta x, stressing it is one symbol for a rate, not a fraction to cancel."
+          }
+        },
+        {
+          "text": "x^2 / x",
+          "misconception": "Cancelling the d symbols in dy/dx.",
+          "rationale": {
+            "chose": "The learner selected option x^2 / x as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents.",
+            "reteach": "Reteach by writing dy/dx as the limit of delta y over delta x, stressing it is one symbol for a rate, not a fraction to cancel."
+          }
+        }
+      ]
+    },
+    {
+      "id": "dn3",
+      "prompt": "In a connected rates problem, which rule links dy/dt to dy/dx?",
+      "kind": "multiple-choice",
+      "choices": [
+        {
+          "text": "The chain rule: dy/dt = dy/dx times dx/dt.",
+          "correct": true
+        },
+        {
+          "text": "Cancel the d symbols in each derivative first.",
+          "misconception": "Cancelling the d symbols in dy/dx.",
+          "rationale": {
+            "chose": "The learner selected option Cancel the d symbols in each derivative first. as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents.",
+            "reteach": "Reteach by writing dy/dx as the limit of delta y over delta x, stressing it is one symbol for a rate, not a fraction to cancel."
+          }
+        },
+        {
+          "text": "Add the two rates together.",
+          "misconception": "Cancelling the d symbols in dy/dx.",
+          "rationale": {
+            "chose": "The learner selected option Add the two rates together. as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents.",
+            "reteach": "Reteach by writing dy/dx as the limit of delta y over delta x, stressing it is one symbol for a rate, not a fraction to cancel."
+          }
+        },
+        {
+          "text": "Divide out every d before multiplying.",
+          "misconception": "Cancelling the d symbols in dy/dx.",
+          "rationale": {
+            "chose": "The learner selected option Divide out every d before multiplying. as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents.",
+            "reteach": "Reteach by writing dy/dx as the limit of delta y over delta x, stressing it is one symbol for a rate, not a fraction to cancel."
+          }
+        }
+      ]
+    }
+  ],
+  "hingeQuestions": [
+    {
+      "id": "h1",
+      "prompt": "A learner cancels the d symbols in dy/dx. Why is that invalid?",
+      "kind": "multiple-choice",
+      "choices": [
+        {
+          "text": "dy/dx is one symbol for a limit, not a fraction with a common factor.",
+          "correct": true
+        },
+        {
+          "text": "It is valid whenever the d symbols match.",
+          "misconception": "Cancelling the d symbols in dy/dx.",
+          "rationale": {
+            "chose": "The learner selected option It is valid whenever the d symbols match. as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents.",
+            "reteach": "Reteach by writing dy/dx as the limit of delta y over delta x, stressing it is one symbol for a rate, not a fraction to cancel."
+          }
+        },
+        {
+          "text": "It fails only for large values of x.",
+          "misconception": "Cancelling the d symbols in dy/dx.",
+          "rationale": {
+            "chose": "The learner selected option It fails only for large values of x. as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents.",
+            "reteach": "Reteach by writing dy/dx as the limit of delta y over delta x, stressing it is one symbol for a rate, not a fraction to cancel."
+          }
+        },
+        {
+          "text": "The d symbols cancel only in the second derivative.",
+          "misconception": "Cancelling the d symbols in dy/dx.",
+          "rationale": {
+            "chose": "The learner selected option The d symbols cancel only in the second derivative. as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents.",
+            "reteach": "Reteach by writing dy/dx as the limit of delta y over delta x, stressing it is one symbol for a rate, not a fraction to cancel."
+          }
+        }
+      ],
+      "scriptCue": "s3"
+    },
+    {
+      "id": "h2",
+      "prompt": "If dx/dt = 3 and dy/dx = 4x with x = 2, what is dy/dt?",
+      "kind": "multiple-choice",
+      "choices": [
+        {
+          "text": "24",
+          "correct": true
+        },
+        {
+          "text": "8",
+          "misconception": "Cancelling the d symbols in dy/dx.",
+          "rationale": {
+            "chose": "The learner selected option 8 as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents.",
+            "reteach": "Reteach by writing dy/dx as the limit of delta y over delta x, stressing it is one symbol for a rate, not a fraction to cancel."
+          }
+        },
+        {
+          "text": "12",
+          "misconception": "Cancelling the d symbols in dy/dx.",
+          "rationale": {
+            "chose": "The learner selected option 12 as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents.",
+            "reteach": "Reteach by writing dy/dx as the limit of delta y over delta x, stressing it is one symbol for a rate, not a fraction to cancel."
+          }
+        },
+        {
+          "text": "6",
+          "misconception": "Cancelling the d symbols in dy/dx.",
+          "rationale": {
+            "chose": "The learner selected option 6 as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents.",
+            "reteach": "Reteach by writing dy/dx as the limit of delta y over delta x, stressing it is one symbol for a rate, not a fraction to cancel."
+          }
+        }
+      ],
+      "scriptCue": "s5"
+    }
+  ]
+}
