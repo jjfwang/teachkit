@@ -894,6 +894,126 @@
     return errors;
   }
 
+  // Diagnostics validator (SPEC.md "Diagnostics spec", issue #1241):
+  // a Do Now of 2..4 prior-knowledge questions plus 1..3 hinge
+  // questions, all multiple-choice. Every incorrect choice is coded to
+  // a bank misconception and carries a teacher-only rationale
+  // (chose/thinks/reteach); the correct choice carries neither. The
+  // validator is bank-free: it checks code presence and shape only.
+  var RATIONALE_PARTS = ['chose', 'thinks', 'reteach'];
+
+  function checkDiagnosticsQuestion(question, errors, path, seenIds, isHinge) {
+    var p = path;
+    if (!question || typeof question !== 'object' || Array.isArray(question)) {
+      errors.push(p + ': must be an object');
+      return;
+    }
+    if (typeof question.id !== 'string' || !question.id.trim()) {
+      errors.push(p + '.id: required non-empty string');
+    } else if (seenIds[question.id]) {
+      errors.push(p + '.id: duplicate question id "' + question.id + '"');
+    } else {
+      seenIds[question.id] = true;
+    }
+    if (typeof question.prompt !== 'string' || !question.prompt.trim()) {
+      errors.push(p + '.prompt: required non-empty string');
+    }
+    if (question.kind !== 'multiple-choice') {
+      errors.push(p + '.kind: must be multiple-choice');
+    }
+    if (isHinge) {
+      if (typeof question.scriptCue !== 'string' || !question.scriptCue.trim()) {
+        errors.push(p + '.scriptCue: required non-empty string on hinge questions');
+      }
+    } else if (question.scriptCue !== undefined) {
+      errors.push(p + '.scriptCue: belongs on hinge questions only');
+    }
+    if (!Array.isArray(question.choices) || question.choices.length < 2) {
+      errors.push(p + '.choices: required array of at least 2 choices');
+      return;
+    }
+    var correctCount = 0;
+    question.choices.forEach(function (choice, j) {
+      var c = p + '.choices[' + j + ']';
+      if (!choice || typeof choice !== 'object' || Array.isArray(choice)) {
+        errors.push(c + ': must be an object');
+        return;
+      }
+      if (typeof choice.text !== 'string' || !choice.text.trim()) {
+        errors.push(c + '.text: required non-empty string');
+      }
+      if (choice.correct === true) {
+        correctCount++;
+        if (choice.misconception !== undefined) {
+          errors.push(c + '.misconception: must not appear on the correct choice');
+        }
+        if (choice.rationale !== undefined) {
+          errors.push(c + '.rationale: must not appear on the correct choice');
+        }
+        return;
+      }
+      if (typeof choice.misconception !== 'string' || !choice.misconception.trim()) {
+        errors.push(c + '.misconception: required non-empty string on an incorrect choice');
+      }
+      var rationale = choice.rationale;
+      if (!rationale || typeof rationale !== 'object' || Array.isArray(rationale)) {
+        errors.push(c + '.rationale: required object on an incorrect choice');
+        return;
+      }
+      var keys = Object.keys(rationale);
+      var extra = keys.filter(function (k) { return RATIONALE_PARTS.indexOf(k) === -1; });
+      if (extra.length) {
+        errors.push(c + '.rationale: must carry exactly the chose, thinks and reteach parts');
+      }
+      var shapeValid = extra.length === 0;
+      RATIONALE_PARTS.forEach(function (part) {
+        if (typeof rationale[part] !== 'string' || !rationale[part].trim()) {
+          errors.push(c + '.rationale.' + part + ': required non-empty string');
+          shapeValid = false;
+        }
+      });
+      if (!shapeValid) return;
+      RATIONALE_PARTS.forEach(function (part) {
+        var text = rationale[part].trim();
+        if (text.length < 4) return;
+        var leaked = (typeof question.prompt === 'string' && question.prompt.indexOf(text) !== -1);
+        if (!leaked) {
+          leaked = question.choices.some(function (other) {
+            return other && typeof other.text === 'string' && other.text.indexOf(text) !== -1;
+          });
+        }
+        if (leaked) {
+          errors.push(c + '.rationale.' + part + ': rationale text must not appear in the prompt or choice text (teacher-only)');
+        }
+      });
+    });
+    if (correctCount !== 1) {
+      errors.push(p + '.choices: exactly one choice must be marked correct');
+    }
+  }
+
+  function validateDiagnostics(spec) {
+    var errors = [];
+    if (!spec || typeof spec !== 'object' || Array.isArray(spec)) return ['spec: must be an object'];
+    checkMaterialHeader(spec, errors);
+    if (!Array.isArray(spec.doNow) || spec.doNow.length < 2 || spec.doNow.length > 4) {
+      errors.push('doNow: required array of 2..4 questions');
+      return errors;
+    }
+    if (!Array.isArray(spec.hingeQuestions) || spec.hingeQuestions.length < 1 || spec.hingeQuestions.length > 3) {
+      errors.push('hingeQuestions: required array of 1..3 questions');
+      return errors;
+    }
+    var seenIds = {};
+    spec.doNow.forEach(function (question, i) {
+      checkDiagnosticsQuestion(question, errors, 'doNow[' + i + ']', seenIds, false);
+    });
+    spec.hingeQuestions.forEach(function (question, i) {
+      checkDiagnosticsQuestion(question, errors, 'hingeQuestions[' + i + ']', seenIds, true);
+    });
+    return errors;
+  }
+
   // Pack metadata validator (SPEC.md "Lesson pack spec", issue #1221):
   // the transparency block every generated pack manifest carries -- the
   // syllabus mapping recorded as facts, the AI-generated label, the
@@ -944,7 +1064,7 @@
     return errors;
   }
 
-  return { validateSpec: validateSpec, validateSlides: validateSlides, validateWorksheet: validateWorksheet, validateExitTicket: validateExitTicket, validateNotes: validateNotes, validateScript: validateScript, validateLessonPlan: validateLessonPlan, validateScaffolds: validateScaffolds, validatePackMetadata: validatePackMetadata, SUBJECTS: SUBJECTS };
+  return { validateSpec: validateSpec, validateSlides: validateSlides, validateWorksheet: validateWorksheet, validateExitTicket: validateExitTicket, validateNotes: validateNotes, validateScript: validateScript, validateLessonPlan: validateLessonPlan, validateScaffolds: validateScaffolds, validateDiagnostics: validateDiagnostics, validatePackMetadata: validatePackMetadata, SUBJECTS: SUBJECTS };
 });
 
 /* ------------------------------------------------------------------

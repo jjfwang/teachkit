@@ -240,6 +240,36 @@ export function generateScaffolds(
   opts: GenerateScaffoldsOptions,
   deps: GenerateScaffoldsDeps
 ): Promise<ScaffoldsDocument>;
+// generateDiagnostics options (issue #1241): the GenerateLessonPlanOptions
+// shape plus an optional facet hint for faceted bank entries. Diagnostics
+// are generated from the misconception bank: a topic with no bank entry
+// rejects before any LLM call.
+export interface GenerateDiagnosticsOptions {
+  topic: string;
+  topicLabel?: string;
+  level?: string;
+  subject: string;
+  /** Facet hint for a faceted misconception bank entry; the primary facet resolves when omitted. */
+  facet?: string;
+  /** Optional worked example for this topic, adapted by the author prompt. */
+  workedExample?: string;
+  /** Number of repair turns after the first attempt. Default 3; 0 disables repair. */
+  maxRepairs?: number;
+}
+export interface GenerateDiagnosticsDeps {
+  callChat: PipelineCallChat;
+  /** Diagnostics validator; defaults to the built-in validateDiagnostics when omitted. */
+  validateDiagnostics?: PipelineValidate;
+  /** Fallback validator, used when validateDiagnostics is not supplied. */
+  validate?: PipelineValidate;
+  onProgress?: PipelineProgress;
+}
+// The parsed animath diagnostics material that validated clean.
+export type DiagnosticsDocument = Record<string, unknown>;
+export function generateDiagnostics(
+  opts: GenerateDiagnosticsOptions,
+  deps: GenerateDiagnosticsDeps
+): Promise<DiagnosticsDocument>;
 // generateLessonPack (issue #768): one shared unpack authors all eight
 // materials; packs are cached in memory by topic slug.
 export interface GenerateLessonPackOptions {
