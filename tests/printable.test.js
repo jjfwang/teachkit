@@ -419,6 +419,120 @@ describe('printable demo page', () => {
     assert.ok(demo.indexOf('AnimathValidate.validateNotes') < demo.indexOf('AnimathPrintable.renderNotes'));
     assert.ok(demo.indexOf('AnimathValidate.validateScript') < demo.indexOf('AnimathPrintable.renderScript'));
   });
+
+  test('demo fetches and validates the lesson plan before rendering it', () => {
+    assert.ok(demo.includes('samples/plans/primary-science-water-cycle.json'));
+    assert.ok(demo.includes('AnimathValidate.validateLessonPlan'));
+    assert.ok(demo.includes('AnimathPrintable.renderLessonPlan'));
+    assert.ok(demo.indexOf('AnimathValidate.validateLessonPlan') < demo.indexOf('AnimathPrintable.renderLessonPlan'));
+  });
+
+  test('demo fetches and validates diagnostics before rendering them', () => {
+    assert.ok(demo.includes('samples/diagnostics/primary-science-water-cycle.json'));
+    assert.ok(demo.includes('AnimathValidate.validateDiagnostics'));
+    assert.ok(demo.includes('AnimathPrintable.renderDiagnostics'));
+    assert.ok(demo.includes('AnimathPrintable.renderDiagnosticsAnswerKey'));
+    assert.ok(demo.indexOf('AnimathValidate.validateDiagnostics') < demo.indexOf('AnimathPrintable.renderDiagnostics'));
+    assert.ok(demo.indexOf('AnimathValidate.validateDiagnostics') < demo.indexOf('AnimathPrintable.renderDiagnosticsAnswerKey'));
+  });
+
+  test('demo fetches and validates worked examples before rendering them', () => {
+    assert.ok(demo.includes('samples/worked-examples/primary-science-water-cycle.json'));
+    assert.ok(demo.includes('AnimathValidate.validateWorkedExamples'));
+    assert.ok(demo.includes('AnimathPrintable.renderWorkedExamples'));
+    assert.ok(demo.includes('AnimathPrintable.renderWorkedExamplesAnswerKey'));
+    assert.ok(demo.indexOf('AnimathValidate.validateWorkedExamples') < demo.indexOf('AnimathPrintable.renderWorkedExamples'));
+    assert.ok(demo.indexOf('AnimathValidate.validateWorkedExamples') < demo.indexOf('AnimathPrintable.renderWorkedExamplesAnswerKey'));
+  });
+
+  test('demo fetches and validates the quiz bank before rendering it', () => {
+    assert.ok(demo.includes('samples/quiz-banks/primary-science-water-cycle.json'));
+    assert.ok(demo.includes('AnimathValidate.validateQuizBank'));
+    assert.ok(demo.includes('AnimathPrintable.renderQuizBank'));
+    assert.ok(demo.includes('AnimathPrintable.renderQuizBankAnswerKey'));
+    assert.ok(demo.indexOf('AnimathValidate.validateQuizBank') < demo.indexOf('AnimathPrintable.renderQuizBank'));
+    assert.ok(demo.indexOf('AnimathValidate.validateQuizBank') < demo.indexOf('AnimathPrintable.renderQuizBankAnswerKey'));
+  });
+
+  test('demo fetches and validates revision before rendering it', () => {
+    assert.ok(demo.includes('samples/revision/primary-science-water-cycle.json'));
+    assert.ok(demo.includes('AnimathValidate.validateRevision'));
+    assert.ok(demo.includes('AnimathPrintable.renderRevision'));
+    assert.ok(demo.includes('AnimathPrintable.renderRevisionAnswerKey'));
+    assert.ok(demo.indexOf('AnimathValidate.validateRevision') < demo.indexOf('AnimathPrintable.renderRevision'));
+    assert.ok(demo.indexOf('AnimathValidate.validateRevision') < demo.indexOf('AnimathPrintable.renderRevisionAnswerKey'));
+  });
+
+  test('demo fetches and validates scaffolds before rendering them', () => {
+    assert.ok(demo.includes('samples/scaffolds/primary-science-water-cycle.json'));
+    assert.ok(demo.includes('AnimathValidate.validateScaffolds'));
+    assert.ok(demo.includes('AnimathPrintable.renderScaffolds'));
+    assert.ok(demo.includes('AnimathPrintable.renderScaffoldsAnswerKey'));
+    assert.ok(demo.indexOf('AnimathValidate.validateScaffolds') < demo.indexOf('AnimathPrintable.renderScaffolds'));
+    assert.ok(demo.indexOf('AnimathValidate.validateScaffolds') < demo.indexOf('AnimathPrintable.renderScaffoldsAnswerKey'));
+  });
+
+  test('demo fetches and validates organisers before rendering them', () => {
+    assert.ok(demo.includes('samples/organisers/primary-science-water-cycle.json'));
+    assert.ok(demo.includes('AnimathValidate.validateOrganisers'));
+    assert.ok(demo.includes('AnimathPrintable.renderOrganisers'));
+    assert.ok(demo.includes('AnimathPrintable.renderOrganisersKey'));
+    assert.ok(demo.indexOf('AnimathValidate.validateOrganisers') < demo.indexOf('AnimathPrintable.renderOrganisers'));
+    assert.ok(demo.indexOf('AnimathValidate.validateOrganisers') < demo.indexOf('AnimathPrintable.renderOrganisersKey'));
+  });
+
+  test('demo fetches and validates the glossary before rendering it', () => {
+    assert.ok(demo.includes('samples/glossary/primary-science-water-cycle.json'));
+    assert.ok(demo.includes('AnimathValidate.validateGlossary'));
+    assert.ok(demo.includes('AnimathPrintable.renderGlossary'));
+    assert.ok(demo.indexOf('AnimathValidate.validateGlossary') < demo.indexOf('AnimathPrintable.renderGlossary'));
+  });
+
+  test('demo fetches and validates feedback before rendering it', () => {
+    assert.ok(demo.includes('samples/feedback/primary-science-water-cycle.json'));
+    assert.ok(demo.includes('AnimathValidate.validateFeedback'));
+    assert.ok(demo.includes('AnimathPrintable.renderFeedback'));
+    assert.ok(demo.includes('AnimathPrintable.renderFeedbackFixIts'));
+    assert.ok(demo.indexOf('AnimathValidate.validateFeedback') < demo.indexOf('AnimathPrintable.renderFeedback'));
+    assert.ok(demo.indexOf('AnimathValidate.validateFeedback') < demo.indexOf('AnimathPrintable.renderFeedbackFixIts'));
+  });
+
+  test('demo fetches and validates the guide before rendering it', () => {
+    assert.ok(demo.includes('samples/guides/primary-science-water-cycle.json'));
+    assert.ok(demo.includes('AnimathValidate.validateGuide'));
+    assert.ok(demo.includes('AnimathPrintable.renderGuide'));
+    assert.ok(demo.includes('AnimathPrintable.renderGuideStudent'));
+    assert.ok(demo.indexOf('AnimathValidate.validateGuide') < demo.indexOf('AnimathPrintable.renderGuide'));
+    assert.ok(demo.indexOf('AnimathValidate.validateGuide') < demo.indexOf('AnimathPrintable.renderGuideStudent'));
+  });
+
+  test('demo fetches and validates the scheme before rendering it', () => {
+    assert.ok(demo.includes('samples/schemes/primary-science-water-cycle.json'));
+    assert.ok(demo.includes('AnimathValidate.validateScheme'));
+    assert.ok(demo.includes('AnimathPrintable.renderScheme'));
+    assert.ok(demo.indexOf('AnimathValidate.validateScheme') < demo.indexOf('AnimathPrintable.renderScheme'));
+  });
+
+  test('demo fetches and validates the summative before rendering it', () => {
+    assert.ok(demo.includes('samples/summatives/primary-science-water-cycle.json'));
+    assert.ok(demo.includes('AnimathValidate.validateSummative'));
+    assert.ok(demo.includes('AnimathPrintable.renderSummative'));
+    assert.ok(demo.includes('AnimathPrintable.renderSummativeAnswerKey'));
+    assert.ok(demo.indexOf('AnimathValidate.validateSummative') < demo.indexOf('AnimathPrintable.renderSummative'));
+    assert.ok(demo.indexOf('AnimathValidate.validateSummative') < demo.indexOf('AnimathPrintable.renderSummativeAnswerKey'));
+  });
+
+  test('demo fetches and validates the homework worksheet before rendering it', () => {
+    assert.ok(demo.includes('samples/homework/primary-science-water-cycle.json'));
+    assert.ok(demo.includes('AnimathValidate.validateWorksheet(homework)'));
+    assert.ok(demo.includes('AnimathPrintable.renderWorksheet(homework)'));
+    assert.ok(demo.includes('AnimathPrintable.renderWorksheetAnswerKey(homework)'));
+    assert.ok(demo.indexOf('AnimathValidate.validateWorksheet(homework)') < demo.indexOf('AnimathPrintable.renderWorksheet(homework)'));
+    assert.ok(demo.indexOf('AnimathValidate.validateWorksheet(homework)') < demo.indexOf('AnimathPrintable.renderWorksheetAnswerKey(homework)'));
+    const homeworkIdx = demo.indexOf('samples/homework/primary-science-water-cycle.json');
+    assert.ok(demo.indexOf('AnimathValidate.validateWorksheet(homework)', homeworkIdx) > homeworkIdx);
+    assert.ok(demo.indexOf('AnimathValidate.validateWorksheet(homework)', homeworkIdx) < demo.indexOf('AnimathPrintable.renderWorksheet(homework)', homeworkIdx));
+  });
 });
 
 describe('printable.css print rules', () => {

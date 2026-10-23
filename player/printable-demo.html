@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>animath printable worksheet + exit ticket + notes + script demo</title>
+<title>animath printable demo - all printable materials</title>
 <link rel="stylesheet" href="player.css">
 <link rel="stylesheet" href="printable.css">
 <style>
@@ -16,7 +16,7 @@
 </head>
 <body>
 <div class="demo-bar">
-  <span class="hint">Printable demo: student sheets and teacher answer keys for the water-cycle worksheet and exit ticket, plus student notes and the teacher script. The teacher sections start on a new page when printed.</span>
+  <span class="hint">Printable demo: every printable material for the water-cycle topic - student sheets and teacher answer keys, plus student notes and the teacher script. The teacher sections start on a new page when printed.</span>
   <button type="button" id="toggle-teacher" class="pr-screen-only">Hide teacher keys</button>
 </div>
 <div id="stage"></div>
@@ -32,6 +32,19 @@
   var ticketUrl = '../samples/tickets/primary-science-water-cycle.json';
   var notesUrl = '../samples/notes/primary-science-water-cycle.json';
   var scriptUrl = '../samples/scripts/primary-science-water-cycle.json';
+  var planUrl = '../samples/plans/primary-science-water-cycle.json';
+  var diagnosticsUrl = '../samples/diagnostics/primary-science-water-cycle.json';
+  var workedExamplesUrl = '../samples/worked-examples/primary-science-water-cycle.json';
+  var quizBankUrl = '../samples/quiz-banks/primary-science-water-cycle.json';
+  var revisionUrl = '../samples/revision/primary-science-water-cycle.json';
+  var scaffoldsUrl = '../samples/scaffolds/primary-science-water-cycle.json';
+  var organisersUrl = '../samples/organisers/primary-science-water-cycle.json';
+  var glossaryUrl = '../samples/glossary/primary-science-water-cycle.json';
+  var feedbackUrl = '../samples/feedback/primary-science-water-cycle.json';
+  var guideUrl = '../samples/guides/primary-science-water-cycle.json';
+  var schemeUrl = '../samples/schemes/primary-science-water-cycle.json';
+  var summativeUrl = '../samples/summatives/primary-science-water-cycle.json';
+  var homeworkUrl = '../samples/homework/primary-science-water-cycle.json';
 
   function showError(msg) {
     errBox.innerHTML = '<div class="ap-error">' + String(msg).replace(/</g, '&lt;') + '</div>';
@@ -60,16 +73,94 @@
     fetch(scriptUrl).then(function (r) {
       if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + scriptUrl);
       return r.json();
+    }),
+    fetch(planUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + planUrl);
+      return r.json();
+    }),
+    fetch(diagnosticsUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + diagnosticsUrl);
+      return r.json();
+    }),
+    fetch(workedExamplesUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + workedExamplesUrl);
+      return r.json();
+    }),
+    fetch(quizBankUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + quizBankUrl);
+      return r.json();
+    }),
+    fetch(revisionUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + revisionUrl);
+      return r.json();
+    }),
+    fetch(scaffoldsUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + scaffoldsUrl);
+      return r.json();
+    }),
+    fetch(organisersUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + organisersUrl);
+      return r.json();
+    }),
+    fetch(glossaryUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + glossaryUrl);
+      return r.json();
+    }),
+    fetch(feedbackUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + feedbackUrl);
+      return r.json();
+    }),
+    fetch(guideUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + guideUrl);
+      return r.json();
+    }),
+    fetch(schemeUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + schemeUrl);
+      return r.json();
+    }),
+    fetch(summativeUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + summativeUrl);
+      return r.json();
+    }),
+    fetch(homeworkUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + homeworkUrl);
+      return r.json();
     })
   ]).then(function (pair) {
     var worksheet = pair[0];
     var ticket = pair[1];
     var notes = pair[2];
     var script = pair[3];
+    var plan = pair[4];
+    var diagnostics = pair[5];
+    var workedExamples = pair[6];
+    var quizBank = pair[7];
+    var revision = pair[8];
+    var scaffolds = pair[9];
+    var organisers = pair[10];
+    var glossary = pair[11];
+    var feedback = pair[12];
+    var guide = pair[13];
+    var scheme = pair[14];
+    var summative = pair[15];
+    var homework = pair[16];
     var problems = AnimathValidate.validateWorksheet(worksheet)
       .concat(AnimathValidate.validateExitTicket(ticket))
       .concat(AnimathValidate.validateNotes(notes))
-      .concat(AnimathValidate.validateScript(script));
+      .concat(AnimathValidate.validateScript(script))
+      .concat(AnimathValidate.validateLessonPlan(plan))
+      .concat(AnimathValidate.validateDiagnostics(diagnostics))
+      .concat(AnimathValidate.validateWorkedExamples(workedExamples))
+      .concat(AnimathValidate.validateQuizBank(quizBank))
+      .concat(AnimathValidate.validateRevision(revision))
+      .concat(AnimathValidate.validateScaffolds(scaffolds))
+      .concat(AnimathValidate.validateOrganisers(organisers))
+      .concat(AnimathValidate.validateGlossary(glossary))
+      .concat(AnimathValidate.validateFeedback(feedback))
+      .concat(AnimathValidate.validateGuide(guide))
+      .concat(AnimathValidate.validateScheme(scheme))
+      .concat(AnimathValidate.validateSummative(summative))
+      .concat(AnimathValidate.validateWorksheet(homework));
     if (problems.length) {
       showError('Sample failed validation:\n' + problems.join('\n'));
       return;
@@ -80,7 +171,30 @@
       AnimathPrintable.renderExitTicket(ticket) +
       AnimathPrintable.renderExitTicketAnswerKey(ticket) +
       AnimathPrintable.renderNotes(notes) +
-      AnimathPrintable.renderScript(script);
+      AnimathPrintable.renderScript(script) +
+      AnimathPrintable.renderLessonPlan(plan) +
+      AnimathPrintable.renderDiagnostics(diagnostics) +
+      AnimathPrintable.renderDiagnosticsAnswerKey(diagnostics) +
+      AnimathPrintable.renderWorkedExamples(workedExamples) +
+      AnimathPrintable.renderWorkedExamplesAnswerKey(workedExamples) +
+      AnimathPrintable.renderQuizBank(quizBank) +
+      AnimathPrintable.renderQuizBankAnswerKey(quizBank) +
+      AnimathPrintable.renderRevision(revision) +
+      AnimathPrintable.renderRevisionAnswerKey(revision) +
+      AnimathPrintable.renderScaffolds(scaffolds) +
+      AnimathPrintable.renderScaffoldsAnswerKey(scaffolds) +
+      AnimathPrintable.renderOrganisers(organisers) +
+      AnimathPrintable.renderOrganisersKey(organisers) +
+      AnimathPrintable.renderGlossary(glossary) +
+      AnimathPrintable.renderFeedback(feedback) +
+      AnimathPrintable.renderFeedbackFixIts(feedback) +
+      AnimathPrintable.renderGuide(guide) +
+      AnimathPrintable.renderGuideStudent(guide) +
+      AnimathPrintable.renderScheme(scheme) +
+      AnimathPrintable.renderSummative(summative) +
+      AnimathPrintable.renderSummativeAnswerKey(summative) +
+      AnimathPrintable.renderWorksheet(homework) +
+      AnimathPrintable.renderWorksheetAnswerKey(homework);
   }).catch(function (e) {
     showError(e);
   });
