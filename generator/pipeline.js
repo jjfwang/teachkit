@@ -30,9 +30,9 @@
  * generateNotes and generateScript (issue #768) are the same kind of
  * sibling (build_notes_prompt.js / build_script_prompt.js, validateNotes
  * / validateScript). generateLessonPack (issue #768) runs ONE shared
- * unpack stage, then authors all twelve materials from it (animation,
+ * unpack stage, then authors all thirteen materials from it (animation,
  * slides, worksheet, notes, exit ticket, teacher script, lesson plan,
- * scaffolds, diagnostics, worked examples, quiz bank, revision)
+ * scaffolds, diagnostics, worked examples, quiz bank, revision, organisers)
  * and resolves with a pack manifest; packs are cached in memory by
  * topic slug.
  */
@@ -1309,7 +1309,7 @@
   // opts:
   //   {topic, topicLabel, level, subject, workedExample, kind, focus,
   //    facet, maxRepairs, force}
-  //   (the union of the twelve material option sets; topic/subject
+  //   (the union of the thirteen material option sets; topic/subject
   //   required; maxRepairs defaults to 3; force === true bypasses the
   //   pack cache and regenerates, replacing the cached entry).
   // deps:
@@ -1317,18 +1317,20 @@
   //    validate?(spec) / validateSlides? / validateWorksheet? /
   //    validateNotes? / validateExitTicket? / validateScript? /
   //    validateLessonPlan? / validateScaffolds? / validateDiagnostics? /
-  //    validateWorkedExamples? / validateQuizBank? / validateRevision?
+  //    validateWorkedExamples? / validateQuizBank? / validateRevision? /
+  //    validateOrganisers?
   //      (per-material validators, resolved like the single-material
   //      generators; the built-in player/validate.js validators are the
   //      defaults), onProgress?(stage, n, max)}.
   //
-  // Runs ONE shared unpack stage, then authors all twelve materials from
+  // Runs ONE shared unpack stage, then authors all thirteen materials from
   // that single unpack, each through its existing builder + validator +
   // repair discipline. A material that exhausts its repair cap rejects
   // the whole pack with that material named on err.material (and
   // err.problems carried). Resolves with
   // {manifest, animation, slides, worksheet, notes, exitTicket, script,
-  // lessonPlan, scaffolds, diagnostics, workedExamples, quizBank, revision}
+  // lessonPlan, scaffolds, diagnostics, workedExamples, quizBank, revision,
+  // organisers}
   // where manifest = {slug, topic, level, subject, version, materials,
   // metadata} (metadata per packMetadataFor above, issue #1221).
   // Packs are cached in memory by slug: a repeat call with the same
@@ -1407,7 +1409,8 @@
       diagnostics: resolveDiagnosticsValidator(deps),
       workedExamples: resolveWorkedExamplesValidator(deps),
       quizBank: resolveQuizBankValidator(deps),
-      revision: resolveRevisionValidator(deps)
+      revision: resolveRevisionValidator(deps),
+      organisers: resolveOrganisersValidator(deps)
     };
     var missing = Object.keys(validators).filter(function (k) { return !validators[k]; });
     /* node:coverage ignore next 5 */
@@ -1508,7 +1511,7 @@
           level: opts.level,
           subject: opts.subject,
           version: GENERATOR_VERSION,
-          materials: ['animation', 'slides', 'worksheet', 'notes', 'exitTicket', 'script', 'lessonPlan', 'scaffolds', 'diagnostics', 'workedExamples', 'quizBank', 'revision'],
+          materials: ['animation', 'slides', 'worksheet', 'notes', 'exitTicket', 'script', 'lessonPlan', 'scaffolds', 'diagnostics', 'workedExamples', 'quizBank', 'revision', 'organisers'],
           metadata: packMetadataFor(opts)
         }
       };
@@ -1521,6 +1524,32 @@
               throw err;
             });
         });
+      });
+      // The organisers job runs LAST, after the chain: its prompts are
+      // built from the pack's OWN authored notes material (the paired
+      // notes definitions and mechanismSteps, issue #1287), which only
+      // exists once the notes job above has completed - so unlike the
+      // other jobs it cannot be built up front. No bank resolution and
+      // no new failure mode: repair exhaustion names organisers via
+      // err.material like every other material.
+      chain = chain.then(function () {
+        var prompts = SIBLINGS.organisersPrompt.buildOrganisersPrompts({
+          topic: opts.topic,
+          topicLabel: opts.topicLabel,
+          level: opts.level,
+          subject: opts.subject,
+          facet: opts.facet,
+          focus: opts.focus,
+          transitions: transitions,
+          definitions: pack.notes ? pack.notes.definitions : undefined,
+          mechanismSteps: pack.notes ? pack.notes.mechanismSteps : undefined,
+          workedExample: opts.workedExample
+        });
+        return authorAndRepair(deps, progress, maxRepairs, prompts, validators.organisers, ORGANISERS_KIND)
+          .then(function (doc) { pack.organisers = doc; }, function (err) {
+            if (err && typeof err === 'object' && err.material == null) err.material = 'organisers';
+            throw err;
+          });
       });
       return chain.then(function () {
         packCache.set(slug, pack);
