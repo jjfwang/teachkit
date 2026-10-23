@@ -11,6 +11,10 @@ export interface OrganisersTransition {
   driver: string;
   misconception?: OrganisersEntry;
 }
+export interface OrganisersDefinition {
+  term: string;
+  meaning: string;
+}
 export interface OrganisersPromptOptions {
   level?: string;
   subject: string;
@@ -21,6 +25,10 @@ export interface OrganisersPromptOptions {
   /** Resolved misconception bank entry; wins over the bank lookup when supplied. */
   bank?: OrganisersEntry;
   transitions?: OrganisersTransition[];
+  /** Paired student-notes definitions the definition-based slot entries are drawn from. */
+  definitions?: OrganisersDefinition[];
+  /** Paired student-notes mechanism steps the step-based slot entries are drawn from. */
+  mechanismSteps?: string[];
   workedExample?: string;
 }
 export interface OrganisersPrompts {

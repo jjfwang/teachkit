@@ -733,9 +733,12 @@ Every slot is an object with these fields:
 | `studentPrompt` | string | optional non-empty - what the student completes in this slot |
 
 An organisers material is generated from the shared lesson unpack
-and the topic's misconception bank entry (see `generateOrganisers`):
-a topic with no bank entry cannot grow an organisers material,
-because its coded content would have to invent misconceptions.
+and the topic's paired notes content (see `generateOrganisers`):
+the caller may supply the paired notes definitions and mechanism
+steps, and the author prompt renders them so slot entries can be
+derived from them. No misconception bank entry is required: a
+topic with gold notes but no bank entry can still grow an
+organisers material.
 
 ## Summative assessment spec
 
