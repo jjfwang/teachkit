@@ -1152,6 +1152,80 @@
     return errors;
   }
 
+  // Revision validator (SPEC.md "Revision spec", issue #1268): a
+  // per-topic revision material - the sibling material header plus
+  // flashcards derived from the paired quiz bank and notes, and
+  // spaced-practice sets at strictly increasing day offsets. Each
+  // flashcard carries a front, a back and a source naming where it was
+  // derived from; each practice set carries a positive integer
+  // dayOffset and a non-empty items array of {prompt, answer}.
+  // Presence and shape only - the validator never checks derivation
+  // or bank membership.
+  var REVISION_SOURCES = ['quiz-bank', 'definition', 'trap'];
+  function validateRevision(spec) {
+    var errors = [];
+    if (!spec || typeof spec !== 'object' || Array.isArray(spec)) return ['spec: must be an object'];
+    checkMaterialHeader(spec, errors);
+    if (!Array.isArray(spec.flashcards) || spec.flashcards.length < 4) {
+      errors.push('flashcards: required array of at least 4 flashcards');
+    } else {
+      spec.flashcards.forEach(function (card, i) {
+        var p = 'flashcards[' + i + ']';
+        if (!card || typeof card !== 'object' || Array.isArray(card)) {
+          errors.push(p + ': must be an object');
+          return;
+        }
+        if (typeof card.front !== 'string' || !card.front.trim()) {
+          errors.push(p + '.front: required non-empty string');
+        }
+        if (typeof card.back !== 'string' || !card.back.trim()) {
+          errors.push(p + '.back: required non-empty string');
+        }
+        if (REVISION_SOURCES.indexOf(card.source) === -1) {
+          errors.push(p + '.source: must be one of ' + REVISION_SOURCES.join('|'));
+        }
+      });
+    }
+    if (!Array.isArray(spec.practiceSets) || spec.practiceSets.length < 2) {
+      errors.push('practiceSets: required array of at least 2 practice sets');
+    } else {
+      var prevOffset = 0;
+      spec.practiceSets.forEach(function (set, i) {
+        var p = 'practiceSets[' + i + ']';
+        if (!set || typeof set !== 'object' || Array.isArray(set)) {
+          errors.push(p + ': must be an object');
+          return;
+        }
+        if (!Number.isInteger(set.dayOffset) || set.dayOffset <= 0) {
+          errors.push(p + '.dayOffset: must be a positive integer');
+        } else {
+          if (set.dayOffset <= prevOffset) {
+            errors.push(p + '.dayOffset: must be strictly increasing across practice sets');
+          }
+          prevOffset = set.dayOffset;
+        }
+        if (!Array.isArray(set.items) || set.items.length === 0) {
+          errors.push(p + '.items: required non-empty array of practice items');
+        } else {
+          set.items.forEach(function (item, j) {
+            var q = p + '.items[' + j + ']';
+            if (!item || typeof item !== 'object' || Array.isArray(item)) {
+              errors.push(q + ': must be an object');
+              return;
+            }
+            if (typeof item.prompt !== 'string' || !item.prompt.trim()) {
+              errors.push(q + '.prompt: required non-empty string');
+            }
+            if (typeof item.answer !== 'string' || !item.answer.trim()) {
+              errors.push(q + '.answer: required non-empty string');
+            }
+          });
+        }
+      });
+    }
+    return errors;
+  }
+
   // Summative assessment validator (SPEC.md "Summative assessment
   // spec", issue #1259): a unit-level assessment spanning at least 2
   // topics. The blueprint rows carry the outcome / assessment
@@ -1378,7 +1452,7 @@
     return errors;
   }
 
-  return { validateSpec: validateSpec, validateSlides: validateSlides, validateWorksheet: validateWorksheet, validateExitTicket: validateExitTicket, validateNotes: validateNotes, validateScript: validateScript, validateLessonPlan: validateLessonPlan, validateScaffolds: validateScaffolds, validateDiagnostics: validateDiagnostics, validateWorkedExamples: validateWorkedExamples, validateQuizBank: validateQuizBank, validateSummative: validateSummative, validatePackMetadata: validatePackMetadata, SUBJECTS: SUBJECTS };
+  return { validateSpec: validateSpec, validateSlides: validateSlides, validateWorksheet: validateWorksheet, validateExitTicket: validateExitTicket, validateNotes: validateNotes, validateScript: validateScript, validateLessonPlan: validateLessonPlan, validateScaffolds: validateScaffolds, validateDiagnostics: validateDiagnostics, validateWorkedExamples: validateWorkedExamples, validateQuizBank: validateQuizBank, validateRevision: validateRevision, validateSummative: validateSummative, validatePackMetadata: validatePackMetadata, SUBJECTS: SUBJECTS };
 });
 
 /* ------------------------------------------------------------------

@@ -63,6 +63,7 @@
         diagnosticsPrompt: require('./build_diagnostics_prompt.js'),
         workedExamplesPrompt: require('./build_worked_examples_prompt.js'),
         quizBankPrompt: require('./build_quiz_bank_prompt.js'),
+        revisionPrompt: require('./build_revision_prompt.js'),
         summativePrompt: require('./build_summative_prompt.js'),
         syllabus: require('./syllabus.js'),
         validate: require('../player/validate.js')
@@ -82,6 +83,7 @@
       diagnosticsPrompt: g.AnimathDiagnosticsPrompt,
       workedExamplesPrompt: g.AnimathWorkedExamplesPrompt,
       quizBankPrompt: g.AnimathQuizBankPrompt,
+      revisionPrompt: g.AnimathRevisionPrompt,
       summativePrompt: g.AnimathSummativePrompt,
       syllabus: g.AnimathSyllabus,
       validate: g.AnimathValidate
@@ -162,6 +164,13 @@
     invalidLabel: 'The invalid quiz bank you returned:',
     returnLine: 'Return ONLY the corrected quiz bank as a single JSON object. No prose, no code fences.',
     rejectLabel: 'Quiz bank'
+  };
+  var REVISION_KIND = {
+    notJsonProblem: 'The response was not valid JSON. Return ONLY the corrected revision material as JSON.',
+    repairHeader: 'Your previous response did not produce a valid revision material. It had these problems:',
+    invalidLabel: 'The invalid revision material you returned:',
+    returnLine: 'Return ONLY the corrected revision material as a single JSON object. No prose, no code fences.',
+    rejectLabel: 'Revision material'
   };
   var SUMMATIVE_KIND = {
     notJsonProblem: 'The response was not valid JSON. Return ONLY the corrected summative assessment as JSON.',
@@ -413,6 +422,15 @@
     if (typeof deps.validate === 'function') return deps.validate;
     if (SIBLINGS.validate && typeof SIBLINGS.validate.validateQuizBank === 'function') {
       return SIBLINGS.validate.validateQuizBank;
+    } /* node:coverage ignore next */
+    return null;
+  }
+
+  function resolveRevisionValidator(deps) {
+    if (typeof deps.validateRevision === 'function') return deps.validateRevision;
+    if (typeof deps.validate === 'function') return deps.validate;
+    if (SIBLINGS.validate && typeof SIBLINGS.validate.validateRevision === 'function') {
+      return SIBLINGS.validate.validateRevision;
     } /* node:coverage ignore next */
     return null;
   }
@@ -1008,6 +1026,70 @@
   }
 
   // opts:
+  //   {topic, topicLabel, level, subject, facet, focus, workedExample,
+  //    maxRepairs}
+  //   (the buildRevisionPrompts option set; topic/subject required;
+  //   maxRepairs defaults to 3, 0 disables repair).
+  // deps:
+  //   {callChat(system, user) -> Promise<string>  (caller-supplied LLM call),
+  //    validateRevision?(spec) -> string[] | Promise<string[]>,
+  //    validate?(spec) -> string[] | Promise<string[]>  (fallback validator),
+  //    onProgress?(stage, n, max)}  stages: 'unpack', 'author', 'repair'.
+  //
+  // Revision materials are generated FROM the misconception bank: the
+  // topic's bank entry is resolved first (the topic verbatim, then its
+  // slugified forms, facet carried - the resolvePackBankEntry order),
+  // and a topic with no bank entry rejects before any LLM call naming
+  // revision - the generator never invents misconceptions, because
+  // every flashcard and practice item is derived verbatim from the
+  // paired quiz bank and notes. Resolves with the first revision
+  // material that validates clean against validateRevision; rejects
+  // with an Error carrying err.problems when every attempt failed.
+  // The unpack step degrades exactly like generateQuizBank: a failed
+  // unpack authors WITHOUT transitions.
+  function generateRevision(opts, deps) {
+    opts = opts || {};
+    deps = deps || {};
+    var entry = resolvePackBankEntry(opts);
+    if (!entry) {
+      return Promise.reject(new Error('generateRevision: no misconception bank entry for topic "' +
+        opts.topic + '" - revision materials are generated from the bank and never invent misconceptions'));
+    }
+    if (typeof deps.callChat !== 'function') {
+      return Promise.reject(new Error('generateRevision: deps.callChat(system, user) ' +
+        'must be a function returning a Promise of the raw response text'));
+    }
+    var validateFn = resolveRevisionValidator(deps);
+    /* node:coverage ignore next 5 */
+    if (!validateFn) {
+      return Promise.reject(new Error('generateRevision: deps.validateRevision(spec) ' +
+        'must be a function returning the problem list (or supply deps.validate, ' +
+        'or load player/validate.js so validateRevision is available)'));
+    }
+    var progress = makeProgress(deps);
+    var maxRepairs = (opts.maxRepairs != null) ? opts.maxRepairs : DEFAULT_MAX_REPAIRS;
+
+    return unpackStage(deps, progress, opts).then(function (staged) {
+      var transitions = staged ? staged.transitions : null;
+      if (transitions) {
+        transitions = SIBLINGS.unpack.attachMisconceptions(transitions, opts.topic);
+      }
+      var prompts = SIBLINGS.revisionPrompt.buildRevisionPrompts({
+        topic: opts.topic,
+        topicLabel: opts.topicLabel,
+        level: opts.level,
+        subject: opts.subject,
+        facet: opts.facet,
+        focus: opts.focus,
+        transitions: transitions,
+        bank: { wrongTurn: entry.wrongTurn, why: entry.why, correctTurn: entry.correctTurn },
+        workedExample: opts.workedExample
+      });
+      return authorAndRepair(deps, progress, maxRepairs, prompts, validateFn, REVISION_KIND);
+    });
+  }
+
+  // opts:
   //   {topics, unitTitle, level, subject, focus, workedExample,
   //    maxRepairs}
   //   (the buildSummativePrompts option set; subject and at least 2
@@ -1296,5 +1378,5 @@
     return generateLessonPack(merged, deps);
   }
 
-  return { generateAnimation: generateAnimation, generateSlides: generateSlides, generateWorksheet: generateWorksheet, generateExitTicket: generateExitTicket, generateNotes: generateNotes, generateScript: generateScript, generateLessonPlan: generateLessonPlan, generateScaffolds: generateScaffolds, generateDiagnostics: generateDiagnostics, generateWorkedExamples: generateWorkedExamples, generateQuizBank: generateQuizBank, generateSummative: generateSummative, generateLessonPack: generateLessonPack, generateLessonPackForSyllabus: generateLessonPackForSyllabus, clearPackCache: clearPackCache };
+  return { generateAnimation: generateAnimation, generateSlides: generateSlides, generateWorksheet: generateWorksheet, generateExitTicket: generateExitTicket, generateNotes: generateNotes, generateScript: generateScript, generateLessonPlan: generateLessonPlan, generateScaffolds: generateScaffolds, generateDiagnostics: generateDiagnostics, generateWorkedExamples: generateWorkedExamples, generateQuizBank: generateQuizBank, generateRevision: generateRevision, generateSummative: generateSummative, generateLessonPack: generateLessonPack, generateLessonPackForSyllabus: generateLessonPackForSyllabus, clearPackCache: clearPackCache };
 });
