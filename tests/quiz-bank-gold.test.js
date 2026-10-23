@@ -28,7 +28,8 @@ const STEMS = [
   'secondary-physics-energy',
   'jc-h2-differentiation',
   'jc-h2-cell-bio',
-  'secondary-math-pythagoras'
+  'secondary-math-pythagoras',
+  'secondary-science-photosynthesis'
 ];
 
 function load(rel) {
@@ -48,7 +49,9 @@ for (const stem of STEMS) {
     assert.equal(bank.topic, notes.topic, stem + ': topic echoes the gold notes');
     assert.ok(bank.items.length >= 4, stem + ': bank holds at least 4 retrieval items');
 
-    const entry = misconceptionFor(bank.topic);
+    // Faceted bank topics (bio-nutrition) resolve via the stem's final
+    // token as the facet hint; unknown hints fall back to the primary facet.
+    const entry = misconceptionFor(bank.topic, stem.split('-').pop());
     assert.ok(entry && entry.wrongTurn, stem + ': topic resolves a misconception bank entry');
     const coded = bank.items.filter((item) => item.misconceptionCode !== undefined);
     assert.ok(coded.length >= 1, stem + ': at least one item is coded to the bank');
