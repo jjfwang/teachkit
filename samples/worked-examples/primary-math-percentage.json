@@ -1,0 +1,49 @@
+{
+  "title": "Percentage: 25% of 60",
+  "level": "primary",
+  "subject": "math",
+  "topic": "percentage",
+  "complete": {
+    "problem": "Work out 25% of 60 by turning the percent into a fraction of the whole first, as in scene s3.",
+    "steps": [
+      {
+        "text": "Step 1: percent means per hundred: shade twenty-five cells out of one hundred on the hundred-grid - that shaded amount is 25%.",
+        "annotation": "A count out of one hundred: 25% is 25 out of 100, whatever the whole in the question is."
+      },
+      {
+        "text": "Step 2: 25% of 60: divide into quarters: 25 out of 100 simplifies to one quarter, so split 60 into four equal parts and take one: 60 / 4 = 15.",
+        "annotation": "One of four equal parts of a whole: 25 out of 100 simplifies to one quarter, so 25% of a quantity is a quarter of it."
+      },
+      {
+        "text": "Step 3: the takeaway: a percent is out of one hundred - turn it into a fraction of the whole first, and 25% of 60 comes out as one quarter of 60, which is 15.",
+        "annotation": "The full amount the percent is taken of: in 25% of 60 the whole is 60, so the answer is a share of 60."
+      }
+    ],
+    "selfExplanation": "Explain why the 25 in 25% counts out of one hundred, so 25% of 60 cannot be 25."
+  },
+  "faded": {
+    "problem": "What is 10% of 60?",
+    "steps": [
+      {
+        "text": "Step 1: use the same per-hundred idea: 10% is 10 out of 100, which is one tenth.",
+        "annotation": "Percent means per hundred, so the 10 in 10% counts out of one hundred.",
+        "withheld": false
+      },
+      {
+        "text": "Step 2: one tenth of 60 is 60 / 10 = 6.",
+        "annotation": "Split the whole 60 into ten equal parts and take one part.",
+        "withheld": true
+      },
+      {
+        "text": "Step 3: so 10% of 60 = 6.",
+        "annotation": "Check by rebuilding: ten tenths of 6 make 60 again.",
+        "withheld": true
+      }
+    ],
+    "selfExplanation": "The first step is shown. Say how the whole splits into tenths, and what 10% of 60 comes to."
+  },
+  "paired": {
+    "problem": "Write 25% as a fraction in its simplest form and explain the step.",
+    "solution": "25% = 25/100 = 1/4: divide the top and the bottom by 25."
+  }
+}
