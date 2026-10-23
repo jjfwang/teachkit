@@ -398,4 +398,40 @@ export interface FeedbackSpec {
 }
 export function renderFeedback(spec: FeedbackSpec, options?: PrintableOptions): string;
 export function renderFeedbackFixIts(spec: FeedbackSpec, options?: PrintableOptions): string;
+export interface GuideKeyIdea {
+  term: string;
+  explanation: string;
+  [key: string]: unknown;
+}
+export interface GuideRevisionPlanEntry {
+  dayOffset: number;
+  focus: string;
+  [key: string]: unknown;
+}
+export interface GuideTrap {
+  misconception: string;
+  watchFor: string;
+  [key: string]: unknown;
+}
+export interface GuideParentQuestion {
+  question: string;
+  answer: string;
+  [key: string]: unknown;
+}
+export interface GuideSpec {
+  title: string;
+  level: string;
+  subject: string;
+  unitTitle: string;
+  term: string;
+  topics: string[];
+  overview: string[];
+  keyIdeas: GuideKeyIdea[];
+  revisionPlan: GuideRevisionPlanEntry[];
+  traps: GuideTrap[];
+  parentQuestions: GuideParentQuestion[];
+  [key: string]: unknown;
+}
+export function renderGuide(spec: GuideSpec, options?: PrintableOptions): string;
+export function renderGuideStudent(spec: GuideSpec, options?: PrintableOptions): string;
 export function escapeHtml(s: string): string;

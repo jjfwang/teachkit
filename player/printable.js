@@ -223,6 +223,19 @@
     if (errors.length) throw new Error('invalid feedback: ' + errors.join('; '));
   }
 
+  function getValidateGuide() {
+    var g = global.AnimathValidate;
+    if (g) return g.validateGuide || null;
+    return typeof require !== 'undefined' ? require('./validate.js').validateGuide : null;
+  }
+
+  function assertValidGuide(spec) {
+    var fn = getValidateGuide();
+    if (!fn) throw new Error('animath printable: player/validate.js is missing - include it before printable.js so specs can be validated');
+    var errors = fn(spec);
+    if (errors.length) throw new Error('invalid guide: ' + errors.join('; '));
+  }
+
   // HTML-escape for text content and double-quoted attribute values,
   // the export-frames.js esc chain: & first, then <, >, ".
   function escapeHtml(s) {
@@ -1150,6 +1163,91 @@
     return parts.join('\n');
   }
 
+  // Guide header: sheetHeader reads spec.topic, which a unit-level
+  // guide does not carry - it carries unitTitle and term instead -
+  // so the guide renderers build their own header on the same
+  // classes, on the schemeHeader precedent.
+  function guideHeader(spec, opts, classes, kind) {
+    var parts = [];
+    parts.push('<section class="pr-sheet ' + classes + variantClasses(opts) + '">');
+    parts.push('<h1 class="pr-title">' + escapeHtml(spec.title) + '</h1>');
+    parts.push('<p class="pr-meta">' + escapeHtml(spec.subject) + ' · ' +
+      escapeHtml(spec.unitTitle) + ' · ' + escapeHtml(spec.level) + '</p>');
+    parts.push('<p class="pr-kind">' + kind + '</p>');
+    parts.push('<p class="pr-term-meta">' + escapeHtml(spec.term) + '</p>');
+    return parts;
+  }
+
+  function guideBody(spec, includeAnswers) {
+    var parts = [];
+    parts.push('<h2 class="pr-guide-heading">What this unit is about</h2>');
+    parts.push('<ul class="pr-overview">');
+    spec.overview.forEach(function (line) {
+      parts.push('<li class="pr-overview-line">' + escapeHtml(line) + '</li>');
+    });
+    parts.push('</ul>');
+    parts.push('<p class="pr-topics">Topics: ' + spec.topics.map(escapeHtml).join(', ') + '</p>');
+    parts.push('<h2 class="pr-guide-heading">Key ideas</h2>');
+    parts.push('<dl class="pr-key-ideas">');
+    spec.keyIdeas.forEach(function (idea) {
+      parts.push('<div class="pr-entry">');
+      parts.push('<dt class="pr-term">' + escapeHtml(idea.term) + '</dt>');
+      parts.push('<dd class="pr-explanation">' + escapeHtml(idea.explanation) + '</dd>');
+      parts.push('</div>');
+    });
+    parts.push('</dl>');
+    parts.push('<h2 class="pr-guide-heading">Revision plan</h2>');
+    parts.push('<ol class="pr-revision-plan">');
+    spec.revisionPlan.forEach(function (entry) {
+      parts.push('<li class="pr-plan-entry">Day ' + entry.dayOffset + ': ' + escapeHtml(entry.focus) + '</li>');
+    });
+    parts.push('</ol>');
+    parts.push('<h2 class="pr-guide-heading">Traps to watch for</h2>');
+    parts.push('<ol class="pr-traps">');
+    spec.traps.forEach(function (trap) {
+      parts.push('<li class="pr-trap">');
+      parts.push('<p class="pr-misconception">Misconception: ' + escapeHtml(trap.misconception) + '</p>');
+      parts.push('<p class="pr-watch-for">Watch for: ' + escapeHtml(trap.watchFor) + '</p>');
+      parts.push('</li>');
+    });
+    parts.push('</ol>');
+    parts.push('<h2 class="pr-guide-heading">Questions to try together</h2>');
+    parts.push('<ol class="pr-parent-questions">');
+    spec.parentQuestions.forEach(function (pq) {
+      parts.push('<li class="pr-parent-question">');
+      parts.push('<p class="pr-prompt">' + escapeHtml(pq.question) + '</p>');
+      if (includeAnswers) {
+        parts.push('<p class="pr-answer">Answer: ' + escapeHtml(pq.answer) + '</p>');
+      }
+      parts.push('</li>');
+    });
+    parts.push('</ol>');
+    parts.push('</section>');
+    return parts;
+  }
+
+  // Parent revision guide: the unit guide in full - header,
+  // overview, topics, key ideas, revision plan, traps and the
+  // parent questions WITH their answers, so a parent can check
+  // responses at home. Nothing is withheld from the parent sheet.
+  function renderGuide(spec, options) {
+    assertValidGuide(spec);
+    var parts = guideHeader(spec, normalizeOptions(options), 'pr-parent pr-guide', 'Revision guide');
+    return parts.concat(guideBody(spec, true)).join('\n');
+  }
+
+  // Student revision guide: the same guide for the student -
+  // header, overview, topics, key ideas, revision plan, traps and
+  // the parent questions WITHOUT their answers, so the student
+  // attempts each question before checking. This function must
+  // never read a parentQuestions answer - see the header comment -
+  // so no answer can leak onto the student sheet.
+  function renderGuideStudent(spec, options) {
+    assertValidGuide(spec);
+    var parts = guideHeader(spec, normalizeOptions(options), 'pr-student pr-guide-student', 'Revision guide');
+    return parts.concat(guideBody(spec, false)).join('\n');
+  }
+
   var api = {
     renderWorksheet: renderWorksheet,
     renderWorksheetAnswerKey: renderWorksheetAnswerKey,
@@ -1176,6 +1274,8 @@
     renderScheme: renderScheme,
     renderFeedback: renderFeedback,
     renderFeedbackFixIts: renderFeedbackFixIts,
+    renderGuide: renderGuide,
+    renderGuideStudent: renderGuideStudent,
     escapeHtml: escapeHtml
   };
   global.AnimathPrintable = api;

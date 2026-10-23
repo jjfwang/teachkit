@@ -1,0 +1,72 @@
+{
+  "title": "Secondary Physics Scheme of Work: Mechanics and Energy",
+  "level": "secondary",
+  "subject": "science",
+  "unitTitle": "Mechanics and energy",
+  "term": "Term 2",
+  "topics": [
+    "phys-kinematics",
+    "phys-forces",
+    "phys-energy"
+  ],
+  "overview": [
+    "This guide covers the Mechanics and energy unit (Term 2): phys-kinematics, phys-forces, phys-energy.",
+    "Work through the key ideas first, follow the revision plan day by day, watch out for the traps, and try the questions together at home."
+  ],
+  "keyIdeas": [
+    {
+      "term": "Work",
+      "explanation": "The energy transferred when a force moves its object, calculated as force times distance in the force's direction, measured in joules."
+    },
+    {
+      "term": "Power",
+      "explanation": "How fast work is done, calculated as work divided by time, measured in watts: the same 200 J in 2 s is 100 W, in 10 s only 20 W."
+    },
+    {
+      "term": "Energy",
+      "explanation": "What work transfers between stores and forms - it is never created or destroyed, only changed from one form to another."
+    },
+    {
+      "term": "Gravitational potential energy",
+      "explanation": "The energy a raised mass stores because of its height, calculated as mass times g times height: 2 kg at 5 m stores 98 J."
+    }
+  ],
+  "revisionPlan": [
+    {
+      "dayOffset": 1,
+      "focus": "Practice set for phys-energy: A moving car brakes to a stop. What happens to its kinetic energy?"
+    },
+    {
+      "dayOffset": 3,
+      "focus": "Practice set for phys-energy: State the equation linking work done, force and distance."
+    }
+  ],
+  "traps": [
+    {
+      "misconception": "A flat line on a velocity-time graph means the object has stopped.",
+      "watchFor": "Flat reads as \"nothing is happening\", so the line feels like zero movement. A flat v-t line means constant velocity: the object keeps moving at the same speed. In class, sketch a line flat at 10 m/s and ask how far the object travels in 5 seconds: the area under the flat line is 10 times 5, which is 50 metres - a stopped object travels nowhere."
+    },
+    {
+      "misconception": "The same push gives the same pressure whether you stand flat or on tiptoes.",
+      "watchFor": "The push feels the same, so the effect on the ground feels like it should be the same. Pressure is force over area: tiptoes spread the same force over a smaller area, so the pressure is higher. In class, keep the force fixed at 200 N and shrink only the area: 0.5 square metres gives 400 Pa, while 0.05 square metres gives 4000 Pa - the push never changed, only its spread."
+    },
+    {
+      "misconception": "Energy gets used up when work is done.",
+      "watchFor": "The car runs out of petrol and stops, so the energy feels destroyed. Energy is never used up: it changes form, like chemical energy becoming kinetic energy plus heat. In class, follow the falling mass: 98 J of GPE at the top becomes 98 J of KE at the bottom - the form changed, the total did not."
+    }
+  ],
+  "parentQuestions": [
+    {
+      "question": "A moving car brakes to a stop. What happens to its kinetic energy?",
+      "answer": "It changes into heat and sound; the total energy stays the same."
+    },
+    {
+      "question": "Which statement about energy is correct?",
+      "answer": "Energy is never created or destroyed; it only changes form."
+    },
+    {
+      "question": "A 2 kg book is lifted 1.5 m. Taking g = 10 N/kg, how much gravitational potential energy does it gain?",
+      "answer": "30 J"
+    }
+  ]
+}

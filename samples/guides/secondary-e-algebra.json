@@ -1,0 +1,72 @@
+{
+  "title": "Secondary Elementary Mathematics Scheme of Work: Algebra and Functions",
+  "level": "secondary",
+  "subject": "math",
+  "unitTitle": "Algebra and functions",
+  "term": "Term 1",
+  "topics": [
+    "e-numbers",
+    "e-algebra",
+    "e-functions-graphs"
+  ],
+  "overview": [
+    "This guide covers the Algebra and functions unit (Term 1): e-numbers, e-algebra, e-functions-graphs.",
+    "Work through the key ideas first, follow the revision plan day by day, watch out for the traps, and try the questions together at home."
+  ],
+  "keyIdeas": [
+    {
+      "term": "Expansion",
+      "explanation": "Multiplying out brackets so every term in one bracket multiplies every term in the other: (x + 2)(x + 3) expands to x^2 + 5x + 6."
+    },
+    {
+      "term": "Factorisation",
+      "explanation": "Writing an expression as a product of brackets, the reverse of expansion: 2x + 6 + xy + 3y factorises to (x + 3)(2 + y)."
+    },
+    {
+      "term": "Subject of formula",
+      "explanation": "The variable a formula is rearranged to give on its own: in x = (y - 5) / 3, taken from y = 3x + 5, the subject is x."
+    },
+    {
+      "term": "Identity",
+      "explanation": "A statement that is true for every value of the variables, like (a + b)^2 = a^2 + 2ab + b^2, unlike an equation that holds only for some values."
+    }
+  ],
+  "revisionPlan": [
+    {
+      "dayOffset": 1,
+      "focus": "Practice set for e-algebra: Expand (x + 3)^2."
+    },
+    {
+      "dayOffset": 3,
+      "focus": "Practice set for e-algebra: Make x the subject of y = 3x + 7."
+    }
+  ],
+  "traps": [
+    {
+      "misconception": "Adding powers: 2^3 + 2^4 = 2^7.",
+      "watchFor": "The same-base index rule is for multiplying, but it gets misapplied to addition. The index rule is for multiplying, never adding: 8 + 16 = 24, not 128. In class, put the two questions side by side: multiplying joins the factors so the indices add (2^3 x 2^4 = 2^7 = 128), but adding keeps the powers separate, so work out 8 and 16 first."
+    },
+    {
+      "misconception": "(a + b)^2 = a^2 + b^2.",
+      "watchFor": "The power looks like it lands on each term of the sum. That is why the two-term answer feels right, but expanding the whole bracket gives three terms. The full expansion has three terms: check a = 2, b = 3, and 25 is not 13. In class, expand (a + b)(a + b) with the area model so the middle term 2ab is visible as a region."
+    },
+    {
+      "misconception": "The line with the bigger intercept is steeper.",
+      "watchFor": "The intercept is the visible height, so it feels like the climb. That is why the higher-starting line feels steeper, but height is not climb. Steepness is the gradient, not the intercept: compare m, never c. In class, compare y = 4x − 6 with y = x + 3: the first starts lower yet rises four times as fast."
+    }
+  ],
+  "parentQuestions": [
+    {
+      "question": "Expand (x + 3)^2.",
+      "answer": "x^2 + 6x + 9"
+    },
+    {
+      "question": "Make x the subject of y = 3x + 7.",
+      "answer": "x = (y - 7) / 3"
+    },
+    {
+      "question": "Expand (x - 4)(x + 4).",
+      "answer": "x^2 - 16"
+    }
+  ]
+}
