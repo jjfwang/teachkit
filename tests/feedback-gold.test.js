@@ -38,7 +38,8 @@ const STEMS = [
   'jc-h2-differentiation',
   'jc-h2-cell-bio',
   'secondary-math-pythagoras',
-  'secondary-science-photosynthesis'
+  'secondary-science-photosynthesis',
+  'primary-math-decimals'
 ];
 
 function load(rel) {
@@ -144,7 +145,7 @@ for (const stem of STEMS) {
       }
     }
     for (const ce of feedback.commonErrors) {
-      assert.ok(html.includes(ce.misconception), stem + ': renderFeedback shows misconception ' + ce.misconception);
+      assert.ok(html.includes(printable.escapeHtml(ce.misconception)), stem + ': renderFeedback shows misconception ' + ce.misconception);
       assert.ok(html.includes(ce.example), stem + ': renderFeedback shows example ' + ce.example);
       assert.ok(html.includes(ce.fixIt.prompt), stem + ': renderFeedback shows fix-it prompt ' + ce.fixIt.prompt);
       assert.ok(html.includes(ce.fixIt.corrected), stem + ': renderFeedback shows corrected working ' + ce.fixIt.corrected);
@@ -162,7 +163,7 @@ for (const stem of STEMS) {
       assert.ok(fixIts.includes(strength), stem + ': renderFeedbackFixIts shows strength ' + strength);
     }
     for (const ce of feedback.commonErrors) {
-      assert.ok(fixIts.includes(ce.misconception), stem + ': renderFeedbackFixIts shows misconception ' + ce.misconception);
+      assert.ok(fixIts.includes(printable.escapeHtml(ce.misconception)), stem + ': renderFeedbackFixIts shows misconception ' + ce.misconception);
       assert.ok(fixIts.includes(ce.example), stem + ': renderFeedbackFixIts shows example ' + ce.example);
       assert.ok(fixIts.includes(ce.fixIt.prompt), stem + ': renderFeedbackFixIts shows fix-it prompt ' + ce.fixIt.prompt);
     }

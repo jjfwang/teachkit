@@ -1,0 +1,105 @@
+{
+  "title": "Decimals: place value and adding 0.4 + 0.25",
+  "level": "primary",
+  "subject": "math",
+  "topic": "decimals",
+  "durationMinutes": 40,
+  "objectives": [
+    {
+      "id": "o1",
+      "text": "Read decimals by place value in the tenths and hundredths places",
+      "successCriteria": [
+        "I can say what each digit in 0.25 is worth: 2 tenths and 5 hundredths",
+        "I can split one whole into ten tenths or one hundred hundredths"
+      ],
+      "assessmentPoints": [
+        "Tenths bar answers in the opening activity",
+        "Hundredths square answers in the second activity"
+      ]
+    },
+    {
+      "id": "o2",
+      "text": "Add decimals by matching place values first, writing 0.4 as 0.40",
+      "successCriteria": [
+        "I can rewrite 0.4 as 0.40 before adding",
+        "I can work out 0.4 + 0.25 = 0.65 by lining up tenths under tenths and hundredths under hundredths"
+      ],
+      "assessmentPoints": [
+        "Guided addition answers in the third activity",
+        "Worksheet answers in the closing practice"
+      ]
+    },
+    {
+      "id": "o3",
+      "text": "Compare decimals by place value, not by digit count",
+      "successCriteria": [
+        "I can explain why 0.4 covers more of the whole than 0.25",
+        "I can spot the digit-count trap and say what goes wrong"
+      ],
+      "assessmentPoints": [
+        "Responses when the trap is sprung in the fourth activity",
+        "Exit ticket answers on the comparison question"
+      ]
+    }
+  ],
+  "activities": [
+    {
+      "title": "Tenths: split the bar into ten equal parts",
+      "minutes": 8,
+      "objectiveIds": [
+        "o1"
+      ],
+      "scriptCue": "s1",
+      "grouping": "whole class",
+      "resources": [
+        "board"
+      ]
+    },
+    {
+      "title": "Hundredths: shade twenty-five tiny parts",
+      "minutes": 9,
+      "objectiveIds": [
+        "o1"
+      ],
+      "scriptCue": "s2",
+      "grouping": "pairs"
+    },
+    {
+      "title": "Add: line up the places",
+      "minutes": 10,
+      "objectiveIds": [
+        "o2"
+      ],
+      "scriptCue": "s3",
+      "grouping": "whole class",
+      "differentiation": {
+        "support": "Provide the addition written in a place-value grid so tenths and hundredths stay in their columns."
+      }
+    },
+    {
+      "title": "Spring the digit-count trap",
+      "minutes": 8,
+      "objectiveIds": [
+        "o3"
+      ],
+      "scriptCue": "s4",
+      "grouping": "pairs",
+      "differentiation": {
+        "stretch": "Ask learners to compare 0.4 with 0.35 using the same matched-places method."
+      }
+    },
+    {
+      "title": "Worksheet practice and exit ticket",
+      "minutes": 5,
+      "objectiveIds": [
+        "o1",
+        "o2",
+        "o3"
+      ],
+      "grouping": "individual",
+      "resources": [
+        "worksheet"
+      ]
+    }
+  ]
+}

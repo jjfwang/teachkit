@@ -1,0 +1,44 @@
+{
+  "title": "Decimals: place value and adding 0.4 + 0.25",
+  "level": "primary",
+  "subject": "math",
+  "topic": "decimals",
+  "strengths": [
+    "Most of the class can read 0.25 by place value: 2 tenths and 5 hundredths in one number.",
+    "The class can rewrite 0.4 in hundredths before adding, matching the places first."
+  ],
+  "modelAnswers": [
+    {
+      "question": "Write 0.4 in hundredths and explain why the value does not change.",
+      "answer": "0.4 = 0.40: four tenths is the same amount as forty hundredths, because ten hundredths make one tenth.",
+      "creditPoints": []
+    },
+    {
+      "question": "Work out 0.4 + 0.25, showing the step where you rewrite 0.4.",
+      "answer": "0.4 = 0.40, then 0.40 + 0.25 = 0.65.",
+      "creditPoints": []
+    }
+  ],
+  "commonErrors": [
+    {
+      "misconception": "Comparing decimals by digit count: 0.25 looks bigger than 0.4 because 25 > 4.",
+      "example": "A learner picks 0.25 as the bigger number on the worksheet comparison question, pointing at the 25 as the larger count.",
+      "fixIt": {
+        "prompt": "Fix it: lay the tenths bar over the hundredths square and compare the covered amounts, not the digit counts.",
+        "corrected": "Corrected working: 0.4 is forty hundredths and 0.25 is twenty-five hundredths, so 0.4 covers more of the whole."
+      }
+    },
+    {
+      "misconception": "Comparing decimals by digit count: 0.25 looks bigger than 0.4 because 25 > 4.",
+      "example": "On the exit ticket, a learner defends 0.25 by saying it has more digits after the point than 0.4.",
+      "fixIt": {
+        "prompt": "Fix it: rewrite both numbers in hundredths, then say which amount is larger and why.",
+        "corrected": "Corrected check: in hundredths the two amounts are forty and twenty-five, and forty hundredths is the larger amount."
+      }
+    }
+  ],
+  "nextSteps": [
+    "Reteach the comparison with the bar laid over the square before any further comparison questions.",
+    "Practise rewriting one-decimal-place numbers in hundredths until matching the places is automatic."
+  ]
+}
