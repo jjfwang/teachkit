@@ -1,0 +1,44 @@
+{
+  "level": "secondary",
+  "subject": "science",
+  "topic": "bio-nutrition",
+  "title": "Photosynthesis: how plants make food",
+  "variant": "homework",
+  "questions": [
+    {
+      "choices": [
+        {
+          "text": "glucose + oxygen -> carbon dioxide + water"
+        },
+        {
+          "correct": true,
+          "text": "carbon dioxide + water -> glucose + oxygen"
+        },
+        {
+          "text": "carbon dioxide + glucose -> water + oxygen"
+        },
+        {
+          "text": "water + oxygen -> glucose + carbon dioxide"
+        }
+      ],
+      "explanation": "The inputs are carbon dioxide and water, and the products are glucose and oxygen, with light energy trapped by chlorophyll powering the change: carbon dioxide + water -> glucose + oxygen.",
+      "id": "q2",
+      "kind": "multiple-choice",
+      "prompt": "Which is the correct word equation for photosynthesis?"
+    },
+    {
+      "answer": "Carbon dioxide, which enters the leaf from the air through tiny pores on its underside, and water, which is absorbed by the roots and travels up to the leaf.",
+      "explanation": "Both inputs must reach the leaf: carbon dioxide comes from the air through pores, and water comes from the soil via the roots. Light energy, trapped by chlorophyll, is the energy input, not a raw material.",
+      "id": "q3",
+      "kind": "short-answer",
+      "prompt": "A leaf is photosynthesizing. Name the two raw materials it needs, and state where each one comes from."
+    },
+    {
+      "answer": "Plants make their own food - glucose - by photosynthesis, building it from carbon dioxide and water using light energy. Because almost all other life feeds directly or indirectly on that food, plants are the producers at the start of food chains.",
+      "explanation": "A producer makes food rather than eating it. The key phrases are make their own food, glucose built by photosynthesis, and food for almost all life.",
+      "id": "q4",
+      "kind": "short-answer",
+      "prompt": "Explain why green plants are called producers."
+    }
+  ]
+}
