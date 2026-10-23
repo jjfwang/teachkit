@@ -70,6 +70,12 @@
     return typeof require !== 'undefined' ? require('./validate.js').validateDiagnostics : null;
   }
 
+  function getValidateWorkedExamples() {
+    var g = global.AnimathValidate;
+    if (g) return g.validateWorkedExamples || null;
+    return typeof require !== 'undefined' ? require('./validate.js').validateWorkedExamples : null;
+  }
+
   function assertValidWorksheet(spec) {
     var fn = getValidateWorksheet();
     if (!fn) throw new Error('animath printable: player/validate.js is missing - include it before printable.js so specs can be validated');
@@ -117,6 +123,13 @@
     if (!fn) throw new Error('animath printable: player/validate.js is missing - include it before printable.js so specs can be validated');
     var errors = fn(spec);
     if (errors.length) throw new Error('invalid diagnostics: ' + errors.join('; '));
+  }
+
+  function assertValidWorkedExamples(spec) {
+    var fn = getValidateWorkedExamples();
+    if (!fn) throw new Error('animath printable: player/validate.js is missing - include it before printable.js so specs can be validated');
+    var errors = fn(spec);
+    if (errors.length) throw new Error('invalid worked examples: ' + errors.join('; '));
   }
 
   // HTML-escape for text content and double-quoted attribute values,
@@ -579,6 +592,78 @@
     return parts.join('\n');
   }
 
+  // Worked examples student sheet: the complete example in full
+  // (problem, steps with their annotations, self-explanation prompt),
+  // the faded example's shown steps only, and the paired problem to
+  // try. This function never reads a step of the faded example whose
+  // withheld flag is true, and never reads paired.solution - see the
+  // header comment - so withheld content cannot leak to a student.
+  function renderWorkedExamples(spec, options) {
+    assertValidWorkedExamples(spec);
+    var parts = sheetHeader(spec, 'pr-sheet pr-student pr-worked-examples', 'Worked examples', normalizeOptions(options));
+    function renderStep(step, showAnnotation) {
+      parts.push('<li class="pr-step">');
+      parts.push('<p class="pr-step-text">' + escapeHtml(step.text) + '</p>');
+      if (showAnnotation && typeof step.annotation === 'string') {
+        parts.push('<p class="pr-step-annotation">' + escapeHtml(step.annotation) + '</p>');
+      }
+      parts.push('</li>');
+    }
+    parts.push('<h2 class="pr-worked-heading">Complete example</h2>');
+    parts.push('<p class="pr-problem">' + escapeHtml(spec.complete.problem) + '</p>');
+    parts.push('<ol class="pr-steps">');
+    spec.complete.steps.forEach(function (step) { renderStep(step, true); });
+    parts.push('</ol>');
+    parts.push('<p class="pr-self-explanation">Explain it: ' + escapeHtml(spec.complete.selfExplanation) + '</p>');
+    parts.push('<h2 class="pr-worked-heading">Faded example</h2>');
+    parts.push('<p class="pr-problem">' + escapeHtml(spec.faded.problem) + '</p>');
+    parts.push('<ol class="pr-steps">');
+    spec.faded.steps.forEach(function (step) {
+      if (step.withheld === true) {
+        parts.push('<li class="pr-step pr-withheld">');
+        parts.push('<p class="pr-withheld-note">Step withheld - try it yourself, then check the answer key.</p>');
+        parts.push('</li>');
+      } else {
+        renderStep(step, true);
+      }
+    });
+    parts.push('</ol>');
+    parts.push('<p class="pr-self-explanation">Explain it: ' + escapeHtml(spec.faded.selfExplanation) + '</p>');
+    parts.push('<h2 class="pr-worked-heading">Now try this</h2>');
+    parts.push('<p class="pr-problem">' + escapeHtml(spec.paired.problem) + '</p>');
+    parts.push('</section>');
+    return parts.join('\n');
+  }
+
+  // Teacher worked-examples answer key: the full faded example with
+  // every step (the withheld steps marked), plus the paired problem's
+  // worked solution - the teacher-only content the student sheet
+  // never reads.
+  function renderWorkedExamplesAnswerKey(spec, options) {
+    assertValidWorkedExamples(spec);
+    var parts = sheetHeader(spec, 'pr-sheet pr-teacher pr-answer-key pr-worked-examples', 'Worked examples answer key', normalizeOptions(options));
+    parts.push('<h2 class="pr-worked-heading">Faded example in full</h2>');
+    parts.push('<p class="pr-problem">' + escapeHtml(spec.faded.problem) + '</p>');
+    parts.push('<ol class="pr-steps">');
+    spec.faded.steps.forEach(function (step) {
+      parts.push('<li class="pr-step">');
+      parts.push('<p class="pr-step-text">' + escapeHtml(step.text) + '</p>');
+      if (typeof step.annotation === 'string') {
+        parts.push('<p class="pr-step-annotation">' + escapeHtml(step.annotation) + '</p>');
+      }
+      if (step.withheld === true) {
+        parts.push('<p class="pr-withheld-marker">Withheld on the student sheet.</p>');
+      }
+      parts.push('</li>');
+    });
+    parts.push('</ol>');
+    parts.push('<h2 class="pr-worked-heading">Paired problem solution</h2>');
+    parts.push('<p class="pr-problem">' + escapeHtml(spec.paired.problem) + '</p>');
+    parts.push('<p class="pr-solution">Solution: ' + escapeHtml(spec.paired.solution) + '</p>');
+    parts.push('</section>');
+    return parts.join('\n');
+  }
+
   var api = {
     renderWorksheet: renderWorksheet,
     renderWorksheetAnswerKey: renderWorksheetAnswerKey,
@@ -591,6 +676,8 @@
     renderScaffoldsAnswerKey: renderScaffoldsAnswerKey,
     renderDiagnostics: renderDiagnostics,
     renderDiagnosticsAnswerKey: renderDiagnosticsAnswerKey,
+    renderWorkedExamples: renderWorkedExamples,
+    renderWorkedExamplesAnswerKey: renderWorkedExamplesAnswerKey,
     escapeHtml: escapeHtml
   };
   global.AnimathPrintable = api;

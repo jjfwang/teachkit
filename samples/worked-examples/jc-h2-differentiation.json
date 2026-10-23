@@ -1,0 +1,49 @@
+{
+  "title": "JC H2 differentiation: connected rates of change",
+  "level": "jc",
+  "subject": "math",
+  "topic": "h2-differentiation",
+  "complete": {
+    "problem": "The radius of a circle increases at 0.5 cm/s. Find the rate of increase of the area when the radius is 4 cm.",
+    "steps": [
+      {
+        "text": "Write the link equation: A = pi r^2, so dA/dr = 2 pi r.",
+        "annotation": "The area depends on the radius, so differentiate A with respect to r."
+      },
+      {
+        "text": "Apply the chain rule: dA/dt = (dA/dr)(dr/dt) = 2 pi r x 0.5.",
+        "annotation": "The chain rule connects the rate we want to the rate we are given."
+      },
+      {
+        "text": "Substitute r = 4: dA/dt = 2 pi (4)(0.5) = 4 pi, about 12.6 cm^2/s.",
+        "annotation": "Substitute only at the end, once the rate expression is in terms of r."
+      }
+    ],
+    "selfExplanation": "Explain why the chain rule is needed here instead of differentiating A with respect to t directly."
+  },
+  "faded": {
+    "problem": "The side of a square increases at 2 cm/s. Find the rate of increase of the area when the side is 10 cm.",
+    "steps": [
+      {
+        "text": "Write the link equation: A = x^2, so dA/dx = 2x.",
+        "annotation": "The area depends on the side x, so differentiate with respect to x.",
+        "withheld": false
+      },
+      {
+        "text": "Apply the chain rule: dA/dt = (dA/dx)(dx/dt) = 2x x 2 = 4x.",
+        "annotation": "Multiply the derivative by the given rate dx/dt = 2 cm/s.",
+        "withheld": true
+      },
+      {
+        "text": "Substitute x = 10: dA/dt = 4(10) = 40 cm^2/s.",
+        "annotation": "The area grows faster as the square gets bigger, because dA/dt depends on x.",
+        "withheld": true
+      }
+    ],
+    "selfExplanation": "The first step is shown. Write down the chain-rule statement you would use next."
+  },
+  "paired": {
+    "problem": "The radius of a sphere decreases at 0.1 cm/s. Find the rate of decrease of the volume when the radius is 5 cm. (V = 4/3 pi r^3.)",
+    "solution": "dV/dr = 4 pi r^2. By the chain rule, dV/dt = (dV/dr)(dr/dt) = 4 pi r^2 x (-0.1). At r = 5: dV/dt = 4 pi (25)(-0.1) = -10 pi, about -31.4 cm^3/s, so the volume decreases at about 31.4 cm^3/s."
+  }
+}
