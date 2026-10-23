@@ -36,7 +36,8 @@ const STEMS = [
   'secondary-e-algebra',
   'secondary-physics-energy',
   'jc-h2-differentiation',
-  'jc-h2-cell-bio'
+  'jc-h2-cell-bio',
+  'secondary-math-pythagoras'
 ];
 
 function load(rel) {

@@ -1,0 +1,44 @@
+{
+  "title": "Pythagoras' theorem: a² + b² = c²",
+  "level": "secondary",
+  "subject": "math",
+  "topic": "e-trigonometry",
+  "strengths": [
+    "Most of the class squares both legs before adding when finding a hypotenuse.",
+    "The class can name the hypotenuse reliably as the side across from the right angle."
+  ],
+  "modelAnswers": [
+    {
+      "question": "A right-angled triangle has legs 6 and 8. Find the hypotenuse, showing your working.",
+      "answer": "c² = 6² + 8² = 36 + 64 = 100, so c = 10.",
+      "creditPoints": []
+    },
+    {
+      "question": "A right-angled triangle has hypotenuse 13 and one leg 5. Find the other leg, showing your working.",
+      "answer": "The other leg squared is 13² - 5² = 169 - 25 = 144, so the other leg is 12.",
+      "creditPoints": []
+    }
+  ],
+  "commonErrors": [
+    {
+      "misconception": "tan = adjacent / opposite.",
+      "example": "A learner writes the tangent ratio with the adjacent side on top, flipping the two shorter sides.",
+      "fixIt": {
+        "prompt": "Fix it: label the opposite and adjacent sides for theta first, then rewrite the tangent ratio by reading TOA aloud.",
+        "corrected": "Corrected working: TOA gives tan theta with opposite over adjacent, so the side across from theta belongs in the numerator of the ratio."
+      }
+    },
+    {
+      "misconception": "tan = adjacent / opposite.",
+      "example": "On the exit ticket, a learner defends the flipped tangent ratio by pointing at the side next to theta.",
+      "fixIt": {
+        "prompt": "Fix it: swap the numerator and denominator of the flipped ratio and check the result against the 3-4-5 triangle on the notes card.",
+        "corrected": "Corrected check: for the 3-4-5 triangle the tangent value is the smaller-over-larger ratio of the two legs, matching opposite divided by adjacent."
+      }
+    }
+  ],
+  "nextSteps": [
+    "Reteach TOA with side labelling before any ratio is written, using the 3-4-5 triangle as the anchor example.",
+    "Practise finding a missing leg by rearranging before returning to mixed hypotenuse questions."
+  ]
+}
