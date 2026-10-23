@@ -264,6 +264,75 @@
     return lines.join('\n');
   }
 
+
+  // Notes-content options (issue #1279, on the build_scaffold_prompt.js
+  // precedent): opts.definitions is an array of {term, meaning} and
+  // opts.mechanismSteps an array of non-empty strings, both drawn from
+  // the paired student notes. Absent or empty means none supplied;
+  // malformed throws a descriptive buildOrganisersPrompts error.
+  function normalizeDefinitions(definitions) {
+    if (definitions === undefined || definitions === null) return null;
+    if (!Array.isArray(definitions)) {
+      throw new Error('buildOrganisersPrompts: opts.definitions must be an array of ' +
+        '{term, meaning}, got ' + typeof definitions);
+    }
+    if (definitions.length === 0) return null;
+    var out = [];
+    for (var i = 0; i < definitions.length; i++) {
+      var d = definitions[i];
+      if (!d || typeof d !== 'object' || Array.isArray(d)) {
+        throw new Error('buildOrganisersPrompts: opts.definitions[' + i + '] must be ' +
+          'an object with non-empty term and meaning');
+      }
+      if (typeof d.term !== 'string' || !d.term.trim()) {
+        throw new Error('buildOrganisersPrompts: opts.definitions[' + i + '].term must be a non-empty string');
+      }
+      if (typeof d.meaning !== 'string' || !d.meaning.trim()) {
+        throw new Error('buildOrganisersPrompts: opts.definitions[' + i + '].meaning must be a non-empty string');
+      }
+      out.push({ term: d.term.trim(), meaning: d.meaning.trim() });
+    }
+    return out;
+  }
+
+  function normalizeMechanismSteps(steps) {
+    if (steps === undefined || steps === null) return null;
+    if (!Array.isArray(steps)) {
+      throw new Error('buildOrganisersPrompts: opts.mechanismSteps must be an array of ' +
+        'non-empty strings, got ' + typeof steps);
+    }
+    if (steps.length === 0) return null;
+    var out = [];
+    for (var i = 0; i < steps.length; i++) {
+      if (typeof steps[i] !== 'string' || !steps[i].trim()) {
+        throw new Error('buildOrganisersPrompts: opts.mechanismSteps[' + i + '] must be a non-empty string');
+      }
+      out.push(steps[i].trim());
+    }
+    return out;
+  }
+
+  function notesUserBlock(definitions, mechanismSteps) {
+    var lines = [
+      '',
+      '',
+      'Paired student notes - derive the organiser entries from these:'
+    ];
+    if (definitions) {
+      lines.push('Definitions (draw the definition-based slot entries from this list):');
+      for (var i = 0; i < definitions.length; i++) {
+        lines.push('- ' + definitions[i].term + ': ' + definitions[i].meaning);
+      }
+    }
+    if (mechanismSteps) {
+      lines.push('Mechanism steps (draw the step-based slot entries from these steps, in order):');
+      for (var j = 0; j < mechanismSteps.length; j++) {
+        lines.push((j + 1) + '. ' + mechanismSteps[j]);
+      }
+    }
+    return lines.join('\n');
+  }
+
   // opts: {level, subject, topic, topicLabel, focus, facet, bank,
   // transitions, workedExample}
   function buildOrganisersPrompts(opts) {
@@ -273,6 +342,8 @@
     }
     var level = opts.level || 'primary';
     var transitions = normalizeTransitions(opts.transitions);
+    var definitions = normalizeDefinitions(opts.definitions);
+    var mechanismSteps = normalizeMechanismSteps(opts.mechanismSteps);
     var bank = opts.bank || bankBeat(opts.topic, opts.facet);
     var workedExample = null;
     if (opts.workedExample !== undefined && opts.workedExample !== null) {
@@ -297,6 +368,7 @@
         'stages and the student notes mechanism steps and definitions.'
     ].join('\n');
     if (transitions) user += transitionsUserBlock(transitions);
+    if (definitions || mechanismSteps) user += notesUserBlock(definitions, mechanismSteps);
     user += bankUserBlock(bank);
     if (workedExample) {
       user += '\n\nWorked example for this topic - adapt its structure and quality, do not copy it verbatim:\n' + workedExample;

@@ -362,9 +362,10 @@ export function generateRevision(
   opts: GenerateRevisionOptions,
   deps: GenerateRevisionDeps
 ): Promise<RevisionDocument>;
-// generateOrganisers options (issue #1277): the GenerateRevisionOptions
-// shape. Organisers materials are generated from the misconception
-// bank: a topic with no bank entry rejects before any LLM call.
+// generateOrganisers options (issue #1277, corrected by issue #1279):
+// the GenerateScaffoldsOptions notes-content shape. Organisers
+// materials are generated from the shared unpack and the topic's
+// paired notes content; no misconception bank entry is required.
 export interface GenerateOrganisersOptions {
   topic: string;
   topicLabel?: string;
@@ -374,6 +375,10 @@ export interface GenerateOrganisersOptions {
   facet?: string;
   /** The student's focus for the organisers set, when given. */
   focus?: string;
+  /** Paired student-notes definitions the definition-based slot entries are drawn from. */
+  definitions?: ScaffoldsDefinition[];
+  /** Paired student-notes mechanism steps the step-based slot entries are drawn from. */
+  mechanismSteps?: string[];
   /** Optional worked example for this topic, adapted by the author prompt. */
   workedExample?: string;
   /** Number of repair turns after the first attempt. Default 3; 0 disables repair. */

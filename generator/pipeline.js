@@ -1108,8 +1108,8 @@
   }
 
   // opts:
-  //   {topic, topicLabel, level, subject, facet, focus, workedExample,
-  //    maxRepairs}
+  //   {topic, topicLabel, level, subject, facet, focus, definitions,
+  //    mechanismSteps, workedExample, maxRepairs}
   //   (the buildOrganisersPrompts option set; topic/subject required;
   //   maxRepairs defaults to 3, 0 disables repair).
   // deps:
@@ -1118,13 +1118,17 @@
   //    validate?(spec) -> string[] | Promise<string[]>  (fallback validator),
   //    onProgress?(stage, n, max)}  stages: 'unpack', 'author', 'repair'.
   //
-  // Organisers materials are generated FROM the misconception bank:
-  // the topic's bank entry is resolved first (the topic verbatim, then
-  // its slugified forms, facet carried - the resolvePackBankEntry
-  // order), and a topic with no bank entry rejects before any LLM call
-  // naming organisers - the generator never invents misconceptions,
-  // because every slot entry is derived verbatim from the topic unpack
-  // stages and the paired notes mechanism steps and definitions.
+  // Organisers materials are generated from the shared lesson unpack
+  // and the topic's paired notes content (the notes-content model,
+  // issue #1279): there is no misconception bank resolution and no
+  // bank gate - a topic with gold notes but no bank entry still grows
+  // an organisers material. The caller may supply the paired notes
+  // definitions and mechanismSteps, passed through to
+  // buildOrganisersPrompts, which renders them into the author
+  // prompt; every slot entry is derived verbatim from the topic
+  // unpack stages and the paired notes mechanism steps and
+  // definitions. Rejects only on a missing callChat or a missing
+  // validator, naming generateOrganisers / validateOrganisers.
   // Resolves with the first organisers material that validates clean
   // against validateOrganisers; rejects with an Error carrying
   // err.problems when every attempt failed. The unpack step degrades
@@ -1133,11 +1137,6 @@
   function generateOrganisers(opts, deps) {
     opts = opts || {};
     deps = deps || {};
-    var entry = resolvePackBankEntry(opts);
-    if (!entry) {
-      return Promise.reject(new Error('generateOrganisers: no misconception bank entry for topic "' +
-        opts.topic + '" - organisers materials are generated from the bank and never invent misconceptions'));
-    }
     if (typeof deps.callChat !== 'function') {
       return Promise.reject(new Error('generateOrganisers: deps.callChat(system, user) ' +
         'must be a function returning a Promise of the raw response text'));
@@ -1165,7 +1164,8 @@
         facet: opts.facet,
         focus: opts.focus,
         transitions: transitions,
-        bank: { wrongTurn: entry.wrongTurn, why: entry.why, correctTurn: entry.correctTurn },
+        definitions: opts.definitions,
+        mechanismSteps: opts.mechanismSteps,
         workedExample: opts.workedExample
       });
       return authorAndRepair(deps, progress, maxRepairs, prompts, validateFn, ORGANISERS_KIND);

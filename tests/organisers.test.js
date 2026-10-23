@@ -7,7 +7,10 @@
  * generateRevision sibling - bank resolved verbatim then slugified
  * with an honest no-bank failure naming organisers, the same
  * unpack -> author -> repair stages, validation through
- * validateOrganisers). deps.callChat is stubbed throughout; no LLM
+ * validateOrganisers). generateOrganisers follows the notes-content
+ * model (issue #1279): no misconception bank gate - it authors from
+ * the shared unpack plus any caller-supplied paired notes definitions
+ * and mechanismSteps. deps.callChat is stubbed throughout; no LLM
  * calls leave the process.
  * Run: node --test "tests/*.test.js"
  */
@@ -242,6 +245,40 @@ test('prompt: the generic line appears when no bank entry resolves and no opts.b
   assert.ok(user.indexOf('No misconception bank entry was supplied for this topic') !== -1);
 });
 
+test('prompt: supplied notes definitions and mechanism steps reach the user message', () => {
+  const { user } = buildOrganisersPrompts({
+    subject: 'math', topic: 'no-such-topic-xyz',
+    definitions: [{ term: 'Numerator', meaning: 'The top number of a fraction.' }],
+    mechanismSteps: ['Make the pieces the same size first.', 'Then count the pieces.']
+  });
+  assert.ok(user.indexOf('Paired student notes - derive the organiser entries from these:') !== -1);
+  assert.ok(user.indexOf('- Numerator: The top number of a fraction.') !== -1);
+  assert.ok(user.indexOf('1. Make the pieces the same size first.') !== -1);
+  assert.ok(user.indexOf('2. Then count the pieces.') !== -1);
+});
+
+test('prompt: empty notes content renders no notes block', () => {
+  const { user } = buildOrganisersPrompts({
+    subject: 'math', topic: 'no-such-topic-xyz', definitions: [], mechanismSteps: []
+  });
+  assert.ok(user.indexOf('Paired student notes') === -1);
+});
+
+test('prompt: malformed notes content throws a descriptive buildOrganisersPrompts error', () => {
+  assert.throws(() => buildOrganisersPrompts({ subject: 'math', topic: 'x', definitions: 'nope' }),
+    /buildOrganisersPrompts: opts.definitions must be an array of/);
+  assert.throws(() => buildOrganisersPrompts({ subject: 'math', topic: 'x', definitions: [{ term: 'T' }] }),
+    /buildOrganisersPrompts: opts.definitions\[0\].meaning must be a non-empty string/);
+  assert.throws(() => buildOrganisersPrompts({ subject: 'math', topic: 'x', definitions: [{ meaning: 'M' }] }),
+    /buildOrganisersPrompts: opts.definitions\[0\].term must be a non-empty string/);
+  assert.throws(() => buildOrganisersPrompts({ subject: 'math', topic: 'x', definitions: ['nope'] }),
+    /buildOrganisersPrompts: opts.definitions\[0\] must be an object/);
+  assert.throws(() => buildOrganisersPrompts({ subject: 'math', topic: 'x', mechanismSteps: 'nope' }),
+    /buildOrganisersPrompts: opts.mechanismSteps must be an array of/);
+  assert.throws(() => buildOrganisersPrompts({ subject: 'math', topic: 'x', mechanismSteps: ['ok', '  '] }),
+    /buildOrganisersPrompts: opts.mechanismSteps\[1\] must be a non-empty string/);
+});
+
 test('prompt: an unknown level falls back to the level name and the secondary tone', () => {
   const { system } = buildOrganisersPrompts({ subject: 'math', topic: 'fractions-addition', level: 'graduate' });
   assert.ok(system.indexOf('Write for a graduate student') !== -1);
@@ -298,12 +335,29 @@ function stubChat(handler) {
   return { calls, callChat };
 }
 
-test('pipeline: a topic with no bank entry rejects before any callChat call, naming organisers', async () => {
+test('pipeline: a topic with notes content and no bank entry still generates (notes-content model)', async () => {
   const { calls, callChat } = stubChat(() => ORG_TEXT);
+  const doc = await PIPELINE.generateOrganisers({
+    topic: 'no-such-topic-xyz', level: 'primary', subject: 'math',
+    definitions: [{ term: 'Numerator', meaning: 'The top number of a fraction.' }],
+    mechanismSteps: ['Make the pieces the same size first.']
+  }, { callChat });
+  assert.deepEqual(doc, ORG_OBJ);
+  const author = calls[calls.length - 1];
+  assert.ok(isOrganisersCall(author.system), 'author call uses the organisers author prompt');
+  assert.ok(author.user.indexOf('- Numerator: The top number of a fraction.') !== -1,
+    'author user message carries the supplied notes definition');
+  assert.ok(author.user.indexOf('1. Make the pieces the same size first.') !== -1,
+    'author user message carries the supplied notes mechanism step');
+});
+
+test('pipeline: malformed notes content rejects naming buildOrganisersPrompts', async () => {
+  const { callChat } = stubChat(() => ORG_TEXT);
   await assert.rejects(
-    () => PIPELINE.generateOrganisers({ topic: 'no-such-topic-xyz', level: 'primary', subject: 'math' }, { callChat }),
-    /generateOrganisers: no misconception bank entry for topic "no-such-topic-xyz" - organisers materials are generated from the bank and never invent misconceptions/);
-  assert.equal(calls.length, 0, 'callChat is never called without a bank entry');
+    () => PIPELINE.generateOrganisers(
+      { topic: 'no-such-topic-xyz', level: 'primary', subject: 'math', definitions: [{ term: 'T' }] },
+      { callChat }),
+    /buildOrganisersPrompts: opts.definitions\[0\].meaning must be a non-empty string/);
 });
 
 test('pipeline: a free-text topic resolves through its slugified form', async () => {

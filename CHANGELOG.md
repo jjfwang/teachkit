@@ -12,6 +12,8 @@ version section when the release ships.
 
 ### Fixed
 
+- Organisers notes-content model (issue #1279, follow-up to #1277): generateOrganisers no longer resolves the topic misconception bank entry or rejects bank-less topics - SPEC.md's Organisers section and the code now agree that an organisers material is generated from the shared lesson unpack and the topic's paired notes content, so a topic with gold notes but no bank entry can still grow one. generator/build_organisers_prompt.js accepts optional opts.definitions (array of {term, meaning}) and opts.mechanismSteps (array of non-empty strings) on the build_scaffold_prompt.js precedent - absent or empty means none supplied, malformed throws a descriptive buildOrganisersPrompts error - and renders supplied notes content into the author user message; generator/pipeline.js generateOrganisers passes opts.definitions and opts.mechanismSteps through, rejects only on a missing callChat or missing validator (naming generateOrganisers / validateOrganisers), and still names organisers on repair exhaustion. Pinned by tests/organisers.test.js (the no-bank rejection test is replaced by a notes-content generation test; prompt-level pins cover supplied content reaching the author prompt and malformed content throwing). (2026-10-23)
+
 - Pipeline file header comment (issue #1265): the top-of-file header in generator/pipeline.js now says generateLessonPack authors all eleven materials and names the quiz bank last, matching SPEC.md and the generateLessonPack docblock after the issue #1263 fold-in. Comment-only; no behavior change. (2026-10-23)
 
 ### Added
