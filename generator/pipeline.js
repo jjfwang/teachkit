@@ -66,6 +66,7 @@
         revisionPrompt: require('./build_revision_prompt.js'),
         organisersPrompt: require('./build_organisers_prompt.js'),
         glossaryPrompt: require('./build_glossary_prompt.js'),
+        feedbackPrompt: require('./build_feedback_prompt.js'),
         summativePrompt: require('./build_summative_prompt.js'),
         schemePrompt: require('./build_scheme_prompt.js'),
         syllabus: require('./syllabus.js'),
@@ -89,6 +90,7 @@
       revisionPrompt: g.AnimathRevisionPrompt,
       organisersPrompt: g.AnimathOrganisersPrompt,
       glossaryPrompt: g.AnimathGlossaryPrompt,
+      feedbackPrompt: g.AnimathFeedbackPrompt,
       summativePrompt: g.AnimathSummativePrompt,
       schemePrompt: g.AnimathSchemePrompt,
       syllabus: g.AnimathSyllabus,
@@ -198,6 +200,13 @@
     invalidLabel: 'The invalid summative assessment you returned:',
     returnLine: 'Return ONLY the corrected summative assessment as a single JSON object. No prose, no code fences.',
     rejectLabel: 'Summative assessment'
+  };
+  var FEEDBACK_KIND = {
+    notJsonProblem: 'The response was not valid JSON. Return ONLY the corrected feedback material as JSON.',
+    repairHeader: 'Your previous response did not produce a valid feedback material. It had these problems:',
+    invalidLabel: 'The invalid feedback material you returned:',
+    returnLine: 'Return ONLY the corrected feedback material as a single JSON object. No prose, no code fences.',
+    rejectLabel: 'Feedback material'
   };
   var SCHEME_KIND = {
     notJsonProblem: 'The response was not valid JSON. Return ONLY the corrected scheme of work as JSON.',
@@ -476,6 +485,15 @@
     if (typeof deps.validate === 'function') return deps.validate;
     if (SIBLINGS.validate && typeof SIBLINGS.validate.validateGlossary === 'function') {
       return SIBLINGS.validate.validateGlossary;
+    } /* node:coverage ignore next */
+    return null;
+  }
+
+  function resolveFeedbackValidator(deps) {
+    if (typeof deps.validateFeedback === 'function') return deps.validateFeedback;
+    if (typeof deps.validate === 'function') return deps.validate;
+    if (SIBLINGS.validate && typeof SIBLINGS.validate.validateFeedback === 'function') {
+      return SIBLINGS.validate.validateFeedback;
     } /* node:coverage ignore next */
     return null;
   }
@@ -1376,6 +1394,67 @@
   }
 
   // opts:
+  //   {topic, topicLabel, level, subject, facet, focus,
+  //    exitTicketQuestions, worksheetQuestions, quizItems, notesTrap,
+  //    maxRepairs}
+  //   (the buildFeedbackPrompts option set; topic/subject required;
+  //   maxRepairs defaults to 3, 0 disables repair).
+  // deps:
+  //   {callChat(system, user) -> Promise<string>  (caller-supplied LLM call),
+  //    validateFeedback?(spec) -> string[] | Promise<string[]>,
+  //    validate?(spec) -> string[] | Promise<string[]>  (fallback validator),
+  //    onProgress?(stage, n, max)}  stages: 'author', 'repair'.
+  //
+  // Feedback materials are generated on the notes-content model
+  // (issue #1295, on the generateGlossary precedent): the caller
+  // supplies the paired assessment content (exit-ticket questions,
+  // worksheet questions, quiz items, the notes trap), passed
+  // through to buildFeedbackPrompts, which renders it into the
+  // author prompt. There is no shared unpack, no misconception
+  // bank gate and no cache - a topic with paired assessment
+  // materials but no bank entry still grows a feedback material,
+  // and the material holds no student data. Rejects only on a
+  // missing callChat or a missing validator, naming
+  // generateFeedback / validateFeedback. Resolves with the first
+  // feedback material that validates clean against
+  // validateFeedback; rejects with an Error carrying err.problems
+  // when every attempt failed.
+  function generateFeedback(opts, deps) {
+    opts = opts || {};
+    deps = deps || {};
+    if (typeof deps.callChat !== 'function') {
+      return Promise.reject(new Error('generateFeedback: deps.callChat(system, user) ' +
+        'must be a function returning a Promise of the raw response text'));
+    }
+    var validateFn = resolveFeedbackValidator(deps);
+    /* node:coverage ignore next 5 */
+    if (!validateFn) {
+      return Promise.reject(new Error('generateFeedback: deps.validateFeedback(spec) ' +
+        'must be a function returning the problem list (or supply deps.validate, ' +
+        'or load player/validate.js so validateFeedback is available)'));
+    }
+    var progress = makeProgress(deps);
+    var maxRepairs = (opts.maxRepairs != null) ? opts.maxRepairs : DEFAULT_MAX_REPAIRS;
+    var prompts;
+    try {
+      prompts = SIBLINGS.feedbackPrompt.buildFeedbackPrompts({
+        topic: opts.topic,
+        topicLabel: opts.topicLabel,
+        level: opts.level,
+        subject: opts.subject,
+        focus: opts.focus,
+        exitTicketQuestions: opts.exitTicketQuestions,
+        worksheetQuestions: opts.worksheetQuestions,
+        quizItems: opts.quizItems,
+        notesTrap: opts.notesTrap
+      });
+    } catch (err) {
+      return Promise.reject(err);
+    }
+    return authorAndRepair(deps, progress, maxRepairs, prompts, validateFn, FEEDBACK_KIND);
+  }
+
+  // opts:
   //   {topic, topicLabel, level, subject, workedExample, kind, focus,
   //    facet, maxRepairs, force}
   //   (the union of the thirteen material option sets; topic/subject
@@ -1656,5 +1735,5 @@
     return generateLessonPack(merged, deps);
   }
 
-  return { generateAnimation: generateAnimation, generateSlides: generateSlides, generateWorksheet: generateWorksheet, generateExitTicket: generateExitTicket, generateNotes: generateNotes, generateScript: generateScript, generateLessonPlan: generateLessonPlan, generateScaffolds: generateScaffolds, generateDiagnostics: generateDiagnostics, generateWorkedExamples: generateWorkedExamples, generateQuizBank: generateQuizBank, generateRevision: generateRevision, generateOrganisers: generateOrganisers, generateGlossary: generateGlossary, generateSummative: generateSummative, generateScheme: generateScheme, generateLessonPack: generateLessonPack, generateLessonPackForSyllabus: generateLessonPackForSyllabus, clearPackCache: clearPackCache };
+  return { generateAnimation: generateAnimation, generateSlides: generateSlides, generateWorksheet: generateWorksheet, generateExitTicket: generateExitTicket, generateNotes: generateNotes, generateScript: generateScript, generateLessonPlan: generateLessonPlan, generateScaffolds: generateScaffolds, generateDiagnostics: generateDiagnostics, generateWorkedExamples: generateWorkedExamples, generateQuizBank: generateQuizBank, generateRevision: generateRevision, generateOrganisers: generateOrganisers, generateGlossary: generateGlossary, generateSummative: generateSummative, generateScheme: generateScheme, generateFeedback: generateFeedback, generateLessonPack: generateLessonPack, generateLessonPackForSyllabus: generateLessonPackForSyllabus, clearPackCache: clearPackCache };
 });

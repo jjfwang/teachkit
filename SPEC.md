@@ -882,6 +882,58 @@ materials by kind, never by an invented id. Generation is direct
 unit authoring on the `generateSummative` precedent: no shared
 unpack, no misconception bank gate, no cache.
 
+## Feedback spec
+
+A feedback material is the whole-class feedback for one topic:
+the strengths the class showed, the common errors worth fixing
+together, model answers for the questions that mattered, and the
+next steps. It is derived from the topic's paired assessment
+materials - the exit ticket, the worksheet, the quiz bank and the
+student notes. `validateFeedback` in `player/validate.js`
+enforces this contract and returns a `string[]` of errors (empty
+= valid). The validator enforces presence and shape only; it
+never checks derivation - derivation is pinned by the gold test.
+A feedback material holds no student data: it is generated from
+the topic and its paired assessment materials only, never from
+live student results.
+
+Material fields:
+
+| field   | type       | notes                                  |
+|---------|------------|----------------------------------------|
+| `title` | string     | required non-empty                     |
+| `level` | `"primary"` \| `"secondary"` \| `"jc"` |                                        |
+| `subject` | string   | required non-empty - any school subject |
+| `topic` | string     | required non-empty                     |
+| `strengths` | string[] | required array of at least 1 non-empty strings - what the class did well |
+| `modelAnswers` | object[] | required array of at least 2 entries - see below |
+| `commonErrors` | object[] | required array of at least 2 entries - see below |
+| `nextSteps` | string[] | required array of at least 1 non-empty strings - what the class does next |
+
+Every model answer is an object with these fields:
+
+| field   | type     | notes |
+|---------|----------|-------|
+| `question` | string | required non-empty - a paired worksheet or exit-ticket question prompt, verbatim |
+| `answer` | string | required non-empty - that question's workedSolution or expected answer, verbatim |
+| `creditPoints` | string[] | required array of strings, may be empty - equal to the source question's markScheme points texts verbatim when it carries one; credit points are carried as texts, never as invented ids |
+
+Every common error is an object with these fields:
+
+| field   | type     | notes |
+|---------|----------|-------|
+| `misconception` | string | required non-empty - verbatim from a paired exit-ticket question misconception field, a diagnostics rationale misconception, a quiz-bank item misconceptionCode, a markScheme commonErrors entry, or the paired notes trap misconception |
+| `example` | string | required non-empty - the error as it appeared in the paired materials |
+| `fixIt` | object | required - `{prompt, corrected}`, both non-empty strings: the error-analysis task that makes the student redo the broken step, and the corrected working |
+
+A feedback material is generated on the notes-content model
+(see `generateFeedback`): the caller supplies the paired
+assessment content (exit-ticket questions, worksheet questions,
+quiz items and the notes trap) and the author prompt renders it
+so model answers and common errors can be derived from it
+verbatim. No misconception bank entry is required and there is
+no shared unpack and no cache.
+
 ## Accessible variants
 
 Every printable renderer in `player/printable.js` (`renderWorksheet`,
