@@ -693,6 +693,50 @@ bank entry (see `generateRevision`): a topic with no bank entry
 cannot grow a revision material, because its coded content would
 have to invent misconceptions.
 
+## Organisers spec
+
+A graphic organisers material is the per-topic set of structured
+templates a student completes while studying the topic: each
+template pre-organises the topic content into labelled slots the
+student fills in. The slot entries are derived, never free-authored:
+a flow template's entries are the topic's unpack stages in order,
+and every other template's entries are drawn verbatim from the
+paired student notes (its mechanism steps and definitions).
+`validateOrganisers` in `player/validate.js` enforces this contract
+and returns a `string[]` of errors, exactly like `validateRevision`
+(empty = valid). The validator enforces presence and shape only; it
+never checks derivation.
+
+Material fields:
+
+| field   | type       | notes                                  |
+|---------|------------|----------------------------------------|
+| `title` | string     | required non-empty                     |
+| `level` | `"primary"` \| `"secondary"` \| `"jc"` |                                        |
+| `subject` | string   | required non-empty - any school subject, not restricted to the syllabus-known list |
+| `topic` | string     | required non-empty                     |
+| `templates` | object[] | required array of at least 2 templates - see below |
+
+Every template is an object with these fields:
+
+| field   | type     | notes |
+|---------|----------|-------|
+| `kind`  | string   | required - one of `kwl`, `frayer`, `venn`, `flow`, `concept-map` |
+| `slots` | object[] | required non-empty array of slots - see below |
+
+Every slot is an object with these fields:
+
+| field   | type     | notes |
+|---------|----------|-------|
+| `label` | string   | required non-empty - the slot's heading |
+| `entries` | string[] | required non-empty array of non-empty strings - the pre-filled content, derived verbatim as above |
+| `studentPrompt` | string | optional non-empty - what the student completes in this slot |
+
+An organisers material is generated from the shared lesson unpack
+and the topic's misconception bank entry (see `generateOrganisers`):
+a topic with no bank entry cannot grow an organisers material,
+because its coded content would have to invent misconceptions.
+
 ## Summative assessment spec
 
 A summative assessment is the unit-level assessment sat at the end

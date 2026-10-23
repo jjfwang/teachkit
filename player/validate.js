@@ -1234,6 +1234,65 @@
     return errors;
   }
 
+  // Organisers validator (SPEC.md "Organisers spec", issue #1277): a
+  // per-topic graphic organisers material - the sibling material
+  // header plus at least 2 templates. Each template carries a kind
+  // (one of kwl, frayer, venn, flow, concept-map) and a non-empty
+  // slots array; each slot carries a label, a non-empty entries array
+  // of non-empty strings and an optional studentPrompt. Entries are
+  // derived verbatim (a flow template's entries are the unpack stages
+  // in order; other templates draw from the paired notes
+  // mechanismSteps and definitions) - presence and shape only, the
+  // validator never checks derivation.
+  var ORGANISER_KINDS = ['kwl', 'frayer', 'venn', 'flow', 'concept-map'];
+  function validateOrganisers(spec) {
+    var errors = [];
+    if (!spec || typeof spec !== 'object' || Array.isArray(spec)) return ['spec: must be an object'];
+    checkMaterialHeader(spec, errors);
+    if (!Array.isArray(spec.templates) || spec.templates.length < 2) {
+      errors.push('templates: required array of at least 2 templates');
+      return errors;
+    }
+    spec.templates.forEach(function (template, i) {
+      var p = 'templates[' + i + ']';
+      if (!template || typeof template !== 'object' || Array.isArray(template)) {
+        errors.push(p + ': must be an object');
+        return;
+      }
+      if (ORGANISER_KINDS.indexOf(template.kind) === -1) {
+        errors.push(p + '.kind: must be one of ' + ORGANISER_KINDS.join('|'));
+      }
+      if (!Array.isArray(template.slots) || template.slots.length === 0) {
+        errors.push(p + '.slots: required non-empty array of slots');
+        return;
+      }
+      template.slots.forEach(function (slot, j) {
+        var q = p + '.slots[' + j + ']';
+        if (!slot || typeof slot !== 'object' || Array.isArray(slot)) {
+          errors.push(q + ': must be an object');
+          return;
+        }
+        if (typeof slot.label !== 'string' || !slot.label.trim()) {
+          errors.push(q + '.label: required non-empty string');
+        }
+        if (!Array.isArray(slot.entries) || slot.entries.length === 0) {
+          errors.push(q + '.entries: required non-empty array of non-empty strings');
+        } else {
+          slot.entries.forEach(function (entry, k) {
+            if (typeof entry !== 'string' || !entry.trim()) {
+              errors.push(q + '.entries[' + k + ']: must be a non-empty string');
+            }
+          });
+        }
+        if (slot.studentPrompt !== undefined &&
+            (typeof slot.studentPrompt !== 'string' || !slot.studentPrompt.trim())) {
+          errors.push(q + '.studentPrompt: must be a non-empty string when present');
+        }
+      });
+    });
+    return errors;
+  }
+
   // Summative assessment validator (SPEC.md "Summative assessment
   // spec", issue #1259): a unit-level assessment spanning at least 2
   // topics. The blueprint rows carry the outcome / assessment
@@ -1460,7 +1519,7 @@
     return errors;
   }
 
-  return { validateSpec: validateSpec, validateSlides: validateSlides, validateWorksheet: validateWorksheet, validateExitTicket: validateExitTicket, validateNotes: validateNotes, validateScript: validateScript, validateLessonPlan: validateLessonPlan, validateScaffolds: validateScaffolds, validateDiagnostics: validateDiagnostics, validateWorkedExamples: validateWorkedExamples, validateQuizBank: validateQuizBank, validateRevision: validateRevision, validateSummative: validateSummative, validatePackMetadata: validatePackMetadata, SUBJECTS: SUBJECTS };
+  return { validateSpec: validateSpec, validateSlides: validateSlides, validateWorksheet: validateWorksheet, validateExitTicket: validateExitTicket, validateNotes: validateNotes, validateScript: validateScript, validateLessonPlan: validateLessonPlan, validateScaffolds: validateScaffolds, validateDiagnostics: validateDiagnostics, validateWorkedExamples: validateWorkedExamples, validateQuizBank: validateQuizBank, validateRevision: validateRevision, validateOrganisers: validateOrganisers, validateSummative: validateSummative, validatePackMetadata: validatePackMetadata, SUBJECTS: SUBJECTS };
 });
 
 /* ------------------------------------------------------------------

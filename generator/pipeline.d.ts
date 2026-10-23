@@ -362,6 +362,37 @@ export function generateRevision(
   opts: GenerateRevisionOptions,
   deps: GenerateRevisionDeps
 ): Promise<RevisionDocument>;
+// generateOrganisers options (issue #1277): the GenerateRevisionOptions
+// shape. Organisers materials are generated from the misconception
+// bank: a topic with no bank entry rejects before any LLM call.
+export interface GenerateOrganisersOptions {
+  topic: string;
+  topicLabel?: string;
+  level?: string;
+  subject: string;
+  /** Facet hint for a faceted misconception bank entry; the primary facet resolves when omitted. */
+  facet?: string;
+  /** The student's focus for the organisers set, when given. */
+  focus?: string;
+  /** Optional worked example for this topic, adapted by the author prompt. */
+  workedExample?: string;
+  /** Number of repair turns after the first attempt. Default 3; 0 disables repair. */
+  maxRepairs?: number;
+}
+export interface GenerateOrganisersDeps {
+  callChat: PipelineCallChat;
+  /** Organisers validator; defaults to the built-in validateOrganisers when omitted. */
+  validateOrganisers?: PipelineValidate;
+  /** Fallback validator, used when validateOrganisers is not supplied. */
+  validate?: PipelineValidate;
+  onProgress?: PipelineProgress;
+}
+// The parsed animath organisers material that validated clean.
+export type OrganisersDocument = Record<string, unknown>;
+export function generateOrganisers(
+  opts: GenerateOrganisersOptions,
+  deps: GenerateOrganisersDeps
+): Promise<OrganisersDocument>;
 // generateSummative options (issue #1259): unit-level, spanning a
 // topics array; authored directly from the unit with no bank
 // resolution and never folded into a lesson pack.
