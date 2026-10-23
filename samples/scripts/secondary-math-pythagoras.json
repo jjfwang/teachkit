@@ -1,0 +1,56 @@
+{
+  "level": "secondary",
+  "subject": "math",
+  "topic": "e-trigonometry",
+  "title": "Pythagoras' theorem: a² + b² = c²",
+  "segments": [
+    {
+      "cue": "s1",
+      "minutes": 6,
+      "say": "A right-angled triangle. Watch the two short sides draw themselves: leg a is 3, leg b is 4, and they meet at the right angle - find the small square marker in the corner. The slanted side joining them is the hypotenuse, c, and we do not know it yet. Tell your partner: which side is c, and how can you tell at a glance?",
+      "questions": [
+        "Which side is the hypotenuse, and how can you tell at a glance?",
+        "What does the small square in the corner tell you?"
+      ]
+    },
+    {
+      "cue": "s2",
+      "minutes": 7,
+      "say": "Now a square grows on each short side. The square on a holds 3 by 3 - nine unit squares. The square on b holds 4 by 4 - sixteen unit squares. Keep both counts where you can see them: 9 and 16 are the numbers this whole theorem is built from.",
+      "questions": [
+        "How many unit squares fill the square on each short side?",
+        "Where do the numbers 9 and 16 come from?"
+      ],
+      "watchFor": "Students who add the lengths at this point and announce 7. Hold that thought visibly - and also listen for tan = adjacent / opposite. if tangent comes up early: the opposite and adjacent labels are exactly what that claim swaps."
+    },
+    {
+      "cue": "s3",
+      "minutes": 7,
+      "say": "Now the square on the hypotenuse - the tilted square on c. Watch the nine blue unit squares and the sixteen orange ones fly in: every slot fills, none are left over, so the c-square holds 25. Open your student notes at the mechanism steps and check the count against them.",
+      "questions": [
+        "How many unit squares fill the square on the hypotenuse?",
+        "What equation does the filled square give you for c?"
+      ]
+    },
+    {
+      "cue": "s4",
+      "minutes": 6,
+      "say": "Here is the trap, and we are going to spring it on purpose. Adding the lengths gives 3 + 4 = 7, and the red bar of length 7 is visibly too long. The squares add instead: 9 + 16 = 25, so c is the square root of 25 - 5, the green bar. Read the trap section of your student notes, then check it against the worksheet example.",
+      "questions": [
+        "Why is 7 too long to be the hypotenuse here?",
+        "What are the three steps, in order, for finding c?"
+      ],
+      "watchFor": "tan = adjacent / opposite. Listen for the flip when students rehearse TOA quickly, and for c = 3 + 4 = 7 returning under pressure - send both back to the squares: 9 + 16 = 25."
+    },
+    {
+      "cue": "worksheet",
+      "minutes": 6,
+      "say": "Work through the worksheet in pairs: square first, add the squares, then take the root - and for the tangent question, read TOA before you write anything. When you finish, swap with another pair and check their working against your student notes. Last, the exit ticket - on your own, no talking - and remember: if you can explain why c is 5 and not 7, you have cracked today's lesson.",
+      "questions": [
+        "Talk me through the hypotenuse question: what did you square first?",
+        "How will you correct the flipped tangent claim on the exit ticket?"
+      ],
+      "watchFor": "Pairs who write an answer before squaring. Require the two squares, 9 and 16 or their equivalents, to appear in the working before any total is accepted."
+    }
+  ]
+}

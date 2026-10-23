@@ -1,0 +1,59 @@
+{
+  "level": "secondary",
+  "subject": "math",
+  "topic": "e-trigonometry",
+  "title": "Pythagoras' theorem: a² + b² = c² Exit Ticket",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "multiple-choice",
+      "prompt": "For the 3-4-5 triangle, what is tan theta?",
+      "choices": [
+        {
+          "text": "4/3"
+        },
+        {
+          "correct": true,
+          "text": "3/4"
+        },
+        {
+          "text": "3/5"
+        }
+      ],
+      "feedback": "If you picked 4/3, that is the trap: tan = adjacent / opposite. Reteach point: Always read TOA: tan is opposite over adjacent. So tan theta = 3/4 = 0.75, with the opposite side 3 on top and the adjacent side 4 underneath.",
+      "misconception": "tan = adjacent / opposite."
+    },
+    {
+      "id": "q2",
+      "kind": "short-answer",
+      "prompt": "A right-angled triangle has legs 3 and 4. Find the hypotenuse and state the working.",
+      "answer": "c² = 3² + 4² = 9 + 16 = 25, so c = 5.",
+      "feedback": "The working must square before adding: 9 + 16 = 25, then the square root gives c = 5. An answer of 7 means the lengths were added instead of the squares - that is the trap this lesson names."
+    },
+    {
+      "id": "q3",
+      "kind": "multiple-choice",
+      "prompt": "A right-angled triangle has legs 6 and 8. What is its hypotenuse?",
+      "choices": [
+        {
+          "text": "14"
+        },
+        {
+          "correct": true,
+          "text": "10"
+        },
+        {
+          "text": "100"
+        }
+      ],
+      "feedback": "Square and add: 6² + 8² = 36 + 64 = 100, and the square root of 100 is 10. The choice 14 adds the lengths, and 100 forgets the final square root."
+    },
+    {
+      "id": "q4",
+      "kind": "short-answer",
+      "prompt": "In one or two sentences: how does the converse of Pythagoras' theorem let you test whether a triangle with sides 5, 12 and 13 is right-angled?",
+      "answer": "Check whether the two smaller squares add to the largest square: 5² + 12² = 25 + 144 = 169 = 13², so the triangle is right-angled, with the right angle opposite the side of length 13.",
+      "feedback": "A strong answer does the square check (25 + 144 = 169) instead of measuring angles. If the squares had not matched, the converse says the triangle cannot be right-angled."
+    }
+  ]
+}

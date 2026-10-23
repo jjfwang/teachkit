@@ -1,0 +1,86 @@
+{
+  "level": "secondary",
+  "subject": "math",
+  "topic": "e-trigonometry",
+  "title": "Pythagoras' theorem: a² + b² = c²",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "multiple-choice",
+      "prompt": "A right-angled triangle has legs 3 and 4. What is the length of the hypotenuse?",
+      "choices": [
+        {
+          "text": "7"
+        },
+        {
+          "correct": true,
+          "text": "5"
+        },
+        {
+          "text": "25"
+        },
+        {
+          "text": "9"
+        }
+      ],
+      "explanation": "Square the legs and add: 3² = 9 and 4² = 16, so c² = 9 + 16 = 25 and c = 5. The choice 7 is the trap of adding the lengths themselves, 3 + 4."
+    },
+    {
+      "id": "q2",
+      "kind": "multiple-choice",
+      "prompt": "In the 3-4-5 triangle, angle theta has opposite side 3 and adjacent side 4. What is tan theta?",
+      "choices": [
+        {
+          "text": "4/3"
+        },
+        {
+          "text": "3/5"
+        },
+        {
+          "correct": true,
+          "text": "3/4"
+        },
+        {
+          "text": "4/5"
+        }
+      ],
+      "explanation": "Tangent is opposite over adjacent (TOA): tan theta = 3/4 = 0.75. Watch out for the misconception: tan = adjacent / opposite. That flipped ratio gives 4/3, which uses the adjacent side on top by mistake.",
+      "misconception": "tan = adjacent / opposite."
+    },
+    {
+      "id": "q3",
+      "kind": "short-answer",
+      "prompt": "A right-angled triangle has legs 6 and 8. Find the hypotenuse, showing your working.",
+      "answer": "c² = 6² + 8² = 36 + 64 = 100, so c = 10.",
+      "explanation": "Square each leg first (36 and 64), add the squares to get 100, then take the square root: the hypotenuse is 10, not 6 + 8 = 14."
+    },
+    {
+      "id": "q4",
+      "kind": "short-answer",
+      "prompt": "A right-angled triangle has hypotenuse 13 and one leg 5. Find the other leg, showing your working.",
+      "answer": "The other leg squared is 13² - 5² = 169 - 25 = 144, so the other leg is 12.",
+      "explanation": "Rearrange a² + b² = c²: with the hypotenuse known, subtract the known square from the hypotenuse square (169 - 25 = 144), then take the square root to get 12."
+    },
+    {
+      "id": "q5",
+      "kind": "multiple-choice",
+      "prompt": "Which set of lengths can be the sides of a right-angled triangle?",
+      "choices": [
+        {
+          "text": "2, 3 and 4"
+        },
+        {
+          "correct": true,
+          "text": "3, 4 and 5"
+        },
+        {
+          "text": "4, 5 and 6"
+        },
+        {
+          "text": "1, 2 and 3"
+        }
+      ],
+      "explanation": "By the converse of Pythagoras' theorem, check the squares: 3² + 4² = 9 + 16 = 25 = 5², so 3, 4 and 5 form a right-angled triangle. For each other set the two smaller squares do not add to the largest square."
+    }
+  ]
+}

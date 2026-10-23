@@ -1,0 +1,110 @@
+{
+  "level": "secondary",
+  "subject": "math",
+  "topic": "e-trigonometry",
+  "title": "Pythagoras' theorem: a² + b² = c²",
+  "slides": [
+    {
+      "kind": "title",
+      "heading": "Pythagoras' theorem: a² + b² = c²",
+      "bullets": [
+        "How to find the hypotenuse of a right-angled triangle by squaring the short sides, adding the squares, and taking the square root"
+      ],
+      "notes": "Welcome everyone in and say: today we build Pythagoras' theorem from squares on the sides of a 3-4-5 triangle, see exactly why the hypotenuse is 5 and not 7, and finish by untangling a tangent mix-up."
+    },
+    {
+      "kind": "objective",
+      "heading": "What we will learn",
+      "bullets": [
+        "Find the hypotenuse of a right-angled triangle using a² + b² = c²",
+        "Find a short side when the hypotenuse is known, and use the converse to test for a right angle"
+      ],
+      "notes": "Read the two goals aloud slowly and tell the class: keep these in mind, because our exit ticket at the end will ask you to do exactly these things."
+    },
+    {
+      "kind": "hook",
+      "heading": "The triangle with short sides 3 and 4",
+      "bullets": [
+        "A right-angled triangle has short sides 3 and 4 - what is the longest side?",
+        "Is it 7, because 3 + 4 = 7 - or something else?"
+      ],
+      "notes": "Ask for a show of hands and take two or three guesses without judging them yet; say: hold on to your idea, because the squares on the sides are about to settle it."
+    },
+    {
+      "kind": "concept",
+      "heading": "The squares add, not the lengths",
+      "bullets": [
+        "Pythagoras' theorem: in a right-angled triangle, a² + b² = c², where c is the hypotenuse",
+        "Square each short side first, add the squares, then take the square root to get the hypotenuse"
+      ],
+      "notes": "Say this part slowly, because it is the big idea of the whole lesson: the theorem is about the squares built on the sides, never about adding the side lengths themselves."
+    },
+    {
+      "kind": "mechanism",
+      "heading": "A right-angled triangle",
+      "bullets": [
+        "The short sides are the legs a = 3 and b = 4, meeting at the right-angle marker",
+        "The hypotenuse c is the longest side, opposite the right angle, and it is still unknown"
+      ],
+      "notes": "Point at the animation and narrate what is happening: watch the two legs draw themselves, the hypotenuse join them, and the small square marker appear in the corner for the right angle.",
+      "visual": "s1"
+    },
+    {
+      "kind": "mechanism",
+      "heading": "Squares on the short sides",
+      "bullets": [
+        "The square on side a is 3 by 3: 3² = 9",
+        "The square on side b is 4 by 4: 4² = 16"
+      ],
+      "notes": "Narrate the scene as it plays: a square grows on each short side and fills with unit squares - nine in the a-square, sixteen in the b-square. Keep the two counts, 9 and 16, in mind.",
+      "visual": "s2"
+    },
+    {
+      "kind": "mechanism",
+      "heading": "The square on the hypotenuse",
+      "bullets": [
+        "The tilted square on the hypotenuse is filled exactly by the 9 unit squares and the 16 unit squares together",
+        "So the square on c holds 9 + 16 = 25 unit squares: c² = 25"
+      ],
+      "notes": "Follow the dots as they fly into the tilted c-square: every one of the 25 slots is filled, nine blue and sixteen orange, with none left over - the two short-side squares exactly make the hypotenuse square.",
+      "visual": "s3"
+    },
+    {
+      "kind": "mechanism",
+      "heading": "9 + 16 = 25",
+      "bullets": [
+        "The trap: c = 3 + 4 = 7, adding the lengths - but the bar of length 7 is too long",
+        "The truth: c = 5, because the squares add: 9 + 16 = 25 and the square root of 25 is 5"
+      ],
+      "notes": "Name the trap out loud before anyone falls into it: lengths add to 7, but the theorem adds squares. Watch the red trap bar shrink away and the green bar of length 5 match the hypotenuse.",
+      "visual": "s4"
+    },
+    {
+      "kind": "example",
+      "heading": "Worked example: squares first, root last",
+      "bullets": [
+        "Square the legs: 3² = 9 and 4² = 16, then add: 9 + 16 = 25, so c² = 25",
+        "Take the square root: c = 5 - never c = 3 + 4 = 7"
+      ],
+      "notes": "Work this example line by line and keep the order strict: square, add, root. Ask the class to say the next step before you reveal it."
+    },
+    {
+      "kind": "practice",
+      "heading": "Practice: find the hypotenuse, and do not flip tangent",
+      "bullets": [
+        "Find the hypotenuse for legs 6 and 8, and for legs 5 and 12, squaring before you add",
+        "Watch out for the flipped-tangent claim: tan = adjacent / opposite."
+      ],
+      "notes": "Work in pairs and check each other's order of steps. If a tangent appears, test it against the claim tan = adjacent / opposite. - that is the flipped version, and TOA says the opposite side goes on top."
+    },
+    {
+      "kind": "exit-ticket",
+      "heading": "Exit ticket: prove you can spot both traps",
+      "bullets": [
+        "Find c for the 3-4 triangle and explain why c is not 7",
+        "Correct this claim before you leave: tan = adjacent / opposite."
+      ],
+      "notes": "On your own, no talking. The ticket checks the Pythagoras trap (c = 3 + 4 = 7) and the tangent trap in one place: tan = adjacent / opposite. is flipped - tan is opposite over adjacent."
+    }
+  ]
+}
