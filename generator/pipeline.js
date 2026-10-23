@@ -64,6 +64,7 @@
         workedExamplesPrompt: require('./build_worked_examples_prompt.js'),
         quizBankPrompt: require('./build_quiz_bank_prompt.js'),
         revisionPrompt: require('./build_revision_prompt.js'),
+        organisersPrompt: require('./build_organisers_prompt.js'),
         summativePrompt: require('./build_summative_prompt.js'),
         syllabus: require('./syllabus.js'),
         validate: require('../player/validate.js')
@@ -84,6 +85,7 @@
       workedExamplesPrompt: g.AnimathWorkedExamplesPrompt,
       quizBankPrompt: g.AnimathQuizBankPrompt,
       revisionPrompt: g.AnimathRevisionPrompt,
+      organisersPrompt: g.AnimathOrganisersPrompt,
       summativePrompt: g.AnimathSummativePrompt,
       syllabus: g.AnimathSyllabus,
       validate: g.AnimathValidate
@@ -171,6 +173,13 @@
     invalidLabel: 'The invalid revision material you returned:',
     returnLine: 'Return ONLY the corrected revision material as a single JSON object. No prose, no code fences.',
     rejectLabel: 'Revision material'
+  };
+  var ORGANISERS_KIND = {
+    notJsonProblem: 'The response was not valid JSON. Return ONLY the corrected organisers material as JSON.',
+    repairHeader: 'Your previous response did not produce a valid organisers material. It had these problems:',
+    invalidLabel: 'The invalid organisers material you returned:',
+    returnLine: 'Return ONLY the corrected organisers material as a single JSON object. No prose, no code fences.',
+    rejectLabel: 'Organisers material'
   };
   var SUMMATIVE_KIND = {
     notJsonProblem: 'The response was not valid JSON. Return ONLY the corrected summative assessment as JSON.',
@@ -431,6 +440,15 @@
     if (typeof deps.validate === 'function') return deps.validate;
     if (SIBLINGS.validate && typeof SIBLINGS.validate.validateRevision === 'function') {
       return SIBLINGS.validate.validateRevision;
+    } /* node:coverage ignore next */
+    return null;
+  }
+
+  function resolveOrganisersValidator(deps) {
+    if (typeof deps.validateOrganisers === 'function') return deps.validateOrganisers;
+    if (typeof deps.validate === 'function') return deps.validate;
+    if (SIBLINGS.validate && typeof SIBLINGS.validate.validateOrganisers === 'function') {
+      return SIBLINGS.validate.validateOrganisers;
     } /* node:coverage ignore next */
     return null;
   }
@@ -1090,6 +1108,71 @@
   }
 
   // opts:
+  //   {topic, topicLabel, level, subject, facet, focus, workedExample,
+  //    maxRepairs}
+  //   (the buildOrganisersPrompts option set; topic/subject required;
+  //   maxRepairs defaults to 3, 0 disables repair).
+  // deps:
+  //   {callChat(system, user) -> Promise<string>  (caller-supplied LLM call),
+  //    validateOrganisers?(spec) -> string[] | Promise<string[]>,
+  //    validate?(spec) -> string[] | Promise<string[]>  (fallback validator),
+  //    onProgress?(stage, n, max)}  stages: 'unpack', 'author', 'repair'.
+  //
+  // Organisers materials are generated FROM the misconception bank:
+  // the topic's bank entry is resolved first (the topic verbatim, then
+  // its slugified forms, facet carried - the resolvePackBankEntry
+  // order), and a topic with no bank entry rejects before any LLM call
+  // naming organisers - the generator never invents misconceptions,
+  // because every slot entry is derived verbatim from the topic unpack
+  // stages and the paired notes mechanism steps and definitions.
+  // Resolves with the first organisers material that validates clean
+  // against validateOrganisers; rejects with an Error carrying
+  // err.problems when every attempt failed. The unpack step degrades
+  // exactly like generateRevision: a failed unpack authors WITHOUT
+  // transitions.
+  function generateOrganisers(opts, deps) {
+    opts = opts || {};
+    deps = deps || {};
+    var entry = resolvePackBankEntry(opts);
+    if (!entry) {
+      return Promise.reject(new Error('generateOrganisers: no misconception bank entry for topic "' +
+        opts.topic + '" - organisers materials are generated from the bank and never invent misconceptions'));
+    }
+    if (typeof deps.callChat !== 'function') {
+      return Promise.reject(new Error('generateOrganisers: deps.callChat(system, user) ' +
+        'must be a function returning a Promise of the raw response text'));
+    }
+    var validateFn = resolveOrganisersValidator(deps);
+    /* node:coverage ignore next 5 */
+    if (!validateFn) {
+      return Promise.reject(new Error('generateOrganisers: deps.validateOrganisers(spec) ' +
+        'must be a function returning the problem list (or supply deps.validate, ' +
+        'or load player/validate.js so validateOrganisers is available)'));
+    }
+    var progress = makeProgress(deps);
+    var maxRepairs = (opts.maxRepairs != null) ? opts.maxRepairs : DEFAULT_MAX_REPAIRS;
+
+    return unpackStage(deps, progress, opts).then(function (staged) {
+      var transitions = staged ? staged.transitions : null;
+      if (transitions) {
+        transitions = SIBLINGS.unpack.attachMisconceptions(transitions, opts.topic);
+      }
+      var prompts = SIBLINGS.organisersPrompt.buildOrganisersPrompts({
+        topic: opts.topic,
+        topicLabel: opts.topicLabel,
+        level: opts.level,
+        subject: opts.subject,
+        facet: opts.facet,
+        focus: opts.focus,
+        transitions: transitions,
+        bank: { wrongTurn: entry.wrongTurn, why: entry.why, correctTurn: entry.correctTurn },
+        workedExample: opts.workedExample
+      });
+      return authorAndRepair(deps, progress, maxRepairs, prompts, validateFn, ORGANISERS_KIND);
+    });
+  }
+
+  // opts:
   //   {topics, unitTitle, level, subject, focus, workedExample,
   //    maxRepairs}
   //   (the buildSummativePrompts option set; subject and at least 2
@@ -1390,5 +1473,5 @@
     return generateLessonPack(merged, deps);
   }
 
-  return { generateAnimation: generateAnimation, generateSlides: generateSlides, generateWorksheet: generateWorksheet, generateExitTicket: generateExitTicket, generateNotes: generateNotes, generateScript: generateScript, generateLessonPlan: generateLessonPlan, generateScaffolds: generateScaffolds, generateDiagnostics: generateDiagnostics, generateWorkedExamples: generateWorkedExamples, generateQuizBank: generateQuizBank, generateRevision: generateRevision, generateSummative: generateSummative, generateLessonPack: generateLessonPack, generateLessonPackForSyllabus: generateLessonPackForSyllabus, clearPackCache: clearPackCache };
+  return { generateAnimation: generateAnimation, generateSlides: generateSlides, generateWorksheet: generateWorksheet, generateExitTicket: generateExitTicket, generateNotes: generateNotes, generateScript: generateScript, generateLessonPlan: generateLessonPlan, generateScaffolds: generateScaffolds, generateDiagnostics: generateDiagnostics, generateWorkedExamples: generateWorkedExamples, generateQuizBank: generateQuizBank, generateRevision: generateRevision, generateOrganisers: generateOrganisers, generateSummative: generateSummative, generateLessonPack: generateLessonPack, generateLessonPackForSyllabus: generateLessonPackForSyllabus, clearPackCache: clearPackCache };
 });
