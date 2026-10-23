@@ -485,6 +485,63 @@ terms, starters, frames and cloze gaps (the total number of cloze
 answers in the set) must each be non-increasing — support never
 grows as it fades.
 
+## Diagnostics spec
+
+A diagnostics material is the misconception-coded question set for one
+topic: a short prior-knowledge Do Now that opens the lesson, plus hinge
+questions asked mid-lesson where the teacher pivots on the answers.
+`validateDiagnostics` in `player/validate.js` enforces this contract
+and returns a `string[]` of errors, exactly like `validateScaffolds`
+(empty = valid).
+
+Material fields:
+
+| field           | type          | notes                                  |
+|-----------------|---------------|----------------------------------------|
+| `title`         | string        | required non-empty                     |
+| `level`         | `"primary"` \| `"secondary"` \| `"jc"` |                                        |
+| `subject`       | string        | required non-empty — any school subject, not restricted to the syllabus-known list |
+| `topic`         | string        | required non-empty                     |
+| `doNow`         | Question[]    | required array of 2..4 questions — the prior-knowledge opener |
+| `hingeQuestions` | Question[]   | required array of 1..3 questions — the mid-lesson pivot checks |
+
+Every question in both arrays reuses the shared Question shape (see
+"Question (worksheet and exit ticket)") with these diagnostics rules:
+
+- `id` is required non-empty and unique across BOTH arrays.
+- `prompt` is required non-empty.
+- `kind` must be `multiple-choice` — diagnostics questions are always
+  multiple-choice, so `short-answer` (and a missing kind) is rejected.
+- `choices` is a required array of at least 2 choices with exactly one
+  choice marked `correct: true`.
+- Every hinge question carries a required non-empty `scriptCue`: the
+  cue of the teacher-script segment where the teacher pivots on the
+  answer. `scriptCue` does not belong on Do Now questions and must be
+  absent there.
+
+Choice fields beyond the shared `{text, correct}` shape:
+
+| field           | type   | notes |
+|-----------------|--------|-------|
+| `misconception` | string | required on every incorrect choice: the topic misconception bank entry's `wrongTurn` verbatim (for a faceted entry, the primary facet's `wrongTurn`); the correct choice must NOT carry it |
+| `rationale`     | object | required on every incorrect choice; the correct choice must NOT carry it — see below |
+
+A `rationale` is an object with exactly three fields, each a required
+non-empty string:
+
+| field     | notes |
+|-----------|-------|
+| `chose`   | what the student chose |
+| `thinks`  | what the student is most likely thinking |
+| `reteach` | how the teacher reteaches the point |
+
+No other keys are allowed on a rationale. The `misconception` code and
+the `rationale` are teacher-only: they never appear on a student sheet,
+and no rationale part text may appear verbatim in the question prompt
+or in any choice text of the same question — rationale wording must
+never leak onto student-renderable fields. The validator checks the
+code's presence and shape only; it never checks bank membership.
+
 ## Accessible variants
 
 Every printable renderer in `player/printable.js` (`renderWorksheet`,
