@@ -542,6 +542,59 @@ or in any choice text of the same question — rationale wording must
 never leak onto student-renderable fields. The validator checks the
 code's presence and shape only; it never checks bank membership.
 
+## Worked-example set spec
+
+A worked-example set is one topic taught by example in fading order:
+a complete annotated example the student studies, a faded example
+whose later steps are withheld for the student to complete, and a
+paired example-problem the student attempts alone.
+`validateWorkedExamples` in `player/validate.js` enforces this
+contract and returns a `string[]` of errors, exactly like
+`validateDiagnostics` (empty = valid). The validator enforces
+presence and shape only. The set is a sibling material: the notes
+material's single `workedExample` string is a different field and is
+unchanged by this section.
+
+Material fields:
+
+| field      | type   | notes |
+|------------|--------|-------|
+| `title`    | string | required non-empty |
+| `level`    | `"primary"` \| `"secondary"` \| `"jc"` | |
+| `subject`  | string | required non-empty — any school subject, not restricted to the syllabus-known list |
+| `topic`    | string | required non-empty |
+| `complete` | object | the complete annotated example — see below |
+| `faded`    | object | the faded-steps example — see below |
+| `paired`   | object | the paired example-problem — see below |
+
+The `complete` example:
+
+| field             | type     | notes |
+|-------------------|----------|-------|
+| `problem`         | string   | required non-empty |
+| `steps`           | object[] | required array of at least 2 steps, in working order |
+| `selfExplanation` | string   | required non-empty — the prompt asking the student to explain the method in their own words |
+
+Every `complete` step is an object with `text` (the step itself) and
+`annotation` (why the step works); both are required non-empty
+strings.
+
+The `faded` example has the same `problem`, `steps` and
+`selfExplanation` fields, with step differences: a faded step's
+`annotation` is optional (when present it must be a non-empty string)
+and every faded step carries a required boolean `withheld`. At least
+one step must be shown (`withheld: false`) and at least one step must
+be withheld, and the withheld steps form a suffix — once a step is
+withheld, every later step is withheld too. A withheld step's `text`
+and `annotation` are teacher-key only: they are the answers the
+student is meant to produce, and any rendering of a worked-example
+set must keep them out of the student-facing text.
+
+The `paired` example-problem is an object with a required non-empty
+`problem` and a required non-empty `solution`. The `solution` is
+teacher-key only, like a withheld step: it never appears on a student
+sheet.
+
 ## Accessible variants
 
 Every printable renderer in `player/printable.js` (`renderWorksheet`,

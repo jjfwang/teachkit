@@ -61,6 +61,7 @@
         lessonPlanPrompt: require('./build_lesson_plan_prompt.js'),
         scaffoldPrompt: require('./build_scaffold_prompt.js'),
         diagnosticsPrompt: require('./build_diagnostics_prompt.js'),
+        workedExamplesPrompt: require('./build_worked_examples_prompt.js'),
         syllabus: require('./syllabus.js'),
         validate: require('../player/validate.js')
       };
@@ -77,6 +78,7 @@
       lessonPlanPrompt: g.AnimathLessonPlanPrompt,
       scaffoldPrompt: g.AnimathScaffoldPrompt,
       diagnosticsPrompt: g.AnimathDiagnosticsPrompt,
+      workedExamplesPrompt: g.AnimathWorkedExamplesPrompt,
       syllabus: g.AnimathSyllabus,
       validate: g.AnimathValidate
     };
@@ -142,6 +144,13 @@
     invalidLabel: 'The invalid diagnostics you returned:',
     returnLine: 'Return ONLY the corrected diagnostics as a single JSON object. No prose, no code fences.',
     rejectLabel: 'Diagnostics'
+  };
+  var WORKED_EXAMPLES_KIND = {
+    notJsonProblem: 'The response was not valid JSON. Return ONLY the corrected worked-example set as JSON.',
+    repairHeader: 'Your previous response did not produce a valid worked-example set. It had these problems:',
+    invalidLabel: 'The invalid worked-example set you returned:',
+    returnLine: 'Return ONLY the corrected worked-example set as a single JSON object. No prose, no code fences.',
+    rejectLabel: 'Worked-example set'
   };
   var EXIT_TICKET_KIND = {
     notJsonProblem: 'The response was not valid JSON. Return ONLY the corrected exit ticket as JSON.',
@@ -368,6 +377,15 @@
     if (typeof deps.validate === 'function') return deps.validate;
     if (SIBLINGS.validate && typeof SIBLINGS.validate.validateDiagnostics === 'function') {
       return SIBLINGS.validate.validateDiagnostics;
+    } /* node:coverage ignore next */
+    return null;
+  }
+
+  function resolveWorkedExamplesValidator(deps) {
+    if (typeof deps.validateWorkedExamples === 'function') return deps.validateWorkedExamples;
+    if (typeof deps.validate === 'function') return deps.validate;
+    if (SIBLINGS.validate && typeof SIBLINGS.validate.validateWorkedExamples === 'function') {
+      return SIBLINGS.validate.validateWorkedExamples;
     } /* node:coverage ignore next */
     return null;
   }
@@ -841,6 +859,57 @@
   }
 
   // opts:
+  //   {topic, topicLabel, level, subject, focus, workedExample,
+  //    maxRepairs}
+  //   (the buildWorkedExamplesPrompts option set; topic/subject
+  //   required; maxRepairs defaults to 3, 0 disables repair).
+  // deps:
+  //   {callChat(system, user) -> Promise<string>  (caller-supplied LLM call),
+  //    validateWorkedExamples?(spec) -> string[] | Promise<string[]>,
+  //    validate?(spec) -> string[] | Promise<string[]>  (fallback validator),
+  //    onProgress?(stage, n, max)}  stages: 'unpack', 'author', 'repair'.
+  //
+  // Resolves with the first worked-example set that validates clean
+  // against validateWorkedExamples; rejects with an Error carrying
+  // err.problems when every attempt failed. The unpack step degrades
+  // exactly like generateScaffolds: a failed unpack authors WITHOUT
+  // transitions.
+  function generateWorkedExamples(opts, deps) {
+    opts = opts || {};
+    deps = deps || {};
+    if (typeof deps.callChat !== 'function') {
+      return Promise.reject(new Error('generateWorkedExamples: deps.callChat(system, user) ' +
+        'must be a function returning a Promise of the raw response text'));
+    }
+    var validateFn = resolveWorkedExamplesValidator(deps);
+    /* node:coverage ignore next 5 */
+    if (!validateFn) {
+      return Promise.reject(new Error('generateWorkedExamples: deps.validateWorkedExamples(spec) ' +
+        'must be a function returning the problem list (or supply deps.validate, ' +
+        'or load player/validate.js so validateWorkedExamples is available)'));
+    }
+    var progress = makeProgress(deps);
+    var maxRepairs = (opts.maxRepairs != null) ? opts.maxRepairs : DEFAULT_MAX_REPAIRS;
+
+    return unpackStage(deps, progress, opts).then(function (staged) {
+      var transitions = staged ? staged.transitions : null;
+      if (transitions) {
+        transitions = SIBLINGS.unpack.attachMisconceptions(transitions, opts.topic);
+      }
+      var prompts = SIBLINGS.workedExamplesPrompt.buildWorkedExamplesPrompts({
+        topic: opts.topic,
+        topicLabel: opts.topicLabel,
+        level: opts.level,
+        subject: opts.subject,
+        focus: opts.focus,
+        transitions: transitions,
+        workedExample: opts.workedExample
+      });
+      return authorAndRepair(deps, progress, maxRepairs, prompts, validateFn, WORKED_EXAMPLES_KIND);
+    });
+  }
+
+  // opts:
   //   {topic, topicLabel, level, subject, workedExample, kind, focus,
   //    facet, maxRepairs, force}
   //   (the union of the nine material option sets; topic/subject
@@ -1058,5 +1127,5 @@
     return generateLessonPack(merged, deps);
   }
 
-  return { generateAnimation: generateAnimation, generateSlides: generateSlides, generateWorksheet: generateWorksheet, generateExitTicket: generateExitTicket, generateNotes: generateNotes, generateScript: generateScript, generateLessonPlan: generateLessonPlan, generateScaffolds: generateScaffolds, generateDiagnostics: generateDiagnostics, generateLessonPack: generateLessonPack, generateLessonPackForSyllabus: generateLessonPackForSyllabus, clearPackCache: clearPackCache };
+  return { generateAnimation: generateAnimation, generateSlides: generateSlides, generateWorksheet: generateWorksheet, generateExitTicket: generateExitTicket, generateNotes: generateNotes, generateScript: generateScript, generateLessonPlan: generateLessonPlan, generateScaffolds: generateScaffolds, generateDiagnostics: generateDiagnostics, generateWorkedExamples: generateWorkedExamples, generateLessonPack: generateLessonPack, generateLessonPackForSyllabus: generateLessonPackForSyllabus, clearPackCache: clearPackCache };
 });

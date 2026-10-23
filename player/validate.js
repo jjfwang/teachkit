@@ -1014,6 +1014,94 @@
     return errors;
   }
 
+  // Worked-example set validator (SPEC.md "Worked-example set spec",
+  // issue #1248): a complete annotated example, a faded example whose
+  // withheld steps form a suffix, and a paired problem whose solution
+  // is teacher-key only. Presence and shape only.
+  function checkWorkedSteps(steps, errors, p, annotationsRequired) {
+    if (!Array.isArray(steps) || steps.length < 2) {
+      errors.push(p + '.steps: required array of at least 2 steps');
+      return;
+    }
+    steps.forEach(function (step, j) {
+      var q = p + '.steps[' + j + ']';
+      if (!step || typeof step !== 'object' || Array.isArray(step)) {
+        errors.push(q + ': must be an object');
+        return;
+      }
+      if (typeof step.text !== 'string' || !step.text.trim()) {
+        errors.push(q + '.text: required non-empty string');
+      }
+      if (annotationsRequired) {
+        if (typeof step.annotation !== 'string' || !step.annotation.trim()) {
+          errors.push(q + '.annotation: required non-empty string');
+        }
+      } else if (step.annotation !== undefined &&
+          (typeof step.annotation !== 'string' || !step.annotation.trim())) {
+        errors.push(q + '.annotation: must be a non-empty string when present');
+      }
+    });
+  }
+
+  function checkWorkedExample(example, errors, p, isFaded) {
+    if (!example || typeof example !== 'object' || Array.isArray(example)) {
+      errors.push(p + ': must be an object');
+      return;
+    }
+    if (typeof example.problem !== 'string' || !example.problem.trim()) {
+      errors.push(p + '.problem: required non-empty string');
+    }
+    checkWorkedSteps(example.steps, errors, p, !isFaded);
+    if (isFaded && Array.isArray(example.steps) && example.steps.length >= 2) {
+      var allBoolean = example.steps.every(function (step) {
+        return step && typeof step === 'object' && !Array.isArray(step) &&
+          typeof step.withheld === 'boolean';
+      });
+      example.steps.forEach(function (step, j) {
+        if (!step || typeof step !== 'object' || Array.isArray(step)) return;
+        if (typeof step.withheld !== 'boolean') {
+          errors.push(p + '.steps[' + j + '].withheld: required boolean');
+        }
+      });
+      if (allBoolean) {
+        var shown = 0;
+        var withheldCount = 0;
+        var seenWithheld = false;
+        var suffixBroken = false;
+        example.steps.forEach(function (step) {
+          if (step.withheld) { withheldCount++; seenWithheld = true; }
+          else { shown++; if (seenWithheld) suffixBroken = true; }
+        });
+        if (shown === 0) errors.push(p + '.steps: at least one step must be shown');
+        if (withheldCount === 0) errors.push(p + '.steps: at least one step must be withheld');
+        if (suffixBroken) errors.push(p + '.steps: withheld steps must form a suffix (once a step is withheld, every later step is withheld)');
+      }
+    }
+    if (typeof example.selfExplanation !== 'string' || !example.selfExplanation.trim()) {
+      errors.push(p + '.selfExplanation: required non-empty string');
+    }
+  }
+
+  function validateWorkedExamples(spec) {
+    var errors = [];
+    if (!spec || typeof spec !== 'object' || Array.isArray(spec)) return ['spec: must be an object'];
+    checkMaterialHeader(spec, errors);
+    checkWorkedExample(spec.complete, errors, 'complete', false);
+    checkWorkedExample(spec.faded, errors, 'faded', true);
+    var paired = spec.paired;
+    if (!paired || typeof paired !== 'object' || Array.isArray(paired)) {
+      errors.push('paired: must be an object');
+    } else {
+      if (typeof paired.problem !== 'string' || !paired.problem.trim()) {
+        errors.push('paired.problem: required non-empty string');
+      }
+      if (typeof paired.solution !== 'string' || !paired.solution.trim()) {
+        errors.push('paired.solution: required non-empty string');
+      }
+    }
+    return errors;
+  }
+
   // Pack metadata validator (SPEC.md "Lesson pack spec", issue #1221):
   // the transparency block every generated pack manifest carries -- the
   // syllabus mapping recorded as facts, the AI-generated label, the
@@ -1064,7 +1152,7 @@
     return errors;
   }
 
-  return { validateSpec: validateSpec, validateSlides: validateSlides, validateWorksheet: validateWorksheet, validateExitTicket: validateExitTicket, validateNotes: validateNotes, validateScript: validateScript, validateLessonPlan: validateLessonPlan, validateScaffolds: validateScaffolds, validateDiagnostics: validateDiagnostics, validatePackMetadata: validatePackMetadata, SUBJECTS: SUBJECTS };
+  return { validateSpec: validateSpec, validateSlides: validateSlides, validateWorksheet: validateWorksheet, validateExitTicket: validateExitTicket, validateNotes: validateNotes, validateScript: validateScript, validateLessonPlan: validateLessonPlan, validateScaffolds: validateScaffolds, validateDiagnostics: validateDiagnostics, validateWorkedExamples: validateWorkedExamples, validatePackMetadata: validatePackMetadata, SUBJECTS: SUBJECTS };
 });
 
 /* ------------------------------------------------------------------
