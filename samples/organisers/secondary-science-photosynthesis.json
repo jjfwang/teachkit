@@ -1,0 +1,81 @@
+{
+  "title": "Photosynthesis: how plants make food",
+  "level": "secondary",
+  "subject": "science",
+  "topic": "bio-nutrition",
+  "templates": [
+    {
+      "kind": "flow",
+      "slots": [
+        {
+          "label": "Plants make their own food",
+          "entries": [
+            "Plants make their own food - light energy from the Sun streams into the leaf, and the green plant builds glucose from carbon dioxide and water, releasing oxygen."
+          ],
+          "studentPrompt": "Explain this step in your own words."
+        },
+        {
+          "label": "In: carbon dioxide and water",
+          "entries": [
+            "In: carbon dioxide and water - carbon dioxide enters through tiny pores under the leaf, while water is absorbed by the roots and travels up to the leaf."
+          ],
+          "studentPrompt": "Explain this step in your own words."
+        },
+        {
+          "label": "Out: glucose and oxygen",
+          "entries": [
+            "Out: glucose and oxygen - with chlorophyll trapping the light, the plant builds glucose as its food and releases oxygen into the air as a by-product."
+          ],
+          "studentPrompt": "Explain this step in your own words."
+        },
+        {
+          "label": "Energy in, food out",
+          "entries": [
+            "Energy in, food out - light energy powers the change, which is why plants are called producers: they make food for almost all life."
+          ],
+          "studentPrompt": "Explain this step in your own words."
+        },
+        {
+          "label": "Misconception: oxygen does NOT come from CO2",
+          "entries": [
+            "Misconception: oxygen does NOT come from CO2 - the released oxygen comes from splitting water, while carbon dioxide supplies the carbon for glucose."
+          ],
+          "studentPrompt": "Explain this step in your own words."
+        }
+      ]
+    },
+    {
+      "kind": "frayer",
+      "slots": [
+        {
+          "label": "Photosynthesis",
+          "entries": [
+            "The process by which green plants make glucose using light energy, taking in carbon dioxide and water and releasing oxygen."
+          ],
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "label": "Chlorophyll",
+          "entries": [
+            "The green pigment in leaves that traps the light energy which powers photosynthesis."
+          ],
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "label": "Glucose",
+          "entries": [
+            "The sugar the plant builds as food during photosynthesis; it can be used for energy, growth and building new tissue."
+          ],
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "label": "Producer",
+          "entries": [
+            "An organism that makes its own food; plants are producers because photosynthesis builds food for almost all life."
+          ],
+          "studentPrompt": "Give your own example of this term."
+        }
+      ]
+    }
+  ]
+}

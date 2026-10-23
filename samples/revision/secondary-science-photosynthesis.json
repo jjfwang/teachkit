@@ -1,0 +1,71 @@
+{
+  "title": "Photosynthesis: how plants make food",
+  "level": "secondary",
+  "subject": "science",
+  "topic": "bio-nutrition",
+  "flashcards": [
+    {
+      "front": "Photosynthesis",
+      "back": "The process by which green plants make glucose using light energy, taking in carbon dioxide and water and releasing oxygen.",
+      "source": "definition"
+    },
+    {
+      "front": "Chlorophyll",
+      "back": "The green pigment in leaves that traps the light energy which powers photosynthesis.",
+      "source": "definition"
+    },
+    {
+      "front": "Glucose",
+      "back": "The sugar the plant builds as food during photosynthesis; it can be used for energy, growth and building new tissue.",
+      "source": "definition"
+    },
+    {
+      "front": "Carbon dioxide",
+      "back": "A gas taken in from the air through tiny pores on the underside of the leaf; it supplies the carbon for glucose.",
+      "source": "definition"
+    },
+    {
+      "front": "The oxygen released in photosynthesis comes from carbon dioxide.",
+      "back": "The slip: Carbon dioxide goes in and oxygen comes out, so the oxygen looks like it comes from the CO2. The fix: The released oxygen comes from water: splitting water gives the oxygen, while carbon dioxide supplies the carbon for glucose. Keep the two gases in their own roles: carbon dioxide is the carbon source for glucose, and water is the source of the released oxygen.",
+      "source": "trap"
+    },
+    {
+      "front": "Where does the oxygen released in photosynthesis come from?",
+      "back": "From water",
+      "source": "quiz-bank"
+    },
+    {
+      "front": "Which is the correct word equation for photosynthesis?",
+      "back": "carbon dioxide + water → glucose + oxygen",
+      "source": "quiz-bank"
+    }
+  ],
+  "practiceSets": [
+    {
+      "dayOffset": 1,
+      "items": [
+        {
+          "prompt": "What is the role of chlorophyll in photosynthesis?",
+          "answer": "It traps the light energy that powers photosynthesis"
+        },
+        {
+          "prompt": "A leaf is photosynthesizing. Name the two raw materials it needs, and state where each one comes from.",
+          "answer": "Carbon dioxide, which enters the leaf from the air through tiny pores on its underside, and water, which is absorbed by the roots and travels up to the leaf."
+        }
+      ]
+    },
+    {
+      "dayOffset": 3,
+      "items": [
+        {
+          "prompt": "Explain why green plants are called producers.",
+          "answer": "Plants make their own food - glucose - by photosynthesis, building it from carbon dioxide and water using light energy. Because almost all other life feeds directly or indirectly on that food, plants are the producers at the start of food chains."
+        },
+        {
+          "prompt": "A plant is kept in complete darkness for two days. Explain why it stops making glucose, even though carbon dioxide and water are still available.",
+          "answer": "Photosynthesis needs light energy, trapped by chlorophyll, to power the building of glucose. In darkness there is no light energy, so the change cannot run and no new glucose is made, even with both raw materials present."
+        }
+      ]
+    }
+  ]
+}
