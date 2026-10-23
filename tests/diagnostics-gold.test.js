@@ -27,7 +27,8 @@ const STEMS = [
   'secondary-physics-energy',
   'jc-h2-differentiation',
   'jc-h2-cell-bio',
-  'secondary-math-pythagoras'
+  'secondary-math-pythagoras',
+  'secondary-science-photosynthesis'
 ];
 
 function load(rel) {
@@ -50,7 +51,9 @@ for (const stem of STEMS) {
     assert.ok(diag.hingeQuestions.length >= 1 && diag.hingeQuestions.length <= 3,
       stem + ': hingeQuestions count in 1..3');
 
-    const entry = misconceptionFor(diag.topic);
+    // Faceted bank topics (bio-nutrition) resolve via the stem's final
+    // token as the facet hint; unknown hints fall back to the primary facet.
+    const entry = misconceptionFor(diag.topic, stem.split('-').pop());
     assert.ok(entry, stem + ': topic resolves a misconception bank entry');
     const cues = new Set(script.segments.map((seg) => seg.cue));
     for (const q of diag.doNow.concat(diag.hingeQuestions)) {
@@ -69,7 +72,9 @@ for (const stem of STEMS) {
 
   test('gold diagnostics ' + stem + ': student rendering hides codes and rationales, teacher key shows both', () => {
     const diag = load('samples/diagnostics/' + stem + '.json');
-    const entry = misconceptionFor(diag.topic);
+    // Faceted bank topics (bio-nutrition) resolve via the stem's final
+    // token as the facet hint; unknown hints fall back to the primary facet.
+    const entry = misconceptionFor(diag.topic, stem.split('-').pop());
     const student = printable.renderDiagnostics(diag);
     const key = printable.renderDiagnosticsAnswerKey(diag);
     assert.ok(student.includes(diag.title), stem + ': student sheet carries its title');

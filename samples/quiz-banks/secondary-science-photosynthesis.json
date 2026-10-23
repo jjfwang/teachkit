@@ -1,0 +1,51 @@
+{
+  "title": "Photosynthesis: how plants make food",
+  "level": "secondary",
+  "subject": "science",
+  "topic": "bio-nutrition",
+  "items": [
+    {
+      "prompt": "Where does the oxygen released in photosynthesis come from?",
+      "answer": "From water",
+      "choices": [
+        "From carbon dioxide",
+        "From water",
+        "From glucose",
+        "From chlorophyll"
+      ],
+      "misconceptionCode": "The oxygen released in photosynthesis comes from carbon dioxide."
+    },
+    {
+      "prompt": "Which is the correct word equation for photosynthesis?",
+      "answer": "carbon dioxide + water → glucose + oxygen",
+      "choices": [
+        "glucose + oxygen → carbon dioxide + water",
+        "carbon dioxide + water → glucose + oxygen",
+        "carbon dioxide + glucose → water + oxygen",
+        "water + oxygen → glucose + carbon dioxide"
+      ]
+    },
+    {
+      "prompt": "What is the role of chlorophyll in photosynthesis?",
+      "answer": "It traps the light energy that powers photosynthesis",
+      "choices": [
+        "It builds the glucose molecules directly",
+        "It releases the oxygen from the leaf",
+        "It traps the light energy that powers photosynthesis",
+        "It carries water up from the roots"
+      ]
+    },
+    {
+      "prompt": "A leaf is photosynthesizing. Name the two raw materials it needs, and state where each one comes from.",
+      "answer": "Carbon dioxide, which enters the leaf from the air through tiny pores on its underside, and water, which is absorbed by the roots and travels up to the leaf."
+    },
+    {
+      "prompt": "Explain why green plants are called producers.",
+      "answer": "Plants make their own food - glucose - by photosynthesis, building it from carbon dioxide and water using light energy. Because almost all other life feeds directly or indirectly on that food, plants are the producers at the start of food chains."
+    },
+    {
+      "prompt": "A plant is kept in complete darkness for two days. Explain why it stops making glucose, even though carbon dioxide and water are still available.",
+      "answer": "Photosynthesis needs light energy, trapped by chlorophyll, to power the building of glucose. In darkness there is no light energy, so the change cannot run and no new glucose is made, even with both raw materials present."
+    }
+  ]
+}

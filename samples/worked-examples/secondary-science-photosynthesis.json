@@ -1,0 +1,49 @@
+{
+  "title": "Photosynthesis: how plants make food",
+  "level": "secondary",
+  "subject": "science",
+  "topic": "bio-nutrition",
+  "complete": {
+    "problem": "Write the word equation for photosynthesis and use it to explain where the released oxygen comes from.",
+    "steps": [
+      {
+        "text": "Step 1: the inputs are carbon dioxide and water, so they go on the left: carbon dioxide + water.",
+        "annotation": "Carbon dioxide enters through tiny pores under the leaf, while water is absorbed by the roots and travels up to the leaf."
+      },
+      {
+        "text": "Step 2: the products are glucose and oxygen, so they go on the right: carbon dioxide + water → glucose + oxygen, with light energy trapped by chlorophyll over the arrow.",
+        "annotation": "Light energy is the energy input, not a raw material: chlorophyll traps it to power the building of glucose."
+      },
+      {
+        "text": "Step 3: the oxygen on the right comes from the water on the left - splitting water releases it - while the carbon dioxide supplies the carbon built into the glucose.",
+        "annotation": "Keep the two gases in their own roles: carbon dioxide is the carbon source for glucose, and water is the source of the released oxygen."
+      }
+    ],
+    "selfExplanation": "Explain why the released oxygen comes from water and not from carbon dioxide."
+  },
+  "faded": {
+    "problem": "A leaf in bright light takes in carbon dioxide and water. Write the word equation for photosynthesis and state where the released oxygen comes from.",
+    "steps": [
+      {
+        "text": "Step 1: the inputs are carbon dioxide and water, so they go on the left: carbon dioxide + water.",
+        "annotation": "Name both raw materials first, before writing any products.",
+        "withheld": false
+      },
+      {
+        "text": "Step 2: the products are glucose and oxygen, so the full word equation is: carbon dioxide + water → glucose + oxygen, powered by light energy trapped by chlorophyll.",
+        "annotation": "Glucose is the food built; oxygen is the by-product released.",
+        "withheld": true
+      },
+      {
+        "text": "Step 3: the released oxygen comes from the water taken in - splitting water releases it - while the carbon dioxide supplies the carbon for the glucose.",
+        "annotation": "The oxygen is released from water, not from carbon dioxide.",
+        "withheld": true
+      }
+    ],
+    "selfExplanation": "The first step is shown. Say what goes on the right of the arrow next, and where the released oxygen comes from."
+  },
+  "paired": {
+    "problem": "A plant is kept in complete darkness for two days. Explain why it stops making glucose, even though carbon dioxide and water are still available.",
+    "solution": "Photosynthesis needs light energy, trapped by chlorophyll, to power the building of glucose. In darkness there is no light energy, so the change cannot run and no new glucose is made, even with both raw materials present."
+  }
+}

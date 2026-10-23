@@ -1,0 +1,202 @@
+{
+  "title": "Photosynthesis: how plants make food",
+  "level": "secondary",
+  "subject": "science",
+  "topic": "bio-nutrition",
+  "doNow": [
+    {
+      "id": "dn1",
+      "prompt": "Where does the oxygen released by a photosynthesizing leaf come from?",
+      "kind": "multiple-choice",
+      "choices": [
+        {
+          "text": "From the water the leaf takes in, which is split during photosynthesis",
+          "correct": true
+        },
+        {
+          "text": "From the carbon dioxide the leaf takes in",
+          "misconception": "The oxygen released in photosynthesis comes from carbon dioxide.",
+          "rationale": {
+            "chose": "The learner selected option From the carbon dioxide the leaf takes in as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents.",
+            "reteach": "Reteach from the paired notes trap: the released oxygen comes from water: splitting water gives the oxygen, while carbon dioxide supplies the carbon for glucose. Keep the two gases in their own roles: carbon dioxide is the carbon source for glucose, and water is the source of the released oxygen."
+          }
+        },
+        {
+          "text": "From the glucose the leaf builds",
+          "misconception": "The oxygen released in photosynthesis comes from carbon dioxide.",
+          "rationale": {
+            "chose": "The learner selected option From the glucose the leaf builds as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents.",
+            "reteach": "Reteach from the paired notes trap: the released oxygen comes from water: splitting water gives the oxygen, while carbon dioxide supplies the carbon for glucose. Keep the two gases in their own roles: carbon dioxide is the carbon source for glucose, and water is the source of the released oxygen."
+          }
+        },
+        {
+          "text": "From the chlorophyll in the leaf",
+          "misconception": "The oxygen released in photosynthesis comes from carbon dioxide.",
+          "rationale": {
+            "chose": "The learner selected option From the chlorophyll in the leaf as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents.",
+            "reteach": "Reteach from the paired notes trap: the released oxygen comes from water: splitting water gives the oxygen, while carbon dioxide supplies the carbon for glucose. Keep the two gases in their own roles: carbon dioxide is the carbon source for glucose, and water is the source of the released oxygen."
+          }
+        }
+      ]
+    },
+    {
+      "id": "dn2",
+      "prompt": "Which is the correct word equation for photosynthesis?",
+      "kind": "multiple-choice",
+      "choices": [
+        {
+          "text": "carbon dioxide + water → glucose + oxygen",
+          "correct": true
+        },
+        {
+          "text": "glucose + oxygen → carbon dioxide + water",
+          "misconception": "The oxygen released in photosynthesis comes from carbon dioxide.",
+          "rationale": {
+            "chose": "The learner selected option glucose + oxygen → carbon dioxide + water as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents.",
+            "reteach": "Reteach from the paired notes trap: the released oxygen comes from water: splitting water gives the oxygen, while carbon dioxide supplies the carbon for glucose. Keep the two gases in their own roles: carbon dioxide is the carbon source for glucose, and water is the source of the released oxygen."
+          }
+        },
+        {
+          "text": "carbon dioxide + glucose → water + oxygen",
+          "misconception": "The oxygen released in photosynthesis comes from carbon dioxide.",
+          "rationale": {
+            "chose": "The learner selected option carbon dioxide + glucose → water + oxygen as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents.",
+            "reteach": "Reteach from the paired notes trap: the released oxygen comes from water: splitting water gives the oxygen, while carbon dioxide supplies the carbon for glucose. Keep the two gases in their own roles: carbon dioxide is the carbon source for glucose, and water is the source of the released oxygen."
+          }
+        },
+        {
+          "text": "water + oxygen → glucose + carbon dioxide",
+          "misconception": "The oxygen released in photosynthesis comes from carbon dioxide.",
+          "rationale": {
+            "chose": "The learner selected option water + oxygen → glucose + carbon dioxide as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents.",
+            "reteach": "Reteach from the paired notes trap: the released oxygen comes from water: splitting water gives the oxygen, while carbon dioxide supplies the carbon for glucose. Keep the two gases in their own roles: carbon dioxide is the carbon source for glucose, and water is the source of the released oxygen."
+          }
+        }
+      ]
+    },
+    {
+      "id": "dn3",
+      "prompt": "How does carbon dioxide enter a leaf?",
+      "kind": "multiple-choice",
+      "choices": [
+        {
+          "text": "Through tiny pores on the underside of the leaf",
+          "correct": true
+        },
+        {
+          "text": "Through the roots, dissolved in water",
+          "misconception": "The oxygen released in photosynthesis comes from carbon dioxide.",
+          "rationale": {
+            "chose": "The learner selected option Through the roots, dissolved in water as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents.",
+            "reteach": "Reteach from the paired notes trap: the released oxygen comes from water: splitting water gives the oxygen, while carbon dioxide supplies the carbon for glucose. Keep the two gases in their own roles: carbon dioxide is the carbon source for glucose, and water is the source of the released oxygen."
+          }
+        },
+        {
+          "text": "Through the stem, from the soil",
+          "misconception": "The oxygen released in photosynthesis comes from carbon dioxide.",
+          "rationale": {
+            "chose": "The learner selected option Through the stem, from the soil as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents.",
+            "reteach": "Reteach from the paired notes trap: the released oxygen comes from water: splitting water gives the oxygen, while carbon dioxide supplies the carbon for glucose. Keep the two gases in their own roles: carbon dioxide is the carbon source for glucose, and water is the source of the released oxygen."
+          }
+        },
+        {
+          "text": "It is made inside the leaf by chlorophyll",
+          "misconception": "The oxygen released in photosynthesis comes from carbon dioxide.",
+          "rationale": {
+            "chose": "The learner selected option It is made inside the leaf by chlorophyll as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents.",
+            "reteach": "Reteach from the paired notes trap: the released oxygen comes from water: splitting water gives the oxygen, while carbon dioxide supplies the carbon for glucose. Keep the two gases in their own roles: carbon dioxide is the carbon source for glucose, and water is the source of the released oxygen."
+          }
+        }
+      ]
+    }
+  ],
+  "hingeQuestions": [
+    {
+      "id": "h1",
+      "prompt": "By what route does each raw material reach the leaf?",
+      "kind": "multiple-choice",
+      "choices": [
+        {
+          "text": "Carbon dioxide through tiny pores on the underside of the leaf, and water absorbed by the roots and travelling up to the leaf",
+          "correct": true
+        },
+        {
+          "text": "Carbon dioxide through the roots, and water through tiny pores on the underside of the leaf",
+          "misconception": "The oxygen released in photosynthesis comes from carbon dioxide.",
+          "rationale": {
+            "chose": "The learner selected option Carbon dioxide through the roots, and water through tiny pores on the underside of the leaf as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents.",
+            "reteach": "Reteach from the paired notes trap: the released oxygen comes from water: splitting water gives the oxygen, while carbon dioxide supplies the carbon for glucose. Keep the two gases in their own roles: carbon dioxide is the carbon source for glucose, and water is the source of the released oxygen."
+          }
+        },
+        {
+          "text": "Both carbon dioxide and water through the roots",
+          "misconception": "The oxygen released in photosynthesis comes from carbon dioxide.",
+          "rationale": {
+            "chose": "The learner selected option Both carbon dioxide and water through the roots as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents.",
+            "reteach": "Reteach from the paired notes trap: the released oxygen comes from water: splitting water gives the oxygen, while carbon dioxide supplies the carbon for glucose. Keep the two gases in their own roles: carbon dioxide is the carbon source for glucose, and water is the source of the released oxygen."
+          }
+        },
+        {
+          "text": "Both carbon dioxide and water through tiny pores on the underside of the leaf",
+          "misconception": "The oxygen released in photosynthesis comes from carbon dioxide.",
+          "rationale": {
+            "chose": "The learner selected option Both carbon dioxide and water through tiny pores on the underside of the leaf as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents.",
+            "reteach": "Reteach from the paired notes trap: the released oxygen comes from water: splitting water gives the oxygen, while carbon dioxide supplies the carbon for glucose. Keep the two gases in their own roles: carbon dioxide is the carbon source for glucose, and water is the source of the released oxygen."
+          }
+        }
+      ],
+      "scriptCue": "s2"
+    },
+    {
+      "id": "h2",
+      "prompt": "Where does the released oxygen actually come from?",
+      "kind": "multiple-choice",
+      "choices": [
+        {
+          "text": "From water, which is split during photosynthesis",
+          "correct": true
+        },
+        {
+          "text": "From carbon dioxide",
+          "misconception": "The oxygen released in photosynthesis comes from carbon dioxide.",
+          "rationale": {
+            "chose": "The learner selected option From carbon dioxide as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents.",
+            "reteach": "Reteach from the paired notes trap: the released oxygen comes from water: splitting water gives the oxygen, while carbon dioxide supplies the carbon for glucose. Keep the two gases in their own roles: carbon dioxide is the carbon source for glucose, and water is the source of the released oxygen."
+          }
+        },
+        {
+          "text": "From glucose",
+          "misconception": "The oxygen released in photosynthesis comes from carbon dioxide.",
+          "rationale": {
+            "chose": "The learner selected option From glucose as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents.",
+            "reteach": "Reteach from the paired notes trap: the released oxygen comes from water: splitting water gives the oxygen, while carbon dioxide supplies the carbon for glucose. Keep the two gases in their own roles: carbon dioxide is the carbon source for glucose, and water is the source of the released oxygen."
+          }
+        },
+        {
+          "text": "From chlorophyll",
+          "misconception": "The oxygen released in photosynthesis comes from carbon dioxide.",
+          "rationale": {
+            "chose": "The learner selected option From chlorophyll as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents.",
+            "reteach": "Reteach from the paired notes trap: the released oxygen comes from water: splitting water gives the oxygen, while carbon dioxide supplies the carbon for glucose. Keep the two gases in their own roles: carbon dioxide is the carbon source for glucose, and water is the source of the released oxygen."
+          }
+        }
+      ],
+      "scriptCue": "s5"
+    }
+  ]
+}

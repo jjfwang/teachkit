@@ -26,7 +26,8 @@ const STEMS = [
   'secondary-physics-energy',
   'jc-h2-differentiation',
   'jc-h2-cell-bio',
-  'secondary-math-pythagoras'
+  'secondary-math-pythagoras',
+  'secondary-science-photosynthesis'
 ];
 
 function load(rel) {
