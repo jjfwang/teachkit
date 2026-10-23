@@ -30,7 +30,8 @@ const STEMS = [
   'secondary-e-algebra',
   'secondary-physics-energy',
   'jc-h2-differentiation',
-  'jc-h2-cell-bio'
+  'jc-h2-cell-bio',
+  'secondary-math-pythagoras'
 ];
 
 function load(rel) {
@@ -113,7 +114,7 @@ for (const stem of STEMS) {
   });
 }
 
-test('gold summatives: the six units are exactly the Phase A gate set', () => {
+test('gold summatives: the seven units are exactly the Phase A gate set plus the pythagoras backfill', () => {
   const files = fs.readdirSync(path.join(__dirname, '..', 'samples/summatives'))
     .filter((f) => f.endsWith('.json'))
     .map((f) => f.replace(/\.json$/, ''))

@@ -1,0 +1,125 @@
+{
+  "title": "Trigonometry Unit Test",
+  "level": "secondary",
+  "subject": "math",
+  "unitTitle": "Pythagoras theorem and trigonometric ratios",
+  "topics": [
+    "secondary-math-pythagoras",
+    "secondary-e-trigonometry"
+  ],
+  "durationMinutes": 60,
+  "totalMarks": 24,
+  "blueprint": [
+    {
+      "outcomeCode": "S3-PYTH-APPLY",
+      "assessmentObjective": "AO1 recall and apply",
+      "marks": 12,
+      "cognitiveLevel": "apply"
+    },
+    {
+      "outcomeCode": "S3-TRIG-REASON",
+      "assessmentObjective": "AO2 reason and solve",
+      "marks": 12,
+      "cognitiveLevel": "reason"
+    }
+  ],
+  "items": [
+    {
+      "prompt": "A right-angled triangle has legs 9 and 12. Calculate the length of the hypotenuse.",
+      "blueprintRow": 0,
+      "commandWord": "Calculate",
+      "marks": 6,
+      "markScheme": {
+        "points": [
+          {
+            "text": "Squares both legs to reach 81 and 144 as the two squared lengths",
+            "marks": 3
+          },
+          {
+            "text": "Adds the squares to 225 and takes the square root to give hypotenuse 15",
+            "marks": 3
+          }
+        ]
+      }
+    },
+    {
+      "prompt": "A right-angled triangle has hypotenuse 17 and one leg 8. Calculate the length of the other leg.",
+      "blueprintRow": 0,
+      "commandWord": "Calculate",
+      "marks": 6,
+      "markScheme": {
+        "points": [
+          {
+            "text": "Subtracts the known square from the hypotenuse square as 289 minus 64",
+            "marks": 3
+          },
+          {
+            "text": "Takes the square root of 225 to give the other leg as 15",
+            "marks": 3
+          }
+        ]
+      }
+    },
+    {
+      "prompt": "In a right-angled triangle, angle theta has opposite side 5 and hypotenuse 13. Write down sin theta and cos theta.",
+      "blueprintRow": 1,
+      "commandWord": "Write",
+      "marks": 6,
+      "markScheme": {
+        "points": [
+          {
+            "text": "Writes sin theta as opposite over hypotenuse giving five thirteenths",
+            "marks": 3
+          },
+          {
+            "text": "Writes cos theta as adjacent over hypotenuse giving twelve thirteenths",
+            "marks": 3
+          }
+        ]
+      }
+    },
+    {
+      "prompt": "Explain how the sine rule can find an unknown side in a triangle that has no right angle.",
+      "blueprintRow": 1,
+      "commandWord": "Explain",
+      "marks": 6,
+      "markScheme": {
+        "points": [
+          {
+            "text": "States the sine rule pairing each side with the sine of its opposite angle",
+            "marks": 3
+          },
+          {
+            "text": "Describes substituting a known side-angle pair and the target angle to solve for the unknown side",
+            "marks": 3
+          }
+        ]
+      }
+    }
+  ],
+  "rubric": {
+    "criteria": [
+      {
+        "name": "Pythagoras and trigonometric reasoning",
+        "levels": [
+          {
+            "label": "Secure",
+            "descriptor": "Working is sequenced so each squaring, ratio or rule choice is justified before the answer."
+          },
+          {
+            "label": "Developing",
+            "descriptor": "Method is broadly sound but slips appear that the written working still makes traceable."
+          },
+          {
+            "label": "Beginning",
+            "descriptor": "Steps are disconnected and the chosen method cannot be followed from the working shown."
+          }
+        ]
+      }
+    ]
+  },
+  "moderation": {
+    "state": "unreviewed"
+  },
+  "review": null
+}

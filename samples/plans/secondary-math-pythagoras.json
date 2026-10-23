@@ -1,0 +1,121 @@
+{
+  "title": "Pythagoras' theorem: a² + b² = c²",
+  "level": "secondary",
+  "subject": "math",
+  "topic": "e-trigonometry",
+  "durationMinutes": 45,
+  "objectives": [
+    {
+      "id": "o1",
+      "text": "Find the hypotenuse of a right-angled triangle using a² + b² = c²",
+      "successCriteria": [
+        "I can square both legs, add the squares and take the square root to find the hypotenuse",
+        "I can explain why the hypotenuse is not the sum of the two legs"
+      ],
+      "assessmentPoints": [
+        "Board answers during the squares-on-the-sides walkthrough",
+        "Hypotenuse answers in the closing worksheet activity"
+      ]
+    },
+    {
+      "id": "o2",
+      "text": "Find a short side when the hypotenuse and the other short side are known",
+      "successCriteria": [
+        "I can rearrange a² + b² = c² to subtract the known square before taking the root",
+        "I can find the missing leg in a 5-12-13 style triangle"
+      ],
+      "assessmentPoints": [
+        "Pair answers in the hypotenuse-square activity",
+        "Closing worksheet answers on the missing-leg question"
+      ]
+    },
+    {
+      "id": "o3",
+      "text": "Use the converse of Pythagoras' theorem to test whether a triangle is right-angled",
+      "successCriteria": [
+        "I can check whether the two smaller squares add to the largest square",
+        "I can state the conclusion the converse gives when the squares match or do not match"
+      ],
+      "assessmentPoints": [
+        "Responses when the trap is sprung",
+        "Closing worksheet answers on the converse question"
+      ]
+    },
+    {
+      "id": "o4",
+      "text": "Use TOA to write tan theta as opposite over adjacent",
+      "successCriteria": [
+        "I can name the opposite and adjacent sides for a given angle",
+        "I can write tan theta = 3/4 for the 3-4-5 triangle and say why the flipped ratio is wrong"
+      ],
+      "assessmentPoints": [
+        "Partner explanations in the opening activity",
+        "Responses during the tangent discussion in the trap activity"
+      ]
+    }
+  ],
+  "activities": [
+    {
+      "title": "Meet the triangle and name the hypotenuse",
+      "minutes": 10,
+      "objectiveIds": [
+        "o1",
+        "o4"
+      ],
+      "scriptCue": "s1",
+      "grouping": "whole class",
+      "resources": [
+        "board"
+      ]
+    },
+    {
+      "title": "Squares on the short sides",
+      "minutes": 10,
+      "objectiveIds": [
+        "o1"
+      ],
+      "scriptCue": "s2",
+      "grouping": "pairs",
+      "differentiation": {
+        "support": "Provide the 3 by 3 and 4 by 4 grids pre-drawn so learners count the unit squares."
+      }
+    },
+    {
+      "title": "Fill the square on the hypotenuse",
+      "minutes": 10,
+      "objectiveIds": [
+        "o1",
+        "o2"
+      ],
+      "scriptCue": "s3",
+      "grouping": "whole class"
+    },
+    {
+      "title": "Spring the adding-the-lengths trap",
+      "minutes": 8,
+      "objectiveIds": [
+        "o3",
+        "o4"
+      ],
+      "scriptCue": "s4",
+      "grouping": "pairs",
+      "differentiation": {
+        "stretch": "Ask pairs to test sides 5, 12 and 13 with the converse and justify the conclusion."
+      }
+    },
+    {
+      "title": "Worksheet practice and exit ticket",
+      "minutes": 7,
+      "objectiveIds": [
+        "o1",
+        "o2",
+        "o3",
+        "o4"
+      ],
+      "grouping": "individual",
+      "resources": [
+        "worksheet"
+      ]
+    }
+  ]
+}

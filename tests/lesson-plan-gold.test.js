@@ -18,13 +18,18 @@ const path = require('node:path');
 
 const validate = require('../player/validate.js');
 
-const STEMS = [
+const GATE_STEMS = [
   'primary-math-fractions-addition',
   'primary-science-water-cycle',
   'secondary-e-algebra',
   'secondary-physics-energy',
   'jc-h2-differentiation',
   'jc-h2-cell-bio'
+];
+
+const STEMS = [
+  ...GATE_STEMS,
+  'secondary-math-pythagoras'
 ];
 
 function load(rel) {
@@ -71,7 +76,7 @@ for (const stem of STEMS) {
 test('the gate spans Primary, Secondary and JC with maths and sciences at each level', () => {
   const levels = new Set();
   const pairs = new Set();
-  for (const stem of STEMS) {
+  for (const stem of GATE_STEMS) {
     const plan = load('samples/plans/' + stem + '.json');
     levels.add(plan.level);
     pairs.add(plan.level + ':' + (plan.subject === 'math' ? 'math' : 'science'));
