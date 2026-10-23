@@ -1,0 +1,193 @@
+{
+  "title": "Decimals: place value and adding 0.4 + 0.25",
+  "level": "primary",
+  "subject": "math",
+  "topic": "decimals",
+  "doNow": [
+    {
+      "id": "dn1",
+      "prompt": "Which number is bigger, 0.4 or 0.25?",
+      "kind": "multiple-choice",
+      "choices": [
+        {
+          "text": "0.25",
+          "misconception": "Comparing decimals by digit count: 0.25 looks bigger than 0.4 because 25 > 4.",
+          "rationale": {
+            "chose": "The learner selected option 0.25 as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each digit is worth in its place.",
+            "reteach": "Reteach from the paired notes trap: Longer digit strings feel larger, but place value decides, not digit count. Match the place values first: 0.4 is 0.40, then tenths under tenths and hundredths under hundredths."
+          }
+        },
+        {
+          "text": "0.4",
+          "correct": true
+        },
+        {
+          "text": "They are equal",
+          "misconception": "Comparing decimals by digit count: 0.25 looks bigger than 0.4 because 25 > 4.",
+          "rationale": {
+            "chose": "The learner selected option They are equal as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each digit is worth in its place.",
+            "reteach": "Reteach from the paired notes trap: Longer digit strings feel larger, but place value decides, not digit count. Match the place values first: 0.4 is 0.40, then tenths under tenths and hundredths under hundredths."
+          }
+        },
+        {
+          "text": "You cannot tell",
+          "misconception": "Comparing decimals by digit count: 0.25 looks bigger than 0.4 because 25 > 4.",
+          "rationale": {
+            "chose": "The learner selected option You cannot tell as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each digit is worth in its place.",
+            "reteach": "Reteach from the paired notes trap: Longer digit strings feel larger, but place value decides, not digit count. Match the place values first: 0.4 is 0.40, then tenths under tenths and hundredths under hundredths."
+          }
+        }
+      ]
+    },
+    {
+      "id": "dn2",
+      "prompt": "What is 0.4 + 0.25?",
+      "kind": "multiple-choice",
+      "choices": [
+        {
+          "text": "0.29",
+          "misconception": "Comparing decimals by digit count: 0.25 looks bigger than 0.4 because 25 > 4.",
+          "rationale": {
+            "chose": "The learner selected option 0.29 as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each digit is worth in its place.",
+            "reteach": "Reteach from the paired notes trap: Longer digit strings feel larger, but place value decides, not digit count. Match the place values first: 0.4 is 0.40, then tenths under tenths and hundredths under hundredths."
+          }
+        },
+        {
+          "text": "0.45",
+          "misconception": "Comparing decimals by digit count: 0.25 looks bigger than 0.4 because 25 > 4.",
+          "rationale": {
+            "chose": "The learner selected option 0.45 as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each digit is worth in its place.",
+            "reteach": "Reteach from the paired notes trap: Longer digit strings feel larger, but place value decides, not digit count. Match the place values first: 0.4 is 0.40, then tenths under tenths and hundredths under hundredths."
+          }
+        },
+        {
+          "text": "0.65",
+          "correct": true
+        },
+        {
+          "text": "0.56",
+          "misconception": "Comparing decimals by digit count: 0.25 looks bigger than 0.4 because 25 > 4.",
+          "rationale": {
+            "chose": "The learner selected option 0.56 as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each digit is worth in its place.",
+            "reteach": "Reteach from the paired notes trap: Longer digit strings feel larger, but place value decides, not digit count. Match the place values first: 0.4 is 0.40, then tenths under tenths and hundredths under hundredths."
+          }
+        }
+      ]
+    },
+    {
+      "id": "dn3",
+      "prompt": "In 0.25, what is the 2 worth?",
+      "kind": "multiple-choice",
+      "choices": [
+        {
+          "text": "2 ones",
+          "misconception": "Comparing decimals by digit count: 0.25 looks bigger than 0.4 because 25 > 4.",
+          "rationale": {
+            "chose": "The learner selected option 2 ones as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each digit is worth in its place.",
+            "reteach": "Reteach from the paired notes trap: Longer digit strings feel larger, but place value decides, not digit count. Match the place values first: 0.4 is 0.40, then tenths under tenths and hundredths under hundredths."
+          }
+        },
+        {
+          "text": "2 tenths",
+          "correct": true
+        },
+        {
+          "text": "2 hundredths",
+          "misconception": "Comparing decimals by digit count: 0.25 looks bigger than 0.4 because 25 > 4.",
+          "rationale": {
+            "chose": "The learner selected option 2 hundredths as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each digit is worth in its place.",
+            "reteach": "Reteach from the paired notes trap: Longer digit strings feel larger, but place value decides, not digit count. Match the place values first: 0.4 is 0.40, then tenths under tenths and hundredths under hundredths."
+          }
+        }
+      ]
+    }
+  ],
+  "hingeQuestions": [
+    {
+      "id": "h1",
+      "prompt": "Work out 0.4 + 0.25, showing the step where you rewrite 0.4.",
+      "kind": "multiple-choice",
+      "choices": [
+        {
+          "text": "0.4 = 0.40, then 0.40 + 0.25 = 0.65",
+          "correct": true
+        },
+        {
+          "text": "0.4 + 0.25 = 0.29",
+          "misconception": "Comparing decimals by digit count: 0.25 looks bigger than 0.4 because 25 > 4.",
+          "rationale": {
+            "chose": "The learner selected option 0.4 + 0.25 = 0.29 as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each digit is worth in its place.",
+            "reteach": "Reteach from the paired notes trap: Longer digit strings feel larger, but place value decides, not digit count. Match the place values first: 0.4 is 0.40, then tenths under tenths and hundredths under hundredths."
+          }
+        },
+        {
+          "text": "0.4 + 0.25 = 0.45",
+          "misconception": "Comparing decimals by digit count: 0.25 looks bigger than 0.4 because 25 > 4.",
+          "rationale": {
+            "chose": "The learner selected option 0.4 + 0.25 = 0.45 as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each digit is worth in its place.",
+            "reteach": "Reteach from the paired notes trap: Longer digit strings feel larger, but place value decides, not digit count. Match the place values first: 0.4 is 0.40, then tenths under tenths and hundredths under hundredths."
+          }
+        },
+        {
+          "text": "0.4 + 0.25 = 0.56",
+          "misconception": "Comparing decimals by digit count: 0.25 looks bigger than 0.4 because 25 > 4.",
+          "rationale": {
+            "chose": "The learner selected option 0.4 + 0.25 = 0.56 as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each digit is worth in its place.",
+            "reteach": "Reteach from the paired notes trap: Longer digit strings feel larger, but place value decides, not digit count. Match the place values first: 0.4 is 0.40, then tenths under tenths and hundredths under hundredths."
+          }
+        }
+      ],
+      "scriptCue": "s3"
+    },
+    {
+      "id": "h2",
+      "prompt": "Which covers more of the whole, 0.4 or 0.25? How do you know?",
+      "kind": "multiple-choice",
+      "choices": [
+        {
+          "text": "0.4 covers more: it is forty hundredths, more than twenty-five hundredths",
+          "correct": true
+        },
+        {
+          "text": "0.25 covers more, because 25 is bigger than 4",
+          "misconception": "Comparing decimals by digit count: 0.25 looks bigger than 0.4 because 25 > 4.",
+          "rationale": {
+            "chose": "The learner selected option 0.25 covers more, because 25 is bigger than 4 as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each digit is worth in its place.",
+            "reteach": "Reteach from the paired notes trap: Longer digit strings feel larger, but place value decides, not digit count. Match the place values first: 0.4 is 0.40, then tenths under tenths and hundredths under hundredths."
+          }
+        },
+        {
+          "text": "They cover the same amount",
+          "misconception": "Comparing decimals by digit count: 0.25 looks bigger than 0.4 because 25 > 4.",
+          "rationale": {
+            "chose": "The learner selected option They cover the same amount as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each digit is worth in its place.",
+            "reteach": "Reteach from the paired notes trap: Longer digit strings feel larger, but place value decides, not digit count. Match the place values first: 0.4 is 0.40, then tenths under tenths and hundredths under hundredths."
+          }
+        },
+        {
+          "text": "You cannot tell from the digits",
+          "misconception": "Comparing decimals by digit count: 0.25 looks bigger than 0.4 because 25 > 4.",
+          "rationale": {
+            "chose": "The learner selected option You cannot tell from the digits as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each digit is worth in its place.",
+            "reteach": "Reteach from the paired notes trap: Longer digit strings feel larger, but place value decides, not digit count. Match the place values first: 0.4 is 0.40, then tenths under tenths and hundredths under hundredths."
+          }
+        }
+      ],
+      "scriptCue": "s4"
+    }
+  ]
+}

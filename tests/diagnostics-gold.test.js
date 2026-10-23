@@ -28,7 +28,8 @@ const STEMS = [
   'jc-h2-differentiation',
   'jc-h2-cell-bio',
   'secondary-math-pythagoras',
-  'secondary-science-photosynthesis'
+  'secondary-science-photosynthesis',
+  'primary-math-decimals'
 ];
 
 function load(rel) {
@@ -78,8 +79,9 @@ for (const stem of STEMS) {
     const student = printable.renderDiagnostics(diag);
     const key = printable.renderDiagnosticsAnswerKey(diag);
     assert.ok(student.includes(diag.title), stem + ': student sheet carries its title');
-    assert.ok(!student.includes(entry.wrongTurn), stem + ': student sheet has no misconception code');
-    assert.ok(key.includes(entry.wrongTurn), stem + ': teacher key shows the misconception code');
+    // Renderers HTML-escape text, so the code is compared in its escaped form (the glossary/guide gold precedent); the verbatim pin above stays raw.
+    assert.ok(!student.includes(printable.escapeHtml(entry.wrongTurn)), stem + ': student sheet has no misconception code');
+    assert.ok(key.includes(printable.escapeHtml(entry.wrongTurn)), stem + ': teacher key shows the misconception code');
     for (const q of diag.doNow.concat(diag.hingeQuestions)) {
       for (const choice of q.choices) {
         if (choice.correct !== true) {

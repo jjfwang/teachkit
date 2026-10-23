@@ -1,0 +1,49 @@
+{
+  "title": "Decimals: place value and adding 0.4 + 0.25",
+  "level": "primary",
+  "subject": "math",
+  "topic": "decimals",
+  "complete": {
+    "problem": "Work out 0.4 + 0.25 by matching the places first, as in scene s3.",
+    "steps": [
+      {
+        "text": "Step 1: match the places first: 0.4 is rewritten as 0.40, because ten hundredths make one tenth.",
+        "annotation": "Zeros on the right of a decimal change nothing - 0.4 and 0.40 name the same amount in different places."
+      },
+      {
+        "text": "Step 2: line up tenths under tenths and hundredths under hundredths, then add: forty hundredths plus twenty-five hundredths makes sixty-five hundredths.",
+        "annotation": "Write 0.4 as 0.40 so both numbers talk in hundredths, then add place by place."
+      },
+      {
+        "text": "Step 3: so 0.40 + 0.25 = 0.65.",
+        "annotation": "Check each place: 4 tenths plus 2 tenths, 0 hundredths plus 5 hundredths."
+      }
+    ],
+    "selfExplanation": "Explain why writing 0.4 as 0.40 does not change its value."
+  },
+  "faded": {
+    "problem": "What is 3 tenths + 15 hundredths?",
+    "steps": [
+      {
+        "text": "Step 1: convert to hundredths first: 3 tenths is 30 hundredths.",
+        "annotation": "One tenth is ten hundredths, so count 3 tenths in hundredths.",
+        "withheld": false
+      },
+      {
+        "text": "Step 2: add the hundredths: 30 + 15 = 45 hundredths.",
+        "annotation": "Both amounts now talk in hundredths, so they add directly.",
+        "withheld": true
+      },
+      {
+        "text": "Step 3: 45 hundredths is 0.45, so 3 tenths + 15 hundredths = 0.45.",
+        "annotation": "Forty-five hundredths is written 0.45: 4 tenths and 5 hundredths.",
+        "withheld": true
+      }
+    ],
+    "selfExplanation": "The first step is shown. Say how the hundredths add, and what the final decimal is."
+  },
+  "paired": {
+    "problem": "Write 0.4 in hundredths and explain why the value does not change.",
+    "solution": "0.4 = 0.40: four tenths is the same amount as forty hundredths, because ten hundredths make one tenth."
+  }
+}
