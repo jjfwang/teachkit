@@ -1,0 +1,49 @@
+{
+  "title": "The Water Cycle",
+  "level": "primary",
+  "subject": "science",
+  "topic": "water-cycle",
+  "complete": {
+    "problem": "Explain how a puddle on the playground disappears on a sunny day.",
+    "steps": [
+      {
+        "text": "The Sun heats the water in the puddle.",
+        "annotation": "The Sun is the energy source that drives the water cycle."
+      },
+      {
+        "text": "The liquid water gains heat and evaporates, changing into water vapour.",
+        "annotation": "Evaporation is the change from liquid water to invisible water vapour, and it happens faster when the water is warmer."
+      },
+      {
+        "text": "The water vapour rises and mixes with the air, so the puddle shrinks until it is gone.",
+        "annotation": "The water has not vanished - it has moved into the air as vapour, ready to condense again elsewhere."
+      }
+    ],
+    "selfExplanation": "Explain where the puddle water has gone, using the word evaporate."
+  },
+  "faded": {
+    "problem": "Explain how rain forms after water evaporates from the sea.",
+    "steps": [
+      {
+        "text": "Water evaporates from the sea and rises as water vapour.",
+        "annotation": "Heat from the Sun drives evaporation from the sea surface.",
+        "withheld": false
+      },
+      {
+        "text": "High up, the air is colder, so the water vapour cools and condenses into tiny liquid droplets.",
+        "annotation": "Condensation is the change from water vapour back to liquid water, and it happens when vapour cools.",
+        "withheld": true
+      },
+      {
+        "text": "The droplets gather into clouds, grow heavier, and fall as rain.",
+        "annotation": "When the droplets are too heavy to stay in the air, gravity pulls them down as precipitation.",
+        "withheld": true
+      }
+    ],
+    "selfExplanation": "The first step is shown. Predict the next change of state and what causes it."
+  },
+  "paired": {
+    "problem": "Explain why wet clothes dry faster on a windy day than on a still day.",
+    "solution": "Water evaporates from the clothes into the air. On a windy day the moving air carries the water vapour away from the clothes, so the air next to the fabric stays dry and more liquid water can keep evaporating. On a still day the air near the clothes becomes damp, so evaporation slows down."
+  }
+}

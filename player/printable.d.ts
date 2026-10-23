@@ -185,4 +185,29 @@ export interface DiagnosticsSpec {
 }
 export function renderDiagnostics(spec: DiagnosticsSpec, options?: PrintableOptions): string;
 export function renderDiagnosticsAnswerKey(spec: DiagnosticsSpec, options?: PrintableOptions): string;
+export interface WorkedExampleStep {
+  text: string;
+  annotation?: string;
+  withheld?: boolean;
+  [key: string]: unknown;
+}
+export interface WorkedExample {
+  problem: string;
+  steps: WorkedExampleStep[];
+  selfExplanation: string;
+  [key: string]: unknown;
+}
+export interface WorkedExamplesSpec {
+  title: string;
+  level: string;
+  subject: string;
+  topic: string;
+  instructions?: string;
+  complete: WorkedExample;
+  faded: WorkedExample;
+  paired: { problem: string; solution: string; [key: string]: unknown };
+  [key: string]: unknown;
+}
+export function renderWorkedExamples(spec: WorkedExamplesSpec, options?: PrintableOptions): string;
+export function renderWorkedExamplesAnswerKey(spec: WorkedExamplesSpec, options?: PrintableOptions): string;
 export function escapeHtml(s: string): string;

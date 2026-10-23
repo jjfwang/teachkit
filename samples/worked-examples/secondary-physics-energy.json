@@ -1,0 +1,49 @@
+{
+  "title": "Energy: work, power and conservation",
+  "level": "secondary",
+  "subject": "science",
+  "topic": "phys-energy",
+  "complete": {
+    "problem": "A force of 20 N pushes a box 5 m along the floor. Calculate the work done.",
+    "steps": [
+      {
+        "text": "Recall the equation: work done = force x distance moved in the direction of the force.",
+        "annotation": "Work is the energy transferred when a force moves an object."
+      },
+      {
+        "text": "Substitute the values: work done = 20 N x 5 m.",
+        "annotation": "The distance must be measured along the line of action of the force."
+      },
+      {
+        "text": "Work done = 100 J.",
+        "annotation": "Force in newtons times distance in metres gives energy in joules."
+      }
+    ],
+    "selfExplanation": "Explain why no work is done on the box if it does not move, even when the force is large."
+  },
+  "faded": {
+    "problem": "A machine transfers 600 J of energy in 30 s. Calculate its power.",
+    "steps": [
+      {
+        "text": "Recall the equation: power = energy transferred / time taken.",
+        "annotation": "Power is the rate at which energy is transferred.",
+        "withheld": false
+      },
+      {
+        "text": "Substitute the values: power = 600 J / 30 s.",
+        "annotation": "Time must be in seconds so the power comes out in watts.",
+        "withheld": true
+      },
+      {
+        "text": "Power = 20 W.",
+        "annotation": "One watt is one joule transferred per second.",
+        "withheld": true
+      }
+    ],
+    "selfExplanation": "The first step is shown. State the substitution you would make and the unit of the answer."
+  },
+  "paired": {
+    "problem": "Calculate the kinetic energy of a 2 kg ball moving at 3 m/s.",
+    "solution": "Kinetic energy = 1/2 x m x v^2 = 1/2 x 2 kg x (3 m/s)^2 = 1/2 x 2 x 9 = 9 J. The speed is squared before multiplying by the mass."
+  }
+}

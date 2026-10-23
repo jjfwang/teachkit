@@ -1,0 +1,49 @@
+{
+  "title": "E-Math algebra: expansion, factorisation and changing the subject",
+  "level": "secondary",
+  "subject": "math",
+  "topic": "e-algebra",
+  "complete": {
+    "problem": "Factorise fully: 6x + 9.",
+    "steps": [
+      {
+        "text": "Find the highest common factor of 6x and 9: HCF = 3.",
+        "annotation": "Both terms are multiples of 3, and no larger factor is shared."
+      },
+      {
+        "text": "Divide each term by 3: 6x / 3 = 2x and 9 / 3 = 3.",
+        "annotation": "This gives the terms that will sit inside the bracket."
+      },
+      {
+        "text": "Write the factorised form: 6x + 9 = 3(2x + 3).",
+        "annotation": "The HCF goes outside the bracket; expanding 3(2x + 3) returns 6x + 9, which checks the answer."
+      }
+    ],
+    "selfExplanation": "Explain how expanding your answer proves the factorisation is correct."
+  },
+  "faded": {
+    "problem": "Expand and simplify: 2(x + 3) + 4x.",
+    "steps": [
+      {
+        "text": "Expand the bracket: 2(x + 3) = 2x + 6.",
+        "annotation": "Multiply every term inside the bracket by 2.",
+        "withheld": false
+      },
+      {
+        "text": "Collect the like terms: 2x + 4x = 6x.",
+        "annotation": "Only terms in the same variable can be combined.",
+        "withheld": true
+      },
+      {
+        "text": "Write the simplified answer: 6x + 6.",
+        "annotation": "The constant term 6 is unchanged by collecting the x terms.",
+        "withheld": true
+      }
+    ],
+    "selfExplanation": "The first step is shown. Say which terms you would combine next and why they can be combined."
+  },
+  "paired": {
+    "problem": "Make x the subject of y = 3x + 5.",
+    "solution": "Subtract 5 from both sides: y - 5 = 3x. Divide both sides by 3: x = (y - 5) / 3. Each step reverses one operation applied to x, in reverse order."
+  }
+}

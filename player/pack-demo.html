@@ -48,6 +48,7 @@
     <li>lessonPlan</li>
     <li>scaffolds</li>
     <li>diagnostics</li>
+    <li>workedExamples</li>
   </ul>
 </header>
 <header class="pack-manifest" id="fractions-manifest">
@@ -69,6 +70,7 @@
     <li>lessonPlan</li>
     <li>scaffolds</li>
     <li>diagnostics</li>
+    <li>workedExamples</li>
   </ul>
 </header>
 <header class="pack-manifest" id="waves-manifest">
@@ -373,6 +375,7 @@
     <li><code>lessonPlan</code> lesson plan</li>
     <li>scaffolds</li>
     <li>diagnostics</li>
+    <li>workedExamples</li>
   </ul>
 </header>
 <header class="pack-manifest" id="integration-jc-manifest">
@@ -558,6 +561,7 @@
     <li><code>lessonPlan</code> lesson plan</li>
     <li>scaffolds</li>
     <li>diagnostics</li>
+    <li>workedExamples</li>
   </ul>
 </header>
 <header class="pack-manifest" id="genetics-jc-manifest">
@@ -1013,6 +1017,7 @@
     <li><code>lessonPlan</code> lesson plan</li>
     <li>scaffolds</li>
     <li>diagnostics</li>
+    <li>workedExamples</li>
   </ul>
 </header>
 <header class="pack-manifest" id="e-functions-graphs-secondary-manifest">
@@ -1162,6 +1167,7 @@
     <li><code>lessonPlan</code> lesson plan</li>
     <li>scaffolds</li>
     <li>diagnostics</li>
+    <li>workedExamples</li>
   </ul>
 </header>
 <header class="pack-manifest" id="phys-electricity-secondary-manifest">
@@ -3029,6 +3035,7 @@
   var planUrl = '../samples/plans/primary-science-water-cycle.json';
   var scaffoldsUrl = '../samples/scaffolds/primary-science-water-cycle.json';
   var diagnosticsUrl = '../samples/diagnostics/primary-science-water-cycle.json';
+  var diagnosticsUrl = '../samples/worked-examples/primary-science-water-cycle.json';
 
   function showError(msg) {
     errBox.innerHTML = '<div class="ap-error">' + String(msg).replace(/</g, '&lt;') + '</div>';
@@ -3177,6 +3184,10 @@ var neighbourhoodChangePrimaryPrintStage = document.querySelector('#neighbourhoo
     fetch(diagnosticsUrl).then(function (r) {
       if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + diagnosticsUrl);
       return r.json();
+    }),
+    fetch(diagnosticsUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + diagnosticsUrl);
+      return r.json();
     })
   ]).then(function (pack) {
     var animSpec = pack[0];
@@ -3188,6 +3199,7 @@ var neighbourhoodChangePrimaryPrintStage = document.querySelector('#neighbourhoo
     var plan = pack[6];
     var scaffolds = pack[7];
     var diagnostics = pack[8];
+    var workedExamples = pack[9];
     var problems = AnimathValidate.validateSpec(animSpec)
       .concat(AnimathValidate.validateSlides(deck))
       .concat(AnimathValidate.validateWorksheet(worksheet))
@@ -3197,6 +3209,7 @@ var neighbourhoodChangePrimaryPrintStage = document.querySelector('#neighbourhoo
       .concat(AnimathValidate.validateLessonPlan(plan))
       .concat(AnimathValidate.validateScaffolds(scaffolds))
       .concat(AnimathValidate.validateDiagnostics(diagnostics));
+      .concat(AnimathValidate.validateWorkedExamples(workedExamples));
     if (problems.length) {
       showError('Lesson pack failed validation:\n' + problems.join('\n'));
       return;
@@ -3215,7 +3228,9 @@ var neighbourhoodChangePrimaryPrintStage = document.querySelector('#neighbourhoo
       AnimathPrintable.renderScaffolds(scaffolds) +
       AnimathPrintable.renderScaffoldsAnswerKey(scaffolds) +
       AnimathPrintable.renderDiagnostics(diagnostics) +
-      AnimathPrintable.renderDiagnosticsAnswerKey(diagnostics);
+      AnimathPrintable.renderDiagnosticsAnswerKey(diagnostics) +
+      AnimathPrintable.renderWorkedExamples(workedExamples) +
+      AnimathPrintable.renderWorkedExamplesAnswerKey(workedExamples);
   }).catch(function (e) {
     showError(e);
   });
@@ -3237,6 +3252,7 @@ var neighbourhoodChangePrimaryPrintStage = document.querySelector('#neighbourhoo
   var fractionsPlanUrl = '../samples/plans/primary-math-fractions-addition.json';
   var fractionsScaffoldsUrl = '../samples/scaffolds/primary-math-fractions-addition.json';
   var fractionsDiagnosticsUrl = '../samples/diagnostics/primary-math-fractions-addition.json';
+  var fractionsWorkedExamplesUrl = '../samples/worked-examples/primary-math-fractions-addition.json';
 
   function showError(msg) {
     fractionsErrBox.innerHTML = '<div class="ap-error">' + String(msg).replace(/</g, '&lt;') + '</div>';
@@ -3278,6 +3294,10 @@ var neighbourhoodChangePrimaryPrintStage = document.querySelector('#neighbourhoo
     fetch(fractionsDiagnosticsUrl).then(function (r) {
       if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + fractionsDiagnosticsUrl);
       return r.json();
+    }),
+    fetch(fractionsWorkedExamplesUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + fractionsWorkedExamplesUrl);
+      return r.json();
     })
   ]).then(function (pack) {
     var fractionsAnim = pack[0];
@@ -3289,6 +3309,7 @@ var neighbourhoodChangePrimaryPrintStage = document.querySelector('#neighbourhoo
     var fractionsPlan = pack[6];
     var fractionsScaffolds = pack[7];
     var fractionsDiagnostics = pack[8];
+    var fractionsWorkedExamples = pack[9];
     var problems = AnimathValidate.validateSpec(fractionsAnim)
       .concat(AnimathValidate.validateSlides(fractionsDeck))
       .concat(AnimathValidate.validateWorksheet(fractionsWorksheet))
@@ -3298,6 +3319,7 @@ var neighbourhoodChangePrimaryPrintStage = document.querySelector('#neighbourhoo
       .concat(AnimathValidate.validateLessonPlan(fractionsPlan))
       .concat(AnimathValidate.validateScaffolds(fractionsScaffolds))
       .concat(AnimathValidate.validateDiagnostics(fractionsDiagnostics));
+      .concat(AnimathValidate.validateWorkedExamples(fractionsWorkedExamples));
     if (problems.length) {
       showError('Lesson pack failed validation:\n' + problems.join('\n'));
       return;
@@ -3316,7 +3338,9 @@ var neighbourhoodChangePrimaryPrintStage = document.querySelector('#neighbourhoo
       AnimathPrintable.renderScaffolds(fractionsScaffolds) +
       AnimathPrintable.renderScaffoldsAnswerKey(fractionsScaffolds) +
       AnimathPrintable.renderDiagnostics(fractionsDiagnostics) +
-      AnimathPrintable.renderDiagnosticsAnswerKey(fractionsDiagnostics);
+      AnimathPrintable.renderDiagnosticsAnswerKey(fractionsDiagnostics) +
+      AnimathPrintable.renderWorkedExamples(fractionsWorkedExamples) +
+      AnimathPrintable.renderWorkedExamplesAnswerKey(fractionsWorkedExamples);
   }).catch(function (e) {
     showError(e);
   });
@@ -4473,6 +4497,7 @@ var neighbourhoodChangePrimaryPrintStage = document.querySelector('#neighbourhoo
   var differentiationJcPlanUrl = '../samples/plans/jc-h2-differentiation.json';
   var differentiationJcScaffoldsUrl = '../samples/scaffolds/jc-h2-differentiation.json';
   var differentiationJcDiagnosticsUrl = '../samples/diagnostics/jc-h2-differentiation.json';
+  var differentiationJcWorkedExamplesUrl = '../samples/worked-examples/jc-h2-differentiation.json';
 
   function showError(msg) {
     errBox.textContent = String(msg);
@@ -4514,6 +4539,10 @@ var neighbourhoodChangePrimaryPrintStage = document.querySelector('#neighbourhoo
     fetch(differentiationJcDiagnosticsUrl).then(function (r) {
       if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + differentiationJcDiagnosticsUrl);
       return r.json();
+    }),
+    fetch(differentiationJcWorkedExamplesUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + differentiationJcWorkedExamplesUrl);
+      return r.json();
     })
   ]).then(function (pack) {
     var anim = pack[0];
@@ -4525,6 +4554,7 @@ var neighbourhoodChangePrimaryPrintStage = document.querySelector('#neighbourhoo
     var plan = pack[6];
     var scaffolds = pack[7];
     var diagnostics = pack[8];
+    var workedExamples = pack[9];
     var problems = AnimathValidate.validateSpec(anim)
       .concat(AnimathValidate.validateSlides(deck))
       .concat(AnimathValidate.validateWorksheet(worksheet))
@@ -4534,6 +4564,7 @@ var neighbourhoodChangePrimaryPrintStage = document.querySelector('#neighbourhoo
       .concat(AnimathValidate.validateLessonPlan(plan))
       .concat(AnimathValidate.validateScaffolds(scaffolds))
       .concat(AnimathValidate.validateDiagnostics(diagnostics));
+      .concat(AnimathValidate.validateWorkedExamples(workedExamples));
     if (problems.length) {
       showError('JC H2 differentiation pack failed validation:\n' + problems.join('\n'));
       return;
@@ -4551,7 +4582,9 @@ var neighbourhoodChangePrimaryPrintStage = document.querySelector('#neighbourhoo
       AnimathPrintable.renderScaffolds(scaffolds),
       AnimathPrintable.renderScaffoldsAnswerKey(scaffolds),
       AnimathPrintable.renderDiagnostics(diagnostics),
-      AnimathPrintable.renderDiagnosticsAnswerKey(diagnostics)
+      AnimathPrintable.renderDiagnosticsAnswerKey(diagnostics),
+      AnimathPrintable.renderWorkedExamples(workedExamples),
+      AnimathPrintable.renderWorkedExamplesAnswerKey(workedExamples)
     ].join('');
   }).catch(function (err) {
     showError('JC H2 differentiation pack failed to load: ' + err.message);
@@ -5228,6 +5261,7 @@ var neighbourhoodChangePrimaryPrintStage = document.querySelector('#neighbourhoo
   var cellBioJcPlanUrl = '../samples/plans/jc-h2-cell-bio.json';
   var cellBioJcScaffoldsUrl = '../samples/scaffolds/jc-h2-cell-bio.json';
   var cellBioJcDiagnosticsUrl = '../samples/diagnostics/jc-h2-cell-bio.json';
+  var cellBioJcWorkedExamplesUrl = '../samples/worked-examples/jc-h2-cell-bio.json';
 
   function showError(msg) {
     errBox.textContent = String(msg);
@@ -5269,6 +5303,10 @@ var neighbourhoodChangePrimaryPrintStage = document.querySelector('#neighbourhoo
     fetch(cellBioJcDiagnosticsUrl).then(function (r) {
       if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + cellBioJcDiagnosticsUrl);
       return r.json();
+    }),
+    fetch(cellBioJcWorkedExamplesUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + cellBioJcWorkedExamplesUrl);
+      return r.json();
     })
   ]).then(function (pack) {
     var anim = pack[0];
@@ -5280,6 +5318,7 @@ var neighbourhoodChangePrimaryPrintStage = document.querySelector('#neighbourhoo
     var plan = pack[6];
     var scaffolds = pack[7];
     var diagnostics = pack[8];
+    var workedExamples = pack[9];
     var problems = AnimathValidate.validateSpec(anim)
       .concat(AnimathValidate.validateSlides(deck))
       .concat(AnimathValidate.validateWorksheet(worksheet))
@@ -5289,6 +5328,7 @@ var neighbourhoodChangePrimaryPrintStage = document.querySelector('#neighbourhoo
       .concat(AnimathValidate.validateLessonPlan(plan))
       .concat(AnimathValidate.validateScaffolds(scaffolds))
       .concat(AnimathValidate.validateDiagnostics(diagnostics));
+      .concat(AnimathValidate.validateWorkedExamples(workedExamples));
     if (problems.length) {
       showError('JC H2 cell biology pack failed validation:\n' + problems.join('\n'));
       return;
@@ -5306,7 +5346,9 @@ var neighbourhoodChangePrimaryPrintStage = document.querySelector('#neighbourhoo
       AnimathPrintable.renderScaffolds(scaffolds),
       AnimathPrintable.renderScaffoldsAnswerKey(scaffolds),
       AnimathPrintable.renderDiagnostics(diagnostics),
-      AnimathPrintable.renderDiagnosticsAnswerKey(diagnostics)
+      AnimathPrintable.renderDiagnosticsAnswerKey(diagnostics),
+      AnimathPrintable.renderWorkedExamples(workedExamples),
+      AnimathPrintable.renderWorkedExamplesAnswerKey(workedExamples)
     ].join('');
   }).catch(function (err) {
     showError('JC H2 cell biology pack failed to load: ' + err.message);
@@ -7079,6 +7121,7 @@ var neighbourhoodChangePrimaryPrintStage = document.querySelector('#neighbourhoo
   var eAlgebraSecondaryPlanUrl = '../samples/plans/secondary-e-algebra.json';
   var eAlgebraSecondaryScaffoldsUrl = '../samples/scaffolds/secondary-e-algebra.json';
   var eAlgebraSecondaryDiagnosticsUrl = '../samples/diagnostics/secondary-e-algebra.json';
+  var eAlgebraSecondaryWorkedExamplesUrl = '../samples/worked-examples/secondary-e-algebra.json';
 
   function showError(msg) {
     errBox.textContent = String(msg);
@@ -7120,6 +7163,10 @@ var neighbourhoodChangePrimaryPrintStage = document.querySelector('#neighbourhoo
     fetch(eAlgebraSecondaryDiagnosticsUrl).then(function (r) {
       if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + eAlgebraSecondaryDiagnosticsUrl);
       return r.json();
+    }),
+    fetch(eAlgebraSecondaryWorkedExamplesUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + eAlgebraSecondaryWorkedExamplesUrl);
+      return r.json();
     })
   ]).then(function (pack) {
     var anim = pack[0];
@@ -7131,6 +7178,7 @@ var neighbourhoodChangePrimaryPrintStage = document.querySelector('#neighbourhoo
     var plan = pack[6];
     var scaffolds = pack[7];
     var diagnostics = pack[8];
+    var workedExamples = pack[9];
     var problems = AnimathValidate.validateSpec(anim)
       .concat(AnimathValidate.validateSlides(deck))
       .concat(AnimathValidate.validateWorksheet(worksheet))
@@ -7140,6 +7188,7 @@ var neighbourhoodChangePrimaryPrintStage = document.querySelector('#neighbourhoo
       .concat(AnimathValidate.validateLessonPlan(plan))
       .concat(AnimathValidate.validateScaffolds(scaffolds))
       .concat(AnimathValidate.validateDiagnostics(diagnostics));
+      .concat(AnimathValidate.validateWorkedExamples(workedExamples));
     if (problems.length) {
       showError('Secondary E-Math algebra pack failed validation:\n' + problems.join('\n'));
       return;
@@ -7157,7 +7206,9 @@ var neighbourhoodChangePrimaryPrintStage = document.querySelector('#neighbourhoo
       AnimathPrintable.renderScaffolds(scaffolds),
       AnimathPrintable.renderScaffoldsAnswerKey(scaffolds),
       AnimathPrintable.renderDiagnostics(diagnostics),
-      AnimathPrintable.renderDiagnosticsAnswerKey(diagnostics)
+      AnimathPrintable.renderDiagnosticsAnswerKey(diagnostics),
+      AnimathPrintable.renderWorkedExamples(workedExamples),
+      AnimathPrintable.renderWorkedExamplesAnswerKey(workedExamples)
     ].join('');
   }).catch(function (err) {
     showError('Secondary E-Math algebra pack failed to load: ' + err.message);
@@ -7689,6 +7740,7 @@ var neighbourhoodChangePrimaryPrintStage = document.querySelector('#neighbourhoo
   var physEnergySecondaryPlanUrl = '../samples/plans/secondary-physics-energy.json';
   var physEnergySecondaryScaffoldsUrl = '../samples/scaffolds/secondary-physics-energy.json';
   var physEnergySecondaryDiagnosticsUrl = '../samples/diagnostics/secondary-physics-energy.json';
+  var physEnergySecondaryWorkedExamplesUrl = '../samples/worked-examples/secondary-physics-energy.json';
 
   function showError(msg) {
     errBox.textContent = String(msg);
@@ -7730,6 +7782,10 @@ var neighbourhoodChangePrimaryPrintStage = document.querySelector('#neighbourhoo
     fetch(physEnergySecondaryDiagnosticsUrl).then(function (r) {
       if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + physEnergySecondaryDiagnosticsUrl);
       return r.json();
+    }),
+    fetch(physEnergySecondaryWorkedExamplesUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + physEnergySecondaryWorkedExamplesUrl);
+      return r.json();
     })
   ]).then(function (pack) {
     var anim = pack[0];
@@ -7741,6 +7797,7 @@ var neighbourhoodChangePrimaryPrintStage = document.querySelector('#neighbourhoo
     var plan = pack[6];
     var scaffolds = pack[7];
     var diagnostics = pack[8];
+    var workedExamples = pack[9];
     var problems = AnimathValidate.validateSpec(anim)
       .concat(AnimathValidate.validateSlides(deck))
       .concat(AnimathValidate.validateWorksheet(worksheet))
@@ -7750,6 +7807,7 @@ var neighbourhoodChangePrimaryPrintStage = document.querySelector('#neighbourhoo
       .concat(AnimathValidate.validateLessonPlan(plan))
       .concat(AnimathValidate.validateScaffolds(scaffolds))
       .concat(AnimathValidate.validateDiagnostics(diagnostics));
+      .concat(AnimathValidate.validateWorkedExamples(workedExamples));
     if (problems.length) {
       showError('Secondary Physics energy pack failed validation:\n' + problems.join('\n'));
       return;
@@ -7767,7 +7825,9 @@ var neighbourhoodChangePrimaryPrintStage = document.querySelector('#neighbourhoo
       AnimathPrintable.renderScaffolds(scaffolds),
       AnimathPrintable.renderScaffoldsAnswerKey(scaffolds),
       AnimathPrintable.renderDiagnostics(diagnostics),
-      AnimathPrintable.renderDiagnosticsAnswerKey(diagnostics)
+      AnimathPrintable.renderDiagnosticsAnswerKey(diagnostics),
+      AnimathPrintable.renderWorkedExamples(workedExamples),
+      AnimathPrintable.renderWorkedExamplesAnswerKey(workedExamples)
     ].join('');
   }).catch(function (err) {
     showError('Secondary Physics energy pack failed to load: ' + err.message);

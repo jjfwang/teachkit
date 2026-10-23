@@ -1,0 +1,49 @@
+{
+  "title": "JC H2 biology — cell: ultrastructure and biomolecules",
+  "level": "jc",
+  "subject": "science",
+  "topic": "h2-cell-bio",
+  "complete": {
+    "problem": "A micrograph shows a cell structure measuring 30 mm. Its actual length is 0.02 mm. Calculate the magnification of the micrograph.",
+    "steps": [
+      {
+        "text": "Recall the equation: magnification = size of image / actual size.",
+        "annotation": "Magnification compares the drawn or photographed size with the real size, in the same units."
+      },
+      {
+        "text": "Substitute the values: magnification = 30 mm / 0.02 mm.",
+        "annotation": "Both lengths are already in millimetres, so no unit conversion is needed."
+      },
+      {
+        "text": "Magnification = 1500 (x1500).",
+        "annotation": "Magnification is a ratio, so it carries no unit."
+      }
+    ],
+    "selfExplanation": "Explain why both lengths must be in the same unit before dividing."
+  },
+  "faded": {
+    "problem": "Calculate the surface area to volume ratio of a cube-shaped cell of side 2 micrometres.",
+    "steps": [
+      {
+        "text": "Surface area = 6 x 2^2 = 24 micrometres^2.",
+        "annotation": "A cube has six faces, each of area side squared.",
+        "withheld": false
+      },
+      {
+        "text": "Volume = 2^3 = 8 micrometres^3.",
+        "annotation": "Volume of a cube is side cubed.",
+        "withheld": true
+      },
+      {
+        "text": "Surface area : volume = 24 : 8 = 3 : 1.",
+        "annotation": "Divide both sides by the volume to express the ratio per unit volume.",
+        "withheld": true
+      }
+    ],
+    "selfExplanation": "The first step is shown. Say which quantity you would calculate next and how."
+  },
+  "paired": {
+    "problem": "Calculate the surface area to volume ratio of a cube-shaped cell of side 4 micrometres, and state what happens to the ratio as the cell grows.",
+    "solution": "Surface area = 6 x 4^2 = 96 micrometres^2. Volume = 4^3 = 64 micrometres^3. Ratio = 96 : 64 = 1.5 : 1. The ratio is smaller than for the 2 micrometre cell (3 : 1): as a cell grows, its surface area to volume ratio falls, so diffusion alone can no longer supply its volume and exchange surfaces or a transport system are needed."
+  }
+}
