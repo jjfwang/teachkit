@@ -1,0 +1,56 @@
+{
+  "title": "Percentage: 25% of 60",
+  "level": "primary",
+  "subject": "math",
+  "topic": "percentage",
+  "items": [
+    {
+      "prompt": "What is 25% of 60?",
+      "answer": "15",
+      "choices": [
+        "25",
+        "15",
+        "40",
+        "240"
+      ],
+      "misconceptionCode": "25% of 60 is just 25."
+    },
+    {
+      "prompt": "What does 25% mean?",
+      "answer": "25 out of 100",
+      "choices": [
+        "25 out of 100",
+        "25 out of 60",
+        "The plain number 25",
+        "25 out of 25"
+      ]
+    },
+    {
+      "prompt": "Write 25% as a fraction in its simplest form and explain the step.",
+      "answer": "25% = 25/100 = 1/4: divide the top and the bottom by 25."
+    },
+    {
+      "prompt": "What is 10% of 60?",
+      "answer": "6",
+      "choices": [
+        "10",
+        "6",
+        "16",
+        "50"
+      ]
+    },
+    {
+      "prompt": "25% as a fraction in its simplest form is...",
+      "answer": "1/4",
+      "choices": [
+        "1/4",
+        "25/60",
+        "1/25"
+      ]
+    },
+    {
+      "prompt": "Explain why 25% of 60 cannot be 25.",
+      "answer": "The 25 in 25% counts out of one hundred, not out of 60: the answer is a share of 60, and one quarter of 60 is 15."
+    }
+  ]
+}

@@ -29,7 +29,8 @@ const STEMS = [
   'jc-h2-cell-bio',
   'secondary-math-pythagoras',
   'secondary-science-photosynthesis',
-  'primary-math-decimals'
+  'primary-math-decimals',
+  'primary-math-percentage'
 ];
 
 function load(rel) {

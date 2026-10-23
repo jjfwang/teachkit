@@ -1,0 +1,193 @@
+{
+  "title": "Percentage: 25% of 60",
+  "level": "primary",
+  "subject": "math",
+  "topic": "percentage",
+  "doNow": [
+    {
+      "id": "dn1",
+      "prompt": "What is 25% of 60?",
+      "kind": "multiple-choice",
+      "choices": [
+        {
+          "text": "25",
+          "misconception": "25% of 60 is just 25.",
+          "rationale": {
+            "chose": "The learner selected option 25 as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of reading the percent as a count out of one hundred.",
+            "reteach": "Reteach from the paired notes trap: The 25 is read as a raw count instead of 25 out of 100. Percent means per hundred, and the whole here is 60: 25% of 60 is a quarter of 60, which is 15."
+          }
+        },
+        {
+          "text": "15",
+          "correct": true
+        },
+        {
+          "text": "40",
+          "misconception": "25% of 60 is just 25.",
+          "rationale": {
+            "chose": "The learner selected option 40 as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of reading the percent as a count out of one hundred.",
+            "reteach": "Reteach from the paired notes trap: The 25 is read as a raw count instead of 25 out of 100. Percent means per hundred, and the whole here is 60: 25% of 60 is a quarter of 60, which is 15."
+          }
+        },
+        {
+          "text": "240",
+          "misconception": "25% of 60 is just 25.",
+          "rationale": {
+            "chose": "The learner selected option 240 as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of reading the percent as a count out of one hundred.",
+            "reteach": "Reteach from the paired notes trap: The 25 is read as a raw count instead of 25 out of 100. Percent means per hundred, and the whole here is 60: 25% of 60 is a quarter of 60, which is 15."
+          }
+        }
+      ]
+    },
+    {
+      "id": "dn2",
+      "prompt": "What does 25% mean?",
+      "kind": "multiple-choice",
+      "choices": [
+        {
+          "text": "25 out of 100",
+          "correct": true
+        },
+        {
+          "text": "25 out of 60",
+          "misconception": "25% of 60 is just 25.",
+          "rationale": {
+            "chose": "The learner selected option 25 out of 60 as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of reading the percent as a count out of one hundred.",
+            "reteach": "Reteach from the paired notes trap: The 25 is read as a raw count instead of 25 out of 100. Percent means per hundred, and the whole here is 60: 25% of 60 is a quarter of 60, which is 15."
+          }
+        },
+        {
+          "text": "The plain number 25",
+          "misconception": "25% of 60 is just 25.",
+          "rationale": {
+            "chose": "The learner selected option The plain number 25 as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of reading the percent as a count out of one hundred.",
+            "reteach": "Reteach from the paired notes trap: The 25 is read as a raw count instead of 25 out of 100. Percent means per hundred, and the whole here is 60: 25% of 60 is a quarter of 60, which is 15."
+          }
+        },
+        {
+          "text": "25 out of 25",
+          "misconception": "25% of 60 is just 25.",
+          "rationale": {
+            "chose": "The learner selected option 25 out of 25 as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of reading the percent as a count out of one hundred.",
+            "reteach": "Reteach from the paired notes trap: The 25 is read as a raw count instead of 25 out of 100. Percent means per hundred, and the whole here is 60: 25% of 60 is a quarter of 60, which is 15."
+          }
+        }
+      ]
+    },
+    {
+      "id": "dn3",
+      "prompt": "25% as a fraction in its simplest form is...",
+      "kind": "multiple-choice",
+      "choices": [
+        {
+          "text": "1/4",
+          "correct": true
+        },
+        {
+          "text": "25/60",
+          "misconception": "25% of 60 is just 25.",
+          "rationale": {
+            "chose": "The learner selected option 25/60 as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of reading the percent as a count out of one hundred.",
+            "reteach": "Reteach from the paired notes trap: The 25 is read as a raw count instead of 25 out of 100. Percent means per hundred, and the whole here is 60: 25% of 60 is a quarter of 60, which is 15."
+          }
+        },
+        {
+          "text": "1/25",
+          "misconception": "25% of 60 is just 25.",
+          "rationale": {
+            "chose": "The learner selected option 1/25 as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of reading the percent as a count out of one hundred.",
+            "reteach": "Reteach from the paired notes trap: The 25 is read as a raw count instead of 25 out of 100. Percent means per hundred, and the whole here is 60: 25% of 60 is a quarter of 60, which is 15."
+          }
+        }
+      ]
+    }
+  ],
+  "hingeQuestions": [
+    {
+      "id": "h1",
+      "prompt": "Work out 25% of 60, showing the quarter step.",
+      "kind": "multiple-choice",
+      "choices": [
+        {
+          "text": "25% is one quarter, and 60 / 4 = 15, so 25% of 60 = 15",
+          "correct": true
+        },
+        {
+          "text": "25% of 60 = 25, because the question says 25",
+          "misconception": "25% of 60 is just 25.",
+          "rationale": {
+            "chose": "The learner selected option 25% of 60 = 25, because the question says 25 as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of reading the percent as a count out of one hundred.",
+            "reteach": "Reteach from the paired notes trap: The 25 is read as a raw count instead of 25 out of 100. Percent means per hundred, and the whole here is 60: 25% of 60 is a quarter of 60, which is 15."
+          }
+        },
+        {
+          "text": "25% of 60 = 2.4, because 60 / 25 = 2.4",
+          "misconception": "25% of 60 is just 25.",
+          "rationale": {
+            "chose": "The learner selected option 25% of 60 = 2.4, because 60 / 25 = 2.4 as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of reading the percent as a count out of one hundred.",
+            "reteach": "Reteach from the paired notes trap: The 25 is read as a raw count instead of 25 out of 100. Percent means per hundred, and the whole here is 60: 25% of 60 is a quarter of 60, which is 15."
+          }
+        },
+        {
+          "text": "25% of 60 = 240, because four quarters of 60 make 240",
+          "misconception": "25% of 60 is just 25.",
+          "rationale": {
+            "chose": "The learner selected option 25% of 60 = 240, because four quarters of 60 make 240 as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of reading the percent as a count out of one hundred.",
+            "reteach": "Reteach from the paired notes trap: The 25 is read as a raw count instead of 25 out of 100. Percent means per hundred, and the whole here is 60: 25% of 60 is a quarter of 60, which is 15."
+          }
+        }
+      ],
+      "scriptCue": "s3"
+    },
+    {
+      "id": "h2",
+      "prompt": "Explain why 25% of 60 cannot be 25.",
+      "kind": "multiple-choice",
+      "choices": [
+        {
+          "text": "The 25 in 25% counts out of one hundred, not out of 60: the answer is a share of 60, and one quarter of 60 is 15",
+          "correct": true
+        },
+        {
+          "text": "It can be 25, because 25% contains the number 25",
+          "misconception": "25% of 60 is just 25.",
+          "rationale": {
+            "chose": "The learner selected option It can be 25, because 25% contains the number 25 as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of reading the percent as a count out of one hundred.",
+            "reteach": "Reteach from the paired notes trap: The 25 is read as a raw count instead of 25 out of 100. Percent means per hundred, and the whole here is 60: 25% of 60 is a quarter of 60, which is 15."
+          }
+        },
+        {
+          "text": "It cannot be 25 because 25 is more than a quarter of 100",
+          "misconception": "25% of 60 is just 25.",
+          "rationale": {
+            "chose": "The learner selected option It cannot be 25 because 25 is more than a quarter of 100 as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of reading the percent as a count out of one hundred.",
+            "reteach": "Reteach from the paired notes trap: The 25 is read as a raw count instead of 25 out of 100. Percent means per hundred, and the whole here is 60: 25% of 60 is a quarter of 60, which is 15."
+          }
+        },
+        {
+          "text": "It cannot be 25 because a percent of a quantity is always less than 10",
+          "misconception": "25% of 60 is just 25.",
+          "rationale": {
+            "chose": "The learner selected option It cannot be 25 because a percent of a quantity is always less than 10 as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of reading the percent as a count out of one hundred.",
+            "reteach": "Reteach from the paired notes trap: The 25 is read as a raw count instead of 25 out of 100. Percent means per hundred, and the whole here is 60: 25% of 60 is a quarter of 60, which is 15."
+          }
+        }
+      ],
+      "scriptCue": "s4"
+    }
+  ]
+}
