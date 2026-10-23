@@ -10,6 +10,10 @@ version section when the release ships.
 
 ## [Unreleased]
 
+### Fixed
+
+- Pipeline file header comment (issue #1265): the top-of-file header in generator/pipeline.js now says generateLessonPack authors all eleven materials and names the quiz bank last, matching SPEC.md and the generateLessonPack docblock after the issue #1263 fold-in. Comment-only; no behavior change. (2026-10-23)
+
 ### Added
 
 - Quiz bank lesson-pack fold-in (issue #1263, slice 5 of #1254): the quiz bank joins the generated lesson pack as its eleventh and last material - SPEC.md's Lesson pack spec moves from ten materials to eleven (quizBank appended last in pack order, validating via validateQuizBank, with the manifest materials list exactly the eleven keys in pack order, and the failure-semantics text noting the quiz bank is authored from the same shared unpack and the already-resolved misconception bank entry), generateLessonPack gains the quizBank validator resolver in its validators map (a missing quizBank validator rejects before any authoring, naming quizBank) and a quizBank job authored last from the shared unpack through buildQuizBankPrompts and validateQuizBank with the quiz-bank repair kind, taking the bank triple from the entry already resolved pre-authoring for diagnostics (no second resolution, no new failure mode; a quiz bank that exhausts its repair cap rejects the whole pack with err.material naming quizBank), and the pipeline pack types (GenerateLessonPackDeps.validateQuizBank, LessonPackResult.quizBank) follow. Pinned by the extended tests/pipeline-lesson-pack.test.js (eleven validate-clean materials, twelve calls, pack.quizBank deep-equal to the gold water-cycle quiz bank, the eleven-key manifest materials list, and a quizBank-failure test) and the quiz bank route added to the tests/pack-metadata.test.js stub. This completes issue #1254 and Phase C of epic #1204. (2026-10-23)

@@ -30,9 +30,9 @@
  * generateNotes and generateScript (issue #768) are the same kind of
  * sibling (build_notes_prompt.js / build_script_prompt.js, validateNotes
  * / validateScript). generateLessonPack (issue #768) runs ONE shared
- * unpack stage, then authors all ten materials from it (animation,
+ * unpack stage, then authors all eleven materials from it (animation,
  * slides, worksheet, notes, exit ticket, teacher script, lesson plan,
- * scaffolds, diagnostics, worked examples)
+ * scaffolds, diagnostics, worked examples, quiz bank)
  * and resolves with a pack manifest; packs are cached in memory by
  * topic slug.
  */
