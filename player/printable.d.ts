@@ -328,4 +328,19 @@ export interface OrganisersSpec {
 }
 export function renderOrganisers(spec: OrganisersSpec, options?: PrintableOptions): string;
 export function renderOrganisersKey(spec: OrganisersSpec, options?: PrintableOptions): string;
+export interface GlossaryEntry {
+  term: string;
+  meaning: string;
+  example: string;
+  [key: string]: unknown;
+}
+export interface GlossarySpec {
+  title: string;
+  level: string;
+  subject: string;
+  topic: string;
+  entries: GlossaryEntry[];
+  [key: string]: unknown;
+}
+export function renderGlossary(spec: GlossarySpec, options?: PrintableOptions): string;
 export function escapeHtml(s: string): string;

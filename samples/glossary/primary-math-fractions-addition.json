@@ -1,0 +1,33 @@
+{
+  "title": "Adding fractions: 1/2 + 1/4",
+  "level": "primary",
+  "subject": "math",
+  "topic": "fractions",
+  "entries": [
+    {
+      "term": "Fraction",
+      "meaning": "A part of a whole, written as one number over another: the top number counts the pieces taken and the bottom number names the piece size.",
+      "example": "Work out 1/2 + 1/4. The pieces are different sizes, so first convert the half into quarters: a quarter fits inside a half exactly twice, so 1/2 = 2/4. Now every piece is a quarter, so add the tops and keep the bottom: 2/4 + 1/4 = 3/4. The answer is 3/4 - never 2/6, because the bottom number names the piece size and the pieces stayed quarters throughout."
+    },
+    {
+      "term": "Numerator",
+      "meaning": "The top number of a fraction. It counts how many pieces you have.",
+      "example": "Adding fractions: pose the sum 1/2 + 1/4 - the pieces are different sizes, halves and quarters, so they cannot be counted together yet."
+    },
+    {
+      "term": "Denominator",
+      "meaning": "The bottom number of a fraction. It names the piece size - how many equal pieces the whole was cut into - so quarters have denominator 4.",
+      "example": "Make the pieces the same size: split the half into 2 quarters, so 1/2 = 2/4 and every piece in the sum is now a quarter."
+    },
+    {
+      "term": "Equivalent fraction",
+      "meaning": "A fraction that names the same amount with different numbers, made by re-cutting the pieces: 1/2 and 2/4 are equivalent fractions.",
+      "example": "Count the quarters: add the tops and keep the bottom, 2/4 + 1/4 = 3/4 - the bottom number stays 4 because the piece size never changed."
+    },
+    {
+      "term": "Common denominator",
+      "meaning": "A shared piece size that lets two fractions be added: quarters are the common denominator for 1/2 and 1/4, because 1/2 = 2/4.",
+      "example": "Watch out: reject 2/6 - adding the tops and the bottoms pretends the pieces became sixths, but no sixth was ever cut."
+    }
+  ]
+}

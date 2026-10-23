@@ -184,6 +184,19 @@
     if (errors.length) throw new Error('invalid organisers: ' + errors.join('; '));
   }
 
+  function getValidateGlossary() {
+    var g = global.AnimathValidate;
+    if (g) return g.validateGlossary || null;
+    return typeof require !== 'undefined' ? require('./validate.js').validateGlossary : null;
+  }
+
+  function assertValidGlossary(spec) {
+    var fn = getValidateGlossary();
+    if (!fn) throw new Error('animath printable: player/validate.js is missing - include it before printable.js so specs can be validated');
+    var errors = fn(spec);
+    if (errors.length) throw new Error('invalid glossary: ' + errors.join('; '));
+  }
+
   // HTML-escape for text content and double-quoted attribute values,
   // the export-frames.js esc chain: & first, then <, >, ".
   function escapeHtml(s) {
@@ -971,6 +984,25 @@
     return parts.join('\n');
   }
 
+  // Glossary reference sheet: the finished reference for one topic -
+  // the header plus every entry's term, meaning and example. A
+  // glossary withholds nothing, so there is no separate key renderer.
+  function renderGlossary(spec, options) {
+    assertValidGlossary(spec);
+    var parts = sheetHeader(spec, 'pr-sheet pr-reference pr-glossary', 'Glossary', normalizeOptions(options));
+    parts.push('<dl class="pr-entries">');
+    spec.entries.forEach(function (entry) {
+      parts.push('<div class="pr-entry">');
+      parts.push('<dt class="pr-term">' + escapeHtml(entry.term) + '</dt>');
+      parts.push('<dd class="pr-meaning">' + escapeHtml(entry.meaning) + '</dd>');
+      parts.push('<dd class="pr-example">Example: ' + escapeHtml(entry.example) + '</dd>');
+      parts.push('</div>');
+    });
+    parts.push('</dl>');
+    parts.push('</section>');
+    return parts.join('\n');
+  }
+
   var api = {
     renderWorksheet: renderWorksheet,
     renderWorksheetAnswerKey: renderWorksheetAnswerKey,
@@ -993,6 +1025,7 @@
     renderRevisionAnswerKey: renderRevisionAnswerKey,
     renderOrganisers: renderOrganisers,
     renderOrganisersKey: renderOrganisersKey,
+    renderGlossary: renderGlossary,
     escapeHtml: escapeHtml
   };
   global.AnimathPrintable = api;

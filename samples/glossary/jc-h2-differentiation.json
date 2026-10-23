@@ -1,0 +1,38 @@
+{
+  "title": "JC H2 differentiation: connected rates of change",
+  "level": "jc",
+  "subject": "math",
+  "topic": "h2-differentiation",
+  "entries": [
+    {
+      "term": "Connected rates of change",
+      "meaning": "Rates of linked quantities: when a relation ties two quantities together, their rates of change are tied too, as the radius of a circle drags its area along.",
+      "example": "Take the 5-unit ladder with relation x^2 + y^2 = 25. Differentiate with respect to time: 2x dx/dt + 2y dy/dt = 0. At the snapshot instant x = 3, y = 4 (a 3-4-5 triangle) with the foot sliding out at dx/dt = 1, substitution gives 6 + 8 dy/dt = 0, so dy/dt = -3/4 = -0.75 units per second: the top slides down at 0.75 units per second, and the minus sign records that y is decreasing."
+    },
+    {
+      "term": "Chain rule",
+      "meaning": "The rule that differentiates a quantity through a link: for A = pi r^2 changing with time, dA/dt = dA/dr x dr/dt = 2 pi r dr/dt.",
+      "example": "Rates that pull each other along: as the radius of a circle grows, its area must grow too - the rate dA/dt is linked to the rate dr/dt by the relation between the quantities."
+    },
+    {
+      "term": "Derivative",
+      "meaning": "The rate of change of one quantity with respect to another, defined as a limit: dy/dx is the limit of the average rate as the interval shrinks to zero.",
+      "example": "The expanding circle: differentiating A = pi r^2 gives dA/dr = 2 pi r, the chain rule attaches dr/dt, and at r = 2 with dr/dt = 1/2 the substitution gives dA/dt = 2 pi, about 6.28 square units per second."
+    },
+    {
+      "term": "Rate of change",
+      "meaning": "How fast a quantity changes per unit of time in these problems: dr/dt = 1/2 means the radius grows by half a unit every second.",
+      "example": "The sliding ladder: the fixed length gives x^2 + y^2 = 25 at every instant, and differentiating both sides with respect to time gives 2x dx/dt + 2y dy/dt = 0, because the constant 25 differentiates to 0."
+    },
+    {
+      "term": "Limit",
+      "meaning": "The value a quantity approaches as an interval shrinks toward zero: dy/dx is one symbol for this limit, which is why it cannot be pulled apart into pieces.",
+      "example": "A common mistake: cancelling the d's: dy/dx looks like a fraction, so its parts look separable - but it is one symbol for a limit, and pulling it apart breaks the mathematics."
+    },
+    {
+      "term": "Snapshot values",
+      "meaning": "The values of the variables at the one instant asked about, such as x = 3 and y = 4 for the ladder: they are substituted only after the relation has been differentiated.",
+      "example": "The connected-rates toolkit: write the relation, differentiate with respect to time, substitute the snapshot values, solve - the circle grew at 2 pi and the ladder top fell at 0.75 units per second from the same four steps."
+    }
+  ]
+}
