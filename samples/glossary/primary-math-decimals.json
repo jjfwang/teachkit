@@ -1,1 +1,28 @@
-{"entries": [{"example": "Tenths: one bar, ten equal parts: split one whole bar into ten equal parts and shade four - that shaded amount is 0.4, four tenths.", "meaning": "The first place after the decimal point: the whole split into ten equal parts, so each part is one tenth and 0.4 is four tenths.", "term": "Tenths"}, {"example": "Hundredths: one square, one hundred tiny parts: split the whole square into ten rows and ten columns and shade twenty-five tiny parts - 0.20 plus 0.05 is 0.25.", "meaning": "The second place after the decimal point: the whole split into one hundred tiny parts, so 0.25 is twenty-five hundredths.", "term": "Hundredths"}, {"example": "In scene s3, 0.4 + 0.25 is worked by matching the places first: 0.4 is rewritten as 0.40, then forty hundredths plus twenty-five hundredths makes sixty-five hundredths. Step by step: 0.4 = 0.40, then 0.40 + 0.25 = 0.65.", "meaning": "What a digit is worth because of where it stands: the same 4 is worth four tenths in 0.4 and would be worth four hundredths in 0.04.", "term": "Place value"}, {"example": "Read decimals by place value in the tenths and hundredths places", "meaning": "The dot that separates the wholes from the tenths: everything to its right is less than one whole.", "term": "Decimal point"}], "level": "primary", "subject": "math", "title": "Decimals: place value and adding 0.4 + 0.25", "topic": "decimals"}
+{
+  "title": "Decimals: place value and adding 0.4 + 0.25",
+  "level": "primary",
+  "subject": "math",
+  "topic": "decimals",
+  "entries": [
+    {
+      "term": "Tenths",
+      "meaning": "The first place after the decimal point: the whole split into ten equal parts, so each part is one tenth and 0.4 is four tenths.",
+      "example": "Tenths: one bar, ten equal parts: split one whole bar into ten equal parts and shade four - that shaded amount is 0.4, four tenths."
+    },
+    {
+      "term": "Hundredths",
+      "meaning": "The second place after the decimal point: the whole split into one hundred tiny parts, so 0.25 is twenty-five hundredths.",
+      "example": "Hundredths: one square, one hundred tiny parts: split the whole square into ten rows and ten columns and shade twenty-five tiny parts - 0.20 plus 0.05 is 0.25."
+    },
+    {
+      "term": "Place value",
+      "meaning": "What a digit is worth because of where it stands: the same 4 is worth four tenths in 0.4 and would be worth four hundredths in 0.04.",
+      "example": "In scene s3, 0.4 + 0.25 is worked by matching the places first: 0.4 is rewritten as 0.40, then forty hundredths plus twenty-five hundredths makes sixty-five hundredths. Step by step: 0.4 = 0.40, then 0.40 + 0.25 = 0.65."
+    },
+    {
+      "term": "Decimal point",
+      "meaning": "The dot that separates the wholes from the tenths: everything to its right is less than one whole.",
+      "example": "Read decimals by place value in the tenths and hundredths places"
+    }
+  ]
+}

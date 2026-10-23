@@ -1,1 +1,112 @@
-{"level": "primary", "sets": [{"cloze": [{"answers": ["Tenths", "Hundredths"], "text": "The first place is ___ and the second place is ___."}, {"answers": ["Decimal point", "Place value"], "text": "The dot separating wholes from tenths is the ___, and what a digit is worth is its ___."}], "frames": ["The first place after the decimal point shows ___.", "The second place after the decimal point shows ___.", "What a digit is worth because of where it stands is its ___."], "level": "full", "starters": ["The first place after the decimal point is...", "To add decimals, I line up...", "A digit is worth more when..."], "wordBank": [{"gloss": "the first place after the decimal point", "term": "Tenths"}, {"gloss": "the second place after the decimal point", "term": "Hundredths"}, {"gloss": "what a digit is worth because of where it stands", "term": "Place value"}, {"gloss": "the dot that separates the wholes from the tenths", "term": "Decimal point"}]}, {"cloze": [{"answers": ["Tenths", "Place value"], "text": "0.4 is four ___, and its digits' worth is their ___."}], "frames": ["Four tenths is written with the 4 in the ___ place.", "What a digit is worth because of where it stands is its ___."], "level": "partial", "starters": ["The first decimal place shows...", "A digit's worth is decided by..."], "wordBank": [{"gloss": "the first place after the decimal point", "term": "Tenths"}, {"gloss": "the second place after the decimal point", "term": "Hundredths"}, {"gloss": "what a digit is worth because of where it stands", "term": "Place value"}]}, {"cloze": [{"answers": ["Tenths"], "text": "0.4 is four ___."}], "frames": ["The first place after the decimal point is the ___ place."], "level": "minimal", "starters": ["0.4 means four..."], "wordBank": [{"gloss": "the first place after the decimal point", "term": "Tenths"}]}], "subject": "math", "title": "Decimals: place value and adding 0.4 + 0.25", "topic": "decimals"}
+{
+  "title": "Decimals: place value and adding 0.4 + 0.25",
+  "level": "primary",
+  "subject": "math",
+  "topic": "decimals",
+  "sets": [
+    {
+      "level": "full",
+      "wordBank": [
+        {
+          "term": "Tenths",
+          "gloss": "the first place after the decimal point"
+        },
+        {
+          "term": "Hundredths",
+          "gloss": "the second place after the decimal point"
+        },
+        {
+          "term": "Place value",
+          "gloss": "what a digit is worth because of where it stands"
+        },
+        {
+          "term": "Decimal point",
+          "gloss": "the dot that separates the wholes from the tenths"
+        }
+      ],
+      "starters": [
+        "The first place after the decimal point is...",
+        "To add decimals, I line up...",
+        "A digit is worth more when..."
+      ],
+      "frames": [
+        "The first place after the decimal point shows ___.",
+        "The second place after the decimal point shows ___.",
+        "What a digit is worth because of where it stands is its ___."
+      ],
+      "cloze": [
+        {
+          "text": "The first place is ___ and the second place is ___.",
+          "answers": [
+            "Tenths",
+            "Hundredths"
+          ]
+        },
+        {
+          "text": "The dot separating wholes from tenths is the ___, and what a digit is worth is its ___.",
+          "answers": [
+            "Decimal point",
+            "Place value"
+          ]
+        }
+      ]
+    },
+    {
+      "level": "partial",
+      "wordBank": [
+        {
+          "term": "Tenths",
+          "gloss": "the first place after the decimal point"
+        },
+        {
+          "term": "Hundredths",
+          "gloss": "the second place after the decimal point"
+        },
+        {
+          "term": "Place value",
+          "gloss": "what a digit is worth because of where it stands"
+        }
+      ],
+      "starters": [
+        "The first decimal place shows...",
+        "A digit's worth is decided by..."
+      ],
+      "frames": [
+        "Four tenths is written with the 4 in the ___ place.",
+        "What a digit is worth because of where it stands is its ___."
+      ],
+      "cloze": [
+        {
+          "text": "0.4 is four ___, and its digits' worth is their ___.",
+          "answers": [
+            "Tenths",
+            "Place value"
+          ]
+        }
+      ]
+    },
+    {
+      "level": "minimal",
+      "wordBank": [
+        {
+          "term": "Tenths",
+          "gloss": "the first place after the decimal point"
+        }
+      ],
+      "starters": [
+        "0.4 means four..."
+      ],
+      "frames": [
+        "The first place after the decimal point is the ___ place."
+      ],
+      "cloze": [
+        {
+          "text": "0.4 is four ___.",
+          "answers": [
+            "Tenths"
+          ]
+        }
+      ]
+    }
+  ]
+}
