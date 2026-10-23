@@ -49,6 +49,8 @@
     "./diagnostics": "./generator/pipeline.js",
     "./worked-examples-prompt": "./generator/build_worked_examples_prompt.js",
     "./worked-examples": "./generator/pipeline.js",
+    "./quiz-bank-prompt": "./generator/build_quiz_bank_prompt.js",
+    "./quiz-bank": "./generator/pipeline.js",
     "./lesson-pack": "./generator/pipeline.js"
   },
   "files": [

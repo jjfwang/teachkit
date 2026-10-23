@@ -595,6 +595,43 @@ The `paired` example-problem is an object with a required non-empty
 teacher-key only, like a withheld step: it never appears on a student
 sheet.
 
+## Quiz bank spec
+
+A quiz bank is the cumulative formative question bank for one topic:
+a set of short retrieval items a teacher can draw on across sessions
+to check that earlier learning still sticks, long after the lesson
+that taught it. `validateQuizBank` in `player/validate.js` enforces
+this contract and returns a `string[]` of errors, exactly like
+`validateDiagnostics` (empty = valid). The validator enforces
+presence and shape only; it never checks bank membership.
+
+Material fields:
+
+| field   | type       | notes                                  |
+|---------|------------|----------------------------------------|
+| `title` | string     | required non-empty                     |
+| `level` | `"primary"` \| `"secondary"` \| `"jc"` |                                        |
+| `subject` | string   | required non-empty - any school subject, not restricted to the syllabus-known list |
+| `topic` | string     | required non-empty                     |
+| `items` | object[]   | required array of at least 4 retrieval items - see below |
+
+Every item is an object with these fields:
+
+| field              | type     | notes |
+|--------------------|----------|-------|
+| `prompt`           | string   | required non-empty - the retrieval question put to the student |
+| `answer`           | string   | required non-empty - the teacher key: the correct answer the response is marked against. It never appears on a student sheet. |
+| `choices`          | string[] | optional - when present, an array of at least 2 non-empty strings the student picks from; the `answer` is the correct one |
+| `misconceptionCode` | string  | optional - when present, a non-empty string: the topic misconception bank entry's `wrongTurn` verbatim (for a faceted entry, the primary facet's `wrongTurn`), naming the wrong turn the item is built to catch |
+| `outcomeCode`      | string   | optional - when present, a non-empty string: the syllabus outcome code the item retrieves against, recorded as a fact only |
+
+Items are retrieval practice, not new teaching: each one can be
+answered in about a minute from memory, and the bank as a whole
+spans the topic so it stays useful across sessions. The bank is
+generated from the topic's misconception bank entry (see
+`generateQuizBank`): a topic with no bank entry cannot grow a quiz
+bank, because its coded items would have to invent misconceptions.
+
 ## Accessible variants
 
 Every printable renderer in `player/printable.js` (`renderWorksheet`,

@@ -1102,6 +1102,56 @@
     return errors;
   }
 
+  // Quiz bank validator (SPEC.md "Quiz bank spec", issue #1255): a
+  // per-topic cumulative retrieval bank - the diagnostics-mirroring
+  // material header plus at least 4 retrieval items. Each item carries
+  // a prompt and a teacher-key answer; choices, a misconception code
+  // (the topic bank wrongTurn verbatim when present) and an outcome
+  // code are optional. Presence and shape only - the validator never
+  // checks bank membership.
+  function validateQuizBank(spec) {
+    var errors = [];
+    if (!spec || typeof spec !== 'object' || Array.isArray(spec)) return ['spec: must be an object'];
+    checkMaterialHeader(spec, errors);
+    if (!Array.isArray(spec.items) || spec.items.length < 4) {
+      errors.push('items: required array of at least 4 retrieval items');
+      return errors;
+    }
+    spec.items.forEach(function (item, i) {
+      var p = 'items[' + i + ']';
+      if (!item || typeof item !== 'object' || Array.isArray(item)) {
+        errors.push(p + ': must be an object');
+        return;
+      }
+      if (typeof item.prompt !== 'string' || !item.prompt.trim()) {
+        errors.push(p + '.prompt: required non-empty string');
+      }
+      if (typeof item.answer !== 'string' || !item.answer.trim()) {
+        errors.push(p + '.answer: required non-empty string (teacher key)');
+      }
+      if (item.choices !== undefined) {
+        if (!Array.isArray(item.choices) || item.choices.length < 2) {
+          errors.push(p + '.choices: must be an array of at least 2 strings when present');
+        } else {
+          item.choices.forEach(function (choice, j) {
+            if (typeof choice !== 'string' || !choice.trim()) {
+              errors.push(p + '.choices[' + j + ']: must be a non-empty string');
+            }
+          });
+        }
+      }
+      if (item.misconceptionCode !== undefined &&
+          (typeof item.misconceptionCode !== 'string' || !item.misconceptionCode.trim())) {
+        errors.push(p + '.misconceptionCode: must be a non-empty string when present');
+      }
+      if (item.outcomeCode !== undefined &&
+          (typeof item.outcomeCode !== 'string' || !item.outcomeCode.trim())) {
+        errors.push(p + '.outcomeCode: must be a non-empty string when present');
+      }
+    });
+    return errors;
+  }
+
   // Pack metadata validator (SPEC.md "Lesson pack spec", issue #1221):
   // the transparency block every generated pack manifest carries -- the
   // syllabus mapping recorded as facts, the AI-generated label, the
@@ -1152,7 +1202,7 @@
     return errors;
   }
 
-  return { validateSpec: validateSpec, validateSlides: validateSlides, validateWorksheet: validateWorksheet, validateExitTicket: validateExitTicket, validateNotes: validateNotes, validateScript: validateScript, validateLessonPlan: validateLessonPlan, validateScaffolds: validateScaffolds, validateDiagnostics: validateDiagnostics, validateWorkedExamples: validateWorkedExamples, validatePackMetadata: validatePackMetadata, SUBJECTS: SUBJECTS };
+  return { validateSpec: validateSpec, validateSlides: validateSlides, validateWorksheet: validateWorksheet, validateExitTicket: validateExitTicket, validateNotes: validateNotes, validateScript: validateScript, validateLessonPlan: validateLessonPlan, validateScaffolds: validateScaffolds, validateDiagnostics: validateDiagnostics, validateWorkedExamples: validateWorkedExamples, validateQuizBank: validateQuizBank, validatePackMetadata: validatePackMetadata, SUBJECTS: SUBJECTS };
 });
 
 /* ------------------------------------------------------------------
