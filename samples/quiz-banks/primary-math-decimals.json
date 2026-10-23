@@ -1,0 +1,56 @@
+{
+  "title": "Decimals: place value and adding 0.4 + 0.25",
+  "level": "primary",
+  "subject": "math",
+  "topic": "decimals",
+  "items": [
+    {
+      "prompt": "Which number is bigger, 0.4 or 0.25?",
+      "answer": "0.4",
+      "choices": [
+        "0.25",
+        "0.4",
+        "They are equal",
+        "You cannot tell"
+      ],
+      "misconceptionCode": "Comparing decimals by digit count: 0.25 looks bigger than 0.4 because 25 > 4."
+    },
+    {
+      "prompt": "What is 0.4 + 0.25?",
+      "answer": "0.65",
+      "choices": [
+        "0.29",
+        "0.45",
+        "0.65",
+        "0.56"
+      ]
+    },
+    {
+      "prompt": "How many hundredths are in 0.25? Split your answer into tenths and hundredths.",
+      "answer": "25 hundredths: 2 tenths (20 hundredths) plus 5 hundredths."
+    },
+    {
+      "prompt": "What is 3 tenths + 15 hundredths?",
+      "answer": "0.45",
+      "choices": [
+        "0.18",
+        "0.315",
+        "0.45",
+        "0.40"
+      ]
+    },
+    {
+      "prompt": "In 0.25, what is the 2 worth?",
+      "answer": "2 tenths",
+      "choices": [
+        "2 ones",
+        "2 tenths",
+        "2 hundredths"
+      ]
+    },
+    {
+      "prompt": "Explain why ten hundredths is the same as one tenth.",
+      "answer": "The whole split into hundredths has ten tiny parts in each tenth column, so ten hundredths fill exactly one tenth."
+    }
+  ]
+}

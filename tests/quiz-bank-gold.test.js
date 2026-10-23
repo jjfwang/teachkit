@@ -29,7 +29,8 @@ const STEMS = [
   'jc-h2-differentiation',
   'jc-h2-cell-bio',
   'secondary-math-pythagoras',
-  'secondary-science-photosynthesis'
+  'secondary-science-photosynthesis',
+  'primary-math-decimals'
 ];
 
 function load(rel) {
@@ -75,9 +76,10 @@ for (const stem of STEMS) {
         }
       }
       if (item.misconceptionCode !== undefined) {
-        assert.ok(!student.includes(item.misconceptionCode),
+        // Renderers HTML-escape text, so the code is compared in its escaped form (the glossary/guide gold precedent); the verbatim pin above stays raw.
+        assert.ok(!student.includes(printable.escapeHtml(item.misconceptionCode)),
           stem + ': student sheet withholds the misconception code');
-        assert.ok(key.includes(item.misconceptionCode),
+        assert.ok(key.includes(printable.escapeHtml(item.misconceptionCode)),
           stem + ': answer key shows the misconception code');
       }
     }
