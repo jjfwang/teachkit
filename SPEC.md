@@ -934,6 +934,76 @@ so model answers and common errors can be derived from it
 verbatim. No misconception bank entry is required and there is
 no shared unpack and no cache.
 
+## Guide spec
+
+A guide material is the parent/student revision guide for one
+unit: a plain-language companion a parent or student can revise
+from at home, derived from the unit's own generated materials -
+the scheme of work's topic sequence, the sequenced topics' paired
+student notes, the gate topic's paired revision material, quiz
+bank, exit ticket and feedback. `validateGuide` in
+`player/validate.js` enforces this contract and returns a
+`string[]` of errors (empty = valid). The validator enforces
+presence and shape only; it never checks derivation - derivation
+is pinned by the gold test. A guide material holds no student
+data: it is generated from the unit and its paired materials
+only, never from live student results. A guide is a standalone
+material, never folded into the lesson pack.
+
+Material fields:
+
+| field   | type       | notes                                  |
+|---------|------------|----------------------------------------|
+| `title` | string     | required non-empty - mirrors the paired scheme of work |
+| `level` | `"primary"` \| `"secondary"` \| `"jc"` |                                        |
+| `subject` | string   | required non-empty - any school subject |
+| `unitTitle` | string | required non-empty - mirrors the paired scheme of work |
+| `term` | string     | required non-empty - mirrors the paired scheme of work |
+| `topics` | string[] | required array of at least 2 non-empty topic slugs, equal to the paired scheme sequence topics in order |
+| `overview` | string[] | required array of at least 1 non-empty plain-language strings - what the unit is about |
+| `keyIdeas` | object[] | required array of at least 2 entries - see below |
+| `revisionPlan` | object[] | required array of at least 1 entries - see below |
+| `traps` | object[] | required array of at least 1 entries - see below |
+| `parentQuestions` | object[] | required array of at least 2 entries - see below |
+
+Every key idea is an object with these fields:
+
+| field   | type     | notes |
+|---------|----------|-------|
+| `term` | string | required non-empty - verbatim a definition term from a sequenced topic's paired notes |
+| `explanation` | string | required non-empty - equal to that definition's meaning, verbatim |
+
+Every revision plan entry is an object with these fields:
+
+| field   | type     | notes |
+|---------|----------|-------|
+| `dayOffset` | integer | required, at least 0 - equal to a practiceSet dayOffset in the gate topic's paired revision material |
+| `focus` | string | required non-empty - what to practise on that day, in plain language |
+
+Every trap is an object with these fields:
+
+| field   | type     | notes |
+|---------|----------|-------|
+| `misconception` | string | required non-empty - verbatim from a sequenced topic's paired notes trap misconception, or the gate topic's paired feedback commonErrors misconception |
+| `watchFor` | string | required non-empty - the plain-language sign a parent can watch for at home |
+
+Every parent question is an object with these fields:
+
+| field   | type     | notes |
+|---------|----------|-------|
+| `question` | string | required non-empty - a question prompt from the gate topic's paired quiz bank or exit ticket, verbatim |
+| `answer` | string | required non-empty - that question's answer, verbatim |
+
+A guide material is generated on the feedback notes-content
+model extended to unit level (see `generateGuide`): the caller
+supplies the paired unit content (the scheme sequence, the
+per-topic notes definitions and traps, and the gate topic's
+revision, quiz-bank, exit-ticket and feedback content) and the
+author prompt renders it so key ideas, traps and parent
+questions can be derived from it verbatim. No misconception
+bank entry is required and there is no shared unpack and no
+cache.
+
 ## Accessible variants
 
 Every printable renderer in `player/printable.js` (`renderWorksheet`,

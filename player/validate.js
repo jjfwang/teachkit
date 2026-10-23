@@ -1663,6 +1663,107 @@
     return errors;
   }
 
+  // Guide validator (SPEC.md "Guide spec", issue #1302): one
+  // combined unit-level material - a parent/student revision guide
+  // whose header mirrors the paired scheme of work and whose topics
+  // array names the unit's sequenced topics. Presence and shape
+  // only; derivation from the paired unit materials is pinned by
+  // the gold test, never by this validator.
+  function validateGuide(spec) {
+    var errors = [];
+    if (!spec || typeof spec !== 'object' || Array.isArray(spec)) return ['spec: must be an object'];
+    if (typeof spec.title !== 'string' || !spec.title.trim()) errors.push('title: required non-empty string');
+    if (LEVELS.indexOf(spec.level) === -1) errors.push('level: must be ' + LEVELS.join('|'));
+    if (typeof spec.subject !== 'string' || !spec.subject.trim()) errors.push('subject: required non-empty string');
+    if (typeof spec.unitTitle !== 'string' || !spec.unitTitle.trim()) errors.push('unitTitle: required non-empty string');
+    if (typeof spec.term !== 'string' || !spec.term.trim()) errors.push('term: required non-empty string');
+    if (!Array.isArray(spec.topics) || spec.topics.length < 2) {
+      errors.push('topics: required array of at least 2 topic slugs');
+    } else {
+      spec.topics.forEach(function (topic, i) {
+        if (typeof topic !== 'string' || !topic.trim()) {
+          errors.push('topics[' + i + ']: must be a non-empty string');
+        }
+      });
+    }
+    if (!Array.isArray(spec.overview) || spec.overview.length < 1) {
+      errors.push('overview: required array of at least 1 non-empty strings');
+    } else {
+      spec.overview.forEach(function (s, i) {
+        if (typeof s !== 'string' || !s.trim()) errors.push('overview[' + i + ']: must be a non-empty string');
+      });
+    }
+    if (!Array.isArray(spec.keyIdeas) || spec.keyIdeas.length < 2) {
+      errors.push('keyIdeas: required array of at least 2 entries');
+    } else {
+      spec.keyIdeas.forEach(function (entry, i) {
+        var p = 'keyIdeas[' + i + ']';
+        if (!entry || typeof entry !== 'object' || Array.isArray(entry)) {
+          errors.push(p + ': must be an object');
+          return;
+        }
+        if (typeof entry.term !== 'string' || !entry.term.trim()) {
+          errors.push(p + '.term: required non-empty string');
+        }
+        if (typeof entry.explanation !== 'string' || !entry.explanation.trim()) {
+          errors.push(p + '.explanation: required non-empty string');
+        }
+      });
+    }
+    if (!Array.isArray(spec.revisionPlan) || spec.revisionPlan.length < 1) {
+      errors.push('revisionPlan: required array of at least 1 entries');
+    } else {
+      spec.revisionPlan.forEach(function (entry, i) {
+        var p = 'revisionPlan[' + i + ']';
+        if (!entry || typeof entry !== 'object' || Array.isArray(entry)) {
+          errors.push(p + ': must be an object');
+          return;
+        }
+        if (!Number.isInteger(entry.dayOffset) || entry.dayOffset < 0) {
+          errors.push(p + '.dayOffset: must be a non-negative integer');
+        }
+        if (typeof entry.focus !== 'string' || !entry.focus.trim()) {
+          errors.push(p + '.focus: required non-empty string');
+        }
+      });
+    }
+    if (!Array.isArray(spec.traps) || spec.traps.length < 1) {
+      errors.push('traps: required array of at least 1 entries');
+    } else {
+      spec.traps.forEach(function (entry, i) {
+        var p = 'traps[' + i + ']';
+        if (!entry || typeof entry !== 'object' || Array.isArray(entry)) {
+          errors.push(p + ': must be an object');
+          return;
+        }
+        if (typeof entry.misconception !== 'string' || !entry.misconception.trim()) {
+          errors.push(p + '.misconception: required non-empty string');
+        }
+        if (typeof entry.watchFor !== 'string' || !entry.watchFor.trim()) {
+          errors.push(p + '.watchFor: required non-empty string');
+        }
+      });
+    }
+    if (!Array.isArray(spec.parentQuestions) || spec.parentQuestions.length < 2) {
+      errors.push('parentQuestions: required array of at least 2 entries');
+    } else {
+      spec.parentQuestions.forEach(function (entry, i) {
+        var p = 'parentQuestions[' + i + ']';
+        if (!entry || typeof entry !== 'object' || Array.isArray(entry)) {
+          errors.push(p + ': must be an object');
+          return;
+        }
+        if (typeof entry.question !== 'string' || !entry.question.trim()) {
+          errors.push(p + '.question: required non-empty string');
+        }
+        if (typeof entry.answer !== 'string' || !entry.answer.trim()) {
+          errors.push(p + '.answer: required non-empty string');
+        }
+      });
+    }
+    return errors;
+  }
+
   // Pack metadata validator (SPEC.md "Lesson pack spec", issue #1221):
   // the transparency block every generated pack manifest carries -- the
   // syllabus mapping recorded as facts, the AI-generated label, the
@@ -1713,7 +1814,7 @@
     return errors;
   }
 
-  return { validateSpec: validateSpec, validateSlides: validateSlides, validateWorksheet: validateWorksheet, validateExitTicket: validateExitTicket, validateNotes: validateNotes, validateScript: validateScript, validateLessonPlan: validateLessonPlan, validateScaffolds: validateScaffolds, validateDiagnostics: validateDiagnostics, validateWorkedExamples: validateWorkedExamples, validateQuizBank: validateQuizBank, validateRevision: validateRevision, validateOrganisers: validateOrganisers, validateGlossary: validateGlossary, validateFeedback: validateFeedback, validateSummative: validateSummative, validateScheme: validateScheme, validatePackMetadata: validatePackMetadata, SUBJECTS: SUBJECTS };
+  return { validateSpec: validateSpec, validateSlides: validateSlides, validateWorksheet: validateWorksheet, validateExitTicket: validateExitTicket, validateNotes: validateNotes, validateScript: validateScript, validateLessonPlan: validateLessonPlan, validateScaffolds: validateScaffolds, validateDiagnostics: validateDiagnostics, validateWorkedExamples: validateWorkedExamples, validateQuizBank: validateQuizBank, validateRevision: validateRevision, validateOrganisers: validateOrganisers, validateGlossary: validateGlossary, validateFeedback: validateFeedback, validateSummative: validateSummative, validateScheme: validateScheme, validateGuide: validateGuide, validatePackMetadata: validatePackMetadata, SUBJECTS: SUBJECTS };
 });
 
 /* ------------------------------------------------------------------
