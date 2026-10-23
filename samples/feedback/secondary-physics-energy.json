@@ -1,0 +1,50 @@
+{
+  "title": "Energy: work, power and conservation",
+  "level": "secondary",
+  "subject": "science",
+  "topic": "phys-energy",
+  "strengths": [
+    "Most of the class can calculate work done as force times distance.",
+    "The class can convert a work and time pair into a power in watts."
+  ],
+  "modelAnswers": [
+    {
+      "question": "A force of 50 N pushes a crate 4 m in the direction of the force. How much work is done?",
+      "answer": "200 J, from 50 x 4 = 200.",
+      "creditPoints": [
+        "Scene s1: work = force x distance = 50 x 4 = 200 joules",
+        "Carries the working through to the correct final answer"
+      ]
+    },
+    {
+      "question": "The 200 J of work from question 1 is done in 2 s. Calculate the power.",
+      "answer": "100 W, from 200 / 2 = 100.",
+      "creditPoints": [
+        "Scene s2: power = work / time = 200 / 2 = 100 watts",
+        "Carries the working through to the correct final answer"
+      ]
+    }
+  ],
+  "commonErrors": [
+    {
+      "misconception": "Energy gets used up when work is done.",
+      "example": "A learner writes that a car that stops has used up all its energy, so the energy no longer exists.",
+      "fixIt": {
+        "prompt": "Fix it: name the energy stores before and after the car stops, and state what happened to the total.",
+        "corrected": "The chemical energy became kinetic energy and then heat in the brakes and surroundings; the total energy is unchanged - it changed form, it was not destroyed."
+      }
+    },
+    {
+      "misconception": "Energy gets used up when work is done.",
+      "example": "On the exit ticket, a learner says the falling mass loses its energy as it falls because the GPE decreases.",
+      "fixIt": {
+        "prompt": "Fix it: track the 98 J of GPE as the mass falls and state the KE just before landing.",
+        "corrected": "The 98 J of GPE becomes 98 J of KE as the mass falls; just before landing the KE is 98 J and the total energy is still 98 J."
+      }
+    }
+  ],
+  "nextSteps": [
+    "Reteach conservation of energy with a before-and-after energy tally for every question.",
+    "Practise stating the energy change in words before substituting numbers."
+  ]
+}

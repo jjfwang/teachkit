@@ -1,0 +1,50 @@
+{
+  "title": "JC H2 biology — cell: ultrastructure and biomolecules",
+  "level": "jc",
+  "subject": "science",
+  "topic": "h2-cell-bio",
+  "strengths": [
+    "Most of the class can describe the fluid mosaic model of the cell membrane.",
+    "The class can trace a protein from the rough ER through the Golgi apparatus to export."
+  ],
+  "modelAnswers": [
+    {
+      "question": "A leaf cell contains both chloroplasts and mitochondria. Explain, in terms of photosynthesis and respiration, why it needs both.",
+      "answer": "Chloroplasts trap light energy to make sugar in photosynthesis; mitochondria release energy from that sugar as ATP in aerobic respiration, which continues day and night.",
+      "creditPoints": [
+        "The two organelles do different jobs: grana and stroma in the chloroplast build sugar (scene s4), cristae in the mitochondrion release its energy (scene s3)",
+        "Carries the working through to the correct final answer"
+      ]
+    },
+    {
+      "question": "Describe the structure of the cell membrane in the fluid mosaic model and explain how that structure makes it selectively permeable.",
+      "answer": "A phospholipid bilayer with hydrophilic heads facing outward and hydrophobic tails inside, with proteins drifting through it; channel proteins allow only selected substances to cross.",
+      "creditPoints": [
+        "Scene s1 shows heads facing water, tails hidden inside, and a channel protein spanning the membrane: small selected substances pass through channels while others are kept out",
+        "Carries the working through to the correct final answer"
+      ]
+    }
+  ],
+  "commonErrors": [
+    {
+      "misconception": "Plant cells have no mitochondria.",
+      "example": "A learner claims a leaf cell needs no mitochondria because its chloroplasts supply all its energy.",
+      "fixIt": {
+        "prompt": "Fix it: state what chloroplasts do with light energy and what mitochondria do with the sugar that is made, including at night.",
+        "corrected": "Chloroplasts trap light energy to make sugar in photosynthesis; mitochondria respire that sugar to release ATP day and night, so a leaf cell needs both organelles."
+      }
+    },
+    {
+      "misconception": "Plant cells have no mitochondria.",
+      "example": "On the worksheet, a learner says root hair cells cannot respire because they have no chloroplasts.",
+      "fixIt": {
+        "prompt": "Fix it: name the organelle that releases energy in a root hair cell and the process it carries out.",
+        "corrected": "A root hair cell respires glucose in its mitochondria to release ATP; plant cells contain mitochondria whether or not they photosynthesise."
+      }
+    }
+  ],
+  "nextSteps": [
+    "Reteach the division of labour between chloroplasts and mitochondria, including night-time respiration.",
+    "Practise pairing each organelle with its process and its product before the next quiz."
+  ]
+}

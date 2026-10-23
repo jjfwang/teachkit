@@ -1,0 +1,50 @@
+{
+  "title": "The Water Cycle",
+  "level": "primary",
+  "subject": "science",
+  "topic": "water-cycle",
+  "strengths": [
+    "Most of the class can name evaporation when a puddle dries up in the sun.",
+    "The class can order the cycle stages when the sea is the starting point."
+  ],
+  "modelAnswers": [
+    {
+      "question": "Name the stage of the water cycle where water falls back to the ground, and say what makes it fall.",
+      "answer": "Precipitation: the drops in the cloud join and grow bigger and heavier until gravity pulls them down as rain.",
+      "creditPoints": [
+        "Falling water is called precipitation",
+        "Carries the working through to the correct final answer"
+      ]
+    },
+    {
+      "question": "Put the four stages in order, starting from the sea: collection, condensation, evaporation, precipitation.",
+      "answer": "Evaporation, condensation, precipitation, collection.",
+      "creditPoints": [
+        "The sun lifts water from the sea (evaporation), it cools into a cloud (condensation), falls as rain (precipitation), then gathers in rivers and the sea again (collection), ready to start over",
+        "Carries the working through to the correct final answer"
+      ]
+    }
+  ],
+  "commonErrors": [
+    {
+      "misconception": "Water disappears for good once it evaporates.",
+      "example": "A learner writes that the water in a dried-up puddle is gone forever and rain must be brand-new water.",
+      "fixIt": {
+        "prompt": "Fix it: trace where the puddle water went, stage by stage, until it falls again as rain.",
+        "corrected": "The puddle water evaporated into invisible water vapour, the vapour cooled and condensed into a cloud, and the drops fell back as precipitation - the same water, never gone."
+      }
+    },
+    {
+      "misconception": "Water disappears for good once it evaporates.",
+      "example": "On the exit ticket, a learner says evaporated water disappears, so the cycle stops until new water is made.",
+      "fixIt": {
+        "prompt": "Fix it: explain in one sentence why evaporation does not remove water from the cycle.",
+        "corrected": "Evaporation only changes liquid water into invisible water vapour; that vapour condenses into clouds and returns as rain, so no water leaves the cycle."
+      }
+    }
+  ],
+  "nextSteps": [
+    "Reteach the cycle as a loop with no water created or destroyed, tracing one drop all the way round.",
+    "Practise naming the stage at each arrow of the cycle diagram before moving on."
+  ]
+}
