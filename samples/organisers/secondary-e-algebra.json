@@ -1,0 +1,81 @@
+{
+  "title": "E-Math algebra: expansion, factorisation and changing the subject",
+  "level": "secondary",
+  "subject": "math",
+  "topic": "e-algebra",
+  "templates": [
+    {
+      "kind": "flow",
+      "slots": [
+        {
+          "label": "Expand with the area model",
+          "entries": [
+            "Expand with the area model: the tiles for (x + 2)(x + 3) land as x^2, 3x, 2x and 6 - collect the x tiles to get x^2 + 5x + 6."
+          ],
+          "studentPrompt": "Explain this step in your own words."
+        },
+        {
+          "label": "Factorise by grouping",
+          "entries": [
+            "Factorise by grouping: group 2x + 6 + xy + 3y into pairs, take 2 from the first pair and y from the second, then pull the common bracket (x + 3) out whole to get (x + 3)(2 + y)."
+          ],
+          "studentPrompt": "Explain this step in your own words."
+        },
+        {
+          "label": "Change the subject to x",
+          "entries": [
+            "Change the subject to x: undo y = 3x + 5 in reverse - subtract 5 first, then divide by 3 - to get x = (y - 5) / 3."
+          ],
+          "studentPrompt": "Explain this step in your own words."
+        },
+        {
+          "label": "The (a+b)^2 trap",
+          "entries": [
+            "The (a+b)^2 trap: squaring a sum gives three terms, not two - with a = 2 and b = 3 the full value is 25, and the middle term 2ab is what makes the difference."
+          ],
+          "studentPrompt": "Explain this step in your own words."
+        }
+      ]
+    },
+    {
+      "kind": "frayer",
+      "slots": [
+        {
+          "label": "Expansion",
+          "entries": [
+            "Multiplying out brackets so every term in one bracket multiplies every term in the other: (x + 2)(x + 3) expands to x^2 + 5x + 6."
+          ],
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "label": "Factorisation",
+          "entries": [
+            "Writing an expression as a product of brackets, the reverse of expansion: 2x + 6 + xy + 3y factorises to (x + 3)(2 + y)."
+          ],
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "label": "Subject of formula",
+          "entries": [
+            "The variable a formula is rearranged to give on its own: in x = (y - 5) / 3, taken from y = 3x + 5, the subject is x."
+          ],
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "label": "Identity",
+          "entries": [
+            "A statement that is true for every value of the variables, like (a + b)^2 = a^2 + 2ab + b^2, unlike an equation that holds only for some values."
+          ],
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "label": "Middle term",
+          "entries": [
+            "The term between the two squared terms in the expansion of a squared bracket: 2ab in (a + b)^2 = a^2 + 2ab + b^2."
+          ],
+          "studentPrompt": "Give your own example of this term."
+        }
+      ]
+    }
+  ]
+}

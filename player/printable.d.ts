@@ -306,4 +306,26 @@ export interface RevisionSpec {
 }
 export function renderRevision(spec: RevisionSpec, options?: PrintableOptions): string;
 export function renderRevisionAnswerKey(spec: RevisionSpec, options?: PrintableOptions): string;
+export interface OrganisersSlot {
+  label: string;
+  entries: string[];
+  studentPrompt?: string;
+  [key: string]: unknown;
+}
+export interface OrganisersTemplate {
+  kind: string;
+  slots: OrganisersSlot[];
+  [key: string]: unknown;
+}
+export interface OrganisersSpec {
+  title: string;
+  level: string;
+  subject: string;
+  topic: string;
+  instructions?: string;
+  templates: OrganisersTemplate[];
+  [key: string]: unknown;
+}
+export function renderOrganisers(spec: OrganisersSpec, options?: PrintableOptions): string;
+export function renderOrganisersKey(spec: OrganisersSpec, options?: PrintableOptions): string;
 export function escapeHtml(s: string): string;

@@ -1,0 +1,144 @@
+{
+  "title": "JC H2 biology — cell: ultrastructure and biomolecules",
+  "level": "jc",
+  "subject": "science",
+  "topic": "h2-cell-bio",
+  "templates": [
+    {
+      "kind": "flow",
+      "slots": [
+        {
+          "label": "Cell membrane",
+          "entries": [
+            "Cell membrane: the fluid mosaic: a phospholipid bilayer with hydrophilic heads out and hydrophobic tails in, with channel proteins giving selective passage."
+          ],
+          "studentPrompt": "Explain this step in your own words."
+        },
+        {
+          "label": "Nucleus",
+          "entries": [
+            "Nucleus: the control centre: chromatin stores the instructions, nuclear pores let mRNA out, and the nucleolus makes ribosomal RNA."
+          ],
+          "studentPrompt": "Explain this step in your own words."
+        },
+        {
+          "label": "Mitochondria",
+          "entries": [
+            "Mitochondria: releasing energy from food: glucose and oxygen enter respiration on the cristae, whose folds multiply the surface area for ATP-making enzymes."
+          ],
+          "studentPrompt": "Explain this step in your own words."
+        },
+        {
+          "label": "Chloroplast",
+          "entries": [
+            "Chloroplast: capturing light energy: light drives into the grana for the light-dependent stage, while the stroma fixes carbon dioxide into sugar in the Calvin cycle."
+          ],
+          "studentPrompt": "Explain this step in your own words."
+        },
+        {
+          "label": "RER, SER and Golgi",
+          "entries": [
+            "RER, SER and Golgi: the export line: ribosomes on the rough ER fold proteins, the smooth ER makes lipids, and the Golgi body packages and ships proteins in vesicles."
+          ],
+          "studentPrompt": "Explain this step in your own words."
+        },
+        {
+          "label": "Tests for biomolecules",
+          "entries": [
+            "Tests for biomolecules: four classics: Benedict's heated goes brick-red for reducing sugar, iodine blue-black for starch, Biuret purple for protein, and the emulsion test milky white for lipid."
+          ],
+          "studentPrompt": "Explain this step in your own words."
+        },
+        {
+          "label": "Misconception",
+          "entries": [
+            "Misconception: plant cells lack mitochondria: the claim fails because plant cells respire day and night, so a plant cell holds mitochondria alongside its chloroplasts."
+          ],
+          "studentPrompt": "Explain this step in your own words."
+        }
+      ]
+    },
+    {
+      "kind": "frayer",
+      "slots": [
+        {
+          "label": "Cell membrane",
+          "entries": [
+            "A selectively permeable phospholipid bilayer with drifting proteins (the fluid mosaic): hydrophilic heads face water, hydrophobic tails face inward."
+          ],
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "label": "Nucleus",
+          "entries": [
+            "The control centre storing DNA as chromatin, enclosed by a double nuclear envelope with pores for mRNA, and containing the nucleolus that makes ribosomal RNA."
+          ],
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "label": "Mitochondrion",
+          "entries": [
+            "The site of aerobic respiration, with an inner membrane folded into cristae that give a large surface area for ATP-making enzymes."
+          ],
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "label": "Chloroplast",
+          "entries": [
+            "The site of photosynthesis in plant cells: grana (thylakoid stacks) run the light-dependent stage and the stroma runs the Calvin cycle."
+          ],
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "label": "Rough endoplasmic reticulum",
+          "entries": [
+            "ER studded with ribosomes, where new proteins are folded."
+          ],
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "label": "Smooth endoplasmic reticulum",
+          "entries": [
+            "ER without ribosomes, where lipids are made and substances are detoxified."
+          ],
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "label": "Golgi body",
+          "entries": [
+            "A stack that modifies, packages and ships proteins out of the cell in vesicles."
+          ],
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "label": "Benedict's test",
+          "entries": [
+            "The test for reducing sugar: add Benedict's solution and heat; blue to brick-red is positive."
+          ],
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "label": "Iodine test",
+          "entries": [
+            "The test for starch: iodine solution turns from brown to blue-black."
+          ],
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "label": "Biuret test",
+          "entries": [
+            "The test for protein: Biuret solution turns from blue to purple."
+          ],
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "label": "Emulsion test",
+          "entries": [
+            "The test for lipid: mix with ethanol then water; a milky white emulsion is positive."
+          ],
+          "studentPrompt": "Give your own example of this term."
+        }
+      ]
+    }
+  ]
+}

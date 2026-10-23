@@ -1,0 +1,95 @@
+{
+  "title": "Energy: work, power and conservation",
+  "level": "secondary",
+  "subject": "science",
+  "topic": "phys-energy",
+  "templates": [
+    {
+      "kind": "flow",
+      "slots": [
+        {
+          "label": "Work",
+          "entries": [
+            "Work: a 50-newton force pushes a crate 4 metres, so the work done is 50 times 4 = 200 joules - and with no movement the distance is zero, so no work is done at all."
+          ],
+          "studentPrompt": "Explain this step in your own words."
+        },
+        {
+          "label": "Power",
+          "entries": [
+            "Power: the same 200 joules done in 10 seconds gives 20 watts; done in 2 seconds it gives 100 watts - same work, less time, more power."
+          ],
+          "studentPrompt": "Explain this step in your own words."
+        },
+        {
+          "label": "Conservation in a fall",
+          "entries": [
+            "Conservation in a fall: a 2-kilogram mass 5 metres up holds 98 joules of GPE; as it falls the GPE drains into KE, and just before landing all 98 joules are kinetic - the total stays 98 joules throughout."
+          ],
+          "studentPrompt": "Explain this step in your own words."
+        },
+        {
+          "label": "Check the thinking",
+          "entries": [
+            "Check the thinking: the car's chemical energy becomes kinetic energy plus heat, so when the petrol runs out the car stops - but the energy has changed form, not vanished."
+          ],
+          "studentPrompt": "Explain this step in your own words."
+        }
+      ]
+    },
+    {
+      "kind": "frayer",
+      "slots": [
+        {
+          "label": "Work",
+          "entries": [
+            "The energy transferred when a force moves its object, calculated as force times distance in the force's direction, measured in joules."
+          ],
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "label": "Power",
+          "entries": [
+            "How fast work is done, calculated as work divided by time, measured in watts: the same 200 J in 2 s is 100 W, in 10 s only 20 W."
+          ],
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "label": "Energy",
+          "entries": [
+            "What work transfers between stores and forms - it is never created or destroyed, only changed from one form to another."
+          ],
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "label": "Gravitational potential energy",
+          "entries": [
+            "The energy a raised mass stores because of its height, calculated as mass times g times height: 2 kg at 5 m stores 98 J."
+          ],
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "label": "Kinetic energy",
+          "entries": [
+            "The energy a moving object has because of its motion - the form GPE becomes as a mass falls."
+          ],
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "label": "Joule",
+          "entries": [
+            "The unit of work and energy: one joule is the work done when a force of one newton moves its object one metre."
+          ],
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "label": "Watt",
+          "entries": [
+            "The unit of power: one watt is one joule of work done every second."
+          ],
+          "studentPrompt": "Give your own example of this term."
+        }
+      ]
+    }
+  ]
+}
