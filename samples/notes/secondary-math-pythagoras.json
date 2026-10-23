@@ -1,0 +1,44 @@
+{
+  "level": "secondary",
+  "subject": "math",
+  "topic": "e-trigonometry",
+  "title": "Pythagoras' theorem: a² + b² = c²",
+  "objectives": [
+    "Find the hypotenuse of a right-angled triangle using a² + b² = c²",
+    "Find a short side when the hypotenuse and the other short side are known",
+    "Use the converse of Pythagoras' theorem to test whether a triangle is right-angled"
+  ],
+  "definitions": [
+    {
+      "term": "Hypotenuse",
+      "meaning": "The longest side of a right-angled triangle, across from the right angle: length 5 in the 3-4-5 triangle, found as c in a² + b² = c²."
+    },
+    {
+      "term": "Right-angled triangle",
+      "meaning": "A triangle with one angle of exactly 90 degrees, marked by the small square in the corner: the legs 3 and 4 meet at that right angle in the animation."
+    },
+    {
+      "term": "Square (of a length)",
+      "meaning": "The length multiplied by itself, written with a superscript 2: the square of 3 is 3² = 9 and the square of 4 is 4² = 16, the areas of the squares built on the legs."
+    },
+    {
+      "term": "Square root",
+      "meaning": "The positive length whose square gives the number: the square root of 25 is 5, which turns c² = 25 back into the length c = 5."
+    },
+    {
+      "term": "Converse",
+      "meaning": "The theorem run backwards: if the squares of the two shorter sides add to the square of the longest side, as 9 + 16 = 25 does for sides 3, 4 and 5, then the triangle must be right-angled."
+    }
+  ],
+  "mechanismSteps": [
+    "A right-angled triangle: the legs a = 3 and b = 4 meet at the right angle, the right-angle marker sits between them, and the hypotenuse c is the unknown longest side.",
+    "Squares on the short sides: the square on a is 3² = 9 and the square on b is 4² = 16, holding 9 and 16 unit squares.",
+    "The square on the hypotenuse: the tilted square on c is filled exactly by the 9 unit squares and the 16 unit squares together, so c² = 25.",
+    "9 + 16 = 25: c is the square root of 25, so c = 5 - the lengths themselves add to 7, but it is the squares that the theorem adds."
+  ],
+  "workedExample": "Find c for a right-angled triangle with legs 3 and 4. Square the legs: 3² = 9 and 4² = 16. Add the squares: 9 + 16 = 25, so c² = 25. Take the square root: c = 5. Check the trap: c is not 3 + 4 = 7, because the theorem adds the squares, not the lengths - and 5 sits between 4 and 7, shorter than the trap bar, exactly as the animation shows.",
+  "trap": {
+    "misconception": "tan = adjacent / opposite.",
+    "explanation": "Opposite and adjacent swap places under pressure. Always read TOA: tan is opposite over adjacent. For the 3-4-5 triangle that means tan theta = 3/4 = 0.75, never 4/3 - the opposite side 3 goes on top."
+  }
+}

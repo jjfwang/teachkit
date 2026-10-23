@@ -110,8 +110,8 @@ test('no animation with a gold pack is left unjoined by the manifest pairs', () 
   const animations = fs.readdirSync(path.join(ROOT, 'samples'))
     .filter((name) => name.endsWith('.json') && name !== 'index.json');
   const unjoined = animations.filter((name) => !joined.has(name)).sort();
-  assert.deepStrictEqual(unjoined, ['secondary-math-pythagoras.json'],
-    'the only animation without a gold pack is secondary-math-pythagoras (a separate gap, out of scope for #1306)');
+  assert.deepStrictEqual(unjoined, [],
+    'every indexed animation is joined to a gold pack');
 });
 
 test('pack demo carries exactly one unique manifest header per gold pack', () => {

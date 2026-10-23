@@ -1793,6 +1793,24 @@
     <li><code>script</code> teacher script</li>
   </ul>
 </header>
+<header class="pack-manifest" id="pythagoras-secondary-manifest">
+  <h1>Lesson pack: Secondary math pythagoras: Pythagoras' theorem: a² + b² = c²</h1>
+  <dl>
+    <dt>Slug</dt><dd><code>pythagoras-secondary-math</code></dd>
+    <dt>Level</dt><dd>secondary</dd>
+    <dt>Subject</dt><dd>math</dd>
+    <dt>Topic</dt><dd><code>e-trigonometry</code></dd>
+  </dl>
+  <p>topic e-trigonometry · level secondary · subject math · deck secondary-math-pythagoras</p>
+  <ul class="pack-materials">
+    <li><code>animation</code></li>
+    <li><code>slides</code></li>
+    <li><code>worksheet</code></li>
+    <li><code>exitTicket</code> exit ticket</li>
+    <li><code>notes</code> student notes</li>
+    <li><code>script</code> teacher script</li>
+  </ul>
+</header>
 <section class="pack-section" id="animation-section">
   <h2>Animation</h2>
   <div id="anim-stage"></div>
@@ -3026,6 +3044,19 @@
   <h2>Primary Social Studies neighbourhood-change printables</h2>
   <div id="neighbourhood-change-primary-printables-stage"></div>
 </section>
+<section class="pack-section" id="pythagoras-secondary-animation">
+  <h2>Secondary math pythagoras animation</h2>
+  <div id="pythagoras-secondary-stage"></div>
+  <div id="pythagoras-secondary-captions"></div>
+</section>
+<section class="pack-section" id="pythagoras-secondary-slides">
+  <h2>Secondary math pythagoras slides</h2>
+  <div id="pythagoras-secondary-slides-stage"></div>
+</section>
+<section class="pack-section" id="pythagoras-secondary-printables">
+  <h2>Secondary math pythagoras printables</h2>
+  <div id="pythagoras-secondary-printables-stage"></div>
+</section>
 <div id="err"></div>
 <script src="validate.js"></script>
 <script src="player.js"></script>
@@ -3275,6 +3306,79 @@ var neighbourhoodChangePrimaryPrintStage = document.querySelector('#neighbourhoo
   });
 })();
 
+</script>
+<script>
+(function () {
+  var presenter = document.getElementById('pythagoras-secondary-slides-stage');
+  var pythagorasSecondaryPrint = document.getElementById('pythagoras-secondary-printables-stage');
+  var errBox = document.getElementById('err');
+  var pythagorasSecondaryAnimUrl = '../samples/secondary-math-pythagoras.json';
+  var pythagorasSecondaryDeckUrl = '../samples/decks/secondary-math-pythagoras.json';
+  var pythagorasSecondaryWorksheetUrl = '../samples/worksheets/secondary-math-pythagoras.json';
+  var pythagorasSecondaryTicketUrl = '../samples/tickets/secondary-math-pythagoras.json';
+  var pythagorasSecondaryNotesUrl = '../samples/notes/secondary-math-pythagoras.json';
+  var pythagorasSecondaryScriptUrl = '../samples/scripts/secondary-math-pythagoras.json';
+
+  function showError(msg) {
+    errBox.textContent = String(msg);
+  }
+
+  Promise.all([
+    fetch(pythagorasSecondaryAnimUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + pythagorasSecondaryAnimUrl);
+      return r.json();
+    }),
+    fetch(pythagorasSecondaryDeckUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + pythagorasSecondaryDeckUrl);
+      return r.json();
+    }),
+    fetch(pythagorasSecondaryWorksheetUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + pythagorasSecondaryWorksheetUrl);
+      return r.json();
+    }),
+    fetch(pythagorasSecondaryTicketUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + pythagorasSecondaryTicketUrl);
+      return r.json();
+    }),
+    fetch(pythagorasSecondaryNotesUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + pythagorasSecondaryNotesUrl);
+      return r.json();
+    }),
+    fetch(pythagorasSecondaryScriptUrl).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' loading ' + pythagorasSecondaryScriptUrl);
+      return r.json();
+    })
+  ]).then(function (pack) {
+    var anim = pack[0];
+    var deck = pack[1];
+    var worksheet = pack[2];
+    var ticket = pack[3];
+    var notes = pack[4];
+    var script = pack[5];
+    var problems = AnimathValidate.validateSpec(anim)
+      .concat(AnimathValidate.validateSlides(deck))
+      .concat(AnimathValidate.validateWorksheet(worksheet))
+      .concat(AnimathValidate.validateExitTicket(ticket))
+      .concat(AnimathValidate.validateNotes(notes))
+      .concat(AnimathValidate.validateScript(script));
+    if (problems.length) {
+      showError('Secondary math pythagoras pack failed validation:\n' + problems.join('\n'));
+      return;
+    }
+    AnimathPlayer.mount(document.getElementById('pythagoras-secondary-stage'), anim, { autoplay: false });
+    AnimathSlidesPresenter.attachPresenter(document, presenter, deck, { animSpec: anim });
+    pythagorasSecondaryPrint.innerHTML = [
+      AnimathPrintable.renderWorksheet(worksheet),
+      AnimathPrintable.renderWorksheetAnswerKey(worksheet),
+      AnimathPrintable.renderExitTicket(ticket),
+      AnimathPrintable.renderExitTicketAnswerKey(ticket),
+      AnimathPrintable.renderNotes(notes),
+      AnimathPrintable.renderScript(script)
+    ].join('');
+  }).catch(function (err) {
+    showError('Secondary math pythagoras pack failed to load: ' + err.message);
+  });
+})();
 </script>
 <script>
 (function () {
