@@ -1,0 +1,48 @@
+{
+  "title": "Pythagoras' theorem: a² + b² = c²",
+  "level": "secondary",
+  "subject": "math",
+  "topic": "e-trigonometry",
+  "items": [
+    {
+      "prompt": "In the 3-4-5 triangle, angle theta has opposite side 3 and adjacent side 4. What is tan theta?",
+      "answer": "3/4",
+      "choices": [
+        "3/4",
+        "4/3",
+        "3/5"
+      ],
+      "misconceptionCode": "tan = adjacent / opposite."
+    },
+    {
+      "prompt": "A right-angled triangle has legs 3 and 4. Find the hypotenuse.",
+      "answer": "c = 5"
+    },
+    {
+      "prompt": "A right-angled triangle has legs 6 and 8. Find the hypotenuse.",
+      "answer": "c = 10"
+    },
+    {
+      "prompt": "Which set of lengths can be the sides of a right-angled triangle?",
+      "answer": "3, 4 and 5",
+      "choices": [
+        "3, 4 and 5",
+        "2, 3 and 4",
+        "4, 5 and 6"
+      ]
+    },
+    {
+      "prompt": "A right-angled triangle has hypotenuse 13 and one leg 5. Find the other leg.",
+      "answer": "The other leg is 12."
+    },
+    {
+      "prompt": "What is 3² + 4²?",
+      "answer": "25",
+      "choices": [
+        "25",
+        "7",
+        "14"
+      ]
+    }
+  ]
+}
