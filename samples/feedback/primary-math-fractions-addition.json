@@ -1,0 +1,50 @@
+{
+  "title": "Adding fractions: 1/2 + 1/4",
+  "level": "primary",
+  "subject": "math",
+  "topic": "fractions",
+  "strengths": [
+    "Most of the class can convert a half into quarters: a quarter fits inside a half exactly twice, so 1/2 = 2/4.",
+    "Once every piece is a quarter, the class adds the tops and keeps the bottom: 2/4 + 1/4 = 3/4."
+  ],
+  "modelAnswers": [
+    {
+      "question": "Write 1/2 as quarters, then use your answer to work out 1/2 + 1/4.",
+      "answer": "1/2 = 2/4, so 2/4 + 1/4 = 3/4.",
+      "creditPoints": [
+        "The half must be re-cut into quarters before the pieces can be counted together",
+        "Carries the working through to the correct final answer"
+      ]
+    },
+    {
+      "question": "What is 2/4 + 1/4? Explain in one sentence why the bottom number does not change.",
+      "answer": "3/4. The bottom number stays 4 because the pieces are still quarters - the piece size never changed, so only the tops are added.",
+      "creditPoints": [
+        "When the bottom numbers already match, the pieces are already the same size: add the tops (2 + 1 = 3) and keep the bottom number, which only names the piece size",
+        "Carries the working through to the correct final answer"
+      ]
+    }
+  ],
+  "commonErrors": [
+    {
+      "misconception": "Adding tops and bottoms: 1/2 + 1/4 = 2/6.",
+      "example": "On the exit ticket question about 1/2 + 1/4, the wrong answer 2/6 adds 1 + 1 for the tops and 2 + 4 for the bottoms.",
+      "fixIt": {
+        "prompt": "Fix it: 1/2 + 1/4 = 2/6. First convert the half into quarters, then add the tops only.",
+        "corrected": "1/2 = 2/4, so 2/4 + 1/4 = 3/4."
+      }
+    },
+    {
+      "misconception": "Adding tops and bottoms: 1/2 + 1/4 = 2/6.",
+      "example": "On the worksheet, a classmate explains: 1/2 + 1/4 = 2/6, because 1 + 1 = 2 and 2 + 4 = 6.",
+      "fixIt": {
+        "prompt": "Fix it: explain in one sentence why the bottom number is never added, then write the correct sum.",
+        "corrected": "The bottom number names the piece size and the pieces stayed quarters: 1/2 + 1/4 = 2/4 + 1/4 = 3/4, not 2/6."
+      }
+    }
+  ],
+  "nextSteps": [
+    "Reteach the piece-size idea with a bar re-cut into quarters before any adding happens.",
+    "Practise converting halves to quarters until 1/2 = 2/4 is automatic, then add."
+  ]
+}

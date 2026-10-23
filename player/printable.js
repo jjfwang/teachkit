@@ -210,6 +210,19 @@
     if (errors.length) throw new Error('invalid scheme: ' + errors.join('; '));
   }
 
+  function getValidateFeedback() {
+    var g = global.AnimathValidate;
+    if (g) return g.validateFeedback || null;
+    return typeof require !== 'undefined' ? require('./validate.js').validateFeedback : null;
+  }
+
+  function assertValidFeedback(spec) {
+    var fn = getValidateFeedback();
+    if (!fn) throw new Error('animath printable: player/validate.js is missing - include it before printable.js so specs can be validated');
+    var errors = fn(spec);
+    if (errors.length) throw new Error('invalid feedback: ' + errors.join('; '));
+  }
+
   // HTML-escape for text content and double-quoted attribute values,
   // the export-frames.js esc chain: & first, then <, >, ".
   function escapeHtml(s) {
@@ -1059,6 +1072,84 @@
     return parts.join('\n');
   }
 
+  // Teacher feedback sheet: the whole-class feedback in full -
+  // header, strengths, every model answer (question, answer and
+  // every credit point), every common error with its example and
+  // its fix-it prompt plus the corrected working, and the next
+  // steps. Nothing is withheld from the teacher sheet.
+  function renderFeedback(spec, options) {
+    assertValidFeedback(spec);
+    var parts = sheetHeader(spec, 'pr-sheet pr-teacher pr-feedback', 'Feedback', normalizeOptions(options));
+    parts.push('<h2 class="pr-feedback-heading">Strengths</h2>');
+    parts.push('<ul class="pr-strengths">');
+    spec.strengths.forEach(function (strength) {
+      parts.push('<li class="pr-strength">' + escapeHtml(strength) + '</li>');
+    });
+    parts.push('</ul>');
+    parts.push('<h2 class="pr-feedback-heading">Model answers</h2>');
+    parts.push('<ol class="pr-model-answers">');
+    spec.modelAnswers.forEach(function (modelAnswer) {
+      parts.push('<li class="pr-model-answer">');
+      parts.push('<p class="pr-prompt">' + escapeHtml(modelAnswer.question) + '</p>');
+      parts.push('<p class="pr-answer">Answer: ' + escapeHtml(modelAnswer.answer) + '</p>');
+      parts.push('<ul class="pr-credit-points">');
+      modelAnswer.creditPoints.forEach(function (creditPoint) {
+        parts.push('<li class="pr-credit-point">' + escapeHtml(creditPoint) + '</li>');
+      });
+      parts.push('</ul>');
+      parts.push('</li>');
+    });
+    parts.push('</ol>');
+    parts.push('<h2 class="pr-feedback-heading">Common errors</h2>');
+    parts.push('<ol class="pr-common-errors">');
+    spec.commonErrors.forEach(function (commonError) {
+      parts.push('<li class="pr-common-error">');
+      parts.push('<p class="pr-misconception">Misconception: ' + escapeHtml(commonError.misconception) + '</p>');
+      parts.push('<p class="pr-example">Example: ' + escapeHtml(commonError.example) + '</p>');
+      parts.push('<p class="pr-fix-it-prompt">Fix it: ' + escapeHtml(commonError.fixIt.prompt) + '</p>');
+      parts.push('<p class="pr-fix-it-corrected">Corrected: ' + escapeHtml(commonError.fixIt.corrected) + '</p>');
+      parts.push('</li>');
+    });
+    parts.push('</ol>');
+    parts.push('<h2 class="pr-feedback-heading">Next steps</h2>');
+    parts.push('<ul class="pr-next-steps">');
+    spec.nextSteps.forEach(function (nextStep) {
+      parts.push('<li class="pr-next-step">' + escapeHtml(nextStep) + '</li>');
+    });
+    parts.push('</ul>');
+    parts.push('</section>');
+    return parts.join('\n');
+  }
+
+  // Student feedback fix-its sheet: header, strengths, and for each
+  // common error its misconception, example and fix-it prompt only,
+  // so students redo the broken step themselves. This function must
+  // never read modelAnswers, a credit point, or fixIt.corrected -
+  // see the header comment - so no model answer or corrected
+  // working can leak onto the sheet a student works from.
+  function renderFeedbackFixIts(spec, options) {
+    assertValidFeedback(spec);
+    var parts = sheetHeader(spec, 'pr-sheet pr-student pr-feedback-fix-its', 'Feedback fix-its', normalizeOptions(options));
+    parts.push('<h2 class="pr-feedback-heading">Strengths</h2>');
+    parts.push('<ul class="pr-strengths">');
+    spec.strengths.forEach(function (strength) {
+      parts.push('<li class="pr-strength">' + escapeHtml(strength) + '</li>');
+    });
+    parts.push('</ul>');
+    parts.push('<h2 class="pr-feedback-heading">Fix these errors</h2>');
+    parts.push('<ol class="pr-common-errors">');
+    spec.commonErrors.forEach(function (commonError) {
+      parts.push('<li class="pr-common-error">');
+      parts.push('<p class="pr-misconception">Misconception: ' + escapeHtml(commonError.misconception) + '</p>');
+      parts.push('<p class="pr-example">Example: ' + escapeHtml(commonError.example) + '</p>');
+      parts.push('<p class="pr-fix-it-prompt">Fix it: ' + escapeHtml(commonError.fixIt.prompt) + '</p>');
+      parts.push('</li>');
+    });
+    parts.push('</ol>');
+    parts.push('</section>');
+    return parts.join('\n');
+  }
+
   var api = {
     renderWorksheet: renderWorksheet,
     renderWorksheetAnswerKey: renderWorksheetAnswerKey,
@@ -1083,6 +1174,8 @@
     renderOrganisersKey: renderOrganisersKey,
     renderGlossary: renderGlossary,
     renderScheme: renderScheme,
+    renderFeedback: renderFeedback,
+    renderFeedbackFixIts: renderFeedbackFixIts,
     escapeHtml: escapeHtml
   };
   global.AnimathPrintable = api;

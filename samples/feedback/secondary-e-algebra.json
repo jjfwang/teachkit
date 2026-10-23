@@ -1,0 +1,50 @@
+{
+  "title": "E-Math algebra: expansion, factorisation and changing the subject",
+  "level": "secondary",
+  "subject": "math",
+  "topic": "e-algebra",
+  "strengths": [
+    "Most of the class can expand a product of two brackets term by term.",
+    "The class can spot a common bracket when factorising by grouping."
+  ],
+  "modelAnswers": [
+    {
+      "question": "Factorise 2x + 6 + xy + 3y by grouping.",
+      "answer": "2x + 6 + xy + 3y = (x + 3)(2 + y).",
+      "creditPoints": [
+        "Scene s2: group the pairs, take 2 from 2x + 6 and y from xy + 3y, then pull the common bracket (x + 3) out whole: (x + 3)(2 + y)",
+        "Carries the working through to the correct final answer"
+      ]
+    },
+    {
+      "question": "Make x the subject of y = 3x + 5.",
+      "answer": "x = (y - 5) / 3.",
+      "creditPoints": [
+        "Scene s3: undo in reverse - subtract 5 from both sides to get y - 5 = 3x, then divide by 3 to make x the subject",
+        "Carries the working through to the correct final answer"
+      ]
+    }
+  ],
+  "commonErrors": [
+    {
+      "misconception": "(a + b)^2 = a^2 + b^2.",
+      "example": "A learner expands (a + b)^2 as a^2 + b^2, squaring each term and dropping the middle term.",
+      "fixIt": {
+        "prompt": "Fix it: write (a + b)^2 as (a + b)(a + b) and expand all four products before simplifying.",
+        "corrected": "(a + b)^2 = (a + b)(a + b) = a^2 + ab + ab + b^2 = a^2 + 2ab + b^2."
+      }
+    },
+    {
+      "misconception": "(a + b)^2 = a^2 + b^2.",
+      "example": "On the exit ticket, a learner claims (x + 3)^2 = x^2 + 9, treating the square as acting on each term alone.",
+      "fixIt": {
+        "prompt": "Fix it: test the claim with a = 1 and b = 2, then expand (a + b)^2 properly.",
+        "corrected": "With a = 1 and b = 2, (a + b)^2 = 9 but a^2 + b^2 = 5, so the claim fails; the full expansion is a^2 + 2ab + b^2."
+      }
+    }
+  ],
+  "nextSteps": [
+    "Reteach squaring a bracket as multiplying the bracket by itself, with the grid method showing all four products.",
+    "Practise expanding squares before returning to factorising by grouping."
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "title": "JC H2 differentiation: connected rates of change",
+  "level": "jc",
+  "subject": "math",
+  "topic": "h2-differentiation",
+  "strengths": [
+    "Most of the class can differentiate the ladder relation with respect to time using the chain rule.",
+    "The class can interpret a negative rate as a quantity decreasing."
+  ],
+  "modelAnswers": [
+    {
+      "question": "A 5-unit ladder slides with x^2 + y^2 = 25. At the instant x = 3, y = 4, the foot moves out at dx/dt = 1. Find dy/dt and interpret its sign.",
+      "answer": "dy/dt = -3/4 = -0.75 units per second; the negative sign means the top of the ladder is sliding down.",
+      "creditPoints": [
+        "Differentiate the relation with respect to time: 2x dx/dt + 2y dy/dt = 0",
+        "Carries the working through to the correct final answer"
+      ]
+    },
+    {
+      "question": "Differentiate the ladder relation x^2 + y^2 = 25 with respect to time t, without substituting any numbers.",
+      "answer": "2x dx/dt + 2y dy/dt = 0.",
+      "creditPoints": [
+        "Each squared variable differentiates by the chain rule: x^2 gives 2x dx/dt and y^2 gives 2y dy/dt",
+        "Carries the working through to the correct final answer"
+      ]
+    }
+  ],
+  "commonErrors": [
+    {
+      "misconception": "Cancelling the d symbols in dy/dx.",
+      "example": "A learner works with y = x^2 and claims dy/dx = y/x by cancelling the two d symbols, giving a gradient of 3 at x = 3.",
+      "fixIt": {
+        "prompt": "Fix it: compute dy/dx for y = x^2 at x = 3 from the power rule, and state what dy/dx actually is.",
+        "corrected": "dy/dx = 2x = 6 at x = 3. dy/dx is a single symbol for a limit, not a fraction, so there are no d symbols to cancel."
+      }
+    },
+    {
+      "misconception": "Cancelling the d symbols in dy/dx.",
+      "example": "On the exit ticket, a learner crosses out the d in dy and the d in dx as if they were common factors.",
+      "fixIt": {
+        "prompt": "Fix it: explain in one sentence why the crossing-out is invalid, naming what the notation means.",
+        "corrected": "dy/dx denotes the limit of the ratio of changes as the change in x tends to 0; dy and dx are not separate numbers, so nothing can be cancelled."
+      }
+    }
+  ],
+  "nextSteps": [
+    "Reteach dy/dx as one limit symbol before any further connected-rates work.",
+    "Practise writing the chain-rule link equation first, then substituting the instant values."
+  ]
+}

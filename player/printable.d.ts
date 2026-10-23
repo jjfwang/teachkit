@@ -367,4 +367,35 @@ export interface SchemeSpec {
   [key: string]: unknown;
 }
 export function renderScheme(spec: SchemeSpec, options?: PrintableOptions): string;
+export interface FeedbackModelAnswer {
+  question: string;
+  answer: string;
+  creditPoints: string[];
+  [key: string]: unknown;
+}
+export interface FeedbackFixIt {
+  prompt: string;
+  corrected: string;
+  [key: string]: unknown;
+}
+export interface FeedbackCommonError {
+  misconception: string;
+  example: string;
+  fixIt: FeedbackFixIt;
+  [key: string]: unknown;
+}
+export interface FeedbackSpec {
+  title: string;
+  level: string;
+  subject: string;
+  topic: string;
+  instructions?: string;
+  strengths: string[];
+  modelAnswers: FeedbackModelAnswer[];
+  commonErrors: FeedbackCommonError[];
+  nextSteps: string[];
+  [key: string]: unknown;
+}
+export function renderFeedback(spec: FeedbackSpec, options?: PrintableOptions): string;
+export function renderFeedbackFixIts(spec: FeedbackSpec, options?: PrintableOptions): string;
 export function escapeHtml(s: string): string;
