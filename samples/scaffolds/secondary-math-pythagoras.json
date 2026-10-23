@@ -1,0 +1,116 @@
+{
+  "title": "Pythagoras' theorem: a² + b² = c²",
+  "level": "secondary",
+  "subject": "math",
+  "topic": "e-trigonometry",
+  "sets": [
+    {
+      "level": "full",
+      "wordBank": [
+        {
+          "term": "Hypotenuse",
+          "gloss": "the longest side, across from the right angle"
+        },
+        {
+          "term": "Right-angled triangle",
+          "gloss": "a triangle with one angle of exactly 90 degrees"
+        },
+        {
+          "term": "Square (of a length)",
+          "gloss": "a length multiplied by itself"
+        },
+        {
+          "term": "Square root",
+          "gloss": "the positive length whose square gives the number"
+        },
+        {
+          "term": "Converse",
+          "gloss": "the theorem run backwards to test for a right angle"
+        }
+      ],
+      "starters": [
+        "To find the hypotenuse, I square...",
+        "To find a short side, I rearrange...",
+        "To test whether the triangle is right-angled, I use..."
+      ],
+      "frames": [
+        "The longest side of a right-angled triangle, across from the right angle, is the ___.",
+        "A length multiplied by itself is its ___.",
+        "The theorem run backwards to test for a right angle is the ___."
+      ],
+      "cloze": [
+        {
+          "text": "In a ___, the longest side is the ___.",
+          "answers": [
+            "Right-angled triangle",
+            "Hypotenuse"
+          ]
+        },
+        {
+          "text": "The ___ of 25 is 5, and 3 squared is the ___ of 3.",
+          "answers": [
+            "Square root",
+            "Square (of a length)"
+          ]
+        }
+      ]
+    },
+    {
+      "level": "partial",
+      "wordBank": [
+        {
+          "term": "Hypotenuse",
+          "gloss": "the longest side, across from the right angle"
+        },
+        {
+          "term": "Square root",
+          "gloss": "the positive length whose square gives the number"
+        },
+        {
+          "term": "Converse",
+          "gloss": "the theorem run backwards to test for a right angle"
+        }
+      ],
+      "starters": [
+        "To find the unknown side, I take the...",
+        "To check for a right angle, I use the..."
+      ],
+      "frames": [
+        "The positive length whose square gives 25 is the ___ of 25.",
+        "Testing a triangle with the theorem run backwards uses the ___."
+      ],
+      "cloze": [
+        {
+          "text": "The longest side is the ___, and turning c squared = 25 back into c = 5 uses the ___.",
+          "answers": [
+            "Hypotenuse",
+            "Square root"
+          ]
+        }
+      ]
+    },
+    {
+      "level": "minimal",
+      "wordBank": [
+        {
+          "term": "Hypotenuse",
+          "gloss": "the longest side, across from the right angle"
+        }
+      ],
+      "starters": [
+        "The longest side of this triangle is..."
+      ],
+      "frames": [
+        "The longest side, across from the right angle, is the ___."
+      ],
+      "cloze": [
+        {
+          "text": "In a right-angled triangle, the longest side is the ___.",
+          "answers": [
+            "Hypotenuse"
+          ]
+        }
+      ]
+    }
+  ]
+}

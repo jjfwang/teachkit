@@ -1,0 +1,33 @@
+{
+  "title": "Pythagoras' theorem: a² + b² = c²",
+  "level": "secondary",
+  "subject": "math",
+  "topic": "e-trigonometry",
+  "entries": [
+    {
+      "term": "Hypotenuse",
+      "meaning": "The longest side of a right-angled triangle, across from the right angle: length 5 in the 3-4-5 triangle, found as c in a² + b² = c².",
+      "example": "Find c for a right-angled triangle with legs 3 and 4. Square the legs: 3² = 9 and 4² = 16. Add the squares: 9 + 16 = 25, so c² = 25. Take the square root: c = 5. Check the trap: c is not 3 + 4 = 7, because the theorem adds the squares, not the lengths - and 5 sits between 4 and 7, shorter than the trap bar, exactly as the animation shows."
+    },
+    {
+      "term": "Right-angled triangle",
+      "meaning": "A triangle with one angle of exactly 90 degrees, marked by the small square in the corner: the legs 3 and 4 meet at that right angle in the animation.",
+      "example": "A right-angled triangle: the legs a = 3 and b = 4 meet at the right angle, the right-angle marker sits between them, and the hypotenuse c is the unknown longest side."
+    },
+    {
+      "term": "Square (of a length)",
+      "meaning": "The length multiplied by itself, written with a superscript 2: the square of 3 is 3² = 9 and the square of 4 is 4² = 16, the areas of the squares built on the legs.",
+      "example": "Squares on the short sides: the square on a is 3² = 9 and the square on b is 4² = 16, holding 9 and 16 unit squares."
+    },
+    {
+      "term": "Square root",
+      "meaning": "The positive length whose square gives the number: the square root of 25 is 5, which turns c² = 25 back into the length c = 5.",
+      "example": "9 + 16 = 25: c is the square root of 25, so c = 5 - the lengths themselves add to 7, but it is the squares that the theorem adds."
+    },
+    {
+      "term": "Converse",
+      "meaning": "The theorem run backwards: if the squares of the two shorter sides add to the square of the longest side, as 9 + 16 = 25 does for sides 3, 4 and 5, then the triangle must be right-angled.",
+      "example": "Use the converse of Pythagoras' theorem to test whether a triangle is right-angled"
+    }
+  ]
+}
