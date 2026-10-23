@@ -1,0 +1,81 @@
+{
+  "title": "The Water Cycle",
+  "level": "primary",
+  "subject": "science",
+  "topic": "water-cycle",
+  "templates": [
+    {
+      "kind": "flow",
+      "slots": [
+        {
+          "label": "Evaporation",
+          "entries": [
+            "Evaporation: the sun heats liquid water in the sea and in puddles, and the water turns into invisible water vapour that rises into the air."
+          ],
+          "studentPrompt": "Explain this step in your own words."
+        },
+        {
+          "label": "Condensation",
+          "entries": [
+            "Condensation: high up the air is cold, so the water vapour cools and turns back into tiny liquid drops, and billions of those drops gathered together form a cloud."
+          ],
+          "studentPrompt": "Explain this step in your own words."
+        },
+        {
+          "label": "Precipitation",
+          "entries": [
+            "Precipitation: the drops in the cloud join and grow bigger and heavier until gravity pulls them down to the ground as rain."
+          ],
+          "studentPrompt": "Explain this step in your own words."
+        },
+        {
+          "label": "Collection",
+          "entries": [
+            "Collection: the rain gathers in rivers, lakes and the sea, where the sun can heat it again - the cycle starts over and never ends."
+          ],
+          "studentPrompt": "Explain this step in your own words."
+        }
+      ]
+    },
+    {
+      "kind": "frayer",
+      "slots": [
+        {
+          "label": "Evaporation",
+          "entries": [
+            "Liquid water turning into invisible water vapour when it is heated, for example by the sun."
+          ],
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "label": "Water vapour",
+          "entries": [
+            "Water in its gas form. It is invisible, but it is still water and it is still there in the air."
+          ],
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "label": "Condensation",
+          "entries": [
+            "Water vapour cooling down and turning back into tiny liquid water drops."
+          ],
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "label": "Precipitation",
+          "entries": [
+            "Water falling back to the ground, most often as rain, when drops grow too heavy to float."
+          ],
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "label": "Collection",
+          "entries": [
+            "Fallen water gathering together again in rivers, lakes and the sea."
+          ],
+          "studentPrompt": "Give your own example of this term."
+        }
+      ]
+    }
+  ]
+}

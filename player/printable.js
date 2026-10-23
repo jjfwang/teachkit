@@ -171,6 +171,19 @@
     if (errors.length) throw new Error('invalid revision: ' + errors.join('; '));
   }
 
+  function getValidateOrganisers() {
+    var g = global.AnimathValidate;
+    if (g) return g.validateOrganisers || null;
+    return typeof require !== 'undefined' ? require('./validate.js').validateOrganisers : null;
+  }
+
+  function assertValidOrganisers(spec) {
+    var fn = getValidateOrganisers();
+    if (!fn) throw new Error('animath printable: player/validate.js is missing - include it before printable.js so specs can be validated');
+    var errors = fn(spec);
+    if (errors.length) throw new Error('invalid organisers: ' + errors.join('; '));
+  }
+
   // HTML-escape for text content and double-quoted attribute values,
   // the export-frames.js esc chain: & first, then <, >, ".
   function escapeHtml(s) {
@@ -904,6 +917,60 @@
     return parts.join('\n');
   }
 
+  // Organisers student sheet: every template's kind heading and
+  // every slot's label and studentPrompt, with answer lines for the
+  // student to complete. This function never reads a slot's entries -
+  // see the header comment - so the derived content cannot leak to
+  // the sheet a student works from.
+  function renderOrganisers(spec, options) {
+    assertValidOrganisers(spec);
+    var parts = sheetHeader(spec, 'pr-sheet pr-student pr-organisers', 'Graphic organisers', normalizeOptions(options));
+    spec.templates.forEach(function (template) {
+      parts.push('<h2 class="pr-template-heading">' + escapeHtml(template.kind) + '</h2>');
+      parts.push('<ol class="pr-slots">');
+      template.slots.forEach(function (slot) {
+        parts.push('<li class="pr-slot">');
+        parts.push('<p class="pr-slot-label">' + escapeHtml(slot.label) + '</p>');
+        if (typeof slot.studentPrompt === 'string') {
+          parts.push('<p class="pr-student-prompt">' + escapeHtml(slot.studentPrompt) + '</p>');
+        }
+        parts.push('<div class="pr-answer-lines">' +
+          '<span class="pr-answer-line"></span>' +
+          '<span class="pr-answer-line"></span>' +
+          '<span class="pr-answer-line"></span></div>');
+        parts.push('</li>');
+      });
+      parts.push('</ol>');
+    });
+    parts.push('</section>');
+    return parts.join('\n');
+  }
+
+  // Teacher / self-check organisers key: every template and slot
+  // with its entries - the derived content the student sheet never
+  // reads.
+  function renderOrganisersKey(spec, options) {
+    assertValidOrganisers(spec);
+    var parts = sheetHeader(spec, 'pr-sheet pr-teacher pr-answer-key pr-organisers', 'Graphic organisers key', normalizeOptions(options));
+    spec.templates.forEach(function (template) {
+      parts.push('<h2 class="pr-template-heading">' + escapeHtml(template.kind) + '</h2>');
+      parts.push('<ol class="pr-slots">');
+      template.slots.forEach(function (slot) {
+        parts.push('<li class="pr-slot">');
+        parts.push('<p class="pr-slot-label">' + escapeHtml(slot.label) + '</p>');
+        parts.push('<ul class="pr-entries">');
+        slot.entries.forEach(function (entry) {
+          parts.push('<li class="pr-entry">' + escapeHtml(entry) + '</li>');
+        });
+        parts.push('</ul>');
+        parts.push('</li>');
+      });
+      parts.push('</ol>');
+    });
+    parts.push('</section>');
+    return parts.join('\n');
+  }
+
   var api = {
     renderWorksheet: renderWorksheet,
     renderWorksheetAnswerKey: renderWorksheetAnswerKey,
@@ -924,6 +991,8 @@
     renderSummativeAnswerKey: renderSummativeAnswerKey,
     renderRevision: renderRevision,
     renderRevisionAnswerKey: renderRevisionAnswerKey,
+    renderOrganisers: renderOrganisers,
+    renderOrganisersKey: renderOrganisersKey,
     escapeHtml: escapeHtml
   };
   global.AnimathPrintable = api;
