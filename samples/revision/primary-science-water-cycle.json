@@ -1,0 +1,61 @@
+{
+  "title": "The Water Cycle",
+  "level": "primary",
+  "subject": "science",
+  "topic": "water-cycle",
+  "flashcards": [
+    {
+      "front": "Evaporation",
+      "back": "Liquid water turning into invisible water vapour when it is heated, for example by the sun.",
+      "source": "definition"
+    },
+    {
+      "front": "Water vapour",
+      "back": "Water in its gas form. It is invisible, but it is still water and it is still there in the air.",
+      "source": "definition"
+    },
+    {
+      "front": "Water disappears for good once it evaporates.",
+      "back": "This is wrong because the water only looks gone: vapour is invisible, so it feels as if the water has vanished. In fact the water is still there in the air as water vapour. It cools into clouds and falls back as rain, so the same water keeps going round the cycle - evaporation changes its form, it never removes it.",
+      "source": "trap"
+    },
+    {
+      "front": "Name the change that turns water vapour back into tiny liquid droplets high in the air.",
+      "back": "Condensation",
+      "source": "quiz-bank"
+    },
+    {
+      "front": "Write the four stages of the water cycle in order, starting with evaporation.",
+      "back": "Evaporation, condensation, precipitation, collection",
+      "source": "quiz-bank"
+    }
+  ],
+  "practiceSets": [
+    {
+      "dayOffset": 1,
+      "items": [
+        {
+          "prompt": "What happens to liquid water when the sun heats it in a puddle?",
+          "answer": "It evaporates into invisible water vapour."
+        },
+        {
+          "prompt": "What is water vapour?",
+          "answer": "Water in its gas form, invisible but still water."
+        }
+      ]
+    },
+    {
+      "dayOffset": 3,
+      "items": [
+        {
+          "prompt": "What do we call water falling from clouds to the ground?",
+          "answer": "Precipitation"
+        },
+        {
+          "prompt": "A puddle dries up on a hot day. Where has the water gone?",
+          "answer": "It evaporated into the air as water vapour."
+        }
+      ]
+    }
+  ]
+}

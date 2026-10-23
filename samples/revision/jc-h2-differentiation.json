@@ -1,0 +1,61 @@
+{
+  "title": "JC H2 differentiation: connected rates of change",
+  "level": "jc",
+  "subject": "math",
+  "topic": "h2-differentiation",
+  "flashcards": [
+    {
+      "front": "Connected rates of change",
+      "back": "Rates of linked quantities: when a relation ties two quantities together, their rates of change are tied too, as the radius of a circle drags its area along.",
+      "source": "definition"
+    },
+    {
+      "front": "Chain rule",
+      "back": "The rule that differentiates a quantity through a link: for A = pi r^2 changing with time, dA/dt = dA/dr x dr/dt = 2 pi r dr/dt.",
+      "source": "definition"
+    },
+    {
+      "front": "Cancelling the d symbols in dy/dx.",
+      "back": "dy/dx looks like a fraction, so the d symbols look like they can cancel. dy/dx is one symbol for a limit, not a fraction: cancelling the d symbols breaks the mathematics. Keep every rate symbol whole - dy/dx, dA/dt, dr/dt - and let the chain rule, not crossing-out, do the linking.",
+      "source": "trap"
+    },
+    {
+      "front": "Differentiate y = 5x^4 - 2x with respect to x.",
+      "back": "dy/dx = 20x^3 - 2",
+      "source": "quiz-bank"
+    },
+    {
+      "front": "Find dy/dx when y = sin(3x).",
+      "back": "dy/dx = 3cos(3x)",
+      "source": "quiz-bank"
+    }
+  ],
+  "practiceSets": [
+    {
+      "dayOffset": 1,
+      "items": [
+        {
+          "prompt": "If y = x^3, what is dy/dx?",
+          "answer": "3x^2"
+        },
+        {
+          "prompt": "A student writes dy/dx and cancels the two d symbols to get y/x. What is wrong?",
+          "answer": "dy/dx is a single symbol for a limit, not a fraction, so the d symbols cannot cancel."
+        }
+      ]
+    },
+    {
+      "dayOffset": 3,
+      "items": [
+        {
+          "prompt": "A balloon's radius r grows with time t. Write the chain-rule link between dV/dt, dV/dr and dr/dt for its volume V.",
+          "answer": "dV/dt = (dV/dr)(dr/dt)"
+        },
+        {
+          "prompt": "If dy/dx = 0 at a point, what can you conclude?",
+          "answer": "The point is stationary; it may be a maximum, a minimum or a point of inflexion."
+        }
+      ]
+    }
+  ]
+}

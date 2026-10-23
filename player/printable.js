@@ -158,6 +158,19 @@
     if (errors.length) throw new Error('invalid summative: ' + errors.join('; '));
   }
 
+  function getValidateRevision() {
+    var g = global.AnimathValidate;
+    if (g) return g.validateRevision || null;
+    return typeof require !== 'undefined' ? require('./validate.js').validateRevision : null;
+  }
+
+  function assertValidRevision(spec) {
+    var fn = getValidateRevision();
+    if (!fn) throw new Error('animath printable: player/validate.js is missing - include it before printable.js so specs can be validated');
+    var errors = fn(spec);
+    if (errors.length) throw new Error('invalid revision: ' + errors.join('; '));
+  }
+
   // HTML-escape for text content and double-quoted attribute values,
   // the export-frames.js esc chain: & first, then <, >, ".
   function escapeHtml(s) {
@@ -818,6 +831,69 @@
     return parts.join('\n');
   }
 
+
+  // Revision study sheet: every flashcard's front and every spaced
+  // practice set's prompts, with answer lines. This function never
+  // reads a flashcard's back or a practice item's answer - see the
+  // header comment - so the self-check content cannot leak to the
+  // study sheet a student works from.
+  function renderRevision(spec, options) {
+    assertValidRevision(spec);
+    var parts = sheetHeader(spec, 'pr-sheet pr-student pr-revision', 'Revision', normalizeOptions(options));
+    parts.push('<ol class="pr-flashcards">');
+    spec.flashcards.forEach(function (card) {
+      parts.push('<li class="pr-flashcard">');
+      parts.push('<p class="pr-front">' + escapeHtml(card.front) + '</p>');
+      parts.push('</li>');
+    });
+    parts.push('</ol>');
+    spec.practiceSets.forEach(function (set) {
+      parts.push('<h2 class="pr-set-heading">Practice set: day ' + set.dayOffset + '</h2>');
+      parts.push('<ol class="pr-questions">');
+      set.items.forEach(function (item) {
+        parts.push('<li class="pr-question">');
+        parts.push('<p class="pr-prompt">' + escapeHtml(item.prompt) + '</p>');
+        parts.push('<div class="pr-answer-lines">' +
+          '<span class="pr-answer-line"></span>' +
+          '<span class="pr-answer-line"></span>' +
+          '<span class="pr-answer-line"></span></div>');
+        parts.push('</li>');
+      });
+      parts.push('</ol>');
+    });
+    parts.push('</section>');
+    return parts.join('\n');
+  }
+
+  // Teacher / self-check revision answer key: every flashcard's front
+  // and back, and every practice item's prompt and answer - the backs
+  // and answers the study sheet never reads.
+  function renderRevisionAnswerKey(spec, options) {
+    assertValidRevision(spec);
+    var parts = sheetHeader(spec, 'pr-sheet pr-teacher pr-answer-key pr-revision', 'Revision answer key', normalizeOptions(options));
+    parts.push('<ol class="pr-flashcards">');
+    spec.flashcards.forEach(function (card) {
+      parts.push('<li class="pr-flashcard">');
+      parts.push('<p class="pr-front">' + escapeHtml(card.front) + '</p>');
+      parts.push('<p class="pr-back">Back: ' + escapeHtml(card.back) + '</p>');
+      parts.push('</li>');
+    });
+    parts.push('</ol>');
+    spec.practiceSets.forEach(function (set) {
+      parts.push('<h2 class="pr-set-heading">Practice set: day ' + set.dayOffset + '</h2>');
+      parts.push('<ol class="pr-questions">');
+      set.items.forEach(function (item) {
+        parts.push('<li class="pr-question">');
+        parts.push('<p class="pr-prompt">' + escapeHtml(item.prompt) + '</p>');
+        parts.push('<p class="pr-answer">Answer: ' + escapeHtml(item.answer) + '</p>');
+        parts.push('</li>');
+      });
+      parts.push('</ol>');
+    });
+    parts.push('</section>');
+    return parts.join('\n');
+  }
+
   var api = {
     renderWorksheet: renderWorksheet,
     renderWorksheetAnswerKey: renderWorksheetAnswerKey,
@@ -836,6 +912,8 @@
     renderQuizBankAnswerKey: renderQuizBankAnswerKey,
     renderSummative: renderSummative,
     renderSummativeAnswerKey: renderSummativeAnswerKey,
+    renderRevision: renderRevision,
+    renderRevisionAnswerKey: renderRevisionAnswerKey,
     escapeHtml: escapeHtml
   };
   global.AnimathPrintable = api;

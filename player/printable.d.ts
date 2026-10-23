@@ -277,4 +277,32 @@ export interface SummativeSpec {
 }
 export function renderSummative(spec: SummativeSpec, options?: PrintableOptions): string;
 export function renderSummativeAnswerKey(spec: SummativeSpec, options?: PrintableOptions): string;
+export interface RevisionFlashcard {
+  front: string;
+  back: string;
+  source: string;
+  [key: string]: unknown;
+}
+export interface RevisionPracticeItem {
+  prompt: string;
+  answer: string;
+  [key: string]: unknown;
+}
+export interface RevisionPracticeSet {
+  dayOffset: number;
+  items: RevisionPracticeItem[];
+  [key: string]: unknown;
+}
+export interface RevisionSpec {
+  title: string;
+  level: string;
+  subject: string;
+  topic: string;
+  instructions?: string;
+  flashcards: RevisionFlashcard[];
+  practiceSets: RevisionPracticeSet[];
+  [key: string]: unknown;
+}
+export function renderRevision(spec: RevisionSpec, options?: PrintableOptions): string;
+export function renderRevisionAnswerKey(spec: RevisionSpec, options?: PrintableOptions): string;
 export function escapeHtml(s: string): string;
