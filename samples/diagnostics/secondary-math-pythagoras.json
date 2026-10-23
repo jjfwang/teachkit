@@ -1,0 +1,202 @@
+{
+  "title": "Pythagoras' theorem: a² + b² = c²",
+  "level": "secondary",
+  "subject": "math",
+  "topic": "e-trigonometry",
+  "doNow": [
+    {
+      "id": "dn1",
+      "prompt": "A right-angled triangle has legs 3 and 4. What is the length of the hypotenuse?",
+      "kind": "multiple-choice",
+      "choices": [
+        {
+          "text": "5",
+          "correct": true
+        },
+        {
+          "text": "7",
+          "misconception": "tan = adjacent / opposite.",
+          "rationale": {
+            "chose": "The learner selected option 7 as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents.",
+            "reteach": "Reteach from the paired notes trap: always read TOA - tan is opposite over adjacent, so for the 3-4-5 triangle tan theta = 3/4 = 0.75 with the opposite side 3 on top; and for the hypotenuse, square first, add the squares, then take the root."
+          }
+        },
+        {
+          "text": "25",
+          "misconception": "tan = adjacent / opposite.",
+          "rationale": {
+            "chose": "The learner selected option 25 as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents.",
+            "reteach": "Reteach from the paired notes trap: always read TOA - tan is opposite over adjacent, so for the 3-4-5 triangle tan theta = 3/4 = 0.75 with the opposite side 3 on top; and for the hypotenuse, square first, add the squares, then take the root."
+          }
+        },
+        {
+          "text": "9",
+          "misconception": "tan = adjacent / opposite.",
+          "rationale": {
+            "chose": "The learner selected option 9 as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents.",
+            "reteach": "Reteach from the paired notes trap: always read TOA - tan is opposite over adjacent, so for the 3-4-5 triangle tan theta = 3/4 = 0.75 with the opposite side 3 on top; and for the hypotenuse, square first, add the squares, then take the root."
+          }
+        }
+      ]
+    },
+    {
+      "id": "dn2",
+      "prompt": "In a right-angled triangle, angle theta has opposite side 3 and adjacent side 4. What is tan theta?",
+      "kind": "multiple-choice",
+      "choices": [
+        {
+          "text": "3/4",
+          "correct": true
+        },
+        {
+          "text": "4/3",
+          "misconception": "tan = adjacent / opposite.",
+          "rationale": {
+            "chose": "The learner selected option 4/3 as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents.",
+            "reteach": "Reteach from the paired notes trap: always read TOA - tan is opposite over adjacent, so for the 3-4-5 triangle tan theta = 3/4 = 0.75 with the opposite side 3 on top; and for the hypotenuse, square first, add the squares, then take the root."
+          }
+        },
+        {
+          "text": "3/5",
+          "misconception": "tan = adjacent / opposite.",
+          "rationale": {
+            "chose": "The learner selected option 3/5 as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents.",
+            "reteach": "Reteach from the paired notes trap: always read TOA - tan is opposite over adjacent, so for the 3-4-5 triangle tan theta = 3/4 = 0.75 with the opposite side 3 on top; and for the hypotenuse, square first, add the squares, then take the root."
+          }
+        },
+        {
+          "text": "4/5",
+          "misconception": "tan = adjacent / opposite.",
+          "rationale": {
+            "chose": "The learner selected option 4/5 as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents.",
+            "reteach": "Reteach from the paired notes trap: always read TOA - tan is opposite over adjacent, so for the 3-4-5 triangle tan theta = 3/4 = 0.75 with the opposite side 3 on top; and for the hypotenuse, square first, add the squares, then take the root."
+          }
+        }
+      ]
+    },
+    {
+      "id": "dn3",
+      "prompt": "A right-angled triangle has legs 6 and 8. What is the length of the hypotenuse?",
+      "kind": "multiple-choice",
+      "choices": [
+        {
+          "text": "10",
+          "correct": true
+        },
+        {
+          "text": "14",
+          "misconception": "tan = adjacent / opposite.",
+          "rationale": {
+            "chose": "The learner selected option 14 as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents.",
+            "reteach": "Reteach from the paired notes trap: always read TOA - tan is opposite over adjacent, so for the 3-4-5 triangle tan theta = 3/4 = 0.75 with the opposite side 3 on top; and for the hypotenuse, square first, add the squares, then take the root."
+          }
+        },
+        {
+          "text": "100",
+          "misconception": "tan = adjacent / opposite.",
+          "rationale": {
+            "chose": "The learner selected option 100 as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents.",
+            "reteach": "Reteach from the paired notes trap: always read TOA - tan is opposite over adjacent, so for the 3-4-5 triangle tan theta = 3/4 = 0.75 with the opposite side 3 on top; and for the hypotenuse, square first, add the squares, then take the root."
+          }
+        },
+        {
+          "text": "48",
+          "misconception": "tan = adjacent / opposite.",
+          "rationale": {
+            "chose": "The learner selected option 48 as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents.",
+            "reteach": "Reteach from the paired notes trap: always read TOA - tan is opposite over adjacent, so for the 3-4-5 triangle tan theta = 3/4 = 0.75 with the opposite side 3 on top; and for the hypotenuse, square first, add the squares, then take the root."
+          }
+        }
+      ]
+    }
+  ],
+  "hingeQuestions": [
+    {
+      "id": "h1",
+      "prompt": "How many unit squares fill the squares on legs 3 and 4?",
+      "kind": "multiple-choice",
+      "choices": [
+        {
+          "text": "9 and 16",
+          "correct": true
+        },
+        {
+          "text": "3 and 4",
+          "misconception": "tan = adjacent / opposite.",
+          "rationale": {
+            "chose": "The learner selected option 3 and 4 as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents.",
+            "reteach": "Reteach from the paired notes trap: always read TOA - tan is opposite over adjacent, so for the 3-4-5 triangle tan theta = 3/4 = 0.75 with the opposite side 3 on top; and for the hypotenuse, square first, add the squares, then take the root."
+          }
+        },
+        {
+          "text": "7 and 7",
+          "misconception": "tan = adjacent / opposite.",
+          "rationale": {
+            "chose": "The learner selected option 7 and 7 as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents.",
+            "reteach": "Reteach from the paired notes trap: always read TOA - tan is opposite over adjacent, so for the 3-4-5 triangle tan theta = 3/4 = 0.75 with the opposite side 3 on top; and for the hypotenuse, square first, add the squares, then take the root."
+          }
+        },
+        {
+          "text": "25 and 25",
+          "misconception": "tan = adjacent / opposite.",
+          "rationale": {
+            "chose": "The learner selected option 25 and 25 as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents.",
+            "reteach": "Reteach from the paired notes trap: always read TOA - tan is opposite over adjacent, so for the 3-4-5 triangle tan theta = 3/4 = 0.75 with the opposite side 3 on top; and for the hypotenuse, square first, add the squares, then take the root."
+          }
+        }
+      ],
+      "scriptCue": "s2"
+    },
+    {
+      "id": "h2",
+      "prompt": "A triangle has sides 5, 12 and 13. Which check shows it is right-angled?",
+      "kind": "multiple-choice",
+      "choices": [
+        {
+          "text": "5² + 12² = 13²",
+          "correct": true
+        },
+        {
+          "text": "5 + 12 = 17",
+          "misconception": "tan = adjacent / opposite.",
+          "rationale": {
+            "chose": "The learner selected option 5 + 12 = 17 as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents.",
+            "reteach": "Reteach from the paired notes trap: always read TOA - tan is opposite over adjacent, so for the 3-4-5 triangle tan theta = 3/4 = 0.75 with the opposite side 3 on top; and for the hypotenuse, square first, add the squares, then take the root."
+          }
+        },
+        {
+          "text": "5² + 12² = 17²",
+          "misconception": "tan = adjacent / opposite.",
+          "rationale": {
+            "chose": "The learner selected option 5² + 12² = 17² as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents.",
+            "reteach": "Reteach from the paired notes trap: always read TOA - tan is opposite over adjacent, so for the 3-4-5 triangle tan theta = 3/4 = 0.75 with the opposite side 3 on top; and for the hypotenuse, square first, add the squares, then take the root."
+          }
+        },
+        {
+          "text": "13 - 5 = 8",
+          "misconception": "tan = adjacent / opposite.",
+          "rationale": {
+            "chose": "The learner selected option 13 - 5 = 8 as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents.",
+            "reteach": "Reteach from the paired notes trap: always read TOA - tan is opposite over adjacent, so for the 3-4-5 triangle tan theta = 3/4 = 0.75 with the opposite side 3 on top; and for the hypotenuse, square first, add the squares, then take the root."
+          }
+        }
+      ],
+      "scriptCue": "s4"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "title": "Pythagoras' theorem: a² + b² = c²",
+  "level": "secondary",
+  "subject": "math",
+  "topic": "e-trigonometry",
+  "complete": {
+    "problem": "Find c for a right-angled triangle with legs 3 and 4.",
+    "steps": [
+      {
+        "text": "Square the legs: 3² = 9 and 4² = 16.",
+        "annotation": "Each leg is multiplied by itself: the square on leg a holds 9 unit squares and the square on leg b holds 16."
+      },
+      {
+        "text": "Add the squares: 9 + 16 = 25, so c² = 25.",
+        "annotation": "The theorem adds the squares, not the lengths: adding 3 and 4 to get 7 is the trap."
+      },
+      {
+        "text": "Take the square root: c = 5.",
+        "annotation": "The square root of 25 is 5, the positive length whose square gives 25."
+      }
+    ],
+    "selfExplanation": "Explain why c is 5 and not 7."
+  },
+  "faded": {
+    "problem": "Find the hypotenuse of a right-angled triangle with legs 6 and 8.",
+    "steps": [
+      {
+        "text": "Square the legs: 6² = 36 and 8² = 64.",
+        "annotation": "Square each leg first, before adding anything.",
+        "withheld": false
+      },
+      {
+        "text": "Add the squares: 36 + 64 = 100, so c² = 100.",
+        "annotation": "Add the squares, not the lengths: adding 6 and 8 to get 14 is the trap.",
+        "withheld": true
+      },
+      {
+        "text": "Take the square root: c = 10.",
+        "annotation": "The square root of 100 is 10.",
+        "withheld": true
+      }
+    ],
+    "selfExplanation": "The first step is shown. Say what you add next, and why you do not simply add 6 and 8."
+  },
+  "paired": {
+    "problem": "A right-angled triangle has hypotenuse 13 and one leg 5. Find the other leg.",
+    "solution": "Rearrange a² + b² = c²: the other leg squared is 13² - 5² = 169 - 25 = 144, so the other leg is 12."
+  }
+}
