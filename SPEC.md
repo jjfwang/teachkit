@@ -632,6 +632,65 @@ generated from the topic's misconception bank entry (see
 `generateQuizBank`): a topic with no bank entry cannot grow a quiz
 bank, because its coded items would have to invent misconceptions.
 
+## Summative assessment spec
+
+A summative assessment is the unit-level assessment sat at the end
+of a unit of teaching: it spans at least 2 topics and is taken under
+exam conditions, with a fixed duration and a marks total.
+`validateSummative` in `player/validate.js` enforces this contract
+and returns a `string[]` of errors (empty = valid). A summative
+assessment is a standalone unit-level material: it is never folded
+into a lesson pack.
+
+Material fields:
+
+| field   | type       | notes                                  |
+|---------|------------|----------------------------------------|
+| `title` | string     | required non-empty                     |
+| `level` | `"primary"` \| `"secondary"` \| `"jc"` |                                        |
+| `subject` | string   | required non-empty - any school subject |
+| `unitTitle` | string | required non-empty - the unit the assessment covers |
+| `topics` | string[]  | required array of at least 2 topic slugs the unit spans |
+| `durationMinutes` | integer | required positive - the exam-format time allowed |
+| `totalMarks` | integer | required positive - the marks the blueprint sums to |
+| `blueprint` | object[] | required non-empty array of blueprint rows - see below |
+| `items` | object[]   | required non-empty array of assessment items - see below |
+| `rubric` | object    | required - the student-work rubric, see below |
+| `moderation` | object | required - `{state}`, one of `unreviewed` \| `in-moderation` \| `approved` \| `rejected`, reusing the lesson pack metadata moderation states |
+| `review` | object \| null | the moderation review record `{reviewer, date}`; null until signed |
+
+Every blueprint row is an object with these fields:
+
+| field              | type     | notes |
+|--------------------|----------|-------|
+| `outcomeCode`      | string   | required non-empty - the syllabus outcome code the row assesses |
+| `assessmentObjective` | string | required non-empty - the assessment objective (AO) the row serves |
+| `marks`            | integer  | required positive - the row marks; the row marks sum exactly to `totalMarks` |
+| `cognitiveLevel`   | string   | required non-empty - the Bloom/DOK label for the row |
+
+Every item is an object with these fields:
+
+| field          | type     | notes |
+|----------------|----------|-------|
+| `prompt`       | string   | required non-empty - the question put to the student |
+| `blueprintRow` | integer  | required - the zero-based index of the item's blueprint row; every row has at least one item, and the items on a row sum exactly to that row's marks |
+| `commandWord`  | string   | required non-empty - the exam command word (Calculate, Explain, Show that) matching the row's cognitive level |
+| `marks`        | integer  | required positive |
+| `markScheme`   | object   | required - validated by the per-question mark scheme machinery (credit points summing exactly to the item marks) |
+
+The `rubric` is a field inside the material (not a separate
+material): an object with a `criteria` array of at least 1
+criterion, each `{name, levels}` with at least 2 levels
+`{label, descriptor}` for judging open responses.
+
+Moderation reuses the pack metadata moderation block: the same
+state set, defaulting to `unreviewed`. State `approved` is refused
+without a review record `{reviewer, date}` on the material - no
+summative assessment is moderated without a named reviewer
+(plan Gate 4). A generated assessment is born `unreviewed` with
+`review: null`; naming the reviewer is an owner adoption-time
+activity.
+
 ## Accessible variants
 
 Every printable renderer in `player/printable.js` (`renderWorksheet`,

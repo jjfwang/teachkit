@@ -63,6 +63,7 @@
         diagnosticsPrompt: require('./build_diagnostics_prompt.js'),
         workedExamplesPrompt: require('./build_worked_examples_prompt.js'),
         quizBankPrompt: require('./build_quiz_bank_prompt.js'),
+        summativePrompt: require('./build_summative_prompt.js'),
         syllabus: require('./syllabus.js'),
         validate: require('../player/validate.js')
       };
@@ -81,6 +82,7 @@
       diagnosticsPrompt: g.AnimathDiagnosticsPrompt,
       workedExamplesPrompt: g.AnimathWorkedExamplesPrompt,
       quizBankPrompt: g.AnimathQuizBankPrompt,
+      summativePrompt: g.AnimathSummativePrompt,
       syllabus: g.AnimathSyllabus,
       validate: g.AnimathValidate
     };
@@ -160,6 +162,13 @@
     invalidLabel: 'The invalid quiz bank you returned:',
     returnLine: 'Return ONLY the corrected quiz bank as a single JSON object. No prose, no code fences.',
     rejectLabel: 'Quiz bank'
+  };
+  var SUMMATIVE_KIND = {
+    notJsonProblem: 'The response was not valid JSON. Return ONLY the corrected summative assessment as JSON.',
+    repairHeader: 'Your previous response did not produce a valid summative assessment. It had these problems:',
+    invalidLabel: 'The invalid summative assessment you returned:',
+    returnLine: 'Return ONLY the corrected summative assessment as a single JSON object. No prose, no code fences.',
+    rejectLabel: 'Summative assessment'
   };
   var EXIT_TICKET_KIND = {
     notJsonProblem: 'The response was not valid JSON. Return ONLY the corrected exit ticket as JSON.',
@@ -404,6 +413,15 @@
     if (typeof deps.validate === 'function') return deps.validate;
     if (SIBLINGS.validate && typeof SIBLINGS.validate.validateQuizBank === 'function') {
       return SIBLINGS.validate.validateQuizBank;
+    } /* node:coverage ignore next */
+    return null;
+  }
+
+  function resolveSummativeValidator(deps) {
+    if (typeof deps.validateSummative === 'function') return deps.validateSummative;
+    if (typeof deps.validate === 'function') return deps.validate;
+    if (SIBLINGS.validate && typeof SIBLINGS.validate.validateSummative === 'function') {
+      return SIBLINGS.validate.validateSummative;
     } /* node:coverage ignore next */
     return null;
   }
@@ -990,6 +1008,55 @@
   }
 
   // opts:
+  //   {topics, unitTitle, level, subject, focus, workedExample,
+  //    maxRepairs}
+  //   (the buildSummativePrompts option set; subject and at least 2
+  //   topics required; maxRepairs defaults to 3, 0 disables repair).
+  // deps:
+  //   {callChat(system, user) -> Promise<string>  (caller-supplied LLM call),
+  //    validateSummative?(spec) -> string[] | Promise<string[]>,
+  //    validate?(spec) -> string[] | Promise<string[]>  (fallback validator),
+  //    onProgress?(stage, n, max)}  stages: 'author', 'repair'.
+  //
+  // A summative assessment is unit-level: it spans a topics array and
+  // is authored directly from the unit (there is no single-topic
+  // unpack and no misconception bank resolution - the blueprint, not
+  // a bank, is its contract). Resolves with the first assessment that
+  // validates clean against validateSummative; rejects with an Error
+  // carrying err.problems when every attempt failed, naming summative.
+  function generateSummative(opts, deps) {
+    opts = opts || {};
+    deps = deps || {};
+    if (typeof deps.callChat !== 'function') {
+      return Promise.reject(new Error('generateSummative: deps.callChat(system, user) ' +
+        'must be a function returning a Promise of the raw response text'));
+    }
+    var validateFn = resolveSummativeValidator(deps);
+    /* node:coverage ignore next 5 */
+    if (!validateFn) {
+      return Promise.reject(new Error('generateSummative: deps.validateSummative(spec) ' +
+        'must be a function returning the problem list (or supply deps.validate, ' +
+        'or load player/validate.js so validateSummative is available)'));
+    }
+    var progress = makeProgress(deps);
+    var maxRepairs = (opts.maxRepairs != null) ? opts.maxRepairs : DEFAULT_MAX_REPAIRS;
+    var prompts;
+    try {
+      prompts = SIBLINGS.summativePrompt.buildSummativePrompts({
+        topics: opts.topics,
+        unitTitle: opts.unitTitle,
+        level: opts.level,
+        subject: opts.subject,
+        focus: opts.focus,
+        workedExample: opts.workedExample
+      });
+    } catch (err) {
+      return Promise.reject(err);
+    }
+    return authorAndRepair(deps, progress, maxRepairs, prompts, validateFn, SUMMATIVE_KIND);
+  }
+
+  // opts:
   //   {topic, topicLabel, level, subject, workedExample, kind, focus,
   //    facet, maxRepairs, force}
   //   (the union of the ten material option sets; topic/subject
@@ -1218,5 +1285,5 @@
     return generateLessonPack(merged, deps);
   }
 
-  return { generateAnimation: generateAnimation, generateSlides: generateSlides, generateWorksheet: generateWorksheet, generateExitTicket: generateExitTicket, generateNotes: generateNotes, generateScript: generateScript, generateLessonPlan: generateLessonPlan, generateScaffolds: generateScaffolds, generateDiagnostics: generateDiagnostics, generateWorkedExamples: generateWorkedExamples, generateQuizBank: generateQuizBank, generateLessonPack: generateLessonPack, generateLessonPackForSyllabus: generateLessonPackForSyllabus, clearPackCache: clearPackCache };
+  return { generateAnimation: generateAnimation, generateSlides: generateSlides, generateWorksheet: generateWorksheet, generateExitTicket: generateExitTicket, generateNotes: generateNotes, generateScript: generateScript, generateLessonPlan: generateLessonPlan, generateScaffolds: generateScaffolds, generateDiagnostics: generateDiagnostics, generateWorkedExamples: generateWorkedExamples, generateQuizBank: generateQuizBank, generateSummative: generateSummative, generateLessonPack: generateLessonPack, generateLessonPackForSyllabus: generateLessonPackForSyllabus, clearPackCache: clearPackCache };
 });

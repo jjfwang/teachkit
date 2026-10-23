@@ -1152,6 +1152,182 @@
     return errors;
   }
 
+  // Summative assessment validator (SPEC.md "Summative assessment
+  // spec", issue #1259): a unit-level assessment spanning at least 2
+  // topics. The blueprint rows carry the outcome / assessment
+  // objective / marks / cognitive level grid and their marks sum to
+  // totalMarks; every item references a blueprint row by index and
+  // the items on a row sum to that row's marks. Item mark schemes go
+  // through the Phase A1 checkMarkScheme machinery. The rubric is a
+  // field inside the material, and moderation reuses the Phase A3
+  // pack metadata states: state approved requires a review record
+  // {reviewer, date} on the material.
+  function validateSummative(spec) {
+    var errors = [];
+    if (!spec || typeof spec !== 'object' || Array.isArray(spec)) return ['spec: must be an object'];
+    if (typeof spec.title !== 'string' || !spec.title.trim()) errors.push('title: required non-empty string');
+    if (LEVELS.indexOf(spec.level) === -1) errors.push('level: must be ' + LEVELS.join('|'));
+    if (typeof spec.subject !== 'string' || !spec.subject.trim()) errors.push('subject: required non-empty string');
+    if (typeof spec.unitTitle !== 'string' || !spec.unitTitle.trim()) errors.push('unitTitle: required non-empty string');
+    if (!Array.isArray(spec.topics) || spec.topics.length < 2) {
+      errors.push('topics: required array of at least 2 topic slugs');
+    } else {
+      spec.topics.forEach(function (topic, i) {
+        if (typeof topic !== 'string' || !topic.trim()) {
+          errors.push('topics[' + i + ']: must be a non-empty string');
+        }
+      });
+    }
+    if (!Number.isInteger(spec.durationMinutes) || spec.durationMinutes <= 0) {
+      errors.push('durationMinutes: must be a positive integer');
+    }
+    var totalValid = Number.isInteger(spec.totalMarks) && spec.totalMarks > 0;
+    if (!totalValid) errors.push('totalMarks: must be a positive integer');
+    var rowMarks = [];
+    var rowsValid = true;
+    if (!Array.isArray(spec.blueprint) || spec.blueprint.length === 0) {
+      errors.push('blueprint: required non-empty array of blueprint rows');
+      rowsValid = false;
+    } else {
+      var blueprintSum = 0;
+      spec.blueprint.forEach(function (row, i) {
+        var p = 'blueprint[' + i + ']';
+        if (!row || typeof row !== 'object' || Array.isArray(row)) {
+          errors.push(p + ': must be an object');
+          rowsValid = false;
+          rowMarks.push(null);
+          return;
+        }
+        if (typeof row.outcomeCode !== 'string' || !row.outcomeCode.trim()) {
+          errors.push(p + '.outcomeCode: required non-empty string');
+        }
+        if (typeof row.assessmentObjective !== 'string' || !row.assessmentObjective.trim()) {
+          errors.push(p + '.assessmentObjective: required non-empty string');
+        }
+        if (typeof row.cognitiveLevel !== 'string' || !row.cognitiveLevel.trim()) {
+          errors.push(p + '.cognitiveLevel: required non-empty string');
+        }
+        if (!Number.isInteger(row.marks) || row.marks <= 0) {
+          errors.push(p + '.marks: must be a positive integer');
+          rowsValid = false;
+          rowMarks.push(null);
+        } else {
+          blueprintSum += row.marks;
+          rowMarks.push(row.marks);
+        }
+      });
+      if (rowsValid && totalValid && blueprintSum !== spec.totalMarks) {
+        errors.push('blueprint: row marks sum to ' + blueprintSum + ', not totalMarks ' + spec.totalMarks);
+      }
+    }
+    if (!Array.isArray(spec.items) || spec.items.length === 0) {
+      errors.push('items: required non-empty array of assessment items');
+    } else {
+      var rowItemSums = rowMarks.map(function () { return 0; });
+      var rowItemCounts = rowMarks.map(function () { return 0; });
+      var itemsValid = true;
+      spec.items.forEach(function (item, i) {
+        var p = 'items[' + i + ']';
+        if (!item || typeof item !== 'object' || Array.isArray(item)) {
+          errors.push(p + ': must be an object');
+          itemsValid = false;
+          return;
+        }
+        if (typeof item.prompt !== 'string' || !item.prompt.trim()) {
+          errors.push(p + '.prompt: required non-empty string');
+        }
+        var rowOk = Number.isInteger(item.blueprintRow) && Array.isArray(spec.blueprint) &&
+          item.blueprintRow >= 0 && item.blueprintRow < spec.blueprint.length;
+        if (!rowOk) {
+          errors.push(p + '.blueprintRow: must be an integer index into blueprint');
+          itemsValid = false;
+        }
+        if (typeof item.commandWord !== 'string' || !item.commandWord.trim()) {
+          errors.push(p + '.commandWord: required non-empty string');
+        }
+        if (!Number.isInteger(item.marks) || item.marks <= 0) {
+          errors.push(p + '.marks: must be a positive integer');
+          itemsValid = false;
+        } else if (rowOk) {
+          rowItemSums[item.blueprintRow] += item.marks;
+          rowItemCounts[item.blueprintRow] += 1;
+        }
+        if (item.markScheme === undefined) {
+          errors.push(p + '.markScheme: required object with credit points summing to the item marks');
+        } else {
+          checkMarkScheme(item, errors, p);
+        }
+      });
+      if (itemsValid && rowsValid) {
+        rowMarks.forEach(function (marks, r) {
+          if (rowItemCounts[r] === 0) {
+            errors.push('blueprint[' + r + ']: no items reference this blueprint row');
+          } else if (rowItemSums[r] !== marks) {
+            errors.push('blueprint[' + r + ']: item marks sum to ' + rowItemSums[r] + ', not the blueprint row marks ' + marks);
+          }
+        });
+      }
+    }
+    if (!spec.rubric || typeof spec.rubric !== 'object' || Array.isArray(spec.rubric)) {
+      errors.push('rubric: required object with at least 1 criterion');
+    } else if (!Array.isArray(spec.rubric.criteria) || spec.rubric.criteria.length === 0) {
+      errors.push('rubric.criteria: required non-empty array of criteria');
+    } else {
+      spec.rubric.criteria.forEach(function (criterion, i) {
+        var p = 'rubric.criteria[' + i + ']';
+        if (!criterion || typeof criterion !== 'object' || Array.isArray(criterion)) {
+          errors.push(p + ': must be an object');
+          return;
+        }
+        if (typeof criterion.name !== 'string' || !criterion.name.trim()) {
+          errors.push(p + '.name: required non-empty string');
+        }
+        if (!Array.isArray(criterion.levels) || criterion.levels.length < 2) {
+          errors.push(p + '.levels: required array of at least 2 levels');
+          return;
+        }
+        criterion.levels.forEach(function (level, j) {
+          var q = p + '.levels[' + j + ']';
+          if (!level || typeof level !== 'object' || Array.isArray(level)) {
+            errors.push(q + ': must be an object');
+            return;
+          }
+          if (typeof level.label !== 'string' || !level.label.trim()) {
+            errors.push(q + '.label: required non-empty string');
+          }
+          if (typeof level.descriptor !== 'string' || !level.descriptor.trim()) {
+            errors.push(q + '.descriptor: required non-empty string');
+          }
+        });
+      });
+    }
+    if (!spec.moderation || typeof spec.moderation !== 'object' || Array.isArray(spec.moderation)) {
+      errors.push('moderation: required object with a state');
+    } else if (MODERATION_STATES.indexOf(spec.moderation.state) === -1) {
+      errors.push('moderation.state: must be one of ' + MODERATION_STATES.join('|'));
+    }
+    if (spec.review !== undefined && spec.review !== null) {
+      if (!spec.review || typeof spec.review !== 'object' || Array.isArray(spec.review)) {
+        errors.push('review: must be null or an object with reviewer and date');
+      } else {
+        if (typeof spec.review.reviewer !== 'string' || !spec.review.reviewer.trim()) {
+          errors.push('review.reviewer: required non-empty string');
+        }
+        if (typeof spec.review.date !== 'string' || !spec.review.date.trim()) {
+          errors.push('review.date: required non-empty string');
+        }
+      }
+    }
+    if (spec.moderation && !Array.isArray(spec.moderation) &&
+        spec.moderation.state === 'approved' &&
+        (!spec.review || typeof spec.review !== 'object' || Array.isArray(spec.review) ||
+         typeof spec.review.reviewer !== 'string' || !spec.review.reviewer.trim() ||
+         typeof spec.review.date !== 'string' || !spec.review.date.trim())) {
+      errors.push('moderation: state approved requires a review record {reviewer, date}');
+    }
+    return errors;
+  }
+
   // Pack metadata validator (SPEC.md "Lesson pack spec", issue #1221):
   // the transparency block every generated pack manifest carries -- the
   // syllabus mapping recorded as facts, the AI-generated label, the
@@ -1202,7 +1378,7 @@
     return errors;
   }
 
-  return { validateSpec: validateSpec, validateSlides: validateSlides, validateWorksheet: validateWorksheet, validateExitTicket: validateExitTicket, validateNotes: validateNotes, validateScript: validateScript, validateLessonPlan: validateLessonPlan, validateScaffolds: validateScaffolds, validateDiagnostics: validateDiagnostics, validateWorkedExamples: validateWorkedExamples, validateQuizBank: validateQuizBank, validatePackMetadata: validatePackMetadata, SUBJECTS: SUBJECTS };
+  return { validateSpec: validateSpec, validateSlides: validateSlides, validateWorksheet: validateWorksheet, validateExitTicket: validateExitTicket, validateNotes: validateNotes, validateScript: validateScript, validateLessonPlan: validateLessonPlan, validateScaffolds: validateScaffolds, validateDiagnostics: validateDiagnostics, validateWorkedExamples: validateWorkedExamples, validateQuizBank: validateQuizBank, validateSummative: validateSummative, validatePackMetadata: validatePackMetadata, SUBJECTS: SUBJECTS };
 });
 
 /* ------------------------------------------------------------------

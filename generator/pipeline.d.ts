@@ -331,6 +331,34 @@ export function generateQuizBank(
   opts: GenerateQuizBankOptions,
   deps: GenerateQuizBankDeps
 ): Promise<QuizBankDocument>;
+// generateSummative options (issue #1259): unit-level, spanning a
+// topics array; authored directly from the unit with no bank
+// resolution and never folded into a lesson pack.
+export interface GenerateSummativeOptions {
+  /** At least 2 topic slugs the unit spans. */
+  topics: string[];
+  unitTitle?: string;
+  level?: string;
+  subject: string;
+  focus?: string;
+  workedExample?: string;
+  /** Number of repair turns after the first attempt. Default 3; 0 disables repair. */
+  maxRepairs?: number;
+}
+export interface GenerateSummativeDeps {
+  callChat: PipelineCallChat;
+  /** Summative validator; defaults to the built-in validateSummative when omitted. */
+  validateSummative?: PipelineValidate;
+  /** Fallback validator, used when validateSummative is not supplied. */
+  validate?: PipelineValidate;
+  onProgress?: PipelineProgress;
+}
+// The parsed animath summative assessment that validated clean.
+export type SummativeDocument = Record<string, unknown>;
+export function generateSummative(
+  opts: GenerateSummativeOptions,
+  deps: GenerateSummativeDeps
+): Promise<SummativeDocument>;
 // generateLessonPack (issue #768): one shared unpack authors all ten
 // materials; packs are cached in memory by topic slug.
 export interface GenerateLessonPackOptions {

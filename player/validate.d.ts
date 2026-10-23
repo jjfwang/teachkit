@@ -11,6 +11,7 @@ export function validateScaffolds(spec: unknown): string[];
 export function validateDiagnostics(spec: unknown): string[];
 export function validateWorkedExamples(spec: unknown): string[];
 export function validateQuizBank(spec: unknown): string[];
+export function validateSummative(spec: unknown): string[];
 export function validatePackMetadata(metadata: unknown): string[];
 // Syllabus-known subjects; validateSpec accepts any non-empty subject string.
 export const SUBJECTS: string[];
