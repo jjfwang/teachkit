@@ -1,0 +1,44 @@
+{
+  "level": "primary",
+  "subject": "math",
+  "topic": "decimals",
+  "title": "Decimals: place value and adding 0.4 + 0.25",
+  "variant": "homework",
+  "questions": [
+    {
+      "choices": [
+        {
+          "text": "0.29"
+        },
+        {
+          "text": "0.45"
+        },
+        {
+          "correct": true,
+          "text": "0.65"
+        },
+        {
+          "text": "0.56"
+        }
+      ],
+      "explanation": "Scene s3 lines up the places: write 0.4 as 0.40, then forty hundredths plus twenty-five hundredths is sixty-five hundredths, so 0.4 + 0.25 = 0.65.",
+      "id": "q2",
+      "kind": "multiple-choice",
+      "prompt": "What is 0.4 + 0.25?"
+    },
+    {
+      "answer": "0.4 = 0.40: four tenths is the same amount as forty hundredths, because ten hundredths make one tenth.",
+      "explanation": "Scene s3 shows the extra zero arriving: zeros on the right of a decimal change nothing - 0.4 and 0.40 name the same amount in different places.",
+      "id": "q3",
+      "kind": "short-answer",
+      "prompt": "Write 0.4 in hundredths and explain why the value does not change."
+    },
+    {
+      "answer": "25 hundredths: 2 tenths (20 hundredths) plus 5 hundredths.",
+      "explanation": "Scene s2 shades the square column by column: two full columns are twenty hundredths and five more tiny parts join them, making 0.20 + 0.05 = 0.25.",
+      "id": "q4",
+      "kind": "short-answer",
+      "prompt": "How many hundredths are in 0.25? Split your answer into tenths and hundredths."
+    }
+  ]
+}

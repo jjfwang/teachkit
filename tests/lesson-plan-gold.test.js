@@ -30,7 +30,8 @@ const GATE_STEMS = [
 const STEMS = [
   ...GATE_STEMS,
   'secondary-math-pythagoras',
-  'secondary-science-photosynthesis'
+  'secondary-science-photosynthesis',
+  'primary-math-decimals'
 ];
 
 function load(rel) {
