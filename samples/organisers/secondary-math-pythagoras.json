@@ -1,0 +1,74 @@
+{
+  "title": "Pythagoras' theorem: a² + b² = c²",
+  "level": "secondary",
+  "subject": "math",
+  "topic": "e-trigonometry",
+  "templates": [
+    {
+      "kind": "flow",
+      "slots": [
+        {
+          "label": "Triangle and hypotenuse",
+          "entries": [
+            "A right-angled triangle: the legs a = 3 and b = 4 meet at the right angle, the right-angle marker sits between them, and the hypotenuse c is the unknown longest side."
+          ],
+          "studentPrompt": "Explain this step in your own words."
+        },
+        {
+          "label": "Squares on the short sides",
+          "entries": [
+            "Squares on the short sides: the square on a is 3² = 9 and the square on b is 4² = 16, holding 9 and 16 unit squares."
+          ],
+          "studentPrompt": "Explain this step in your own words."
+        },
+        {
+          "label": "Square on the hypotenuse",
+          "entries": [
+            "The square on the hypotenuse: the tilted square on c is filled exactly by the 9 unit squares and the 16 unit squares together, so c² = 25."
+          ],
+          "studentPrompt": "Explain this step in your own words."
+        },
+        {
+          "label": "Root gives the length",
+          "entries": [
+            "9 + 16 = 25: c is the square root of 25, so c = 5 - the lengths themselves add to 7, but it is the squares that the theorem adds."
+          ],
+          "studentPrompt": "Explain this step in your own words."
+        }
+      ]
+    },
+    {
+      "kind": "frayer",
+      "slots": [
+        {
+          "label": "Hypotenuse",
+          "entries": [
+            "The longest side of a right-angled triangle, across from the right angle: length 5 in the 3-4-5 triangle, found as c in a² + b² = c²."
+          ],
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "label": "Right-angled triangle",
+          "entries": [
+            "A triangle with one angle of exactly 90 degrees, marked by the small square in the corner: the legs 3 and 4 meet at that right angle in the animation."
+          ],
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "label": "Square root",
+          "entries": [
+            "The positive length whose square gives the number: the square root of 25 is 5, which turns c² = 25 back into the length c = 5."
+          ],
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "label": "Converse",
+          "entries": [
+            "The theorem run backwards: if the squares of the two shorter sides add to the square of the longest side, as 9 + 16 = 25 does for sides 3, 4 and 5, then the triangle must be right-angled."
+          ],
+          "studentPrompt": "Give your own example of this term."
+        }
+      ]
+    }
+  ]
+}

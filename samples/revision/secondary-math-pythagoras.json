@@ -1,0 +1,66 @@
+{
+  "title": "Pythagoras' theorem: a² + b² = c²",
+  "level": "secondary",
+  "subject": "math",
+  "topic": "e-trigonometry",
+  "flashcards": [
+    {
+      "front": "Hypotenuse",
+      "back": "The longest side of a right-angled triangle, across from the right angle: length 5 in the 3-4-5 triangle, found as c in a² + b² = c².",
+      "source": "definition"
+    },
+    {
+      "front": "Square root",
+      "back": "The positive length whose square gives the number: the square root of 25 is 5, which turns c² = 25 back into the length c = 5.",
+      "source": "definition"
+    },
+    {
+      "front": "Converse",
+      "back": "The theorem run backwards: if the squares of the two shorter sides add to the square of the longest side, as 9 + 16 = 25 does for sides 3, 4 and 5, then the triangle must be right-angled.",
+      "source": "definition"
+    },
+    {
+      "front": "tan = adjacent / opposite.",
+      "back": "Opposite and adjacent swap places under pressure. Always read TOA: tan is opposite over adjacent. For the 3-4-5 triangle that means tan theta = 3/4 = 0.75, never 4/3 - the opposite side 3 goes on top.",
+      "source": "trap"
+    },
+    {
+      "front": "A right-angled triangle has legs 3 and 4. Find the hypotenuse.",
+      "back": "c = 5",
+      "source": "quiz-bank"
+    },
+    {
+      "front": "A right-angled triangle has legs 6 and 8. Find the hypotenuse.",
+      "back": "c = 10",
+      "source": "quiz-bank"
+    }
+  ],
+  "practiceSets": [
+    {
+      "dayOffset": 1,
+      "items": [
+        {
+          "prompt": "What is 3² + 4²?",
+          "answer": "25"
+        },
+        {
+          "prompt": "Which set of lengths can be the sides of a right-angled triangle?",
+          "answer": "3, 4 and 5"
+        }
+      ]
+    },
+    {
+      "dayOffset": 3,
+      "items": [
+        {
+          "prompt": "A right-angled triangle has hypotenuse 13 and one leg 5. Find the other leg.",
+          "answer": "The other leg is 12."
+        },
+        {
+          "prompt": "In the 3-4-5 triangle, angle theta has opposite side 3 and adjacent side 4. What is tan theta?",
+          "answer": "3/4"
+        }
+      ]
+    }
+  ]
+}

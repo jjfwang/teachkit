@@ -22,13 +22,18 @@ const path = require('node:path');
 const validate = require('../player/validate.js');
 const printable = require('../player/printable.js');
 
-const STEMS = [
+const GATE_STEMS = [
   'primary-math-fractions-addition',
   'primary-science-water-cycle',
   'secondary-e-algebra',
   'secondary-physics-energy',
   'jc-h2-differentiation',
   'jc-h2-cell-bio'
+];
+
+const STEMS = [
+  ...GATE_STEMS,
+  'secondary-math-pythagoras'
 ];
 
 function load(rel) {
@@ -115,7 +120,7 @@ test('gold organisers: pack-demo wires exactly the six gate packs', () => {
   assert.equal(demo.split('AnimathValidate.validateOrganisers(').length - 1, 6);
   assert.equal(demo.split('AnimathPrintable.renderOrganisers(').length - 1, 6);
   assert.equal(demo.split('AnimathPrintable.renderOrganisersKey(').length - 1, 6);
-  for (const stem of STEMS) {
+  for (const stem of GATE_STEMS) {
     assert.ok(demo.includes('../samples/organisers/' + stem + '.json'), 'organisers fetch present: ' + stem);
   }
 });
