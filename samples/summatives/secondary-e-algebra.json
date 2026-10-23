@@ -1,0 +1,125 @@
+{
+  "title": "Algebra and Functions Unit Test",
+  "level": "secondary",
+  "subject": "math",
+  "unitTitle": "Algebraic manipulation and graphs of functions",
+  "topics": [
+    "secondary-e-algebra",
+    "secondary-e-functions-graphs"
+  ],
+  "durationMinutes": 60,
+  "totalMarks": 24,
+  "blueprint": [
+    {
+      "outcomeCode": "S3-ALG-MANIP",
+      "assessmentObjective": "AO1 recall and apply",
+      "marks": 12,
+      "cognitiveLevel": "apply"
+    },
+    {
+      "outcomeCode": "S3-FUNC-GRAPH",
+      "assessmentObjective": "AO2 reason and solve",
+      "marks": 12,
+      "cognitiveLevel": "reason"
+    }
+  ],
+  "items": [
+    {
+      "prompt": "Expand and simplify (x + 3)(x - 5).",
+      "blueprintRow": 0,
+      "commandWord": "Expand",
+      "marks": 6,
+      "markScheme": {
+        "points": [
+          {
+            "text": "Expands to x^2 - 5x + 3x - 15 with all four products correct",
+            "marks": 3
+          },
+          {
+            "text": "Simplifies to x^2 - 2x - 15",
+            "marks": 3
+          }
+        ]
+      }
+    },
+    {
+      "prompt": "Make t the subject of the formula v = u + at.",
+      "blueprintRow": 0,
+      "commandWord": "Make",
+      "marks": 6,
+      "markScheme": {
+        "points": [
+          {
+            "text": "Subtracts u from both sides: v - u = at",
+            "marks": 3
+          },
+          {
+            "text": "Divides by a: t = (v - u) / a",
+            "marks": 3
+          }
+        ]
+      }
+    },
+    {
+      "prompt": "Sketch the graph of y = x^2 - 2x - 3, marking both x-intercepts and the turning point.",
+      "blueprintRow": 1,
+      "commandWord": "Sketch",
+      "marks": 6,
+      "markScheme": {
+        "points": [
+          {
+            "text": "Factorises or solves to give intercepts at x = 3 and x = -1",
+            "marks": 3
+          },
+          {
+            "text": "Turning point at (1, -4) marked on an upward parabola",
+            "marks": 3
+          }
+        ]
+      }
+    },
+    {
+      "prompt": "Explain how the roots of x^2 - 2x - 3 = 0 can be read from the graph of y = x^2 - 2x - 3.",
+      "blueprintRow": 1,
+      "commandWord": "Explain",
+      "marks": 6,
+      "markScheme": {
+        "points": [
+          {
+            "text": "States the roots are the x-values where the graph cuts the x-axis (y = 0)",
+            "marks": 3
+          },
+          {
+            "text": "Reads the roots as x = 3 and x = -1",
+            "marks": 3
+          }
+        ]
+      }
+    }
+  ],
+  "rubric": {
+    "criteria": [
+      {
+        "name": "Algebraic reasoning",
+        "levels": [
+          {
+            "label": "Secure",
+            "descriptor": "Manipulation is accurate and each step is justified or clearly sequenced."
+          },
+          {
+            "label": "Developing",
+            "descriptor": "Method is sound but with slips that the working makes visible."
+          },
+          {
+            "label": "Beginning",
+            "descriptor": "Steps are disconnected or unjustified; the method cannot be followed."
+          }
+        ]
+      }
+    ]
+  },
+  "moderation": {
+    "state": "unreviewed"
+  },
+  "review": null
+}

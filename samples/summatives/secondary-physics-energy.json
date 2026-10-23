@@ -1,0 +1,125 @@
+{
+  "title": "Energy and Forces Unit Test",
+  "level": "secondary",
+  "subject": "science",
+  "unitTitle": "Energy transfers and forces",
+  "topics": [
+    "secondary-physics-energy",
+    "secondary-physics-forces"
+  ],
+  "durationMinutes": 60,
+  "totalMarks": 24,
+  "blueprint": [
+    {
+      "outcomeCode": "S3-EN-WORK",
+      "assessmentObjective": "AO1 recall and apply",
+      "marks": 12,
+      "cognitiveLevel": "apply"
+    },
+    {
+      "outcomeCode": "S3-FOR-MOMENT",
+      "assessmentObjective": "AO2 reason and solve",
+      "marks": 12,
+      "cognitiveLevel": "reason"
+    }
+  ],
+  "items": [
+    {
+      "prompt": "A student pushes a box with a force of 30 N over a distance of 4 m. Calculate the work done.",
+      "blueprintRow": 0,
+      "commandWord": "Calculate",
+      "marks": 6,
+      "markScheme": {
+        "points": [
+          {
+            "text": "Uses work done = force x distance moved in the direction of the force",
+            "marks": 3
+          },
+          {
+            "text": "Correct value 120 J with unit",
+            "marks": 3
+          }
+        ]
+      }
+    },
+    {
+      "prompt": "Explain, in terms of energy transfers, why a moving car slows down when the brakes are applied.",
+      "blueprintRow": 0,
+      "commandWord": "Explain",
+      "marks": 6,
+      "markScheme": {
+        "points": [
+          {
+            "text": "Identifies friction between brake pads and discs (and tyres and road)",
+            "marks": 3
+          },
+          {
+            "text": "States kinetic energy is transferred to thermal energy in the brakes",
+            "marks": 3
+          }
+        ]
+      }
+    },
+    {
+      "prompt": "A force of 12 N acts 0.25 m from a pivot. Calculate the moment of the force about the pivot.",
+      "blueprintRow": 1,
+      "commandWord": "Calculate",
+      "marks": 6,
+      "markScheme": {
+        "points": [
+          {
+            "text": "Uses moment = force x perpendicular distance from the pivot",
+            "marks": 3
+          },
+          {
+            "text": "Correct value 3 N m with unit",
+            "marks": 3
+          }
+        ]
+      }
+    },
+    {
+      "prompt": "Explain why the resultant force on a skydiver becomes zero as they reach terminal velocity.",
+      "blueprintRow": 1,
+      "commandWord": "Explain",
+      "marks": 6,
+      "markScheme": {
+        "points": [
+          {
+            "text": "States air resistance grows with speed until it equals the weight",
+            "marks": 3
+          },
+          {
+            "text": "Concludes equal and opposite forces give zero resultant force, so no acceleration",
+            "marks": 3
+          }
+        ]
+      }
+    }
+  ],
+  "rubric": {
+    "criteria": [
+      {
+        "name": "Physics reasoning",
+        "levels": [
+          {
+            "label": "Secure",
+            "descriptor": "Quantities, units and energy-transfer chains are all stated precisely."
+          },
+          {
+            "label": "Developing",
+            "descriptor": "The physics is broadly right but a unit, quantity or link is missing."
+          },
+          {
+            "label": "Beginning",
+            "descriptor": "Key quantities or transfers are confused or absent."
+          }
+        ]
+      }
+    ]
+  },
+  "moderation": {
+    "state": "unreviewed"
+  },
+  "review": null
+}

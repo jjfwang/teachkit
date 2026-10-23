@@ -1,0 +1,137 @@
+{
+  "title": "Differentiation and Integration Unit Test",
+  "level": "jc",
+  "subject": "math",
+  "unitTitle": "Calculus: differentiation and integration",
+  "topics": [
+    "jc-h2-differentiation",
+    "jc-h2-integration"
+  ],
+  "durationMinutes": 90,
+  "totalMarks": 30,
+  "blueprint": [
+    {
+      "outcomeCode": "H2-DIFF-RATES",
+      "assessmentObjective": "AO1 recall and apply",
+      "marks": 15,
+      "cognitiveLevel": "apply"
+    },
+    {
+      "outcomeCode": "H2-INT-AREA",
+      "assessmentObjective": "AO2 reason and solve",
+      "marks": 15,
+      "cognitiveLevel": "reason"
+    }
+  ],
+  "items": [
+    {
+      "prompt": "A curve has equation y = x^3 - 6x^2 + 9x. Find dy/dx and the x-coordinates of its stationary points.",
+      "blueprintRow": 0,
+      "commandWord": "Find",
+      "marks": 8,
+      "markScheme": {
+        "points": [
+          {
+            "text": "Differentiates to dy/dx = 3x^2 - 12x + 9",
+            "marks": 4
+          },
+          {
+            "text": "Sets dy/dx = 0 and solves to x = 1 and x = 3",
+            "marks": 4
+          }
+        ]
+      }
+    },
+    {
+      "prompt": "The radius of a circle increases at 0.5 cm/s. Find the rate at which its area increases when the radius is 4 cm.",
+      "blueprintRow": 0,
+      "commandWord": "Find",
+      "marks": 7,
+      "markScheme": {
+        "points": [
+          {
+            "text": "Writes A = pi r^2 and dA/dr = 2 pi r",
+            "marks": 3
+          },
+          {
+            "text": "Applies the chain rule dA/dt = dA/dr x dr/dt",
+            "marks": 2
+          },
+          {
+            "text": "Substitutes r = 4 and dr/dt = 0.5 to give 4 pi cm^2/s",
+            "marks": 2
+          }
+        ]
+      }
+    },
+    {
+      "prompt": "Evaluate the integral of (3x^2 + 2) dx from x = 0 to x = 2.",
+      "blueprintRow": 1,
+      "commandWord": "Evaluate",
+      "marks": 7,
+      "markScheme": {
+        "points": [
+          {
+            "text": "Integrates term by term to x^3 + 2x",
+            "marks": 3
+          },
+          {
+            "text": "Substitutes the limits: (8 + 4) - 0",
+            "marks": 2
+          },
+          {
+            "text": "Correct value 12",
+            "marks": 2
+          }
+        ]
+      }
+    },
+    {
+      "prompt": "Show that the area between the curve y = 4 - x^2 and the x-axis, from x = -2 to x = 2, is 32/3 units^2.",
+      "blueprintRow": 1,
+      "commandWord": "Show that",
+      "marks": 8,
+      "markScheme": {
+        "points": [
+          {
+            "text": "Sets up the integral of (4 - x^2) from -2 to 2",
+            "marks": 3
+          },
+          {
+            "text": "Integrates to 4x - x^3/3 and evaluates (8 - 8/3) - (-8 + 8/3)",
+            "marks": 3
+          },
+          {
+            "text": "Arrives at 32/3 as required",
+            "marks": 2
+          }
+        ]
+      }
+    }
+  ],
+  "rubric": {
+    "criteria": [
+      {
+        "name": "Calculus communication",
+        "levels": [
+          {
+            "label": "Secure",
+            "descriptor": "Notation is exact, the chain rule and limits are applied explicitly, and conclusions are stated."
+          },
+          {
+            "label": "Developing",
+            "descriptor": "Method is correct in outline but a justification or substitution step is skipped."
+          },
+          {
+            "label": "Beginning",
+            "descriptor": "Differentiation or integration rules are misapplied and the working does not support the answer."
+          }
+        ]
+      }
+    ]
+  },
+  "moderation": {
+    "state": "unreviewed"
+  },
+  "review": null
+}
