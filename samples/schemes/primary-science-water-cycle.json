@@ -1,0 +1,50 @@
+{
+  "title": "Primary Science Scheme of Work: Systems and Cycles",
+  "level": "primary",
+  "subject": "science",
+  "unitTitle": "Systems and cycles in nature",
+  "term": "Term 3",
+  "weeks": 10,
+  "sequence": [
+    {
+      "topic": "plant-systems",
+      "week": 1,
+      "lessons": 4,
+      "prerequisites": [],
+      "assessmentPoints": [
+        {
+          "kind": "diagnostics",
+          "title": "Plant systems entry check"
+        }
+      ]
+    },
+    {
+      "topic": "water-cycle",
+      "week": 4,
+      "lessons": 5,
+      "prerequisites": [
+        "plant-systems"
+      ],
+      "assessmentPoints": [
+        {
+          "kind": "quizBank",
+          "title": "Water cycle quiz"
+        }
+      ]
+    },
+    {
+      "topic": "photosynthesis",
+      "week": 7,
+      "lessons": 4,
+      "prerequisites": [
+        "water-cycle"
+      ],
+      "assessmentPoints": [
+        {
+          "kind": "review",
+          "title": "Cycles review"
+        }
+      ]
+    }
+  ]
+}

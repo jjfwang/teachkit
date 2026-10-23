@@ -1,0 +1,50 @@
+{
+  "title": "Secondary Elementary Mathematics Scheme of Work: Algebra and Functions",
+  "level": "secondary",
+  "subject": "math",
+  "unitTitle": "Algebra and functions",
+  "term": "Term 1",
+  "weeks": 10,
+  "sequence": [
+    {
+      "topic": "e-numbers",
+      "week": 1,
+      "lessons": 4,
+      "prerequisites": [],
+      "assessmentPoints": [
+        {
+          "kind": "diagnostics",
+          "title": "Number entry check"
+        }
+      ]
+    },
+    {
+      "topic": "e-algebra",
+      "week": 3,
+      "lessons": 6,
+      "prerequisites": [
+        "e-numbers"
+      ],
+      "assessmentPoints": [
+        {
+          "kind": "quizBank",
+          "title": "Algebra quiz"
+        }
+      ]
+    },
+    {
+      "topic": "e-functions-graphs",
+      "week": 6,
+      "lessons": 5,
+      "prerequisites": [
+        "e-algebra"
+      ],
+      "assessmentPoints": [
+        {
+          "kind": "summative",
+          "title": "Algebra and functions test"
+        }
+      ]
+    }
+  ]
+}

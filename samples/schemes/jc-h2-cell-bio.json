@@ -1,0 +1,54 @@
+{
+  "title": "JC H2 Biology Scheme of Work: Cells to Organisms",
+  "level": "jc",
+  "subject": "science",
+  "unitTitle": "Cells, genetics and energetics",
+  "term": "Term 1",
+  "weeks": 10,
+  "sequence": [
+    {
+      "topic": "h2-cell-bio",
+      "week": 1,
+      "lessons": 5,
+      "prerequisites": [],
+      "assessmentPoints": [
+        {
+          "kind": "diagnostics",
+          "title": "Cell biology entry check"
+        }
+      ]
+    },
+    {
+      "topic": "h2-genetics",
+      "week": 4,
+      "lessons": 5,
+      "prerequisites": [
+        "h2-cell-bio"
+      ],
+      "assessmentPoints": [
+        {
+          "kind": "quizBank",
+          "title": "Genetics quiz"
+        }
+      ]
+    },
+    {
+      "topic": "h2-energetics",
+      "week": 7,
+      "lessons": 5,
+      "prerequisites": [
+        "h2-cell-bio"
+      ],
+      "assessmentPoints": [
+        {
+          "kind": "summative",
+          "title": "Cells and genetics test"
+        },
+        {
+          "kind": "review",
+          "title": "Term 1 biology review"
+        }
+      ]
+    }
+  ]
+}

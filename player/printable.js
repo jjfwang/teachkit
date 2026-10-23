@@ -197,6 +197,19 @@
     if (errors.length) throw new Error('invalid glossary: ' + errors.join('; '));
   }
 
+  function getValidateScheme() {
+    var g = global.AnimathValidate;
+    if (g) return g.validateScheme || null;
+    return typeof require !== 'undefined' ? require('./validate.js').validateScheme : null;
+  }
+
+  function assertValidScheme(spec) {
+    var fn = getValidateScheme();
+    if (!fn) throw new Error('animath printable: player/validate.js is missing - include it before printable.js so specs can be validated');
+    var errors = fn(spec);
+    if (errors.length) throw new Error('invalid scheme: ' + errors.join('; '));
+  }
+
   // HTML-escape for text content and double-quoted attribute values,
   // the export-frames.js esc chain: & first, then <, >, ".
   function escapeHtml(s) {
@@ -1003,6 +1016,49 @@
     return parts.join('\n');
   }
 
+  // Scheme of work header: sheetHeader reads spec.topic, which a
+  // unit-level scheme does not carry - it carries unitTitle, term and
+  // weeks instead - so the scheme renderer builds its own header on
+  // the same classes, adding the term-format line.
+  function schemeHeader(spec, opts) {
+    var parts = [];
+    parts.push('<section class="pr-sheet pr-plan pr-scheme' + variantClasses(opts) + '">');
+    parts.push('<h1 class="pr-title">' + escapeHtml(spec.title) + '</h1>');
+    parts.push('<p class="pr-meta">' + escapeHtml(spec.subject) + ' · ' +
+      escapeHtml(spec.unitTitle) + ' · ' + escapeHtml(spec.level) + '</p>');
+    parts.push('<p class="pr-kind">Scheme of work</p>');
+    parts.push('<p class="pr-term-meta">' + escapeHtml(spec.term) + ' · ' + spec.weeks + ' weeks</p>');
+    return parts;
+  }
+
+  // Scheme of work term plan: the full plan - header plus, per
+  // sequence entry in teaching order, its week, topic, lessons,
+  // prerequisites and assessment points. A scheme holds no answers,
+  // so nothing is withheld and there is no answer-key renderer.
+  function renderScheme(spec, options) {
+    assertValidScheme(spec);
+    var parts = schemeHeader(spec, normalizeOptions(options));
+    parts.push('<ol class="pr-sequence">');
+    spec.sequence.forEach(function (entry) {
+      parts.push('<li class="pr-entry">');
+      parts.push('<p class="pr-topic">Week ' + entry.week + ': ' + escapeHtml(entry.topic) + '</p>');
+      parts.push('<p class="pr-lessons">Lessons: ' + entry.lessons + '</p>');
+      parts.push('<p class="pr-prerequisites">Prerequisites: ' +
+        (entry.prerequisites.length ? entry.prerequisites.map(escapeHtml).join(', ') : 'None') + '</p>');
+      if (entry.assessmentPoints.length) {
+        parts.push('<ul class="pr-assessment-points">');
+        entry.assessmentPoints.forEach(function (point) {
+          parts.push('<li class="pr-assessment-point">' + escapeHtml(point.kind) + ': ' + escapeHtml(point.title) + '</li>');
+        });
+        parts.push('</ul>');
+      }
+      parts.push('</li>');
+    });
+    parts.push('</ol>');
+    parts.push('</section>');
+    return parts.join('\n');
+  }
+
   var api = {
     renderWorksheet: renderWorksheet,
     renderWorksheetAnswerKey: renderWorksheetAnswerKey,
@@ -1026,6 +1082,7 @@
     renderOrganisers: renderOrganisers,
     renderOrganisersKey: renderOrganisersKey,
     renderGlossary: renderGlossary,
+    renderScheme: renderScheme,
     escapeHtml: escapeHtml
   };
   global.AnimathPrintable = api;

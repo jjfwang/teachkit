@@ -343,4 +343,28 @@ export interface GlossarySpec {
   [key: string]: unknown;
 }
 export function renderGlossary(spec: GlossarySpec, options?: PrintableOptions): string;
+export interface SchemeAssessmentPoint {
+  kind: string;
+  title: string;
+  [key: string]: unknown;
+}
+export interface SchemeSequenceEntry {
+  topic: string;
+  week: number;
+  lessons: number;
+  prerequisites: string[];
+  assessmentPoints: SchemeAssessmentPoint[];
+  [key: string]: unknown;
+}
+export interface SchemeSpec {
+  title: string;
+  level: string;
+  subject: string;
+  unitTitle: string;
+  term: string;
+  weeks: number;
+  sequence: SchemeSequenceEntry[];
+  [key: string]: unknown;
+}
+export function renderScheme(spec: SchemeSpec, options?: PrintableOptions): string;
 export function escapeHtml(s: string): string;
