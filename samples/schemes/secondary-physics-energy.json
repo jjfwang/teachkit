@@ -1,0 +1,50 @@
+{
+  "title": "Secondary Physics Scheme of Work: Mechanics and Energy",
+  "level": "secondary",
+  "subject": "science",
+  "unitTitle": "Mechanics and energy",
+  "term": "Term 2",
+  "weeks": 10,
+  "sequence": [
+    {
+      "topic": "phys-kinematics",
+      "week": 1,
+      "lessons": 5,
+      "prerequisites": [],
+      "assessmentPoints": [
+        {
+          "kind": "diagnostics",
+          "title": "Motion entry check"
+        }
+      ]
+    },
+    {
+      "topic": "phys-forces",
+      "week": 4,
+      "lessons": 5,
+      "prerequisites": [
+        "phys-kinematics"
+      ],
+      "assessmentPoints": [
+        {
+          "kind": "quizBank",
+          "title": "Forces quiz"
+        }
+      ]
+    },
+    {
+      "topic": "phys-energy",
+      "week": 7,
+      "lessons": 5,
+      "prerequisites": [
+        "phys-forces"
+      ],
+      "assessmentPoints": [
+        {
+          "kind": "summative",
+          "title": "Mechanics and energy test"
+        }
+      ]
+    }
+  ]
+}

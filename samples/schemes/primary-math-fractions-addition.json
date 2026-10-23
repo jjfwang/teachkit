@@ -1,0 +1,55 @@
+{
+  "title": "Primary Mathematics Scheme of Work: Number",
+  "level": "primary",
+  "subject": "math",
+  "unitTitle": "Number: fractions, decimals and percentage",
+  "term": "Term 2",
+  "weeks": 10,
+  "sequence": [
+    {
+      "topic": "fractions",
+      "week": 1,
+      "lessons": 6,
+      "prerequisites": [],
+      "assessmentPoints": [
+        {
+          "kind": "diagnostics",
+          "title": "Fractions entry check"
+        }
+      ]
+    },
+    {
+      "topic": "decimals",
+      "week": 4,
+      "lessons": 5,
+      "prerequisites": [
+        "fractions"
+      ],
+      "assessmentPoints": [
+        {
+          "kind": "quizBank",
+          "title": "Decimals quiz"
+        }
+      ]
+    },
+    {
+      "topic": "percentage",
+      "week": 7,
+      "lessons": 5,
+      "prerequisites": [
+        "fractions",
+        "decimals"
+      ],
+      "assessmentPoints": [
+        {
+          "kind": "summative",
+          "title": "Number unit test"
+        },
+        {
+          "kind": "review",
+          "title": "Term 2 number review"
+        }
+      ]
+    }
+  ]
+}

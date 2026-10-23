@@ -1,0 +1,50 @@
+{
+  "title": "JC H2 Mathematics Scheme of Work: Calculus",
+  "level": "jc",
+  "subject": "math",
+  "unitTitle": "Calculus: differentiation and integration",
+  "term": "Term 2",
+  "weeks": 10,
+  "sequence": [
+    {
+      "topic": "h2-functions-graphs",
+      "week": 1,
+      "lessons": 4,
+      "prerequisites": [],
+      "assessmentPoints": [
+        {
+          "kind": "diagnostics",
+          "title": "Functions entry check"
+        }
+      ]
+    },
+    {
+      "topic": "h2-differentiation",
+      "week": 3,
+      "lessons": 6,
+      "prerequisites": [
+        "h2-functions-graphs"
+      ],
+      "assessmentPoints": [
+        {
+          "kind": "quizBank",
+          "title": "Differentiation quiz"
+        }
+      ]
+    },
+    {
+      "topic": "h2-integration",
+      "week": 7,
+      "lessons": 6,
+      "prerequisites": [
+        "h2-differentiation"
+      ],
+      "assessmentPoints": [
+        {
+          "kind": "summative",
+          "title": "Calculus test"
+        }
+      ]
+    }
+  ]
+}
