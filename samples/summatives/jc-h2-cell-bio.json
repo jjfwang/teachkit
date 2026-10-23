@@ -1,0 +1,125 @@
+{
+  "title": "Cell Biology and Genetics Unit Test",
+  "level": "jc",
+  "subject": "science",
+  "unitTitle": "Cell ultrastructure and inheritance",
+  "topics": [
+    "jc-h2-cell-bio",
+    "jc-h2-genetics"
+  ],
+  "durationMinutes": 90,
+  "totalMarks": 30,
+  "blueprint": [
+    {
+      "outcomeCode": "H2-CELL-ULTRA",
+      "assessmentObjective": "AO1 recall and apply",
+      "marks": 15,
+      "cognitiveLevel": "apply"
+    },
+    {
+      "outcomeCode": "H2-GEN-INHERIT",
+      "assessmentObjective": "AO2 reason and solve",
+      "marks": 15,
+      "cognitiveLevel": "reason"
+    }
+  ],
+  "items": [
+    {
+      "prompt": "Describe two structural features of a mitochondrion that relate to its function in aerobic respiration.",
+      "blueprintRow": 0,
+      "commandWord": "Describe",
+      "marks": 7,
+      "markScheme": {
+        "points": [
+          {
+            "text": "Names the folded inner membrane (cristae) giving a large surface area",
+            "marks": 4
+          },
+          {
+            "text": "Links the surface area to more sites for respiration enzymes / ATP synthesis",
+            "marks": 3
+          }
+        ]
+      }
+    },
+    {
+      "prompt": "Explain why a red blood cell is described as a specialised cell, referring to two of its features.",
+      "blueprintRow": 0,
+      "commandWord": "Explain",
+      "marks": 8,
+      "markScheme": {
+        "points": [
+          {
+            "text": "Cites the absence of a nucleus, giving more space for haemoglobin",
+            "marks": 4
+          },
+          {
+            "text": "Cites the biconcave shape increasing surface area for oxygen exchange (or lack of mitochondria so it does not use the oxygen it carries)",
+            "marks": 4
+          }
+        ]
+      }
+    },
+    {
+      "prompt": "A heterozygous tall pea plant (Tt) is crossed with a dwarf plant (tt). Determine the expected phenotypic ratio in the offspring, showing your working.",
+      "blueprintRow": 1,
+      "commandWord": "Determine",
+      "marks": 8,
+      "markScheme": {
+        "points": [
+          {
+            "text": "Sets out the gametes T and t from the heterozygote and t from the dwarf parent",
+            "marks": 4
+          },
+          {
+            "text": "Punnett square or equivalent giving Tt and tt in a 1:1 phenotypic ratio of tall to dwarf",
+            "marks": 4
+          }
+        ]
+      }
+    },
+    {
+      "prompt": "Explain why the phenotypic ratio in a dihybrid cross of two double heterozygotes is 9:3:3:1 only when the two genes assort independently.",
+      "blueprintRow": 1,
+      "commandWord": "Explain",
+      "marks": 7,
+      "markScheme": {
+        "points": [
+          {
+            "text": "States each heterozygote makes four gamete types in equal proportions only under independent assortment",
+            "marks": 4
+          },
+          {
+            "text": "Links equal gamete proportions through random fertilisation to the 9:3:3:1 ratio",
+            "marks": 3
+          }
+        ]
+      }
+    }
+  ],
+  "rubric": {
+    "criteria": [
+      {
+        "name": "Biological explanation",
+        "levels": [
+          {
+            "label": "Secure",
+            "descriptor": "Structures are named precisely and every claim is tied to a function or mechanism."
+          },
+          {
+            "label": "Developing",
+            "descriptor": "Content is relevant but a structure-function or mechanism link is left implicit."
+          },
+          {
+            "label": "Beginning",
+            "descriptor": "Terms are used loosely and explanations rest on assertion rather than mechanism."
+          }
+        ]
+      }
+    ]
+  },
+  "moderation": {
+    "state": "unreviewed"
+  },
+  "review": null
+}

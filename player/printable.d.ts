@@ -230,4 +230,51 @@ export interface QuizBankSpec {
 }
 export function renderQuizBank(spec: QuizBankSpec, options?: PrintableOptions): string;
 export function renderQuizBankAnswerKey(spec: QuizBankSpec, options?: PrintableOptions): string;
+export interface SummativeBlueprintRow {
+  outcomeCode: string;
+  assessmentObjective: string;
+  marks: number;
+  cognitiveLevel: string;
+  [key: string]: unknown;
+}
+export interface SummativeMarkPoint {
+  text: string;
+  marks: number;
+  [key: string]: unknown;
+}
+export interface SummativeItem {
+  prompt: string;
+  blueprintRow: number;
+  commandWord: string;
+  marks: number;
+  markScheme: { points: SummativeMarkPoint[]; [key: string]: unknown };
+  [key: string]: unknown;
+}
+export interface SummativeRubricLevel {
+  label: string;
+  descriptor: string;
+  [key: string]: unknown;
+}
+export interface SummativeRubricCriterion {
+  name: string;
+  levels: SummativeRubricLevel[];
+  [key: string]: unknown;
+}
+export interface SummativeSpec {
+  title: string;
+  level: string;
+  subject: string;
+  unitTitle: string;
+  topics: string[];
+  durationMinutes: number;
+  totalMarks: number;
+  blueprint: SummativeBlueprintRow[];
+  items: SummativeItem[];
+  rubric: { criteria: SummativeRubricCriterion[]; [key: string]: unknown };
+  moderation: { state: string; [key: string]: unknown };
+  review: { reviewer: string; date: string; [key: string]: unknown } | null;
+  [key: string]: unknown;
+}
+export function renderSummative(spec: SummativeSpec, options?: PrintableOptions): string;
+export function renderSummativeAnswerKey(spec: SummativeSpec, options?: PrintableOptions): string;
 export function escapeHtml(s: string): string;

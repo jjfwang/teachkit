@@ -145,6 +145,19 @@
     if (errors.length) throw new Error('invalid quiz bank: ' + errors.join('; '));
   }
 
+  function getValidateSummative() {
+    var g = global.AnimathValidate;
+    if (g) return g.validateSummative || null;
+    return typeof require !== 'undefined' ? require('./validate.js').validateSummative : null;
+  }
+
+  function assertValidSummative(spec) {
+    var fn = getValidateSummative();
+    if (!fn) throw new Error('animath printable: player/validate.js is missing - include it before printable.js so specs can be validated');
+    var errors = fn(spec);
+    if (errors.length) throw new Error('invalid summative: ' + errors.join('; '));
+  }
+
   // HTML-escape for text content and double-quoted attribute values,
   // the export-frames.js esc chain: & first, then <, >, ".
   function escapeHtml(s) {
@@ -734,6 +747,77 @@
     return parts.join('\n');
   }
 
+  // Summative header: sheetHeader reads spec.topic, which a unit-level
+  // summative does not carry - it carries unitTitle and a topics array
+  // instead - so the summative renderers build their own header on the
+  // same classes, adding the exam-format line (duration, total marks).
+  function summativeHeader(spec, kindClass, kindLabel, opts) {
+    var parts = [];
+    parts.push('<section class="' + kindClass + variantClasses(opts) + '">');
+    parts.push('<h1 class="pr-title">' + escapeHtml(spec.title) + '</h1>');
+    parts.push('<p class="pr-meta">' + escapeHtml(spec.subject) + ' · ' +
+      escapeHtml(spec.unitTitle) + ' · ' + escapeHtml(spec.level) + '</p>');
+    parts.push('<p class="pr-kind">' + kindLabel + '</p>');
+    parts.push('<p class="pr-exam-meta">Time allowed: ' + spec.durationMinutes +
+      ' minutes · Total marks: ' + spec.totalMarks + '</p>');
+    return parts;
+  }
+
+  // Summative student paper: the unit header, the exam-format line and
+  // each item's prompt, command word and marks, with answer lines.
+  // This function never reads an item's markScheme or the rubric, so
+  // teacher-only content cannot leak onto the paper a student sits.
+  function renderSummative(spec, options) {
+    assertValidSummative(spec);
+    var parts = summativeHeader(spec, 'pr-sheet pr-student pr-summative', 'Summative assessment', normalizeOptions(options));
+    parts.push('<ol class="pr-questions">');
+    spec.items.forEach(function (item) {
+      parts.push('<li class="pr-question">');
+      parts.push('<p class="pr-prompt">' + escapeHtml(item.prompt) + '</p>');
+      parts.push('<p class="pr-command">' + escapeHtml(item.commandWord) + ' · ' + item.marks + ' marks</p>');
+      parts.push('<div class="pr-answer-lines">' +
+        '<span class="pr-answer-line"></span>' +
+        '<span class="pr-answer-line"></span>' +
+        '<span class="pr-answer-line"></span></div>');
+      parts.push('</li>');
+    });
+    parts.push('</ol>');
+    parts.push('</section>');
+    return parts.join('\n');
+  }
+
+  // Teacher summative answer key: per item the mark scheme credit
+  // points, then the rubric criteria with every level descriptor -
+  // the teacher-only content the student paper never reads.
+  function renderSummativeAnswerKey(spec, options) {
+    assertValidSummative(spec);
+    var parts = summativeHeader(spec, 'pr-sheet pr-teacher pr-answer-key pr-summative', 'Summative assessment answer key', normalizeOptions(options));
+    parts.push('<ol class="pr-questions">');
+    spec.items.forEach(function (item) {
+      parts.push('<li class="pr-question">');
+      parts.push('<p class="pr-prompt">' + escapeHtml(item.prompt) + '</p>');
+      parts.push('<ul class="pr-mark-scheme">');
+      item.markScheme.points.forEach(function (point) {
+        parts.push('<li class="pr-point">' + escapeHtml(point.text) + ' (' + point.marks + ' marks)</li>');
+      });
+      parts.push('</ul>');
+      parts.push('</li>');
+    });
+    parts.push('</ol>');
+    parts.push('<h2 class="pr-rubric-title">Rubric</h2>');
+    spec.rubric.criteria.forEach(function (criterion) {
+      parts.push('<h3 class="pr-criterion">' + escapeHtml(criterion.name) + '</h3>');
+      parts.push('<ul class="pr-levels">');
+      criterion.levels.forEach(function (level) {
+        parts.push('<li class="pr-level"><span class="pr-level-label">' + escapeHtml(level.label) +
+          '</span>: ' + escapeHtml(level.descriptor) + '</li>');
+      });
+      parts.push('</ul>');
+    });
+    parts.push('</section>');
+    return parts.join('\n');
+  }
+
   var api = {
     renderWorksheet: renderWorksheet,
     renderWorksheetAnswerKey: renderWorksheetAnswerKey,
@@ -750,6 +834,8 @@
     renderWorkedExamplesAnswerKey: renderWorkedExamplesAnswerKey,
     renderQuizBank: renderQuizBank,
     renderQuizBankAnswerKey: renderQuizBankAnswerKey,
+    renderSummative: renderSummative,
+    renderSummativeAnswerKey: renderSummativeAnswerKey,
     escapeHtml: escapeHtml
   };
   global.AnimathPrintable = api;

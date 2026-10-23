@@ -1,0 +1,125 @@
+{
+  "title": "Fractions and Decimals Unit Test",
+  "level": "primary",
+  "subject": "math",
+  "unitTitle": "Fractions and decimals",
+  "topics": [
+    "primary-math-fractions-addition",
+    "primary-math-decimals"
+  ],
+  "durationMinutes": 40,
+  "totalMarks": 20,
+  "blueprint": [
+    {
+      "outcomeCode": "P5-FRAC-ADD",
+      "assessmentObjective": "AO1 recall and apply",
+      "marks": 10,
+      "cognitiveLevel": "apply"
+    },
+    {
+      "outcomeCode": "P5-DEC-OPS",
+      "assessmentObjective": "AO2 reason and solve",
+      "marks": 10,
+      "cognitiveLevel": "reason"
+    }
+  ],
+  "items": [
+    {
+      "prompt": "Calculate 1/2 + 1/4. Show your working.",
+      "blueprintRow": 0,
+      "commandWord": "Calculate",
+      "marks": 6,
+      "markScheme": {
+        "points": [
+          {
+            "text": "Renames 1/2 as 2/4 (common denominator)",
+            "marks": 3
+          },
+          {
+            "text": "Adds numerators to get 3/4",
+            "marks": 3
+          }
+        ]
+      }
+    },
+    {
+      "prompt": "A baker uses 3/4 kg of flour in the morning and 1/4 kg in the afternoon. How much flour is used in total?",
+      "blueprintRow": 0,
+      "commandWord": "Calculate",
+      "marks": 4,
+      "markScheme": {
+        "points": [
+          {
+            "text": "Sets up 3/4 + 1/4",
+            "marks": 2
+          },
+          {
+            "text": "Correct total of 1 kg",
+            "marks": 2
+          }
+        ]
+      }
+    },
+    {
+      "prompt": "Calculate 0.35 + 0.4. Show your working.",
+      "blueprintRow": 1,
+      "commandWord": "Calculate",
+      "marks": 5,
+      "markScheme": {
+        "points": [
+          {
+            "text": "Aligns the decimal points (0.35 + 0.40)",
+            "marks": 2
+          },
+          {
+            "text": "Adds hundredths then tenths to get 0.75",
+            "marks": 3
+          }
+        ]
+      }
+    },
+    {
+      "prompt": "Explain whether 0.7 is greater than 0.65, using place value.",
+      "blueprintRow": 1,
+      "commandWord": "Explain",
+      "marks": 5,
+      "markScheme": {
+        "points": [
+          {
+            "text": "Renames 0.7 as 0.70 (70 hundredths)",
+            "marks": 2
+          },
+          {
+            "text": "Compares 70 hundredths with 65 hundredths and concludes 0.7 is greater",
+            "marks": 3
+          }
+        ]
+      }
+    }
+  ],
+  "rubric": {
+    "criteria": [
+      {
+        "name": "Mathematical communication",
+        "levels": [
+          {
+            "label": "Secure",
+            "descriptor": "Working is complete, ordered and uses correct fraction and decimal notation throughout."
+          },
+          {
+            "label": "Developing",
+            "descriptor": "Working is partial or notation is inconsistent, but the method can be followed."
+          },
+          {
+            "label": "Beginning",
+            "descriptor": "Little or no working shown; the method cannot be followed."
+          }
+        ]
+      }
+    ]
+  },
+  "moderation": {
+    "state": "unreviewed"
+  },
+  "review": null
+}

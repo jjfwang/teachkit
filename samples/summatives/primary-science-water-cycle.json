@@ -1,0 +1,125 @@
+{
+  "title": "Water Cycle and Photosynthesis Unit Test",
+  "level": "primary",
+  "subject": "science",
+  "unitTitle": "Water in nature and plant processes",
+  "topics": [
+    "primary-science-water-cycle",
+    "primary-science-photosynthesis"
+  ],
+  "durationMinutes": 40,
+  "totalMarks": 20,
+  "blueprint": [
+    {
+      "outcomeCode": "P5-WC-PROCESS",
+      "assessmentObjective": "AO1 recall and apply",
+      "marks": 10,
+      "cognitiveLevel": "apply"
+    },
+    {
+      "outcomeCode": "P5-PHOTO-COND",
+      "assessmentObjective": "AO2 reason and explain",
+      "marks": 10,
+      "cognitiveLevel": "reason"
+    }
+  ],
+  "items": [
+    {
+      "prompt": "State the process by which liquid water changes into water vapour at the surface of a pond.",
+      "blueprintRow": 0,
+      "commandWord": "State",
+      "marks": 4,
+      "markScheme": {
+        "points": [
+          {
+            "text": "Names the process as evaporation",
+            "marks": 2
+          },
+          {
+            "text": "Notes it happens at the surface and needs heat from the surroundings",
+            "marks": 2
+          }
+        ]
+      }
+    },
+    {
+      "prompt": "A cold mirror held above a kettle of boiling water becomes covered in droplets. Explain how the droplets form.",
+      "blueprintRow": 0,
+      "commandWord": "Explain",
+      "marks": 6,
+      "markScheme": {
+        "points": [
+          {
+            "text": "States water vapour from the kettle touches the cold mirror",
+            "marks": 3
+          },
+          {
+            "text": "States the vapour loses heat and condenses into liquid droplets",
+            "marks": 3
+          }
+        ]
+      }
+    },
+    {
+      "prompt": "State two things a green plant needs from its surroundings to make food.",
+      "blueprintRow": 1,
+      "commandWord": "State",
+      "marks": 4,
+      "markScheme": {
+        "points": [
+          {
+            "text": "Names sunlight (light energy)",
+            "marks": 2
+          },
+          {
+            "text": "Names carbon dioxide from the air or water from the soil",
+            "marks": 2
+          }
+        ]
+      }
+    },
+    {
+      "prompt": "Explain why a plant kept in a dark cupboard for two weeks stops growing.",
+      "blueprintRow": 1,
+      "commandWord": "Explain",
+      "marks": 6,
+      "markScheme": {
+        "points": [
+          {
+            "text": "States the plant receives no light in the cupboard",
+            "marks": 3
+          },
+          {
+            "text": "Links no light to no photosynthesis, so no food is made for growth",
+            "marks": 3
+          }
+        ]
+      }
+    }
+  ],
+  "rubric": {
+    "criteria": [
+      {
+        "name": "Scientific explanation",
+        "levels": [
+          {
+            "label": "Secure",
+            "descriptor": "Answers use the correct process names and link each observation to a cause."
+          },
+          {
+            "label": "Developing",
+            "descriptor": "Process names are mostly correct but the cause link is incomplete."
+          },
+          {
+            "label": "Beginning",
+            "descriptor": "Process names are missing or confused and no cause is given."
+          }
+        ]
+      }
+    ]
+  },
+  "moderation": {
+    "state": "unreviewed"
+  },
+  "review": null
+}
