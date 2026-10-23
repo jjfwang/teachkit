@@ -30,9 +30,9 @@
  * generateNotes and generateScript (issue #768) are the same kind of
  * sibling (build_notes_prompt.js / build_script_prompt.js, validateNotes
  * / validateScript). generateLessonPack (issue #768) runs ONE shared
- * unpack stage, then authors all eight materials from it (animation,
+ * unpack stage, then authors all nine materials from it (animation,
  * slides, worksheet, notes, exit ticket, teacher script, lesson plan,
- * scaffolds)
+ * scaffolds, diagnostics)
  * and resolves with a pack manifest; packs are cached in memory by
  * topic slug.
  */
@@ -843,25 +843,25 @@
   // opts:
   //   {topic, topicLabel, level, subject, workedExample, kind, focus,
   //    facet, maxRepairs, force}
-  //   (the union of the eight material option sets; topic/subject
+  //   (the union of the nine material option sets; topic/subject
   //   required; maxRepairs defaults to 3; force === true bypasses the
   //   pack cache and regenerates, replacing the cached entry).
   // deps:
   //   {callChat(system, user) -> Promise<string>  (caller-supplied LLM call),
   //    validate?(spec) / validateSlides? / validateWorksheet? /
   //    validateNotes? / validateExitTicket? / validateScript? /
-  //    validateLessonPlan? / validateScaffolds?
+  //    validateLessonPlan? / validateScaffolds? / validateDiagnostics?
   //      (per-material validators, resolved like the single-material
   //      generators; the built-in player/validate.js validators are the
   //      defaults), onProgress?(stage, n, max)}.
   //
-  // Runs ONE shared unpack stage, then authors all eight materials from
+  // Runs ONE shared unpack stage, then authors all nine materials from
   // that single unpack, each through its existing builder + validator +
   // repair discipline. A material that exhausts its repair cap rejects
   // the whole pack with that material named on err.material (and
   // err.problems carried). Resolves with
   // {manifest, animation, slides, worksheet, notes, exitTicket, script,
-  // lessonPlan, scaffolds}
+  // lessonPlan, scaffolds, diagnostics}
   // where manifest = {slug, topic, level, subject, version, materials,
   // metadata} (metadata per packMetadataFor above, issue #1221).
   // Packs are cached in memory by slug: a repeat call with the same
@@ -894,6 +894,20 @@
     };
   }
 
+  // The pack's diagnostics bank resolution (issue #1245): pure lookup,
+  // no LLM traffic. Returns the resolved bank entry or null.
+  function resolvePackBankEntry(opts) {
+    var topicOnly = topicSlug(opts.topic);
+    var candidates = [opts.topic, topicOnly];
+    if (topicOnly.indexOf('the-') === 0) candidates.push(topicOnly.slice(4));
+    candidates.push(topicSlug(opts.topic, opts.level, opts.subject));
+    for (var i = 0; i < candidates.length; i++) {
+      var entry = SIBLINGS.prompt.misconceptionFor(candidates[i], opts.facet);
+      if (entry) return entry;
+    }
+    return null;
+  }
+
   function generateLessonPack(opts, deps) {
     opts = opts || {};
     deps = deps || {};
@@ -922,7 +936,8 @@
       exitTicket: resolveExitTicketValidator(deps),
       script: resolveScriptValidator(deps),
       lessonPlan: resolveLessonPlanValidator(deps),
-      scaffolds: resolveScaffoldsValidator(deps)
+      scaffolds: resolveScaffoldsValidator(deps),
+      diagnostics: resolveDiagnosticsValidator(deps)
     };
     var missing = Object.keys(validators).filter(function (k) { return !validators[k]; });
     /* node:coverage ignore next 5 */
@@ -930,6 +945,22 @@
       return Promise.reject(new Error('generateLessonPack: no validator available for ' +
         missing.join(', ') + ' (supply the per-material deps validator, or load ' +
         'player/validate.js)'));
+    }
+    // The diagnostics material is generated FROM the misconception bank
+    // (generateDiagnostics semantics): resolve the topic's bank entry
+    // before any authoring, and reject a bank-less topic outright - the
+    // pack never invents misconceptions and never silently omits its
+    // ninth material. The bank is keyed by topic slug, while pack
+    // callers pass free-text topics, so resolution tries the topic
+    // verbatim, then its slugified forms (topic only, topic only minus
+    // a leading article, and the full pack slug, whose longest-prefix
+    // rule resolves faceted entries) - the same verbatim-then-slugified
+    // order packMetadataFor uses for syllabus facts.
+    var bankEntry = resolvePackBankEntry(opts);
+    if (!bankEntry) {
+      return Promise.reject(new Error('generateLessonPack: no misconception bank entry for topic \"' +
+        opts.topic + '\" - diagnostics are generated from the bank and never invent ' +
+        'misconceptions, so the pack cannot include its diagnostics material'));
     }
 
     return unpackStage(deps, progress, opts).then(function (staged) {
@@ -958,7 +989,17 @@
         ['exitTicket', SIBLINGS.exitTicketPrompt.buildExitTicketPrompts(base), validators.exitTicket, EXIT_TICKET_KIND],
         ['script', SIBLINGS.scriptPrompt.buildScriptPrompts(base), validators.script, SCRIPT_KIND],
         ['lessonPlan', SIBLINGS.lessonPlanPrompt.buildLessonPlanPrompts(base), validators.lessonPlan, LESSON_PLAN_KIND],
-        ['scaffolds', SIBLINGS.scaffoldPrompt.buildScaffoldPrompts(base), validators.scaffolds, SCAFFOLDS_KIND]
+        ['scaffolds', SIBLINGS.scaffoldPrompt.buildScaffoldPrompts(base), validators.scaffolds, SCAFFOLDS_KIND],
+        ['diagnostics', SIBLINGS.diagnosticsPrompt.buildDiagnosticsPrompts({
+          topic: opts.topic,
+          topicLabel: opts.topicLabel,
+          level: opts.level,
+          subject: opts.subject,
+          facet: opts.facet,
+          transitions: transitions,
+          bank: { wrongTurn: bankEntry.wrongTurn, why: bankEntry.why, correctTurn: bankEntry.correctTurn },
+          workedExample: opts.workedExample
+        }), validators.diagnostics, DIAGNOSTICS_KIND]
       ];
       var pack = {
         manifest: {
@@ -967,7 +1008,7 @@
           level: opts.level,
           subject: opts.subject,
           version: GENERATOR_VERSION,
-          materials: ['animation', 'slides', 'worksheet', 'notes', 'exitTicket', 'script', 'lessonPlan', 'scaffolds'],
+          materials: ['animation', 'slides', 'worksheet', 'notes', 'exitTicket', 'script', 'lessonPlan', 'scaffolds', 'diagnostics'],
           metadata: packMetadataFor(opts)
         }
       };

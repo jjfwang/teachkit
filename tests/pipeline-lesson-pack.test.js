@@ -1,7 +1,8 @@
 /* animath generateLessonPack pipeline tests — zero network.
  * Guards generator/pipeline.js generateLessonPack (issue #768): ONE
- * shared unpack authors all eight materials (animation, slides,
- * worksheet, notes, exit ticket, teacher script, lesson plan, scaffolds), each through its
+ * shared unpack authors all nine materials (animation, slides,
+ * worksheet, notes, exit ticket, teacher script, lesson plan, scaffolds,
+ * diagnostics), each through its
  * existing builder + validator + repair discipline; the resolved pack
  * carries a manifest (slug, topic, level, subject, generator version,
  * material keys) and is cached in memory by slug — a repeat call makes
@@ -30,6 +31,7 @@ const GOLD_TICKET = gold('samples/tickets/primary-science-water-cycle.json');
 const GOLD_SCRIPT = gold('samples/scripts/primary-science-water-cycle.json');
 const GOLD_PLAN = gold('samples/plans/primary-science-water-cycle.json');
 const GOLD_SCAFFOLDS = gold('samples/scaffolds/primary-science-water-cycle.json');
+const GOLD_DIAGNOSTICS = gold('samples/diagnostics/primary-science-water-cycle.json');
 
 const TRANSITIONS = [
   { name: 'evaporation', from_state: 'liquid water', to_state: 'water vapour', driver: "the sun's heat" },
@@ -55,6 +57,7 @@ function route(system) {
   if (system.indexOf('script author') !== -1) return JSON.stringify(GOLD_SCRIPT);
   if (system.indexOf('lesson plan author') !== -1) return JSON.stringify(GOLD_PLAN);
   if (system.indexOf('scaffolds author') !== -1) return JSON.stringify(GOLD_SCAFFOLDS);
+  if (system.indexOf('diagnostics author') !== -1) return JSON.stringify(GOLD_DIAGNOSTICS);
   throw new Error('unrouted system prompt: ' + system.slice(0, 60));
 }
 
@@ -67,14 +70,14 @@ function stubChat(handler) {
   return { calls, callChat };
 }
 
-test('full pack: one unpack, eight validate-clean materials, manifest correct', async () => {
+test('full pack: one unpack, nine validate-clean materials, manifest correct', async () => {
   PIPELINE.clearPackCache();
   const { calls, callChat } = stubChat(route);
   const pack = await PIPELINE.generateLessonPack(OPTS, { callChat });
 
   const unpackCalls = calls.filter((c) => c.system.indexOf('topic unpacker') !== -1);
   assert.equal(unpackCalls.length, 1, 'exactly one shared unpack call');
-  assert.equal(calls.length, 9, 'one unpack + eight author calls, no repairs');
+  assert.equal(calls.length, 10, 'one unpack + nine author calls, no repairs');
 
   assert.deepEqual(validate.validateSpec(pack.animation), [], 'animation validates clean');
   assert.deepEqual(validate.validateSlides(pack.slides), [], 'slides validate clean');
@@ -84,11 +87,13 @@ test('full pack: one unpack, eight validate-clean materials, manifest correct', 
   assert.deepEqual(validate.validateScript(pack.script), [], 'script validates clean');
   assert.deepEqual(validate.validateLessonPlan(pack.lessonPlan), [], 'lesson plan validates clean');
   assert.deepEqual(validate.validateScaffolds(pack.scaffolds), [], 'scaffolds validate clean');
+  assert.deepEqual(validate.validateDiagnostics(pack.diagnostics), [], 'diagnostics validate clean');
   assert.deepEqual(pack.animation, GOLD_ANIMATION);
   assert.deepEqual(pack.notes, GOLD_NOTES);
   assert.deepEqual(pack.script, GOLD_SCRIPT);
   assert.deepEqual(pack.lessonPlan, GOLD_PLAN);
   assert.deepEqual(pack.scaffolds, GOLD_SCAFFOLDS);
+  assert.deepEqual(pack.diagnostics, GOLD_DIAGNOSTICS);
 
   assert.equal(pack.manifest.slug, EXPECTED_SLUG, 'slug derived from topic + level + subject');
   assert.equal(pack.manifest.topic, 'The Water Cycle');
@@ -96,7 +101,10 @@ test('full pack: one unpack, eight validate-clean materials, manifest correct', 
   assert.equal(pack.manifest.subject, 'Science');
   assert.equal(pack.manifest.version, pkg.version, 'manifest names the generator version');
   assert.deepEqual(pack.manifest.materials,
-    ['animation', 'slides', 'worksheet', 'notes', 'exitTicket', 'script', 'lessonPlan', 'scaffolds']);
+    ['animation', 'slides', 'worksheet', 'notes', 'exitTicket', 'script', 'lessonPlan', 'scaffolds', 'diagnostics']);
+  assert.deepEqual(Object.keys(pack).sort(),
+    ['animation', 'diagnostics', 'exitTicket', 'lessonPlan', 'manifest', 'notes', 'scaffolds', 'script', 'slides', 'worksheet'],
+    'the pack carries exactly the manifest plus the nine materials');
 });
 
 test('cache: second identical call makes zero additional callChat calls', async () => {
@@ -200,6 +208,7 @@ test('by syllabus id: composite id authors a validate-clean pack with the resolv
   assert.deepEqual(validate.validateScript(pack.script), [], 'script validates clean');
   assert.deepEqual(validate.validateLessonPlan(pack.lessonPlan), [], 'lesson plan validates clean');
   assert.deepEqual(validate.validateScaffolds(pack.scaffolds), [], 'scaffolds validate clean');
+  assert.deepEqual(validate.validateDiagnostics(pack.diagnostics), [], 'diagnostics validate clean');
 
   assert.equal(pack.manifest.slug, 'water-cycle-primary-science');
   assert.equal(pack.manifest.topic, 'water-cycle');
@@ -237,6 +246,36 @@ test('by syllabus id: unknown id rejects naming the id with zero callChat calls'
     () => PIPELINE.generateLessonPackForSyllabus('primary/p-sci/nope', {}, { callChat }),
     /resolveSyllabusTopic: unknown syllabus id "primary\/p-sci\/nope"/);
   assert.equal(calls.length, 0, 'resolution failure happens before any LLM call');
+});
+
+test('diagnostics failure rejects the pack naming diagnostics with err.problems', async () => {
+  PIPELINE.clearPackCache();
+  const { callChat } = stubChat((system) => {
+    if (system.indexOf('diagnostics author') !== -1) return '{}';
+    return route(system);
+  });
+  await assert.rejects(
+    () => PIPELINE.generateLessonPack({ ...OPTS, maxRepairs: 0 }, { callChat }),
+    (err) => {
+      assert.equal(err.material, 'diagnostics', 'the failing material is named');
+      assert.deepEqual(err.problems, validate.validateDiagnostics({}),
+        'err.problems comes from validateDiagnostics');
+      return true;
+    });
+});
+
+test('no misconception bank entry: the pack rejects before any callChat call naming diagnostics', async () => {
+  PIPELINE.clearPackCache();
+  const { calls, callChat } = stubChat(route);
+  const bankless = { topic: 'Underwater Basket Weaving', level: 'Primary Science', subject: 'Science' };
+  await assert.rejects(
+    () => PIPELINE.generateLessonPack(bankless, { callChat }),
+    /generateLessonPack: no misconception bank entry for topic "Underwater Basket Weaving" - diagnostics are generated from the bank/);
+  assert.equal(calls.length, 0, 'the bank check happens before the unpack and every author call');
+  await assert.rejects(
+    () => PIPELINE.generateLessonPack(bankless, { callChat }),
+    /no misconception bank entry/);
+  assert.equal(calls.length, 0, 'the failed slug was not cached - the retry rejects the same way');
 });
 
 test('missing deps: no callChat rejects naming callChat', async () => {
