@@ -1,0 +1,202 @@
+{
+  "title": "JC H2 biology — cell: ultrastructure and biomolecules",
+  "level": "jc",
+  "subject": "science",
+  "topic": "h2-cell-bio",
+  "doNow": [
+    {
+      "id": "dn1",
+      "prompt": "Which organelles does a plant leaf mesophyll cell contain?",
+      "kind": "multiple-choice",
+      "choices": [
+        {
+          "text": "Both chloroplasts and mitochondria.",
+          "correct": true
+        },
+        {
+          "text": "Chloroplasts only, with no mitochondria.",
+          "misconception": "Plant cells have no mitochondria.",
+          "rationale": {
+            "chose": "The learner selected option Chloroplasts only, with no mitochondria. as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents.",
+            "reteach": "Reteach by comparing a plant cell diagram with both chloroplasts for photosynthesis and mitochondria for respiration labelled side by side."
+          }
+        },
+        {
+          "text": "Mitochondria only, with no chloroplasts.",
+          "misconception": "Plant cells have no mitochondria.",
+          "rationale": {
+            "chose": "The learner selected option Mitochondria only, with no chloroplasts. as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents.",
+            "reteach": "Reteach by comparing a plant cell diagram with both chloroplasts for photosynthesis and mitochondria for respiration labelled side by side."
+          }
+        },
+        {
+          "text": "Neither chloroplasts nor mitochondria.",
+          "misconception": "Plant cells have no mitochondria.",
+          "rationale": {
+            "chose": "The learner selected option Neither chloroplasts nor mitochondria. as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents.",
+            "reteach": "Reteach by comparing a plant cell diagram with both chloroplasts for photosynthesis and mitochondria for respiration labelled side by side."
+          }
+        }
+      ]
+    },
+    {
+      "id": "dn2",
+      "prompt": "What is the site of aerobic respiration in a plant cell?",
+      "kind": "multiple-choice",
+      "choices": [
+        {
+          "text": "The mitochondria.",
+          "correct": true
+        },
+        {
+          "text": "The chloroplast only, because plant cells have no mitochondria.",
+          "misconception": "Plant cells have no mitochondria.",
+          "rationale": {
+            "chose": "The learner selected option The chloroplast only, because plant cells have no mitochondria. as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents.",
+            "reteach": "Reteach by comparing a plant cell diagram with both chloroplasts for photosynthesis and mitochondria for respiration labelled side by side."
+          }
+        },
+        {
+          "text": "The nucleus only.",
+          "misconception": "Plant cells have no mitochondria.",
+          "rationale": {
+            "chose": "The learner selected option The nucleus only. as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents.",
+            "reteach": "Reteach by comparing a plant cell diagram with both chloroplasts for photosynthesis and mitochondria for respiration labelled side by side."
+          }
+        },
+        {
+          "text": "The cell wall.",
+          "misconception": "Plant cells have no mitochondria.",
+          "rationale": {
+            "chose": "The learner selected option The cell wall. as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents.",
+            "reteach": "Reteach by comparing a plant cell diagram with both chloroplasts for photosynthesis and mitochondria for respiration labelled side by side."
+          }
+        }
+      ]
+    },
+    {
+      "id": "dn3",
+      "prompt": "Which structure is found in plant cells but not in animal cells?",
+      "kind": "multiple-choice",
+      "choices": [
+        {
+          "text": "Chloroplast.",
+          "correct": true
+        },
+        {
+          "text": "Mitochondrion.",
+          "misconception": "Plant cells have no mitochondria.",
+          "rationale": {
+            "chose": "The learner selected option Mitochondrion. as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents.",
+            "reteach": "Reteach by comparing a plant cell diagram with both chloroplasts for photosynthesis and mitochondria for respiration labelled side by side."
+          }
+        },
+        {
+          "text": "Ribosome.",
+          "misconception": "Plant cells have no mitochondria.",
+          "rationale": {
+            "chose": "The learner selected option Ribosome. as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents.",
+            "reteach": "Reteach by comparing a plant cell diagram with both chloroplasts for photosynthesis and mitochondria for respiration labelled side by side."
+          }
+        },
+        {
+          "text": "Cell membrane.",
+          "misconception": "Plant cells have no mitochondria.",
+          "rationale": {
+            "chose": "The learner selected option Cell membrane. as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents.",
+            "reteach": "Reteach by comparing a plant cell diagram with both chloroplasts for photosynthesis and mitochondria for respiration labelled side by side."
+          }
+        }
+      ]
+    }
+  ],
+  "hingeQuestions": [
+    {
+      "id": "h1",
+      "prompt": "At night, a plant cell still respires. Which organelle makes that possible?",
+      "kind": "multiple-choice",
+      "choices": [
+        {
+          "text": "Mitochondria, which plant cells have alongside chloroplasts.",
+          "correct": true
+        },
+        {
+          "text": "Chloroplasts only, because there are no mitochondria.",
+          "misconception": "Plant cells have no mitochondria.",
+          "rationale": {
+            "chose": "The learner selected option Chloroplasts only, because there are no mitochondria. as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents.",
+            "reteach": "Reteach by comparing a plant cell diagram with both chloroplasts for photosynthesis and mitochondria for respiration labelled side by side."
+          }
+        },
+        {
+          "text": "No organelle, since plant cells stop respiring at night.",
+          "misconception": "Plant cells have no mitochondria.",
+          "rationale": {
+            "chose": "The learner selected option No organelle, since plant cells stop respiring at night. as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents.",
+            "reteach": "Reteach by comparing a plant cell diagram with both chloroplasts for photosynthesis and mitochondria for respiration labelled side by side."
+          }
+        },
+        {
+          "text": "The vacuole, replacing mitochondria after dark.",
+          "misconception": "Plant cells have no mitochondria.",
+          "rationale": {
+            "chose": "The learner selected option The vacuole, replacing mitochondria after dark. as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents.",
+            "reteach": "Reteach by comparing a plant cell diagram with both chloroplasts for photosynthesis and mitochondria for respiration labelled side by side."
+          }
+        }
+      ],
+      "scriptCue": "s3"
+    },
+    {
+      "id": "h2",
+      "prompt": "Which statement about plant cells is correct?",
+      "kind": "multiple-choice",
+      "choices": [
+        {
+          "text": "They photosynthesise in chloroplasts and respire in mitochondria.",
+          "correct": true
+        },
+        {
+          "text": "They only photosynthesise and never respire.",
+          "misconception": "Plant cells have no mitochondria.",
+          "rationale": {
+            "chose": "The learner selected option They only photosynthesise and never respire. as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents.",
+            "reteach": "Reteach by comparing a plant cell diagram with both chloroplasts for photosynthesis and mitochondria for respiration labelled side by side."
+          }
+        },
+        {
+          "text": "They respire in chloroplasts instead of mitochondria.",
+          "misconception": "Plant cells have no mitochondria.",
+          "rationale": {
+            "chose": "The learner selected option They respire in chloroplasts instead of mitochondria. as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents.",
+            "reteach": "Reteach by comparing a plant cell diagram with both chloroplasts for photosynthesis and mitochondria for respiration labelled side by side."
+          }
+        },
+        {
+          "text": "They have no mitochondria, so respiration happens in the cytoplasm only.",
+          "misconception": "Plant cells have no mitochondria.",
+          "rationale": {
+            "chose": "The learner selected option They have no mitochondria, so respiration happens in the cytoplasm only. as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents.",
+            "reteach": "Reteach by comparing a plant cell diagram with both chloroplasts for photosynthesis and mitochondria for respiration labelled side by side."
+          }
+        }
+      ],
+      "scriptCue": "s6"
+    }
+  ]
+}

@@ -1,0 +1,202 @@
+{
+  "title": "Adding fractions: 1/2 + 1/4",
+  "level": "primary",
+  "subject": "math",
+  "topic": "fractions",
+  "doNow": [
+    {
+      "id": "dn1",
+      "prompt": "What is 1/2 + 1/4?",
+      "kind": "multiple-choice",
+      "choices": [
+        {
+          "text": "3/4",
+          "correct": true
+        },
+        {
+          "text": "2/6",
+          "misconception": "Adding tops and bottoms: 1/2 + 1/4 = 2/6.",
+          "rationale": {
+            "chose": "The learner selected option 2/6 as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents.",
+            "reteach": "Reteach by re-cutting the bar into quarters so the learner sees the denominator naming piece size before any adding happens."
+          }
+        },
+        {
+          "text": "2/4",
+          "misconception": "Adding tops and bottoms: 1/2 + 1/4 = 2/6.",
+          "rationale": {
+            "chose": "The learner selected option 2/4 as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents.",
+            "reteach": "Reteach by re-cutting the bar into quarters so the learner sees the denominator naming piece size before any adding happens."
+          }
+        },
+        {
+          "text": "1/6",
+          "misconception": "Adding tops and bottoms: 1/2 + 1/4 = 2/6.",
+          "rationale": {
+            "chose": "The learner selected option 1/6 as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents.",
+            "reteach": "Reteach by re-cutting the bar into quarters so the learner sees the denominator naming piece size before any adding happens."
+          }
+        }
+      ]
+    },
+    {
+      "id": "dn2",
+      "prompt": "What is 1/2 written as quarters?",
+      "kind": "multiple-choice",
+      "choices": [
+        {
+          "text": "2/4",
+          "correct": true
+        },
+        {
+          "text": "1/4",
+          "misconception": "Adding tops and bottoms: 1/2 + 1/4 = 2/6.",
+          "rationale": {
+            "chose": "The learner selected option 1/4 as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents.",
+            "reteach": "Reteach by re-cutting the bar into quarters so the learner sees the denominator naming piece size before any adding happens."
+          }
+        },
+        {
+          "text": "2/6",
+          "misconception": "Adding tops and bottoms: 1/2 + 1/4 = 2/6.",
+          "rationale": {
+            "chose": "The learner selected option 2/6 as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents.",
+            "reteach": "Reteach by re-cutting the bar into quarters so the learner sees the denominator naming piece size before any adding happens."
+          }
+        },
+        {
+          "text": "4/2",
+          "misconception": "Adding tops and bottoms: 1/2 + 1/4 = 2/6.",
+          "rationale": {
+            "chose": "The learner selected option 4/2 as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents.",
+            "reteach": "Reteach by re-cutting the bar into quarters so the learner sees the denominator naming piece size before any adding happens."
+          }
+        }
+      ]
+    },
+    {
+      "id": "dn3",
+      "prompt": "What is 2/4 + 1/4?",
+      "kind": "multiple-choice",
+      "choices": [
+        {
+          "text": "3/4",
+          "correct": true
+        },
+        {
+          "text": "3/8",
+          "misconception": "Adding tops and bottoms: 1/2 + 1/4 = 2/6.",
+          "rationale": {
+            "chose": "The learner selected option 3/8 as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents.",
+            "reteach": "Reteach by re-cutting the bar into quarters so the learner sees the denominator naming piece size before any adding happens."
+          }
+        },
+        {
+          "text": "2/8",
+          "misconception": "Adding tops and bottoms: 1/2 + 1/4 = 2/6.",
+          "rationale": {
+            "chose": "The learner selected option 2/8 as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents.",
+            "reteach": "Reteach by re-cutting the bar into quarters so the learner sees the denominator naming piece size before any adding happens."
+          }
+        },
+        {
+          "text": "3/16",
+          "misconception": "Adding tops and bottoms: 1/2 + 1/4 = 2/6.",
+          "rationale": {
+            "chose": "The learner selected option 3/4 + 1 as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents.",
+            "reteach": "Reteach by re-cutting the bar into quarters so the learner sees the denominator naming piece size before any adding happens."
+          }
+        }
+      ]
+    }
+  ],
+  "hingeQuestions": [
+    {
+      "id": "h1",
+      "prompt": "A learner writes 1/3 + 1/6 = 2/9. What is the correct answer?",
+      "kind": "multiple-choice",
+      "choices": [
+        {
+          "text": "1/2",
+          "correct": true
+        },
+        {
+          "text": "2/9",
+          "misconception": "Adding tops and bottoms: 1/2 + 1/4 = 2/6.",
+          "rationale": {
+            "chose": "The learner selected option 2/9 as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents.",
+            "reteach": "Reteach by re-cutting the bar into quarters so the learner sees the denominator naming piece size before any adding happens."
+          }
+        },
+        {
+          "text": "2/6",
+          "misconception": "Adding tops and bottoms: 1/2 + 1/4 = 2/6.",
+          "rationale": {
+            "chose": "The learner selected option 2/6 as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents.",
+            "reteach": "Reteach by re-cutting the bar into quarters so the learner sees the denominator naming piece size before any adding happens."
+          }
+        },
+        {
+          "text": "3/9",
+          "misconception": "Adding tops and bottoms: 1/2 + 1/4 = 2/6.",
+          "rationale": {
+            "chose": "The learner selected option 3/9 as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents.",
+            "reteach": "Reteach by re-cutting the bar into quarters so the learner sees the denominator naming piece size before any adding happens."
+          }
+        }
+      ],
+      "scriptCue": "s2"
+    },
+    {
+      "id": "h2",
+      "prompt": "Why does the denominator stay the same when adding 2/5 + 1/5?",
+      "kind": "multiple-choice",
+      "choices": [
+        {
+          "text": "The piece size does not change, only the count of pieces grows.",
+          "correct": true
+        },
+        {
+          "text": "Because denominators are always added together.",
+          "misconception": "Adding tops and bottoms: 1/2 + 1/4 = 2/6.",
+          "rationale": {
+            "chose": "The learner selected option Because denominators are always added together. as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents.",
+            "reteach": "Reteach by re-cutting the bar into quarters so the learner sees the denominator naming piece size before any adding happens."
+          }
+        },
+        {
+          "text": "Because the answer must use sixths.",
+          "misconception": "Adding tops and bottoms: 1/2 + 1/4 = 2/6.",
+          "rationale": {
+            "chose": "The learner selected option Because the answer must use sixths. as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents.",
+            "reteach": "Reteach by re-cutting the bar into quarters so the learner sees the denominator naming piece size before any adding happens."
+          }
+        },
+        {
+          "text": "Because both tops and bottoms are added.",
+          "misconception": "Adding tops and bottoms: 1/2 + 1/4 = 2/6.",
+          "rationale": {
+            "chose": "The learner selected option Because both tops and bottoms are added. as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents.",
+            "reteach": "Reteach by re-cutting the bar into quarters so the learner sees the denominator naming piece size before any adding happens."
+          }
+        }
+      ],
+      "scriptCue": "s4"
+    }
+  ]
+}

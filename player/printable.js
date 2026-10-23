@@ -8,6 +8,7 @@
  * teacher script validated by AnimathValidate.validateScript, or a
  * lesson plan validated by AnimathValidate.validateLessonPlan, or a
  * scaffolds material validated by AnimathValidate.validateScaffolds
+ * or a diagnostics material validated by AnimathValidate.validateDiagnostics
  * (SPEC.md "Worksheet spec" / "Exit ticket spec" / "Student notes
  * spec" / "Teacher script spec" / "Lesson plan spec" / "Scaffolds
  * spec") to HTML strings.
@@ -63,6 +64,12 @@
     return typeof require !== 'undefined' ? require('./validate.js').validateScaffolds : null;
   }
 
+  function getValidateDiagnostics() {
+    var g = global.AnimathValidate;
+    if (g) return g.validateDiagnostics || null;
+    return typeof require !== 'undefined' ? require('./validate.js').validateDiagnostics : null;
+  }
+
   function assertValidWorksheet(spec) {
     var fn = getValidateWorksheet();
     if (!fn) throw new Error('animath printable: player/validate.js is missing - include it before printable.js so specs can be validated');
@@ -103,6 +110,13 @@
     if (!fn) throw new Error('animath printable: player/validate.js is missing - include it before printable.js so specs can be validated');
     var errors = fn(spec);
     if (errors.length) throw new Error('invalid scaffolds: ' + errors.join('; '));
+  }
+
+  function assertValidDiagnostics(spec) {
+    var fn = getValidateDiagnostics();
+    if (!fn) throw new Error('animath printable: player/validate.js is missing - include it before printable.js so specs can be validated');
+    var errors = fn(spec);
+    if (errors.length) throw new Error('invalid diagnostics: ' + errors.join('; '));
   }
 
   // HTML-escape for text content and double-quoted attribute values,
@@ -487,6 +501,84 @@
     return parts.join('\n');
   }
 
+  // Diagnostics student sheet: Do Now then hinge questions, each
+  // with its prompt and choice texts only. This function must never
+  // read choices[].misconception or choices[].rationale - see the
+  // header comment - so no code or rationale can leak to a student.
+  function renderDiagnostics(spec, options) {
+    assertValidDiagnostics(spec);
+    var parts = sheetHeader(spec, 'pr-sheet pr-student pr-diagnostics', 'Diagnostics', normalizeOptions(options));
+    parts.push('<h2 class="pr-diagnostics-heading">Do Now</h2>');
+    parts.push('<ol class="pr-questions">');
+    spec.doNow.forEach(function (q) {
+      parts.push('<li class="pr-question">');
+      parts.push('<p class="pr-prompt">' + escapeHtml(q.prompt) + '</p>');
+      parts.push('<ul class="pr-choices">');
+      q.choices.forEach(function (choice) {
+        parts.push('<li class="pr-choice">' + escapeHtml(choice.text) + '</li>');
+      });
+      parts.push('</ul>');
+      parts.push('</li>');
+    });
+    parts.push('</ol>');
+    parts.push('<h2 class="pr-diagnostics-heading">Hinge questions</h2>');
+    parts.push('<ol class="pr-questions">');
+    spec.hingeQuestions.forEach(function (q) {
+      parts.push('<li class="pr-question">');
+      parts.push('<p class="pr-prompt">' + escapeHtml(q.prompt) + '</p>');
+      parts.push('<ul class="pr-choices">');
+      q.choices.forEach(function (choice) {
+        parts.push('<li class="pr-choice">' + escapeHtml(choice.text) + '</li>');
+      });
+      parts.push('</ul>');
+      parts.push('</li>');
+    });
+    parts.push('</ol>');
+    parts.push('</section>');
+    return parts.join('\n');
+  }
+
+  // Teacher diagnostics answer key: per question the correct answer,
+  // the hinge script cue where present, and for every incorrect
+  // choice its misconception code and its chose / thinks / reteach
+  // rationale - the teacher-only content the student sheet never reads.
+  function renderDiagnosticsAnswerKey(spec, options) {
+    assertValidDiagnostics(spec);
+    var parts = sheetHeader(spec, 'pr-sheet pr-teacher pr-answer-key pr-diagnostics', 'Diagnostics answer key', normalizeOptions(options));
+    function renderKeyQuestion(q) {
+      parts.push('<li class="pr-question">');
+      parts.push('<p class="pr-prompt">' + escapeHtml(q.prompt) + '</p>');
+      if (q.scriptCue) {
+        parts.push('<p class="pr-script-cue">Script cue: ' + escapeHtml(q.scriptCue) + '</p>');
+      }
+      q.choices.forEach(function (choice) {
+        if (choice.correct === true) {
+          parts.push('<p class="pr-answer">Answer: ' + escapeHtml(choice.text) + '</p>');
+        }
+      });
+      q.choices.forEach(function (choice) {
+        if (choice.correct !== true) {
+          parts.push('<p class="pr-distractor">Distractor: ' + escapeHtml(choice.text) + '</p>');
+          parts.push('<p class="pr-misconception">Misconception: ' + escapeHtml(choice.misconception) + '</p>');
+          parts.push('<p class="pr-rationale-chose">Chose: ' + escapeHtml(choice.rationale.chose) + '</p>');
+          parts.push('<p class="pr-rationale-thinks">Thinks: ' + escapeHtml(choice.rationale.thinks) + '</p>');
+          parts.push('<p class="pr-rationale-reteach">Reteach: ' + escapeHtml(choice.rationale.reteach) + '</p>');
+        }
+      });
+      parts.push('</li>');
+    }
+    parts.push('<h2 class="pr-diagnostics-heading">Do Now</h2>');
+    parts.push('<ol class="pr-questions">');
+    spec.doNow.forEach(renderKeyQuestion);
+    parts.push('</ol>');
+    parts.push('<h2 class="pr-diagnostics-heading">Hinge questions</h2>');
+    parts.push('<ol class="pr-questions">');
+    spec.hingeQuestions.forEach(renderKeyQuestion);
+    parts.push('</ol>');
+    parts.push('</section>');
+    return parts.join('\n');
+  }
+
   var api = {
     renderWorksheet: renderWorksheet,
     renderWorksheetAnswerKey: renderWorksheetAnswerKey,
@@ -497,6 +589,8 @@
     renderLessonPlan: renderLessonPlan,
     renderScaffolds: renderScaffolds,
     renderScaffoldsAnswerKey: renderScaffoldsAnswerKey,
+    renderDiagnostics: renderDiagnostics,
+    renderDiagnosticsAnswerKey: renderDiagnosticsAnswerKey,
     escapeHtml: escapeHtml
   };
   global.AnimathPrintable = api;
