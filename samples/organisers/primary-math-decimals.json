@@ -1,0 +1,74 @@
+{
+  "title": "Decimals: place value and adding 0.4 + 0.25",
+  "level": "primary",
+  "subject": "math",
+  "topic": "decimals",
+  "templates": [
+    {
+      "kind": "flow",
+      "slots": [
+        {
+          "label": "Tenths",
+          "entries": [
+            "Tenths: one bar, ten equal parts: split one whole bar into ten equal parts and shade four - that shaded amount is 0.4, four tenths."
+          ],
+          "studentPrompt": "Explain this step in your own words."
+        },
+        {
+          "label": "Hundredths",
+          "entries": [
+            "Hundredths: one square, one hundred tiny parts: split the whole square into ten rows and ten columns and shade twenty-five tiny parts - 0.20 plus 0.05 is 0.25."
+          ],
+          "studentPrompt": "Explain this step in your own words."
+        },
+        {
+          "label": "Add: line up the places",
+          "entries": [
+            "Add: line up the places: write 0.4 as 0.40, line up tenths under tenths and hundredths under hundredths, then add to get 0.40 + 0.25 = 0.65."
+          ],
+          "studentPrompt": "Explain this step in your own words."
+        },
+        {
+          "label": "Watch out: 0.25 is not bigger than 0.4",
+          "entries": [
+            "Watch out: 0.25 is not bigger than 0.4: compare the covered amounts, not the digit counts - forty hundredths covers more of the whole than twenty-five hundredths."
+          ],
+          "studentPrompt": "Explain this step in your own words."
+        }
+      ]
+    },
+    {
+      "kind": "frayer",
+      "slots": [
+        {
+          "label": "Tenths",
+          "entries": [
+            "The first place after the decimal point: the whole split into ten equal parts, so each part is one tenth and 0.4 is four tenths."
+          ],
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "label": "Hundredths",
+          "entries": [
+            "The second place after the decimal point: the whole split into one hundred tiny parts, so 0.25 is twenty-five hundredths."
+          ],
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "label": "Place value",
+          "entries": [
+            "What a digit is worth because of where it stands: the same 4 is worth four tenths in 0.4 and would be worth four hundredths in 0.04."
+          ],
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "label": "Decimal point",
+          "entries": [
+            "The dot that separates the wholes from the tenths: everything to its right is less than one whole."
+          ],
+          "studentPrompt": "Give your own example of this term."
+        }
+      ]
+    }
+  ]
+}
