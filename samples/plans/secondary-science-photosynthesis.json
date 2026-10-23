@@ -1,0 +1,106 @@
+{
+  "title": "Photosynthesis: how plants make food",
+  "level": "secondary",
+  "subject": "science",
+  "topic": "bio-nutrition",
+  "durationMinutes": 40,
+  "objectives": [
+    {
+      "id": "o1",
+      "text": "State the word equation for photosynthesis: carbon dioxide + water -> glucose + oxygen",
+      "successCriteria": [
+        "I can place carbon dioxide and water on the left of the word equation and glucose and oxygen on the right",
+        "I can name light energy trapped by chlorophyll as the energy input over the arrow"
+      ],
+      "assessmentPoints": [
+        "Partner answers in the opening activity",
+        "Word equations written in the closing worksheet activity"
+      ]
+    },
+    {
+      "id": "o2",
+      "text": "Explain where carbon dioxide and water enter the plant, and where glucose and oxygen go",
+      "successCriteria": [
+        "I can trace carbon dioxide in through the pores under the leaf and water up from the roots",
+        "I can say glucose stays as the plant food while oxygen is released into the air"
+      ],
+      "assessmentPoints": [
+        "Route tracing answers during the raw-materials activity",
+        "Closing worksheet answers on the raw-materials question"
+      ]
+    },
+    {
+      "id": "o3",
+      "text": "Explain why the released oxygen comes from water, not from carbon dioxide",
+      "successCriteria": [
+        "I can state that splitting water releases the oxygen",
+        "I can state that carbon dioxide supplies the carbon for glucose instead"
+      ],
+      "assessmentPoints": [
+        "Responses when the trap is sprung",
+        "Exit ticket answers on the oxygen-source question"
+      ]
+    }
+  ],
+  "activities": [
+    {
+      "title": "Meet the leaf and name the inputs and products",
+      "minutes": 7,
+      "objectiveIds": [
+        "o1"
+      ],
+      "scriptCue": "s1",
+      "grouping": "whole class",
+      "resources": [
+        "board"
+      ]
+    },
+    {
+      "title": "Trace the two raw materials to the leaf",
+      "minutes": 9,
+      "objectiveIds": [
+        "o2"
+      ],
+      "scriptCue": "s2",
+      "grouping": "pairs"
+    },
+    {
+      "title": "Follow the products out of the leaf",
+      "minutes": 7,
+      "objectiveIds": [
+        "o1",
+        "o2"
+      ],
+      "scriptCue": "s3",
+      "grouping": "whole class",
+      "differentiation": {
+        "support": "Provide the word equation with the arrow and energy input pre-drawn so learners place the four substances."
+      }
+    },
+    {
+      "title": "Energy in, food out: plants as producers",
+      "minutes": 8,
+      "objectiveIds": [
+        "o1",
+        "o2"
+      ],
+      "scriptCue": "s4",
+      "grouping": "pairs"
+    },
+    {
+      "title": "Spring the oxygen-source trap, worksheet and exit ticket",
+      "minutes": 9,
+      "objectiveIds": [
+        "o3"
+      ],
+      "scriptCue": "s5",
+      "grouping": "individual",
+      "resources": [
+        "worksheet"
+      ],
+      "differentiation": {
+        "stretch": "Ask learners to explain, using the split water, why the oxygen cannot come from the carbon dioxide."
+      }
+    }
+  ]
+}

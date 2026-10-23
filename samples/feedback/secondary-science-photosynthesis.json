@@ -1,0 +1,44 @@
+{
+  "title": "Photosynthesis: how plants make food",
+  "level": "secondary",
+  "subject": "science",
+  "topic": "bio-nutrition",
+  "strengths": [
+    "Most of the class can write the word equation with both raw materials on the left and both products on the right.",
+    "The class can name chlorophyll as the pigment that traps the light energy powering the change."
+  ],
+  "modelAnswers": [
+    {
+      "question": "A leaf is photosynthesizing. Name the two raw materials it needs, and state where each one comes from.",
+      "answer": "Carbon dioxide, which enters the leaf from the air through tiny pores on its underside, and water, which is absorbed by the roots and travels up to the leaf.",
+      "creditPoints": []
+    },
+    {
+      "question": "Explain why green plants are called producers.",
+      "answer": "Plants make their own food - glucose - by photosynthesis, building it from carbon dioxide and water using light energy. Because almost all other life feeds directly or indirectly on that food, plants are the producers at the start of food chains.",
+      "creditPoints": []
+    }
+  ],
+  "commonErrors": [
+    {
+      "misconception": "The oxygen released in photosynthesis comes from carbon dioxide.",
+      "example": "A learner explains the products by saying the leaf takes in carbon dioxide and breathes it out again as oxygen.",
+      "fixIt": {
+        "prompt": "Fix it: follow one water molecule into the leaf and say what splitting it releases, then say what job the carbon dioxide does instead.",
+        "corrected": "Corrected working: splitting water releases the oxygen, while carbon dioxide supplies the carbon that is built into glucose."
+      }
+    },
+    {
+      "misconception": "The oxygen released in photosynthesis comes from carbon dioxide.",
+      "example": "On the exit ticket, a learner defends the carbon dioxide source by pointing at the gas going in as the other gas comes out.",
+      "fixIt": {
+        "prompt": "Fix it: label the two gases with their own sources on the word equation, one arrow in from the roots and one arrow in through the leaf pores.",
+        "corrected": "Corrected check: water arrives from the roots and is the source of the released oxygen; carbon dioxide arrives through the leaf pores and is the carbon source for glucose."
+      }
+    }
+  ],
+  "nextSteps": [
+    "Reteach the oxygen source with the split-water step before any further product questions.",
+    "Practise tracing each substance on the word equation in its own colour, one route per substance."
+  ]
+}

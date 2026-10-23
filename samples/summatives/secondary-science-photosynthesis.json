@@ -1,0 +1,125 @@
+{
+  "title": "Nutrition Unit Test",
+  "level": "secondary",
+  "subject": "science",
+  "unitTitle": "Nutrition in plants and humans",
+  "topics": [
+    "secondary-science-photosynthesis",
+    "secondary-science-bio-nutrition"
+  ],
+  "durationMinutes": 60,
+  "totalMarks": 24,
+  "blueprint": [
+    {
+      "outcomeCode": "S3-PHOTO-APPLY",
+      "assessmentObjective": "AO1 recall and apply",
+      "marks": 12,
+      "cognitiveLevel": "apply"
+    },
+    {
+      "outcomeCode": "S3-NUTR-REASON",
+      "assessmentObjective": "AO2 reason and solve",
+      "marks": 12,
+      "cognitiveLevel": "reason"
+    }
+  ],
+  "items": [
+    {
+      "prompt": "Write the word equation for photosynthesis and state the role of chlorophyll in the process.",
+      "blueprintRow": 0,
+      "commandWord": "Write",
+      "marks": 6,
+      "markScheme": {
+        "points": [
+          {
+            "text": "Places carbon dioxide and water on the left and glucose and oxygen on the right of the word equation",
+            "marks": 3
+          },
+          {
+            "text": "States chlorophyll traps the light energy that powers the building of glucose",
+            "marks": 3
+          }
+        ]
+      }
+    },
+    {
+      "prompt": "Explain where the oxygen released by a leaf during photosynthesis comes from.",
+      "blueprintRow": 0,
+      "commandWord": "Explain",
+      "marks": 6,
+      "markScheme": {
+        "points": [
+          {
+            "text": "States the released oxygen comes from splitting water taken in by the leaf",
+            "marks": 3
+          },
+          {
+            "text": "States carbon dioxide supplies the carbon built into glucose, not the released oxygen",
+            "marks": 3
+          }
+        ]
+      }
+    },
+    {
+      "prompt": "A meal contains protein, fat and carbohydrate. State which food group provides the most energy per gram and give one reason the diet is described as balanced.",
+      "blueprintRow": 1,
+      "commandWord": "State",
+      "marks": 6,
+      "markScheme": {
+        "points": [
+          {
+            "text": "Identifies fat as the food group with the highest energy value per gram",
+            "marks": 3
+          },
+          {
+            "text": "States a balanced diet contains all seven food groups in the right proportions for the person",
+            "marks": 3
+          }
+        ]
+      }
+    },
+    {
+      "prompt": "Explain how the small intestine is adapted for absorbing digested nutrients into the blood.",
+      "blueprintRow": 1,
+      "commandWord": "Explain",
+      "marks": 6,
+      "markScheme": {
+        "points": [
+          {
+            "text": "States villi give the small intestine a large surface area for absorption",
+            "marks": 3
+          },
+          {
+            "text": "Links the thin villus wall and rich blood supply to fast movement of nutrients into the blood",
+            "marks": 3
+          }
+        ]
+      }
+    }
+  ],
+  "rubric": {
+    "criteria": [
+      {
+        "name": "Scientific explanation and use of evidence",
+        "levels": [
+          {
+            "label": "Secure",
+            "descriptor": "Explanations chain cause to effect in order, with each step justified by a named structure or substance."
+          },
+          {
+            "label": "Developing",
+            "descriptor": "Explanations are broadly sound but a link in the chain is asserted rather than justified."
+          },
+          {
+            "label": "Beginning",
+            "descriptor": "Answers name substances or structures without connecting them into an explanation."
+          }
+        ]
+      }
+    ]
+  },
+  "moderation": {
+    "state": "unreviewed"
+  },
+  "review": null
+}
