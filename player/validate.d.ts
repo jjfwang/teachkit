@@ -14,6 +14,7 @@ export function validateQuizBank(spec: unknown): string[];
 export function validateRevision(spec: unknown): string[];
 export function validateOrganisers(spec: unknown): string[];
 export function validateGlossary(spec: unknown): string[];
+export function validateFeedback(spec: unknown): string[];
 export function validateSummative(spec: unknown): string[];
 export function validateScheme(spec: unknown): string[];
 export function validatePackMetadata(metadata: unknown): string[];

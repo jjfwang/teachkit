@@ -1327,6 +1327,85 @@
     return errors;
   }
 
+  // Feedback validator (SPEC.md "Feedback spec", issue #1295): one
+  // combined topic-level material - strengths, model answers,
+  // common errors with fix-it tasks, next steps. Presence and
+  // shape only; derivation from the paired assessment materials is
+  // pinned by the gold test, never by this validator.
+  function validateFeedback(spec) {
+    var errors = [];
+    if (!spec || typeof spec !== 'object' || Array.isArray(spec)) return ['spec: must be an object'];
+    checkMaterialHeader(spec, errors);
+    if (!Array.isArray(spec.strengths) || spec.strengths.length < 1) {
+      errors.push('strengths: required array of at least 1 non-empty strings');
+    } else {
+      spec.strengths.forEach(function (s, i) {
+        if (typeof s !== 'string' || !s.trim()) errors.push('strengths[' + i + ']: must be a non-empty string');
+      });
+    }
+    if (!Array.isArray(spec.modelAnswers) || spec.modelAnswers.length < 2) {
+      errors.push('modelAnswers: required array of at least 2 entries');
+    } else {
+      spec.modelAnswers.forEach(function (entry, i) {
+        var p = 'modelAnswers[' + i + ']';
+        if (!entry || typeof entry !== 'object' || Array.isArray(entry)) {
+          errors.push(p + ': must be an object');
+          return;
+        }
+        if (typeof entry.question !== 'string' || !entry.question.trim()) {
+          errors.push(p + '.question: required non-empty string');
+        }
+        if (typeof entry.answer !== 'string' || !entry.answer.trim()) {
+          errors.push(p + '.answer: required non-empty string');
+        }
+        if (!Array.isArray(entry.creditPoints)) {
+          errors.push(p + '.creditPoints: required array of strings');
+        } else {
+          entry.creditPoints.forEach(function (cp, j) {
+            if (typeof cp !== 'string' || !cp.trim()) {
+              errors.push(p + '.creditPoints[' + j + ']: must be a non-empty string');
+            }
+          });
+        }
+      });
+    }
+    if (!Array.isArray(spec.commonErrors) || spec.commonErrors.length < 2) {
+      errors.push('commonErrors: required array of at least 2 entries');
+    } else {
+      spec.commonErrors.forEach(function (entry, i) {
+        var p = 'commonErrors[' + i + ']';
+        if (!entry || typeof entry !== 'object' || Array.isArray(entry)) {
+          errors.push(p + ': must be an object');
+          return;
+        }
+        if (typeof entry.misconception !== 'string' || !entry.misconception.trim()) {
+          errors.push(p + '.misconception: required non-empty string');
+        }
+        if (typeof entry.example !== 'string' || !entry.example.trim()) {
+          errors.push(p + '.example: required non-empty string');
+        }
+        if (!entry.fixIt || typeof entry.fixIt !== 'object' || Array.isArray(entry.fixIt)) {
+          errors.push(p + '.fixIt: must be an object');
+        } else {
+          if (typeof entry.fixIt.prompt !== 'string' || !entry.fixIt.prompt.trim()) {
+            errors.push(p + '.fixIt.prompt: required non-empty string');
+          }
+          if (typeof entry.fixIt.corrected !== 'string' || !entry.fixIt.corrected.trim()) {
+            errors.push(p + '.fixIt.corrected: required non-empty string');
+          }
+        }
+      });
+    }
+    if (!Array.isArray(spec.nextSteps) || spec.nextSteps.length < 1) {
+      errors.push('nextSteps: required array of at least 1 non-empty strings');
+    } else {
+      spec.nextSteps.forEach(function (s, i) {
+        if (typeof s !== 'string' || !s.trim()) errors.push('nextSteps[' + i + ']: must be a non-empty string');
+      });
+    }
+    return errors;
+  }
+
   // Summative assessment validator (SPEC.md "Summative assessment
   // spec", issue #1259): a unit-level assessment spanning at least 2
   // topics. The blueprint rows carry the outcome / assessment
@@ -1634,7 +1713,7 @@
     return errors;
   }
 
-  return { validateSpec: validateSpec, validateSlides: validateSlides, validateWorksheet: validateWorksheet, validateExitTicket: validateExitTicket, validateNotes: validateNotes, validateScript: validateScript, validateLessonPlan: validateLessonPlan, validateScaffolds: validateScaffolds, validateDiagnostics: validateDiagnostics, validateWorkedExamples: validateWorkedExamples, validateQuizBank: validateQuizBank, validateRevision: validateRevision, validateOrganisers: validateOrganisers, validateGlossary: validateGlossary, validateSummative: validateSummative, validateScheme: validateScheme, validatePackMetadata: validatePackMetadata, SUBJECTS: SUBJECTS };
+  return { validateSpec: validateSpec, validateSlides: validateSlides, validateWorksheet: validateWorksheet, validateExitTicket: validateExitTicket, validateNotes: validateNotes, validateScript: validateScript, validateLessonPlan: validateLessonPlan, validateScaffolds: validateScaffolds, validateDiagnostics: validateDiagnostics, validateWorkedExamples: validateWorkedExamples, validateQuizBank: validateQuizBank, validateRevision: validateRevision, validateOrganisers: validateOrganisers, validateGlossary: validateGlossary, validateFeedback: validateFeedback, validateSummative: validateSummative, validateScheme: validateScheme, validatePackMetadata: validatePackMetadata, SUBJECTS: SUBJECTS };
 });
 
 /* ------------------------------------------------------------------

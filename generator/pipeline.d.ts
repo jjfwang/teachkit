@@ -494,6 +494,60 @@ export function generateScheme(
   opts: GenerateSchemeOptions,
   deps: GenerateSchemeDeps
 ): Promise<SchemeDocument>;
+// generateFeedback options (issue #1295): the notes-content model -
+// the caller supplies the paired assessment content the feedback is
+// derived from; no bank entry is required, there is no unpack and
+// no cache, and a feedback material is a standalone topic-level
+// material in this slice (the lesson-pack fold-in is slice 3).
+export interface FeedbackPairedQuestion {
+  prompt: string;
+  answer?: string;
+  workedSolution?: string;
+  misconception?: string;
+  creditPoints?: string[];
+  commonErrors?: string[];
+}
+export interface FeedbackPairedQuizItem {
+  prompt: string;
+  answer?: string;
+  misconceptionCode?: string;
+}
+export interface FeedbackPairedNotesTrap {
+  misconception: string;
+  explanation?: string;
+}
+export interface GenerateFeedbackOptions {
+  topic: string;
+  topicLabel?: string;
+  level?: string;
+  subject: string;
+  /** The student's focus for the feedback, when given. */
+  focus?: string;
+  /** Paired exit-ticket questions the model answers and errors derive from. */
+  exitTicketQuestions?: FeedbackPairedQuestion[];
+  /** Paired worksheet questions the model answers derive from. */
+  worksheetQuestions?: FeedbackPairedQuestion[];
+  /** Paired quiz-bank items the common errors may target. */
+  quizItems?: FeedbackPairedQuizItem[];
+  /** Paired notes trap the common errors may target. */
+  notesTrap?: FeedbackPairedNotesTrap;
+  /** Number of repair turns after the first attempt. Default 3; 0 disables repair. */
+  maxRepairs?: number;
+}
+export interface GenerateFeedbackDeps {
+  callChat: PipelineCallChat;
+  /** Feedback validator; defaults to the built-in validateFeedback when omitted. */
+  validateFeedback?: PipelineValidate;
+  /** Fallback validator, used when validateFeedback is not supplied. */
+  validate?: PipelineValidate;
+  onProgress?: PipelineProgress;
+}
+// The parsed animath feedback material that validated clean.
+export type FeedbackDocument = Record<string, unknown>;
+export function generateFeedback(
+  opts: GenerateFeedbackOptions,
+  deps: GenerateFeedbackDeps
+): Promise<FeedbackDocument>;
 // generateLessonPack (issue #768): one shared unpack authors all thirteen
 // materials; packs are cached in memory by topic slug.
 export interface GenerateLessonPackOptions {
