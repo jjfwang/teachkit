@@ -840,6 +840,48 @@ summative assessment is moderated without a named reviewer
 `review: null`; naming the reviewer is an owner adoption-time
 activity.
 
+## Scheme of work spec
+
+A scheme of work is the unit-level plan that stitches topic lesson
+packs into a term sequence: it orders the topics of a unit across
+the weeks of a term, records the prerequisites each topic builds
+on, and marks the assessment points along the way.
+`validateScheme` in `player/validate.js` enforces this contract
+and returns a `string[]` of errors (empty = valid). A scheme of
+work is a standalone unit-level material: it is never folded into
+a lesson pack (the pack stays at thirteen materials).
+
+Material fields:
+
+| field   | type       | notes                                  |
+|---------|------------|----------------------------------------|
+| `title` | string     | required non-empty                     |
+| `level` | `"primary"` \| `"secondary"` \| `"jc"` |                                        |
+| `subject` | string   | required non-empty - any school subject |
+| `unitTitle` | string | required non-empty - the unit the scheme covers |
+| `term` | string     | required non-empty - the term the scheme runs in |
+| `weeks` | integer    | required positive - the number of weeks in the term |
+| `sequence` | object[] | required array of at least 2 entries in teaching order - see below |
+
+Every sequence entry is an object with these fields:
+
+| field              | type     | notes |
+|--------------------|----------|-------|
+| `topic`            | string   | required non-empty - the full topic slug, in the summative topics convention |
+| `week`             | integer  | required positive, at most `weeks` - the week the topic starts |
+| `lessons`          | integer  | required positive - the number of lessons the topic takes |
+| `prerequisites`    | string[] | required array, may be empty; every prerequisite names the topic of an earlier entry - no self, forward or duplicate prerequisites |
+| `assessmentPoints` | object[] | required array, may be empty, of objects with `kind` one of `diagnostics` \| `quizBank` \| `summative` \| `review` and a non-empty `title` |
+
+Teaching order follows the level and subject track order in
+`generator/syllabus.js`: a scheme sequences topics in syllabus
+order, and its facts are looked up from the syllabus data layer
+(`topicFacts`), never copied into the material - no syllabus text
+is stored (Copyright Act 2021). Assessment points reference
+materials by kind, never by an invented id. Generation is direct
+unit authoring on the `generateSummative` precedent: no shared
+unpack, no misconception bank gate, no cache.
+
 ## Accessible variants
 
 Every printable renderer in `player/printable.js` (`renderWorksheet`,

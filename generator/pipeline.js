@@ -67,6 +67,7 @@
         organisersPrompt: require('./build_organisers_prompt.js'),
         glossaryPrompt: require('./build_glossary_prompt.js'),
         summativePrompt: require('./build_summative_prompt.js'),
+        schemePrompt: require('./build_scheme_prompt.js'),
         syllabus: require('./syllabus.js'),
         validate: require('../player/validate.js')
       };
@@ -89,6 +90,7 @@
       organisersPrompt: g.AnimathOrganisersPrompt,
       glossaryPrompt: g.AnimathGlossaryPrompt,
       summativePrompt: g.AnimathSummativePrompt,
+      schemePrompt: g.AnimathSchemePrompt,
       syllabus: g.AnimathSyllabus,
       validate: g.AnimathValidate
     };
@@ -196,6 +198,13 @@
     invalidLabel: 'The invalid summative assessment you returned:',
     returnLine: 'Return ONLY the corrected summative assessment as a single JSON object. No prose, no code fences.',
     rejectLabel: 'Summative assessment'
+  };
+  var SCHEME_KIND = {
+    notJsonProblem: 'The response was not valid JSON. Return ONLY the corrected scheme of work as JSON.',
+    repairHeader: 'Your previous response did not produce a valid scheme of work. It had these problems:',
+    invalidLabel: 'The invalid scheme of work you returned:',
+    returnLine: 'Return ONLY the corrected scheme of work as a single JSON object. No prose, no code fences.',
+    rejectLabel: 'Scheme of work'
   };
   var EXIT_TICKET_KIND = {
     notJsonProblem: 'The response was not valid JSON. Return ONLY the corrected exit ticket as JSON.',
@@ -476,6 +485,15 @@
     if (typeof deps.validate === 'function') return deps.validate;
     if (SIBLINGS.validate && typeof SIBLINGS.validate.validateSummative === 'function') {
       return SIBLINGS.validate.validateSummative;
+    } /* node:coverage ignore next */
+    return null;
+  }
+
+  function resolveSchemeValidator(deps) {
+    if (typeof deps.validateScheme === 'function') return deps.validateScheme;
+    if (typeof deps.validate === 'function') return deps.validate;
+    if (SIBLINGS.validate && typeof SIBLINGS.validate.validateScheme === 'function') {
+      return SIBLINGS.validate.validateScheme;
     } /* node:coverage ignore next */
     return null;
   }
@@ -1307,6 +1325,57 @@
   }
 
   // opts:
+  //   {topics, unitTitle, term, level, subject, focus, workedExample,
+  //    maxRepairs}
+  //   (the buildSchemePrompts option set; subject and at least 2
+  //   topics required; maxRepairs defaults to 3, 0 disables repair).
+  // deps:
+  //   {callChat(system, user) -> Promise<string>  (caller-supplied LLM call),
+  //    validateScheme?(spec) -> string[] | Promise<string[]>,
+  //    validate?(spec) -> string[] | Promise<string[]>  (fallback validator),
+  //    onProgress?(stage, n, max)}  stages: 'author', 'repair'.
+  //
+  // A scheme of work is unit-level: it sequences a topics array
+  // across a term and is authored directly from the unit (there is
+  // no single-topic unpack, no misconception bank resolution and
+  // no cache - the sequence, not a bank, is its contract). Resolves
+  // with the first scheme that validates clean against
+  // validateScheme; rejects with an Error carrying err.problems
+  // when every attempt failed, naming the scheme kind.
+  function generateScheme(opts, deps) {
+    opts = opts || {};
+    deps = deps || {};
+    if (typeof deps.callChat !== 'function') {
+      return Promise.reject(new Error('generateScheme: deps.callChat(system, user) ' +
+        'must be a function returning a Promise of the raw response text'));
+    }
+    var validateFn = resolveSchemeValidator(deps);
+    /* node:coverage ignore next 5 */
+    if (!validateFn) {
+      return Promise.reject(new Error('generateScheme: deps.validateScheme(spec) ' +
+        'must be a function returning the problem list (or supply deps.validate, ' +
+        'or load player/validate.js so validateScheme is available)'));
+    }
+    var progress = makeProgress(deps);
+    var maxRepairs = (opts.maxRepairs != null) ? opts.maxRepairs : DEFAULT_MAX_REPAIRS;
+    var prompts;
+    try {
+      prompts = SIBLINGS.schemePrompt.buildSchemePrompts({
+        topics: opts.topics,
+        unitTitle: opts.unitTitle,
+        term: opts.term,
+        level: opts.level,
+        subject: opts.subject,
+        focus: opts.focus,
+        workedExample: opts.workedExample
+      });
+    } catch (err) {
+      return Promise.reject(err);
+    }
+    return authorAndRepair(deps, progress, maxRepairs, prompts, validateFn, SCHEME_KIND);
+  }
+
+  // opts:
   //   {topic, topicLabel, level, subject, workedExample, kind, focus,
   //    facet, maxRepairs, force}
   //   (the union of the thirteen material option sets; topic/subject
@@ -1587,5 +1656,5 @@
     return generateLessonPack(merged, deps);
   }
 
-  return { generateAnimation: generateAnimation, generateSlides: generateSlides, generateWorksheet: generateWorksheet, generateExitTicket: generateExitTicket, generateNotes: generateNotes, generateScript: generateScript, generateLessonPlan: generateLessonPlan, generateScaffolds: generateScaffolds, generateDiagnostics: generateDiagnostics, generateWorkedExamples: generateWorkedExamples, generateQuizBank: generateQuizBank, generateRevision: generateRevision, generateOrganisers: generateOrganisers, generateGlossary: generateGlossary, generateSummative: generateSummative, generateLessonPack: generateLessonPack, generateLessonPackForSyllabus: generateLessonPackForSyllabus, clearPackCache: clearPackCache };
+  return { generateAnimation: generateAnimation, generateSlides: generateSlides, generateWorksheet: generateWorksheet, generateExitTicket: generateExitTicket, generateNotes: generateNotes, generateScript: generateScript, generateLessonPlan: generateLessonPlan, generateScaffolds: generateScaffolds, generateDiagnostics: generateDiagnostics, generateWorkedExamples: generateWorkedExamples, generateQuizBank: generateQuizBank, generateRevision: generateRevision, generateOrganisers: generateOrganisers, generateGlossary: generateGlossary, generateSummative: generateSummative, generateScheme: generateScheme, generateLessonPack: generateLessonPack, generateLessonPackForSyllabus: generateLessonPackForSyllabus, clearPackCache: clearPackCache };
 });

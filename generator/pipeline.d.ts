@@ -465,6 +465,35 @@ export function generateSummative(
   opts: GenerateSummativeOptions,
   deps: GenerateSummativeDeps
 ): Promise<SummativeDocument>;
+// generateScheme options (issue #1290): unit-level, sequencing a
+// topics array across a term; authored directly from the unit with
+// no bank resolution, no cache and never folded into a lesson pack.
+export interface GenerateSchemeOptions {
+  /** At least 2 topic slugs, in teaching (syllabus) order. */
+  topics: string[];
+  unitTitle?: string;
+  term?: string;
+  level?: string;
+  subject: string;
+  focus?: string;
+  workedExample?: string;
+  /** Number of repair turns after the first attempt. Default 3; 0 disables repair. */
+  maxRepairs?: number;
+}
+export interface GenerateSchemeDeps {
+  callChat: PipelineCallChat;
+  /** Scheme validator; defaults to the built-in validateScheme when omitted. */
+  validateScheme?: PipelineValidate;
+  /** Fallback validator, used when validateScheme is not supplied. */
+  validate?: PipelineValidate;
+  onProgress?: PipelineProgress;
+}
+// The parsed animath scheme of work that validated clean.
+export type SchemeDocument = Record<string, unknown>;
+export function generateScheme(
+  opts: GenerateSchemeOptions,
+  deps: GenerateSchemeDeps
+): Promise<SchemeDocument>;
 // generateLessonPack (issue #768): one shared unpack authors all thirteen
 // materials; packs are cached in memory by topic slug.
 export interface GenerateLessonPackOptions {
