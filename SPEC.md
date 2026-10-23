@@ -668,21 +668,22 @@ heuristic signal for a human reviewer only; it is never a gate.
 ## Lesson pack spec
 
 A lesson pack is the bundle `generateLessonPack` in
-`generator/pipeline.js` returns for one topic: all nine teaching
+`generator/pipeline.js` returns for one topic: all ten teaching
 materials for the topic, authored together so they agree with each
 other. `generateLessonPackForSyllabus` is the syllabus-keyed entry
 point to the same contract (see Cache below).
 
 Pack shape: an object with exactly the keys `manifest`, `animation`,
 `slides`, `worksheet`, `notes`, `exitTicket`, `script`, `lessonPlan`,
-`scaffolds`, `diagnostics`.
+`scaffolds`, `diagnostics`, `workedExamples`.
 Each material value is a spec that validates clean against its own
 section of this document: `animation` via `validateSpec`, `slides`
 via `validateSlides`, `worksheet` via `validateWorksheet`, `notes`
 via `validateNotes`, `exitTicket` via `validateExitTicket`, `script`
 via `validateScript`, `lessonPlan` via `validateLessonPlan`,
-`scaffolds` via `validateScaffolds`, and `diagnostics` via
-`validateDiagnostics`.
+`scaffolds` via `validateScaffolds`, `diagnostics` via
+`validateDiagnostics`, and `workedExamples` via
+`validateWorkedExamples`.
 
 Manifest shape: `manifest` has exactly the keys `slug`, `topic`,
 `level`, `subject`, `version`, `materials`, `metadata`.
@@ -697,9 +698,9 @@ Manifest shape: `manifest` has exactly the keys `slug`, `topic`,
 - `version` is the generator (package) version in Node, and the
   string `unknown` in the browser, where no package version is
   available.
-- `materials` is exactly the nine material keys in pack order:
+- `materials` is exactly the ten material keys in pack order:
   `animation`, `slides`, `worksheet`, `notes`, `exitTicket`,
-  `script`, `lessonPlan`, `scaffolds`, `diagnostics`.
+  `script`, `lessonPlan`, `scaffolds`, `diagnostics`, `workedExamples`.
 - `metadata` is the pack's transparency block, emitted deterministically
   by `generateLessonPack` (never authored by the LLM) and validated by
   `validatePackMetadata` in `player/validate.js`. It has exactly the keys
@@ -723,7 +724,7 @@ Manifest shape: `manifest` has exactly the keys `slug`, `topic`,
   - `moderation` is `{state}`, one of `unreviewed`, `in-moderation`,
     `approved`, `rejected`; generated packs start `unreviewed`.
 
-Shared unpack: one shared unpack stage authors all nine materials, so
+Shared unpack: one shared unpack stage authors all ten materials, so
 the whole pack shares one set of transitions (with the topic's
 misconceptions attached), one worked example, and one misconception
 set. Materials are authored sequentially in pack order.
