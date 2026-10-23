@@ -13,6 +13,7 @@ export function validateWorkedExamples(spec: unknown): string[];
 export function validateQuizBank(spec: unknown): string[];
 export function validateRevision(spec: unknown): string[];
 export function validateOrganisers(spec: unknown): string[];
+export function validateGlossary(spec: unknown): string[];
 export function validateSummative(spec: unknown): string[];
 export function validatePackMetadata(metadata: unknown): string[];
 // Syllabus-known subjects; validateSpec accepts any non-empty subject string.

@@ -57,6 +57,8 @@
     "./revision": "./generator/pipeline.js",
     "./organisers-prompt": "./generator/build_organisers_prompt.js",
     "./organisers": "./generator/pipeline.js",
+    "./glossary-prompt": "./generator/build_glossary_prompt.js",
+    "./glossary": "./generator/pipeline.js",
     "./lesson-pack": "./generator/pipeline.js"
   },
   "files": [

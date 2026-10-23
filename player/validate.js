@@ -1293,6 +1293,40 @@
     return errors;
   }
 
+  // Glossary validator (SPEC.md "Glossary spec", issue #1283): a
+  // standalone per-topic reference pack - the sibling material
+  // header plus at least 3 entries. Each entry carries a term, a
+  // meaning and an example, all required non-empty strings. Term
+  // and meaning are a paired notes definition verbatim and the
+  // example is grounded in the paired notes content - presence and
+  // shape only, the validator never checks derivation.
+  function validateGlossary(spec) {
+    var errors = [];
+    if (!spec || typeof spec !== 'object' || Array.isArray(spec)) return ['spec: must be an object'];
+    checkMaterialHeader(spec, errors);
+    if (!Array.isArray(spec.entries) || spec.entries.length < 3) {
+      errors.push('entries: required array of at least 3 entries');
+      return errors;
+    }
+    spec.entries.forEach(function (entry, i) {
+      var p = 'entries[' + i + ']';
+      if (!entry || typeof entry !== 'object' || Array.isArray(entry)) {
+        errors.push(p + ': must be an object');
+        return;
+      }
+      if (typeof entry.term !== 'string' || !entry.term.trim()) {
+        errors.push(p + '.term: required non-empty string');
+      }
+      if (typeof entry.meaning !== 'string' || !entry.meaning.trim()) {
+        errors.push(p + '.meaning: required non-empty string');
+      }
+      if (typeof entry.example !== 'string' || !entry.example.trim()) {
+        errors.push(p + '.example: required non-empty string');
+      }
+    });
+    return errors;
+  }
+
   // Summative assessment validator (SPEC.md "Summative assessment
   // spec", issue #1259): a unit-level assessment spanning at least 2
   // topics. The blueprint rows carry the outcome / assessment
@@ -1519,7 +1553,7 @@
     return errors;
   }
 
-  return { validateSpec: validateSpec, validateSlides: validateSlides, validateWorksheet: validateWorksheet, validateExitTicket: validateExitTicket, validateNotes: validateNotes, validateScript: validateScript, validateLessonPlan: validateLessonPlan, validateScaffolds: validateScaffolds, validateDiagnostics: validateDiagnostics, validateWorkedExamples: validateWorkedExamples, validateQuizBank: validateQuizBank, validateRevision: validateRevision, validateOrganisers: validateOrganisers, validateSummative: validateSummative, validatePackMetadata: validatePackMetadata, SUBJECTS: SUBJECTS };
+  return { validateSpec: validateSpec, validateSlides: validateSlides, validateWorksheet: validateWorksheet, validateExitTicket: validateExitTicket, validateNotes: validateNotes, validateScript: validateScript, validateLessonPlan: validateLessonPlan, validateScaffolds: validateScaffolds, validateDiagnostics: validateDiagnostics, validateWorkedExamples: validateWorkedExamples, validateQuizBank: validateQuizBank, validateRevision: validateRevision, validateOrganisers: validateOrganisers, validateGlossary: validateGlossary, validateSummative: validateSummative, validatePackMetadata: validatePackMetadata, SUBJECTS: SUBJECTS };
 });
 
 /* ------------------------------------------------------------------

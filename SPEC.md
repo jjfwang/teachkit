@@ -740,6 +740,47 @@ derived from them. No misconception bank entry is required: a
 topic with gold notes but no bank entry can still grow an
 organisers material.
 
+## Glossary spec
+
+A glossary material is the standalone finished reference pack for
+one topic: the topic's key terms, each with its meaning and a
+grounded example. A glossary is built on the student notes
+definitions block: every entry's term and meaning are a paired
+notes definition verbatim, and its example is grounded in the
+paired notes content - in gold files drawn verbatim from the
+paired notes worked example, one of its mechanism steps, or one of
+its objectives. `validateGlossary` in `player/validate.js` enforces
+this contract and returns a `string[]` of errors, exactly like
+`validateOrganisers` (empty = valid). The validator enforces
+presence and shape only; it never checks derivation.
+
+Material fields:
+
+| field   | type       | notes                                  |
+|---------|------------|----------------------------------------|
+| `title` | string     | required non-empty                     |
+| `level` | `"primary"` \| `"secondary"` \| `"jc"` |                                        |
+| `subject` | string   | required non-empty - any school subject, not restricted to the syllabus-known list |
+| `topic` | string     | required non-empty                     |
+| `entries` | object[] | required array of at least 3 entries - see below |
+
+Every entry is an object with these fields:
+
+| field   | type     | notes |
+|---------|----------|-------|
+| `term` | string   | required non-empty - a paired notes definition term, verbatim |
+| `meaning` | string | required non-empty - that definition's meaning, verbatim |
+| `example` | string | required non-empty - grounded in the paired notes content as above |
+
+A glossary material is generated from the shared lesson unpack
+and the topic's paired notes content (see `generateGlossary`):
+the caller may supply the paired notes definitions, mechanism
+steps, worked example and objectives, and the author prompt
+renders them so entries can be derived from them. No
+misconception bank entry is required: a topic with gold notes but
+no bank entry can still grow a glossary material. A glossary is a
+standalone material: it is never folded into a lesson pack.
+
 ## Summative assessment spec
 
 A summative assessment is the unit-level assessment sat at the end
