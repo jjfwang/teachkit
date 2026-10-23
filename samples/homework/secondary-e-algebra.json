@@ -1,0 +1,131 @@
+{
+  "level": "secondary",
+  "questions": [
+    {
+      "choices": [
+        {
+          "text": "x^2 + 6x + 5"
+        },
+        {
+          "correct": true,
+          "text": "x^2 + 5x + 6"
+        },
+        {
+          "text": "x^2 + 5x + 5"
+        },
+        {
+          "text": "x^2 + 6"
+        }
+      ],
+      "difficulty": 2,
+      "explanation": "Scene s1: the area model gives x^2, 3x, 2x and 6, and collecting the x terms gives x^2 + 5x + 6.",
+      "id": "q1",
+      "kind": "multiple-choice",
+      "markScheme": {
+        "ecf": false,
+        "points": [
+          {
+            "marks": 1,
+            "text": "Chooses 'x^2 + 5x + 6'"
+          }
+        ]
+      },
+      "marks": 1,
+      "objective": "o1",
+      "prompt": "Expand (x + 2)(x + 3).",
+      "tier": "core"
+    },
+    {
+      "choices": [
+        {
+          "text": "x^2 + 7x + 3"
+        },
+        {
+          "text": "x^2 + 3x + 7"
+        },
+        {
+          "correct": true,
+          "text": "x^2 + 10x + 21"
+        },
+        {
+          "text": "x^2 + 21"
+        }
+      ],
+      "difficulty": 3,
+      "explanation": "The area model gives x^2, 7x, 3x and 21, and collecting the x terms gives 10x, so the expansion is x^2 + 10x + 21.",
+      "id": "q5",
+      "kind": "multiple-choice",
+      "markScheme": {
+        "ecf": false,
+        "points": [
+          {
+            "marks": 1,
+            "text": "Chooses 'x^2 + 10x + 21'"
+          }
+        ]
+      },
+      "marks": 1,
+      "objective": "o1",
+      "prompt": "Expand (x + 3)(x + 7).",
+      "tier": "extension"
+    },
+    {
+      "answer": "x = y - 7",
+      "difficulty": 1,
+      "explanation": "Undo the + 7 by subtracting 7 from both sides, leaving x on its own.",
+      "id": "q9",
+      "kind": "short-answer",
+      "markScheme": {
+        "ecf": false,
+        "points": [
+          {
+            "marks": 1,
+            "text": "Undoes the + 7 by subtracting 7 from both sides"
+          },
+          {
+            "marks": 1,
+            "text": "Writes x = y - 7 with x alone as the subject"
+          }
+        ]
+      },
+      "marks": 2,
+      "objective": "o3",
+      "prompt": "Make x the subject of y = x + 7.",
+      "tier": "support",
+      "workedSolution": "y = x + 7, so subtracting 7 from both sides gives x = y - 7."
+    },
+    {
+      "answer": "(a + b)^2 = a^2 + 2ab + b^2 and (a - b)^2 = a^2 - 2ab + b^2, so the difference is 2ab - (-2ab) = 4ab.",
+      "difficulty": 4,
+      "explanation": "Each square produces a middle term because the bracket is multiplied by itself: +2ab from (a + b)(a + b) and -2ab from (a - b)(a - b). The a^2 and b^2 terms cancel in the subtraction, leaving 4ab.",
+      "id": "q12",
+      "kind": "short-answer",
+      "markScheme": {
+        "ecf": false,
+        "points": [
+          {
+            "marks": 1,
+            "text": "Expands both squares correctly, including the middle terms +2ab and -2ab"
+          },
+          {
+            "marks": 1,
+            "text": "Shows the a^2 and b^2 terms cancel and the middle terms combine to 4ab"
+          },
+          {
+            "marks": 1,
+            "text": "Explains the middle terms come from multiplying the bracket by itself (the cross products)"
+          }
+        ]
+      },
+      "marks": 3,
+      "objective": "o4",
+      "prompt": "Show that (a + b)^2 - (a - b)^2 = 4ab, and explain where the middle terms come from.",
+      "tier": "extension",
+      "workedSolution": "(a + b)^2 - (a - b)^2 = (a^2 + 2ab + b^2) - (a^2 - 2ab + b^2) = 4ab."
+    }
+  ],
+  "subject": "math",
+  "title": "E-Math algebra: expansion, factorisation and changing the subject",
+  "topic": "e-algebra",
+  "variant": "homework"
+}

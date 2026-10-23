@@ -1,0 +1,131 @@
+{
+  "level": "secondary",
+  "questions": [
+    {
+      "answer": "200 J, from 50 x 4 = 200.",
+      "difficulty": 2,
+      "explanation": "Scene s1: work = force x distance = 50 x 4 = 200 joules.",
+      "id": "q1",
+      "kind": "short-answer",
+      "markScheme": {
+        "ecf": false,
+        "points": [
+          {
+            "marks": 1,
+            "text": "Scene s1: work = force x distance = 50 x 4 = 200 joules"
+          },
+          {
+            "marks": 1,
+            "text": "Carries the working through to the correct final answer"
+          }
+        ]
+      },
+      "marks": 2,
+      "objective": "o1",
+      "prompt": "A force of 50 N pushes a crate 4 m in the direction of the force. How much work is done?",
+      "tier": "core",
+      "workedSolution": "200 J, from 50 x 4 = 200."
+    },
+    {
+      "choices": [
+        {
+          "text": "10 J"
+        },
+        {
+          "correct": true,
+          "text": "98 J"
+        },
+        {
+          "text": "49 J"
+        },
+        {
+          "text": "196 J"
+        }
+      ],
+      "difficulty": 2,
+      "explanation": "Scene s3: GPE = m x g x h = 2 x 9.8 x 5 = 98 joules.",
+      "id": "q4",
+      "kind": "multiple-choice",
+      "markScheme": {
+        "ecf": false,
+        "points": [
+          {
+            "marks": 1,
+            "text": "Chooses '98 J'"
+          }
+        ]
+      },
+      "marks": 1,
+      "objective": "o3",
+      "prompt": "A 2 kg mass is lifted 5 m (g = 9.8 m/s^2). How much gravitational potential energy does it gain?",
+      "tier": "core"
+    },
+    {
+      "choices": [
+        {
+          "correct": true,
+          "text": "10 W"
+        },
+        {
+          "text": "1000 W"
+        },
+        {
+          "text": "90 W"
+        },
+        {
+          "text": "0.1 W"
+        }
+      ],
+      "difficulty": 1,
+      "explanation": "Power = 100 J / 10 s = 10 W.",
+      "id": "q7",
+      "kind": "multiple-choice",
+      "markScheme": {
+        "ecf": false,
+        "points": [
+          {
+            "marks": 1,
+            "text": "Chooses '10 W'"
+          }
+        ]
+      },
+      "marks": 1,
+      "objective": "o2",
+      "prompt": "A machine does 100 J of work in 10 s. Power = work done / time. What is its power?",
+      "tier": "support"
+    },
+    {
+      "answer": "Motor A: 600 / 12 = 50 W. Motor B: 600 / 20 = 30 W. Motor A is more powerful by 20 W.",
+      "difficulty": 4,
+      "explanation": "Power is the rate of doing work: the same work in less time means a greater power. A delivers 50 W against B's 30 W.",
+      "id": "q9",
+      "kind": "short-answer",
+      "markScheme": {
+        "ecf": false,
+        "points": [
+          {
+            "marks": 1,
+            "text": "Calculates motor A's power as 50 W"
+          },
+          {
+            "marks": 1,
+            "text": "Calculates motor B's power as 30 W"
+          },
+          {
+            "marks": 1,
+            "text": "States motor A is more powerful by 20 W"
+          }
+        ]
+      },
+      "marks": 3,
+      "objective": "o2",
+      "prompt": "Two motors each do 600 J of work lifting identical loads. Motor A takes 12 s and motor B takes 20 s. Calculate the power of each motor, and state which is more powerful and by how much.",
+      "tier": "extension",
+      "workedSolution": "A: 600 J / 12 s = 50 W. B: 600 J / 20 s = 30 W. A is more powerful, by 50 - 30 = 20 W."
+    }
+  ],
+  "subject": "science",
+  "title": "Energy: work, power and conservation",
+  "topic": "phys-energy",
+  "variant": "homework"
+}

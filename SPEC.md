@@ -224,6 +224,7 @@ Worksheet fields:
 | `level`     | `"primary"` \| `"secondary"` \| `"jc"` |                                        |
 | `subject`   | string     | required non-empty — any school subject, not restricted to the syllabus-known list |
 | `topic`     | string     | required non-empty                     |
+| `variant`   | string     | optional; only value `homework` — see below |
 | `questions` | Question[] | required array of at least 1 question  |
 
 The worksheet answer key is the set of per-question `explanation` fields
@@ -255,6 +256,18 @@ worksheet-only like `tier` and `difficulty`: validation is strict when
 it is present (a non-string or empty `objective` is an error), and a
 worksheet without it validates exactly as before. Exit-ticket questions
 do not carry `objective`.
+
+A worksheet's optional `variant` is worksheet-level, not per-question:
+its only value is `homework`, and validation is strict when it is
+present (a non-string or any other value is an error), while a
+worksheet without it validates exactly as before. Exit tickets do not
+carry `variant` at all. A homework worksheet is a spaced, low-stakes
+selection across the topic, self-markable by design: `renderWorksheet`
+adds a homework header line on the student sheet naming it homework,
+low-stakes and self-marked, and `renderWorksheetAnswerKey` serves as
+the self-mark key under that framing. Answers and explanations appear
+only in the self-mark key, never on the question sheet — homework or
+not — and a standard worksheet renders exactly as before.
 
 ## Exit ticket spec
 
