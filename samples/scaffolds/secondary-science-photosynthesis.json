@@ -1,0 +1,116 @@
+{
+  "title": "Photosynthesis: how plants make food",
+  "level": "secondary",
+  "subject": "science",
+  "topic": "bio-nutrition",
+  "sets": [
+    {
+      "level": "full",
+      "wordBank": [
+        {
+          "term": "Photosynthesis",
+          "gloss": "the process by which green plants make glucose using light energy"
+        },
+        {
+          "term": "Chlorophyll",
+          "gloss": "the green pigment in leaves that traps light energy"
+        },
+        {
+          "term": "Glucose",
+          "gloss": "the sugar the plant builds as food"
+        },
+        {
+          "term": "Carbon dioxide",
+          "gloss": "a gas taken in from the air through tiny pores"
+        },
+        {
+          "term": "Water",
+          "gloss": "absorbed by the roots and transported up to the leaf"
+        }
+      ],
+      "starters": [
+        "The word equation for photosynthesis is...",
+        "The oxygen released comes from...",
+        "Plants are called producers because..."
+      ],
+      "frames": [
+        "The process by which green plants make glucose using light energy is ___.",
+        "The green pigment that traps light energy is ___.",
+        "The sugar the plant builds as food is ___."
+      ],
+      "cloze": [
+        {
+          "text": "Plants make glucose by ___, using the pigment ___.",
+          "answers": [
+            "Photosynthesis",
+            "Chlorophyll"
+          ]
+        },
+        {
+          "text": "The two raw materials are ___ and ___.",
+          "answers": [
+            "Carbon dioxide",
+            "Water"
+          ]
+        }
+      ]
+    },
+    {
+      "level": "partial",
+      "wordBank": [
+        {
+          "term": "Photosynthesis",
+          "gloss": "the process by which green plants make glucose using light energy"
+        },
+        {
+          "term": "Glucose",
+          "gloss": "the sugar the plant builds as food"
+        },
+        {
+          "term": "Oxygen",
+          "gloss": "a gas released from the leaf as a by-product"
+        }
+      ],
+      "starters": [
+        "By photosynthesis, the plant builds...",
+        "The gas released from the leaf is..."
+      ],
+      "frames": [
+        "By ___, the plant builds glucose as its food.",
+        "The gas released as a by-product is ___."
+      ],
+      "cloze": [
+        {
+          "text": "By ___, the plant builds ___ as food.",
+          "answers": [
+            "Photosynthesis",
+            "Glucose"
+          ]
+        }
+      ]
+    },
+    {
+      "level": "minimal",
+      "wordBank": [
+        {
+          "term": "Photosynthesis",
+          "gloss": "the process by which green plants make glucose using light energy"
+        }
+      ],
+      "starters": [
+        "Plants make their own food by..."
+      ],
+      "frames": [
+        "Plants make glucose using light energy by ___."
+      ],
+      "cloze": [
+        {
+          "text": "Plants make their own food by ___.",
+          "answers": [
+            "Photosynthesis"
+          ]
+        }
+      ]
+    }
+  ]
+}
