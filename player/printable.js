@@ -76,6 +76,12 @@
     return typeof require !== 'undefined' ? require('./validate.js').validateWorkedExamples : null;
   }
 
+  function getValidateQuizBank() {
+    var g = global.AnimathValidate;
+    if (g) return g.validateQuizBank || null;
+    return typeof require !== 'undefined' ? require('./validate.js').validateQuizBank : null;
+  }
+
   function assertValidWorksheet(spec) {
     var fn = getValidateWorksheet();
     if (!fn) throw new Error('animath printable: player/validate.js is missing - include it before printable.js so specs can be validated');
@@ -130,6 +136,13 @@
     if (!fn) throw new Error('animath printable: player/validate.js is missing - include it before printable.js so specs can be validated');
     var errors = fn(spec);
     if (errors.length) throw new Error('invalid worked examples: ' + errors.join('; '));
+  }
+
+  function assertValidQuizBank(spec) {
+    var fn = getValidateQuizBank();
+    if (!fn) throw new Error('animath printable: player/validate.js is missing - include it before printable.js so specs can be validated');
+    var errors = fn(spec);
+    if (errors.length) throw new Error('invalid quiz bank: ' + errors.join('; '));
   }
 
   // HTML-escape for text content and double-quoted attribute values,
@@ -664,6 +677,63 @@
     return parts.join('\n');
   }
 
+
+  // Quiz bank student sheet: each retrieval item's prompt, plus its
+  // choices when the item carries them, or answer lines when it does
+  // not. This function never reads an item's answer or
+  // misconceptionCode - see the header comment - so the teacher key
+  // cannot leak to a student.
+  function renderQuizBank(spec, options) {
+    assertValidQuizBank(spec);
+    var parts = sheetHeader(spec, 'pr-sheet pr-student pr-quiz-bank', 'Quiz bank', normalizeOptions(options));
+    parts.push('<ol class="pr-questions">');
+    spec.items.forEach(function (item) {
+      parts.push('<li class="pr-question">');
+      parts.push('<p class="pr-prompt">' + escapeHtml(item.prompt) + '</p>');
+      if (item.choices !== undefined) {
+        parts.push('<ul class="pr-choices">');
+        item.choices.forEach(function (choice) {
+          parts.push('<li class="pr-choice">' + escapeHtml(choice) + '</li>');
+        });
+        parts.push('</ul>');
+      } else {
+        parts.push('<div class="pr-answer-lines">' +
+          '<span class="pr-answer-line"></span>' +
+          '<span class="pr-answer-line"></span>' +
+          '<span class="pr-answer-line"></span></div>');
+      }
+      parts.push('</li>');
+    });
+    parts.push('</ol>');
+    parts.push('</section>');
+    return parts.join('\n');
+  }
+
+  // Teacher quiz bank answer key: per item the teacher-key answer,
+  // plus the misconception code and outcome code where the item
+  // carries them - the teacher-only content the student sheet never
+  // reads.
+  function renderQuizBankAnswerKey(spec, options) {
+    assertValidQuizBank(spec);
+    var parts = sheetHeader(spec, 'pr-sheet pr-teacher pr-answer-key pr-quiz-bank', 'Quiz bank answer key', normalizeOptions(options));
+    parts.push('<ol class="pr-questions">');
+    spec.items.forEach(function (item) {
+      parts.push('<li class="pr-question">');
+      parts.push('<p class="pr-prompt">' + escapeHtml(item.prompt) + '</p>');
+      parts.push('<p class="pr-answer">Answer: ' + escapeHtml(item.answer) + '</p>');
+      if (item.misconceptionCode !== undefined) {
+        parts.push('<p class="pr-misconception">Misconception: ' + escapeHtml(item.misconceptionCode) + '</p>');
+      }
+      if (item.outcomeCode !== undefined) {
+        parts.push('<p class="pr-outcome">Outcome: ' + escapeHtml(item.outcomeCode) + '</p>');
+      }
+      parts.push('</li>');
+    });
+    parts.push('</ol>');
+    parts.push('</section>');
+    return parts.join('\n');
+  }
+
   var api = {
     renderWorksheet: renderWorksheet,
     renderWorksheetAnswerKey: renderWorksheetAnswerKey,
@@ -678,6 +748,8 @@
     renderDiagnosticsAnswerKey: renderDiagnosticsAnswerKey,
     renderWorkedExamples: renderWorkedExamples,
     renderWorkedExamplesAnswerKey: renderWorkedExamplesAnswerKey,
+    renderQuizBank: renderQuizBank,
+    renderQuizBankAnswerKey: renderQuizBankAnswerKey,
     escapeHtml: escapeHtml
   };
   global.AnimathPrintable = api;

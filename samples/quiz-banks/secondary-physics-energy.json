@@ -1,0 +1,49 @@
+{
+  "title": "Energy: work, power and conservation",
+  "level": "secondary",
+  "subject": "science",
+  "topic": "phys-energy",
+  "items": [
+    {
+      "prompt": "A moving car brakes to a stop. What happens to its kinetic energy?",
+      "answer": "It changes into heat and sound; the total energy stays the same.",
+      "choices": [
+        "It changes into heat and sound; the total energy stays the same.",
+        "It is used up and disappears.",
+        "It turns back into petrol."
+      ],
+      "misconceptionCode": "Energy gets used up when work is done."
+    },
+    {
+      "prompt": "Which statement about energy is correct?",
+      "answer": "Energy is never created or destroyed; it only changes form.",
+      "choices": [
+        "Energy is never created or destroyed; it only changes form.",
+        "Energy is destroyed when work is done.",
+        "Energy disappears as heat."
+      ]
+    },
+    {
+      "prompt": "A 2 kg book is lifted 1.5 m. Taking g = 10 N/kg, how much gravitational potential energy does it gain?",
+      "answer": "30 J"
+    },
+    {
+      "prompt": "State the equation linking work done, force and distance.",
+      "answer": "Work done = force x distance"
+    },
+    {
+      "prompt": "A lamp changes electrical energy into light. Where does the rest of the energy go?",
+      "answer": "It becomes heat, so no energy is lost overall.",
+      "choices": [
+        "It becomes heat, so no energy is lost overall.",
+        "It is used up inside the lamp.",
+        "It vanishes once the light is made."
+      ],
+      "misconceptionCode": "Energy gets used up when work is done."
+    },
+    {
+      "prompt": "A machine does 600 J of work in 20 s. What is its power?",
+      "answer": "30 W"
+    }
+  ]
+}

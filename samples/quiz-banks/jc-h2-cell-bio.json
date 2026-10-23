@@ -1,0 +1,49 @@
+{
+  "title": "JC H2 biology — cell: ultrastructure and biomolecules",
+  "level": "jc",
+  "subject": "science",
+  "topic": "h2-cell-bio",
+  "items": [
+    {
+      "prompt": "Which organelles does a mature plant leaf cell contain?",
+      "answer": "Both chloroplasts and mitochondria",
+      "choices": [
+        "Both chloroplasts and mitochondria",
+        "Chloroplasts only, because it photosynthesises",
+        "Mitochondria only, because it respires"
+      ],
+      "misconceptionCode": "Plant cells have no mitochondria."
+    },
+    {
+      "prompt": "What is the function of the rough endoplasmic reticulum?",
+      "answer": "It is studded with ribosomes and folds proteins for secretion.",
+      "choices": [
+        "It is studded with ribosomes and folds proteins for secretion.",
+        "It makes ATP for the cell.",
+        "It controls what enters the nucleus."
+      ]
+    },
+    {
+      "prompt": "Name the bond that joins two amino acids in a polypeptide.",
+      "answer": "Peptide bond"
+    },
+    {
+      "prompt": "A protein is heated and loses its three-dimensional shape while its amino acid sequence stays intact. What is this change called?",
+      "answer": "Denaturation"
+    },
+    {
+      "prompt": "Why does a plant cell need mitochondria when it already has chloroplasts?",
+      "answer": "It respires day and night to release energy, and only mitochondria carry out respiration.",
+      "choices": [
+        "It respires day and night to release energy, and only mitochondria carry out respiration.",
+        "It does not need them; chloroplasts do all the energy work.",
+        "Mitochondria are only for storage in plant cells."
+      ],
+      "misconceptionCode": "Plant cells have no mitochondria."
+    },
+    {
+      "prompt": "Which structure controls the entry and exit of substances in both plant and animal cells?",
+      "answer": "Cell surface membrane"
+    }
+  ]
+}
