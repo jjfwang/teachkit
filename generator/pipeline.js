@@ -65,6 +65,7 @@
         quizBankPrompt: require('./build_quiz_bank_prompt.js'),
         revisionPrompt: require('./build_revision_prompt.js'),
         organisersPrompt: require('./build_organisers_prompt.js'),
+        glossaryPrompt: require('./build_glossary_prompt.js'),
         summativePrompt: require('./build_summative_prompt.js'),
         syllabus: require('./syllabus.js'),
         validate: require('../player/validate.js')
@@ -86,6 +87,7 @@
       quizBankPrompt: g.AnimathQuizBankPrompt,
       revisionPrompt: g.AnimathRevisionPrompt,
       organisersPrompt: g.AnimathOrganisersPrompt,
+      glossaryPrompt: g.AnimathGlossaryPrompt,
       summativePrompt: g.AnimathSummativePrompt,
       syllabus: g.AnimathSyllabus,
       validate: g.AnimathValidate
@@ -180,6 +182,13 @@
     invalidLabel: 'The invalid organisers material you returned:',
     returnLine: 'Return ONLY the corrected organisers material as a single JSON object. No prose, no code fences.',
     rejectLabel: 'Organisers material'
+  };
+  var GLOSSARY_KIND = {
+    notJsonProblem: 'The response was not valid JSON. Return ONLY the corrected glossary material as JSON.',
+    repairHeader: 'Your previous response did not produce a valid glossary material. It had these problems:',
+    invalidLabel: 'The invalid glossary material you returned:',
+    returnLine: 'Return ONLY the corrected glossary material as a single JSON object. No prose, no code fences.',
+    rejectLabel: 'Glossary material'
   };
   var SUMMATIVE_KIND = {
     notJsonProblem: 'The response was not valid JSON. Return ONLY the corrected summative assessment as JSON.',
@@ -449,6 +458,15 @@
     if (typeof deps.validate === 'function') return deps.validate;
     if (SIBLINGS.validate && typeof SIBLINGS.validate.validateOrganisers === 'function') {
       return SIBLINGS.validate.validateOrganisers;
+    } /* node:coverage ignore next */
+    return null;
+  }
+
+  function resolveGlossaryValidator(deps) {
+    if (typeof deps.validateGlossary === 'function') return deps.validateGlossary;
+    if (typeof deps.validate === 'function') return deps.validate;
+    if (SIBLINGS.validate && typeof SIBLINGS.validate.validateGlossary === 'function') {
+      return SIBLINGS.validate.validateGlossary;
     } /* node:coverage ignore next */
     return null;
   }
@@ -1173,6 +1191,73 @@
   }
 
   // opts:
+  //   {topic, topicLabel, level, subject, facet, focus, definitions,
+  //    mechanismSteps, workedExample, objectives, maxRepairs}
+  //   (the buildGlossaryPrompts option set; topic/subject required;
+  //   maxRepairs defaults to 3, 0 disables repair).
+  // deps:
+  //   {callChat(system, user) -> Promise<string>  (caller-supplied LLM call),
+  //    validateGlossary?(spec) -> string[] | Promise<string[]>,
+  //    validate?(spec) -> string[] | Promise<string[]>  (fallback validator),
+  //    onProgress?(stage, n, max)}  stages: 'unpack', 'author', 'repair'.
+  //
+  // Glossary materials are generated from the shared lesson unpack
+  // and the topic's paired notes content (the notes-content model,
+  // issue #1283, on the generateOrganisers precedent of issue
+  // #1279): there is no misconception bank resolution and no bank
+  // gate - a topic with gold notes but no bank entry still grows a
+  // glossary material. The caller may supply the paired notes
+  // definitions, mechanismSteps, workedExample and objectives,
+  // passed through to buildGlossaryPrompts, which renders them into
+  // the author prompt; every entry's term and meaning are a paired
+  // notes definition verbatim and every example is grounded in the
+  // paired notes content. Rejects only on a missing callChat or a
+  // missing validator, naming generateGlossary / validateGlossary.
+  // Resolves with the first glossary material that validates clean
+  // against validateGlossary; rejects with an Error carrying
+  // err.problems when every attempt failed. The unpack step degrades
+  // exactly like generateOrganisers: a failed unpack authors WITHOUT
+  // transitions.
+  function generateGlossary(opts, deps) {
+    opts = opts || {};
+    deps = deps || {};
+    if (typeof deps.callChat !== 'function') {
+      return Promise.reject(new Error('generateGlossary: deps.callChat(system, user) ' +
+        'must be a function returning a Promise of the raw response text'));
+    }
+    var validateFn = resolveGlossaryValidator(deps);
+    /* node:coverage ignore next 5 */
+    if (!validateFn) {
+      return Promise.reject(new Error('generateGlossary: deps.validateGlossary(spec) ' +
+        'must be a function returning the problem list (or supply deps.validate, ' +
+        'or load player/validate.js so validateGlossary is available)'));
+    }
+    var progress = makeProgress(deps);
+    var maxRepairs = (opts.maxRepairs != null) ? opts.maxRepairs : DEFAULT_MAX_REPAIRS;
+
+    return unpackStage(deps, progress, opts).then(function (staged) {
+      var transitions = staged ? staged.transitions : null;
+      if (transitions) {
+        transitions = SIBLINGS.unpack.attachMisconceptions(transitions, opts.topic);
+      }
+      var prompts = SIBLINGS.glossaryPrompt.buildGlossaryPrompts({
+        topic: opts.topic,
+        topicLabel: opts.topicLabel,
+        level: opts.level,
+        subject: opts.subject,
+        facet: opts.facet,
+        focus: opts.focus,
+        transitions: transitions,
+        definitions: opts.definitions,
+        mechanismSteps: opts.mechanismSteps,
+        workedExample: opts.workedExample,
+        objectives: opts.objectives
+      });
+      return authorAndRepair(deps, progress, maxRepairs, prompts, validateFn, GLOSSARY_KIND);
+    });
+  }
+
+  // opts:
   //   {topics, unitTitle, level, subject, focus, workedExample,
   //    maxRepairs}
   //   (the buildSummativePrompts option set; subject and at least 2
@@ -1473,5 +1558,5 @@
     return generateLessonPack(merged, deps);
   }
 
-  return { generateAnimation: generateAnimation, generateSlides: generateSlides, generateWorksheet: generateWorksheet, generateExitTicket: generateExitTicket, generateNotes: generateNotes, generateScript: generateScript, generateLessonPlan: generateLessonPlan, generateScaffolds: generateScaffolds, generateDiagnostics: generateDiagnostics, generateWorkedExamples: generateWorkedExamples, generateQuizBank: generateQuizBank, generateRevision: generateRevision, generateOrganisers: generateOrganisers, generateSummative: generateSummative, generateLessonPack: generateLessonPack, generateLessonPackForSyllabus: generateLessonPackForSyllabus, clearPackCache: clearPackCache };
+  return { generateAnimation: generateAnimation, generateSlides: generateSlides, generateWorksheet: generateWorksheet, generateExitTicket: generateExitTicket, generateNotes: generateNotes, generateScript: generateScript, generateLessonPlan: generateLessonPlan, generateScaffolds: generateScaffolds, generateDiagnostics: generateDiagnostics, generateWorkedExamples: generateWorkedExamples, generateQuizBank: generateQuizBank, generateRevision: generateRevision, generateOrganisers: generateOrganisers, generateGlossary: generateGlossary, generateSummative: generateSummative, generateLessonPack: generateLessonPack, generateLessonPackForSyllabus: generateLessonPackForSyllabus, clearPackCache: clearPackCache };
 });

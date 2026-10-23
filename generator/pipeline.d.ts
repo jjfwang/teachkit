@@ -398,6 +398,45 @@ export function generateOrganisers(
   opts: GenerateOrganisersOptions,
   deps: GenerateOrganisersDeps
 ): Promise<OrganisersDocument>;
+// generateGlossary options (issue #1283): the GenerateOrganisersOptions
+// notes-content shape plus objectives. Glossary materials are
+// generated from the shared unpack and the topic's paired notes
+// content; no misconception bank entry is required, and a glossary
+// is standalone - never folded into a lesson pack.
+export interface GenerateGlossaryOptions {
+  topic: string;
+  topicLabel?: string;
+  level?: string;
+  subject: string;
+  /** Facet hint for a faceted misconception bank entry; the primary facet resolves when omitted. */
+  facet?: string;
+  /** The student's focus for the glossary, when given. */
+  focus?: string;
+  /** Paired student-notes definitions every entry term and meaning is drawn from verbatim. */
+  definitions?: ScaffoldsDefinition[];
+  /** Paired student-notes mechanism steps an entry example may be drawn from verbatim. */
+  mechanismSteps?: string[];
+  /** Paired student-notes worked example an entry example may be drawn from verbatim. */
+  workedExample?: string;
+  /** Paired student-notes objectives an entry example may be drawn from verbatim. */
+  objectives?: string[];
+  /** Number of repair turns after the first attempt. Default 3; 0 disables repair. */
+  maxRepairs?: number;
+}
+export interface GenerateGlossaryDeps {
+  callChat: PipelineCallChat;
+  /** Glossary validator; defaults to the built-in validateGlossary when omitted. */
+  validateGlossary?: PipelineValidate;
+  /** Fallback validator, used when validateGlossary is not supplied. */
+  validate?: PipelineValidate;
+  onProgress?: PipelineProgress;
+}
+// The parsed animath glossary material that validated clean.
+export type GlossaryDocument = Record<string, unknown>;
+export function generateGlossary(
+  opts: GenerateGlossaryOptions,
+  deps: GenerateGlossaryDeps
+): Promise<GlossaryDocument>;
 // generateSummative options (issue #1259): unit-level, spanning a
 // topics array; authored directly from the unit with no bank
 // resolution and never folded into a lesson pack.
