@@ -47,6 +47,8 @@
     "./scaffolds": "./generator/pipeline.js",
     "./diagnostics-prompt": "./generator/build_diagnostics_prompt.js",
     "./diagnostics": "./generator/pipeline.js",
+    "./worked-examples-prompt": "./generator/build_worked_examples_prompt.js",
+    "./worked-examples": "./generator/pipeline.js",
     "./lesson-pack": "./generator/pipeline.js"
   },
   "files": [

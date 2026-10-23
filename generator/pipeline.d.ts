@@ -270,6 +270,35 @@ export function generateDiagnostics(
   opts: GenerateDiagnosticsOptions,
   deps: GenerateDiagnosticsDeps
 ): Promise<DiagnosticsDocument>;
+// generateWorkedExamples options (issue #1248): the
+// GenerateLessonPlanOptions shape; the set is authored from the shared
+// unpack like generateScaffolds.
+export interface GenerateWorkedExamplesOptions {
+  topic: string;
+  topicLabel?: string;
+  level?: string;
+  subject: string;
+  /** The student's focus for the set, when given. */
+  focus?: string;
+  /** Optional worked example for this topic, adapted by the author prompt. */
+  workedExample?: string;
+  /** Number of repair turns after the first attempt. Default 3; 0 disables repair. */
+  maxRepairs?: number;
+}
+export interface GenerateWorkedExamplesDeps {
+  callChat: PipelineCallChat;
+  /** Worked-examples validator; defaults to the built-in validateWorkedExamples when omitted. */
+  validateWorkedExamples?: PipelineValidate;
+  /** Fallback validator, used when validateWorkedExamples is not supplied. */
+  validate?: PipelineValidate;
+  onProgress?: PipelineProgress;
+}
+// The parsed animath worked-example set that validated clean.
+export type WorkedExamplesDocument = Record<string, unknown>;
+export function generateWorkedExamples(
+  opts: GenerateWorkedExamplesOptions,
+  deps: GenerateWorkedExamplesDeps
+): Promise<WorkedExamplesDocument>;
 // generateLessonPack (issue #768): one shared unpack authors all nine
 // materials; packs are cached in memory by topic slug.
 export interface GenerateLessonPackOptions {
