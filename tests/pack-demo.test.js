@@ -4249,6 +4249,10 @@ describe('pack demo worked-examples wiring (issue #1250)', () => {
       assert.ok(block.indexOf('AnimathValidate.validateWorkedExamples') > -1, 'block validates its worked examples: ' + stem);
       assert.ok(block.indexOf('AnimathValidate.validateWorkedExamples') < block.indexOf('AnimathPrintable.renderWorkedExamples'),
         'worked examples validated before they are rendered: ' + stem);
+      assert.ok(/validateDiagnostics\(\w+\)\)\s*\n\s*\.concat\(AnimathValidate\.validateWorkedExamples/.test(block),
+        'worked-examples validation is chained onto the diagnostics validation (no breaking semicolon): ' + stem);
+      assert.ok(!/var \w*[Dd]iagnosticsUrl = '\.\.\/samples\/worked-examples\//.test(block),
+        'worked-examples URL uses its own variable, never the diagnostics URL variable: ' + stem);
       const mStart = demo.indexOf('id="' + manifestId + '"');
       assert.ok(mStart > -1, 'manifest found: ' + manifestId);
       const manifest = demo.slice(mStart, demo.indexOf('</header>', mStart));
