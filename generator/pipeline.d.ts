@@ -331,6 +331,37 @@ export function generateQuizBank(
   opts: GenerateQuizBankOptions,
   deps: GenerateQuizBankDeps
 ): Promise<QuizBankDocument>;
+// generateRevision options (issue #1268): the GenerateQuizBankOptions
+// shape. Revision materials are generated from the misconception
+// bank: a topic with no bank entry rejects before any LLM call.
+export interface GenerateRevisionOptions {
+  topic: string;
+  topicLabel?: string;
+  level?: string;
+  subject: string;
+  /** Facet hint for a faceted misconception bank entry; the primary facet resolves when omitted. */
+  facet?: string;
+  /** The student's focus for the revision set, when given. */
+  focus?: string;
+  /** Optional worked example for this topic, adapted by the author prompt. */
+  workedExample?: string;
+  /** Number of repair turns after the first attempt. Default 3; 0 disables repair. */
+  maxRepairs?: number;
+}
+export interface GenerateRevisionDeps {
+  callChat: PipelineCallChat;
+  /** Revision validator; defaults to the built-in validateRevision when omitted. */
+  validateRevision?: PipelineValidate;
+  /** Fallback validator, used when validateRevision is not supplied. */
+  validate?: PipelineValidate;
+  onProgress?: PipelineProgress;
+}
+// The parsed animath revision material that validated clean.
+export type RevisionDocument = Record<string, unknown>;
+export function generateRevision(
+  opts: GenerateRevisionOptions,
+  deps: GenerateRevisionDeps
+): Promise<RevisionDocument>;
 // generateSummative options (issue #1259): unit-level, spanning a
 // topics array; authored directly from the unit with no bank
 // resolution and never folded into a lesson pack.

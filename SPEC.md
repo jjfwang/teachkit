@@ -632,6 +632,54 @@ generated from the topic's misconception bank entry (see
 `generateQuizBank`): a topic with no bank entry cannot grow a quiz
 bank, because its coded items would have to invent misconceptions.
 
+## Revision spec
+
+A revision material is the per-topic study set a student works
+through after the lesson: flashcards for recall plus spaced-practice
+sets scheduled by study offset. It is derived, never free-authored:
+every flashcard and practice item comes verbatim from the topic's
+paired quiz bank and student notes. `validateRevision` in
+`player/validate.js` enforces this contract and returns a `string[]`
+of errors, exactly like `validateQuizBank` (empty = valid). The
+validator enforces presence and shape only; it never checks
+derivation or bank membership.
+
+Material fields:
+
+| field   | type       | notes                                  |
+|---------|------------|----------------------------------------|
+| `title` | string     | required non-empty                     |
+| `level` | `"primary"` \| `"secondary"` \| `"jc"` |                                        |
+| `subject` | string   | required non-empty - any school subject, not restricted to the syllabus-known list |
+| `topic` | string     | required non-empty                     |
+| `flashcards` | object[] | required array of at least 4 flashcards - see below |
+| `practiceSets` | object[] | required array of at least 2 spaced-practice sets - see below |
+
+Every flashcard is an object with these fields:
+
+| field   | type     | notes |
+|---------|----------|-------|
+| `front` | string   | required non-empty - the prompt side of the card |
+| `back`  | string   | required non-empty - the answer side of the card |
+| `source` | string  | required - one of `quiz-bank`, `definition`, `trap`, naming where the card was derived from |
+
+Derivation is verbatim: a `definition` card's front and back are a
+notes definition's term and meaning; a `trap` card's front and back
+are the notes trap's misconception and explanation; a `quiz-bank`
+card's front and back are a quiz bank item's prompt and answer.
+
+Every practice set is an object with these fields:
+
+| field       | type     | notes |
+|-------------|----------|-------|
+| `dayOffset` | integer  | required positive - the study offset in days; strictly increasing across the sets in the array. Offsets only: the material carries no dates and no student state. |
+| `items`     | object[] | required non-empty array of practice items, each `{prompt, answer}` with both fields required non-empty strings, taken verbatim from quiz bank items (prompt and answer) |
+
+A revision material is generated from the topic's misconception
+bank entry (see `generateRevision`): a topic with no bank entry
+cannot grow a revision material, because its coded content would
+have to invent misconceptions.
+
 ## Summative assessment spec
 
 A summative assessment is the unit-level assessment sat at the end
