@@ -1,0 +1,33 @@
+{
+  "title": "E-Math algebra: expansion, factorisation and changing the subject",
+  "level": "secondary",
+  "subject": "math",
+  "topic": "e-algebra",
+  "entries": [
+    {
+      "term": "Expansion",
+      "meaning": "Multiplying out brackets so every term in one bracket multiplies every term in the other: (x + 2)(x + 3) expands to x^2 + 5x + 6.",
+      "example": "Expand (x + 2)(x + 3). Use the area model: x times x is x^2, x times 3 is 3x, 2 times x is 2x, and 2 times 3 is 6. Collect the like terms 3x + 2x = 5x. So (x + 2)(x + 3) = x^2 + 5x + 6. Check by factorising back: x^2 + 5x + 6 groups and returns to (x + 2)(x + 3)."
+    },
+    {
+      "term": "Factorisation",
+      "meaning": "Writing an expression as a product of brackets, the reverse of expansion: 2x + 6 + xy + 3y factorises to (x + 3)(2 + y).",
+      "example": "Expand with the area model: the tiles for (x + 2)(x + 3) land as x^2, 3x, 2x and 6 - collect the x tiles to get x^2 + 5x + 6."
+    },
+    {
+      "term": "Subject of formula",
+      "meaning": "The variable a formula is rearranged to give on its own: in x = (y - 5) / 3, taken from y = 3x + 5, the subject is x.",
+      "example": "Factorise by grouping: group 2x + 6 + xy + 3y into pairs, take 2 from the first pair and y from the second, then pull the common bracket (x + 3) out whole to get (x + 3)(2 + y)."
+    },
+    {
+      "term": "Identity",
+      "meaning": "A statement that is true for every value of the variables, like (a + b)^2 = a^2 + 2ab + b^2, unlike an equation that holds only for some values.",
+      "example": "Change the subject to x: undo y = 3x + 5 in reverse - subtract 5 first, then divide by 3 - to get x = (y - 5) / 3."
+    },
+    {
+      "term": "Middle term",
+      "meaning": "The term between the two squared terms in the expansion of a squared bracket: 2ab in (a + b)^2 = a^2 + 2ab + b^2.",
+      "example": "The (a+b)^2 trap: squaring a sum gives three terms, not two - with a = 2 and b = 3 the full value is 25, and the middle term 2ab is what makes the difference."
+    }
+  ]
+}
