@@ -1,0 +1,72 @@
+{
+  "title": "Primary Science Scheme of Work: Systems and Cycles",
+  "level": "primary",
+  "subject": "science",
+  "unitTitle": "Systems and cycles in nature",
+  "term": "Term 3",
+  "topics": [
+    "plant-systems",
+    "water-cycle",
+    "photosynthesis"
+  ],
+  "overview": [
+    "This guide covers the Systems and cycles in nature unit (Term 3): plant-systems, water-cycle, photosynthesis.",
+    "Work through the key ideas first, follow the revision plan day by day, watch out for the traps, and try the questions together at home."
+  ],
+  "keyIdeas": [
+    {
+      "term": "Evaporation",
+      "explanation": "Liquid water turning into invisible water vapour when it is heated, for example by the sun."
+    },
+    {
+      "term": "Water vapour",
+      "explanation": "Water in its gas form. It is invisible, but it is still water and it is still there in the air."
+    },
+    {
+      "term": "Condensation",
+      "explanation": "Water vapour cooling down and turning back into tiny liquid water drops."
+    },
+    {
+      "term": "Precipitation",
+      "explanation": "Water falling back to the ground, most often as rain, when drops grow too heavy to float."
+    }
+  ],
+  "revisionPlan": [
+    {
+      "dayOffset": 1,
+      "focus": "Practice set for water-cycle: What happens to liquid water when the sun heats it in a puddle?"
+    },
+    {
+      "dayOffset": 3,
+      "focus": "Practice set for water-cycle: What do we call water falling from clouds to the ground?"
+    }
+  ],
+  "traps": [
+    {
+      "misconception": "Plants take food from the soil through their roots, like we eat food.",
+      "watchFor": "We eat through our mouths, so the roots look like a mouth for the plant. Roots drink water and minerals; the leaves make the food with sunlight. The plant does not eat food like we do. In the animation scene s4 the roots are shown drinking water and minerals while the leaves make the food with sunlight, which shows the plant never eats food from the soil."
+    },
+    {
+      "misconception": "Water disappears for good once it evaporates.",
+      "watchFor": "This is wrong because the water only looks gone: vapour is invisible, so it feels as if the water has vanished. In fact the water is still there in the air as water vapour. It cools into clouds and falls back as rain, so the same water keeps going round the cycle - evaporation changes its form, it never removes it."
+    },
+    {
+      "misconception": "Only animals breathe; plants do not.",
+      "watchFor": "Plants have no nose and no moving chest, so breathing is never seen. That hidden breathing is real respiration: Plants take in and give out gases too: they respire all the time, day and night, just like us. In the animation scene s4 the mistaken line is crossed out and gases are watched moving in and out of the leaf in the day and at night."
+    }
+  ],
+  "parentQuestions": [
+    {
+      "question": "What happens to liquid water when the sun heats it in a puddle?",
+      "answer": "It evaporates into invisible water vapour."
+    },
+    {
+      "question": "What is water vapour?",
+      "answer": "Water in its gas form, invisible but still water."
+    },
+    {
+      "question": "A puddle dries up on a hot day. Where has the water gone?",
+      "answer": "It evaporated into the air as water vapour."
+    }
+  ]
+}

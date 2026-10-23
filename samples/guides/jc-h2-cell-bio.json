@@ -1,0 +1,72 @@
+{
+  "title": "JC H2 Biology Scheme of Work: Cells to Organisms",
+  "level": "jc",
+  "subject": "science",
+  "unitTitle": "Cells, genetics and energetics",
+  "term": "Term 1",
+  "topics": [
+    "h2-cell-bio",
+    "h2-genetics",
+    "h2-energetics"
+  ],
+  "overview": [
+    "This guide covers the Cells, genetics and energetics unit (Term 1): h2-cell-bio, h2-genetics, h2-energetics.",
+    "Work through the key ideas first, follow the revision plan day by day, watch out for the traps, and try the questions together at home."
+  ],
+  "keyIdeas": [
+    {
+      "term": "Cell membrane",
+      "explanation": "A selectively permeable phospholipid bilayer with drifting proteins (the fluid mosaic): hydrophilic heads face water, hydrophobic tails face inward."
+    },
+    {
+      "term": "Nucleus",
+      "explanation": "The control centre storing DNA as chromatin, enclosed by a double nuclear envelope with pores for mRNA, and containing the nucleolus that makes ribosomal RNA."
+    },
+    {
+      "term": "Mitochondrion",
+      "explanation": "The site of aerobic respiration, with an inner membrane folded into cristae that give a large surface area for ATP-making enzymes."
+    },
+    {
+      "term": "Chloroplast",
+      "explanation": "The site of photosynthesis in plant cells: grana (thylakoid stacks) run the light-dependent stage and the stroma runs the Calvin cycle."
+    }
+  ],
+  "revisionPlan": [
+    {
+      "dayOffset": 1,
+      "focus": "Practice set for h2-cell-bio: Which organelles does a mature plant leaf cell contain?"
+    },
+    {
+      "dayOffset": 3,
+      "focus": "Practice set for h2-cell-bio: A protein is heated and loses its three-dimensional shape while its amino acid sequence stays intact. What is this change called?"
+    }
+  ],
+  "traps": [
+    {
+      "misconception": "Plant cells have no mitochondria.",
+      "watchFor": "Mitochondria feel like animal-cell equipment, and the chloroplast looks like the plant replacement. Plant cells respire too, day and night: they have mitochondria as well - only the chloroplast is plant-only. In the animation the plant cell is drawn with a chloroplast and then a mitochondrion moves in beside it: both organelles belong, because trapping energy and releasing it are two different jobs."
+    },
+    {
+      "misconception": "Every mutation harms the organism.",
+      "watchFor": "Mutation sounds like damage. Most mutations are neutral: only some are harmful, and a rare few are the raw material of evolution. In the animation a mutated gene still builds a working protein with the same job: the sequence changed, but nothing that matters did - which is why the blanket claim fails."
+    },
+    {
+      "misconception": "Plants only respire at night.",
+      "watchFor": "During the day photosynthesis dominates, so respiration looks switched off. Plants respire around the clock: at night there is simply no photosynthesis to hide it. In the animation the respiration dot keeps moving inside the plant after the sun is replaced by the moon in scene s6: respiration never stops - photosynthesis just masks it by day."
+    }
+  ],
+  "parentQuestions": [
+    {
+      "question": "Which organelles does a mature plant leaf cell contain?",
+      "answer": "Both chloroplasts and mitochondria"
+    },
+    {
+      "question": "What is the function of the rough endoplasmic reticulum?",
+      "answer": "It is studded with ribosomes and folds proteins for secretion."
+    },
+    {
+      "question": "Name the bond that joins two amino acids in a polypeptide.",
+      "answer": "Peptide bond"
+    }
+  ]
+}

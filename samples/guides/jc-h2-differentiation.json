@@ -1,0 +1,72 @@
+{
+  "title": "JC H2 Mathematics Scheme of Work: Calculus",
+  "level": "jc",
+  "subject": "math",
+  "unitTitle": "Calculus: differentiation and integration",
+  "term": "Term 2",
+  "topics": [
+    "h2-functions-graphs",
+    "h2-differentiation",
+    "h2-integration"
+  ],
+  "overview": [
+    "This guide covers the Calculus: differentiation and integration unit (Term 2): h2-functions-graphs, h2-differentiation, h2-integration.",
+    "Work through the key ideas first, follow the revision plan day by day, watch out for the traps, and try the questions together at home."
+  ],
+  "keyIdeas": [
+    {
+      "term": "Connected rates of change",
+      "explanation": "Rates of linked quantities: when a relation ties two quantities together, their rates of change are tied too, as the radius of a circle drags its area along."
+    },
+    {
+      "term": "Chain rule",
+      "explanation": "The rule that differentiates a quantity through a link: for A = pi r^2 changing with time, dA/dt = dA/dr x dr/dt = 2 pi r dr/dt."
+    },
+    {
+      "term": "Derivative",
+      "explanation": "The rate of change of one quantity with respect to another, defined as a limit: dy/dx is the limit of the average rate as the interval shrinks to zero."
+    },
+    {
+      "term": "Rate of change",
+      "explanation": "How fast a quantity changes per unit of time in these problems: dr/dt = 1/2 means the radius grows by half a unit every second."
+    }
+  ],
+  "revisionPlan": [
+    {
+      "dayOffset": 1,
+      "focus": "Practice set for h2-differentiation: If y = x^3, what is dy/dx?"
+    },
+    {
+      "dayOffset": 3,
+      "focus": "Practice set for h2-differentiation: A balloon's radius r grows with time t. Write the chain-rule link between dV/dt, dV/dr and dr/dt for its volume V."
+    }
+  ],
+  "traps": [
+    {
+      "misconception": "f(x + 3) shifts the graph 3 units to the right.",
+      "watchFor": "Plus looks like a move to the right, but the shift undoes the change to x. Inside the brackets means shift LEFT: f(x + 3) is zero where x = -3, to the left of the original."
+    },
+    {
+      "misconception": "Cancelling the d symbols in dy/dx.",
+      "watchFor": "dy/dx looks like a fraction, so the d symbols look like they can cancel. dy/dx is one symbol for a limit, not a fraction: cancelling the d symbols breaks the mathematics. Keep every rate symbol whole - dy/dx, dA/dt, dr/dt - and let the chain rule, not crossing-out, do the linking."
+    },
+    {
+      "misconception": "A definite integral still needs the +C in the answer.",
+      "watchFor": "The habit of writing +C carries over from indefinite integrals. Only indefinite integrals need +C: it cancels at the two limits, so from 1 to 2 the answer is simply 7/3. Write the constant inside the bracket once to see it: (8/3 + C) - (1/3 + C) = 7/3 - the C is gone before the final line, every time."
+    }
+  ],
+  "parentQuestions": [
+    {
+      "question": "If y = x^3, what is dy/dx?",
+      "answer": "3x^2"
+    },
+    {
+      "question": "A student writes dy/dx and cancels the two d symbols to get y/x. What is wrong?",
+      "answer": "dy/dx is a single symbol for a limit, not a fraction, so the d symbols cannot cancel."
+    },
+    {
+      "question": "Differentiate y = 5x^4 - 2x with respect to x.",
+      "answer": "dy/dx = 20x^3 - 2"
+    }
+  ]
+}
