@@ -1,0 +1,95 @@
+{
+ "title": "Adaptations: built to survive",
+ "level": "primary",
+ "subject": "science",
+ "topic": "adaptations",
+ "durationMinutes": 40,
+ "objectives": [
+  {
+   "id": "o1",
+   "text": "Name the features that help a cactus survive in a hot, dry desert, explain how camouflage keeps an animal safe from hungry birds, and explain why birds migrate and when they return",
+   "successCriteria": [
+    "I can name the cactus features: a thick stem that stores water, sharp thorns that stop thirsty animals, and deep roots that find water",
+    "I can explain that the moth's wings match the tree bark, so hungry birds cannot spot it",
+    "I can explain that birds migrate thousands of kilometres to warmer places for winter and return when spring brings food back"
+   ],
+   "assessmentPoints": [
+    "Cactus-feature answers in the opening activity",
+    "Camouflage and migration answers in the second and third activities"
+   ]
+  },
+  {
+   "id": "o2",
+   "text": "Say why animal features are not chosen on purpose - they developed over many, many generations, not by choice - and say what happens to forest animals when people clear the trees",
+   "successCriteria": [
+    "I can say that features developed over many, many generations, not by choice",
+    "I can say that when the trees go, the animals lose their food and shelter and must move away"
+   ],
+   "assessmentPoints": [
+    "Trap discussion in the opening activity",
+    "Forest-clearing answers in the fourth activity and the closing practice"
+   ]
+  }
+ ],
+ "activities": [
+  {
+   "title": "The cactus: built for the hot, dry desert",
+   "minutes": 8,
+   "objectiveIds": [
+    "o1",
+    "o2"
+   ],
+   "scriptCue": "s1",
+   "grouping": "whole class",
+   "resources": [
+    "board"
+   ]
+  },
+  {
+   "title": "Blending in keeps the moth safe",
+   "minutes": 9,
+   "objectiveIds": [
+    "o1"
+   ],
+   "scriptCue": "s2",
+   "grouping": "pairs"
+  },
+  {
+   "title": "Birds travel far to survive",
+   "minutes": 10,
+   "objectiveIds": [
+    "o1"
+   ],
+   "scriptCue": "s3",
+   "grouping": "whole class",
+   "differentiation": {
+    "support": "Provide a simple route map with arrows so learners can follow the flock's journey south and back before explaining migration themselves."
+   }
+  },
+  {
+   "title": "People change animal homes",
+   "minutes": 8,
+   "objectiveIds": [
+    "o1",
+    "o2"
+   ],
+   "scriptCue": "s4",
+   "grouping": "pairs",
+   "differentiation": {
+    "stretch": "Ask learners to explain why the cactus's well-fitting features still do not show it chose to grow them."
+   }
+  },
+  {
+   "title": "Worksheet practice and exit ticket",
+   "minutes": 5,
+   "objectiveIds": [
+    "o1",
+    "o2"
+   ],
+   "grouping": "individual",
+   "resources": [
+    "worksheet"
+   ]
+  }
+ ]
+}
