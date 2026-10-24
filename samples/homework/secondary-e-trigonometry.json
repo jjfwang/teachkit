@@ -1,0 +1,45 @@
+{
+ "level": "secondary",
+ "questions": [
+  {
+   "choices": [
+    {
+     "text": "4/3"
+    },
+    {
+     "text": "3/5"
+    },
+    {
+     "correct": true,
+     "text": "3/4"
+    },
+    {
+     "text": "4/5"
+    }
+   ],
+   "explanation": "Tangent is opposite over adjacent (TOA): tan theta = 3/4 = 0.75. Watch out for the misconception: tan = adjacent / opposite. That flipped ratio gives 4/3, which uses the adjacent side on top by mistake.",
+   "id": "q2",
+   "kind": "multiple-choice",
+   "misconception": "tan = adjacent / opposite.",
+   "prompt": "For the same 3-4-5 triangle, what is tan theta?"
+  },
+  {
+   "answer": "SOH: sin = opposite / hypotenuse. CAH: cos = adjacent / hypotenuse. TOA: tan = opposite / adjacent. So cos theta = 4/5 = 0.8.",
+   "explanation": "The card pairs each ratio with its two sides: SOH gives sin = 3/5, CAH gives cos = 4/5, TOA gives tan = 3/4. Reading the card in order stops the sides from swapping.",
+   "id": "q3",
+   "kind": "short-answer",
+   "prompt": "Write out the SOH CAH TOA card in full, and use it to state cos theta for the 3-4-5 triangle."
+  },
+  {
+   "answer": "a / sin A = b / sin B, so 4 / sin 30 degrees = b / sin 60 degrees. Then b = (4 x sin 60 degrees) / sin 30 degrees = (4 x 0.8660) / 0.5, so b is about 6.93.",
+   "explanation": "The sine rule pairs each side with the sine of its opposite angle. Substitute the known pair first (a = 4 with A = 30 degrees), then rearrange for b: (4 x 0.8660) / 0.5 is about 6.93.",
+   "id": "q4",
+   "kind": "short-answer",
+   "prompt": "In triangle ABC, side a = 4 is opposite angle A = 30 degrees, and angle B = 60 degrees. Use the sine rule to find side b, showing your working."
+  }
+ ],
+ "subject": "math",
+ "title": "E-Math trigonometry: ratios and the sine rule",
+ "topic": "e-trigonometry",
+ "variant": "homework"
+}
