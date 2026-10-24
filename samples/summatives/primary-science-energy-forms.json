@@ -1,0 +1,125 @@
+{
+ "title": "Forms of Energy and the Water Cycle Unit Test",
+ "level": "primary",
+ "subject": "science",
+ "unitTitle": "Energy and water in nature",
+ "topics": [
+  "primary-science-energy-forms",
+  "primary-science-water-cycle"
+ ],
+ "durationMinutes": 40,
+ "totalMarks": 20,
+ "blueprint": [
+  {
+   "outcomeCode": "P5-ENERGY-FORMS",
+   "assessmentObjective": "AO1 recall and apply",
+   "marks": 10,
+   "cognitiveLevel": "apply"
+  },
+  {
+   "outcomeCode": "P5-WC-PROCESS",
+   "assessmentObjective": "AO2 reason and explain",
+   "marks": 10,
+   "cognitiveLevel": "reason"
+  }
+ ],
+ "items": [
+  {
+   "prompt": "State the five forms of energy and give one everyday use of each form.",
+   "blueprintRow": 0,
+   "commandWord": "State",
+   "marks": 4,
+   "markScheme": {
+    "points": [
+     {
+      "text": "Names light, heat, sound, movement and stored energy",
+      "marks": 2
+     },
+     {
+      "text": "Gives an everyday use for each form, such as a lamp giving out light or a radio giving out sound",
+      "marks": 2
+     }
+    ]
+   }
+  },
+  {
+   "prompt": "A pupil says that when a lamp stops shining, its energy has been used up. Explain why this idea is wrong.",
+   "blueprintRow": 0,
+   "commandWord": "Explain",
+   "marks": 6,
+   "markScheme": {
+    "points": [
+     {
+      "text": "States that the energy is never used up and does not disappear",
+      "marks": 3
+     },
+     {
+      "text": "Explains that the energy changes form and moves somewhere else, like light and heat leaving the bulb",
+      "marks": 3
+     }
+    ]
+   }
+  },
+  {
+   "prompt": "State the process by which liquid water changes into water vapour at the surface of a pond.",
+   "blueprintRow": 1,
+   "commandWord": "State",
+   "marks": 4,
+   "markScheme": {
+    "points": [
+     {
+      "text": "Names the process as evaporation",
+      "marks": 2
+     },
+     {
+      "text": "Notes it happens at the surface and needs heat from the surroundings",
+      "marks": 2
+     }
+    ]
+   }
+  },
+  {
+   "prompt": "A cold mirror held above a kettle of boiling water becomes covered in droplets. Explain how the droplets form.",
+   "blueprintRow": 1,
+   "commandWord": "Explain",
+   "marks": 6,
+   "markScheme": {
+    "points": [
+     {
+      "text": "States water vapour from the kettle touches the cold mirror",
+      "marks": 3
+     },
+     {
+      "text": "States the vapour loses heat and condenses into liquid droplets",
+      "marks": 3
+     }
+    ]
+   }
+  }
+ ],
+ "rubric": {
+  "criteria": [
+   {
+    "name": "Scientific explanation",
+    "levels": [
+     {
+      "label": "Secure",
+      "descriptor": "Answers use the correct part and process names and link each observation to a cause."
+     },
+     {
+      "label": "Developing",
+      "descriptor": "Part and process names are mostly correct but the cause link is incomplete."
+     },
+     {
+      "label": "Beginning",
+      "descriptor": "Part and process names are missing or confused and no cause is given."
+     }
+    ]
+   }
+  ]
+ },
+ "moderation": {
+  "state": "unreviewed"
+ },
+ "review": null
+}
