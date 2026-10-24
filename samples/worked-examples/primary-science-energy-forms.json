@@ -1,0 +1,49 @@
+{
+  "complete": {
+    "problem": "In scene s3, follow the energy as a worked example: electrical energy waits stored in the battery, then travels along the wire to the bulb, where electrical energy becomes light and heat. Each step is a change of state: the light lets us see and the heat rises into the air, so no energy has been used up.",
+    "selfExplanation": "Explain in one sentence how the electrical energy changes at the bulb, and why no energy has been used up.",
+    "steps": [
+      {
+        "annotation": "Energy kept waiting until it is needed: it sits stored in a battery or in fuel, ready to change into other forms.",
+        "text": "Step 1: In scene s3, follow the energy as a worked example: electrical energy waits stored in the battery, then travels along the wire to the bulb."
+      },
+      {
+        "annotation": "Energy carried by electricity as it travels along wires: a battery supplies it and a bulb changes it into light and heat.",
+        "text": "Step 2: at the bulb, electrical energy becomes light and heat."
+      },
+      {
+        "annotation": "A lamp or a toy runs out, so the energy feels consumed.",
+        "text": "Step 3: Each step is a change of state: the light lets us see and the heat rises into the air, so no energy has been used up."
+      }
+    ]
+  },
+  "faded": {
+    "problem": "In one sentence, say what really happens to energy when a toy car slows down and stops.",
+    "selfExplanation": "The first step is shown. Say where the energy goes next, and why none of it has been used up.",
+    "steps": [
+      {
+        "annotation": "The energy of something moving: a rolling car and a sliding ball carry movement energy.",
+        "text": "Step 1: the toy car's stored energy changes form as it slows down.",
+        "withheld": false
+      },
+      {
+        "annotation": "Warm energy that moves from hot things to cooler places: it rises up from a cooking pot into the air.",
+        "text": "Step 2: the energy moves somewhere else, for example stored energy becoming heat.",
+        "withheld": true
+      },
+      {
+        "annotation": "Energy is never used up: it changes form and moves somewhere else.",
+        "text": "Step 3: so the energy is transferred, never used up.",
+        "withheld": true
+      }
+    ]
+  },
+  "level": "primary",
+  "paired": {
+    "problem": "Name the five forms of energy shown at the start of the animation.",
+    "solution": "Light, heat, sound, movement and stored energy."
+  },
+  "subject": "science",
+  "title": "Forms of energy",
+  "topic": "energy-forms"
+}

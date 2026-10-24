@@ -1,0 +1,157 @@
+{
+  "doNow": [
+    {
+      "choices": [
+        {
+          "misconception": "Energy is used up, like fuel disappearing from a tank.",
+          "rationale": {
+            "chose": "The learner selected option Nothing: when a lamp stops, its energy has been used up and is gone for good as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: Energy is used up, like fuel disappearing from a tank.. A lamp or a toy runs out, so the energy feels consumed. Energy is never used up: it changes form and moves somewhere else. In the animation scene s4 the wrong line is crossed out and the energy dot is watched travelling from the stored circle to the heat circle - the same energy, transferred to a new form and a new place.",
+            "thinks": "They are applying the coded wrong turn instead of following the energy dot from the stored circle to the heat circle to check whether the energy really disappeared."
+          },
+          "text": "Nothing: when a lamp stops, its energy has been used up and is gone for good"
+        },
+        {
+          "misconception": "Energy is used up, like fuel disappearing from a tank.",
+          "rationale": {
+            "chose": "The learner selected option The energy hides inside the lamp until someone switches it on again as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: Energy is used up, like fuel disappearing from a tank.. A lamp or a toy runs out, so the energy feels consumed. Energy is never used up: it changes form and moves somewhere else. In the animation scene s4 the wrong line is crossed out and the energy dot is watched travelling from the stored circle to the heat circle - the same energy, transferred to a new form and a new place.",
+            "thinks": "They are applying the coded wrong turn instead of following the energy dot from the stored circle to the heat circle to check whether the energy really disappeared."
+          },
+          "text": "The energy hides inside the lamp until someone switches it on again"
+        },
+        {
+          "correct": true,
+          "text": "The energy is never used up: it changed into light and heat and moved into the room"
+        }
+      ],
+      "id": "dn1",
+      "kind": "multiple-choice",
+      "prompt": "A pupil says: when a lamp stops shining, its energy has been used up. What is wrong with this idea?"
+    },
+    {
+      "choices": [
+        {
+          "misconception": "Energy is used up, like fuel disappearing from a tank.",
+          "rationale": {
+            "chose": "The learner selected option Electrical energy, then stored energy, then sound as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: Energy is used up, like fuel disappearing from a tank.. A lamp or a toy runs out, so the energy feels consumed. Energy is never used up: it changes form and moves somewhere else. In the animation scene s4 the wrong line is crossed out and the energy dot is watched travelling from the stored circle to the heat circle - the same energy, transferred to a new form and a new place.",
+            "thinks": "They are applying the coded wrong turn instead of following the energy dot from the stored circle to the heat circle to check whether the energy really disappeared."
+          },
+          "text": "Electrical energy, then stored energy, then sound"
+        },
+        {
+          "correct": true,
+          "text": "Electrical energy, then light and heat"
+        },
+        {
+          "misconception": "Energy is used up, like fuel disappearing from a tank.",
+          "rationale": {
+            "chose": "The learner selected option Stored energy, then movement, then light only as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: Energy is used up, like fuel disappearing from a tank.. A lamp or a toy runs out, so the energy feels consumed. Energy is never used up: it changes form and moves somewhere else. In the animation scene s4 the wrong line is crossed out and the energy dot is watched travelling from the stored circle to the heat circle - the same energy, transferred to a new form and a new place.",
+            "thinks": "They are applying the coded wrong turn instead of following the energy dot from the stored circle to the heat circle to check whether the energy really disappeared."
+          },
+          "text": "Stored energy, then movement, then light only"
+        }
+      ],
+      "id": "dn2",
+      "kind": "multiple-choice",
+      "prompt": "In the torch circuit, what does the electrical energy from the battery change into at the bulb?"
+    },
+    {
+      "choices": [
+        {
+          "misconception": "Energy is used up, like fuel disappearing from a tank.",
+          "rationale": {
+            "chose": "The learner selected option It disappears into the pot as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: Energy is used up, like fuel disappearing from a tank.. A lamp or a toy runs out, so the energy feels consumed. Energy is never used up: it changes form and moves somewhere else. In the animation scene s4 the wrong line is crossed out and the energy dot is watched travelling from the stored circle to the heat circle - the same energy, transferred to a new form and a new place.",
+            "thinks": "They are applying the coded wrong turn instead of following the energy dot from the stored circle to the heat circle to check whether the energy really disappeared."
+          },
+          "text": "It disappears into the pot"
+        },
+        {
+          "correct": true,
+          "text": "It rises up into the air above the pot"
+        },
+        {
+          "misconception": "Energy is used up, like fuel disappearing from a tank.",
+          "rationale": {
+            "chose": "The learner selected option It turns back into stored energy in the pot as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: Energy is used up, like fuel disappearing from a tank.. A lamp or a toy runs out, so the energy feels consumed. Energy is never used up: it changes form and moves somewhere else. In the animation scene s4 the wrong line is crossed out and the energy dot is watched travelling from the stored circle to the heat circle - the same energy, transferred to a new form and a new place.",
+            "thinks": "They are applying the coded wrong turn instead of following the energy dot from the stored circle to the heat circle to check whether the energy really disappeared."
+          },
+          "text": "It turns back into stored energy in the pot"
+        }
+      ],
+      "id": "dn3",
+      "kind": "multiple-choice",
+      "prompt": "What happens to the heat energy as food cooks in a pot?"
+    }
+  ],
+  "hingeQuestions": [
+    {
+      "choices": [
+        {
+          "misconception": "Energy is used up, like fuel disappearing from a tank.",
+          "rationale": {
+            "chose": "The learner selected option Because the battery has thrown the energy away as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: Energy is used up, like fuel disappearing from a tank.. A lamp or a toy runs out, so the energy feels consumed. Energy is never used up: it changes form and moves somewhere else. In the animation scene s4 the wrong line is crossed out and the energy dot is watched travelling from the stored circle to the heat circle - the same energy, transferred to a new form and a new place.",
+            "thinks": "They are applying the coded wrong turn instead of following the energy dot from the stored circle to the heat circle to check whether the energy really disappeared."
+          },
+          "text": "Because the battery has thrown the energy away"
+        },
+        {
+          "correct": true,
+          "text": "Because the energy changed form and moved somewhere else, like light and heat leaving a bulb"
+        },
+        {
+          "misconception": "Energy is used up, like fuel disappearing from a tank.",
+          "rationale": {
+            "chose": "The learner selected option Because energy only works while a switch is on as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: Energy is used up, like fuel disappearing from a tank.. A lamp or a toy runs out, so the energy feels consumed. Energy is never used up: it changes form and moves somewhere else. In the animation scene s4 the wrong line is crossed out and the energy dot is watched travelling from the stored circle to the heat circle - the same energy, transferred to a new form and a new place.",
+            "thinks": "They are applying the coded wrong turn instead of following the energy dot from the stored circle to the heat circle to check whether the energy really disappeared."
+          },
+          "text": "Because energy only works while a switch is on"
+        }
+      ],
+      "id": "h1",
+      "kind": "multiple-choice",
+      "prompt": "Why is energy NOT used up when a torch stops shining?",
+      "scriptCue": "s4"
+    },
+    {
+      "choices": [
+        {
+          "misconception": "Energy is used up, like fuel disappearing from a tank.",
+          "rationale": {
+            "chose": "The learner selected option It starts in the stored circle and is used up on the way as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: Energy is used up, like fuel disappearing from a tank.. A lamp or a toy runs out, so the energy feels consumed. Energy is never used up: it changes form and moves somewhere else. In the animation scene s4 the wrong line is crossed out and the energy dot is watched travelling from the stored circle to the heat circle - the same energy, transferred to a new form and a new place.",
+            "thinks": "They are applying the coded wrong turn instead of following the energy dot from the stored circle to the heat circle to check whether the energy really disappeared."
+          },
+          "text": "It starts in the stored circle and is used up on the way"
+        },
+        {
+          "correct": true,
+          "text": "It starts in the stored circle and ends in the heat circle, changed in form"
+        },
+        {
+          "misconception": "Energy is used up, like fuel disappearing from a tank.",
+          "rationale": {
+            "chose": "The learner selected option It starts in the heat circle and ends in the stored circle as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: Energy is used up, like fuel disappearing from a tank.. A lamp or a toy runs out, so the energy feels consumed. Energy is never used up: it changes form and moves somewhere else. In the animation scene s4 the wrong line is crossed out and the energy dot is watched travelling from the stored circle to the heat circle - the same energy, transferred to a new form and a new place.",
+            "thinks": "They are applying the coded wrong turn instead of following the energy dot from the stored circle to the heat circle to check whether the energy really disappeared."
+          },
+          "text": "It starts in the heat circle and ends in the stored circle"
+        }
+      ],
+      "id": "h2",
+      "kind": "multiple-choice",
+      "prompt": "In scene s4, where does the energy dot start, and where does it end up?",
+      "scriptCue": "s4"
+    }
+  ],
+  "level": "primary",
+  "subject": "science",
+  "title": "Forms of energy",
+  "topic": "energy-forms"
+}

@@ -1,0 +1,48 @@
+{
+  "items": [
+    {
+      "answer": "The energy is never used up: it changed into light and heat and moved into the room",
+      "choices": [
+        "Nothing: when a lamp stops, its energy has been used up and is gone for good",
+        "The energy hides inside the lamp until someone switches it on again",
+        "The energy is never used up: it changed into light and heat and moved into the room"
+      ],
+      "misconceptionCode": "Energy is used up, like fuel disappearing from a tank.",
+      "prompt": "A pupil says: when a lamp stops shining, its energy has been used up. What is wrong with this idea?"
+    },
+    {
+      "answer": "Electrical energy, then light and heat",
+      "choices": [
+        "Electrical energy, then stored energy, then sound",
+        "Electrical energy, then light and heat",
+        "Stored energy, then movement, then light only"
+      ],
+      "prompt": "In the torch circuit, what does the electrical energy from the battery change into at the bulb?"
+    },
+    {
+      "answer": "It changes form and moves somewhere else, for example stored energy becoming heat.",
+      "prompt": "In one sentence, say what really happens to energy when a toy car slows down and stops."
+    },
+    {
+      "answer": "It changes stored energy in its fuel into movement energy (and some heat).",
+      "prompt": "A car is moving along the road. What energy change is happening inside the car?"
+    },
+    {
+      "answer": "It rises up into the air above the pot",
+      "choices": [
+        "It disappears into the pot",
+        "It rises up into the air above the pot",
+        "It turns back into stored energy in the pot"
+      ],
+      "prompt": "What happens to the heat energy as food cooks in a pot?"
+    },
+    {
+      "answer": "Light, heat, sound, movement and stored energy.",
+      "prompt": "Name the five forms of energy shown at the start of the animation."
+    }
+  ],
+  "level": "primary",
+  "subject": "science",
+  "title": "Forms of energy",
+  "topic": "energy-forms"
+}
