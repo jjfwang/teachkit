@@ -1,0 +1,49 @@
+{
+  "title": "Area and perimeter of an L-shape",
+  "level": "primary",
+  "subject": "math",
+  "topic": "area-perimeter",
+  "complete": {
+    "problem": "Find the area and perimeter of the L-shape by splitting it into part A and part B first, as in scene s1.",
+    "steps": [
+      {
+        "text": "Step 1: Two rectangles make one L: split the L into part A, 200 by 120 with area 24 000, and part B, 120 by 140 with area 16 800.",
+        "annotation": "A shape made by joining simpler shapes, like the L made from part A, 200 by 120, and part B, 120 by 140."
+      },
+      {
+        "text": "Step 2: Trace the edge for the perimeter: walk all six edges - 200, 120, 80, 140, 120 and 260 - and add them to get the perimeter of 920.",
+        "annotation": "The total distance around the edge of a shape: add the lengths of all its sides."
+      },
+      {
+        "text": "Step 3: The takeaway: add the areas of the parts for the area, and walk every side for the perimeter.",
+        "annotation": "The amount of surface a shape covers, found for a rectangle by multiplying its length by its width."
+      }
+    ],
+    "selfExplanation": "Explain in one sentence why the area of the L is not 200 x 260."
+  },
+  "faded": {
+    "problem": "Part B of the L is 120 by 140. Find its area and then the total area of the L, given part A has area 24 000.",
+    "steps": [
+      {
+        "text": "Step 1: part B is a rectangle 120 by 140, so its area is 120 x 140 = 16 800.",
+        "annotation": "The amount of surface a shape covers, found for a rectangle by multiplying its length by its width.",
+        "withheld": false
+      },
+      {
+        "text": "Step 2: the total area is the sum of the parts, 24 000 + 16 800 = 40 800.",
+        "annotation": "Scene s1: part B is 120 x 140 = 16 800, and the total area is the sum of the parts, 24 000 + 16 800 = 40 800.",
+        "withheld": true
+      },
+      {
+        "text": "Step 3: so the total area of the L is 40 800.",
+        "annotation": "Split an L-shape into two rectangles and add their areas to find the total area",
+        "withheld": true
+      }
+    ],
+    "selfExplanation": "The first step is shown. Say how the total area is found from the two parts, and what the total area is."
+  },
+  "paired": {
+    "problem": "The six edges of the L are 200, 120, 80, 140, 120 and 260. Find the perimeter, showing the adding.",
+    "solution": "920: 200 + 120 + 80 + 140 + 120 + 260 = 920."
+  }
+}

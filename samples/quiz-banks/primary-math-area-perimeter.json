@@ -1,0 +1,53 @@
+{
+  "title": "Area and perimeter of an L-shape",
+  "level": "primary",
+  "subject": "math",
+  "topic": "area-perimeter",
+  "items": [
+    {
+      "prompt": "An L-shape is made of part A, 200 by 120, and part B, 120 by 140. It fits inside a box that is 200 by 260. What is the area of the L-shape?",
+      "answer": "40 800",
+      "choices": [
+        "52 000",
+        "40 800",
+        "24 000"
+      ],
+      "misconceptionCode": "The area of the L-shape is the length times the width of its bounding box."
+    },
+    {
+      "prompt": "What is the area of part A of the L, a rectangle 200 by 120?",
+      "answer": "24 000",
+      "choices": [
+        "320",
+        "24 000",
+        "16 800"
+      ]
+    },
+    {
+      "prompt": "Part B of the L is 120 by 140. Find its area and then the total area of the L, given part A has area 24 000.",
+      "answer": "16 800 and 40 800: 120 x 140 = 16 800, and 24 000 + 16 800 = 40 800."
+    },
+    {
+      "prompt": "What is the area of a rectangle 120 by 140?",
+      "answer": "16 800",
+      "choices": [
+        "260",
+        "16 800",
+        "24 000"
+      ]
+    },
+    {
+      "prompt": "Which pair of edges are the inner steps of the L that are easy to miss when finding the perimeter?",
+      "answer": "The 80 edge and the 140 edge",
+      "choices": [
+        "The 200 edge and the 260 edge",
+        "The 80 edge and the 140 edge",
+        "There are no inner edges"
+      ]
+    },
+    {
+      "prompt": "Explain in one sentence why the area of the L is not 200 x 260.",
+      "answer": "The 200 by 260 box includes an empty corner that is not part of the L, so only the filled parts count."
+    }
+  ]
+}
