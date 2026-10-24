@@ -1,0 +1,49 @@
+{
+  "title": "Human body systems",
+  "level": "primary",
+  "subject": "science",
+  "topic": "human-body-systems",
+  "complete": {
+    "problem": "In scene s3, follow one drop of blood as a worked example: the heart pumps the drop out to the body, the drop delivers the good parts from digestion and the air from breathing, and then the same drop comes back to the heart to be pushed around again. Each return proves the blood is looping, not being used up.",
+    "steps": [
+      {
+        "text": "Step 1: Circulation: blood loops round and round: the heart pumps blood out to the body, and the same blood travels back to the heart to go round again.",
+        "annotation": "The system that carries blood round the body in a loop: the heart pumps blood out to the body and the same blood returns to the heart."
+      },
+      {
+        "text": "Step 2: the heart pumps the drop out to the body, the drop delivers the good parts from digestion and the air from breathing, and then the same drop comes back to the heart to be pushed around again.",
+        "annotation": "The pump in the circulatory system: it pushes blood out to the body and receives it back, round and round, without using it up."
+      },
+      {
+        "text": "Step 3: Each return proves the blood is looping, not being used up.",
+        "annotation": "A common mistake: blood is not used up: the heart is a pump, and the returning blood proves that blood keeps looping instead of being used up."
+      }
+    ],
+    "selfExplanation": "Explain in one sentence why each return of the drop proves the blood is looping, not being used up."
+  },
+  "faded": {
+    "problem": "A drop of blood leaves the heart and travels to the body. What happens to that drop next?",
+    "steps": [
+      {
+        "text": "Step 1: the heart pumps blood out to the body.",
+        "annotation": "The system that breaks down food: the mouth chews it, the stomach mixes it, and the intestines take out the good parts the body needs.",
+        "withheld": false
+      },
+      {
+        "text": "Step 2: the same drop comes back to the heart.",
+        "annotation": "Blood is never used up: it keeps going round in a loop, coming back to the heart to be pushed around again.",
+        "withheld": true
+      },
+      {
+        "text": "Step 3: so the drop is pushed around again, never used up.",
+        "annotation": "The organs of breathing: they fill with air and grow bigger when we breathe in, then shrink as air flows back out.",
+        "withheld": true
+      }
+    ],
+    "selfExplanation": "The first step is shown. Say what happens to the drop of blood next, and why."
+  },
+  "paired": {
+    "problem": "What happens to a drop of blood after it has visited the body?",
+    "solution": "It comes back to the heart and is pushed around the loop again."
+  }
+}

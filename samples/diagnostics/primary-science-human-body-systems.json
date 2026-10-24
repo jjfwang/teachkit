@@ -1,0 +1,157 @@
+{
+  "title": "Human body systems",
+  "level": "primary",
+  "subject": "science",
+  "topic": "human-body-systems",
+  "doNow": [
+    {
+      "id": "dn1",
+      "prompt": "A pupil says: the heart uses up the blood it pumps, so the body must keep making fresh blood. What is wrong with this idea?",
+      "kind": "multiple-choice",
+      "choices": [
+        {
+          "text": "Nothing: the heart is supposed to use up blood",
+          "misconception": "The heart uses up the blood it pumps, so the body must keep making fresh blood.",
+          "rationale": {
+            "chose": "The learner selected option Nothing: the heart is supposed to use up blood as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of tracing the blood round its loop to check whether it returns to the heart.",
+            "reteach": "Reteach from the paired notes trap: The heart uses up the blood it pumps, so the body must keep making fresh blood.. A pump feels like it burns fuel, so the blood seems to disappear as it travels. Blood is never used up: it keeps going round in a loop, coming back to the heart to be pushed around again. In the animation scene s4 the drop of blood travels out to the body and comes straight back to the heart, which shows the loop never uses the blood up."
+          }
+        },
+        {
+          "text": "Blood is not used up - it loops back to the heart and goes round again",
+          "correct": true
+        },
+        {
+          "text": "The lungs have stopped working",
+          "misconception": "The heart uses up the blood it pumps, so the body must keep making fresh blood.",
+          "rationale": {
+            "chose": "The learner selected option The lungs have stopped working as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of tracing the blood round its loop to check whether it returns to the heart.",
+            "reteach": "Reteach from the paired notes trap: The heart uses up the blood it pumps, so the body must keep making fresh blood.. A pump feels like it burns fuel, so the blood seems to disappear as it travels. Blood is never used up: it keeps going round in a loop, coming back to the heart to be pushed around again. In the animation scene s4 the drop of blood travels out to the body and comes straight back to the heart, which shows the loop never uses the blood up."
+          }
+        }
+      ]
+    },
+    {
+      "id": "dn2",
+      "prompt": "In which order does food travel through the digestive system?",
+      "kind": "multiple-choice",
+      "choices": [
+        {
+          "text": "Intestines, then stomach, then mouth",
+          "misconception": "The heart uses up the blood it pumps, so the body must keep making fresh blood.",
+          "rationale": {
+            "chose": "The learner selected option Intestines, then stomach, then mouth as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of tracing the blood round its loop to check whether it returns to the heart.",
+            "reteach": "Reteach from the paired notes trap: The heart uses up the blood it pumps, so the body must keep making fresh blood.. A pump feels like it burns fuel, so the blood seems to disappear as it travels. Blood is never used up: it keeps going round in a loop, coming back to the heart to be pushed around again. In the animation scene s4 the drop of blood travels out to the body and comes straight back to the heart, which shows the loop never uses the blood up."
+          }
+        },
+        {
+          "text": "Mouth, then stomach, then intestines",
+          "correct": true
+        },
+        {
+          "text": "Stomach, then mouth, then intestines",
+          "misconception": "The heart uses up the blood it pumps, so the body must keep making fresh blood.",
+          "rationale": {
+            "chose": "The learner selected option Stomach, then mouth, then intestines as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of tracing the blood round its loop to check whether it returns to the heart.",
+            "reteach": "Reteach from the paired notes trap: The heart uses up the blood it pumps, so the body must keep making fresh blood.. A pump feels like it burns fuel, so the blood seems to disappear as it travels. Blood is never used up: it keeps going round in a loop, coming back to the heart to be pushed around again. In the animation scene s4 the drop of blood travels out to the body and comes straight back to the heart, which shows the loop never uses the blood up."
+          }
+        }
+      ]
+    },
+    {
+      "id": "dn3",
+      "prompt": "Which organ fills with air when you breathe in?",
+      "kind": "multiple-choice",
+      "choices": [
+        {
+          "text": "The stomach",
+          "misconception": "The heart uses up the blood it pumps, so the body must keep making fresh blood.",
+          "rationale": {
+            "chose": "The learner selected option The stomach as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of tracing the blood round its loop to check whether it returns to the heart.",
+            "reteach": "Reteach from the paired notes trap: The heart uses up the blood it pumps, so the body must keep making fresh blood.. A pump feels like it burns fuel, so the blood seems to disappear as it travels. Blood is never used up: it keeps going round in a loop, coming back to the heart to be pushed around again. In the animation scene s4 the drop of blood travels out to the body and comes straight back to the heart, which shows the loop never uses the blood up."
+          }
+        },
+        {
+          "text": "The lungs",
+          "correct": true
+        },
+        {
+          "text": "The intestines",
+          "misconception": "The heart uses up the blood it pumps, so the body must keep making fresh blood.",
+          "rationale": {
+            "chose": "The learner selected option The intestines as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of tracing the blood round its loop to check whether it returns to the heart.",
+            "reteach": "Reteach from the paired notes trap: The heart uses up the blood it pumps, so the body must keep making fresh blood.. A pump feels like it burns fuel, so the blood seems to disappear as it travels. Blood is never used up: it keeps going round in a loop, coming back to the heart to be pushed around again. In the animation scene s4 the drop of blood travels out to the body and comes straight back to the heart, which shows the loop never uses the blood up."
+          }
+        }
+      ]
+    }
+  ],
+  "hingeQuestions": [
+    {
+      "id": "h1",
+      "prompt": "Why can the heart NOT use up the blood it pumps?",
+      "kind": "multiple-choice",
+      "choices": [
+        {
+          "text": "It cannot: blood is never used up, it loops back to the heart",
+          "correct": true
+        },
+        {
+          "text": "Because the heart burns blood like fuel",
+          "misconception": "The heart uses up the blood it pumps, so the body must keep making fresh blood.",
+          "rationale": {
+            "chose": "The learner selected option Because the heart burns blood like fuel as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of tracing the blood round its loop to check whether it returns to the heart.",
+            "reteach": "Reteach from the paired notes trap: The heart uses up the blood it pumps, so the body must keep making fresh blood.. A pump feels like it burns fuel, so the blood seems to disappear as it travels. Blood is never used up: it keeps going round in a loop, coming back to the heart to be pushed around again. In the animation scene s4 the drop of blood travels out to the body and comes straight back to the heart, which shows the loop never uses the blood up."
+          }
+        },
+        {
+          "text": "Because the body makes new blood every minute",
+          "misconception": "The heart uses up the blood it pumps, so the body must keep making fresh blood.",
+          "rationale": {
+            "chose": "The learner selected option Because the body makes new blood every minute as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of tracing the blood round its loop to check whether it returns to the heart.",
+            "reteach": "Reteach from the paired notes trap: The heart uses up the blood it pumps, so the body must keep making fresh blood.. A pump feels like it burns fuel, so the blood seems to disappear as it travels. Blood is never used up: it keeps going round in a loop, coming back to the heart to be pushed around again. In the animation scene s4 the drop of blood travels out to the body and comes straight back to the heart, which shows the loop never uses the blood up."
+          }
+        }
+      ],
+      "scriptCue": "s4"
+    },
+    {
+      "id": "h2",
+      "prompt": "What happens to the lungs when you breathe in?",
+      "kind": "multiple-choice",
+      "choices": [
+        {
+          "text": "They fill with air and grow bigger",
+          "correct": true
+        },
+        {
+          "text": "They stay the same size",
+          "misconception": "The heart uses up the blood it pumps, so the body must keep making fresh blood.",
+          "rationale": {
+            "chose": "The learner selected option They stay the same size as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of tracing the blood round its loop to check whether it returns to the heart.",
+            "reteach": "Reteach from the paired notes trap: The heart uses up the blood it pumps, so the body must keep making fresh blood.. A pump feels like it burns fuel, so the blood seems to disappear as it travels. Blood is never used up: it keeps going round in a loop, coming back to the heart to be pushed around again. In the animation scene s4 the drop of blood travels out to the body and comes straight back to the heart, which shows the loop never uses the blood up."
+          }
+        },
+        {
+          "text": "They fill with blood",
+          "misconception": "The heart uses up the blood it pumps, so the body must keep making fresh blood.",
+          "rationale": {
+            "chose": "The learner selected option They fill with blood as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of tracing the blood round its loop to check whether it returns to the heart.",
+            "reteach": "Reteach from the paired notes trap: The heart uses up the blood it pumps, so the body must keep making fresh blood.. A pump feels like it burns fuel, so the blood seems to disappear as it travels. Blood is never used up: it keeps going round in a loop, coming back to the heart to be pushed around again. In the animation scene s4 the drop of blood travels out to the body and comes straight back to the heart, which shows the loop never uses the blood up."
+          }
+        }
+      ],
+      "scriptCue": "s4"
+    }
+  ]
+}

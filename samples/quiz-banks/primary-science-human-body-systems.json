@@ -1,0 +1,48 @@
+{
+  "title": "Human body systems",
+  "level": "primary",
+  "subject": "science",
+  "topic": "human-body-systems",
+  "items": [
+    {
+      "prompt": "A pupil says: the heart uses up the blood it pumps, so the body must keep making fresh blood. What is wrong with this idea?",
+      "answer": "Blood is not used up - it loops back to the heart and goes round again",
+      "choices": [
+        "Nothing: the heart is supposed to use up blood",
+        "The lungs have stopped working",
+        "Blood is not used up - it loops back to the heart and goes round again"
+      ],
+      "misconceptionCode": "The heart uses up the blood it pumps, so the body must keep making fresh blood."
+    },
+    {
+      "prompt": "In which order does food travel through the digestive system?",
+      "answer": "Mouth, then stomach, then intestines",
+      "choices": [
+        "Intestines, then stomach, then mouth",
+        "Mouth, then stomach, then intestines",
+        "Stomach, then mouth, then intestines"
+      ]
+    },
+    {
+      "prompt": "What happens to the lungs when you breathe in, and what happens when you breathe out?",
+      "answer": "The lungs fill with air and grow bigger, then shrink as the air flows back out."
+    },
+    {
+      "prompt": "A drop of blood leaves the heart and travels to the body. What happens to that drop next?",
+      "answer": "It travels back to the heart and goes round the loop again."
+    },
+    {
+      "prompt": "Which organ fills with air when you breathe in?",
+      "answer": "The lungs",
+      "choices": [
+        "The stomach",
+        "The lungs",
+        "The intestines"
+      ]
+    },
+    {
+      "prompt": "Name, in order, the three stops food makes on its digestion journey.",
+      "answer": "Mouth, stomach, intestines."
+    }
+  ]
+}
