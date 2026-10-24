@@ -1,0 +1,115 @@
+{
+  "level": "primary",
+  "sets": [
+    {
+      "cloze": [
+        {
+          "answers": [
+            "Roots",
+            "Leaves"
+          ],
+          "text": "Water and minerals are drunk up by the ___, and the plant food is made by the ___."
+        },
+        {
+          "answers": [
+            "Stem"
+          ],
+          "text": "The ___ holds the plant up and carries water from the roots to the leaves."
+        }
+      ],
+      "frames": [
+        "The ___ grow down into the soil and drink up water.",
+        "The ___ carries water up from the roots to the leaves.",
+        "The ___ catch sunlight and make food for the plant."
+      ],
+      "level": "full",
+      "starters": [
+        "The roots hold the plant...",
+        "Water travels up the stem...",
+        "The leaves make food by..."
+      ],
+      "wordBank": [
+        {
+          "gloss": "the part that grows down into the soil and drinks up water",
+          "term": "Roots"
+        },
+        {
+          "gloss": "the part that holds the plant up and carries water to the leaves",
+          "term": "Stem"
+        },
+        {
+          "gloss": "the part that makes the plant food",
+          "term": "Leaves"
+        },
+        {
+          "gloss": "useful substances dissolved in the water in the soil",
+          "term": "Minerals"
+        }
+      ]
+    },
+    {
+      "cloze": [
+        {
+          "answers": [
+            "Stem",
+            "Roots"
+          ],
+          "text": "Water travels up the ___ to the leaves after the ___ drink it from the soil."
+        }
+      ],
+      "frames": [
+        "The ___ holds the plant up so the leaves can reach the light.",
+        "The ___ make food with sunlight and water."
+      ],
+      "level": "partial",
+      "starters": [
+        "Water travels from the roots...",
+        "The leaves make food because..."
+      ],
+      "wordBank": [
+        {
+          "gloss": "the part that grows down into the soil and drinks up water",
+          "term": "Roots"
+        },
+        {
+          "gloss": "the part that holds the plant up and carries water to the leaves",
+          "term": "Stem"
+        },
+        {
+          "gloss": "the part that makes the plant food",
+          "term": "Leaves"
+        }
+      ]
+    },
+    {
+      "cloze": [
+        {
+          "answers": [
+            "Leaves"
+          ],
+          "text": "The ___ catch sunlight to make food for the plant."
+        }
+      ],
+      "frames": [
+        "The ___ catch sunlight and make food."
+      ],
+      "level": "minimal",
+      "starters": [
+        "Plants do not eat food because..."
+      ],
+      "wordBank": [
+        {
+          "gloss": "the part that grows down into the soil and drinks up water",
+          "term": "Roots"
+        },
+        {
+          "gloss": "the part that makes the plant food",
+          "term": "Leaves"
+        }
+      ]
+    }
+  ],
+  "subject": "science",
+  "title": "Plant systems",
+  "topic": "plant-systems"
+}

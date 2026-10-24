@@ -1,0 +1,81 @@
+{
+  "level": "primary",
+  "subject": "science",
+  "templates": [
+    {
+      "kind": "flow",
+      "slots": [
+        {
+          "entries": [
+            "Roots: the plant holds on and drinks: the roots grow down into the soil, hold the plant in place, and drink up water for the whole plant."
+          ],
+          "label": "Roots",
+          "studentPrompt": "Explain this step in your own words."
+        },
+        {
+          "entries": [
+            "Stem: the plant's lift and road: the stem holds the plant up so the leaves can reach the light, and water travels up the stem from the roots to the leaves."
+          ],
+          "label": "Stem",
+          "studentPrompt": "Explain this step in your own words."
+        },
+        {
+          "entries": [
+            "Leaves: the plant makes its own food: the leaves catch sunlight and use it with water to make food for the plant."
+          ],
+          "label": "Leaves",
+          "studentPrompt": "Explain this step in your own words."
+        },
+        {
+          "entries": [
+            "Watch out: plants do not eat food from the soil: the roots drink water and minerals only - the leaves make the food with sunlight, so the plant does not eat food like we do."
+          ],
+          "label": "A common mistake",
+          "studentPrompt": "Explain this step in your own words."
+        }
+      ]
+    },
+    {
+      "kind": "frayer",
+      "slots": [
+        {
+          "entries": [
+            "The part of the plant that grows down into the soil: the roots hold the plant in place and drink up water and minerals for the whole plant."
+          ],
+          "label": "Roots",
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "entries": [
+            "The part of the plant that holds it up so the leaves can reach the light: it is also a road, carrying water up from the roots to the leaves."
+          ],
+          "label": "Stem",
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "entries": [
+            "The part of the plant that makes its food: the leaves catch sunlight and use it with water to make food for the plant."
+          ],
+          "label": "Leaves",
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "entries": [
+            "Useful substances dissolved in the water in the soil: the roots drink them up with the water, but they are not food for the plant."
+          ],
+          "label": "Minerals",
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "entries": [
+            "All the parts of the plant working together: roots drink, the stem carries and lifts, and the leaves make food, so the whole plant can live and grow."
+          ],
+          "label": "Plant system",
+          "studentPrompt": "Give your own example of this term."
+        }
+      ]
+    }
+  ],
+  "title": "Plant systems",
+  "topic": "plant-systems"
+}

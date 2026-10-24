@@ -1,0 +1,76 @@
+{
+  "flashcards": [
+    {
+      "back": "The part of the plant that grows down into the soil: the roots hold the plant in place and drink up water and minerals for the whole plant.",
+      "front": "Roots",
+      "source": "definition"
+    },
+    {
+      "back": "The part of the plant that holds it up so the leaves can reach the light: it is also a road, carrying water up from the roots to the leaves.",
+      "front": "Stem",
+      "source": "definition"
+    },
+    {
+      "back": "The part of the plant that makes its food: the leaves catch sunlight and use it with water to make food for the plant.",
+      "front": "Leaves",
+      "source": "definition"
+    },
+    {
+      "back": "Useful substances dissolved in the water in the soil: the roots drink them up with the water, but they are not food for the plant.",
+      "front": "Minerals",
+      "source": "definition"
+    },
+    {
+      "back": "All the parts of the plant working together: roots drink, the stem carries and lifts, and the leaves make food, so the whole plant can live and grow.",
+      "front": "Plant system",
+      "source": "definition"
+    },
+    {
+      "back": "We eat through our mouths, so the roots look like a mouth for the plant. Roots drink water and minerals; the leaves make the food with sunlight. The plant does not eat food like we do. In the animation scene s4 the roots are shown drinking water and minerals while the leaves make the food with sunlight, which shows the plant never eats food from the soil.",
+      "front": "Plants take food from the soil through their roots, like we eat food.",
+      "source": "trap"
+    },
+    {
+      "back": "Roots, then stem, then leaves",
+      "front": "In which order does water travel through the plant?",
+      "source": "quiz-bank"
+    },
+    {
+      "back": "The leaves",
+      "front": "Which part of the plant makes its food?",
+      "source": "quiz-bank"
+    }
+  ],
+  "level": "primary",
+  "practiceSets": [
+    {
+      "dayOffset": 1,
+      "items": [
+        {
+          "answer": "Plants do not eat food from the soil - roots drink water and minerals, and the leaves make the food with sunlight",
+          "prompt": "A pupil says: plants take food from the soil through their roots, like we eat food. What is wrong with this idea?"
+        },
+        {
+          "answer": "The roots hold the plant in place in the soil, and they drink up water for the whole plant.",
+          "prompt": "What two jobs do the roots do for the plant?"
+        }
+      ]
+    },
+    {
+      "dayOffset": 3,
+      "items": [
+        {
+          "answer": "It travels up the stem to the leaves, where the leaves use it with sunlight to make food.",
+          "prompt": "A drop of water is taken in by the roots. What happens to that drop next?"
+        },
+        {
+          "answer": "Roots, stem, leaves.",
+          "prompt": "Name, in order, the three parts of the plant that water passes through on its journey from the soil to the leaves."
+        }
+      ]
+    }
+  ],
+  "subject": "science",
+  "title": "Plant systems",
+  "topic": "plant-systems"
+}
