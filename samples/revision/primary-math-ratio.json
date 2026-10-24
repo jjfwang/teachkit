@@ -1,0 +1,71 @@
+{
+  "title": "Ratio: sharing $48 in 2:3",
+  "level": "primary",
+  "subject": "math",
+  "topic": "ratio",
+  "flashcards": [
+    {
+      "front": "Ratio",
+      "back": "A comparison of parts of one whole: 2:3 means 2 parts for one share and 3 parts for the other, with every part the same size.",
+      "source": "definition"
+    },
+    {
+      "front": "Part",
+      "back": "One equal piece of the split whole: when $48 is shared in 2:3 there are 5 parts, and one part is $9.60.",
+      "source": "definition"
+    },
+    {
+      "front": "Whole",
+      "back": "The full amount being shared: in sharing $48 in the ratio 2:3 the whole is $48, split into 5 equal parts.",
+      "source": "definition"
+    },
+    {
+      "front": "Share",
+      "back": "The amount one person gets: the number of parts they take multiplied by one part, such as 3 x $9.60 = $28.80.",
+      "source": "definition"
+    },
+    {
+      "front": "A ratio of 3:2 means 3/2 of the whole.",
+      "back": "The ratio parts are mistaken for a fraction of the whole. The whole is 5 parts, so 3 parts is 3 fifths of the whole. In the animation scene s2 the claim is tested against the whole bar and fails: 3/2 of $48 is $72, more than the whole $48, while 3 parts out of 5 is $28.80.",
+      "source": "trap"
+    },
+    {
+      "front": "$48 is shared in the ratio 2:3. How much does the child with 3 parts get?",
+      "back": "$28.80",
+      "source": "quiz-bank"
+    },
+    {
+      "front": "3 parts out of a whole of 5 parts is what fraction of the whole?",
+      "back": "3/5",
+      "source": "quiz-bank"
+    }
+  ],
+  "practiceSets": [
+    {
+      "dayOffset": 1,
+      "items": [
+        {
+          "prompt": "$48 is shared in the ratio 2:3. How much does the child with 3 parts get?",
+          "answer": "$28.80"
+        },
+        {
+          "prompt": "$60 is shared in the ratio 2:3. How much does the child with 3 parts get?",
+          "answer": "$36"
+        }
+      ]
+    },
+    {
+      "dayOffset": 3,
+      "items": [
+        {
+          "prompt": "3 parts out of a whole of 5 parts is what fraction of the whole?",
+          "answer": "3/5"
+        },
+        {
+          "prompt": "Work out both shares when $48 is shared in the ratio 2:3, showing the one-part step.",
+          "answer": "1 part = $48 / 5 = $9.60, so the shares are 2 x $9.60 = $19.20 and 3 x $9.60 = $28.80."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "title": "Ratio: sharing $48 in 2:3",
+  "level": "primary",
+  "subject": "math",
+  "topic": "ratio",
+  "sets": [
+    {
+      "level": "full",
+      "wordBank": [
+        {
+          "term": "Ratio",
+          "gloss": "a comparison of parts of one whole"
+        },
+        {
+          "term": "Part",
+          "gloss": "one equal piece of the split whole"
+        },
+        {
+          "term": "Whole",
+          "gloss": "the full amount being shared"
+        },
+        {
+          "term": "Share",
+          "gloss": "the amount one person gets"
+        }
+      ],
+      "starters": [
+        "A ratio compares parts of...",
+        "To share $48 in the ratio 2:3, I first find one...",
+        "The whole in this question is..."
+      ],
+      "frames": [
+        "A comparison of parts of one whole is a ___.",
+        "One equal piece of the split whole is a ___.",
+        "The amount one person gets is their ___."
+      ],
+      "cloze": [
+        {
+          "text": "A ___ is split into equal ___ of the whole.",
+          "answers": [
+            "Ratio",
+            "Part"
+          ]
+        },
+        {
+          "text": "The $48 is the ___, and what each person gets is their ___.",
+          "answers": [
+            "Whole",
+            "Share"
+          ]
+        }
+      ]
+    },
+    {
+      "level": "partial",
+      "wordBank": [
+        {
+          "term": "Ratio",
+          "gloss": "a comparison of parts of one whole"
+        },
+        {
+          "term": "Part",
+          "gloss": "one equal piece of the split whole"
+        },
+        {
+          "term": "Whole",
+          "gloss": "the full amount being shared"
+        }
+      ],
+      "starters": [
+        "A ratio counts parts of one...",
+        "One part of $48 in the ratio 2:3 is..."
+      ],
+      "frames": [
+        "2:3 is a ___ of parts of one whole.",
+        "One equal piece of the split whole is a ___."
+      ],
+      "cloze": [
+        {
+          "text": "2:3 is a ___ made of equal ___.",
+          "answers": [
+            "Ratio",
+            "Part"
+          ]
+        }
+      ]
+    },
+    {
+      "level": "minimal",
+      "wordBank": [
+        {
+          "term": "Ratio",
+          "gloss": "a comparison of parts of one whole"
+        }
+      ],
+      "starters": [
+        "2:3 compares parts of one..."
+      ],
+      "frames": [
+        "A comparison of parts of one whole is a ___."
+      ],
+      "cloze": [
+        {
+          "text": "2:3 is a ___.",
+          "answers": [
+            "Ratio"
+          ]
+        }
+      ]
+    }
+  ]
+}
