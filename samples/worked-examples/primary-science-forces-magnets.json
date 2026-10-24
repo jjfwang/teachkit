@@ -1,0 +1,49 @@
+{
+  "title": "Pushes, pulls, friction and magnets",
+  "level": "primary",
+  "subject": "science",
+  "topic": "forces-magnets",
+  "complete": {
+    "problem": "In scene s3, follow the magnets as a worked example: the south pole of one magnet faces the north pole of the other, so the opposite poles attract and the loose magnet slides across and snaps onto the first with a click. Each step is a check: read the pole labels, decide whether the facing poles are opposite or the same, then predict attract or repel before the magnets move.",
+    "steps": [
+      {
+        "text": "Step 1: Opposite poles attract: every magnet has a north pole and a south pole, and when S faces N the magnets pull together and snap with a click.",
+        "annotation": "The two ends of a magnet, marked N and S: opposite poles attract and like poles repel."
+      },
+      {
+        "text": "Step 2: Read the pole labels first, then decide whether the facing poles are opposite or the same: S faces N, so the facing poles are opposite.",
+        "annotation": "Read the pole labels first, then decide whether the facing poles are opposite or the same."
+      },
+      {
+        "text": "Step 3: Opposite poles attract, so the loose magnet slides across and snaps onto the first with a click.",
+        "annotation": "What opposite poles do: a north pole and a south pole facing each other pull together and snap onto each other."
+      }
+    ],
+    "selfExplanation": "Explain in one sentence why you must read the pole labels before predicting whether two magnets will attract or repel."
+  },
+  "faded": {
+    "problem": "The south pole of one magnet is brought near the north pole of another magnet. What happens, and why?",
+    "steps": [
+      {
+        "text": "Step 1: read the pole labels: the south pole of one magnet faces the north pole of the other.",
+        "annotation": "The two ends of a magnet, marked N and S: opposite poles attract and like poles repel.",
+        "withheld": false
+      },
+      {
+        "text": "Step 2: S and N are opposite poles, so opposite poles attract.",
+        "annotation": "Scene s3: opposite poles attract - when S faces N the magnets pull each other and snap together with a click.",
+        "withheld": true
+      },
+      {
+        "text": "Step 3: so the magnets pull together and snap onto each other.",
+        "annotation": "They attract: the magnets pull together and snap onto each other.",
+        "withheld": true
+      }
+    ],
+    "selfExplanation": "The first step is shown. Say what happens to the two magnets, and why."
+  },
+  "paired": {
+    "problem": "Two magnets are brought together with their north poles facing each other. What happens?",
+    "solution": "They push each other apart and repel"
+  }
+}

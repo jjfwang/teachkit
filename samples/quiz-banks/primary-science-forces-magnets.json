@@ -1,0 +1,48 @@
+{
+  "title": "Pushes, pulls, friction and magnets",
+  "level": "primary",
+  "subject": "science",
+  "topic": "forces-magnets",
+  "items": [
+    {
+      "prompt": "A pupil says a magnet will attract any metal object. What is wrong with this idea?",
+      "answer": "No: a magnet only pulls iron and a few metals, and ignores most other metals",
+      "choices": [
+        "Yes: if it is a metal, a magnet will pull it",
+        "No: a magnet only pulls iron and a few metals, and ignores most other metals",
+        "Yes: a magnet pulls every object, metal or not"
+      ],
+      "misconceptionCode": "A magnet attracts every kind of metal."
+    },
+    {
+      "prompt": "A child drags a box towards herself across the floor. Which force is she using?",
+      "answer": "A pull, because the box is brought closer to the child",
+      "choices": [
+        "A push, because the box moves across the table",
+        "A pull, because the box is brought closer to the child",
+        "Friction, because the box is sliding"
+      ]
+    },
+    {
+      "prompt": "A block slides down a rough slope and slows down. Name the force that slows it and explain how it works.",
+      "answer": "Friction is the rubbing force between the block and the rough surface; it pushes back against the slide and slows the block down."
+    },
+    {
+      "prompt": "Kicking a football: is this a push or a pull? Give the reason.",
+      "answer": "It is a push: the foot pushes the ball away."
+    },
+    {
+      "prompt": "Two magnets are brought together with their north poles facing each other. What happens?",
+      "answer": "They push each other apart and repel",
+      "choices": [
+        "They snap together and attract",
+        "They push each other apart and repel",
+        "Nothing: magnets only work when they are touching"
+      ]
+    },
+    {
+      "prompt": "In one sentence, say what two magnets do when the north pole of one faces the north pole of the other.",
+      "answer": "They repel: like poles push each other apart."
+    }
+  ]
+}
