@@ -1,0 +1,28 @@
+{
+  "entries": [
+    {
+      "example": "Reading a pie chart: who likes what?: 6 of 12 pupils chose apples (1/2), and 3 each chose bananas and grapes (1/4 each).",
+      "meaning": "A circle split into wedges that show fractions of a whole: in the animation the whole is 12 pupils, with apples 1/2, bananas 1/4 and grapes 1/4.",
+      "term": "Pie chart"
+    },
+    {
+      "example": "Reading a line graph: a rising trend: plants sold climb from Jan 20 to Apr 50 overall, with a small dip to 30 in March.",
+      "meaning": "Points joined by a line to show how a value changes over time: plants sold were Jan 20, Feb 35, Mar 30 and Apr 50.",
+      "term": "Line graph"
+    },
+    {
+      "example": "In scene s3, 24 children voted: the soccer bar reads 13 and the badminton bar reads 8, so 13 − 8 = 5 more chose soccer. Read the heights from the labels first, then subtract the smaller height from the bigger one.",
+      "meaning": "Bars whose heights show amounts that can be compared: soccer 13 votes, badminton 8 votes and swimming 3 votes.",
+      "term": "Bar chart"
+    },
+    {
+      "example": "Watch out: a steeper line is not always bigger: both shops rose from 20 to 40, a rise of +20 each, but graph B only looks flatter because its axis runs 0 to 200 instead of 0 to 50.",
+      "meaning": "The numbers along an axis that say what the drawing stands for: graph A runs 0 to 50 while graph B runs 0 to 200.",
+      "term": "Axis scale"
+    }
+  ],
+  "level": "primary",
+  "subject": "math",
+  "title": "Data graphs: pie charts and line graphs",
+  "topic": "data-graphs"
+}

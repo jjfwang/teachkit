@@ -1,0 +1,71 @@
+{
+  "flashcards": [
+    {
+      "back": "A circle split into wedges that show fractions of a whole: in the animation the whole is 12 pupils, with apples 1/2, bananas 1/4 and grapes 1/4.",
+      "front": "Pie chart",
+      "source": "definition"
+    },
+    {
+      "back": "Points joined by a line to show how a value changes over time: plants sold were Jan 20, Feb 35, Mar 30 and Apr 50.",
+      "front": "Line graph",
+      "source": "definition"
+    },
+    {
+      "back": "Bars whose heights show amounts that can be compared: soccer 13 votes, badminton 8 votes and swimming 3 votes.",
+      "front": "Bar chart",
+      "source": "definition"
+    },
+    {
+      "back": "The numbers along an axis that say what the drawing stands for: graph A runs 0 to 50 while graph B runs 0 to 200.",
+      "front": "Axis scale",
+      "source": "definition"
+    },
+    {
+      "back": "Steepness is judged by the drawing rather than the axis scale behind it. Slope depends on the axis scale: two graphs can have the same rise but look different. In the animation scene s4 both shops rose by +20, from 20 to 40, even though one line looks steeper.",
+      "front": "A steeper line always means a bigger increase.",
+      "source": "trap"
+    },
+    {
+      "back": "1/4",
+      "front": "In the pie chart of 12 pupils, 6 chose apples, 3 chose bananas and 3 chose grapes. What fraction of the class chose bananas?",
+      "source": "quiz-bank"
+    },
+    {
+      "back": "5 more votes: 13 - 8 = 5.",
+      "front": "Soccer got 13 votes and badminton got 8 votes. How many more votes did soccer get? Show the working.",
+      "source": "quiz-bank"
+    }
+  ],
+  "level": "primary",
+  "practiceSets": [
+    {
+      "dayOffset": 1,
+      "items": [
+        {
+          "answer": "Sales dipped in March; 50 plants were sold in April.",
+          "prompt": "A line graph shows plants sold: Jan 20, Feb 35, Mar 30, Apr 50. In which month did sales dip, and how many plants were sold in April?"
+        },
+        {
+          "answer": "1/2",
+          "prompt": "What fraction of the pie chart is taken by apples, if 6 of the 12 pupils chose apples?"
+        }
+      ]
+    },
+    {
+      "dayOffset": 3,
+      "items": [
+        {
+          "answer": "1/4 of the class chose grapes.",
+          "prompt": "In the pie chart, 3 of 12 pupils chose grapes. What fraction of the class chose grapes?"
+        },
+        {
+          "answer": "1/4",
+          "prompt": "In the pie chart of 12 pupils, 6 chose apples, 3 chose bananas and 3 chose grapes. What fraction of the class chose bananas?"
+        }
+      ]
+    }
+  ],
+  "subject": "math",
+  "title": "Data graphs: pie charts and line graphs",
+  "topic": "data-graphs"
+}
