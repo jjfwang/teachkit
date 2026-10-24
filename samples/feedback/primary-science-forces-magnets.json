@@ -1,0 +1,44 @@
+{
+ "title": "Pushes, pulls, friction and magnets",
+ "level": "primary",
+ "subject": "science",
+ "topic": "forces-magnets",
+ "strengths": [
+  "Most of the class can tell a push from a pull, saying a push moves something away and a pull brings it closer.",
+  "The class can state the pole rule: opposite poles attract and like poles repel."
+ ],
+ "modelAnswers": [
+  {
+   "question": "A block slides down a rough slope and slows down. Name the force that slows it and explain how it works.",
+   "answer": "Friction is the rubbing force between the block and the rough surface; it pushes back against the slide and slows the block down.",
+   "creditPoints": []
+  },
+  {
+   "question": "The south pole of one magnet is brought near the north pole of another magnet. What happens, and why?",
+   "answer": "They attract: the magnets pull together and snap onto each other.",
+   "creditPoints": []
+  }
+ ],
+ "commonErrors": [
+  {
+   "misconception": "A magnet attracts every kind of metal.",
+   "example": "A learner writes on the worksheet that any metal object will stick to a magnet because it is made of metal.",
+   "fixIt": {
+    "prompt": "Fix it: name the one metal you can be sure a magnet will pull, then say what you must do with every other metal.",
+    "corrected": "Corrected working: iron is the metal a magnet reliably pulls; every other metal must be tested one by one, because most metals are ignored."
+   }
+  },
+  {
+   "misconception": "A magnet attracts every kind of metal.",
+   "example": "On the exit ticket, a learner expects an aluminium can to stick to a magnet in the way iron is pulled.",
+   "fixIt": {
+    "prompt": "Fix it: say why the shine of a metal tells you nothing, and what a magnet does to most things.",
+    "corrected": "Corrected check: magnets ignore most things and only pull a few metals, so each metal is tested instead of trusted by its shine."
+   }
+  }
+ ],
+ "nextSteps": [
+  "Reteach the metal trap, landing that a magnet only pulls iron and a few metals and that each metal must be tested.",
+  "Practise reading the N and S pole labels first before predicting attract or repel."
+ ]
+}

@@ -1,0 +1,42 @@
+{
+ "level": "primary",
+ "questions": [
+  {
+   "choices": [
+    {
+     "text": "Yes: if it is a metal, a magnet will pull it"
+    },
+    {
+     "correct": true,
+     "text": "No: a magnet only pulls iron and a few metals, and ignores most other metals"
+    },
+    {
+     "text": "Yes: a magnet pulls every object, metal or not"
+    }
+   ],
+   "explanation": "The trap is: A magnet attracts every kind of metal. Scene s4 shows why this is wrong: Magnets ignore most things: they only pull iron and a few metals.",
+   "id": "q1",
+   "kind": "multiple-choice",
+   "misconception": "A magnet attracts every kind of metal.",
+   "prompt": "A pupil says a magnet will attract any metal object. What is wrong with this idea?"
+  },
+  {
+   "answer": "Friction is the rubbing force between the block and the rough surface; it pushes back against the slide and slows the block down.",
+   "explanation": "Scene s2: the rough surface rubs against the sliding block - that rubbing force is friction, and it acts against the movement, slowing the block.",
+   "id": "q3",
+   "kind": "short-answer",
+   "prompt": "A block slides down a rough slope and slows down. Name the force that slows it and explain how it works."
+  },
+  {
+   "answer": "They attract: the magnets pull together and snap onto each other.",
+   "explanation": "Scene s3: opposite poles attract - when S faces N the magnets pull each other and snap together with a click.",
+   "id": "q4",
+   "kind": "short-answer",
+   "prompt": "The south pole of one magnet is brought near the north pole of another magnet. What happens, and why?"
+  }
+ ],
+ "subject": "science",
+ "title": "Pushes, pulls, friction and magnets",
+ "topic": "forces-magnets",
+ "variant": "homework"
+}

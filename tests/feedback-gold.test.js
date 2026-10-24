@@ -45,7 +45,8 @@ const STEMS = [
   'primary-math-area-perimeter',
   'primary-math-rate-speed',
   'primary-math-model-method',
-  'primary-math-data-graphs'
+  'primary-math-data-graphs',
+  'primary-science-forces-magnets'
 ];
 
 function load(rel) {

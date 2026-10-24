@@ -1,0 +1,125 @@
+{
+  "title": "Forces, Magnets and the Water Cycle Unit Test",
+  "level": "primary",
+  "subject": "science",
+  "unitTitle": "Forces, magnets and water in nature",
+  "topics": [
+    "primary-science-forces-magnets",
+    "primary-science-water-cycle"
+  ],
+  "durationMinutes": 40,
+  "totalMarks": 20,
+  "blueprint": [
+    {
+      "outcomeCode": "P5-FORCES-MAGNETS",
+      "assessmentObjective": "AO1 recall and apply",
+      "marks": 10,
+      "cognitiveLevel": "apply"
+    },
+    {
+      "outcomeCode": "P5-WC-PROCESS",
+      "assessmentObjective": "AO2 reason and explain",
+      "marks": 10,
+      "cognitiveLevel": "reason"
+    }
+  ],
+  "items": [
+    {
+      "prompt": "A child drags a box towards herself across the floor. State the force she is using and give the reason.",
+      "blueprintRow": 0,
+      "commandWord": "State",
+      "marks": 4,
+      "markScheme": {
+        "points": [
+          {
+            "text": "Names the force as a pull",
+            "marks": 2
+          },
+          {
+            "text": "Gives the reason that the box is brought closer to the child",
+            "marks": 2
+          }
+        ]
+      }
+    },
+    {
+      "prompt": "Two magnets are brought together with their north poles facing each other. Explain what happens and why.",
+      "blueprintRow": 0,
+      "commandWord": "Explain",
+      "marks": 6,
+      "markScheme": {
+        "points": [
+          {
+            "text": "States the magnets push each other apart because like poles repel",
+            "marks": 3
+          },
+          {
+            "text": "Links the repulsion to both facing ends carrying the same pole",
+            "marks": 3
+          }
+        ]
+      }
+    },
+    {
+      "prompt": "State the process by which liquid water changes into water vapour at the surface of a pond.",
+      "blueprintRow": 1,
+      "commandWord": "State",
+      "marks": 4,
+      "markScheme": {
+        "points": [
+          {
+            "text": "Names the process as evaporation",
+            "marks": 2
+          },
+          {
+            "text": "Notes it happens at the surface and needs heat from the surroundings",
+            "marks": 2
+          }
+        ]
+      }
+    },
+    {
+      "prompt": "A cold mirror held above a kettle of boiling water becomes covered in droplets. Explain how the droplets form.",
+      "blueprintRow": 1,
+      "commandWord": "Explain",
+      "marks": 6,
+      "markScheme": {
+        "points": [
+          {
+            "text": "States water vapour from the kettle touches the cold mirror",
+            "marks": 3
+          },
+          {
+            "text": "States the vapour loses heat and condenses into liquid droplets",
+            "marks": 3
+          }
+        ]
+      }
+    }
+  ],
+  "rubric": {
+    "criteria": [
+      {
+        "name": "Scientific explanation",
+        "levels": [
+          {
+            "label": "Secure",
+            "descriptor": "Answers use the correct force and process names and link each observation to a cause."
+          },
+          {
+            "label": "Developing",
+            "descriptor": "Force and process names are mostly correct but the cause link is incomplete."
+          },
+          {
+            "label": "Beginning",
+            "descriptor": "Force and process names are missing or confused and no cause is given."
+          }
+        ]
+      }
+    ]
+  },
+  "moderation": {
+    "state": "unreviewed"
+  },
+  "review": null
+}

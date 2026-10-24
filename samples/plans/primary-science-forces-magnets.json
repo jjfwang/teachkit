@@ -1,0 +1,93 @@
+{
+ "title": "Pushes, pulls, friction and magnets",
+ "level": "primary",
+ "subject": "science",
+ "topic": "forces-magnets",
+ "durationMinutes": 40,
+ "objectives": [
+  {
+   "id": "o1",
+   "text": "Tell a push from a pull and say what each does to an object, and explain how friction slows a sliding object down",
+   "successCriteria": [
+    "I can say a push moves something away from you and a pull brings it closer",
+    "I can explain that friction is the rubbing force between the block and the rough surface and that it pushes back against the slide and slows the block down"
+   ],
+   "assessmentPoints": [
+    "Push and pull answers in the opening activity",
+    "Responses when the friction arrow is followed in the second activity"
+   ]
+  },
+  {
+   "id": "o2",
+   "text": "State what happens when opposite poles and when like poles face each other, and name the metal a magnet reliably pulls while explaining why not every metal is pulled",
+   "successCriteria": [
+    "I can say opposite poles attract and snap together, and like poles repel and push each other apart",
+    "I can name iron as the metal a magnet reliably pulls and say a magnet only pulls iron and a few metals, ignoring most other metals"
+   ],
+   "assessmentPoints": [
+    "Pole predictions in the third activity",
+    "Worksheet and exit ticket answers in the closing practice"
+   ]
+  }
+ ],
+ "activities": [
+  {
+   "title": "Push and pull: which force moves the box?",
+   "minutes": 8,
+   "objectiveIds": [
+    "o1"
+   ],
+   "scriptCue": "s1",
+   "grouping": "whole class",
+   "resources": [
+    "board"
+   ]
+  },
+  {
+   "title": "Friction slows things down",
+   "minutes": 9,
+   "objectiveIds": [
+    "o1"
+   ],
+   "scriptCue": "s2",
+   "grouping": "pairs"
+  },
+  {
+   "title": "Opposite poles attract",
+   "minutes": 10,
+   "objectiveIds": [
+    "o2"
+   ],
+   "scriptCue": "s3",
+   "grouping": "whole class",
+   "differentiation": {
+    "support": "Provide the two magnets with their N and S pole labels facing the class so learners can read the poles before predicting attract or repel."
+   }
+  },
+  {
+   "title": "Like poles repel and the metal trap",
+   "minutes": 8,
+   "objectiveIds": [
+    "o1",
+    "o2"
+   ],
+   "scriptCue": "s4",
+   "grouping": "pairs",
+   "differentiation": {
+    "stretch": "Ask learners to explain why a shiny metal object must be tested one by one instead of being assumed magnetic."
+   }
+  },
+  {
+   "title": "Worksheet practice and exit ticket",
+   "minutes": 5,
+   "objectiveIds": [
+    "o1",
+    "o2"
+   ],
+   "grouping": "individual",
+   "resources": [
+    "worksheet"
+   ]
+  }
+ ]
+}
