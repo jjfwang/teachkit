@@ -1,0 +1,48 @@
+{
+  "items": [
+    {
+      "answer": "Inside the flower new seeds are forming, and those seeds start the cycle again",
+      "choices": [
+        "Nothing: the flower is the last part to appear, so the plant's life is finished",
+        "The flower is too small to matter in the life cycle",
+        "Inside the flower new seeds are forming, and those seeds start the cycle again"
+      ],
+      "misconceptionCode": "The flower is the end of the life of the plant.",
+      "prompt": "A pupil says: the flower is the end of the life of the plant. What is wrong with this idea?"
+    },
+    {
+      "answer": "Egg, then caterpillar, then pupa, then butterfly",
+      "choices": [
+        "Egg, then pupa, then caterpillar, then butterfly",
+        "Egg, then caterpillar, then pupa, then butterfly",
+        "Caterpillar, then egg, then butterfly, then pupa"
+      ],
+      "prompt": "In which order does a butterfly grow and change?"
+    },
+    {
+      "answer": "Water, warmth and light.",
+      "prompt": "What three things does a seed need to wake up and sprout?"
+    },
+    {
+      "answer": "Its body is changing inside the pupa, and an adult butterfly will come out.",
+      "prompt": "A caterpillar has formed its pupa. What is happening inside the pupa, and what will come out?"
+    },
+    {
+      "answer": "New seeds",
+      "choices": [
+        "New roots",
+        "New seeds",
+        "New eggs"
+      ],
+      "prompt": "What forms inside a flower?"
+    },
+    {
+      "answer": "Egg, caterpillar, pupa, adult butterfly.",
+      "prompt": "Name, in order, the four stages of a butterfly's life cycle."
+    }
+  ],
+  "level": "primary",
+  "subject": "science",
+  "title": "Life cycles: plants and animals",
+  "topic": "life-cycles"
+}
