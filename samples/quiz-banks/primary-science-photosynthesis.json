@@ -1,0 +1,48 @@
+{
+  "items": [
+    {
+      "answer": "Plants take in and give out gases too: they respire all the time, day and night",
+      "choices": [
+        "Nothing: a plant has no nose, so it cannot take in or give out any gases",
+        "Plants only breathe on sunny days, when they are making food",
+        "Plants take in and give out gases too: they respire all the time, day and night"
+      ],
+      "misconceptionCode": "Only animals breathe; plants do not.",
+      "prompt": "A pupil says plants do not breathe at all. What is wrong with this idea?"
+    },
+    {
+      "answer": "Light, water and carbon dioxide",
+      "choices": [
+        "Soil, darkness and oxygen",
+        "Light, water and carbon dioxide",
+        "Food, heat and soil"
+      ],
+      "prompt": "What does a green leaf use to make food in photosynthesis?"
+    },
+    {
+      "answer": "Respiration is still happening: it breaks down food with oxygen to release energy.",
+      "prompt": "A plant is kept in the dark all night. Which process is still happening in its leaves, and what does that process do?"
+    },
+    {
+      "answer": "Respiration breaks down food and oxygen to release energy, making carbon dioxide and water - the opposite direction from photosynthesis.",
+      "prompt": "In one sentence, say how respiration is the reverse of photosynthesis."
+    },
+    {
+      "answer": "Food and oxygen",
+      "choices": [
+        "Carbon dioxide and water",
+        "Food and oxygen",
+        "Light and water"
+      ],
+      "prompt": "Which pair are the products of photosynthesis?"
+    },
+    {
+      "answer": "The leaf catches light, the stem holds the plant up, and the roots drink in water from the soil.",
+      "prompt": "Name the three main parts of a green plant and give the job of each part."
+    }
+  ],
+  "level": "primary",
+  "subject": "science",
+  "title": "Photosynthesis: how green plants make food",
+  "topic": "photosynthesis"
+}

@@ -1,0 +1,157 @@
+{
+  "doNow": [
+    {
+      "choices": [
+        {
+          "misconception": "Only animals breathe; plants do not.",
+          "rationale": {
+            "chose": "The learner selected option Nothing: a plant has no nose, so it cannot take in or give out any gases as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: Only animals breathe; plants do not.. Plants have no nose and no moving chest, so breathing is never seen. That hidden breathing is real respiration: Plants take in and give out gases too: they respire all the time, day and night, just like us. In the animation scene s4 the mistaken line is crossed out and gases are watched moving in and out of the leaf in the day and at night.",
+            "thinks": "They are applying the coded wrong turn instead of watching the gases move in and out of the leaf in scene s4 to check whether the plant really never breathes."
+          },
+          "text": "Nothing: a plant has no nose, so it cannot take in or give out any gases"
+        },
+        {
+          "misconception": "Only animals breathe; plants do not.",
+          "rationale": {
+            "chose": "The learner selected option Plants only breathe on sunny days, when they are making food as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: Only animals breathe; plants do not.. Plants have no nose and no moving chest, so breathing is never seen. That hidden breathing is real respiration: Plants take in and give out gases too: they respire all the time, day and night, just like us. In the animation scene s4 the mistaken line is crossed out and gases are watched moving in and out of the leaf in the day and at night.",
+            "thinks": "They are applying the coded wrong turn instead of watching the gases move in and out of the leaf in scene s4 to check whether the plant really never breathes."
+          },
+          "text": "Plants only breathe on sunny days, when they are making food"
+        },
+        {
+          "correct": true,
+          "text": "Plants take in and give out gases too: they respire all the time, day and night"
+        }
+      ],
+      "id": "dn1",
+      "kind": "multiple-choice",
+      "prompt": "A pupil says plants do not breathe at all. What is wrong with this idea?"
+    },
+    {
+      "choices": [
+        {
+          "misconception": "Only animals breathe; plants do not.",
+          "rationale": {
+            "chose": "The learner selected option Soil, darkness and oxygen as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: Only animals breathe; plants do not.. Plants have no nose and no moving chest, so breathing is never seen. That hidden breathing is real respiration: Plants take in and give out gases too: they respire all the time, day and night, just like us. In the animation scene s4 the mistaken line is crossed out and gases are watched moving in and out of the leaf in the day and at night.",
+            "thinks": "They are applying the coded wrong turn instead of watching the gases move in and out of the leaf in scene s4 to check whether the plant really never breathes."
+          },
+          "text": "Soil, darkness and oxygen"
+        },
+        {
+          "correct": true,
+          "text": "Light, water and carbon dioxide"
+        },
+        {
+          "misconception": "Only animals breathe; plants do not.",
+          "rationale": {
+            "chose": "The learner selected option Food, heat and soil as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: Only animals breathe; plants do not.. Plants have no nose and no moving chest, so breathing is never seen. That hidden breathing is real respiration: Plants take in and give out gases too: they respire all the time, day and night, just like us. In the animation scene s4 the mistaken line is crossed out and gases are watched moving in and out of the leaf in the day and at night.",
+            "thinks": "They are applying the coded wrong turn instead of watching the gases move in and out of the leaf in scene s4 to check whether the plant really never breathes."
+          },
+          "text": "Food, heat and soil"
+        }
+      ],
+      "id": "dn2",
+      "kind": "multiple-choice",
+      "prompt": "What does a green leaf use to make food in photosynthesis?"
+    },
+    {
+      "choices": [
+        {
+          "misconception": "Only animals breathe; plants do not.",
+          "rationale": {
+            "chose": "The learner selected option Carbon dioxide and water as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: Only animals breathe; plants do not.. Plants have no nose and no moving chest, so breathing is never seen. That hidden breathing is real respiration: Plants take in and give out gases too: they respire all the time, day and night, just like us. In the animation scene s4 the mistaken line is crossed out and gases are watched moving in and out of the leaf in the day and at night.",
+            "thinks": "They are applying the coded wrong turn instead of watching the gases move in and out of the leaf in scene s4 to check whether the plant really never breathes."
+          },
+          "text": "Carbon dioxide and water"
+        },
+        {
+          "correct": true,
+          "text": "Food and oxygen"
+        },
+        {
+          "misconception": "Only animals breathe; plants do not.",
+          "rationale": {
+            "chose": "The learner selected option Light and water as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: Only animals breathe; plants do not.. Plants have no nose and no moving chest, so breathing is never seen. That hidden breathing is real respiration: Plants take in and give out gases too: they respire all the time, day and night, just like us. In the animation scene s4 the mistaken line is crossed out and gases are watched moving in and out of the leaf in the day and at night.",
+            "thinks": "They are applying the coded wrong turn instead of watching the gases move in and out of the leaf in scene s4 to check whether the plant really never breathes."
+          },
+          "text": "Light and water"
+        }
+      ],
+      "id": "dn3",
+      "kind": "multiple-choice",
+      "prompt": "Which pair are the products of photosynthesis?"
+    }
+  ],
+  "hingeQuestions": [
+    {
+      "choices": [
+        {
+          "misconception": "Only animals breathe; plants do not.",
+          "rationale": {
+            "chose": "The learner selected option They do not: respiration stops when the light goes out as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: Only animals breathe; plants do not.. Plants have no nose and no moving chest, so breathing is never seen. That hidden breathing is real respiration: Plants take in and give out gases too: they respire all the time, day and night, just like us. In the animation scene s4 the mistaken line is crossed out and gases are watched moving in and out of the leaf in the day and at night.",
+            "thinks": "They are applying the coded wrong turn instead of watching the gases move in and out of the leaf in scene s4 to check whether the plant really never breathes."
+          },
+          "text": "They do not: respiration stops when the light goes out"
+        },
+        {
+          "correct": true,
+          "text": "Respiration runs all the time, day and night, to release energy from food"
+        },
+        {
+          "misconception": "Only animals breathe; plants do not.",
+          "rationale": {
+            "chose": "The learner selected option They only start respiring once photosynthesis has finished for the year as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: Only animals breathe; plants do not.. Plants have no nose and no moving chest, so breathing is never seen. That hidden breathing is real respiration: Plants take in and give out gases too: they respire all the time, day and night, just like us. In the animation scene s4 the mistaken line is crossed out and gases are watched moving in and out of the leaf in the day and at night.",
+            "thinks": "They are applying the coded wrong turn instead of watching the gases move in and out of the leaf in scene s4 to check whether the plant really never breathes."
+          },
+          "text": "They only start respiring once photosynthesis has finished for the year"
+        }
+      ],
+      "id": "h1",
+      "kind": "multiple-choice",
+      "prompt": "Why do plants respire at night, when there is no light for photosynthesis?",
+      "scriptCue": "s4"
+    },
+    {
+      "choices": [
+        {
+          "misconception": "Only animals breathe; plants do not.",
+          "rationale": {
+            "chose": "The learner selected option Yes: respiration stops when the light goes out as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: Only animals breathe; plants do not.. Plants have no nose and no moving chest, so breathing is never seen. That hidden breathing is real respiration: Plants take in and give out gases too: they respire all the time, day and night, just like us. In the animation scene s4 the mistaken line is crossed out and gases are watched moving in and out of the leaf in the day and at night.",
+            "thinks": "They are applying the coded wrong turn instead of watching the gases move in and out of the leaf in scene s4 to check whether the plant really never breathes."
+          },
+          "text": "Yes: respiration stops when the light goes out"
+        },
+        {
+          "correct": true,
+          "text": "No: gases move in and out of the leaf at night too, because the plant respires all the time"
+        },
+        {
+          "misconception": "Only animals breathe; plants do not.",
+          "rationale": {
+            "chose": "The learner selected option Yes: a plant only takes in and gives out gases while it is making food as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: Only animals breathe; plants do not.. Plants have no nose and no moving chest, so breathing is never seen. That hidden breathing is real respiration: Plants take in and give out gases too: they respire all the time, day and night, just like us. In the animation scene s4 the mistaken line is crossed out and gases are watched moving in and out of the leaf in the day and at night.",
+            "thinks": "They are applying the coded wrong turn instead of watching the gases move in and out of the leaf in scene s4 to check whether the plant really never breathes."
+          },
+          "text": "Yes: a plant only takes in and gives out gases while it is making food"
+        }
+      ],
+      "id": "h2",
+      "kind": "multiple-choice",
+      "prompt": "Does the gas movement in and out of the leaf stop at night?",
+      "scriptCue": "s4"
+    }
+  ],
+  "level": "primary",
+  "subject": "science",
+  "title": "Photosynthesis: how green plants make food",
+  "topic": "photosynthesis"
+}

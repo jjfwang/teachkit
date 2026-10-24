@@ -1,0 +1,49 @@
+{
+  "complete": {
+    "problem": "In scene s2, follow the leaf as a worked example: the leaf turns light, water and carbon dioxide into food and oxygen - sunlight arrives from above, water travels up from the roots, and carbon dioxide flows in from the air, so each ingredient can be pointed to before the food and oxygen appear.",
+    "selfExplanation": "Explain in one sentence how the leaf turns the three ingredients into food and oxygen, naming where each ingredient arrives from.",
+    "steps": [
+      {
+        "annotation": "The process by which green leaves use light, water and carbon dioxide to make food, releasing oxygen.",
+        "text": "Step 1: In scene s2, follow the leaf as a worked example: the leaf turns light, water and carbon dioxide into food and oxygen."
+      },
+      {
+        "annotation": "A gas in the air that the leaf takes in as one ingredient of photosynthesis.",
+        "text": "Step 2: sunlight arrives from above, water travels up from the roots, and carbon dioxide flows in from the air."
+      },
+      {
+        "annotation": "A gas released by the leaf in photosynthesis, and taken in when food is broken down in respiration.",
+        "text": "Step 3: so each ingredient can be pointed to before the food and oxygen appear."
+      }
+    ]
+  },
+  "faded": {
+    "problem": "A plant is kept in the dark all night. Which process is still happening in its leaves, and what does that process do?",
+    "selfExplanation": "The first step is shown. Say what respiration makes as it releases energy, and why it carries on at night.",
+    "steps": [
+      {
+        "annotation": "The process that breaks down food with oxygen to release energy, making carbon dioxide and water; it happens all the time.",
+        "text": "Step 1: respiration is still happening: it breaks down food with oxygen to release energy.",
+        "withheld": false
+      },
+      {
+        "annotation": "Respiration: the reverse process: food and oxygen are broken down to release energy, making carbon dioxide and water.",
+        "text": "Step 2: as the food is broken down, carbon dioxide and water are made.",
+        "withheld": true
+      },
+      {
+        "annotation": "Plants take in and give out gases too: they respire all the time, day and night, just like us.",
+        "text": "Step 3: so respiration carries on through the night, even in the dark.",
+        "withheld": true
+      }
+    ]
+  },
+  "level": "primary",
+  "paired": {
+    "problem": "Name the three main parts of a green plant and give the job of each part.",
+    "solution": "The leaf catches light, the stem holds the plant up, and the roots drink in water from the soil."
+  },
+  "subject": "science",
+  "title": "Photosynthesis: how green plants make food",
+  "topic": "photosynthesis"
+}
