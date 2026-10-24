@@ -1,0 +1,157 @@
+{
+  "title": "Plant systems",
+  "level": "primary",
+  "subject": "science",
+  "topic": "plant-systems",
+  "doNow": [
+    {
+      "id": "dn1",
+      "prompt": "A pupil says: plants take food from the soil through their roots, like we eat food. What is wrong with this idea?",
+      "kind": "multiple-choice",
+      "choices": [
+        {
+          "text": "Nothing: the roots are the mouth of the plant and eat food from the soil",
+          "misconception": "Plants take food from the soil through their roots, like we eat food.",
+          "rationale": {
+            "chose": "The learner selected option Nothing: the roots are the mouth of the plant and eat food from the soil as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of following the water from the roots up the stem to the leaves to check where the plant really makes its food.",
+            "reteach": "Reteach from the paired notes trap: Plants take food from the soil through their roots, like we eat food.. We eat through our mouths, so the roots look like a mouth for the plant. Roots drink water and minerals; the leaves make the food with sunlight. The plant does not eat food like we do. In the animation scene s4 the roots are shown drinking water and minerals while the leaves make the food with sunlight, which shows the plant never eats food from the soil."
+          }
+        },
+        {
+          "text": "The stem has stopped working",
+          "misconception": "Plants take food from the soil through their roots, like we eat food.",
+          "rationale": {
+            "chose": "The learner selected option The stem has stopped working as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of following the water from the roots up the stem to the leaves to check where the plant really makes its food.",
+            "reteach": "Reteach from the paired notes trap: Plants take food from the soil through their roots, like we eat food.. We eat through our mouths, so the roots look like a mouth for the plant. Roots drink water and minerals; the leaves make the food with sunlight. The plant does not eat food like we do. In the animation scene s4 the roots are shown drinking water and minerals while the leaves make the food with sunlight, which shows the plant never eats food from the soil."
+          }
+        },
+        {
+          "text": "Plants do not eat food from the soil - roots drink water and minerals, and the leaves make the food with sunlight",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": "dn2",
+      "prompt": "In which order does water travel through the plant?",
+      "kind": "multiple-choice",
+      "choices": [
+        {
+          "text": "Leaves, then stem, then roots",
+          "misconception": "Plants take food from the soil through their roots, like we eat food.",
+          "rationale": {
+            "chose": "The learner selected option Leaves, then stem, then roots as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of following the water from the roots up the stem to the leaves to check where the plant really makes its food.",
+            "reteach": "Reteach from the paired notes trap: Plants take food from the soil through their roots, like we eat food.. We eat through our mouths, so the roots look like a mouth for the plant. Roots drink water and minerals; the leaves make the food with sunlight. The plant does not eat food like we do. In the animation scene s4 the roots are shown drinking water and minerals while the leaves make the food with sunlight, which shows the plant never eats food from the soil."
+          }
+        },
+        {
+          "text": "Roots, then stem, then leaves",
+          "correct": true
+        },
+        {
+          "text": "Stem, then leaves, then roots",
+          "misconception": "Plants take food from the soil through their roots, like we eat food.",
+          "rationale": {
+            "chose": "The learner selected option Stem, then leaves, then roots as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of following the water from the roots up the stem to the leaves to check where the plant really makes its food.",
+            "reteach": "Reteach from the paired notes trap: Plants take food from the soil through their roots, like we eat food.. We eat through our mouths, so the roots look like a mouth for the plant. Roots drink water and minerals; the leaves make the food with sunlight. The plant does not eat food like we do. In the animation scene s4 the roots are shown drinking water and minerals while the leaves make the food with sunlight, which shows the plant never eats food from the soil."
+          }
+        }
+      ]
+    },
+    {
+      "id": "dn3",
+      "prompt": "Which part of the plant makes its food?",
+      "kind": "multiple-choice",
+      "choices": [
+        {
+          "text": "The roots",
+          "misconception": "Plants take food from the soil through their roots, like we eat food.",
+          "rationale": {
+            "chose": "The learner selected option The roots as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of following the water from the roots up the stem to the leaves to check where the plant really makes its food.",
+            "reteach": "Reteach from the paired notes trap: Plants take food from the soil through their roots, like we eat food.. We eat through our mouths, so the roots look like a mouth for the plant. Roots drink water and minerals; the leaves make the food with sunlight. The plant does not eat food like we do. In the animation scene s4 the roots are shown drinking water and minerals while the leaves make the food with sunlight, which shows the plant never eats food from the soil."
+          }
+        },
+        {
+          "text": "The leaves",
+          "correct": true
+        },
+        {
+          "text": "The stem",
+          "misconception": "Plants take food from the soil through their roots, like we eat food.",
+          "rationale": {
+            "chose": "The learner selected option The stem as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of following the water from the roots up the stem to the leaves to check where the plant really makes its food.",
+            "reteach": "Reteach from the paired notes trap: Plants take food from the soil through their roots, like we eat food.. We eat through our mouths, so the roots look like a mouth for the plant. Roots drink water and minerals; the leaves make the food with sunlight. The plant does not eat food like we do. In the animation scene s4 the roots are shown drinking water and minerals while the leaves make the food with sunlight, which shows the plant never eats food from the soil."
+          }
+        }
+      ]
+    }
+  ],
+  "hingeQuestions": [
+    {
+      "id": "h1",
+      "prompt": "Why do plants NOT take food from the soil through their roots?",
+      "kind": "multiple-choice",
+      "choices": [
+        {
+          "text": "Because the roots eat the food before it reaches the soil",
+          "misconception": "Plants take food from the soil through their roots, like we eat food.",
+          "rationale": {
+            "chose": "The learner selected option Because the roots eat the food before it reaches the soil as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of following the water from the roots up the stem to the leaves to check where the plant really makes its food.",
+            "reteach": "Reteach from the paired notes trap: Plants take food from the soil through their roots, like we eat food.. We eat through our mouths, so the roots look like a mouth for the plant. Roots drink water and minerals; the leaves make the food with sunlight. The plant does not eat food like we do. In the animation scene s4 the roots are shown drinking water and minerals while the leaves make the food with sunlight, which shows the plant never eats food from the soil."
+          }
+        },
+        {
+          "text": "They do not eat at all: roots drink water and minerals, and the leaves make the food with sunlight",
+          "correct": true
+        },
+        {
+          "text": "Because there is no water in the soil",
+          "misconception": "Plants take food from the soil through their roots, like we eat food.",
+          "rationale": {
+            "chose": "The learner selected option Because there is no water in the soil as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of following the water from the roots up the stem to the leaves to check where the plant really makes its food.",
+            "reteach": "Reteach from the paired notes trap: Plants take food from the soil through their roots, like we eat food.. We eat through our mouths, so the roots look like a mouth for the plant. Roots drink water and minerals; the leaves make the food with sunlight. The plant does not eat food like we do. In the animation scene s4 the roots are shown drinking water and minerals while the leaves make the food with sunlight, which shows the plant never eats food from the soil."
+          }
+        }
+      ],
+      "scriptCue": "s4"
+    },
+    {
+      "id": "h2",
+      "prompt": "What does the stem do for the plant?",
+      "kind": "multiple-choice",
+      "choices": [
+        {
+          "text": "It makes the food for the plant",
+          "misconception": "Plants take food from the soil through their roots, like we eat food.",
+          "rationale": {
+            "chose": "The learner selected option It makes the food for the plant as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of following the water from the roots up the stem to the leaves to check where the plant really makes its food.",
+            "reteach": "Reteach from the paired notes trap: Plants take food from the soil through their roots, like we eat food.. We eat through our mouths, so the roots look like a mouth for the plant. Roots drink water and minerals; the leaves make the food with sunlight. The plant does not eat food like we do. In the animation scene s4 the roots are shown drinking water and minerals while the leaves make the food with sunlight, which shows the plant never eats food from the soil."
+          }
+        },
+        {
+          "text": "It holds the plant up and carries water from the roots to the leaves",
+          "correct": true
+        },
+        {
+          "text": "It drinks water from the soil",
+          "misconception": "Plants take food from the soil through their roots, like we eat food.",
+          "rationale": {
+            "chose": "The learner selected option It drinks water from the soil as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of following the water from the roots up the stem to the leaves to check where the plant really makes its food.",
+            "reteach": "Reteach from the paired notes trap: Plants take food from the soil through their roots, like we eat food.. We eat through our mouths, so the roots look like a mouth for the plant. Roots drink water and minerals; the leaves make the food with sunlight. The plant does not eat food like we do. In the animation scene s4 the roots are shown drinking water and minerals while the leaves make the food with sunlight, which shows the plant never eats food from the soil."
+          }
+        }
+      ],
+      "scriptCue": "s4"
+    }
+  ]
+}

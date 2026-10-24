@@ -1,0 +1,49 @@
+{
+  "title": "Plant systems",
+  "level": "primary",
+  "subject": "science",
+  "topic": "plant-systems",
+  "complete": {
+    "problem": "In scenes s1 to s3, follow one drop of water as a worked example: the roots drink the drop from the soil, the drop travels up the stem like traffic on a road, and then the same drop reaches the leaves, where the leaves use it with sunlight to make food for the plant. Each step shows a different plant part doing its own job.",
+    "steps": [
+      {
+        "text": "Step 1: Roots: the plant holds on and drinks: the roots grow down into the soil, hold the plant in place, and drink up water for the whole plant.",
+        "annotation": "All the parts of the plant working together: roots drink, the stem carries and lifts, and the leaves make food, so the whole plant can live and grow."
+      },
+      {
+        "text": "Step 2: the roots drink the drop from the soil, the drop travels up the stem like traffic on a road, and then the same drop reaches the leaves, where the leaves use it with sunlight to make food for the plant.",
+        "annotation": "The part of the plant that holds it up so the leaves can reach the light: it is also a road, carrying water up from the roots to the leaves."
+      },
+      {
+        "text": "Step 3: Each step shows a different plant part doing its own job.",
+        "annotation": "A common mistake: plants do not eat food from the soil: the roots drink water and minerals only - the leaves make the food with sunlight, so the plant does not eat food like we do."
+      }
+    ],
+    "selfExplanation": "Explain in one sentence how each plant part does its own job as the drop travels from the roots to the leaves."
+  },
+  "faded": {
+    "problem": "A drop of water is taken in by the roots. What happens to that drop next?",
+    "steps": [
+      {
+        "text": "Step 1: the roots drink the drop up from the soil.",
+        "annotation": "The part of the plant that grows down into the soil: the roots hold the plant in place and drink up water and minerals for the whole plant.",
+        "withheld": false
+      },
+      {
+        "text": "Step 2: the drop travels up the stem to the leaves.",
+        "annotation": "Roots drink water and minerals; the leaves make the food with sunlight. The plant does not eat food like we do.",
+        "withheld": true
+      },
+      {
+        "text": "Step 3: so the leaves use the drop with sunlight to make food for the plant.",
+        "annotation": "The part of the plant that makes its food: the leaves catch sunlight and use it with water to make food for the plant.",
+        "withheld": true
+      }
+    ],
+    "selfExplanation": "The first step is shown. Say what happens to the drop of water next, and why."
+  },
+  "paired": {
+    "problem": "What do the leaves use to make food for the plant?",
+    "solution": "Sunlight and water, which the roots drink and the stem carries up."
+  }
+}
