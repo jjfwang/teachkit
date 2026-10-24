@@ -1,0 +1,44 @@
+{
+ "title": "Adaptations: built to survive",
+ "level": "primary",
+ "subject": "science",
+ "topic": "adaptations",
+ "strengths": [
+  "Most of the class can name the cactus features and say what each one does.",
+  "The class can explain camouflage and why birds migrate."
+ ],
+ "modelAnswers": [
+  {
+   "question": "Winter is coming and food is getting hard to find. What do some birds do, and why?",
+   "answer": "The birds migrate: when winter comes and food is hard to find, they fly thousands of kilometres to warmer places, and return when spring brings food back.",
+   "creditPoints": []
+  },
+  {
+   "question": "Name two features that help a cactus survive in the hot, dry desert and say what each one does.",
+   "answer": "Its thick stem stores water like a bottle, its sharp thorns stop thirsty animals from biting it, and its deep roots reach down to find water.",
+   "creditPoints": []
+  }
+ ],
+ "commonErrors": [
+  {
+   "misconception": "An animal can decide to grow a new feature when it needs one.",
+   "example": "A learner writes on the worksheet that the cactus grew thorns because it decided it needed them.",
+   "fixIt": {
+    "prompt": "Fix it: say how the cactus's features really came to be, and over how long.",
+    "corrected": "Corrected working: the features did not appear overnight - they developed over many, many generations, not by choice."
+   }
+  },
+  {
+   "misconception": "An animal can decide to grow a new feature when it needs one.",
+   "example": "On the exit ticket, a learner says an animal grew a helpful feature because it decided it needed one.",
+   "fixIt": {
+    "prompt": "Fix it: rewrite the sentence so the feature develops over generations instead of being chosen.",
+    "corrected": "Corrected check: no living thing chooses its features - they developed over many, many generations, not by choice."
+   }
+  }
+ ],
+ "nextSteps": [
+  "Reteach the trap, landing that these features did not appear overnight: they developed over many, many generations, not by choice.",
+  "Practise the feature check from the worked example - name the feature, name the desert problem it solves, then say how it helps the cactus survive."
+ ]
+}
