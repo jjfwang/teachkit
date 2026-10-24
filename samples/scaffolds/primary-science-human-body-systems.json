@@ -1,0 +1,115 @@
+{
+  "level": "primary",
+  "sets": [
+    {
+      "cloze": [
+        {
+          "answers": [
+            "Digestive system",
+            "Circulatory system"
+          ],
+          "text": "Food is broken down by the ___, and blood is carried round the body by the ___."
+        },
+        {
+          "answers": [
+            "Heart"
+          ],
+          "text": "The ___ is the pump that pushes blood out to the body."
+        }
+      ],
+      "frames": [
+        "The ___ breaks down food in the mouth, stomach and intestines.",
+        "The ___ moves air in and out of the body through the windpipe and lungs.",
+        "The ___ carries blood round the body in a loop."
+      ],
+      "level": "full",
+      "starters": [
+        "Food is broken down by...",
+        "When I breathe in, air travels...",
+        "The heart pumps blood..."
+      ],
+      "wordBank": [
+        {
+          "gloss": "the system that breaks down food",
+          "term": "Digestive system"
+        },
+        {
+          "gloss": "the system that moves air in and out of the body",
+          "term": "Breathing (respiratory) system"
+        },
+        {
+          "gloss": "the system that carries blood round the body in a loop",
+          "term": "Circulatory system"
+        },
+        {
+          "gloss": "the pump in the circulatory system",
+          "term": "Heart"
+        }
+      ]
+    },
+    {
+      "cloze": [
+        {
+          "answers": [
+            "Heart",
+            "Digestive system"
+          ],
+          "text": "The ___ pushes blood out to the body, and the ___ takes the good parts out of food in the intestines."
+        }
+      ],
+      "frames": [
+        "The ___ pushes blood out to the body and receives it back.",
+        "The ___ takes the good parts out of food in the intestines."
+      ],
+      "level": "partial",
+      "starters": [
+        "The heart pumps blood because...",
+        "Food travels through the digestive system in the order..."
+      ],
+      "wordBank": [
+        {
+          "gloss": "the system that breaks down food",
+          "term": "Digestive system"
+        },
+        {
+          "gloss": "the system that carries blood round the body in a loop",
+          "term": "Circulatory system"
+        },
+        {
+          "gloss": "the pump in the circulatory system",
+          "term": "Heart"
+        }
+      ]
+    },
+    {
+      "cloze": [
+        {
+          "answers": [
+            "Lungs"
+          ],
+          "text": "The ___ fill with air when we breathe in."
+        }
+      ],
+      "frames": [
+        "The ___ fill with air when we breathe in."
+      ],
+      "level": "minimal",
+      "starters": [
+        "When I breathe in..."
+      ],
+      "wordBank": [
+        {
+          "gloss": "the pump in the circulatory system",
+          "term": "Heart"
+        },
+        {
+          "gloss": "the organs of breathing",
+          "term": "Lungs"
+        }
+      ]
+    }
+  ],
+  "subject": "science",
+  "title": "Human body systems",
+  "topic": "human-body-systems"
+}
