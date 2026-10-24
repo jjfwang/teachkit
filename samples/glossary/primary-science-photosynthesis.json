@@ -1,0 +1,43 @@
+{
+  "entries": [
+    {
+      "example": "In scene s2, follow the leaf as a worked example: the leaf turns light, water and carbon dioxide into food and oxygen - sunlight arrives from above, water travels up from the roots, and carbon dioxide flows in from the air, so each ingredient can be pointed to before the food and oxygen appear.",
+      "meaning": "The process by which green leaves use light, water and carbon dioxide to make food, releasing oxygen.",
+      "term": "Photosynthesis"
+    },
+    {
+      "example": "Respiration: the reverse process: food and oxygen are broken down to release energy, making carbon dioxide and water.",
+      "meaning": "The process that breaks down food with oxygen to release energy, making carbon dioxide and water; it happens all the time.",
+      "term": "Respiration"
+    },
+    {
+      "example": "Parts of a green plant: the leaf catches light, the stem holds the plant up, and the roots drink in water from the soil.",
+      "meaning": "The part of the plant that catches light: the leaf is where photosynthesis makes food.",
+      "term": "Leaf"
+    },
+    {
+      "example": "Parts of a green plant: the leaf catches light, the stem holds the plant up, and the roots drink in water from the soil.",
+      "meaning": "The part of the plant that holds it up and carries water from the roots to the leaves.",
+      "term": "Stem"
+    },
+    {
+      "example": "Parts of a green plant: the leaf catches light, the stem holds the plant up, and the roots drink in water from the soil.",
+      "meaning": "The parts below the soil that drink in water for the plant.",
+      "term": "Roots"
+    },
+    {
+      "example": "Photosynthesis: plants make their own food: light, water and carbon dioxide arrive at the leaf and become food and oxygen.",
+      "meaning": "A gas in the air that the leaf takes in as one ingredient of photosynthesis.",
+      "term": "Carbon dioxide"
+    },
+    {
+      "example": "Photosynthesis: plants make their own food: light, water and carbon dioxide arrive at the leaf and become food and oxygen.",
+      "meaning": "A gas released by the leaf in photosynthesis, and taken in when food is broken down in respiration.",
+      "term": "Oxygen"
+    }
+  ],
+  "level": "primary",
+  "subject": "science",
+  "title": "Photosynthesis: how green plants make food",
+  "topic": "photosynthesis"
+}
