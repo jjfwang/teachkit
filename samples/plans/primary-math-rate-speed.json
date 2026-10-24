@@ -1,0 +1,93 @@
+{
+ "title": "Rate and speed: d = s × t",
+ "level": "primary",
+ "subject": "math",
+ "topic": "rate-speed",
+ "durationMinutes": 40,
+ "objectives": [
+  {
+   "id": "o1",
+   "text": "Read a speed as a rate: 60 km/h as 60 km covered in every hour",
+   "successCriteria": [
+    "I can say that 60 km/h means 60 km covered in every hour",
+    "I can show the bus at 60 km after one hour, 120 km after two and 180 km after three"
+   ],
+   "assessmentPoints": [
+    "Rate answers in the opening activity",
+    "Responses when the speed-is-not-distance trap is sprung in the third activity"
+   ]
+  },
+  {
+   "id": "o2",
+   "text": "Find a distance by multiplying speed by time, and flip the formula to find a speed or a time",
+   "successCriteria": [
+    "I can work out 60 × 2.5 = 150 km, checking it as 60 + 60 + 30",
+    "I can flip the formula to speed = distance ÷ time and time = distance ÷ speed"
+   ],
+   "assessmentPoints": [
+    "Distance answers in the second activity",
+    "Worksheet answers in the closing practice"
+   ]
+  }
+ ],
+ "activities": [
+  {
+   "title": "One hour at a time: read 60 km/h as a rate",
+   "minutes": 8,
+   "objectiveIds": [
+    "o1"
+   ],
+   "scriptCue": "s1",
+   "grouping": "whole class",
+   "resources": [
+    "board"
+   ]
+  },
+  {
+   "title": "Build the distance in parts, then multiply",
+   "minutes": 9,
+   "objectiveIds": [
+    "o2"
+   ],
+   "scriptCue": "s2",
+   "grouping": "pairs"
+  },
+  {
+   "title": "Spring the speed-is-not-distance trap",
+   "minutes": 10,
+   "objectiveIds": [
+    "o1"
+   ],
+   "scriptCue": "s3",
+   "grouping": "whole class",
+   "differentiation": {
+    "support": "Provide a number line marked in 30 km half-hour steps so the half-hour distance can be read off before it is discussed."
+   }
+  },
+  {
+   "title": "Land the formula family: multiply, then flip",
+   "minutes": 8,
+   "objectiveIds": [
+    "o1",
+    "o2"
+   ],
+   "scriptCue": "s4",
+   "grouping": "pairs",
+   "differentiation": {
+    "stretch": "Ask learners to explain why half the time at the same speed gives half the distance."
+   }
+  },
+  {
+   "title": "Worksheet practice and exit ticket",
+   "minutes": 5,
+   "objectiveIds": [
+    "o1",
+    "o2"
+   ],
+   "grouping": "individual",
+   "resources": [
+    "worksheet"
+   ]
+  }
+ ]
+}

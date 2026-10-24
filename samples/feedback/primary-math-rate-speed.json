@@ -1,0 +1,44 @@
+{
+ "title": "Rate and speed: d = s × t",
+ "level": "primary",
+ "subject": "math",
+ "topic": "rate-speed",
+ "strengths": [
+  "Most of the class can read 60 km/h as 60 km covered in every hour.",
+  "The class can find a distance by multiplying speed by time and check it in parts."
+ ],
+ "modelAnswers": [
+  {
+   "question": "A bus travels at 60 km/h for 2.5 hours. How far does it go? Show the working.",
+   "answer": "150 km: distance = speed × time, so 60 × 2.5 = 150 km.",
+   "creditPoints": []
+  },
+  {
+   "question": "A van travels 120 km in 2 hours. What is its speed?",
+   "answer": "60 km/h: speed = distance ÷ time, so 120 ÷ 2 = 60 km/h.",
+   "creditPoints": []
+  }
+ ],
+ "commonErrors": [
+  {
+   "misconception": "60 km/h means the bus has travelled 60 km.",
+   "example": "A learner answers 60 km for the half-hour journey on the worksheet, reading the speed itself as the distance.",
+   "fixIt": {
+    "prompt": "Fix it: halve the hour first - how far does the bus go in half of one hour at 60 km/h?",
+    "corrected": "Corrected working: half the time means half the distance, so in half an hour the bus has gone 30 km, not 60."
+   }
+  },
+  {
+   "misconception": "60 km/h means the bus has travelled 60 km.",
+   "example": "On the exit ticket, a learner defends 60 km by saying the speed is 60 km/h, so the bus must have travelled 60 km.",
+   "fixIt": {
+    "prompt": "Fix it: say what the 60 in 60 km/h counts - kilometres per hour - then work out the distance for the actual time.",
+    "corrected": "Corrected check: 60 km/h names a rate, not a total, so after half an hour the bus sits at the 30 km mark, never the 60 km mark."
+   }
+  }
+ ],
+ "nextSteps": [
+  "Reteach speed as distance per hour, landing the same 60 km every hour, before any further rate questions.",
+  "Practise building distances in parts - full hours plus a half hour - before landing the multiplication."
+ ]
+}
