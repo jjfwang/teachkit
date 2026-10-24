@@ -1,0 +1,44 @@
+{
+ "title": "Life cycles: plants and animals",
+ "level": "primary",
+ "subject": "science",
+ "topic": "life-cycles",
+ "strengths": [
+  "Most of the class can name the stages of the plant and butterfly life cycles in order.",
+  "The class can explain that new seeds forming inside a flower start the plant cycle again."
+ ],
+ "modelAnswers": [
+  {
+   "question": "What three things does a seed need to wake up and sprout?",
+   "answer": "Water, warmth and light.",
+   "creditPoints": []
+  },
+  {
+   "question": "A caterpillar has formed its pupa. What is happening inside the pupa, and what will come out?",
+   "answer": "Its body is changing inside the pupa, and an adult butterfly will come out.",
+   "creditPoints": []
+  }
+ ],
+ "commonErrors": [
+  {
+   "misconception": "The flower is the end of the life of the plant.",
+   "example": "A learner writes on the worksheet that the flower is the last part to appear, so the plant's life is finished.",
+   "fixIt": {
+    "prompt": "Fix it: say what is forming inside the flower, and what those things do next.",
+    "corrected": "Corrected working: new seeds are forming inside the flower; they fall to the soil and sprout, starting the cycle again."
+   }
+  },
+  {
+   "misconception": "The flower is the end of the life of the plant.",
+   "example": "On the exit ticket, a learner says the flower ends the plant's life because nothing comes after it.",
+   "fixIt": {
+    "prompt": "Fix it: say why the forming seeds show the flower is not the finish.",
+    "corrected": "Corrected check: the flower is not the end - inside it new seeds are forming, and the cycle starts again."
+   }
+  }
+ ],
+ "nextSteps": [
+  "Reteach the trap, landing that the flower is not the end: inside the flower new seeds are forming, and the cycle starts again.",
+  "Practise following one seed round the whole cycle - seed, seedling, adult plant, flower, new seeds - before answering cycle questions."
+ ]
+}

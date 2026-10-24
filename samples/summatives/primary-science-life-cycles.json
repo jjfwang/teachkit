@@ -1,0 +1,125 @@
+{
+ "title": "Life Cycles and the Water Cycle Unit Test",
+ "level": "primary",
+ "subject": "science",
+ "unitTitle": "Living things and water in nature",
+ "topics": [
+  "primary-science-life-cycles",
+  "primary-science-water-cycle"
+ ],
+ "durationMinutes": 40,
+ "totalMarks": 20,
+ "blueprint": [
+  {
+   "outcomeCode": "P5-LIFE-CYCLES",
+   "assessmentObjective": "AO1 recall and apply",
+   "marks": 10,
+   "cognitiveLevel": "apply"
+  },
+  {
+   "outcomeCode": "P5-WC-PROCESS",
+   "assessmentObjective": "AO2 reason and explain",
+   "marks": 10,
+   "cognitiveLevel": "reason"
+  }
+ ],
+ "items": [
+  {
+   "prompt": "State the stages of a plant life cycle and the stages of a butterfly life cycle.",
+   "blueprintRow": 0,
+   "commandWord": "State",
+   "marks": 4,
+   "markScheme": {
+    "points": [
+     {
+      "text": "Names the plant stages in order: seed, seedling, adult plant, flower, new seeds",
+      "marks": 2
+     },
+     {
+      "text": "Names the butterfly stages in order: egg, caterpillar, pupa, adult butterfly",
+      "marks": 2
+     }
+    ]
+   }
+  },
+  {
+   "prompt": "A plant has flowered. Explain why the flower is not the end of the life of the plant.",
+   "blueprintRow": 0,
+   "commandWord": "Explain",
+   "marks": 6,
+   "markScheme": {
+    "points": [
+     {
+      "text": "States new seeds are forming inside the flower",
+      "marks": 3
+     },
+     {
+      "text": "Explains those seeds can fall to the soil and sprout, starting the cycle again",
+      "marks": 3
+     }
+    ]
+   }
+  },
+  {
+   "prompt": "State the process by which liquid water changes into water vapour at the surface of a pond.",
+   "blueprintRow": 1,
+   "commandWord": "State",
+   "marks": 4,
+   "markScheme": {
+    "points": [
+     {
+      "text": "Names the process as evaporation",
+      "marks": 2
+     },
+     {
+      "text": "Notes it happens at the surface and needs heat from the surroundings",
+      "marks": 2
+     }
+    ]
+   }
+  },
+  {
+   "prompt": "A cold mirror held above a kettle of boiling water becomes covered in droplets. Explain how the droplets form.",
+   "blueprintRow": 1,
+   "commandWord": "Explain",
+   "marks": 6,
+   "markScheme": {
+    "points": [
+     {
+      "text": "States water vapour from the kettle touches the cold mirror",
+      "marks": 3
+     },
+     {
+      "text": "States the vapour loses heat and condenses into liquid droplets",
+      "marks": 3
+     }
+    ]
+   }
+  }
+ ],
+ "rubric": {
+  "criteria": [
+   {
+    "name": "Scientific explanation",
+    "levels": [
+     {
+      "label": "Secure",
+      "descriptor": "Answers use the correct part and process names and link each observation to a cause."
+     },
+     {
+      "label": "Developing",
+      "descriptor": "Part and process names are mostly correct but the cause link is incomplete."
+     },
+     {
+      "label": "Beginning",
+      "descriptor": "Part and process names are missing or confused and no cause is given."
+     }
+    ]
+   }
+  ]
+ },
+ "moderation": {
+  "state": "unreviewed"
+ },
+ "review": null
+}

@@ -1,0 +1,94 @@
+{
+ "title": "Life cycles: plants and animals",
+ "level": "primary",
+ "subject": "science",
+ "topic": "life-cycles",
+ "durationMinutes": 40,
+ "objectives": [
+  {
+   "id": "o1",
+   "text": "Name the stages of a plant life cycle: seed, seedling, adult plant, flower, new seeds, and name the stages of a butterfly life cycle: egg, caterpillar, pupa, adult butterfly",
+   "successCriteria": [
+    "I can name the plant stages in order: seed, seedling, adult plant, flower, new seeds",
+    "I can name the butterfly stages in order: egg, caterpillar, pupa, adult butterfly"
+   ],
+   "assessmentPoints": [
+    "Stage-naming answers in the opening activity",
+    "Butterfly-order answers in the third and fourth activities"
+   ]
+  },
+  {
+   "id": "o2",
+   "text": "Explain how new seeds forming inside a flower start the plant cycle again, and explain why the flower is not the end of the life of the plant",
+   "successCriteria": [
+    "I can explain that new seeds form inside the flower and start the cycle again",
+    "I can explain that the flower is not the end because those new seeds fall to the soil and sprout"
+   ],
+   "assessmentPoints": [
+    "Trap discussion in the second activity",
+    "Worksheet and exit ticket answers in the closing practice"
+   ]
+  }
+ ],
+ "activities": [
+  {
+   "title": "A seed wakes up and sprouts",
+   "minutes": 8,
+   "objectiveIds": [
+    "o1"
+   ],
+   "scriptCue": "s1",
+   "grouping": "whole class",
+   "resources": [
+    "board"
+   ]
+  },
+  {
+   "title": "Watch out: the flower is not the end of the plant",
+   "minutes": 9,
+   "objectiveIds": [
+    "o1",
+    "o2"
+   ],
+   "scriptCue": "s2",
+   "grouping": "pairs"
+  },
+  {
+   "title": "An egg hatches into a caterpillar",
+   "minutes": 10,
+   "objectiveIds": [
+    "o1"
+   ],
+   "scriptCue": "s3",
+   "grouping": "whole class",
+   "differentiation": {
+    "support": "Provide a simple seed-to-flower cycle diagram with arrows so learners can follow one seed round the whole cycle before naming the stages themselves."
+   }
+  },
+  {
+   "title": "The butterfly emerges and the cycle repeats",
+   "minutes": 8,
+   "objectiveIds": [
+    "o1",
+    "o2"
+   ],
+   "scriptCue": "s4",
+   "grouping": "pairs",
+   "differentiation": {
+    "stretch": "Ask learners to explain why the new seeds inside the flower prove the flower is not the end of the life of the plant."
+   }
+  },
+  {
+   "title": "Worksheet practice and exit ticket",
+   "minutes": 5,
+   "objectiveIds": [
+    "o1",
+    "o2"
+   ],
+   "grouping": "individual",
+   "resources": [
+    "worksheet"
+   ]
+  }
+ ]
+}
