@@ -1,0 +1,28 @@
+{
+  "entries": [
+    {
+      "example": "In scene s1, the L splits into part A, 200 by 120, and part B, 120 by 140. Part A has area 200 x 120 = 24 000 and part B has area 120 x 140 = 16 800, so the total area is 24 000 + 16 800 = 40 800.",
+      "meaning": "The amount of surface a shape covers, found for a rectangle by multiplying its length by its width.",
+      "term": "Area"
+    },
+    {
+      "example": "Trace the edge for the perimeter: walk all six edges - 200, 120, 80, 140, 120 and 260 - and add them to get the perimeter of 920.",
+      "meaning": "The total distance around the edge of a shape: add the lengths of all its sides.",
+      "term": "Perimeter"
+    },
+    {
+      "example": "Two rectangles make one L: split the L into part A, 200 by 120 with area 24 000, and part B, 120 by 140 with area 16 800.",
+      "meaning": "A shape made by joining simpler shapes, like the L made from part A, 200 by 120, and part B, 120 by 140.",
+      "term": "Composite shape"
+    },
+    {
+      "example": "Watch out: the missing corner has no area: the 200 by 260 bounding box gives 52 000, but its corner is empty, so that count is too big.",
+      "meaning": "The smallest rectangle that a shape fits inside: for this L it is 200 by 260, but part of the box is empty.",
+      "term": "Bounding box"
+    }
+  ],
+  "level": "primary",
+  "subject": "math",
+  "title": "Area and perimeter of an L-shape",
+  "topic": "area-perimeter"
+}
