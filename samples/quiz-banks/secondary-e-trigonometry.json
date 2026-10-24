@@ -1,0 +1,51 @@
+{
+  "items": [
+    {
+      "answer": "3/4",
+      "choices": [
+        "4/3",
+        "3/5",
+        "3/4",
+        "4/5"
+      ],
+      "misconceptionCode": "tan = adjacent / opposite.",
+      "prompt": "For the same 3-4-5 triangle, what is tan theta?"
+    },
+    {
+      "answer": "3/5",
+      "choices": [
+        "4/5",
+        "3/5",
+        "3/4",
+        "5/3"
+      ],
+      "prompt": "In the 3-4-5 triangle, angle theta has opposite side 3 and hypotenuse 5. What is sin theta?"
+    },
+    {
+      "answer": "a / sin A = b / sin B, so 4 / sin 30 degrees = b / sin 60 degrees. Then b = (4 x sin 60 degrees) / sin 30 degrees = (4 x 0.8660) / 0.5, so b is about 6.93.",
+      "prompt": "In triangle ABC, side a = 4 is opposite angle A = 30 degrees, and angle B = 60 degrees. Use the sine rule to find side b, showing your working."
+    },
+    {
+      "answer": "The sine rule links each side with the sine of its opposite angle, so it needs no right angle - a known side and its opposite angle form a complete pair that unlocks the other sides.",
+      "prompt": "In one or two sentences: why does the sine rule work for a triangle with no right angle when SOH CAH TOA does not?"
+    },
+    {
+      "answer": "The sine rule: a / sin A = b / sin B",
+      "choices": [
+        "SOH CAH TOA on the whole triangle",
+        "The sine rule: a / sin A = b / sin B",
+        "Pythagoras on the longest side",
+        "Tangent as adjacent over opposite"
+      ],
+      "prompt": "A triangle has no right angle. Which rule finds an unknown side from a known side and two known angles?"
+    },
+    {
+      "answer": "SOH: sin = opposite / hypotenuse. CAH: cos = adjacent / hypotenuse. TOA: tan = opposite / adjacent. So cos theta = 4/5 = 0.8.",
+      "prompt": "Write out the SOH CAH TOA card in full, and use it to state cos theta for the 3-4-5 triangle."
+    }
+  ],
+  "level": "secondary",
+  "subject": "math",
+  "title": "E-Math trigonometry: ratios and the sine rule",
+  "topic": "e-trigonometry"
+}
