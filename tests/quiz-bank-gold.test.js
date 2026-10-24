@@ -41,7 +41,8 @@ const STEMS = [
   'primary-science-human-body-systems',
   'primary-science-plant-systems',
   'primary-science-life-cycles',
-  'primary-science-adaptations'
+  'primary-science-adaptations',
+  'primary-science-energy-forms'
 ];
 
 function load(rel) {
