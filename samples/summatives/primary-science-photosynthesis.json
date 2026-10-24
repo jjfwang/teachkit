@@ -1,0 +1,125 @@
+{
+ "title": "Photosynthesis and the Water Cycle Unit Test",
+ "level": "primary",
+ "subject": "science",
+ "unitTitle": "Plants and water in nature",
+ "topics": [
+  "primary-science-photosynthesis",
+  "primary-science-water-cycle"
+ ],
+ "durationMinutes": 40,
+ "totalMarks": 20,
+ "blueprint": [
+  {
+   "outcomeCode": "P5-PHOTOSYNTHESIS",
+   "assessmentObjective": "AO1 recall and apply",
+   "marks": 10,
+   "cognitiveLevel": "apply"
+  },
+  {
+   "outcomeCode": "P5-WC-PROCESS",
+   "assessmentObjective": "AO2 reason and explain",
+   "marks": 10,
+   "cognitiveLevel": "reason"
+  }
+ ],
+ "items": [
+  {
+   "prompt": "State what a green leaf uses to make food in photosynthesis, and name the two products it makes.",
+   "blueprintRow": 0,
+   "commandWord": "State",
+   "marks": 4,
+   "markScheme": {
+    "points": [
+     {
+      "text": "Names light, water and carbon dioxide as the ingredients the leaf uses",
+      "marks": 2
+     },
+     {
+      "text": "Names food and oxygen as the products of photosynthesis",
+      "marks": 2
+     }
+    ]
+   }
+  },
+  {
+   "prompt": "A pupil says plants do not breathe at all. Explain why this idea is wrong.",
+   "blueprintRow": 0,
+   "commandWord": "Explain",
+   "marks": 6,
+   "markScheme": {
+    "points": [
+     {
+      "text": "States that plants take in and give out gases too",
+      "marks": 3
+     },
+     {
+      "text": "Explains that plants respire all the time, day and night, breaking down food to release energy",
+      "marks": 3
+     }
+    ]
+   }
+  },
+  {
+   "prompt": "State the process by which liquid water changes into water vapour at the surface of a pond.",
+   "blueprintRow": 1,
+   "commandWord": "State",
+   "marks": 4,
+   "markScheme": {
+    "points": [
+     {
+      "text": "Names the process as evaporation",
+      "marks": 2
+     },
+     {
+      "text": "Notes it happens at the surface and needs heat from the surroundings",
+      "marks": 2
+     }
+    ]
+   }
+  },
+  {
+   "prompt": "A cold mirror held above a kettle of boiling water becomes covered in droplets. Explain how the droplets form.",
+   "blueprintRow": 1,
+   "commandWord": "Explain",
+   "marks": 6,
+   "markScheme": {
+    "points": [
+     {
+      "text": "States water vapour from the kettle touches the cold mirror",
+      "marks": 3
+     },
+     {
+      "text": "States the vapour loses heat and condenses into liquid droplets",
+      "marks": 3
+     }
+    ]
+   }
+  }
+ ],
+ "rubric": {
+  "criteria": [
+   {
+    "name": "Scientific explanation",
+    "levels": [
+     {
+      "label": "Secure",
+      "descriptor": "Answers use the correct part and process names and link each observation to a cause."
+     },
+     {
+      "label": "Developing",
+      "descriptor": "Part and process names are mostly correct but the cause link is incomplete."
+     },
+     {
+      "label": "Beginning",
+      "descriptor": "Part and process names are missing or confused and no cause is given."
+     }
+    ]
+   }
+  ]
+ },
+ "moderation": {
+  "state": "unreviewed"
+ },
+ "review": null
+}
