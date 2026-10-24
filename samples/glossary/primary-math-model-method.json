@@ -1,0 +1,33 @@
+{
+  "entries": [
+    {
+      "example": "Draw a bar model with unit boxes that are all the same length",
+      "meaning": "A drawing that solves a word problem with bars: one bar for each amount, split into unit boxes, so the relationships in the problem can be seen before calculating.",
+      "term": "Bar model (model method)"
+    },
+    {
+      "example": "Unit bars: every unit is the same length: Mia has 2 units and Ben has 3 units, and the ruler checks that each unit box is the same length.",
+      "meaning": "One equal part of a bar: in the animation Mia has 2 unit boxes and Ben has 3, and every unit box is exactly the same length.",
+      "term": "Unit box"
+    },
+    {
+      "example": "In scene s3, draw the whole class bar first and split it into 7 equal units: 3 units are boys, so the girls are the other 4 units, and diff = 4 − 3 = 1 unit. Read the parts off the model first, then subtract the smaller part from the bigger part.",
+      "meaning": "One whole bar split into parts: the class bar of 7 units splits into 3 units of boys and 4 units of girls.",
+      "term": "Part-whole model"
+    },
+    {
+      "example": "Before-and-after: the model shows what changed: Mia starts with 3 units, gives 1 unit away to her sister, and the after bar shows 2 units left.",
+      "meaning": "Two bars for the same amount, before and after a change: Mia has 3 units before giving 1 away and 2 units after.",
+      "term": "Before-and-after model"
+    },
+    {
+      "example": "Watch out: bars must be to scale: Sam draws 1 unit and 2 units with boxes that do not match, while the correct 2-unit bar is exactly twice the 1-unit bar.",
+      "meaning": "Drawn so lengths stand for amounts faithfully: two units is exactly twice one unit, never a guessed length.",
+      "term": "To scale"
+    }
+  ],
+  "level": "primary",
+  "subject": "math",
+  "title": "The model method: bar models for word problems",
+  "topic": "model-method"
+}

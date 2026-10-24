@@ -1,0 +1,116 @@
+{
+  "level": "primary",
+  "sets": [
+    {
+      "cloze": [
+        {
+          "answers": [
+            "Bar model (model method)",
+            "Unit box"
+          ],
+          "text": "A ___ is drawn with ___ boxes that are all the same length."
+        },
+        {
+          "answers": [
+            "Part-whole model",
+            "To scale"
+          ],
+          "text": "A ___ splits one whole bar into parts, and lengths drawn ___ stand for amounts faithfully."
+        }
+      ],
+      "frames": [
+        "A drawing that solves a word problem with bars is a ___.",
+        "One equal part of a bar is a ___.",
+        "One whole bar split into parts is a ___ model."
+      ],
+      "level": "full",
+      "starters": [
+        "A bar model solves a word problem by...",
+        "Every unit box in my model is...",
+        "To show what changed, I draw a before-and-after..."
+      ],
+      "wordBank": [
+        {
+          "gloss": "a drawing that solves a word problem with bars",
+          "term": "Bar model (model method)"
+        },
+        {
+          "gloss": "one equal part of a bar",
+          "term": "Unit box"
+        },
+        {
+          "gloss": "one whole bar split into parts",
+          "term": "Part-whole model"
+        },
+        {
+          "gloss": "two bars for the same amount, before and after a change",
+          "term": "Before-and-after model"
+        },
+        {
+          "gloss": "drawn so lengths stand for amounts faithfully",
+          "term": "To scale"
+        }
+      ]
+    },
+    {
+      "cloze": [
+        {
+          "answers": [
+            "Bar model (model method)",
+            "Unit box"
+          ],
+          "text": "Draw a ___ and split it into ___ boxes of equal length."
+        }
+      ],
+      "frames": [
+        "Split one whole bar into parts with a ___ model.",
+        "One equal part of a bar is a ___."
+      ],
+      "level": "partial",
+      "starters": [
+        "To split a whole bar into parts, I use a...",
+        "Every unit box must be the same..."
+      ],
+      "wordBank": [
+        {
+          "gloss": "a drawing that solves a word problem with bars",
+          "term": "Bar model (model method)"
+        },
+        {
+          "gloss": "one equal part of a bar",
+          "term": "Unit box"
+        },
+        {
+          "gloss": "one whole bar split into parts",
+          "term": "Part-whole model"
+        }
+      ]
+    },
+    {
+      "cloze": [
+        {
+          "answers": [
+            "Unit box"
+          ],
+          "text": "Each equal part of a bar is a ___."
+        }
+      ],
+      "frames": [
+        "One equal part of a bar is a ___."
+      ],
+      "level": "minimal",
+      "starters": [
+        "Every unit box is exactly the same..."
+      ],
+      "wordBank": [
+        {
+          "gloss": "one equal part of a bar",
+          "term": "Unit box"
+        }
+      ]
+    }
+  ],
+  "subject": "math",
+  "title": "The model method: bar models for word problems",
+  "topic": "model-method"
+}

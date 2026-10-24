@@ -1,0 +1,81 @@
+{
+  "level": "primary",
+  "subject": "math",
+  "templates": [
+    {
+      "kind": "flow",
+      "slots": [
+        {
+          "entries": [
+            "Unit bars: every unit is the same length: Mia has 2 units and Ben has 3 units, and the ruler checks that each unit box is the same length."
+          ],
+          "label": "Unit bars",
+          "studentPrompt": "Explain this step in your own words."
+        },
+        {
+          "entries": [
+            "Before-and-after: the model shows what changed: Mia starts with 3 units, gives 1 unit away to her sister, and the after bar shows 2 units left."
+          ],
+          "label": "Before-and-after",
+          "studentPrompt": "Explain this step in your own words."
+        },
+        {
+          "entries": [
+            "Worked example: part-whole and difference: the whole class bar has 7 units, with 3 units of boys and 4 units of girls, so the difference is 1 unit."
+          ],
+          "label": "Worked example: part-whole and difference",
+          "studentPrompt": "Explain this step in your own words."
+        },
+        {
+          "entries": [
+            "Watch out: bars must be to scale: Sam draws 1 unit and 2 units with boxes that do not match, while the correct 2-unit bar is exactly twice the 1-unit bar."
+          ],
+          "label": "Watch out: bars must be to scale",
+          "studentPrompt": "Explain this step in your own words."
+        }
+      ]
+    },
+    {
+      "kind": "frayer",
+      "slots": [
+        {
+          "entries": [
+            "A drawing that solves a word problem with bars: one bar for each amount, split into unit boxes, so the relationships in the problem can be seen before calculating."
+          ],
+          "label": "Bar model (model method)",
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "entries": [
+            "One equal part of a bar: in the animation Mia has 2 unit boxes and Ben has 3, and every unit box is exactly the same length."
+          ],
+          "label": "Unit box",
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "entries": [
+            "One whole bar split into parts: the class bar of 7 units splits into 3 units of boys and 4 units of girls."
+          ],
+          "label": "Part-whole model",
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "entries": [
+            "Two bars for the same amount, before and after a change: Mia has 3 units before giving 1 away and 2 units after."
+          ],
+          "label": "Before-and-after model",
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "entries": [
+            "Drawn so lengths stand for amounts faithfully: two units is exactly twice one unit, never a guessed length."
+          ],
+          "label": "To scale",
+          "studentPrompt": "Give your own example of this term."
+        }
+      ]
+    }
+  ],
+  "title": "The model method: bar models for word problems",
+  "topic": "model-method"
+}
