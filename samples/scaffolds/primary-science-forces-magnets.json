@@ -1,0 +1,115 @@
+{
+  "level": "primary",
+  "sets": [
+    {
+      "cloze": [
+        {
+          "answers": [
+            "Push",
+            "Pull"
+          ],
+          "text": "Kicking a ball is a ___, and dragging a box towards you is a ___."
+        },
+        {
+          "answers": [
+            "Poles"
+          ],
+          "text": "The ___ at the ends of a magnet decide whether it attracts or repels."
+        }
+      ],
+      "frames": [
+        "A ___ moves something away from you.",
+        "A ___ brings something closer to you.",
+        "The rubbing force that slows sliding is ___."
+      ],
+      "level": "full",
+      "starters": [
+        "A push moves an object...",
+        "Friction slows a sliding object by...",
+        "Before two magnets move, I check their..."
+      ],
+      "wordBank": [
+        {
+          "gloss": "a force that moves something away from you",
+          "term": "Push"
+        },
+        {
+          "gloss": "a force that brings something closer to you",
+          "term": "Pull"
+        },
+        {
+          "gloss": "the rubbing force that slows sliding things down",
+          "term": "Friction"
+        },
+        {
+          "gloss": "the two ends of a magnet, marked N and S",
+          "term": "Poles"
+        }
+      ]
+    },
+    {
+      "cloze": [
+        {
+          "answers": [
+            "Friction",
+            "Poles"
+          ],
+          "text": "___ slows a sliding block down, and opposite ___ pull together."
+        }
+      ],
+      "frames": [
+        "The rubbing force between sliding surfaces is ___.",
+        "A ___ moves something away from you."
+      ],
+      "level": "partial",
+      "starters": [
+        "Friction slows a sliding block because...",
+        "Opposite poles attract, so..."
+      ],
+      "wordBank": [
+        {
+          "gloss": "a force that moves something away from you",
+          "term": "Push"
+        },
+        {
+          "gloss": "the rubbing force that slows sliding things down",
+          "term": "Friction"
+        },
+        {
+          "gloss": "the two ends of a magnet, marked N and S",
+          "term": "Poles"
+        }
+      ]
+    },
+    {
+      "cloze": [
+        {
+          "answers": [
+            "Push"
+          ],
+          "text": "Shoving a box across a table is a ___."
+        }
+      ],
+      "frames": [
+        "A ___ moves something away from you."
+      ],
+      "level": "minimal",
+      "starters": [
+        "A push moves an object..."
+      ],
+      "wordBank": [
+        {
+          "gloss": "a force that moves something away from you",
+          "term": "Push"
+        },
+        {
+          "gloss": "a force that brings something closer to you",
+          "term": "Pull"
+        }
+      ]
+    }
+  ],
+  "subject": "science",
+  "title": "Pushes, pulls, friction and magnets",
+  "topic": "forces-magnets"
+}
