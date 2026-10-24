@@ -1,0 +1,49 @@
+{
+  "title": "Rate and speed: d = s × t",
+  "level": "primary",
+  "subject": "math",
+  "topic": "rate-speed",
+  "complete": {
+    "problem": "In scene s2, a bus travelling at 60 km/h for 2.5 hours is worked with distance = speed × time: 60 × 2.5 = 150 km.",
+    "steps": [
+      {
+        "text": "Step 1: Speed is distance per hour: a bus at 60 km/h covers 60 km in one hour, 120 km in two hours and 180 km in three hours - the same 60 km landing every hour.",
+        "annotation": "The distance covered in one unit of time: a speed of 60 km/h means the bus covers 60 km in every hour."
+      },
+      {
+        "text": "Step 2: 60 km/h for 2.5 hours: distance = speed × time, so 60 × 2.5 = 150 km - 60 km in each full hour plus 30 km in the half hour.",
+        "annotation": "How far something travels, found by multiplying speed by time: at 60 km/h for 2.5 hours the distance is 150 km."
+      },
+      {
+        "text": "Step 3: The takeaway: distance = speed × time, and the formula flips either way - speed = distance ÷ time and time = distance ÷ speed.",
+        "annotation": "An amount per unit of something else: speed is a rate, the distance travelled per hour."
+      }
+    ],
+    "selfExplanation": "Explain in one sentence why 60 km/h on its own is not a distance."
+  },
+  "faded": {
+    "problem": "A cyclist rides at 15 km/h for 4 hours. How far does she ride?",
+    "steps": [
+      {
+        "text": "Step 1: the cyclist rides at 15 km/h, so in each hour she rides 15 km.",
+        "annotation": "How far something travels, found by multiplying speed by time: at 60 km/h for 2.5 hours the distance is 150 km.",
+        "withheld": false
+      },
+      {
+        "text": "Step 2: distance = speed × time, so 15 × 4 = 60 km.",
+        "annotation": "Multiply the speed by the time: a cyclist at 15 km/h for 4 hours rides 15 × 4 = 60 km.",
+        "withheld": true
+      },
+      {
+        "text": "Step 3: so the cyclist rides 60 km in the 4 hours.",
+        "annotation": "Find a distance by multiplying speed by time, and flip the formula to find a speed or a time",
+        "withheld": true
+      }
+    ],
+    "selfExplanation": "The first step is shown. Say how the distance is found from the speed and the time, and what the distance is."
+  },
+  "paired": {
+    "problem": "A van travels 120 km in 2 hours. What is its speed?",
+    "solution": "60 km/h: speed = distance ÷ time, so 120 ÷ 2 = 60 km/h."
+  }
+}
