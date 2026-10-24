@@ -1,0 +1,193 @@
+{
+  "title": "Ratio: sharing $48 in 2:3",
+  "level": "primary",
+  "subject": "math",
+  "topic": "ratio",
+  "doNow": [
+    {
+      "id": "dn1",
+      "prompt": "$48 is shared in the ratio 2:3. How much does the child with 3 parts get?",
+      "kind": "multiple-choice",
+      "choices": [
+        {
+          "text": "$72",
+          "misconception": "A ratio of 3:2 means 3/2 of the whole.",
+          "rationale": {
+            "chose": "The learner selected option $72 as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of counting the parts out of the 5 parts of the whole.",
+            "reteach": "Reteach from the paired notes trap: The ratio parts are mistaken for a fraction of the whole. The whole is 5 parts, so 3 parts is 3 fifths of the whole. 3/2 of $48 is $72, more than the whole $48, while 3 parts out of 5 is $28.80."
+          }
+        },
+        {
+          "text": "$19.20",
+          "misconception": "A ratio of 3:2 means 3/2 of the whole.",
+          "rationale": {
+            "chose": "The learner selected option $19.20 as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of counting the parts out of the 5 parts of the whole.",
+            "reteach": "Reteach from the paired notes trap: The ratio parts are mistaken for a fraction of the whole. The whole is 5 parts, so 3 parts is 3 fifths of the whole. 3/2 of $48 is $72, more than the whole $48, while 3 parts out of 5 is $28.80."
+          }
+        },
+        {
+          "text": "$28.80",
+          "correct": true
+        },
+        {
+          "text": "$48",
+          "misconception": "A ratio of 3:2 means 3/2 of the whole.",
+          "rationale": {
+            "chose": "The learner selected option $48 as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of counting the parts out of the 5 parts of the whole.",
+            "reteach": "Reteach from the paired notes trap: The ratio parts are mistaken for a fraction of the whole. The whole is 5 parts, so 3 parts is 3 fifths of the whole. 3/2 of $48 is $72, more than the whole $48, while 3 parts out of 5 is $28.80."
+          }
+        }
+      ]
+    },
+    {
+      "id": "dn2",
+      "prompt": "In the ratio 2:3, how many equal parts is the whole split into?",
+      "kind": "multiple-choice",
+      "choices": [
+        {
+          "text": "2",
+          "misconception": "A ratio of 3:2 means 3/2 of the whole.",
+          "rationale": {
+            "chose": "The learner selected option 2 as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of counting the parts out of the 5 parts of the whole.",
+            "reteach": "Reteach from the paired notes trap: The ratio parts are mistaken for a fraction of the whole. The whole is 5 parts, so 3 parts is 3 fifths of the whole. 3/2 of $48 is $72, more than the whole $48, while 3 parts out of 5 is $28.80."
+          }
+        },
+        {
+          "text": "3",
+          "misconception": "A ratio of 3:2 means 3/2 of the whole.",
+          "rationale": {
+            "chose": "The learner selected option 3 as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of counting the parts out of the 5 parts of the whole.",
+            "reteach": "Reteach from the paired notes trap: The ratio parts are mistaken for a fraction of the whole. The whole is 5 parts, so 3 parts is 3 fifths of the whole. 3/2 of $48 is $72, more than the whole $48, while 3 parts out of 5 is $28.80."
+          }
+        },
+        {
+          "text": "5",
+          "correct": true
+        },
+        {
+          "text": "6",
+          "misconception": "A ratio of 3:2 means 3/2 of the whole.",
+          "rationale": {
+            "chose": "The learner selected option 6 as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of counting the parts out of the 5 parts of the whole.",
+            "reteach": "Reteach from the paired notes trap: The ratio parts are mistaken for a fraction of the whole. The whole is 5 parts, so 3 parts is 3 fifths of the whole. 3/2 of $48 is $72, more than the whole $48, while 3 parts out of 5 is $28.80."
+          }
+        }
+      ]
+    },
+    {
+      "id": "dn3",
+      "prompt": "3 parts out of a whole of 5 parts is what fraction of the whole?",
+      "kind": "multiple-choice",
+      "choices": [
+        {
+          "text": "3/5",
+          "correct": true
+        },
+        {
+          "text": "3/2",
+          "misconception": "A ratio of 3:2 means 3/2 of the whole.",
+          "rationale": {
+            "chose": "The learner selected option 3/2 as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of counting the parts out of the 5 parts of the whole.",
+            "reteach": "Reteach from the paired notes trap: The ratio parts are mistaken for a fraction of the whole. The whole is 5 parts, so 3 parts is 3 fifths of the whole. 3/2 of $48 is $72, more than the whole $48, while 3 parts out of 5 is $28.80."
+          }
+        },
+        {
+          "text": "2/3",
+          "misconception": "A ratio of 3:2 means 3/2 of the whole.",
+          "rationale": {
+            "chose": "The learner selected option 2/3 as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of counting the parts out of the 5 parts of the whole.",
+            "reteach": "Reteach from the paired notes trap: The ratio parts are mistaken for a fraction of the whole. The whole is 5 parts, so 3 parts is 3 fifths of the whole. 3/2 of $48 is $72, more than the whole $48, while 3 parts out of 5 is $28.80."
+          }
+        }
+      ]
+    }
+  ],
+  "hingeQuestions": [
+    {
+      "id": "h1",
+      "prompt": "Find one part when $48 is shared in the ratio 2:3, and show the step.",
+      "kind": "multiple-choice",
+      "choices": [
+        {
+          "text": "1 part = $48 / 5 = $9.60.",
+          "correct": true
+        },
+        {
+          "text": "1 part = $48 / 2 = $24, because the first number in the ratio is 2",
+          "misconception": "A ratio of 3:2 means 3/2 of the whole.",
+          "rationale": {
+            "chose": "The learner selected option 1 part = $48 / 2 = $24, because the first number in the ratio is 2 as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of counting the parts out of the 5 parts of the whole.",
+            "reteach": "Reteach from the paired notes trap: The ratio parts are mistaken for a fraction of the whole. The whole is 5 parts, so 3 parts is 3 fifths of the whole. 3/2 of $48 is $72, more than the whole $48, while 3 parts out of 5 is $28.80."
+          }
+        },
+        {
+          "text": "1 part = $48 / 3 = $16, because the larger share takes 3 parts",
+          "misconception": "A ratio of 3:2 means 3/2 of the whole.",
+          "rationale": {
+            "chose": "The learner selected option 1 part = $48 / 3 = $16, because the larger share takes 3 parts as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of counting the parts out of the 5 parts of the whole.",
+            "reteach": "Reteach from the paired notes trap: The ratio parts are mistaken for a fraction of the whole. The whole is 5 parts, so 3 parts is 3 fifths of the whole. 3/2 of $48 is $72, more than the whole $48, while 3 parts out of 5 is $28.80."
+          }
+        },
+        {
+          "text": "1 part = $48 x 3/2 = $72, because 3 parts is 3/2 of the whole",
+          "misconception": "A ratio of 3:2 means 3/2 of the whole.",
+          "rationale": {
+            "chose": "The learner selected option 1 part = $48 x 3/2 = $72, because 3 parts is 3/2 of the whole as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of counting the parts out of the 5 parts of the whole.",
+            "reteach": "Reteach from the paired notes trap: The ratio parts are mistaken for a fraction of the whole. The whole is 5 parts, so 3 parts is 3 fifths of the whole. 3/2 of $48 is $72, more than the whole $48, while 3 parts out of 5 is $28.80."
+          }
+        }
+      ],
+      "scriptCue": "s3"
+    },
+    {
+      "id": "h2",
+      "prompt": "Explain why the 3-part share of $48 cannot be $72.",
+      "kind": "multiple-choice",
+      "choices": [
+        {
+          "text": "$72 is more than the whole $48: the whole is 5 parts, so 3 parts is 3/5 of $48, which is $28.80.",
+          "correct": true
+        },
+        {
+          "text": "It can be $72, because 3 parts is 3/2 of the whole",
+          "misconception": "A ratio of 3:2 means 3/2 of the whole.",
+          "rationale": {
+            "chose": "The learner selected option It can be $72, because 3 parts is 3/2 of the whole as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of counting the parts out of the 5 parts of the whole.",
+            "reteach": "Reteach from the paired notes trap: The ratio parts are mistaken for a fraction of the whole. The whole is 5 parts, so 3 parts is 3 fifths of the whole. 3/2 of $48 is $72, more than the whole $48, while 3 parts out of 5 is $28.80."
+          }
+        },
+        {
+          "text": "It cannot be $72 because every share of $48 must be less than $20",
+          "misconception": "A ratio of 3:2 means 3/2 of the whole.",
+          "rationale": {
+            "chose": "The learner selected option It cannot be $72 because every share of $48 must be less than $20 as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of counting the parts out of the 5 parts of the whole.",
+            "reteach": "Reteach from the paired notes trap: The ratio parts are mistaken for a fraction of the whole. The whole is 5 parts, so 3 parts is 3 fifths of the whole. 3/2 of $48 is $72, more than the whole $48, while 3 parts out of 5 is $28.80."
+          }
+        },
+        {
+          "text": "It cannot be $72 because the 3-part share is always the smaller share",
+          "misconception": "A ratio of 3:2 means 3/2 of the whole.",
+          "rationale": {
+            "chose": "The learner selected option It cannot be $72 because the 3-part share is always the smaller share as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of counting the parts out of the 5 parts of the whole.",
+            "reteach": "Reteach from the paired notes trap: The ratio parts are mistaken for a fraction of the whole. The whole is 5 parts, so 3 parts is 3 fifths of the whole. 3/2 of $48 is $72, more than the whole $48, while 3 parts out of 5 is $28.80."
+          }
+        }
+      ],
+      "scriptCue": "s4"
+    }
+  ]
+}
