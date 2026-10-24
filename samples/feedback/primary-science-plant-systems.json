@@ -1,0 +1,44 @@
+{
+ "title": "Plant systems",
+ "level": "primary",
+ "subject": "science",
+ "topic": "plant-systems",
+ "strengths": [
+  "Most of the class can name the roots, stem and leaves and say what each part does.",
+  "The class can trace water on its journey from the roots up the stem to the leaves."
+ ],
+ "modelAnswers": [
+  {
+   "question": "What two jobs do the roots do for the plant?",
+   "answer": "The roots hold the plant in place in the soil, and they drink up water for the whole plant.",
+   "creditPoints": []
+  },
+  {
+   "question": "A drop of water is taken in by the roots. What happens to that drop next?",
+   "answer": "It travels up the stem to the leaves, where the leaves use it with sunlight to make food.",
+   "creditPoints": []
+  }
+ ],
+ "commonErrors": [
+  {
+   "misconception": "Plants take food from the soil through their roots, like we eat food.",
+   "example": "A learner writes on the worksheet that the roots are the mouth of the plant and eat food from the soil.",
+   "fixIt": {
+    "prompt": "Fix it: say what the roots really take from the soil, and which part makes the food.",
+    "corrected": "Corrected working: the roots drink water and minerals only; the leaves make the food with sunlight."
+   }
+  },
+  {
+   "misconception": "Plants take food from the soil through their roots, like we eat food.",
+   "example": "On the exit ticket, a learner says plants eat through their roots because there is food in the soil.",
+   "fixIt": {
+    "prompt": "Fix it: say why the drinking roots show the plant does not eat like we do.",
+    "corrected": "Corrected check: plants do not eat at all - the roots drink water and minerals, and the leaves make the food with sunlight."
+   }
+  }
+ ],
+ "nextSteps": [
+  "Reteach the trap, landing that the roots are not a mouth: they drink water and minerals, and the leaves make the food with sunlight.",
+  "Practise tracing one drop of water from the roots up the stem to the leaves before answering journey questions."
+ ]
+}
