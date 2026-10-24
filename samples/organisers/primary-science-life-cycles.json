@@ -1,0 +1,88 @@
+{
+  "level": "primary",
+  "subject": "science",
+  "templates": [
+    {
+      "kind": "flow",
+      "slots": [
+        {
+          "entries": [
+            "A seed wakes up and sprouts: the seed rests in the soil, and with water, warmth and light it wakes up, growing a root down and a green shoot up into a seedling."
+          ],
+          "label": "A seed wakes up",
+          "studentPrompt": "Explain this step in your own words."
+        },
+        {
+          "entries": [
+            "Watch out: the flower is not the end of the plant: the seedling grows into an adult plant with a flower, and inside the flower new seeds are forming, ready to start the cycle again."
+          ],
+          "label": "The flower and new seeds",
+          "studentPrompt": "Explain this step in your own words."
+        },
+        {
+          "entries": [
+            "An egg hatches into a caterpillar: a butterfly lays tiny eggs on a leaf, and each egg hatches into a caterpillar that munches leaves and grows bigger."
+          ],
+          "label": "An egg hatches",
+          "studentPrompt": "Explain this step in your own words."
+        },
+        {
+          "entries": [
+            "The butterfly emerges and the cycle repeats: the caterpillar rests inside a pupa while its body changes, then an adult butterfly emerges and lays eggs, so the cycle repeats."
+          ],
+          "label": "The butterfly emerges",
+          "studentPrompt": "Explain this step in your own words."
+        }
+      ]
+    },
+    {
+      "kind": "frayer",
+      "slots": [
+        {
+          "entries": [
+            "The start of a plant's life: it rests in the soil and wakes up with water, warmth and light, then sprouts a root and a shoot."
+          ],
+          "label": "Seed",
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "entries": [
+            "The baby plant that has just sprouted from a seed: it grows taller and stronger until it becomes an adult plant."
+          ],
+          "label": "Seedling",
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "entries": [
+            "The showy part of the adult plant: new seeds form inside it, so it starts the next round of the cycle instead of ending it."
+          ],
+          "label": "Flower",
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "entries": [
+            "The growing-up stage of a butterfly: it hatches from an egg and munches leaves to grow bigger."
+          ],
+          "label": "Caterpillar",
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "entries": [
+            "The resting case a caterpillar forms: inside it, the caterpillar's body changes into a butterfly."
+          ],
+          "label": "Pupa",
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "entries": [
+            "The circle of changes a living thing goes through as it grows: the adult makes new young, and the circle starts again."
+          ],
+          "label": "Life cycle",
+          "studentPrompt": "Give your own example of this term."
+        }
+      ]
+    }
+  ],
+  "title": "Life cycles: plants and animals",
+  "topic": "life-cycles"
+}

@@ -1,0 +1,115 @@
+{
+  "level": "primary",
+  "sets": [
+    {
+      "cloze": [
+        {
+          "answers": [
+            "Seed",
+            "Seedling"
+          ],
+          "text": "A ___ wakes up in the soil and sprouts into a ___."
+        },
+        {
+          "answers": [
+            "Flower"
+          ],
+          "text": "New seeds form inside the ___."
+        }
+      ],
+      "frames": [
+        "The ___ rests in the soil and sprouts into a seedling.",
+        "New seeds form inside the ___.",
+        "The ___ hatches from an egg and munches leaves."
+      ],
+      "level": "full",
+      "starters": [
+        "A seed wakes up when...",
+        "Inside the flower, new seeds...",
+        "A caterpillar munches leaves and..."
+      ],
+      "wordBank": [
+        {
+          "gloss": "the start of a plant life, resting in the soil",
+          "term": "Seed"
+        },
+        {
+          "gloss": "the baby plant that has just sprouted",
+          "term": "Seedling"
+        },
+        {
+          "gloss": "the showy part of the adult plant where new seeds form",
+          "term": "Flower"
+        },
+        {
+          "gloss": "the growing-up stage of a butterfly that munches leaves",
+          "term": "Caterpillar"
+        }
+      ]
+    },
+    {
+      "cloze": [
+        {
+          "answers": [
+            "Caterpillar",
+            "Flower"
+          ],
+          "text": "A ___ munches leaves, and new seeds form inside a ___."
+        }
+      ],
+      "frames": [
+        "The ___ grows into an adult plant with a flower.",
+        "The ___ munches leaves and grows bigger."
+      ],
+      "level": "partial",
+      "starters": [
+        "The seedling grows into...",
+        "A caterpillar rests inside..."
+      ],
+      "wordBank": [
+        {
+          "gloss": "the start of a plant life, resting in the soil",
+          "term": "Seed"
+        },
+        {
+          "gloss": "the showy part of the adult plant where new seeds form",
+          "term": "Flower"
+        },
+        {
+          "gloss": "the growing-up stage of a butterfly that munches leaves",
+          "term": "Caterpillar"
+        }
+      ]
+    },
+    {
+      "cloze": [
+        {
+          "answers": [
+            "Pupa"
+          ],
+          "text": "The caterpillar rests inside a ___."
+        }
+      ],
+      "frames": [
+        "Inside the ___, the caterpillar changes into a butterfly."
+      ],
+      "level": "minimal",
+      "starters": [
+        "The cycle starts again when..."
+      ],
+      "wordBank": [
+        {
+          "gloss": "the start of a plant life, resting in the soil",
+          "term": "Seed"
+        },
+        {
+          "gloss": "the resting case where a caterpillar changes",
+          "term": "Pupa"
+        }
+      ]
+    }
+  ],
+  "subject": "science",
+  "title": "Life cycles: plants and animals",
+  "topic": "life-cycles"
+}

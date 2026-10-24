@@ -1,0 +1,81 @@
+{
+  "flashcards": [
+    {
+      "back": "The start of a plant's life: it rests in the soil and wakes up with water, warmth and light, then sprouts a root and a shoot.",
+      "front": "Seed",
+      "source": "definition"
+    },
+    {
+      "back": "The baby plant that has just sprouted from a seed: it grows taller and stronger until it becomes an adult plant.",
+      "front": "Seedling",
+      "source": "definition"
+    },
+    {
+      "back": "The showy part of the adult plant: new seeds form inside it, so it starts the next round of the cycle instead of ending it.",
+      "front": "Flower",
+      "source": "definition"
+    },
+    {
+      "back": "The growing-up stage of a butterfly: it hatches from an egg and munches leaves to grow bigger.",
+      "front": "Caterpillar",
+      "source": "definition"
+    },
+    {
+      "back": "The resting case a caterpillar forms: inside it, the caterpillar's body changes into a butterfly.",
+      "front": "Pupa",
+      "source": "definition"
+    },
+    {
+      "back": "The circle of changes a living thing goes through as it grows: the adult makes new young, and the circle starts again.",
+      "front": "Life cycle",
+      "source": "definition"
+    },
+    {
+      "back": "The flower is the biggest, showiest and last part to appear, so it looks like the finish. The flower is not the end: inside the flower new seeds are forming, and the cycle starts again. In the animation scene s2 the flower opens and new seeds are shown forming inside it, then falling to the soil - the start of the next round, not the finish.",
+      "front": "The flower is the end of the life of the plant.",
+      "source": "trap"
+    },
+    {
+      "back": "Egg, then caterpillar, then pupa, then butterfly",
+      "front": "In which order does a butterfly grow and change?",
+      "source": "quiz-bank"
+    },
+    {
+      "back": "New seeds",
+      "front": "What forms inside a flower?",
+      "source": "quiz-bank"
+    }
+  ],
+  "level": "primary",
+  "practiceSets": [
+    {
+      "dayOffset": 1,
+      "items": [
+        {
+          "answer": "Inside the flower new seeds are forming, and those seeds start the cycle again",
+          "prompt": "A pupil says: the flower is the end of the life of the plant. What is wrong with this idea?"
+        },
+        {
+          "answer": "Water, warmth and light.",
+          "prompt": "What three things does a seed need to wake up and sprout?"
+        }
+      ]
+    },
+    {
+      "dayOffset": 3,
+      "items": [
+        {
+          "answer": "Its body is changing inside the pupa, and an adult butterfly will come out.",
+          "prompt": "A caterpillar has formed its pupa. What is happening inside the pupa, and what will come out?"
+        },
+        {
+          "answer": "Egg, caterpillar, pupa, adult butterfly.",
+          "prompt": "Name, in order, the four stages of a butterfly's life cycle."
+        }
+      ]
+    }
+  ],
+  "subject": "science",
+  "title": "Life cycles: plants and animals",
+  "topic": "life-cycles"
+}
