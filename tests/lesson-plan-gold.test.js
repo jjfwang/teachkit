@@ -32,7 +32,8 @@ const STEMS = [
   'secondary-math-pythagoras',
   'secondary-science-photosynthesis',
   'primary-math-decimals',
-  'primary-math-percentage'
+  'primary-math-percentage',
+  'primary-math-ratio'
 ];
 
 function load(rel) {

@@ -1,0 +1,93 @@
+{
+  "title": "Ratio: sharing $48 in 2:3",
+  "level": "primary",
+  "subject": "math",
+  "topic": "ratio",
+  "durationMinutes": 40,
+  "objectives": [
+    {
+      "id": "o1",
+      "text": "Read a ratio as equal parts of one whole: 2:3 as 2 parts and 3 parts of the same whole",
+      "successCriteria": [
+        "I can say that 2:3 means 2 parts and 3 parts of the same whole",
+        "I can show the whole split into 5 equal parts"
+      ],
+      "assessmentPoints": [
+        "Parts answers in the opening activity",
+        "Responses when the trap is sprung in the second activity"
+      ]
+    },
+    {
+      "id": "o2",
+      "text": "Share an amount in a ratio by finding one part first: divide the whole by the total number of parts",
+      "successCriteria": [
+        "I can find one part by dividing $48 by 5",
+        "I can work out both shares as $19.20 and $28.80"
+      ],
+      "assessmentPoints": [
+        "Guided one-part answers in the third activity",
+        "Worksheet answers in the closing practice"
+      ]
+    }
+  ],
+  "activities": [
+    {
+      "title": "Sharing in a ratio: split $48 into 2 parts and 3 parts",
+      "minutes": 8,
+      "objectiveIds": [
+        "o1"
+      ],
+      "scriptCue": "s1",
+      "grouping": "whole class",
+      "resources": [
+        "board"
+      ]
+    },
+    {
+      "title": "Spring the fraction-of-the-whole trap",
+      "minutes": 9,
+      "objectiveIds": [
+        "o1"
+      ],
+      "scriptCue": "s2",
+      "grouping": "pairs"
+    },
+    {
+      "title": "One part, then multiply: sharing $48 in 2:3",
+      "minutes": 10,
+      "objectiveIds": [
+        "o2"
+      ],
+      "scriptCue": "s3",
+      "grouping": "whole class",
+      "differentiation": {
+        "support": "Provide a bar split into five equal parts so one part can be seen before it is calculated."
+      }
+    },
+    {
+      "title": "Land the add, divide, multiply rule",
+      "minutes": 8,
+      "objectiveIds": [
+        "o1",
+        "o2"
+      ],
+      "scriptCue": "s4",
+      "grouping": "pairs",
+      "differentiation": {
+        "stretch": "Ask learners to share $60 in the ratio 2:3 using the same one-part method."
+      }
+    },
+    {
+      "title": "Worksheet practice and exit ticket",
+      "minutes": 5,
+      "objectiveIds": [
+        "o1",
+        "o2"
+      ],
+      "grouping": "individual",
+      "resources": [
+        "worksheet"
+      ]
+    }
+  ]
+}

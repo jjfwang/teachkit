@@ -1,0 +1,44 @@
+{
+  "title": "Ratio: sharing $48 in 2:3",
+  "level": "primary",
+  "subject": "math",
+  "topic": "ratio",
+  "strengths": [
+    "Most of the class can read 2:3 as 2 parts and 3 parts of the same whole.",
+    "The class can find one part first by dividing the whole by the total number of parts."
+  ],
+  "modelAnswers": [
+    {
+      "question": "Find one part when $48 is shared in the ratio 2:3, and show the step.",
+      "answer": "1 part = $48 / 5 = $9.60.",
+      "creditPoints": []
+    },
+    {
+      "question": "Work out both shares when $48 is shared in the ratio 2:3, showing the one-part step.",
+      "answer": "1 part = $48 / 5 = $9.60, so the shares are 2 x $9.60 = $19.20 and 3 x $9.60 = $28.80.",
+      "creditPoints": []
+    }
+  ],
+  "commonErrors": [
+    {
+      "misconception": "A ratio of 3:2 means 3/2 of the whole.",
+      "example": "A learner answers $72 for the 3-part share of $48 on the worksheet, treating 3 parts as 3/2 of the whole.",
+      "fixIt": {
+        "prompt": "Fix it: count the parts in the whole bar, then say what fraction of the whole 3 parts really is.",
+        "corrected": "Corrected working: the whole is 5 parts, so 3 parts is 3/5 of $48, and one part is $9.60, so 3 parts is $28.80."
+      }
+    },
+    {
+      "misconception": "A ratio of 3:2 means 3/2 of the whole.",
+      "example": "On the exit ticket, a learner defends $72 by saying 3 parts out of 2 must be 3/2 of the whole.",
+      "fixIt": {
+        "prompt": "Fix it: name the whole in parts - add 2 and 3 first - then check whether a share can be bigger than the whole $48.",
+        "corrected": "Corrected check: the whole is 5 parts, not 2, so 3 parts is 3/5 of the whole and the share is $28.80, never $72."
+      }
+    }
+  ],
+  "nextSteps": [
+    "Reteach counting parts out of the whole in parts with the whole bar before any further sharing questions.",
+    "Practise the add, divide, multiply sequence until finding one part first is automatic."
+  ]
+}
