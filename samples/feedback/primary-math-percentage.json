@@ -1,0 +1,44 @@
+{
+  "title": "Percentage: 25% of 60",
+  "level": "primary",
+  "subject": "math",
+  "topic": "percentage",
+  "strengths": [
+    "Most of the class can read 25% as 25 out of 100 on the hundred-grid.",
+    "The class can simplify 25% to one quarter before finding a percent of a quantity."
+  ],
+  "modelAnswers": [
+    {
+      "question": "Write 25% as a fraction in its simplest form and explain the step.",
+      "answer": "25% = 25/100 = 1/4: divide the top and the bottom by 25.",
+      "creditPoints": []
+    },
+    {
+      "question": "Work out 25% of 60, showing the quarter step.",
+      "answer": "25% is one quarter, and 60 / 4 = 15, so 25% of 60 = 15.",
+      "creditPoints": []
+    }
+  ],
+  "commonErrors": [
+    {
+      "misconception": "25% of 60 is just 25.",
+      "example": "A learner answers 25 for 25% of 60 on the worksheet, pointing at the 25 in 25% as the answer.",
+      "fixIt": {
+        "prompt": "Fix it: shade twenty-five cells out of one hundred on the hundred-grid, then say what the 25 counts out of.",
+        "corrected": "Corrected working: 25% is 25 out of 100, which is one quarter, and one quarter of 60 is 15."
+      }
+    },
+    {
+      "misconception": "25% of 60 is just 25.",
+      "example": "On the exit ticket, a learner defends 25 by saying the question already gives the number 25.",
+      "fixIt": {
+        "prompt": "Fix it: name the two different wholes in the question - the hundred the percent counts out of, and the 60 the share is taken of.",
+        "corrected": "Corrected check: the 25 counts out of one hundred while the whole here is 60, so the answer is a share of 60, which is 15."
+      }
+    }
+  ],
+  "nextSteps": [
+    "Reteach the per-hundred reading with the hundred-grid before any further percent-of-quantity questions.",
+    "Practise simplifying familiar percents to fractions until turning a percent into a fraction of the whole is automatic."
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "title": "Percentage and Fractions Unit Test",
+  "level": "primary",
+  "subject": "math",
+  "unitTitle": "Percentage and fractions",
+  "topics": [
+    "primary-math-percentage",
+    "primary-math-fractions-addition"
+  ],
+  "durationMinutes": 40,
+  "totalMarks": 20,
+  "blueprint": [
+    {
+      "outcomeCode": "P5-PCT-QUANTITY",
+      "assessmentObjective": "AO1 recall and apply",
+      "marks": 10,
+      "cognitiveLevel": "apply"
+    },
+    {
+      "outcomeCode": "P5-FRAC-ADD",
+      "assessmentObjective": "AO2 reason and solve",
+      "marks": 10,
+      "cognitiveLevel": "reason"
+    }
+  ],
+  "items": [
+    {
+      "prompt": "Calculate 25% of 60. Show your working.",
+      "blueprintRow": 0,
+      "commandWord": "Calculate",
+      "marks": 5,
+      "markScheme": {
+        "points": [
+          {
+            "text": "Renames 25% as one quarter (25 out of 100 simplifies to 1/4)",
+            "marks": 2
+          },
+          {
+            "text": "Divides 60 by 4 to get 15",
+            "marks": 3
+          }
+        ]
+      }
+    },
+    {
+      "prompt": "Explain why 25% of 60 cannot be 25, using the hundred-grid.",
+      "blueprintRow": 0,
+      "commandWord": "Explain",
+      "marks": 5,
+      "markScheme": {
+        "points": [
+          {
+            "text": "States that the 25 in 25% counts out of one hundred, not out of 60",
+            "marks": 2
+          },
+          {
+            "text": "Concludes the answer is a share of 60: one quarter of 60 is 15",
+            "marks": 3
+          }
+        ]
+      }
+    },
+    {
+      "prompt": "Calculate 1/2 + 1/4. Show your working.",
+      "blueprintRow": 1,
+      "commandWord": "Calculate",
+      "marks": 5,
+      "markScheme": {
+        "points": [
+          {
+            "text": "Renames 1/2 as 2/4 (common denominator)",
+            "marks": 3
+          },
+          {
+            "text": "Adds numerators to get 3/4",
+            "marks": 2
+          }
+        ]
+      }
+    },
+    {
+      "prompt": "A baker uses 3/4 kg of flour in the morning and 1/4 kg in the afternoon. How much flour is used in total?",
+      "blueprintRow": 1,
+      "commandWord": "Calculate",
+      "marks": 5,
+      "markScheme": {
+        "points": [
+          {
+            "text": "Sets up 3/4 + 1/4",
+            "marks": 2
+          },
+          {
+            "text": "Correct total of 1 kg",
+            "marks": 3
+          }
+        ]
+      }
+    }
+  ],
+  "rubric": {
+    "criteria": [
+      {
+        "name": "Mathematical communication",
+        "levels": [
+          {
+            "label": "Secure",
+            "descriptor": "Working is complete, ordered and uses correct percentage and fraction notation throughout."
+          },
+          {
+            "label": "Developing",
+            "descriptor": "Working is partial or notation is inconsistent, but the method can be followed."
+          },
+          {
+            "label": "Beginning",
+            "descriptor": "Little or no working shown; the method cannot be followed."
+          }
+        ]
+      }
+    ]
+  },
+  "moderation": {
+    "state": "unreviewed"
+  },
+  "review": null
+}

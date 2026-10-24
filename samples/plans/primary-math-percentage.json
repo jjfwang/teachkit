@@ -1,0 +1,93 @@
+{
+  "title": "Percentage: 25% of 60",
+  "level": "primary",
+  "subject": "math",
+  "topic": "percentage",
+  "durationMinutes": 40,
+  "objectives": [
+    {
+      "id": "o1",
+      "text": "Read a percent as a count out of one hundred: 25% as 25 out of 100",
+      "successCriteria": [
+        "I can say that 25% means 25 out of 100",
+        "I can show 25% by shading twenty-five cells on the hundred-grid"
+      ],
+      "assessmentPoints": [
+        "Hundred-grid answers in the opening activity",
+        "Responses when the trap is sprung in the second activity"
+      ]
+    },
+    {
+      "id": "o2",
+      "text": "Find a percent of a quantity by turning it into a fraction of the whole: 25% as one quarter",
+      "successCriteria": [
+        "I can simplify 25% to one quarter",
+        "I can work out 25% of 60 as 60 / 4 = 15"
+      ],
+      "assessmentPoints": [
+        "Guided quartering answers in the third activity",
+        "Worksheet answers in the closing practice"
+      ]
+    }
+  ],
+  "activities": [
+    {
+      "title": "Hundred-grid: shade twenty-five out of one hundred",
+      "minutes": 8,
+      "objectiveIds": [
+        "o1"
+      ],
+      "scriptCue": "s1",
+      "grouping": "whole class",
+      "resources": [
+        "board"
+      ]
+    },
+    {
+      "title": "Spring the raw-count trap",
+      "minutes": 9,
+      "objectiveIds": [
+        "o1"
+      ],
+      "scriptCue": "s2",
+      "grouping": "pairs"
+    },
+    {
+      "title": "Quarter the whole: 25% of 60",
+      "minutes": 10,
+      "objectiveIds": [
+        "o2"
+      ],
+      "scriptCue": "s3",
+      "grouping": "whole class",
+      "differentiation": {
+        "support": "Provide the hundred-grid and a bar split into four equal parts so the quarter can be seen before it is calculated."
+      }
+    },
+    {
+      "title": "Land the per-hundred rule",
+      "minutes": 8,
+      "objectiveIds": [
+        "o1",
+        "o2"
+      ],
+      "scriptCue": "s4",
+      "grouping": "pairs",
+      "differentiation": {
+        "stretch": "Ask learners to find 10% of 60 using the same per-hundred method."
+      }
+    },
+    {
+      "title": "Worksheet practice and exit ticket",
+      "minutes": 5,
+      "objectiveIds": [
+        "o1",
+        "o2"
+      ],
+      "grouping": "individual",
+      "resources": [
+        "worksheet"
+      ]
+    }
+  ]
+}
