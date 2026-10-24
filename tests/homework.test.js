@@ -33,7 +33,8 @@ const STEMS = [
   'primary-math-rate-speed',
   'primary-math-model-method',
   'primary-math-data-graphs',
-  'primary-science-forces-magnets'
+  'primary-science-forces-magnets',
+  'primary-science-human-body-systems'
 ];
 
 function load(rel) {
