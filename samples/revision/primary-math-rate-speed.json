@@ -1,0 +1,71 @@
+{
+  "flashcards": [
+    {
+      "back": "The distance covered in one unit of time: a speed of 60 km/h means the bus covers 60 km in every hour.",
+      "front": "Speed",
+      "source": "definition"
+    },
+    {
+      "back": "An amount per unit of something else: speed is a rate, the distance travelled per hour.",
+      "front": "Rate",
+      "source": "definition"
+    },
+    {
+      "back": "How far something travels, found by multiplying speed by time: at 60 km/h for 2.5 hours the distance is 150 km.",
+      "front": "Distance",
+      "source": "definition"
+    },
+    {
+      "back": "How long a journey lasts: the time together with the speed decides the distance, so half an hour gives half the distance of a full hour.",
+      "front": "Time",
+      "source": "definition"
+    },
+    {
+      "back": "A rate is read as a total instead of an amount per unit of time. Speed is distance per hour: after half an hour at 60 km/h the bus has gone 30 km, not 60. In the animation scene s3 the claim is tested against the road and fails: after half an hour the bus sits at the 30 km mark, not the 60 km mark.",
+      "front": "60 km/h means the bus has travelled 60 km.",
+      "source": "trap"
+    },
+    {
+      "back": "50 × 3 = 150 km",
+      "front": "Which working finds the distance travelled at 50 km/h for 3 hours?",
+      "source": "quiz-bank"
+    },
+    {
+      "back": "Speed is distance per hour: after half an hour at 60 km/h the bus has gone 30 km, not 60.",
+      "front": "Explain in one sentence why 60 km/h on its own is not a distance.",
+      "source": "quiz-bank"
+    }
+  ],
+  "level": "primary",
+  "practiceSets": [
+    {
+      "dayOffset": 1,
+      "items": [
+        {
+          "answer": "150 km: distance = speed × time, so 60 × 2.5 = 150 km.",
+          "prompt": "A bus travels at 60 km/h for 2.5 hours. How far does it go? Show the working."
+        },
+        {
+          "answer": "60 km: distance = speed × time, so 15 × 4 = 60 km.",
+          "prompt": "A cyclist rides at 15 km/h for 4 hours. How far does she ride?"
+        }
+      ]
+    },
+    {
+      "dayOffset": 3,
+      "items": [
+        {
+          "answer": "50 × 3 = 150 km",
+          "prompt": "Which working finds the distance travelled at 50 km/h for 3 hours?"
+        },
+        {
+          "answer": "30 km",
+          "prompt": "A bus travels at 60 km/h. How far has it really travelled after half an hour?"
+        }
+      ]
+    }
+  ],
+  "subject": "math",
+  "title": "Rate and speed: d = s × t",
+  "topic": "rate-speed"
+}

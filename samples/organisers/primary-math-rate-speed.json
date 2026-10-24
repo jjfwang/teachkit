@@ -1,0 +1,74 @@
+{
+  "level": "primary",
+  "subject": "math",
+  "templates": [
+    {
+      "kind": "flow",
+      "slots": [
+        {
+          "entries": [
+            "Speed is distance per hour: a bus at 60 km/h covers 60 km in one hour, 120 km in two hours and 180 km in three hours - the same 60 km landing every hour."
+          ],
+          "label": "Speed is distance per hour",
+          "studentPrompt": "Explain this step in your own words."
+        },
+        {
+          "entries": [
+            "60 km/h for 2.5 hours: distance = speed × time, so 60 × 2.5 = 150 km - 60 km in each full hour plus 30 km in the half hour."
+          ],
+          "label": "60 km/h for 2.5 hours",
+          "studentPrompt": "Explain this step in your own words."
+        },
+        {
+          "entries": [
+            "Watch out: speed is not distance: 60 km/h names a rate, not a total - after half an hour at 60 km/h the bus has gone 30 km, because half the time means half the distance."
+          ],
+          "label": "Watch out: speed is not distance",
+          "studentPrompt": "Explain this step in your own words."
+        },
+        {
+          "entries": [
+            "The takeaway: distance = speed × time, and the formula flips either way - speed = distance ÷ time and time = distance ÷ speed."
+          ],
+          "label": "The takeaway",
+          "studentPrompt": "Explain this step in your own words."
+        }
+      ]
+    },
+    {
+      "kind": "frayer",
+      "slots": [
+        {
+          "entries": [
+            "The distance covered in one unit of time: a speed of 60 km/h means the bus covers 60 km in every hour."
+          ],
+          "label": "Speed",
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "entries": [
+            "An amount per unit of something else: speed is a rate, the distance travelled per hour."
+          ],
+          "label": "Rate",
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "entries": [
+            "How far something travels, found by multiplying speed by time: at 60 km/h for 2.5 hours the distance is 150 km."
+          ],
+          "label": "Distance",
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "entries": [
+            "How long a journey lasts: the time together with the speed decides the distance, so half an hour gives half the distance of a full hour."
+          ],
+          "label": "Time",
+          "studentPrompt": "Give your own example of this term."
+        }
+      ]
+    }
+  ],
+  "title": "Rate and speed: d = s × t",
+  "topic": "rate-speed"
+}

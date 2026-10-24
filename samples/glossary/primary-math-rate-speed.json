@@ -1,0 +1,28 @@
+{
+  "entries": [
+    {
+      "example": "Speed is distance per hour: a bus at 60 km/h covers 60 km in one hour, 120 km in two hours and 180 km in three hours - the same 60 km landing every hour.",
+      "meaning": "The distance covered in one unit of time: a speed of 60 km/h means the bus covers 60 km in every hour.",
+      "term": "Speed"
+    },
+    {
+      "example": "Read a speed as a rate: 60 km/h as 60 km covered in every hour",
+      "meaning": "An amount per unit of something else: speed is a rate, the distance travelled per hour.",
+      "term": "Rate"
+    },
+    {
+      "example": "In scene s2, a bus travelling at 60 km/h for 2.5 hours is worked with distance = speed × time: 60 × 2.5 = 150 km. Step by step: 60 km in the first hour, 60 km in the second hour, and 30 km in the final half hour, and the parts check: 60 + 60 + 30 = 150 km.",
+      "meaning": "How far something travels, found by multiplying speed by time: at 60 km/h for 2.5 hours the distance is 150 km.",
+      "term": "Distance"
+    },
+    {
+      "example": "Find a distance by multiplying speed by time, and flip the formula to find a speed or a time",
+      "meaning": "How long a journey lasts: the time together with the speed decides the distance, so half an hour gives half the distance of a full hour.",
+      "term": "Time"
+    }
+  ],
+  "level": "primary",
+  "subject": "math",
+  "title": "Rate and speed: d = s × t",
+  "topic": "rate-speed"
+}
