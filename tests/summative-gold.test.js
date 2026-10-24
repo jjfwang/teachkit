@@ -33,7 +33,8 @@ const STEMS = [
   'jc-h2-cell-bio',
   'secondary-math-pythagoras',
   'secondary-science-photosynthesis',
-  'primary-math-decimals'
+  'primary-math-decimals',
+  'primary-math-percentage'
 ];
 
 function load(rel) {
@@ -116,7 +117,7 @@ for (const stem of STEMS) {
   });
 }
 
-test('gold summatives: the nine units are exactly the Phase A gate set plus the pythagoras, photosynthesis and decimals backfills', () => {
+test('gold summatives: the ten units are exactly the Phase A gate set plus the pythagoras, photosynthesis, decimals and percentage backfills', () => {
   const files = fs.readdirSync(path.join(__dirname, '..', 'samples/summatives'))
     .filter((f) => f.endsWith('.json'))
     .map((f) => f.replace(/\.json$/, ''))
