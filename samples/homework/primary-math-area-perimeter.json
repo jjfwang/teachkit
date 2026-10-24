@@ -1,0 +1,42 @@
+{
+ "level": "primary",
+ "questions": [
+  {
+   "choices": [
+    {
+     "text": "52 000"
+    },
+    {
+     "correct": true,
+     "text": "40 800"
+    },
+    {
+     "text": "24 000"
+    }
+   ],
+   "explanation": "The trap is: The area of the L-shape is the length times the width of its bounding box. Split and add instead: part A is 200 x 120 = 24 000 and part B is 120 x 140 = 16 800, so the total area is 24 000 + 16 800 = 40 800.",
+   "id": "q1",
+   "kind": "multiple-choice",
+   "misconception": "The area of the L-shape is the length times the width of its bounding box.",
+   "prompt": "An L-shape is made of part A, 200 by 120, and part B, 120 by 140. It fits inside a box that is 200 by 260. What is the area of the L-shape?"
+  },
+  {
+   "answer": "16 800 and 40 800: 120 x 140 = 16 800, and 24 000 + 16 800 = 40 800.",
+   "explanation": "Scene s1: part B is 120 x 140 = 16 800, and the total area is the sum of the parts, 24 000 + 16 800 = 40 800.",
+   "id": "q3",
+   "kind": "short-answer",
+   "prompt": "Part B of the L is 120 by 140. Find its area and then the total area of the L, given part A has area 24 000."
+  },
+  {
+   "answer": "920: 200 + 120 + 80 + 140 + 120 + 260 = 920.",
+   "explanation": "Scene s2: the perimeter is the walk around the whole edge, so add all six sides: 200 + 120 + 80 + 140 + 120 + 260 = 920.",
+   "id": "q4",
+   "kind": "short-answer",
+   "prompt": "The six edges of the L are 200, 120, 80, 140, 120 and 260. Find the perimeter, showing the adding."
+  }
+ ],
+ "subject": "math",
+ "title": "Area and perimeter of an L-shape",
+ "topic": "area-perimeter",
+ "variant": "homework"
+}
