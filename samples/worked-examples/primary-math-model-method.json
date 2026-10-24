@@ -36,7 +36,7 @@
       },
       {
         "text": "Step 3: so the blue part is 3 units and the difference between the parts is 1 unit.",
-        "annotation": "Use a part-whole model to split a whole bar into parts and find a difference",
+        "annotation": "The difference is the gap between the parts: diff = 3 - 2 = 1 unit.",
         "withheld": true
       }
     ],
