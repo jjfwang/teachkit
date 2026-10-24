@@ -1,0 +1,157 @@
+{
+  "title": "Pushes, pulls, friction and magnets",
+  "level": "primary",
+  "subject": "science",
+  "topic": "forces-magnets",
+  "doNow": [
+    {
+      "id": "dn1",
+      "prompt": "A pupil says a magnet will attract any metal object. What is wrong with this idea?",
+      "kind": "multiple-choice",
+      "choices": [
+        {
+          "text": "Yes: if it is a metal, a magnet will pull it",
+          "misconception": "A magnet attracts every kind of metal.",
+          "rationale": {
+            "chose": "The learner selected option Yes: if it is a metal, a magnet will pull it as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of testing each metal to check whether a magnet pulls it.",
+            "reteach": "Reteach from the paired notes trap: A magnet attracts every kind of metal.. Magnets grab some metals so strongly that they feel like they grab all of them. Magnets ignore most things: they only pull iron and a few metals. In the animation scene s4 the warning is spelled out in the caption itself - a magnet does not attract every metal - so test each metal instead of trusting the shine."
+          }
+        },
+        {
+          "text": "No: a magnet only pulls iron and a few metals, and ignores most other metals",
+          "correct": true
+        },
+        {
+          "text": "Yes: a magnet pulls every object, metal or not",
+          "misconception": "A magnet attracts every kind of metal.",
+          "rationale": {
+            "chose": "The learner selected option Yes: a magnet pulls every object, metal or not as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of testing each metal to check whether a magnet pulls it.",
+            "reteach": "Reteach from the paired notes trap: A magnet attracts every kind of metal.. Magnets grab some metals so strongly that they feel like they grab all of them. Magnets ignore most things: they only pull iron and a few metals. In the animation scene s4 the warning is spelled out in the caption itself - a magnet does not attract every metal - so test each metal instead of trusting the shine."
+          }
+        }
+      ]
+    },
+    {
+      "id": "dn2",
+      "prompt": "A child drags a box towards herself across the floor. Which force is she using?",
+      "kind": "multiple-choice",
+      "choices": [
+        {
+          "text": "A push, because the box moves across the table",
+          "misconception": "A magnet attracts every kind of metal.",
+          "rationale": {
+            "chose": "The learner selected option A push, because the box moves across the table as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of testing each metal to check whether a magnet pulls it.",
+            "reteach": "Reteach from the paired notes trap: A magnet attracts every kind of metal.. Magnets grab some metals so strongly that they feel like they grab all of them. Magnets ignore most things: they only pull iron and a few metals. In the animation scene s4 the warning is spelled out in the caption itself - a magnet does not attract every metal - so test each metal instead of trusting the shine."
+          }
+        },
+        {
+          "text": "A pull, because the box is brought closer to the child",
+          "correct": true
+        },
+        {
+          "text": "Friction, because the box is sliding",
+          "misconception": "A magnet attracts every kind of metal.",
+          "rationale": {
+            "chose": "The learner selected option Friction, because the box is sliding as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of testing each metal to check whether a magnet pulls it.",
+            "reteach": "Reteach from the paired notes trap: A magnet attracts every kind of metal.. Magnets grab some metals so strongly that they feel like they grab all of them. Magnets ignore most things: they only pull iron and a few metals. In the animation scene s4 the warning is spelled out in the caption itself - a magnet does not attract every metal - so test each metal instead of trusting the shine."
+          }
+        }
+      ]
+    },
+    {
+      "id": "dn3",
+      "prompt": "Two magnets are brought together with their north poles facing each other. What happens?",
+      "kind": "multiple-choice",
+      "choices": [
+        {
+          "text": "They snap together and attract",
+          "misconception": "A magnet attracts every kind of metal.",
+          "rationale": {
+            "chose": "The learner selected option They snap together and attract as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of testing each metal to check whether a magnet pulls it.",
+            "reteach": "Reteach from the paired notes trap: A magnet attracts every kind of metal.. Magnets grab some metals so strongly that they feel like they grab all of them. Magnets ignore most things: they only pull iron and a few metals. In the animation scene s4 the warning is spelled out in the caption itself - a magnet does not attract every metal - so test each metal instead of trusting the shine."
+          }
+        },
+        {
+          "text": "They push each other apart and repel",
+          "correct": true
+        },
+        {
+          "text": "Nothing: magnets only work when they are touching",
+          "misconception": "A magnet attracts every kind of metal.",
+          "rationale": {
+            "chose": "The learner selected option Nothing: magnets only work when they are touching as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of testing each metal to check whether a magnet pulls it.",
+            "reteach": "Reteach from the paired notes trap: A magnet attracts every kind of metal.. Magnets grab some metals so strongly that they feel like they grab all of them. Magnets ignore most things: they only pull iron and a few metals. In the animation scene s4 the warning is spelled out in the caption itself - a magnet does not attract every metal - so test each metal instead of trusting the shine."
+          }
+        }
+      ]
+    }
+  ],
+  "hingeQuestions": [
+    {
+      "id": "h1",
+      "prompt": "A pupil holds a magnet near an aluminium can and expects it to stick. What should they expect instead?",
+      "kind": "multiple-choice",
+      "choices": [
+        {
+          "text": "A magnet does not pull it in the way iron is pulled, because a magnet only pulls iron and a few metals",
+          "correct": true
+        },
+        {
+          "text": "A magnet pulls it, because it is a metal",
+          "misconception": "A magnet attracts every kind of metal.",
+          "rationale": {
+            "chose": "The learner selected option A magnet pulls it, because it is a metal as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of testing each metal to check whether a magnet pulls it.",
+            "reteach": "Reteach from the paired notes trap: A magnet attracts every kind of metal.. Magnets grab some metals so strongly that they feel like they grab all of them. Magnets ignore most things: they only pull iron and a few metals. In the animation scene s4 the warning is spelled out in the caption itself - a magnet does not attract every metal - so test each metal instead of trusting the shine."
+          }
+        },
+        {
+          "text": "A magnet pushes it away, because like poles repel",
+          "misconception": "A magnet attracts every kind of metal.",
+          "rationale": {
+            "chose": "The learner selected option A magnet pushes it away, because like poles repel as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of testing each metal to check whether a magnet pulls it.",
+            "reteach": "Reteach from the paired notes trap: A magnet attracts every kind of metal.. Magnets grab some metals so strongly that they feel like they grab all of them. Magnets ignore most things: they only pull iron and a few metals. In the animation scene s4 the warning is spelled out in the caption itself - a magnet does not attract every metal - so test each metal instead of trusting the shine."
+          }
+        }
+      ],
+      "scriptCue": "s4"
+    },
+    {
+      "id": "h2",
+      "prompt": "In one sentence, say what two magnets do when the north pole of one faces the north pole of the other.",
+      "kind": "multiple-choice",
+      "choices": [
+        {
+          "text": "They repel: like poles push each other apart.",
+          "correct": true
+        },
+        {
+          "text": "They attract: the magnets pull together and snap onto each other",
+          "misconception": "A magnet attracts every kind of metal.",
+          "rationale": {
+            "chose": "The learner selected option They attract: the magnets pull together and snap onto each other as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of testing each metal to check whether a magnet pulls it.",
+            "reteach": "Reteach from the paired notes trap: A magnet attracts every kind of metal.. Magnets grab some metals so strongly that they feel like they grab all of them. Magnets ignore most things: they only pull iron and a few metals. In the animation scene s4 the warning is spelled out in the caption itself - a magnet does not attract every metal - so test each metal instead of trusting the shine."
+          }
+        },
+        {
+          "text": "Nothing: magnets only work when they are touching",
+          "misconception": "A magnet attracts every kind of metal.",
+          "rationale": {
+            "chose": "The learner selected option Nothing: magnets only work when they are touching as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of testing each metal to check whether a magnet pulls it.",
+            "reteach": "Reteach from the paired notes trap: A magnet attracts every kind of metal.. Magnets grab some metals so strongly that they feel like they grab all of them. Magnets ignore most things: they only pull iron and a few metals. In the animation scene s4 the warning is spelled out in the caption itself - a magnet does not attract every metal - so test each metal instead of trusting the shine."
+          }
+        }
+      ],
+      "scriptCue": "s4"
+    }
+  ]
+}
