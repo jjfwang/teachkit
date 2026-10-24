@@ -1,0 +1,95 @@
+{
+  "level": "secondary",
+  "subject": "math",
+  "templates": [
+    {
+      "kind": "flow",
+      "slots": [
+        {
+          "entries": [
+            "Meet the 3-4-5 triangle: name the sides from angle theta first - opposite = 3, adjacent = 4, hypotenuse = 5 - then sine is opposite over hypotenuse, sin theta = 3/5 = 0.6."
+          ],
+          "label": "Meet the 3-4-5 triangle",
+          "studentPrompt": "Explain this step in your own words."
+        },
+        {
+          "entries": [
+            "Cosine and tangent join the card: cos theta = 4/5 = 0.8 (adjacent over hypotenuse) and tan theta = 3/4 = 0.75 (opposite over adjacent) - read the whole card as SOH CAH TOA."
+          ],
+          "label": "Cosine and tangent join the card",
+          "studentPrompt": "Explain this step in your own words."
+        },
+        {
+          "entries": [
+            "The sine rule for any triangle: a / sin A = b / sin B pairs each side with its opposite angle, so with a = 4, A = 30 degrees and B = 60 degrees, b comes out to about 6.93."
+          ],
+          "label": "The sine rule for any triangle",
+          "studentPrompt": "Explain this step in your own words."
+        },
+        {
+          "entries": [
+            "A common mistake: do not flip tangent: the flipped ratio 4/3 = 1.33 is taller than the whole, while the correct TOA ratio 3/4 = 0.75 sits properly inside it."
+          ],
+          "label": "A common mistake",
+          "studentPrompt": "Explain this step in your own words."
+        }
+      ]
+    },
+    {
+      "kind": "frayer",
+      "slots": [
+        {
+          "entries": [
+            "The ratio opposite over hypotenuse for an angle in a right-angled triangle: in the 3-4-5 triangle, sin theta = 3/5 = 0.6 (the SOH part of the card)."
+          ],
+          "label": "Sine",
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "entries": [
+            "The ratio adjacent over hypotenuse for an angle in a right-angled triangle: in the 3-4-5 triangle, cos theta = 4/5 = 0.8 (the CAH part of the card)."
+          ],
+          "label": "Cosine",
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "entries": [
+            "The ratio opposite over adjacent for an angle in a right-angled triangle: in the 3-4-5 triangle, tan theta = 3/4 = 0.75 (the TOA part of the card)."
+          ],
+          "label": "Tangent",
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "entries": [
+            "The longest side of a right-angled triangle, across from the right angle: length 5 in the 3-4-5 triangle."
+          ],
+          "label": "Hypotenuse",
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "entries": [
+            "The side across from the angle you are working with: length 3 for angle theta in the 3-4-5 triangle."
+          ],
+          "label": "Opposite",
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "entries": [
+            "The side next to the angle you are working with, other than the hypotenuse: length 4 for angle theta in the 3-4-5 triangle."
+          ],
+          "label": "Adjacent",
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "entries": [
+            "The rule a / sin A = b / sin B, linking each side of any triangle with the sine of its opposite angle, used when there is no right angle."
+          ],
+          "label": "Sine rule",
+          "studentPrompt": "Give your own example of this term."
+        }
+      ]
+    }
+  ],
+  "title": "E-Math trigonometry: ratios and the sine rule",
+  "topic": "e-trigonometry"
+}

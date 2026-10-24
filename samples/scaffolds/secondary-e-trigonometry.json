@@ -1,0 +1,115 @@
+{
+  "level": "secondary",
+  "sets": [
+    {
+      "cloze": [
+        {
+          "answers": [
+            "Sine",
+            "Hypotenuse"
+          ],
+          "text": "In SOH, ___ is opposite over the ___."
+        },
+        {
+          "answers": [
+            "Tangent"
+          ],
+          "text": "TOA says ___ is opposite over adjacent."
+        }
+      ],
+      "frames": [
+        "The ___ is opposite over hypotenuse.",
+        "The ___ is the longest side of the triangle.",
+        "___ is opposite over adjacent."
+      ],
+      "level": "full",
+      "starters": [
+        "SOH CAH TOA reminds me that...",
+        "For angle theta, the hypotenuse is...",
+        "To pick the right ratio I first..."
+      ],
+      "wordBank": [
+        {
+          "gloss": "the ratio opposite over hypotenuse",
+          "term": "Sine"
+        },
+        {
+          "gloss": "the ratio adjacent over hypotenuse",
+          "term": "Cosine"
+        },
+        {
+          "gloss": "the ratio opposite over adjacent",
+          "term": "Tangent"
+        },
+        {
+          "gloss": "the longest side, across from the right angle",
+          "term": "Hypotenuse"
+        }
+      ]
+    },
+    {
+      "cloze": [
+        {
+          "answers": [
+            "Cosine",
+            "Adjacent"
+          ],
+          "text": "In CAH, ___ is ___ over hypotenuse."
+        }
+      ],
+      "frames": [
+        "The ___ sits across from angle theta.",
+        "___ is adjacent over hypotenuse."
+      ],
+      "level": "partial",
+      "starters": [
+        "In CAH, the ratio uses...",
+        "The side next to angle theta is..."
+      ],
+      "wordBank": [
+        {
+          "gloss": "the ratio adjacent over hypotenuse",
+          "term": "Cosine"
+        },
+        {
+          "gloss": "the side across from the angle",
+          "term": "Opposite"
+        },
+        {
+          "gloss": "the side next to the angle, other than the hypotenuse",
+          "term": "Adjacent"
+        }
+      ]
+    },
+    {
+      "cloze": [
+        {
+          "answers": [
+            "Sine rule"
+          ],
+          "text": "For a triangle with no right angle, use the ___."
+        }
+      ],
+      "frames": [
+        "The ___ pairs each side with the sine of its opposite angle."
+      ],
+      "level": "minimal",
+      "starters": [
+        "With no right angle, I reach for..."
+      ],
+      "wordBank": [
+        {
+          "gloss": "the rule a / sin A = b / sin B for any triangle",
+          "term": "Sine rule"
+        },
+        {
+          "gloss": "the side across from the angle",
+          "term": "Opposite"
+        }
+      ]
+    }
+  ],
+  "subject": "math",
+  "title": "E-Math trigonometry: ratios and the sine rule",
+  "topic": "e-trigonometry"
+}
