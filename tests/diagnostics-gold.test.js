@@ -34,7 +34,8 @@ const STEMS = [
   'primary-math-ratio',
   'primary-math-area-perimeter',
   'primary-math-rate-speed',
-  'primary-math-model-method'
+  'primary-math-model-method',
+  'primary-math-data-graphs'
 ];
 
 function load(rel) {

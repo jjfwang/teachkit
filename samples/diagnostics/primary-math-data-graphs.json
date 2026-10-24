@@ -1,0 +1,157 @@
+{
+  "title": "Data graphs: pie charts and line graphs",
+  "level": "primary",
+  "subject": "math",
+  "topic": "data-graphs",
+  "doNow": [
+    {
+      "id": "dn1",
+      "prompt": "Two line graphs show sales rising. Graph A looks much steeper than graph B, but graph A has an axis of 0 to 50 and graph B has an axis of 0 to 200, and both sales rose by 20. Which graph had the bigger increase?",
+      "kind": "multiple-choice",
+      "choices": [
+        {
+          "text": "Graph A, because its line is steeper",
+          "misconception": "A steeper line always means a bigger increase.",
+          "rationale": {
+            "chose": "The learner selected option Graph A, because its line is steeper as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking the axis scale before comparing how steep two lines look.",
+            "reteach": "Reteach from the paired notes trap: A steeper line always means a bigger increase.. Steepness is judged by the drawing rather than the axis scale behind it. Slope depends on the axis scale: two graphs can have the same rise but look different. In the animation scene s4 both shops rose by +20, from 20 to 40, even though one line looks steeper."
+          }
+        },
+        {
+          "text": "Neither: both rose by 20",
+          "correct": true
+        },
+        {
+          "text": "Graph B, because its axis goes up to 200",
+          "misconception": "A steeper line always means a bigger increase.",
+          "rationale": {
+            "chose": "The learner selected option Graph B, because its axis goes up to 200 as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking the axis scale before comparing how steep two lines look.",
+            "reteach": "Reteach from the paired notes trap: A steeper line always means a bigger increase.. Steepness is judged by the drawing rather than the axis scale behind it. Slope depends on the axis scale: two graphs can have the same rise but look different. In the animation scene s4 both shops rose by +20, from 20 to 40, even though one line looks steeper."
+          }
+        }
+      ]
+    },
+    {
+      "id": "dn2",
+      "prompt": "In the pie chart of 12 pupils, 6 chose apples, 3 chose bananas and 3 chose grapes. What fraction of the class chose bananas?",
+      "kind": "multiple-choice",
+      "choices": [
+        {
+          "text": "1/2",
+          "misconception": "A steeper line always means a bigger increase.",
+          "rationale": {
+            "chose": "The learner selected option 1/2 as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking the axis scale before comparing how steep two lines look.",
+            "reteach": "Reteach from the paired notes trap: A steeper line always means a bigger increase.. Steepness is judged by the drawing rather than the axis scale behind it. Slope depends on the axis scale: two graphs can have the same rise but look different. In the animation scene s4 both shops rose by +20, from 20 to 40, even though one line looks steeper."
+          }
+        },
+        {
+          "text": "1/4",
+          "correct": true
+        },
+        {
+          "text": "1/3",
+          "misconception": "A steeper line always means a bigger increase.",
+          "rationale": {
+            "chose": "The learner selected option 1/3 as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking the axis scale before comparing how steep two lines look.",
+            "reteach": "Reteach from the paired notes trap: A steeper line always means a bigger increase.. Steepness is judged by the drawing rather than the axis scale behind it. Slope depends on the axis scale: two graphs can have the same rise but look different. In the animation scene s4 both shops rose by +20, from 20 to 40, even though one line looks steeper."
+          }
+        }
+      ]
+    },
+    {
+      "id": "dn3",
+      "prompt": "What fraction of the pie chart is taken by apples, if 6 of the 12 pupils chose apples?",
+      "kind": "multiple-choice",
+      "choices": [
+        {
+          "text": "1/4",
+          "misconception": "A steeper line always means a bigger increase.",
+          "rationale": {
+            "chose": "The learner selected option 1/4 as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking the axis scale before comparing how steep two lines look.",
+            "reteach": "Reteach from the paired notes trap: A steeper line always means a bigger increase.. Steepness is judged by the drawing rather than the axis scale behind it. Slope depends on the axis scale: two graphs can have the same rise but look different. In the animation scene s4 both shops rose by +20, from 20 to 40, even though one line looks steeper."
+          }
+        },
+        {
+          "text": "1/2",
+          "correct": true
+        },
+        {
+          "text": "1/6",
+          "misconception": "A steeper line always means a bigger increase.",
+          "rationale": {
+            "chose": "The learner selected option 1/6 as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking the axis scale before comparing how steep two lines look.",
+            "reteach": "Reteach from the paired notes trap: A steeper line always means a bigger increase.. Steepness is judged by the drawing rather than the axis scale behind it. Slope depends on the axis scale: two graphs can have the same rise but look different. In the animation scene s4 both shops rose by +20, from 20 to 40, even though one line looks steeper."
+          }
+        }
+      ]
+    }
+  ],
+  "hingeQuestions": [
+    {
+      "id": "h1",
+      "prompt": "Graph A looks steeper than graph B. Graph A has an axis of 0 to 50, graph B has an axis of 0 to 200, and both rose by 20. Which rose by more?",
+      "kind": "multiple-choice",
+      "choices": [
+        {
+          "text": "Both rose by the same amount: 20",
+          "correct": true
+        },
+        {
+          "text": "Graph A rose by more",
+          "misconception": "A steeper line always means a bigger increase.",
+          "rationale": {
+            "chose": "The learner selected option Graph A rose by more as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking the axis scale before comparing how steep two lines look.",
+            "reteach": "Reteach from the paired notes trap: A steeper line always means a bigger increase.. Steepness is judged by the drawing rather than the axis scale behind it. Slope depends on the axis scale: two graphs can have the same rise but look different. In the animation scene s4 both shops rose by +20, from 20 to 40, even though one line looks steeper."
+          }
+        },
+        {
+          "text": "Graph B rose by more",
+          "misconception": "A steeper line always means a bigger increase.",
+          "rationale": {
+            "chose": "The learner selected option Graph B rose by more as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking the axis scale before comparing how steep two lines look.",
+            "reteach": "Reteach from the paired notes trap: A steeper line always means a bigger increase.. Steepness is judged by the drawing rather than the axis scale behind it. Slope depends on the axis scale: two graphs can have the same rise but look different. In the animation scene s4 both shops rose by +20, from 20 to 40, even though one line looks steeper."
+          }
+        }
+      ],
+      "scriptCue": "s4"
+    },
+    {
+      "id": "h2",
+      "prompt": "Soccer got 13 votes and badminton got 8 votes. How many more votes did soccer get?",
+      "kind": "multiple-choice",
+      "choices": [
+        {
+          "text": "5 more votes: 13 - 8 = 5.",
+          "correct": true
+        },
+        {
+          "text": "21 more votes: 13 + 8 = 21",
+          "misconception": "A steeper line always means a bigger increase.",
+          "rationale": {
+            "chose": "The learner selected option 21 more votes: 13 + 8 = 21 as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking the axis scale before comparing how steep two lines look.",
+            "reteach": "Reteach from the paired notes trap: A steeper line always means a bigger increase.. Steepness is judged by the drawing rather than the axis scale behind it. Slope depends on the axis scale: two graphs can have the same rise but look different. In the animation scene s4 both shops rose by +20, from 20 to 40, even though one line looks steeper."
+          }
+        },
+        {
+          "text": "8 more votes: the badminton bar height",
+          "misconception": "A steeper line always means a bigger increase.",
+          "rationale": {
+            "chose": "The learner selected option 8 more votes: the badminton bar height as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of checking the axis scale before comparing how steep two lines look.",
+            "reteach": "Reteach from the paired notes trap: A steeper line always means a bigger increase.. Steepness is judged by the drawing rather than the axis scale behind it. Slope depends on the axis scale: two graphs can have the same rise but look different. In the animation scene s4 both shops rose by +20, from 20 to 40, even though one line looks steeper."
+          }
+        }
+      ],
+      "scriptCue": "s3"
+    }
+  ]
+}

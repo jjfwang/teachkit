@@ -1,0 +1,49 @@
+{
+  "title": "Data graphs: pie charts and line graphs",
+  "level": "primary",
+  "subject": "math",
+  "topic": "data-graphs",
+  "complete": {
+    "problem": "In scene s3, 24 children voted: the soccer bar reads 13 and the badminton bar reads 8, so 13 − 8 = 5 more chose soccer. Read the heights from the labels first, then subtract the smaller height from the bigger one.",
+    "steps": [
+      {
+        "text": "Step 1: Worked example: comparing two bars of data: soccer has 13 votes and badminton has 8 votes, so 13 - 8 = 5 more chose soccer.",
+        "annotation": "Bars whose heights show amounts that can be compared: soccer 13 votes, badminton 8 votes and swimming 3 votes."
+      },
+      {
+        "text": "Step 2: Read the heights from the labels first, then subtract the smaller height from the bigger one: soccer 13, badminton 8, so 13 - 8 = 5.",
+        "annotation": "Read the heights from the labels first, then subtract the smaller height from the bigger one."
+      },
+      {
+        "text": "Step 3: Watch out: a steeper line is not always bigger: both shops rose from 20 to 40, a rise of +20 each, but graph B only looks flatter because its axis runs 0 to 200 instead of 0 to 50.",
+        "annotation": "The numbers along an axis that say what the drawing stands for: graph A runs 0 to 50 while graph B runs 0 to 200."
+      }
+    ],
+    "selfExplanation": "Explain in one sentence why you must check the axis scale before comparing how steep two lines look."
+  },
+  "faded": {
+    "problem": "A line graph shows plants sold: Jan 20, Feb 35, Mar 30, Apr 50. In which month did sales dip, and how many plants were sold in April?",
+    "steps": [
+      {
+        "text": "Step 1: read the values month by month: Jan 20, Feb 35, Mar 30, Apr 50.",
+        "annotation": "Points joined by a line to show how a value changes over time: plants sold were Jan 20, Feb 35, Mar 30 and Apr 50.",
+        "withheld": false
+      },
+      {
+        "text": "Step 2: the line dips in March, down to 30 from 35 in February.",
+        "annotation": "Scene s2: the line dips down to 30 in March, then climbs to 50 in April.",
+        "withheld": true
+      },
+      {
+        "text": "Step 3: so sales dipped in March, and 50 plants were sold in April.",
+        "annotation": "Reading a line graph: a rising trend: plants sold climb from Jan 20 to Apr 50 overall, with a small dip to 30 in March.",
+        "withheld": true
+      }
+    ],
+    "selfExplanation": "The first step is shown. Say in which month sales dipped, and how many plants were sold in April."
+  },
+  "paired": {
+    "problem": "In a survey of 24 children, 13 chose soccer and 8 chose badminton. How many more chose soccer than badminton? Show the working.",
+    "solution": "5 more chose soccer: 13 - 8 = 5."
+  }
+}
