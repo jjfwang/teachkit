@@ -1,0 +1,111 @@
+{
+  "level": "primary",
+  "sets": [
+    {
+      "cloze": [
+        {
+          "answers": [
+            "Composite shape",
+            "Area"
+          ],
+          "text": "An L-shape is a ___ made from two rectangles, and we add their areas to find its ___."
+        },
+        {
+          "answers": [
+            "Perimeter",
+            "Bounding box"
+          ],
+          "text": "Walk every side to find the ___, and never count the empty corner inside the ___."
+        }
+      ],
+      "frames": [
+        "The amount of surface a shape covers is its ___.",
+        "The total distance around the edge of a shape is its ___.",
+        "The smallest rectangle that a shape fits inside is its ___."
+      ],
+      "level": "full",
+      "starters": [
+        "Area counts the surface that a shape...",
+        "To find the perimeter, I walk...",
+        "An L-shape splits into two..."
+      ],
+      "wordBank": [
+        {
+          "gloss": "the amount of surface a shape covers",
+          "term": "Area"
+        },
+        {
+          "gloss": "the total distance around the edge of a shape",
+          "term": "Perimeter"
+        },
+        {
+          "gloss": "a shape made by joining simpler shapes",
+          "term": "Composite shape"
+        },
+        {
+          "gloss": "the smallest rectangle that a shape fits inside",
+          "term": "Bounding box"
+        }
+      ]
+    },
+    {
+      "cloze": [
+        {
+          "answers": [
+            "Area"
+          ],
+          "text": "The ___ of the L is 40 800, found by adding the two part areas."
+        }
+      ],
+      "frames": [
+        "Split the L and add the parts to find its ___.",
+        "Add all six edges to find the ___."
+      ],
+      "level": "partial",
+      "starters": [
+        "To find the area of an L, I split it into...",
+        "The perimeter is the walk around..."
+      ],
+      "wordBank": [
+        {
+          "gloss": "the amount of surface a shape covers",
+          "term": "Area"
+        },
+        {
+          "gloss": "the total distance around the edge of a shape",
+          "term": "Perimeter"
+        },
+        {
+          "gloss": "a shape made by joining simpler shapes",
+          "term": "Composite shape"
+        }
+      ]
+    },
+    {
+      "cloze": [
+        {
+          "answers": [
+            "Perimeter"
+          ],
+          "text": "920 is the ___ of the L."
+        }
+      ],
+      "frames": [
+        "Add every side, including the inner steps, to find the ___."
+      ],
+      "level": "minimal",
+      "starters": [
+        "The perimeter is found by adding..."
+      ],
+      "wordBank": [
+        {
+          "gloss": "the total distance around the edge of a shape",
+          "term": "Perimeter"
+        }
+      ]
+    }
+  ],
+  "subject": "math",
+  "title": "Area and perimeter of an L-shape",
+  "topic": "area-perimeter"
+}
