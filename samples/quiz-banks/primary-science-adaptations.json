@@ -1,0 +1,48 @@
+{
+  "items": [
+    {
+      "answer": "No: the feature developed over many, many generations, not by choice",
+      "choices": [
+        "Yes: it grew the feature because it needed it, whenever it liked",
+        "No: the feature developed over many, many generations, not by choice",
+        "Yes: only young animals can do this, older ones cannot"
+      ],
+      "misconceptionCode": "An animal can decide to grow a new feature when it needs one.",
+      "prompt": "A pupil says a cactus decided to grow thorns when it needed them. What is wrong with this idea?"
+    },
+    {
+      "answer": "Its wings match the bark colour, so birds cannot spot it",
+      "choices": [
+        "Its bright colours warn birds to stay away",
+        "Its wings match the bark colour, so birds cannot spot it",
+        "It flies faster than the hungry birds"
+      ],
+      "prompt": "A moth rests on tree bark and hungry birds fly past without seeing it. Why is the moth safe?"
+    },
+    {
+      "answer": "The birds migrate: when winter comes and food is hard to find, they fly thousands of kilometres to warmer places, and return when spring brings food back.",
+      "prompt": "Winter is coming and food is getting hard to find. What do some birds do, and why?"
+    },
+    {
+      "answer": "Its thick stem stores water like a bottle, its sharp thorns stop thirsty animals from biting it, and its deep roots reach down to find water.",
+      "prompt": "Name two features that help a cactus survive in the hot, dry desert and say what each one does."
+    },
+    {
+      "answer": "The animals lose their food and shelter and must move away",
+      "choices": [
+        "Nothing: the animals simply grow new features straight away",
+        "The animals lose their food and shelter and must move away",
+        "The animals are safer, because there are fewer trees to hide in"
+      ],
+      "prompt": "People clear a forest to build farms and roads. What happens to the animals that lived there?"
+    },
+    {
+      "answer": "It is camouflage: the wings match the bark colour, so the moth blends in and hungry birds cannot spot it.",
+      "prompt": "In one sentence, say why a moth whose wings match the tree bark is hard for a bird to spot."
+    }
+  ],
+  "level": "primary",
+  "subject": "science",
+  "title": "Adaptations: built to survive",
+  "topic": "adaptations"
+}

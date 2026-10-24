@@ -1,0 +1,49 @@
+{
+  "complete": {
+    "problem": "In scene s1, follow the cactus as a worked example: its thick stem stores water like a bottle for the dry days, its sharp thorns stop thirsty animals from biting it, and its deep roots reach down to find water. Each feature is a check: name the feature, name the desert problem it solves - no water, thirsty animals, dry sand - then say how it helps the cactus survive.",
+    "selfExplanation": "Explain in one sentence how each cactus feature solves a desert problem, and why the feature was not grown by choice.",
+    "steps": [
+      {
+        "annotation": "A special feature of a living thing that helps it survive in its home: a thick stem, camouflage colours or a long migration journey.",
+        "text": "Step 1: In scene s1, follow the cactus as a worked example: its thick stem stores water like a bottle for the dry days, its sharp thorns stop thirsty animals from biting it, and its deep roots reach down to find water."
+      },
+      {
+        "annotation": "The many groups of parents and young over a very long time: features develop slowly over many, many generations, not overnight.",
+        "text": "Step 2: Each feature is a check: name the feature, name the desert problem it solves - no water, thirsty animals, dry sand - then say how it helps the cactus survive."
+      },
+      {
+        "annotation": "The feature fits the animal so well that it looks chosen on purpose.",
+        "text": "Step 3: These features did not appear overnight: they developed over many, many generations, not by choice."
+      }
+    ]
+  },
+  "faded": {
+    "problem": "Winter is coming and food is getting hard to find. What do some birds do, and why?",
+    "selfExplanation": "The first step is shown. Say where the birds fly next, and when they return, and why.",
+    "steps": [
+      {
+        "annotation": "The long yearly journey some birds make: flying thousands of kilometres to warmer places for winter and returning in spring.",
+        "text": "Step 1: the birds migrate when winter comes.",
+        "withheld": false
+      },
+      {
+        "annotation": "The place where a living thing lives, which gives it food and shelter: a desert, a tree or a forest.",
+        "text": "Step 2: they fly thousands of kilometres to warmer places.",
+        "withheld": true
+      },
+      {
+        "annotation": "To stay alive in your home: a living thing survives when its features help it find food and water and stay safe.",
+        "text": "Step 3: so they return when spring brings food back.",
+        "withheld": true
+      }
+    ]
+  },
+  "level": "primary",
+  "paired": {
+    "problem": "In one sentence, say why a moth whose wings match the tree bark is hard for a bird to spot.",
+    "solution": "It is camouflage: the wings match the bark colour, so the moth blends in and hungry birds cannot spot it."
+  },
+  "subject": "science",
+  "title": "Adaptations: built to survive",
+  "topic": "adaptations"
+}

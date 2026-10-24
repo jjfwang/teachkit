@@ -1,0 +1,157 @@
+{
+  "doNow": [
+    {
+      "choices": [
+        {
+          "misconception": "An animal can decide to grow a new feature when it needs one.",
+          "rationale": {
+            "chose": "The learner selected option Yes: it grew the feature because it needed it, whenever it liked as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: An animal can decide to grow a new feature when it needs one.. The feature fits the animal so well that it looks chosen on purpose. These features did not appear overnight: they developed over many, many generations, not by choice. In the animation scene s1 the warning is in the caption itself - features are not grown by choice - so admire how well the feature fits without saying the animal chose it.",
+            "thinks": "They are applying the coded wrong turn instead of following the cactus features back over many generations to check whether the animal really grew them by choice."
+          },
+          "text": "Yes: it grew the feature because it needed it, whenever it liked"
+        },
+        {
+          "correct": true,
+          "text": "No: the feature developed over many, many generations, not by choice"
+        },
+        {
+          "misconception": "An animal can decide to grow a new feature when it needs one.",
+          "rationale": {
+            "chose": "The learner selected option Yes: only young animals can do this, older ones cannot as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: An animal can decide to grow a new feature when it needs one.. The feature fits the animal so well that it looks chosen on purpose. These features did not appear overnight: they developed over many, many generations, not by choice. In the animation scene s1 the warning is in the caption itself - features are not grown by choice - so admire how well the feature fits without saying the animal chose it.",
+            "thinks": "They are applying the coded wrong turn instead of following the cactus features back over many generations to check whether the animal really grew them by choice."
+          },
+          "text": "Yes: only young animals can do this, older ones cannot"
+        }
+      ],
+      "id": "dn1",
+      "kind": "multiple-choice",
+      "prompt": "A pupil says a cactus decided to grow thorns when it needed them. What is wrong with this idea?"
+    },
+    {
+      "choices": [
+        {
+          "misconception": "An animal can decide to grow a new feature when it needs one.",
+          "rationale": {
+            "chose": "The learner selected option Its bright colours warn birds to stay away as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: An animal can decide to grow a new feature when it needs one.. The feature fits the animal so well that it looks chosen on purpose. These features did not appear overnight: they developed over many, many generations, not by choice. In the animation scene s1 the warning is in the caption itself - features are not grown by choice - so admire how well the feature fits without saying the animal chose it.",
+            "thinks": "They are applying the coded wrong turn instead of following the cactus features back over many generations to check whether the animal really grew them by choice."
+          },
+          "text": "Its bright colours warn birds to stay away"
+        },
+        {
+          "correct": true,
+          "text": "Its wings match the bark colour, so birds cannot spot it"
+        },
+        {
+          "misconception": "An animal can decide to grow a new feature when it needs one.",
+          "rationale": {
+            "chose": "The learner selected option It flies faster than the hungry birds as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: An animal can decide to grow a new feature when it needs one.. The feature fits the animal so well that it looks chosen on purpose. These features did not appear overnight: they developed over many, many generations, not by choice. In the animation scene s1 the warning is in the caption itself - features are not grown by choice - so admire how well the feature fits without saying the animal chose it.",
+            "thinks": "They are applying the coded wrong turn instead of following the cactus features back over many generations to check whether the animal really grew them by choice."
+          },
+          "text": "It flies faster than the hungry birds"
+        }
+      ],
+      "id": "dn2",
+      "kind": "multiple-choice",
+      "prompt": "A moth rests on tree bark and hungry birds fly past without seeing it. Why is the moth safe?"
+    },
+    {
+      "choices": [
+        {
+          "misconception": "An animal can decide to grow a new feature when it needs one.",
+          "rationale": {
+            "chose": "The learner selected option Nothing: the animals simply grow new features straight away as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: An animal can decide to grow a new feature when it needs one.. The feature fits the animal so well that it looks chosen on purpose. These features did not appear overnight: they developed over many, many generations, not by choice. In the animation scene s1 the warning is in the caption itself - features are not grown by choice - so admire how well the feature fits without saying the animal chose it.",
+            "thinks": "They are applying the coded wrong turn instead of following the cactus features back over many generations to check whether the animal really grew them by choice."
+          },
+          "text": "Nothing: the animals simply grow new features straight away"
+        },
+        {
+          "correct": true,
+          "text": "The animals lose their food and shelter and must move away"
+        },
+        {
+          "misconception": "An animal can decide to grow a new feature when it needs one.",
+          "rationale": {
+            "chose": "The learner selected option The animals are safer, because there are fewer trees to hide in as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: An animal can decide to grow a new feature when it needs one.. The feature fits the animal so well that it looks chosen on purpose. These features did not appear overnight: they developed over many, many generations, not by choice. In the animation scene s1 the warning is in the caption itself - features are not grown by choice - so admire how well the feature fits without saying the animal chose it.",
+            "thinks": "They are applying the coded wrong turn instead of following the cactus features back over many generations to check whether the animal really grew them by choice."
+          },
+          "text": "The animals are safer, because there are fewer trees to hide in"
+        }
+      ],
+      "id": "dn3",
+      "kind": "multiple-choice",
+      "prompt": "People clear a forest to build farms and roads. What happens to the animals that lived there?"
+    }
+  ],
+  "hingeQuestions": [
+    {
+      "choices": [
+        {
+          "misconception": "An animal can decide to grow a new feature when it needs one.",
+          "rationale": {
+            "chose": "The learner selected option It chose to grow longer legs because it wanted to run faster as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: An animal can decide to grow a new feature when it needs one.. The feature fits the animal so well that it looks chosen on purpose. These features did not appear overnight: they developed over many, many generations, not by choice. In the animation scene s1 the warning is in the caption itself - features are not grown by choice - so admire how well the feature fits without saying the animal chose it.",
+            "thinks": "They are applying the coded wrong turn instead of following the cactus features back over many generations to check whether the animal really grew them by choice."
+          },
+          "text": "It chose to grow longer legs because it wanted to run faster"
+        },
+        {
+          "correct": true,
+          "text": "Its features developed over many, many generations, not by choice"
+        },
+        {
+          "misconception": "An animal can decide to grow a new feature when it needs one.",
+          "rationale": {
+            "chose": "The learner selected option It can grow a new feature whenever it needs one as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: An animal can decide to grow a new feature when it needs one.. The feature fits the animal so well that it looks chosen on purpose. These features did not appear overnight: they developed over many, many generations, not by choice. In the animation scene s1 the warning is in the caption itself - features are not grown by choice - so admire how well the feature fits without saying the animal chose it.",
+            "thinks": "They are applying the coded wrong turn instead of following the cactus features back over many generations to check whether the animal really grew them by choice."
+          },
+          "text": "It can grow a new feature whenever it needs one"
+        }
+      ],
+      "id": "h1",
+      "kind": "multiple-choice",
+      "prompt": "A pupil says an animal grew a helpful feature because it decided it needed one. What should they say instead?",
+      "scriptCue": "s4"
+    },
+    {
+      "choices": [
+        {
+          "misconception": "An animal can decide to grow a new feature when it needs one.",
+          "rationale": {
+            "chose": "The learner selected option They stay and wait, because winter food is easy to find as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: An animal can decide to grow a new feature when it needs one.. The feature fits the animal so well that it looks chosen on purpose. These features did not appear overnight: they developed over many, many generations, not by choice. In the animation scene s1 the warning is in the caption itself - features are not grown by choice - so admire how well the feature fits without saying the animal chose it.",
+            "thinks": "They are applying the coded wrong turn instead of following the cactus features back over many generations to check whether the animal really grew them by choice."
+          },
+          "text": "They stay and wait, because winter food is easy to find"
+        },
+        {
+          "correct": true,
+          "text": "They fly thousands of kilometres to warmer places until spring"
+        },
+        {
+          "misconception": "An animal can decide to grow a new feature when it needs one.",
+          "rationale": {
+            "chose": "The learner selected option They grow thick feathers on purpose for the winter as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: An animal can decide to grow a new feature when it needs one.. The feature fits the animal so well that it looks chosen on purpose. These features did not appear overnight: they developed over many, many generations, not by choice. In the animation scene s1 the warning is in the caption itself - features are not grown by choice - so admire how well the feature fits without saying the animal chose it.",
+            "thinks": "They are applying the coded wrong turn instead of following the cactus features back over many generations to check whether the animal really grew them by choice."
+          },
+          "text": "They grow thick feathers on purpose for the winter"
+        }
+      ],
+      "id": "h2",
+      "kind": "multiple-choice",
+      "prompt": "What do migrating birds do when winter makes food hard to find?",
+      "scriptCue": "s4"
+    }
+  ],
+  "level": "primary",
+  "subject": "science",
+  "title": "Adaptations: built to survive",
+  "topic": "adaptations"
+}
