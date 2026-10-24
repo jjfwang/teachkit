@@ -1,0 +1,49 @@
+{
+  "complete": {
+    "problem": "In scenes s1 and s2, follow one seed as a worked example: the seed wakes up in the soil and sprouts, so one seed becomes a seedling; the seedling grows into an adult plant with a flower, and inside that flower new seeds form. Each step is a change of state, and the new seeds can start the whole cycle again.",
+    "selfExplanation": "Explain in one sentence how each stage of the plant life cycle leads to the next, and why the cycle does not end at the flower.",
+    "steps": [
+      {
+        "annotation": "The start of a plant's life: it rests in the soil and wakes up with water, warmth and light, then sprouts a root and a shoot.",
+        "text": "Step 1: A seed wakes up and sprouts: the seed rests in the soil, and with water, warmth and light it wakes up, growing a root down and a green shoot up into a seedling."
+      },
+      {
+        "annotation": "The showy part of the adult plant: new seeds form inside it, so it starts the next round of the cycle instead of ending it.",
+        "text": "Step 2: the seedling grows into an adult plant with a flower, and inside that flower new seeds form."
+      },
+      {
+        "annotation": "A common mistake: the flower is not the end of the plant: inside the flower new seeds are forming, and the cycle starts again.",
+        "text": "Step 3: Each step is a change of state, and the new seeds can start the whole cycle again."
+      }
+    ]
+  },
+  "faded": {
+    "problem": "A caterpillar has formed its pupa. What is happening inside the pupa, and what will come out?",
+    "selfExplanation": "The first step is shown. Say what happens inside the pupa next, and what comes out, and why.",
+    "steps": [
+      {
+        "annotation": "The growing-up stage of a butterfly: it hatches from an egg and munches leaves to grow bigger.",
+        "text": "Step 1: the caterpillar rests inside a pupa.",
+        "withheld": false
+      },
+      {
+        "annotation": "The resting case a caterpillar forms: inside it, the caterpillar's body changes into a butterfly.",
+        "text": "Step 2: its body changes inside the pupa.",
+        "withheld": true
+      },
+      {
+        "annotation": "The circle of changes a living thing goes through as it grows: the adult makes new young, and the circle starts again.",
+        "text": "Step 3: so an adult butterfly emerges from the pupa.",
+        "withheld": true
+      }
+    ]
+  },
+  "level": "primary",
+  "paired": {
+    "problem": "What three things does a seed need to wake up and sprout?",
+    "solution": "Water, warmth and light."
+  },
+  "subject": "science",
+  "title": "Life cycles: plants and animals",
+  "topic": "life-cycles"
+}

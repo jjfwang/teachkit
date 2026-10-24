@@ -1,0 +1,157 @@
+{
+  "doNow": [
+    {
+      "choices": [
+        {
+          "misconception": "The flower is the end of the life of the plant.",
+          "rationale": {
+            "chose": "The learner selected option Nothing: the flower is the last part to appear, so the plant's life is finished as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: The flower is the end of the life of the plant.. The flower is the biggest, showiest and last part to appear, so it looks like the finish. The flower is not the end: inside the flower new seeds are forming, and the cycle starts again. In the animation scene s2 the flower opens and new seeds are shown forming inside it, then falling to the soil - the start of the next round, not the finish.",
+            "thinks": "They are applying the coded wrong turn instead of following the cycle round to the new seeds forming inside the flower to check whether the flower really ends it."
+          },
+          "text": "Nothing: the flower is the last part to appear, so the plant's life is finished"
+        },
+        {
+          "misconception": "The flower is the end of the life of the plant.",
+          "rationale": {
+            "chose": "The learner selected option The flower is too small to matter in the life cycle as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: The flower is the end of the life of the plant.. The flower is the biggest, showiest and last part to appear, so it looks like the finish. The flower is not the end: inside the flower new seeds are forming, and the cycle starts again. In the animation scene s2 the flower opens and new seeds are shown forming inside it, then falling to the soil - the start of the next round, not the finish.",
+            "thinks": "They are applying the coded wrong turn instead of following the cycle round to the new seeds forming inside the flower to check whether the flower really ends it."
+          },
+          "text": "The flower is too small to matter in the life cycle"
+        },
+        {
+          "correct": true,
+          "text": "Inside the flower new seeds are forming, and those seeds start the cycle again"
+        }
+      ],
+      "id": "dn1",
+      "kind": "multiple-choice",
+      "prompt": "A pupil says: the flower is the end of the life of the plant. What is wrong with this idea?"
+    },
+    {
+      "choices": [
+        {
+          "misconception": "The flower is the end of the life of the plant.",
+          "rationale": {
+            "chose": "The learner selected option Egg, then pupa, then caterpillar, then butterfly as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: The flower is the end of the life of the plant.. The flower is the biggest, showiest and last part to appear, so it looks like the finish. The flower is not the end: inside the flower new seeds are forming, and the cycle starts again. In the animation scene s2 the flower opens and new seeds are shown forming inside it, then falling to the soil - the start of the next round, not the finish.",
+            "thinks": "They are applying the coded wrong turn instead of following the cycle round to the new seeds forming inside the flower to check whether the flower really ends it."
+          },
+          "text": "Egg, then pupa, then caterpillar, then butterfly"
+        },
+        {
+          "correct": true,
+          "text": "Egg, then caterpillar, then pupa, then butterfly"
+        },
+        {
+          "misconception": "The flower is the end of the life of the plant.",
+          "rationale": {
+            "chose": "The learner selected option Caterpillar, then egg, then butterfly, then pupa as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: The flower is the end of the life of the plant.. The flower is the biggest, showiest and last part to appear, so it looks like the finish. The flower is not the end: inside the flower new seeds are forming, and the cycle starts again. In the animation scene s2 the flower opens and new seeds are shown forming inside it, then falling to the soil - the start of the next round, not the finish.",
+            "thinks": "They are applying the coded wrong turn instead of following the cycle round to the new seeds forming inside the flower to check whether the flower really ends it."
+          },
+          "text": "Caterpillar, then egg, then butterfly, then pupa"
+        }
+      ],
+      "id": "dn2",
+      "kind": "multiple-choice",
+      "prompt": "In which order does a butterfly grow and change?"
+    },
+    {
+      "choices": [
+        {
+          "misconception": "The flower is the end of the life of the plant.",
+          "rationale": {
+            "chose": "The learner selected option A flower as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: The flower is the end of the life of the plant.. The flower is the biggest, showiest and last part to appear, so it looks like the finish. The flower is not the end: inside the flower new seeds are forming, and the cycle starts again. In the animation scene s2 the flower opens and new seeds are shown forming inside it, then falling to the soil - the start of the next round, not the finish.",
+            "thinks": "They are applying the coded wrong turn instead of following the cycle round to the new seeds forming inside the flower to check whether the flower really ends it."
+          },
+          "text": "A flower"
+        },
+        {
+          "correct": true,
+          "text": "A seedling"
+        },
+        {
+          "misconception": "The flower is the end of the life of the plant.",
+          "rationale": {
+            "chose": "The learner selected option A pupa as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: The flower is the end of the life of the plant.. The flower is the biggest, showiest and last part to appear, so it looks like the finish. The flower is not the end: inside the flower new seeds are forming, and the cycle starts again. In the animation scene s2 the flower opens and new seeds are shown forming inside it, then falling to the soil - the start of the next round, not the finish.",
+            "thinks": "They are applying the coded wrong turn instead of following the cycle round to the new seeds forming inside the flower to check whether the flower really ends it."
+          },
+          "text": "A pupa"
+        }
+      ],
+      "id": "dn3",
+      "kind": "multiple-choice",
+      "prompt": "What does a seed become right after it sprouts?"
+    }
+  ],
+  "hingeQuestions": [
+    {
+      "choices": [
+        {
+          "misconception": "The flower is the end of the life of the plant.",
+          "rationale": {
+            "chose": "The learner selected option Because the flower falls off and disappears as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: The flower is the end of the life of the plant.. The flower is the biggest, showiest and last part to appear, so it looks like the finish. The flower is not the end: inside the flower new seeds are forming, and the cycle starts again. In the animation scene s2 the flower opens and new seeds are shown forming inside it, then falling to the soil - the start of the next round, not the finish.",
+            "thinks": "They are applying the coded wrong turn instead of following the cycle round to the new seeds forming inside the flower to check whether the flower really ends it."
+          },
+          "text": "Because the flower falls off and disappears"
+        },
+        {
+          "correct": true,
+          "text": "Because new seeds are forming inside the flower, and the cycle starts again"
+        },
+        {
+          "misconception": "The flower is the end of the life of the plant.",
+          "rationale": {
+            "chose": "The learner selected option Because the plant grows a taller stem after flowering as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: The flower is the end of the life of the plant.. The flower is the biggest, showiest and last part to appear, so it looks like the finish. The flower is not the end: inside the flower new seeds are forming, and the cycle starts again. In the animation scene s2 the flower opens and new seeds are shown forming inside it, then falling to the soil - the start of the next round, not the finish.",
+            "thinks": "They are applying the coded wrong turn instead of following the cycle round to the new seeds forming inside the flower to check whether the flower really ends it."
+          },
+          "text": "Because the plant grows a taller stem after flowering"
+        }
+      ],
+      "id": "h1",
+      "kind": "multiple-choice",
+      "prompt": "Why is the flower NOT the end of the life of the plant?",
+      "scriptCue": "s4"
+    },
+    {
+      "choices": [
+        {
+          "misconception": "The flower is the end of the life of the plant.",
+          "rationale": {
+            "chose": "The learner selected option It forms a pupa again and rests as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: The flower is the end of the life of the plant.. The flower is the biggest, showiest and last part to appear, so it looks like the finish. The flower is not the end: inside the flower new seeds are forming, and the cycle starts again. In the animation scene s2 the flower opens and new seeds are shown forming inside it, then falling to the soil - the start of the next round, not the finish.",
+            "thinks": "They are applying the coded wrong turn instead of following the cycle round to the new seeds forming inside the flower to check whether the flower really ends it."
+          },
+          "text": "It forms a pupa again and rests"
+        },
+        {
+          "misconception": "The flower is the end of the life of the plant.",
+          "rationale": {
+            "chose": "The learner selected option It munches leaves and grows bigger as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: The flower is the end of the life of the plant.. The flower is the biggest, showiest and last part to appear, so it looks like the finish. The flower is not the end: inside the flower new seeds are forming, and the cycle starts again. In the animation scene s2 the flower opens and new seeds are shown forming inside it, then falling to the soil - the start of the next round, not the finish.",
+            "thinks": "They are applying the coded wrong turn instead of following the cycle round to the new seeds forming inside the flower to check whether the flower really ends it."
+          },
+          "text": "It munches leaves and grows bigger"
+        },
+        {
+          "correct": true,
+          "text": "It lays eggs on a leaf, and the eggs hatch into caterpillars"
+        }
+      ],
+      "id": "h2",
+      "kind": "multiple-choice",
+      "prompt": "After an adult butterfly emerges from its pupa, what does it do that starts the cycle again?",
+      "scriptCue": "s4"
+    }
+  ],
+  "level": "primary",
+  "subject": "science",
+  "title": "Life cycles: plants and animals",
+  "topic": "life-cycles"
+}
