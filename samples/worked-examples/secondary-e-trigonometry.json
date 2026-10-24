@@ -1,0 +1,49 @@
+{
+  "complete": {
+    "problem": "Use the sine rule to find side b. In the triangle, side a = 4 is opposite angle A = 30 degrees, and angle B = 60 degrees. Write the rule: a / sin A = b / sin B, so 4 / sin 30 degrees = b / sin 60 degrees. Rearrange: b = (4 x sin 60 degrees) / sin 30 degrees = (4 x 0.8660) / 0.5 = 6.928, so b is about 6.93. Check: the side opposite the larger angle (60 degrees) is longer than the side opposite 30 degrees, and 6.93 is greater than 4, so the size makes sense.",
+    "selfExplanation": "Explain why b is longer than a, naming the angle paired with each side.",
+    "steps": [
+      {
+        "annotation": "The rule a / sin A = b / sin B, linking each side of any triangle with the sine of its opposite angle, used when there is no right angle.",
+        "text": "Step 1: Use the sine rule to find side b: in the triangle, side a = 4 is opposite angle A = 30 degrees, and angle B = 60 degrees."
+      },
+      {
+        "annotation": "The ratio opposite over hypotenuse for an angle in a right-angled triangle: in the 3-4-5 triangle, sin theta = 3/5 = 0.6 (the SOH part of the card).",
+        "text": "Step 2: Write the rule: a / sin A = b / sin B, so 4 / sin 30 degrees = b / sin 60 degrees."
+      },
+      {
+        "annotation": "The sine rule for any triangle: a / sin A = b / sin B pairs each side with its opposite angle, so with a = 4, A = 30 degrees and B = 60 degrees, b comes out to about 6.93.",
+        "text": "Step 3: Rearrange: b = (4 x sin 60 degrees) / sin 30 degrees = (4 x 0.8660) / 0.5 = 6.928, so b is about 6.93, and check: the side opposite the larger angle (60 degrees) is longer than the side opposite 30 degrees, and 6.93 is greater than 4, so the size makes sense."
+      }
+    ]
+  },
+  "faded": {
+    "problem": "In triangle ABC, side a = 4 is opposite angle A = 30 degrees, and angle B = 60 degrees. Use the sine rule to find side b, showing your working.",
+    "selfExplanation": "The first step is shown. Say how you rearrange the rule to make b the subject, and what value you get.",
+    "steps": [
+      {
+        "annotation": "The sine rule pairs each side with the sine of its opposite angle. Substitute the known pair first (a = 4 with A = 30 degrees).",
+        "text": "Step 1: write the rule with the known pair: 4 / sin 30 degrees = b / sin 60 degrees.",
+        "withheld": false
+      },
+      {
+        "annotation": "Rearrange: b = (4 x sin 60 degrees) / sin 30 degrees, using sin 60 degrees = 0.8660 and sin 30 degrees = 0.5.",
+        "text": "Step 2: rearrange for b: b = (4 x 0.8660) / 0.5.",
+        "withheld": true
+      },
+      {
+        "annotation": "The side opposite the larger angle (60 degrees) is longer than the side opposite 30 degrees, so 6.93 being greater than 4 makes sense.",
+        "text": "Step 3: b is about 6.93.",
+        "withheld": true
+      }
+    ]
+  },
+  "level": "secondary",
+  "paired": {
+    "problem": "State sin theta and cos theta for the 3-4-5 triangle.",
+    "solution": "sin theta = 3/5 = 0.6 and cos theta = 4/5 = 0.8."
+  },
+  "subject": "math",
+  "title": "E-Math trigonometry: ratios and the sine rule",
+  "topic": "e-trigonometry"
+}

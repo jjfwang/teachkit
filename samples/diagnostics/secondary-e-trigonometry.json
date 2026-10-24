@@ -1,0 +1,184 @@
+{
+  "doNow": [
+    {
+      "choices": [
+        {
+          "misconception": "tan = adjacent / opposite.",
+          "rationale": {
+            "chose": "The learner selected option 4/5 as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: tan = adjacent / opposite.. Opposite and adjacent swap places under pressure. Always read TOA: tan is opposite over adjacent. For the 3-4-5 triangle that means tan theta = 3/4 = 0.75, never 4/3.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "4/5"
+        },
+        {
+          "correct": true,
+          "text": "3/5"
+        },
+        {
+          "misconception": "tan = adjacent / opposite.",
+          "rationale": {
+            "chose": "The learner selected option 3/4 as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: tan = adjacent / opposite.. Opposite and adjacent swap places under pressure. Always read TOA: tan is opposite over adjacent. For the 3-4-5 triangle that means tan theta = 3/4 = 0.75, never 4/3.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "3/4"
+        },
+        {
+          "misconception": "tan = adjacent / opposite.",
+          "rationale": {
+            "chose": "The learner selected option 5/3 as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: tan = adjacent / opposite.. Opposite and adjacent swap places under pressure. Always read TOA: tan is opposite over adjacent. For the 3-4-5 triangle that means tan theta = 3/4 = 0.75, never 4/3.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "5/3"
+        }
+      ],
+      "id": "dn1",
+      "kind": "multiple-choice",
+      "prompt": "In the 3-4-5 triangle, angle theta has opposite side 3 and hypotenuse 5. What is sin theta?"
+    },
+    {
+      "choices": [
+        {
+          "misconception": "tan = adjacent / opposite.",
+          "rationale": {
+            "chose": "The learner selected option 4/3 as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: tan = adjacent / opposite.. Opposite and adjacent swap places under pressure. Always read TOA: tan is opposite over adjacent. For the 3-4-5 triangle that means tan theta = 3/4 = 0.75, never 4/3.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "4/3"
+        },
+        {
+          "misconception": "tan = adjacent / opposite.",
+          "rationale": {
+            "chose": "The learner selected option 3/5 as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: tan = adjacent / opposite.. Opposite and adjacent swap places under pressure. Always read TOA: tan is opposite over adjacent. For the 3-4-5 triangle that means tan theta = 3/4 = 0.75, never 4/3.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "3/5"
+        },
+        {
+          "correct": true,
+          "text": "3/4"
+        },
+        {
+          "misconception": "tan = adjacent / opposite.",
+          "rationale": {
+            "chose": "The learner selected option 4/5 as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: tan = adjacent / opposite.. Opposite and adjacent swap places under pressure. Always read TOA: tan is opposite over adjacent. For the 3-4-5 triangle that means tan theta = 3/4 = 0.75, never 4/3.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "4/5"
+        }
+      ],
+      "id": "dn2",
+      "kind": "multiple-choice",
+      "prompt": "For the same 3-4-5 triangle, what is tan theta?"
+    },
+    {
+      "choices": [
+        {
+          "misconception": "tan = adjacent / opposite.",
+          "rationale": {
+            "chose": "The learner selected option SOH CAH TOA on the whole triangle as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: tan = adjacent / opposite.. Opposite and adjacent swap places under pressure. Always read TOA: tan is opposite over adjacent. For the 3-4-5 triangle that means tan theta = 3/4 = 0.75, never 4/3.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "SOH CAH TOA on the whole triangle"
+        },
+        {
+          "correct": true,
+          "text": "The sine rule: a / sin A = b / sin B"
+        },
+        {
+          "misconception": "tan = adjacent / opposite.",
+          "rationale": {
+            "chose": "The learner selected option Pythagoras on the longest side as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: tan = adjacent / opposite.. Opposite and adjacent swap places under pressure. Always read TOA: tan is opposite over adjacent. For the 3-4-5 triangle that means tan theta = 3/4 = 0.75, never 4/3.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "Pythagoras on the longest side"
+        },
+        {
+          "misconception": "tan = adjacent / opposite.",
+          "rationale": {
+            "chose": "The learner selected option Tangent as adjacent over opposite as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: tan = adjacent / opposite.. Opposite and adjacent swap places under pressure. Always read TOA: tan is opposite over adjacent. For the 3-4-5 triangle that means tan theta = 3/4 = 0.75, never 4/3.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "Tangent as adjacent over opposite"
+        }
+      ],
+      "id": "dn3",
+      "kind": "multiple-choice",
+      "prompt": "A triangle has no right angle. Which rule finds an unknown side from a known side and two known angles?"
+    }
+  ],
+  "hingeQuestions": [
+    {
+      "choices": [
+        {
+          "misconception": "tan = adjacent / opposite.",
+          "rationale": {
+            "chose": "The learner selected option 4/3 as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: tan = adjacent / opposite.. Opposite and adjacent swap places under pressure. Always read TOA: tan is opposite over adjacent. For the 3-4-5 triangle that means tan theta = 3/4 = 0.75, never 4/3.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "4/3"
+        },
+        {
+          "correct": true,
+          "text": "3/4"
+        },
+        {
+          "misconception": "tan = adjacent / opposite.",
+          "rationale": {
+            "chose": "The learner selected option 3/5 as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: tan = adjacent / opposite.. Opposite and adjacent swap places under pressure. Always read TOA: tan is opposite over adjacent. For the 3-4-5 triangle that means tan theta = 3/4 = 0.75, never 4/3.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "3/5"
+        }
+      ],
+      "id": "h1",
+      "kind": "multiple-choice",
+      "prompt": "For the 3-4-5 triangle, what is tan theta?",
+      "scriptCue": "s4"
+    },
+    {
+      "choices": [
+        {
+          "correct": true,
+          "text": "tan = opposite / adjacent"
+        },
+        {
+          "misconception": "tan = adjacent / opposite.",
+          "rationale": {
+            "chose": "The learner selected option tan = adjacent / hypotenuse as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: tan = adjacent / opposite.. Opposite and adjacent swap places under pressure. Always read TOA: tan is opposite over adjacent. For the 3-4-5 triangle that means tan theta = 3/4 = 0.75, never 4/3.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "tan = adjacent / hypotenuse"
+        },
+        {
+          "misconception": "tan = adjacent / opposite.",
+          "rationale": {
+            "chose": "The learner selected option tan = hypotenuse / opposite as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: tan = adjacent / opposite.. Opposite and adjacent swap places under pressure. Always read TOA: tan is opposite over adjacent. For the 3-4-5 triangle that means tan theta = 3/4 = 0.75, never 4/3.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "tan = hypotenuse / opposite"
+        }
+      ],
+      "id": "h2",
+      "kind": "multiple-choice",
+      "prompt": "Which statement correctly reads the TOA part of the card?",
+      "scriptCue": "s4"
+    }
+  ],
+  "level": "secondary",
+  "subject": "math",
+  "title": "E-Math trigonometry: ratios and the sine rule",
+  "topic": "e-trigonometry"
+}
