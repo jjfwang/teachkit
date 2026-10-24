@@ -1,0 +1,115 @@
+{
+  "level": "primary",
+  "sets": [
+    {
+      "cloze": [
+        {
+          "answers": [
+            "Adaptation",
+            "Survive"
+          ],
+          "text": "An ___ is a special feature that helps a living thing ___ in its home."
+        },
+        {
+          "answers": [
+            "Camouflage"
+          ],
+          "text": "The moth's matching wings are ___ that hides it from hungry birds."
+        }
+      ],
+      "frames": [
+        "The ___ of the cactus stores water for the dry days.",
+        "The moth's ___ matches the tree bark.",
+        "On their ___, birds fly to warmer places."
+      ],
+      "level": "full",
+      "starters": [
+        "A cactus survives in the hot, dry desert because...",
+        "The moth is safe on the tree bark because...",
+        "Birds leave when winter comes because..."
+      ],
+      "wordBank": [
+        {
+          "gloss": "a special feature that helps a living thing survive",
+          "term": "Adaptation"
+        },
+        {
+          "gloss": "blending in with your home so hunters cannot spot you",
+          "term": "Camouflage"
+        },
+        {
+          "gloss": "the long yearly journey some birds make",
+          "term": "Migration"
+        },
+        {
+          "gloss": "to stay alive in your home",
+          "term": "Survive"
+        }
+      ]
+    },
+    {
+      "cloze": [
+        {
+          "answers": [
+            "Migration",
+            "Habitat"
+          ],
+          "text": "Birds fly far on their ___ to find food, leaving their winter ___ behind."
+        }
+      ],
+      "frames": [
+        "The moth is hidden by its ___.",
+        "Birds fly thousands of kilometres on their ___."
+      ],
+      "level": "partial",
+      "starters": [
+        "The moth blends in because...",
+        "Birds travel far when..."
+      ],
+      "wordBank": [
+        {
+          "gloss": "blending in with your home so hunters cannot spot you",
+          "term": "Camouflage"
+        },
+        {
+          "gloss": "the long yearly journey some birds make",
+          "term": "Migration"
+        },
+        {
+          "gloss": "the place where a living thing lives",
+          "term": "Habitat"
+        }
+      ]
+    },
+    {
+      "cloze": [
+        {
+          "answers": [
+            "Habitat"
+          ],
+          "text": "A living thing's home, which gives it food and shelter, is its ___."
+        }
+      ],
+      "frames": [
+        "The place where a living thing lives is its ___."
+      ],
+      "level": "minimal",
+      "starters": [
+        "My living thing survives in its home because..."
+      ],
+      "wordBank": [
+        {
+          "gloss": "a special feature that helps a living thing survive",
+          "term": "Adaptation"
+        },
+        {
+          "gloss": "the place where a living thing lives",
+          "term": "Habitat"
+        }
+      ]
+    }
+  ],
+  "subject": "science",
+  "title": "Adaptations: built to survive",
+  "topic": "adaptations"
+}
