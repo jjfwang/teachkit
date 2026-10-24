@@ -1,0 +1,111 @@
+{
+  "level": "primary",
+  "sets": [
+    {
+      "cloze": [
+        {
+          "answers": [
+            "Rate",
+            "Distance"
+          ],
+          "text": "Speed is a ___ that gives the ___ covered in every hour."
+        },
+        {
+          "answers": [
+            "Speed",
+            "Time"
+          ],
+          "text": "Multiply ___ by ___ to find the distance travelled."
+        }
+      ],
+      "frames": [
+        "The distance covered in one unit of time is its ___.",
+        "An amount per unit of something else is a ___.",
+        "How long a journey lasts is its ___."
+      ],
+      "level": "full",
+      "starters": [
+        "Speed tells me how far the bus goes in...",
+        "To find the distance, I multiply...",
+        "A rate gives an amount per..."
+      ],
+      "wordBank": [
+        {
+          "gloss": "the distance covered in one unit of time",
+          "term": "Speed"
+        },
+        {
+          "gloss": "an amount per unit of something else",
+          "term": "Rate"
+        },
+        {
+          "gloss": "how far something travels",
+          "term": "Distance"
+        },
+        {
+          "gloss": "how long a journey lasts",
+          "term": "Time"
+        }
+      ]
+    },
+    {
+      "cloze": [
+        {
+          "answers": [
+            "Distance"
+          ],
+          "text": "The ___ of the journey is 150 km, found by multiplying speed by time."
+        }
+      ],
+      "frames": [
+        "Multiply speed by time to find the ___.",
+        "Divide distance by speed to find the ___."
+      ],
+      "level": "partial",
+      "starters": [
+        "To find the distance, I multiply speed by...",
+        "The formula flips to give speed as..."
+      ],
+      "wordBank": [
+        {
+          "gloss": "the distance covered in one unit of time",
+          "term": "Speed"
+        },
+        {
+          "gloss": "an amount per unit of something else",
+          "term": "Rate"
+        },
+        {
+          "gloss": "how far something travels",
+          "term": "Distance"
+        }
+      ]
+    },
+    {
+      "cloze": [
+        {
+          "answers": [
+            "Speed"
+          ],
+          "text": "60 km/h is the ___ of the bus."
+        }
+      ],
+      "frames": [
+        "Distance equals speed multiplied by ___."
+      ],
+      "level": "minimal",
+      "starters": [
+        "The speed is found by dividing..."
+      ],
+      "wordBank": [
+        {
+          "gloss": "the distance covered in one unit of time",
+          "term": "Speed"
+        }
+      ]
+    }
+  ],
+  "subject": "math",
+  "title": "Rate and speed: d = s × t",
+  "topic": "rate-speed"
+}
