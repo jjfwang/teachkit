@@ -1,0 +1,42 @@
+{
+ "level": "primary",
+ "questions": [
+  {
+   "choices": [
+    {
+     "text": "Nothing: the roots are the mouth of the plant and eat food from the soil"
+    },
+    {
+     "text": "The stem has stopped working"
+    },
+    {
+     "correct": true,
+     "text": "Plants do not eat food from the soil - roots drink water and minerals, and the leaves make the food with sunlight"
+    }
+   ],
+   "explanation": "The trap is: Plants take food from the soil through their roots, like we eat food. Scene s4 shows why this is wrong: Roots drink water and minerals; the leaves make the food with sunlight. The plant does not eat food like we do.",
+   "id": "q1",
+   "kind": "multiple-choice",
+   "misconception": "Plants take food from the soil through their roots, like we eat food.",
+   "prompt": "A pupil says: plants take food from the soil through their roots, like we eat food. What is wrong with this idea?"
+  },
+  {
+   "answer": "The roots hold the plant in place in the soil, and they drink up water for the whole plant.",
+   "explanation": "Scene s1: the roots grow down into the soil, hold the plant in place, and drink up water for the whole plant.",
+   "id": "q3",
+   "kind": "short-answer",
+   "prompt": "What two jobs do the roots do for the plant?"
+  },
+  {
+   "answer": "It travels up the stem to the leaves, where the leaves use it with sunlight to make food.",
+   "explanation": "Scenes s2 and s3: the stem carries the water up from the roots to the leaves, and the leaves use it with sunlight to make food.",
+   "id": "q4",
+   "kind": "short-answer",
+   "prompt": "A drop of water is taken in by the roots. What happens to that drop next?"
+  }
+ ],
+ "subject": "science",
+ "title": "Plant systems",
+ "topic": "plant-systems",
+ "variant": "homework"
+}

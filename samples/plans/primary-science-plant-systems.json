@@ -1,0 +1,92 @@
+{
+ "title": "Plant systems",
+ "level": "primary",
+ "subject": "science",
+ "topic": "plant-systems",
+ "durationMinutes": 40,
+ "objectives": [
+  {
+   "id": "o1",
+   "text": "Name the roots, stem and leaves, say what each part does, and trace water on its journey from the roots up the stem to the leaves",
+   "successCriteria": [
+    "I can say the roots hold the plant in place and drink up water and minerals from the soil",
+    "I can trace one drop of water from the roots up the stem to the leaves and say the leaves use it with sunlight to make food"
+   ],
+   "assessmentPoints": [
+    "Part-naming answers in the opening activity",
+    "Water-journey tracing in the second and third activities"
+   ]
+  },
+  {
+   "id": "o2",
+   "text": "Explain why plants do not take food from the soil, and what the roots really take from the soil",
+   "successCriteria": [
+    "I can explain that the roots drink water and minerals only and are not a mouth",
+    "I can explain that the leaves make the food with sunlight, so the plant does not eat food like we do"
+   ],
+   "assessmentPoints": [
+    "Trap discussion in the fourth activity",
+    "Worksheet and exit ticket answers in the closing practice"
+   ]
+  }
+ ],
+ "activities": [
+  {
+   "title": "Roots: the plant holds on and drinks",
+   "minutes": 8,
+   "objectiveIds": [
+    "o1"
+   ],
+   "scriptCue": "s1",
+   "grouping": "whole class",
+   "resources": [
+    "board"
+   ]
+  },
+  {
+   "title": "Stem: the plant's lift and road",
+   "minutes": 9,
+   "objectiveIds": [
+    "o1"
+   ],
+   "scriptCue": "s2",
+   "grouping": "pairs"
+  },
+  {
+   "title": "Leaves: the plant makes its own food",
+   "minutes": 10,
+   "objectiveIds": [
+    "o1"
+   ],
+   "scriptCue": "s3",
+   "grouping": "whole class",
+   "differentiation": {
+    "support": "Provide a simple roots-stem-leaves diagram with arrows so learners can follow one drop of water from the soil to the leaves before tracing it themselves."
+   }
+  },
+  {
+   "title": "A common mistake: plants do not eat food from the soil",
+   "minutes": 8,
+   "objectiveIds": [
+    "o2"
+   ],
+   "scriptCue": "s4",
+   "grouping": "pairs",
+   "differentiation": {
+    "stretch": "Ask learners to explain why the drinking roots prove the plant does not eat food from the soil like we eat through our mouths."
+   }
+  },
+  {
+   "title": "Worksheet practice and exit ticket",
+   "minutes": 5,
+   "objectiveIds": [
+    "o1",
+    "o2"
+   ],
+   "grouping": "individual",
+   "resources": [
+    "worksheet"
+   ]
+  }
+ ]
+}
