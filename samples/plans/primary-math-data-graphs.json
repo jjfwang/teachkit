@@ -1,0 +1,93 @@
+{
+ "title": "Data graphs: pie charts and line graphs",
+ "level": "primary",
+ "subject": "math",
+ "topic": "data-graphs",
+ "durationMinutes": 40,
+ "objectives": [
+  {
+   "id": "o1",
+   "text": "Read a pie chart as fractions of a whole and read values and trends from a line graph",
+   "successCriteria": [
+    "I can say 6 of 12 pupils chose apples (1/2), and 3 each chose bananas and grapes (1/4 each)",
+    "I can read plants sold as Jan 20, Feb 35, Mar 30 and Apr 50 and spot the dip in March"
+   ],
+   "assessmentPoints": [
+    "Pie chart answers in the opening activity",
+    "Responses when the steeper-line trap is sprung in the fourth activity"
+   ]
+  },
+  {
+   "id": "o2",
+   "text": "Compare two bars of data by subtracting their heights and check the axis scale before comparing how steep two lines look",
+   "successCriteria": [
+    "I can read soccer 13 and badminton 8 and work out 13 - 8 = 5 more chose soccer",
+    "I can check that both shops rose from 20 to 40 even though graph B looks flatter on its 0 to 200 axis"
+   ],
+   "assessmentPoints": [
+    "Bar comparison answers in the third activity",
+    "Worksheet answers in the closing practice"
+   ]
+  }
+ ],
+ "activities": [
+  {
+   "title": "Reading a pie chart: who likes what?",
+   "minutes": 8,
+   "objectiveIds": [
+    "o1"
+   ],
+   "scriptCue": "s1",
+   "grouping": "whole class",
+   "resources": [
+    "board"
+   ]
+  },
+  {
+   "title": "Reading a line graph: a rising trend",
+   "minutes": 9,
+   "objectiveIds": [
+    "o1"
+   ],
+   "scriptCue": "s2",
+   "grouping": "pairs"
+  },
+  {
+   "title": "Worked example: comparing two bars of data",
+   "minutes": 10,
+   "objectiveIds": [
+    "o2"
+   ],
+   "scriptCue": "s3",
+   "grouping": "whole class",
+   "differentiation": {
+    "support": "Provide the two bar heights labelled 13 and 8 so learners can follow the subtraction before reading heights themselves."
+   }
+  },
+  {
+   "title": "Spring the steeper-line trap",
+   "minutes": 8,
+   "objectiveIds": [
+    "o1",
+    "o2"
+   ],
+   "scriptCue": "s4",
+   "grouping": "pairs",
+   "differentiation": {
+    "stretch": "Ask learners to explain why a line that looks steeper has not necessarily risen by more."
+   }
+  },
+  {
+   "title": "Worksheet practice and exit ticket",
+   "minutes": 5,
+   "objectiveIds": [
+    "o1",
+    "o2"
+   ],
+   "grouping": "individual",
+   "resources": [
+    "worksheet"
+   ]
+  }
+ ]
+}

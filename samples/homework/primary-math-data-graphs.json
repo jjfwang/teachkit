@@ -1,0 +1,42 @@
+{
+ "level": "primary",
+ "questions": [
+  {
+   "choices": [
+    {
+     "text": "Graph A, because its line is steeper"
+    },
+    {
+     "correct": true,
+     "text": "Neither: both rose by 20"
+    },
+    {
+     "text": "Graph B, because its axis goes up to 200"
+    }
+   ],
+   "explanation": "The trap is: A steeper line always means a bigger increase. Slope depends on the axis scale: two graphs can have the same rise but look different. Both sales rose by 20, so the increase is the same even though the drawings look different.",
+   "id": "q1",
+   "kind": "multiple-choice",
+   "misconception": "A steeper line always means a bigger increase.",
+   "prompt": "Two line graphs show sales rising. Graph A looks much steeper than graph B, but graph A has an axis of 0 to 50 and graph B has an axis of 0 to 200, and both sales rose by 20. Which graph had the bigger increase?"
+  },
+  {
+   "answer": "Sales dipped in March; 50 plants were sold in April.",
+   "explanation": "Scene s2: the line dips down to 30 in March, then climbs to 50 in April.",
+   "id": "q3",
+   "kind": "short-answer",
+   "prompt": "A line graph shows plants sold: Jan 20, Feb 35, Mar 30, Apr 50. In which month did sales dip, and how many plants were sold in April?"
+  },
+  {
+   "answer": "5 more chose soccer: 13 - 8 = 5.",
+   "explanation": "Scene s3: read the two bar heights, 13 and 8, then subtract: 13 - 8 = 5.",
+   "id": "q4",
+   "kind": "short-answer",
+   "prompt": "In a survey of 24 children, 13 chose soccer and 8 chose badminton. How many more chose soccer than badminton? Show the working."
+  }
+ ],
+ "subject": "math",
+ "title": "Data graphs: pie charts and line graphs",
+ "topic": "data-graphs",
+ "variant": "homework"
+}

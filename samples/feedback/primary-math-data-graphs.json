@@ -1,0 +1,44 @@
+{
+ "title": "Data graphs: pie charts and line graphs",
+ "level": "primary",
+ "subject": "math",
+ "topic": "data-graphs",
+ "strengths": [
+  "Most of the class can read a pie chart as fractions of a whole, finding 1/2 for apples and 1/4 each for bananas and grapes.",
+  "The class can compare two bars by reading their heights and subtracting, and can read values and trends from a line graph."
+ ],
+ "modelAnswers": [
+  {
+   "question": "In a survey of 24 children, 13 chose soccer and 8 chose badminton. How many more chose soccer than badminton? Show the working.",
+   "answer": "5 more chose soccer: 13 - 8 = 5.",
+   "creditPoints": []
+  },
+  {
+   "question": "Soccer got 13 votes and badminton got 8 votes. How many more votes did soccer get? Show the working.",
+   "answer": "5 more votes: 13 - 8 = 5.",
+   "creditPoints": []
+  }
+ ],
+ "commonErrors": [
+  {
+   "misconception": "A steeper line always means a bigger increase.",
+   "example": "A learner draws the conclusion on the worksheet that graph A had the bigger increase because its line is steeper, without checking the axis scales.",
+   "fixIt": {
+    "prompt": "Fix it: check both axes first - what are the two axis ranges, and by how much did each graph rise?",
+    "corrected": "Corrected working: graph A runs 0 to 50 and graph B runs 0 to 200, and both sales rose by 20, so the increase is the same."
+   }
+  },
+  {
+   "misconception": "A steeper line always means a bigger increase.",
+   "example": "On the exit ticket, a learner defends the steeper drawing by saying graph A rose by more than graph B.",
+   "fixIt": {
+    "prompt": "Fix it: say what decides how steep a line looks - then compare the rises from 20 to 40 on both graphs.",
+    "corrected": "Corrected check: slope depends on the axis scale, so two graphs can have the same rise of +20 but look different."
+   }
+  }
+ ],
+ "nextSteps": [
+  "Reteach the axis-scale check, landing that steepness is judged against the axis scale before any slope comparison.",
+  "Practise reading both bar heights from the labels first before subtracting to compare them."
+ ]
+}

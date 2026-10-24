@@ -1,0 +1,125 @@
+{
+ "title": "Data Graphs and Fractions Unit Test",
+ "level": "primary",
+ "subject": "math",
+ "unitTitle": "Pie charts, line graphs and fractions",
+ "topics": [
+  "primary-math-data-graphs",
+  "primary-math-fractions-addition"
+ ],
+ "durationMinutes": 40,
+ "totalMarks": 20,
+ "blueprint": [
+  {
+   "outcomeCode": "P5-DATA-GRAPHS",
+   "assessmentObjective": "AO1 recall and apply",
+   "marks": 10,
+   "cognitiveLevel": "apply"
+  },
+  {
+   "outcomeCode": "P5-FRAC-ADD",
+   "assessmentObjective": "AO2 reason and solve",
+   "marks": 10,
+   "cognitiveLevel": "reason"
+  }
+ ],
+ "items": [
+  {
+   "prompt": "In a survey of 24 children, 13 chose soccer and 8 chose badminton. How many more chose soccer than badminton? Show your working.",
+   "blueprintRow": 0,
+   "commandWord": "Calculate",
+   "marks": 5,
+   "markScheme": {
+    "points": [
+     {
+      "text": "Reads the two bar heights as 13 and 8",
+      "marks": 2
+     },
+     {
+      "text": "Subtracts to get 13 - 8 = 5 more chose soccer",
+      "marks": 3
+     }
+    ]
+   }
+  },
+  {
+   "prompt": "Explain why two line graphs showing the same rise from 20 to 40 can look different in steepness.",
+   "blueprintRow": 0,
+   "commandWord": "Explain",
+   "marks": 5,
+   "markScheme": {
+    "points": [
+     {
+      "text": "States that slope depends on the axis scale",
+      "marks": 2
+     },
+     {
+      "text": "Concludes that graph A runs 0 to 50 while graph B runs 0 to 200, so the same rise of +20 looks flatter on graph B",
+      "marks": 3
+     }
+    ]
+   }
+  },
+  {
+   "prompt": "Calculate 1/2 + 1/4. Show your working.",
+   "blueprintRow": 1,
+   "commandWord": "Calculate",
+   "marks": 5,
+   "markScheme": {
+    "points": [
+     {
+      "text": "Renames 1/2 as 2/4 (common denominator)",
+      "marks": 3
+     },
+     {
+      "text": "Adds numerators to get 3/4",
+      "marks": 2
+     }
+    ]
+   }
+  },
+  {
+   "prompt": "A baker uses 3/4 kg of flour in the morning and 1/4 kg in the afternoon. How much flour is used in total?",
+   "blueprintRow": 1,
+   "commandWord": "Calculate",
+   "marks": 5,
+   "markScheme": {
+    "points": [
+     {
+      "text": "Sets up 3/4 + 1/4",
+      "marks": 2
+     },
+     {
+      "text": "Correct total of 1 kg",
+      "marks": 3
+     }
+    ]
+   }
+  }
+ ],
+ "rubric": {
+  "criteria": [
+   {
+    "name": "Mathematical communication",
+    "levels": [
+     {
+      "label": "Secure",
+      "descriptor": "Working is complete, ordered and uses correct data graph and fraction notation throughout."
+     },
+     {
+      "label": "Developing",
+      "descriptor": "Working is partial or notation is inconsistent, but the method can be followed."
+     },
+     {
+      "label": "Beginning",
+      "descriptor": "Little or no working shown; the method cannot be followed."
+     }
+    ]
+   }
+  ]
+ },
+ "moderation": {
+  "state": "unreviewed"
+ },
+ "review": null
+}
