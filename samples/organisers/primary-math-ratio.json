@@ -1,0 +1,74 @@
+{
+  "title": "Ratio: sharing $48 in 2:3",
+  "level": "primary",
+  "subject": "math",
+  "topic": "ratio",
+  "templates": [
+    {
+      "kind": "flow",
+      "slots": [
+        {
+          "label": "Sharing in a ratio",
+          "entries": [
+            "Sharing in a ratio: two children share $48 in the ratio 2:3 - split the money into 2 parts for child A and 3 parts for child B, 5 equal parts in all."
+          ],
+          "studentPrompt": "Explain this step in your own words."
+        },
+        {
+          "label": "Watch out: 3:2 is not 3/2 of the whole",
+          "entries": [
+            "Watch out: 3:2 is not 3/2 of the whole: the parts are counted out of the 5 parts of the whole, so 3 parts is 3/5 of the whole, never 3/2 of it."
+          ],
+          "studentPrompt": "Explain this step in your own words."
+        },
+        {
+          "label": "One part, then multiply",
+          "entries": [
+            "One part, then multiply: 5 equal parts share $48, so 1 part = $9.60 - then multiply: A gets 2 x $9.60 = $19.20 and B gets 3 x $9.60 = $28.80."
+          ],
+          "studentPrompt": "Explain this step in your own words."
+        },
+        {
+          "label": "The takeaway",
+          "entries": [
+            "The takeaway: to share in a ratio, add the parts to find the whole in parts, divide to find one part, then multiply for each share."
+          ],
+          "studentPrompt": "Explain this step in your own words."
+        }
+      ]
+    },
+    {
+      "kind": "frayer",
+      "slots": [
+        {
+          "label": "Ratio",
+          "entries": [
+            "A comparison of parts of one whole: 2:3 means 2 parts for one share and 3 parts for the other, with every part the same size."
+          ],
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "label": "Part",
+          "entries": [
+            "One equal piece of the split whole: when $48 is shared in 2:3 there are 5 parts, and one part is $9.60."
+          ],
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "label": "Whole",
+          "entries": [
+            "The full amount being shared: in sharing $48 in the ratio 2:3 the whole is $48, split into 5 equal parts."
+          ],
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "label": "Share",
+          "entries": [
+            "The amount one person gets: the number of parts they take multiplied by one part, such as 3 x $9.60 = $28.80."
+          ],
+          "studentPrompt": "Give your own example of this term."
+        }
+      ]
+    }
+  ]
+}

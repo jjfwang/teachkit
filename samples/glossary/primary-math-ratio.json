@@ -1,0 +1,28 @@
+{
+  "title": "Ratio: sharing $48 in 2:3",
+  "level": "primary",
+  "subject": "math",
+  "topic": "ratio",
+  "entries": [
+    {
+      "term": "Ratio",
+      "meaning": "A comparison of parts of one whole: 2:3 means 2 parts for one share and 3 parts for the other, with every part the same size.",
+      "example": "Sharing in a ratio: two children share $48 in the ratio 2:3 - split the money into 2 parts for child A and 3 parts for child B, 5 equal parts in all."
+    },
+    {
+      "term": "Part",
+      "meaning": "One equal piece of the split whole: when $48 is shared in 2:3 there are 5 parts, and one part is $9.60.",
+      "example": "One part, then multiply: 5 equal parts share $48, so 1 part = $9.60 - then multiply: A gets 2 x $9.60 = $19.20 and B gets 3 x $9.60 = $28.80."
+    },
+    {
+      "term": "Whole",
+      "meaning": "The full amount being shared: in sharing $48 in the ratio 2:3 the whole is $48, split into 5 equal parts.",
+      "example": "In scene s3, sharing $48 in the ratio 2:3 is worked by finding one part first: the whole is 2 + 3 = 5 parts, and 1 part = $9.60 (from $48 / 5). Step by step: A gets 2 x $9.60 = $19.20 and B gets 3 x $9.60 = $28.80, and the shares check: $19.20 + $28.80 = $48."
+    },
+    {
+      "term": "Share",
+      "meaning": "The amount one person gets: the number of parts they take multiplied by one part, such as 3 x $9.60 = $28.80.",
+      "example": "Share an amount in a ratio by finding one part first: divide the whole by the total number of parts"
+    }
+  ]
+}
