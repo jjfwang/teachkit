@@ -1,0 +1,49 @@
+{
+  "title": "Ratio: sharing $48 in 2:3",
+  "level": "primary",
+  "subject": "math",
+  "topic": "ratio",
+  "complete": {
+    "problem": "Share $48 in the ratio 2:3 by finding one part first, as in scene s3.",
+    "steps": [
+      {
+        "text": "Step 1: Sharing in a ratio: two children share $48 in the ratio 2:3 - split the money into 2 parts for child A and 3 parts for child B, 5 equal parts in all.",
+        "annotation": "A comparison of parts of one whole: 2:3 means 2 parts for one share and 3 parts for the other, with every part the same size."
+      },
+      {
+        "text": "Step 2: One part, then multiply: 5 equal parts share $48, so 1 part = $9.60 - then multiply: A gets 2 x $9.60 = $19.20 and B gets 3 x $9.60 = $28.80.",
+        "annotation": "One equal piece of the split whole: when $48 is shared in 2:3 there are 5 parts, and one part is $9.60."
+      },
+      {
+        "text": "Step 3: The takeaway: to share in a ratio, add the parts to find the whole in parts, divide to find one part, then multiply for each share.",
+        "annotation": "The amount one person gets: the number of parts they take multiplied by one part, such as 3 x $9.60 = $28.80."
+      }
+    ],
+    "selfExplanation": "Explain why the 3-part share is 3/5 of the whole, not 3/2 of it."
+  },
+  "faded": {
+    "problem": "$60 is shared in the ratio 2:3. How much does the child with 3 parts get?",
+    "steps": [
+      {
+        "text": "Step 1: use the same parts idea: the whole is 5 parts, one part is $60 / 5 = $12.",
+        "annotation": "Add the parts first: 2 + 3 = 5 equal parts share the whole $60.",
+        "withheld": false
+      },
+      {
+        "text": "Step 2: 3 parts is 3 x $12 = $36.",
+        "annotation": "Multiply the one part by the number of parts the child takes.",
+        "withheld": true
+      },
+      {
+        "text": "Step 3: so the child with 3 parts gets $36.",
+        "annotation": "Check by rebuilding: the 2-part share is 2 x $12 = $24, and $24 + $36 = $60.",
+        "withheld": true
+      }
+    ],
+    "selfExplanation": "The first step is shown. Say how the 3 parts are found from the one part, and what the child with 3 parts gets."
+  },
+  "paired": {
+    "problem": "How much does the child with 2 parts get when $48 is shared in the ratio 2:3?",
+    "solution": "$19.20: 2 x $9.60 = $19.20, and $19.20 + $28.80 rebuilds $48."
+  }
+}
