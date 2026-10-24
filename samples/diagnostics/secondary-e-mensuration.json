@@ -1,0 +1,193 @@
+{
+  "doNow": [
+    {
+      "choices": [
+        {
+          "misconception": "Doubling the radius doubles the area of a circle.",
+          "rationale": {
+            "chose": "The learner selected option 2 pi cm as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: Doubling the radius doubles the area of a circle.. Doubling a length doubles lengths, so area feels like it doubles too. Area scales with the square of the radius: double the radius and the area quadruples. In class, draw circles of radius 3 cm and 6 cm on squared paper: the small disk covers 9 pi worth of squares and the big one 36 pi, and four small disks tile the big one exactly.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "2 pi cm"
+        },
+        {
+          "correct": true,
+          "text": "4 pi cm"
+        },
+        {
+          "misconception": "Doubling the radius doubles the area of a circle.",
+          "rationale": {
+            "chose": "The learner selected option 8 pi cm as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: Doubling the radius doubles the area of a circle.. Doubling a length doubles lengths, so area feels like it doubles too. Area scales with the square of the radius: double the radius and the area quadruples. In class, draw circles of radius 3 cm and 6 cm on squared paper: the small disk covers 9 pi worth of squares and the big one 36 pi, and four small disks tile the big one exactly.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "8 pi cm"
+        },
+        {
+          "misconception": "Doubling the radius doubles the area of a circle.",
+          "rationale": {
+            "chose": "The learner selected option 16 pi cm as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: Doubling the radius doubles the area of a circle.. Doubling a length doubles lengths, so area feels like it doubles too. Area scales with the square of the radius: double the radius and the area quadruples. In class, draw circles of radius 3 cm and 6 cm on squared paper: the small disk covers 9 pi worth of squares and the big one 36 pi, and four small disks tile the big one exactly.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "16 pi cm"
+        }
+      ],
+      "id": "dn1",
+      "kind": "multiple-choice",
+      "prompt": "A sector has angle 90 degrees in a circle of radius 8 cm. What is its arc length?"
+    },
+    {
+      "choices": [
+        {
+          "misconception": "Doubling the radius doubles the area of a circle.",
+          "rationale": {
+            "chose": "The learner selected option 144 cubic centimetres as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: Doubling the radius doubles the area of a circle.. Doubling a length doubles lengths, so area feels like it doubles too. Area scales with the square of the radius: double the radius and the area quadruples. In class, draw circles of radius 3 cm and 6 cm on squared paper: the small disk covers 9 pi worth of squares and the big one 36 pi, and four small disks tile the big one exactly.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "144 cubic centimetres"
+        },
+        {
+          "correct": true,
+          "text": "48 cubic centimetres"
+        },
+        {
+          "misconception": "Doubling the radius doubles the area of a circle.",
+          "rationale": {
+            "chose": "The learner selected option 36 cubic centimetres as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: Doubling the radius doubles the area of a circle.. Doubling a length doubles lengths, so area feels like it doubles too. Area scales with the square of the radius: double the radius and the area quadruples. In class, draw circles of radius 3 cm and 6 cm on squared paper: the small disk covers 9 pi worth of squares and the big one 36 pi, and four small disks tile the big one exactly.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "36 cubic centimetres"
+        },
+        {
+          "misconception": "Doubling the radius doubles the area of a circle.",
+          "rationale": {
+            "chose": "The learner selected option 12 cubic centimetres as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: Doubling the radius doubles the area of a circle.. Doubling a length doubles lengths, so area feels like it doubles too. Area scales with the square of the radius: double the radius and the area quadruples. In class, draw circles of radius 3 cm and 6 cm on squared paper: the small disk covers 9 pi worth of squares and the big one 36 pi, and four small disks tile the big one exactly.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "12 cubic centimetres"
+        }
+      ],
+      "id": "dn2",
+      "kind": "multiple-choice",
+      "prompt": "Find the volume of a square pyramid whose base is 6 cm by 6 cm and whose vertical height is 4 cm."
+    },
+    {
+      "choices": [
+        {
+          "misconception": "Doubling the radius doubles the area of a circle.",
+          "rationale": {
+            "chose": "The learner selected option Correct - the area doubles as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: Doubling the radius doubles the area of a circle.. Doubling a length doubles lengths, so area feels like it doubles too. Area scales with the square of the radius: double the radius and the area quadruples. In class, draw circles of radius 3 cm and 6 cm on squared paper: the small disk covers 9 pi worth of squares and the big one 36 pi, and four small disks tile the big one exactly.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "Correct - the area doubles"
+        },
+        {
+          "misconception": "Doubling the radius doubles the area of a circle.",
+          "rationale": {
+            "chose": "The learner selected option Wrong - the area is three times as big as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: Doubling the radius doubles the area of a circle.. Doubling a length doubles lengths, so area feels like it doubles too. Area scales with the square of the radius: double the radius and the area quadruples. In class, draw circles of radius 3 cm and 6 cm on squared paper: the small disk covers 9 pi worth of squares and the big one 36 pi, and four small disks tile the big one exactly.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "Wrong - the area is three times as big"
+        },
+        {
+          "correct": true,
+          "text": "Wrong - the area is four times as big"
+        },
+        {
+          "misconception": "Doubling the radius doubles the area of a circle.",
+          "rationale": {
+            "chose": "The learner selected option Wrong - the areas are equal as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: Doubling the radius doubles the area of a circle.. Doubling a length doubles lengths, so area feels like it doubles too. Area scales with the square of the radius: double the radius and the area quadruples. In class, draw circles of radius 3 cm and 6 cm on squared paper: the small disk covers 9 pi worth of squares and the big one 36 pi, and four small disks tile the big one exactly.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "Wrong - the areas are equal"
+        }
+      ],
+      "id": "dn3",
+      "kind": "multiple-choice",
+      "prompt": "Circle A has radius 3 cm and circle B has radius 6 cm. A classmate says the area of B is double the area of A. Which statement is correct?"
+    }
+  ],
+  "hingeQuestions": [
+    {
+      "choices": [
+        {
+          "misconception": "Doubling the radius doubles the area of a circle.",
+          "rationale": {
+            "chose": "The learner selected option Agree - doubling the radius doubles the area as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: Doubling the radius doubles the area of a circle.. Doubling a length doubles lengths, so area feels like it doubles too. Area scales with the square of the radius: double the radius and the area quadruples. In class, draw circles of radius 3 cm and 6 cm on squared paper: the small disk covers 9 pi worth of squares and the big one 36 pi, and four small disks tile the big one exactly.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "Agree - doubling the radius doubles the area"
+        },
+        {
+          "correct": true,
+          "text": "Disagree - the area has quadrupled, from 25 pi to 100 pi"
+        },
+        {
+          "misconception": "Doubling the radius doubles the area of a circle.",
+          "rationale": {
+            "chose": "The learner selected option Agree - but only for circles as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: Doubling the radius doubles the area of a circle.. Doubling a length doubles lengths, so area feels like it doubles too. Area scales with the square of the radius: double the radius and the area quadruples. In class, draw circles of radius 3 cm and 6 cm on squared paper: the small disk covers 9 pi worth of squares and the big one 36 pi, and four small disks tile the big one exactly.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "Agree - but only for circles"
+        },
+        {
+          "misconception": "Doubling the radius doubles the area of a circle.",
+          "rationale": {
+            "chose": "The learner selected option Disagree - the area stays the same as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: Doubling the radius doubles the area of a circle.. Doubling a length doubles lengths, so area feels like it doubles too. Area scales with the square of the radius: double the radius and the area quadruples. In class, draw circles of radius 3 cm and 6 cm on squared paper: the small disk covers 9 pi worth of squares and the big one 36 pi, and four small disks tile the big one exactly.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "Disagree - the area stays the same"
+        }
+      ],
+      "id": "h1",
+      "kind": "multiple-choice",
+      "prompt": "A circle of radius 5 cm is enlarged to radius 10 cm. A classmate says its area has doubled. Which response is correct?",
+      "scriptCue": "s4"
+    },
+    {
+      "choices": [
+        {
+          "misconception": "Doubling the radius doubles the area of a circle.",
+          "rationale": {
+            "chose": "The learner selected option The area doubles as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: Doubling the radius doubles the area of a circle.. Doubling a length doubles lengths, so area feels like it doubles too. Area scales with the square of the radius: double the radius and the area quadruples. In class, draw circles of radius 3 cm and 6 cm on squared paper: the small disk covers 9 pi worth of squares and the big one 36 pi, and four small disks tile the big one exactly.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "The area doubles"
+        },
+        {
+          "correct": true,
+          "text": "The area quadruples"
+        },
+        {
+          "misconception": "Doubling the radius doubles the area of a circle.",
+          "rationale": {
+            "chose": "The learner selected option The area stays the same as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: Doubling the radius doubles the area of a circle.. Doubling a length doubles lengths, so area feels like it doubles too. Area scales with the square of the radius: double the radius and the area quadruples. In class, draw circles of radius 3 cm and 6 cm on squared paper: the small disk covers 9 pi worth of squares and the big one 36 pi, and four small disks tile the big one exactly.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "The area stays the same"
+        }
+      ],
+      "id": "h2",
+      "kind": "multiple-choice",
+      "prompt": "What is the correct multiplier on area when any radius doubles?",
+      "scriptCue": "s4"
+    }
+  ],
+  "level": "secondary",
+  "subject": "math",
+  "title": "E-Math mensuration: sectors, pyramids and spheres",
+  "topic": "e-mensuration"
+}
