@@ -1,0 +1,50 @@
+{
+  "title": "The model method: bar models for word problems",
+  "level": "primary",
+  "subject": "math",
+  "topic": "model-method",
+  "items": [
+    {
+      "prompt": "Sam draws a bar model for 1 unit and 2 units. He draws the unit boxes in any lengths he likes, guessing the sizes, so his 2-unit bar is not twice his 1-unit bar. What is wrong with Sam's model?",
+      "answer": "The unit boxes are not all the same length, so the bars are not to scale",
+      "choices": [
+        "Nothing: a bar model is only a rough sketch",
+        "The colours of the bars are different",
+        "The unit boxes are not all the same length, so the bars are not to scale",
+        "Bar models must always use 7 units"
+      ],
+      "misconceptionCode": "Drawing unit boxes in any lengths, guessing the sizes."
+    },
+    {
+      "prompt": "Mia has 2 units and Ben has 3 units. Every unit box is drawn the same length. How many more units does Ben have than Mia?",
+      "answer": "1 more unit",
+      "choices": [
+        "2 more units",
+        "1 more unit",
+        "5 more units",
+        "3 more units"
+      ]
+    },
+    {
+      "prompt": "Mia has 3 units. She gives 1 unit away to her sister. Draw a before-and-after model in your head: how many units does Mia have left?",
+      "answer": "2 units left: 3 - 1 = 2."
+    },
+    {
+      "prompt": "A bar is split into 5 equal units. 2 units are red and the rest are blue. How many units are blue, and what is the difference between the blue units and the red units?",
+      "answer": "Blue: 3 units. Difference: diff = 3 - 2 = 1 unit."
+    },
+    {
+      "prompt": "Which drawing is a correct bar model for 1 unit and 2 units?",
+      "answer": "A 2-unit bar made of two unit boxes, each exactly the same length as the 1-unit bar",
+      "choices": [
+        "A 2-unit bar drawn a little bit longer than the 1-unit bar",
+        "A 2-unit bar drawn three times as long as the 1-unit bar",
+        "A 2-unit bar made of two unit boxes, each exactly the same length as the 1-unit bar"
+      ]
+    },
+    {
+      "prompt": "Explain in one sentence why every unit box in a bar model must be the same length.",
+      "answer": "Every unit box must be exactly the same length: two units is exactly twice one unit."
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "title": "The model method: bar models for word problems",
+  "level": "primary",
+  "subject": "math",
+  "topic": "model-method",
+  "complete": {
+    "problem": "In scene s3, draw the whole class bar first and split it into 7 equal units: 3 units are boys, so the girls are the other 4 units, and diff = 4 − 3 = 1 unit.",
+    "steps": [
+      {
+        "text": "Step 1: Part-whole model: one whole bar split into parts: the class bar of 7 units splits into 3 units of boys and 4 units of girls.",
+        "annotation": "One whole bar split into parts: the class bar of 7 units splits into 3 units of boys and 4 units of girls."
+      },
+      {
+        "text": "Step 2: Read the parts off the model first, then subtract the smaller part from the bigger part: the girls are 7 - 3 = 4 units, and diff = 4 − 3 = 1 unit.",
+        "annotation": "Read the parts off the model first, then subtract the smaller part from the bigger part."
+      },
+      {
+        "text": "Step 3: The takeaway: draw the whole bar first, split it into equal units, and read the difference as the gap between the parts: 1 unit.",
+        "annotation": "Use a part-whole model to split a whole bar into parts and find a difference"
+      }
+    ],
+    "selfExplanation": "Explain in one sentence why every unit box in a bar model must be the same length."
+  },
+  "faded": {
+    "problem": "A bar is split into 5 equal units. 2 units are red and the rest are blue. How many units are blue, and what is the difference between the blue units and the red units?",
+    "steps": [
+      {
+        "text": "Step 1: draw the whole bar first and split it into 5 equal units: 2 units are red.",
+        "annotation": "One whole bar split into parts: the class bar of 7 units splits into 3 units of boys and 4 units of girls.",
+        "withheld": false
+      },
+      {
+        "text": "Step 2: the blue units are the other part of the bar, so blue = 5 - 2 = 3 units.",
+        "annotation": "The blue units are 5 - 2 = 3 units, and the difference is diff = 3 - 2 = 1 unit.",
+        "withheld": true
+      },
+      {
+        "text": "Step 3: so the blue part is 3 units and the difference between the parts is 1 unit.",
+        "annotation": "The difference is the gap between the parts: diff = 3 - 2 = 1 unit.",
+        "withheld": true
+      }
+    ],
+    "selfExplanation": "The first step is shown. Say how the blue units and the difference are found from the whole bar and the red part."
+  },
+  "paired": {
+    "problem": "Mia has 3 units. She gives 1 unit away to her sister. How many units does Mia have left?",
+    "solution": "2 units left: 3 - 1 = 2."
+  }
+}
