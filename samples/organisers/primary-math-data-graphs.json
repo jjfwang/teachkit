@@ -1,0 +1,74 @@
+{
+  "level": "primary",
+  "subject": "math",
+  "templates": [
+    {
+      "kind": "flow",
+      "slots": [
+        {
+          "entries": [
+            "Reading a pie chart: who likes what?: 6 of 12 pupils chose apples (1/2), and 3 each chose bananas and grapes (1/4 each)."
+          ],
+          "label": "Reading a pie chart",
+          "studentPrompt": "Explain this step in your own words."
+        },
+        {
+          "entries": [
+            "Reading a line graph: a rising trend: plants sold climb from Jan 20 to Apr 50 overall, with a small dip to 30 in March."
+          ],
+          "label": "Reading a line graph",
+          "studentPrompt": "Explain this step in your own words."
+        },
+        {
+          "entries": [
+            "Worked example: comparing two bars of data: soccer has 13 votes and badminton has 8 votes, so 13 - 8 = 5 more chose soccer."
+          ],
+          "label": "Worked example",
+          "studentPrompt": "Explain this step in your own words."
+        },
+        {
+          "entries": [
+            "Watch out: a steeper line is not always bigger: both shops rose from 20 to 40, a rise of +20 each, but graph B only looks flatter because its axis runs 0 to 200 instead of 0 to 50."
+          ],
+          "label": "Watch out",
+          "studentPrompt": "Explain this step in your own words."
+        }
+      ]
+    },
+    {
+      "kind": "frayer",
+      "slots": [
+        {
+          "entries": [
+            "A circle split into wedges that show fractions of a whole: in the animation the whole is 12 pupils, with apples 1/2, bananas 1/4 and grapes 1/4."
+          ],
+          "label": "Pie chart",
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "entries": [
+            "Points joined by a line to show how a value changes over time: plants sold were Jan 20, Feb 35, Mar 30 and Apr 50."
+          ],
+          "label": "Line graph",
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "entries": [
+            "Bars whose heights show amounts that can be compared: soccer 13 votes, badminton 8 votes and swimming 3 votes."
+          ],
+          "label": "Bar chart",
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "entries": [
+            "The numbers along an axis that say what the drawing stands for: graph A runs 0 to 50 while graph B runs 0 to 200."
+          ],
+          "label": "Axis scale",
+          "studentPrompt": "Give your own example of this term."
+        }
+      ]
+    }
+  ],
+  "title": "Data graphs: pie charts and line graphs",
+  "topic": "data-graphs"
+}

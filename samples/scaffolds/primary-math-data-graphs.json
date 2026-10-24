@@ -1,0 +1,112 @@
+{
+  "level": "primary",
+  "sets": [
+    {
+      "cloze": [
+        {
+          "answers": [
+            "Pie chart",
+            "Line graph"
+          ],
+          "text": "A ___ shows fractions of a whole as wedges of a circle, and a ___ joins points to show how a value changes over time."
+        },
+        {
+          "answers": [
+            "Bar chart",
+            "Axis scale"
+          ],
+          "text": "A ___ compares amounts by the heights of its bars, and the ___ says what the drawing stands for."
+        }
+      ],
+      "frames": [
+        "A circle split into wedges that show fractions of a whole is a ___.",
+        "Points joined by a line to show change over time make a ___.",
+        "Bars whose heights show amounts that can be compared form a ___."
+      ],
+      "level": "full",
+      "starters": [
+        "A pie chart shows fractions of...",
+        "A line graph shows how a value changes...",
+        "Before comparing how steep two lines look, I check the..."
+      ],
+      "wordBank": [
+        {
+          "gloss": "a circle split into wedges that show fractions of a whole",
+          "term": "Pie chart"
+        },
+        {
+          "gloss": "points joined by a line to show how a value changes over time",
+          "term": "Line graph"
+        },
+        {
+          "gloss": "bars whose heights show amounts that can be compared",
+          "term": "Bar chart"
+        },
+        {
+          "gloss": "the numbers along an axis that say what the drawing stands for",
+          "term": "Axis scale"
+        }
+      ]
+    },
+    {
+      "cloze": [
+        {
+          "answers": [
+            "Pie chart",
+            "Line graph"
+          ],
+          "text": "Draw a ___ for fractions of a whole and a ___ for how a value changes over time."
+        }
+      ],
+      "frames": [
+        "Bars whose heights can be compared form a ___.",
+        "Points joined by a line to show change over time make a ___."
+      ],
+      "level": "partial",
+      "starters": [
+        "To compare amounts, I read a bar...",
+        "A line graph shows change over..."
+      ],
+      "wordBank": [
+        {
+          "gloss": "a circle split into wedges that show fractions of a whole",
+          "term": "Pie chart"
+        },
+        {
+          "gloss": "points joined by a line to show how a value changes over time",
+          "term": "Line graph"
+        },
+        {
+          "gloss": "bars whose heights show amounts that can be compared",
+          "term": "Bar chart"
+        }
+      ]
+    },
+    {
+      "cloze": [
+        {
+          "answers": [
+            "Pie chart"
+          ],
+          "text": "A circle split into wedges that shows fractions of a whole is a ___."
+        }
+      ],
+      "frames": [
+        "Fractions of a whole are shown by a ___."
+      ],
+      "level": "minimal",
+      "starters": [
+        "A pie chart shows..."
+      ],
+      "wordBank": [
+        {
+          "gloss": "a circle split into wedges that show fractions of a whole",
+          "term": "Pie chart"
+        }
+      ]
+    }
+  ],
+  "subject": "math",
+  "title": "Data graphs: pie charts and line graphs",
+  "topic": "data-graphs"
+}
