@@ -1,0 +1,50 @@
+{
+  "title": "Rate and speed: d = s × t",
+  "level": "primary",
+  "subject": "math",
+  "topic": "rate-speed",
+  "items": [
+    {
+      "prompt": "A bus travels at 60 km/h. How far has it really travelled after half an hour?",
+      "answer": "30 km",
+      "choices": [
+        "60 km",
+        "120 km",
+        "30 km",
+        "90 km"
+      ],
+      "misconceptionCode": "60 km/h means the bus has travelled 60 km."
+    },
+    {
+      "prompt": "What does a speed of 60 km/h mean?",
+      "answer": "The bus covers 60 km in every hour",
+      "choices": [
+        "The bus covers 60 km in every hour",
+        "The bus has covered 60 km in total",
+        "The bus covers 60 km in every minute",
+        "The bus stops after 60 km"
+      ]
+    },
+    {
+      "prompt": "A bus travels at 60 km/h for 2.5 hours. How far does it go? Show the working.",
+      "answer": "150 km: distance = speed × time, so 60 × 2.5 = 150 km."
+    },
+    {
+      "prompt": "A cyclist rides at 15 km/h for 4 hours. How far does she ride?",
+      "answer": "60 km: distance = speed × time, so 15 × 4 = 60 km."
+    },
+    {
+      "prompt": "Which working finds the distance travelled at 50 km/h for 3 hours?",
+      "answer": "50 × 3 = 150 km",
+      "choices": [
+        "50 × 3 = 150 km",
+        "50 + 3 = 53 km",
+        "50 ÷ 3 km"
+      ]
+    },
+    {
+      "prompt": "Explain in one sentence why 60 km/h on its own is not a distance.",
+      "answer": "Speed is distance per hour: after half an hour at 60 km/h the bus has gone 30 km, not 60."
+    }
+  ]
+}
