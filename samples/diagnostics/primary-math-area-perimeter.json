@@ -1,0 +1,175 @@
+{
+  "title": "Area and perimeter of an L-shape",
+  "level": "primary",
+  "subject": "math",
+  "topic": "area-perimeter",
+  "doNow": [
+    {
+      "id": "dn1",
+      "prompt": "An L-shape is made of part A, 200 by 120, and part B, 120 by 140. It fits inside a box that is 200 by 260. What is the area of the L-shape?",
+      "kind": "multiple-choice",
+      "choices": [
+        {
+          "text": "52 000",
+          "misconception": "The area of the L-shape is the length times the width of its bounding box.",
+          "rationale": {
+            "chose": "The learner selected option 52 000 as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of counting only the filled parts of the L.",
+            "reteach": "Reteach from the paired notes trap: The area of the L-shape is the length times the width of its bounding box.. The eye completes the L into a rectangle and measures the imaginary corner. The empty corner of the L was never filled, so it adds no area; count only what is there. In the animation scene s3 the 200 by 260 box gives 52 000, but the real area is only the two filled parts: 24 000 + 16 800 = 40 800."
+          }
+        },
+        {
+          "text": "40 800",
+          "correct": true
+        },
+        {
+          "text": "24 000",
+          "misconception": "The area of the L-shape is the length times the width of its bounding box.",
+          "rationale": {
+            "chose": "The learner selected option 24 000 as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of counting only the filled parts of the L.",
+            "reteach": "Reteach from the paired notes trap: The area of the L-shape is the length times the width of its bounding box.. The eye completes the L into a rectangle and measures the imaginary corner. The empty corner of the L was never filled, so it adds no area; count only what is there. In the animation scene s3 the 200 by 260 box gives 52 000, but the real area is only the two filled parts: 24 000 + 16 800 = 40 800."
+          }
+        }
+      ]
+    },
+    {
+      "id": "dn2",
+      "prompt": "What is the area of part A of the L, a rectangle 200 by 120?",
+      "kind": "multiple-choice",
+      "choices": [
+        {
+          "text": "320",
+          "misconception": "The area of the L-shape is the length times the width of its bounding box.",
+          "rationale": {
+            "chose": "The learner selected option 320 as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of counting only the filled parts of the L.",
+            "reteach": "Reteach from the paired notes trap: The area of the L-shape is the length times the width of its bounding box.. The eye completes the L into a rectangle and measures the imaginary corner. The empty corner of the L was never filled, so it adds no area; count only what is there. In the animation scene s3 the 200 by 260 box gives 52 000, but the real area is only the two filled parts: 24 000 + 16 800 = 40 800."
+          }
+        },
+        {
+          "text": "24 000",
+          "correct": true
+        },
+        {
+          "text": "16 800",
+          "misconception": "The area of the L-shape is the length times the width of its bounding box.",
+          "rationale": {
+            "chose": "The learner selected option 16 800 as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of counting only the filled parts of the L.",
+            "reteach": "Reteach from the paired notes trap: The area of the L-shape is the length times the width of its bounding box.. The eye completes the L into a rectangle and measures the imaginary corner. The empty corner of the L was never filled, so it adds no area; count only what is there. In the animation scene s3 the 200 by 260 box gives 52 000, but the real area is only the two filled parts: 24 000 + 16 800 = 40 800."
+          }
+        }
+      ]
+    },
+    {
+      "id": "dn3",
+      "prompt": "Which pair of edges are the inner steps of the L that are easy to miss when finding the perimeter?",
+      "kind": "multiple-choice",
+      "choices": [
+        {
+          "text": "The 200 edge and the 260 edge",
+          "misconception": "The area of the L-shape is the length times the width of its bounding box.",
+          "rationale": {
+            "chose": "The learner selected option The 200 edge and the 260 edge as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of counting only the filled parts of the L.",
+            "reteach": "Reteach from the paired notes trap: The area of the L-shape is the length times the width of its bounding box.. The eye completes the L into a rectangle and measures the imaginary corner. The empty corner of the L was never filled, so it adds no area; count only what is there. In the animation scene s3 the 200 by 260 box gives 52 000, but the real area is only the two filled parts: 24 000 + 16 800 = 40 800."
+          }
+        },
+        {
+          "text": "The 80 edge and the 140 edge",
+          "correct": true
+        },
+        {
+          "text": "There are no inner edges",
+          "misconception": "The area of the L-shape is the length times the width of its bounding box.",
+          "rationale": {
+            "chose": "The learner selected option There are no inner edges as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of counting only the filled parts of the L.",
+            "reteach": "Reteach from the paired notes trap: The area of the L-shape is the length times the width of its bounding box.. The eye completes the L into a rectangle and measures the imaginary corner. The empty corner of the L was never filled, so it adds no area; count only what is there. In the animation scene s3 the 200 by 260 box gives 52 000, but the real area is only the two filled parts: 24 000 + 16 800 = 40 800."
+          }
+        }
+      ]
+    }
+  ],
+  "hingeQuestions": [
+    {
+      "id": "h1",
+      "prompt": "The box is 200 by 260, so why is 52 000 not the area?",
+      "kind": "multiple-choice",
+      "choices": [
+        {
+          "text": "The 200 by 260 box includes an empty corner that is not part of the L, so only the filled parts count.",
+          "correct": true
+        },
+        {
+          "text": "52 000 is the area, because the L fits inside the 200 by 260 box",
+          "misconception": "The area of the L-shape is the length times the width of its bounding box.",
+          "rationale": {
+            "chose": "The learner selected option 52 000 is the area, because the L fits inside the 200 by 260 box as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of counting only the filled parts of the L.",
+            "reteach": "Reteach from the paired notes trap: The area of the L-shape is the length times the width of its bounding box.. The eye completes the L into a rectangle and measures the imaginary corner. The empty corner of the L was never filled, so it adds no area; count only what is there. In the animation scene s3 the 200 by 260 box gives 52 000, but the real area is only the two filled parts: 24 000 + 16 800 = 40 800."
+          }
+        },
+        {
+          "text": "52 000 is not the area because the perimeter of the L is 920",
+          "misconception": "The area of the L-shape is the length times the width of its bounding box.",
+          "rationale": {
+            "chose": "The learner selected option 52 000 is not the area because the perimeter of the L is 920 as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of counting only the filled parts of the L.",
+            "reteach": "Reteach from the paired notes trap: The area of the L-shape is the length times the width of its bounding box.. The eye completes the L into a rectangle and measures the imaginary corner. The empty corner of the L was never filled, so it adds no area; count only what is there. In the animation scene s3 the 200 by 260 box gives 52 000, but the real area is only the two filled parts: 24 000 + 16 800 = 40 800."
+          }
+        },
+        {
+          "text": "52 000 is the area of part A and part B added together twice",
+          "misconception": "The area of the L-shape is the length times the width of its bounding box.",
+          "rationale": {
+            "chose": "The learner selected option 52 000 is the area of part A and part B added together twice as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of counting only the filled parts of the L.",
+            "reteach": "Reteach from the paired notes trap: The area of the L-shape is the length times the width of its bounding box.. The eye completes the L into a rectangle and measures the imaginary corner. The empty corner of the L was never filled, so it adds no area; count only what is there. In the animation scene s3 the 200 by 260 box gives 52 000, but the real area is only the two filled parts: 24 000 + 16 800 = 40 800."
+          }
+        }
+      ],
+      "scriptCue": "s3"
+    },
+    {
+      "id": "h2",
+      "prompt": "How do you find the area and the perimeter of the L-shape?",
+      "kind": "multiple-choice",
+      "choices": [
+        {
+          "text": "Add the areas of the parts for the area, and walk every side for the perimeter.",
+          "correct": true
+        },
+        {
+          "text": "Multiply 200 by 260 for the area and add the four outside edges for the perimeter",
+          "misconception": "The area of the L-shape is the length times the width of its bounding box.",
+          "rationale": {
+            "chose": "The learner selected option Multiply 200 by 260 for the area and add the four outside edges for the perimeter as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of counting only the filled parts of the L.",
+            "reteach": "Reteach from the paired notes trap: The area of the L-shape is the length times the width of its bounding box.. The eye completes the L into a rectangle and measures the imaginary corner. The empty corner of the L was never filled, so it adds no area; count only what is there. In the animation scene s3 the 200 by 260 box gives 52 000, but the real area is only the two filled parts: 24 000 + 16 800 = 40 800."
+          }
+        },
+        {
+          "text": "Add all six edges for the area and multiply the length by the width for the perimeter",
+          "misconception": "The area of the L-shape is the length times the width of its bounding box.",
+          "rationale": {
+            "chose": "The learner selected option Add all six edges for the area and multiply the length by the width for the perimeter as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of counting only the filled parts of the L.",
+            "reteach": "Reteach from the paired notes trap: The area of the L-shape is the length times the width of its bounding box.. The eye completes the L into a rectangle and measures the imaginary corner. The empty corner of the L was never filled, so it adds no area; count only what is there. In the animation scene s3 the 200 by 260 box gives 52 000, but the real area is only the two filled parts: 24 000 + 16 800 = 40 800."
+          }
+        },
+        {
+          "text": "Use the bounding box for both the area and the perimeter",
+          "misconception": "The area of the L-shape is the length times the width of its bounding box.",
+          "rationale": {
+            "chose": "The learner selected option Use the bounding box for both the area and the perimeter as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of counting only the filled parts of the L.",
+            "reteach": "Reteach from the paired notes trap: The area of the L-shape is the length times the width of its bounding box.. The eye completes the L into a rectangle and measures the imaginary corner. The empty corner of the L was never filled, so it adds no area; count only what is there. In the animation scene s3 the 200 by 260 box gives 52 000, but the real area is only the two filled parts: 24 000 + 16 800 = 40 800."
+          }
+        }
+      ],
+      "scriptCue": "s4"
+    }
+  ]
+}

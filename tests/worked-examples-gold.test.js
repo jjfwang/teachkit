@@ -30,7 +30,8 @@ const STEMS = [
   'secondary-science-photosynthesis',
   'primary-math-decimals',
   'primary-math-percentage',
-  'primary-math-ratio'
+  'primary-math-ratio',
+  'primary-math-area-perimeter'
 ];
 
 function load(rel) {
