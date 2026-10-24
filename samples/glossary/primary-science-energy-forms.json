@@ -1,0 +1,38 @@
+{
+  "entries": [
+    {
+      "example": "Energy comes in many forms: light rays spread out in straight lines, heat rises up, sound spreads out from where it is made, movement slides along, and stored energy waits quietly in its box.",
+      "meaning": "The form of energy that races out from a lamp or the Sun in straight lines and lets us see.",
+      "term": "Light"
+    },
+    {
+      "example": "We use energy every day: a lamp sends out light, cooking heat rises from the pot, a radio sends out sound, and a car changes stored energy in its fuel into movement.",
+      "meaning": "Warm energy that moves from hot things to cooler places: it rises up from a cooking pot into the air.",
+      "term": "Heat"
+    },
+    {
+      "example": "Energy comes in many forms: light rays spread out in straight lines, heat rises up, sound spreads out from where it is made, movement slides along, and stored energy waits quietly in its box.",
+      "meaning": "The form of energy made when something vibrates: it spreads out in all directions from where it is made, like sound from a radio.",
+      "term": "Sound"
+    },
+    {
+      "example": "We use energy every day: a lamp sends out light, cooking heat rises from the pot, a radio sends out sound, and a car changes stored energy in its fuel into movement.",
+      "meaning": "The energy of something moving: a rolling car and a sliding ball carry movement energy.",
+      "term": "Movement"
+    },
+    {
+      "example": "A common mistake: is energy used up? No - the energy travels from the stored circle to the heat circle along the chain, changing form and moving somewhere else instead of disappearing.",
+      "meaning": "Energy kept waiting until it is needed: it sits stored in a battery or in fuel, ready to change into other forms.",
+      "term": "Stored energy"
+    },
+    {
+      "example": "In scene s3, follow the energy as a worked example: electrical energy waits stored in the battery, then travels along the wire to the bulb, where electrical energy becomes light and heat. Each step is a change of state: the light lets us see and the heat rises into the air, so no energy has been used up.",
+      "meaning": "Energy carried by electricity as it travels along wires: a battery supplies it and a bulb changes it into light and heat.",
+      "term": "Electrical energy"
+    }
+  ],
+  "level": "primary",
+  "subject": "science",
+  "title": "Forms of energy",
+  "topic": "energy-forms"
+}

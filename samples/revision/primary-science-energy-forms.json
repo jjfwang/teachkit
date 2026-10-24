@@ -1,0 +1,81 @@
+{
+  "flashcards": [
+    {
+      "back": "The form of energy that races out from a lamp or the Sun in straight lines and lets us see.",
+      "front": "Light",
+      "source": "definition"
+    },
+    {
+      "back": "Warm energy that moves from hot things to cooler places: it rises up from a cooking pot into the air.",
+      "front": "Heat",
+      "source": "definition"
+    },
+    {
+      "back": "The form of energy made when something vibrates: it spreads out in all directions from where it is made, like sound from a radio.",
+      "front": "Sound",
+      "source": "definition"
+    },
+    {
+      "back": "The energy of something moving: a rolling car and a sliding ball carry movement energy.",
+      "front": "Movement",
+      "source": "definition"
+    },
+    {
+      "back": "Energy kept waiting until it is needed: it sits stored in a battery or in fuel, ready to change into other forms.",
+      "front": "Stored energy",
+      "source": "definition"
+    },
+    {
+      "back": "Energy carried by electricity as it travels along wires: a battery supplies it and a bulb changes it into light and heat.",
+      "front": "Electrical energy",
+      "source": "definition"
+    },
+    {
+      "back": "A lamp or a toy runs out, so the energy feels consumed. Energy is never used up: it changes form and moves somewhere else. In the animation scene s4 the wrong line is crossed out and the energy dot is watched travelling from the stored circle to the heat circle - the same energy, transferred to a new form and a new place.",
+      "front": "Energy is used up, like fuel disappearing from a tank.",
+      "source": "trap"
+    },
+    {
+      "back": "Electrical energy, then light and heat",
+      "front": "In the torch circuit, what does the electrical energy from the battery change into at the bulb?",
+      "source": "quiz-bank"
+    },
+    {
+      "back": "It rises up into the air above the pot",
+      "front": "What happens to the heat energy as food cooks in a pot?",
+      "source": "quiz-bank"
+    }
+  ],
+  "level": "primary",
+  "practiceSets": [
+    {
+      "dayOffset": 1,
+      "items": [
+        {
+          "answer": "The energy is never used up: it changed into light and heat and moved into the room",
+          "prompt": "A pupil says: when a lamp stops shining, its energy has been used up. What is wrong with this idea?"
+        },
+        {
+          "answer": "It changes form and moves somewhere else, for example stored energy becoming heat.",
+          "prompt": "In one sentence, say what really happens to energy when a toy car slows down and stops."
+        }
+      ]
+    },
+    {
+      "dayOffset": 3,
+      "items": [
+        {
+          "answer": "It changes stored energy in its fuel into movement energy (and some heat).",
+          "prompt": "A car is moving along the road. What energy change is happening inside the car?"
+        },
+        {
+          "answer": "Light, heat, sound, movement and stored energy.",
+          "prompt": "Name the five forms of energy shown at the start of the animation."
+        }
+      ]
+    }
+  ],
+  "subject": "science",
+  "title": "Forms of energy",
+  "topic": "energy-forms"
+}
