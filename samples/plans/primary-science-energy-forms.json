@@ -1,0 +1,94 @@
+{
+ "title": "Forms of energy",
+ "level": "primary",
+ "subject": "science",
+ "topic": "energy-forms",
+ "durationMinutes": 40,
+ "objectives": [
+  {
+   "id": "o1",
+   "text": "Name five forms of energy: light, heat, sound, movement and stored energy, give an everyday use for each form of energy, and describe how electrical energy changes into light and heat at a bulb",
+   "successCriteria": [
+    "I can name the five forms: light, heat, sound, movement and stored energy",
+    "I can give an everyday use for each form of energy",
+    "I can describe how electrical energy travels along the wire and changes into light and heat at the bulb"
+   ],
+   "assessmentPoints": [
+    "Five-forms answers in the opening activity",
+    "Everyday-use and bulb-change answers in the second and third activities"
+   ]
+  },
+  {
+   "id": "o2",
+   "text": "Explain why energy is never used up - it changes form and moves somewhere else instead of disappearing",
+   "successCriteria": [
+    "I can say that energy is never used up: it changes form and moves somewhere else",
+    "I can follow the energy dot from the stored circle to the heat circle to show the same energy in a new form and a new place"
+   ],
+   "assessmentPoints": [
+    "Trap discussion in the fourth activity",
+    "Used-up answers in the closing practice and the exit ticket"
+   ]
+  }
+ ],
+ "activities": [
+  {
+   "title": "Energy comes in many forms",
+   "minutes": 8,
+   "objectiveIds": [
+    "o1"
+   ],
+   "scriptCue": "s1",
+   "grouping": "whole class",
+   "resources": [
+    "board"
+   ]
+  },
+  {
+   "title": "Energy in everyday use",
+   "minutes": 9,
+   "objectiveIds": [
+    "o1"
+   ],
+   "scriptCue": "s2",
+   "grouping": "pairs"
+  },
+  {
+   "title": "Energy changes form at the bulb",
+   "minutes": 10,
+   "objectiveIds": [
+    "o1"
+   ],
+   "scriptCue": "s3",
+   "grouping": "whole class",
+   "differentiation": {
+    "support": "Provide the torch-circuit picture from the animation so learners can trace the energy dot along the wire before describing the change themselves."
+   }
+  },
+  {
+   "title": "Is energy used up?",
+   "minutes": 8,
+   "objectiveIds": [
+    "o1",
+    "o2"
+   ],
+   "scriptCue": "s4",
+   "grouping": "pairs",
+   "differentiation": {
+    "stretch": "Ask learners to explain why a lamp stopping does not mean its energy has disappeared."
+   }
+  },
+  {
+   "title": "Worksheet practice and exit ticket",
+   "minutes": 5,
+   "objectiveIds": [
+    "o1",
+    "o2"
+   ],
+   "grouping": "individual",
+   "resources": [
+    "worksheet"
+   ]
+  }
+ ]
+}

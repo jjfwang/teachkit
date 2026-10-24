@@ -1,0 +1,42 @@
+{
+ "level": "primary",
+ "questions": [
+  {
+   "choices": [
+    {
+     "text": "Nothing: when a lamp stops, its energy has been used up and is gone for good"
+    },
+    {
+     "text": "The energy hides inside the lamp until someone switches it on again"
+    },
+    {
+     "correct": true,
+     "text": "The energy is never used up: it changed into light and heat and moved into the room"
+    }
+   ],
+   "explanation": "The trap is: Energy is used up, like fuel disappearing from a tank. Scene s4 shows why this is wrong: Energy is never used up: it changes form and moves somewhere else.",
+   "id": "q1",
+   "kind": "multiple-choice",
+   "misconception": "Energy is used up, like fuel disappearing from a tank.",
+   "prompt": "A pupil says: when a lamp stops shining, its energy has been used up. What is wrong with this idea?"
+  },
+  {
+   "answer": "Light, heat, sound, movement and stored energy.",
+   "explanation": "Scene s1: light rays spread out, heat rises, sound spreads, movement slides along, and stored energy waits in its box - five forms of energy.",
+   "id": "q3",
+   "kind": "short-answer",
+   "prompt": "Name the five forms of energy shown at the start of the animation."
+  },
+  {
+   "answer": "It changes stored energy in its fuel into movement energy (and some heat).",
+   "explanation": "Scene s2: the car rolls along as the stored energy in its fuel changes into movement, with some energy leaving as heat.",
+   "id": "q4",
+   "kind": "short-answer",
+   "prompt": "A car is moving along the road. What energy change is happening inside the car?"
+  }
+ ],
+ "subject": "science",
+ "title": "Forms of energy",
+ "topic": "energy-forms",
+ "variant": "homework"
+}

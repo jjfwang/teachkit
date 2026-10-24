@@ -1,0 +1,44 @@
+{
+ "title": "Forms of energy",
+ "level": "primary",
+ "subject": "science",
+ "topic": "energy-forms",
+ "strengths": [
+  "Most of the class can name the five forms of energy.",
+  "The class can describe how electrical energy changes into light and heat at a bulb."
+ ],
+ "modelAnswers": [
+  {
+   "question": "Name the five forms of energy shown at the start of the animation.",
+   "answer": "Light, heat, sound, movement and stored energy.",
+   "creditPoints": []
+  },
+  {
+   "question": "A car is moving along the road. What energy change is happening inside the car?",
+   "answer": "It changes stored energy in its fuel into movement energy (and some heat).",
+   "creditPoints": []
+  }
+ ],
+ "commonErrors": [
+  {
+   "misconception": "Energy is used up, like fuel disappearing from a tank.",
+   "example": "A learner writes on the worksheet that the lamp energy was used up when it stopped shining.",
+   "fixIt": {
+    "prompt": "Fix it: say what really happens to the energy when a lamp stops shining.",
+    "corrected": "Corrected working: the energy is never used up - it changed into light and heat and moved into the room."
+   }
+  },
+  {
+   "misconception": "Energy is used up, like fuel disappearing from a tank.",
+   "example": "On the exit ticket, a learner says the energy disappeared when a toy car slowed down and stopped.",
+   "fixIt": {
+    "prompt": "Fix it: rewrite the sentence so the energy changes form and moves somewhere else instead of disappearing.",
+    "corrected": "Corrected check: energy is never used up: it changes form and moves somewhere else."
+   }
+  }
+ ],
+ "nextSteps": [
+  "Reteach the trap, landing that energy is never used up: it changes form and moves somewhere else.",
+  "Practise the energy-change check from the worked example - name where the energy waits, follow it as it travels, then name the forms it becomes."
+ ]
+}
