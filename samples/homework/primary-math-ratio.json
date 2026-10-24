@@ -1,0 +1,45 @@
+{
+  "level": "primary",
+  "subject": "math",
+  "topic": "ratio",
+  "title": "Ratio: sharing $48 in 2:3",
+  "variant": "homework",
+  "questions": [
+    {
+      "choices": [
+        {
+          "text": "$72"
+        },
+        {
+          "text": "$19.20"
+        },
+        {
+          "correct": true,
+          "text": "$28.80"
+        },
+        {
+          "text": "$48"
+        }
+      ],
+      "explanation": "The trap is: A ratio of 3:2 means 3/2 of the whole. The whole is 5 parts, so one part is $48 / 5 = $9.60, and 3 parts is 3 x $9.60 = $28.80.",
+      "id": "q1",
+      "kind": "multiple-choice",
+      "misconception": "A ratio of 3:2 means 3/2 of the whole.",
+      "prompt": "$48 is shared in the ratio 2:3. How much does the child with 3 parts get?"
+    },
+    {
+      "answer": "1 part = $48 / 5 = $9.60.",
+      "explanation": "Scene s3 divides the whole by the number of parts: 5 equal parts share $48, so each part is $9.60.",
+      "id": "q3",
+      "kind": "short-answer",
+      "prompt": "Find one part when $48 is shared in the ratio 2:3, and show the step."
+    },
+    {
+      "answer": "$19.20: 2 x $9.60 = $19.20, and $19.20 + $28.80 rebuilds $48.",
+      "explanation": "Scene s3 multiplies the one part by the number of parts: 2 parts at $9.60 each is $19.20.",
+      "id": "q4",
+      "kind": "short-answer",
+      "prompt": "How much does the child with 2 parts get when $48 is shared in the ratio 2:3?"
+    }
+  ]
+}
