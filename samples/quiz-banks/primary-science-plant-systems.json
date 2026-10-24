@@ -1,0 +1,48 @@
+{
+  "title": "Plant systems",
+  "level": "primary",
+  "subject": "science",
+  "topic": "plant-systems",
+  "items": [
+    {
+      "prompt": "A pupil says: plants take food from the soil through their roots, like we eat food. What is wrong with this idea?",
+      "answer": "Plants do not eat food from the soil - roots drink water and minerals, and the leaves make the food with sunlight",
+      "choices": [
+        "Nothing: the roots are the mouth of the plant and eat food from the soil",
+        "The stem has stopped working",
+        "Plants do not eat food from the soil - roots drink water and minerals, and the leaves make the food with sunlight"
+      ],
+      "misconceptionCode": "Plants take food from the soil through their roots, like we eat food."
+    },
+    {
+      "prompt": "In which order does water travel through the plant?",
+      "answer": "Roots, then stem, then leaves",
+      "choices": [
+        "Leaves, then stem, then roots",
+        "Roots, then stem, then leaves",
+        "Stem, then leaves, then roots"
+      ]
+    },
+    {
+      "prompt": "What two jobs do the roots do for the plant?",
+      "answer": "The roots hold the plant in place in the soil, and they drink up water for the whole plant."
+    },
+    {
+      "prompt": "A drop of water is taken in by the roots. What happens to that drop next?",
+      "answer": "It travels up the stem to the leaves, where the leaves use it with sunlight to make food."
+    },
+    {
+      "prompt": "Which part of the plant makes its food?",
+      "answer": "The leaves",
+      "choices": [
+        "The roots",
+        "The leaves",
+        "The stem"
+      ]
+    },
+    {
+      "prompt": "Name, in order, the three parts of the plant that water passes through on its journey from the soil to the leaves.",
+      "answer": "Roots, stem, leaves."
+    }
+  ]
+}
