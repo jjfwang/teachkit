@@ -37,7 +37,8 @@ const STEMS = [
   'primary-math-percentage',
   'primary-math-ratio',
   'primary-math-area-perimeter',
-  'primary-math-rate-speed'
+  'primary-math-rate-speed',
+  'primary-math-model-method'
 ];
 
 function load(rel) {
@@ -120,7 +121,7 @@ for (const stem of STEMS) {
   });
 }
 
-test('gold summatives: the thirteen units are exactly the Phase A gate set plus the pythagoras, photosynthesis, decimals, percentage, ratio, area-perimeter and rate-speed backfills', () => {
+test('gold summatives: the fourteen units are exactly the Phase A gate set plus the pythagoras, photosynthesis, decimals, percentage, ratio, area-perimeter, rate-speed and model-method backfills', () => {
   const files = fs.readdirSync(path.join(__dirname, '..', 'samples/summatives'))
     .filter((f) => f.endsWith('.json'))
     .map((f) => f.replace(/\.json$/, ''))

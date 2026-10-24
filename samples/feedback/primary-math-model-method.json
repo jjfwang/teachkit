@@ -1,0 +1,44 @@
+{
+ "title": "The model method: bar models for word problems",
+ "level": "primary",
+ "subject": "math",
+ "topic": "model-method",
+ "strengths": [
+  "Most of the class can draw unit boxes that are all the same length and line the bars up to compare them.",
+  "The class can use a before-and-after model to show what changed and a part-whole model to find a difference."
+ ],
+ "modelAnswers": [
+  {
+   "question": "Mia has 3 units. She gives 1 unit away to her sister. Draw a before-and-after model in your head: how many units does Mia have left?",
+   "answer": "2 units left: 3 - 1 = 2.",
+   "creditPoints": []
+  },
+  {
+   "question": "A class bar is split into 7 equal units. 3 units are boys and the rest are girls. How many units are girls, and what is the difference between the girls' units and the boys' units?",
+   "answer": "Girls: 4 units. Difference: diff = 4 - 3 = 1 unit.",
+   "creditPoints": []
+  }
+ ],
+ "commonErrors": [
+  {
+   "misconception": "Drawing unit boxes in any lengths, guessing the sizes.",
+   "example": "A learner draws Sam's 2-unit bar only a little longer than the 1-unit bar on the worksheet, treating the bar as a rough sketch.",
+   "fixIt": {
+    "prompt": "Fix it: measure each unit box against the first one - how long should the 2-unit bar be compared with the 1-unit bar?",
+    "corrected": "Corrected working: every unit box is exactly the same length, so the 2-unit bar is exactly twice the 1-unit bar."
+   }
+  },
+  {
+   "misconception": "Drawing unit boxes in any lengths, guessing the sizes.",
+   "example": "On the exit ticket, a learner defends the guessed lengths by saying a bar model is only a rough sketch.",
+   "fixIt": {
+    "prompt": "Fix it: say what makes a bar model trustworthy - then redraw the 1-unit and 2-unit bars with matching unit boxes.",
+    "corrected": "Corrected check: the bar is a scale model, not a rough sketch, so two units is exactly twice one unit."
+   }
+  }
+ ],
+ "nextSteps": [
+  "Reteach unit boxes as equal parts, landing the ruler check that every box matches, before any further model questions.",
+  "Practise drawing the whole bar first and splitting it into equal units before marking the parts."
+ ]
+}
