@@ -1,0 +1,95 @@
+{
+  "level": "primary",
+  "subject": "science",
+  "templates": [
+    {
+      "kind": "flow",
+      "slots": [
+        {
+          "entries": [
+            "Parts of a green plant: the leaf catches light, the stem holds the plant up, and the roots drink in water from the soil."
+          ],
+          "label": "Parts of a green plant",
+          "studentPrompt": "Explain this step in your own words."
+        },
+        {
+          "entries": [
+            "Photosynthesis: plants make their own food: light, water and carbon dioxide arrive at the leaf and become food and oxygen."
+          ],
+          "label": "Photosynthesis",
+          "studentPrompt": "Explain this step in your own words."
+        },
+        {
+          "entries": [
+            "Respiration: the reverse process: food and oxygen are broken down to release energy, making carbon dioxide and water."
+          ],
+          "label": "Respiration",
+          "studentPrompt": "Explain this step in your own words."
+        },
+        {
+          "entries": [
+            "A common mistake: plants do not breathe? Gases move in and out of the leaf all the time, so a plant respires day and night."
+          ],
+          "label": "Plants do not breathe?",
+          "studentPrompt": "Explain this step in your own words."
+        }
+      ]
+    },
+    {
+      "kind": "frayer",
+      "slots": [
+        {
+          "entries": [
+            "The process by which green leaves use light, water and carbon dioxide to make food, releasing oxygen."
+          ],
+          "label": "Photosynthesis",
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "entries": [
+            "The process that breaks down food with oxygen to release energy, making carbon dioxide and water; it happens all the time."
+          ],
+          "label": "Respiration",
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "entries": [
+            "The part of the plant that catches light: the leaf is where photosynthesis makes food."
+          ],
+          "label": "Leaf",
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "entries": [
+            "The part of the plant that holds it up and carries water from the roots to the leaves."
+          ],
+          "label": "Stem",
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "entries": [
+            "The parts below the soil that drink in water for the plant."
+          ],
+          "label": "Roots",
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "entries": [
+            "A gas in the air that the leaf takes in as one ingredient of photosynthesis."
+          ],
+          "label": "Carbon dioxide",
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "entries": [
+            "A gas released by the leaf in photosynthesis, and taken in when food is broken down in respiration."
+          ],
+          "label": "Oxygen",
+          "studentPrompt": "Give your own example of this term."
+        }
+      ]
+    }
+  ],
+  "title": "Photosynthesis: how green plants make food",
+  "topic": "photosynthesis"
+}

@@ -1,0 +1,86 @@
+{
+  "flashcards": [
+    {
+      "back": "The process by which green leaves use light, water and carbon dioxide to make food, releasing oxygen.",
+      "front": "Photosynthesis",
+      "source": "definition"
+    },
+    {
+      "back": "The process that breaks down food with oxygen to release energy, making carbon dioxide and water; it happens all the time.",
+      "front": "Respiration",
+      "source": "definition"
+    },
+    {
+      "back": "The part of the plant that catches light: the leaf is where photosynthesis makes food.",
+      "front": "Leaf",
+      "source": "definition"
+    },
+    {
+      "back": "The part of the plant that holds it up and carries water from the roots to the leaves.",
+      "front": "Stem",
+      "source": "definition"
+    },
+    {
+      "back": "The parts below the soil that drink in water for the plant.",
+      "front": "Roots",
+      "source": "definition"
+    },
+    {
+      "back": "A gas in the air that the leaf takes in as one ingredient of photosynthesis.",
+      "front": "Carbon dioxide",
+      "source": "definition"
+    },
+    {
+      "back": "A gas released by the leaf in photosynthesis, and taken in when food is broken down in respiration.",
+      "front": "Oxygen",
+      "source": "definition"
+    },
+    {
+      "back": "Plants have no nose and no moving chest, so breathing is never seen. That hidden breathing is real respiration: Plants take in and give out gases too: they respire all the time, day and night, just like us. In the animation scene s4 the mistaken line is crossed out and gases are watched moving in and out of the leaf in the day and at night.",
+      "front": "Only animals breathe; plants do not.",
+      "source": "trap"
+    },
+    {
+      "back": "Light, water and carbon dioxide",
+      "front": "What does a green leaf use to make food in photosynthesis?",
+      "source": "quiz-bank"
+    },
+    {
+      "back": "Food and oxygen",
+      "front": "Which pair are the products of photosynthesis?",
+      "source": "quiz-bank"
+    }
+  ],
+  "level": "primary",
+  "practiceSets": [
+    {
+      "dayOffset": 1,
+      "items": [
+        {
+          "answer": "Plants take in and give out gases too: they respire all the time, day and night",
+          "prompt": "A pupil says plants do not breathe at all. What is wrong with this idea?"
+        },
+        {
+          "answer": "Respiration is still happening: it breaks down food with oxygen to release energy.",
+          "prompt": "A plant is kept in the dark all night. Which process is still happening in its leaves, and what does that process do?"
+        }
+      ]
+    },
+    {
+      "dayOffset": 3,
+      "items": [
+        {
+          "answer": "Respiration breaks down food and oxygen to release energy, making carbon dioxide and water - the opposite direction from photosynthesis.",
+          "prompt": "In one sentence, say how respiration is the reverse of photosynthesis."
+        },
+        {
+          "answer": "The leaf catches light, the stem holds the plant up, and the roots drink in water from the soil.",
+          "prompt": "Name the three main parts of a green plant and give the job of each part."
+        }
+      ]
+    }
+  ],
+  "subject": "science",
+  "title": "Photosynthesis: how green plants make food",
+  "topic": "photosynthesis"
+}

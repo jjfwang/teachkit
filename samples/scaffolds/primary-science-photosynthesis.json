@@ -1,0 +1,115 @@
+{
+  "level": "primary",
+  "sets": [
+    {
+      "cloze": [
+        {
+          "answers": [
+            "Leaf",
+            "Roots"
+          ],
+          "text": "The ___ catches light and the ___ drink in water from the soil."
+        },
+        {
+          "answers": [
+            "Stem"
+          ],
+          "text": "The ___ holds the plant up and carries water to the leaves."
+        }
+      ],
+      "frames": [
+        "The ___ is the part of the plant that catches light.",
+        "The ___ holds the plant up.",
+        "The ___ drink in water below the soil."
+      ],
+      "level": "full",
+      "starters": [
+        "A green plant has three main parts...",
+        "The leaf makes food because...",
+        "Water reaches the leaf when..."
+      ],
+      "wordBank": [
+        {
+          "gloss": "the part of the plant that catches light",
+          "term": "Leaf"
+        },
+        {
+          "gloss": "the part that holds the plant up",
+          "term": "Stem"
+        },
+        {
+          "gloss": "the parts below the soil that drink in water",
+          "term": "Roots"
+        },
+        {
+          "gloss": "how green leaves make food from light, water and carbon dioxide",
+          "term": "Photosynthesis"
+        }
+      ]
+    },
+    {
+      "cloze": [
+        {
+          "answers": [
+            "Carbon dioxide",
+            "Oxygen"
+          ],
+          "text": "In photosynthesis the leaf takes in ___ and releases ___."
+        }
+      ],
+      "frames": [
+        "The leaf takes in ___ from the air.",
+        "Photosynthesis releases ___ from the leaf."
+      ],
+      "level": "partial",
+      "starters": [
+        "A leaf makes food when...",
+        "The gases in photosynthesis are..."
+      ],
+      "wordBank": [
+        {
+          "gloss": "how green leaves make food from light, water and carbon dioxide",
+          "term": "Photosynthesis"
+        },
+        {
+          "gloss": "a gas the leaf takes in to make food",
+          "term": "Carbon dioxide"
+        },
+        {
+          "gloss": "a gas released by the leaf in photosynthesis",
+          "term": "Oxygen"
+        }
+      ]
+    },
+    {
+      "cloze": [
+        {
+          "answers": [
+            "Respiration"
+          ],
+          "text": "The process that breaks down food with oxygen to release energy, day and night, is called ___."
+        }
+      ],
+      "frames": [
+        "Plants respire all the time because ___ releases energy from food."
+      ],
+      "level": "minimal",
+      "starters": [
+        "Plants respire all the time because..."
+      ],
+      "wordBank": [
+        {
+          "gloss": "the process that breaks down food with oxygen to release energy",
+          "term": "Respiration"
+        },
+        {
+          "gloss": "a gas taken in when food is broken down in respiration",
+          "term": "Oxygen"
+        }
+      ]
+    }
+  ],
+  "subject": "science",
+  "title": "Photosynthesis: how green plants make food",
+  "topic": "photosynthesis"
+}
