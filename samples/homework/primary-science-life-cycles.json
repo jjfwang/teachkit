@@ -1,0 +1,42 @@
+{
+ "level": "primary",
+ "questions": [
+  {
+   "choices": [
+    {
+     "text": "Nothing: the flower is the last part to appear, so the plant's life is finished"
+    },
+    {
+     "text": "The flower is too small to matter in the life cycle"
+    },
+    {
+     "correct": true,
+     "text": "Inside the flower new seeds are forming, and those seeds start the cycle again"
+    }
+   ],
+   "explanation": "The trap is: The flower is the end of the life of the plant. Scene s2 shows why this is wrong: The flower is not the end: inside the flower new seeds are forming, and the cycle starts again.",
+   "id": "q1",
+   "kind": "multiple-choice",
+   "misconception": "The flower is the end of the life of the plant.",
+   "prompt": "A pupil says: the flower is the end of the life of the plant. What is wrong with this idea?"
+  },
+  {
+   "answer": "Water, warmth and light.",
+   "explanation": "Scene s1: with water, warmth and light, the seed wakes up and grows its first root and shoot.",
+   "id": "q3",
+   "kind": "short-answer",
+   "prompt": "What three things does a seed need to wake up and sprout?"
+  },
+  {
+   "answer": "Its body is changing inside the pupa, and an adult butterfly will come out.",
+   "explanation": "Scene s4: the caterpillar rests inside a pupa while its body changes, then an adult butterfly emerges, ready to lay eggs and start the cycle again.",
+   "id": "q4",
+   "kind": "short-answer",
+   "prompt": "A caterpillar has formed its pupa. What is happening inside the pupa, and what will come out?"
+  }
+ ],
+ "subject": "science",
+ "title": "Life cycles: plants and animals",
+ "topic": "life-cycles",
+ "variant": "homework"
+}

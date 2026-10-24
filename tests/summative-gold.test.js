@@ -42,7 +42,8 @@ const STEMS = [
   'primary-math-data-graphs',
   'primary-science-forces-magnets',
   'primary-science-human-body-systems',
-  'primary-science-plant-systems'
+  'primary-science-plant-systems',
+  'primary-science-life-cycles'
 ];
 
 function load(rel) {
@@ -125,7 +126,7 @@ for (const stem of STEMS) {
   });
 }
 
-test('gold summatives: the eighteen units are exactly the Phase A gate set plus the pythagoras, photosynthesis, decimals, percentage, ratio, area-perimeter, rate-speed, model-method, data-graphs, forces-magnets, human-body-systems and plant-systems backfills', () => {
+test('gold summatives: the nineteen units are exactly the Phase A gate set plus the pythagoras, photosynthesis, decimals, percentage, ratio, area-perimeter, rate-speed, model-method, data-graphs, forces-magnets, human-body-systems, plant-systems and life-cycles backfills', () => {
   const files = fs.readdirSync(path.join(__dirname, '..', 'samples/summatives'))
     .filter((f) => f.endsWith('.json'))
     .map((f) => f.replace(/\.json$/, ''))
