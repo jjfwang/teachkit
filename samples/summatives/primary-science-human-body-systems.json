@@ -1,0 +1,125 @@
+{
+  "title": "Human Body Systems and the Water Cycle Unit Test",
+  "level": "primary",
+  "subject": "science",
+  "unitTitle": "The human body and water in nature",
+  "topics": [
+    "primary-science-human-body-systems",
+    "primary-science-water-cycle"
+  ],
+  "durationMinutes": 40,
+  "totalMarks": 20,
+  "blueprint": [
+    {
+      "outcomeCode": "P5-HBS-SYSTEMS",
+      "assessmentObjective": "AO1 recall and apply",
+      "marks": 10,
+      "cognitiveLevel": "apply"
+    },
+    {
+      "outcomeCode": "P5-WC-PROCESS",
+      "assessmentObjective": "AO2 reason and explain",
+      "marks": 10,
+      "cognitiveLevel": "reason"
+    }
+  ],
+  "items": [
+    {
+      "prompt": "State the order in which food passes through the mouth, the stomach and the intestines, and say what happens at each stage.",
+      "blueprintRow": 0,
+      "commandWord": "State",
+      "marks": 4,
+      "markScheme": {
+        "points": [
+          {
+            "text": "Names the order mouth, then stomach, then intestines",
+            "marks": 2
+          },
+          {
+            "text": "States that food is chewed in the mouth, mixed in the stomach, and the good parts are taken out in the intestines",
+            "marks": 2
+          }
+        ]
+      }
+    },
+    {
+      "prompt": "A drop of blood leaves the heart and travels to the body. Explain what happens to that drop next and why the heart never runs out of blood.",
+      "blueprintRow": 0,
+      "commandWord": "Explain",
+      "marks": 6,
+      "markScheme": {
+        "points": [
+          {
+            "text": "States the same drop travels back to the heart and goes round the loop again",
+            "marks": 3
+          },
+          {
+            "text": "Explains that the heart is a pump and blood is never used up, so no fresh blood is needed to replace it",
+            "marks": 3
+          }
+        ]
+      }
+    },
+    {
+      "prompt": "State the process by which liquid water changes into water vapour at the surface of a pond.",
+      "blueprintRow": 1,
+      "commandWord": "State",
+      "marks": 4,
+      "markScheme": {
+        "points": [
+          {
+            "text": "Names the process as evaporation",
+            "marks": 2
+          },
+          {
+            "text": "Notes it happens at the surface and needs heat from the surroundings",
+            "marks": 2
+          }
+        ]
+      }
+    },
+    {
+      "prompt": "A cold mirror held above a kettle of boiling water becomes covered in droplets. Explain how the droplets form.",
+      "blueprintRow": 1,
+      "commandWord": "Explain",
+      "marks": 6,
+      "markScheme": {
+        "points": [
+          {
+            "text": "States water vapour from the kettle touches the cold mirror",
+            "marks": 3
+          },
+          {
+            "text": "States the vapour loses heat and condenses into liquid droplets",
+            "marks": 3
+          }
+        ]
+      }
+    }
+  ],
+  "rubric": {
+    "criteria": [
+      {
+        "name": "Scientific explanation",
+        "levels": [
+          {
+            "label": "Secure",
+            "descriptor": "Answers use the correct system and process names and link each observation to a cause."
+          },
+          {
+            "label": "Developing",
+            "descriptor": "System and process names are mostly correct but the cause link is incomplete."
+          },
+          {
+            "label": "Beginning",
+            "descriptor": "System and process names are missing or confused and no cause is given."
+          }
+        ]
+      }
+    ]
+  },
+  "moderation": {
+    "state": "unreviewed"
+  },
+  "review": null
+}

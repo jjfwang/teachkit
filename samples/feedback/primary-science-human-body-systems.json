@@ -1,0 +1,44 @@
+{
+ "title": "Human body systems",
+ "level": "primary",
+ "subject": "science",
+ "topic": "human-body-systems",
+ "strengths": [
+  "Most of the class can put digestion in the right order: mouth, then stomach, then intestines.",
+  "The class can describe the lungs filling and growing bigger as air flows in, then shrinking as air flows back out."
+ ],
+ "modelAnswers": [
+  {
+   "question": "What happens to the lungs when you breathe in, and what happens when you breathe out?",
+   "answer": "The lungs fill with air and grow bigger, then shrink as the air flows back out.",
+   "creditPoints": []
+  },
+  {
+   "question": "A drop of blood leaves the heart and travels to the body. What happens to that drop next?",
+   "answer": "It travels back to the heart and goes round the loop again.",
+   "creditPoints": []
+  }
+ ],
+ "commonErrors": [
+  {
+   "misconception": "The heart uses up the blood it pumps, so the body must keep making fresh blood.",
+   "example": "A learner writes on the worksheet that the heart burns up blood like fuel, so the body must keep making fresh blood.",
+   "fixIt": {
+    "prompt": "Fix it: say what happens to a drop of blood after it leaves the heart and reaches the body.",
+    "corrected": "Corrected working: the drop travels back to the heart and goes round the loop again; blood is never used up."
+   }
+  },
+  {
+   "misconception": "The heart uses up the blood it pumps, so the body must keep making fresh blood.",
+   "example": "On the exit ticket, a learner says the heart can run out of blood because pumping uses it up.",
+   "fixIt": {
+    "prompt": "Fix it: say why the returning blood proves the heart does not use blood up.",
+    "corrected": "Corrected check: the same blood comes back to the heart to be pushed around again, so the loop never uses the blood up."
+   }
+  }
+ ],
+ "nextSteps": [
+  "Reteach the blood loop, landing that the heart is a pump and the same blood keeps going round instead of being used up.",
+  "Practise tracing one drop of blood out to the body and back before answering loop questions."
+ ]
+}

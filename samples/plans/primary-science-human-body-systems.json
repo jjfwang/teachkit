@@ -1,0 +1,92 @@
+{
+ "title": "Human body systems",
+ "level": "primary",
+ "subject": "science",
+ "topic": "human-body-systems",
+ "durationMinutes": 40,
+ "objectives": [
+  {
+   "id": "o1",
+   "text": "Describe the journey of food through the mouth, stomach and intestines, and explain how the lungs fill and empty as we breathe",
+   "successCriteria": [
+    "I can say food is chewed in the mouth, mixed in the stomach, and the good parts are taken out in the intestines",
+    "I can explain that the lungs fill with air and grow bigger when we breathe in, then shrink as air flows back out"
+   ],
+   "assessmentPoints": [
+    "Digestion order answers in the opening activity",
+    "Responses when the filling and emptying lungs are followed in the second activity"
+   ]
+  },
+  {
+   "id": "o2",
+   "text": "Trace the loop of blood from the heart to the body and back, and explain why blood is never used up",
+   "successCriteria": [
+    "I can trace one drop of blood from the heart out to the body and back to the heart",
+    "I can explain that the heart is a pump and the same blood keeps going round the loop instead of being used up"
+   ],
+   "assessmentPoints": [
+    "Blood-loop tracing in the third activity",
+    "Worksheet and exit ticket answers in the closing practice"
+   ]
+  }
+ ],
+ "activities": [
+  {
+   "title": "Digestion: food travels mouth to intestines",
+   "minutes": 8,
+   "objectiveIds": [
+    "o1"
+   ],
+   "scriptCue": "s1",
+   "grouping": "whole class",
+   "resources": [
+    "board"
+   ]
+  },
+  {
+   "title": "Breathing: air moves in and out of the lungs",
+   "minutes": 9,
+   "objectiveIds": [
+    "o1"
+   ],
+   "scriptCue": "s2",
+   "grouping": "pairs"
+  },
+  {
+   "title": "Circulation: blood loops round and round",
+   "minutes": 10,
+   "objectiveIds": [
+    "o2"
+   ],
+   "scriptCue": "s3",
+   "grouping": "whole class",
+   "differentiation": {
+    "support": "Provide a simple heart-and-body loop diagram with arrows so learners can follow one drop of blood out to the body and back before tracing it themselves."
+   }
+  },
+  {
+   "title": "A common mistake: blood is not used up",
+   "minutes": 8,
+   "objectiveIds": [
+    "o2"
+   ],
+   "scriptCue": "s4",
+   "grouping": "pairs",
+   "differentiation": {
+    "stretch": "Ask learners to explain why the returning drop of blood proves the heart does not burn blood up like fuel."
+   }
+  },
+  {
+   "title": "Worksheet practice and exit ticket",
+   "minutes": 5,
+   "objectiveIds": [
+    "o1",
+    "o2"
+   ],
+   "grouping": "individual",
+   "resources": [
+    "worksheet"
+   ]
+  }
+ ]
+}
