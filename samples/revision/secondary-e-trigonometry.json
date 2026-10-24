@@ -1,0 +1,86 @@
+{
+  "flashcards": [
+    {
+      "back": "The ratio opposite over hypotenuse for an angle in a right-angled triangle: in the 3-4-5 triangle, sin theta = 3/5 = 0.6 (the SOH part of the card).",
+      "front": "Sine",
+      "source": "definition"
+    },
+    {
+      "back": "The ratio adjacent over hypotenuse for an angle in a right-angled triangle: in the 3-4-5 triangle, cos theta = 4/5 = 0.8 (the CAH part of the card).",
+      "front": "Cosine",
+      "source": "definition"
+    },
+    {
+      "back": "The ratio opposite over adjacent for an angle in a right-angled triangle: in the 3-4-5 triangle, tan theta = 3/4 = 0.75 (the TOA part of the card).",
+      "front": "Tangent",
+      "source": "definition"
+    },
+    {
+      "back": "The longest side of a right-angled triangle, across from the right angle: length 5 in the 3-4-5 triangle.",
+      "front": "Hypotenuse",
+      "source": "definition"
+    },
+    {
+      "back": "The side across from the angle you are working with: length 3 for angle theta in the 3-4-5 triangle.",
+      "front": "Opposite",
+      "source": "definition"
+    },
+    {
+      "back": "The side next to the angle you are working with, other than the hypotenuse: length 4 for angle theta in the 3-4-5 triangle.",
+      "front": "Adjacent",
+      "source": "definition"
+    },
+    {
+      "back": "The rule a / sin A = b / sin B, linking each side of any triangle with the sine of its opposite angle, used when there is no right angle.",
+      "front": "Sine rule",
+      "source": "definition"
+    },
+    {
+      "back": "Opposite and adjacent swap places under pressure. Always read TOA: tan is opposite over adjacent. For the 3-4-5 triangle that means tan theta = 3/4 = 0.75, never 4/3.",
+      "front": "tan = adjacent / opposite.",
+      "source": "trap"
+    },
+    {
+      "back": "3/4",
+      "front": "For the same 3-4-5 triangle, what is tan theta?",
+      "source": "quiz-bank"
+    },
+    {
+      "back": "3/5",
+      "front": "In the 3-4-5 triangle, angle theta has opposite side 3 and hypotenuse 5. What is sin theta?",
+      "source": "quiz-bank"
+    }
+  ],
+  "level": "secondary",
+  "practiceSets": [
+    {
+      "dayOffset": 1,
+      "items": [
+        {
+          "answer": "a / sin A = b / sin B, so 4 / sin 30 degrees = b / sin 60 degrees. Then b = (4 x sin 60 degrees) / sin 30 degrees = (4 x 0.8660) / 0.5, so b is about 6.93.",
+          "prompt": "In triangle ABC, side a = 4 is opposite angle A = 30 degrees, and angle B = 60 degrees. Use the sine rule to find side b, showing your working."
+        },
+        {
+          "answer": "The sine rule links each side with the sine of its opposite angle, so it needs no right angle - a known side and its opposite angle form a complete pair that unlocks the other sides.",
+          "prompt": "In one or two sentences: why does the sine rule work for a triangle with no right angle when SOH CAH TOA does not?"
+        }
+      ]
+    },
+    {
+      "dayOffset": 3,
+      "items": [
+        {
+          "answer": "The sine rule: a / sin A = b / sin B",
+          "prompt": "A triangle has no right angle. Which rule finds an unknown side from a known side and two known angles?"
+        },
+        {
+          "answer": "SOH: sin = opposite / hypotenuse. CAH: cos = adjacent / hypotenuse. TOA: tan = opposite / adjacent. So cos theta = 4/5 = 0.8.",
+          "prompt": "Write out the SOH CAH TOA card in full, and use it to state cos theta for the 3-4-5 triangle."
+        }
+      ]
+    }
+  ],
+  "subject": "math",
+  "title": "E-Math trigonometry: ratios and the sine rule",
+  "topic": "e-trigonometry"
+}
