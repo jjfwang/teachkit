@@ -1,0 +1,74 @@
+{
+  "level": "primary",
+  "subject": "science",
+  "templates": [
+    {
+      "kind": "flow",
+      "slots": [
+        {
+          "entries": [
+            "Push and pull: a push moves the box away across the table and a pull drags it back closer - both are forces, and forces change how things move."
+          ],
+          "label": "Push and pull",
+          "studentPrompt": "Explain this step in your own words."
+        },
+        {
+          "entries": [
+            "Friction slows things down: the block slides down the slope while the rough surface rubs against it, and the friction arrow pushes back against the slide."
+          ],
+          "label": "Friction slows things down",
+          "studentPrompt": "Explain this step in your own words."
+        },
+        {
+          "entries": [
+            "Opposite poles attract: every magnet has a north pole and a south pole, and when S faces N the magnets pull together and snap with a click."
+          ],
+          "label": "Opposite poles attract",
+          "studentPrompt": "Explain this step in your own words."
+        },
+        {
+          "entries": [
+            "Watch out: a magnet does not attract every metal: turn the magnet so N faces N and the magnets repel, and remember the magnet only pulls iron and a few metals, ignoring most things."
+          ],
+          "label": "Watch out",
+          "studentPrompt": "Explain this step in your own words."
+        }
+      ]
+    },
+    {
+      "kind": "frayer",
+      "slots": [
+        {
+          "entries": [
+            "A force that moves something away from you: kicking a ball and shoving a box across a table are pushes."
+          ],
+          "label": "Push",
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "entries": [
+            "A force that brings something closer to you: dragging a box towards you and reeling in a kite are pulls."
+          ],
+          "label": "Pull",
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "entries": [
+            "The rubbing force between surfaces that slide against each other: it pushes back against the sliding and slows things down."
+          ],
+          "label": "Friction",
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "entries": [
+            "The two ends of a magnet, marked N and S: opposite poles attract and like poles repel."
+          ],
+          "label": "Poles",
+          "studentPrompt": "Give your own example of this term."
+        }
+      ]
+    }
+  ],
+  "title": "Pushes, pulls, friction and magnets",
+  "topic": "forces-magnets"
+}

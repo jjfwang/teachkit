@@ -1,0 +1,71 @@
+{
+  "flashcards": [
+    {
+      "back": "A force that moves something away from you: kicking a ball and shoving a box across a table are pushes.",
+      "front": "Push",
+      "source": "definition"
+    },
+    {
+      "back": "A force that brings something closer to you: dragging a box towards you and reeling in a kite are pulls.",
+      "front": "Pull",
+      "source": "definition"
+    },
+    {
+      "back": "The rubbing force between surfaces that slide against each other: it pushes back against the sliding and slows things down.",
+      "front": "Friction",
+      "source": "definition"
+    },
+    {
+      "back": "The two ends of a magnet, marked N and S: opposite poles attract and like poles repel.",
+      "front": "Poles",
+      "source": "definition"
+    },
+    {
+      "back": "Magnets grab some metals so strongly that they feel like they grab all of them. Magnets ignore most things: they only pull iron and a few metals. In the animation scene s4 the warning is spelled out in the caption itself - a magnet does not attract every metal - so test each metal instead of trusting the shine.",
+      "front": "A magnet attracts every kind of metal.",
+      "source": "trap"
+    },
+    {
+      "back": "A pull, because the box is brought closer to the child",
+      "front": "A child drags a box towards herself across the floor. Which force is she using?",
+      "source": "quiz-bank"
+    },
+    {
+      "back": "They push each other apart and repel",
+      "front": "Two magnets are brought together with their north poles facing each other. What happens?",
+      "source": "quiz-bank"
+    }
+  ],
+  "level": "primary",
+  "practiceSets": [
+    {
+      "dayOffset": 1,
+      "items": [
+        {
+          "answer": "No: a magnet only pulls iron and a few metals, and ignores most other metals",
+          "prompt": "A pupil says a magnet will attract any metal object. What is wrong with this idea?"
+        },
+        {
+          "answer": "Friction is the rubbing force between the block and the rough surface; it pushes back against the slide and slows the block down.",
+          "prompt": "A block slides down a rough slope and slows down. Name the force that slows it and explain how it works."
+        }
+      ]
+    },
+    {
+      "dayOffset": 3,
+      "items": [
+        {
+          "answer": "It is a push: the foot pushes the ball away.",
+          "prompt": "Kicking a football: is this a push or a pull? Give the reason."
+        },
+        {
+          "answer": "They repel: like poles push each other apart.",
+          "prompt": "In one sentence, say what two magnets do when the north pole of one faces the north pole of the other."
+        }
+      ]
+    }
+  ],
+  "subject": "science",
+  "title": "Pushes, pulls, friction and magnets",
+  "topic": "forces-magnets"
+}
