@@ -1,0 +1,193 @@
+{
+  "title": "The model method: bar models for word problems",
+  "level": "primary",
+  "subject": "math",
+  "topic": "model-method",
+  "doNow": [
+    {
+      "id": "dn1",
+      "prompt": "Sam draws a bar model for 1 unit and 2 units. He draws the unit boxes in any lengths he likes, guessing the sizes, so his 2-unit bar is not twice his 1-unit bar. What is wrong with Sam's model?",
+      "kind": "multiple-choice",
+      "choices": [
+        {
+          "text": "Nothing: a bar model is only a rough sketch",
+          "misconception": "Drawing unit boxes in any lengths, guessing the sizes.",
+          "rationale": {
+            "chose": "The learner selected option Nothing: a bar model is only a rough sketch as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of drawing every unit box the same length.",
+            "reteach": "Reteach from the paired notes trap: Drawing unit boxes in any lengths, guessing the sizes.. The bar is treated as a rough sketch rather than a scale model. Every unit box must be exactly the same length: two units is exactly twice one unit. In the animation scene s4 the ruler proves Sam's units do not match, while the correct 2-unit bar is exactly twice the 1-unit bar."
+          }
+        },
+        {
+          "text": "The colours of the bars are different",
+          "misconception": "Drawing unit boxes in any lengths, guessing the sizes.",
+          "rationale": {
+            "chose": "The learner selected option The colours of the bars are different as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of drawing every unit box the same length.",
+            "reteach": "Reteach from the paired notes trap: Drawing unit boxes in any lengths, guessing the sizes.. The bar is treated as a rough sketch rather than a scale model. Every unit box must be exactly the same length: two units is exactly twice one unit. In the animation scene s4 the ruler proves Sam's units do not match, while the correct 2-unit bar is exactly twice the 1-unit bar."
+          }
+        },
+        {
+          "text": "The unit boxes are not all the same length, so the bars are not to scale",
+          "correct": true
+        },
+        {
+          "text": "Bar models must always use 7 units",
+          "misconception": "Drawing unit boxes in any lengths, guessing the sizes.",
+          "rationale": {
+            "chose": "The learner selected option Bar models must always use 7 units as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of drawing every unit box the same length.",
+            "reteach": "Reteach from the paired notes trap: Drawing unit boxes in any lengths, guessing the sizes.. The bar is treated as a rough sketch rather than a scale model. Every unit box must be exactly the same length: two units is exactly twice one unit. In the animation scene s4 the ruler proves Sam's units do not match, while the correct 2-unit bar is exactly twice the 1-unit bar."
+          }
+        }
+      ]
+    },
+    {
+      "id": "dn2",
+      "prompt": "Mia has 2 units and Ben has 3 units. Every unit box is drawn the same length. How many more units does Ben have than Mia?",
+      "kind": "multiple-choice",
+      "choices": [
+        {
+          "text": "2 more units",
+          "misconception": "Drawing unit boxes in any lengths, guessing the sizes.",
+          "rationale": {
+            "chose": "The learner selected option 2 more units as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of drawing every unit box the same length.",
+            "reteach": "Reteach from the paired notes trap: Drawing unit boxes in any lengths, guessing the sizes.. The bar is treated as a rough sketch rather than a scale model. Every unit box must be exactly the same length: two units is exactly twice one unit. In the animation scene s4 the ruler proves Sam's units do not match, while the correct 2-unit bar is exactly twice the 1-unit bar."
+          }
+        },
+        {
+          "text": "1 more unit",
+          "correct": true
+        },
+        {
+          "text": "5 more units",
+          "misconception": "Drawing unit boxes in any lengths, guessing the sizes.",
+          "rationale": {
+            "chose": "The learner selected option 5 more units as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of drawing every unit box the same length.",
+            "reteach": "Reteach from the paired notes trap: Drawing unit boxes in any lengths, guessing the sizes.. The bar is treated as a rough sketch rather than a scale model. Every unit box must be exactly the same length: two units is exactly twice one unit. In the animation scene s4 the ruler proves Sam's units do not match, while the correct 2-unit bar is exactly twice the 1-unit bar."
+          }
+        },
+        {
+          "text": "3 more units",
+          "misconception": "Drawing unit boxes in any lengths, guessing the sizes.",
+          "rationale": {
+            "chose": "The learner selected option 3 more units as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of drawing every unit box the same length.",
+            "reteach": "Reteach from the paired notes trap: Drawing unit boxes in any lengths, guessing the sizes.. The bar is treated as a rough sketch rather than a scale model. Every unit box must be exactly the same length: two units is exactly twice one unit. In the animation scene s4 the ruler proves Sam's units do not match, while the correct 2-unit bar is exactly twice the 1-unit bar."
+          }
+        }
+      ]
+    },
+    {
+      "id": "dn3",
+      "prompt": "Mia has 3 units. She gives 1 unit away to her sister. Draw a before-and-after model in your head: how many units does Mia have left?",
+      "kind": "multiple-choice",
+      "choices": [
+        {
+          "text": "1 unit left",
+          "misconception": "Drawing unit boxes in any lengths, guessing the sizes.",
+          "rationale": {
+            "chose": "The learner selected option 1 unit left as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of drawing every unit box the same length.",
+            "reteach": "Reteach from the paired notes trap: Drawing unit boxes in any lengths, guessing the sizes.. The bar is treated as a rough sketch rather than a scale model. Every unit box must be exactly the same length: two units is exactly twice one unit. In the animation scene s4 the ruler proves Sam's units do not match, while the correct 2-unit bar is exactly twice the 1-unit bar."
+          }
+        },
+        {
+          "text": "2 units left",
+          "correct": true
+        },
+        {
+          "text": "3 units left",
+          "misconception": "Drawing unit boxes in any lengths, guessing the sizes.",
+          "rationale": {
+            "chose": "The learner selected option 3 units left as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of drawing every unit box the same length.",
+            "reteach": "Reteach from the paired notes trap: Drawing unit boxes in any lengths, guessing the sizes.. The bar is treated as a rough sketch rather than a scale model. Every unit box must be exactly the same length: two units is exactly twice one unit. In the animation scene s4 the ruler proves Sam's units do not match, while the correct 2-unit bar is exactly twice the 1-unit bar."
+          }
+        },
+        {
+          "text": "4 units left",
+          "misconception": "Drawing unit boxes in any lengths, guessing the sizes.",
+          "rationale": {
+            "chose": "The learner selected option 4 units left as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of drawing every unit box the same length.",
+            "reteach": "Reteach from the paired notes trap: Drawing unit boxes in any lengths, guessing the sizes.. The bar is treated as a rough sketch rather than a scale model. Every unit box must be exactly the same length: two units is exactly twice one unit. In the animation scene s4 the ruler proves Sam's units do not match, while the correct 2-unit bar is exactly twice the 1-unit bar."
+          }
+        }
+      ]
+    }
+  ],
+  "hingeQuestions": [
+    {
+      "id": "h1",
+      "prompt": "A class bar is split into 7 equal units. 3 units are boys and the rest are girls. How many units are girls, and what is the difference between the girls' units and the boys' units?",
+      "kind": "multiple-choice",
+      "choices": [
+        {
+          "text": "Girls: 3 units. Difference: 0 units.",
+          "misconception": "Drawing unit boxes in any lengths, guessing the sizes.",
+          "rationale": {
+            "chose": "The learner selected option Girls: 3 units. Difference: 0 units. as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of drawing every unit box the same length.",
+            "reteach": "Reteach from the paired notes trap: Drawing unit boxes in any lengths, guessing the sizes.. The bar is treated as a rough sketch rather than a scale model. Every unit box must be exactly the same length: two units is exactly twice one unit. In the animation scene s4 the ruler proves Sam's units do not match, while the correct 2-unit bar is exactly twice the 1-unit bar."
+          }
+        },
+        {
+          "text": "Girls: 4 units. Difference: diff = 4 - 3 = 1 unit.",
+          "correct": true
+        },
+        {
+          "text": "Girls: 7 units. Difference: diff = 7 - 3 = 4 units.",
+          "misconception": "Drawing unit boxes in any lengths, guessing the sizes.",
+          "rationale": {
+            "chose": "The learner selected option Girls: 7 units. Difference: diff = 7 - 3 = 4 units. as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of drawing every unit box the same length.",
+            "reteach": "Reteach from the paired notes trap: Drawing unit boxes in any lengths, guessing the sizes.. The bar is treated as a rough sketch rather than a scale model. Every unit box must be exactly the same length: two units is exactly twice one unit. In the animation scene s4 the ruler proves Sam's units do not match, while the correct 2-unit bar is exactly twice the 1-unit bar."
+          }
+        },
+        {
+          "text": "Girls: 5 units. Difference: diff = 5 - 3 = 2 units.",
+          "misconception": "Drawing unit boxes in any lengths, guessing the sizes.",
+          "rationale": {
+            "chose": "The learner selected option Girls: 5 units. Difference: diff = 5 - 3 = 2 units. as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of drawing every unit box the same length.",
+            "reteach": "Reteach from the paired notes trap: Drawing unit boxes in any lengths, guessing the sizes.. The bar is treated as a rough sketch rather than a scale model. Every unit box must be exactly the same length: two units is exactly twice one unit. In the animation scene s4 the ruler proves Sam's units do not match, while the correct 2-unit bar is exactly twice the 1-unit bar."
+          }
+        }
+      ],
+      "scriptCue": "s3"
+    },
+    {
+      "id": "h2",
+      "prompt": "Which drawing is a correct bar model for 1 unit and 2 units?",
+      "kind": "multiple-choice",
+      "choices": [
+        {
+          "text": "A 2-unit bar drawn a little bit longer than the 1-unit bar",
+          "misconception": "Drawing unit boxes in any lengths, guessing the sizes.",
+          "rationale": {
+            "chose": "The learner selected option A 2-unit bar drawn a little bit longer than the 1-unit bar as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of drawing every unit box the same length.",
+            "reteach": "Reteach from the paired notes trap: Drawing unit boxes in any lengths, guessing the sizes.. The bar is treated as a rough sketch rather than a scale model. Every unit box must be exactly the same length: two units is exactly twice one unit. In the animation scene s4 the ruler proves Sam's units do not match, while the correct 2-unit bar is exactly twice the 1-unit bar."
+          }
+        },
+        {
+          "text": "A 2-unit bar drawn three times as long as the 1-unit bar",
+          "misconception": "Drawing unit boxes in any lengths, guessing the sizes.",
+          "rationale": {
+            "chose": "The learner selected option A 2-unit bar drawn three times as long as the 1-unit bar as their answer to this question.",
+            "thinks": "They are applying the coded wrong turn instead of drawing every unit box the same length.",
+            "reteach": "Reteach from the paired notes trap: Drawing unit boxes in any lengths, guessing the sizes.. The bar is treated as a rough sketch rather than a scale model. Every unit box must be exactly the same length: two units is exactly twice one unit. In the animation scene s4 the ruler proves Sam's units do not match, while the correct 2-unit bar is exactly twice the 1-unit bar."
+          }
+        },
+        {
+          "text": "A 2-unit bar made of two unit boxes, each exactly the same length as the 1-unit bar",
+          "correct": true
+        }
+      ],
+      "scriptCue": "s4"
+    }
+  ]
+}
