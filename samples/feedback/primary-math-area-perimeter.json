@@ -1,0 +1,44 @@
+{
+ "title": "Area and perimeter of an L-shape",
+ "level": "primary",
+ "subject": "math",
+ "topic": "area-perimeter",
+ "strengths": [
+  "Most of the class can split the L into two rectangles and add their areas.",
+  "The class can find the perimeter by walking every side, including the inner steps."
+ ],
+ "modelAnswers": [
+  {
+   "question": "Part B of the L is 120 by 140. Find its area and then the total area of the L, given part A has area 24 000.",
+   "answer": "16 800 and 40 800: 120 x 140 = 16 800, and 24 000 + 16 800 = 40 800.",
+   "creditPoints": []
+  },
+  {
+   "question": "The six edges of an L are 200, 120, 80, 140, 120 and 260. Find the perimeter, showing the working.",
+   "answer": "920: 200 + 120 + 80 + 140 + 120 + 260 = 920.",
+   "creditPoints": []
+  }
+ ],
+ "commonErrors": [
+  {
+   "misconception": "The area of the L-shape is the length times the width of its bounding box.",
+   "example": "A learner answers 52 000 for the area of the L on the worksheet, multiplying the 200 by 260 bounding box.",
+   "fixIt": {
+    "prompt": "Fix it: split the L into its two filled rectangles, find each area, then add them.",
+    "corrected": "Corrected working: part A is 24 000 and part B is 16 800, so the total area is the sum of the two filled parts, 40 800."
+   }
+  },
+  {
+   "misconception": "The area of the L-shape is the length times the width of its bounding box.",
+   "example": "On the exit ticket, a learner defends 52 000 by saying the L fits in a 200 by 260 box, so its area must be 200 x 260.",
+   "fixIt": {
+    "prompt": "Fix it: point at the empty corner of the box and say whether it is part of the L, then recount only what is filled.",
+    "corrected": "Corrected check: the box counts an empty corner that is not part of the L, so the real area counts only the filled parts and is 40 800, never 52 000."
+   }
+  }
+ ],
+ "nextSteps": [
+  "Reteach splitting composite shapes into filled rectangles before any further area questions.",
+  "Practise walking every side of a composite shape, naming the inner steps aloud, before perimeter questions."
+ ]
+}

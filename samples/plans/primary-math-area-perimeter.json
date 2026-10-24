@@ -1,0 +1,93 @@
+{
+ "title": "Area and perimeter of an L-shape",
+ "level": "primary",
+ "subject": "math",
+ "topic": "area-perimeter",
+ "durationMinutes": 40,
+ "objectives": [
+  {
+   "id": "o1",
+   "text": "Split an L-shape into two rectangles and add their areas to find the total area",
+   "successCriteria": [
+    "I can split the L into part A and part B and find each area",
+    "I can add 24 000 and 16 800 to get the total area of 40 800"
+   ],
+   "assessmentPoints": [
+    "Split answers in the opening activity",
+    "Responses when the box trap is sprung in the third activity"
+   ]
+  },
+  {
+   "id": "o2",
+   "text": "Find the perimeter of an L-shape by adding all six edge lengths, including the inner steps",
+   "successCriteria": [
+    "I can name all six edges of the L, including the inner steps",
+    "I can add the six edges to get the perimeter of 920"
+   ],
+   "assessmentPoints": [
+    "Edge answers in the perimeter activity",
+    "Worksheet answers in the closing practice"
+   ]
+  }
+ ],
+ "activities": [
+  {
+   "title": "Two rectangles make one L: split and add the areas",
+   "minutes": 8,
+   "objectiveIds": [
+    "o1"
+   ],
+   "scriptCue": "s1",
+   "grouping": "whole class",
+   "resources": [
+    "board"
+   ]
+  },
+  {
+   "title": "Trace the edge: walk all six sides for the perimeter",
+   "minutes": 9,
+   "objectiveIds": [
+    "o2"
+   ],
+   "scriptCue": "s2",
+   "grouping": "pairs"
+  },
+  {
+   "title": "Spring the bounding-box trap",
+   "minutes": 10,
+   "objectiveIds": [
+    "o1"
+   ],
+   "scriptCue": "s3",
+   "grouping": "whole class",
+   "differentiation": {
+    "support": "Provide a cut-out L on grid paper so the empty corner can be seen before it is discussed."
+   }
+  },
+  {
+   "title": "Land the add-the-parts and walk-every-side rule",
+   "minutes": 8,
+   "objectiveIds": [
+    "o1",
+    "o2"
+   ],
+   "scriptCue": "s4",
+   "grouping": "pairs",
+   "differentiation": {
+    "stretch": "Ask learners to explain why the 200 by 260 box overcounts the area of the L."
+   }
+  },
+  {
+   "title": "Worksheet practice and exit ticket",
+   "minutes": 5,
+   "objectiveIds": [
+    "o1",
+    "o2"
+   ],
+   "grouping": "individual",
+   "resources": [
+    "worksheet"
+   ]
+  }
+ ]
+}
