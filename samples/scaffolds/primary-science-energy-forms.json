@@ -1,0 +1,115 @@
+{
+  "level": "primary",
+  "sets": [
+    {
+      "cloze": [
+        {
+          "answers": [
+            "Light",
+            "Heat"
+          ],
+          "text": "A lamp gives out ___ and a cooking pot gives out ___ as it warms."
+        },
+        {
+          "answers": [
+            "Sound"
+          ],
+          "text": "A radio makes ___ when it plays music."
+        }
+      ],
+      "frames": [
+        "The ___ races out from a lamp in straight lines.",
+        "The ___ rises up from a hot pot into the air.",
+        "___ spreads out from a radio in all directions."
+      ],
+      "level": "full",
+      "starters": [
+        "Energy comes in many forms, such as...",
+        "A lamp helps us to see because...",
+        "When food cooks in a pot, the heat..."
+      ],
+      "wordBank": [
+        {
+          "gloss": "the form of energy that races out from a lamp and lets us see",
+          "term": "Light"
+        },
+        {
+          "gloss": "warm energy that rises up from hot things",
+          "term": "Heat"
+        },
+        {
+          "gloss": "the form of energy made when something vibrates",
+          "term": "Sound"
+        },
+        {
+          "gloss": "the energy of something moving",
+          "term": "Movement"
+        }
+      ]
+    },
+    {
+      "cloze": [
+        {
+          "answers": [
+            "Stored energy",
+            "Movement"
+          ],
+          "text": "A car changes the ___ in its fuel into ___ as it rolls along."
+        }
+      ],
+      "frames": [
+        "The energy of a rolling ball is ___ energy.",
+        "Energy kept waiting in a battery is ___ energy."
+      ],
+      "level": "partial",
+      "starters": [
+        "A car moves along because...",
+        "Stored energy is waiting when..."
+      ],
+      "wordBank": [
+        {
+          "gloss": "warm energy that rises up from hot things",
+          "term": "Heat"
+        },
+        {
+          "gloss": "the energy of something moving",
+          "term": "Movement"
+        },
+        {
+          "gloss": "energy kept waiting until it is needed",
+          "term": "Stored energy"
+        }
+      ]
+    },
+    {
+      "cloze": [
+        {
+          "answers": [
+            "Electrical energy"
+          ],
+          "text": "Energy that travels along wires from a battery is called ___."
+        }
+      ],
+      "frames": [
+        "At the bulb, electrical energy changes into ___ and heat."
+      ],
+      "level": "minimal",
+      "starters": [
+        "At a bulb, electrical energy changes into..."
+      ],
+      "wordBank": [
+        {
+          "gloss": "energy carried by electricity along wires",
+          "term": "Electrical energy"
+        },
+        {
+          "gloss": "the form of energy that races out from a lamp and lets us see",
+          "term": "Light"
+        }
+      ]
+    }
+  ],
+  "subject": "science",
+  "title": "Forms of energy",
+  "topic": "energy-forms"
+}
