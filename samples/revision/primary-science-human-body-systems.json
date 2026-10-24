@@ -1,0 +1,76 @@
+{
+  "flashcards": [
+    {
+      "back": "The system that breaks down food: the mouth chews it, the stomach mixes it, and the intestines take out the good parts the body needs.",
+      "front": "Digestive system",
+      "source": "definition"
+    },
+    {
+      "back": "The system that moves air in and out of the body: air travels down the windpipe into the lungs and back out again.",
+      "front": "Breathing (respiratory) system",
+      "source": "definition"
+    },
+    {
+      "back": "The system that carries blood round the body in a loop: the heart pumps blood out to the body and the same blood returns to the heart.",
+      "front": "Circulatory system",
+      "source": "definition"
+    },
+    {
+      "back": "The pump in the circulatory system: it pushes blood out to the body and receives it back, round and round, without using it up.",
+      "front": "Heart",
+      "source": "definition"
+    },
+    {
+      "back": "The organs of breathing: they fill with air and grow bigger when we breathe in, then shrink as air flows back out.",
+      "front": "Lungs",
+      "source": "definition"
+    },
+    {
+      "back": "A pump feels like it burns fuel, so the blood seems to disappear as it travels. Blood is never used up: it keeps going round in a loop, coming back to the heart to be pushed around again. In the animation scene s4 the drop of blood travels out to the body and comes straight back to the heart, which shows the loop never uses the blood up.",
+      "front": "The heart uses up the blood it pumps, so the body must keep making fresh blood.",
+      "source": "trap"
+    },
+    {
+      "back": "Mouth, then stomach, then intestines",
+      "front": "In which order does food travel through the digestive system?",
+      "source": "quiz-bank"
+    },
+    {
+      "back": "The lungs",
+      "front": "Which organ fills with air when you breathe in?",
+      "source": "quiz-bank"
+    }
+  ],
+  "level": "primary",
+  "practiceSets": [
+    {
+      "dayOffset": 1,
+      "items": [
+        {
+          "answer": "Blood is not used up - it loops back to the heart and goes round again",
+          "prompt": "A pupil says: the heart uses up the blood it pumps, so the body must keep making fresh blood. What is wrong with this idea?"
+        },
+        {
+          "answer": "The lungs fill with air and grow bigger, then shrink as the air flows back out.",
+          "prompt": "What happens to the lungs when you breathe in, and what happens when you breathe out?"
+        }
+      ]
+    },
+    {
+      "dayOffset": 3,
+      "items": [
+        {
+          "answer": "It travels back to the heart and goes round the loop again.",
+          "prompt": "A drop of blood leaves the heart and travels to the body. What happens to that drop next?"
+        },
+        {
+          "answer": "Mouth, stomach, intestines.",
+          "prompt": "Name, in order, the three stops food makes on its digestion journey."
+        }
+      ]
+    }
+  ],
+  "subject": "science",
+  "title": "Human body systems",
+  "topic": "human-body-systems"
+}

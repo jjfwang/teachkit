@@ -1,0 +1,33 @@
+{
+  "entries": [
+    {
+      "example": "Digestion: food travels mouth to intestines: food is chewed in the mouth, mixed in the stomach, and the good parts are taken out in the intestines.",
+      "meaning": "The system that breaks down food: the mouth chews it, the stomach mixes it, and the intestines take out the good parts the body needs.",
+      "term": "Digestive system"
+    },
+    {
+      "example": "Breathing: air moves in and out of the lungs: air travels down the windpipe, the lungs fill and grow bigger, then shrink as air flows back out.",
+      "meaning": "The system that moves air in and out of the body: air travels down the windpipe into the lungs and back out again.",
+      "term": "Breathing (respiratory) system"
+    },
+    {
+      "example": "Circulation: blood loops round and round: the heart pumps blood out to the body, and the same blood travels back to the heart to go round again.",
+      "meaning": "The system that carries blood round the body in a loop: the heart pumps blood out to the body and the same blood returns to the heart.",
+      "term": "Circulatory system"
+    },
+    {
+      "example": "In scene s3, follow one drop of blood as a worked example: the heart pumps the drop out to the body, the drop delivers the good parts from digestion and the air from breathing, and then the same drop comes back to the heart to be pushed around again. Each return proves the blood is looping, not being used up.",
+      "meaning": "The pump in the circulatory system: it pushes blood out to the body and receives it back, round and round, without using it up.",
+      "term": "Heart"
+    },
+    {
+      "example": "Explain how the lungs fill and empty as we breathe",
+      "meaning": "The organs of breathing: they fill with air and grow bigger when we breathe in, then shrink as air flows back out.",
+      "term": "Lungs"
+    }
+  ],
+  "level": "primary",
+  "subject": "science",
+  "title": "Human body systems",
+  "topic": "human-body-systems"
+}

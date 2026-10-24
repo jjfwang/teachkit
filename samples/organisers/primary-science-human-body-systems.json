@@ -1,0 +1,81 @@
+{
+  "level": "primary",
+  "subject": "science",
+  "templates": [
+    {
+      "kind": "flow",
+      "slots": [
+        {
+          "entries": [
+            "Digestion: food travels mouth to intestines: food is chewed in the mouth, mixed in the stomach, and the good parts are taken out in the intestines."
+          ],
+          "label": "Digestion",
+          "studentPrompt": "Explain this step in your own words."
+        },
+        {
+          "entries": [
+            "Breathing: air moves in and out of the lungs: air travels down the windpipe, the lungs fill and grow bigger, then shrink as air flows back out."
+          ],
+          "label": "Breathing",
+          "studentPrompt": "Explain this step in your own words."
+        },
+        {
+          "entries": [
+            "Circulation: blood loops round and round: the heart pumps blood out to the body, and the same blood travels back to the heart to go round again."
+          ],
+          "label": "Circulation",
+          "studentPrompt": "Explain this step in your own words."
+        },
+        {
+          "entries": [
+            "A common mistake: blood is not used up: the heart is a pump, and the returning blood proves that blood keeps looping instead of being used up."
+          ],
+          "label": "A common mistake",
+          "studentPrompt": "Explain this step in your own words."
+        }
+      ]
+    },
+    {
+      "kind": "frayer",
+      "slots": [
+        {
+          "entries": [
+            "The system that breaks down food: the mouth chews it, the stomach mixes it, and the intestines take out the good parts the body needs."
+          ],
+          "label": "Digestive system",
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "entries": [
+            "The system that moves air in and out of the body: air travels down the windpipe into the lungs and back out again."
+          ],
+          "label": "Breathing (respiratory) system",
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "entries": [
+            "The system that carries blood round the body in a loop: the heart pumps blood out to the body and the same blood returns to the heart."
+          ],
+          "label": "Circulatory system",
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "entries": [
+            "The pump in the circulatory system: it pushes blood out to the body and receives it back, round and round, without using it up."
+          ],
+          "label": "Heart",
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "entries": [
+            "The organs of breathing: they fill with air and grow bigger when we breathe in, then shrink as air flows back out."
+          ],
+          "label": "Lungs",
+          "studentPrompt": "Give your own example of this term."
+        }
+      ]
+    }
+  ],
+  "title": "Human body systems",
+  "topic": "human-body-systems"
+}
