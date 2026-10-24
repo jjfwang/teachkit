@@ -51,7 +51,8 @@ const STEMS = [
   'primary-science-plant-systems',
   'primary-science-life-cycles',
   'primary-science-adaptations',
-  'primary-science-energy-forms'
+  'primary-science-energy-forms',
+  'primary-science-photosynthesis'
 ];
 
 function load(rel) {

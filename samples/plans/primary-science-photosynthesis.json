@@ -1,0 +1,94 @@
+{
+ "title": "Photosynthesis: how green plants make food",
+ "level": "primary",
+ "subject": "science",
+ "topic": "photosynthesis",
+ "durationMinutes": 40,
+ "objectives": [
+  {
+   "id": "o1",
+   "text": "Name the leaf, stem and roots and say what each part does, explain photosynthesis using light, water, carbon dioxide, food and oxygen, and describe respiration as the reverse of photosynthesis",
+   "successCriteria": [
+    "I can say the leaf catches light, the stem holds the plant up, and the roots drink in water from the soil",
+    "I can explain that light, water and carbon dioxide arrive at the leaf and become food and oxygen",
+    "I can describe respiration as breaking down food with oxygen to release energy, making carbon dioxide and water"
+   ],
+   "assessmentPoints": [
+    "Plant-part answers in the opening activity",
+    "Recipe and reverse-process answers in the second and third activities"
+   ]
+  },
+  {
+   "id": "o2",
+   "text": "Explain why plants respire all the time, day and night",
+   "successCriteria": [
+    "I can say that plants take in and give out gases too: they respire all the time, day and night",
+    "I can follow the gases moving in and out of the leaf in the day and at night to show respiration never stops"
+   ],
+   "assessmentPoints": [
+    "Trap discussion in the fourth activity",
+    "Breathing answers in the closing practice and the exit ticket"
+   ]
+  }
+ ],
+ "activities": [
+  {
+   "title": "Parts of a green plant",
+   "minutes": 8,
+   "objectiveIds": [
+    "o1"
+   ],
+   "scriptCue": "s1",
+   "grouping": "whole class",
+   "resources": [
+    "board"
+   ]
+  },
+  {
+   "title": "Photosynthesis: plants make their own food",
+   "minutes": 9,
+   "objectiveIds": [
+    "o1"
+   ],
+   "scriptCue": "s2",
+   "grouping": "pairs"
+  },
+  {
+   "title": "Respiration: the reverse process",
+   "minutes": 10,
+   "objectiveIds": [
+    "o1"
+   ],
+   "scriptCue": "s3",
+   "grouping": "whole class",
+   "differentiation": {
+    "support": "Provide the leaf diagram from the animation so learners can trace the food and oxygen moving into the leaf before describing respiration themselves."
+   }
+  },
+  {
+   "title": "A common mistake: plants do not breathe?",
+   "minutes": 8,
+   "objectiveIds": [
+    "o1",
+    "o2"
+   ],
+   "scriptCue": "s4",
+   "grouping": "pairs",
+   "differentiation": {
+    "stretch": "Ask learners to explain why a plant kept in the dark all night is still respiring even though it cannot photosynthesise."
+   }
+  },
+  {
+   "title": "Worksheet practice and exit ticket",
+   "minutes": 5,
+   "objectiveIds": [
+    "o1",
+    "o2"
+   ],
+   "grouping": "individual",
+   "resources": [
+    "worksheet"
+   ]
+  }
+ ]
+}

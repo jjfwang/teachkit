@@ -1,0 +1,42 @@
+{
+ "level": "primary",
+ "questions": [
+  {
+   "choices": [
+    {
+     "text": "Nothing: a plant has no nose, so it cannot take in or give out any gases"
+    },
+    {
+     "text": "Plants only breathe on sunny days, when they are making food"
+    },
+    {
+     "correct": true,
+     "text": "Plants take in and give out gases too: they respire all the time, day and night"
+    }
+   ],
+   "explanation": "The trap is: Only animals breathe; plants do not. Scene s4 shows why this is wrong: plants take in and give out gases too, respiring all the time, day and night.",
+   "id": "q1",
+   "kind": "multiple-choice",
+   "misconception": "Only animals breathe; plants do not.",
+   "prompt": "A pupil says plants do not breathe at all. What is wrong with this idea?"
+  },
+  {
+   "answer": "The leaf catches light, the stem holds the plant up, and the roots drink in water from the soil.",
+   "explanation": "Scene s1: the leaf, stem and roots are labelled in turn - leaf for catching light, stem for support, and roots for drinking in water.",
+   "id": "q3",
+   "kind": "short-answer",
+   "prompt": "Name the three main parts of a green plant and give the job of each part."
+  },
+  {
+   "answer": "Respiration is still happening: it breaks down food with oxygen to release energy.",
+   "explanation": "Scene s3: respiration breaks food and oxygen down to release energy, making carbon dioxide and water, and it carries on day and night.",
+   "id": "q4",
+   "kind": "short-answer",
+   "prompt": "A plant is kept in the dark all night. Which process is still happening in its leaves, and what does that process do?"
+  }
+ ],
+ "subject": "science",
+ "title": "Photosynthesis: how green plants make food",
+ "topic": "photosynthesis",
+ "variant": "homework"
+}

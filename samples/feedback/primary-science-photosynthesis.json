@@ -1,0 +1,44 @@
+{
+ "title": "Photosynthesis: how green plants make food",
+ "level": "primary",
+ "subject": "science",
+ "topic": "photosynthesis",
+ "strengths": [
+  "Most of the class can name the leaf, stem and roots and say what each part does.",
+  "The class can state the photosynthesis recipe: light, water and carbon dioxide become food and oxygen."
+ ],
+ "modelAnswers": [
+  {
+   "question": "Name the three main parts of a green plant and give the job of each part.",
+   "answer": "The leaf catches light, the stem holds the plant up, and the roots drink in water from the soil.",
+   "creditPoints": []
+  },
+  {
+   "question": "A plant is kept in the dark all night. Which process is still happening in its leaves, and what does that process do?",
+   "answer": "Respiration is still happening: it breaks down food with oxygen to release energy.",
+   "creditPoints": []
+  }
+ ],
+ "commonErrors": [
+  {
+   "misconception": "Only animals breathe; plants do not.",
+   "example": "A learner writes on the worksheet that a plant cannot breathe because it has no nose.",
+   "fixIt": {
+    "prompt": "Fix it: say how a plant takes in and gives out gases without a nose.",
+    "corrected": "Corrected working: plants take in and give out gases too - they respire all the time, day and night."
+   }
+  },
+  {
+   "misconception": "Only animals breathe; plants do not.",
+   "example": "On the exit ticket, a learner says respiration stops at night when the light goes out.",
+   "fixIt": {
+    "prompt": "Fix it: rewrite the sentence so respiration carries on at night instead of stopping.",
+    "corrected": "Corrected check: respiration runs all the time, day and night, to release energy from food."
+   }
+  }
+ ],
+ "nextSteps": [
+  "Reteach the trap, landing that plants take in and give out gases too: they respire all the time, day and night.",
+  "Practise the recipe check from the worked example - follow light, water and carbon dioxide into the leaf, then name the food and oxygen that come out."
+ ]
+}
