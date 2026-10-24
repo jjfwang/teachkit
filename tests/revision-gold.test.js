@@ -44,7 +44,8 @@ const STEMS = [
   'primary-math-data-graphs',
   'primary-science-forces-magnets',
   'primary-science-human-body-systems',
-  'primary-science-plant-systems'
+  'primary-science-plant-systems',
+  'primary-science-life-cycles'
 ];
 
 function load(rel) {
