@@ -1,0 +1,51 @@
+{
+  "items": [
+    {
+      "answer": "Wrong - the area is four times as big",
+      "choices": [
+        "Correct - the area doubles",
+        "Wrong - the area is three times as big",
+        "Wrong - the area is four times as big",
+        "Wrong - the areas are equal"
+      ],
+      "misconceptionCode": "Doubling the radius doubles the area of a circle.",
+      "prompt": "Circle A has radius 3 cm and circle B has radius 6 cm. A classmate says the area of B is double the area of A. Which statement is correct?"
+    },
+    {
+      "answer": "4 pi cm",
+      "choices": [
+        "2 pi cm",
+        "4 pi cm",
+        "8 pi cm",
+        "16 pi cm"
+      ],
+      "prompt": "A sector has angle 90 degrees in a circle of radius 8 cm. What is its arc length?"
+    },
+    {
+      "answer": "48 cubic centimetres.",
+      "prompt": "Find the volume of a square pyramid whose base is 6 cm by 6 cm and whose vertical height is 4 cm."
+    },
+    {
+      "answer": "10 pi cm.",
+      "prompt": "State the arc length of a semicircle of radius 10 cm, in terms of pi."
+    },
+    {
+      "answer": "27 pi square centimetres",
+      "choices": [
+        "9 pi square centimetres",
+        "18 pi square centimetres",
+        "27 pi square centimetres",
+        "81 pi square centimetres"
+      ],
+      "prompt": "A sector has angle 120 degrees in a circle of radius 9 cm. What is its area?"
+    },
+    {
+      "answer": "288 pi cubic centimetres.",
+      "prompt": "A sphere has radius 6 cm. Write its volume in terms of pi."
+    }
+  ],
+  "level": "secondary",
+  "subject": "math",
+  "title": "E-Math mensuration: sectors, pyramids and spheres",
+  "topic": "e-mensuration"
+}
