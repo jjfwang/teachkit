@@ -1,0 +1,125 @@
+{
+ "title": "Model Method and Fractions Unit Test",
+ "level": "primary",
+ "subject": "math",
+ "unitTitle": "Bar models and fractions",
+ "topics": [
+  "primary-math-model-method",
+  "primary-math-fractions-addition"
+ ],
+ "durationMinutes": 40,
+ "totalMarks": 20,
+ "blueprint": [
+  {
+   "outcomeCode": "P5-MODEL-METHOD",
+   "assessmentObjective": "AO1 recall and apply",
+   "marks": 10,
+   "cognitiveLevel": "apply"
+  },
+  {
+   "outcomeCode": "P5-FRAC-ADD",
+   "assessmentObjective": "AO2 reason and solve",
+   "marks": 10,
+   "cognitiveLevel": "reason"
+  }
+ ],
+ "items": [
+  {
+   "prompt": "Mia has 3 units. She gives 1 unit away to her sister. How many units does Mia have left? Show your working.",
+   "blueprintRow": 0,
+   "commandWord": "Calculate",
+   "marks": 5,
+   "markScheme": {
+    "points": [
+     {
+      "text": "Draws the before bar with 3 units and shows 1 unit moving away",
+      "marks": 2
+     },
+     {
+      "text": "Reads the after bar as 3 - 1 = 2 units left",
+      "marks": 3
+     }
+    ]
+   }
+  },
+  {
+   "prompt": "Explain why a 2-unit bar must be exactly twice as long as a 1-unit bar in a bar model.",
+   "blueprintRow": 0,
+   "commandWord": "Explain",
+   "marks": 5,
+   "markScheme": {
+    "points": [
+     {
+      "text": "States that every unit box must be exactly the same length",
+      "marks": 2
+     },
+     {
+      "text": "Concludes that two units is exactly twice one unit, never a guessed length",
+      "marks": 3
+     }
+    ]
+   }
+  },
+  {
+   "prompt": "Calculate 1/2 + 1/4. Show your working.",
+   "blueprintRow": 1,
+   "commandWord": "Calculate",
+   "marks": 5,
+   "markScheme": {
+    "points": [
+     {
+      "text": "Renames 1/2 as 2/4 (common denominator)",
+      "marks": 3
+     },
+     {
+      "text": "Adds numerators to get 3/4",
+      "marks": 2
+     }
+    ]
+   }
+  },
+  {
+   "prompt": "A baker uses 3/4 kg of flour in the morning and 1/4 kg in the afternoon. How much flour is used in total?",
+   "blueprintRow": 1,
+   "commandWord": "Calculate",
+   "marks": 5,
+   "markScheme": {
+    "points": [
+     {
+      "text": "Sets up 3/4 + 1/4",
+      "marks": 2
+     },
+     {
+      "text": "Correct total of 1 kg",
+      "marks": 3
+     }
+    ]
+   }
+  }
+ ],
+ "rubric": {
+  "criteria": [
+   {
+    "name": "Mathematical communication",
+    "levels": [
+     {
+      "label": "Secure",
+      "descriptor": "Working is complete, ordered and uses correct bar model and fraction notation throughout."
+     },
+     {
+      "label": "Developing",
+      "descriptor": "Working is partial or notation is inconsistent, but the method can be followed."
+     },
+     {
+      "label": "Beginning",
+      "descriptor": "Little or no working shown; the method cannot be followed."
+     }
+    ]
+   }
+  ]
+ },
+ "moderation": {
+  "state": "unreviewed"
+ },
+ "review": null
+}

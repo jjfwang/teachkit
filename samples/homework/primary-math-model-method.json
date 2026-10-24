@@ -1,0 +1,42 @@
+{
+ "level": "primary",
+ "questions": [
+  {
+   "choices": [
+    {
+     "text": "Nothing: a bar model is only a rough sketch"
+    },
+    {
+     "text": "The colours of the bars are different"
+    },
+    {
+     "correct": true,
+     "text": "The unit boxes are not all the same length, so the bars are not to scale"
+    }
+   ],
+   "explanation": "The trap is: Drawing unit boxes in any lengths, guessing the sizes. The bar is treated as a rough sketch rather than a scale model. Every unit box must be exactly the same length: two units is exactly twice one unit.",
+   "id": "q1",
+   "kind": "multiple-choice",
+   "misconception": "Drawing unit boxes in any lengths, guessing the sizes.",
+   "prompt": "Sam draws a bar model for 1 unit and 2 units. He draws the unit boxes in any lengths he likes, guessing the sizes, so his 2-unit bar is not twice his 1-unit bar. What is wrong with Sam's model?"
+  },
+  {
+   "answer": "2 units left: 3 - 1 = 2.",
+   "explanation": "Scene s2: the before bar shows 3 units, one unit moves away along the arrow, and the after bar shows 2 units.",
+   "id": "q3",
+   "kind": "short-answer",
+   "prompt": "Mia has 3 units. She gives 1 unit away to her sister. Draw a before-and-after model in your head: how many units does Mia have left?"
+  },
+  {
+   "answer": "Girls: 4 units. Difference: diff = 4 - 3 = 1 unit.",
+   "explanation": "Scene s3: the whole bar is 7 units, so the girls are 7 - 3 = 4 units, and the difference between the parts is diff = 4 - 3 = 1 unit.",
+   "id": "q4",
+   "kind": "short-answer",
+   "prompt": "A class bar is split into 7 equal units. 3 units are boys and the rest are girls. How many units are girls, and what is the difference between the girls' units and the boys' units?"
+  }
+ ],
+ "subject": "math",
+ "title": "The model method: bar models for word problems",
+ "topic": "model-method",
+ "variant": "homework"
+}

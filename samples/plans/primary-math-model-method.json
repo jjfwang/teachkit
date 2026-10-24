@@ -1,0 +1,93 @@
+{
+ "title": "The model method: bar models for word problems",
+ "level": "primary",
+ "subject": "math",
+ "topic": "model-method",
+ "durationMinutes": 40,
+ "objectives": [
+  {
+   "id": "o1",
+   "text": "Draw a bar model with unit boxes that are all the same length and check that bars are to scale",
+   "successCriteria": [
+    "I can draw Mia's 2 unit boxes and Ben's 3 unit boxes so that every unit box is the same length",
+    "I can check that a 2-unit bar is exactly twice a 1-unit bar"
+   ],
+   "assessmentPoints": [
+    "Unit answers in the opening activity",
+    "Responses when the bars-must-be-to-scale trap is sprung in the fourth activity"
+   ]
+  },
+  {
+   "id": "o2",
+   "text": "Use a before-and-after model to show what changed and a part-whole model to split a whole bar and find a difference",
+   "successCriteria": [
+    "I can show Mia's 3 units before, 1 unit given away and 2 units after",
+    "I can split a whole bar of 7 units into 3 units of boys and 4 units of girls and find the difference of 1 unit"
+   ],
+   "assessmentPoints": [
+    "Before-and-after answers in the second activity",
+    "Worksheet answers in the closing practice"
+   ]
+  }
+ ],
+ "activities": [
+  {
+   "title": "Line the unit bars up: every unit the same length",
+   "minutes": 8,
+   "objectiveIds": [
+    "o1"
+   ],
+   "scriptCue": "s1",
+   "grouping": "whole class",
+   "resources": [
+    "board"
+   ]
+  },
+  {
+   "title": "Before-and-after: show what changed",
+   "minutes": 9,
+   "objectiveIds": [
+    "o2"
+   ],
+   "scriptCue": "s2",
+   "grouping": "pairs"
+  },
+  {
+   "title": "Worked example: part-whole and difference",
+   "minutes": 10,
+   "objectiveIds": [
+    "o2"
+   ],
+   "scriptCue": "s3",
+   "grouping": "whole class",
+   "differentiation": {
+    "support": "Provide a pre-drawn whole bar split into 7 equal units so learners can mark the 3 units of boys before reading off the girls."
+   }
+  },
+  {
+   "title": "Spring the bars-must-be-to-scale trap",
+   "minutes": 8,
+   "objectiveIds": [
+    "o1",
+    "o2"
+   ],
+   "scriptCue": "s4",
+   "grouping": "pairs",
+   "differentiation": {
+    "stretch": "Ask learners to explain why a bar model with guessed unit lengths cannot be trusted to compare amounts."
+   }
+  },
+  {
+   "title": "Worksheet practice and exit ticket",
+   "minutes": 5,
+   "objectiveIds": [
+    "o1",
+    "o2"
+   ],
+   "grouping": "individual",
+   "resources": [
+    "worksheet"
+   ]
+  }
+ ]
+}
