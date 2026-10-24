@@ -46,7 +46,8 @@ const STEMS = [
   'primary-science-life-cycles',
   'primary-science-adaptations',
   'primary-science-energy-forms',
-  'primary-science-photosynthesis'
+  'primary-science-photosynthesis',
+  'secondary-e-trigonometry'
 ];
 
 function load(rel) {
@@ -129,7 +130,7 @@ for (const stem of STEMS) {
   });
 }
 
-test('gold summatives: the twenty-two units are exactly the Phase A gate set plus the pythagoras, photosynthesis, decimals, percentage, ratio, area-perimeter, rate-speed, model-method, data-graphs, forces-magnets, human-body-systems, plant-systems, life-cycles, adaptations, energy-forms and photosynthesis backfills', () => {
+test('gold summatives: the twenty-three units are exactly the Phase A gate set plus the pythagoras, photosynthesis, decimals, percentage, ratio, area-perimeter, rate-speed, model-method, data-graphs, forces-magnets, human-body-systems, plant-systems, life-cycles, adaptations, energy-forms, photosynthesis and e-trigonometry backfills', () => {
   const files = fs.readdirSync(path.join(__dirname, '..', 'samples/summatives'))
     .filter((f) => f.endsWith('.json'))
     .map((f) => f.replace(/\.json$/, ''))

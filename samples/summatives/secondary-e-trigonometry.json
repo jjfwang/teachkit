@@ -1,0 +1,125 @@
+{
+ "title": "Trigonometry and Algebra Unit Test",
+ "level": "secondary",
+ "subject": "math",
+ "unitTitle": "Trigonometric ratios, the sine rule and algebra",
+ "topics": [
+  "secondary-e-trigonometry",
+  "secondary-e-algebra"
+ ],
+ "durationMinutes": 40,
+ "totalMarks": 20,
+ "blueprint": [
+  {
+   "outcomeCode": "S3-TRIG-APPLY",
+   "assessmentObjective": "AO1 recall and apply",
+   "marks": 10,
+   "cognitiveLevel": "apply"
+  },
+  {
+   "outcomeCode": "S3-ALG-REASON",
+   "assessmentObjective": "AO2 reason and explain",
+   "marks": 10,
+   "cognitiveLevel": "reason"
+  }
+ ],
+ "items": [
+  {
+   "prompt": "For the 3-4-5 triangle, state sin theta, cos theta and tan theta for angle theta.",
+   "blueprintRow": 0,
+   "commandWord": "State",
+   "marks": 4,
+   "markScheme": {
+    "points": [
+     {
+      "text": "States sin theta as opposite over hypotenuse, 3/5, and cos theta as adjacent over hypotenuse, 4/5",
+      "marks": 2
+     },
+     {
+      "text": "States tan theta as opposite over adjacent, 3/4, with the opposite side on top",
+      "marks": 2
+     }
+    ]
+   }
+  },
+  {
+   "prompt": "In triangle ABC, side a = 4 is opposite angle A = 30 degrees, and angle B = 60 degrees. Use the sine rule to calculate side b.",
+   "blueprintRow": 0,
+   "commandWord": "Calculate",
+   "marks": 6,
+   "markScheme": {
+    "points": [
+     {
+      "text": "Writes the sine rule pairing a with sin A and b with sin B before substituting",
+      "marks": 3
+     },
+     {
+      "text": "Rearranges to (4 x 0.8660) / 0.5 and gives b as about 6.93",
+      "marks": 3
+     }
+    ]
+   }
+  },
+  {
+   "prompt": "Expand (x + 2)(x + 3).",
+   "blueprintRow": 1,
+   "commandWord": "Expand",
+   "marks": 4,
+   "markScheme": {
+    "points": [
+     {
+      "text": "Multiplies every term in one bracket by every term in the other, giving four products",
+      "marks": 2
+     },
+     {
+      "text": "Collects like terms to reach x^2 + 5x + 6",
+      "marks": 2
+     }
+    ]
+   }
+  },
+  {
+   "prompt": "Make x the subject of y = 3x + 5, explaining each step.",
+   "blueprintRow": 1,
+   "commandWord": "Explain",
+   "marks": 6,
+   "markScheme": {
+    "points": [
+     {
+      "text": "Undoes the operations in reverse order, subtracting 5 before dividing by 3",
+      "marks": 3
+     },
+     {
+      "text": "Gives x = (y - 5) / 3 with x alone as the subject",
+      "marks": 3
+     }
+    ]
+   }
+  }
+ ],
+ "rubric": {
+  "criteria": [
+   {
+    "name": "Trigonometric and algebraic reasoning",
+    "levels": [
+     {
+      "label": "Secure",
+      "descriptor": "Working names the sides or operations first, then applies the ratio, rule or rearrangement in a justified sequence."
+     },
+     {
+      "label": "Developing",
+      "descriptor": "The method is broadly sound but a pairing or undoing step is asserted without justification."
+     },
+     {
+      "label": "Beginning",
+      "descriptor": "Ratios or rearrangements are written without naming what each side or step represents."
+     }
+    ]
+   }
+  ]
+ },
+ "moderation": {
+  "state": "unreviewed"
+ },
+ "review": null
+}

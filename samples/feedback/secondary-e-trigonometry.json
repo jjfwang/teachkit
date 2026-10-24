@@ -1,0 +1,44 @@
+{
+ "title": "E-Math trigonometry: ratios and the sine rule",
+ "level": "secondary",
+ "subject": "math",
+ "topic": "e-trigonometry",
+ "strengths": [
+  "Most of the class can name the opposite, adjacent and hypotenuse for angle theta in the 3-4-5 triangle.",
+  "The class can pair a side with the sine of its opposite angle when setting up the sine rule."
+ ],
+ "modelAnswers": [
+  {
+   "question": "Write out the SOH CAH TOA card in full, and use it to state cos theta for the 3-4-5 triangle.",
+   "answer": "SOH: sin = opposite / hypotenuse. CAH: cos = adjacent / hypotenuse. TOA: tan = opposite / adjacent. So cos theta = 4/5 = 0.8.",
+   "creditPoints": []
+  },
+  {
+   "question": "In triangle ABC, side a = 4 is opposite angle A = 30 degrees, and angle B = 60 degrees. Use the sine rule to find side b, showing your working.",
+   "answer": "a / sin A = b / sin B, so 4 / sin 30 degrees = b / sin 60 degrees. Then b = (4 x sin 60 degrees) / sin 30 degrees = (4 x 0.8660) / 0.5, so b is about 6.93.",
+   "creditPoints": []
+  }
+ ],
+ "commonErrors": [
+  {
+   "misconception": "tan = adjacent / opposite.",
+   "example": "A learner writes on the worksheet that tan theta is 4/3, putting the adjacent side on top.",
+   "fixIt": {
+    "prompt": "Fix it: name the opposite and adjacent sides for theta first, then read TOA aloud and rewrite the ratio.",
+    "corrected": "Corrected working: TOA puts the opposite on top, so the tangent ratio uses the side across from theta over the side next to it."
+   }
+  },
+  {
+   "misconception": "tan = adjacent / opposite.",
+   "example": "On the exit ticket, a learner picks 4/3 for tan theta and defends it by pointing at the side next to theta.",
+   "fixIt": {
+    "prompt": "Fix it: swap the top and bottom of the flipped ratio and check the size of the result against the whole.",
+    "corrected": "Corrected check: the flipped 4/3 is taller than the whole, while the correct TOA ratio is a proper part of it."
+   }
+  }
+ ],
+ "nextSteps": [
+  "Reteach the trap, landing that TOA reads opposite first, adjacent second, and that naming the sides comes before any ratio is written.",
+  "Practise the sine-rule pairing from the worked example - substitute the known side-angle pair first, then rearrange for the unknown side."
+ ]
+}

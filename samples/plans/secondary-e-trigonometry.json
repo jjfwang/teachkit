@@ -1,0 +1,107 @@
+{
+ "title": "E-Math trigonometry: ratios and the sine rule",
+ "level": "secondary",
+ "subject": "math",
+ "topic": "e-trigonometry",
+ "durationMinutes": 40,
+ "objectives": [
+  {
+   "id": "o1",
+   "text": "Name the opposite, adjacent and hypotenuse for an angle in a right-angled triangle",
+   "successCriteria": [
+    "I can name the side across from angle theta as the opposite, the side next to theta as the adjacent, and the longest side as the hypotenuse",
+    "I can say the labels belong to the angle I am working with, so they move when the angle moves"
+   ],
+   "assessmentPoints": [
+    "Side-naming answers in the opening activity",
+    "Partner explanations of which side is which"
+   ]
+  },
+  {
+   "id": "o2",
+   "text": "Use SOH CAH TOA to find sine, cosine and tangent ratios",
+   "successCriteria": [
+    "I can read the card as SOH CAH TOA: sine opposite hypotenuse, cosine adjacent hypotenuse, tangent opposite adjacent",
+    "I can state sin theta = 3/5 = 0.6, cos theta = 4/5 = 0.8 and tan theta = 3/4 = 0.75 for the 3-4-5 triangle"
+   ],
+   "assessmentPoints": [
+    "Ratio answers in the second activity",
+    "Worksheet answers checked against the trap in the fourth activity"
+   ]
+  },
+  {
+   "id": "o3",
+   "text": "Use the sine rule to find an unknown side in any triangle",
+   "successCriteria": [
+    "I can pair each side with the sine of its opposite angle: a / sin A = b / sin B",
+    "I can find side b as about 6.93 from a = 4, A = 30 degrees and B = 60 degrees, and check the larger angle sits opposite the longer side"
+   ],
+   "assessmentPoints": [
+    "Sine-rule pairing answers in the third activity",
+    "Sine-rule answers in the closing worksheet practice"
+   ]
+  }
+ ],
+ "activities": [
+  {
+   "title": "Meet the 3-4-5 triangle and name the sides",
+   "minutes": 8,
+   "objectiveIds": [
+    "o1",
+    "o2"
+   ],
+   "scriptCue": "s1",
+   "grouping": "whole class",
+   "resources": [
+    "board"
+   ]
+  },
+  {
+   "title": "Cosine and tangent join the SOH CAH TOA card",
+   "minutes": 10,
+   "objectiveIds": [
+    "o2"
+   ],
+   "scriptCue": "s2",
+   "grouping": "pairs"
+  },
+  {
+   "title": "The sine rule for a triangle with no right angle",
+   "minutes": 10,
+   "objectiveIds": [
+    "o3"
+   ],
+   "scriptCue": "s3",
+   "grouping": "whole class",
+   "differentiation": {
+    "support": "Provide the student notes worked example open at the pairing step so learners can follow a = 4 with A = 30 degrees before rearranging for b themselves."
+   }
+  },
+  {
+   "title": "A common mistake: the flipped tangent",
+   "minutes": 7,
+   "objectiveIds": [
+    "o1",
+    "o2"
+   ],
+   "scriptCue": "s4",
+   "grouping": "pairs",
+   "differentiation": {
+    "stretch": "Ask learners to explain why a tangent of 4/3 = 1.33 must be wrong for this triangle before checking the card."
+   }
+  },
+  {
+   "title": "Worksheet practice and exit ticket",
+   "minutes": 5,
+   "objectiveIds": [
+    "o1",
+    "o2",
+    "o3"
+   ],
+   "grouping": "individual",
+   "resources": [
+    "worksheet"
+   ]
+  }
+ ]
+}
