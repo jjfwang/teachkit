@@ -1,0 +1,120 @@
+{
+  "level": "secondary",
+  "sets": [
+    {
+      "cloze": [
+        {
+          "answers": [
+            "Arc length"
+          ],
+          "text": "The ___ of a sector is the angle-over-360 fraction of the full circumference 2 pi r."
+        },
+        {
+          "answers": [
+            "Sector",
+            "Arc length"
+          ],
+          "text": "A ___ is a slice of a circle bounded by two radii and an ___."
+        }
+      ],
+      "frames": [
+        "The ___ is the angle-over-360 fraction of the circumference.",
+        "A ___ is bounded by two radii and an arc.",
+        "The ___ is one third of base area times height."
+      ],
+      "level": "full",
+      "starters": [
+        "A sector is a fraction of the circle, so first I...",
+        "To find a pyramid volume I start from...",
+        "When the radius grows, the area..."
+      ],
+      "wordBank": [
+        {
+          "gloss": "the angle-over-360 fraction of the full circumference 2 pi r",
+          "term": "Arc length"
+        },
+        {
+          "gloss": "a slice of a circle bounded by two radii and an arc",
+          "term": "Sector"
+        },
+        {
+          "gloss": "one third of base area times vertical height",
+          "term": "Pyramid volume"
+        },
+        {
+          "gloss": "a perfectly round solid, every surface point the radius from the centre",
+          "term": "Sphere"
+        }
+      ]
+    },
+    {
+      "cloze": [
+        {
+          "answers": [
+            "Pyramid volume"
+          ],
+          "text": "The ___ of a pyramid is one third of its base area times its vertical height."
+        },
+        {
+          "answers": [
+            "Scale factor"
+          ],
+          "text": "Areas multiply by the square of the ___."
+        }
+      ],
+      "frames": [
+        "The area of a ___ is the same fraction of pi r squared.",
+        "The ___ is 1/3 x base area x height."
+      ],
+      "level": "partial",
+      "starters": [
+        "The fraction of the circle is...",
+        "Areas scale with the..."
+      ],
+      "wordBank": [
+        {
+          "gloss": "a slice of a circle bounded by two radii and an arc",
+          "term": "Sector"
+        },
+        {
+          "gloss": "one third of base area times vertical height",
+          "term": "Pyramid volume"
+        },
+        {
+          "gloss": "the multiplier on lengths when a shape grows",
+          "term": "Scale factor"
+        }
+      ]
+    },
+    {
+      "cloze": [
+        {
+          "answers": [
+            "Sphere"
+          ],
+          "text": "A ___ of radius 3 cm has volume 36 pi cubic centimetres."
+        }
+      ],
+      "frames": [
+        "The volume of a ___ is 4/3 pi r cubed."
+      ],
+      "level": "minimal",
+      "starters": [
+        "For a sphere, the volume is..."
+      ],
+      "wordBank": [
+        {
+          "gloss": "a perfectly round solid, every surface point the radius from the centre",
+          "term": "Sphere"
+        },
+        {
+          "gloss": "the multiplier on lengths when a shape grows",
+          "term": "Scale factor"
+        }
+      ]
+    }
+  ],
+  "subject": "math",
+  "title": "E-Math mensuration: sectors, pyramids and spheres",
+  "topic": "e-mensuration"
+}

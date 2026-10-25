@@ -1,0 +1,76 @@
+{
+  "flashcards": [
+    {
+      "back": "The length of a curve along a circle: the angle-over-360 fraction of the full circumference 2 pi r.",
+      "front": "Arc length",
+      "source": "definition"
+    },
+    {
+      "back": "A slice of a circle bounded by two radii and an arc; its area is the angle-over-360 fraction of pi r squared.",
+      "front": "Sector",
+      "source": "definition"
+    },
+    {
+      "back": "One third of base area times vertical height: three identical pyramids fill the prism on the same base with the same height.",
+      "front": "Pyramid volume",
+      "source": "definition"
+    },
+    {
+      "back": "A perfectly round solid where every surface point is the radius r from the centre; its volume is 4/3 pi r cubed.",
+      "front": "Sphere",
+      "source": "definition"
+    },
+    {
+      "back": "The multiplier on lengths when a shape grows; areas multiply by its square and volumes by its cube.",
+      "front": "Scale factor",
+      "source": "definition"
+    },
+    {
+      "back": "Doubling a length doubles lengths, so area feels like it doubles too. Area scales with the square of the radius: double the radius and the area quadruples. In class, draw circles of radius 3 cm and 6 cm on squared paper: the small disk covers 9 pi worth of squares and the big one 36 pi, and four small disks tile the big one exactly.",
+      "front": "Doubling the radius doubles the area of a circle.",
+      "source": "trap"
+    },
+    {
+      "back": "10 pi cm.",
+      "front": "State the arc length of a semicircle of radius 10 cm, in terms of pi.",
+      "source": "quiz-bank"
+    },
+    {
+      "back": "288 pi cubic centimetres.",
+      "front": "A sphere has radius 6 cm. Write its volume in terms of pi.",
+      "source": "quiz-bank"
+    }
+  ],
+  "level": "secondary",
+  "practiceSets": [
+    {
+      "dayOffset": 1,
+      "items": [
+        {
+          "answer": "4 pi cm",
+          "prompt": "A sector has angle 90 degrees in a circle of radius 8 cm. What is its arc length?"
+        },
+        {
+          "answer": "48 cubic centimetres.",
+          "prompt": "Find the volume of a square pyramid whose base is 6 cm by 6 cm and whose vertical height is 4 cm."
+        }
+      ]
+    },
+    {
+      "dayOffset": 3,
+      "items": [
+        {
+          "answer": "27 pi square centimetres",
+          "prompt": "A sector has angle 120 degrees in a circle of radius 9 cm. What is its area?"
+        },
+        {
+          "answer": "Wrong - the area is four times as big",
+          "prompt": "Circle A has radius 3 cm and circle B has radius 6 cm. A classmate says the area of B is double the area of A. Which statement is correct?"
+        }
+      ]
+    }
+  ],
+  "subject": "math",
+  "title": "E-Math mensuration: sectors, pyramids and spheres",
+  "topic": "e-mensuration"
+}

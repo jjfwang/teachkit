@@ -46,7 +46,8 @@ const STEMS = [
   'primary-science-adaptations',
   'primary-science-energy-forms',
   'primary-science-photosynthesis',
-  'secondary-e-trigonometry'
+  'secondary-e-trigonometry',
+  'secondary-e-mensuration'
 ];
 
 function load(rel) {
