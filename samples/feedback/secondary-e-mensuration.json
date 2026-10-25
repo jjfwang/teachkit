@@ -1,0 +1,44 @@
+{
+ "title": "E-Math mensuration: sectors, pyramids and spheres",
+ "level": "secondary",
+ "subject": "math",
+ "topic": "e-mensuration",
+ "strengths": [
+  "Most of the class can apply the angle-over-360 fraction to both arc length and sector area.",
+  "The class can state the pyramid and sphere volume formulae and substitute the radius or base area correctly."
+ ],
+ "modelAnswers": [
+  {
+   "question": "Find the volume of a square pyramid whose base is 6 cm by 6 cm and whose vertical height is 4 cm.",
+   "answer": "48 cubic centimetres.",
+   "creditPoints": []
+  },
+  {
+   "question": "Find the volume of a sphere of radius 3 cm, in terms of pi.",
+   "answer": "36 pi cubic centimetres.",
+   "creditPoints": []
+  }
+ ],
+ "commonErrors": [
+  {
+   "misconception": "Doubling the radius doubles the area of a circle.",
+   "example": "A learner writes on the worksheet that circle B, radius 6 cm, has double the area of circle A, radius 3 cm.",
+   "fixIt": {
+    "prompt": "Fix it: work out both areas using r squared first, 9 pi against 36 pi, then state the multiplier.",
+    "corrected": "Corrected working: area scales with r squared, so doubling the radius quadruples the area, from 9 pi to 36 pi."
+   }
+  },
+  {
+   "misconception": "Doubling the radius doubles the area of a circle.",
+   "example": "On the exit ticket, a learner agrees that enlarging a circle from radius 5 cm to 10 cm doubles its area.",
+   "fixIt": {
+    "prompt": "Fix it: work out both areas, 25 pi and 100 pi, and check their ratio before answering.",
+    "corrected": "Corrected check: 100 pi is four times 25 pi, so the area has quadrupled, not doubled."
+   }
+  }
+ ],
+ "nextSteps": [
+  "Reteach the trap, landing that area scales with the square of the radius: double the radius and the area quadruples.",
+  "Practise the sector fraction from the worked example - write angle over 360 first, then apply it to the circumference or the circle area."
+ ]
+}
