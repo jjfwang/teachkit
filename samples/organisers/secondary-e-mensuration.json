@@ -1,0 +1,81 @@
+{
+  "level": "secondary",
+  "subject": "math",
+  "templates": [
+    {
+      "kind": "flow",
+      "slots": [
+        {
+          "entries": [
+            "Arc length and sector area: a 60 degree sector is 60/360 = 1/6 of the circle, so the arc is 1/6 of 2 pi r and the sector area is 1/6 of pi r squared."
+          ],
+          "label": "Arc length and sector area",
+          "studentPrompt": "Explain this step in your own words."
+        },
+        {
+          "entries": [
+            "Pyramid volume, revealed: pouring the pyramid into the matching prism takes three full pyramids, so the volume is 1/3 x base area x height."
+          ],
+          "label": "Pyramid volume, revealed",
+          "studentPrompt": "Explain this step in your own words."
+        },
+        {
+          "entries": [
+            "Sphere volume: stacking thin disk slices of the sphere gives 4/3 pi r cubed; for r = 3 cm that is 36 pi, about 113 cubic centimetres."
+          ],
+          "label": "Sphere volume",
+          "studentPrompt": "Explain this step in your own words."
+        },
+        {
+          "entries": [
+            "A common mistake: doubling r doubles area: growing r from 3 cm to 6 cm fits four small disks inside the big one, so the area goes from 9 pi to 36 pi."
+          ],
+          "label": "A common mistake",
+          "studentPrompt": "Explain this step in your own words."
+        }
+      ]
+    },
+    {
+      "kind": "frayer",
+      "slots": [
+        {
+          "entries": [
+            "The length of a curve along a circle: the angle-over-360 fraction of the full circumference 2 pi r."
+          ],
+          "label": "Arc length",
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "entries": [
+            "A slice of a circle bounded by two radii and an arc; its area is the angle-over-360 fraction of pi r squared."
+          ],
+          "label": "Sector",
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "entries": [
+            "One third of base area times vertical height: three identical pyramids fill the prism on the same base with the same height."
+          ],
+          "label": "Pyramid volume",
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "entries": [
+            "A perfectly round solid where every surface point is the radius r from the centre; its volume is 4/3 pi r cubed."
+          ],
+          "label": "Sphere",
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "entries": [
+            "The multiplier on lengths when a shape grows; areas multiply by its square and volumes by its cube."
+          ],
+          "label": "Scale factor",
+          "studentPrompt": "Give your own example of this term."
+        }
+      ]
+    }
+  ],
+  "title": "E-Math mensuration: sectors, pyramids and spheres",
+  "topic": "e-mensuration"
+}
