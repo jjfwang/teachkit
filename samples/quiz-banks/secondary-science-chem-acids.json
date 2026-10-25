@@ -1,0 +1,51 @@
+{
+  "items": [
+    {
+      "answer": "Vinegar is a weak acid: it only partly releases its hydrogen ions, but it is still acidic",
+      "choices": [
+        "The student is right - only strong acids count as acids",
+        "Vinegar is a weak acid: it only partly releases its hydrogen ions, but it is still acidic",
+        "Vinegar is actually an alkali",
+        "Vinegar is neutral because it is used in food"
+      ],
+      "misconceptionCode": "All acids are strong acids.",
+      "prompt": "A student says vinegar is not a real acid because real acids are all strong and dangerous. What is the best correction?"
+    },
+    {
+      "answer": "Some acids are weak: they only partly release their hydrogen ions, like the acid in vinegar",
+      "choices": [
+        "Every acid fully releases its hydrogen ions in water, so every acid is equally strong",
+        "Acids cannot be weak; they can only be dilute or concentrated",
+        "Some acids are weak: they only partly release their hydrogen ions, like the acid in vinegar",
+        "Vinegar is not an acid because it is safe to eat"
+      ],
+      "prompt": "Which statement about acids is correct?"
+    },
+    {
+      "answer": "The alkali releases OH- ions, which pair up with the H+ ions from the acid to form water. As the excess H+ ions are used up, the solution moves towards equal ion counts, so the pH rises towards 7, the neutral point.",
+      "prompt": "Explain, in terms of ions, why adding an alkali to an acid brings the pH towards 7."
+    },
+    {
+      "answer": "Red litmus turns blue in an alkali. Blue litmus turns red in an acid.",
+      "prompt": "State the colour change when red litmus paper is dipped into an alkali, and when blue litmus paper is dipped into an acid."
+    },
+    {
+      "answer": "The pH 3 solution is more acidic, and it is one hundred times more acidic than the pH 5 solution",
+      "choices": [
+        "The pH 5 solution is more acidic",
+        "The pH 3 solution is more acidic, and it is one hundred times more acidic than the pH 5 solution",
+        "The pH 3 solution is neutral",
+        "The two solutions have the same acidity"
+      ],
+      "prompt": "One solution has pH 3 and another has pH 5. Which statement is correct?"
+    },
+    {
+      "answer": "The H+ ions from the acid pair up with the OH- ions from the alkali to form water. The leftover ions stay in solution and form a salt.",
+      "prompt": "In one or two sentences, explain what happens to the H+ and OH- ions during neutralisation."
+    }
+  ],
+  "level": "secondary",
+  "subject": "science",
+  "title": "Acids, bases and salts",
+  "topic": "chem-acids"
+}

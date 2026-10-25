@@ -1,0 +1,49 @@
+{
+  "complete": {
+    "problem": "Read the ladder, then neutralise.",
+    "selfExplanation": "Explain how the ladder makes pH 3 one hundred times more acidic than pH 5, and why the leftover ions decide the salt name at the neutralisation step.",
+    "steps": [
+      {
+        "annotation": "The 0 to 14 scale that measures acidity and alkalinity: below 7 is acidic, 7 is neutral, above 7 is alkaline, and each step is ten times stronger.",
+        "text": "Step 1 (s2): the scale runs 0 to 14 and each step is ten times stronger, so a solution at pH 3 is ten times more acidic than one at pH 4 and one hundred times more acidic than one at pH 5."
+      },
+      {
+        "annotation": "The reaction of an acid with an alkali, in which H+ and OH- ions pair up to form water and the leftover ions form a salt.",
+        "text": "Step 2 (s4): neutralise hydrochloric acid with sodium hydroxide - the H+ and OH- ions pair up into water and the leftover sodium and chloride ions form sodium chloride, a chloride because the acid was hydrochloric."
+      },
+      {
+        "annotation": "A hydrogen ion released by an acid in water. The more H+ ions in excess, the lower the pH.",
+        "text": "Step 3: Check the ions: when the H+ and OH- counts are exactly equal, the mixture is neutral at pH 7."
+      }
+    ]
+  },
+  "faded": {
+    "problem": "Sulfuric acid is neutralised by sodium hydroxide. Name the salt formed and write the word equation for the reaction.",
+    "selfExplanation": "The first step is shown. Say which ions pair into water, and how the leftover ions name the salt.",
+    "steps": [
+      {
+        "annotation": "A substance that releases hydroxide ions, OH-, when dissolved in water. Alkalis have a pH above 7 and are soluble bases.",
+        "text": "Step 1: sodium hydroxide is an alkali, so it releases OH- ions in water.",
+        "withheld": false
+      },
+      {
+        "annotation": "A hydroxide ion released by an alkali in water. The more OH- ions in excess, the higher the pH.",
+        "text": "Step 2: the H+ ions from the sulfuric acid pair up with the OH- ions to form water.",
+        "withheld": true
+      },
+      {
+        "annotation": "The ionic compound left over after neutralisation. Its second name comes from the acid: chloride, nitrate or sulfate.",
+        "text": "Step 3: the leftover sodium and sulfate ions form sodium sulfate, so the word equation is sulfuric acid plus sodium hydroxide gives sodium sulfate plus water.",
+        "withheld": true
+      }
+    ]
+  },
+  "level": "secondary",
+  "paired": {
+    "problem": "Explain, in terms of ions, why adding an alkali to an acid brings the pH towards 7.",
+    "solution": "The alkali releases OH- ions, which pair up with the H+ ions from the acid to form water. As the excess H+ ions are used up, the solution moves towards equal ion counts, so the pH rises towards 7, the neutral point."
+  },
+  "subject": "science",
+  "title": "Acids, bases and salts",
+  "topic": "chem-acids"
+}

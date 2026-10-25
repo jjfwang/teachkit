@@ -1,0 +1,202 @@
+{
+  "doNow": [
+    {
+      "choices": [
+        {
+          "misconception": "All acids are strong acids.",
+          "rationale": {
+            "chose": "The learner selected option Every acid fully releases its hydrogen ions in water, so every acid is equally strong as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: All acids are strong acids.. The slip: Acid sounds dangerous, so every acid is treated like it fully burns through everything. The fix: Weak acids only partly release their hydrogen ions: vinegar is still acidic, just not strong. In class, compare vinegar with a strong acid: both are acidic, but the weak acid has released only some of its hydrogen ions, so its pH is higher and it does not attack materials the way a strong acid does.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "Every acid fully releases its hydrogen ions in water, so every acid is equally strong"
+        },
+        {
+          "misconception": "All acids are strong acids.",
+          "rationale": {
+            "chose": "The learner selected option Acids cannot be weak; they can only be dilute or concentrated as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: All acids are strong acids.. The slip: Acid sounds dangerous, so every acid is treated like it fully burns through everything. The fix: Weak acids only partly release their hydrogen ions: vinegar is still acidic, just not strong. In class, compare vinegar with a strong acid: both are acidic, but the weak acid has released only some of its hydrogen ions, so its pH is higher and it does not attack materials the way a strong acid does.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "Acids cannot be weak; they can only be dilute or concentrated"
+        },
+        {
+          "correct": true,
+          "text": "Some acids are weak: they only partly release their hydrogen ions, like the acid in vinegar"
+        },
+        {
+          "misconception": "All acids are strong acids.",
+          "rationale": {
+            "chose": "The learner selected option Vinegar is not an acid because it is safe to eat as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: All acids are strong acids.. The slip: Acid sounds dangerous, so every acid is treated like it fully burns through everything. The fix: Weak acids only partly release their hydrogen ions: vinegar is still acidic, just not strong. In class, compare vinegar with a strong acid: both are acidic, but the weak acid has released only some of its hydrogen ions, so its pH is higher and it does not attack materials the way a strong acid does.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "Vinegar is not an acid because it is safe to eat"
+        }
+      ],
+      "id": "dn1",
+      "kind": "multiple-choice",
+      "prompt": "Which statement about acids is correct?"
+    },
+    {
+      "choices": [
+        {
+          "misconception": "All acids are strong acids.",
+          "rationale": {
+            "chose": "The learner selected option The pH 5 solution is more acidic as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: All acids are strong acids.. The slip: Acid sounds dangerous, so every acid is treated like it fully burns through everything. The fix: Weak acids only partly release their hydrogen ions: vinegar is still acidic, just not strong. In class, compare vinegar with a strong acid: both are acidic, but the weak acid has released only some of its hydrogen ions, so its pH is higher and it does not attack materials the way a strong acid does.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "The pH 5 solution is more acidic"
+        },
+        {
+          "correct": true,
+          "text": "The pH 3 solution is more acidic, and it is one hundred times more acidic than the pH 5 solution"
+        },
+        {
+          "misconception": "All acids are strong acids.",
+          "rationale": {
+            "chose": "The learner selected option The pH 3 solution is neutral as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: All acids are strong acids.. The slip: Acid sounds dangerous, so every acid is treated like it fully burns through everything. The fix: Weak acids only partly release their hydrogen ions: vinegar is still acidic, just not strong. In class, compare vinegar with a strong acid: both are acidic, but the weak acid has released only some of its hydrogen ions, so its pH is higher and it does not attack materials the way a strong acid does.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "The pH 3 solution is neutral"
+        },
+        {
+          "misconception": "All acids are strong acids.",
+          "rationale": {
+            "chose": "The learner selected option The two solutions have the same acidity as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: All acids are strong acids.. The slip: Acid sounds dangerous, so every acid is treated like it fully burns through everything. The fix: Weak acids only partly release their hydrogen ions: vinegar is still acidic, just not strong. In class, compare vinegar with a strong acid: both are acidic, but the weak acid has released only some of its hydrogen ions, so its pH is higher and it does not attack materials the way a strong acid does.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "The two solutions have the same acidity"
+        }
+      ],
+      "id": "dn2",
+      "kind": "multiple-choice",
+      "prompt": "One solution has pH 3 and another has pH 5. Which statement is correct?"
+    },
+    {
+      "choices": [
+        {
+          "misconception": "All acids are strong acids.",
+          "rationale": {
+            "chose": "The learner selected option The indicator has stopped working as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: All acids are strong acids.. The slip: Acid sounds dangerous, so every acid is treated like it fully burns through everything. The fix: Weak acids only partly release their hydrogen ions: vinegar is still acidic, just not strong. In class, compare vinegar with a strong acid: both are acidic, but the weak acid has released only some of its hydrogen ions, so its pH is higher and it does not attack materials the way a strong acid does.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "The indicator has stopped working"
+        },
+        {
+          "correct": true,
+          "text": "The equivalence point: the acid has just been exactly neutralised, so an indicator must change colour on the jump"
+        },
+        {
+          "misconception": "All acids are strong acids.",
+          "rationale": {
+            "chose": "The learner selected option The base has turned into an acid as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: All acids are strong acids.. The slip: Acid sounds dangerous, so every acid is treated like it fully burns through everything. The fix: Weak acids only partly release their hydrogen ions: vinegar is still acidic, just not strong. In class, compare vinegar with a strong acid: both are acidic, but the weak acid has released only some of its hydrogen ions, so its pH is higher and it does not attack materials the way a strong acid does.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "The base has turned into an acid"
+        },
+        {
+          "misconception": "All acids are strong acids.",
+          "rationale": {
+            "chose": "The learner selected option The pH scale ends at 10 as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: All acids are strong acids.. The slip: Acid sounds dangerous, so every acid is treated like it fully burns through everything. The fix: Weak acids only partly release their hydrogen ions: vinegar is still acidic, just not strong. In class, compare vinegar with a strong acid: both are acidic, but the weak acid has released only some of its hydrogen ions, so its pH is higher and it does not attack materials the way a strong acid does.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "The pH scale ends at 10"
+        }
+      ],
+      "id": "dn3",
+      "kind": "multiple-choice",
+      "prompt": "During a titration the pH stays low as base is added, then jumps from 4 to 10 with a single drop. What does the jump show?"
+    }
+  ],
+  "hingeQuestions": [
+    {
+      "choices": [
+        {
+          "misconception": "All acids are strong acids.",
+          "rationale": {
+            "chose": "The learner selected option The student is right - only strong acids count as acids as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: All acids are strong acids.. The slip: Acid sounds dangerous, so every acid is treated like it fully burns through everything. The fix: Weak acids only partly release their hydrogen ions: vinegar is still acidic, just not strong. In class, compare vinegar with a strong acid: both are acidic, but the weak acid has released only some of its hydrogen ions, so its pH is higher and it does not attack materials the way a strong acid does.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "The student is right - only strong acids count as acids"
+        },
+        {
+          "correct": true,
+          "text": "Vinegar is a weak acid: it only partly releases its hydrogen ions, but it is still acidic"
+        },
+        {
+          "misconception": "All acids are strong acids.",
+          "rationale": {
+            "chose": "The learner selected option Vinegar is actually an alkali as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: All acids are strong acids.. The slip: Acid sounds dangerous, so every acid is treated like it fully burns through everything. The fix: Weak acids only partly release their hydrogen ions: vinegar is still acidic, just not strong. In class, compare vinegar with a strong acid: both are acidic, but the weak acid has released only some of its hydrogen ions, so its pH is higher and it does not attack materials the way a strong acid does.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "Vinegar is actually an alkali"
+        },
+        {
+          "misconception": "All acids are strong acids.",
+          "rationale": {
+            "chose": "The learner selected option Vinegar is neutral because it is used in food as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: All acids are strong acids.. The slip: Acid sounds dangerous, so every acid is treated like it fully burns through everything. The fix: Weak acids only partly release their hydrogen ions: vinegar is still acidic, just not strong. In class, compare vinegar with a strong acid: both are acidic, but the weak acid has released only some of its hydrogen ions, so its pH is higher and it does not attack materials the way a strong acid does.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "Vinegar is neutral because it is used in food"
+        }
+      ],
+      "id": "h1",
+      "kind": "multiple-choice",
+      "prompt": "A student says vinegar is not a real acid because real acids are all strong and dangerous. What is the best correction?",
+      "scriptCue": "s7"
+    },
+    {
+      "choices": [
+        {
+          "misconception": "All acids are strong acids.",
+          "rationale": {
+            "chose": "The learner selected option The student is right - only strong acids count as acids as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: All acids are strong acids.. The slip: Acid sounds dangerous, so every acid is treated like it fully burns through everything. The fix: Weak acids only partly release their hydrogen ions: vinegar is still acidic, just not strong. In class, compare vinegar with a strong acid: both are acidic, but the weak acid has released only some of its hydrogen ions, so its pH is higher and it does not attack materials the way a strong acid does.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "The student is right - only strong acids count as acids"
+        },
+        {
+          "correct": true,
+          "text": "Vinegar is a weak acid: it only partly releases its hydrogen ions, but it is still acidic"
+        },
+        {
+          "misconception": "All acids are strong acids.",
+          "rationale": {
+            "chose": "The learner selected option Vinegar is actually an alkali as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: All acids are strong acids.. The slip: Acid sounds dangerous, so every acid is treated like it fully burns through everything. The fix: Weak acids only partly release their hydrogen ions: vinegar is still acidic, just not strong. In class, compare vinegar with a strong acid: both are acidic, but the weak acid has released only some of its hydrogen ions, so its pH is higher and it does not attack materials the way a strong acid does.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "Vinegar is actually an alkali"
+        },
+        {
+          "misconception": "All acids are strong acids.",
+          "rationale": {
+            "chose": "The learner selected option Vinegar is neutral because it is used in food as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: All acids are strong acids.. The slip: Acid sounds dangerous, so every acid is treated like it fully burns through everything. The fix: Weak acids only partly release their hydrogen ions: vinegar is still acidic, just not strong. In class, compare vinegar with a strong acid: both are acidic, but the weak acid has released only some of its hydrogen ions, so its pH is higher and it does not attack materials the way a strong acid does.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "Vinegar is neutral because it is used in food"
+        }
+      ],
+      "id": "h2",
+      "kind": "multiple-choice",
+      "prompt": "What is the best correction to the claim that all acids are strong acids?",
+      "scriptCue": "s7"
+    }
+  ],
+  "level": "secondary",
+  "subject": "science",
+  "title": "Acids, bases and salts",
+  "topic": "chem-acids"
+}
