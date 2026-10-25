@@ -1,0 +1,120 @@
+{
+  "level": "secondary",
+  "sets": [
+    {
+      "cloze": [
+        {
+          "answers": [
+            "Cell"
+          ],
+          "text": "A ___ is the smallest unit of life."
+        },
+        {
+          "answers": [
+            "Cell membrane",
+            "Selectively permeable"
+          ],
+          "text": "The ___ controls what enters and leaves the cell, and it is ___ , letting some substances through while keeping others out."
+        }
+      ],
+      "frames": [
+        "A ___ is the smallest unit of life.",
+        "The ___ gives a plant cell its shape and strength.",
+        "The ___ controls what enters and leaves the cell."
+      ],
+      "level": "full",
+      "starters": [
+        "A cell is...",
+        "The cell wall...",
+        "The cell membrane..."
+      ],
+      "wordBank": [
+        {
+          "gloss": "the smallest unit of life",
+          "term": "Cell"
+        },
+        {
+          "gloss": "a tough outer layer found in plant cells only",
+          "term": "Cell wall"
+        },
+        {
+          "gloss": "the thin layer around every cell that controls what enters and leaves",
+          "term": "Cell membrane"
+        },
+        {
+          "gloss": "letting some substances through while keeping others out",
+          "term": "Selectively permeable"
+        }
+      ]
+    },
+    {
+      "cloze": [
+        {
+          "answers": [
+            "Nucleus"
+          ],
+          "text": "The ___ is the control centre of the cell."
+        },
+        {
+          "answers": [
+            "Chloroplast"
+          ],
+          "text": "The ___ traps light energy to make food by photosynthesis."
+        }
+      ],
+      "frames": [
+        "The ___ holds the instructions that run the cell.",
+        "The ___ traps light energy to make food."
+      ],
+      "level": "partial",
+      "starters": [
+        "The nucleus is...",
+        "The chloroplast..."
+      ],
+      "wordBank": [
+        {
+          "gloss": "the control centre of the cell",
+          "term": "Nucleus"
+        },
+        {
+          "gloss": "the plant-only structure that traps light energy to make food",
+          "term": "Chloroplast"
+        },
+        {
+          "gloss": "a fluid-filled space in the cell",
+          "term": "Vacuole"
+        }
+      ]
+    },
+    {
+      "cloze": [
+        {
+          "answers": [
+            "Mitochondrion"
+          ],
+          "text": "The ___ releases energy from food."
+        }
+      ],
+      "frames": [
+        "The ___ releases energy from food in both cell types."
+      ],
+      "level": "minimal",
+      "starters": [
+        "The mitochondrion..."
+      ],
+      "wordBank": [
+        {
+          "gloss": "the structure that releases energy from food",
+          "term": "Mitochondrion"
+        },
+        {
+          "gloss": "a group of similar cells working together",
+          "term": "Tissue"
+        }
+      ]
+    }
+  ],
+  "subject": "science",
+  "title": "Cells: structure and organisation",
+  "topic": "bio-cells"
+}
