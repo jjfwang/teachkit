@@ -1,0 +1,44 @@
+{
+ "commonErrors": [
+  {
+   "example": "A learner writes on the worksheet that an atom is a solid marble with electrons stuck on its surface.",
+   "fixIt": {
+    "corrected": "Corrected working: atoms are mostly empty space, with electrons in fixed shells around a tiny dense nucleus.",
+    "prompt": "Fix it: say where the electrons sit and how much of the atom is empty space."
+   },
+   "misconception": "Atoms are solid balls."
+  },
+  {
+   "example": "On the exit ticket, a learner agrees with the student who says the drawing of an atom as a solid ball is fine.",
+   "fixIt": {
+    "corrected": "Corrected check: the nucleus is a tiny dense speck at the centre and the electrons sit far from it in shells, so the atom is not solid.",
+    "prompt": "Fix it: give the one-sentence correction for the claim that atoms are solid balls."
+   },
+   "misconception": "Atoms are solid balls."
+  }
+ ],
+ "level": "secondary",
+ "modelAnswers": [
+  {
+   "answer": "6 protons, 12 - 6 = 6 neutrons and 6 electrons. The six electrons fill the shells two, then four, so the arrangement is 2,4.",
+   "creditPoints": [],
+   "question": "Carbon has proton number 6 and nucleon number 12. State its numbers of protons, neutrons and electrons, and write its electron arrangement."
+  },
+  {
+   "answer": "Period 3, group 6",
+   "creditPoints": [],
+   "question": "An element's atoms have three electron shells, with 6 electrons in the outer shell. In which period and group does it sit?"
+  }
+ ],
+ "nextSteps": [
+  "Reteach the trap with the shell-model scene, landing that atoms are mostly empty space around a tiny dense nucleus.",
+  "Practise the check from the worked example - read sodium step by step: count the particles, fill the shells in order, then state the group and period."
+ ],
+ "strengths": [
+  "Most of the class can count neutrons as nucleon number minus proton number for sodium and magnesium.",
+  "The class can read an electron arrangement to give the period from the shell count and the group from the outer electrons."
+ ],
+ "subject": "science",
+ "title": "Atomic structure and the periodic table",
+ "topic": "chem-atomic"
+}

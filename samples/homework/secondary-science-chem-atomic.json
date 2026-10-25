@@ -1,0 +1,44 @@
+{
+ "level": "secondary",
+ "questions": [
+  {
+   "choices": [
+    {
+     "text": "11"
+    },
+    {
+     "text": "23"
+    },
+    {
+     "correct": true,
+     "text": "12"
+    },
+    {
+     "text": "34"
+    }
+   ],
+   "explanation": "Neutrons = nucleon number - proton number = 23 - 11 = 12. The proton number counts protons only; the nucleon number counts protons plus neutrons.",
+   "id": "q2",
+   "kind": "multiple-choice",
+   "prompt": "How many neutrons are there in an atom of sodium with proton number 11 and nucleon number 23?"
+  },
+  {
+   "answer": "6 protons, 12 - 6 = 6 neutrons and 6 electrons. The six electrons fill the shells two, then four, so the arrangement is 2,4.",
+   "explanation": "A neutral atom has equal protons and electrons, so 6 of each; neutrons come from nucleon number minus proton number. Shells fill in order: 2 in shell 1, the remaining 4 in shell 2.",
+   "id": "q3",
+   "kind": "short-answer",
+   "prompt": "Carbon has proton number 6 and nucleon number 12. State its numbers of protons, neutrons and electrons, and write its electron arrangement."
+  },
+  {
+   "answer": "Elements in one group share the same number of outer electrons. Sodium and potassium each have 1 outer electron, so they react similarly; magnesium has 2 outer electrons, so its chemistry differs.",
+   "explanation": "The group number matches the number of outer electrons, and the outer electrons are the ones that take part in reactions - same outer count, similar reactions.",
+   "id": "q4",
+   "kind": "short-answer",
+   "prompt": "Sodium (2,8,1) and potassium (2,8,8,1) are both in group 1, while magnesium (2,8,2) is in group 2. Explain, using outer electrons, why sodium and potassium react in similar ways but magnesium does not."
+  }
+ ],
+ "subject": "science",
+ "title": "Atomic structure and the periodic table",
+ "topic": "chem-atomic",
+ "variant": "homework"
+}

@@ -1,0 +1,125 @@
+{
+ "blueprint": [
+  {
+   "assessmentObjective": "AO1 recall and apply",
+   "cognitiveLevel": "apply",
+   "marks": 10,
+   "outcomeCode": "S3-ATOM-APPLY"
+  },
+  {
+   "assessmentObjective": "AO2 reason and explain",
+   "cognitiveLevel": "reason",
+   "marks": 10,
+   "outcomeCode": "S3-CELL-REASON"
+  }
+ ],
+ "durationMinutes": 40,
+ "items": [
+  {
+   "blueprintRow": 0,
+   "commandWord": "Explain",
+   "markScheme": {
+    "points": [
+     {
+      "marks": 3,
+      "text": "States the proton number gives 12 protons and, for a neutral atom, 12 electrons"
+     },
+     {
+      "marks": 3,
+      "text": "Subtracts the proton number from the nucleon number, 24 - 12, to give 12 neutrons"
+     }
+    ]
+   },
+   "marks": 6,
+   "prompt": "Magnesium has proton number 12 and nucleon number 24. Explain how to work out its numbers of protons, neutrons and electrons, and state each number."
+  },
+  {
+   "blueprintRow": 0,
+   "commandWord": "State",
+   "markScheme": {
+    "points": [
+     {
+      "marks": 2,
+      "text": "Gives period 3 because the arrangement shows three electron shells"
+     },
+     {
+      "marks": 2,
+      "text": "Gives group 5 because there are 5 electrons in the outer shell"
+     }
+    ]
+   },
+   "marks": 4,
+   "prompt": "An element has electron arrangement 2,8,5. State its period and its group."
+  },
+  {
+   "blueprintRow": 1,
+   "commandWord": "Explain",
+   "markScheme": {
+    "points": [
+     {
+      "marks": 3,
+      "text": "States the membrane lets some substances cross while keeping others out"
+     },
+     {
+      "marks": 3,
+      "text": "Supports the point with an example such as food crossing in or waste crossing out while a harmful particle is refused"
+     }
+    ]
+   },
+   "marks": 6,
+   "prompt": "Explain, in terms of what crosses it, why the cell membrane is described as selectively permeable rather than a solid wall."
+  },
+  {
+   "blueprintRow": 1,
+   "commandWord": "Describe",
+   "markScheme": {
+    "points": [
+     {
+      "marks": 2,
+      "text": "Names the nucleus as the structure controlling the cell"
+     },
+     {
+      "marks": 2,
+      "text": "Names the membrane as selectively permeable, choosing what crosses rather than sealing the cell"
+     }
+    ]
+   },
+   "marks": 4,
+   "prompt": "Describe the job of the nucleus and of the cell membrane in an animal cell."
+  }
+ ],
+ "level": "secondary",
+ "moderation": {
+  "state": "unreviewed"
+ },
+ "review": null,
+ "rubric": {
+  "criteria": [
+   {
+    "levels": [
+     {
+      "descriptor": "Explanations chain particle counts and shell arrangements to the group and period in order, with each step justified by a named particle or structure.",
+      "label": "Secure"
+     },
+     {
+      "descriptor": "Explanations are broadly sound but one link between the counts or shells and the answer is asserted rather than justified.",
+      "label": "Developing"
+     },
+     {
+      "descriptor": "Answers list particles or cell structures without connecting them into an explanation.",
+      "label": "Beginning"
+     }
+    ],
+    "name": "Atoms and cells reasoning"
+   }
+  ]
+ },
+ "subject": "science",
+ "title": "Atomic Structure and Cells Unit Test",
+ "topics": [
+  "secondary-science-chem-atomic",
+  "secondary-science-cells"
+ ],
+ "totalMarks": 20,
+ "unitTitle": "Atomic structure, the periodic table and cell structure"
+}
