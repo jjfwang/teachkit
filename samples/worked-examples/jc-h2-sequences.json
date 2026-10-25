@@ -17,7 +17,7 @@
    },
    {
     "annotation": "The n feels like the number of jumps, but the first jump lands on u_2, not u_1. Exponents count the jumps, not the terms: u_10 = u_1 + 9d, and a geometric sum counts every term, not the last term times n.",
-    "text": "Step 4 (s4): Here is the mistake, sprung on purpose: a geometric progression with r = -1 does not settle down eventually. Watch the terms bounce 1, -1, 1, -1 forever. A sum to infinity needs the ratio to shrink the terms, |r| < 1, and only then do the terms home in on the limit a / (1 - r)."
+    "text": "Step 4 (s4): Here is the mistake, sprung on purpose: a geometric progression with r = -1 does not settle down eventually. Watch the terms bounce 1, -1, 1, -1 forever. A sum to infinity needs the ratio to shrink the terms, with |r| less than 1, and only then do the terms home in on the limit a / (1 - r)."
    },
    {
     "annotation": "The general term u_n of a sequence: u_n = a + (n - 1)d for an arithmetic progression and u_n = a x r^(n - 1) for a geometric one, where n - 1 counts the jumps from the first term.",

@@ -152,7 +152,7 @@
    ],
    "id": "h1",
    "kind": "multiple-choice",
-   "prompt": "A student says u_10 needs ten jumps of d, so u_n = u_1 + n*d. Which statement corrects the claim?",
+   "prompt": "A student claims that reaching u_10 from u_1 takes ten jumps of d. Which statement corrects the claim?",
    "scriptCue": "s1"
   },
   {
