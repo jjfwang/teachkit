@@ -1,0 +1,44 @@
+{
+ "commonErrors": [
+  {
+   "example": "A learner writes on the worksheet that sound travels faster than light, picking the statement that the thunder reaches us first because it is so loud.",
+   "fixIt": {
+    "corrected": "Corrected working: light is far faster than sound, so the lightning flash arrives first and the thunder follows seconds later.",
+    "prompt": "Fix it: say which arrives first from a distant strike and give the two speeds that settle it."
+   },
+   "misconception": "Sound travels faster than light."
+  },
+  {
+   "example": "On the exit ticket, a learner answers that the thunder is noticed first from a distant storm instead of the lightning flash.",
+   "fixIt": {
+    "corrected": "Corrected check: the flash travels at about 300,000,000 m/s and arrives almost instantly, while the thunder travels at only 340 m/s - the flash is first.",
+    "prompt": "Fix it: give the one-sentence correction for the claim that sound travels faster than light."
+   },
+   "misconception": "Sound travels faster than light."
+  }
+ ],
+ "level": "secondary",
+ "modelAnswers": [
+  {
+   "answer": "The particles vibrate back and forth along the direction of travel, bunching together and spreading apart in turn. The particles stay in place overall; the wave carries energy from place to place.",
+   "creditPoints": [],
+   "question": "Describe how the particles move in a longitudinal sound wave, and state what the wave itself carries."
+  },
+  {
+   "answer": "2 m: wavelength = v / f = 340 / 170 = 2 m.",
+   "creditPoints": [],
+   "question": "A sound wave travels at 340 m/s with frequency 170 Hz. Calculate its wavelength."
+  }
+ ],
+ "nextSteps": [
+  "Reteach the trap with the storm sequence, landing that light is far faster than sound and the flash always arrives before the thunder.",
+  "Practise the check from the teacher script - rearrange before substituting: wavelength = v / f, then verify with 170 Hz x 2 m = 340 m/s."
+ ],
+ "strengths": [
+  "Most of the class can rearrange the wave equation to find a wavelength, such as reading 340 metres per second at 170 hertz on the worksheet as a wavelength of 2 metres.",
+  "The class can describe longitudinal particle motion - bunching and spreading along the direction of travel - and can state that the wave carries energy."
+ ],
+ "subject": "science",
+ "title": "Waves: light, sound and the wave equation",
+ "topic": "phys-waves"
+}

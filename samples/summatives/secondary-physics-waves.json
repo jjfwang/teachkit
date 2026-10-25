@@ -1,0 +1,125 @@
+{
+ "blueprint": [
+  {
+   "assessmentObjective": "AO1 recall and apply",
+   "cognitiveLevel": "apply",
+   "marks": 10,
+   "outcomeCode": "S3-WAV-APPLY"
+  },
+  {
+   "assessmentObjective": "AO2 reason and explain",
+   "cognitiveLevel": "reason",
+   "marks": 10,
+   "outcomeCode": "S3-ENE-REASON"
+  }
+ ],
+ "durationMinutes": 40,
+ "items": [
+  {
+   "blueprintRow": 0,
+   "commandWord": "Calculate",
+   "markScheme": {
+    "points": [
+     {
+      "marks": 3,
+      "text": "States wavelength = v / f and divides 340 by 170"
+     },
+     {
+      "marks": 3,
+      "text": "Gives a wavelength of 2 m with unit"
+     }
+    ]
+   },
+   "marks": 6,
+   "prompt": "A sound wave in air travels at 340 m/s and vibrates at 170 Hz. Calculate its wavelength."
+  },
+  {
+   "blueprintRow": 0,
+   "commandWord": "Calculate",
+   "markScheme": {
+    "points": [
+     {
+      "marks": 2,
+      "text": "States v = f x wavelength and multiplies 5 by 3"
+     },
+     {
+      "marks": 2,
+      "text": "Gives a speed of 15 m/s with unit"
+     }
+    ]
+   },
+   "marks": 4,
+   "prompt": "A wave has frequency 5 Hz and wavelength 3 m. Calculate its speed."
+  },
+  {
+   "blueprintRow": 1,
+   "commandWord": "Calculate",
+   "markScheme": {
+    "points": [
+     {
+      "marks": 3,
+      "text": "States work done = force x distance and multiplies 50 by 4"
+     },
+     {
+      "marks": 3,
+      "text": "Gives work done of 200 J with unit"
+     }
+    ]
+   },
+   "marks": 6,
+   "prompt": "A force of 50 N pushes a crate 4 m in the direction of the force. Calculate the work done."
+  },
+  {
+   "blueprintRow": 1,
+   "commandWord": "Calculate",
+   "markScheme": {
+    "points": [
+     {
+      "marks": 2,
+      "text": "States power = work done / time and divides 200 by 2"
+     },
+     {
+      "marks": 2,
+      "text": "Gives a power of 100 W with unit"
+     }
+    ]
+   },
+   "marks": 4,
+   "prompt": "The 200 J of work from the previous item is done in 2 s. Calculate the power."
+  }
+ ],
+ "level": "secondary",
+ "moderation": {
+  "state": "unreviewed"
+ },
+ "review": null,
+ "rubric": {
+  "criteria": [
+   {
+    "levels": [
+     {
+      "descriptor": "Explanations chain wave and energy quantities to the answer in order, with each step justified by a named wave-equation, work or power rule.",
+      "label": "Secure"
+     },
+     {
+      "descriptor": "Explanations are broadly sound but one link between the quantities and the answer is asserted rather than justified.",
+      "label": "Developing"
+     },
+     {
+      "descriptor": "Answers state numbers or wave names without connecting them into an explanation.",
+      "label": "Beginning"
+     }
+    ],
+    "name": "Waves and energy reasoning"
+   }
+  ]
+ },
+ "subject": "science",
+ "title": "Waves and Energy Unit Test",
+ "topics": [
+  "secondary-physics-waves",
+  "secondary-physics-energy"
+ ],
+ "totalMarks": 20,
+ "unitTitle": "Waves and energy"
+}
