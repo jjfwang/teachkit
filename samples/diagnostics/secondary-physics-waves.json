@@ -1,0 +1,202 @@
+{
+ "doNow": [
+  {
+   "choices": [
+    {
+     "misconception": "Sound travels faster than light.",
+     "rationale": {
+      "chose": "The learner selected option The thunder, because sound is louder as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: Sound travels faster than light.. The slip: A thunderclap feels so powerful that it seems to arrive before the flash.. The fix: Light is far faster: the lightning flash arrives first and the thunder follows..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "The thunder, because sound is louder"
+    },
+    {
+     "correct": true,
+     "text": "The lightning flash"
+    },
+    {
+     "misconception": "Sound travels faster than light.",
+     "rationale": {
+      "chose": "The learner selected option The thunder, because it lasts longer as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: Sound travels faster than light.. The slip: A thunderclap feels so powerful that it seems to arrive before the flash.. The fix: Light is far faster: the lightning flash arrives first and the thunder follows..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "The thunder, because it lasts longer"
+    },
+    {
+     "misconception": "Sound travels faster than light.",
+     "rationale": {
+      "chose": "The learner selected option Both arrive at exactly the same time as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: Sound travels faster than light.. The slip: A thunderclap feels so powerful that it seems to arrive before the flash.. The fix: Light is far faster: the lightning flash arrives first and the thunder follows..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "Both arrive at exactly the same time"
+    }
+   ],
+   "id": "dn1",
+   "kind": "multiple-choice",
+   "prompt": "From a distant lightning strike, which reaches you first?"
+  },
+  {
+   "choices": [
+    {
+     "misconception": "Sound travels faster than light.",
+     "rationale": {
+      "chose": "The learner selected option Correct - sound always reaches us before light as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: Sound travels faster than light.. The slip: A thunderclap feels so powerful that it seems to arrive before the flash.. The fix: Light is far faster: the lightning flash arrives first and the thunder follows..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "Correct - sound always reaches us before light"
+    },
+    {
+     "misconception": "Sound travels faster than light.",
+     "rationale": {
+      "chose": "The learner selected option Wrong - thunder only seems slower because it lasts longer as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: Sound travels faster than light.. The slip: A thunderclap feels so powerful that it seems to arrive before the flash.. The fix: Light is far faster: the lightning flash arrives first and the thunder follows..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "Wrong - thunder only seems slower because it lasts longer"
+    },
+    {
+     "correct": true,
+     "text": "Wrong - light is far faster, so the flash arrives first and the thunder follows"
+    },
+    {
+     "misconception": "Sound travels faster than light.",
+     "rationale": {
+      "chose": "The learner selected option Wrong - light and sound travel at exactly the same speed as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: Sound travels faster than light.. The slip: A thunderclap feels so powerful that it seems to arrive before the flash.. The fix: Light is far faster: the lightning flash arrives first and the thunder follows..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "Wrong - light and sound travel at exactly the same speed"
+    }
+   ],
+   "id": "dn2",
+   "kind": "multiple-choice",
+   "prompt": "A classmate says: 'Sound travels faster than light, because the thunder is so loud.' Which statement is correct?"
+  },
+  {
+   "choices": [
+    {
+     "misconception": "Sound travels faster than light.",
+     "rationale": {
+      "chose": "The learner selected option 1 m as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: Sound travels faster than light.. The slip: A thunderclap feels so powerful that it seems to arrive before the flash.. The fix: Light is far faster: the lightning flash arrives first and the thunder follows..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "1 m"
+    },
+    {
+     "correct": true,
+     "text": "2 m"
+    },
+    {
+     "misconception": "Sound travels faster than light.",
+     "rationale": {
+      "chose": "The learner selected option 170 m as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: Sound travels faster than light.. The slip: A thunderclap feels so powerful that it seems to arrive before the flash.. The fix: Light is far faster: the lightning flash arrives first and the thunder follows..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "170 m"
+    },
+    {
+     "misconception": "Sound travels faster than light.",
+     "rationale": {
+      "chose": "The learner selected option 510 m as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: Sound travels faster than light.. The slip: A thunderclap feels so powerful that it seems to arrive before the flash.. The fix: Light is far faster: the lightning flash arrives first and the thunder follows..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "510 m"
+    }
+   ],
+   "id": "dn3",
+   "kind": "multiple-choice",
+   "prompt": "A sound wave in air travels at 340 m/s and vibrates at 170 Hz. What is its wavelength?"
+  }
+ ],
+ "hingeQuestions": [
+  {
+   "choices": [
+    {
+     "misconception": "Sound travels faster than light.",
+     "rationale": {
+      "chose": "The learner selected option The student is right - sound travels faster than light as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: Sound travels faster than light.. The slip: A thunderclap feels so powerful that it seems to arrive before the flash.. The fix: Light is far faster: the lightning flash arrives first and the thunder follows..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "The student is right - sound travels faster than light"
+    },
+    {
+     "correct": true,
+     "text": "Light is far faster: the lightning flash arrives first and the thunder follows."
+    },
+    {
+     "misconception": "Sound travels faster than light.",
+     "rationale": {
+      "chose": "The learner selected option The thunder arrives first because it is louder as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: Sound travels faster than light.. The slip: A thunderclap feels so powerful that it seems to arrive before the flash.. The fix: Light is far faster: the lightning flash arrives first and the thunder follows..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "The thunder arrives first because it is louder"
+    },
+    {
+     "misconception": "Sound travels faster than light.",
+     "rationale": {
+      "chose": "The learner selected option Light and sound travel at exactly the same speed as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: Sound travels faster than light.. The slip: A thunderclap feels so powerful that it seems to arrive before the flash.. The fix: Light is far faster: the lightning flash arrives first and the thunder follows..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "Light and sound travel at exactly the same speed"
+    }
+   ],
+   "id": "h1",
+   "kind": "multiple-choice",
+   "prompt": "A student says sound travels faster than light. Which statement corrects the claim?",
+   "scriptCue": "s3"
+  },
+  {
+   "choices": [
+    {
+     "misconception": "Sound travels faster than light.",
+     "rationale": {
+      "chose": "The learner selected option The thunder, because sound is louder as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: Sound travels faster than light.. The slip: A thunderclap feels so powerful that it seems to arrive before the flash.. The fix: Light is far faster: the lightning flash arrives first and the thunder follows..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "The thunder, because sound is louder"
+    },
+    {
+     "correct": true,
+     "text": "The lightning flash"
+    },
+    {
+     "misconception": "Sound travels faster than light.",
+     "rationale": {
+      "chose": "The learner selected option The thunder, because it lasts longer as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: Sound travels faster than light.. The slip: A thunderclap feels so powerful that it seems to arrive before the flash.. The fix: Light is far faster: the lightning flash arrives first and the thunder follows..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "The thunder, because it lasts longer"
+    },
+    {
+     "misconception": "Sound travels faster than light.",
+     "rationale": {
+      "chose": "The learner selected option Both arrive at exactly the same time as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: Sound travels faster than light.. The slip: A thunderclap feels so powerful that it seems to arrive before the flash.. The fix: Light is far faster: the lightning flash arrives first and the thunder follows..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "Both arrive at exactly the same time"
+    }
+   ],
+   "id": "h2",
+   "kind": "multiple-choice",
+   "prompt": "From a distant lightning strike, which reaches you first?",
+   "scriptCue": "s3"
+  }
+ ],
+ "level": "secondary",
+ "subject": "science",
+ "title": "Waves: light, sound and the wave equation",
+ "topic": "phys-waves"
+}

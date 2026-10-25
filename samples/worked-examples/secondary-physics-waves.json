@@ -1,0 +1,53 @@
+{
+ "complete": {
+  "problem": "Trace waves from the two kinds of wave to the wave equation and the storm delay.",
+  "selfExplanation": "Explain how light and sound differ as transverse and longitudinal waves, and how speed, frequency and wavelength always obey v = f x wavelength.",
+  "steps": [
+   {
+    "annotation": "A disturbance that carries energy from place to place without carrying matter with it: the particles vibrate in place while the energy moves on.",
+    "text": "Step 1 (s1): Light and sound are both waves, but watch how differently they travel. In the light wave the dot bobs up and down while the wave races to the right. In the sound wave the particles only bunch and spread. Tell your partner: what is actually travelling in each case?"
+   },
+   {
+    "annotation": "The length of one full wave, from one crest to the next, measured in metres: the sound wave in this lesson has a wavelength of 2 m.",
+    "text": "Step 2 (s2): For any wave, speed equals frequency times wavelength: v = f x wavelength. This sound wave travels at 340 metres per second and vibrates 170 times per second, so its wavelength is 340 divided by 170 - 2 metres. Check it backwards: 170 times 2 is 340, so the answer agrees."
+   },
+   {
+    "annotation": "A thunderclap feels so powerful that it seems to arrive before the flash. Light is far faster: the lightning flash arrives first and the thunder follows. That is why, in a storm, you always see the flash before you hear the thunder.",
+    "text": "Step 3 (s3): Here is the trap, and we are going to spring it on purpose. The thunder feels so powerful that it seems to arrive first - but look: the light signal reaches the observer almost instantly, while the sound signal crawls across and arrives seconds later. Light travels at about 300,000,000 metres per second; sound manages only 340."
+   },
+   {
+    "annotation": "How many full waves pass a point each second, measured in hertz (Hz): a frequency of 170 Hz means 170 waves per second.",
+    "text": "Step 4 (s4): Pull it together: waves carry energy across the stage while the particles only vibrate in place, and speed, frequency and wavelength always obey v = f x wavelength - with light leaving sound far behind. Open your student notes handout at the trap section and read the correct turn aloud with me."
+   }
+  ]
+ },
+ "faded": {
+  "problem": "A sound wave in air travels at v = 340 m/s and vibrates at f = 170 Hz. What is its wavelength?",
+  "selfExplanation": "The first step is shown. Say how wavelength = v / f gives the wavelength, then why the check 170 Hz x 2 m = 340 m/s confirms it.",
+  "steps": [
+   {
+    "annotation": "The length of one full wave, from one crest to the next, measured in metres: the sound wave in this lesson has a wavelength of 2 m.",
+    "text": "Step 1: wavelength is the length of one full wave, so use the wave equation v = f x wavelength, rearranged to wavelength = v / f with v = 340 m/s and f = 170 Hz.",
+    "withheld": false
+   },
+   {
+    "annotation": "Work out the wavelength of a sound wave in air. The wave travels at v = 340 m/s and vibrates at f = 170 Hz. Use the wave equation v = f x wavelength, rearranged to wavelength = v / f = 340 / 170 = 2 m. Check: 170 Hz x 2 m = 340 m/s, so the wavelength is 2 m.",
+    "text": "Step 2: wavelength = 340 / 170 = 2 m.",
+    "withheld": true
+   },
+   {
+    "annotation": "Work this on the board slowly: write the rearrangement, divide, then multiply back to check against the speed you started with.",
+    "text": "Step 3: check the units and the answer: 170 Hz x 2 m = 340 m/s, so the wavelength is 2 m.",
+    "withheld": true
+   }
+  ]
+ },
+ "level": "secondary",
+ "paired": {
+  "problem": "A wave has frequency 5 Hz and wavelength 3 m. Calculate its speed and show your working.",
+  "solution": "v = f x wavelength = 5 x 3 = 15 m/s."
+ },
+ "subject": "science",
+ "title": "Waves: light, sound and the wave equation",
+ "topic": "phys-waves"
+}
