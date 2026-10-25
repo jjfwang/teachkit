@@ -1,0 +1,44 @@
+{
+ "level": "secondary",
+ "questions": [
+  {
+   "choices": [
+    {
+     "text": "They share a pair of electrons equally between them"
+    },
+    {
+     "text": "Chlorine gives an electron to sodium, forming a chloride ion"
+    },
+    {
+     "correct": true,
+     "text": "Sodium gives its outer electron to chlorine, forming a positive sodium ion and a negative chloride ion"
+    },
+    {
+     "text": "Both atoms keep their electrons and are held by a sea of electrons"
+    }
+   ],
+   "explanation": "Sodium loses the single electron in its outer shell and chlorine gains it, so both ions end with full outer shells. Losing an electron makes sodium positive; gaining one makes chlorine negative.",
+   "id": "q2",
+   "kind": "multiple-choice",
+   "prompt": "Sodium has electron arrangement 2,8,1 and chlorine has 2,8,7. What happens when they form sodium chloride?"
+  },
+  {
+   "answer": "Each chlorine atom contributes one electron to a shared pair between the two atoms. Both atoms count the shared pair in their outer shell, so each has eight outer electrons. No electron is transferred, so no ions form.",
+   "explanation": "Covalent bonding is sharing, not giving: the shared pair sits between the two nuclei and both atoms count it. Ions only appear when electrons are transferred from one atom to another.",
+   "id": "q3",
+   "kind": "short-answer",
+   "prompt": "A chlorine molecule, Cl2, is held together by a covalent bond. Explain, in terms of electrons, how the bond forms and why no ions are made."
+  },
+  {
+   "answer": "Copper is a lattice of positive metal ions in a sea of free-moving electrons. The electrons carry charge through the wire, so it conducts. The layers of ions can slide over each other while the sea still holds them, so the wire bends instead of shattering.",
+   "explanation": "Metallic bonding pools the outer electrons: they are free to move and carry charge, and sliding ion layers explain malleability - the opposite of the rigid ionic lattice, which shatters when its pattern shifts.",
+   "id": "q4",
+   "kind": "short-answer",
+   "prompt": "Explain, in terms of particles and electrons, why copper wire conducts electricity and can be bent without breaking."
+  }
+ ],
+ "subject": "science",
+ "title": "Chemical bonding: ionic, covalent, metallic",
+ "topic": "chem-bonding",
+ "variant": "homework"
+}

@@ -1,0 +1,111 @@
+{
+ "activities": [
+  {
+   "grouping": "whole class",
+   "minutes": 7,
+   "objectiveIds": [
+    "o1"
+   ],
+   "scriptCue": "s1",
+   "title": "Ionic bonding: sodium gives an electron away"
+  },
+  {
+   "differentiation": {
+    "support": "Provide the student notes open at the lattice definition so learners can follow how each ion is surrounded by oppositely charged ions before they try to point at a molecule."
+   },
+   "grouping": "pairs",
+   "minutes": 7,
+   "objectiveIds": [
+    "o1"
+   ],
+   "scriptCue": "s2",
+   "title": "The ionic lattice"
+  },
+  {
+   "grouping": "whole class",
+   "minutes": 7,
+   "objectiveIds": [
+    "o2"
+   ],
+   "scriptCue": "s3",
+   "title": "Covalent bonding: sharing, not giving"
+  },
+  {
+   "grouping": "pairs",
+   "minutes": 7,
+   "objectiveIds": [
+    "o3"
+   ],
+   "scriptCue": "s4",
+   "title": "Metallic bonding: a sea of electrons"
+  },
+  {
+   "differentiation": {
+    "stretch": "Ask learners to explain why molten sodium chloride conducts electricity but solid sodium chloride does not before they take the exit ticket."
+   },
+   "grouping": "pairs",
+   "minutes": 8,
+   "objectiveIds": [
+    "o1"
+   ],
+   "scriptCue": "s5",
+   "title": "A common mistake"
+  },
+  {
+   "grouping": "individual",
+   "minutes": 4,
+   "objectiveIds": [
+    "o1",
+    "o2",
+    "o3"
+   ],
+   "resources": [
+    "worksheet"
+   ],
+   "title": "Worksheet practice and exit ticket"
+  }
+ ],
+ "durationMinutes": 40,
+ "level": "secondary",
+ "objectives": [
+  {
+   "assessmentPoints": [
+    "Transfer answers in the opening activity",
+    "Lattice answers in the second activity and the closing worksheet"
+   ],
+   "id": "o1",
+   "successCriteria": [
+    "I can say sodium gives its outer electron to chlorine, forming a positive sodium ion and a negative chloride ion",
+    "I can describe an ionic compound as a giant lattice of ions, with the formula giving only the ratio"
+   ],
+   "text": "Describe ionic bonding as electron transfer forming a giant lattice of ions"
+  },
+  {
+   "assessmentPoints": [
+    "Chlorine molecule answers in the third activity",
+    "Covalent answers in the closing exit ticket"
+   ],
+   "id": "o2",
+   "successCriteria": [
+    "I can explain that a covalent bond is a shared pair of electrons counted by both atoms",
+    "I can say sharing forms separate molecules and makes no ions"
+   ],
+   "text": "Describe covalent bonding as shared pairs of electrons forming molecules"
+  },
+  {
+   "assessmentPoints": [
+    "Copper wire answers in the fourth activity",
+    "Metal answers in the closing worksheet"
+   ],
+   "id": "o3",
+   "successCriteria": [
+    "I can describe a metal as positive ions in a sea of free electrons",
+    "I can explain conduction by the moving electron sea and bending by ion layers sliding"
+   ],
+   "text": "Describe metallic bonding as positive ions in a sea of free electrons"
+  }
+ ],
+ "subject": "science",
+ "title": "Chemical bonding: ionic, covalent, metallic",
+ "topic": "chem-bonding"
+}

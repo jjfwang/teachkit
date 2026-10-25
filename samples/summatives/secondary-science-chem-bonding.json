@@ -1,0 +1,125 @@
+{
+ "blueprint": [
+  {
+   "assessmentObjective": "AO1 recall and apply",
+   "cognitiveLevel": "apply",
+   "marks": 10,
+   "outcomeCode": "S3-BOND-APPLY"
+  },
+  {
+   "assessmentObjective": "AO2 reason and explain",
+   "cognitiveLevel": "reason",
+   "marks": 10,
+   "outcomeCode": "S3-ATOM-REASON"
+  }
+ ],
+ "durationMinutes": 40,
+ "items": [
+  {
+   "blueprintRow": 0,
+   "commandWord": "Explain",
+   "markScheme": {
+    "points": [
+     {
+      "marks": 3,
+      "text": "States each magnesium atom loses its 2 outer electrons and each oxygen atom gains 2 electrons"
+     },
+     {
+      "marks": 3,
+      "text": "Names the positive magnesium ion and the negative oxide ion, held in a giant ionic lattice"
+     }
+    ]
+   },
+   "marks": 6,
+   "prompt": "Magnesium has electron arrangement 2,8,2 and oxygen has 2,6. Explain, in terms of electron transfer, how magnesium oxide forms and name the ions made."
+  },
+  {
+   "blueprintRow": 0,
+   "commandWord": "Explain",
+   "markScheme": {
+    "points": [
+     {
+      "marks": 2,
+      "text": "States the ions are locked in place in the solid lattice so no charged particle can move"
+     },
+     {
+      "marks": 2,
+      "text": "States melting frees the ions to move and carry charge to the electrodes"
+     }
+    ]
+   },
+   "marks": 4,
+   "prompt": "Explain why solid sodium chloride does not conduct electricity but molten sodium chloride does."
+  },
+  {
+   "blueprintRow": 1,
+   "commandWord": "Explain",
+   "markScheme": {
+    "points": [
+     {
+      "marks": 3,
+      "text": "States the proton number gives 12 protons and, for a neutral atom, 12 electrons"
+     },
+     {
+      "marks": 3,
+      "text": "Subtracts the proton number from the nucleon number, 24 - 12, to give 12 neutrons"
+     }
+    ]
+   },
+   "marks": 6,
+   "prompt": "Magnesium has proton number 12 and nucleon number 24. Explain how to work out its numbers of protons, neutrons and electrons, and state each number."
+  },
+  {
+   "blueprintRow": 1,
+   "commandWord": "State",
+   "markScheme": {
+    "points": [
+     {
+      "marks": 2,
+      "text": "Gives period 3 because the arrangement shows three electron shells"
+     },
+     {
+      "marks": 2,
+      "text": "Gives group 5 because there are 5 electrons in the outer shell"
+     }
+    ]
+   },
+   "marks": 4,
+   "prompt": "An element has electron arrangement 2,8,5. State its period and its group."
+  }
+ ],
+ "level": "secondary",
+ "moderation": {
+  "state": "unreviewed"
+ },
+ "review": null,
+ "rubric": {
+  "criteria": [
+   {
+    "levels": [
+     {
+      "descriptor": "Explanations chain electron movement and particle arrangements to the bonding type and properties in order, with each step justified by a named particle or structure.",
+      "label": "Secure"
+     },
+     {
+      "descriptor": "Explanations are broadly sound but one link between the electrons or particles and the answer is asserted rather than justified.",
+      "label": "Developing"
+     },
+     {
+      "descriptor": "Answers name bond types or particles without connecting them into an explanation.",
+      "label": "Beginning"
+     }
+    ],
+    "name": "Bonding and atoms reasoning"
+   }
+  ]
+ },
+ "subject": "science",
+ "title": "Chemical Bonding and Atomic Structure Unit Test",
+ "topics": [
+  "secondary-science-chem-bonding",
+  "secondary-science-chem-atomic"
+ ],
+ "totalMarks": 20,
+ "unitTitle": "Chemical bonding and atomic structure"
+}
