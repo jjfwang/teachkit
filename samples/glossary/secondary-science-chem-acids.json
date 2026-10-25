@@ -1,0 +1,63 @@
+{
+  "entries": [
+    {
+      "example": "The pH scale ladder - the scale runs from 0 to 14 with 7 neutral, and each step away from 7 is ten times stronger.",
+      "meaning": "The 0 to 14 scale that measures acidity and alkalinity: below 7 is acidic, 7 is neutral, above 7 is alkaline, and each step is ten times stronger.",
+      "term": "pH scale"
+    },
+    {
+      "example": "What pH is really about: ions - acids release H+ ions and alkalis release OH- ions in water, and whichever ion is in excess decides the pH.",
+      "meaning": "A substance that releases hydrogen ions, H+, when dissolved in water. Acids have a pH below 7.",
+      "term": "Acid"
+    },
+    {
+      "example": "Acids and alkalis around you - lemon juice and vinegar are acids, soap and baking soda are alkalis, and chemists sort them all on the pH scale.",
+      "meaning": "A substance that releases hydroxide ions, OH-, when dissolved in water. Alkalis have a pH above 7 and are soluble bases.",
+      "term": "Alkali"
+    },
+    {
+      "example": "What pH is really about: ions - acids release H+ ions and alkalis release OH- ions in water, and whichever ion is in excess decides the pH.",
+      "meaning": "A hydrogen ion released by an acid in water. The more H+ ions in excess, the lower the pH.",
+      "term": "Hydrogen ion"
+    },
+    {
+      "example": "Neutralisation: a worked example - H+ and OH- ions pair up to make water, and the leftover ions form a salt: acid plus alkali gives salt plus water.",
+      "meaning": "A hydroxide ion released by an alkali in water. The more OH- ions in excess, the higher the pH.",
+      "term": "Hydroxide ion"
+    },
+    {
+      "example": "Neutralisation: a worked example - H+ and OH- ions pair up to make water, and the leftover ions form a salt: acid plus alkali gives salt plus water.",
+      "meaning": "The reaction of an acid with an alkali, in which H+ and OH- ions pair up to form water and the leftover ions form a salt.",
+      "term": "Neutralisation"
+    },
+    {
+      "example": "Naming the salt - hydrochloric acid gives a chloride, nitric acid a nitrate, and sulfuric acid a sulfate.",
+      "meaning": "The ionic compound left over after neutralisation. Its second name comes from the acid: chloride, nitrate or sulfate.",
+      "term": "Salt"
+    },
+    {
+      "example": "The litmus test - blue litmus turns red in acid and red litmus turns blue in alkali; no change means neutral.",
+      "meaning": "A dye that changes colour in acid and alkali, used to test pH. Litmus turns red in acid and blue in alkali.",
+      "term": "Indicator"
+    },
+    {
+      "example": "The titration curve: watch for the jump - base added drop by drop moves the pH slowly, then one drop leaps it from 4 to 10 at the equivalence point, where the indicator must change colour.",
+      "meaning": "Adding a solution drop by drop from a burette to find exactly how much is needed to neutralise the other solution.",
+      "term": "Titration"
+    },
+    {
+      "example": "The titration curve: watch for the jump - base added drop by drop moves the pH slowly, then one drop leaps it from 4 to 10 at the equivalence point, where the indicator must change colour.",
+      "meaning": "The point in a titration where the acid and alkali have exactly reacted, shown by the vertical jump on the pH curve.",
+      "term": "Equivalence point"
+    },
+    {
+      "example": "A common mistake: all acids are strong - a weak acid only partly releases its hydrogen ions, so vinegar is acidic without being strong.",
+      "meaning": "An acid that only partly releases its hydrogen ions in water, such as the acid in vinegar. It is still acidic, just not strong.",
+      "term": "Weak acid"
+    }
+  ],
+  "level": "secondary",
+  "subject": "science",
+  "title": "Acids, bases and salts",
+  "topic": "chem-acids"
+}

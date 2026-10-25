@@ -1,0 +1,106 @@
+{
+  "flashcards": [
+    {
+      "back": "The 0 to 14 scale that measures acidity and alkalinity: below 7 is acidic, 7 is neutral, above 7 is alkaline, and each step is ten times stronger.",
+      "front": "pH scale",
+      "source": "definition"
+    },
+    {
+      "back": "A substance that releases hydrogen ions, H+, when dissolved in water. Acids have a pH below 7.",
+      "front": "Acid",
+      "source": "definition"
+    },
+    {
+      "back": "A substance that releases hydroxide ions, OH-, when dissolved in water. Alkalis have a pH above 7 and are soluble bases.",
+      "front": "Alkali",
+      "source": "definition"
+    },
+    {
+      "back": "A hydrogen ion released by an acid in water. The more H+ ions in excess, the lower the pH.",
+      "front": "Hydrogen ion",
+      "source": "definition"
+    },
+    {
+      "back": "A hydroxide ion released by an alkali in water. The more OH- ions in excess, the higher the pH.",
+      "front": "Hydroxide ion",
+      "source": "definition"
+    },
+    {
+      "back": "The reaction of an acid with an alkali, in which H+ and OH- ions pair up to form water and the leftover ions form a salt.",
+      "front": "Neutralisation",
+      "source": "definition"
+    },
+    {
+      "back": "The ionic compound left over after neutralisation. Its second name comes from the acid: chloride, nitrate or sulfate.",
+      "front": "Salt",
+      "source": "definition"
+    },
+    {
+      "back": "A dye that changes colour in acid and alkali, used to test pH. Litmus turns red in acid and blue in alkali.",
+      "front": "Indicator",
+      "source": "definition"
+    },
+    {
+      "back": "Adding a solution drop by drop from a burette to find exactly how much is needed to neutralise the other solution.",
+      "front": "Titration",
+      "source": "definition"
+    },
+    {
+      "back": "The point in a titration where the acid and alkali have exactly reacted, shown by the vertical jump on the pH curve.",
+      "front": "Equivalence point",
+      "source": "definition"
+    },
+    {
+      "back": "An acid that only partly releases its hydrogen ions in water, such as the acid in vinegar. It is still acidic, just not strong.",
+      "front": "Weak acid",
+      "source": "definition"
+    },
+    {
+      "back": "The slip: Acid sounds dangerous, so every acid is treated like it fully burns through everything. The fix: Weak acids only partly release their hydrogen ions: vinegar is still acidic, just not strong. In class, compare vinegar with a strong acid: both are acidic, but the weak acid has released only some of its hydrogen ions, so its pH is higher and it does not attack materials the way a strong acid does.",
+      "front": "All acids are strong acids.",
+      "source": "trap"
+    },
+    {
+      "back": "Vinegar is a weak acid: it only partly releases its hydrogen ions, but it is still acidic",
+      "front": "A student says vinegar is not a real acid because real acids are all strong and dangerous. What is the best correction?",
+      "source": "quiz-bank"
+    },
+    {
+      "back": "The H+ ions from the acid pair up with the OH- ions from the alkali to form water. The leftover ions stay in solution and form a salt.",
+      "front": "In one or two sentences, explain what happens to the H+ and OH- ions during neutralisation.",
+      "source": "quiz-bank"
+    }
+  ],
+  "level": "secondary",
+  "practiceSets": [
+    {
+      "dayOffset": 1,
+      "items": [
+        {
+          "answer": "Vinegar is a weak acid: it only partly releases its hydrogen ions, but it is still acidic",
+          "prompt": "A student says vinegar is not a real acid because real acids are all strong and dangerous. What is the best correction?"
+        },
+        {
+          "answer": "Some acids are weak: they only partly release their hydrogen ions, like the acid in vinegar",
+          "prompt": "Which statement about acids is correct?"
+        }
+      ]
+    },
+    {
+      "dayOffset": 3,
+      "items": [
+        {
+          "answer": "The alkali releases OH- ions, which pair up with the H+ ions from the acid to form water. As the excess H+ ions are used up, the solution moves towards equal ion counts, so the pH rises towards 7, the neutral point.",
+          "prompt": "Explain, in terms of ions, why adding an alkali to an acid brings the pH towards 7."
+        },
+        {
+          "answer": "Red litmus turns blue in an alkali. Blue litmus turns red in an acid.",
+          "prompt": "State the colour change when red litmus paper is dipped into an alkali, and when blue litmus paper is dipped into an acid."
+        }
+      ]
+    }
+  ],
+  "subject": "science",
+  "title": "Acids, bases and salts",
+  "topic": "chem-acids"
+}
