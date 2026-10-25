@@ -1,0 +1,125 @@
+{
+ "blueprint": [
+  {
+   "assessmentObjective": "AO1 recall and apply",
+   "cognitiveLevel": "apply",
+   "marks": 10,
+   "outcomeCode": "H2-VEC-OPS"
+  },
+  {
+   "assessmentObjective": "AO2 reason and solve",
+   "cognitiveLevel": "reason",
+   "marks": 10,
+   "outcomeCode": "H2-DIFF-RATES"
+  }
+ ],
+ "durationMinutes": 60,
+ "items": [
+  {
+   "blueprintRow": 0,
+   "commandWord": "Find",
+   "markScheme": {
+    "points": [
+     {
+      "marks": 2,
+      "text": "Adds components to get a + b = (2 + 1, 3 + (-1)) = (3, 2)"
+     },
+     {
+      "marks": 3,
+      "text": "Uses Pythagoras on the components to get the magnitude sqrt(2^2 + 3^2) = sqrt(13)"
+     }
+    ]
+   },
+   "marks": 5,
+   "prompt": "For a = (2, 3) and b = (1, -1), find a + b and the magnitude of a."
+  },
+  {
+   "blueprintRow": 0,
+   "commandWord": "Find",
+   "markScheme": {
+    "points": [
+     {
+      "marks": 3,
+      "text": "Multiplies matching components and adds to get a . b = 2 x 4 + 3 x (-1) = 5"
+     },
+     {
+      "marks": 2,
+      "text": "States that a . b = 0 means cos theta = 0, so a and b are perpendicular"
+     }
+    ]
+   },
+   "marks": 5,
+   "prompt": "For a = (2, 3) and b = (4, -1), find a . b and state what a . b = 0 would tell you about a and b."
+  },
+  {
+   "blueprintRow": 1,
+   "commandWord": "Find",
+   "markScheme": {
+    "points": [
+     {
+      "marks": 2,
+      "text": "Differentiates to dy/dx = 3x^2 - 12x + 9"
+     },
+     {
+      "marks": 3,
+      "text": "Sets dy/dx = 0 and solves to x = 1 and x = 3"
+     }
+    ]
+   },
+   "marks": 5,
+   "prompt": "A curve has equation y = x^3 - 6x^2 + 9x. Find dy/dx and the x-coordinates of its stationary points."
+  },
+  {
+   "blueprintRow": 1,
+   "commandWord": "Find",
+   "markScheme": {
+    "points": [
+     {
+      "marks": 3,
+      "text": "Writes A = pi r^2 and applies the chain rule dA/dt = 2 pi r dr/dt"
+     },
+     {
+      "marks": 2,
+      "text": "Substitutes r = 4 and dr/dt = 0.5 to give 4 pi cm^2/s"
+     }
+    ]
+   },
+   "marks": 5,
+   "prompt": "The radius of a circle increases at 0.5 cm/s. Find the rate at which its area increases when the radius is 4 cm."
+  }
+ ],
+ "level": "jc",
+ "moderation": {
+  "state": "unreviewed"
+ },
+ "review": null,
+ "rubric": {
+  "criteria": [
+   {
+    "levels": [
+     {
+      "descriptor": "Methods are chosen and applied exactly, components and conditions are stated, and conclusions are justified.",
+      "label": "Secure"
+     },
+     {
+      "descriptor": "Method is correct in outline but a component, condition or substitution step is skipped.",
+      "label": "Developing"
+     },
+     {
+      "descriptor": "Methods are misapplied - for example treating a slid free vector as a new vector - and the working does not support the answer.",
+      "label": "Beginning"
+     }
+    ],
+    "name": "Vector and calculus communication"
+   }
+  ]
+ },
+ "subject": "math",
+ "title": "Vectors and Differentiation Unit Test",
+ "topics": [
+  "jc-h2-vectors",
+  "jc-h2-differentiation"
+ ],
+ "totalMarks": 20,
+ "unitTitle": "Vectors and calculus"
+}

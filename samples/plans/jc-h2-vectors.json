@@ -1,0 +1,98 @@
+{
+ "activities": [
+  {
+   "grouping": "whole class",
+   "minutes": 5,
+   "objectiveIds": [
+    "o1",
+    "o2"
+   ],
+   "scriptCue": "s1",
+   "title": "Vectors: size and direction in one arrow"
+  },
+  {
+   "grouping": "individual",
+   "minutes": 8,
+   "objectiveIds": [
+    "o3"
+   ],
+   "scriptCue": "s2",
+   "title": "Adding vectors: tail to head"
+  },
+  {
+   "grouping": "pairs",
+   "minutes": 8,
+   "objectiveIds": [
+    "o3"
+   ],
+   "scriptCue": "s3",
+   "title": "The dot product measures the shadow"
+  },
+  {
+   "grouping": "whole class",
+   "minutes": 9,
+   "objectiveIds": [
+    "o3"
+   ],
+   "scriptCue": "s4",
+   "title": "Lines and planes from a point and directions"
+  },
+  {
+   "grouping": "individual",
+   "minutes": 10,
+   "objectiveIds": [
+    "o1",
+    "o2",
+    "o3"
+   ],
+   "resources": [
+    "worksheet"
+   ],
+   "scriptCue": "s5",
+   "title": "Assemble the toolkit"
+  }
+ ],
+ "durationMinutes": 40,
+ "level": "jc",
+ "objectives": [
+  {
+   "assessmentPoints": [
+    "Opening answers in the size-and-direction activity",
+    "Magnitude lines in the toolkit recap"
+   ],
+   "id": "o1",
+   "successCriteria": [
+    "I can write (2, 3) as a column vector, 2 over 3, and find its magnitude sqrt(13)",
+    "I can state that a vector is fixed by its magnitude and direction alone"
+   ],
+   "text": "Describe a vector by its magnitude and direction, and write it as a column vector"
+  },
+  {
+   "assessmentPoints": [
+    "Vocabulary answers in the opening activity",
+    "Toolkit recap answers"
+   ],
+   "id": "o2",
+   "successCriteria": [
+    "I can define vector, magnitude, column vector, dot product, position vector and direction vector",
+    "I can say why only a position vector is pinned to the origin"
+   ],
+   "text": "Define the key vocabulary of vectors: vector, magnitude, column vector, dot product, position vector and direction vector"
+  },
+  {
+   "assessmentPoints": [
+    "Sum and dot product answers in the practice activities",
+    "Exit responses in the toolkit activity"
+   ],
+   "id": "o3",
+   "successCriteria": [
+    "I can add vectors tail to head by adding components, as in (2, 3) + (1, -1) = (3, 2)",
+    "I can evaluate a dot product and write r = a + lambda b for a line"
+   ],
+   "text": "Add vectors tail to head, evaluate a dot product, and write vector equations of lines and planes"
+  }
+ ],
+ "subject": "math",
+ "title": "JC H2 vectors: direction, dot products, lines and planes",
+ "topic": "h2-vectors"
+}
