@@ -1,0 +1,116 @@
+{
+  "level": "secondary",
+  "subject": "science",
+  "templates": [
+    {
+      "kind": "flow",
+      "slots": [
+        {
+          "entries": [
+            "Inside the atom - shells draw themselves around a tiny dense nucleus that grows at the centre, electrons drop into shell 1, and the space between stays empty: the atom is mostly empty space."
+          ],
+          "label": "Inside the atom",
+          "studentPrompt": "Explain this step in your own words."
+        },
+        {
+          "entries": [
+            "Counting particles: carbon - carbon is element 6, so six protons in the nucleus and six electrons around it fill the shells two, then four: 2,4."
+          ],
+          "label": "Carbon",
+          "studentPrompt": "Explain this step in your own words."
+        },
+        {
+          "entries": [
+            "Counting particles: sodium - sodium is element 11 with eleven protons, twelve neutrons and eleven electrons arranged 2,8,1, and the lone outer electron rules its chemistry."
+          ],
+          "label": "Sodium",
+          "studentPrompt": "Explain this step in your own words."
+        },
+        {
+          "entries": [
+            "Groups: the table's columns - a group shares the same number of outer electrons down the column, so its elements react in similar ways."
+          ],
+          "label": "Groups",
+          "studentPrompt": "Explain this step in your own words."
+        },
+        {
+          "entries": [
+            "Periods: the table's rows - the period number matches the number of electron shells: period 2 has two shells, period 3 has three."
+          ],
+          "label": "Periods",
+          "studentPrompt": "Explain this step in your own words."
+        },
+        {
+          "entries": [
+            "A common mistake - the ball-and-stick model makes atoms look like solid marbles, but the nucleus is a speck in the middle of empty space and electrons sit in fixed shells."
+          ],
+          "label": "Common mistake",
+          "studentPrompt": "Explain this step in your own words."
+        }
+      ]
+    },
+    {
+      "kind": "frayer",
+      "slots": [
+        {
+          "entries": [
+            "The smallest particle of an element that keeps its chemical identity: a tiny dense nucleus with electrons in shells around mostly empty space."
+          ],
+          "label": "Atom",
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "entries": [
+            "The tiny dense centre of the atom, holding the protons and neutrons. Almost all the atom's mass sits here."
+          ],
+          "label": "Nucleus",
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "entries": [
+            "A particle in the nucleus with charge +1 and mass 1. The number of protons - the proton number - fixes which element the atom is."
+          ],
+          "label": "Proton",
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "entries": [
+            "A particle in the nucleus with no charge and mass 1. Neutrons = nucleon number - proton number."
+          ],
+          "label": "Neutron",
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "entries": [
+            "A particle with charge -1 and almost no mass, sitting in fixed shells around the nucleus. A neutral atom has equal electrons and protons."
+          ],
+          "label": "Electron",
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "entries": [
+            "A fixed energy level around the nucleus where electrons sit. Shells fill in order: shell 1 holds 2, shell 2 holds 8, shell 3 holds 8."
+          ],
+          "label": "Electron shell",
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "entries": [
+            "A column of the periodic table. Elements in one group share the same number of outer electrons, so they react in similar ways."
+          ],
+          "label": "Group",
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "entries": [
+            "A row of the periodic table. The period number matches the number of electron shells the atoms have."
+          ],
+          "label": "Period",
+          "studentPrompt": "Give your own example of this term."
+        }
+      ]
+    }
+  ],
+  "title": "Atomic structure and the periodic table",
+  "topic": "chem-atomic"
+}
