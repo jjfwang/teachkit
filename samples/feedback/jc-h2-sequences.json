@@ -1,0 +1,44 @@
+{
+ "commonErrors": [
+  {
+   "example": "A learner writes on the worksheet that u_10 = u_1 + 10d for the progression starting at u_1 = 5 with d = 3, giving 35 instead of 32.",
+   "fixIt": {
+    "corrected": "u_10 = u_1 + 9d = 5 + 9 x 3 = 32. The nth term sits n - 1 jumps from u_1, so u_n = u_1 + (n - 1)d.",
+    "prompt": "Fix it: compute u_10 for u_1 = 5 and d = 3 by counting the jumps from u_1, and state the nth-term formula."
+   },
+   "misconception": "u_10 needs ten jumps of d, so u_n = u_1 + n*d."
+  },
+  {
+   "example": "On the exit ticket, a learner defends u_10 = u_1 + 10d by saying the tenth term must be ten jumps away from the first.",
+   "fixIt": {
+    "corrected": "The first jump lands on u_2, so reaching u_10 from u_1 takes 10 - 1 = 9 jumps: exponents and differences count the jumps, not the terms.",
+    "prompt": "Fix it: explain in one sentence why the tenth term is nine jumps from the first, not ten."
+   },
+   "misconception": "u_10 needs ten jumps of d, so u_n = u_1 + n*d."
+  }
+ ],
+ "level": "jc",
+ "modelAnswers": [
+  {
+   "answer": "S_4 = 2 + 4 + 6 + 8 = 20, also from S_n = (n/2)(a + l) = (4/2)(2 + 8) = 20.",
+   "creditPoints": [],
+   "question": "Find S_4, the sum of the first four terms of the arithmetic progression 2, 4, 6, 8, ..."
+  },
+  {
+   "answer": "u_5 = 3 x 2^(5 - 1) = 3 x 16 = 48.",
+   "creditPoints": [],
+   "question": "Find u_5 of the geometric progression 3, 6, 12, 24, ..."
+  }
+ ],
+ "nextSteps": [
+  "Reteach the jump count from the paired notes trap before any further progressions work: the first jump lands on u_2.",
+  "Practise writing the nth-term formula with (n - 1) first, then substituting the term number."
+ ],
+ "strengths": [
+  "Most of the class can build a partial sum term by term, such as S_4 = 2 + 4 + 6 + 8 = 20 on the worksheet.",
+  "The class can evaluate a geometric term with the jump count made explicit, such as u_5 = 3 x 2^(5 - 1) = 48 on the exit ticket."
+ ],
+ "subject": "math",
+ "title": "JC H2 sequences: arithmetic and geometric progressions",
+ "topic": "h2-sequences"
+}

@@ -1,0 +1,97 @@
+{
+ "activities": [
+  {
+   "grouping": "whole class",
+   "minutes": 6,
+   "objectiveIds": [
+    "o1"
+   ],
+   "scriptCue": "s1",
+   "title": "Arithmetic progressions: the same difference every step"
+  },
+  {
+   "grouping": "individual",
+   "minutes": 8,
+   "objectiveIds": [
+    "o1"
+   ],
+   "scriptCue": "s2",
+   "title": "Geometric progressions: the same ratio every step"
+  },
+  {
+   "grouping": "pairs",
+   "minutes": 8,
+   "objectiveIds": [
+    "o2"
+   ],
+   "scriptCue": "s3",
+   "title": "Watch the sum build up"
+  },
+  {
+   "grouping": "whole class",
+   "minutes": 6,
+   "objectiveIds": [
+    "o3"
+   ],
+   "scriptCue": "s4",
+   "title": "Spring the jumps trap"
+  },
+  {
+   "grouping": "individual",
+   "minutes": 12,
+   "objectiveIds": [
+    "o1",
+    "o2",
+    "o3"
+   ],
+   "resources": [
+    "worksheet"
+   ],
+   "scriptCue": "s5",
+   "title": "Assemble the toolkit"
+  }
+ ],
+ "durationMinutes": 40,
+ "level": "jc",
+ "objectives": [
+  {
+   "assessmentPoints": [
+    "Opening answers in the arithmetic activity",
+    "Formula lines in the toolkit recap"
+   ],
+   "id": "o1",
+   "successCriteria": [
+    "I can write u_n = a + (n - 1)d for an arithmetic progression and u_n = a x r^(n - 1) for a geometric progression",
+    "I can count the jumps from u_1, not the terms"
+   ],
+   "text": "Write the nth term of an arithmetic progression, u_n = a + (n - 1)d, and of a geometric progression, u_n = a x r^(n - 1)"
+  },
+  {
+   "assessmentPoints": [
+    "Sum answers in the sum-building activity",
+    "Toolkit recap answers"
+   ],
+   "id": "o2",
+   "successCriteria": [
+    "I can find a partial sum of an arithmetic or geometric progression",
+    "I can state the condition |r| < 1 for a sum to infinity and use S = a / (1 - r)"
+   ],
+   "text": "Find partial sums of arithmetic and geometric progressions, and the sum to infinity of a geometric progression when |r| < 1"
+  },
+  {
+   "assessmentPoints": [
+    "Responses when the trap is sprung",
+    "Exit responses in the toolkit activity"
+   ],
+   "id": "o3",
+   "successCriteria": [
+    "I can explain why u_10 = u_1 + 9d, not u_1 + 10d",
+    "I can explain why a geometric progression with r = -1 has no sum to infinity"
+   ],
+   "text": "Count jumps, not terms: the nth term sits n - 1 jumps from the first term"
+  }
+ ],
+ "subject": "math",
+ "title": "JC H2 sequences: arithmetic and geometric progressions",
+ "topic": "h2-sequences"
+}

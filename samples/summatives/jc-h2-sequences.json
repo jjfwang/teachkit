@@ -1,0 +1,125 @@
+{
+ "blueprint": [
+  {
+   "assessmentObjective": "AO1 recall and apply",
+   "cognitiveLevel": "apply",
+   "marks": 10,
+   "outcomeCode": "H2-SEQ-TERMS"
+  },
+  {
+   "assessmentObjective": "AO2 reason and solve",
+   "cognitiveLevel": "reason",
+   "marks": 10,
+   "outcomeCode": "H2-DIFF-RATES"
+  }
+ ],
+ "durationMinutes": 60,
+ "items": [
+  {
+   "blueprintRow": 0,
+   "commandWord": "Find",
+   "markScheme": {
+    "points": [
+     {
+      "marks": 2,
+      "text": "Uses u_n = a + (n - 1)d to get u_10 = 5 + 9 x 3 = 32"
+     },
+     {
+      "marks": 3,
+      "text": "Uses S_n = (n/2)(a + l) to get S_10 = (10/2)(5 + 32) = 185"
+     }
+    ]
+   },
+   "marks": 5,
+   "prompt": "An arithmetic progression has first term 5 and common difference 3. Find u_10 and the sum of the first 10 terms."
+  },
+  {
+   "blueprintRow": 0,
+   "commandWord": "Find",
+   "markScheme": {
+    "points": [
+     {
+      "marks": 2,
+      "text": "Uses u_n = a x r^(n - 1) to get u_5 = 8 x (1/2)^4 = 1/2"
+     },
+     {
+      "marks": 3,
+      "text": "States the sum-to-infinity condition on r (its size below 1) and uses S = a / (1 - r) to get 8 / (1/2) = 16"
+     }
+    ]
+   },
+   "marks": 5,
+   "prompt": "A geometric progression has first term 8 and ratio 1/2. Find u_5 and its sum to infinity."
+  },
+  {
+   "blueprintRow": 1,
+   "commandWord": "Find",
+   "markScheme": {
+    "points": [
+     {
+      "marks": 2,
+      "text": "Differentiates to dy/dx = 3x^2 - 12x + 9"
+     },
+     {
+      "marks": 3,
+      "text": "Sets dy/dx = 0 and solves to x = 1 and x = 3"
+     }
+    ]
+   },
+   "marks": 5,
+   "prompt": "A curve has equation y = x^3 - 6x^2 + 9x. Find dy/dx and the x-coordinates of its stationary points."
+  },
+  {
+   "blueprintRow": 1,
+   "commandWord": "Find",
+   "markScheme": {
+    "points": [
+     {
+      "marks": 3,
+      "text": "Writes A = pi r^2 and applies the chain rule dA/dt = 2 pi r dr/dt"
+     },
+     {
+      "marks": 2,
+      "text": "Substitutes r = 4 and dr/dt = 0.5 to give 4 pi cm^2/s"
+     }
+    ]
+   },
+   "marks": 5,
+   "prompt": "The radius of a circle increases at 0.5 cm/s. Find the rate at which its area increases when the radius is 4 cm."
+  }
+ ],
+ "level": "jc",
+ "moderation": {
+  "state": "unreviewed"
+ },
+ "review": null,
+ "rubric": {
+  "criteria": [
+   {
+    "levels": [
+     {
+      "descriptor": "Formulas are chosen and applied exactly, jump counts and conditions are stated, and conclusions are justified.",
+      "label": "Secure"
+     },
+     {
+      "descriptor": "Method is correct in outline but a jump count, condition or substitution step is skipped.",
+      "label": "Developing"
+     },
+     {
+      "descriptor": "Formulas are misapplied - for example counting terms instead of jumps - and the working does not support the answer.",
+      "label": "Beginning"
+     }
+    ],
+    "name": "Sequence and calculus communication"
+   }
+  ]
+ },
+ "subject": "math",
+ "title": "Sequences and Differentiation Unit Test",
+ "topics": [
+  "jc-h2-sequences",
+  "jc-h2-differentiation"
+ ],
+ "totalMarks": 20,
+ "unitTitle": "Sequences and calculus"
+}
