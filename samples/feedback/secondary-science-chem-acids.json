@@ -1,0 +1,44 @@
+{
+ "commonErrors": [
+  {
+   "example": "A learner writes on the worksheet that vinegar cannot be an acid because real acids are all strong and dangerous.",
+   "fixIt": {
+    "corrected": "Corrected working: vinegar only partly releases its hydrogen ions, so it is a weak acid - still acidic, just not strong.",
+    "prompt": "Fix it: say what a weak acid does with its hydrogen ions and why that still makes vinegar an acid."
+   },
+   "misconception": "All acids are strong acids."
+  },
+  {
+   "example": "On the exit ticket, a learner agrees with the student who says vinegar is not a real acid.",
+   "fixIt": {
+    "corrected": "Corrected check: strength describes how fully an acid releases its hydrogen ions, not whether it counts as an acid at all.",
+    "prompt": "Fix it: give the one-sentence correction for the claim that only strong acids count as acids."
+   },
+   "misconception": "All acids are strong acids."
+  }
+ ],
+ "level": "secondary",
+ "modelAnswers": [
+  {
+   "answer": "The alkali releases OH- ions, which pair up with the H+ ions from the acid to form water. As the excess H+ ions are used up, the solution moves towards equal ion counts, so the pH rises towards 7, the neutral point.",
+   "creditPoints": [],
+   "question": "Explain, in terms of ions, why adding an alkali to an acid brings the pH towards 7."
+  },
+  {
+   "answer": "The equivalence point: the acid has just been exactly neutralised, so an indicator must change colour on the jump",
+   "creditPoints": [],
+   "question": "During a titration the pH stays low as base is added, then jumps from 4 to 10 with a single drop. What does the jump show?"
+  }
+ ],
+ "nextSteps": [
+  "Reteach the trap with the weak-acid scene, landing that weak is about ion release, not about being harmless or not an acid.",
+  "Practise the check from the worked example - read the ladder, then neutralise and check the ions balance at pH 7."
+ ],
+ "strengths": [
+  "Most of the class can read the pH ladder and say each step is ten times stronger.",
+  "The class can pair H+ and OH- ions into water and name the leftover salt from its acid."
+ ],
+ "subject": "science",
+ "title": "Acids, bases and salts",
+ "topic": "chem-acids"
+}
