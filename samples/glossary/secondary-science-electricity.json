@@ -1,0 +1,48 @@
+{
+  "entries": [
+    {
+      "example": "The loop: battery, bulb and ammeter joined by wires form one unbroken loop - the battery pushes charge around it, the bulb turns electrical energy into light, and the ammeter measures the flow.",
+      "meaning": "One unbroken loop of components joined by wires, around which charge flows; break the loop anywhere and the flow stops everywhere.",
+      "term": "Circuit"
+    },
+    {
+      "example": "Not used up: ammeters before and after the bulb in a series loop both read 0.5 amps - the bulb changes energy's form, not the current's size.",
+      "meaning": "The flow of charge around the loop, measured in amps by an ammeter; in a series loop it is the same at every point.",
+      "term": "Current"
+    },
+    {
+      "example": "Direction: conventional current leaves the positive terminal, crawls around the loop, and returns to the negative terminal - follow the red markers.",
+      "meaning": "The agreed direction of current flow: out of the battery's positive terminal, around the loop, and back into the negative terminal.",
+      "term": "Conventional current"
+    },
+    {
+      "example": "Paths: in series there is one path and one broken bulb kills the loop; in parallel each bulb has its own branch, so one can fail and the other stays lit.",
+      "meaning": "An arrangement with only one path for the charge, so every component carries the same current and one break stops everything.",
+      "term": "Series"
+    },
+    {
+      "example": "Paths: in series there is one path and one broken bulb kills the loop; in parallel each bulb has its own branch, so one can fail and the other stays lit.",
+      "meaning": "An arrangement where each component sits on its own branch, so one can fail while the others keep working.",
+      "term": "Parallel"
+    },
+    {
+      "example": "Ohm's law: with resistance fixed at 4 ohms, stepping the battery from 6 to 12 volts speeds the markers up and climbs the ammeter from 1.5 to 3 amps - 12 divided by 4 is 3.",
+      "meaning": "How much a component opposes the current, measured in ohms; in Ohm's law, V = I R, a fixed 4 ohm resistance lets 12 volts drive 3 amps.",
+      "term": "Resistance"
+    },
+    {
+      "example": "A 12 V battery is connected across a 4 ohm resistor. Current = voltage / resistance = 12 / 4 = 3 A. Check the units: volts divided by ohms gives amps, and halving the battery to 6 V halves the current to 1.5 A without changing the resistance.",
+      "meaning": "The relation V = I R between voltage, current and resistance: with resistance fixed, doubling the voltage doubles the current.",
+      "term": "Ohm's law"
+    },
+    {
+      "example": "Not used up: ammeters before and after the bulb in a series loop both read 0.5 amps - the bulb changes energy's form, not the current's size.",
+      "meaning": "The unit of current: the series loop in the animation carries 0.5 amps, read the same on both sides of the bulb.",
+      "term": "Amp"
+    }
+  ],
+  "level": "secondary",
+  "subject": "science",
+  "title": "Electricity: circuits, current and Ohm's law",
+  "topic": "phys-electricity"
+}

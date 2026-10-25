@@ -1,0 +1,120 @@
+{
+  "level": "secondary",
+  "sets": [
+    {
+      "cloze": [
+        {
+          "answers": [
+            "Circuit"
+          ],
+          "text": "A ___ is one unbroken loop of components joined by wires, around which charge flows."
+        },
+        {
+          "answers": [
+            "Series",
+            "Parallel"
+          ],
+          "text": "A ___ arrangement has only one path for the charge, while a ___ arrangement gives each component its own branch."
+        }
+      ],
+      "frames": [
+        "A ___ is one unbroken loop joined by wires.",
+        "In a ___ loop the current is the same at every point.",
+        "In a ___ arrangement each component sits on its own branch."
+      ],
+      "level": "full",
+      "starters": [
+        "A circuit is...",
+        "In series, the current...",
+        "In parallel, each component..."
+      ],
+      "wordBank": [
+        {
+          "gloss": "one unbroken loop of components joined by wires",
+          "term": "Circuit"
+        },
+        {
+          "gloss": "the flow of charge around the loop",
+          "term": "Current"
+        },
+        {
+          "gloss": "an arrangement with only one path for the charge",
+          "term": "Series"
+        },
+        {
+          "gloss": "an arrangement where each component sits on its own branch",
+          "term": "Parallel"
+        }
+      ]
+    },
+    {
+      "cloze": [
+        {
+          "answers": [
+            "Resistance"
+          ],
+          "text": "___ is how much a component opposes the current, measured in ohms."
+        },
+        {
+          "answers": [
+            "Ohm's law"
+          ],
+          "text": "___ is the relation V = I R between voltage, current and resistance."
+        }
+      ],
+      "frames": [
+        "___ opposes the current, measured in ohms.",
+        "Under ___ , V = I R."
+      ],
+      "level": "partial",
+      "starters": [
+        "Resistance is...",
+        "Ohm's law says..."
+      ],
+      "wordBank": [
+        {
+          "gloss": "how much a component opposes the current",
+          "term": "Resistance"
+        },
+        {
+          "gloss": "the relation V = I R between voltage, current and resistance",
+          "term": "Ohm's law"
+        },
+        {
+          "gloss": "the unit of current",
+          "term": "Amp"
+        }
+      ]
+    },
+    {
+      "cloze": [
+        {
+          "answers": [
+            "Current"
+          ],
+          "text": "The ___ is the same at every point in a series loop."
+        }
+      ],
+      "frames": [
+        "The ___ is the same everywhere in a series loop."
+      ],
+      "level": "minimal",
+      "starters": [
+        "In a series loop, the current..."
+      ],
+      "wordBank": [
+        {
+          "gloss": "the flow of charge around the loop",
+          "term": "Current"
+        },
+        {
+          "gloss": "the unit of current",
+          "term": "Amp"
+        }
+      ]
+    }
+  ],
+  "subject": "science",
+  "title": "Electricity: circuits, current and Ohm's law",
+  "topic": "phys-electricity"
+}

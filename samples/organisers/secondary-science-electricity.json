@@ -1,0 +1,116 @@
+{
+  "level": "secondary",
+  "subject": "science",
+  "templates": [
+    {
+      "kind": "flow",
+      "slots": [
+        {
+          "entries": [
+            "The loop: battery, bulb and ammeter joined by wires form one unbroken loop - the battery pushes charge around it, the bulb turns electrical energy into light, and the ammeter measures the flow."
+          ],
+          "label": "The loop",
+          "studentPrompt": "Explain this step in your own words."
+        },
+        {
+          "entries": [
+            "Direction: conventional current leaves the positive terminal, crawls around the loop, and returns to the negative terminal - follow the red markers."
+          ],
+          "label": "Direction",
+          "studentPrompt": "Explain this step in your own words."
+        },
+        {
+          "entries": [
+            "Paths: in series there is one path and one broken bulb kills the loop; in parallel each bulb has its own branch, so one can fail and the other stays lit."
+          ],
+          "label": "Paths",
+          "studentPrompt": "Explain this step in your own words."
+        },
+        {
+          "entries": [
+            "Ohm's law: with resistance fixed at 4 ohms, stepping the battery from 6 to 12 volts speeds the markers up and climbs the ammeter from 1.5 to 3 amps - 12 divided by 4 is 3."
+          ],
+          "label": "Ohm's law",
+          "studentPrompt": "Explain this step in your own words."
+        },
+        {
+          "entries": [
+            "Not used up: ammeters before and after the bulb in a series loop both read 0.5 amps - the bulb changes energy's form, not the current's size."
+          ],
+          "label": "Not used up",
+          "studentPrompt": "Explain this step in your own words."
+        },
+        {
+          "entries": [
+            "Summary: current flows positive to negative around a single loop, series means one path while parallel means many, and the series current is identical everywhere under V = I R."
+          ],
+          "label": "Summary",
+          "studentPrompt": "Explain this step in your own words."
+        }
+      ]
+    },
+    {
+      "kind": "frayer",
+      "slots": [
+        {
+          "entries": [
+            "One unbroken loop of components joined by wires, around which charge flows; break the loop anywhere and the flow stops everywhere."
+          ],
+          "label": "Circuit",
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "entries": [
+            "The flow of charge around the loop, measured in amps by an ammeter; in a series loop it is the same at every point."
+          ],
+          "label": "Current",
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "entries": [
+            "The agreed direction of current flow: out of the battery's positive terminal, around the loop, and back into the negative terminal."
+          ],
+          "label": "Conventional current",
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "entries": [
+            "An arrangement with only one path for the charge, so every component carries the same current and one break stops everything."
+          ],
+          "label": "Series",
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "entries": [
+            "An arrangement where each component sits on its own branch, so one can fail while the others keep working."
+          ],
+          "label": "Parallel",
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "entries": [
+            "How much a component opposes the current, measured in ohms; in Ohm's law, V = I R, a fixed 4 ohm resistance lets 12 volts drive 3 amps."
+          ],
+          "label": "Resistance",
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "entries": [
+            "The relation V = I R between voltage, current and resistance: with resistance fixed, doubling the voltage doubles the current."
+          ],
+          "label": "Ohm's law",
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "entries": [
+            "The unit of current: the series loop in the animation carries 0.5 amps, read the same on both sides of the bulb."
+          ],
+          "label": "Amp",
+          "studentPrompt": "Give your own example of this term."
+        }
+      ]
+    }
+  ],
+  "title": "Electricity: circuits, current and Ohm's law",
+  "topic": "phys-electricity"
+}

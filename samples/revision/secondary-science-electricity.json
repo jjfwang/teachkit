@@ -1,0 +1,91 @@
+{
+  "flashcards": [
+    {
+      "back": "One unbroken loop of components joined by wires, around which charge flows; break the loop anywhere and the flow stops everywhere.",
+      "front": "Circuit",
+      "source": "definition"
+    },
+    {
+      "back": "The flow of charge around the loop, measured in amps by an ammeter; in a series loop it is the same at every point.",
+      "front": "Current",
+      "source": "definition"
+    },
+    {
+      "back": "The agreed direction of current flow: out of the battery's positive terminal, around the loop, and back into the negative terminal.",
+      "front": "Conventional current",
+      "source": "definition"
+    },
+    {
+      "back": "An arrangement with only one path for the charge, so every component carries the same current and one break stops everything.",
+      "front": "Series",
+      "source": "definition"
+    },
+    {
+      "back": "An arrangement where each component sits on its own branch, so one can fail while the others keep working.",
+      "front": "Parallel",
+      "source": "definition"
+    },
+    {
+      "back": "How much a component opposes the current, measured in ohms; in Ohm's law, V = I R, a fixed 4 ohm resistance lets 12 volts drive 3 amps.",
+      "front": "Resistance",
+      "source": "definition"
+    },
+    {
+      "back": "The relation V = I R between voltage, current and resistance: with resistance fixed, doubling the voltage doubles the current.",
+      "front": "Ohm's law",
+      "source": "definition"
+    },
+    {
+      "back": "The unit of current: the series loop in the animation carries 0.5 amps, read the same on both sides of the bulb.",
+      "front": "Amp",
+      "source": "definition"
+    },
+    {
+      "back": "The bulb glows and gets hot, so it looks like it consumes the electricity flowing through it. Current is not used up: an ammeter reads the same 0.5 amps on both sides of the bulb. In class, place the ammeter on each side of the bulb in turn: 0.5 A before, 0.5 A after - the bulb changed electrical energy into light and heat, but no current disappeared.",
+      "front": "The bulb uses up the current.",
+      "source": "trap"
+    },
+    {
+      "back": "Wrong - the second ammeter also reads 0.5 A, because current is not used up in a series loop",
+      "front": "In a series circuit an ammeter before a bulb reads 0.5 A. A classmate says the ammeter after the bulb must read less, because the bulb has used some current up. Which statement is correct?",
+      "source": "quiz-bank"
+    },
+    {
+      "back": "3 A, from I = V / R = 12 / 4 = 3.",
+      "front": "A 12 V battery is connected across a resistor of 4 ohms. Calculate the current, showing the Ohm's law step.",
+      "source": "quiz-bank"
+    }
+  ],
+  "level": "secondary",
+  "practiceSets": [
+    {
+      "dayOffset": 1,
+      "items": [
+        {
+          "answer": "Wrong - the second ammeter also reads 0.5 A, because current is not used up in a series loop",
+          "prompt": "In a series circuit an ammeter before a bulb reads 0.5 A. A classmate says the ammeter after the bulb must read less, because the bulb has used some current up. Which statement is correct?"
+        },
+        {
+          "answer": "3 A, from I = V / R = 12 / 4 = 3.",
+          "prompt": "A 12 V battery is connected across a resistor of 4 ohms. Calculate the current, showing the Ohm's law step."
+        }
+      ]
+    },
+    {
+      "dayOffset": 3,
+      "items": [
+        {
+          "answer": "Exactly 0.5 A - current is the same all around a series loop",
+          "prompt": "An ammeter reads 0.5 A just before a bulb in a series circuit. What does an ammeter just after the bulb read?"
+        },
+        {
+          "answer": "It stays lit, because it sits on its own branch with a complete path",
+          "prompt": "Two bulbs are connected in parallel and one bulb breaks. What happens to the other bulb?"
+        }
+      ]
+    }
+  ],
+  "subject": "science",
+  "title": "Electricity: circuits, current and Ohm's law",
+  "topic": "phys-electricity"
+}
