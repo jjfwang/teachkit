@@ -1,0 +1,51 @@
+{
+  "items": [
+    {
+      "answer": "Wrong - the second ammeter also reads 0.5 A, because current is not used up in a series loop",
+      "choices": [
+        "Correct - the bulb glows, so it must consume the current",
+        "Wrong - the second ammeter reads more, because the bulb adds current",
+        "Wrong - the second ammeter also reads 0.5 A, because current is not used up in a series loop",
+        "Wrong - the second ammeter reads zero, because all the current stops at the bulb"
+      ],
+      "misconceptionCode": "The bulb uses up the current.",
+      "prompt": "In a series circuit an ammeter before a bulb reads 0.5 A. A classmate says the ammeter after the bulb must read less, because the bulb has used some current up. Which statement is correct?"
+    },
+    {
+      "answer": "Exactly 0.5 A - current is the same all around a series loop",
+      "choices": [
+        "Less than 0.5 A - the bulb has used some current",
+        "Exactly 0.5 A - current is the same all around a series loop",
+        "More than 0.5 A",
+        "0 A - the current stops at the bulb"
+      ],
+      "prompt": "An ammeter reads 0.5 A just before a bulb in a series circuit. What does an ammeter just after the bulb read?"
+    },
+    {
+      "answer": "3 A, from I = V / R = 12 / 4 = 3.",
+      "prompt": "A 12 V battery is connected across a resistor of 4 ohms. Calculate the current, showing the Ohm's law step."
+    },
+    {
+      "answer": "3 A.",
+      "prompt": "Calculate the current when a 12 V battery is connected across a 4 ohm resistor."
+    },
+    {
+      "answer": "It stays lit, because it sits on its own branch with a complete path",
+      "choices": [
+        "It goes out too, because the circuit is broken",
+        "It stays lit, because it sits on its own branch with a complete path",
+        "It glows twice as brightly",
+        "It stays lit only if the broken bulb is replaced first"
+      ],
+      "prompt": "Two bulbs are connected in parallel and one bulb breaks. What happens to the other bulb?"
+    },
+    {
+      "answer": "Conventional current flows out of the battery's positive terminal, around the loop, and back into the negative terminal.",
+      "prompt": "State the direction of conventional current around a circuit, naming the battery terminals it leaves and returns to."
+    }
+  ],
+  "level": "secondary",
+  "subject": "science",
+  "title": "Electricity: circuits, current and Ohm's law",
+  "topic": "phys-electricity"
+}

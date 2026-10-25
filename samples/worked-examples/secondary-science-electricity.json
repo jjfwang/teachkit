@@ -1,0 +1,49 @@
+{
+  "complete": {
+    "problem": "A 12 V battery is connected across a 4 ohm resistor. Calculate the current, and check what halving the battery to 6 V does to it.",
+    "selfExplanation": "Explain why halving the voltage halves the current when the resistance stays fixed, naming the relation you used.",
+    "steps": [
+      {
+        "annotation": "The relation V = I R between voltage, current and resistance: with resistance fixed, doubling the voltage doubles the current.",
+        "text": "Step 1: Current = voltage / resistance = 12 / 4 = 3 A."
+      },
+      {
+        "annotation": "How much a component opposes the current, measured in ohms; in Ohm's law, V = I R, a fixed 4 ohm resistance lets 12 volts drive 3 amps.",
+        "text": "Step 2: Check the units: volts divided by ohms gives amps, and halving the battery to 6 V halves the current to 1.5 A without changing the resistance."
+      },
+      {
+        "annotation": "The flow of charge around the loop, measured in amps by an ammeter; in a series loop it is the same at every point.",
+        "text": "Step 3: The series loop in the animation carries the same current at every point, so this 3 A is the current everywhere in the loop."
+      }
+    ]
+  },
+  "faded": {
+    "problem": "A 12 V battery is connected across a resistor of 4 ohms. Calculate the current, showing the Ohm's law step.",
+    "selfExplanation": "The first step is shown. Say how you turn the voltage and resistance into a current, and how you check the units.",
+    "steps": [
+      {
+        "annotation": "Ohm's law: with resistance fixed at 4 ohms, stepping the battery from 6 to 12 volts speeds the markers up and climbs the ammeter from 1.5 to 3 amps - 12 divided by 4 is 3.",
+        "text": "Step 1: the voltage is 12 V and the resistance is 4 ohms.",
+        "withheld": false
+      },
+      {
+        "annotation": "The unit of current: the series loop in the animation carries 0.5 amps, read the same on both sides of the bulb.",
+        "text": "Step 2: I = V / R = 12 / 4 = 3.",
+        "withheld": true
+      },
+      {
+        "annotation": "One unbroken loop of components joined by wires, around which charge flows; break the loop anywhere and the flow stops everywhere.",
+        "text": "Step 3: The current is 3 A, the same at every point in the unbroken series loop.",
+        "withheld": true
+      }
+    ]
+  },
+  "level": "secondary",
+  "paired": {
+    "problem": "The battery in question 3 is replaced by a 6 V battery, with the same 4 ohm resistor. Calculate the new current and state the pattern.",
+    "solution": "1.5 A, from I = V / R = 6 / 4 = 1.5; halving the voltage halves the current when the resistance is fixed."
+  },
+  "subject": "science",
+  "title": "Electricity: circuits, current and Ohm's law",
+  "topic": "phys-electricity"
+}
