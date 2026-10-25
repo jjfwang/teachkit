@@ -1,0 +1,57 @@
+{
+ "items": [
+  {
+   "answer": "Wrong - the same force now spreads over a smaller area, so the pressure is higher",
+   "choices": [
+    "Correct - the same weight always gives the same pressure",
+    "Wrong - her weight has doubled on tiptoes",
+    "Wrong - the same force now spreads over a smaller area, so the pressure is higher",
+    "Wrong - pressure only depends on the floor material"
+   ],
+   "misconceptionCode": "The same push gives the same pressure whether you stand flat or on tiptoes.",
+   "prompt": "A student stands flat, then rises on tiptoes. Her weight has not changed. A classmate says the pressure under her feet is unchanged too. Which statement is correct?"
+  },
+  {
+   "answer": "It increases, because the same force spreads over a smaller area",
+   "choices": [
+    "It stays the same",
+    "It increases, because the same force spreads over a smaller area",
+    "It decreases, because less of the foot touches the floor",
+    "It becomes zero"
+   ],
+   "prompt": "Standing on tiptoes instead of flat feet, with the same weight, what happens to the pressure under your feet?"
+  },
+  {
+   "answer": "4000 Pa",
+   "choices": [
+    "40 Pa",
+    "400 Pa - it does not change",
+    "4000 Pa",
+    "800 Pa"
+   ],
+   "prompt": "The same 200 N crate is tipped from a 0.5 square metre face onto a 0.05 square metre edge. The pressure changes from 400 Pa to what?"
+  },
+  {
+   "answer": "30 N\u00b7m.",
+   "prompt": "A 30 N weight balances a beam when it sits 1.0 m from the pivot. What moment does it make?"
+  },
+  {
+   "answer": "The net force is 20 N in the direction of the push, so the block keeps sliding.",
+   "prompt": "A push of 60 N meets friction of 40 N. Why does the block keep sliding instead of stopping?"
+  },
+  {
+   "answer": "400 Pa",
+   "choices": [
+    "100 Pa",
+    "400 Pa",
+    "200 Pa",
+    "0.0025 Pa"
+   ],
+   "prompt": "A crate weighing 200 N rests on a face of area 0.5 square metres. What pressure does it exert?"
+  }
+ ],
+ "level": "secondary",
+ "subject": "science",
+ "title": "Forces: friction, moments and pressure",
+ "topic": "phys-forces"
+}
