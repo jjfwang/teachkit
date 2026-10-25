@@ -31,12 +31,12 @@
     "withheld": false
    },
    {
-    "annotation": "Distance travelled per unit time, calculated as distance divided by time, measured in metres per second.",
+    "annotation": "Distance-time graphs: the gradient is the speed. Ride the probe up the line as it climbs 120 metres in 60 seconds, and watch the gradient triangle build underneath - rise over run, 120 over 60, is 2 metres per second. Now try the gradient question on the worksheet in pairs.",
     "text": "Step 2: speed = 120 / 60 = 2 m/s.",
     "withheld": true
    },
    {
-    "annotation": "A distance-time graph climbs in a straight line: 120 metres in 60 seconds. Speed = gradient = 120 / 60 = 2 m/s.",
+    "annotation": "Work this on the board slowly: build the gradient triangle, divide rise by run, and say the units out loud.",
     "text": "Step 3: check the units: metres divided by seconds gives metres per second, and the straight line means that speed never changes.",
     "withheld": true
    }
