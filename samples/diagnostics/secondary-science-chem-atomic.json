@@ -1,0 +1,202 @@
+{
+  "doNow": [
+    {
+      "choices": [
+        {
+          "misconception": "Atoms are solid balls.",
+          "rationale": {
+            "chose": "The learner selected option A solid marble with electrons stuck on its surface as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: Atoms are solid balls.. The slip: The ball-and-stick model is everywhere, so atoms look like tiny solid marbles. The fix: Atoms are mostly empty space: the electrons sit far from a tiny dense nucleus. In class, compare the two pictures side by side: the solid marble, then the shell model with its speck of a nucleus - and ask which one explains why alpha particles mostly passed straight through gold foil.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "A solid marble with electrons stuck on its surface"
+        },
+        {
+          "misconception": "Atoms are solid balls.",
+          "rationale": {
+            "chose": "The learner selected option A tiny dense nucleus with electrons circling it like planets, filling the atom as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: Atoms are solid balls.. The slip: The ball-and-stick model is everywhere, so atoms look like tiny solid marbles. The fix: Atoms are mostly empty space: the electrons sit far from a tiny dense nucleus. In class, compare the two pictures side by side: the solid marble, then the shell model with its speck of a nucleus - and ask which one explains why alpha particles mostly passed straight through gold foil.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "A tiny dense nucleus with electrons circling it like planets, filling the atom"
+        },
+        {
+          "correct": true,
+          "text": "A tiny dense nucleus with electrons in fixed shells, and mostly empty space between"
+        },
+        {
+          "misconception": "Atoms are solid balls.",
+          "rationale": {
+            "chose": "The learner selected option A ball of protons with electrons mixed through it like raisins as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: Atoms are solid balls.. The slip: The ball-and-stick model is everywhere, so atoms look like tiny solid marbles. The fix: Atoms are mostly empty space: the electrons sit far from a tiny dense nucleus. In class, compare the two pictures side by side: the solid marble, then the shell model with its speck of a nucleus - and ask which one explains why alpha particles mostly passed straight through gold foil.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "A ball of protons with electrons mixed through it like raisins"
+        }
+      ],
+      "id": "dn1",
+      "kind": "multiple-choice",
+      "prompt": "Which picture of the atom is correct?"
+    },
+    {
+      "choices": [
+        {
+          "misconception": "Atoms are solid balls.",
+          "rationale": {
+            "chose": "The learner selected option 11 as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: Atoms are solid balls.. The slip: The ball-and-stick model is everywhere, so atoms look like tiny solid marbles. The fix: Atoms are mostly empty space: the electrons sit far from a tiny dense nucleus. In class, compare the two pictures side by side: the solid marble, then the shell model with its speck of a nucleus - and ask which one explains why alpha particles mostly passed straight through gold foil.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "11"
+        },
+        {
+          "misconception": "Atoms are solid balls.",
+          "rationale": {
+            "chose": "The learner selected option 23 as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: Atoms are solid balls.. The slip: The ball-and-stick model is everywhere, so atoms look like tiny solid marbles. The fix: Atoms are mostly empty space: the electrons sit far from a tiny dense nucleus. In class, compare the two pictures side by side: the solid marble, then the shell model with its speck of a nucleus - and ask which one explains why alpha particles mostly passed straight through gold foil.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "23"
+        },
+        {
+          "correct": true,
+          "text": "12"
+        },
+        {
+          "misconception": "Atoms are solid balls.",
+          "rationale": {
+            "chose": "The learner selected option 34 as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: Atoms are solid balls.. The slip: The ball-and-stick model is everywhere, so atoms look like tiny solid marbles. The fix: Atoms are mostly empty space: the electrons sit far from a tiny dense nucleus. In class, compare the two pictures side by side: the solid marble, then the shell model with its speck of a nucleus - and ask which one explains why alpha particles mostly passed straight through gold foil.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "34"
+        }
+      ],
+      "id": "dn2",
+      "kind": "multiple-choice",
+      "prompt": "How many neutrons are there in an atom of sodium with proton number 11 and nucleon number 23?"
+    },
+    {
+      "choices": [
+        {
+          "misconception": "Atoms are solid balls.",
+          "rationale": {
+            "chose": "The learner selected option Period 6, group 3 as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: Atoms are solid balls.. The slip: The ball-and-stick model is everywhere, so atoms look like tiny solid marbles. The fix: Atoms are mostly empty space: the electrons sit far from a tiny dense nucleus. In class, compare the two pictures side by side: the solid marble, then the shell model with its speck of a nucleus - and ask which one explains why alpha particles mostly passed straight through gold foil.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "Period 6, group 3"
+        },
+        {
+          "correct": true,
+          "text": "Period 3, group 6"
+        },
+        {
+          "misconception": "Atoms are solid balls.",
+          "rationale": {
+            "chose": "The learner selected option Period 3, group 3 as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: Atoms are solid balls.. The slip: The ball-and-stick model is everywhere, so atoms look like tiny solid marbles. The fix: Atoms are mostly empty space: the electrons sit far from a tiny dense nucleus. In class, compare the two pictures side by side: the solid marble, then the shell model with its speck of a nucleus - and ask which one explains why alpha particles mostly passed straight through gold foil.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "Period 3, group 3"
+        },
+        {
+          "misconception": "Atoms are solid balls.",
+          "rationale": {
+            "chose": "The learner selected option Period 6, group 6 as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: Atoms are solid balls.. The slip: The ball-and-stick model is everywhere, so atoms look like tiny solid marbles. The fix: Atoms are mostly empty space: the electrons sit far from a tiny dense nucleus. In class, compare the two pictures side by side: the solid marble, then the shell model with its speck of a nucleus - and ask which one explains why alpha particles mostly passed straight through gold foil.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "Period 6, group 6"
+        }
+      ],
+      "id": "dn3",
+      "kind": "multiple-choice",
+      "prompt": "An element's atoms have three electron shells, with 6 electrons in the outer shell. In which period and group does it sit?"
+    }
+  ],
+  "hingeQuestions": [
+    {
+      "choices": [
+        {
+          "misconception": "Atoms are solid balls.",
+          "rationale": {
+            "chose": "The learner selected option The drawing is fine - atoms are solid balls as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: Atoms are solid balls.. The slip: The ball-and-stick model is everywhere, so atoms look like tiny solid marbles. The fix: Atoms are mostly empty space: the electrons sit far from a tiny dense nucleus. In class, compare the two pictures side by side: the solid marble, then the shell model with its speck of a nucleus - and ask which one explains why alpha particles mostly passed straight through gold foil.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "The drawing is fine - atoms are solid balls"
+        },
+        {
+          "correct": true,
+          "text": "Atoms are mostly empty space, with electrons in shells around a tiny dense nucleus"
+        },
+        {
+          "misconception": "Atoms are solid balls.",
+          "rationale": {
+            "chose": "The learner selected option Atoms are solid, but the nucleus is hollow as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: Atoms are solid balls.. The slip: The ball-and-stick model is everywhere, so atoms look like tiny solid marbles. The fix: Atoms are mostly empty space: the electrons sit far from a tiny dense nucleus. In class, compare the two pictures side by side: the solid marble, then the shell model with its speck of a nucleus - and ask which one explains why alpha particles mostly passed straight through gold foil.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "Atoms are solid, but the nucleus is hollow"
+        },
+        {
+          "misconception": "Atoms are solid balls.",
+          "rationale": {
+            "chose": "The learner selected option The electrons fill the whole ball evenly as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: Atoms are solid balls.. The slip: The ball-and-stick model is everywhere, so atoms look like tiny solid marbles. The fix: Atoms are mostly empty space: the electrons sit far from a tiny dense nucleus. In class, compare the two pictures side by side: the solid marble, then the shell model with its speck of a nucleus - and ask which one explains why alpha particles mostly passed straight through gold foil.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "The electrons fill the whole ball evenly"
+        }
+      ],
+      "id": "h1",
+      "kind": "multiple-choice",
+      "prompt": "A student draws an atom as a solid ball. What is the best correction?",
+      "scriptCue": "s6"
+    },
+    {
+      "choices": [
+        {
+          "misconception": "Atoms are solid balls.",
+          "rationale": {
+            "chose": "The learner selected option The drawing is fine - atoms are solid balls as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: Atoms are solid balls.. The slip: The ball-and-stick model is everywhere, so atoms look like tiny solid marbles. The fix: Atoms are mostly empty space: the electrons sit far from a tiny dense nucleus. In class, compare the two pictures side by side: the solid marble, then the shell model with its speck of a nucleus - and ask which one explains why alpha particles mostly passed straight through gold foil.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "The drawing is fine - atoms are solid balls"
+        },
+        {
+          "correct": true,
+          "text": "Atoms are mostly empty space, with electrons in shells around a tiny dense nucleus"
+        },
+        {
+          "misconception": "Atoms are solid balls.",
+          "rationale": {
+            "chose": "The learner selected option Atoms are solid, but the nucleus is hollow as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: Atoms are solid balls.. The slip: The ball-and-stick model is everywhere, so atoms look like tiny solid marbles. The fix: Atoms are mostly empty space: the electrons sit far from a tiny dense nucleus. In class, compare the two pictures side by side: the solid marble, then the shell model with its speck of a nucleus - and ask which one explains why alpha particles mostly passed straight through gold foil.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "Atoms are solid, but the nucleus is hollow"
+        },
+        {
+          "misconception": "Atoms are solid balls.",
+          "rationale": {
+            "chose": "The learner selected option The electrons fill the whole ball evenly as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: Atoms are solid balls.. The slip: The ball-and-stick model is everywhere, so atoms look like tiny solid marbles. The fix: Atoms are mostly empty space: the electrons sit far from a tiny dense nucleus. In class, compare the two pictures side by side: the solid marble, then the shell model with its speck of a nucleus - and ask which one explains why alpha particles mostly passed straight through gold foil.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "The electrons fill the whole ball evenly"
+        }
+      ],
+      "id": "h2",
+      "kind": "multiple-choice",
+      "prompt": "What is the best correction to the claim that atoms are solid balls?",
+      "scriptCue": "s6"
+    }
+  ],
+  "level": "secondary",
+  "subject": "science",
+  "title": "Atomic structure and the periodic table",
+  "topic": "chem-atomic"
+}

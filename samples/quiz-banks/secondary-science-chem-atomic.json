@@ -1,0 +1,51 @@
+{
+  "items": [
+    {
+      "answer": "Atoms are mostly empty space, with electrons in shells around a tiny dense nucleus",
+      "choices": [
+        "The drawing is fine - atoms are solid balls",
+        "Atoms are mostly empty space, with electrons in shells around a tiny dense nucleus",
+        "Atoms are solid, but the nucleus is hollow",
+        "The electrons fill the whole ball evenly"
+      ],
+      "misconceptionCode": "Atoms are solid balls.",
+      "prompt": "A student draws an atom as a solid ball. What is the best correction?"
+    },
+    {
+      "answer": "A tiny dense nucleus with electrons in fixed shells, and mostly empty space between",
+      "choices": [
+        "A solid marble with electrons stuck on its surface",
+        "A tiny dense nucleus with electrons circling it like planets, filling the atom",
+        "A tiny dense nucleus with electrons in fixed shells, and mostly empty space between",
+        "A ball of protons with electrons mixed through it like raisins"
+      ],
+      "prompt": "Which picture of the atom is correct?"
+    },
+    {
+      "answer": "6 protons, 12 - 6 = 6 neutrons and 6 electrons. The six electrons fill the shells two, then four, so the arrangement is 2,4.",
+      "prompt": "Carbon has proton number 6 and nucleon number 12. State its numbers of protons, neutrons and electrons, and write its electron arrangement."
+    },
+    {
+      "answer": "Almost all the mass is concentrated in the tiny dense nucleus, because it holds the protons and neutrons while electrons have almost no mass.",
+      "prompt": "In one sentence, say where the mass of an atom is concentrated and why."
+    },
+    {
+      "answer": "Period 3, group 6",
+      "choices": [
+        "Period 6, group 3",
+        "Period 3, group 6",
+        "Period 3, group 3",
+        "Period 6, group 6"
+      ],
+      "prompt": "An element's atoms have three electron shells, with 6 electrons in the outer shell. In which period and group does it sit?"
+    },
+    {
+      "answer": "Period 3, because it has three electron shells; group 5, because it has 5 electrons in its outer shell.",
+      "prompt": "An element has electron arrangement 2,8,5. State its period and its group, and explain each answer."
+    }
+  ],
+  "level": "secondary",
+  "subject": "science",
+  "title": "Atomic structure and the periodic table",
+  "topic": "chem-atomic"
+}

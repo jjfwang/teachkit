@@ -1,0 +1,49 @@
+{
+  "complete": {
+    "problem": "Read sodium off the table step by step.",
+    "selfExplanation": "Explain how the proton and nucleon numbers give sodium's particle counts, and how its electron arrangement 2,8,1 fixes its period and group.",
+    "steps": [
+      {
+        "annotation": "A particle in the nucleus with charge +1 and mass 1. The number of protons - the proton number - fixes which element the atom is.",
+        "text": "Step 1 (s3): sodium has proton number 11 and nucleon number 23, so it has 11 protons and 23 - 11 = 12 neutrons, and a neutral atom has 11 electrons."
+      },
+      {
+        "annotation": "A fixed energy level around the nucleus where electrons sit. Shells fill in order: shell 1 holds 2, shell 2 holds 8, shell 3 holds 8.",
+        "text": "Step 2 (s3): the electrons fill the shells in order - 2 in shell 1, 8 in shell 2, and the last 1 in shell 3 - giving the arrangement 2,8,1."
+      },
+      {
+        "annotation": "A column of the periodic table. Elements in one group share the same number of outer electrons, so they react in similar ways.",
+        "text": "Step 3 (s4 and s5): three shells means period 3, and 1 outer electron means group 1. Check against carbon (s2): 6 protons, 6 neutrons, 6 electrons, arrangement 2,4 - two shells (period 2) and 4 outer electrons (group 4)."
+      }
+    ]
+  },
+  "faded": {
+    "problem": "Magnesium has proton number 12 and nucleon number 24, and its electron arrangement is 2,8,2. State its numbers of protons, neutrons and electrons, and state its period and group.",
+    "selfExplanation": "The first step is shown. Say how the nucleon number gives the neutrons, and how the shells and outer electrons give the period and group.",
+    "steps": [
+      {
+        "annotation": "A particle in the nucleus with charge +1 and mass 1. The number of protons - the proton number - fixes which element the atom is.",
+        "text": "Step 1: magnesium has proton number 12, so it has 12 protons, and a neutral atom has 12 electrons.",
+        "withheld": false
+      },
+      {
+        "annotation": "A particle in the nucleus with no charge and mass 1. Neutrons = nucleon number - proton number.",
+        "text": "Step 2: neutrons = nucleon number - proton number = 24 - 12 = 12.",
+        "withheld": true
+      },
+      {
+        "annotation": "A row of the periodic table. The period number matches the number of electron shells the atoms have.",
+        "text": "Step 3: the arrangement 2,8,2 uses three shells, so magnesium is in period 3, and its 2 outer electrons put it in group 2.",
+        "withheld": true
+      }
+    ]
+  },
+  "level": "secondary",
+  "paired": {
+    "problem": "Carbon has proton number 6 and nucleon number 12. State its numbers of protons, neutrons and electrons, and write its electron arrangement.",
+    "solution": "6 protons, 12 - 6 = 6 neutrons and 6 electrons. The six electrons fill the shells two, then four, so the arrangement is 2,4."
+  },
+  "subject": "science",
+  "title": "Atomic structure and the periodic table",
+  "topic": "chem-atomic"
+}
