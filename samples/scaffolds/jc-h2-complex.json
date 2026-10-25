@@ -1,0 +1,120 @@
+{
+ "level": "jc",
+ "sets": [
+  {
+   "cloze": [
+    {
+     "answers": [
+      "Complex number",
+      "Modulus"
+     ],
+     "text": "A ___ is a number of the form z = x + iy, and its distance from the origin is its ___."
+    },
+    {
+     "answers": [
+      "Conjugate",
+      "Principal argument"
+     ],
+     "text": "The ___ of z = x + iy is x - iy, and the ___ is the argument value in the range -180 to 180 degrees."
+    }
+   ],
+   "frames": [
+    "A ___ is a number of the form z = x + iy.",
+    "The ___ of z is its distance from the origin.",
+    "The ___ of z = x + iy is x - iy."
+   ],
+   "level": "full",
+   "starters": [
+    "A complex number is...",
+    "The modulus of a complex number is...",
+    "The conjugate of z is..."
+   ],
+   "wordBank": [
+    {
+     "gloss": "a number of the form z = x + iy",
+     "term": "Complex number"
+    },
+    {
+     "gloss": "the distance of the point z from the origin",
+     "term": "Modulus"
+    },
+    {
+     "gloss": "the angle the arrow to z makes with the positive real axis",
+     "term": "Argument"
+    },
+    {
+     "gloss": "the one argument value in the range -180 to 180 degrees",
+     "term": "Principal argument"
+    },
+    {
+     "gloss": "for z = x + iy, the number x - iy",
+     "term": "Conjugate"
+    },
+    {
+     "gloss": "the plane used to picture complex numbers",
+     "term": "Argand diagram"
+    }
+   ]
+  },
+  {
+   "cloze": [
+    {
+     "answers": [
+      "Modulus",
+      "Conjugate"
+     ],
+     "text": "The ___ of z is its distance from the origin, and the ___ of z = x + iy is x - iy."
+    }
+   ],
+   "frames": [
+    "The ___ of a complex number is its distance from the origin.",
+    "The ___ of z = x + iy is x - iy."
+   ],
+   "level": "partial",
+   "starters": [
+    "The modulus of this number is...",
+    "The conjugate of z is..."
+   ],
+   "wordBank": [
+    {
+     "gloss": "a number of the form z = x + iy",
+     "term": "Complex number"
+    },
+    {
+     "gloss": "the distance of the point z from the origin",
+     "term": "Modulus"
+    },
+    {
+     "gloss": "for z = x + iy, the number x - iy",
+     "term": "Conjugate"
+    }
+   ]
+  },
+  {
+   "cloze": [
+    {
+     "answers": [
+      "Complex number"
+     ],
+     "text": "A ___ is a number of the form z = x + iy."
+    }
+   ],
+   "frames": [
+    "A ___ is a number of the form z = x + iy."
+   ],
+   "level": "minimal",
+   "starters": [
+    "A complex number is..."
+   ],
+   "wordBank": [
+    {
+     "gloss": "a number of the form z = x + iy",
+     "term": "Complex number"
+    }
+   ]
+  }
+ ],
+ "subject": "math",
+ "title": "JC H2 complex numbers: the Argand diagram",
+ "topic": "h2-complex"
+}
