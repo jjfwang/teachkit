@@ -1,0 +1,81 @@
+{
+  "flashcards": [
+    {
+      "back": "A number between 0 and 1 that measures how likely an event is: 0 means impossible and 1 means certain.",
+      "front": "Probability",
+      "source": "definition"
+    },
+    {
+      "back": "One possible result of a trial, such as heads on a single coin toss.",
+      "front": "Outcome",
+      "source": "definition"
+    },
+    {
+      "back": "A set of outcomes we are interested in, such as throwing exactly one head in two tosses.",
+      "front": "Event",
+      "source": "definition"
+    },
+    {
+      "back": "Outcomes that share the same probability, like the four cells of the two-toss table at 1/4 each.",
+      "front": "Equally likely",
+      "source": "definition"
+    },
+    {
+      "back": "The set of all possible outcomes of a trial - for two coin tosses it has four members.",
+      "front": "Sample space",
+      "source": "definition"
+    },
+    {
+      "back": "Events where the result of one does not change the probabilities of the other, so their probabilities multiply.",
+      "front": "Independent events",
+      "source": "definition"
+    },
+    {
+      "back": "A streak feels like it must balance out. The coin has no memory: the next toss is still 1/2. In class, toss a coin until three heads land in a row, then ask the class to bet on the next toss: whatever the streak, the fresh toss is still 1/2 heads and 1/2 tails.",
+      "front": "After three heads, tails is due.",
+      "source": "trap"
+    },
+    {
+      "back": "Wrong - the coin has no memory, so the next toss is still 1/2 tails",
+      "front": "A fair coin has landed heads three times in a row. A classmate says tails must be more likely next because it is overdue. Which statement is correct?",
+      "source": "quiz-bank"
+    },
+    {
+      "back": "3/5 = 0.6 = 60%.",
+      "front": "A bag contains 5 counters, 3 of them red. Write P(red) as a fraction, a decimal and a percentage.",
+      "source": "quiz-bank"
+    }
+  ],
+  "level": "secondary",
+  "practiceSets": [
+    {
+      "dayOffset": 1,
+      "items": [
+        {
+          "answer": "Wrong - the coin has no memory, so the next toss is still 1/2 tails",
+          "prompt": "A fair coin has landed heads three times in a row. A classmate says tails must be more likely next because it is overdue. Which statement is correct?"
+        },
+        {
+          "answer": "3/5 = 0.6 = 60%.",
+          "prompt": "A bag contains 5 counters, 3 of them red. Write P(red) as a fraction, a decimal and a percentage."
+        }
+      ]
+    },
+    {
+      "dayOffset": 3,
+      "items": [
+        {
+          "answer": "Heads-heads, heads-tails, tails-heads, tails-tails.",
+          "prompt": "A coin is tossed twice. List all four outcomes in the possibility table."
+        },
+        {
+          "answer": "1/4.",
+          "prompt": "What is the probability of tails followed by tails when a fair coin is tossed twice?"
+        }
+      ]
+    }
+  ],
+  "subject": "math",
+  "title": "E-Math probability: single and combined events",
+  "topic": "e-probability"
+}

@@ -1,0 +1,102 @@
+{
+  "level": "secondary",
+  "subject": "math",
+  "templates": [
+    {
+      "kind": "flow",
+      "slots": [
+        {
+          "entries": [
+            "The probability scale: the marker slides from 0 (impossible) through 1/2 (an even chance) to 1 (certain), and every probability sits somewhere on this line."
+          ],
+          "label": "The probability scale",
+          "studentPrompt": "Explain this step in your own words."
+        },
+        {
+          "entries": [
+            "One value, three forms: the fair coin's 1/2 is the same value as 0.5 and 50% - one probability, three ways to write it."
+          ],
+          "label": "One value, three forms",
+          "studentPrompt": "Explain this step in your own words."
+        },
+        {
+          "entries": [
+            "P(event) = favourable over total: with five outcomes and three favourable, the gold dots gather 3 into the favourable chip and 5 into the total chip, building 3/5."
+          ],
+          "label": "P(event) = favourable over total",
+          "studentPrompt": "Explain this step in your own words."
+        },
+        {
+          "entries": [
+            "Two tosses, one table: the grid draws itself and four dots travel in - heads-heads, heads-tails, tails-heads, tails-tails - one outcome per cell."
+          ],
+          "label": "Two tosses, one table",
+          "studentPrompt": "Explain this step in your own words."
+        },
+        {
+          "entries": [
+            "Fill the table, multiply the branches: each cell is equally likely at 1/4, and heads-then-heads is 1/2 times 1/2, which is 1/4."
+          ],
+          "label": "Fill the table, multiply the branches",
+          "studentPrompt": "Explain this step in your own words."
+        },
+        {
+          "entries": [
+            "The gambler's slip: coins have no memory: three heads land in a row, yet the next toss is still an even chance, 1/2 each."
+          ],
+          "label": "The gambler's slip",
+          "studentPrompt": "Explain this step in your own words."
+        }
+      ]
+    },
+    {
+      "kind": "frayer",
+      "slots": [
+        {
+          "entries": [
+            "A number between 0 and 1 that measures how likely an event is: 0 means impossible and 1 means certain."
+          ],
+          "label": "Probability",
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "entries": [
+            "One possible result of a trial, such as heads on a single coin toss."
+          ],
+          "label": "Outcome",
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "entries": [
+            "A set of outcomes we are interested in, such as throwing exactly one head in two tosses."
+          ],
+          "label": "Event",
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "entries": [
+            "Outcomes that share the same probability, like the four cells of the two-toss table at 1/4 each."
+          ],
+          "label": "Equally likely",
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "entries": [
+            "The set of all possible outcomes of a trial - for two coin tosses it has four members."
+          ],
+          "label": "Sample space",
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "entries": [
+            "Events where the result of one does not change the probabilities of the other, so their probabilities multiply."
+          ],
+          "label": "Independent events",
+          "studentPrompt": "Give your own example of this term."
+        }
+      ]
+    }
+  ],
+  "title": "E-Math probability: single and combined events",
+  "topic": "e-probability"
+}
