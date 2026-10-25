@@ -1,0 +1,111 @@
+{
+ "activities": [
+  {
+   "grouping": "whole class",
+   "minutes": 6,
+   "objectiveIds": [
+    "o1"
+   ],
+   "scriptCue": "s1",
+   "title": "Friction opposes relative motion"
+  },
+  {
+   "differentiation": {
+    "support": "Provide the student notes open at the moment definition so learners can follow how force times distance from the pivot gives the turning effect before they try the worksheet moment question."
+   },
+   "grouping": "pairs",
+   "minutes": 7,
+   "objectiveIds": [
+    "o2"
+   ],
+   "scriptCue": "s2",
+   "title": "Moments: force times distance from the pivot"
+  },
+  {
+   "grouping": "whole class",
+   "minutes": 7,
+   "objectiveIds": [
+    "o3"
+   ],
+   "scriptCue": "s3",
+   "title": "Pressure: the same force on different areas"
+  },
+  {
+   "grouping": "pairs",
+   "minutes": 7,
+   "objectiveIds": [
+    "o1"
+   ],
+   "scriptCue": "s4",
+   "title": "Friction drives the car"
+  },
+  {
+   "differentiation": {
+    "stretch": "Ask learners to explain why the same weight on tiptoes presses harder on the ground before they take the exit ticket."
+   },
+   "grouping": "pairs",
+   "minutes": 8,
+   "objectiveIds": [
+    "o3"
+   ],
+   "scriptCue": "s3",
+   "title": "Here is the trap, sprung on purpose"
+  },
+  {
+   "grouping": "individual",
+   "minutes": 5,
+   "objectiveIds": [
+    "o1",
+    "o2",
+    "o3"
+   ],
+   "resources": [
+    "worksheet"
+   ],
+   "title": "Worksheet practice and exit ticket"
+  }
+ ],
+ "durationMinutes": 40,
+ "level": "secondary",
+ "objectives": [
+  {
+   "assessmentPoints": [
+    "Net force answers in the opening activity",
+    "Friction direction answers in the closing worksheet"
+   ],
+   "id": "o1",
+   "successCriteria": [
+    "I can calculate net force as push minus friction, such as 60 newtons take away 40 newtons leaving 20 newtons",
+    "I can explain that friction opposes the relative slide at a contact, not the motion itself"
+   ],
+   "text": "Calculate net force from a push and friction, and predict whether a block keeps sliding"
+  },
+  {
+   "assessmentPoints": [
+    "Moment answers in the second activity",
+    "Balance answers in the closing worksheet"
+   ],
+   "id": "o2",
+   "successCriteria": [
+    "I can calculate a moment as force times distance, such as 60 newtons at 0.5 metres giving 30 newton-metres",
+    "I can explain that a beam balances when the moments on the two sides match, such as 30 newtons at 1.0 metre matching 30 newton-metres"
+   ],
+   "text": "Calculate a moment as force times distance from the pivot and use moments to judge balance"
+  },
+  {
+   "assessmentPoints": [
+    "Pressure answers in the third activity",
+    "Trap answers in the fifth activity and the closing exit ticket"
+   ],
+   "id": "o3",
+   "successCriteria": [
+    "I can calculate pressure as force over area, such as 200 newtons over 0.5 square metres giving 400 pascals",
+    "I can explain that the same force on a tenth of the area gives ten times the pressure, such as 4000 pascals on the narrow edge, and that standing on tiptoes raises the pressure under your feet"
+   ],
+   "text": "Calculate pressure as force over area and explain why a smaller area raises the pressure"
+  }
+ ],
+ "subject": "science",
+ "title": "Forces: friction, moments and pressure",
+ "topic": "phys-forces"
+}

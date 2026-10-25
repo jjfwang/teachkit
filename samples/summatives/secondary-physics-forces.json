@@ -1,0 +1,125 @@
+{
+ "blueprint": [
+  {
+   "assessmentObjective": "AO1 recall and apply",
+   "cognitiveLevel": "apply",
+   "marks": 10,
+   "outcomeCode": "S3-FOR-APPLY"
+  },
+  {
+   "assessmentObjective": "AO2 reason and explain",
+   "cognitiveLevel": "reason",
+   "marks": 10,
+   "outcomeCode": "S3-KIN-REASON"
+  }
+ ],
+ "durationMinutes": 40,
+ "items": [
+  {
+   "blueprintRow": 0,
+   "commandWord": "Calculate",
+   "markScheme": {
+    "points": [
+     {
+      "marks": 3,
+      "text": "States pressure = force / area and divides 200 by 0.5"
+     },
+     {
+      "marks": 3,
+      "text": "Gives a pressure of 400 Pa with unit"
+     }
+    ]
+   },
+   "marks": 6,
+   "prompt": "A crate of weight 200 N rests on a face of area 0.5 square metres. Calculate the pressure on the ground."
+  },
+  {
+   "blueprintRow": 0,
+   "commandWord": "Calculate",
+   "markScheme": {
+    "points": [
+     {
+      "marks": 2,
+      "text": "States moment = force x distance from the pivot and multiplies 60 by 0.5"
+     },
+     {
+      "marks": 2,
+      "text": "Gives a moment of 30 N·m with unit"
+     }
+    ]
+   },
+   "marks": 4,
+   "prompt": "A weight of 60 N sits 0.5 m from a pivot. Calculate its moment."
+  },
+  {
+   "blueprintRow": 1,
+   "commandWord": "Calculate",
+   "markScheme": {
+    "points": [
+     {
+      "marks": 3,
+      "text": "States speed = distance / time and divides 100 by 20"
+     },
+     {
+      "marks": 3,
+      "text": "Gives 5 m/s and states a direction must be given for a velocity"
+     }
+    ]
+   },
+   "marks": 6,
+   "prompt": "An athlete sprints 100 metres in 20 seconds. Calculate her speed, and state the one extra fact that turns that speed into a velocity."
+  },
+  {
+   "blueprintRow": 1,
+   "commandWord": "Explain",
+   "markScheme": {
+    "points": [
+     {
+      "marks": 2,
+      "text": "States the height of the line is the velocity, so flat at 12 m/s means the velocity stays at 12 m/s"
+     },
+     {
+      "marks": 2,
+      "text": "States a constant velocity means the object keeps moving at the same speed, not that it has stopped"
+     }
+    ]
+   },
+   "marks": 4,
+   "prompt": "A velocity-time graph runs flat at 12 m/s for ten seconds. Explain why the object has not stopped."
+  }
+ ],
+ "level": "secondary",
+ "moderation": {
+  "state": "unreviewed"
+ },
+ "review": null,
+ "rubric": {
+  "criteria": [
+   {
+    "levels": [
+     {
+      "descriptor": "Explanations chain force, moment and graph readings to the answer in order, with each step justified by a named net-force, moment or gradient rule.",
+      "label": "Secure"
+     },
+     {
+      "descriptor": "Explanations are broadly sound but one link between the forces or the graph and the answer is asserted rather than justified.",
+      "label": "Developing"
+     },
+     {
+      "descriptor": "Answers state numbers or force names without connecting them into an explanation.",
+      "label": "Beginning"
+     }
+    ],
+    "name": "Forces and motion reasoning"
+   }
+  ]
+ },
+ "subject": "science",
+ "title": "Forces and Motion Unit Test",
+ "topics": [
+  "secondary-physics-forces",
+  "secondary-physics-kinematics"
+ ],
+ "totalMarks": 20,
+ "unitTitle": "Forces and motion"
+}

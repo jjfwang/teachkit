@@ -1,0 +1,44 @@
+{
+ "commonErrors": [
+  {
+   "example": "A learner writes on the worksheet that standing on tiptoes leaves the pressure under her feet unchanged, picking the statement that the same weight always gives the same pressure.",
+   "fixIt": {
+    "corrected": "Corrected working: pressure is force over area, so the same force spread over the smaller tiptoe area gives a higher pressure.",
+    "prompt": "Fix it: say what happens to the area on tiptoes and what that does to the pressure when the force stays the same."
+   },
+   "misconception": "The same push gives the same pressure whether you stand flat or on tiptoes."
+  },
+  {
+   "example": "On the exit ticket, a learner answers that the pressure under her feet stays the same when she stands on tiptoes instead of flat feet.",
+   "fixIt": {
+    "corrected": "Corrected check: the force is unchanged but the area is smaller on tiptoes, so the pressure is higher - the same force over a smaller area presses harder.",
+    "prompt": "Fix it: give the one-sentence correction for the claim that the same push gives the same pressure flat or on tiptoes."
+   },
+   "misconception": "The same push gives the same pressure whether you stand flat or on tiptoes."
+  }
+ ],
+ "level": "secondary",
+ "modelAnswers": [
+  {
+   "answer": "30 N·m, from 60 x 0.5 = 30.",
+   "creditPoints": [],
+   "question": "A weight of 60 N sits 0.5 m from a pivot. Calculate its moment."
+  },
+  {
+   "answer": "30 N·m.",
+   "creditPoints": [],
+   "question": "A 30 N weight balances a beam when it sits 1.0 m from the pivot. What moment does it make?"
+  }
+ ],
+ "nextSteps": [
+  "Reteach the trap with the crate tipping onto its narrow edge, landing that pressure is force over area and the same force on a smaller area presses harder.",
+  "Practise the check from the teacher script - keep the force fixed and change only the area: 200 newtons over 0.5 square metres, then over 0.05 square metres."
+ ],
+ "strengths": [
+  "Most of the class can calculate a moment as force times distance, such as reading the 60 newtons at 0.5 metres on the worksheet as a moment of 30 newton-metres.",
+  "The class can find a net force by subtracting friction from the push, and can read a balance from matching moments on the two sides of a beam."
+ ],
+ "subject": "science",
+ "title": "Forces: friction, moments and pressure",
+ "topic": "phys-forces"
+}
