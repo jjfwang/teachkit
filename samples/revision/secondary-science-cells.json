@@ -1,0 +1,116 @@
+{
+  "flashcards": [
+    {
+      "back": "The smallest unit of life; every living thing is made of one or more cells, each carrying the structures it needs to stay alive.",
+      "front": "Cell",
+      "source": "definition"
+    },
+    {
+      "back": "A tough outer layer found in plant cells only. It gives the cell its shape and strength but is fully permeable.",
+      "front": "Cell wall",
+      "source": "definition"
+    },
+    {
+      "back": "The thin layer around every cell that controls what enters and leaves. It is selectively permeable.",
+      "front": "Cell membrane",
+      "source": "definition"
+    },
+    {
+      "back": "Letting some substances through while keeping others out - the membrane chooses, like a gatekeeper.",
+      "front": "Selectively permeable",
+      "source": "definition"
+    },
+    {
+      "back": "The control centre of the cell, holding the instructions that run everything the cell does.",
+      "front": "Nucleus",
+      "source": "definition"
+    },
+    {
+      "back": "The plant-only structure that traps light energy to make food by photosynthesis.",
+      "front": "Chloroplast",
+      "source": "definition"
+    },
+    {
+      "back": "A fluid-filled space. In plant cells it is large and permanent; filled with water it pushes the cell firm.",
+      "front": "Vacuole",
+      "source": "definition"
+    },
+    {
+      "back": "The structure that releases energy from food, in both plant and animal cells.",
+      "front": "Mitochondrion",
+      "source": "definition"
+    },
+    {
+      "back": "The jelly-like substance inside the cell where most of its work happens.",
+      "front": "Cytoplasm",
+      "source": "definition"
+    },
+    {
+      "back": "A plant cell swollen firm because its full vacuole pushes the membrane against the wall.",
+      "front": "Turgid",
+      "source": "definition"
+    },
+    {
+      "back": "A group of similar cells working together at the same job, such as leaf tissue.",
+      "front": "Tissue",
+      "source": "definition"
+    },
+    {
+      "back": "A structure made of several tissues working together, such as a leaf or a heart.",
+      "front": "Organ",
+      "source": "definition"
+    },
+    {
+      "back": "A group of organs working together, such as the shoot system or the circulatory system.",
+      "front": "System",
+      "source": "definition"
+    },
+    {
+      "back": "The slip: A wall feels like protection, so the membrane is read as a barrier that stops everything. The fix: The membrane is selectively permeable: it lets some things through and keeps others out. In class, replay the gatekeeper scene: the food particle crossing in is the proof - if the membrane blocked everything, the cell would take in no food and remove no waste, and it would die.",
+      "front": "The cell membrane is a solid wall that blocks everything from entering or leaving.",
+      "source": "trap"
+    },
+    {
+      "back": "The membrane is selectively permeable: food and oxygen cross in, waste crosses out, and some things are kept out",
+      "front": "A student says nothing can enter or leave a cell because its membrane is a solid wall. What is the best correction?",
+      "source": "quiz-bank"
+    },
+    {
+      "back": "Cell, tissue, organ, system.",
+      "front": "Put these in order from smallest to largest: organ, cell, system, tissue.",
+      "source": "quiz-bank"
+    }
+  ],
+  "level": "secondary",
+  "practiceSets": [
+    {
+      "dayOffset": 1,
+      "items": [
+        {
+          "answer": "The membrane is selectively permeable: food and oxygen cross in, waste crosses out, and some things are kept out",
+          "prompt": "A student says nothing can enter or leave a cell because its membrane is a solid wall. What is the best correction?"
+        },
+        {
+          "answer": "The membrane is selectively permeable: it lets some things through and keeps others out",
+          "prompt": "Which statement about the cell membrane is correct?"
+        }
+      ]
+    },
+    {
+      "dayOffset": 3,
+      "items": [
+        {
+          "answer": "Water fills the vacuole, which pushes the cell contents and membrane hard against the cell wall. The cell is turgid and firm, so the plant stands. Without water the vacuole shrinks, the push fades, cells go flaccid and the plant wilts.",
+          "prompt": "Explain why a plant stands up straight when it has plenty of water, and why it wilts without water."
+        },
+        {
+          "answer": "It means the membrane chooses what crosses it: some substances are let through while others are kept out.",
+          "prompt": "In one sentence, explain what selectively permeable means for a cell membrane."
+        }
+      ]
+    }
+  ],
+  "subject": "science",
+  "title": "Cells: structure and organisation",
+  "topic": "bio-cells"
+}

@@ -1,0 +1,151 @@
+{
+  "level": "secondary",
+  "subject": "science",
+  "templates": [
+    {
+      "kind": "flow",
+      "slots": [
+        {
+          "entries": [
+            "A plant cell, labelled - wall outside, membrane inside it, then nucleus, chloroplast and the large vacuole: the full plant kit."
+          ],
+          "label": "Plant cell",
+          "studentPrompt": "Explain this step in your own words."
+        },
+        {
+          "entries": [
+            "An animal cell, labelled - membrane, nucleus and mitochondrion only: no wall, no chloroplast, no large vacuole."
+          ],
+          "label": "Animal cell",
+          "studentPrompt": "Explain this step in your own words."
+        },
+        {
+          "entries": [
+            "The membrane is the gatekeeper - food crosses in, waste crosses out, and a harmful particle is refused: the membrane chooses."
+          ],
+          "label": "Gatekeeper",
+          "studentPrompt": "Explain this step in your own words."
+        },
+        {
+          "entries": [
+            "Two specialists: nucleus and chloroplast - the nucleus controls the cell with its instructions, the chloroplast traps light to make food."
+          ],
+          "label": "Specialists",
+          "studentPrompt": "Explain this step in your own words."
+        },
+        {
+          "entries": [
+            "Why plants stand up straight - a full vacuole pushes the membrane against the wall so the cell is turgid; lose water and it goes flaccid."
+          ],
+          "label": "Turgor",
+          "studentPrompt": "Explain this step in your own words."
+        },
+        {
+          "entries": [
+            "Cells team up: the organisation ladder - cell to tissue to organ to system, as in leaf cell to leaf tissue to leaf to shoot system."
+          ],
+          "label": "Ladder",
+          "studentPrompt": "Explain this step in your own words."
+        }
+      ]
+    },
+    {
+      "kind": "frayer",
+      "slots": [
+        {
+          "entries": [
+            "The smallest unit of life; every living thing is made of one or more cells, each carrying the structures it needs to stay alive."
+          ],
+          "label": "Cell",
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "entries": [
+            "A tough outer layer found in plant cells only. It gives the cell its shape and strength but is fully permeable."
+          ],
+          "label": "Cell wall",
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "entries": [
+            "The thin layer around every cell that controls what enters and leaves. It is selectively permeable."
+          ],
+          "label": "Cell membrane",
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "entries": [
+            "Letting some substances through while keeping others out - the membrane chooses, like a gatekeeper."
+          ],
+          "label": "Selectively permeable",
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "entries": [
+            "The control centre of the cell, holding the instructions that run everything the cell does."
+          ],
+          "label": "Nucleus",
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "entries": [
+            "The plant-only structure that traps light energy to make food by photosynthesis."
+          ],
+          "label": "Chloroplast",
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "entries": [
+            "A fluid-filled space. In plant cells it is large and permanent; filled with water it pushes the cell firm."
+          ],
+          "label": "Vacuole",
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "entries": [
+            "The structure that releases energy from food, in both plant and animal cells."
+          ],
+          "label": "Mitochondrion",
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "entries": [
+            "The jelly-like substance inside the cell where most of its work happens."
+          ],
+          "label": "Cytoplasm",
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "entries": [
+            "A plant cell swollen firm because its full vacuole pushes the membrane against the wall."
+          ],
+          "label": "Turgid",
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "entries": [
+            "A group of similar cells working together at the same job, such as leaf tissue."
+          ],
+          "label": "Tissue",
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "entries": [
+            "A structure made of several tissues working together, such as a leaf or a heart."
+          ],
+          "label": "Organ",
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "entries": [
+            "A group of organs working together, such as the shoot system or the circulatory system."
+          ],
+          "label": "System",
+          "studentPrompt": "Give your own example of this term."
+        }
+      ]
+    }
+  ],
+  "title": "Cells: structure and organisation",
+  "topic": "bio-cells"
+}
