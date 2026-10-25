@@ -1,15 +1,15 @@
 {
  "items": [
   {
-   "answer": "A mole fixes the count of particles - the molar mass decides how heavy that count is",
+   "answer": "36 g",
    "choices": [
-    "The student is right - one mole of anything weighs the same",
-    "A mole fixes the count of particles - the molar mass decides how heavy that count is",
-    "One mole of oxygen weighs 12 g, the same as one mole of carbon",
-    "Both weigh 6.02 × 10²³ g"
+    "12 g",
+    "36 g",
+    "18 g",
+    "2 g"
    ],
    "misconceptionCode": "One mole of anything weighs the same.",
-   "prompt": "A student says one mole of carbon and one mole of oxygen must weigh the same because both are one mole. What is the best correction?"
+   "prompt": "What is the mass of 2 mol of water? (Molar mass of water = 18 g/mol)"
   },
   {
    "answer": "Hydrogen weighs 1 g and oxygen weighs 16 g",
