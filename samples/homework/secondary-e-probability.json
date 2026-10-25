@@ -1,0 +1,45 @@
+{
+ "level": "secondary",
+ "questions": [
+  {
+   "choices": [
+    {
+     "text": "Correct - a streak has to balance out straight away"
+    },
+    {
+     "text": "Wrong - heads is now more likely because it is on a winning run"
+    },
+    {
+     "correct": true,
+     "text": "Wrong - the coin has no memory, so the next toss is still 1/2 tails"
+    },
+    {
+     "text": "Wrong - the next toss cannot be tails after three heads"
+    }
+   ],
+   "explanation": "The trap is: After three heads, tails is due. A streak feels like it must balance out. Each toss starts fresh: heads and tails stay equally likely, so P(tails) is still 1/2.",
+   "id": "q2",
+   "kind": "multiple-choice",
+   "misconception": "After three heads, tails is due.",
+   "prompt": "A fair coin has landed heads three times in a row. A classmate says tails must be more likely next because it is overdue. Which statement is correct?"
+  },
+  {
+   "answer": "3/5 = 0.6 = 60%.",
+   "explanation": "Scene s3: P(event) = favourable / total = 3 / 5, and scene s2 shows the same value in its three forms.",
+   "id": "q3",
+   "kind": "short-answer",
+   "prompt": "A bag contains 5 counters, 3 of them red. Write P(red) as a fraction, a decimal and a percentage."
+  },
+  {
+   "answer": "Heads-heads, heads-tails, tails-heads, tails-tails.",
+   "explanation": "Scene s4: every outcome gets its own cell as the grid draws itself - two choices for the first toss times two for the second gives four outcomes.",
+   "id": "q4",
+   "kind": "short-answer",
+   "prompt": "A coin is tossed twice. List all four outcomes in the possibility table."
+  }
+ ],
+ "subject": "math",
+ "title": "E-Math probability: single and combined events",
+ "topic": "e-probability",
+ "variant": "homework"
+}
