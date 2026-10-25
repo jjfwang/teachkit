@@ -1,0 +1,88 @@
+{
+  "level": "secondary",
+  "subject": "science",
+  "templates": [
+    {
+      "kind": "flow",
+      "slots": [
+        {
+          "entries": [
+            "A mole is a counting word - one dozen is 12 eggs and one mole is 6.02 × 10²³ particles, far too many to count one by one, so we weigh moles instead of counting them."
+          ],
+          "label": "A mole is a counting word",
+          "studentPrompt": "Explain this step in your own words."
+        },
+        {
+          "entries": [
+            "Mass to moles - the mass of one mole of carbon-12 is 12 g, its molar mass, so weighing 12 g of carbon gives exactly one mole with n = m / M."
+          ],
+          "label": "Mass to moles",
+          "studentPrompt": "Explain this step in your own words."
+        },
+        {
+          "entries": [
+            "Mole ratios - balanced equations count moles, not grams: 2 H₂ + O₂ → 2 H₂O gives the fixed 2 : 1 : 2 ratio, and doubling one reactant doubles the others."
+          ],
+          "label": "Mole ratios",
+          "studentPrompt": "Explain this step in your own words."
+        },
+        {
+          "entries": [
+            "A common mistake: one mole of everything weighs the same - one mole always has the same number of particles but a different mass, because each substance has its own molar mass."
+          ],
+          "label": "A common mistake",
+          "studentPrompt": "Explain this step in your own words."
+        }
+      ]
+    },
+    {
+      "kind": "frayer",
+      "slots": [
+        {
+          "entries": [
+            "A counting word for 6.02 × 10²³ particles, just as a dozen is a counting word for 12 items. Chemists weigh moles instead of counting particles one by one."
+          ],
+          "label": "Mole",
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "entries": [
+            "The mass of one mole of a substance, in grams per mole (g/mol). Carbon-12 is 12 g/mol, hydrogen is 1 g/mol and oxygen is 16 g/mol."
+          ],
+          "label": "Molar mass",
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "entries": [
+            "The number of particles in one mole: 6.02 × 10²³. Every mole of any substance contains this many particles."
+          ],
+          "label": "Avogadro constant",
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "entries": [
+            "How heavy a sample is, in grams. Mass links to moles through mass = moles x molar mass, or n = m / M."
+          ],
+          "label": "Mass",
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "entries": [
+            "A single atom, molecule or ion being counted. A mole counts particles without saying which kind - the kind decides the molar mass."
+          ],
+          "label": "Particle",
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "entries": [
+            "The ratio of moles in a balanced equation, such as 2 : 1 : 2 for 2 H₂ + O₂ → 2 H₂O. It scales as a whole when amounts change."
+          ],
+          "label": "Mole ratio",
+          "studentPrompt": "Give your own example of this term."
+        }
+      ]
+    }
+  ],
+  "title": "The mole: counting atoms by weighing",
+  "topic": "chem-mole"
+}

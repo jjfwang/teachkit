@@ -1,0 +1,81 @@
+{
+  "flashcards": [
+    {
+      "back": "A counting word for 6.02 × 10²³ particles, just as a dozen is a counting word for 12 items. Chemists weigh moles instead of counting particles one by one.",
+      "front": "Mole",
+      "source": "definition"
+    },
+    {
+      "back": "The mass of one mole of a substance, in grams per mole (g/mol). Carbon-12 is 12 g/mol, hydrogen is 1 g/mol and oxygen is 16 g/mol.",
+      "front": "Molar mass",
+      "source": "definition"
+    },
+    {
+      "back": "The number of particles in one mole: 6.02 × 10²³. Every mole of any substance contains this many particles.",
+      "front": "Avogadro constant",
+      "source": "definition"
+    },
+    {
+      "back": "How heavy a sample is, in grams. Mass links to moles through mass = moles x molar mass, or n = m / M.",
+      "front": "Mass",
+      "source": "definition"
+    },
+    {
+      "back": "A single atom, molecule or ion being counted. A mole counts particles without saying which kind - the kind decides the molar mass.",
+      "front": "Particle",
+      "source": "definition"
+    },
+    {
+      "back": "The ratio of moles in a balanced equation, such as 2 : 1 : 2 for 2 H₂ + O₂ → 2 H₂O. It scales as a whole when amounts change.",
+      "front": "Mole ratio",
+      "source": "definition"
+    },
+    {
+      "back": "The slip: A mole feels like a fixed bag of the same size, so every mole feels equally heavy. The fix: Mass = moles x molar mass: one mole of hydrogen is 1 g but one mole of oxygen is 16 g. A mole fixes the count of particles - the molar mass decides how heavy that count is.",
+      "front": "One mole of anything weighs the same.",
+      "source": "trap"
+    },
+    {
+      "back": "Hydrogen weighs 1 g and oxygen weighs 16 g",
+      "front": "One mole of hydrogen atoms and one mole of oxygen atoms are compared. What is true about their masses?",
+      "source": "quiz-bank"
+    },
+    {
+      "back": "6.02 × 10²³ particles",
+      "front": "How many particles are there in one mole of any substance?",
+      "source": "quiz-bank"
+    }
+  ],
+  "level": "secondary",
+  "practiceSets": [
+    {
+      "dayOffset": 1,
+      "items": [
+        {
+          "answer": "36 g",
+          "prompt": "What is the mass of 2 mol of water? (Molar mass of water = 18 g/mol)"
+        },
+        {
+          "answer": "1 mol of oxygen, because the mole ratio in 2 H₂ + O₂ → 2 H₂O is 2 : 1 : 2, so 2 mol of hydrogen reacts with half as many moles of oxygen.",
+          "prompt": "In the reaction 2 H₂ + O₂ → 2 H₂O, how many moles of oxygen react with 2 mol of hydrogen? Explain your answer."
+        }
+      ]
+    },
+    {
+      "dayOffset": 3,
+      "items": [
+        {
+          "answer": "2 mol of oxygen, making 4 mol of water. The ratio in 2 H₂ + O₂ → 2 H₂O is 2 : 1 : 2, so doubling the hydrogen from 2 mol to 4 mol doubles the oxygen from 1 mol to 2 mol and the water from 2 mol to 4 mol.",
+          "prompt": "For the reaction 2 H₂ + O₂ → 2 H₂O, how many moles of oxygen are needed to react with 4 mol of hydrogen, and how many moles of water are made? Explain using the mole ratio."
+        },
+        {
+          "answer": "Hydrogen weighs 1 g and oxygen weighs 16 g",
+          "prompt": "One mole of hydrogen atoms and one mole of oxygen atoms are compared. What is true about their masses?"
+        }
+      ]
+    }
+  ],
+  "subject": "science",
+  "title": "The mole: counting atoms by weighing",
+  "topic": "chem-mole"
+}
