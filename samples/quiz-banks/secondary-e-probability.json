@@ -1,0 +1,51 @@
+{
+  "items": [
+    {
+      "answer": "Wrong - the coin has no memory, so the next toss is still 1/2 tails",
+      "choices": [
+        "Correct - a streak has to balance out straight away",
+        "Wrong - heads is now more likely because it is on a winning run",
+        "Wrong - the coin has no memory, so the next toss is still 1/2 tails",
+        "Wrong - the next toss cannot be tails after three heads"
+      ],
+      "misconceptionCode": "After three heads, tails is due.",
+      "prompt": "A fair coin has landed heads three times in a row. A classmate says tails must be more likely next because it is overdue. Which statement is correct?"
+    },
+    {
+      "answer": "1",
+      "choices": [
+        "0",
+        "1/2",
+        "3/5",
+        "1"
+      ],
+      "prompt": "A spinner is certain to land on red. Where does its probability sit on the probability scale?"
+    },
+    {
+      "answer": "3/5 = 0.6 = 60%.",
+      "prompt": "A bag contains 5 counters, 3 of them red. Write P(red) as a fraction, a decimal and a percentage."
+    },
+    {
+      "answer": "Heads-heads, heads-tails, tails-heads, tails-tails.",
+      "prompt": "A coin is tossed twice. List all four outcomes in the possibility table."
+    },
+    {
+      "answer": "2",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "prompt": "In the two-toss possibility table, how many of the four equally likely outcomes are exactly one head and one tail, in either order?"
+    },
+    {
+      "answer": "1/4.",
+      "prompt": "What is the probability of tails followed by tails when a fair coin is tossed twice?"
+    }
+  ],
+  "level": "secondary",
+  "subject": "math",
+  "title": "E-Math probability: single and combined events",
+  "topic": "e-probability"
+}

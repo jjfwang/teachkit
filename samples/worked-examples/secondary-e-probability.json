@@ -1,0 +1,49 @@
+{
+  "complete": {
+    "problem": "A bag holds 5 counters: 3 red and 2 blue. What is P(red), written as a fraction, a decimal and a percentage, and what is P(blue)?",
+    "selfExplanation": "Explain why the probabilities of red and blue must add to 1, naming the total each fraction is taken over.",
+    "steps": [
+      {
+        "annotation": "A number between 0 and 1 that measures how likely an event is: 0 means impossible and 1 means certain.",
+        "text": "Step 1: P(red) = favourable / total = 3 / 5."
+      },
+      {
+        "annotation": "One value, three forms: the fair coin's 1/2 is the same value as 0.5 and 50% - one probability, three ways to write it.",
+        "text": "Step 2: In the other two forms, 3 / 5 = 0.6 = 60%."
+      },
+      {
+        "annotation": "A set of outcomes we are interested in, such as throwing exactly one head in two tosses.",
+        "text": "Step 3: Check the trap: P(blue) = 2 / 5, and 3 / 5 + 2 / 5 = 1, because exactly one colour must come out."
+      }
+    ]
+  },
+  "faded": {
+    "problem": "A bag contains 5 counters, 3 of them red. Write P(red) as a fraction, a decimal and a percentage.",
+    "selfExplanation": "The first step is shown. Say how you build the fraction from the two counts, and how you convert it to a decimal and a percentage.",
+    "steps": [
+      {
+        "annotation": "P(event) = favourable over total: with five outcomes and three favourable, the gold dots gather 3 into the favourable chip and 5 into the total chip, building 3/5.",
+        "text": "Step 1: the favourable count is 3 and the total count is 5.",
+        "withheld": false
+      },
+      {
+        "annotation": "One possible result of a trial, such as heads on a single coin toss.",
+        "text": "Step 2: P(red) = favourable / total = 3 / 5.",
+        "withheld": true
+      },
+      {
+        "annotation": "The probability scale: the marker slides from 0 (impossible) through 1/2 (an even chance) to 1 (certain), and every probability sits somewhere on this line.",
+        "text": "Step 3: 3 / 5 = 0.6 = 60%.",
+        "withheld": true
+      }
+    ]
+  },
+  "level": "secondary",
+  "paired": {
+    "problem": "Using the two-toss table, what is the probability of heads followed by heads?",
+    "solution": "1/4: each outcome is equally likely, so heads-then-heads is 1/2 times 1/2, which is 1/4."
+  },
+  "subject": "math",
+  "title": "E-Math probability: single and combined events",
+  "topic": "e-probability"
+}
