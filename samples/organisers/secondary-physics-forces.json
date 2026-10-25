@@ -1,0 +1,88 @@
+{
+  "level": "secondary",
+  "subject": "science",
+  "templates": [
+    {
+      "kind": "flow",
+      "slots": [
+        {
+          "entries": [
+            "Friction opposes relative motion: a 60-newton push drives the block right, a 40-newton friction arrow grows at the contact against the slide, and the net 20 newtons to the right keeps the block sliding."
+          ],
+          "label": "Friction",
+          "studentPrompt": "Explain this step in your own words."
+        },
+        {
+          "entries": [
+            "Moments: 60 newtons at 0.5 metres makes 30 newton-metres on the left; 30 newtons at 0.75 metres makes only 22.5 on the right, so the beam tips - then the right weight slides to 1.0 metre, its moment rises to 30, and the beam balances."
+          ],
+          "label": "Moments",
+          "studentPrompt": "Explain this step in your own words."
+        },
+        {
+          "entries": [
+            "Pressure: a 200-newton crate on a 0.5-square-metre face gives 400 pascals; tipped onto a 0.05-square-metre edge the same force gives 4000 pascals - one tenth the area, ten times the pressure."
+          ],
+          "label": "Pressure",
+          "studentPrompt": "Explain this step in your own words."
+        },
+        {
+          "entries": [
+            "Check the thinking: the driving wheel pushes backward on the road at its contact patch, so friction pushes the car forward - friction opposes the relative slide, not the motion."
+          ],
+          "label": "Check the thinking",
+          "studentPrompt": "Explain this step in your own words."
+        }
+      ]
+    },
+    {
+      "kind": "frayer",
+      "slots": [
+        {
+          "entries": [
+            "The force between two surfaces in contact that opposes their relative slide - which is why it can point forward on a driving wheel."
+          ],
+          "label": "Friction",
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "entries": [
+            "The single force left after opposing forces are combined: a 60 N push against 40 N of friction leaves a net 20 N."
+          ],
+          "label": "Net force",
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "entries": [
+            "The turning effect of a force, calculated as force times distance from the pivot, measured in newton-metres."
+          ],
+          "label": "Moment",
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "entries": [
+            "The fixed point a beam or lever turns around; every moment distance is measured from it."
+          ],
+          "label": "Pivot",
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "entries": [
+            "Force spread over an area, calculated as force divided by area, measured in pascals."
+          ],
+          "label": "Pressure",
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "entries": [
+            "The unit of pressure: one pascal is one newton spread over one square metre."
+          ],
+          "label": "Pascal",
+          "studentPrompt": "Give your own example of this term."
+        }
+      ]
+    }
+  ],
+  "title": "Forces: friction, moments and pressure",
+  "topic": "phys-forces"
+}

@@ -1,0 +1,120 @@
+{
+  "level": "secondary",
+  "sets": [
+    {
+      "cloze": [
+        {
+          "answers": [
+            "Friction"
+          ],
+          "text": "The force between two surfaces in contact that opposes their relative slide is ___."
+        },
+        {
+          "answers": [
+            "Moment",
+            "Pivot"
+          ],
+          "text": "___ is force times distance from the ___."
+        }
+      ],
+      "frames": [
+        "___ opposes relative slide between surfaces in contact.",
+        "___ is force times distance from the pivot.",
+        "The ___ is the fixed point a beam turns around."
+      ],
+      "level": "full",
+      "starters": [
+        "Friction is...",
+        "Moment is...",
+        "Pivot is..."
+      ],
+      "wordBank": [
+        {
+          "gloss": "the force between two surfaces in contact that opposes their relative slide",
+          "term": "Friction"
+        },
+        {
+          "gloss": "the single force left after opposing forces are combined",
+          "term": "Net force"
+        },
+        {
+          "gloss": "force times distance from the pivot",
+          "term": "Moment"
+        },
+        {
+          "gloss": "the fixed point a beam or lever turns around",
+          "term": "Pivot"
+        }
+      ]
+    },
+    {
+      "cloze": [
+        {
+          "answers": [
+            "Pressure"
+          ],
+          "text": "Force spread over an area is ___."
+        },
+        {
+          "answers": [
+            "Pascal"
+          ],
+          "text": "The unit of pressure is the ___."
+        }
+      ],
+      "frames": [
+        "___ is force divided by area.",
+        "The ___ is the unit of pressure."
+      ],
+      "level": "partial",
+      "starters": [
+        "Pressure is...",
+        "A pascal is..."
+      ],
+      "wordBank": [
+        {
+          "gloss": "force spread over an area",
+          "term": "Pressure"
+        },
+        {
+          "gloss": "the unit of pressure",
+          "term": "Pascal"
+        },
+        {
+          "gloss": "the force between two surfaces in contact that opposes their relative slide",
+          "term": "Friction"
+        }
+      ]
+    },
+    {
+      "cloze": [
+        {
+          "answers": [
+            "Pascal"
+          ],
+          "text": "One newton spread over one square metre is one ___."
+        }
+      ],
+      "frames": [
+        "___ is one newton over one square metre."
+      ],
+      "level": "minimal",
+      "starters": [
+        "A pascal is..."
+      ],
+      "wordBank": [
+        {
+          "gloss": "one newton spread over one square metre",
+          "term": "Pascal"
+        },
+        {
+          "gloss": "force spread over an area",
+          "term": "Pressure"
+        }
+      ]
+    }
+  ],
+  "subject": "science",
+  "title": "Forces: friction, moments and pressure",
+  "topic": "phys-forces"
+}
