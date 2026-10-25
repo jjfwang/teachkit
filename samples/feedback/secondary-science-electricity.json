@@ -1,0 +1,44 @@
+{
+ "commonErrors": [
+  {
+   "example": "A learner writes on the worksheet that the ammeter after the bulb must read less, because the bulb has used some current up.",
+   "fixIt": {
+    "corrected": "Corrected working: current is not used up - an ammeter reads the same 0.5 amps on both sides of the bulb.",
+    "prompt": "Fix it: state what an ammeter after the bulb reads in a series loop and say what the bulb actually changes."
+   },
+   "misconception": "The bulb uses up the current."
+  },
+  {
+   "example": "On the exit ticket, a learner answers that the ammeter just after the bulb reads less than 0.5 A.",
+   "fixIt": {
+    "corrected": "Corrected check: the bulb changes electrical energy into light and heat, but no current disappears, so both ammeters read 0.5 A.",
+    "prompt": "Fix it: choose the correct second ammeter reading and give the reason it matches the first."
+   },
+   "misconception": "The bulb uses up the current."
+  }
+ ],
+ "level": "secondary",
+ "modelAnswers": [
+  {
+   "answer": "3 A, from I = V / R = 12 / 4 = 3.",
+   "creditPoints": [],
+   "question": "A 12 V battery is connected across a resistor of 4 ohms. Calculate the current, showing the Ohm's law step."
+  },
+  {
+   "answer": "1.5 A, from I = V / R = 6 / 4 = 1.5; halving the voltage halves the current when the resistance is fixed.",
+   "creditPoints": [],
+   "question": "The battery in question 3 is replaced by a 6 V battery, with the same 4 ohm resistor. Calculate the new current and state the pattern."
+  }
+ ],
+ "nextSteps": [
+  "Reteach the trap, landing that the bulb changes electrical energy into light and heat but no current disappears.",
+  "Practise the check from the worked example - halving the battery to 6 V halves the current without changing the resistance."
+ ],
+ "strengths": [
+  "Most of the class can describe the circuit as one unbroken loop and state the direction of conventional current.",
+  "The class can use Ohm's law to calculate current and explain why the series current is identical everywhere."
+ ],
+ "subject": "science",
+ "title": "Electricity: circuits, current and Ohm's law",
+ "topic": "phys-electricity"
+}

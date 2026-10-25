@@ -42,7 +42,8 @@ const STEMS = [
   'primary-science-photosynthesis',
   'secondary-e-trigonometry',
   'secondary-e-mensuration',
-  'secondary-e-probability'
+  'secondary-e-probability',
+  'secondary-science-electricity'
 ];
 
 function load(rel) {

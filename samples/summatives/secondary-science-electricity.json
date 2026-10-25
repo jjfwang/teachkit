@@ -1,0 +1,125 @@
+{
+ "blueprint": [
+  {
+   "assessmentObjective": "AO1 recall and apply",
+   "cognitiveLevel": "apply",
+   "marks": 10,
+   "outcomeCode": "S3-ELEC-APPLY"
+  },
+  {
+   "assessmentObjective": "AO2 reason and explain",
+   "cognitiveLevel": "reason",
+   "marks": 10,
+   "outcomeCode": "S3-ENER-REASON"
+  }
+ ],
+ "durationMinutes": 40,
+ "items": [
+  {
+   "blueprintRow": 0,
+   "commandWord": "Calculate",
+   "markScheme": {
+    "points": [
+     {
+      "marks": 2,
+      "text": "Rearranges Ohm's law to I = V / R before substituting"
+     },
+     {
+      "marks": 2,
+      "text": "Gives the current as 3 A from 12 / 4"
+     }
+    ]
+   },
+   "marks": 4,
+   "prompt": "A 12 V battery is connected across a resistor of 4 ohms. Calculate the current, showing the Ohm's law step."
+  },
+  {
+   "blueprintRow": 0,
+   "commandWord": "State",
+   "markScheme": {
+    "points": [
+     {
+      "marks": 3,
+      "text": "States the second ammeter also reads 0.5 A"
+     },
+     {
+      "marks": 3,
+      "text": "Explains that current is the same all around a series loop and is not used up by the bulb"
+     }
+    ]
+   },
+   "marks": 6,
+   "prompt": "An ammeter reads 0.5 A just before a bulb in a series circuit. What does an ammeter just after the bulb read, and why?"
+  },
+  {
+   "blueprintRow": 1,
+   "commandWord": "Calculate",
+   "markScheme": {
+    "points": [
+     {
+      "marks": 2,
+      "text": "Writes work done as force times distance, 50 x 4"
+     },
+     {
+      "marks": 2,
+      "text": "Gives the work done as 200 J"
+     }
+    ]
+   },
+   "marks": 4,
+   "prompt": "A force of 50 N pushes a crate 4 m in the direction of the force. How much work is done?"
+  },
+  {
+   "blueprintRow": 1,
+   "commandWord": "Calculate",
+   "markScheme": {
+    "points": [
+     {
+      "marks": 3,
+      "text": "Writes power as work done over time, 200 / 2"
+     },
+     {
+      "marks": 3,
+      "text": "Gives the power as 100 W"
+     }
+    ]
+   },
+   "marks": 6,
+   "prompt": "The 200 J of work from the crate push is done in 2 s. Calculate the power."
+  }
+ ],
+ "level": "secondary",
+ "moderation": {
+  "state": "unreviewed"
+ },
+ "review": null,
+ "rubric": {
+  "criteria": [
+   {
+    "levels": [
+     {
+      "descriptor": "Working names the law or relation first, then applies it in a justified sequence.",
+      "label": "Secure"
+     },
+     {
+      "descriptor": "The method is broadly sound but a rearrangement or unit step is asserted without justification.",
+      "label": "Developing"
+     },
+     {
+      "descriptor": "Formulae are written without naming what each symbol represents.",
+      "label": "Beginning"
+     }
+    ],
+    "name": "Electricity and energy reasoning"
+   }
+  ]
+ },
+ "subject": "science",
+ "title": "Electricity and Energy Unit Test",
+ "topics": [
+  "secondary-science-electricity",
+  "secondary-physics-energy"
+ ],
+ "totalMarks": 20,
+ "unitTitle": "Circuits, current, Ohm's law and energy"
+}
