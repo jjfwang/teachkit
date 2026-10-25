@@ -1,0 +1,51 @@
+{
+ "items": [
+  {
+   "answer": "Wrong - light is far faster, so the flash arrives first and the thunder follows",
+   "choices": [
+    "Correct - sound always reaches us before light",
+    "Wrong - thunder only seems slower because it lasts longer",
+    "Wrong - light is far faster, so the flash arrives first and the thunder follows",
+    "Wrong - light and sound travel at exactly the same speed"
+   ],
+   "misconceptionCode": "Sound travels faster than light.",
+   "prompt": "A classmate says: 'Sound travels faster than light, because the thunder is so loud.' Which statement is correct?"
+  },
+  {
+   "answer": "The lightning flash",
+   "choices": [
+    "The thunder, because sound is louder",
+    "The lightning flash",
+    "The thunder, because it lasts longer",
+    "Both arrive at exactly the same time"
+   ],
+   "prompt": "From a distant lightning strike, which reaches you first?"
+  },
+  {
+   "answer": "2 m: wavelength = v / f = 340 / 170 = 2 m.",
+   "prompt": "A sound wave travels at 340 m/s with frequency 170 Hz. Calculate its wavelength."
+  },
+  {
+   "answer": "v = f x wavelength = 5 x 3 = 15 m/s.",
+   "prompt": "A wave has frequency 5 Hz and wavelength 3 m. Calculate its speed and show your working."
+  },
+  {
+   "answer": "The particles vibrate back and forth along the direction of travel, bunching together and spreading apart in turn. The particles stay in place overall; the wave carries energy from place to place.",
+   "prompt": "Describe how the particles move in a longitudinal sound wave, and state what the wave itself carries."
+  },
+  {
+   "answer": "2 m",
+   "choices": [
+    "1 m",
+    "2 m",
+    "170 m",
+    "510 m"
+   ],
+   "prompt": "A sound wave in air travels at 340 m/s and vibrates at 170 Hz. What is its wavelength?"
+  }
+ ],
+ "level": "secondary",
+ "subject": "science",
+ "title": "Waves: light, sound and the wave equation",
+ "topic": "phys-waves"
+}
