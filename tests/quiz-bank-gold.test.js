@@ -52,7 +52,8 @@ const STEMS = [
   'secondary-science-chem-acids',
   'secondary-science-chem-atomic',
   'secondary-science-chem-bonding',
-  'secondary-science-chem-mole'
+  'secondary-science-chem-mole',
+  'secondary-physics-kinematics'
 ];
 
 function load(rel) {
