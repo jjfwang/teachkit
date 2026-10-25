@@ -1,0 +1,125 @@
+{
+ "blueprint": [
+  {
+   "assessmentObjective": "AO1 recall and apply",
+   "cognitiveLevel": "apply",
+   "marks": 10,
+   "outcomeCode": "S3-MOLE-APPLY"
+  },
+  {
+   "assessmentObjective": "AO2 reason and explain",
+   "cognitiveLevel": "reason",
+   "marks": 10,
+   "outcomeCode": "S3-BOND-REASON"
+  }
+ ],
+ "durationMinutes": 40,
+ "items": [
+  {
+   "blueprintRow": 0,
+   "commandWord": "Explain",
+   "markScheme": {
+    "points": [
+     {
+      "marks": 3,
+      "text": "States n = m / M with m = 36 g and M = 18 g/mol for water"
+     },
+     {
+      "marks": 3,
+      "text": "Divides 36 by 18 to give 2 mol of water"
+     }
+    ]
+   },
+   "marks": 6,
+   "prompt": "Calculate the number of moles in 36 g of water. (Molar mass of water = 18 g/mol) Explain your working using n = m / M."
+  },
+  {
+   "blueprintRow": 0,
+   "commandWord": "Calculate",
+   "markScheme": {
+    "points": [
+     {
+      "marks": 2,
+      "text": "States mass = moles x molar mass"
+     },
+     {
+      "marks": 2,
+      "text": "Multiplies 3 by 12 to give a mass of 36 g"
+     }
+    ]
+   },
+   "marks": 4,
+   "prompt": "Calculate the mass of 3 mol of carbon-12. (Molar mass of carbon-12 = 12 g/mol) Show your working."
+  },
+  {
+   "blueprintRow": 1,
+   "commandWord": "Explain",
+   "markScheme": {
+    "points": [
+     {
+      "marks": 3,
+      "text": "States each magnesium atom loses its 2 outer electrons and each oxygen atom gains 2 electrons"
+     },
+     {
+      "marks": 3,
+      "text": "Names the positive magnesium ion and the negative oxide ion, held in a giant ionic lattice"
+     }
+    ]
+   },
+   "marks": 6,
+   "prompt": "Magnesium has electron arrangement 2,8,2 and oxygen has 2,6. Explain, in terms of electron transfer, how magnesium oxide forms and name the ions made."
+  },
+  {
+   "blueprintRow": 1,
+   "commandWord": "Explain",
+   "markScheme": {
+    "points": [
+     {
+      "marks": 2,
+      "text": "States the ions are locked in place in the solid lattice so no charged particle can move"
+     },
+     {
+      "marks": 2,
+      "text": "States melting frees the ions to move and carry charge to the electrodes"
+     }
+    ]
+   },
+   "marks": 4,
+   "prompt": "Explain why solid sodium chloride does not conduct electricity but molten sodium chloride does."
+  }
+ ],
+ "level": "secondary",
+ "moderation": {
+  "state": "unreviewed"
+ },
+ "review": null,
+ "rubric": {
+  "criteria": [
+   {
+    "levels": [
+     {
+      "descriptor": "Explanations chain mole calculations and electron movement to the answer in order, with each step justified by a named formula, particle or structure.",
+      "label": "Secure"
+     },
+     {
+      "descriptor": "Explanations are broadly sound but one link between the calculation or the electrons and the answer is asserted rather than justified.",
+      "label": "Developing"
+     },
+     {
+      "descriptor": "Answers state numbers or bond types without connecting them into an explanation.",
+      "label": "Beginning"
+     }
+    ],
+    "name": "Mole and bonding reasoning"
+   }
+  ]
+ },
+ "subject": "science",
+ "title": "The Mole and Chemical Bonding Unit Test",
+ "topics": [
+  "secondary-science-chem-mole",
+  "secondary-science-chem-bonding"
+ ],
+ "totalMarks": 20,
+ "unitTitle": "The mole and chemical bonding"
+}
