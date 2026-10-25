@@ -1,0 +1,49 @@
+{
+ "complete": {
+  "problem": "Build sodium chloride step by step.",
+  "selfExplanation": "Explain how the electron transfer forms the two ions, and how the lattice gives the 1 to 1 ratio behind the formula NaCl.",
+  "steps": [
+   {
+    "annotation": "The attraction between oppositely charged ions, formed when one atom transfers outer electrons to another.",
+    "text": "Step 1 (s1): sodium (2,8,1) has one outer electron and chlorine (2,8,7) needs one, so the electron transfers: sodium forms a positive sodium ion with arrangement 2,8 and chlorine forms a negative chloride ion with arrangement 2,8,8."
+   },
+   {
+    "annotation": "A giant regular repeating pattern of particles. In an ionic compound every ion is surrounded by oppositely charged ions, with no separate molecules.",
+    "text": "Step 2 (s2): the ions attract each other in every direction and lock into a giant lattice where the ions alternate, so the ratio is one sodium to one chloride and the formula is NaCl."
+   },
+   {
+    "annotation": "A charged particle formed when an atom loses electrons (positive ion) or gains electrons (negative ion).",
+    "text": "Check the count: every sodium ion is surrounded by chloride ions and the pattern never breaks into pairs - that is the sign of a lattice, not molecules."
+   }
+  ]
+ },
+ "faded": {
+  "problem": "Magnesium has electron arrangement 2,8,2 and oxygen has 2,6. State the ions formed when they bond, and the type of bond.",
+  "selfExplanation": "The first step is shown. Say how the two outer electrons move, then name the ions and the bond type.",
+  "steps": [
+   {
+    "annotation": "A charged particle formed when an atom loses electrons (positive ion) or gains electrons (negative ion).",
+    "text": "Step 1: magnesium has electron arrangement 2,8,2, so it has 2 outer electrons to lose.",
+    "withheld": false
+   },
+   {
+    "annotation": "A strong answer moves the electrons first, then names the ions: losing electrons makes a positive ion, gaining makes a negative one. If you wrote that the atoms share electrons, that describes covalent bonding instead.",
+    "text": "Step 2: magnesium loses its 2 outer electrons to form a positive magnesium ion, and oxygen gains 2 electrons to form a negative oxide ion.",
+    "withheld": true
+   },
+   {
+    "annotation": "The slip: The formula NaCl looks like one joined unit, like the formulas of real molecules. The fix: Salt is a giant ionic lattice: NaCl just gives the ratio, there are no separate NaCl molecules. In class, draw one corner of the lattice and ask students to circle a single NaCl molecule - they cannot, because each ion belongs to the whole pattern, not to one partner.",
+    "text": "Step 3: the oppositely charged ions attract each other, so the bond is ionic.",
+    "withheld": true
+   }
+  ]
+ },
+ "level": "secondary",
+ "paired": {
+  "problem": "A chlorine molecule, Cl2, is held together by a covalent bond. Explain, in terms of electrons, how the bond forms and why no ions are made.",
+  "solution": "Each chlorine atom contributes one electron to a shared pair between the two atoms. Both atoms count the shared pair in their outer shell, so each has eight outer electrons. No electron is transferred, so no ions form."
+ },
+ "subject": "science",
+ "title": "Chemical bonding: ionic, covalent, metallic",
+ "topic": "chem-bonding"
+}
