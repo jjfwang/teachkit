@@ -1,0 +1,91 @@
+{
+  "flashcards": [
+    {
+      "back": "The smallest particle of an element that keeps its chemical identity: a tiny dense nucleus with electrons in shells around mostly empty space.",
+      "front": "Atom",
+      "source": "definition"
+    },
+    {
+      "back": "The tiny dense centre of the atom, holding the protons and neutrons. Almost all the atom's mass sits here.",
+      "front": "Nucleus",
+      "source": "definition"
+    },
+    {
+      "back": "A particle in the nucleus with charge +1 and mass 1. The number of protons - the proton number - fixes which element the atom is.",
+      "front": "Proton",
+      "source": "definition"
+    },
+    {
+      "back": "A particle in the nucleus with no charge and mass 1. Neutrons = nucleon number - proton number.",
+      "front": "Neutron",
+      "source": "definition"
+    },
+    {
+      "back": "A particle with charge -1 and almost no mass, sitting in fixed shells around the nucleus. A neutral atom has equal electrons and protons.",
+      "front": "Electron",
+      "source": "definition"
+    },
+    {
+      "back": "A fixed energy level around the nucleus where electrons sit. Shells fill in order: shell 1 holds 2, shell 2 holds 8, shell 3 holds 8.",
+      "front": "Electron shell",
+      "source": "definition"
+    },
+    {
+      "back": "A column of the periodic table. Elements in one group share the same number of outer electrons, so they react in similar ways.",
+      "front": "Group",
+      "source": "definition"
+    },
+    {
+      "back": "A row of the periodic table. The period number matches the number of electron shells the atoms have.",
+      "front": "Period",
+      "source": "definition"
+    },
+    {
+      "back": "The slip: The ball-and-stick model is everywhere, so atoms look like tiny solid marbles. The fix: Atoms are mostly empty space: the electrons sit far from a tiny dense nucleus. In class, compare the two pictures side by side: the solid marble, then the shell model with its speck of a nucleus - and ask which one explains why alpha particles mostly passed straight through gold foil.",
+      "front": "Atoms are solid balls.",
+      "source": "trap"
+    },
+    {
+      "back": "Atoms are mostly empty space, with electrons in shells around a tiny dense nucleus",
+      "front": "A student draws an atom as a solid ball. What is the best correction?",
+      "source": "quiz-bank"
+    },
+    {
+      "back": "6 protons, 12 - 6 = 6 neutrons and 6 electrons. The six electrons fill the shells two, then four, so the arrangement is 2,4.",
+      "front": "Carbon has proton number 6 and nucleon number 12. State its numbers of protons, neutrons and electrons, and write its electron arrangement.",
+      "source": "quiz-bank"
+    }
+  ],
+  "level": "secondary",
+  "practiceSets": [
+    {
+      "dayOffset": 1,
+      "items": [
+        {
+          "answer": "Atoms are mostly empty space, with electrons in shells around a tiny dense nucleus",
+          "prompt": "A student draws an atom as a solid ball. What is the best correction?"
+        },
+        {
+          "answer": "A tiny dense nucleus with electrons in fixed shells, and mostly empty space between",
+          "prompt": "Which picture of the atom is correct?"
+        }
+      ]
+    },
+    {
+      "dayOffset": 3,
+      "items": [
+        {
+          "answer": "Period 3, group 6",
+          "prompt": "An element's atoms have three electron shells, with 6 electrons in the outer shell. In which period and group does it sit?"
+        },
+        {
+          "answer": "Period 3, because it has three electron shells; group 5, because it has 5 electrons in its outer shell.",
+          "prompt": "An element has electron arrangement 2,8,5. State its period and its group, and explain each answer."
+        }
+      ]
+    }
+  ],
+  "subject": "science",
+  "title": "Atomic structure and the periodic table",
+  "topic": "chem-atomic"
+}

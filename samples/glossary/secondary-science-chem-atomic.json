@@ -1,0 +1,48 @@
+{
+  "entries": [
+    {
+      "example": "Inside the atom - shells draw themselves around a tiny dense nucleus that grows at the centre, electrons drop into shell 1, and the space between stays empty: the atom is mostly empty space.",
+      "meaning": "The smallest particle of an element that keeps its chemical identity: a tiny dense nucleus with electrons in shells around mostly empty space.",
+      "term": "Atom"
+    },
+    {
+      "example": "A common mistake - the ball-and-stick model makes atoms look like solid marbles, but the nucleus is a speck in the middle of empty space and electrons sit in fixed shells.",
+      "meaning": "The tiny dense centre of the atom, holding the protons and neutrons. Almost all the atom's mass sits here.",
+      "term": "Nucleus"
+    },
+    {
+      "example": "Counting particles: carbon - carbon is element 6, so six protons in the nucleus and six electrons around it fill the shells two, then four: 2,4.",
+      "meaning": "A particle in the nucleus with charge +1 and mass 1. The number of protons - the proton number - fixes which element the atom is.",
+      "term": "Proton"
+    },
+    {
+      "example": "Counting particles: sodium - sodium is element 11 with eleven protons, twelve neutrons and eleven electrons arranged 2,8,1, and the lone outer electron rules its chemistry.",
+      "meaning": "A particle in the nucleus with no charge and mass 1. Neutrons = nucleon number - proton number.",
+      "term": "Neutron"
+    },
+    {
+      "example": "Counting particles: sodium - sodium is element 11 with eleven protons, twelve neutrons and eleven electrons arranged 2,8,1, and the lone outer electron rules its chemistry.",
+      "meaning": "A particle with charge -1 and almost no mass, sitting in fixed shells around the nucleus. A neutral atom has equal electrons and protons.",
+      "term": "Electron"
+    },
+    {
+      "example": "Read sodium off the table step by step. Step 1 (s3): sodium has proton number 11 and nucleon number 23, so it has 11 protons and 23 - 11 = 12 neutrons, and a neutral atom has 11 electrons. Step 2 (s3): the electrons fill the shells in order - 2 in shell 1, 8 in shell 2, and the last 1 in shell 3 - giving the arrangement 2,8,1. Step 3 (s4 and s5): three shells means period 3, and 1 outer electron means group 1. Check against carbon (s2): 6 protons, 6 neutrons, 6 electrons, arrangement 2,4 - two shells (period 2) and 4 outer electrons (group 4).",
+      "meaning": "A fixed energy level around the nucleus where electrons sit. Shells fill in order: shell 1 holds 2, shell 2 holds 8, shell 3 holds 8.",
+      "term": "Electron shell"
+    },
+    {
+      "example": "Groups: the table's columns - a group shares the same number of outer electrons down the column, so its elements react in similar ways.",
+      "meaning": "A column of the periodic table. Elements in one group share the same number of outer electrons, so they react in similar ways.",
+      "term": "Group"
+    },
+    {
+      "example": "Periods: the table's rows - the period number matches the number of electron shells: period 2 has two shells, period 3 has three.",
+      "meaning": "A row of the periodic table. The period number matches the number of electron shells the atoms have.",
+      "term": "Period"
+    }
+  ],
+  "level": "secondary",
+  "subject": "science",
+  "title": "Atomic structure and the periodic table",
+  "topic": "chem-atomic"
+}

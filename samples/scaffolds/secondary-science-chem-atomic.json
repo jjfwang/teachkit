@@ -1,0 +1,120 @@
+{
+  "level": "secondary",
+  "sets": [
+    {
+      "cloze": [
+        {
+          "answers": [
+            "Atom"
+          ],
+          "text": "The smallest particle of an element that keeps its chemical identity is an ___."
+        },
+        {
+          "answers": [
+            "Proton",
+            "Neutron"
+          ],
+          "text": "A ___ has charge +1 in the nucleus, and a ___ has no charge in the nucleus."
+        }
+      ],
+      "frames": [
+        "An ___ is the smallest particle of an element.",
+        "The ___ holds the protons and neutrons.",
+        "A ___ has charge +1 and mass 1."
+      ],
+      "level": "full",
+      "starters": [
+        "An atom is...",
+        "The nucleus is...",
+        "A proton is..."
+      ],
+      "wordBank": [
+        {
+          "gloss": "the smallest particle of an element that keeps its chemical identity",
+          "term": "Atom"
+        },
+        {
+          "gloss": "the tiny dense centre of the atom, holding the protons and neutrons",
+          "term": "Nucleus"
+        },
+        {
+          "gloss": "a particle in the nucleus with charge +1 and mass 1",
+          "term": "Proton"
+        },
+        {
+          "gloss": "a particle in the nucleus with no charge and mass 1",
+          "term": "Neutron"
+        }
+      ]
+    },
+    {
+      "cloze": [
+        {
+          "answers": [
+            "Electron"
+          ],
+          "text": "A ___ has charge -1 and almost no mass."
+        },
+        {
+          "answers": [
+            "Group"
+          ],
+          "text": "A ___ is a column of the periodic table."
+        }
+      ],
+      "frames": [
+        "An ___ sits in fixed shells around the nucleus.",
+        "A ___ shares the same number of outer electrons."
+      ],
+      "level": "partial",
+      "starters": [
+        "An electron is...",
+        "A group is..."
+      ],
+      "wordBank": [
+        {
+          "gloss": "a particle with charge -1 and almost no mass, sitting in fixed shells around the nucleus",
+          "term": "Electron"
+        },
+        {
+          "gloss": "a fixed energy level around the nucleus where electrons sit",
+          "term": "Electron shell"
+        },
+        {
+          "gloss": "a column of the periodic table",
+          "term": "Group"
+        }
+      ]
+    },
+    {
+      "cloze": [
+        {
+          "answers": [
+            "Period"
+          ],
+          "text": "A ___ is a row of the periodic table."
+        }
+      ],
+      "frames": [
+        "A ___ matches the number of electron shells."
+      ],
+      "level": "minimal",
+      "starters": [
+        "A period is..."
+      ],
+      "wordBank": [
+        {
+          "gloss": "a row of the periodic table",
+          "term": "Period"
+        },
+        {
+          "gloss": "a fixed energy level around the nucleus where electrons sit",
+          "term": "Electron shell"
+        }
+      ]
+    }
+  ],
+  "subject": "science",
+  "title": "Atomic structure and the periodic table",
+  "topic": "chem-atomic"
+}
