@@ -1,0 +1,59 @@
+{
+ "level": "secondary",
+ "questions": [
+  {
+   "choices": [
+    {
+     "text": "Correct - the bulb glows, so it must consume the current"
+    },
+    {
+     "text": "Wrong - the second ammeter reads more, because the bulb adds current"
+    },
+    {
+     "correct": true,
+     "text": "Wrong - the second ammeter also reads 0.5 A, because current is not used up in a series loop"
+    },
+    {
+     "text": "Wrong - the second ammeter reads zero, because all the current stops at the bulb"
+    }
+   ],
+   "explanation": "The trap is: The bulb uses up the current. The bulb glows and gets hot, so it looks like it consumes the electricity flowing through it. Current is not used up: an ammeter reads the same 0.5 amps on both sides of the bulb.",
+   "id": "q2",
+   "kind": "multiple-choice",
+   "misconception": "The bulb uses up the current.",
+   "prompt": "In a series circuit an ammeter before a bulb reads 0.5 A. A classmate says the ammeter after the bulb must read less, because the bulb has used some current up. Which statement is correct?"
+  },
+  {
+   "answer": "3 A, from I = V / R = 12 / 4 = 3.",
+   "explanation": "Scene s4: Ohm's law V = I R rearranged gives I = V / R = 12 / 4 = 3 amps.",
+   "id": "q3",
+   "kind": "short-answer",
+   "prompt": "A 12 V battery is connected across a resistor of 4 ohms. Calculate the current, showing the Ohm's law step."
+  },
+  {
+   "choices": [
+    {
+     "text": "It goes out too, because the circuit is broken"
+    },
+    {
+     "correct": true,
+     "text": "It stays lit, because it sits on its own branch with a complete path"
+    },
+    {
+     "text": "It glows twice as brightly"
+    },
+    {
+     "text": "It stays lit only if the broken bulb is replaced first"
+    }
+   ],
+   "explanation": "Scene s3: in parallel each bulb sits on its own branch - one can fail and the other stays lit.",
+   "id": "q4",
+   "kind": "multiple-choice",
+   "prompt": "Two bulbs are connected in parallel and one bulb breaks. What happens to the other bulb?"
+  }
+ ],
+ "subject": "science",
+ "title": "Electricity: circuits, current and Ohm's law",
+ "topic": "phys-electricity",
+ "variant": "homework"
+}

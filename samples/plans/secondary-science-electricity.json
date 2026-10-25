@@ -1,0 +1,125 @@
+{
+ "activities": [
+  {
+   "grouping": "whole class",
+   "minutes": 5,
+   "objectiveIds": [
+    "o1"
+   ],
+   "resources": [
+    "board"
+   ],
+   "scriptCue": "s1",
+   "title": "One loop"
+  },
+  {
+   "grouping": "pairs",
+   "minutes": 5,
+   "objectiveIds": [
+    "o2"
+   ],
+   "scriptCue": "s2",
+   "title": "Direction matters"
+  },
+  {
+   "differentiation": {
+    "support": "Provide the student notes open at the series and parallel definitions so learners can follow one path versus branches before deciding which arrangement a house should use."
+   },
+   "grouping": "whole class",
+   "minutes": 7,
+   "objectiveIds": [
+    "o2"
+   ],
+   "scriptCue": "s3",
+   "title": "One path or many?"
+  },
+  {
+   "grouping": "pairs",
+   "minutes": 7,
+   "objectiveIds": [
+    "o3"
+   ],
+   "scriptCue": "s4",
+   "title": "Ohm's law ties it together"
+  },
+  {
+   "grouping": "whole class",
+   "minutes": 6,
+   "objectiveIds": [
+    "o3"
+   ],
+   "scriptCue": "s5",
+   "title": "The trap, head-on"
+  },
+  {
+   "differentiation": {
+    "stretch": "Ask learners to name which scene proved that current is the same on both sides of the bulb before they take the exit ticket."
+   },
+   "grouping": "pairs",
+   "minutes": 5,
+   "objectiveIds": [
+    "o1",
+    "o2",
+    "o3"
+   ],
+   "scriptCue": "s6",
+   "title": "Electricity in one minute"
+  },
+  {
+   "grouping": "individual",
+   "minutes": 5,
+   "objectiveIds": [
+    "o1",
+    "o2",
+    "o3"
+   ],
+   "resources": [
+    "worksheet"
+   ],
+   "title": "Worksheet practice and exit ticket"
+  }
+ ],
+ "durationMinutes": 40,
+ "level": "secondary",
+ "objectives": [
+  {
+   "assessmentPoints": [
+    "Loop answers in the opening activity",
+    "Worksheet answers checked in the closing activity"
+   ],
+   "id": "o1",
+   "successCriteria": [
+    "I can describe a circuit as one unbroken loop of components joined by wires",
+    "I can state that the battery pushes charge around the loop, the bulb turns electrical energy into light, and the ammeter measures the flow"
+   ],
+   "text": "Describe a simple circuit as one unbroken loop and state what the battery, bulb and ammeter each do"
+  },
+  {
+   "assessmentPoints": [
+    "Terminal answers in the second activity",
+    "Series-parallel answers in the third activity"
+   ],
+   "id": "o2",
+   "successCriteria": [
+    "I can state that conventional current flows out of the battery's positive terminal, around the loop, and back into the negative terminal",
+    "I can explain that in series there is only one path, while in parallel each bulb sits on its own branch"
+   ],
+   "text": "State the direction of conventional current and compare series and parallel circuits"
+  },
+  {
+   "assessmentPoints": [
+    "Ohm's law answers in the fourth activity",
+    "Trap answers in the fifth activity and the closing exit ticket"
+   ],
+   "id": "o3",
+   "successCriteria": [
+    "I can calculate current from V = I R, as 12 divided by 4 is 3 amps for a 12 volt battery across 4 ohms",
+    "I can explain that an ammeter reads the same 0.5 amps on both sides of the bulb because current is not used up"
+   ],
+   "text": "Use Ohm's law, V = I R, to calculate current and explain why current is the same everywhere in a series loop"
+  }
+ ],
+ "subject": "science",
+ "title": "Electricity: circuits, current and Ohm's law",
+ "topic": "phys-electricity"
+}
