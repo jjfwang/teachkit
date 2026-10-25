@@ -1,0 +1,53 @@
+{
+ "complete": {
+  "problem": "Trace motion from speed calculation to graph readings.",
+  "selfExplanation": "Explain how speed and velocity differ, and how gradient and area readings turn motion graphs into speed, acceleration and distance.",
+  "steps": [
+   {
+    "annotation": "Distance travelled per unit time, calculated as distance divided by time, measured in metres per second.",
+    "text": "Step 1 (s1): velocity is speed with a direction - the athlete covers 100 metres in 20 seconds for a speed of 5 metres per second, and running right makes it a velocity of 5 metres per second rightwards."
+   },
+   {
+    "annotation": "Rise over run on a graph: on a distance-time graph it is the speed, and on a velocity-time graph it is the acceleration.",
+    "text": "Step 2 (s2): distance-time graphs - the line climbs 120 metres in 60 seconds and the gradient triangle builds beneath it - gradient is rise over run, 120 over 60, a speed of 2 metres per second."
+   },
+   {
+    "annotation": "The rate of change of velocity, read off a velocity-time graph as its gradient.",
+    "text": "Step 3 (s3): velocity-time graphs - the line rises from 0 to 20 metres per second in 10 seconds, so the slope is an acceleration of 2 metres per second squared, while the shaded area growing under the line is the 100 metres travelled."
+   },
+   {
+    "annotation": "The straight-line change in position from start to finish, with a direction - not the total path length.",
+    "text": "Step 4 (s4): check the thinking - the runner covers 800 metres in 100 seconds for a speed of 8 metres per second, but ends at the start, so displacement and velocity are both zero."
+   }
+  ]
+ },
+ "faded": {
+  "problem": "A distance-time graph climbs 120 metres in 60 seconds in a straight line. What is the speed, and how does the graph show it?",
+  "selfExplanation": "The first step is shown. Say how gradient = rise / run gives the speed, then why the straight line means the speed never changes.",
+  "steps": [
+   {
+    "annotation": "Rise over run on a graph: on a distance-time graph it is the speed, and on a velocity-time graph it is the acceleration.",
+    "text": "Step 1: on a distance-time graph the gradient is the speed, so use gradient = rise / run with rise = 120 m and run = 60 s.",
+    "withheld": false
+   },
+   {
+    "annotation": "Distance-time graphs: the gradient is the speed. Ride the probe up the line as it climbs 120 metres in 60 seconds, and watch the gradient triangle build underneath - rise over run, 120 over 60, is 2 metres per second. Now try the gradient question on the worksheet in pairs.",
+    "text": "Step 2: speed = 120 / 60 = 2 m/s.",
+    "withheld": true
+   },
+   {
+    "annotation": "Work this on the board slowly: build the gradient triangle, divide rise by run, and say the units out loud.",
+    "text": "Step 3: check the units: metres divided by seconds gives metres per second, and the straight line means that speed never changes.",
+    "withheld": true
+   }
+  ]
+ },
+ "level": "secondary",
+ "paired": {
+  "problem": "A runner goes 400 metres down a track and back in 100 seconds. Why is the average velocity zero while the average speed is 8 m/s?",
+  "solution": "Displacement is zero because the runner ends where they started, while the distance covered is 800 metres. Speed = 800 / 100 = 8 m/s, but velocity uses displacement, so velocity is zero."
+ },
+ "subject": "science",
+ "title": "Motion: speed, velocity and graphs",
+ "topic": "phys-kinematics"
+}

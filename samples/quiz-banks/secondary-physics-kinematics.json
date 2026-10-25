@@ -1,0 +1,57 @@
+{
+ "items": [
+  {
+   "answer": "Wrong - the velocity stays constant at 12 m/s, so the object keeps moving",
+   "choices": [
+    "Correct - a flat line always means zero velocity",
+    "Wrong - the object is speeding up the whole time",
+    "Wrong - the velocity stays constant at 12 m/s, so the object keeps moving",
+    "Wrong - a flat line means the object is going backwards"
+   ],
+   "misconceptionCode": "A flat line on a velocity-time graph means the object has stopped.",
+   "prompt": "A velocity-time graph runs flat at 12 m/s for ten seconds. A classmate says the object has stopped. Which statement is correct?"
+  },
+  {
+   "answer": "It keeps moving at a constant 8 m/s",
+   "choices": [
+    "It has stopped",
+    "It keeps moving at a constant 8 m/s",
+    "It is accelerating steadily",
+    "It is moving backwards"
+   ],
+   "prompt": "A velocity-time graph runs flat at 8 m/s. What is the object doing?"
+  },
+  {
+   "answer": "Distance travelled",
+   "choices": [
+    "Acceleration",
+    "Force",
+    "Distance travelled",
+    "Mass"
+   ],
+   "prompt": "The area under a velocity-time graph gives which quantity?"
+  },
+  {
+   "answer": "3 m/s.",
+   "prompt": "A distance-time graph climbs 90 metres in 30 seconds in a straight line. What is the speed?"
+  },
+  {
+   "answer": "Displacement is zero because the runner ends where they started, while the distance covered is 800 metres.",
+   "prompt": "A runner goes 400 metres down a track and back in 100 seconds. Why is the average velocity zero while the average speed is 8 m/s?"
+  },
+  {
+   "answer": "2 metres per second squared",
+   "choices": [
+    "200 metres per second squared",
+    "2 metres per second squared",
+    "0.5 metres per second squared",
+    "20 metres per second squared"
+   ],
+   "prompt": "A velocity-time graph rises from 0 to 20 m/s in 10 seconds. What is the acceleration?"
+  }
+ ],
+ "level": "secondary",
+ "subject": "science",
+ "title": "Motion: speed, velocity and graphs",
+ "topic": "phys-kinematics"
+}

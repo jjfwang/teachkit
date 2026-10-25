@@ -1,0 +1,202 @@
+{
+ "doNow": [
+  {
+   "choices": [
+    {
+     "misconception": "A flat line on a velocity-time graph means the object has stopped.",
+     "rationale": {
+      "chose": "The learner selected option It has stopped as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: A flat line on a velocity-time graph means the object has stopped.. The slip: Flat reads as if nothing is happening, so the line feels like zero movement. The fix: A flat v-t line means constant velocity: the object keeps moving at the same speed..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "It has stopped"
+    },
+    {
+     "correct": true,
+     "text": "It keeps moving at a constant 8 m/s"
+    },
+    {
+     "misconception": "A flat line on a velocity-time graph means the object has stopped.",
+     "rationale": {
+      "chose": "The learner selected option It is accelerating steadily as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: A flat line on a velocity-time graph means the object has stopped.. The slip: Flat reads as if nothing is happening, so the line feels like zero movement. The fix: A flat v-t line means constant velocity: the object keeps moving at the same speed..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "It is accelerating steadily"
+    },
+    {
+     "misconception": "A flat line on a velocity-time graph means the object has stopped.",
+     "rationale": {
+      "chose": "The learner selected option It is moving backwards as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: A flat line on a velocity-time graph means the object has stopped.. The slip: Flat reads as if nothing is happening, so the line feels like zero movement. The fix: A flat v-t line means constant velocity: the object keeps moving at the same speed..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "It is moving backwards"
+    }
+   ],
+   "id": "dn1",
+   "kind": "multiple-choice",
+   "prompt": "A velocity-time graph runs flat at 8 m/s. What is the object doing?"
+  },
+  {
+   "choices": [
+    {
+     "misconception": "A flat line on a velocity-time graph means the object has stopped.",
+     "rationale": {
+      "chose": "The learner selected option Correct - a flat line always means zero velocity as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: A flat line on a velocity-time graph means the object has stopped.. The slip: Flat reads as if nothing is happening, so the line feels like zero movement. The fix: A flat v-t line means constant velocity: the object keeps moving at the same speed..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "Correct - a flat line always means zero velocity"
+    },
+    {
+     "misconception": "A flat line on a velocity-time graph means the object has stopped.",
+     "rationale": {
+      "chose": "The learner selected option Wrong - the object is speeding up the whole time as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: A flat line on a velocity-time graph means the object has stopped.. The slip: Flat reads as if nothing is happening, so the line feels like zero movement. The fix: A flat v-t line means constant velocity: the object keeps moving at the same speed..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "Wrong - the object is speeding up the whole time"
+    },
+    {
+     "correct": true,
+     "text": "Wrong - the velocity stays constant at 12 m/s, so the object keeps moving"
+    },
+    {
+     "misconception": "A flat line on a velocity-time graph means the object has stopped.",
+     "rationale": {
+      "chose": "The learner selected option Wrong - a flat line means the object is going backwards as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: A flat line on a velocity-time graph means the object has stopped.. The slip: Flat reads as if nothing is happening, so the line feels like zero movement. The fix: A flat v-t line means constant velocity: the object keeps moving at the same speed..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "Wrong - a flat line means the object is going backwards"
+    }
+   ],
+   "id": "dn2",
+   "kind": "multiple-choice",
+   "prompt": "A velocity-time graph runs flat at 12 m/s for ten seconds. A classmate says the object has stopped. Which statement is correct?"
+  },
+  {
+   "choices": [
+    {
+     "misconception": "A flat line on a velocity-time graph means the object has stopped.",
+     "rationale": {
+      "chose": "The learner selected option 200 metres per second squared as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: A flat line on a velocity-time graph means the object has stopped.. The slip: Flat reads as if nothing is happening, so the line feels like zero movement. The fix: A flat v-t line means constant velocity: the object keeps moving at the same speed..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "200 metres per second squared"
+    },
+    {
+     "correct": true,
+     "text": "2 metres per second squared"
+    },
+    {
+     "misconception": "A flat line on a velocity-time graph means the object has stopped.",
+     "rationale": {
+      "chose": "The learner selected option 0.5 metres per second squared as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: A flat line on a velocity-time graph means the object has stopped.. The slip: Flat reads as if nothing is happening, so the line feels like zero movement. The fix: A flat v-t line means constant velocity: the object keeps moving at the same speed..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "0.5 metres per second squared"
+    },
+    {
+     "misconception": "A flat line on a velocity-time graph means the object has stopped.",
+     "rationale": {
+      "chose": "The learner selected option 20 metres per second squared as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: A flat line on a velocity-time graph means the object has stopped.. The slip: Flat reads as if nothing is happening, so the line feels like zero movement. The fix: A flat v-t line means constant velocity: the object keeps moving at the same speed..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "20 metres per second squared"
+    }
+   ],
+   "id": "dn3",
+   "kind": "multiple-choice",
+   "prompt": "A velocity-time graph rises from 0 to 20 m/s in 10 seconds. What is the acceleration?"
+  }
+ ],
+ "hingeQuestions": [
+  {
+   "choices": [
+    {
+     "misconception": "A flat line on a velocity-time graph means the object has stopped.",
+     "rationale": {
+      "chose": "The learner selected option The student is right - a flat line means the object has stopped as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: A flat line on a velocity-time graph means the object has stopped.. The slip: Flat reads as if nothing is happening, so the line feels like zero movement. The fix: A flat v-t line means constant velocity: the object keeps moving at the same speed..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "The student is right - a flat line means the object has stopped"
+    },
+    {
+     "correct": true,
+     "text": "A flat v-t line means constant velocity: the object keeps moving at the same speed."
+    },
+    {
+     "misconception": "A flat line on a velocity-time graph means the object has stopped.",
+     "rationale": {
+      "chose": "The learner selected option A flat line means the object is accelerating steadily as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: A flat line on a velocity-time graph means the object has stopped.. The slip: Flat reads as if nothing is happening, so the line feels like zero movement. The fix: A flat v-t line means constant velocity: the object keeps moving at the same speed..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "A flat line means the object is accelerating steadily"
+    },
+    {
+     "misconception": "A flat line on a velocity-time graph means the object has stopped.",
+     "rationale": {
+      "chose": "The learner selected option A flat line means the object is moving backwards as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: A flat line on a velocity-time graph means the object has stopped.. The slip: Flat reads as if nothing is happening, so the line feels like zero movement. The fix: A flat v-t line means constant velocity: the object keeps moving at the same speed..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "A flat line means the object is moving backwards"
+    }
+   ],
+   "id": "h1",
+   "kind": "multiple-choice",
+   "prompt": "A student says a flat line on a velocity-time graph means the object has stopped. What is the best correction?",
+   "scriptCue": "s4"
+  },
+  {
+   "choices": [
+    {
+     "misconception": "A flat line on a velocity-time graph means the object has stopped.",
+     "rationale": {
+      "chose": "The learner selected option It has stopped as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: A flat line on a velocity-time graph means the object has stopped.. The slip: Flat reads as if nothing is happening, so the line feels like zero movement. The fix: A flat v-t line means constant velocity: the object keeps moving at the same speed..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "It has stopped"
+    },
+    {
+     "correct": true,
+     "text": "It keeps moving at a constant 8 m/s"
+    },
+    {
+     "misconception": "A flat line on a velocity-time graph means the object has stopped.",
+     "rationale": {
+      "chose": "The learner selected option It is accelerating steadily as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: A flat line on a velocity-time graph means the object has stopped.. The slip: Flat reads as if nothing is happening, so the line feels like zero movement. The fix: A flat v-t line means constant velocity: the object keeps moving at the same speed..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "It is accelerating steadily"
+    },
+    {
+     "misconception": "A flat line on a velocity-time graph means the object has stopped.",
+     "rationale": {
+      "chose": "The learner selected option It is moving backwards as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: A flat line on a velocity-time graph means the object has stopped.. The slip: Flat reads as if nothing is happening, so the line feels like zero movement. The fix: A flat v-t line means constant velocity: the object keeps moving at the same speed..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "It is moving backwards"
+    }
+   ],
+   "id": "h2",
+   "kind": "multiple-choice",
+   "prompt": "A velocity-time graph runs flat at 8 m/s. What is the object doing?",
+   "scriptCue": "s4"
+  }
+ ],
+ "level": "secondary",
+ "subject": "science",
+ "title": "Motion: speed, velocity and graphs",
+ "topic": "phys-kinematics"
+}
