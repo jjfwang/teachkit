@@ -1,0 +1,59 @@
+{
+ "level": "secondary",
+ "questions": [
+  {
+   "choices": [
+    {
+     "text": "Correct - the same weight always gives the same pressure"
+    },
+    {
+     "text": "Wrong - her weight has doubled on tiptoes"
+    },
+    {
+     "correct": true,
+     "text": "Wrong - the same force now spreads over a smaller area, so the pressure is higher"
+    },
+    {
+     "text": "Wrong - pressure only depends on the floor material"
+    }
+   ],
+   "explanation": "The trap is: The same push gives the same pressure whether you stand flat or on tiptoes. The push feels the same, so the effect on the ground feels like it should be the same. Pressure is force over area: tiptoes spread the same force over a smaller area, so the pressure is higher.",
+   "id": "q2",
+   "kind": "multiple-choice",
+   "misconception": "The same push gives the same pressure whether you stand flat or on tiptoes.",
+   "prompt": "A student stands flat, then rises on tiptoes. Her weight has not changed. A classmate says the pressure under her feet is unchanged too. Which statement is correct?"
+  },
+  {
+   "answer": "30 N·m, from 60 x 0.5 = 30.",
+   "explanation": "Scene s2: moment = force x distance from the pivot = 60 x 0.5 = 30 newton-metres.",
+   "id": "q3",
+   "kind": "short-answer",
+   "prompt": "A weight of 60 N sits 0.5 m from a pivot. Calculate its moment."
+  },
+  {
+   "choices": [
+    {
+     "text": "100 Pa"
+    },
+    {
+     "correct": true,
+     "text": "400 Pa"
+    },
+    {
+     "text": "200 Pa"
+    },
+    {
+     "text": "0.0025 Pa"
+    }
+   ],
+   "explanation": "Scene s3: pressure = force / area = 200 / 0.5 = 400 pascals.",
+   "id": "q4",
+   "kind": "multiple-choice",
+   "prompt": "A crate weighing 200 N rests on a face of area 0.5 square metres. What pressure does it exert?"
+  }
+ ],
+ "subject": "science",
+ "title": "Forces: friction, moments and pressure",
+ "topic": "phys-forces",
+ "variant": "homework"
+}
