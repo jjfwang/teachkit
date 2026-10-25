@@ -59,7 +59,8 @@ const STEMS = [
   'secondary-science-chem-bonding',
   'secondary-science-chem-mole',
   'secondary-physics-kinematics',
-  'secondary-physics-forces'
+  'secondary-physics-forces',
+  'secondary-physics-waves'
 ];
 
 function load(rel) {

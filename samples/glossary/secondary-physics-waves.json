@@ -1,0 +1,33 @@
+{
+  "entries": [
+    {
+      "example": "What the wave examples have in common: every wave carries energy while its particles only vibrate in place, and speed, frequency and wavelength always obey v = f x wavelength.",
+      "meaning": "A disturbance that carries energy from place to place without carrying matter with it: the particles vibrate in place while the energy moves on.",
+      "term": "Wave"
+    },
+    {
+      "example": "Light and sound are different kinds of waves: light is transverse, so a particle bobs across the direction of travel, while sound is longitudinal, so the particles bunch and spread along the direction of travel.",
+      "meaning": "A wave whose vibration is across the direction of travel, like light: a particle on the wave bobs up and down while the wave races sideways.",
+      "term": "Transverse wave"
+    },
+    {
+      "example": "Light and sound are different kinds of waves: light is transverse, so a particle bobs across the direction of travel, while sound is longitudinal, so the particles bunch and spread along the direction of travel.",
+      "meaning": "A wave whose vibration is along the direction of travel, like sound: the particles bunch together and spread apart as the wave passes.",
+      "term": "Longitudinal wave"
+    },
+    {
+      "example": "Wave speed equals frequency times wavelength: for any wave, v = f x wavelength - for sound in air, 340 m/s = 170 Hz x 2 m.",
+      "meaning": "How many full waves pass a point each second, measured in hertz (Hz): a frequency of 170 Hz means 170 waves per second.",
+      "term": "Frequency"
+    },
+    {
+      "example": "Work out the wavelength of a sound wave in air. The wave travels at v = 340 m/s and vibrates at f = 170 Hz. Use the wave equation v = f x wavelength, rearranged to wavelength = v / f = 340 / 170 = 2 m. Check: 170 Hz x 2 m = 340 m/s, so the wavelength is 2 m.",
+      "meaning": "The length of one full wave, from one crest to the next, measured in metres: the sound wave in this lesson has a wavelength of 2 m.",
+      "term": "Wavelength"
+    }
+  ],
+  "level": "secondary",
+  "subject": "science",
+  "title": "Waves: light, sound and the wave equation",
+  "topic": "phys-waves"
+}

@@ -1,0 +1,81 @@
+{
+  "level": "secondary",
+  "subject": "science",
+  "templates": [
+    {
+      "kind": "flow",
+      "slots": [
+        {
+          "entries": [
+            "Light and sound are different kinds of waves: light is transverse, so a particle bobs across the direction of travel, while sound is longitudinal, so the particles bunch and spread along the direction of travel."
+          ],
+          "label": "Wave types",
+          "studentPrompt": "Explain this step in your own words."
+        },
+        {
+          "entries": [
+            "Wave speed equals frequency times wavelength: for any wave, v = f x wavelength - for sound in air, 340 m/s = 170 Hz x 2 m."
+          ],
+          "label": "Wave equation",
+          "studentPrompt": "Explain this step in your own words."
+        },
+        {
+          "entries": [
+            "A common mistake: we see lightning before we hear thunder: reject the claim that sound outruns light - light is far faster, so the flash arrives first and the thunder follows seconds later."
+          ],
+          "label": "Check the thinking",
+          "studentPrompt": "Explain this step in your own words."
+        },
+        {
+          "entries": [
+            "What the wave examples have in common: every wave carries energy while its particles only vibrate in place, and speed, frequency and wavelength always obey v = f x wavelength."
+          ],
+          "label": "What waves have in common",
+          "studentPrompt": "Explain this step in your own words."
+        }
+      ]
+    },
+    {
+      "kind": "frayer",
+      "slots": [
+        {
+          "entries": [
+            "A disturbance that carries energy from place to place without carrying matter with it: the particles vibrate in place while the energy moves on."
+          ],
+          "label": "Wave",
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "entries": [
+            "A wave whose vibration is across the direction of travel, like light: a particle on the wave bobs up and down while the wave races sideways."
+          ],
+          "label": "Transverse wave",
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "entries": [
+            "A wave whose vibration is along the direction of travel, like sound: the particles bunch together and spread apart as the wave passes."
+          ],
+          "label": "Longitudinal wave",
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "entries": [
+            "How many full waves pass a point each second, measured in hertz (Hz): a frequency of 170 Hz means 170 waves per second."
+          ],
+          "label": "Frequency",
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "entries": [
+            "The length of one full wave, from one crest to the next, measured in metres: the sound wave in this lesson has a wavelength of 2 m."
+          ],
+          "label": "Wavelength",
+          "studentPrompt": "Give your own example of this term."
+        }
+      ]
+    }
+  ],
+  "title": "Waves: light, sound and the wave equation",
+  "topic": "phys-waves"
+}
