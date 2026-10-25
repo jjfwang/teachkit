@@ -1,0 +1,120 @@
+{
+  "level": "secondary",
+  "sets": [
+    {
+      "cloze": [
+        {
+          "answers": [
+            "Wave"
+          ],
+          "text": "A disturbance that carries energy from place to place without carrying matter with it is a ___."
+        },
+        {
+          "answers": [
+            "Frequency",
+            "Wavelength"
+          ],
+          "text": "Wave speed equals ___ times ___."
+        }
+      ],
+      "frames": [
+        "___ carries energy without carrying matter.",
+        "___ is how many full waves pass a point each second.",
+        "The ___ is the length of one full wave."
+      ],
+      "level": "full",
+      "starters": [
+        "A wave is...",
+        "Frequency is...",
+        "Wavelength is..."
+      ],
+      "wordBank": [
+        {
+          "gloss": "a disturbance that carries energy without carrying matter",
+          "term": "Wave"
+        },
+        {
+          "gloss": "a wave whose vibration is across the direction of travel",
+          "term": "Transverse wave"
+        },
+        {
+          "gloss": "how many full waves pass a point each second",
+          "term": "Frequency"
+        },
+        {
+          "gloss": "the length of one full wave",
+          "term": "Wavelength"
+        }
+      ]
+    },
+    {
+      "cloze": [
+        {
+          "answers": [
+            "Transverse wave"
+          ],
+          "text": "A wave whose vibration is across the direction of travel is a ___."
+        },
+        {
+          "answers": [
+            "Longitudinal wave"
+          ],
+          "text": "A wave whose vibration is along the direction of travel is a ___."
+        }
+      ],
+      "frames": [
+        "___ vibrates across the direction of travel.",
+        "___ vibrates along the direction of travel."
+      ],
+      "level": "partial",
+      "starters": [
+        "A transverse wave is...",
+        "A longitudinal wave is..."
+      ],
+      "wordBank": [
+        {
+          "gloss": "a wave whose vibration is across the direction of travel",
+          "term": "Transverse wave"
+        },
+        {
+          "gloss": "a wave whose vibration is along the direction of travel",
+          "term": "Longitudinal wave"
+        },
+        {
+          "gloss": "a disturbance that carries energy without carrying matter",
+          "term": "Wave"
+        }
+      ]
+    },
+    {
+      "cloze": [
+        {
+          "answers": [
+            "Wavelength"
+          ],
+          "text": "The length of one full wave, from one crest to the next, is the ___."
+        }
+      ],
+      "frames": [
+        "___ is the length of one full wave."
+      ],
+      "level": "minimal",
+      "starters": [
+        "Wavelength is..."
+      ],
+      "wordBank": [
+        {
+          "gloss": "the length of one full wave",
+          "term": "Wavelength"
+        },
+        {
+          "gloss": "how many full waves pass a point each second",
+          "term": "Frequency"
+        }
+      ]
+    }
+  ],
+  "subject": "science",
+  "title": "Waves: light, sound and the wave equation",
+  "topic": "phys-waves"
+}

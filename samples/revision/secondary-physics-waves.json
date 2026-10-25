@@ -1,0 +1,76 @@
+{
+  "flashcards": [
+    {
+      "back": "A disturbance that carries energy from place to place without carrying matter with it: the particles vibrate in place while the energy moves on.",
+      "front": "Wave",
+      "source": "definition"
+    },
+    {
+      "back": "A wave whose vibration is across the direction of travel, like light: a particle on the wave bobs up and down while the wave races sideways.",
+      "front": "Transverse wave",
+      "source": "definition"
+    },
+    {
+      "back": "A wave whose vibration is along the direction of travel, like sound: the particles bunch together and spread apart as the wave passes.",
+      "front": "Longitudinal wave",
+      "source": "definition"
+    },
+    {
+      "back": "How many full waves pass a point each second, measured in hertz (Hz): a frequency of 170 Hz means 170 waves per second.",
+      "front": "Frequency",
+      "source": "definition"
+    },
+    {
+      "back": "The length of one full wave, from one crest to the next, measured in metres: the sound wave in this lesson has a wavelength of 2 m.",
+      "front": "Wavelength",
+      "source": "definition"
+    },
+    {
+      "back": "A thunderclap feels so powerful that it seems to arrive before the flash. Light is far faster: the lightning flash arrives first and the thunder follows. That is why, in a storm, you always see the flash before you hear the thunder.",
+      "front": "Sound travels faster than light.",
+      "source": "trap"
+    },
+    {
+      "back": "Wrong - light is far faster, so the flash arrives first and the thunder follows",
+      "front": "A classmate says: 'Sound travels faster than light, because the thunder is so loud.' Which statement is correct?",
+      "source": "quiz-bank"
+    },
+    {
+      "back": "2 m: wavelength = v / f = 340 / 170 = 2 m.",
+      "front": "A sound wave travels at 340 m/s with frequency 170 Hz. Calculate its wavelength.",
+      "source": "quiz-bank"
+    }
+  ],
+  "level": "secondary",
+  "practiceSets": [
+    {
+      "dayOffset": 1,
+      "items": [
+        {
+          "answer": "Wrong - light is far faster, so the flash arrives first and the thunder follows",
+          "prompt": "A classmate says: 'Sound travels faster than light, because the thunder is so loud.' Which statement is correct?"
+        },
+        {
+          "answer": "The lightning flash",
+          "prompt": "From a distant lightning strike, which reaches you first?"
+        }
+      ]
+    },
+    {
+      "dayOffset": 3,
+      "items": [
+        {
+          "answer": "v = f x wavelength = 5 x 3 = 15 m/s.",
+          "prompt": "A wave has frequency 5 Hz and wavelength 3 m. Calculate its speed and show your working."
+        },
+        {
+          "answer": "2 m: wavelength = v / f = 340 / 170 = 2 m.",
+          "prompt": "A sound wave travels at 340 m/s with frequency 170 Hz. Calculate its wavelength."
+        }
+      ]
+    }
+  ],
+  "subject": "science",
+  "title": "Waves: light, sound and the wave equation",
+  "topic": "phys-waves"
+}
