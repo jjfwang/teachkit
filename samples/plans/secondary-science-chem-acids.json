@@ -1,0 +1,140 @@
+{
+ "activities": [
+  {
+   "grouping": "whole class",
+   "minutes": 4,
+   "objectiveIds": [
+    "o1"
+   ],
+   "scriptCue": "s1",
+   "title": "Acids and alkalis around you"
+  },
+  {
+   "grouping": "pairs",
+   "minutes": 4,
+   "objectiveIds": [
+    "o1"
+   ],
+   "scriptCue": "s2",
+   "title": "The pH scale ladder"
+  },
+  {
+   "differentiation": {
+    "support": "Provide the student notes open at the hydrogen ion and hydroxide ion definitions so learners can follow which ion is in excess before judging the pH."
+   },
+   "grouping": "whole class",
+   "minutes": 5,
+   "objectiveIds": [
+    "o2"
+   ],
+   "scriptCue": "s3",
+   "title": "What pH is really about: ions"
+  },
+  {
+   "grouping": "pairs",
+   "minutes": 5,
+   "objectiveIds": [
+    "o2",
+    "o3"
+   ],
+   "scriptCue": "s4",
+   "title": "Neutralisation: a worked example"
+  },
+  {
+   "grouping": "whole class",
+   "minutes": 4,
+   "objectiveIds": [
+    "o1"
+   ],
+   "scriptCue": "s5",
+   "title": "The litmus test"
+  },
+  {
+   "grouping": "pairs",
+   "minutes": 4,
+   "objectiveIds": [
+    "o3"
+   ],
+   "scriptCue": "s6",
+   "title": "Naming the salt"
+  },
+  {
+   "differentiation": {
+    "stretch": "Ask learners to explain why vinegar is still an acid even though it only partly releases its hydrogen ions before they take the exit ticket."
+   },
+   "grouping": "whole class",
+   "minutes": 6,
+   "objectiveIds": [
+    "o1",
+    "o2"
+   ],
+   "scriptCue": "s7",
+   "title": "A common mistake: all acids are strong"
+  },
+  {
+   "grouping": "pairs",
+   "minutes": 5,
+   "objectiveIds": [
+    "o3"
+   ],
+   "scriptCue": "s8",
+   "title": "The titration curve: watch for the jump"
+  },
+  {
+   "grouping": "individual",
+   "minutes": 3,
+   "objectiveIds": [
+    "o1",
+    "o2",
+    "o3"
+   ],
+   "resources": [
+    "worksheet"
+   ],
+   "title": "Worksheet practice and exit ticket"
+  }
+ ],
+ "durationMinutes": 40,
+ "level": "secondary",
+ "objectives": [
+  {
+   "assessmentPoints": [
+    "Everyday-substance answers in the opening activity",
+    "Ladder answers in the second activity and the closing worksheet"
+   ],
+   "id": "o1",
+   "successCriteria": [
+    "I can classify lemon juice and vinegar as acids and soap and baking soda as alkalis",
+    "I can read the pH scale from 0 to 14, place 7 as neutral, and say each step is ten times stronger"
+   ],
+   "text": "Read the pH scale and classify a solution as acidic, neutral or alkaline"
+  },
+  {
+   "assessmentPoints": [
+    "Ion answers in the third activity",
+    "Neutralisation answers in the fourth activity and the closing worksheet"
+   ],
+   "id": "o2",
+   "successCriteria": [
+    "I can state that acids release H+ ions and alkalis release OH- ions in water",
+    "I can explain that whichever ion is in excess decides whether a solution is acidic or alkaline"
+   ],
+   "text": "Explain acidity and alkalinity in terms of H+ and OH- ions"
+  },
+  {
+   "assessmentPoints": [
+    "Salt-naming answers in the sixth activity",
+    "Titration answers in the eighth activity and the closing exit ticket"
+   ],
+   "id": "o3",
+   "successCriteria": [
+    "I can write acid plus alkali gives salt plus water and name a chloride, nitrate or sulfate from its acid",
+    "I can point to the vertical jump on a titration curve and call it the equivalence point"
+   ],
+   "text": "Describe neutralisation, name salts from their acids, and read the jump on a titration curve"
+  }
+ ],
+ "subject": "science",
+ "title": "Acids, bases and salts",
+ "topic": "chem-acids"
+}

@@ -1,0 +1,125 @@
+{
+ "blueprint": [
+  {
+   "assessmentObjective": "AO1 recall and apply",
+   "cognitiveLevel": "apply",
+   "marks": 10,
+   "outcomeCode": "S3-ACID-APPLY"
+  },
+  {
+   "assessmentObjective": "AO2 reason and explain",
+   "cognitiveLevel": "reason",
+   "marks": 10,
+   "outcomeCode": "S3-CELL-REASON"
+  }
+ ],
+ "durationMinutes": 40,
+ "items": [
+  {
+   "blueprintRow": 0,
+   "commandWord": "Explain",
+   "markScheme": {
+    "points": [
+     {
+      "marks": 3,
+      "text": "States each pH step is ten times stronger, so two steps multiply the acidity by ten then ten again"
+     },
+     {
+      "marks": 3,
+      "text": "Applies the ladder the right way round, with the lower pH counted as the more acidic solution"
+     }
+    ]
+   },
+   "marks": 6,
+   "prompt": "One solution has pH 2 and another has pH 4. Explain which solution is more acidic and how many times more acidic it is."
+  },
+  {
+   "blueprintRow": 0,
+   "commandWord": "State",
+   "markScheme": {
+    "points": [
+     {
+      "marks": 2,
+      "text": "Gives blue litmus turning red for the acid test"
+     },
+     {
+      "marks": 2,
+      "text": "Gives red litmus turning blue for the alkali test, with no change read as neutral"
+     }
+    ]
+   },
+   "marks": 4,
+   "prompt": "State the colour change of litmus paper in an acid and in an alkali."
+  },
+  {
+   "blueprintRow": 1,
+   "commandWord": "Explain",
+   "markScheme": {
+    "points": [
+     {
+      "marks": 3,
+      "text": "Pairs the H+ ions from the acid with the OH- ions from the alkali to form water"
+     },
+     {
+      "marks": 3,
+      "text": "Accounts for the leftover ions as the salt rather than saying the two liquids cancel into nothing"
+     }
+    ]
+   },
+   "marks": 6,
+   "prompt": "Explain, in terms of ions, what happens when hydrochloric acid is neutralised by sodium hydroxide, and name the salt formed."
+  },
+  {
+   "blueprintRow": 1,
+   "commandWord": "Describe",
+   "markScheme": {
+    "points": [
+     {
+      "marks": 2,
+      "text": "Names the nucleus as the structure controlling the cell"
+     },
+     {
+      "marks": 2,
+      "text": "Names the membrane as selectively permeable, choosing what crosses rather than sealing the cell"
+     }
+    ]
+   },
+   "marks": 4,
+   "prompt": "Describe the job of the nucleus and of the cell membrane in an animal cell."
+  }
+ ],
+ "level": "secondary",
+ "moderation": {
+  "state": "unreviewed"
+ },
+ "review": null,
+ "rubric": {
+  "criteria": [
+   {
+    "levels": [
+     {
+      "descriptor": "Explanations chain ion behaviour to the pH change in order, with each step justified by a named ion or indicator change.",
+      "label": "Secure"
+     },
+     {
+      "descriptor": "Explanations are broadly sound but one link between the ions and the pH change is asserted rather than justified.",
+      "label": "Developing"
+     },
+     {
+      "descriptor": "Answers list facts about acids and cells without connecting them into an explanation.",
+      "label": "Beginning"
+     }
+    ],
+    "name": "Acids and cells reasoning"
+   }
+  ]
+ },
+ "subject": "science",
+ "title": "Acids, Bases, Salts and Cells Unit Test",
+ "topics": [
+  "secondary-science-chem-acids",
+  "secondary-science-cells"
+ ],
+ "totalMarks": 20,
+ "unitTitle": "Acids, bases, salts and cell structure"
+}
