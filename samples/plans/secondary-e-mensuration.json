@@ -1,0 +1,106 @@
+{
+ "title": "E-Math mensuration: sectors, pyramids and spheres",
+ "level": "secondary",
+ "subject": "math",
+ "topic": "e-mensuration",
+ "durationMinutes": 40,
+ "objectives": [
+  {
+   "id": "o1",
+   "text": "Find arc lengths and sector areas as fractions of a full circle",
+   "successCriteria": [
+    "I can write the sector fraction as angle over 360 and apply the same fraction to 2 pi r and to pi r squared",
+    "I can find the arc length 2 pi and sector area 6 pi for a 60 degree sector of radius 6 cm"
+   ],
+   "assessmentPoints": [
+    "Arc and sector answers in the opening activity",
+    "Partner explanations of the angle fraction"
+   ]
+  },
+  {
+   "id": "o2",
+   "text": "Calculate the volume of a pyramid from its base area and vertical height",
+   "successCriteria": [
+    "I can say three identical pyramids fill the prism on the same base with the same height",
+    "I can calculate 1/3 x 36 x 4 = 48 cubic centimetres for a square pyramid with base 6 cm by 6 cm and vertical height 4 cm"
+   ],
+   "assessmentPoints": [
+    "Pyramid answers in the second activity",
+    "Worksheet answers checked against the trap in the fourth activity"
+   ]
+  },
+  {
+   "id": "o3",
+   "text": "Use the sphere volume formula and explain why area scales with r squared",
+   "successCriteria": [
+    "I can state the sphere volume as 4/3 pi r cubed and calculate 36 pi for r = 3 cm",
+    "I can explain that doubling the radius quadruples the area, from 9 pi to 36 pi, because area scales with r squared"
+   ],
+   "assessmentPoints": [
+    "Sphere answers in the third activity",
+    "Trap answers in the closing exit ticket"
+   ]
+  }
+ ],
+ "activities": [
+  {
+   "title": "Arc length and sector area",
+   "minutes": 8,
+   "objectiveIds": [
+    "o1"
+   ],
+   "scriptCue": "s1",
+   "grouping": "whole class",
+   "resources": [
+    "board"
+   ]
+  },
+  {
+   "title": "Pyramid volume, revealed",
+   "minutes": 8,
+   "objectiveIds": [
+    "o2"
+   ],
+   "scriptCue": "s2",
+   "grouping": "pairs"
+  },
+  {
+   "title": "Sphere volume",
+   "minutes": 8,
+   "objectiveIds": [
+    "o3"
+   ],
+   "scriptCue": "s3",
+   "grouping": "whole class",
+   "differentiation": {
+    "support": "Provide the student notes worked example open at the sector step so learners can follow the 60/360 = 1/6 fraction before trying the sphere calculation themselves."
+   }
+  },
+  {
+   "title": "A common mistake: doubling r doubles area",
+   "minutes": 8,
+   "objectiveIds": [
+    "o1",
+    "o3"
+   ],
+   "scriptCue": "s4",
+   "grouping": "pairs",
+   "differentiation": {
+    "stretch": "Ask learners to explain why four radius-3 disks tile the radius-6 disk exactly before checking the squared-paper count."
+   }
+  },
+  {
+   "title": "Worksheet practice and exit ticket",
+   "minutes": 8,
+   "objectiveIds": [
+    "o1",
+    "o2",
+    "o3"
+   ],
+   "grouping": "individual",
+   "resources": [
+    "worksheet"
+   ]
+  }
+ ]
+}

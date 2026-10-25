@@ -1,0 +1,125 @@
+{
+ "title": "Mensuration and Trigonometry Unit Test",
+ "level": "secondary",
+ "subject": "math",
+ "unitTitle": "Sectors, pyramids, spheres and trigonometric ratios",
+ "topics": [
+  "secondary-e-mensuration",
+  "secondary-e-trigonometry"
+ ],
+ "durationMinutes": 40,
+ "totalMarks": 20,
+ "blueprint": [
+  {
+   "outcomeCode": "S3-MENS-APPLY",
+   "assessmentObjective": "AO1 recall and apply",
+   "marks": 10,
+   "cognitiveLevel": "apply"
+  },
+  {
+   "outcomeCode": "S3-TRIG-REASON",
+   "assessmentObjective": "AO2 reason and explain",
+   "marks": 10,
+   "cognitiveLevel": "reason"
+  }
+ ],
+ "items": [
+  {
+   "prompt": "A sector has angle 90 degrees in a circle of radius 8 cm. What is its arc length?",
+   "blueprintRow": 0,
+   "commandWord": "Calculate",
+   "marks": 4,
+   "markScheme": {
+    "points": [
+     {
+      "text": "Writes the arc as the angle fraction of the circumference, 90/360 x 2 pi x 8",
+      "marks": 2
+     },
+     {
+      "text": "Gives the arc length as 4 pi cm",
+      "marks": 2
+     }
+    ]
+   }
+  },
+  {
+   "prompt": "Find the volume of a sphere of radius 3 cm, in terms of pi.",
+   "blueprintRow": 0,
+   "commandWord": "Calculate",
+   "marks": 6,
+   "markScheme": {
+    "points": [
+     {
+      "text": "Writes the sphere volume as 4/3 pi r cubed before substituting r = 3",
+      "marks": 3
+     },
+     {
+      "text": "Gives the volume as 36 pi cubic centimetres",
+      "marks": 3
+     }
+    ]
+   }
+  },
+  {
+   "prompt": "In the 3-4-5 triangle, angle theta has opposite side 3 and hypotenuse 5. What is sin theta?",
+   "blueprintRow": 1,
+   "commandWord": "State",
+   "marks": 4,
+   "markScheme": {
+    "points": [
+     {
+      "text": "States sin theta as opposite over hypotenuse",
+      "marks": 2
+     },
+     {
+      "text": "Gives sin theta as 3/5",
+      "marks": 2
+     }
+    ]
+   }
+  },
+  {
+   "prompt": "In triangle ABC, side a = 4 is opposite angle A = 30 degrees, and angle B = 60 degrees. Use the sine rule to calculate side b.",
+   "blueprintRow": 1,
+   "commandWord": "Calculate",
+   "marks": 6,
+   "markScheme": {
+    "points": [
+     {
+      "text": "Writes the sine rule pairing a with sin A and b with sin B before substituting",
+      "marks": 3
+     },
+     {
+      "text": "Rearranges to (4 x 0.8660) / 0.5 and gives b as about 6.93",
+      "marks": 3
+     }
+    ]
+   }
+  }
+ ],
+ "rubric": {
+  "criteria": [
+   {
+    "name": "Mensuration and trigonometric reasoning",
+    "levels": [
+     {
+      "label": "Secure",
+      "descriptor": "Working names the fraction, formula or pairing first, then applies it in a justified sequence."
+     },
+     {
+      "label": "Developing",
+      "descriptor": "The method is broadly sound but a fraction, power or pairing step is asserted without justification."
+     },
+     {
+      "label": "Beginning",
+      "descriptor": "Formulae or ratios are written without naming what each part represents."
+     }
+    ]
+   }
+  ]
+ },
+ "moderation": {
+  "state": "unreviewed"
+ },
+ "review": null
+}
