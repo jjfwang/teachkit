@@ -1,0 +1,88 @@
+{
+  "level": "secondary",
+  "subject": "science",
+  "templates": [
+    {
+      "kind": "flow",
+      "slots": [
+        {
+          "entries": [
+            "Velocity is speed with a direction: the athlete covers 100 metres in 20 seconds for a speed of 5 metres per second, and running right makes it a velocity of 5 metres per second rightwards."
+          ],
+          "label": "Velocity",
+          "studentPrompt": "Explain this step in your own words."
+        },
+        {
+          "entries": [
+            "Distance-time graphs: the line climbs 120 metres in 60 seconds and the gradient triangle builds beneath it - gradient is rise over run, 120 over 60, a speed of 2 metres per second."
+          ],
+          "label": "Distance-time graphs",
+          "studentPrompt": "Explain this step in your own words."
+        },
+        {
+          "entries": [
+            "Velocity-time graphs: the line rises from 0 to 20 metres per second in 10 seconds, so the slope is an acceleration of 2 metres per second squared, while the shaded area growing under the line is the 100 metres travelled."
+          ],
+          "label": "Velocity-time graphs",
+          "studentPrompt": "Explain this step in your own words."
+        },
+        {
+          "entries": [
+            "Check the thinking: the runner covers 800 metres in 100 seconds for a speed of 8 metres per second, but ends at the start, so displacement and velocity are both zero."
+          ],
+          "label": "Check the thinking",
+          "studentPrompt": "Explain this step in your own words."
+        }
+      ]
+    },
+    {
+      "kind": "frayer",
+      "slots": [
+        {
+          "entries": [
+            "Distance travelled per unit time, calculated as distance divided by time, measured in metres per second."
+          ],
+          "label": "Speed",
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "entries": [
+            "Speed with a direction: displacement divided by time, so a round trip back to the start has zero average velocity."
+          ],
+          "label": "Velocity",
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "entries": [
+            "The straight-line change in position from start to finish, with a direction - not the total path length."
+          ],
+          "label": "Displacement",
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "entries": [
+            "The rate of change of velocity, read off a velocity-time graph as its gradient."
+          ],
+          "label": "Acceleration",
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "entries": [
+            "Rise over run on a graph: on a distance-time graph it is the speed, and on a velocity-time graph it is the acceleration."
+          ],
+          "label": "Gradient",
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "entries": [
+            "The product of velocity and time accumulated under the line, which equals the distance travelled."
+          ],
+          "label": "Area under a velocity-time graph",
+          "studentPrompt": "Give your own example of this term."
+        }
+      ]
+    }
+  ],
+  "title": "Motion: speed, velocity and graphs",
+  "topic": "phys-kinematics"
+}

@@ -1,0 +1,81 @@
+{
+  "flashcards": [
+    {
+      "back": "Distance travelled per unit time, calculated as distance divided by time, measured in metres per second.",
+      "front": "Speed",
+      "source": "definition"
+    },
+    {
+      "back": "Speed with a direction: displacement divided by time, so a round trip back to the start has zero average velocity.",
+      "front": "Velocity",
+      "source": "definition"
+    },
+    {
+      "back": "The straight-line change in position from start to finish, with a direction - not the total path length.",
+      "front": "Displacement",
+      "source": "definition"
+    },
+    {
+      "back": "The rate of change of velocity, read off a velocity-time graph as its gradient.",
+      "front": "Acceleration",
+      "source": "definition"
+    },
+    {
+      "back": "Rise over run on a graph: on a distance-time graph it is the speed, and on a velocity-time graph it is the acceleration.",
+      "front": "Gradient",
+      "source": "definition"
+    },
+    {
+      "back": "The product of velocity and time accumulated under the line, which equals the distance travelled.",
+      "front": "Area under a velocity-time graph",
+      "source": "definition"
+    },
+    {
+      "back": "Flat reads as \"nothing is happening\", so the line feels like zero movement. A flat v-t line means constant velocity: the object keeps moving at the same speed. In class, sketch a line flat at 10 m/s and ask how far the object travels in 5 seconds: the area under the flat line is 10 times 5, which is 50 metres - a stopped object travels nowhere.",
+      "front": "A flat line on a velocity-time graph means the object has stopped.",
+      "source": "trap"
+    },
+    {
+      "back": "Wrong - the velocity stays constant at 12 m/s, so the object keeps moving",
+      "front": "A velocity-time graph runs flat at 12 m/s for ten seconds. A classmate says the object has stopped. Which statement is correct?",
+      "source": "quiz-bank"
+    },
+    {
+      "back": "2 metres per second squared",
+      "front": "A velocity-time graph rises from 0 to 20 m/s in 10 seconds. What is the acceleration?",
+      "source": "quiz-bank"
+    }
+  ],
+  "level": "secondary",
+  "practiceSets": [
+    {
+      "dayOffset": 1,
+      "items": [
+        {
+          "answer": "Wrong - the velocity stays constant at 12 m/s, so the object keeps moving",
+          "prompt": "A velocity-time graph runs flat at 12 m/s for ten seconds. A classmate says the object has stopped. Which statement is correct?"
+        },
+        {
+          "answer": "It keeps moving at a constant 8 m/s",
+          "prompt": "A velocity-time graph runs flat at 8 m/s. What is the object doing?"
+        }
+      ]
+    },
+    {
+      "dayOffset": 3,
+      "items": [
+        {
+          "answer": "Distance travelled",
+          "prompt": "The area under a velocity-time graph gives which quantity?"
+        },
+        {
+          "answer": "3 m/s.",
+          "prompt": "A distance-time graph climbs 90 metres in 30 seconds in a straight line. What is the speed?"
+        }
+      ]
+    }
+  ],
+  "subject": "science",
+  "title": "Motion: speed, velocity and graphs",
+  "topic": "phys-kinematics"
+}
