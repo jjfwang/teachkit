@@ -1,0 +1,202 @@
+{
+ "doNow": [
+  {
+   "choices": [
+    {
+     "misconception": "Moving a vector to a new start point changes it.",
+     "rationale": {
+      "chose": "The learner selected option It is a different vector, because it starts somewhere new as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: Moving a vector to a new start point changes it.. The slip: Position vectors are pinned to the origin, so every vector feels pinned.. The fix: Free vectors slide: the same arrow drawn anywhere is the same vector. Only position vectors are pinned to the origin..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "It is a different vector, because it starts somewhere new"
+    },
+    {
+     "correct": true,
+     "text": "It is the same vector: same magnitude and same direction"
+    },
+    {
+     "misconception": "Moving a vector to a new start point changes it.",
+     "rationale": {
+      "chose": "The learner selected option It is the same vector only if it starts at the origin as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: Moving a vector to a new start point changes it.. The slip: Position vectors are pinned to the origin, so every vector feels pinned.. The fix: Free vectors slide: the same arrow drawn anywhere is the same vector. Only position vectors are pinned to the origin..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "It is the same vector only if it starts at the origin"
+    },
+    {
+     "misconception": "Moving a vector to a new start point changes it.",
+     "rationale": {
+      "chose": "The learner selected option It is a position vector for the new start point as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: Moving a vector to a new start point changes it.. The slip: Position vectors are pinned to the origin, so every vector feels pinned.. The fix: Free vectors slide: the same arrow drawn anywhere is the same vector. Only position vectors are pinned to the origin..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "It is a position vector for the new start point"
+    }
+   ],
+   "id": "dn1",
+   "kind": "multiple-choice",
+   "prompt": "The arrow for a vector moves 2 right and 3 up. The same arrow is redrawn starting at a different point, still moving 2 right and 3 up. What can we say about the redrawn arrow?"
+  },
+  {
+   "choices": [
+    {
+     "misconception": "Moving a vector to a new start point changes it.",
+     "rationale": {
+      "chose": "The learner selected option 5 as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: Moving a vector to a new start point changes it.. The slip: Position vectors are pinned to the origin, so every vector feels pinned.. The fix: Free vectors slide: the same arrow drawn anywhere is the same vector. Only position vectors are pinned to the origin..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "5"
+    },
+    {
+     "correct": true,
+     "text": "sqrt(13)"
+    },
+    {
+     "misconception": "Moving a vector to a new start point changes it.",
+     "rationale": {
+      "chose": "The learner selected option 13 as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: Moving a vector to a new start point changes it.. The slip: Position vectors are pinned to the origin, so every vector feels pinned.. The fix: Free vectors slide: the same arrow drawn anywhere is the same vector. Only position vectors are pinned to the origin..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "13"
+    },
+    {
+     "misconception": "Moving a vector to a new start point changes it.",
+     "rationale": {
+      "chose": "The learner selected option sqrt(5) as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: Moving a vector to a new start point changes it.. The slip: Position vectors are pinned to the origin, so every vector feels pinned.. The fix: Free vectors slide: the same arrow drawn anywhere is the same vector. Only position vectors are pinned to the origin..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "sqrt(5)"
+    }
+   ],
+   "id": "dn2",
+   "kind": "multiple-choice",
+   "prompt": "What is the magnitude of the vector (2, 3)?"
+  },
+  {
+   "choices": [
+    {
+     "misconception": "Moving a vector to a new start point changes it.",
+     "rationale": {
+      "chose": "The learner selected option (1, 0, 0) as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: Moving a vector to a new start point changes it.. The slip: Position vectors are pinned to the origin, so every vector feels pinned.. The fix: Free vectors slide: the same arrow drawn anywhere is the same vector. Only position vectors are pinned to the origin..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "(1, 0, 0)"
+    },
+    {
+     "misconception": "Moving a vector to a new start point changes it.",
+     "rationale": {
+      "chose": "The learner selected option (0, 1, 0) as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: Moving a vector to a new start point changes it.. The slip: Position vectors are pinned to the origin, so every vector feels pinned.. The fix: Free vectors slide: the same arrow drawn anywhere is the same vector. Only position vectors are pinned to the origin..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "(0, 1, 0)"
+    },
+    {
+     "correct": true,
+     "text": "(1, 1, -1)"
+    },
+    {
+     "misconception": "Moving a vector to a new start point changes it.",
+     "rationale": {
+      "chose": "The learner selected option (1, 1, 1) as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: Moving a vector to a new start point changes it.. The slip: Position vectors are pinned to the origin, so every vector feels pinned.. The fix: Free vectors slide: the same arrow drawn anywhere is the same vector. Only position vectors are pinned to the origin..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "(1, 1, 1)"
+    }
+   ],
+   "id": "dn3",
+   "kind": "multiple-choice",
+   "prompt": "Which vector is perpendicular to the normal n = (1, 2, 3)?"
+  }
+ ],
+ "hingeQuestions": [
+  {
+   "choices": [
+    {
+     "misconception": "Moving a vector to a new start point changes it.",
+     "rationale": {
+      "chose": "The learner selected option The student is right - a new start point means a new vector as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: Moving a vector to a new start point changes it.. The slip: Position vectors are pinned to the origin, so every vector feels pinned.. The fix: Free vectors slide: the same arrow drawn anywhere is the same vector. Only position vectors are pinned to the origin..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "The student is right - a new start point means a new vector"
+    },
+    {
+     "correct": true,
+     "text": "Free vectors slide: the same arrow drawn anywhere is the same vector"
+    },
+    {
+     "misconception": "Moving a vector to a new start point changes it.",
+     "rationale": {
+      "chose": "The learner selected option It is the same vector only if it starts at the origin as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: Moving a vector to a new start point changes it.. The slip: Position vectors are pinned to the origin, so every vector feels pinned.. The fix: Free vectors slide: the same arrow drawn anywhere is the same vector. Only position vectors are pinned to the origin..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "It is the same vector only if it starts at the origin"
+    },
+    {
+     "misconception": "Moving a vector to a new start point changes it.",
+     "rationale": {
+      "chose": "The learner selected option It becomes a position vector for the new start point as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: Moving a vector to a new start point changes it.. The slip: Position vectors are pinned to the origin, so every vector feels pinned.. The fix: Free vectors slide: the same arrow drawn anywhere is the same vector. Only position vectors are pinned to the origin..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "It becomes a position vector for the new start point"
+    }
+   ],
+   "id": "h1",
+   "kind": "multiple-choice",
+   "prompt": "A student claims that redrawing a free vector at a new start point changes it. Which statement corrects the claim?",
+   "scriptCue": "s5"
+  },
+  {
+   "choices": [
+    {
+     "misconception": "Moving a vector to a new start point changes it.",
+     "rationale": {
+      "chose": "The learner selected option It is a different vector, because it starts somewhere new as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: Moving a vector to a new start point changes it.. The slip: Position vectors are pinned to the origin, so every vector feels pinned.. The fix: Free vectors slide: the same arrow drawn anywhere is the same vector. Only position vectors are pinned to the origin..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "It is a different vector, because it starts somewhere new"
+    },
+    {
+     "correct": true,
+     "text": "It is the same vector: same magnitude and same direction"
+    },
+    {
+     "misconception": "Moving a vector to a new start point changes it.",
+     "rationale": {
+      "chose": "The learner selected option It is the same vector only if it starts at the origin as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: Moving a vector to a new start point changes it.. The slip: Position vectors are pinned to the origin, so every vector feels pinned.. The fix: Free vectors slide: the same arrow drawn anywhere is the same vector. Only position vectors are pinned to the origin..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "It is the same vector only if it starts at the origin"
+    },
+    {
+     "misconception": "Moving a vector to a new start point changes it.",
+     "rationale": {
+      "chose": "The learner selected option It is a position vector for the new start point as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: Moving a vector to a new start point changes it.. The slip: Position vectors are pinned to the origin, so every vector feels pinned.. The fix: Free vectors slide: the same arrow drawn anywhere is the same vector. Only position vectors are pinned to the origin..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "It is a position vector for the new start point"
+    }
+   ],
+   "id": "h2",
+   "kind": "multiple-choice",
+   "prompt": "The arrow for a vector moves 2 right and 3 up. The same arrow is redrawn starting at a different point, still moving 2 right and 3 up. What can we say about the redrawn arrow?",
+   "scriptCue": "s5"
+  }
+ ],
+ "level": "jc",
+ "subject": "math",
+ "title": "JC H2 vectors: direction, dot products, lines and planes",
+ "topic": "h2-vectors"
+}
