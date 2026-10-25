@@ -1,0 +1,120 @@
+{
+  "level": "secondary",
+  "sets": [
+    {
+      "cloze": [
+        {
+          "answers": [
+            "Probability"
+          ],
+          "text": "___ is a number between 0 and 1 that measures how likely an event is."
+        },
+        {
+          "answers": [
+            "Event",
+            "Outcome"
+          ],
+          "text": "An ___ is a set of outcomes we are interested in, and one possible result of a trial is an ___."
+        }
+      ],
+      "frames": [
+        "A ___ sits between 0 and 1 on the scale.",
+        "An ___ is a set of outcomes we are interested in.",
+        "The ___ is the set of all possible outcomes of a trial."
+      ],
+      "level": "full",
+      "starters": [
+        "To place a probability on the scale I...",
+        "To find P(event) I count...",
+        "For two tosses, the sample space is..."
+      ],
+      "wordBank": [
+        {
+          "gloss": "a number between 0 and 1 that measures how likely an event is",
+          "term": "Probability"
+        },
+        {
+          "gloss": "one possible result of a trial",
+          "term": "Outcome"
+        },
+        {
+          "gloss": "a set of outcomes we are interested in",
+          "term": "Event"
+        },
+        {
+          "gloss": "the set of all possible outcomes of a trial",
+          "term": "Sample space"
+        }
+      ]
+    },
+    {
+      "cloze": [
+        {
+          "answers": [
+            "Equally likely"
+          ],
+          "text": "Outcomes that share the same probability are ___."
+        },
+        {
+          "answers": [
+            "Independent events"
+          ],
+          "text": "___ are events where the result of one does not change the probabilities of the other."
+        }
+      ],
+      "frames": [
+        "Each cell of the table is ___ at 1/4.",
+        "For ___ the probabilities multiply."
+      ],
+      "level": "partial",
+      "starters": [
+        "The four cells are...",
+        "The branches multiply because..."
+      ],
+      "wordBank": [
+        {
+          "gloss": "a set of outcomes we are interested in",
+          "term": "Event"
+        },
+        {
+          "gloss": "outcomes that share the same probability",
+          "term": "Equally likely"
+        },
+        {
+          "gloss": "events where one result does not change the probabilities of the other",
+          "term": "Independent events"
+        }
+      ]
+    },
+    {
+      "cloze": [
+        {
+          "answers": [
+            "Sample space"
+          ],
+          "text": "The ___ for two coin tosses has four members."
+        }
+      ],
+      "frames": [
+        "The ___ has four members for two tosses."
+      ],
+      "level": "minimal",
+      "starters": [
+        "For two tosses, the sample space is..."
+      ],
+      "wordBank": [
+        {
+          "gloss": "the set of all possible outcomes of a trial",
+          "term": "Sample space"
+        },
+        {
+          "gloss": "a number between 0 and 1 that measures how likely an event is",
+          "term": "Probability"
+        }
+      ]
+    }
+  ],
+  "subject": "math",
+  "title": "E-Math probability: single and combined events",
+  "topic": "e-probability"
+}
