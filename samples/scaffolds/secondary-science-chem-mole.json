@@ -1,0 +1,120 @@
+{
+  "level": "secondary",
+  "sets": [
+    {
+      "cloze": [
+        {
+          "answers": [
+            "Mole"
+          ],
+          "text": "A counting word for 6.02 × 10²³ particles is a ___."
+        },
+        {
+          "answers": [
+            "Molar mass",
+            "Mass"
+          ],
+          "text": "The ___ of a substance is its mass per mole, and ___ is how heavy a sample is in grams."
+        }
+      ],
+      "frames": [
+        "A ___ is a counting word for particles.",
+        "The ___ is the mass of one mole of a substance.",
+        "The ___ is the number of particles in one mole."
+      ],
+      "level": "full",
+      "starters": [
+        "A mole is...",
+        "The molar mass is...",
+        "The Avogadro constant is..."
+      ],
+      "wordBank": [
+        {
+          "gloss": "a counting word for 6.02 x 10^23 particles",
+          "term": "Mole"
+        },
+        {
+          "gloss": "the mass of one mole of a substance, in grams per mole",
+          "term": "Molar mass"
+        },
+        {
+          "gloss": "the number of particles in one mole",
+          "term": "Avogadro constant"
+        },
+        {
+          "gloss": "how heavy a sample is, in grams",
+          "term": "Mass"
+        }
+      ]
+    },
+    {
+      "cloze": [
+        {
+          "answers": [
+            "Particle"
+          ],
+          "text": "A single atom, molecule or ion being counted is a ___."
+        },
+        {
+          "answers": [
+            "Mole ratio"
+          ],
+          "text": "The ___ of moles in a balanced equation scales as a whole."
+        }
+      ],
+      "frames": [
+        "A ___ is a single atom, molecule or ion being counted.",
+        "The ___ in a balanced equation scales as a whole when amounts change."
+      ],
+      "level": "partial",
+      "starters": [
+        "A particle is...",
+        "A mole ratio is..."
+      ],
+      "wordBank": [
+        {
+          "gloss": "a single atom, molecule or ion being counted",
+          "term": "Particle"
+        },
+        {
+          "gloss": "the ratio of moles in a balanced equation",
+          "term": "Mole ratio"
+        },
+        {
+          "gloss": "a counting word for 6.02 x 10^23 particles",
+          "term": "Mole"
+        }
+      ]
+    },
+    {
+      "cloze": [
+        {
+          "answers": [
+            "Mass"
+          ],
+          "text": "How heavy a sample is, in grams, is its ___."
+        }
+      ],
+      "frames": [
+        "___ links to moles through molar mass."
+      ],
+      "level": "minimal",
+      "starters": [
+        "Mass is..."
+      ],
+      "wordBank": [
+        {
+          "gloss": "how heavy a sample is, in grams",
+          "term": "Mass"
+        },
+        {
+          "gloss": "a counting word for 6.02 x 10^23 particles",
+          "term": "Mole"
+        }
+      ]
+    }
+  ],
+  "subject": "science",
+  "title": "The mole: counting atoms by weighing",
+  "topic": "chem-mole"
+}
