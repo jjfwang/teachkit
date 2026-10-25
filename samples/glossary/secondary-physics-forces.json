@@ -1,0 +1,38 @@
+{
+  "entries": [
+    {
+      "example": "Friction opposes relative motion: a 60-newton push drives the block right, a 40-newton friction arrow grows at the contact against the slide, and the net 20 newtons to the right keeps the block sliding.",
+      "meaning": "The force between two surfaces in contact that opposes their relative slide - which is why it can point forward on a driving wheel.",
+      "term": "Friction"
+    },
+    {
+      "example": "Friction opposes relative motion: a 60-newton push drives the block right, a 40-newton friction arrow grows at the contact against the slide, and the net 20 newtons to the right keeps the block sliding.",
+      "meaning": "The single force left after opposing forces are combined: a 60 N push against 40 N of friction leaves a net 20 N.",
+      "term": "Net force"
+    },
+    {
+      "example": "Moments: 60 newtons at 0.5 metres makes 30 newton-metres on the left; 30 newtons at 0.75 metres makes only 22.5 on the right, so the beam tips - then the right weight slides to 1.0 metre, its moment rises to 30, and the beam balances.",
+      "meaning": "The turning effect of a force, calculated as force times distance from the pivot, measured in newton-metres.",
+      "term": "Moment"
+    },
+    {
+      "example": "Moments: 60 newtons at 0.5 metres makes 30 newton-metres on the left; 30 newtons at 0.75 metres makes only 22.5 on the right, so the beam tips - then the right weight slides to 1.0 metre, its moment rises to 30, and the beam balances.",
+      "meaning": "The fixed point a beam or lever turns around; every moment distance is measured from it.",
+      "term": "Pivot"
+    },
+    {
+      "example": "A 200 N crate rests on its wide face of area 0.5 square metres. Pressure = force / area = 200 / 0.5 = 400 Pa. Check the units: newtons divided by square metres gives pascals, and tipping the crate onto a smaller face raises the pressure without changing the force.",
+      "meaning": "Force spread over an area, calculated as force divided by area, measured in pascals.",
+      "term": "Pressure"
+    },
+    {
+      "example": "Pressure: a 200-newton crate on a 0.5-square-metre face gives 400 pascals; tipped onto a 0.05-square-metre edge the same force gives 4000 pascals - one tenth the area, ten times the pressure.",
+      "meaning": "The unit of pressure: one pascal is one newton spread over one square metre.",
+      "term": "Pascal"
+    }
+  ],
+  "level": "secondary",
+  "subject": "science",
+  "title": "Forces: friction, moments and pressure",
+  "topic": "phys-forces"
+}

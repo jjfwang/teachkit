@@ -1,0 +1,81 @@
+{
+  "flashcards": [
+    {
+      "back": "The force between two surfaces in contact that opposes their relative slide - which is why it can point forward on a driving wheel.",
+      "front": "Friction",
+      "source": "definition"
+    },
+    {
+      "back": "The single force left after opposing forces are combined: a 60 N push against 40 N of friction leaves a net 20 N.",
+      "front": "Net force",
+      "source": "definition"
+    },
+    {
+      "back": "The turning effect of a force, calculated as force times distance from the pivot, measured in newton-metres.",
+      "front": "Moment",
+      "source": "definition"
+    },
+    {
+      "back": "The fixed point a beam or lever turns around; every moment distance is measured from it.",
+      "front": "Pivot",
+      "source": "definition"
+    },
+    {
+      "back": "Force spread over an area, calculated as force divided by area, measured in pascals.",
+      "front": "Pressure",
+      "source": "definition"
+    },
+    {
+      "back": "The unit of pressure: one pascal is one newton spread over one square metre.",
+      "front": "Pascal",
+      "source": "definition"
+    },
+    {
+      "back": "The push feels the same, so the effect on the ground feels like it should be the same. Pressure is force over area: tiptoes spread the same force over a smaller area, so the pressure is higher. In class, keep the force fixed at 200 N and shrink only the area: 0.5 square metres gives 400 Pa, while 0.05 square metres gives 4000 Pa - the push never changed, only its spread.",
+      "front": "The same push gives the same pressure whether you stand flat or on tiptoes.",
+      "source": "trap"
+    },
+    {
+      "back": "Wrong - the same force now spreads over a smaller area, so the pressure is higher",
+      "front": "A student stands flat, then rises on tiptoes. Her weight has not changed. A classmate says the pressure under her feet is unchanged too. Which statement is correct?",
+      "source": "quiz-bank"
+    },
+    {
+      "back": "30 N\u00b7m.",
+      "front": "A 30 N weight balances a beam when it sits 1.0 m from the pivot. What moment does it make?",
+      "source": "quiz-bank"
+    }
+  ],
+  "level": "secondary",
+  "practiceSets": [
+    {
+      "dayOffset": 1,
+      "items": [
+        {
+          "answer": "Wrong - the same force now spreads over a smaller area, so the pressure is higher",
+          "prompt": "A student stands flat, then rises on tiptoes. Her weight has not changed. A classmate says the pressure under her feet is unchanged too. Which statement is correct?"
+        },
+        {
+          "answer": "It increases, because the same force spreads over a smaller area",
+          "prompt": "Standing on tiptoes instead of flat feet, with the same weight, what happens to the pressure under your feet?"
+        }
+      ]
+    },
+    {
+      "dayOffset": 3,
+      "items": [
+        {
+          "answer": "4000 Pa",
+          "prompt": "The same 200 N crate is tipped from a 0.5 square metre face onto a 0.05 square metre edge. The pressure changes from 400 Pa to what?"
+        },
+        {
+          "answer": "30 N\u00b7m.",
+          "prompt": "A 30 N weight balances a beam when it sits 1.0 m from the pivot. What moment does it make?"
+        }
+      ]
+    }
+  ],
+  "subject": "science",
+  "title": "Forces: friction, moments and pressure",
+  "topic": "phys-forces"
+}
