@@ -1,0 +1,193 @@
+{
+  "doNow": [
+    {
+      "choices": [
+        {
+          "misconception": "The bulb uses up the current.",
+          "rationale": {
+            "chose": "The learner selected option 1.5 A as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: The bulb uses up the current.. The bulb glows and gets hot, so it looks like it consumes the electricity flowing through it. Current is not used up: an ammeter reads the same 0.5 amps on both sides of the bulb. In class, place the ammeter on each side of the bulb in turn: 0.5 A before, 0.5 A after - the bulb changed electrical energy into light and heat, but no current disappeared.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "1.5 A"
+        },
+        {
+          "correct": true,
+          "text": "3 A"
+        },
+        {
+          "misconception": "The bulb uses up the current.",
+          "rationale": {
+            "chose": "The learner selected option 4 A as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: The bulb uses up the current.. The bulb glows and gets hot, so it looks like it consumes the electricity flowing through it. Current is not used up: an ammeter reads the same 0.5 amps on both sides of the bulb. In class, place the ammeter on each side of the bulb in turn: 0.5 A before, 0.5 A after - the bulb changed electrical energy into light and heat, but no current disappeared.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "4 A"
+        },
+        {
+          "misconception": "The bulb uses up the current.",
+          "rationale": {
+            "chose": "The learner selected option 48 A as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: The bulb uses up the current.. The bulb glows and gets hot, so it looks like it consumes the electricity flowing through it. Current is not used up: an ammeter reads the same 0.5 amps on both sides of the bulb. In class, place the ammeter on each side of the bulb in turn: 0.5 A before, 0.5 A after - the bulb changed electrical energy into light and heat, but no current disappeared.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "48 A"
+        }
+      ],
+      "id": "dn1",
+      "kind": "multiple-choice",
+      "prompt": "A 12 V battery is connected across a resistor of 4 ohms. Calculate the current, showing the Ohm's law step."
+    },
+    {
+      "choices": [
+        {
+          "misconception": "The bulb uses up the current.",
+          "rationale": {
+            "chose": "The learner selected option 3 A as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: The bulb uses up the current.. The bulb glows and gets hot, so it looks like it consumes the electricity flowing through it. Current is not used up: an ammeter reads the same 0.5 amps on both sides of the bulb. In class, place the ammeter on each side of the bulb in turn: 0.5 A before, 0.5 A after - the bulb changed electrical energy into light and heat, but no current disappeared.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "3 A"
+        },
+        {
+          "misconception": "The bulb uses up the current.",
+          "rationale": {
+            "chose": "The learner selected option 6 A as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: The bulb uses up the current.. The bulb glows and gets hot, so it looks like it consumes the electricity flowing through it. Current is not used up: an ammeter reads the same 0.5 amps on both sides of the bulb. In class, place the ammeter on each side of the bulb in turn: 0.5 A before, 0.5 A after - the bulb changed electrical energy into light and heat, but no current disappeared.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "6 A"
+        },
+        {
+          "correct": true,
+          "text": "1.5 A"
+        },
+        {
+          "misconception": "The bulb uses up the current.",
+          "rationale": {
+            "chose": "The learner selected option 0.67 A as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: The bulb uses up the current.. The bulb glows and gets hot, so it looks like it consumes the electricity flowing through it. Current is not used up: an ammeter reads the same 0.5 amps on both sides of the bulb. In class, place the ammeter on each side of the bulb in turn: 0.5 A before, 0.5 A after - the bulb changed electrical energy into light and heat, but no current disappeared.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "0.67 A"
+        }
+      ],
+      "id": "dn2",
+      "kind": "multiple-choice",
+      "prompt": "The battery in question 3 is replaced by a 6 V battery, with the same 4 ohm resistor. Calculate the new current and state the pattern."
+    },
+    {
+      "choices": [
+        {
+          "misconception": "The bulb uses up the current.",
+          "rationale": {
+            "chose": "The learner selected option Correct - the bulb glows, so it must consume the current as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: The bulb uses up the current.. The bulb glows and gets hot, so it looks like it consumes the electricity flowing through it. Current is not used up: an ammeter reads the same 0.5 amps on both sides of the bulb. In class, place the ammeter on each side of the bulb in turn: 0.5 A before, 0.5 A after - the bulb changed electrical energy into light and heat, but no current disappeared.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "Correct - the bulb glows, so it must consume the current"
+        },
+        {
+          "misconception": "The bulb uses up the current.",
+          "rationale": {
+            "chose": "The learner selected option Wrong - the second ammeter reads more, because the bulb adds current as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: The bulb uses up the current.. The bulb glows and gets hot, so it looks like it consumes the electricity flowing through it. Current is not used up: an ammeter reads the same 0.5 amps on both sides of the bulb. In class, place the ammeter on each side of the bulb in turn: 0.5 A before, 0.5 A after - the bulb changed electrical energy into light and heat, but no current disappeared.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "Wrong - the second ammeter reads more, because the bulb adds current"
+        },
+        {
+          "correct": true,
+          "text": "Wrong - the second ammeter also reads 0.5 A, because current is not used up in a series loop"
+        },
+        {
+          "misconception": "The bulb uses up the current.",
+          "rationale": {
+            "chose": "The learner selected option Wrong - the second ammeter reads zero, because all the current stops at the bulb as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: The bulb uses up the current.. The bulb glows and gets hot, so it looks like it consumes the electricity flowing through it. Current is not used up: an ammeter reads the same 0.5 amps on both sides of the bulb. In class, place the ammeter on each side of the bulb in turn: 0.5 A before, 0.5 A after - the bulb changed electrical energy into light and heat, but no current disappeared.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "Wrong - the second ammeter reads zero, because all the current stops at the bulb"
+        }
+      ],
+      "id": "dn3",
+      "kind": "multiple-choice",
+      "prompt": "In a series circuit an ammeter before a bulb reads 0.5 A. A classmate says the ammeter after the bulb must read less, because the bulb has used some current up. Which statement is correct?"
+    }
+  ],
+  "hingeQuestions": [
+    {
+      "choices": [
+        {
+          "misconception": "The bulb uses up the current.",
+          "rationale": {
+            "chose": "The learner selected option Less than 0.5 A - the bulb has used some current as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: The bulb uses up the current.. The bulb glows and gets hot, so it looks like it consumes the electricity flowing through it. Current is not used up: an ammeter reads the same 0.5 amps on both sides of the bulb. In class, place the ammeter on each side of the bulb in turn: 0.5 A before, 0.5 A after - the bulb changed electrical energy into light and heat, but no current disappeared.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "Less than 0.5 A - the bulb has used some current"
+        },
+        {
+          "correct": true,
+          "text": "Exactly 0.5 A - current is the same all around a series loop"
+        },
+        {
+          "misconception": "The bulb uses up the current.",
+          "rationale": {
+            "chose": "The learner selected option More than 0.5 A as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: The bulb uses up the current.. The bulb glows and gets hot, so it looks like it consumes the electricity flowing through it. Current is not used up: an ammeter reads the same 0.5 amps on both sides of the bulb. In class, place the ammeter on each side of the bulb in turn: 0.5 A before, 0.5 A after - the bulb changed electrical energy into light and heat, but no current disappeared.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "More than 0.5 A"
+        },
+        {
+          "misconception": "The bulb uses up the current.",
+          "rationale": {
+            "chose": "The learner selected option 0 A - the current stops at the bulb as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: The bulb uses up the current.. The bulb glows and gets hot, so it looks like it consumes the electricity flowing through it. Current is not used up: an ammeter reads the same 0.5 amps on both sides of the bulb. In class, place the ammeter on each side of the bulb in turn: 0.5 A before, 0.5 A after - the bulb changed electrical energy into light and heat, but no current disappeared.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "0 A - the current stops at the bulb"
+        }
+      ],
+      "id": "h1",
+      "kind": "multiple-choice",
+      "prompt": "An ammeter reads 0.5 A just before a bulb in a series circuit. What does an ammeter just after the bulb read?",
+      "scriptCue": "s6"
+    },
+    {
+      "choices": [
+        {
+          "misconception": "The bulb uses up the current.",
+          "rationale": {
+            "chose": "The learner selected option More than 0.5 A - the bulb adds current as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: The bulb uses up the current.. The bulb glows and gets hot, so it looks like it consumes the electricity flowing through it. Current is not used up: an ammeter reads the same 0.5 amps on both sides of the bulb. In class, place the ammeter on each side of the bulb in turn: 0.5 A before, 0.5 A after - the bulb changed electrical energy into light and heat, but no current disappeared.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "More than 0.5 A - the bulb adds current"
+        },
+        {
+          "correct": true,
+          "text": "Exactly 0.5 A - current is the same all around a series loop"
+        },
+        {
+          "misconception": "The bulb uses up the current.",
+          "rationale": {
+            "chose": "The learner selected option Less than 0.5 A - the bulb has used some current as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: The bulb uses up the current.. The bulb glows and gets hot, so it looks like it consumes the electricity flowing through it. Current is not used up: an ammeter reads the same 0.5 amps on both sides of the bulb. In class, place the ammeter on each side of the bulb in turn: 0.5 A before, 0.5 A after - the bulb changed electrical energy into light and heat, but no current disappeared.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "Less than 0.5 A - the bulb has used some current"
+        }
+      ],
+      "id": "h2",
+      "kind": "multiple-choice",
+      "prompt": "What does an ammeter just after a bulb in a series circuit read, if the ammeter just before the bulb reads 0.5 A?",
+      "scriptCue": "s6"
+    }
+  ],
+  "level": "secondary",
+  "subject": "science",
+  "title": "Electricity: circuits, current and Ohm's law",
+  "topic": "phys-electricity"
+}
