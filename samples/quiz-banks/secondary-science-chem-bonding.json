@@ -1,0 +1,57 @@
+{
+ "items": [
+  {
+   "answer": "Salt is a giant ionic lattice of separate ions, and the formula gives only the ratio",
+   "choices": [
+    "The student is right - the formula shows the two atoms joined as a molecule",
+    "Salt is a giant ionic lattice of separate ions, and the formula gives only the ratio",
+    "Salt is made of molecules, but each molecule has millions of atoms",
+    "Salt is a metal, so its atoms sit in a sea of electrons"
+   ],
+   "misconceptionCode": "Table salt is made of NaCl molecules.",
+   "prompt": "A student says a grain of salt is one huge NaCl molecule. What is the best correction?"
+  },
+  {
+   "answer": "Salt is a giant ionic lattice of sodium and chloride ions, and NaCl gives only the ratio",
+   "choices": [
+    "Salt is made of NaCl molecules, each one sodium atom joined to one chlorine atom",
+    "Salt is a liquid of separate Na+ and Cl- ions that only joins up when it dries",
+    "Salt is a giant ionic lattice of sodium and chloride ions, and NaCl gives only the ratio",
+    "Salt is made of sodium and chlorine atoms sharing pairs of electrons"
+   ],
+   "prompt": "Which statement about table salt is correct?"
+  },
+  {
+   "answer": "Sodium gives its outer electron to chlorine, forming a positive sodium ion and a negative chloride ion",
+   "choices": [
+    "They share a pair of electrons equally between them",
+    "Chlorine gives an electron to sodium, forming a chloride ion",
+    "Sodium gives its outer electron to chlorine, forming a positive sodium ion and a negative chloride ion",
+    "Both atoms keep their electrons and are held by a sea of electrons"
+   ],
+   "prompt": "Sodium has electron arrangement 2,8,1 and chlorine has 2,8,7. What happens when they form sodium chloride?"
+  },
+  {
+   "answer": "Each chlorine atom contributes one electron to a shared pair between the two atoms. Both atoms count the shared pair in their outer shell, so each has eight outer electrons. No electron is transferred, so no ions form.",
+   "prompt": "A chlorine molecule, Cl2, is held together by a covalent bond. Explain, in terms of electrons, how the bond forms and why no ions are made."
+  },
+  {
+   "answer": "Copper is a lattice of positive metal ions in a sea of free-moving electrons. The electrons carry charge through the wire, so it conducts. The layers of ions can slide over each other while the sea still holds them, so the wire bends instead of shattering.",
+   "prompt": "Explain, in terms of particles and electrons, why copper wire conducts electricity and can be bent without breaking."
+  },
+  {
+   "answer": "In the solid the ions are locked in the lattice; when molten they are free to move and carry charge",
+   "choices": [
+    "Melting turns the lattice into NaCl molecules that carry the current",
+    "In the solid the ions are locked in the lattice; when molten they are free to move and carry charge",
+    "The solid contains no charged particles at all",
+    "Heat creates electrons inside the solid that carry the current"
+   ],
+   "prompt": "Solid sodium chloride does not conduct electricity, but molten sodium chloride does. Why?"
+  }
+ ],
+ "level": "secondary",
+ "subject": "science",
+ "title": "Chemical bonding: ionic, covalent, metallic",
+ "topic": "chem-bonding"
+}
