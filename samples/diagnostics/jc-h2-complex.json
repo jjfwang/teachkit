@@ -1,0 +1,202 @@
+{
+  "doNow": [
+    {
+      "choices": [
+        {
+          "misconception": "If arg(z) = 100 degrees then arg(z^3) = 300 degrees.",
+          "rationale": {
+            "chose": "The learner selected option 300 degrees as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: If arg(z) = 100 degrees then arg(z^3) = 300 degrees.. The slip: Multiplying the angle can overshoot 180 degrees, which breaks the principal range.. The fix: Angles wrap around: the principal Arg must land in -180 to 180 degrees, so arg(z^3) = -60 degrees..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "300 degrees"
+        },
+        {
+          "correct": true,
+          "text": "-60 degrees"
+        },
+        {
+          "misconception": "If arg(z) = 100 degrees then arg(z^3) = 300 degrees.",
+          "rationale": {
+            "chose": "The learner selected option 100 degrees as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: If arg(z) = 100 degrees then arg(z^3) = 300 degrees.. The slip: Multiplying the angle can overshoot 180 degrees, which breaks the principal range.. The fix: Angles wrap around: the principal Arg must land in -180 to 180 degrees, so arg(z^3) = -60 degrees..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "100 degrees"
+        },
+        {
+          "misconception": "If arg(z) = 100 degrees then arg(z^3) = 300 degrees.",
+          "rationale": {
+            "chose": "The learner selected option 200 degrees as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: If arg(z) = 100 degrees then arg(z^3) = 300 degrees.. The slip: Multiplying the angle can overshoot 180 degrees, which breaks the principal range.. The fix: Angles wrap around: the principal Arg must land in -180 to 180 degrees, so arg(z^3) = -60 degrees..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "200 degrees"
+        }
+      ],
+      "id": "dn1",
+      "kind": "multiple-choice",
+      "prompt": "If arg(z) = 100 degrees, what is the principal argument Arg(z^3)?"
+    },
+    {
+      "choices": [
+        {
+          "misconception": "If arg(z) = 100 degrees then arg(z^3) = 300 degrees.",
+          "rationale": {
+            "chose": "The learner selected option 7 as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: If arg(z) = 100 degrees then arg(z^3) = 300 degrees.. The slip: Multiplying the angle can overshoot 180 degrees, which breaks the principal range.. The fix: Angles wrap around: the principal Arg must land in -180 to 180 degrees, so arg(z^3) = -60 degrees..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "7"
+        },
+        {
+          "correct": true,
+          "text": "5"
+        },
+        {
+          "misconception": "If arg(z) = 100 degrees then arg(z^3) = 300 degrees.",
+          "rationale": {
+            "chose": "The learner selected option 25 as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: If arg(z) = 100 degrees then arg(z^3) = 300 degrees.. The slip: Multiplying the angle can overshoot 180 degrees, which breaks the principal range.. The fix: Angles wrap around: the principal Arg must land in -180 to 180 degrees, so arg(z^3) = -60 degrees..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "25"
+        },
+        {
+          "misconception": "If arg(z) = 100 degrees then arg(z^3) = 300 degrees.",
+          "rationale": {
+            "chose": "The learner selected option 1 as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: If arg(z) = 100 degrees then arg(z^3) = 300 degrees.. The slip: Multiplying the angle can overshoot 180 degrees, which breaks the principal range.. The fix: Angles wrap around: the principal Arg must land in -180 to 180 degrees, so arg(z^3) = -60 degrees..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "1"
+        }
+      ],
+      "id": "dn2",
+      "kind": "multiple-choice",
+      "prompt": "What is the modulus of z = 3 + 4i?"
+    },
+    {
+      "choices": [
+        {
+          "misconception": "If arg(z) = 100 degrees then arg(z^3) = 300 degrees.",
+          "rationale": {
+            "chose": "The learner selected option 50 degrees as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: If arg(z) = 100 degrees then arg(z^3) = 300 degrees.. The slip: Multiplying the angle can overshoot 180 degrees, which breaks the principal range.. The fix: Angles wrap around: the principal Arg must land in -180 to 180 degrees, so arg(z^3) = -60 degrees..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "50 degrees"
+        },
+        {
+          "correct": true,
+          "text": "-50 degrees"
+        },
+        {
+          "misconception": "If arg(z) = 100 degrees then arg(z^3) = 300 degrees.",
+          "rationale": {
+            "chose": "The learner selected option 130 degrees as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: If arg(z) = 100 degrees then arg(z^3) = 300 degrees.. The slip: Multiplying the angle can overshoot 180 degrees, which breaks the principal range.. The fix: Angles wrap around: the principal Arg must land in -180 to 180 degrees, so arg(z^3) = -60 degrees..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "130 degrees"
+        },
+        {
+          "misconception": "If arg(z) = 100 degrees then arg(z^3) = 300 degrees.",
+          "rationale": {
+            "chose": "The learner selected option 230 degrees as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: If arg(z) = 100 degrees then arg(z^3) = 300 degrees.. The slip: Multiplying the angle can overshoot 180 degrees, which breaks the principal range.. The fix: Angles wrap around: the principal Arg must land in -180 to 180 degrees, so arg(z^3) = -60 degrees..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "230 degrees"
+        }
+      ],
+      "id": "dn3",
+      "kind": "multiple-choice",
+      "prompt": "If arg(z) = 50 degrees, what is arg of the conjugate of z?"
+    }
+  ],
+  "hingeQuestions": [
+    {
+      "choices": [
+        {
+          "misconception": "If arg(z) = 100 degrees then arg(z^3) = 300 degrees.",
+          "rationale": {
+            "chose": "The learner selected option The student is right - 300 degrees is the principal argument as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: If arg(z) = 100 degrees then arg(z^3) = 300 degrees.. The slip: Multiplying the angle can overshoot 180 degrees, which breaks the principal range.. The fix: Angles wrap around: the principal Arg must land in -180 to 180 degrees, so arg(z^3) = -60 degrees..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "The student is right - 300 degrees is the principal argument"
+        },
+        {
+          "correct": true,
+          "text": "Angles wrap around: subtract 360 degrees to land in the principal range, so Arg(z^3) = -60 degrees"
+        },
+        {
+          "misconception": "If arg(z) = 100 degrees then arg(z^3) = 300 degrees.",
+          "rationale": {
+            "chose": "The learner selected option The principal argument is 100 degrees, the same as arg(z) as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: If arg(z) = 100 degrees then arg(z^3) = 300 degrees.. The slip: Multiplying the angle can overshoot 180 degrees, which breaks the principal range.. The fix: Angles wrap around: the principal Arg must land in -180 to 180 degrees, so arg(z^3) = -60 degrees..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "The principal argument is 100 degrees, the same as arg(z)"
+        },
+        {
+          "misconception": "If arg(z) = 100 degrees then arg(z^3) = 300 degrees.",
+          "rationale": {
+            "chose": "The learner selected option Add 360 degrees instead: the principal argument is 660 degrees as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: If arg(z) = 100 degrees then arg(z^3) = 300 degrees.. The slip: Multiplying the angle can overshoot 180 degrees, which breaks the principal range.. The fix: Angles wrap around: the principal Arg must land in -180 to 180 degrees, so arg(z^3) = -60 degrees..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "Add 360 degrees instead: the principal argument is 660 degrees"
+        }
+      ],
+      "id": "h1",
+      "kind": "multiple-choice",
+      "prompt": "A student claims that if arg(z) = 100 degrees then arg(z^3) = 300 degrees, and stops there. Which statement corrects the claim?",
+      "scriptCue": "s5"
+    },
+    {
+      "choices": [
+        {
+          "misconception": "If arg(z) = 100 degrees then arg(z^3) = 300 degrees.",
+          "rationale": {
+            "chose": "The learner selected option 300 degrees as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: If arg(z) = 100 degrees then arg(z^3) = 300 degrees.. The slip: Multiplying the angle can overshoot 180 degrees, which breaks the principal range.. The fix: Angles wrap around: the principal Arg must land in -180 to 180 degrees, so arg(z^3) = -60 degrees..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "300 degrees"
+        },
+        {
+          "correct": true,
+          "text": "-60 degrees"
+        },
+        {
+          "misconception": "If arg(z) = 100 degrees then arg(z^3) = 300 degrees.",
+          "rationale": {
+            "chose": "The learner selected option 100 degrees as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: If arg(z) = 100 degrees then arg(z^3) = 300 degrees.. The slip: Multiplying the angle can overshoot 180 degrees, which breaks the principal range.. The fix: Angles wrap around: the principal Arg must land in -180 to 180 degrees, so arg(z^3) = -60 degrees..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "100 degrees"
+        },
+        {
+          "misconception": "If arg(z) = 100 degrees then arg(z^3) = 300 degrees.",
+          "rationale": {
+            "chose": "The learner selected option 200 degrees as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: If arg(z) = 100 degrees then arg(z^3) = 300 degrees.. The slip: Multiplying the angle can overshoot 180 degrees, which breaks the principal range.. The fix: Angles wrap around: the principal Arg must land in -180 to 180 degrees, so arg(z^3) = -60 degrees..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "200 degrees"
+        }
+      ],
+      "id": "h2",
+      "kind": "multiple-choice",
+      "prompt": "If arg(z) = 100 degrees, what is the principal argument Arg(z^3)?",
+      "scriptCue": "s5"
+    }
+  ],
+  "level": "jc",
+  "subject": "math",
+  "title": "JC H2 complex numbers: the Argand diagram",
+  "topic": "h2-complex"
+}

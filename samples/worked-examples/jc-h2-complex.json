@@ -1,0 +1,57 @@
+{
+  "complete": {
+    "problem": "Trace complex numbers from a point on the Argand diagram to the modulus and principal argument, the conjugate as a mirror image, multiplying as rotation and stretch, and De Moivre with the wrap into the principal range.",
+    "selfExplanation": "Explain how a complex number is a point plotted across then up, how the modulus is the hypotenuse of the x and iy legs, how the conjugate negates the argument, and why a tripled argument must wrap back into the principal range.",
+    "steps": [
+      {
+        "annotation": "A complex number is a point on the Argand diagram: z = 3 + 2i is plotted 3 across the real axis and then 2 up the imaginary axis, and that landing point is the number.",
+        "text": "Step 1 (s1): A complex number is a point on the Argand diagram. Watch z = 3 + 2i travel 3 across the real axis, then 2 up the imaginary axis - the journey itself is the number. Tell your partner: which coordinate is the real part, and which is the imaginary part?"
+      },
+      {
+        "annotation": "Modulus is the distance from the origin: the line from the origin to z is the hypotenuse of the right triangle with legs x and y, so |z| = sqrt(x^2 + y^2).",
+        "text": "Step 2 (s2): The modulus of z is its distance from the origin. Watch the green line grow out to z: the x and iy legs make a right triangle, so Pythagoras gives |z| = sqrt(x^2 + y^2). For 3 + 4i that is sqrt(9 + 16) = 5 - keep the 3-4-5 triangle in mind, it comes back all year."
+      },
+      {
+        "annotation": "Argument is the angle; the conjugate mirrors it: arg(z) is the angle of the arrow from the origin, and the conjugate x - iy is the reflection in the real axis, with arg(conjugate of z) = -arg(z).",
+        "text": "Step 3 (s3): The argument of z is the angle its arrow makes with the positive real axis. Watch the arrow sweep up to theta, then dive below the axis to the mirror image: the imaginary part flips sign, and that is the conjugate, x - iy, with the negated argument."
+      },
+      {
+        "annotation": "Multiplying rotates and stretches: moduli multiply and arguments add, so multiplying by i is a quarter turn, and De Moivre gives arg(z^n) = n arg(z) before wrapping.",
+        "text": "Step 4 (s4): Multiplying rotates by the angle and stretches by the modulus. On the unit circle, 1 times i sweeps a quarter turn to i, and times i again lands on -1: i^2 = -1. De Moivre just adds the angles and raises the modulus to the power, so cubing triples the argument."
+      },
+      {
+        "annotation": "A common mistake: angles wrap around: multiplying the argument can carry it past 180 degrees, so subtract or add 360 degrees until it lands in the principal range -180 to 180 degrees.",
+        "text": "Step 5 (s5): Here is the trap, sprung on purpose: three 100-degree turns land on 300 degrees, the same point as -60 degrees - but the principal Arg must land in -180 to 180 degrees, so we wrap: 300 - 360 = -60 degrees. Now work through the worksheet in pairs, checking each answer against the trap section of your student notes. Last, the exit ticket - on your own, no talking - and remember: if you can wrap an angle into the principal range, you have cracked today's lesson."
+      }
+    ]
+  },
+  "faded": {
+    "problem": "Find the principal argument of z^3 when arg(z) = 100 degrees.",
+    "selfExplanation": "The first step is shown. Say how De Moivre triples the argument, then why 300 degrees must wrap by one whole turn to give the principal value -60 degrees.",
+    "steps": [
+      {
+        "annotation": "By De Moivre, cubing triples the argument and cubes the modulus: arg(z^3) = 3 x arg(z) before any wrapping.",
+        "text": "Step 1: by De Moivre the argument triples, so write out arg(z^3) = 3 x 100 degrees = 300 degrees.",
+        "withheld": false
+      },
+      {
+        "annotation": "300 degrees is outside the principal range -180 to 180 degrees, so subtract one whole turn: 300 - 360 = -60 degrees.",
+        "text": "Step 2: 300 degrees overshoots the principal range, so subtract 360 degrees: 300 - 360 = -60 degrees.",
+        "withheld": true
+      },
+      {
+        "annotation": "The wrapped value -60 degrees lands inside -180 to 180 degrees, so it is the principal argument Arg(z^3).",
+        "text": "Step 3: check the landing: -60 degrees is inside the principal range, so Arg(z^3) = -60 degrees.",
+        "withheld": true
+      }
+    ]
+  },
+  "level": "jc",
+  "paired": {
+    "problem": "For z = -2 + 2i, find the modulus |z| and the principal argument Arg(z), explaining how you used the quadrant.",
+    "solution": "|z| = sqrt((-2)^2 + 2^2) = sqrt(8) = 2 sqrt(2). The point (-2, 2) is in the second quadrant with reference angle 45 degrees, so the principal argument is Arg(z) = 180 - 45 = 135 degrees."
+  },
+  "subject": "math",
+  "title": "JC H2 complex numbers: the Argand diagram",
+  "topic": "h2-complex"
+}

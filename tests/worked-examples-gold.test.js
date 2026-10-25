@@ -55,7 +55,8 @@ const STEMS = [
   'secondary-physics-forces',
   'secondary-physics-waves',
   'jc-h2-sequences',
-  'jc-h2-vectors'
+  'jc-h2-vectors',
+  'jc-h2-complex'
 ];
 
 function load(rel) {
