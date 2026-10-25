@@ -1,0 +1,120 @@
+{
+ "level": "jc",
+ "sets": [
+  {
+   "cloze": [
+    {
+     "answers": [
+      "Vector",
+      "Magnitude"
+     ],
+     "text": "A ___ is a quantity with both magnitude and direction, and its length is its ___."
+    },
+    {
+     "answers": [
+      "Dot product",
+      "Direction vector"
+     ],
+     "text": "The ___ a . b is zero exactly when the vectors are perpendicular, and a ___ gives the direction of a line."
+    }
+   ],
+   "frames": [
+    "A ___ has both magnitude and direction.",
+    "The ___ of (x, y) is sqrt(x^2 + y^2).",
+    "The ___ a . b is zero exactly when the vectors are perpendicular."
+   ],
+   "level": "full",
+   "starters": [
+    "A vector is...",
+    "The magnitude of a vector is...",
+    "The dot product measures..."
+   ],
+   "wordBank": [
+    {
+     "gloss": "a quantity with both magnitude and direction",
+     "term": "Vector"
+    },
+    {
+     "gloss": "the length of the vector arrow",
+     "term": "Magnitude"
+    },
+    {
+     "gloss": "a vector recorded as its components stacked in a column",
+     "term": "Column vector"
+    },
+    {
+     "gloss": "the scalar a . b measuring how much of b points along a",
+     "term": "Dot product"
+    },
+    {
+     "gloss": "the vector of a point measured from the origin",
+     "term": "Position vector"
+    },
+    {
+     "gloss": "a free vector that gives the direction of a line or plane edge",
+     "term": "Direction vector"
+    }
+   ]
+  },
+  {
+   "cloze": [
+    {
+     "answers": [
+      "Magnitude",
+      "Dot product"
+     ],
+     "text": "The ___ of (x, y) is sqrt(x^2 + y^2), and the ___ measures how much of b points along a."
+    }
+   ],
+   "frames": [
+    "The ___ of a vector is its length.",
+    "The ___ a . b measures how much of b points along a."
+   ],
+   "level": "partial",
+   "starters": [
+    "The magnitude of this vector is...",
+    "The dot product of these vectors is..."
+   ],
+   "wordBank": [
+    {
+     "gloss": "a quantity with both magnitude and direction",
+     "term": "Vector"
+    },
+    {
+     "gloss": "the length of the vector arrow",
+     "term": "Magnitude"
+    },
+    {
+     "gloss": "the scalar a . b measuring how much of b points along a",
+     "term": "Dot product"
+    }
+   ]
+  },
+  {
+   "cloze": [
+    {
+     "answers": [
+      "Vector"
+     ],
+     "text": "A ___ has both magnitude and direction."
+    }
+   ],
+   "frames": [
+    "A ___ has both magnitude and direction."
+   ],
+   "level": "minimal",
+   "starters": [
+    "A vector is..."
+   ],
+   "wordBank": [
+    {
+     "gloss": "a quantity with both magnitude and direction",
+     "term": "Vector"
+    }
+   ]
+  }
+ ],
+ "subject": "math",
+ "title": "JC H2 vectors: direction, dot products, lines and planes",
+ "topic": "h2-vectors"
+}
