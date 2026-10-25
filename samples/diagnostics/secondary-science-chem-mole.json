@@ -1,0 +1,202 @@
+{
+ "doNow": [
+  {
+   "choices": [
+    {
+     "misconception": "One mole of anything weighs the same.",
+     "rationale": {
+      "chose": "The learner selected option They weigh the same, because both are one mole as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: One mole of anything weighs the same.. The slip: A mole feels like a fixed bag of the same size, so every mole feels equally heavy. The fix: Mass = moles x molar mass: one mole of hydrogen is 1 g but one mole of oxygen is 16 g. A mole fixes the count of particles - the molar mass decides how heavy that count is.",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "They weigh the same, because both are one mole"
+    },
+    {
+     "correct": true,
+     "text": "Hydrogen weighs 1 g and oxygen weighs 16 g"
+    },
+    {
+     "misconception": "One mole of anything weighs the same.",
+     "rationale": {
+      "chose": "The learner selected option Hydrogen weighs 16 g and oxygen weighs 1 g as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: One mole of anything weighs the same.. The slip: A mole feels like a fixed bag of the same size, so every mole feels equally heavy. The fix: Mass = moles x molar mass: one mole of hydrogen is 1 g but one mole of oxygen is 16 g. A mole fixes the count of particles - the molar mass decides how heavy that count is.",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "Hydrogen weighs 16 g and oxygen weighs 1 g"
+    },
+    {
+     "misconception": "One mole of anything weighs the same.",
+     "rationale": {
+      "chose": "The learner selected option Both weigh 12 g as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: One mole of anything weighs the same.. The slip: A mole feels like a fixed bag of the same size, so every mole feels equally heavy. The fix: Mass = moles x molar mass: one mole of hydrogen is 1 g but one mole of oxygen is 16 g. A mole fixes the count of particles - the molar mass decides how heavy that count is.",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "Both weigh 12 g"
+    }
+   ],
+   "id": "dn1",
+   "kind": "multiple-choice",
+   "prompt": "One mole of hydrogen atoms and one mole of oxygen atoms are compared. What is true about their masses?"
+  },
+  {
+   "choices": [
+    {
+     "misconception": "One mole of anything weighs the same.",
+     "rationale": {
+      "chose": "The learner selected option 12 particles as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: One mole of anything weighs the same.. The slip: A mole feels like a fixed bag of the same size, so every mole feels equally heavy. The fix: Mass = moles x molar mass: one mole of hydrogen is 1 g but one mole of oxygen is 16 g. A mole fixes the count of particles - the molar mass decides how heavy that count is.",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "12 particles"
+    },
+    {
+     "misconception": "One mole of anything weighs the same.",
+     "rationale": {
+      "chose": "The learner selected option 1 particle as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: One mole of anything weighs the same.. The slip: A mole feels like a fixed bag of the same size, so every mole feels equally heavy. The fix: Mass = moles x molar mass: one mole of hydrogen is 1 g but one mole of oxygen is 16 g. A mole fixes the count of particles - the molar mass decides how heavy that count is.",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "1 particle"
+    },
+    {
+     "correct": true,
+     "text": "6.02 × 10²³ particles"
+    },
+    {
+     "misconception": "One mole of anything weighs the same.",
+     "rationale": {
+      "chose": "The learner selected option Depends on the mass of the substance as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: One mole of anything weighs the same.. The slip: A mole feels like a fixed bag of the same size, so every mole feels equally heavy. The fix: Mass = moles x molar mass: one mole of hydrogen is 1 g but one mole of oxygen is 16 g. A mole fixes the count of particles - the molar mass decides how heavy that count is.",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "Depends on the mass of the substance"
+    }
+   ],
+   "id": "dn2",
+   "kind": "multiple-choice",
+   "prompt": "How many particles are there in one mole of any substance?"
+  },
+  {
+   "choices": [
+    {
+     "misconception": "One mole of anything weighs the same.",
+     "rationale": {
+      "chose": "The learner selected option 1 g, the same as one mole of hydrogen as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: One mole of anything weighs the same.. The slip: A mole feels like a fixed bag of the same size, so every mole feels equally heavy. The fix: Mass = moles x molar mass: one mole of hydrogen is 1 g but one mole of oxygen is 16 g. A mole fixes the count of particles - the molar mass decides how heavy that count is.",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "1 g, the same as one mole of hydrogen"
+    },
+    {
+     "misconception": "One mole of anything weighs the same.",
+     "rationale": {
+      "chose": "The learner selected option 12 g, the same as one mole of carbon as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: One mole of anything weighs the same.. The slip: A mole feels like a fixed bag of the same size, so every mole feels equally heavy. The fix: Mass = moles x molar mass: one mole of hydrogen is 1 g but one mole of oxygen is 16 g. A mole fixes the count of particles - the molar mass decides how heavy that count is.",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "12 g, the same as one mole of carbon"
+    },
+    {
+     "correct": true,
+     "text": "16 g"
+    },
+    {
+     "misconception": "One mole of anything weighs the same.",
+     "rationale": {
+      "chose": "The learner selected option 6.02 × 10²³ g as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: One mole of anything weighs the same.. The slip: A mole feels like a fixed bag of the same size, so every mole feels equally heavy. The fix: Mass = moles x molar mass: one mole of hydrogen is 1 g but one mole of oxygen is 16 g. A mole fixes the count of particles - the molar mass decides how heavy that count is.",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "6.02 × 10²³ g"
+    }
+   ],
+   "id": "dn3",
+   "kind": "multiple-choice",
+   "prompt": "What is the mass of one mole of oxygen atoms? (Molar mass of oxygen = 16 g/mol)"
+  }
+ ],
+ "hingeQuestions": [
+  {
+   "choices": [
+    {
+     "misconception": "One mole of anything weighs the same.",
+     "rationale": {
+      "chose": "The learner selected option The student is right - one mole of anything weighs the same as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: One mole of anything weighs the same.. The slip: A mole feels like a fixed bag of the same size, so every mole feels equally heavy. The fix: Mass = moles x molar mass: one mole of hydrogen is 1 g but one mole of oxygen is 16 g. A mole fixes the count of particles - the molar mass decides how heavy that count is.",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "The student is right - one mole of anything weighs the same"
+    },
+    {
+     "correct": true,
+     "text": "A mole fixes the count of particles - the molar mass decides how heavy that count is"
+    },
+    {
+     "misconception": "One mole of anything weighs the same.",
+     "rationale": {
+      "chose": "The learner selected option One mole of oxygen weighs 12 g, the same as one mole of carbon as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: One mole of anything weighs the same.. The slip: A mole feels like a fixed bag of the same size, so every mole feels equally heavy. The fix: Mass = moles x molar mass: one mole of hydrogen is 1 g but one mole of oxygen is 16 g. A mole fixes the count of particles - the molar mass decides how heavy that count is.",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "One mole of oxygen weighs 12 g, the same as one mole of carbon"
+    },
+    {
+     "misconception": "One mole of anything weighs the same.",
+     "rationale": {
+      "chose": "The learner selected option Both weigh 6.02 × 10²³ g as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: One mole of anything weighs the same.. The slip: A mole feels like a fixed bag of the same size, so every mole feels equally heavy. The fix: Mass = moles x molar mass: one mole of hydrogen is 1 g but one mole of oxygen is 16 g. A mole fixes the count of particles - the molar mass decides how heavy that count is.",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "Both weigh 6.02 × 10²³ g"
+    }
+   ],
+   "id": "h1",
+   "kind": "multiple-choice",
+   "prompt": "A student says one mole of carbon and one mole of oxygen must weigh the same because both are one mole. What is the best correction?",
+   "scriptCue": "s4"
+  },
+  {
+   "choices": [
+    {
+     "misconception": "One mole of anything weighs the same.",
+     "rationale": {
+      "chose": "The learner selected option They weigh the same, because both are one mole as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: One mole of anything weighs the same.. The slip: A mole feels like a fixed bag of the same size, so every mole feels equally heavy. The fix: Mass = moles x molar mass: one mole of hydrogen is 1 g but one mole of oxygen is 16 g. A mole fixes the count of particles - the molar mass decides how heavy that count is.",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "They weigh the same, because both are one mole"
+    },
+    {
+     "correct": true,
+     "text": "Hydrogen weighs 1 g and oxygen weighs 16 g"
+    },
+    {
+     "misconception": "One mole of anything weighs the same.",
+     "rationale": {
+      "chose": "The learner selected option Hydrogen weighs 16 g and oxygen weighs 1 g as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: One mole of anything weighs the same.. The slip: A mole feels like a fixed bag of the same size, so every mole feels equally heavy. The fix: Mass = moles x molar mass: one mole of hydrogen is 1 g but one mole of oxygen is 16 g. A mole fixes the count of particles - the molar mass decides how heavy that count is.",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "Hydrogen weighs 16 g and oxygen weighs 1 g"
+    },
+    {
+     "misconception": "One mole of anything weighs the same.",
+     "rationale": {
+      "chose": "The learner selected option Both weigh 12 g as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: One mole of anything weighs the same.. The slip: A mole feels like a fixed bag of the same size, so every mole feels equally heavy. The fix: Mass = moles x molar mass: one mole of hydrogen is 1 g but one mole of oxygen is 16 g. A mole fixes the count of particles - the molar mass decides how heavy that count is.",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "Both weigh 12 g"
+    }
+   ],
+   "id": "h2",
+   "kind": "multiple-choice",
+   "prompt": "What is the best correction to the claim that one mole of anything weighs the same?",
+   "scriptCue": "s4"
+  }
+ ],
+ "level": "secondary",
+ "subject": "science",
+ "title": "The mole: counting atoms by weighing",
+ "topic": "chem-mole"
+}

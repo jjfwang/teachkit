@@ -1,0 +1,57 @@
+{
+ "items": [
+  {
+   "answer": "A mole fixes the count of particles - the molar mass decides how heavy that count is",
+   "choices": [
+    "The student is right - one mole of anything weighs the same",
+    "A mole fixes the count of particles - the molar mass decides how heavy that count is",
+    "One mole of oxygen weighs 12 g, the same as one mole of carbon",
+    "Both weigh 6.02 × 10²³ g"
+   ],
+   "misconceptionCode": "One mole of anything weighs the same.",
+   "prompt": "A student says one mole of carbon and one mole of oxygen must weigh the same because both are one mole. What is the best correction?"
+  },
+  {
+   "answer": "Hydrogen weighs 1 g and oxygen weighs 16 g",
+   "choices": [
+    "They weigh the same, because both are one mole",
+    "Hydrogen weighs 1 g and oxygen weighs 16 g",
+    "Hydrogen weighs 16 g and oxygen weighs 1 g",
+    "Both weigh 12 g"
+   ],
+   "prompt": "One mole of hydrogen atoms and one mole of oxygen atoms are compared. What is true about their masses?"
+  },
+  {
+   "answer": "6.02 × 10²³ particles",
+   "choices": [
+    "12 particles",
+    "1 particle",
+    "6.02 × 10²³ particles",
+    "Depends on the mass of the substance"
+   ],
+   "prompt": "How many particles are there in one mole of any substance?"
+  },
+  {
+   "answer": "2 mol of oxygen, making 4 mol of water. The ratio in 2 H₂ + O₂ → 2 H₂O is 2 : 1 : 2, so doubling the hydrogen from 2 mol to 4 mol doubles the oxygen from 1 mol to 2 mol and the water from 2 mol to 4 mol.",
+   "prompt": "For the reaction 2 H₂ + O₂ → 2 H₂O, how many moles of oxygen are needed to react with 4 mol of hydrogen, and how many moles of water are made? Explain using the mole ratio."
+  },
+  {
+   "answer": "1 mol of oxygen, because the mole ratio in 2 H₂ + O₂ → 2 H₂O is 2 : 1 : 2, so 2 mol of hydrogen reacts with half as many moles of oxygen.",
+   "prompt": "In the reaction 2 H₂ + O₂ → 2 H₂O, how many moles of oxygen react with 2 mol of hydrogen? Explain your answer."
+  },
+  {
+   "answer": "16 g",
+   "choices": [
+    "1 g, the same as one mole of hydrogen",
+    "12 g, the same as one mole of carbon",
+    "16 g",
+    "6.02 × 10²³ g"
+   ],
+   "prompt": "What is the mass of one mole of oxygen atoms? (Molar mass of oxygen = 16 g/mol)"
+  }
+ ],
+ "level": "secondary",
+ "subject": "science",
+ "title": "The mole: counting atoms by weighing",
+ "topic": "chem-mole"
+}
