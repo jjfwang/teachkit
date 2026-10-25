@@ -1,0 +1,44 @@
+{
+ "commonErrors": [
+  {
+   "example": "A learner writes on the worksheet that salt is built from separate joined pairs, one sodium atom stuck to one chlorine atom.",
+   "fixIt": {
+    "corrected": "Corrected working: salt is a giant ionic lattice of sodium and chloride ions, and NaCl gives only the ratio.",
+    "prompt": "Fix it: say what the formula NaCl actually tells us and what structure the ions form."
+   },
+   "misconception": "Table salt is made of NaCl molecules."
+  },
+  {
+   "example": "On the exit ticket, a learner agrees with the student who says a grain of salt is one huge NaCl molecule.",
+   "fixIt": {
+    "corrected": "Corrected check: every ion belongs to the whole repeating lattice, surrounded by oppositely charged ions, so there is no single NaCl molecule to point at.",
+    "prompt": "Fix it: give the one-sentence correction for the claim that a grain of salt is one huge molecule."
+   },
+   "misconception": "Table salt is made of NaCl molecules."
+  }
+ ],
+ "level": "secondary",
+ "modelAnswers": [
+  {
+   "answer": "Each chlorine atom contributes one electron to a shared pair between the two atoms. Both atoms count the shared pair in their outer shell, so each has eight outer electrons. No electron is transferred, so no ions form.",
+   "creditPoints": [],
+   "question": "A chlorine molecule, Cl2, is held together by a covalent bond. Explain, in terms of electrons, how the bond forms and why no ions are made."
+  },
+  {
+   "answer": "Magnesium loses its 2 outer electrons to form a positive magnesium ion, and oxygen gains 2 electrons to form a negative oxide ion. The bond is ionic.",
+   "creditPoints": [],
+   "question": "Magnesium has electron arrangement 2,8,2 and oxygen has 2,6. State the ions formed when they bond, and the type of bond."
+  }
+ ],
+ "nextSteps": [
+  "Reteach the trap with the lattice scene, landing that the formula gives a ratio and the ions form one giant repeating pattern.",
+  "Practise the check from the worked example - build sodium chloride step by step: transfer the electron first, then lock the ions into the lattice."
+ ],
+ "strengths": [
+  "Most of the class can describe the electron transfer from sodium to chlorine and name the ions formed.",
+  "The class can explain copper wire using positive ions in a sea of free-moving electrons."
+ ],
+ "subject": "science",
+ "title": "Chemical bonding: ionic, covalent, metallic",
+ "topic": "chem-bonding"
+}
