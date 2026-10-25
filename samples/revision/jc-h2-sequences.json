@@ -1,0 +1,71 @@
+{
+ "flashcards": [
+  {
+   "back": "A sequence that adds the same common difference d at every step: starting from 5 with d = 3, the terms are 5, 8, 11, 14, and the marker hops the axis in equal jumps.",
+   "front": "Arithmetic progression",
+   "source": "definition"
+  },
+  {
+   "back": "A sequence that multiplies by the same common ratio r at every step: with r = 2, the terms 2, 4, 8, 16 double each time and the jumps widen.",
+   "front": "Geometric progression",
+   "source": "definition"
+  },
+  {
+   "back": "The fixed amount d added between consecutive terms of an arithmetic progression: d = u_2 - u_1, so d = 3 for 5, 8, 11, 14.",
+   "front": "Common difference",
+   "source": "definition"
+  },
+  {
+   "back": "The fixed factor r multiplied between consecutive terms of a geometric progression: r = u_2 / u_1, so r = 2 for 2, 4, 8, 16.",
+   "front": "Common ratio",
+   "source": "definition"
+  },
+  {
+   "back": "The n feels like the number of jumps, but the first jump lands on u_2, not u_1. Exponents count the jumps, not the terms: u_10 = u_1 + 9d, and a geometric sum counts every term, not the last term times n.",
+   "front": "u_10 needs ten jumps of d, so u_n = u_1 + n*d.",
+   "source": "trap"
+  },
+  {
+   "back": "32, from 5 + 9 x 3",
+   "front": "An arithmetic progression starts at u_1 = 5 with common difference d = 3. What is u_10?",
+   "source": "quiz-bank"
+  },
+  {
+   "back": "u_n = a + (n - 1)d for an arithmetic progression and u_n = a x r^(n - 1) for a geometric one; in both, n - 1 counts the jumps from the first term, not the terms.",
+   "front": "State the nth-term formulas for an arithmetic progression and a geometric progression, and say what the n - 1 counts in each.",
+   "source": "quiz-bank"
+  }
+ ],
+ "level": "jc",
+ "practiceSets": [
+  {
+   "dayOffset": 1,
+   "items": [
+    {
+     "answer": "32",
+     "prompt": "What is the 5th term of the geometric progression 2, 4, 8, 16, ...?"
+    },
+    {
+     "answer": "S_4 = 2 + 4 + 6 + 8 = 20, also from S_n = (n/2)(a + l) = (4/2)(2 + 8) = 20.",
+     "prompt": "Find S_4, the sum of the first four terms of the arithmetic progression 2, 4, 6, 8, ..."
+    }
+   ]
+  },
+  {
+   "dayOffset": 3,
+   "items": [
+    {
+     "answer": "S = a / (1 - r) = 8 / (1 - 1/2) = 8 / (1/2) = 16.",
+     "prompt": "A geometric progression has first term a = 8 and ratio r = 1/2. Find its sum to infinity."
+    },
+    {
+     "answer": "a = 3, r = 1/2",
+     "prompt": "Which geometric progression has a sum to infinity?"
+    }
+   ]
+  }
+ ],
+ "subject": "math",
+ "title": "JC H2 sequences: arithmetic and geometric progressions",
+ "topic": "h2-sequences"
+}

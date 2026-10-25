@@ -1,0 +1,95 @@
+{
+ "level": "jc",
+ "subject": "math",
+ "templates": [
+  {
+   "kind": "flow",
+   "slots": [
+    {
+     "entries": [
+      "Arithmetic progressions: add d each step: starting from 5 with d = 3, the marker hops the axis in equal jumps through 5, 8, 11, 14, and u_n = a + (n - 1)d counts the n - 1 jumps made before term n."
+     ],
+     "label": "Arithmetic progressions",
+     "studentPrompt": "Explain this step in your own words."
+    },
+    {
+     "entries": [
+      "Geometric progressions: multiply by r each step: with r = 2 the terms 2, 4, 8, 16 double each time, the jumps widen, and u_n = a x r^(n - 1) applies r once per jump."
+     ],
+     "label": "Geometric progressions",
+     "studentPrompt": "Explain this step in your own words."
+    },
+    {
+     "entries": [
+      "Seeing the sum build up: each new term drops into the running total - 2, then 6, then 12, then 20 for 2, 4, 6, 8 - and pairing first with last turns the buildup into S_n = (n/2)(a + l)."
+     ],
+     "label": "Seeing the sum build up",
+     "studentPrompt": "Explain this step in your own words."
+    },
+    {
+     "entries": [
+      "A common mistake: r = -1 never settles: the terms bounce 1, -1, 1, -1 forever, and only a shrinking ratio with |r| < 1 lets the terms home in on a limit and the sum settle at a / (1 - r)."
+     ],
+     "label": "A common mistake",
+     "studentPrompt": "Explain this step in your own words."
+    },
+    {
+     "entries": [
+      "The sequences toolkit: the a and d chips drop into u_n = a + (n - 1)d, then a and r into u_n = a x r^(n - 1) - two formulas, four moving parts, and in both the count is jumps, not terms."
+     ],
+     "label": "The sequences toolkit",
+     "studentPrompt": "Explain this step in your own words."
+    }
+   ]
+  },
+  {
+   "kind": "frayer",
+   "slots": [
+    {
+     "entries": [
+      "A sequence that adds the same common difference d at every step: starting from 5 with d = 3, the terms are 5, 8, 11, 14, and the marker hops the axis in equal jumps."
+     ],
+     "label": "Arithmetic progression",
+     "studentPrompt": "Give your own example of this term."
+    },
+    {
+     "entries": [
+      "A sequence that multiplies by the same common ratio r at every step: with r = 2, the terms 2, 4, 8, 16 double each time and the jumps widen."
+     ],
+     "label": "Geometric progression",
+     "studentPrompt": "Give your own example of this term."
+    },
+    {
+     "entries": [
+      "The fixed amount d added between consecutive terms of an arithmetic progression: d = u_2 - u_1, so d = 3 for 5, 8, 11, 14."
+     ],
+     "label": "Common difference",
+     "studentPrompt": "Give your own example of this term."
+    },
+    {
+     "entries": [
+      "The fixed factor r multiplied between consecutive terms of a geometric progression: r = u_2 / u_1, so r = 2 for 2, 4, 8, 16."
+     ],
+     "label": "Common ratio",
+     "studentPrompt": "Give your own example of this term."
+    },
+    {
+     "entries": [
+      "The general term u_n of a sequence: u_n = a + (n - 1)d for an arithmetic progression and u_n = a x r^(n - 1) for a geometric one, where n - 1 counts the jumps from the first term."
+     ],
+     "label": "nth term",
+     "studentPrompt": "Give your own example of this term."
+    },
+    {
+     "entries": [
+      "The sum S_n of the first n terms, built up one term at a time: for 2, 4, 6, 8, the partial sums run S_1 = 2, S_2 = 6, S_3 = 12, S_4 = 20, and for an arithmetic progression S_n = (n/2)(a + l)."
+     ],
+     "label": "Partial sum",
+     "studentPrompt": "Give your own example of this term."
+    }
+   ]
+  }
+ ],
+ "title": "JC H2 sequences: arithmetic and geometric progressions",
+ "topic": "h2-sequences"
+}

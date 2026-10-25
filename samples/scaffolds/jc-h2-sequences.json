@@ -1,0 +1,120 @@
+{
+ "level": "jc",
+ "sets": [
+  {
+   "cloze": [
+    {
+     "answers": [
+      "Common difference",
+      "Arithmetic progression"
+     ],
+     "text": "A sequence that adds the same ___ at every step is an ___."
+    },
+    {
+     "answers": [
+      "Common ratio",
+      "Geometric progression"
+     ],
+     "text": "A sequence that multiplies by the same ___ at every step is a ___."
+    }
+   ],
+   "frames": [
+    "A sequence that adds the same ___ at every step is an arithmetic progression.",
+    "A sequence that multiplies by the same ___ at every step is a geometric progression.",
+    "The ___ u_n gives the term in position n."
+   ],
+   "level": "full",
+   "starters": [
+    "An arithmetic progression is...",
+    "A geometric progression is...",
+    "The nth term counts jumps, so..."
+   ],
+   "wordBank": [
+    {
+     "gloss": "a sequence that adds the same common difference at every step",
+     "term": "Arithmetic progression"
+    },
+    {
+     "gloss": "a sequence that multiplies by the same common ratio at every step",
+     "term": "Geometric progression"
+    },
+    {
+     "gloss": "the fixed amount added between consecutive terms of an arithmetic progression",
+     "term": "Common difference"
+    },
+    {
+     "gloss": "the fixed factor multiplied between consecutive terms of a geometric progression",
+     "term": "Common ratio"
+    },
+    {
+     "gloss": "the general term u_n of a sequence",
+     "term": "nth term"
+    },
+    {
+     "gloss": "the sum S_n of the first n terms",
+     "term": "Partial sum"
+    }
+   ]
+  },
+  {
+   "cloze": [
+    {
+     "answers": [
+      "nth term",
+      "Partial sum"
+     ],
+     "text": "The ___ of an arithmetic progression is u_n = a + (n - 1)d, where n - 1 counts the jumps from the first term, and the ___ of the first n terms is S_n."
+    }
+   ],
+   "frames": [
+    "The ___ of an arithmetic progression is u_n = a + (n - 1)d.",
+    "The ___ S_n adds up the first n terms."
+   ],
+   "level": "partial",
+   "starters": [
+    "The nth term of this progression is...",
+    "The partial sum of the first n terms is..."
+   ],
+   "wordBank": [
+    {
+     "gloss": "a sequence that adds the same common difference at every step",
+     "term": "Arithmetic progression"
+    },
+    {
+     "gloss": "the general term u_n of a sequence",
+     "term": "nth term"
+    },
+    {
+     "gloss": "the sum S_n of the first n terms",
+     "term": "Partial sum"
+    }
+   ]
+  },
+  {
+   "cloze": [
+    {
+     "answers": [
+      "nth term"
+     ],
+     "text": "The ___ u_n gives the term in position n of a sequence."
+    }
+   ],
+   "frames": [
+    "The ___ gives the term in position n."
+   ],
+   "level": "minimal",
+   "starters": [
+    "The nth term is..."
+   ],
+   "wordBank": [
+    {
+     "gloss": "the general term u_n of a sequence",
+     "term": "nth term"
+    }
+   ]
+  }
+ ],
+ "subject": "math",
+ "title": "JC H2 sequences: arithmetic and geometric progressions",
+ "topic": "h2-sequences"
+}
