@@ -1,0 +1,51 @@
+{
+  "items": [
+    {
+      "answer": "The membrane is selectively permeable: food and oxygen cross in, waste crosses out, and some things are kept out",
+      "choices": [
+        "The student is right - the membrane blocks everything",
+        "The membrane is selectively permeable: food and oxygen cross in, waste crosses out, and some things are kept out",
+        "Cells have no membrane, so everything drifts in and out",
+        "Only water can cross a membrane; nothing else moves"
+      ],
+      "misconceptionCode": "The cell membrane is a solid wall that blocks everything from entering or leaving.",
+      "prompt": "A student says nothing can enter or leave a cell because its membrane is a solid wall. What is the best correction?"
+    },
+    {
+      "answer": "The membrane is selectively permeable: it lets some things through and keeps others out",
+      "choices": [
+        "The membrane is a solid wall that stops everything from crossing",
+        "The membrane lets everything through freely, like an open door",
+        "The membrane is selectively permeable: it lets some things through and keeps others out",
+        "Only plant cells have a membrane; animal cells are open"
+      ],
+      "prompt": "Which statement about the cell membrane is correct?"
+    },
+    {
+      "answer": "Water fills the vacuole, which pushes the cell contents and membrane hard against the cell wall. The cell is turgid and firm, so the plant stands. Without water the vacuole shrinks, the push fades, cells go flaccid and the plant wilts.",
+      "prompt": "Explain why a plant stands up straight when it has plenty of water, and why it wilts without water."
+    },
+    {
+      "answer": "It means the membrane chooses what crosses it: some substances are let through while others are kept out.",
+      "prompt": "In one sentence, explain what selectively permeable means for a cell membrane."
+    },
+    {
+      "answer": "Chloroplast",
+      "choices": [
+        "Nucleus",
+        "Chloroplast",
+        "Cell membrane",
+        "Mitochondrion"
+      ],
+      "prompt": "Which structure is found in a plant cell but not in an animal cell?"
+    },
+    {
+      "answer": "Cell, tissue, organ, system.",
+      "prompt": "Put these in order from smallest to largest: organ, cell, system, tissue."
+    }
+  ],
+  "level": "secondary",
+  "subject": "science",
+  "title": "Cells: structure and organisation",
+  "topic": "bio-cells"
+}

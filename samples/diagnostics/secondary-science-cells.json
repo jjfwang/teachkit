@@ -1,0 +1,193 @@
+{
+  "doNow": [
+    {
+      "choices": [
+        {
+          "misconception": "The cell membrane is a solid wall that blocks everything from entering or leaving.",
+          "rationale": {
+            "chose": "The learner selected option The membrane is a solid wall that stops everything from crossing as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: The cell membrane is a solid wall that blocks everything from entering or leaving.. The slip: A wall feels like protection, so the membrane is read as a barrier that stops everything. The fix: The membrane is selectively permeable: it lets some things through and keeps others out. In class, replay the gatekeeper scene: the food particle crossing in is the proof - if the membrane blocked everything, the cell would take in no food and remove no waste, and it would die.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "The membrane is a solid wall that stops everything from crossing"
+        },
+        {
+          "misconception": "The cell membrane is a solid wall that blocks everything from entering or leaving.",
+          "rationale": {
+            "chose": "The learner selected option The membrane lets everything through freely, like an open door as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: The cell membrane is a solid wall that blocks everything from entering or leaving.. The slip: A wall feels like protection, so the membrane is read as a barrier that stops everything. The fix: The membrane is selectively permeable: it lets some things through and keeps others out. In class, replay the gatekeeper scene: the food particle crossing in is the proof - if the membrane blocked everything, the cell would take in no food and remove no waste, and it would die.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "The membrane lets everything through freely, like an open door"
+        },
+        {
+          "correct": true,
+          "text": "The membrane is selectively permeable: it lets some things through and keeps others out"
+        },
+        {
+          "misconception": "The cell membrane is a solid wall that blocks everything from entering or leaving.",
+          "rationale": {
+            "chose": "The learner selected option Only plant cells have a membrane; animal cells are open as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: The cell membrane is a solid wall that blocks everything from entering or leaving.. The slip: A wall feels like protection, so the membrane is read as a barrier that stops everything. The fix: The membrane is selectively permeable: it lets some things through and keeps others out. In class, replay the gatekeeper scene: the food particle crossing in is the proof - if the membrane blocked everything, the cell would take in no food and remove no waste, and it would die.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "Only plant cells have a membrane; animal cells are open"
+        }
+      ],
+      "id": "dn1",
+      "kind": "multiple-choice",
+      "prompt": "Which statement about the cell membrane is correct?"
+    },
+    {
+      "choices": [
+        {
+          "misconception": "The cell membrane is a solid wall that blocks everything from entering or leaving.",
+          "rationale": {
+            "chose": "The learner selected option Nucleus as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: The cell membrane is a solid wall that blocks everything from entering or leaving.. The slip: A wall feels like protection, so the membrane is read as a barrier that stops everything. The fix: The membrane is selectively permeable: it lets some things through and keeps others out. In class, replay the gatekeeper scene: the food particle crossing in is the proof - if the membrane blocked everything, the cell would take in no food and remove no waste, and it would die.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "Nucleus"
+        },
+        {
+          "correct": true,
+          "text": "Chloroplast"
+        },
+        {
+          "misconception": "The cell membrane is a solid wall that blocks everything from entering or leaving.",
+          "rationale": {
+            "chose": "The learner selected option Cell membrane as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: The cell membrane is a solid wall that blocks everything from entering or leaving.. The slip: A wall feels like protection, so the membrane is read as a barrier that stops everything. The fix: The membrane is selectively permeable: it lets some things through and keeps others out. In class, replay the gatekeeper scene: the food particle crossing in is the proof - if the membrane blocked everything, the cell would take in no food and remove no waste, and it would die.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "Cell membrane"
+        },
+        {
+          "misconception": "The cell membrane is a solid wall that blocks everything from entering or leaving.",
+          "rationale": {
+            "chose": "The learner selected option Mitochondrion as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: The cell membrane is a solid wall that blocks everything from entering or leaving.. The slip: A wall feels like protection, so the membrane is read as a barrier that stops everything. The fix: The membrane is selectively permeable: it lets some things through and keeps others out. In class, replay the gatekeeper scene: the food particle crossing in is the proof - if the membrane blocked everything, the cell would take in no food and remove no waste, and it would die.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "Mitochondrion"
+        }
+      ],
+      "id": "dn2",
+      "kind": "multiple-choice",
+      "prompt": "Which structure is found in a plant cell but not in an animal cell?"
+    },
+    {
+      "choices": [
+        {
+          "misconception": "The cell membrane is a solid wall that blocks everything from entering or leaving.",
+          "rationale": {
+            "chose": "The learner selected option It traps light energy to make food as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: The cell membrane is a solid wall that blocks everything from entering or leaving.. The slip: A wall feels like protection, so the membrane is read as a barrier that stops everything. The fix: The membrane is selectively permeable: it lets some things through and keeps others out. In class, replay the gatekeeper scene: the food particle crossing in is the proof - if the membrane blocked everything, the cell would take in no food and remove no waste, and it would die.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "It traps light energy to make food"
+        },
+        {
+          "misconception": "The cell membrane is a solid wall that blocks everything from entering or leaving.",
+          "rationale": {
+            "chose": "The learner selected option It releases energy from food as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: The cell membrane is a solid wall that blocks everything from entering or leaving.. The slip: A wall feels like protection, so the membrane is read as a barrier that stops everything. The fix: The membrane is selectively permeable: it lets some things through and keeps others out. In class, replay the gatekeeper scene: the food particle crossing in is the proof - if the membrane blocked everything, the cell would take in no food and remove no waste, and it would die.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "It releases energy from food"
+        },
+        {
+          "correct": true,
+          "text": "It is the control centre that holds the instructions running the cell"
+        },
+        {
+          "misconception": "The cell membrane is a solid wall that blocks everything from entering or leaving.",
+          "rationale": {
+            "chose": "The learner selected option It stores water and pushes the cell firm as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: The cell membrane is a solid wall that blocks everything from entering or leaving.. The slip: A wall feels like protection, so the membrane is read as a barrier that stops everything. The fix: The membrane is selectively permeable: it lets some things through and keeps others out. In class, replay the gatekeeper scene: the food particle crossing in is the proof - if the membrane blocked everything, the cell would take in no food and remove no waste, and it would die.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "It stores water and pushes the cell firm"
+        }
+      ],
+      "id": "dn3",
+      "kind": "multiple-choice",
+      "prompt": "What is the job of the nucleus?"
+    }
+  ],
+  "hingeQuestions": [
+    {
+      "choices": [
+        {
+          "misconception": "The cell membrane is a solid wall that blocks everything from entering or leaving.",
+          "rationale": {
+            "chose": "The learner selected option The student is right - the membrane blocks everything as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: The cell membrane is a solid wall that blocks everything from entering or leaving.. The slip: A wall feels like protection, so the membrane is read as a barrier that stops everything. The fix: The membrane is selectively permeable: it lets some things through and keeps others out. In class, replay the gatekeeper scene: the food particle crossing in is the proof - if the membrane blocked everything, the cell would take in no food and remove no waste, and it would die.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "The student is right - the membrane blocks everything"
+        },
+        {
+          "correct": true,
+          "text": "The membrane is selectively permeable: food and oxygen cross in, waste crosses out, and some things are kept out"
+        },
+        {
+          "misconception": "The cell membrane is a solid wall that blocks everything from entering or leaving.",
+          "rationale": {
+            "chose": "The learner selected option Cells have no membrane, so everything drifts in and out as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: The cell membrane is a solid wall that blocks everything from entering or leaving.. The slip: A wall feels like protection, so the membrane is read as a barrier that stops everything. The fix: The membrane is selectively permeable: it lets some things through and keeps others out. In class, replay the gatekeeper scene: the food particle crossing in is the proof - if the membrane blocked everything, the cell would take in no food and remove no waste, and it would die.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "Cells have no membrane, so everything drifts in and out"
+        },
+        {
+          "misconception": "The cell membrane is a solid wall that blocks everything from entering or leaving.",
+          "rationale": {
+            "chose": "The learner selected option Only water can cross a membrane; nothing else moves as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: The cell membrane is a solid wall that blocks everything from entering or leaving.. The slip: A wall feels like protection, so the membrane is read as a barrier that stops everything. The fix: The membrane is selectively permeable: it lets some things through and keeps others out. In class, replay the gatekeeper scene: the food particle crossing in is the proof - if the membrane blocked everything, the cell would take in no food and remove no waste, and it would die.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "Only water can cross a membrane; nothing else moves"
+        }
+      ],
+      "id": "h1",
+      "kind": "multiple-choice",
+      "prompt": "A student says nothing can enter or leave a cell because its membrane is a solid wall. What is the best correction?",
+      "scriptCue": "s6"
+    },
+    {
+      "choices": [
+        {
+          "misconception": "The cell membrane is a solid wall that blocks everything from entering or leaving.",
+          "rationale": {
+            "chose": "The learner selected option The student is right - the membrane blocks everything as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: The cell membrane is a solid wall that blocks everything from entering or leaving.. The slip: A wall feels like protection, so the membrane is read as a barrier that stops everything. The fix: The membrane is selectively permeable: it lets some things through and keeps others out. In class, replay the gatekeeper scene: the food particle crossing in is the proof - if the membrane blocked everything, the cell would take in no food and remove no waste, and it would die.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "The student is right - the membrane blocks everything"
+        },
+        {
+          "correct": true,
+          "text": "The membrane is selectively permeable: food and oxygen cross in, waste crosses out, and some things are kept out"
+        },
+        {
+          "misconception": "The cell membrane is a solid wall that blocks everything from entering or leaving.",
+          "rationale": {
+            "chose": "The learner selected option Cells have no membrane, so everything drifts in and out as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: The cell membrane is a solid wall that blocks everything from entering or leaving.. The slip: A wall feels like protection, so the membrane is read as a barrier that stops everything. The fix: The membrane is selectively permeable: it lets some things through and keeps others out. In class, replay the gatekeeper scene: the food particle crossing in is the proof - if the membrane blocked everything, the cell would take in no food and remove no waste, and it would die.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "Cells have no membrane, so everything drifts in and out"
+        }
+      ],
+      "id": "h2",
+      "kind": "multiple-choice",
+      "prompt": "What is the best correction to the claim that a cell membrane is a solid wall that blocks everything from entering or leaving?",
+      "scriptCue": "s6"
+    }
+  ],
+  "level": "secondary",
+  "subject": "science",
+  "title": "Cells: structure and organisation",
+  "topic": "bio-cells"
+}
