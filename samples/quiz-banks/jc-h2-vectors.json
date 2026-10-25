@@ -1,0 +1,51 @@
+{
+ "items": [
+  {
+   "answer": "It is the same vector: same magnitude and same direction",
+   "choices": [
+    "It is a different vector, because it starts somewhere new",
+    "It is the same vector: same magnitude and same direction",
+    "It is the same vector only if it starts at the origin",
+    "It is a position vector for the new start point"
+   ],
+   "misconceptionCode": "Moving a vector to a new start point changes it.",
+   "prompt": "The arrow for a vector moves 2 right and 3 up. The same arrow is redrawn starting at a different point, still moving 2 right and 3 up. What can we say about the redrawn arrow?"
+  },
+  {
+   "answer": "sqrt(13)",
+   "choices": [
+    "5",
+    "sqrt(13)",
+    "13",
+    "sqrt(5)"
+   ],
+   "prompt": "What is the magnitude of the vector (2, 3)?"
+  },
+  {
+   "answer": "a + b = (2 + 1, 3 + (-1)) = (3, 2).",
+   "prompt": "Add a = (2, 3) and b = (1, -1), and state the column vector a + b."
+  },
+  {
+   "answer": "a . b = 2 x 4 + 3 x (-1) = 8 - 3 = 5.",
+   "prompt": "Find the dot product a . b for a = (2, 3) and b = (4, -1)."
+  },
+  {
+   "answer": "(1, 1, -1)",
+   "choices": [
+    "(1, 0, 0)",
+    "(0, 1, 0)",
+    "(1, 1, -1)",
+    "(1, 1, 1)"
+   ],
+   "prompt": "Which vector is perpendicular to the normal n = (1, 2, 3)?"
+  },
+  {
+   "answer": "|(6, 8)| = sqrt(36 + 64) = sqrt(100) = 10.",
+   "prompt": "Calculate the magnitude of the vector (6, 8)."
+  }
+ ],
+ "level": "jc",
+ "subject": "math",
+ "title": "JC H2 vectors: direction, dot products, lines and planes",
+ "topic": "h2-vectors"
+}
