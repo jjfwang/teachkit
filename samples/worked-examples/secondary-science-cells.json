@@ -1,0 +1,49 @@
+{
+  "complete": {
+    "problem": "Read the ladder, then test the gatekeeper.",
+    "selfExplanation": "Explain how the ladder builds from a leaf cell to the shoot system, and why the membrane choosing what crosses matters at the gatekeeper step.",
+    "steps": [
+      {
+        "annotation": "A group of similar cells working together at the same job, such as leaf tissue.",
+        "text": "Step 1 (s6): group a leaf cell with its neighbours to make leaf tissue, the tissue builds the leaf organ, and the leaf joins the shoot system."
+      },
+      {
+        "annotation": "Letting some substances through while keeping others out - the membrane chooses, like a gatekeeper.",
+        "text": "Step 2 (s3): a food particle crosses the membrane while a harmful one is refused, so the cell stays turgid-fed and protected - a wall could do neither job."
+      },
+      {
+        "annotation": "Cells team up: the organisation ladder - cell to tissue to organ to system, as in leaf cell to leaf tissue to leaf to shoot system.",
+        "text": "Step 3: Cells team up: the organisation ladder - cell to tissue to organ to system, as in leaf cell to leaf tissue to leaf to shoot system."
+      }
+    ]
+  },
+  "faded": {
+    "problem": "Write the organisation ladder in order, starting from a single leaf cell and ending at the whole shoot system.",
+    "selfExplanation": "The first step is shown. Say how tissues build the organ, and what the organ joins to complete the ladder.",
+    "steps": [
+      {
+        "annotation": "The smallest unit of life; every living thing is made of one or more cells, each carrying the structures it needs to stay alive.",
+        "text": "Step 1: a leaf cell groups with similar cells to make leaf tissue.",
+        "withheld": false
+      },
+      {
+        "annotation": "A structure made of several tissues working together, such as a leaf or a heart.",
+        "text": "Step 2: tissues build the leaf organ, the next rung above leaf tissue.",
+        "withheld": true
+      },
+      {
+        "annotation": "A group of organs working together, such as the shoot system or the circulatory system.",
+        "text": "Step 3: the leaf organ joins the shoot system, completing the ladder from cell to system.",
+        "withheld": true
+      }
+    ]
+  },
+  "level": "secondary",
+  "paired": {
+    "problem": "Explain why a plant stands up straight when it has plenty of water, and why it wilts without water.",
+    "solution": "Water fills the vacuole, which pushes the cell contents and membrane hard against the cell wall. The cell is turgid and firm, so the plant stands. Without water the vacuole shrinks, the push fades, cells go flaccid and the plant wilts."
+  },
+  "subject": "science",
+  "title": "Cells: structure and organisation",
+  "topic": "bio-cells"
+}
