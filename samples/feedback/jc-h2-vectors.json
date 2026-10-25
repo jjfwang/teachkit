@@ -1,0 +1,44 @@
+{
+ "commonErrors": [
+  {
+   "example": "A learner writes on the worksheet that the redrawn arrow is a different vector, because it starts somewhere new, for the arrow moving 2 right and 3 up.",
+   "fixIt": {
+    "corrected": "The redrawn arrow is the same vector: it still moves 2 right and 3 up, with magnitude sqrt(13) and the same direction. Free vectors slide: the same arrow drawn anywhere is the same vector.",
+    "prompt": "Fix it: state whether the arrow moving 2 right and 3 up is changed when it is redrawn at a new start point, and say what fixes a free vector."
+   },
+   "misconception": "Moving a vector to a new start point changes it."
+  },
+  {
+   "example": "On the exit ticket, a learner picks the statement that a redrawn free vector is a new vector, because its start point moved.",
+   "fixIt": {
+    "corrected": "It is the same vector: free vectors slide. Only position vectors are pinned to the origin, because a position vector is measured from the origin.",
+    "prompt": "Fix it: explain in one sentence why a free vector redrawn at a new point is still the same vector."
+   },
+   "misconception": "Moving a vector to a new start point changes it."
+  }
+ ],
+ "level": "jc",
+ "modelAnswers": [
+  {
+   "answer": "a + b = (2 + 1, 3 + (-1)) = (3, 2).",
+   "creditPoints": [],
+   "question": "Add a = (2, 3) and b = (1, -1), and state the column vector a + b."
+  },
+  {
+   "answer": "|(6, 8)| = sqrt(36 + 64) = sqrt(100) = 10.",
+   "creditPoints": [],
+   "question": "Calculate the magnitude of the vector (6, 8)."
+  }
+ ],
+ "nextSteps": [
+  "Reteach the sliding point from the paired notes trap before any further vectors work: only a position vector is pinned to the origin.",
+  "Practise checking magnitude and direction first whenever an arrow is redrawn at a new start point."
+ ],
+ "strengths": [
+  "Most of the class can add vectors component by component, such as a + b = (2 + 1, 3 + (-1)) = (3, 2) on the worksheet.",
+  "The class can find a magnitude by Pythagoras, such as |(6, 8)| = sqrt(36 + 64) = sqrt(100) = 10 on the exit ticket."
+ ],
+ "subject": "math",
+ "title": "JC H2 vectors: direction, dot products, lines and planes",
+ "topic": "h2-vectors"
+}
