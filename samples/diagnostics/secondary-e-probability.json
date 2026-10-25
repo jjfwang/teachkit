@@ -1,0 +1,193 @@
+{
+  "doNow": [
+    {
+      "choices": [
+        {
+          "misconception": "After three heads, tails is due.",
+          "rationale": {
+            "chose": "The learner selected option 0 as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: After three heads, tails is due.. A streak feels like it must balance out. The coin has no memory: the next toss is still 1/2. In class, toss a coin until three heads land in a row, then ask the class to bet on the next toss: whatever the streak, the fresh toss is still 1/2 heads and 1/2 tails.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "0"
+        },
+        {
+          "misconception": "After three heads, tails is due.",
+          "rationale": {
+            "chose": "The learner selected option 1/2 as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: After three heads, tails is due.. A streak feels like it must balance out. The coin has no memory: the next toss is still 1/2. In class, toss a coin until three heads land in a row, then ask the class to bet on the next toss: whatever the streak, the fresh toss is still 1/2 heads and 1/2 tails.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "1/2"
+        },
+        {
+          "misconception": "After three heads, tails is due.",
+          "rationale": {
+            "chose": "The learner selected option 3/5 as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: After three heads, tails is due.. A streak feels like it must balance out. The coin has no memory: the next toss is still 1/2. In class, toss a coin until three heads land in a row, then ask the class to bet on the next toss: whatever the streak, the fresh toss is still 1/2 heads and 1/2 tails.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "3/5"
+        },
+        {
+          "correct": true,
+          "text": "1"
+        }
+      ],
+      "id": "dn1",
+      "kind": "multiple-choice",
+      "prompt": "A spinner is certain to land on red. Where does its probability sit on the probability scale?"
+    },
+    {
+      "choices": [
+        {
+          "misconception": "After three heads, tails is due.",
+          "rationale": {
+            "chose": "The learner selected option 3/5 = 0.3 = 30%. as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: After three heads, tails is due.. A streak feels like it must balance out. The coin has no memory: the next toss is still 1/2. In class, toss a coin until three heads land in a row, then ask the class to bet on the next toss: whatever the streak, the fresh toss is still 1/2 heads and 1/2 tails.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "3/5 = 0.3 = 30%."
+        },
+        {
+          "correct": true,
+          "text": "3/5 = 0.6 = 60%."
+        },
+        {
+          "misconception": "After three heads, tails is due.",
+          "rationale": {
+            "chose": "The learner selected option 5/3 = 1.67 = 167%. as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: After three heads, tails is due.. A streak feels like it must balance out. The coin has no memory: the next toss is still 1/2. In class, toss a coin until three heads land in a row, then ask the class to bet on the next toss: whatever the streak, the fresh toss is still 1/2 heads and 1/2 tails.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "5/3 = 1.67 = 167%."
+        },
+        {
+          "misconception": "After three heads, tails is due.",
+          "rationale": {
+            "chose": "The learner selected option 2/5 = 0.4 = 40%. as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: After three heads, tails is due.. A streak feels like it must balance out. The coin has no memory: the next toss is still 1/2. In class, toss a coin until three heads land in a row, then ask the class to bet on the next toss: whatever the streak, the fresh toss is still 1/2 heads and 1/2 tails.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "2/5 = 0.4 = 40%."
+        }
+      ],
+      "id": "dn2",
+      "kind": "multiple-choice",
+      "prompt": "A bag contains 5 counters, 3 of them red. Write P(red) as a fraction, a decimal and a percentage."
+    },
+    {
+      "choices": [
+        {
+          "misconception": "After three heads, tails is due.",
+          "rationale": {
+            "chose": "The learner selected option Correct - a streak has to balance out straight away as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: After three heads, tails is due.. A streak feels like it must balance out. The coin has no memory: the next toss is still 1/2. In class, toss a coin until three heads land in a row, then ask the class to bet on the next toss: whatever the streak, the fresh toss is still 1/2 heads and 1/2 tails.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "Correct - a streak has to balance out straight away"
+        },
+        {
+          "misconception": "After three heads, tails is due.",
+          "rationale": {
+            "chose": "The learner selected option Wrong - heads is now more likely because it is on a winning run as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: After three heads, tails is due.. A streak feels like it must balance out. The coin has no memory: the next toss is still 1/2. In class, toss a coin until three heads land in a row, then ask the class to bet on the next toss: whatever the streak, the fresh toss is still 1/2 heads and 1/2 tails.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "Wrong - heads is now more likely because it is on a winning run"
+        },
+        {
+          "correct": true,
+          "text": "Wrong - the coin has no memory, so the next toss is still 1/2 tails"
+        },
+        {
+          "misconception": "After three heads, tails is due.",
+          "rationale": {
+            "chose": "The learner selected option Wrong - the next toss cannot be tails after three heads as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: After three heads, tails is due.. A streak feels like it must balance out. The coin has no memory: the next toss is still 1/2. In class, toss a coin until three heads land in a row, then ask the class to bet on the next toss: whatever the streak, the fresh toss is still 1/2 heads and 1/2 tails.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "Wrong - the next toss cannot be tails after three heads"
+        }
+      ],
+      "id": "dn3",
+      "kind": "multiple-choice",
+      "prompt": "A fair coin has landed heads three times in a row. A classmate says tails must be more likely next because it is overdue. Which statement is correct?"
+    }
+  ],
+  "hingeQuestions": [
+    {
+      "choices": [
+        {
+          "misconception": "After three heads, tails is due.",
+          "rationale": {
+            "chose": "The learner selected option More than 1/2 - tails is due as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: After three heads, tails is due.. A streak feels like it must balance out. The coin has no memory: the next toss is still 1/2. In class, toss a coin until three heads land in a row, then ask the class to bet on the next toss: whatever the streak, the fresh toss is still 1/2 heads and 1/2 tails.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "More than 1/2 - tails is due"
+        },
+        {
+          "correct": true,
+          "text": "Exactly 1/2 - the coin has no memory"
+        },
+        {
+          "misconception": "After three heads, tails is due.",
+          "rationale": {
+            "chose": "The learner selected option Less than 1/2 - heads is on a run as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: After three heads, tails is due.. A streak feels like it must balance out. The coin has no memory: the next toss is still 1/2. In class, toss a coin until three heads land in a row, then ask the class to bet on the next toss: whatever the streak, the fresh toss is still 1/2 heads and 1/2 tails.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "Less than 1/2 - heads is on a run"
+        },
+        {
+          "misconception": "After three heads, tails is due.",
+          "rationale": {
+            "chose": "The learner selected option 1 - tails is guaranteed now as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: After three heads, tails is due.. A streak feels like it must balance out. The coin has no memory: the next toss is still 1/2. In class, toss a coin until three heads land in a row, then ask the class to bet on the next toss: whatever the streak, the fresh toss is still 1/2 heads and 1/2 tails.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "1 - tails is guaranteed now"
+        }
+      ],
+      "id": "h1",
+      "kind": "multiple-choice",
+      "prompt": "After three heads in a row, what is the probability that the next toss of the same fair coin is tails?",
+      "scriptCue": "s6"
+    },
+    {
+      "choices": [
+        {
+          "misconception": "After three heads, tails is due.",
+          "rationale": {
+            "chose": "The learner selected option More than 1/2 - tails is due as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: After three heads, tails is due.. A streak feels like it must balance out. The coin has no memory: the next toss is still 1/2. In class, toss a coin until three heads land in a row, then ask the class to bet on the next toss: whatever the streak, the fresh toss is still 1/2 heads and 1/2 tails.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "More than 1/2 - tails is due"
+        },
+        {
+          "correct": true,
+          "text": "Exactly 1/2 - each toss is independent"
+        },
+        {
+          "misconception": "After three heads, tails is due.",
+          "rationale": {
+            "chose": "The learner selected option Less than 1/2 - heads is on a run as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: After three heads, tails is due.. A streak feels like it must balance out. The coin has no memory: the next toss is still 1/2. In class, toss a coin until three heads land in a row, then ask the class to bet on the next toss: whatever the streak, the fresh toss is still 1/2 heads and 1/2 tails.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "Less than 1/2 - heads is on a run"
+        }
+      ],
+      "id": "h2",
+      "kind": "multiple-choice",
+      "prompt": "What is the correct probability for the next toss of a fair coin after three heads in a row?",
+      "scriptCue": "s6"
+    }
+  ],
+  "level": "secondary",
+  "subject": "math",
+  "title": "E-Math probability: single and combined events",
+  "topic": "e-probability"
+}
