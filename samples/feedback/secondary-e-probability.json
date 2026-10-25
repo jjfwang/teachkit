@@ -1,0 +1,44 @@
+{
+ "commonErrors": [
+  {
+   "example": "A learner writes on the worksheet that tails must be more likely after three heads because it is overdue.",
+   "fixIt": {
+    "corrected": "Corrected working: the coin has no memory, so the next toss is still 1/2 tails.",
+    "prompt": "Fix it: state the probability of tails on the next toss of a fair coin and say what the coin remembers."
+   },
+   "misconception": "After three heads, tails is due."
+  },
+  {
+   "example": "On the exit ticket, a learner answers that the probability of tails after three heads is more than 1/2.",
+   "fixIt": {
+    "corrected": "Corrected check: each toss is independent, so P(tails) stays at 1/2 however long the run of heads.",
+    "prompt": "Fix it: choose the correct probability for tails after a run of heads and give the reason."
+   },
+   "misconception": "After three heads, tails is due."
+  }
+ ],
+ "level": "secondary",
+ "modelAnswers": [
+  {
+   "answer": "3/5 = 0.6 = 60%.",
+   "creditPoints": [],
+   "question": "A bag contains 5 counters, 3 of them red. Write P(red) as a fraction, a decimal and a percentage."
+  },
+  {
+   "answer": "Heads-heads, heads-tails, tails-heads, tails-tails.",
+   "creditPoints": [],
+   "question": "A coin is tossed twice. List all four outcomes in the possibility table."
+  }
+ ],
+ "nextSteps": [
+  "Reteach the trap, landing that the coin has no memory: the next toss is still 1/2.",
+  "Practise the check from the worked example - P(red) and P(blue) sum to 1 because exactly one colour must come out."
+ ],
+ "strengths": [
+  "Most of the class can calculate P(event) as favourable over total and write the same value as a fraction, a decimal and a percentage.",
+  "The class can build the two-toss possibility table with one outcome per cell and multiply along the branches."
+ ],
+ "subject": "math",
+ "title": "E-Math probability: single and combined events",
+ "topic": "e-probability"
+}

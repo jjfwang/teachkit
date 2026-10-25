@@ -54,7 +54,8 @@ const STEMS = [
   'primary-science-energy-forms',
   'primary-science-photosynthesis',
   'secondary-e-trigonometry',
-  'secondary-e-mensuration'
+  'secondary-e-mensuration',
+  'secondary-e-probability'
 ];
 
 function load(rel) {

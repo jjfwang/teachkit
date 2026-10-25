@@ -1,0 +1,124 @@
+{
+ "activities": [
+  {
+   "grouping": "whole class",
+   "minutes": 5,
+   "objectiveIds": [
+    "o1"
+   ],
+   "resources": [
+    "board"
+   ],
+   "scriptCue": "s1",
+   "title": "The probability scale"
+  },
+  {
+   "grouping": "pairs",
+   "minutes": 5,
+   "objectiveIds": [
+    "o1"
+   ],
+   "scriptCue": "s2",
+   "title": "One value, three forms"
+  },
+  {
+   "differentiation": {
+    "support": "Provide the student notes worked example open at the counter step so learners can follow favourable over total, 3 / 5, before trying their own bag counts themselves."
+   },
+   "grouping": "whole class",
+   "minutes": 7,
+   "objectiveIds": [
+    "o2"
+   ],
+   "scriptCue": "s3",
+   "title": "P(event) equals favourable over total"
+  },
+  {
+   "grouping": "pairs",
+   "minutes": 7,
+   "objectiveIds": [
+    "o3"
+   ],
+   "scriptCue": "s4",
+   "title": "Two tosses, one table"
+  },
+  {
+   "grouping": "whole class",
+   "minutes": 6,
+   "objectiveIds": [
+    "o3"
+   ],
+   "scriptCue": "s5",
+   "title": "Fill the table, multiply the branches"
+  },
+  {
+   "differentiation": {
+    "stretch": "Ask learners to explain why heads-tails and tails-heads stay in different cells before checking the exactly-one-head count."
+   },
+   "grouping": "pairs",
+   "minutes": 5,
+   "objectiveIds": [
+    "o2",
+    "o3"
+   ],
+   "scriptCue": "s6",
+   "title": "A common mistake: after three heads, tails is due"
+  },
+  {
+   "grouping": "individual",
+   "minutes": 5,
+   "objectiveIds": [
+    "o1",
+    "o2",
+    "o3"
+   ],
+   "resources": [
+    "worksheet"
+   ],
+   "title": "Worksheet practice and exit ticket"
+  }
+ ],
+ "durationMinutes": 40,
+ "level": "secondary",
+ "objectives": [
+  {
+   "assessmentPoints": [
+    "Scale placements in the opening activity",
+    "Partner conversions between the three forms"
+   ],
+   "id": "o1",
+   "successCriteria": [
+    "I can place a certain event at 1 and an even chance at 1/2 on the probability scale",
+    "I can write the same probability in three forms, like 3/5 = 0.6 = 60%"
+   ],
+   "text": "Place any probability on the scale from 0 to 1 and convert between fractions, decimals and percentages"
+  },
+  {
+   "assessmentPoints": [
+    "P(event) answers in the third activity",
+    "Worksheet answers checked against the trap in the sixth activity"
+   ],
+   "id": "o2",
+   "successCriteria": [
+    "I can write P(red) = favourable / total = 3 / 5 for 3 red counters out of 5",
+    "I can check that P(red) + P(blue) = 3 / 5 + 2 / 5 = 1 because exactly one colour must come out"
+   ],
+   "text": "Calculate P(event) as favourable outcomes over total outcomes"
+  },
+  {
+   "assessmentPoints": [
+    "Possibility table answers in the fourth activity",
+    "Trap answers in the closing exit ticket"
+   ],
+   "id": "o3",
+   "successCriteria": [
+    "I can list heads-heads, heads-tails, tails-heads, tails-tails, one outcome per cell of the table",
+    "I can calculate heads-then-heads as 1/2 times 1/2 = 1/4 and explain that the coin has no memory"
+   ],
+   "text": "Build a possibility table for two combined events and multiply along the branches"
+  }
+ ],
+ "subject": "math",
+ "title": "E-Math probability: single and combined events",
+ "topic": "e-probability"
+}

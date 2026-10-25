@@ -1,0 +1,125 @@
+{
+ "blueprint": [
+  {
+   "assessmentObjective": "AO1 recall and apply",
+   "cognitiveLevel": "apply",
+   "marks": 10,
+   "outcomeCode": "S3-PROB-APPLY"
+  },
+  {
+   "assessmentObjective": "AO2 reason and explain",
+   "cognitiveLevel": "reason",
+   "marks": 10,
+   "outcomeCode": "S3-MENS-REASON"
+  }
+ ],
+ "durationMinutes": 40,
+ "items": [
+  {
+   "blueprintRow": 0,
+   "commandWord": "Calculate",
+   "markScheme": {
+    "points": [
+     {
+      "marks": 2,
+      "text": "Writes P(event) as favourable over total, 3 over 5"
+     },
+     {
+      "marks": 2,
+      "text": "Gives P(red) as 3/5 = 0.6 = 60%"
+     }
+    ]
+   },
+   "marks": 4,
+   "prompt": "A bag contains 5 counters, 3 of them red. Write P(red) as a fraction, a decimal and a percentage."
+  },
+  {
+   "blueprintRow": 0,
+   "commandWord": "Calculate",
+   "markScheme": {
+    "points": [
+     {
+      "marks": 3,
+      "text": "Lists the four equally likely outcomes, heads-heads, heads-tails, tails-heads, tails-tails"
+     },
+     {
+      "marks": 3,
+      "text": "Multiplies along the branches, 1/2 times 1/2, and gives the probability as 1/4"
+     }
+    ]
+   },
+   "marks": 6,
+   "prompt": "A fair coin is tossed twice. Using the possibility table, what is the probability of heads followed by heads?"
+  },
+  {
+   "blueprintRow": 1,
+   "commandWord": "Calculate",
+   "markScheme": {
+    "points": [
+     {
+      "marks": 2,
+      "text": "Writes the sphere volume as 4/3 pi r cubed before substituting r = 3"
+     },
+     {
+      "marks": 2,
+      "text": "Gives the volume as 36 pi cubic centimetres"
+     }
+    ]
+   },
+   "marks": 4,
+   "prompt": "Find the volume of a sphere of radius 3 cm, in terms of pi."
+  },
+  {
+   "blueprintRow": 1,
+   "commandWord": "Calculate",
+   "markScheme": {
+    "points": [
+     {
+      "marks": 3,
+      "text": "Writes the sector area as the angle fraction of the circle area, 60/360 x pi x 6 squared"
+     },
+     {
+      "marks": 3,
+      "text": "Gives the sector area as 6 pi square centimetres"
+     }
+    ]
+   },
+   "marks": 6,
+   "prompt": "A sector has angle 60 degrees in a circle of radius 6 cm. What is its sector area?"
+  }
+ ],
+ "level": "secondary",
+ "moderation": {
+  "state": "unreviewed"
+ },
+ "review": null,
+ "rubric": {
+  "criteria": [
+   {
+    "levels": [
+     {
+      "descriptor": "Working names the fraction, table or formula first, then applies it in a justified sequence.",
+      "label": "Secure"
+     },
+     {
+      "descriptor": "The method is broadly sound but a fraction, cell or power step is asserted without justification.",
+      "label": "Developing"
+     },
+     {
+      "descriptor": "Formulae or fractions are written without naming what each part represents.",
+      "label": "Beginning"
+     }
+    ],
+    "name": "Probability and mensuration reasoning"
+   }
+  ]
+ },
+ "subject": "math",
+ "title": "Probability and Mensuration Unit Test",
+ "topics": [
+  "secondary-e-probability",
+  "secondary-e-mensuration"
+ ],
+ "totalMarks": 20,
+ "unitTitle": "Probability scales, combined events and mensuration"
+}
