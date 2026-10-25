@@ -1,0 +1,120 @@
+{
+ "activities": [
+  {
+   "grouping": "whole class",
+   "minutes": 6,
+   "objectiveIds": [
+    "o1"
+   ],
+   "scriptCue": "s1",
+   "title": "Inside the atom"
+  },
+  {
+   "grouping": "pairs",
+   "minutes": 6,
+   "objectiveIds": [
+    "o2"
+   ],
+   "scriptCue": "s2",
+   "title": "Counting particles: carbon"
+  },
+  {
+   "differentiation": {
+    "support": "Provide the student notes open at the proton and nucleon number definitions so learners can follow the subtraction for neutrons before counting electrons."
+   },
+   "grouping": "whole class",
+   "minutes": 6,
+   "objectiveIds": [
+    "o2"
+   ],
+   "scriptCue": "s3",
+   "title": "Counting particles: sodium"
+  },
+  {
+   "grouping": "pairs",
+   "minutes": 6,
+   "objectiveIds": [
+    "o3"
+   ],
+   "scriptCue": "s4",
+   "title": "Groups: the table's columns"
+  },
+  {
+   "grouping": "whole class",
+   "minutes": 6,
+   "objectiveIds": [
+    "o3"
+   ],
+   "scriptCue": "s5",
+   "title": "Periods: the table's rows"
+  },
+  {
+   "differentiation": {
+    "stretch": "Ask learners to explain why alpha particles mostly passed straight through gold foil before they take the exit ticket."
+   },
+   "grouping": "pairs",
+   "minutes": 6,
+   "objectiveIds": [
+    "o1"
+   ],
+   "scriptCue": "s6",
+   "title": "A common mistake"
+  },
+  {
+   "grouping": "individual",
+   "minutes": 4,
+   "objectiveIds": [
+    "o1",
+    "o2",
+    "o3"
+   ],
+   "resources": [
+    "worksheet"
+   ],
+   "title": "Worksheet practice and exit ticket"
+  }
+ ],
+ "durationMinutes": 40,
+ "level": "secondary",
+ "objectives": [
+  {
+   "assessmentPoints": [
+    "Shell-model answers in the opening activity",
+    "Trap answers in the sixth activity and the closing worksheet"
+   ],
+   "id": "o1",
+   "successCriteria": [
+    "I can name the nucleus as the tiny dense centre holding the protons and neutrons",
+    "I can say electrons sit in fixed shells and the atom is mostly empty space"
+   ],
+   "text": "Describe the atom: a tiny dense nucleus of protons and neutrons, with electrons in shells around mostly empty space"
+  },
+  {
+   "assessmentPoints": [
+    "Carbon answers in the second activity",
+    "Sodium answers in the third activity and the closing worksheet"
+   ],
+   "id": "o2",
+   "successCriteria": [
+    "I can read the proton number as the number of protons and give a neutral atom the same number of electrons",
+    "I can work out neutrons as nucleon number minus proton number, such as 23 - 11 = 12 for sodium"
+   ],
+   "text": "Count protons, neutrons and electrons from the proton and nucleon numbers"
+  },
+  {
+   "assessmentPoints": [
+    "Group answers in the fourth activity",
+    "Period answers in the fifth activity and the closing exit ticket"
+   ],
+   "id": "o3",
+   "successCriteria": [
+    "I can fill shells in order - 2 in shell 1, 8 in shell 2, 8 in shell 3 - and write an arrangement such as 2,8,1",
+    "I can state the period from the number of shells and the group from the number of outer electrons"
+   ],
+   "text": "Use the electron arrangement to state an element's group and period"
+  }
+ ],
+ "subject": "science",
+ "title": "Atomic structure and the periodic table",
+ "topic": "chem-atomic"
+}
