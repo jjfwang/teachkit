@@ -1,0 +1,44 @@
+{
+ "commonErrors": [
+  {
+   "example": "A learner writes on the worksheet that one mole of oxygen weighs 1 g, the same as one mole of hydrogen.",
+   "fixIt": {
+    "corrected": "Corrected working: mass = moles x molar mass, so one mole of oxygen is 1 x 16 = 16 g.",
+    "prompt": "Fix it: say what decides the mass of one mole and give the mass of one mole of oxygen."
+   },
+   "misconception": "One mole of anything weighs the same."
+  },
+  {
+   "example": "On the exit ticket, a learner agrees with the student who says one mole of hydrogen and one mole of oxygen weigh the same because both are one mole.",
+   "fixIt": {
+    "corrected": "Corrected check: a mole fixes the count of particles, and the molar mass decides the mass - one mole of hydrogen is 1 g but one mole of oxygen is 16 g.",
+    "prompt": "Fix it: give the one-sentence correction for the claim that one mole of anything weighs the same."
+   },
+   "misconception": "One mole of anything weighs the same."
+  }
+ ],
+ "level": "secondary",
+ "modelAnswers": [
+  {
+   "answer": "n = m / M = 12 g / 12 g/mol = 1 mol. Weighing 12 g of carbon gives exactly one mole.",
+   "creditPoints": [],
+   "question": "Calculate the number of moles in 12 g of carbon-12. (Molar mass of carbon-12 = 12 g/mol) Show your working with n = m / M."
+  },
+  {
+   "answer": "A mole is a counting word for 6.02 × 10²³ particles, just as a dozen is a counting word for 12 items.",
+   "creditPoints": [],
+   "question": "In one sentence, explain what a mole is."
+  }
+ ],
+ "nextSteps": [
+  "Reteach the trap with the two-pan scene, landing that the count is fixed and the molar mass decides the mass.",
+  "Practise the check from the worked example - trace the mole step by step: counting word first, then n = m / M for carbon, then the mole ratio."
+ ],
+ "strengths": [
+  "Most of the class can turn a mass into moles with n = m / M, such as reading 12 g of carbon as one mole.",
+  "The class can use the 2 : 1 : 2 mole ratio to scale the amounts in the water reaction."
+ ],
+ "subject": "science",
+ "title": "The mole: counting atoms by weighing",
+ "topic": "chem-mole"
+}

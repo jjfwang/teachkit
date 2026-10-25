@@ -1,0 +1,111 @@
+{
+ "activities": [
+  {
+   "grouping": "whole class",
+   "minutes": 6,
+   "objectiveIds": [
+    "o1"
+   ],
+   "scriptCue": "s1",
+   "title": "A mole is a counting word"
+  },
+  {
+   "differentiation": {
+    "support": "Provide the student notes open at the molar mass definition so learners can follow how weighing 12 g of carbon counts one mole before they try n = m / M."
+   },
+   "grouping": "pairs",
+   "minutes": 7,
+   "objectiveIds": [
+    "o2"
+   ],
+   "scriptCue": "s2",
+   "title": "Mass to moles"
+  },
+  {
+   "grouping": "whole class",
+   "minutes": 7,
+   "objectiveIds": [
+    "o3"
+   ],
+   "scriptCue": "s3",
+   "title": "Mole ratios"
+  },
+  {
+   "grouping": "pairs",
+   "minutes": 7,
+   "objectiveIds": [
+    "o3"
+   ],
+   "scriptCue": "s4",
+   "title": "A common mistake: one mole of everything weighs the same"
+  },
+  {
+   "differentiation": {
+    "stretch": "Ask learners to explain why one mole of carbon and one mole of water weigh differently before they take the exit ticket."
+   },
+   "grouping": "pairs",
+   "minutes": 8,
+   "objectiveIds": [
+    "o1"
+   ],
+   "scriptCue": "s4",
+   "title": "Here is the trap, sprung on purpose"
+  },
+  {
+   "grouping": "individual",
+   "minutes": 5,
+   "objectiveIds": [
+    "o1",
+    "o2",
+    "o3"
+   ],
+   "resources": [
+    "worksheet"
+   ],
+   "title": "Worksheet practice and exit ticket"
+  }
+ ],
+ "durationMinutes": 40,
+ "level": "secondary",
+ "objectives": [
+  {
+   "assessmentPoints": [
+    "Dozen-and-mole answers in the opening activity",
+    "Counting answers in the closing worksheet"
+   ],
+   "id": "o1",
+   "successCriteria": [
+    "I can say a mole counts 6.02 × 10²³ particles, just as a dozen counts 12",
+    "I can explain why chemists weigh moles instead of counting particles one by one"
+   ],
+   "text": "Explain what a mole means: a counting word for 6.02 × 10²³ particles"
+  },
+  {
+   "assessmentPoints": [
+    "Carbon balance answers in the second activity",
+    "Mass answers in the closing worksheet"
+   ],
+   "id": "o2",
+   "successCriteria": [
+    "I can use n = m / M to turn a mass into moles, such as 12 g of carbon giving 1 mol",
+    "I can use mass = moles x molar mass to turn moles into a mass"
+   ],
+   "text": "Use n = m / M and mass = moles x molar mass to convert between mass and moles"
+  },
+  {
+   "assessmentPoints": [
+    "Ratio answers in the third activity",
+    "Trap answers in the fifth activity and the closing exit ticket"
+   ],
+   "id": "o3",
+   "successCriteria": [
+    "I can read the 2 : 1 : 2 mole ratio from 2 H₂ + O₂ → 2 H₂O and scale the whole ratio",
+    "I can explain that one mole of different substances has different masses because each has its own molar mass"
+   ],
+   "text": "Use mole ratios from balanced equations, and explain why one mole of different substances has different masses"
+  }
+ ],
+ "subject": "science",
+ "title": "The mole: counting atoms by weighing",
+ "topic": "chem-mole"
+}
