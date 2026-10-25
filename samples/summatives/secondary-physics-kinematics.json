@@ -1,0 +1,125 @@
+{
+ "blueprint": [
+  {
+   "assessmentObjective": "AO1 recall and apply",
+   "cognitiveLevel": "apply",
+   "marks": 10,
+   "outcomeCode": "S3-KIN-APPLY"
+  },
+  {
+   "assessmentObjective": "AO2 reason and explain",
+   "cognitiveLevel": "reason",
+   "marks": 10,
+   "outcomeCode": "S3-FOR-REASON"
+  }
+ ],
+ "durationMinutes": 40,
+ "items": [
+  {
+   "blueprintRow": 0,
+   "commandWord": "Calculate",
+   "markScheme": {
+    "points": [
+     {
+      "marks": 3,
+      "text": "States speed = distance / time and divides 100 by 20"
+     },
+     {
+      "marks": 3,
+      "text": "Gives 5 m/s and states a direction must be given for a velocity"
+     }
+    ]
+   },
+   "marks": 6,
+   "prompt": "An athlete sprints 100 metres in 20 seconds. Calculate her speed, and state the one extra fact that turns that speed into a velocity."
+  },
+  {
+   "blueprintRow": 0,
+   "commandWord": "Calculate",
+   "markScheme": {
+    "points": [
+     {
+      "marks": 2,
+      "text": "States acceleration is the gradient of a velocity-time graph, 20 / 10"
+     },
+     {
+      "marks": 2,
+      "text": "Gives an acceleration of 2 metres per second squared"
+     }
+    ]
+   },
+   "marks": 4,
+   "prompt": "A velocity-time graph rises from 0 to 20 m/s in 10 seconds. Calculate the acceleration, using the gradient of the graph."
+  },
+  {
+   "blueprintRow": 1,
+   "commandWord": "Calculate",
+   "markScheme": {
+    "points": [
+     {
+      "marks": 3,
+      "text": "States pressure = force / area and divides 200 by 0.5"
+     },
+     {
+      "marks": 3,
+      "text": "Gives a pressure of 400 Pa with unit"
+     }
+    ]
+   },
+   "marks": 6,
+   "prompt": "A crate of weight 200 N rests on a face of area 0.5 square metres. Calculate the pressure on the ground."
+  },
+  {
+   "blueprintRow": 1,
+   "commandWord": "Explain",
+   "markScheme": {
+    "points": [
+     {
+      "marks": 2,
+      "text": "States the driving wheel pushes backward on the road at the contact patch, so friction on the wheel acts forwards"
+     },
+     {
+      "marks": 2,
+      "text": "States friction opposes the relative slide between the surfaces, not the motion of the car"
+     }
+    ]
+   },
+   "marks": 4,
+   "prompt": "Explain how friction at a driving wheel can push a car forwards, even though friction is said to oppose motion."
+  }
+ ],
+ "level": "secondary",
+ "moderation": {
+  "state": "unreviewed"
+ },
+ "review": null,
+ "rubric": {
+  "criteria": [
+   {
+    "levels": [
+     {
+      "descriptor": "Explanations chain graph readings and force ideas to the answer in order, with each step justified by a named gradient, area or force rule.",
+      "label": "Secure"
+     },
+     {
+      "descriptor": "Explanations are broadly sound but one link between the graph or the forces and the answer is asserted rather than justified.",
+      "label": "Developing"
+     },
+     {
+      "descriptor": "Answers state numbers or force names without connecting them into an explanation.",
+      "label": "Beginning"
+     }
+    ],
+    "name": "Motion and forces reasoning"
+   }
+  ]
+ },
+ "subject": "science",
+ "title": "Motion and Forces Unit Test",
+ "topics": [
+  "secondary-physics-kinematics",
+  "secondary-physics-forces"
+ ],
+ "totalMarks": 20,
+ "unitTitle": "Motion and forces"
+}

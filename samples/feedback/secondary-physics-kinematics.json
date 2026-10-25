@@ -1,0 +1,44 @@
+{
+ "commonErrors": [
+  {
+   "example": "A learner writes on the worksheet that a velocity-time graph running flat at 12 m/s means the object has stopped, picking the statement that a flat line always means zero velocity.",
+   "fixIt": {
+    "corrected": "Corrected working: the height of the line is the velocity, so flat at 12 m/s means the velocity never changes - the object keeps moving at the same speed.",
+    "prompt": "Fix it: say what the height of a flat velocity-time line tells you and what the object at 12 m/s is doing."
+   },
+   "misconception": "A flat line on a velocity-time graph means the object has stopped."
+  },
+  {
+   "example": "On the exit ticket, a learner answers that an object whose velocity-time graph runs flat at 8 m/s has stopped.",
+   "fixIt": {
+    "corrected": "Corrected check: a flat v-t line means constant velocity: the object keeps moving at the same speed - flat at 8 m/s, it covers 8 metres every second.",
+    "prompt": "Fix it: give the one-sentence correction for the claim that a flat line on a velocity-time graph means the object has stopped."
+   },
+   "misconception": "A flat line on a velocity-time graph means the object has stopped."
+  }
+ ],
+ "level": "secondary",
+ "modelAnswers": [
+  {
+   "answer": "2 m/s, shown by the gradient: 120 / 60 = 2.",
+   "creditPoints": [],
+   "question": "A distance-time graph climbs 120 metres in 60 seconds in a straight line. What is the speed, and how does the graph show it?"
+  },
+  {
+   "answer": "3 m/s.",
+   "creditPoints": [],
+   "question": "A distance-time graph climbs 90 metres in 30 seconds in a straight line. What is the speed?"
+  }
+ ],
+ "nextSteps": [
+  "Reteach the trap with the flat line held at a steady height, landing that the height of the line is the velocity and a flat line means it never changes.",
+  "Practise the check from the worked example - trace the graph step by step: gradient of the distance-time graph first, then slope and area on the velocity-time graph."
+ ],
+ "strengths": [
+  "Most of the class can calculate speed from distance and time, such as reading the athlete's 100 metres in 20 seconds as a speed of 5 metres per second.",
+  "The class can read a distance-time gradient as speed and the area under a velocity-time graph as the distance travelled."
+ ],
+ "subject": "science",
+ "title": "Motion: speed, velocity and graphs",
+ "topic": "phys-kinematics"
+}
