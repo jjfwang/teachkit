@@ -1,0 +1,44 @@
+{
+ "level": "secondary",
+ "questions": [
+  {
+   "choices": [
+    {
+     "text": "Nucleus"
+    },
+    {
+     "correct": true,
+     "text": "Chloroplast"
+    },
+    {
+     "text": "Cell membrane"
+    },
+    {
+     "text": "Mitochondrion"
+    }
+   ],
+   "explanation": "Chloroplasts trap light energy to make food and are plant-only. The nucleus, membrane and mitochondrion appear in both cell types.",
+   "id": "q2",
+   "kind": "multiple-choice",
+   "prompt": "Which structure is found in a plant cell but not in an animal cell?"
+  },
+  {
+   "answer": "Water fills the vacuole, which pushes the cell contents and membrane hard against the cell wall. The cell is turgid and firm, so the plant stands. Without water the vacuole shrinks, the push fades, cells go flaccid and the plant wilts.",
+   "explanation": "Firmness is water pressure: a full vacuole presses the membrane against the wall (turgid), an emptied one cannot (flaccid).",
+   "id": "q3",
+   "kind": "short-answer",
+   "prompt": "Explain why a plant stands up straight when it has plenty of water, and why it wilts without water."
+  },
+  {
+   "answer": "Leaf cell -> leaf tissue -> leaf (organ) -> shoot system -> whole plant. Similar cells form a tissue, tissues form an organ, organs work together in a system.",
+   "explanation": "Each rung groups the rung below: cells into tissues, tissues into organs, organs into systems.",
+   "id": "q4",
+   "kind": "short-answer",
+   "prompt": "Write the organisation ladder in order, starting from a single leaf cell and ending at the whole shoot system."
+  }
+ ],
+ "subject": "science",
+ "title": "Cells: structure and organisation",
+ "topic": "bio-cells",
+ "variant": "homework"
+}
