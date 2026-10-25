@@ -1,0 +1,112 @@
+{
+ "activities": [
+  {
+   "grouping": "whole class",
+   "minutes": 6,
+   "objectiveIds": [
+    "o1"
+   ],
+   "scriptCue": "s1",
+   "title": "Light and sound: two kinds of wave"
+  },
+  {
+   "differentiation": {
+    "support": "Provide the student notes open at the wavelength definition so learners can follow how speed divided by frequency gives the wavelength before they try the worksheet calculation."
+   },
+   "grouping": "pairs",
+   "minutes": 8,
+   "objectiveIds": [
+    "o3"
+   ],
+   "scriptCue": "s2",
+   "title": "The wave equation: v = f x wavelength"
+  },
+  {
+   "grouping": "whole class",
+   "minutes": 7,
+   "objectiveIds": [
+    "o1"
+   ],
+   "scriptCue": "s3",
+   "title": "Here is the trap, sprung on purpose"
+  },
+  {
+   "grouping": "pairs",
+   "minutes": 6,
+   "objectiveIds": [
+    "o2"
+   ],
+   "scriptCue": "s4",
+   "title": "Waves carry energy, particles vibrate in place"
+  },
+  {
+   "differentiation": {
+    "stretch": "Ask learners to explain why the flash arrives before the thunder using both speeds before they take the exit ticket."
+   },
+   "grouping": "pairs",
+   "minutes": 8,
+   "objectiveIds": [
+    "o1",
+    "o3"
+   ],
+   "scriptCue": "s3",
+   "title": "Flash first: light far outruns sound"
+  },
+  {
+   "grouping": "individual",
+   "minutes": 5,
+   "objectiveIds": [
+    "o1",
+    "o2",
+    "o3"
+   ],
+   "resources": [
+    "worksheet"
+   ],
+   "title": "Worksheet practice and exit ticket"
+  }
+ ],
+ "durationMinutes": 40,
+ "level": "secondary",
+ "objectives": [
+  {
+   "assessmentPoints": [
+    "Wave-kind answers in the opening activity",
+    "Trap answers in the third activity and the closing exit ticket"
+   ],
+   "id": "o1",
+   "successCriteria": [
+    "I can say light is transverse and sound is longitudinal, with the particle vibration across the direction of travel for light and along it for sound",
+    "I can explain that we see lightning before we hear thunder because light travels at about 300,000,000 metres per second while sound manages only 340"
+   ],
+   "text": "Tell transverse and longitudinal waves apart and give light and sound as the examples"
+  },
+  {
+   "assessmentPoints": [
+    "Vocabulary answers in the fourth activity",
+    "Definition answers in the closing worksheet"
+   ],
+   "id": "o2",
+   "successCriteria": [
+    "I can define frequency as how many full waves pass a point each second, measured in hertz",
+    "I can define wavelength as the length of one full wave, from one crest to the next, measured in metres"
+   ],
+   "text": "Define the key vocabulary of waves: wave, transverse wave, longitudinal wave, frequency and wavelength"
+  },
+  {
+   "assessmentPoints": [
+    "Wavelength answers in the second activity",
+    "Speed answers in the closing worksheet"
+   ],
+   "id": "o3",
+   "successCriteria": [
+    "I can rearrange v = f x wavelength to wavelength = v / f, such as 340 divided by 170 giving 2 metres",
+    "I can calculate a wave speed from frequency times wavelength, such as 5 hertz times 3 metres giving 15 metres per second"
+   ],
+   "text": "Use the wave equation v = f x wavelength to find a speed, a frequency or a wavelength"
+  }
+ ],
+ "subject": "science",
+ "title": "Waves: light, sound and the wave equation",
+ "topic": "phys-waves"
+}
