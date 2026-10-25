@@ -1,0 +1,81 @@
+{
+ "flashcards": [
+  {
+   "back": "A number of the form z = x + iy, where x and y are real numbers and i^2 = -1: x is the real part and y is the imaginary part.",
+   "front": "Complex number",
+   "source": "definition"
+  },
+  {
+   "back": "The distance of the point z from the origin on the Argand diagram: |z| = sqrt(x^2 + y^2) by Pythagoras.",
+   "front": "Modulus",
+   "source": "definition"
+  },
+  {
+   "back": "The angle arg(z) that the arrow from the origin to z makes with the positive real axis, measured anticlockwise; it is only defined up to whole turns of 360 degrees.",
+   "front": "Argument",
+   "source": "definition"
+  },
+  {
+   "back": "The one value of the argument in the principal range -180 to 180 degrees, written Arg(z): every other value differs from it by a whole number of 360-degree turns.",
+   "front": "Principal argument",
+   "source": "definition"
+  },
+  {
+   "back": "For z = x + iy, the conjugate is x - iy: the mirror image of z in the real axis, with the same modulus and the negated argument.",
+   "front": "Conjugate",
+   "source": "definition"
+  },
+  {
+   "back": "The plane used to picture complex numbers: the horizontal axis is the real part and the vertical axis is the imaginary part, so z = x + iy is the point (x, y).",
+   "front": "Argand diagram",
+   "source": "definition"
+  },
+  {
+   "back": "Multiplying the angle can overshoot 180 degrees, which breaks the principal range. Angles wrap around: the principal Arg must land in -180 to 180 degrees, so arg(z^3) = -60 degrees.",
+   "front": "If arg(z) = 100 degrees then arg(z^3) = 300 degrees.",
+   "source": "trap"
+  },
+  {
+   "back": "-60 degrees",
+   "front": "If arg(z) = 100 degrees, what is the principal argument Arg(z^3)?",
+   "source": "quiz-bank"
+  },
+  {
+   "back": "|6 + 8i| = sqrt(36 + 64) = sqrt(100) = 10.",
+   "front": "Calculate the modulus of z = 6 + 8i.",
+   "source": "quiz-bank"
+  }
+ ],
+ "level": "jc",
+ "practiceSets": [
+  {
+   "dayOffset": 1,
+   "items": [
+    {
+     "answer": "The conjugate of z = 2 - 3i is 2 + 3i. Their product is z times its conjugate = 2^2 + 3^2 = 4 + 9 = 13, which is |z|^2.",
+     "prompt": "Find the conjugate of z = 2 - 3i, and calculate the product of z and its conjugate."
+    },
+    {
+     "answer": "5 + 2i",
+     "prompt": "What is the conjugate of z = 5 - 2i?"
+    }
+   ]
+  },
+  {
+   "dayOffset": 3,
+   "items": [
+    {
+     "answer": "|z| = sqrt((-2)^2 + 2^2) = sqrt(8) = 2 sqrt(2). The point (-2, 2) is in the second quadrant with reference angle 45 degrees, so the principal argument is Arg(z) = 180 - 45 = 135 degrees.",
+     "prompt": "For z = -2 + 2i, find the modulus |z| and the principal argument Arg(z), explaining how you used the quadrant."
+    },
+    {
+     "answer": "Arg(-3i) = -90 degrees: the point (0, -3) sits on the negative imaginary axis, a quarter turn clockwise from the positive real axis.",
+     "prompt": "State the principal argument of z = -3i, in degrees."
+    }
+   ]
+  }
+ ],
+ "subject": "math",
+ "title": "JC H2 complex numbers: the Argand diagram",
+ "topic": "h2-complex"
+}
