@@ -1,0 +1,44 @@
+{
+ "commonErrors": [
+  {
+   "example": "A learner writes on the worksheet that the principal argument of z^3 is 300 degrees when arg(z) = 100 degrees, because cubing triples the angle.",
+   "fixIt": {
+    "corrected": "Angles wrap around: the principal Arg must land in -180 to 180 degrees, so wrap 300 degrees by subtracting one whole turn: 300 - 360 = -60 degrees, and arg(z^3) = -60 degrees.",
+    "prompt": "Fix it: find the principal argument Arg(z^3) when arg(z) = 100 degrees, showing the wrap step in your working."
+   },
+   "misconception": "If arg(z) = 100 degrees then arg(z^3) = 300 degrees."
+  },
+  {
+   "example": "On the exit ticket, a learner picks 300 degrees as the principal argument Arg(z^3), defending it as three 100-degree turns.",
+   "fixIt": {
+    "corrected": "300 degrees is the same point as -60 degrees, but it is outside the principal range -180 to 180 degrees: the principal value is Arg(z^3) = -60 degrees.",
+    "prompt": "Fix it: explain in one sentence why 300 degrees is not a principal argument even though it names the same point."
+   },
+   "misconception": "If arg(z) = 100 degrees then arg(z^3) = 300 degrees."
+  }
+ ],
+ "level": "jc",
+ "modelAnswers": [
+  {
+   "answer": "The conjugate of z = 2 - 3i is 2 + 3i. Their product is z times its conjugate = 2^2 + 3^2 = 4 + 9 = 13, which is |z|^2.",
+   "creditPoints": [],
+   "question": "Find the conjugate of z = 2 - 3i, and calculate the product of z and its conjugate."
+  },
+  {
+   "answer": "|6 + 8i| = sqrt(36 + 64) = sqrt(100) = 10.",
+   "creditPoints": [],
+   "question": "Calculate the modulus of z = 6 + 8i."
+  }
+ ],
+ "nextSteps": [
+  "Reteach the angle wrap from the paired notes trap before any further complex numbers work: the principal Arg must land in -180 to 180 degrees.",
+  "Practise writing the wrap step in the working whenever a multiplied argument passes 180 degrees."
+ ],
+ "strengths": [
+  "Most of the class can find a conjugate and its product, such as the conjugate of z = 2 - 3i is 2 + 3i and the product is 13 on the worksheet.",
+  "The class can find a modulus by Pythagoras, such as |6 + 8i| = sqrt(36 + 64) = sqrt(100) = 10 on the exit ticket."
+ ],
+ "subject": "math",
+ "title": "JC H2 complex numbers: the Argand diagram",
+ "topic": "h2-complex"
+}
