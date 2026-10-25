@@ -1,0 +1,44 @@
+{
+  "items": [
+    {
+      "answer": "-60 degrees",
+      "choices": [
+        "300 degrees",
+        "-60 degrees",
+        "100 degrees",
+        "200 degrees"
+      ],
+      "misconceptionCode": "If arg(z) = 100 degrees then arg(z^3) = 300 degrees.",
+      "prompt": "If arg(z) = 100 degrees, what is the principal argument Arg(z^3)?"
+    },
+    {
+      "answer": "|6 + 8i| = sqrt(36 + 64) = sqrt(100) = 10.",
+      "prompt": "Calculate the modulus of z = 6 + 8i."
+    },
+    {
+      "answer": "The conjugate of z = 2 - 3i is 2 + 3i. Their product is z times its conjugate = 2^2 + 3^2 = 4 + 9 = 13, which is |z|^2.",
+      "prompt": "Find the conjugate of z = 2 - 3i, and calculate the product of z and its conjugate."
+    },
+    {
+      "answer": "5 + 2i",
+      "choices": [
+        "5 + 2i",
+        "-5 + 2i",
+        "5 - 2i"
+      ],
+      "prompt": "What is the conjugate of z = 5 - 2i?"
+    },
+    {
+      "answer": "|z| = sqrt((-2)^2 + 2^2) = sqrt(8) = 2 sqrt(2). The point (-2, 2) is in the second quadrant with reference angle 45 degrees, so the principal argument is Arg(z) = 180 - 45 = 135 degrees.",
+      "prompt": "For z = -2 + 2i, find the modulus |z| and the principal argument Arg(z), explaining how you used the quadrant."
+    },
+    {
+      "answer": "Arg(-3i) = -90 degrees: the point (0, -3) sits on the negative imaginary axis, a quarter turn clockwise from the positive real axis.",
+      "prompt": "State the principal argument of z = -3i, in degrees."
+    }
+  ],
+  "level": "jc",
+  "subject": "math",
+  "title": "JC H2 complex numbers: the Argand diagram",
+  "topic": "h2-complex"
+}
