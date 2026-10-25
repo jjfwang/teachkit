@@ -1,0 +1,120 @@
+{
+  "level": "secondary",
+  "sets": [
+    {
+      "cloze": [
+        {
+          "answers": [
+            "Ion"
+          ],
+          "text": "A charged particle formed when an atom loses or gains electrons is an ___."
+        },
+        {
+          "answers": [
+            "Ionic bond",
+            "Lattice"
+          ],
+          "text": "An ___ is the attraction between oppositely charged ions, and a ___ is a giant regular repeating pattern of particles."
+        }
+      ],
+      "frames": [
+        "An ___ is a charged particle formed from an atom.",
+        "An ___ holds oppositely charged ions together.",
+        "A ___ is a giant regular repeating pattern of particles."
+      ],
+      "level": "full",
+      "starters": [
+        "An ion is...",
+        "An ionic bond is...",
+        "A lattice is..."
+      ],
+      "wordBank": [
+        {
+          "gloss": "a charged particle formed when an atom loses or gains electrons",
+          "term": "Ion"
+        },
+        {
+          "gloss": "the attraction between oppositely charged ions",
+          "term": "Ionic bond"
+        },
+        {
+          "gloss": "a giant regular repeating pattern of particles",
+          "term": "Lattice"
+        },
+        {
+          "gloss": "a bond formed when two atoms share a pair of electrons",
+          "term": "Covalent bond"
+        }
+      ]
+    },
+    {
+      "cloze": [
+        {
+          "answers": [
+            "Molecule"
+          ],
+          "text": "A ___ is a small separate particle of joined atoms held by covalent bonds."
+        },
+        {
+          "answers": [
+            "Metallic bond"
+          ],
+          "text": "A ___ is the attraction between positive metal ions and a sea of free electrons."
+        }
+      ],
+      "frames": [
+        "A ___ is a small separate particle of joined atoms.",
+        "A ___ holds metal ions in a sea of electrons."
+      ],
+      "level": "partial",
+      "starters": [
+        "A molecule is...",
+        "A metallic bond is..."
+      ],
+      "wordBank": [
+        {
+          "gloss": "a small separate particle of joined atoms held by covalent bonds",
+          "term": "Molecule"
+        },
+        {
+          "gloss": "the attraction between a lattice of positive metal ions and the sea of free electrons",
+          "term": "Metallic bond"
+        },
+        {
+          "gloss": "outer electrons that have left their own atoms and are free to move",
+          "term": "Delocalised electrons"
+        }
+      ]
+    },
+    {
+      "cloze": [
+        {
+          "answers": [
+            "Electrostatic attraction"
+          ],
+          "text": "The ___ is the pull between opposite charges."
+        }
+      ],
+      "frames": [
+        "The ___ holds ions together in an ionic lattice."
+      ],
+      "level": "minimal",
+      "starters": [
+        "Electrostatic attraction is..."
+      ],
+      "wordBank": [
+        {
+          "gloss": "the pull between opposite charges",
+          "term": "Electrostatic attraction"
+        },
+        {
+          "gloss": "a giant regular repeating pattern of particles",
+          "term": "Lattice"
+        }
+      ]
+    }
+  ],
+  "subject": "science",
+  "title": "Chemical bonding: ionic, covalent, metallic",
+  "topic": "chem-bonding"
+}

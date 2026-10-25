@@ -1,0 +1,109 @@
+{
+  "level": "secondary",
+  "subject": "science",
+  "templates": [
+    {
+      "kind": "flow",
+      "slots": [
+        {
+          "entries": [
+            "Ionic bonding: sodium gives an electron away - sodium (2,8,1) transfers its lone outer electron to chlorine (2,8,7), forming a positive sodium ion and a negative chloride ion that attract each other."
+          ],
+          "label": "Ionic bonding",
+          "studentPrompt": "Explain this step in your own words."
+        },
+        {
+          "entries": [
+            "The ionic lattice - the ions pack into one giant repeating lattice, every sodium ion surrounded by chloride ions; NaCl is the 1 to 1 ratio, not a molecule."
+          ],
+          "label": "The ionic lattice",
+          "studentPrompt": "Explain this step in your own words."
+        },
+        {
+          "entries": [
+            "Covalent bonding: sharing, not giving - two chlorine atoms each contribute one electron to a shared pair, so both count eight outer electrons and form a molecule."
+          ],
+          "label": "Covalent bonding",
+          "studentPrompt": "Explain this step in your own words."
+        },
+        {
+          "entries": [
+            "Metallic bonding: a sea of electrons - metal atoms release their outer electrons into a free-moving sea around a lattice of positive ions, which is why metals conduct and bend."
+          ],
+          "label": "Metallic bonding",
+          "studentPrompt": "Explain this step in your own words."
+        },
+        {
+          "entries": [
+            "Check the thinking - a tidy formula does not mean a molecule: ask what the outer electrons do - transferred is ionic, shared is covalent, pooled is metallic."
+          ],
+          "label": "Check the thinking",
+          "studentPrompt": "Explain this step in your own words."
+        }
+      ]
+    },
+    {
+      "kind": "frayer",
+      "slots": [
+        {
+          "entries": [
+            "A charged particle formed when an atom loses electrons (positive ion) or gains electrons (negative ion)."
+          ],
+          "label": "Ion",
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "entries": [
+            "The attraction between oppositely charged ions, formed when one atom transfers outer electrons to another."
+          ],
+          "label": "Ionic bond",
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "entries": [
+            "A giant regular repeating pattern of particles. In an ionic compound every ion is surrounded by oppositely charged ions, with no separate molecules."
+          ],
+          "label": "Lattice",
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "entries": [
+            "A bond formed when two atoms share a pair of electrons, each atom counting the shared pair in its outer shell."
+          ],
+          "label": "Covalent bond",
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "entries": [
+            "A small separate particle of joined atoms held by covalent bonds, such as a water molecule. Ionic compounds do not form molecules."
+          ],
+          "label": "Molecule",
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "entries": [
+            "The attraction between a lattice of positive metal ions and the sea of free electrons moving around them."
+          ],
+          "label": "Metallic bond",
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "entries": [
+            "Outer electrons that have left their own atoms and are free to move through a whole structure, as in a metal."
+          ],
+          "label": "Delocalised electrons",
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "entries": [
+            "The pull between opposite charges. It holds ions together in an ionic lattice and holds metal ions in their electron sea."
+          ],
+          "label": "Electrostatic attraction",
+          "studentPrompt": "Give your own example of this term."
+        }
+      ]
+    }
+  ],
+  "title": "Chemical bonding: ionic, covalent, metallic",
+  "topic": "chem-bonding"
+}

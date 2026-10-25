@@ -1,0 +1,91 @@
+{
+  "flashcards": [
+    {
+      "back": "A charged particle formed when an atom loses electrons (positive ion) or gains electrons (negative ion).",
+      "front": "Ion",
+      "source": "definition"
+    },
+    {
+      "back": "The attraction between oppositely charged ions, formed when one atom transfers outer electrons to another.",
+      "front": "Ionic bond",
+      "source": "definition"
+    },
+    {
+      "back": "A giant regular repeating pattern of particles. In an ionic compound every ion is surrounded by oppositely charged ions, with no separate molecules.",
+      "front": "Lattice",
+      "source": "definition"
+    },
+    {
+      "back": "A bond formed when two atoms share a pair of electrons, each atom counting the shared pair in its outer shell.",
+      "front": "Covalent bond",
+      "source": "definition"
+    },
+    {
+      "back": "A small separate particle of joined atoms held by covalent bonds, such as a water molecule. Ionic compounds do not form molecules.",
+      "front": "Molecule",
+      "source": "definition"
+    },
+    {
+      "back": "The attraction between a lattice of positive metal ions and the sea of free electrons moving around them.",
+      "front": "Metallic bond",
+      "source": "definition"
+    },
+    {
+      "back": "Outer electrons that have left their own atoms and are free to move through a whole structure, as in a metal.",
+      "front": "Delocalised electrons",
+      "source": "definition"
+    },
+    {
+      "back": "The pull between opposite charges. It holds ions together in an ionic lattice and holds metal ions in their electron sea.",
+      "front": "Electrostatic attraction",
+      "source": "definition"
+    },
+    {
+      "back": "The slip: The formula NaCl looks like one joined unit, like the formulas of real molecules. The fix: Salt is a giant ionic lattice: NaCl just gives the ratio, there are no separate NaCl molecules. In class, draw one corner of the lattice and ask students to circle a single NaCl molecule - they cannot, because each ion belongs to the whole pattern, not to one partner.",
+      "front": "Table salt is made of NaCl molecules.",
+      "source": "trap"
+    },
+    {
+      "back": "Salt is a giant ionic lattice of separate ions, and the formula gives only the ratio",
+      "front": "A student says a grain of salt is one huge NaCl molecule. What is the best correction?",
+      "source": "quiz-bank"
+    },
+    {
+      "back": "Sodium gives its outer electron to chlorine, forming a positive sodium ion and a negative chloride ion",
+      "front": "Sodium has electron arrangement 2,8,1 and chlorine has 2,8,7. What happens when they form sodium chloride?",
+      "source": "quiz-bank"
+    }
+  ],
+  "level": "secondary",
+  "practiceSets": [
+    {
+      "dayOffset": 1,
+      "items": [
+        {
+          "answer": "Salt is a giant ionic lattice of sodium and chloride ions, and NaCl gives only the ratio",
+          "prompt": "Which statement about table salt is correct?"
+        },
+        {
+          "answer": "In the solid the ions are locked in the lattice; when molten they are free to move and carry charge",
+          "prompt": "Solid sodium chloride does not conduct electricity, but molten sodium chloride does. Why?"
+        }
+      ]
+    },
+    {
+      "dayOffset": 3,
+      "items": [
+        {
+          "answer": "Each chlorine atom contributes one electron to a shared pair between the two atoms. Both atoms count the shared pair in their outer shell, so each has eight outer electrons. No electron is transferred, so no ions form.",
+          "prompt": "A chlorine molecule, Cl2, is held together by a covalent bond. Explain, in terms of electrons, how the bond forms and why no ions are made."
+        },
+        {
+          "answer": "Copper is a lattice of positive metal ions in a sea of free-moving electrons. The electrons carry charge through the wire, so it conducts. The layers of ions can slide over each other while the sea still holds them, so the wire bends instead of shattering.",
+          "prompt": "Explain, in terms of particles and electrons, why copper wire conducts electricity and can be bent without breaking."
+        }
+      ]
+    }
+  ],
+  "subject": "science",
+  "title": "Chemical bonding: ionic, covalent, metallic",
+  "topic": "chem-bonding"
+}
