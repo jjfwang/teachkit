@@ -1,0 +1,44 @@
+{
+ "commonErrors": [
+  {
+   "example": "A learner writes on the worksheet that nothing can cross the membrane because it works like a solid wall around the cell.",
+   "fixIt": {
+    "corrected": "Corrected working: food crosses in and waste crosses out while a harmful particle is refused, so the membrane chooses what passes rather than blocking everything.",
+    "prompt": "Fix it: name two things that cross the membrane in opposite directions and one thing it refuses, then say what kind of barrier that makes it."
+   },
+   "misconception": "The cell membrane is a solid wall that blocks everything from entering or leaving."
+  },
+  {
+   "example": "On the exit ticket, a learner agrees with the student who says nothing can enter or leave a cell.",
+   "fixIt": {
+    "corrected": "Corrected check: a cell cut off completely would starve, so its outer layer must let chosen substances through and keep others out.",
+    "prompt": "Fix it: give the one-sentence correction a walled-off cell would need in order to take in food and remove waste."
+   },
+   "misconception": "The cell membrane is a solid wall that blocks everything from entering or leaving."
+  }
+ ],
+ "level": "secondary",
+ "modelAnswers": [
+  {
+   "answer": "Water fills the vacuole, which pushes the cell contents and membrane hard against the cell wall. The cell is turgid and firm, so the plant stands. Without water the vacuole shrinks, the push fades, cells go flaccid and the plant wilts.",
+   "creditPoints": [],
+   "question": "Explain why a plant stands up straight when it has plenty of water, and why it wilts without water."
+  },
+  {
+   "answer": "It is the control centre that holds the instructions running the cell",
+   "creditPoints": [],
+   "question": "What is the job of the nucleus?"
+  }
+ ],
+ "nextSteps": [
+  "Reteach the trap with the gatekeeper scene, landing that a membrane which blocked everything would leave the cell with no food in and no waste out.",
+  "Practise the check from the worked example - test the gatekeeper after reading the ladder from leaf cell to shoot system."
+ ],
+ "strengths": [
+  "Most of the class can label the main structures of plant and animal cells and name the three plant-only structures.",
+  "The class can order the organisation ladder from a single cell up to a whole system."
+ ],
+ "subject": "science",
+ "title": "Cells: structure and organisation",
+ "topic": "bio-cells"
+}

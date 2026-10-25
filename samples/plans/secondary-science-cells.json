@@ -1,0 +1,123 @@
+{
+ "activities": [
+  {
+   "grouping": "whole class",
+   "minutes": 5,
+   "objectiveIds": [
+    "o1"
+   ],
+   "resources": [
+    "board"
+   ],
+   "scriptCue": "s1",
+   "title": "A plant cell, labelled"
+  },
+  {
+   "grouping": "pairs",
+   "minutes": 5,
+   "objectiveIds": [
+    "o1"
+   ],
+   "scriptCue": "s2",
+   "title": "An animal cell, labelled"
+  },
+  {
+   "differentiation": {
+    "support": "Provide the student notes open at the cell membrane and selectively permeable definitions so learners can follow what crosses and what is refused before judging the solid-wall claim."
+   },
+   "grouping": "whole class",
+   "minutes": 7,
+   "objectiveIds": [
+    "o2"
+   ],
+   "scriptCue": "s3",
+   "title": "The membrane is the gatekeeper"
+  },
+  {
+   "grouping": "pairs",
+   "minutes": 6,
+   "objectiveIds": [
+    "o1"
+   ],
+   "scriptCue": "s4",
+   "title": "Two specialists: nucleus and chloroplast"
+  },
+  {
+   "grouping": "whole class",
+   "minutes": 6,
+   "objectiveIds": [
+    "o3"
+   ],
+   "scriptCue": "s5",
+   "title": "Why plants stand up straight"
+  },
+  {
+   "differentiation": {
+    "stretch": "Ask learners to name which scene proved that the membrane chooses what crosses before they take the exit ticket."
+   },
+   "grouping": "pairs",
+   "minutes": 6,
+   "objectiveIds": [
+    "o3"
+   ],
+   "scriptCue": "s6",
+   "title": "Cells team up: the organisation ladder"
+  },
+  {
+   "grouping": "individual",
+   "minutes": 5,
+   "objectiveIds": [
+    "o1",
+    "o2",
+    "o3"
+   ],
+   "resources": [
+    "worksheet"
+   ],
+   "title": "Worksheet practice and exit ticket"
+  }
+ ],
+ "durationMinutes": 40,
+ "level": "secondary",
+ "objectives": [
+  {
+   "assessmentPoints": [
+    "Labelling answers in the opening activity",
+    "Missing-structures answers in the second activity and the closing worksheet"
+   ],
+   "id": "o1",
+   "successCriteria": [
+    "I can label the cell wall, membrane, nucleus, chloroplast and large vacuole on a plant cell and say the animal cell has no wall, chloroplast or large vacuole",
+    "I can state that the nucleus controls the cell, the chloroplast traps light to make food and the mitochondrion releases energy from food"
+   ],
+   "text": "Label the main structures of plant and animal cells and state each job"
+  },
+  {
+   "assessmentPoints": [
+    "Gatekeeper answers in the third activity",
+    "Worksheet answers checked in the closing activity"
+   ],
+   "id": "o2",
+   "successCriteria": [
+    "I can explain that the membrane lets food and oxygen cross in and waste cross out while refusing harmful particles",
+    "I can contrast the selectively permeable membrane with the plant cell wall, which is fully permeable and gives shape and strength"
+   ],
+   "text": "Explain the cell membrane as selectively permeable, not a solid wall"
+  },
+  {
+   "assessmentPoints": [
+    "Turgor answers in the fifth activity",
+    "Ladder answers in the sixth activity and the closing exit ticket"
+   ],
+   "id": "o3",
+   "successCriteria": [
+    "I can explain that a full vacuole pushes the membrane against the wall so the cell is turgid, and that losing water makes cells flaccid so the plant wilts",
+    "I can order the ladder as cell, tissue, organ, system, as in leaf cell, leaf tissue, leaf, shoot system"
+   ],
+   "text": "Describe turgor in a plant cell and order the organisation ladder from cell to system"
+  }
+ ],
+ "subject": "science",
+ "title": "Cells: structure and organisation",
+ "topic": "bio-cells"
+}

@@ -1,0 +1,125 @@
+{
+ "blueprint": [
+  {
+   "assessmentObjective": "AO1 recall and apply",
+   "cognitiveLevel": "apply",
+   "marks": 10,
+   "outcomeCode": "S3-CELL-APPLY"
+  },
+  {
+   "assessmentObjective": "AO2 reason and explain",
+   "cognitiveLevel": "reason",
+   "marks": 10,
+   "outcomeCode": "S3-PHOTO-REASON"
+  }
+ ],
+ "durationMinutes": 40,
+ "items": [
+  {
+   "blueprintRow": 0,
+   "commandWord": "Name",
+   "markScheme": {
+    "points": [
+     {
+      "marks": 2,
+      "text": "Names any two of the plant-only structures: the wall, the chloroplast or the large permanent vacuole"
+     },
+     {
+      "marks": 2,
+      "text": "Matches each named structure to its own job, such as trapping light for food-making or storing fluid to push the cell firm"
+     }
+    ]
+   },
+   "marks": 4,
+   "prompt": "Name two structures found in a plant cell but not in an animal cell, and state the job of each one."
+  },
+  {
+   "blueprintRow": 0,
+   "commandWord": "Explain",
+   "markScheme": {
+    "points": [
+     {
+      "marks": 3,
+      "text": "States the membrane chooses what crosses it rather than sealing the cell off completely"
+     },
+     {
+      "marks": 3,
+      "text": "Supports the correction with crossing examples, such as food and oxygen moving in while waste moves out and harmful particles are refused"
+     }
+    ]
+   },
+   "marks": 6,
+   "prompt": "A student claims nothing can enter or leave a cell because the membrane around it is a solid wall. Explain why the claim is wrong."
+  },
+  {
+   "blueprintRow": 1,
+   "commandWord": "Write",
+   "markScheme": {
+    "points": [
+     {
+      "marks": 2,
+      "text": "Places the two raw materials before the arrow and the two products after it in the word equation"
+     },
+     {
+      "marks": 2,
+      "text": "Names chlorophyll as the pigment trapping the light energy"
+     }
+    ]
+   },
+   "marks": 4,
+   "prompt": "Write the word equation for photosynthesis and name the pigment that traps the light energy."
+  },
+  {
+   "blueprintRow": 1,
+   "commandWord": "Explain",
+   "markScheme": {
+    "points": [
+     {
+      "marks": 3,
+      "text": "States the released gas comes from water taken in by the plant being split"
+     },
+     {
+      "marks": 3,
+      "text": "States the other gas supplies the carbon that is built into glucose"
+     }
+    ]
+   },
+   "marks": 6,
+   "prompt": "Explain where the oxygen released by a leaf during photosynthesis comes from, and state the job carbon dioxide does instead."
+  }
+ ],
+ "level": "secondary",
+ "moderation": {
+  "state": "unreviewed"
+ },
+ "review": null,
+ "rubric": {
+  "criteria": [
+   {
+    "levels": [
+     {
+      "descriptor": "Explanations chain structure to job in order, with each step justified by a named structure or substance.",
+      "label": "Secure"
+     },
+     {
+      "descriptor": "Explanations are broadly sound but one link between a structure and its job is asserted rather than justified.",
+      "label": "Developing"
+     },
+     {
+      "descriptor": "Answers list structures or substances without connecting them into an explanation.",
+      "label": "Beginning"
+     }
+    ],
+    "name": "Cells and photosynthesis reasoning"
+   }
+  ]
+ },
+ "subject": "science",
+ "title": "Cells and Photosynthesis Unit Test",
+ "topics": [
+  "secondary-science-cells",
+  "secondary-science-photosynthesis"
+ ],
+ "totalMarks": 20,
+ "unitTitle": "Cell structure, organisation and photosynthesis"
+}

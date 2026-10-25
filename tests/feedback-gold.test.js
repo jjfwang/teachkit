@@ -56,7 +56,8 @@ const STEMS = [
   'secondary-e-trigonometry',
   'secondary-e-mensuration',
   'secondary-e-probability',
-  'secondary-science-electricity'
+  'secondary-science-electricity',
+  'secondary-science-cells'
 ];
 
 function load(rel) {
