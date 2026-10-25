@@ -1,0 +1,202 @@
+{
+ "doNow": [
+  {
+   "choices": [
+    {
+     "misconception": "The same push gives the same pressure whether you stand flat or on tiptoes.",
+     "rationale": {
+      "chose": "The learner selected option It stays the same as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: The same push gives the same pressure whether you stand flat or on tiptoes.. The slip: The push feels the same, so the effect on the ground feels like it should be the same. The fix: Pressure is force over area: tiptoes spread the same force over a smaller area, so the pressure is higher..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "It stays the same"
+    },
+    {
+     "correct": true,
+     "text": "It increases, because the same force spreads over a smaller area"
+    },
+    {
+     "misconception": "The same push gives the same pressure whether you stand flat or on tiptoes.",
+     "rationale": {
+      "chose": "The learner selected option It decreases, because less of the foot touches the floor as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: The same push gives the same pressure whether you stand flat or on tiptoes.. The slip: The push feels the same, so the effect on the ground feels like it should be the same. The fix: Pressure is force over area: tiptoes spread the same force over a smaller area, so the pressure is higher..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "It decreases, because less of the foot touches the floor"
+    },
+    {
+     "misconception": "The same push gives the same pressure whether you stand flat or on tiptoes.",
+     "rationale": {
+      "chose": "The learner selected option It becomes zero as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: The same push gives the same pressure whether you stand flat or on tiptoes.. The slip: The push feels the same, so the effect on the ground feels like it should be the same. The fix: Pressure is force over area: tiptoes spread the same force over a smaller area, so the pressure is higher..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "It becomes zero"
+    }
+   ],
+   "id": "dn1",
+   "kind": "multiple-choice",
+   "prompt": "Standing on tiptoes instead of flat feet, with the same weight, what happens to the pressure under your feet?"
+  },
+  {
+   "choices": [
+    {
+     "misconception": "The same push gives the same pressure whether you stand flat or on tiptoes.",
+     "rationale": {
+      "chose": "The learner selected option Correct - the same weight always gives the same pressure as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: The same push gives the same pressure whether you stand flat or on tiptoes.. The slip: The push feels the same, so the effect on the ground feels like it should be the same. The fix: Pressure is force over area: tiptoes spread the same force over a smaller area, so the pressure is higher..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "Correct - the same weight always gives the same pressure"
+    },
+    {
+     "misconception": "The same push gives the same pressure whether you stand flat or on tiptoes.",
+     "rationale": {
+      "chose": "The learner selected option Wrong - her weight has doubled on tiptoes as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: The same push gives the same pressure whether you stand flat or on tiptoes.. The slip: The push feels the same, so the effect on the ground feels like it should be the same. The fix: Pressure is force over area: tiptoes spread the same force over a smaller area, so the pressure is higher..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "Wrong - her weight has doubled on tiptoes"
+    },
+    {
+     "correct": true,
+     "text": "Wrong - the same force now spreads over a smaller area, so the pressure is higher"
+    },
+    {
+     "misconception": "The same push gives the same pressure whether you stand flat or on tiptoes.",
+     "rationale": {
+      "chose": "The learner selected option Wrong - pressure only depends on the floor material as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: The same push gives the same pressure whether you stand flat or on tiptoes.. The slip: The push feels the same, so the effect on the ground feels like it should be the same. The fix: Pressure is force over area: tiptoes spread the same force over a smaller area, so the pressure is higher..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "Wrong - pressure only depends on the floor material"
+    }
+   ],
+   "id": "dn2",
+   "kind": "multiple-choice",
+   "prompt": "A student stands flat, then rises on tiptoes. Her weight has not changed. A classmate says the pressure under her feet is unchanged too. Which statement is correct?"
+  },
+  {
+   "choices": [
+    {
+     "misconception": "The same push gives the same pressure whether you stand flat or on tiptoes.",
+     "rationale": {
+      "chose": "The learner selected option 100 Pa as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: The same push gives the same pressure whether you stand flat or on tiptoes.. The slip: The push feels the same, so the effect on the ground feels like it should be the same. The fix: Pressure is force over area: tiptoes spread the same force over a smaller area, so the pressure is higher..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "100 Pa"
+    },
+    {
+     "correct": true,
+     "text": "400 Pa"
+    },
+    {
+     "misconception": "The same push gives the same pressure whether you stand flat or on tiptoes.",
+     "rationale": {
+      "chose": "The learner selected option 200 Pa as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: The same push gives the same pressure whether you stand flat or on tiptoes.. The slip: The push feels the same, so the effect on the ground feels like it should be the same. The fix: Pressure is force over area: tiptoes spread the same force over a smaller area, so the pressure is higher..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "200 Pa"
+    },
+    {
+     "misconception": "The same push gives the same pressure whether you stand flat or on tiptoes.",
+     "rationale": {
+      "chose": "The learner selected option 0.0025 Pa as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: The same push gives the same pressure whether you stand flat or on tiptoes.. The slip: The push feels the same, so the effect on the ground feels like it should be the same. The fix: Pressure is force over area: tiptoes spread the same force over a smaller area, so the pressure is higher..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "0.0025 Pa"
+    }
+   ],
+   "id": "dn3",
+   "kind": "multiple-choice",
+   "prompt": "A crate weighing 200 N rests on a face of area 0.5 square metres. What pressure does it exert?"
+  }
+ ],
+ "hingeQuestions": [
+  {
+   "choices": [
+    {
+     "misconception": "The same push gives the same pressure whether you stand flat or on tiptoes.",
+     "rationale": {
+      "chose": "The learner selected option The student is right - the same push gives the same pressure as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: The same push gives the same pressure whether you stand flat or on tiptoes.. The slip: The push feels the same, so the effect on the ground feels like it should be the same. The fix: Pressure is force over area: tiptoes spread the same force over a smaller area, so the pressure is higher..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "The student is right - the same push gives the same pressure"
+    },
+    {
+     "correct": true,
+     "text": "Pressure is force over area: tiptoes spread the same force over a smaller area, so the pressure is higher."
+    },
+    {
+     "misconception": "The same push gives the same pressure whether you stand flat or on tiptoes.",
+     "rationale": {
+      "chose": "The learner selected option The pressure falls on tiptoes, because less of the foot touches the floor as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: The same push gives the same pressure whether you stand flat or on tiptoes.. The slip: The push feels the same, so the effect on the ground feels like it should be the same. The fix: Pressure is force over area: tiptoes spread the same force over a smaller area, so the pressure is higher..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "The pressure falls on tiptoes, because less of the foot touches the floor"
+    },
+    {
+     "misconception": "The same push gives the same pressure whether you stand flat or on tiptoes.",
+     "rationale": {
+      "chose": "The learner selected option The pressure doubles on tiptoes, because her weight has doubled as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: The same push gives the same pressure whether you stand flat or on tiptoes.. The slip: The push feels the same, so the effect on the ground feels like it should be the same. The fix: Pressure is force over area: tiptoes spread the same force over a smaller area, so the pressure is higher..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "The pressure doubles on tiptoes, because her weight has doubled"
+    }
+   ],
+   "id": "h1",
+   "kind": "multiple-choice",
+   "prompt": "A student says the same push gives the same pressure whether you stand flat or on tiptoes. What is the best correction?",
+   "scriptCue": "s4"
+  },
+  {
+   "choices": [
+    {
+     "misconception": "The same push gives the same pressure whether you stand flat or on tiptoes.",
+     "rationale": {
+      "chose": "The learner selected option It stays the same as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: The same push gives the same pressure whether you stand flat or on tiptoes.. The slip: The push feels the same, so the effect on the ground feels like it should be the same. The fix: Pressure is force over area: tiptoes spread the same force over a smaller area, so the pressure is higher..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "It stays the same"
+    },
+    {
+     "correct": true,
+     "text": "It increases, because the same force spreads over a smaller area"
+    },
+    {
+     "misconception": "The same push gives the same pressure whether you stand flat or on tiptoes.",
+     "rationale": {
+      "chose": "The learner selected option It decreases, because less of the foot touches the floor as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: The same push gives the same pressure whether you stand flat or on tiptoes.. The slip: The push feels the same, so the effect on the ground feels like it should be the same. The fix: Pressure is force over area: tiptoes spread the same force over a smaller area, so the pressure is higher..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "It decreases, because less of the foot touches the floor"
+    },
+    {
+     "misconception": "The same push gives the same pressure whether you stand flat or on tiptoes.",
+     "rationale": {
+      "chose": "The learner selected option It becomes zero as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: The same push gives the same pressure whether you stand flat or on tiptoes.. The slip: The push feels the same, so the effect on the ground feels like it should be the same. The fix: Pressure is force over area: tiptoes spread the same force over a smaller area, so the pressure is higher..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "It becomes zero"
+    }
+   ],
+   "id": "h2",
+   "kind": "multiple-choice",
+   "prompt": "Standing on tiptoes instead of flat feet, with the same weight, what happens to the pressure under your feet?",
+   "scriptCue": "s4"
+  }
+ ],
+ "level": "secondary",
+ "subject": "science",
+ "title": "Forces: friction, moments and pressure",
+ "topic": "phys-forces"
+}

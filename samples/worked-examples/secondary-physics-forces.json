@@ -1,0 +1,53 @@
+{
+ "complete": {
+  "problem": "Trace forces from a net force reading to moments and pressure.",
+  "selfExplanation": "Explain how friction opposes relative slide rather than motion itself, and how force times distance gives a moment and force over area gives a pressure.",
+  "steps": [
+   {
+    "annotation": "The single force left after opposing forces are combined: a 60 N push against 40 N of friction leaves a net 20 N.",
+    "text": "Step 1 (s1): friction opposes relative motion - a 60-newton push drives the block right, a 40-newton friction arrow grows at the contact against the slide, and the net 20 newtons to the right keeps the block sliding."
+   },
+   {
+    "annotation": "The turning effect of a force, calculated as force times distance from the pivot, measured in newton-metres.",
+    "text": "Step 2 (s2): moments - 60 newtons at 0.5 metres makes 30 newton-metres on the left; 30 newtons at 0.75 metres makes only 22.5 on the right, so the beam tips - then the right weight slides to 1.0 metre, its moment rises to 30, and the beam balances."
+   },
+   {
+    "annotation": "Force spread over an area, calculated as force divided by area, measured in pascals.",
+    "text": "Step 3 (s3): pressure - a 200-newton crate on a 0.5-square-metre face gives 400 pascals; tipped onto a 0.05-square-metre edge the same force gives 4000 pascals - one tenth the area, ten times the pressure."
+   },
+   {
+    "annotation": "The force between two surfaces in contact that opposes their relative slide - which is why it can point forward on a driving wheel.",
+    "text": "Step 4 (s4): check the thinking - the driving wheel pushes backward on the road at its contact patch, so friction pushes the car forward - friction opposes the relative slide, not the motion."
+   }
+  ]
+ },
+ "faded": {
+  "problem": "A crate weighing 200 N rests on a face of area 0.5 square metres. What pressure does it exert?",
+  "selfExplanation": "The first step is shown. Say how pressure = force / area gives the pressure, then why tipping the crate onto a smaller face raises it without changing the force.",
+  "steps": [
+   {
+    "annotation": "Force spread over an area, calculated as force divided by area, measured in pascals.",
+    "text": "Step 1: pressure is force spread over an area, so use pressure = force / area with force = 200 N and area = 0.5 square metres.",
+    "withheld": false
+   },
+   {
+    "annotation": "Pressure: the same force on different areas. The crate weighs 200 newtons and rests on half a square metre: 200 over 0.5 is 400 pascals. Now watch it tip onto its narrow edge - the force is still 200 newtons, but the area is now 0.05 square metres, so the pressure is 4000 pascals and the dent deepens. Check the pressure rule in your student notes.",
+    "text": "Step 2: pressure = 200 / 0.5 = 400 Pa.",
+    "withheld": true
+   },
+   {
+    "annotation": "Work this on the board slowly: write the formula, divide for the wide face, then change only the area and divide again.",
+    "text": "Step 3: check the units: newtons divided by square metres gives pascals, and tipping the crate onto a smaller face raises the pressure without changing the force.",
+    "withheld": true
+   }
+  ]
+ },
+ "level": "secondary",
+ "paired": {
+  "problem": "A push of 60 N meets friction of 40 N. Why does the block keep sliding instead of stopping?",
+  "solution": "The net force is 20 N in the direction of the push, so the block keeps sliding. Friction opposes the slide at 40 N, but the 60 N push is larger, so 60 - 40 leaves a net 20 N to the right."
+ },
+ "subject": "science",
+ "title": "Forces: friction, moments and pressure",
+ "topic": "phys-forces"
+}
