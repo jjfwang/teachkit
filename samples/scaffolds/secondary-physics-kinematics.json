@@ -1,0 +1,120 @@
+{
+  "level": "secondary",
+  "sets": [
+    {
+      "cloze": [
+        {
+          "answers": [
+            "Speed"
+          ],
+          "text": "Distance travelled per unit time is ___."
+        },
+        {
+          "answers": [
+            "Velocity",
+            "Displacement"
+          ],
+          "text": "___ is speed with a direction, and ___ is the straight-line change in position from start to finish."
+        }
+      ],
+      "frames": [
+        "___ is distance travelled per unit time.",
+        "___ is speed with a direction.",
+        "___ is the straight-line change in position."
+      ],
+      "level": "full",
+      "starters": [
+        "Speed is...",
+        "Velocity is...",
+        "Displacement is..."
+      ],
+      "wordBank": [
+        {
+          "gloss": "distance travelled per unit time",
+          "term": "Speed"
+        },
+        {
+          "gloss": "speed with a direction",
+          "term": "Velocity"
+        },
+        {
+          "gloss": "the straight-line change in position from start to finish, with a direction",
+          "term": "Displacement"
+        },
+        {
+          "gloss": "the rate of change of velocity",
+          "term": "Acceleration"
+        }
+      ]
+    },
+    {
+      "cloze": [
+        {
+          "answers": [
+            "Gradient"
+          ],
+          "text": "Rise over run on a graph is its ___."
+        },
+        {
+          "answers": [
+            "Area under a velocity-time graph"
+          ],
+          "text": "The ___ equals the distance travelled."
+        }
+      ],
+      "frames": [
+        "The ___ of a distance-time graph is the speed.",
+        "The ___ equals the distance travelled."
+      ],
+      "level": "partial",
+      "starters": [
+        "The gradient is...",
+        "The area under a velocity-time graph is..."
+      ],
+      "wordBank": [
+        {
+          "gloss": "rise over run on a graph",
+          "term": "Gradient"
+        },
+        {
+          "gloss": "the product of velocity and time accumulated under the line",
+          "term": "Area under a velocity-time graph"
+        },
+        {
+          "gloss": "distance travelled per unit time",
+          "term": "Speed"
+        }
+      ]
+    },
+    {
+      "cloze": [
+        {
+          "answers": [
+            "Acceleration"
+          ],
+          "text": "The rate of change of velocity is ___."
+        }
+      ],
+      "frames": [
+        "___ is read off a velocity-time graph as its gradient."
+      ],
+      "level": "minimal",
+      "starters": [
+        "Acceleration is..."
+      ],
+      "wordBank": [
+        {
+          "gloss": "the rate of change of velocity",
+          "term": "Acceleration"
+        },
+        {
+          "gloss": "distance travelled per unit time",
+          "term": "Speed"
+        }
+      ]
+    }
+  ],
+  "subject": "science",
+  "title": "Motion: speed, velocity and graphs",
+  "topic": "phys-kinematics"
+}
