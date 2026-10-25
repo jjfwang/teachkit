@@ -48,7 +48,8 @@ const STEMS = [
   'secondary-e-mensuration',
   'secondary-e-probability',
   'secondary-science-electricity',
-  'secondary-science-cells'
+  'secondary-science-cells',
+  'secondary-science-chem-acids'
 ];
 
 function load(rel) {
