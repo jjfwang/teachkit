@@ -1,0 +1,120 @@
+{
+  "level": "secondary",
+  "sets": [
+    {
+      "cloze": [
+        {
+          "answers": [
+            "pH scale"
+          ],
+          "text": "The ___ measures acidity and alkalinity."
+        },
+        {
+          "answers": [
+            "Acid",
+            "Alkali"
+          ],
+          "text": "An ___ releases hydrogen ions in water, and an ___ releases hydroxide ions in water."
+        }
+      ],
+      "frames": [
+        "The ___ measures acidity and alkalinity from 0 to 14.",
+        "An ___ releases hydrogen ions when dissolved in water.",
+        "An ___ releases hydroxide ions when dissolved in water."
+      ],
+      "level": "full",
+      "starters": [
+        "The pH scale is...",
+        "An acid is...",
+        "An alkali is..."
+      ],
+      "wordBank": [
+        {
+          "gloss": "the 0 to 14 scale that measures acidity and alkalinity",
+          "term": "pH scale"
+        },
+        {
+          "gloss": "a substance that releases hydrogen ions, H+, when dissolved in water",
+          "term": "Acid"
+        },
+        {
+          "gloss": "a substance that releases hydroxide ions, OH-, when dissolved in water",
+          "term": "Alkali"
+        },
+        {
+          "gloss": "a hydrogen ion released by an acid in water",
+          "term": "Hydrogen ion"
+        }
+      ]
+    },
+    {
+      "cloze": [
+        {
+          "answers": [
+            "Neutralisation"
+          ],
+          "text": "___ is the reaction of an acid with an alkali."
+        },
+        {
+          "answers": [
+            "Salt"
+          ],
+          "text": "The ionic compound left over after neutralisation is a ___."
+        }
+      ],
+      "frames": [
+        "In ___, H+ and OH- ions pair up to form water.",
+        "The leftover ions form a ___."
+      ],
+      "level": "partial",
+      "starters": [
+        "In neutralisation...",
+        "A salt is..."
+      ],
+      "wordBank": [
+        {
+          "gloss": "the reaction of an acid with an alkali",
+          "term": "Neutralisation"
+        },
+        {
+          "gloss": "the ionic compound left over after neutralisation",
+          "term": "Salt"
+        },
+        {
+          "gloss": "a dye that changes colour in acid and alkali",
+          "term": "Indicator"
+        }
+      ]
+    },
+    {
+      "cloze": [
+        {
+          "answers": [
+            "Weak acid"
+          ],
+          "text": "A ___ is still acidic, just not strong."
+        }
+      ],
+      "frames": [
+        "A ___ only partly releases its hydrogen ions in water."
+      ],
+      "level": "minimal",
+      "starters": [
+        "A weak acid..."
+      ],
+      "wordBank": [
+        {
+          "gloss": "an acid that only partly releases its hydrogen ions in water",
+          "term": "Weak acid"
+        },
+        {
+          "gloss": "adding a solution drop by drop from a burette",
+          "term": "Titration"
+        }
+      ]
+    }
+  ],
+  "subject": "science",
+  "title": "Acids, bases and salts",
+  "topic": "chem-acids"
+}
