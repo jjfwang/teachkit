@@ -1,0 +1,111 @@
+{
+ "activities": [
+  {
+   "grouping": "whole class",
+   "minutes": 6,
+   "objectiveIds": [
+    "o1"
+   ],
+   "scriptCue": "s1",
+   "title": "Velocity is speed with a direction"
+  },
+  {
+   "differentiation": {
+    "support": "Provide the student notes open at the gradient definition so learners can follow how rise over run on the climbing line gives the speed before they try the worksheet gradient question."
+   },
+   "grouping": "pairs",
+   "minutes": 7,
+   "objectiveIds": [
+    "o2"
+   ],
+   "scriptCue": "s2",
+   "title": "Distance-time graphs: the gradient is the speed"
+  },
+  {
+   "grouping": "whole class",
+   "minutes": 7,
+   "objectiveIds": [
+    "o3"
+   ],
+   "scriptCue": "s3",
+   "title": "Velocity-time graphs: slope is acceleration, area is distance"
+  },
+  {
+   "grouping": "pairs",
+   "minutes": 7,
+   "objectiveIds": [
+    "o1"
+   ],
+   "scriptCue": "s4",
+   "title": "Out and back: speed without velocity"
+  },
+  {
+   "differentiation": {
+    "stretch": "Ask learners to explain why a flat line at a steady height cannot mean the object has stopped before they take the exit ticket."
+   },
+   "grouping": "pairs",
+   "minutes": 8,
+   "objectiveIds": [
+    "o3"
+   ],
+   "scriptCue": "s4",
+   "title": "Here is the trap, sprung on purpose"
+  },
+  {
+   "grouping": "individual",
+   "minutes": 5,
+   "objectiveIds": [
+    "o1",
+    "o2",
+    "o3"
+   ],
+   "resources": [
+    "worksheet"
+   ],
+   "title": "Worksheet practice and exit ticket"
+  }
+ ],
+ "durationMinutes": 40,
+ "level": "secondary",
+ "objectives": [
+  {
+   "assessmentPoints": [
+    "Division answers in the opening activity",
+    "Speed and velocity answers in the closing worksheet"
+   ],
+   "id": "o1",
+   "successCriteria": [
+    "I can calculate speed as distance over time, such as 100 metres in 20 seconds giving 5 metres per second",
+    "I can explain that velocity is speed with a direction, and that a round trip back to the start has zero average velocity"
+   ],
+   "text": "Calculate speed from distance and time, and velocity from displacement and time"
+  },
+  {
+   "assessmentPoints": [
+    "Gradient answers in the second activity",
+    "Graph answers in the closing worksheet"
+   ],
+   "id": "o2",
+   "successCriteria": [
+    "I can read the speed off a distance-time graph as rise over run, such as 120 over 60 giving 2 metres per second",
+    "I can explain why the gradient of a distance-time graph carries speed units"
+   ],
+   "text": "Read the gradient of a distance-time graph as speed"
+  },
+  {
+   "assessmentPoints": [
+    "Slope and area answers in the third activity",
+    "Trap answers in the fifth activity and the closing exit ticket"
+   ],
+   "id": "o3",
+   "successCriteria": [
+    "I can read acceleration as the slope of a velocity-time graph, such as 20 over 10 giving 2 metres per second squared",
+    "I can read the distance travelled as the area under a velocity-time graph, and explain that a flat line means constant velocity, not stopped"
+   ],
+   "text": "Read the gradient of a velocity-time graph as acceleration and the area underneath as distance travelled"
+  }
+ ],
+ "subject": "science",
+ "title": "Motion: speed, velocity and graphs",
+ "topic": "phys-kinematics"
+}
