@@ -1,0 +1,202 @@
+{
+ "doNow": [
+  {
+   "choices": [
+    {
+     "misconception": "u_10 needs ten jumps of d, so u_n = u_1 + n*d.",
+     "rationale": {
+      "chose": "The learner selected option 24 as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: u_10 needs ten jumps of d, so u_n = u_1 + n*d.. The slip: The n feels like the number of jumps, but the first jump lands on u_2, not u_1.. The fix: Exponents count the jumps, not the terms: u_10 = u_1 + 9d, and a geometric sum counts every term, not the last term times n..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "24"
+    },
+    {
+     "correct": true,
+     "text": "32"
+    },
+    {
+     "misconception": "u_10 needs ten jumps of d, so u_n = u_1 + n*d.",
+     "rationale": {
+      "chose": "The learner selected option 20 as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: u_10 needs ten jumps of d, so u_n = u_1 + n*d.. The slip: The n feels like the number of jumps, but the first jump lands on u_2, not u_1.. The fix: Exponents count the jumps, not the terms: u_10 = u_1 + 9d, and a geometric sum counts every term, not the last term times n..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "20"
+    },
+    {
+     "misconception": "u_10 needs ten jumps of d, so u_n = u_1 + n*d.",
+     "rationale": {
+      "chose": "The learner selected option 64 as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: u_10 needs ten jumps of d, so u_n = u_1 + n*d.. The slip: The n feels like the number of jumps, but the first jump lands on u_2, not u_1.. The fix: Exponents count the jumps, not the terms: u_10 = u_1 + 9d, and a geometric sum counts every term, not the last term times n..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "64"
+    }
+   ],
+   "id": "dn1",
+   "kind": "multiple-choice",
+   "prompt": "What is the 5th term of the geometric progression 2, 4, 8, 16, ...?"
+  },
+  {
+   "choices": [
+    {
+     "misconception": "u_10 needs ten jumps of d, so u_n = u_1 + n*d.",
+     "rationale": {
+      "chose": "The learner selected option 35, from 5 + 10 x 3 as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: u_10 needs ten jumps of d, so u_n = u_1 + n*d.. The slip: The n feels like the number of jumps, but the first jump lands on u_2, not u_1.. The fix: Exponents count the jumps, not the terms: u_10 = u_1 + 9d, and a geometric sum counts every term, not the last term times n..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "35, from 5 + 10 x 3"
+    },
+    {
+     "correct": true,
+     "text": "32, from 5 + 9 x 3"
+    },
+    {
+     "misconception": "u_10 needs ten jumps of d, so u_n = u_1 + n*d.",
+     "rationale": {
+      "chose": "The learner selected option 30, from 10 x 3 as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: u_10 needs ten jumps of d, so u_n = u_1 + n*d.. The slip: The n feels like the number of jumps, but the first jump lands on u_2, not u_1.. The fix: Exponents count the jumps, not the terms: u_10 = u_1 + 9d, and a geometric sum counts every term, not the last term times n..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "30, from 10 x 3"
+    },
+    {
+     "misconception": "u_10 needs ten jumps of d, so u_n = u_1 + n*d.",
+     "rationale": {
+      "chose": "The learner selected option 14, from 5 + 3 x 3 as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: u_10 needs ten jumps of d, so u_n = u_1 + n*d.. The slip: The n feels like the number of jumps, but the first jump lands on u_2, not u_1.. The fix: Exponents count the jumps, not the terms: u_10 = u_1 + 9d, and a geometric sum counts every term, not the last term times n..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "14, from 5 + 3 x 3"
+    }
+   ],
+   "id": "dn2",
+   "kind": "multiple-choice",
+   "prompt": "An arithmetic progression starts at u_1 = 5 with common difference d = 3. What is u_10?"
+  },
+  {
+   "choices": [
+    {
+     "misconception": "u_10 needs ten jumps of d, so u_n = u_1 + n*d.",
+     "rationale": {
+      "chose": "The learner selected option a = 3, r = 2 as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: u_10 needs ten jumps of d, so u_n = u_1 + n*d.. The slip: The n feels like the number of jumps, but the first jump lands on u_2, not u_1.. The fix: Exponents count the jumps, not the terms: u_10 = u_1 + 9d, and a geometric sum counts every term, not the last term times n..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "a = 3, r = 2"
+    },
+    {
+     "misconception": "u_10 needs ten jumps of d, so u_n = u_1 + n*d.",
+     "rationale": {
+      "chose": "The learner selected option a = 3, r = -1 as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: u_10 needs ten jumps of d, so u_n = u_1 + n*d.. The slip: The n feels like the number of jumps, but the first jump lands on u_2, not u_1.. The fix: Exponents count the jumps, not the terms: u_10 = u_1 + 9d, and a geometric sum counts every term, not the last term times n..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "a = 3, r = -1"
+    },
+    {
+     "correct": true,
+     "text": "a = 3, r = 1/2"
+    },
+    {
+     "misconception": "u_10 needs ten jumps of d, so u_n = u_1 + n*d.",
+     "rationale": {
+      "chose": "The learner selected option a = 3, r = 1 as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: u_10 needs ten jumps of d, so u_n = u_1 + n*d.. The slip: The n feels like the number of jumps, but the first jump lands on u_2, not u_1.. The fix: Exponents count the jumps, not the terms: u_10 = u_1 + 9d, and a geometric sum counts every term, not the last term times n..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "a = 3, r = 1"
+    }
+   ],
+   "id": "dn3",
+   "kind": "multiple-choice",
+   "prompt": "Which geometric progression has a sum to infinity?"
+  }
+ ],
+ "hingeQuestions": [
+  {
+   "choices": [
+    {
+     "misconception": "u_10 needs ten jumps of d, so u_n = u_1 + n*d.",
+     "rationale": {
+      "chose": "The learner selected option The student is right - u_10 needs ten jumps of d as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: u_10 needs ten jumps of d, so u_n = u_1 + n*d.. The slip: The n feels like the number of jumps, but the first jump lands on u_2, not u_1.. The fix: Exponents count the jumps, not the terms: u_10 = u_1 + 9d, and a geometric sum counts every term, not the last term times n..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "The student is right - u_10 needs ten jumps of d"
+    },
+    {
+     "correct": true,
+     "text": "The first jump lands on u_2, so u_10 = u_1 + 9d = 5 + 9 x 3 = 32"
+    },
+    {
+     "misconception": "u_10 needs ten jumps of d, so u_n = u_1 + n*d.",
+     "rationale": {
+      "chose": "The learner selected option u_10 = u_1 + 10d because n counts the terms as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: u_10 needs ten jumps of d, so u_n = u_1 + n*d.. The slip: The n feels like the number of jumps, but the first jump lands on u_2, not u_1.. The fix: Exponents count the jumps, not the terms: u_10 = u_1 + 9d, and a geometric sum counts every term, not the last term times n..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "u_10 = u_1 + 10d because n counts the terms"
+    },
+    {
+     "misconception": "u_10 needs ten jumps of d, so u_n = u_1 + n*d.",
+     "rationale": {
+      "chose": "The learner selected option The exponent counts the terms, not the jumps as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: u_10 needs ten jumps of d, so u_n = u_1 + n*d.. The slip: The n feels like the number of jumps, but the first jump lands on u_2, not u_1.. The fix: Exponents count the jumps, not the terms: u_10 = u_1 + 9d, and a geometric sum counts every term, not the last term times n..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "The exponent counts the terms, not the jumps"
+    }
+   ],
+   "id": "h1",
+   "kind": "multiple-choice",
+   "prompt": "A student claims that reaching u_10 from u_1 takes ten jumps of d. Which statement corrects the claim?",
+   "scriptCue": "s1"
+  },
+  {
+   "choices": [
+    {
+     "misconception": "u_10 needs ten jumps of d, so u_n = u_1 + n*d.",
+     "rationale": {
+      "chose": "The learner selected option 35, from 5 + 10 x 3 as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: u_10 needs ten jumps of d, so u_n = u_1 + n*d.. The slip: The n feels like the number of jumps, but the first jump lands on u_2, not u_1.. The fix: Exponents count the jumps, not the terms: u_10 = u_1 + 9d, and a geometric sum counts every term, not the last term times n..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "35, from 5 + 10 x 3"
+    },
+    {
+     "correct": true,
+     "text": "32, from 5 + 9 x 3"
+    },
+    {
+     "misconception": "u_10 needs ten jumps of d, so u_n = u_1 + n*d.",
+     "rationale": {
+      "chose": "The learner selected option 30, from 10 x 3 as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: u_10 needs ten jumps of d, so u_n = u_1 + n*d.. The slip: The n feels like the number of jumps, but the first jump lands on u_2, not u_1.. The fix: Exponents count the jumps, not the terms: u_10 = u_1 + 9d, and a geometric sum counts every term, not the last term times n..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "30, from 10 x 3"
+    },
+    {
+     "misconception": "u_10 needs ten jumps of d, so u_n = u_1 + n*d.",
+     "rationale": {
+      "chose": "The learner selected option 14, from 5 + 3 x 3 as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: u_10 needs ten jumps of d, so u_n = u_1 + n*d.. The slip: The n feels like the number of jumps, but the first jump lands on u_2, not u_1.. The fix: Exponents count the jumps, not the terms: u_10 = u_1 + 9d, and a geometric sum counts every term, not the last term times n..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "14, from 5 + 3 x 3"
+    }
+   ],
+   "id": "h2",
+   "kind": "multiple-choice",
+   "prompt": "An arithmetic progression starts at u_1 = 5 with common difference d = 3. What is u_10?",
+   "scriptCue": "s1"
+  }
+ ],
+ "level": "jc",
+ "subject": "math",
+ "title": "JC H2 sequences: arithmetic and geometric progressions",
+ "topic": "h2-sequences"
+}

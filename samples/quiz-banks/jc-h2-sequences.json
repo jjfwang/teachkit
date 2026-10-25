@@ -1,0 +1,51 @@
+{
+ "items": [
+  {
+   "answer": "32, from 5 + 9 x 3",
+   "choices": [
+    "35, from 5 + 10 x 3",
+    "32, from 5 + 9 x 3",
+    "30, from 10 x 3",
+    "14, from 5 + 3 x 3"
+   ],
+   "misconceptionCode": "u_10 needs ten jumps of d, so u_n = u_1 + n*d.",
+   "prompt": "An arithmetic progression starts at u_1 = 5 with common difference d = 3. What is u_10?"
+  },
+  {
+   "answer": "32",
+   "choices": [
+    "24",
+    "32",
+    "20",
+    "64"
+   ],
+   "prompt": "What is the 5th term of the geometric progression 2, 4, 8, 16, ...?"
+  },
+  {
+   "answer": "S_4 = 2 + 4 + 6 + 8 = 20, also from S_n = (n/2)(a + l) = (4/2)(2 + 8) = 20.",
+   "prompt": "Find S_4, the sum of the first four terms of the arithmetic progression 2, 4, 6, 8, ..."
+  },
+  {
+   "answer": "S = a / (1 - r) = 8 / (1 - 1/2) = 8 / (1/2) = 16.",
+   "prompt": "A geometric progression has first term a = 8 and ratio r = 1/2. Find its sum to infinity."
+  },
+  {
+   "answer": "u_n = a + (n - 1)d for an arithmetic progression and u_n = a x r^(n - 1) for a geometric one; in both, n - 1 counts the jumps from the first term, not the terms.",
+   "prompt": "State the nth-term formulas for an arithmetic progression and a geometric progression, and say what the n - 1 counts in each."
+  },
+  {
+   "answer": "a = 3, r = 1/2",
+   "choices": [
+    "a = 3, r = 2",
+    "a = 3, r = -1",
+    "a = 3, r = 1/2",
+    "a = 3, r = 1"
+   ],
+   "prompt": "Which geometric progression has a sum to infinity?"
+  }
+ ],
+ "level": "jc",
+ "subject": "math",
+ "title": "JC H2 sequences: arithmetic and geometric progressions",
+ "topic": "h2-sequences"
+}

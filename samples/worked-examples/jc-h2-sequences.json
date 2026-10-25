@@ -1,0 +1,57 @@
+{
+ "complete": {
+  "problem": "Trace sequences from arithmetic and geometric progressions to partial sums, the sum to infinity and the two nth-term formulas.",
+  "selfExplanation": "Explain how an arithmetic progression adds d each step and a geometric progression multiplies by r each step, how partial sums build up term by term, and why the count in both nth-term formulas is the jumps, n - 1, not the terms.",
+  "steps": [
+   {
+    "annotation": "A sequence that adds the same common difference d at every step: starting from 5 with d = 3, the terms are 5, 8, 11, 14, and the marker hops the axis in equal jumps.",
+    "text": "Step 1 (s1): An arithmetic progression adds the same difference every step. Watch the marker hop the axis in equal jumps from 5: 5, 8, 11, 14, each hop adding d = 3. The formula u_n = a + (n - 1)d is just this picture written down: a is where the marker starts, and n - 1 counts the hops it has made. Tell your partner: how many hops has the marker made when it stands on u_4?"
+   },
+   {
+    "annotation": "A sequence that multiplies by the same common ratio r at every step: with r = 2, the terms 2, 4, 8, 16 double each time and the jumps widen.",
+    "text": "Step 2 (s2): A geometric progression multiplies by the same ratio every step. Watch the jumps double in size: 2, 4, 8, 16, each term twice the one before, with r = 2. The nth term applies r once per jump: u_n = a x r^(n - 1), so u_5 = 2 x 2^4 = 32."
+   },
+   {
+    "annotation": "The sum S_n of the first n terms, built up one term at a time: for 2, 4, 6, 8, the partial sums run S_1 = 2, S_2 = 6, S_3 = 12, S_4 = 20, and for an arithmetic progression S_n = (n/2)(a + l).",
+    "text": "Step 3 (s3): Now watch the sum build up. Each new term of 2, 4, 6, 8 drops into the running total: S_1 = 2, S_2 = 6, S_3 = 12, S_4 = 20. The formula S_n = (n/2)(a + l) comes after the buildup: pairing the first term with the last makes every pair sum to a + l."
+   },
+   {
+    "annotation": "The n feels like the number of jumps, but the first jump lands on u_2, not u_1. Exponents count the jumps, not the terms: u_10 = u_1 + 9d, and a geometric sum counts every term, not the last term times n.",
+    "text": "Step 4 (s4): Here is the mistake, sprung on purpose: a geometric progression with r = -1 does not settle down eventually. Watch the terms bounce 1, -1, 1, -1 forever. A sum to infinity needs the ratio to shrink the terms, with |r| less than 1, and only then do the terms home in on the limit a / (1 - r)."
+   },
+   {
+    "annotation": "The general term u_n of a sequence: u_n = a + (n - 1)d for an arithmetic progression and u_n = a x r^(n - 1) for a geometric one, where n - 1 counts the jumps from the first term.",
+    "text": "Step 5 (s5): The toolkit, assembled: the a and d chips drop into u_n = a + (n - 1)d, then a and r into u_n = a x r^(n - 1). Two formulas, four moving parts - and in both, the count is jumps, not terms. Now work through the worksheet in pairs, checking each answer against the trap section of your student notes. Last, the exit ticket - on your own, no talking - and remember: count the jumps and the formulas cannot catch you."
+   }
+  ]
+ },
+ "faded": {
+  "problem": "Find S_4, the sum of the first four terms of the arithmetic progression 2, 4, 6, 8, ...",
+  "selfExplanation": "The first step is shown. Say how adding the four terms one at a time (or pairing the first with the last) gives S_4, then why the pairing formula (4/2)(2 + 8) = 20 confirms it.",
+  "steps": [
+   {
+    "annotation": "The sum S_n of the first n terms, built up one term at a time: for 2, 4, 6, 8, the partial sums run S_1 = 2, S_2 = 6, S_3 = 12, S_4 = 20, and for an arithmetic progression S_n = (n/2)(a + l).",
+    "text": "Step 1: the partial sum adds the terms one at a time, so write out S_4 = 2 + 4 + 6 + 8, or use the pairing formula S_n = (n/2)(a + l) with n = 4, a = 2 and l = 8.",
+    "withheld": false
+   },
+   {
+    "annotation": "S_4 = 2 + 4 + 6 + 8 = 20, also from S_n = (n/2)(a + l) = (4/2)(2 + 8) = 20.",
+    "text": "Step 2: S_4 = 2 + 4 + 6 + 8 = 20.",
+    "withheld": true
+   },
+   {
+    "annotation": "Work this on the board slowly: write the terms out, add them in pairs - 2 + 8 and 4 + 6 both make 10 - then check against the pairing formula.",
+    "text": "Step 3: check by pairing: (4/2)(2 + 8) = 2 x 10 = 20, so S_4 = 20.",
+    "withheld": true
+   }
+  ]
+ },
+ "level": "jc",
+ "paired": {
+  "problem": "A geometric progression has first term a = 8 and ratio r = 1/2. Find its sum to infinity.",
+  "solution": "S = a / (1 - r) = 8 / (1 - 1/2) = 8 / (1/2) = 16."
+ },
+ "subject": "math",
+ "title": "JC H2 sequences: arithmetic and geometric progressions",
+ "topic": "h2-sequences"
+}
