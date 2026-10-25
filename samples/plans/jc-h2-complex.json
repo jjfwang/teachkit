@@ -1,0 +1,98 @@
+{
+ "activities": [
+  {
+   "grouping": "whole class",
+   "minutes": 5,
+   "objectiveIds": [
+    "o1",
+    "o2"
+   ],
+   "scriptCue": "s1",
+   "title": "A complex number is a point on the Argand diagram"
+  },
+  {
+   "grouping": "individual",
+   "minutes": 8,
+   "objectiveIds": [
+    "o3"
+   ],
+   "scriptCue": "s2",
+   "title": "Modulus is the distance from the origin"
+  },
+  {
+   "grouping": "pairs",
+   "minutes": 7,
+   "objectiveIds": [
+    "o3"
+   ],
+   "scriptCue": "s3",
+   "title": "Argument is the angle; the conjugate mirrors it"
+  },
+  {
+   "grouping": "whole class",
+   "minutes": 8,
+   "objectiveIds": [
+    "o3"
+   ],
+   "scriptCue": "s4",
+   "title": "Multiplying rotates and stretches"
+  },
+  {
+   "grouping": "individual",
+   "minutes": 12,
+   "objectiveIds": [
+    "o1",
+    "o2",
+    "o3"
+   ],
+   "resources": [
+    "worksheet"
+   ],
+   "scriptCue": "s5",
+   "title": "Assemble the toolkit"
+  }
+ ],
+ "durationMinutes": 40,
+ "level": "jc",
+ "objectives": [
+  {
+   "assessmentPoints": [
+    "Opening answers in the Argand diagram activity",
+    "Plotting lines in the toolkit recap"
+   ],
+   "id": "o1",
+   "successCriteria": [
+    "I can plot z = 3 + 2i as 3 across the real axis and then 2 up the imaginary axis",
+    "I can state the real and imaginary parts of a complex number"
+   ],
+   "text": "Plot a complex number on the Argand diagram and state its real and imaginary parts"
+  },
+  {
+   "assessmentPoints": [
+    "Vocabulary answers in the opening activity",
+    "Toolkit recap answers"
+   ],
+   "id": "o2",
+   "successCriteria": [
+    "I can define complex number, modulus, argument, principal argument, conjugate and Argand diagram",
+    "I can state that the principal argument lies in the range -180 to 180 degrees"
+   ],
+   "text": "Define the key vocabulary of complex numbers: complex number, modulus, argument, principal argument, conjugate and Argand diagram"
+  },
+  {
+   "assessmentPoints": [
+    "Modulus and argument answers in the practice activities",
+    "Exit responses in the toolkit activity"
+   ],
+   "id": "o3",
+   "successCriteria": [
+    "I can find |3 + 4i| = sqrt(9 + 16) = 5 by Pythagoras",
+    "I can apply De Moivre and wrap the angle: 300 - 360 = -60 degrees"
+   ],
+   "text": "Find a modulus and a principal argument, and apply De Moivre with the wrap into the principal range"
+  }
+ ],
+ "subject": "math",
+ "title": "JC H2 complex numbers: the Argand diagram",
+ "topic": "h2-complex"
+}

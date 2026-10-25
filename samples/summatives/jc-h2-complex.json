@@ -1,0 +1,125 @@
+{
+ "blueprint": [
+  {
+   "assessmentObjective": "AO1 recall and apply",
+   "cognitiveLevel": "apply",
+   "marks": 10,
+   "outcomeCode": "H2-COMPLEX-OPS"
+  },
+  {
+   "assessmentObjective": "AO2 reason and solve",
+   "cognitiveLevel": "reason",
+   "marks": 10,
+   "outcomeCode": "H2-DIFF-RATES"
+  }
+ ],
+ "durationMinutes": 60,
+ "items": [
+  {
+   "blueprintRow": 0,
+   "commandWord": "Find",
+   "markScheme": {
+    "points": [
+     {
+      "marks": 2,
+      "text": "Uses Pythagoras to get |z| = sqrt((-2)^2 + 2^2) = sqrt(8) = 2 sqrt(2)"
+     },
+     {
+      "marks": 3,
+      "text": "States the point (-2, 2) is in the second quadrant with reference angle 45 degrees, so the principal argument is Arg(z) = 180 - 45 = 135 degrees"
+     }
+    ]
+   },
+   "marks": 5,
+   "prompt": "For z = -2 + 2i, find the modulus |z| and the principal argument Arg(z), explaining how you used the quadrant."
+  },
+  {
+   "blueprintRow": 0,
+   "commandWord": "Find",
+   "markScheme": {
+    "points": [
+     {
+      "marks": 2,
+      "text": "Flips only the imaginary part to get the conjugate of z = 2 - 3i, which is 2 + 3i"
+     },
+     {
+      "marks": 3,
+      "text": "Computes the product z times its conjugate = 2^2 + 3^2 = 4 + 9 = 13, which is |z|^2"
+     }
+    ]
+   },
+   "marks": 5,
+   "prompt": "Find the conjugate of z = 2 - 3i, and calculate the product of z and its conjugate."
+  },
+  {
+   "blueprintRow": 1,
+   "commandWord": "Find",
+   "markScheme": {
+    "points": [
+     {
+      "marks": 2,
+      "text": "Differentiates to dy/dx = 3x^2 - 12x + 9"
+     },
+     {
+      "marks": 3,
+      "text": "Sets dy/dx = 0 and solves to x = 1 and x = 3"
+     }
+    ]
+   },
+   "marks": 5,
+   "prompt": "A curve has equation y = x^3 - 6x^2 + 9x. Find dy/dx and the x-coordinates of its stationary points."
+  },
+  {
+   "blueprintRow": 1,
+   "commandWord": "Find",
+   "markScheme": {
+    "points": [
+     {
+      "marks": 3,
+      "text": "Writes A = pi r^2 and applies the chain rule dA/dt = 2 pi r dr/dt"
+     },
+     {
+      "marks": 2,
+      "text": "Substitutes r = 4 and dr/dt = 0.5 to give 4 pi cm^2/s"
+     }
+    ]
+   },
+   "marks": 5,
+   "prompt": "The radius of a circle increases at 0.5 cm/s. Find the rate at which its area increases when the radius is 4 cm."
+  }
+ ],
+ "level": "jc",
+ "moderation": {
+  "state": "unreviewed"
+ },
+ "review": null,
+ "rubric": {
+  "criteria": [
+   {
+    "levels": [
+     {
+      "descriptor": "Methods are chosen and applied exactly, quadrants and principal ranges are stated, and conclusions are justified.",
+      "label": "Secure"
+     },
+     {
+      "descriptor": "Method is correct in outline but a quadrant, wrap or substitution step is skipped.",
+      "label": "Developing"
+     },
+     {
+      "descriptor": "Methods are misapplied - for example giving an unwrapped 300 degrees as a principal argument - and the working does not support the answer.",
+      "label": "Beginning"
+     }
+    ],
+    "name": "Complex number and calculus communication"
+   }
+  ]
+ },
+ "subject": "math",
+ "title": "Complex Numbers and Differentiation Unit Test",
+ "topics": [
+  "jc-h2-complex",
+  "jc-h2-differentiation"
+ ],
+ "totalMarks": 20,
+ "unitTitle": "Complex numbers and calculus"
+}
