@@ -1,0 +1,109 @@
+{
+ "level": "jc",
+ "subject": "science",
+ "templates": [
+  {
+   "kind": "flow",
+   "slots": [
+    {
+     "entries": [
+      "Temperature: molecules jiggle faster when hotter - turning the dial from 300 K to 600 K makes the same molecules jiggle harder, because their average kinetic energy (3/2) k T has doubled."
+     ],
+     "label": "Temperature: molecules jiggle faster when hotter",
+     "studentPrompt": "Explain this step in your own words."
+    },
+    {
+     "entries": [
+      "Conduction: heat travels atom by atom - hot-end atoms vibrate strongly, collide with neighbours and pass the energy along the lattice (and, in metals, through free electrons) until the far end warms."
+     ],
+     "label": "Conduction: heat travels atom by atom",
+     "studentPrompt": "Explain this step in your own words."
+    },
+    {
+     "entries": [
+      "Convection: the fluid loops - fluid heated at the bottom expands, grows less dense and rises, while cooler denser fluid sinks, so the circulating loop carries the heat around."
+     ],
+     "label": "Convection: the fluid loops",
+     "studentPrompt": "Explain this step in your own words."
+    },
+    {
+     "entries": [
+      "Radiation: hotter means more packets, faster - every body radiates, and by P = sigma A T^4 doubling the kelvin temperature multiplies the radiated power by 16."
+     ],
+     "label": "Radiation: hotter means more packets, faster",
+     "studentPrompt": "Explain this step in your own words."
+    },
+    {
+     "entries": [
+      "Misconception: a common mistake about heat and temperature - heat is the total over all molecules while temperature is the average per molecule, so a small hot cup can beat a big warm bucket on temperature while losing on total heat."
+     ],
+     "label": "Misconception: a common mistake about heat and temperature",
+     "studentPrompt": "Explain this step in your own words."
+    }
+   ]
+  },
+  {
+   "kind": "frayer",
+   "slots": [
+    {
+     "entries": [
+      "A measure of the average kinetic energy of the molecules of a substance: average KE = (3/2) k T, so temperature is proportional to that average when T is in kelvin."
+     ],
+     "label": "Temperature",
+     "studentPrompt": "Give your own example of this term."
+    },
+    {
+     "entries": [
+      "The model that treats a gas as a huge number of tiny particles in constant random motion, colliding elastically with each other and with the walls; pressure is the effect of those wall collisions."
+     ],
+     "label": "Kinetic theory",
+     "studentPrompt": "Give your own example of this term."
+    },
+    {
+     "entries": [
+      "Energy transferred from a hotter body to a colder one because of their temperature difference; it is a transfer, not something a body contains."
+     ],
+     "label": "Heat",
+     "studentPrompt": "Give your own example of this term."
+    },
+    {
+     "entries": [
+      "The total kinetic energy of the molecules from their random motion plus their potential energy from intermolecular forces - the sum over every molecule, not the average."
+     ],
+     "label": "Internal energy",
+     "studentPrompt": "Give your own example of this term."
+    },
+    {
+     "entries": [
+      "Heat transfer through a material by particle collisions and vibrations passed on atom by atom, helped in metals by free electrons, with no bulk movement of the material."
+     ],
+     "label": "Conduction",
+     "studentPrompt": "Give your own example of this term."
+    },
+    {
+     "entries": [
+      "Heat transfer in a fluid by bulk movement: warmed fluid expands, becomes less dense and rises, while cooler denser fluid sinks, setting up a circulating loop."
+     ],
+     "label": "Convection",
+     "studentPrompt": "Give your own example of this term."
+    },
+    {
+     "entries": [
+      "Heat transfer by electromagnetic waves (mainly infrared), needing no medium; a black body radiates power P = sigma A T^4 by the Stefan-Boltzmann law."
+     ],
+     "label": "Radiation",
+     "studentPrompt": "Give your own example of this term."
+    },
+    {
+     "entries": [
+      "A gas that obeys pV = nRT at all temperatures and pressures: its particles have negligible volume, exert no intermolecular forces except during collisions, and collide elastically."
+     ],
+     "label": "Ideal gas",
+     "studentPrompt": "Give your own example of this term."
+    }
+   ]
+  }
+ ],
+ "title": "JC H2 physics — thermal: kinetic theory, gas laws and temperature",
+ "topic": "h2-thermal"
+}
