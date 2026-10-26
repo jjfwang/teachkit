@@ -1,0 +1,57 @@
+{
+  "complete": {
+    "problem": "Trace mechanics from circular motion needing a centre-seeking push to how big that force is, gravity holding the Moon in orbit, geostationary orbits hovering over one spot, and the fling-off trap that the sharp turn springs.",
+    "selfExplanation": "Explain why circular motion needs a force toward the centre, how F = mv^2/r scales with speed and radius, how gravitation F = GMm/r^2 supplies the centripetal force for orbits, what makes an orbit geostationary, and why there is no centrifugal fling-off force.",
+    "steps": [
+      {
+        "annotation": "Centripetal force is the resultant force toward the centre of the circle that keeps an object in circular motion: F = mv^2/r, a role played by a real force such as tension, friction or gravity, not an extra force.",
+        "text": "Step 1 (s1): Circular motion needs a centre-seeking push. A satellite stays on its circular path only because something keeps pulling it towards the centre. Watch the force arrow swing round the orbit: at the right, at the top, at the left, it always points at the planet in the middle. No centre-seeking push, no circle - the satellite would leave on a tangent. Keep your student notes open at the centripetal force definition for this scene."
+      },
+      {
+        "annotation": "The centripetal acceleration is a = v^2/r toward the centre, caused by the changing direction of the velocity even when the speed is constant, so the force is F = mv^2/r: doubling the speed quadruples it while doubling the radius halves it.",
+        "text": "Step 2 (s2): How big is the centre-seeking force. The acceleration is a = v^2/r and the force is F = mv^2/r. Watch the readout: double the speed and the force goes 1 to 4, then double the radius and it falls 4 to 2. The v-squared is the scaling to fear in every exam question. Now try the first computation on the worksheet in pairs."
+      },
+      {
+        "annotation": "Gravitation is the attractive force between two masses given by Newton's law F = GMm/r^2, with G = 6.67 x 10^-11 N m^2 kg^-2: for the Moon, that attraction itself supplies the centripetal force.",
+        "text": "Step 3 (s3): Gravity holds the Moon in orbit. For the Moon there is no string and no friction: gravity itself, F = GMm/r^2, is the centripetal force. Set the two formulas equal and the orbital speed follows. Every orbit is a fall that keeps missing the Earth. Compare the gravitation definition in your student notes before we sync an orbit."
+      },
+      {
+        "annotation": "A geostationary orbit is a circular orbit above the equator, travelling west to east with period 24 hours, so the satellite stays fixed over one point on the equator.",
+        "text": "Step 4 (s4): Geostationary orbits hover over one spot. Period exactly 24 hours, above the equator, west to east with the Earth below: the synced satellite hangs over its home point while the drifter falls behind. Weather and broadcast satellites live here. Check the period definition in your student notes, then look ahead to the exit ticket question on this scene."
+      },
+      {
+        "annotation": "The trap: there is no outward centrifugal fling - the body keeps going straight on the tangent while the seat pushes it inward, and that inward push is the real force.",
+        "text": "Step 5 (s5): Misconception: the fling-off force. The animation boxes the wrong idea, draws the imagined outward arrow, then removes both: your body keeps going straight on the tangent while the seat pushes you inward. Finish the worksheet trap question now, then the exit ticket on your own - the last question revisits exactly this scene."
+      }
+    ]
+  },
+  "faded": {
+    "problem": "A 0.50 kg ball moves in a circle of radius 1.2 m at 6.0 m/s. What is the centripetal force on the ball?",
+    "selfExplanation": "The first step is shown. Say how the speed is squared in F = mv^2/r, then compute 0.50 x 36 / 1.2 and state the direction of the force and what supplies it.",
+    "steps": [
+      {
+        "annotation": "The centripetal force formula is F = mv^2/r, and its direction is always toward the centre of the circle.",
+        "text": "Step 1: identify the values: m = 0.50 kg, v = 6.0 m/s and r = 1.2 m, with the force F = mv^2/r directed toward the centre.",
+        "withheld": false
+      },
+      {
+        "annotation": "Square the speed before multiplying by the mass and dividing by the radius: 0.50 x 36 / 1.2 = 15.",
+        "text": "Step 2: square the speed first: (6.0)^2 = 36, so F = 0.50 x 36 / 1.2 = 15 N.",
+        "withheld": true
+      },
+      {
+        "annotation": "The 15 N is directed toward the centre and is supplied by the string tension, the real force playing the centripetal role here.",
+        "text": "Step 3: read the landing: the ball needs 15 N toward the centre, supplied by the string tension.",
+        "withheld": true
+      }
+    ]
+  },
+  "level": "jc",
+  "paired": {
+    "problem": "A car of mass 1200 kg rounds a bend of radius 50 m at 15 m/s. Calculate the centripetal force needed and state its direction.",
+    "solution": "F = mv^2/r = 1200 x 225 / 50 = 5400 N, directed toward the centre of the bend (supplied by friction)."
+  },
+  "subject": "science",
+  "title": "JC H2 physics — mechanics: circular motion and gravitation",
+  "topic": "h2-mechanics"
+}

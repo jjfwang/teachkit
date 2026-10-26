@@ -1,0 +1,202 @@
+{
+  "doNow": [
+    {
+      "choices": [
+        {
+          "misconception": "A centrifugal force flings you outward in a sharp turn.",
+          "rationale": {
+            "chose": "The learner selected option 2.5 N, from mv/r as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: A centrifugal force flings you outward in a sharp turn.. The slip: Being thrown sideways feels like an outward push.. The fix: No outward fling exists: your body wants to keep going straight while the seat pushes you inward - the inward push is the real force..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "2.5 N, from mv/r"
+        },
+        {
+          "correct": true,
+          "text": "15 N, from F = mv^2/r = 0.50 x 36 / 1.2"
+        },
+        {
+          "misconception": "A centrifugal force flings you outward in a sharp turn.",
+          "rationale": {
+            "chose": "The learner selected option 3.0 N, from mr/v as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: A centrifugal force flings you outward in a sharp turn.. The slip: Being thrown sideways feels like an outward push.. The fix: No outward fling exists: your body wants to keep going straight while the seat pushes you inward - the inward push is the real force..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "3.0 N, from mr/v"
+        },
+        {
+          "misconception": "A centrifugal force flings you outward in a sharp turn.",
+          "rationale": {
+            "chose": "The learner selected option 36 N, from mv^2 as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: A centrifugal force flings you outward in a sharp turn.. The slip: Being thrown sideways feels like an outward push.. The fix: No outward fling exists: your body wants to keep going straight while the seat pushes you inward - the inward push is the real force..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "36 N, from mv^2"
+        }
+      ],
+      "id": "dn1",
+      "kind": "multiple-choice",
+      "prompt": "A 0.50 kg ball moves in a circle of radius 1.2 m at 6.0 m/s. What is the centripetal force on the ball?"
+    },
+    {
+      "choices": [
+        {
+          "misconception": "A centrifugal force flings you outward in a sharp turn.",
+          "rationale": {
+            "chose": "The learner selected option Nothing - a centrifugal force really does fling passengers outward in a turn as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: A centrifugal force flings you outward in a sharp turn.. The slip: Being thrown sideways feels like an outward push.. The fix: No outward fling exists: your body wants to keep going straight while the seat pushes you inward - the inward push is the real force..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "Nothing - a centrifugal force really does fling passengers outward in a turn"
+        },
+        {
+          "misconception": "A centrifugal force flings you outward in a sharp turn.",
+          "rationale": {
+            "chose": "The learner selected option The outward force exists but it is smaller than the inward force as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: A centrifugal force flings you outward in a sharp turn.. The slip: Being thrown sideways feels like an outward push.. The fix: No outward fling exists: your body wants to keep going straight while the seat pushes you inward - the inward push is the real force..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "The outward force exists but it is smaller than the inward force"
+        },
+        {
+          "correct": true,
+          "text": "No outward fling exists: the body wants to keep going straight while the seat pushes it inward - the inward push is the real force"
+        },
+        {
+          "misconception": "A centrifugal force flings you outward in a sharp turn.",
+          "rationale": {
+            "chose": "The learner selected option The passenger is flung outward by gravity as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: A centrifugal force flings you outward in a sharp turn.. The slip: Being thrown sideways feels like an outward push.. The fix: No outward fling exists: your body wants to keep going straight while the seat pushes you inward - the inward push is the real force..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "The passenger is flung outward by gravity"
+        }
+      ],
+      "id": "dn2",
+      "kind": "multiple-choice",
+      "prompt": "A passenger in a car that turns sharply says a centrifugal force flings them outward against the door. What is wrong with that claim?"
+    },
+    {
+      "choices": [
+        {
+          "misconception": "A centrifugal force flings you outward in a sharp turn.",
+          "rationale": {
+            "chose": "The learner selected option It would be the same, because the speed is the same as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: A centrifugal force flings you outward in a sharp turn.. The slip: Being thrown sideways feels like an outward push.. The fix: No outward fling exists: your body wants to keep going straight while the seat pushes you inward - the inward push is the real force..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "It would be the same, because the speed is the same"
+        },
+        {
+          "misconception": "A centrifugal force flings you outward in a sharp turn.",
+          "rationale": {
+            "chose": "The learner selected option It would double, because the orbit is larger as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: A centrifugal force flings you outward in a sharp turn.. The slip: Being thrown sideways feels like an outward push.. The fix: No outward fling exists: your body wants to keep going straight while the seat pushes you inward - the inward push is the real force..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "It would double, because the orbit is larger"
+        },
+        {
+          "correct": true,
+          "text": "It would fall to one quarter, from F = GMm/r^2 with r doubled"
+        },
+        {
+          "misconception": "A centrifugal force flings you outward in a sharp turn.",
+          "rationale": {
+            "chose": "The learner selected option It would fall to one half, from F = GMm/r^2 as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: A centrifugal force flings you outward in a sharp turn.. The slip: Being thrown sideways feels like an outward push.. The fix: No outward fling exists: your body wants to keep going straight while the seat pushes you inward - the inward push is the real force..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "It would fall to one half, from F = GMm/r^2"
+        }
+      ],
+      "id": "dn3",
+      "kind": "multiple-choice",
+      "prompt": "The Moon orbits the Earth at distance r. If the same Moon were placed in a circular orbit at distance 2r with the same orbital speed, how would the gravitational force on it compare?"
+    }
+  ],
+  "hingeQuestions": [
+    {
+      "choices": [
+        {
+          "misconception": "A centrifugal force flings you outward in a sharp turn.",
+          "rationale": {
+            "chose": "The learner selected option F = GMm/r^2. Tension in an invisible string is itself the centripetal force holding the Moon on its circular path. as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: A centrifugal force flings you outward in a sharp turn.. The slip: Being thrown sideways feels like an outward push.. The fix: No outward fling exists: your body wants to keep going straight while the seat pushes you inward - the inward push is the real force..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "F = GMm/r^2. Tension in an invisible string is itself the centripetal force holding the Moon on its circular path."
+        },
+        {
+          "correct": true,
+          "text": "F = GMm/r^2. The gravitational attraction toward the Earth is itself the centripetal force holding the Moon on its circular path."
+        },
+        {
+          "misconception": "A centrifugal force flings you outward in a sharp turn.",
+          "rationale": {
+            "chose": "The learner selected option F = GMm/r. The gravitational attraction toward the Earth is itself the centripetal force holding the Moon on its circular path. as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: A centrifugal force flings you outward in a sharp turn.. The slip: Being thrown sideways feels like an outward push.. The fix: No outward fling exists: your body wants to keep going straight while the seat pushes you inward - the inward push is the real force..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "F = GMm/r. The gravitational attraction toward the Earth is itself the centripetal force holding the Moon on its circular path."
+        },
+        {
+          "misconception": "A centrifugal force flings you outward in a sharp turn.",
+          "rationale": {
+            "chose": "The learner selected option F = Gm/r^2. The gravitational attraction toward the Earth is itself the centripetal force holding the Moon on its circular path. as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: A centrifugal force flings you outward in a sharp turn.. The slip: Being thrown sideways feels like an outward push.. The fix: No outward fling exists: your body wants to keep going straight while the seat pushes you inward - the inward push is the real force..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "F = Gm/r^2. The gravitational attraction toward the Earth is itself the centripetal force holding the Moon on its circular path."
+        }
+      ],
+      "id": "h1",
+      "kind": "multiple-choice",
+      "prompt": "Gravity holds the Moon in orbit. Write down the gravitation law and name the quantity that plays the role of the centripetal force for the Moon.",
+      "scriptCue": "s5"
+    },
+    {
+      "choices": [
+        {
+          "misconception": "A centrifugal force flings you outward in a sharp turn.",
+          "rationale": {
+            "chose": "The learner selected option 90 minutes, like the space station as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: A centrifugal force flings you outward in a sharp turn.. The slip: Being thrown sideways feels like an outward push.. The fix: No outward fling exists: your body wants to keep going straight while the seat pushes you inward - the inward push is the real force..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "90 minutes, like the space station"
+        },
+        {
+          "correct": true,
+          "text": "24 hours, matching the Earth's rotation"
+        },
+        {
+          "misconception": "A centrifugal force flings you outward in a sharp turn.",
+          "rationale": {
+            "chose": "The learner selected option 28 days, like the Moon as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: A centrifugal force flings you outward in a sharp turn.. The slip: Being thrown sideways feels like an outward push.. The fix: No outward fling exists: your body wants to keep going straight while the seat pushes you inward - the inward push is the real force..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "28 days, like the Moon"
+        },
+        {
+          "misconception": "A centrifugal force flings you outward in a sharp turn.",
+          "rationale": {
+            "chose": "The learner selected option 12 hours, half the Earth rotation period as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: A centrifugal force flings you outward in a sharp turn.. The slip: Being thrown sideways feels like an outward push.. The fix: No outward fling exists: your body wants to keep going straight while the seat pushes you inward - the inward push is the real force..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "12 hours, half the Earth rotation period"
+        }
+      ],
+      "id": "h2",
+      "kind": "multiple-choice",
+      "prompt": "What is the period of a geostationary orbit?",
+      "scriptCue": "s5"
+    }
+  ],
+  "level": "jc",
+  "subject": "science",
+  "title": "JC H2 physics — mechanics: circular motion and gravitation",
+  "topic": "h2-mechanics"
+}
