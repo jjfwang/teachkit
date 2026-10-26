@@ -1,0 +1,116 @@
+{
+ "level": "jc",
+ "sets": [
+  {
+   "cloze": [
+    {
+     "answers": [
+      "Temperature",
+      "Heat"
+     ],
+     "text": "___ measures the average kinetic energy of the molecules, while ___ is energy transferred because of a temperature difference."
+    },
+    {
+     "answers": [
+      "Kinetic theory",
+      "Internal energy"
+     ],
+     "text": "___ treats a gas as tiny particles in constant random motion, and ___ is the total kinetic plus potential energy of its molecules."
+    }
+   ],
+   "frames": [
+    "___ is a measure of the average kinetic energy of the molecules of a substance.",
+    "___ is energy transferred from a hotter body to a colder one because of their temperature difference.",
+    "___ is heat transfer through a material by particle collisions, with no bulk movement of the material."
+   ],
+   "level": "full",
+   "starters": [
+    "Temperature is a measure of...",
+    "Kinetic theory treats a gas as...",
+    "Heat is energy transferred..."
+   ],
+   "wordBank": [
+    {
+     "gloss": "a measure of the average kinetic energy of the molecules of a substance",
+     "term": "Temperature"
+    },
+    {
+     "gloss": "the model that treats a gas as a huge number of tiny particles in constant random motion",
+     "term": "Kinetic theory"
+    },
+    {
+     "gloss": "energy transferred from a hotter body to a colder one because of their temperature difference",
+     "term": "Heat"
+    },
+    {
+     "gloss": "the total kinetic energy of the molecules from their random motion plus their potential energy from intermolecular forces",
+     "term": "Internal energy"
+    },
+    {
+     "gloss": "heat transfer through a material by particle collisions and vibrations passed on atom by atom",
+     "term": "Conduction"
+    }
+   ]
+  },
+  {
+   "cloze": [
+    {
+     "answers": [
+      "Temperature",
+      "Heat"
+     ],
+     "text": "___ measures the average kinetic energy of the molecules, while ___ is energy transferred because of a temperature difference."
+    }
+   ],
+   "frames": [
+    "___ is a measure of the average kinetic energy of the molecules of a substance.",
+    "___ is energy transferred from a hotter body to a colder one because of their temperature difference."
+   ],
+   "level": "partial",
+   "starters": [
+    "Temperature is a measure of...",
+    "Kinetic theory treats a gas as..."
+   ],
+   "wordBank": [
+    {
+     "gloss": "a measure of the average kinetic energy of the molecules of a substance",
+     "term": "Temperature"
+    },
+    {
+     "gloss": "the model that treats a gas as a huge number of tiny particles in constant random motion",
+     "term": "Kinetic theory"
+    },
+    {
+     "gloss": "energy transferred from a hotter body to a colder one because of their temperature difference",
+     "term": "Heat"
+    }
+   ]
+  },
+  {
+   "cloze": [
+    {
+     "answers": [
+      "Temperature"
+     ],
+     "text": "___ measures the average kinetic energy of the molecules."
+    }
+   ],
+   "frames": [
+    "___ is a measure of the average kinetic energy of the molecules of a substance."
+   ],
+   "level": "minimal",
+   "starters": [
+    "Temperature is a measure of..."
+   ],
+   "wordBank": [
+    {
+     "gloss": "a measure of the average kinetic energy of the molecules of a substance",
+     "term": "Temperature"
+    }
+   ]
+  }
+ ],
+ "subject": "science",
+ "title": "JC H2 physics — thermal: kinetic theory, gas laws and temperature",
+ "topic": "h2-thermal"
+}

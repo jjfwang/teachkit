@@ -65,7 +65,8 @@ const STEMS = [
   'jc-h2-functions-graphs',
   'jc-h2-statistics',
   'jc-h2-mechanics',
-  'jc-h2-em'
+  'jc-h2-em',
+  'jc-h2-thermal'
 ];
 
 function load(rel) {
