@@ -1,0 +1,57 @@
+{
+  "complete": {
+    "problem": "Trace thermal physics from temperature as the average kinetic energy of the molecules, through conduction atom by atom, the convection loop, radiation by the Stefan-Boltzmann law, and the hotter-gas trap.",
+    "selfExplanation": "Explain why temperature tracks the average KE = (3/2) k T rather than any one molecule, how conduction relays kinetic energy particle to particle (faster in metals via free electrons), how convection moves heat by bulk flow of a less dense warmed fluid, how radiated power follows P = sigma A T^4, and why a hotter gas still contains slow molecules.",
+    "steps": [
+      {
+        "annotation": "Temperature is proportional to the average kinetic energy of the molecules: average KE = (3/2) k T, with T in kelvin - an average over the whole spread of speeds, never the speed of one molecule.",
+        "text": "Step 1 (s1): Temperature is the average kinetic energy. Temperature is the average kinetic energy of the molecules. Watch the same four molecules as the dial turns from 300 K through 450 K to 600 K: the box does not change, the molecules do not change - their jiggle, on average, grows. Keep your student notes open at the temperature definition for this scene."
+      },
+      {
+        "annotation": "Conduction passes kinetic energy from particle to particle by collisions and vibrations, with no bulk movement of the material; in metals, free electrons carry the energy much faster.",
+        "text": "Step 2 (s2): Conduction travels atom by atom. Conduction: heat travels atom by atom. Follow the energy packet down the rod - the hot atoms jiggle hard, bump their neighbours, and the jiggle relays along. In a metal, free electrons sprint the energy ahead of the lattice vibrations. Compare the conduction definition in your student notes before we loop the fluid."
+      },
+      {
+        "annotation": "Convection transfers heat by bulk movement: warmed fluid expands, becomes less dense and rises, while cooler denser fluid sinks, setting up a circulating loop - so it cannot happen in a solid.",
+        "text": "Step 3 (s3): Convection loops the fluid. Convection: the fluid loops. The heater warms the fluid touching it, the warmed fluid expands and grows less dense, so it rises; cooler, denser fluid sinks to take its place. Trace one parcel all the way round - up the warm side, across, and down the cool side. Now try the pressure-law computation on the worksheet in pairs."
+      },
+      {
+        "annotation": "Every body radiates electromagnetic waves; by the Stefan-Boltzmann law P = sigma A T^4, doubling the kelvin temperature multiplies the radiated power by 2^4 = 16.",
+        "text": "Step 4 (s4): Radiation follows T^4. Radiation: hotter means more packets, faster. Every body radiates - watch even the cool body send out its one slow packet - and doubling the kelvin temperature multiplies the power by two to the fourth, sixteen times. Check the radiation definition in your student notes, then look ahead to the exit ticket question on this scene."
+      },
+      {
+        "annotation": "The trap: in a hotter gas not every molecule moves faster - temperature tracks the average only, so the whole spread of speeds shifts up while some molecules still crawl.",
+        "text": "Step 5 (s5): A common mistake. A common mistake: the average, not every molecule. The animation heats the gas and the spread of speeds shifts up as a whole, yet the slowest molecules still crawl. Finish the worksheet trap question now, then the exit ticket on your own - the first question revisits exactly this scene."
+      }
+    ]
+  },
+  "faded": {
+    "problem": "Calculate the average kinetic energy of a gas molecule at 300 K, and again at 600 K. (Boltzmann constant k = 1.38 x 10^-23 J K^-1)",
+    "selfExplanation": "The first step is shown. Say how (3/2) k T is evaluated at 300 K, then at 600 K, and state why doubling the temperature says nothing about any single molecule.",
+    "steps": [
+      {
+        "annotation": "Average KE = (3/2) k T, and at 300 K that is 1.5 x 1.38 x 10^-23 x 300.",
+        "text": "Step 1: identify the values: average KE = (3/2) k T with k = 1.38 x 10^-23 J K^-1 and T = 300 K.",
+        "withheld": false
+      },
+      {
+        "annotation": "Multiply it out: 1.5 x 1.38 x 10^-23 x 300 = 6.21 x 10^-21 J.",
+        "text": "Step 2: substitute at 300 K: average KE = 1.5 x 1.38 x 10^-23 x 300 = 6.21 x 10^-21 J.",
+        "withheld": true
+      },
+      {
+        "annotation": "At 600 K the kelvin temperature has doubled, so the average doubles exactly: 1.24 x 10^-20 J - an average over a spread of speeds, so some molecules are still slow.",
+        "text": "Step 3: read the landing: at 600 K the average KE doubles to 1.24 x 10^-20 J, and these are averages - at 600 K most molecules are faster than at 300 K, but some are still slow.",
+        "withheld": true
+      }
+    ]
+  },
+  "level": "jc",
+  "paired": {
+    "problem": "Calculate the average kinetic energy of a gas molecule at 450 K. (Boltzmann constant k = 1.38 x 10^-23 J K^-1)",
+    "solution": "average KE = (3/2) k T = 1.5 x 1.38 x 10^-23 x 450 = 9.32 x 10^-21 J."
+  },
+  "subject": "science",
+  "title": "JC H2 physics — thermal: kinetic theory, gas laws and temperature",
+  "topic": "h2-thermal"
+}

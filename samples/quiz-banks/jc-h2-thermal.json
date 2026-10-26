@@ -1,0 +1,46 @@
+{
+  "items": [
+    {
+      "answer": "Hotter means a higher average: the whole spread of speeds shifts up, but some molecules still crawl.",
+      "choices": [
+        "Every molecule moves faster than it did at 300 K",
+        "Every molecule ends up moving at exactly the same new speed",
+        "Hotter means a higher average: the whole spread of speeds shifts up, but some molecules still crawl.",
+        "The average kinetic energy halves, because the speeds spread out"
+      ],
+      "misconceptionCode": "In a hotter gas every molecule moves faster.",
+      "prompt": "A gas is heated from 300 K to 600 K at fixed volume. A student claims every molecule in the hotter gas now moves faster than it did. What is actually true?"
+    },
+    {
+      "answer": "6.21 x 10^-21 J, from (3/2) k T = 1.5 x 1.38 x 10^-23 x 300",
+      "choices": [
+        "4.14 x 10^-21 J, from k T = 1.38 x 10^-23 x 300",
+        "6.21 x 10^-21 J, from (3/2) k T = 1.5 x 1.38 x 10^-23 x 300",
+        "1.24 x 10^-20 J, from (3/2) k T worked at 600 K instead",
+        "0 J, because the molecules move randomly and cancel out"
+      ],
+      "prompt": "Calculate the average kinetic energy of a gas molecule at 300 K. (Boltzmann constant k = 1.38 x 10^-23 J K^-1)"
+    },
+    {
+      "answer": "p is proportional to T at fixed volume, so p = 1.0 x 10^5 x 600 / 300 = 2.0 x 10^5 Pa.",
+      "prompt": "A sealed gas at fixed volume has pressure 1.0 x 10^5 Pa at 300 K. It is heated to 600 K. Calculate the new pressure, showing your working with the pressure law."
+    },
+    {
+      "answer": "The hot-end atoms vibrate strongly and collide with their neighbours, passing kinetic energy along the lattice atom by atom with no bulk movement of the rod; in a metal, free electrons also sprint the energy ahead, which is why the far end of a metal rod warms long before a wooden one.",
+      "prompt": "Explain, at the particle level, how heat conducts along a metal rod, and why a metal rod warms at the far end faster than a wooden one."
+    },
+    {
+      "answer": "When the kelvin temperature doubles, since P = sigma A T^4 and 2^4 = 16",
+      "choices": [
+        "When the temperature rises by 16 degrees",
+        "When the kelvin temperature doubles, since P = sigma A T^4 and 2^4 = 16",
+        "When the surface area doubles"
+      ],
+      "prompt": "By the Stefan-Boltzmann law, when does a body radiate 16 times as much power?"
+    }
+  ],
+  "level": "jc",
+  "subject": "science",
+  "title": "JC H2 physics — thermal: kinetic theory, gas laws and temperature",
+  "topic": "h2-thermal"
+}
