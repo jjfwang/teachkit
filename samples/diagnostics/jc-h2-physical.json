@@ -1,0 +1,202 @@
+{
+ "doNow": [
+  {
+   "choices": [
+    {
+     "misconception": "A catalyst pushes the equilibrium toward the products.",
+     "rationale": {
+      "chose": "The learner selected option 8.8 x 10^-49 J, from f / h as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: A catalyst pushes the equilibrium toward the products.. The slip: A faster forward reaction looks like the products are winning.. The fix: A catalyst speeds the forward and reverse reactions equally: the position of equilibrium is unchanged..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "8.8 x 10^-49 J, from f / h"
+    },
+    {
+     "correct": true,
+     "text": "-184 kJ mol-1, from \u0394H = 678 - 862: exothermic"
+    },
+    {
+     "misconception": "A catalyst pushes the equilibrium toward the products.",
+     "rationale": {
+      "chose": "The learner selected option +184 kJ mol-1, from out minus in as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: A catalyst pushes the equilibrium toward the products.. The slip: A faster forward reaction looks like the products are winning.. The fix: A catalyst speeds the forward and reverse reactions equally: the position of equilibrium is unchanged..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "+184 kJ mol-1, from out minus in"
+    },
+    {
+     "misconception": "A catalyst pushes the equilibrium toward the products.",
+     "rationale": {
+      "chose": "The learner selected option 0 kJ mol-1, because bonds break and form at the same time as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: A catalyst pushes the equilibrium toward the products.. The slip: A faster forward reaction looks like the products are winning.. The fix: A catalyst speeds the forward and reverse reactions equally: the position of equilibrium is unchanged..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "0 kJ mol-1, because bonds break and form at the same time"
+    }
+   ],
+   "id": "dn1",
+   "kind": "multiple-choice",
+   "prompt": "For H2 + Cl2 -> 2 HCl, with bond enthalpies H-H 436, Cl-Cl 242 and H-Cl 431 kJ mol-1, what is the enthalpy change of the reaction?"
+  },
+  {
+   "choices": [
+    {
+     "misconception": "A catalyst pushes the equilibrium toward the products.",
+     "rationale": {
+      "chose": "The learner selected option The equilibrium shifts toward the products, so more product is made at equilibrium as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: A catalyst pushes the equilibrium toward the products.. The slip: A faster forward reaction looks like the products are winning.. The fix: A catalyst speeds the forward and reverse reactions equally: the position of equilibrium is unchanged..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "The equilibrium shifts toward the products, so more product is made at equilibrium"
+    },
+    {
+     "correct": true,
+     "text": "A catalyst speeds the forward and reverse reactions equally: the position of equilibrium is unchanged."
+    },
+    {
+     "misconception": "A catalyst pushes the equilibrium toward the products.",
+     "rationale": {
+      "chose": "The learner selected option The equilibrium shifts toward the reactants, to cancel the catalyst out as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: A catalyst pushes the equilibrium toward the products.. The slip: A faster forward reaction looks like the products are winning.. The fix: A catalyst speeds the forward and reverse reactions equally: the position of equilibrium is unchanged..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "The equilibrium shifts toward the reactants, to cancel the catalyst out"
+    },
+    {
+     "misconception": "A catalyst pushes the equilibrium toward the products.",
+     "rationale": {
+      "chose": "The learner selected option Nothing changes at all, because a catalyst is never used up as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: A catalyst pushes the equilibrium toward the products.. The slip: A faster forward reaction looks like the products are winning.. The fix: A catalyst speeds the forward and reverse reactions equally: the position of equilibrium is unchanged..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "Nothing changes at all, because a catalyst is never used up"
+    }
+   ],
+   "id": "dn2",
+   "kind": "multiple-choice",
+   "prompt": "A reversible reaction sits at equilibrium and a catalyst is added. A student claims the equilibrium now makes more product. What actually happens?"
+  },
+  {
+   "choices": [
+    {
+     "misconception": "A catalyst pushes the equilibrium toward the products.",
+     "rationale": {
+      "chose": "The learner selected option 629 kJ mol-1, the energy taken in to break bonds alone as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: A catalyst pushes the equilibrium toward the products.. The slip: A faster forward reaction looks like the products are winning.. The fix: A catalyst speeds the forward and reverse reactions equally: the position of equilibrium is unchanged..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "629 kJ mol-1, the energy taken in to break bonds alone"
+    },
+    {
+     "correct": true,
+     "text": "-103 kJ mol-1, from \u0394H = 629 - 732: exothermic"
+    },
+    {
+     "misconception": "A catalyst pushes the equilibrium toward the products.",
+     "rationale": {
+      "chose": "The learner selected option 732 kJ mol-1, the energy given out when bonds form alone as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: A catalyst pushes the equilibrium toward the products.. The slip: A faster forward reaction looks like the products are winning.. The fix: A catalyst speeds the forward and reverse reactions equally: the position of equilibrium is unchanged..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "732 kJ mol-1, the energy given out when bonds form alone"
+    },
+    {
+     "misconception": "A catalyst pushes the equilibrium toward the products.",
+     "rationale": {
+      "chose": "The learner selected option +103 kJ mol-1, from out minus in as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: A catalyst pushes the equilibrium toward the products.. The slip: A faster forward reaction looks like the products are winning.. The fix: A catalyst speeds the forward and reverse reactions equally: the position of equilibrium is unchanged..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "+103 kJ mol-1, from out minus in"
+    }
+   ],
+   "id": "dn3",
+   "kind": "multiple-choice",
+   "prompt": "Using bond enthalpies H-H 436, Br-Br 193 and H-Br 366 kJ mol-1, calculate the enthalpy change for H2 + Br2 -> 2 HBr, showing your working, and state whether the reaction is exothermic or endothermic."
+  }
+ ],
+ "hingeQuestions": [
+  {
+   "choices": [
+    {
+     "misconception": "A catalyst pushes the equilibrium toward the products.",
+     "rationale": {
+      "chose": "The learner selected option Each side reacts faster, so the equilibrium shifts toward the products as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: A catalyst pushes the equilibrium toward the products.. The slip: A faster forward reaction looks like the products are winning.. The fix: A catalyst speeds the forward and reverse reactions equally: the position of equilibrium is unchanged..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "Each side reacts faster, so the equilibrium shifts toward the products"
+    },
+    {
+     "correct": true,
+     "text": "A catalyst speeds the forward and reverse reactions equally: the position of equilibrium is unchanged."
+    },
+    {
+     "misconception": "A catalyst pushes the equilibrium toward the products.",
+     "rationale": {
+      "chose": "The learner selected option Kc grows, so more product is present at equilibrium as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: A catalyst pushes the equilibrium toward the products.. The slip: A faster forward reaction looks like the products are winning.. The fix: A catalyst speeds the forward and reverse reactions equally: the position of equilibrium is unchanged..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "Kc grows, so more product is present at equilibrium"
+    },
+    {
+     "misconception": "A catalyst pushes the equilibrium toward the products.",
+     "rationale": {
+      "chose": "The learner selected option Only the forward reaction speeds up, so equilibrium arrives sooner on the product side as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: A catalyst pushes the equilibrium toward the products.. The slip: A faster forward reaction looks like the products are winning.. The fix: A catalyst speeds the forward and reverse reactions equally: the position of equilibrium is unchanged..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "Only the forward reaction speeds up, so equilibrium arrives sooner on the product side"
+    }
+   ],
+   "id": "h1",
+   "kind": "multiple-choice",
+   "prompt": "In one sentence, what does a catalyst actually change about an equilibrium?",
+   "scriptCue": "s6"
+  },
+  {
+   "choices": [
+    {
+     "misconception": "A catalyst pushes the equilibrium toward the products.",
+     "rationale": {
+      "chose": "The learner selected option Agree - a faster forward reaction must mean more product at equilibrium as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: A catalyst pushes the equilibrium toward the products.. The slip: A faster forward reaction looks like the products are winning.. The fix: A catalyst speeds the forward and reverse reactions equally: the position of equilibrium is unchanged..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "Agree - a faster forward reaction must mean more product at equilibrium"
+    },
+    {
+     "correct": true,
+     "text": "A catalyst speeds the forward and reverse reactions equally: the position of equilibrium is unchanged."
+    },
+    {
+     "misconception": "A catalyst pushes the equilibrium toward the products.",
+     "rationale": {
+      "chose": "The learner selected option Tell them a catalyst raises Kc so the yield rises as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: A catalyst pushes the equilibrium toward the products.. The slip: A faster forward reaction looks like the products are winning.. The fix: A catalyst speeds the forward and reverse reactions equally: the position of equilibrium is unchanged..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "Tell them a catalyst raises Kc so the yield rises"
+    },
+    {
+     "misconception": "A catalyst pushes the equilibrium toward the products.",
+     "rationale": {
+      "chose": "The learner selected option Tell them the catalyst lowers the activation energy for the forward reaction only as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: A catalyst pushes the equilibrium toward the products.. The slip: A faster forward reaction looks like the products are winning.. The fix: A catalyst speeds the forward and reverse reactions equally: the position of equilibrium is unchanged..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "Tell them the catalyst lowers the activation energy for the forward reaction only"
+    }
+   ],
+   "id": "h2",
+   "kind": "multiple-choice",
+   "prompt": "How would you correct a classmate who insists a catalyst must mean more product at equilibrium?",
+   "scriptCue": "s6"
+  }
+ ],
+ "level": "jc",
+ "subject": "science",
+ "title": "JC H2 chemistry \u2014 physical: energetics, kinetics and equilibria",
+ "topic": "h2-physical"
+}

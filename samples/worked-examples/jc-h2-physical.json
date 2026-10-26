@@ -1,0 +1,61 @@
+{
+ "complete": {
+  "problem": "Trace physical chemistry from exothermic and endothermic reaction profiles, through rate curves and the Maxwell-Boltzmann distribution, and Le Chatelier\u2019s principle, to the catalyst-shifts-equilibrium trap.",
+  "selfExplanation": "Explain why the sign of \u0394H is set by where the products sit rather than the height of the hump, why a steeper concentration-time curve means a faster reaction, why heating puts more molecules past Ea, how an equilibrium opposes a disturbance while Kc changes only with temperature, and why a catalyst leaves the equilibrium position unchanged.",
+  "steps": [
+   {
+    "annotation": "The heat change at constant pressure, \u0394H: products minus reactants on a reaction profile - negative for exothermic, positive for endothermic.",
+    "text": "Step 1 (s1): Exothermic: products lie below reactants. Exothermic: products lie below reactants. Draw the reactants level, climb the activation-energy hump, then fall to the products: the enthalpy change is negative and heat leaves the system. Keep your student notes open at the enthalpy change definition for this scene."
+   },
+   {
+    "annotation": "The minimum energy Ea a collision needs for reaction to occur: on a reaction profile it is the climb from the reactants level to the transition state.",
+    "text": "Step 2 (s2): Endothermic: products lie above reactants. Endothermic: products lie above reactants. The reaction absorbs heat, \u0394H is positive, and it still clears an activation-energy barrier. Compare the two profiles side by side in your student notes before we move from energy to speed."
+   },
+   {
+    "annotation": "How fast reactant concentration falls, rate = -\u0394[R] / \u0394t: read from the gradient of a concentration-time curve, steeper meaning faster.",
+    "text": "Step 3 (s3): Rate curves: steeper means faster. Rate curves: steeper means faster. Rate is the fall in reactant concentration over time, and the gradient of the curve is the rate. Raise the temperature or add a catalyst and the curve steepens. Now try the rate reading on the worksheet in pairs."
+   },
+   {
+    "annotation": "The spread of molecular kinetic energies at a temperature: most molecules sit near the average, and only the tail past Ea can react on collision.",
+    "text": "Step 4 (s4): Maxwell\u2013Boltzmann: more molecules past Ea at higher T. Maxwell\u2013Boltzmann: more molecules past Ea at higher T. Most molecules sit near the average energy and only the fast tail can react; heating flattens and shifts the distribution so that tail grows. Check the Maxwell-Boltzmann distribution definition in your student notes, then look ahead to the exit ticket question on this scene."
+   },
+   {
+    "annotation": "The state of a reversible reaction in a closed system where the forward and reverse rates are equal and concentrations stay constant.",
+    "text": "Step 5 (s5): Le Chatelier: the system opposes the change. Le Chatelier: the system opposes the change. Add nitrogen and the Haber mixture makes more ammonia; compress it and it shifts toward fewer gas moles. Kc itself only changes with temperature. Work the Kc calculation on the worksheet now, in pairs."
+   },
+   {
+    "annotation": "A catalyst speeds the forward and reverse reactions equally: the position of equilibrium is unchanged. - the catalyst shortens the journey to equilibrium, it does not move the destination, and Kc is unchanged.",
+    "text": "Step 6 (s6): A common mistake: a catalyst shifts equilibrium. A common mistake: a catalyst shifts equilibrium. The animation grows both rate arrows by the same factor and the equilibrium bars never move: equilibrium arrives sooner, in the same place, with the same Kc. Finish the worksheet trap question now, then the exit ticket on your own - the first question revisits exactly this scene."
+   }
+  ]
+ },
+ "faded": {
+  "problem": "For H2 + Cl2 \u2192 2 HCl, with bond enthalpies H-H 436, Cl-Cl 242 and H-Cl 431 kJ mol-1, what is the enthalpy change of the reaction?",
+  "selfExplanation": "The first step is shown. Say how the energy taken in to break bonds and the energy given out when bonds form are evaluated, then how \u0394H = in - out is found, and state what the negative sign means.",
+  "steps": [
+   {
+    "annotation": "Bond enthalpies: H-H 436, Cl-Cl 242 and H-Cl 431 kJ mol-1, and \u0394H = energy in to break bonds - energy out when bonds form.",
+    "text": "Step 1: identify the values: \u0394H = in - out with H-H 436, Cl-Cl 242 and H-Cl 431 kJ mol-1.",
+    "withheld": false
+   },
+   {
+    "annotation": "Add and multiply it out: in = 436 + 242 = 678 kJ mol-1 and out = 2 x 431 = 862 kJ mol-1.",
+    "text": "Step 2: evaluate the two totals: in = 436 + 242 = 678 kJ mol-1 and out = 2 x 431 = 862 kJ mol-1.",
+    "withheld": true
+   },
+   {
+    "annotation": "Subtract: 678 - 862 = -184 kJ mol-1 - the negative sign means the products lie below the reactants on the reaction profile, as in scene s1.",
+    "text": "Step 3: read the landing: \u0394H = 678 - 862 = -184 kJ mol-1, so the reaction is exothermic.",
+    "withheld": true
+   }
+  ]
+ },
+ "level": "jc",
+ "paired": {
+  "problem": "For H2 + I2 \u2192 2 HI, with bond enthalpies H-H 436, I-I 151 and H-I 299 kJ mol-1, calculate the enthalpy change of the reaction.",
+  "solution": "In = 436 + 151 = 587 kJ mol-1; out = 2 x 299 = 598 kJ mol-1; \u0394H = 587 - 598 = -11 kJ mol-1. The reaction is exothermic."
+ },
+ "subject": "science",
+ "title": "JC H2 chemistry \u2014 physical: energetics, kinetics and equilibria",
+ "topic": "h2-physical"
+}
