@@ -1,0 +1,44 @@
+{
+ "commonErrors": [
+  {
+   "example": "A learner writes on the worksheet that the next toss is more likely to be tails after five heads in a row, because tails is due.",
+   "fixIt": {
+    "corrected": "The coin never remembers: after five heads the next toss is still 1/2.",
+    "prompt": "Fix it: state the probability of tails on the next toss after five heads in a row, showing in your working why the run changes nothing."
+   },
+   "misconception": "After five heads in a row, tails is due."
+  },
+  {
+   "example": "On the exit ticket, a learner picks 'More than 1/2, because tails is due after the run of heads' as the probability of tails on the next toss.",
+   "fixIt": {
+    "corrected": "Exactly 1/2, because the tosses are independent: the coin never remembers, so after five heads the next toss is still 1/2 tails.",
+    "prompt": "Fix it: explain in one sentence why more than 1/2 is not the correct probability of tails after a run of heads."
+   },
+   "misconception": "After five heads in a row, tails is due."
+  }
+ ],
+ "level": "jc",
+ "modelAnswers": [
+  {
+   "answer": "0.3. The probabilities in a discrete distribution sum to 1, so P(X = 2) = 1 - 0.2 - 0.5 = 0.3.",
+   "creditPoints": [],
+   "question": "A probability table for X lists P(X = 0) = 0.2 and P(X = 1) = 0.5, with X = 2 the only other outcome. Find P(X = 2) and state the rule you used."
+  },
+  {
+   "answer": "0.2 + 0.5 + 0.3 = 1, so the table is valid; E(X) = 0(0.2) + 1(0.5) + 2(0.3) = 1.1.",
+   "creditPoints": [],
+   "question": "For X with probabilities 0.2, 0.5, 0.3 at values 0, 1, 2, verify the table is a valid distribution and compute E(X)."
+  }
+ ],
+ "nextSteps": [
+  "Reteach the independence trap from the paired notes trap before any further probability work: the coin never remembers: after five heads the next toss is still 1/2.",
+  "Practise writing the sum check first whenever a probability table is given, before any further calculation."
+ ],
+ "strengths": [
+  "Most of the class can find a missing probability from the sum-to-1 rule, such as P(X = 2) = 1 - 0.2 - 0.5 = 0.3 on the worksheet.",
+  "The class can verify a distribution and compute its expectation, such as 0.2 + 0.5 + 0.3 = 1 and E(X) = 0(0.2) + 1(0.5) + 2(0.3) = 1.1 on the exit ticket."
+ ],
+ "subject": "math",
+ "title": "JC H2 probability: distributions, binomial, normal, independence",
+ "topic": "h2-probability"
+}

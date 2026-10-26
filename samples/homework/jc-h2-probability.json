@@ -1,0 +1,44 @@
+{
+ "level": "jc",
+ "questions": [
+  {
+   "choices": [
+    {
+     "text": "1.0, the middle value weighted equally"
+    },
+    {
+     "correct": true,
+     "text": "1.1, from 0(0.2) + 1(0.5) + 2(0.3)"
+    },
+    {
+     "text": "0.5, the largest probability"
+    },
+    {
+     "text": "2, the largest value X can take"
+    }
+   ],
+   "explanation": "Expectation weights each value by its probability: E(X) = 0(0.2) + 1(0.5) + 2(0.3) = 0 + 0.5 + 0.6 = 1.1. It is the balance point of the distribution, not a value X ever takes.",
+   "id": "q2",
+   "kind": "multiple-choice",
+   "prompt": "A discrete random variable X takes values 0, 1, 2 with probabilities 0.2, 0.5, 0.3. What is E(X)?"
+  },
+  {
+   "answer": "0.3. The probabilities in a discrete distribution sum to 1, so P(X = 2) = 1 - 0.2 - 0.5 = 0.3.",
+   "explanation": "Every discrete probability distribution sums to exactly 1 because something has to happen: 1 - 0.2 - 0.5 = 0.3. Checking the sum first also catches invalid tables before any further work.",
+   "id": "q3",
+   "kind": "short-answer",
+   "prompt": "A probability table for X lists P(X = 0) = 0.2 and P(X = 1) = 0.5, with X = 2 the only other outcome. Find P(X = 2) and state the rule you used."
+  },
+  {
+   "answer": "P(X = 3) = (10 choose 3)(0.3)^3(0.7)^7 = 120 x (0.3)^3 x (0.7)^7, which is about 0.267.",
+   "explanation": "Choose which 3 of the 10 trials succeed - 120 ways - then multiply by the probability of one such path: 3 successes at 0.3 each and 7 failures at 0.7 each. The product is about 0.267, roughly a 1-in-4 chance.",
+   "id": "q4",
+   "kind": "short-answer",
+   "prompt": "Let X be the number of successes in 10 independent trials, each with success probability 0.3. Write down the formula for P(X = 3) and evaluate it."
+  }
+ ],
+ "subject": "math",
+ "title": "JC H2 probability: distributions, binomial, normal, independence",
+ "topic": "h2-probability",
+ "variant": "homework"
+}

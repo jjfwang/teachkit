@@ -62,7 +62,8 @@ const STEMS = [
   'jc-h2-sequences',
   'jc-h2-vectors',
   'jc-h2-complex',
-  'jc-h2-integration'
+  'jc-h2-integration',
+  'jc-h2-probability'
 ];
 
 function load(rel) {
@@ -145,7 +146,7 @@ for (const stem of STEMS) {
   });
 }
 
-test('gold summatives: the thirty-eight units are exactly the Phase A gate set plus the pythagoras, photosynthesis, decimals, percentage, ratio, area-perimeter, rate-speed, model-method, data-graphs, forces-magnets, human-body-systems, plant-systems, life-cycles, adaptations, energy-forms, photosynthesis, e-trigonometry, e-mensuration, e-probability, science-electricity, science-cells, science-chem-acids, science-chem-atomic, science-chem-bonding, science-chem-mole, physics-kinematics, physics-forces, physics-waves, sequences, vectors, complex and integration backfills', () => {
+test('gold summatives: the thirty-nine units are exactly the Phase A gate set plus the pythagoras, photosynthesis, decimals, percentage, ratio, area-perimeter, rate-speed, model-method, data-graphs, forces-magnets, human-body-systems, plant-systems, life-cycles, adaptations, energy-forms, photosynthesis, e-trigonometry, e-mensuration, e-probability, science-electricity, science-cells, science-chem-acids, science-chem-atomic, science-chem-bonding, science-chem-mole, physics-kinematics, physics-forces, physics-waves, sequences, vectors, complex, integration and probability backfills', () => {
   const files = fs.readdirSync(path.join(__dirname, '..', 'samples/summatives'))
     .filter((f) => f.endsWith('.json'))
     .map((f) => f.replace(/\.json$/, ''))
