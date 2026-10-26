@@ -1,0 +1,116 @@
+{
+ "level": "jc",
+ "sets": [
+  {
+   "cloze": [
+    {
+     "answers": [
+      "Photon",
+      "Work function"
+     ],
+     "text": "A ___ carries energy E = h f, and an electron needs at least the ___ to escape the metal surface."
+    },
+    {
+     "answers": [
+      "Threshold frequency",
+      "Stopping potential"
+     ],
+     "text": "Below the ___ no emission occurs at any intensity, and the ___ just stops even the fastest emitted electrons."
+    }
+   ],
+   "frames": [
+    "___ is a single packet of light energy.",
+    "___ is the minimum energy an electron needs to escape a metal surface.",
+    "___ is the lowest frequency whose photons can free an electron."
+   ],
+   "level": "full",
+   "starters": [
+    "Photon is a single packet of...",
+    "Work function is the minimum energy...",
+    "Threshold frequency is the lowest frequency..."
+   ],
+   "wordBank": [
+    {
+     "gloss": "a single packet of light energy",
+     "term": "Photon"
+    },
+    {
+     "gloss": "the minimum energy W an electron needs to escape a metal surface",
+     "term": "Work function"
+    },
+    {
+     "gloss": "the lowest frequency f0 = W / h whose photons can free an electron",
+     "term": "Threshold frequency"
+    },
+    {
+     "gloss": "the retarding potential V_s that just stops even the fastest emitted electrons",
+     "term": "Stopping potential"
+    },
+    {
+     "gloss": "the emission of electrons when light above the threshold frequency strikes a metal",
+     "term": "Photoelectric effect"
+    }
+   ]
+  },
+  {
+   "cloze": [
+    {
+     "answers": [
+      "Photon",
+      "Work function"
+     ],
+     "text": "A ___ carries energy E = h f, and an electron needs at least the ___ to escape the metal surface."
+    }
+   ],
+   "frames": [
+    "___ is a single packet of light energy.",
+    "___ is the minimum energy an electron needs to escape a metal surface."
+   ],
+   "level": "partial",
+   "starters": [
+    "Photon is a single packet of...",
+    "Work function is the minimum energy..."
+   ],
+   "wordBank": [
+    {
+     "gloss": "a single packet of light energy",
+     "term": "Photon"
+    },
+    {
+     "gloss": "the minimum energy W an electron needs to escape a metal surface",
+     "term": "Work function"
+    },
+    {
+     "gloss": "the lowest frequency f0 = W / h whose photons can free an electron",
+     "term": "Threshold frequency"
+    }
+   ]
+  },
+  {
+   "cloze": [
+    {
+     "answers": [
+      "Photon"
+     ],
+     "text": "A ___ is a single packet of light energy."
+    }
+   ],
+   "frames": [
+    "___ is a single packet of light energy."
+   ],
+   "level": "minimal",
+   "starters": [
+    "Photon is a single packet of..."
+   ],
+   "wordBank": [
+    {
+     "gloss": "a single packet of light energy",
+     "term": "Photon"
+    }
+   ]
+  }
+ ],
+ "subject": "science",
+ "title": "JC H2 physics \u2014 quantum: photons and the photoelectric effect",
+ "topic": "h2-quantum"
+}

@@ -1,0 +1,81 @@
+{
+ "flashcards": [
+  {
+   "back": "A single packet of light energy, carrying E = h f where f is the light\u2019s frequency: one photon is absorbed whole by one electron in the photoelectric effect.",
+   "front": "Photon",
+   "source": "definition"
+  },
+  {
+   "back": "The minimum energy W an electron needs to escape a metal surface, a property of the metal: the photon must pay at least W before any kinetic energy is left over.",
+   "front": "Work function",
+   "source": "definition"
+  },
+  {
+   "back": "The lowest frequency f0 = W / h whose photons can free an electron: below f0 no emission occurs at any intensity, at f0 the emitted electrons have zero kinetic energy.",
+   "front": "Threshold frequency",
+   "source": "definition"
+  },
+  {
+   "back": "The retarding potential V_s that just stops even the fastest emitted electrons, e V_s = KE_max: it measures the maximum kinetic energy and depends on frequency, not intensity.",
+   "front": "Stopping potential",
+   "source": "definition"
+  },
+  {
+   "back": "The emission of electrons when light above the threshold frequency strikes a metal, one photon freeing one electron: its frequency threshold and instant emission are evidence that light arrives as photons.",
+   "front": "Photoelectric effect",
+   "source": "definition"
+  },
+  {
+   "back": "The two-sided nature of light and matter: light travels as waves but exchanges energy as photons, and moving particles carry a de Broglie wavelength \u03bb = h / (m v).",
+   "front": "Wave-particle duality",
+   "source": "definition"
+  },
+  {
+   "back": "Brightness feels like strength, so more light looks like harder hits. Brightness means more photons, not stronger ones: a dim violet beam ejects faster electrons than a bright red one. In the animation the brighter beam sends more electrons off the plate but every arrow keeps the same length, while the dim violet beam\u2019s fewer electrons fly faster: the count answers the brightness, the speed answers the frequency.",
+   "front": "Brighter light ejects faster electrons.",
+   "source": "trap"
+  },
+  {
+   "back": "Brightness means more photons, not stronger ones: a dim violet beam ejects faster electrons than a bright red one.",
+   "front": "Ultraviolet light shines on a metal plate and electrons are emitted. The lamp is made much brighter at exactly the same frequency. A student claims the electrons now fly off faster. What actually happens?",
+   "source": "quiz-bank"
+  },
+  {
+   "back": "E = h f = 6.63 x 10^-34 x 1.20 x 10^15 = 7.96 x 10^-19 J, so KE_max = E - W = 7.96 x 10^-19 - 3.31 x 10^-19 = 4.65 x 10^-19 J.",
+   "front": "Ultraviolet light of frequency 1.20 x 10^15 Hz strikes a metal of work function 3.31 x 10^-19 J. Calculate the maximum kinetic energy of the emitted electrons, showing your working with Einstein's photoelectric equation.",
+   "source": "quiz-bank"
+  }
+ ],
+ "level": "jc",
+ "practiceSets": [
+  {
+   "dayOffset": 1,
+   "items": [
+    {
+     "answer": "4.97 x 10^-19 J, from E = h f = 6.63 x 10^-34 x 7.5 x 10^14",
+     "prompt": "What is the energy of one photon of light of frequency 7.5 x 10^14 Hz? (h = 6.63 x 10^-34 J s)"
+    },
+    {
+     "answer": "\u03bb = h / (m v) = 6.63 x 10^-34 / (9.11 x 10^-31 x 1.0 x 10^6) = 7.3 x 10^-10 m. A moving electron carries a wavelength just like a photon: matter shows wave-particle duality.",
+     "prompt": "An emitted electron moves at 1.0 x 10^6 m s^-1. Calculate its de Broglie wavelength and say what this wave behaviour of matter is evidence for. (m_e = 9.11 x 10^-31 kg, h = 6.63 x 10^-34 J s)"
+    }
+   ]
+  },
+  {
+   "dayOffset": 3,
+   "items": [
+    {
+     "answer": "2.9 V, from V_s = KE_max / e",
+     "prompt": "For the ultraviolet light and metal of the worked example (KE_max = 4.65 x 10^-19 J), what is the stopping potential? (e = 1.60 x 10^-19 C)"
+    },
+    {
+     "answer": "E = h f = 6.63 x 10^-34 x 1.20 x 10^15 = 7.96 x 10^-19 J, so KE_max = E - W = 7.96 x 10^-19 - 3.31 x 10^-19 = 4.65 x 10^-19 J.",
+     "prompt": "Ultraviolet light of frequency 1.20 x 10^15 Hz strikes a metal of work function 3.31 x 10^-19 J. Calculate the maximum kinetic energy of the emitted electrons, showing your working with Einstein's photoelectric equation."
+    }
+   ]
+  }
+ ],
+ "subject": "science",
+ "title": "JC H2 physics \u2014 quantum: photons and the photoelectric effect",
+ "topic": "h2-quantum"
+}
