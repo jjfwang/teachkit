@@ -1,0 +1,106 @@
+{
+ "activities": [
+  {
+   "grouping": "whole class",
+   "minutes": 6,
+   "objectiveIds": [
+    "o1"
+   ],
+   "scriptCue": "s1",
+   "title": "Exothermic: products lie below reactants"
+  },
+  {
+   "grouping": "individual",
+   "minutes": 6,
+   "objectiveIds": [
+    "o1"
+   ],
+   "scriptCue": "s2",
+   "title": "Endothermic: products lie above reactants"
+  },
+  {
+   "grouping": "pairs",
+   "minutes": 6,
+   "objectiveIds": [
+    "o2"
+   ],
+   "scriptCue": "s3",
+   "title": "Rate curves: steeper means faster"
+  },
+  {
+   "grouping": "whole class",
+   "minutes": 7,
+   "objectiveIds": [
+    "o2"
+   ],
+   "scriptCue": "s4",
+   "title": "Maxwell–Boltzmann: more molecules past Ea at higher T"
+  },
+  {
+   "grouping": "pairs",
+   "minutes": 7,
+   "objectiveIds": [
+    "o3"
+   ],
+   "scriptCue": "s5",
+   "title": "Le Chatelier: the system opposes the change"
+  },
+  {
+   "grouping": "individual",
+   "minutes": 8,
+   "objectiveIds": [
+    "o1",
+    "o2",
+    "o3"
+   ],
+   "resources": [
+    "worksheet"
+   ],
+   "scriptCue": "s6",
+   "title": "A common mistake: a catalyst shifts equilibrium"
+  }
+ ],
+ "durationMinutes": 40,
+ "level": "jc",
+ "objectives": [
+  {
+   "assessmentPoints": [
+    "Exothermic profile answers in the opening activity",
+    "Endothermic profile answers in the second activity"
+   ],
+   "id": "o1",
+   "successCriteria": [
+    "The heat change at constant pressure, ΔH: products minus reactants on a reaction profile - negative for exothermic, positive for endothermic.",
+    "-184 kJ mol-1, from ΔH = 678 - 862: exothermic"
+   ],
+   "text": "Read exothermic and endothermic reaction profiles and state the sign of ΔH"
+  },
+  {
+   "assessmentPoints": [
+    "Rate curve answers in the rate curves activity",
+    "Maxwell-Boltzmann answers in the distribution activity"
+   ],
+   "id": "o2",
+   "successCriteria": [
+    "In = 436 + 193 = 629 kJ mol-1; out = 2 x 366 = 732 kJ mol-1; ΔH = 629 - 732 = -103 kJ mol-1. The reaction is exothermic.",
+    "The distribution flattens and shifts right, so a larger fraction of molecules has energy at least Ea and more collisions per second can react"
+   ],
+   "text": "Calculate ΔH from bond enthalpies and explain rate with the Maxwell-Boltzmann distribution"
+  },
+  {
+   "assessmentPoints": [
+    "Le Chatelier answers in the equilibrium activity",
+    "Trap answers in the closing misconception activity"
+   ],
+   "id": "o3",
+   "successCriteria": [
+    "Kc = [NH3]^2 / ([N2][H2]^3) = 0.40^2 / (0.20 x 0.60^3) = 0.16 / 0.0432 = 3.70 dm^6 mol^-2.",
+    "Equilibrium is reached sooner, but the position of equilibrium and Kc are unchanged, because both rates speed up equally"
+   ],
+   "text": "Apply Le Chatelier's principle and Kc, and avoid the catalyst-shifts-equilibrium trap"
+  }
+ ],
+ "subject": "science",
+ "title": "JC H2 chemistry — physical: energetics, kinetics and equilibria",
+ "topic": "h2-physical"
+}
