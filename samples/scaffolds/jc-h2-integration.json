@@ -1,0 +1,120 @@
+{
+ "level": "jc",
+ "sets": [
+  {
+   "cloze": [
+    {
+     "answers": [
+      "Definite integral",
+      "Indefinite integral"
+     ],
+     "text": "A ___ is a single number over a fixed interval, while an ___ is a family of antiderivatives written with +C."
+    },
+    {
+     "answers": [
+      "U-substitution",
+      "Volume of revolution"
+     ],
+     "text": "___ undoes the chain rule by setting u to an inner function, and a ___ is built by stacking discs."
+    }
+   ],
+   "frames": [
+    "A ___ is the limit of Riemann sums over a fixed interval.",
+    "The ___ of a function is its family of antiderivatives, written with +C.",
+    "___ is the chain rule in reverse."
+   ],
+   "level": "full",
+   "starters": [
+    "A definite integral is...",
+    "A Riemann sum estimates...",
+    "U-substitution works by..."
+   ],
+   "wordBank": [
+    {
+     "gloss": "the limit of Riemann sums over a fixed interval, a single number",
+     "term": "Definite integral"
+    },
+    {
+     "gloss": "the family of all antiderivatives, written with +C",
+     "term": "Indefinite integral"
+    },
+    {
+     "gloss": "an area estimate from rectangles, width times height",
+     "term": "Riemann sum"
+    },
+    {
+     "gloss": "area positive above the x-axis and negative below it",
+     "term": "Signed area"
+    },
+    {
+     "gloss": "the chain rule in reverse, setting u to an inner function",
+     "term": "U-substitution"
+    },
+    {
+     "gloss": "the volume swept when a curve rotates about an axis",
+     "term": "Volume of revolution"
+    }
+   ]
+  },
+  {
+   "cloze": [
+    {
+     "answers": [
+      "Riemann sum",
+      "U-substitution"
+     ],
+     "text": "A ___ estimates area with rectangles, and ___ undoes the chain rule."
+    }
+   ],
+   "frames": [
+    "A ___ estimates area under a curve with rectangles.",
+    "___ is the chain rule in reverse."
+   ],
+   "level": "partial",
+   "starters": [
+    "A Riemann sum estimates...",
+    "U-substitution works by..."
+   ],
+   "wordBank": [
+    {
+     "gloss": "the limit of Riemann sums over a fixed interval, a single number",
+     "term": "Definite integral"
+    },
+    {
+     "gloss": "an area estimate from rectangles, width times height",
+     "term": "Riemann sum"
+    },
+    {
+     "gloss": "the chain rule in reverse, setting u to an inner function",
+     "term": "U-substitution"
+    }
+   ]
+  },
+  {
+   "cloze": [
+    {
+     "answers": [
+      "Definite integral"
+     ],
+     "text": "A ___ is the limit of Riemann sums over a fixed interval [a, b]."
+    }
+   ],
+   "frames": [
+    "A ___ is the limit of Riemann sums over a fixed interval."
+   ],
+   "level": "minimal",
+   "starters": [
+    "A definite integral is..."
+   ],
+   "wordBank": [
+    {
+     "gloss": "the limit of Riemann sums over a fixed interval, a single number",
+     "term": "Definite integral"
+    }
+   ]
+  }
+ ],
+ "subject": "math",
+ "title": "JC H2 integration: Riemann sums, u-substitution, volumes of revolution",
+ "topic": "h2-integration"
+}

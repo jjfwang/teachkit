@@ -1,0 +1,81 @@
+{
+ "flashcards": [
+  {
+   "back": "The limit of Riemann sums over a fixed interval [a, b], equal to net signed area and written as a single number such as 7/3 - it never carries a +C.",
+   "front": "Definite integral",
+   "source": "definition"
+  },
+  {
+   "back": "The family of all antiderivatives of a function, written with +C because differentiating any constant gives zero: the integral of x^2 is x^3/3 + C.",
+   "front": "Indefinite integral",
+   "source": "definition"
+  },
+  {
+   "back": "An estimate of the area under a curve made by slicing the interval into rectangles and adding width times height; under y = x^2 from 0 to 2, n = 4 gives 3.75 and the limit is 8/3.",
+   "front": "Riemann sum",
+   "source": "definition"
+  },
+  {
+   "back": "Area counted positive above the x-axis and negative below it: for y = x from -1 to 2 the triangles give 2 - 0.5 = 3/2.",
+   "front": "Signed area",
+   "source": "definition"
+  },
+  {
+   "back": "The chain rule in reverse: set u equal to an inner function so its derivative absorbs the remaining factors, as u = x^2 turns the integral of 2x e^(x^2) into the integral of e^u.",
+   "front": "U-substitution",
+   "source": "definition"
+  },
+  {
+   "back": "The volume swept when a curve rotates about an axis, built by stacking discs: V = pi times the integral of r^2 dx, which for y = x^2 from 0 to 1 gives pi/5.",
+   "front": "Volume of revolution",
+   "source": "definition"
+  },
+  {
+   "back": "The habit of writing +C carries over from indefinite integrals. Only indefinite integrals need +C: it cancels at the two limits, so from 1 to 2 the answer is simply 7/3. Write the constant inside the bracket once to see it: (8/3 + C) - (1/3 + C) = 7/3 - the C is gone before the final line, every time.",
+   "front": "A definite integral still needs the +C in the answer.",
+   "source": "trap"
+  },
+  {
+   "back": "8/3, about 2.67",
+   "front": "Using right-endpoint rectangles with n = 4 on [0, 2] for y = x^2 gives the estimate 3.75, and n = 8 gives 3.1875. What is the exact value the estimates are closing in on?",
+   "source": "quiz-bank"
+  },
+  {
+   "back": "e - 1. With u = x^2, du = 2x dx, the limits stay 0 and 1, and the integral becomes the integral of e^u from 0 to 1.",
+   "front": "Use the substitution u = x^2 to evaluate the integral of 2x e^(x^2) from 0 to 1.",
+   "source": "quiz-bank"
+  }
+ ],
+ "level": "jc",
+ "practiceSets": [
+  {
+   "dayOffset": 1,
+   "items": [
+    {
+     "answer": "A definite integral is a single number: the +C cancels at the two limits, so it does not belong in the answer",
+     "prompt": "A student evaluates a definite integral, gets 7/3, and then adds + C to the final answer. What is wrong with that move?"
+    },
+    {
+     "answer": "3/2. The triangle above the axis contributes +2 and the triangle below the axis contributes -0.5, so the net signed area is 2 - 0.5 = 1.5.",
+     "prompt": "Find the integral of x from -1 to 2, and explain the role of the part of the graph below the x-axis."
+    }
+   ]
+  },
+  {
+   "dayOffset": 3,
+   "items": [
+    {
+     "answer": "V = pi times the integral of (x^2)^2 dx from 0 to 1 = pi times 1/5 = pi/5.",
+     "prompt": "Rotating y = x^2 about the x-axis from 0 to 1 gives discs of radius x^2. Write down the volume integral and its value."
+    },
+    {
+     "answer": "3/2: the above-axis triangle gives +2 and the below-axis triangle gives -0.5, a net signed area of 1.5.",
+     "prompt": "Find the integral of x from -1 to 2."
+    }
+   ]
+  }
+ ],
+ "subject": "math",
+ "title": "JC H2 integration: Riemann sums, u-substitution, volumes of revolution",
+ "topic": "h2-integration"
+}
