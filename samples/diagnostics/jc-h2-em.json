@@ -1,0 +1,193 @@
+{
+  "doNow": [
+    {
+      "choices": [
+        {
+          "misconception": "An emf flows as long as the magnet sits inside the coil.",
+          "rationale": {
+            "chose": "The learner selected option 20 Wb, from A/B as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: An emf flows as long as the magnet sits inside the coil.. The slip: The flux looks large inside the coil, so voltage feels like it should be there.. The fix: No change in flux, no emf: the magnet sitting still gives zero - only motion makes the meter kick..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "20 Wb, from A/B"
+        },
+        {
+          "correct": true,
+          "text": "0.0080 Wb, from Φ = BA = 0.40 x 0.020"
+        },
+        {
+          "misconception": "An emf flows as long as the magnet sits inside the coil.",
+          "rationale": {
+            "chose": "The learner selected option 0.40 Wb, the field itself as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: An emf flows as long as the magnet sits inside the coil.. The slip: The flux looks large inside the coil, so voltage feels like it should be there.. The fix: No change in flux, no emf: the magnet sitting still gives zero - only motion makes the meter kick..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "0.40 Wb, the field itself"
+        },
+        {
+          "misconception": "An emf flows as long as the magnet sits inside the coil.",
+          "rationale": {
+            "chose": "The learner selected option 0 Wb, because the coil is not moving as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: An emf flows as long as the magnet sits inside the coil.. The slip: The flux looks large inside the coil, so voltage feels like it should be there.. The fix: No change in flux, no emf: the magnet sitting still gives zero - only motion makes the meter kick..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "0 Wb, because the coil is not moving"
+        }
+      ],
+      "id": "dn1",
+      "kind": "multiple-choice",
+      "prompt": "A coil of area 0.020 m^2 sits at right angles to a uniform magnetic field of 0.40 T. What is the magnetic flux through the coil?"
+    },
+    {
+      "choices": [
+        {
+          "misconception": "An emf flows as long as the magnet sits inside the coil.",
+          "rationale": {
+            "chose": "The learner selected option A steady voltage, because the flux inside the coil is large as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: An emf flows as long as the magnet sits inside the coil.. The slip: The flux looks large inside the coil, so voltage feels like it should be there.. The fix: No change in flux, no emf: the magnet sitting still gives zero - only motion makes the meter kick..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "A steady voltage, because the flux inside the coil is large"
+        },
+        {
+          "misconception": "An emf flows as long as the magnet sits inside the coil.",
+          "rationale": {
+            "chose": "The learner selected option A voltage that slowly grows the longer the magnet sits there as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: An emf flows as long as the magnet sits inside the coil.. The slip: The flux looks large inside the coil, so voltage feels like it should be there.. The fix: No change in flux, no emf: the magnet sitting still gives zero - only motion makes the meter kick..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "A voltage that slowly grows the longer the magnet sits there"
+        },
+        {
+          "correct": true,
+          "text": "No change in flux, no emf: the magnet sitting still gives zero - only motion makes the meter kick."
+        },
+        {
+          "misconception": "An emf flows as long as the magnet sits inside the coil.",
+          "rationale": {
+            "chose": "The learner selected option A voltage in the opposite direction to the one during insertion as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: An emf flows as long as the magnet sits inside the coil.. The slip: The flux looks large inside the coil, so voltage feels like it should be there.. The fix: No change in flux, no emf: the magnet sitting still gives zero - only motion makes the meter kick..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "A voltage in the opposite direction to the one during insertion"
+        }
+      ],
+      "id": "dn2",
+      "kind": "multiple-choice",
+      "prompt": "A bar magnet is pushed into a coil and then held perfectly still inside it, with a meter connected across the coil. A student claims an emf keeps flowing the whole time. What does the meter actually show?"
+    },
+    {
+      "choices": [
+        {
+          "misconception": "An emf flows as long as the magnet sits inside the coil.",
+          "rationale": {
+            "chose": "The learner selected option 0.80 V, from 200 x 0.0020 / 0.50 with the wrong flux change as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: An emf flows as long as the magnet sits inside the coil.. The slip: The flux looks large inside the coil, so voltage feels like it should be there.. The fix: No change in flux, no emf: the magnet sitting still gives zero - only motion makes the meter kick..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "0.80 V, from 200 x 0.0020 / 0.50 with the wrong flux change"
+        },
+        {
+          "correct": true,
+          "text": "8.0 V, from emf = -N ΔΦ/Δt = 200 x 0.020 / 0.50"
+        },
+        {
+          "misconception": "An emf flows as long as the magnet sits inside the coil.",
+          "rationale": {
+            "chose": "The learner selected option 80 V, from 200 x 0.020 / 0.05 with the wrong time as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: An emf flows as long as the magnet sits inside the coil.. The slip: The flux looks large inside the coil, so voltage feels like it should be there.. The fix: No change in flux, no emf: the magnet sitting still gives zero - only motion makes the meter kick..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "80 V, from 200 x 0.020 / 0.05 with the wrong time"
+        },
+        {
+          "misconception": "An emf flows as long as the magnet sits inside the coil.",
+          "rationale": {
+            "chose": "The learner selected option 4.0 V, from 100 x 0.020 / 0.50 with half the turns as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: An emf flows as long as the magnet sits inside the coil.. The slip: The flux looks large inside the coil, so voltage feels like it should be there.. The fix: No change in flux, no emf: the magnet sitting still gives zero - only motion makes the meter kick..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "4.0 V, from 100 x 0.020 / 0.50 with half the turns"
+        }
+      ],
+      "id": "dn3",
+      "kind": "multiple-choice",
+      "prompt": "The flux through a 200-turn coil falls from 0.030 Wb to 0.010 Wb in 0.50 s. Calculate the induced emf, showing your working with Faraday's law."
+    }
+  ],
+  "hingeQuestions": [
+    {
+      "choices": [
+        {
+          "misconception": "An emf flows as long as the magnet sits inside the coil.",
+          "rationale": {
+            "chose": "The learner selected option A steady emf, because the coil is full of flux as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: An emf flows as long as the magnet sits inside the coil.. The slip: The flux looks large inside the coil, so voltage feels like it should be there.. The fix: No change in flux, no emf: the magnet sitting still gives zero - only motion makes the meter kick..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "A steady emf, because the coil is full of flux"
+        },
+        {
+          "correct": true,
+          "text": "Nothing - the needle holds flat at zero, because the flux through the coil is not changing"
+        },
+        {
+          "misconception": "An emf flows as long as the magnet sits inside the coil.",
+          "rationale": {
+            "chose": "The learner selected option A voltage that grows slowly the longer the magnet sits there as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: An emf flows as long as the magnet sits inside the coil.. The slip: The flux looks large inside the coil, so voltage feels like it should be there.. The fix: No change in flux, no emf: the magnet sitting still gives zero - only motion makes the meter kick..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "A voltage that grows slowly the longer the magnet sits there"
+        },
+        {
+          "misconception": "An emf flows as long as the magnet sits inside the coil.",
+          "rationale": {
+            "chose": "The learner selected option An emf in the opposite direction to the one during insertion as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: An emf flows as long as the magnet sits inside the coil.. The slip: The flux looks large inside the coil, so voltage feels like it should be there.. The fix: No change in flux, no emf: the magnet sitting still gives zero - only motion makes the meter kick..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "An emf in the opposite direction to the one during insertion"
+        }
+      ],
+      "id": "h1",
+      "kind": "multiple-choice",
+      "prompt": "In one sentence, what does the meter show the whole time the magnet sits inside the coil?",
+      "scriptCue": "s5"
+    },
+    {
+      "choices": [
+        {
+          "misconception": "An emf flows as long as the magnet sits inside the coil.",
+          "rationale": {
+            "chose": "The learner selected option When the flux through the coil is at its maximum as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: An emf flows as long as the magnet sits inside the coil.. The slip: The flux looks large inside the coil, so voltage feels like it should be there.. The fix: No change in flux, no emf: the magnet sitting still gives zero - only motion makes the meter kick..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "When the flux through the coil is at its maximum"
+        },
+        {
+          "correct": true,
+          "text": "When the flux is changing fastest, as the coil passes edge-on through zero flux"
+        },
+        {
+          "misconception": "An emf flows as long as the magnet sits inside the coil.",
+          "rationale": {
+            "chose": "The learner selected option When the coil stops turning as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: An emf flows as long as the magnet sits inside the coil.. The slip: The flux looks large inside the coil, so voltage feels like it should be there.. The fix: No change in flux, no emf: the magnet sitting still gives zero - only motion makes the meter kick..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "When the coil stops turning"
+        }
+      ],
+      "id": "h2",
+      "kind": "multiple-choice",
+      "prompt": "A generator coil spins in a magnetic field. When is the induced emf at its maximum?",
+      "scriptCue": "s5"
+    }
+  ],
+  "level": "jc",
+  "subject": "science",
+  "title": "JC H2 physics — electromagnetism: fields, flux and induction",
+  "topic": "h2-em"
+}
