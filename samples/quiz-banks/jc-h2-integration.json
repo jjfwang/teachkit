@@ -1,0 +1,45 @@
+{
+  "items": [
+    {
+      "answer": "A definite integral is a single number: the +C cancels at the two limits, so it does not belong in the answer",
+      "choices": [
+        "Nothing - every integral answer must end with + C",
+        "A definite integral is a single number: the +C cancels at the two limits, so it does not belong in the answer",
+        "The +C is needed only when the answer is a fraction like 7/3",
+        "The +C should be added before evaluating at the limits, not after"
+      ],
+      "misconceptionCode": "A definite integral still needs the +C in the answer.",
+      "prompt": "A student evaluates a definite integral, gets 7/3, and then adds + C to the final answer. What is wrong with that move?"
+    },
+    {
+      "answer": "8/3, about 2.67",
+      "choices": [
+        "3",
+        "8/3, about 2.67",
+        "4",
+        "2"
+      ],
+      "prompt": "Using right-endpoint rectangles with n = 4 on [0, 2] for y = x^2 gives the estimate 3.75, and n = 8 gives 3.1875. What is the exact value the estimates are closing in on?"
+    },
+    {
+      "answer": "3/2. The triangle above the axis contributes +2 and the triangle below the axis contributes -0.5, so the net signed area is 2 - 0.5 = 1.5.",
+      "prompt": "Find the integral of x from -1 to 2, and explain the role of the part of the graph below the x-axis."
+    },
+    {
+      "answer": "e - 1. With u = x^2, du = 2x dx, the limits stay 0 and 1, and the integral becomes the integral of e^u from 0 to 1.",
+      "prompt": "Use the substitution u = x^2 to evaluate the integral of 2x e^(x^2) from 0 to 1."
+    },
+    {
+      "answer": "V = pi times the integral of (x^2)^2 dx from 0 to 1 = pi times 1/5 = pi/5.",
+      "prompt": "Rotating y = x^2 about the x-axis from 0 to 1 gives discs of radius x^2. Write down the volume integral and its value."
+    },
+    {
+      "answer": "3/2: the above-axis triangle gives +2 and the below-axis triangle gives -0.5, a net signed area of 1.5.",
+      "prompt": "Find the integral of x from -1 to 2."
+    }
+  ],
+  "level": "jc",
+  "subject": "math",
+  "title": "JC H2 integration: Riemann sums, u-substitution, volumes of revolution",
+  "topic": "h2-integration"
+}
