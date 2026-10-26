@@ -1,0 +1,57 @@
+{
+  "complete": {
+    "problem": "Trace electromagnetism from electric field lines running from + to -, magnetic field lines looping from N to S, flux threading a coil, the emf induced when that flux changes, and the sitting-magnet trap.",
+    "selfExplanation": "Explain why field lines run E from + to - and B from N to S, how flux is Φ = BA cos θ, how Faraday's law emf = -N ΔΦ/Δt makes the emf answer the change in flux rather than its amount, why a generator's emf alternates and peaks at zero flux, and why a sitting magnet induces nothing.",
+    "steps": [
+      {
+        "annotation": "The field around a charge, drawn as lines running from + to -: a positive charge placed in it is pushed along the lines, and E = F/q. Between charged plates the evenly spaced lines mean a uniform field.",
+        "text": "Step 1 (s1): Electric field lines run from + to −. Electric field lines run from + to -. Between the charged plates, watch each line draw itself straight from the positive plate down to the negative one, evenly spaced. Even spacing means a uniform field: E is the same everywhere between the plates. The probe dot rides one line down - that is the push a positive charge would feel. Keep your student notes open at the electric field definition for this scene."
+      },
+      {
+        "annotation": "The field around a magnet or current, drawn as lines that loop from N to S outside a bar magnet and never cross: the line direction at a point gives the direction of B there, and closer lines mean a stronger field.",
+        "text": "Step 2 (s2): A bar magnet's field loops from N to S. A bar magnet's field loops from N to S. Watch the probe dot ride the upper loop out of the north pole, round over the top and back into the south pole, then do the same underneath. The lines never cross and never stop in empty space: B always forms closed loops. Compare the magnetic field definition in your student notes before we thread a coil with this field."
+      },
+      {
+        "annotation": "The induced voltage around a coil when the flux through it changes, emf = -N ΔΦ/Δt: it exists only while the flux is changing, never from flux merely being present.",
+        "text": "Step 3 (s3): Moving the magnet changes the flux. Moving the magnet changes the flux. Push the magnet towards the coil and the flux threading the coil grows - a voltage appears across the coil. Now hold the magnet perfectly still: the flux stays large, but the needle falls back to zero. The emf answers the change in flux, never the amount of flux. Now try the flux computation on the worksheet in pairs."
+      },
+      {
+        "annotation": "The induced emf equals the rate of change of flux linkage, emf = -N ΔΦ/Δt, with the minus sign (Lenz's law) saying the induced effect opposes the change that produces it.",
+        "text": "Step 4 (s4): A generator spins the coil in the field. A generator spins the coil in the field. As the coil turns, the flux through it rises and falls between max and zero, and the gauge swings with the induced emf, kicking left then right. The emf is biggest not when the flux is biggest, but when the flux is changing fastest, as the coil passes edge-on. Check the Faraday's law definition in your student notes, then look ahead to the exit ticket question on this scene."
+      },
+      {
+        "annotation": "The trap: an emf does not flow while the magnet sits inside the coil - the flux through it is not changing, so the induced emf is zero however large the flux is; only motion makes the meter kick.",
+        "text": "Step 5 (s5): A common mistake. A common mistake: motion, not position. The animation holds the magnet still inside the coil and the needle holds flat, then moves the magnet out and the needle kicks. Finish the worksheet trap question now, then the exit ticket on your own - the first question revisits exactly this scene."
+      }
+    ]
+  },
+  "faded": {
+    "problem": "The flux through a 200-turn coil falls from 0.030 Wb to 0.010 Wb in 0.50 s. Calculate the induced emf, showing your working with Faraday's law.",
+    "selfExplanation": "The first step is shown. Say how the flux change ΔΦ = 0.030 - 0.010 is formed, then compute 200 x 0.020 / 0.50 and state what the minus sign in Faraday's law means.",
+    "steps": [
+      {
+        "annotation": "Faraday's law is emf = -N ΔΦ/Δt, and the flux change is the fall from 0.030 Wb to 0.010 Wb.",
+        "text": "Step 1: identify the values: N = 200 turns, ΔΦ = 0.030 - 0.010 = 0.020 Wb and Δt = 0.50 s, with emf = -N ΔΦ/Δt.",
+        "withheld": false
+      },
+      {
+        "annotation": "Multiply the turns by the flux change before dividing by the time: 200 x 0.020 / 0.50 = 8.0.",
+        "text": "Step 2: substitute into Faraday's law: emf = 200 x 0.020 / 0.50 = 8.0 V in magnitude.",
+        "withheld": true
+      },
+      {
+        "annotation": "The minus sign gives the direction: the induced emf opposes the change that made it (Lenz's law), so it acts to resist the fall in flux.",
+        "text": "Step 3: read the landing: the induced emf is 8.0 V, directed so as to oppose the fall in flux (Lenz's law).",
+        "withheld": true
+      }
+    ]
+  },
+  "level": "jc",
+  "paired": {
+    "problem": "A 50-turn coil has the flux through it increase by 0.012 Wb in 0.30 s. Calculate the induced emf.",
+    "solution": "emf = N ΔΦ/Δt = 50 x 0.012 / 0.30 = 2.0 V."
+  },
+  "subject": "science",
+  "title": "JC H2 physics — electromagnetism: fields, flux and induction",
+  "topic": "h2-em"
+}
