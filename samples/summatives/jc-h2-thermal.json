@@ -1,0 +1,125 @@
+{
+ "blueprint": [
+  {
+   "assessmentObjective": "AO1 recall and apply",
+   "cognitiveLevel": "apply",
+   "marks": 10,
+   "outcomeCode": "H2-THERM-KINETIC"
+  },
+  {
+   "assessmentObjective": "AO2 reason and solve",
+   "cognitiveLevel": "reason",
+   "marks": 10,
+   "outcomeCode": "H2-EM-INDUCE"
+  }
+ ],
+ "durationMinutes": 60,
+ "items": [
+  {
+   "blueprintRow": 0,
+   "commandWord": "Explain",
+   "markScheme": {
+    "points": [
+     {
+      "marks": 2,
+      "text": "States that atoms at the hot end vibrate with larger amplitude"
+     },
+     {
+      "marks": 3,
+      "text": "Explains that they collide with their neighbours, passing kinetic energy along atom to atom until the far end warms"
+     }
+    ]
+   },
+   "marks": 5,
+   "prompt": "One end of a metal rod is held in a flame. A minute later the far end feels warm. Explain, at the particle level, how the energy got there."
+  },
+  {
+   "blueprintRow": 0,
+   "commandWord": "Calculate",
+   "markScheme": {
+    "points": [
+     {
+      "marks": 2,
+      "text": "Selects p = nRT / V with n = 0.50 mol, R = 8.31, T = 300 K and V = 0.012 m^3"
+     },
+     {
+      "marks": 3,
+      "text": "Computes p = (0.50 x 8.31 x 300) / 0.012 = 1.04 x 10^5 Pa to 3 significant figures"
+     }
+    ]
+   },
+   "marks": 5,
+   "prompt": "An ideal gas of 0.50 mol is held in a container of volume 0.012 m^3 at 300 K. Calculate its pressure. (R = 8.31 J mol^-1 K^-1)"
+  },
+  {
+   "blueprintRow": 1,
+   "commandWord": "Calculate",
+   "markScheme": {
+    "points": [
+     {
+      "marks": 2,
+      "text": "Computes the flux change: 0.030 - 0.010 = 0.020 Wb"
+     },
+     {
+      "marks": 3,
+      "text": "Applies Faraday's law: emf = -N x 0.020 / 0.50 = 8.0 V, the minus sign showing the induced emf opposes the change (Lenz's law)"
+     }
+    ]
+   },
+   "marks": 5,
+   "prompt": "The flux through a 200-turn coil falls from 0.030 Wb to 0.010 Wb in 0.50 s. Calculate the induced emf, showing your working with Faraday's law."
+  },
+  {
+   "blueprintRow": 1,
+   "commandWord": "Explain",
+   "markScheme": {
+    "points": [
+     {
+      "marks": 2,
+      "text": "States that the emf follows the rate of change of flux, not the flux itself"
+     },
+     {
+      "marks": 3,
+      "text": "Explains that as the coil turns edge-on the flux passes through zero but is changing fastest there, so the emf peaks, and half a turn later the flux changes the other way so the emf reverses and alternates"
+     }
+    ]
+   },
+   "marks": 5,
+   "prompt": "In the generator scene the coil spins steadily in a magnetic field. Explain why the induced emf is greatest when the flux through the coil is passing through zero, and why the emf alternates."
+  }
+ ],
+ "level": "jc",
+ "moderation": {
+  "state": "unreviewed"
+ },
+ "review": null,
+ "rubric": {
+  "criteria": [
+   {
+    "levels": [
+     {
+      "descriptor": "Methods are chosen and applied exactly, temperature averages and flux changes are stated explicitly, and conclusions are justified without claiming every molecule moves faster in a hotter gas.",
+      "label": "Secure"
+     },
+     {
+      "descriptor": "Method is correct in outline but an average-versus-total, kelvin or flux-change step is skipped.",
+      "label": "Developing"
+     },
+     {
+      "descriptor": "Methods are misapplied - for example claiming every molecule moves faster in a hotter gas - and the working does not support the answer.",
+      "label": "Beginning"
+     }
+    ],
+    "name": "Thermal physics and electromagnetism communication"
+   }
+  ]
+ },
+ "subject": "science",
+ "title": "Thermal Physics and Electromagnetism Unit Test",
+ "topics": [
+  "jc-h2-thermal",
+  "jc-h2-em"
+ ],
+ "totalMarks": 20,
+ "unitTitle": "Thermal physics and electromagnetism"
+}

@@ -1,0 +1,44 @@
+{
+ "level": "jc",
+ "questions": [
+  {
+   "choices": [
+    {
+     "text": "1.0 x 10^5 Pa - pressure does not depend on temperature"
+    },
+    {
+     "correct": true,
+     "text": "2.0 x 10^5 Pa"
+    },
+    {
+     "text": "4.0 x 10^5 Pa"
+    },
+    {
+     "text": "0.5 x 10^5 Pa"
+    }
+   ],
+   "explanation": "At fixed volume and fixed amount of gas, p is proportional to the kelvin temperature T. Doubling T from 300 K to 600 K doubles the pressure: 2.0 x 10^5 Pa. Faster average molecular collisions hit the walls harder and more often.",
+   "id": "q2",
+   "kind": "multiple-choice",
+   "prompt": "A sealed rigid container of gas sits at 300 K with pressure 1.0 x 10^5 Pa. It is heated to 600 K. What is the new pressure?"
+  },
+  {
+   "answer": "Atoms at the hot end vibrate with larger amplitude and collide with their neighbours, passing kinetic energy along atom by atom through the lattice; in a metal, free electrons also carry energy rapidly through the rod. No atoms travel the length of the rod - the energy is relayed, and the far end warms as its atoms gain kinetic energy.",
+   "explanation": "This is conduction: energy transfer by particle collisions (and, in metals, by free electrons) without any bulk movement of the material. The key phrases are vibrate, collide with neighbours, and pass the energy on.",
+   "id": "q3",
+   "kind": "short-answer",
+   "prompt": "One end of a metal rod is held in a flame. A minute later the far end feels warm. Explain, at the particle level, how the energy got there."
+  },
+  {
+   "answer": "p = nRT / V = (0.50 x 8.31 x 300) / 0.012 = 1246.5 / 0.012 = 1.04 x 10^5 Pa (to 3 significant figures).",
+   "explanation": "Use the ideal-gas law pV = nRT with the temperature in kelvin. Multiply n, R and T first (1246.5), then divide by the volume in cubic metres. The common slip is leaving the volume in litres or the temperature in degrees Celsius.",
+   "id": "q4",
+   "kind": "short-answer",
+   "prompt": "An ideal gas of 0.50 mol is held in a container of volume 0.012 m^3 at 300 K. Calculate its pressure. (R = 8.31 J mol^-1 K^-1)"
+  }
+ ],
+ "subject": "science",
+ "title": "JC H2 physics — thermal: kinetic theory, gas laws and temperature",
+ "topic": "h2-thermal",
+ "variant": "homework"
+}
