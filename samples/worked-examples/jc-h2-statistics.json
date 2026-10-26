@@ -1,0 +1,53 @@
+{
+  "complete": {
+    "problem": "Trace statistics from the sampling distribution of the mean shrinking by root n to the p-against-alpha verdict, the p-value trap that verdict hides, and the Type I and Type II errors that bound every test.",
+    "selfExplanation": "Explain how the spread of the sample mean shrinks by root n, how the p-value is compared with alpha to reach a verdict, why the p-value is not the probability that H0 is true, and how the two error types differ.",
+    "steps": [
+      {
+        "annotation": "The sampling distribution of the sample mean is centred on the true mean with standard deviation sigma / root n: as n grows the means cluster tighter, by root n, not by n.",
+        "text": "Step 1 (s1): The sampling distribution of the mean shrinks as n grows. Take the mean of a sample and repeat many times: the sample means cluster around the true mean. Watch the five dots scatter widely when n = 2, then pull in tight when n = 25 - the spread of the means shrinks by root n, so the n = 25 curve stands taller and narrower. Make the root-n shrink your reflex for every sampling question in this topic."
+      },
+      {
+        "annotation": "A hypothesis test states H0 and H1, then rejects H0 exactly when the p-value - the probability, computed assuming H0 is true, of data at least as extreme as the data observed - falls below the significance level alpha.",
+        "text": "Step 2 (s2): Hypothesis testing: the p-value decides against α. State the null and the alternative first, then ask how surprising the data would be if the null were true. Watch the tail beyond the observed statistic: its area is the p-value. At p = 0.31 the null stands, but as the statistic slides out and p drops below alpha = 0.05, the verdict flips to reject. Check your student notes for the p-against-alpha picture before we meet the trap."
+      },
+      {
+        "annotation": "The trap: the p-value is not the probability that H0 is true; a p-value of 0.03 only says that, if H0 were true, 3% of experiments would give data this extreme.",
+        "text": "Step 3 (s3): The p-value trap: it is not P(H₀ is true). A p-value of 0.03 does not mean the null has a 3% chance of being true. Repeat the test 100 times while the null is true: about 3 of those repeats give data this extreme, and that count of repeats is all the 3% ever meant. Now open the worksheet and try the p-value question in pairs, watching your own wording as you explain it."
+      },
+      {
+        "annotation": "A Type I error rejects a true null - the false alarm, its probability capped by alpha; a Type II error accepts a false null - the missed signal, with probability beta, fought with power 1 - beta.",
+        "text": "Step 4 (s4): Type I and Type II errors: the two ways to be wrong. Lay out the table: reality across the top, our decision down the side. Rejecting a true null is the Type I false alarm, capped by alpha; accepting a false null is the Type II missed signal, fought with power = 1 - beta and bigger samples. Compare the error table in your student notes one last time. Now the exit ticket - on your own, no talking - covering the sampling distribution, the p-against-alpha verdict, the p-value trap and the two error types."
+      }
+    ]
+  },
+  "faded": {
+    "problem": "A population has mean 60 and standard deviation 10. Samples of size n = 25 are taken. What is the standard deviation of the sampling distribution of the sample mean?",
+    "selfExplanation": "The first step is shown. Say how root n shrinks the spread, then compute 10 / root 25 and read off what the tighter cluster of means means.",
+    "steps": [
+      {
+        "annotation": "The sampling distribution of the sample mean keeps the population mean 60; only its spread changes.",
+        "text": "Step 1: the sampling distribution of the sample mean is centred on the population mean 60, with a spread shrunk by root n.",
+        "withheld": false
+      },
+      {
+        "annotation": "Divide sigma by root n, never by n itself: the shrink is by root n.",
+        "text": "Step 2: root 25 = 5, so the standard deviation of the sample mean is 10 / root 25 = 10 / 5 = 2.",
+        "withheld": true
+      },
+      {
+        "annotation": "A standard deviation of 2 around 60 means repeated sample means land close to 60, far steadier than single observations spread by 10.",
+        "text": "Step 3: read the landing: sample means typically land within a few units of 60.",
+        "withheld": true
+      }
+    ]
+  },
+  "level": "jc",
+  "paired": {
+    "problem": "A population has standard deviation 10. Find the standard deviation of the sample mean for samples of size n = 100, and state the rule you used.",
+    "solution": "1. The standard deviation of the sample mean is sigma / root n = 10 / root 100 = 10 / 10 = 1."
+  },
+  "subject": "math",
+  "title": "JC H2 statistics: sampling distributions, hypothesis testing, error types",
+  "topic": "h2-statistics"
+}

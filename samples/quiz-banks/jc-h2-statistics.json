@@ -1,0 +1,50 @@
+{
+  "items": [
+    {
+      "answer": "The p-value is about the data given the null: if the null were true, 3% of experiments would give data this extreme",
+      "choices": [
+        "Nothing - a p-value of 0.03 really is the probability that the null hypothesis is true",
+        "The student is right about the direction but wrong about the size of the effect",
+        "The p-value is about the data given the null: if the null were true, 3% of experiments would give data this extreme",
+        "A p-value of 0.03 means the alternative hypothesis has a 97% chance of being true"
+      ],
+      "misconceptionCode": "A p-value of 0.03 means there is a 3% chance the null hypothesis is true.",
+      "prompt": "A student runs a hypothesis test, gets a p-value of 0.03, and says this means there is a 3% chance the null hypothesis is true. What is wrong with that claim?"
+    },
+    {
+      "answer": "2, from 10 / root 25",
+      "choices": [
+        "10, the same as the population standard deviation",
+        "2, from 10 / root 25",
+        "0.4, from 10 / 25",
+        "50, from 10 x root 25"
+      ],
+      "prompt": "A population has mean 60 and standard deviation 10. Samples of size n = 25 are taken. What is the standard deviation of the sampling distribution of the sample mean?"
+    },
+    {
+      "answer": "Do not reject the null hypothesis. The p-value 0.31 is greater than alpha = 0.05, so the data is not surprising enough under the null to reject it.",
+      "prompt": "A hypothesis test at the 5% significance level returns a p-value of 0.31. State the test verdict and give the reason."
+    },
+    {
+      "answer": "A Type I error rejects a true null: declaring the machine miscalibrated when it is actually fine. A Type II error accepts a false null: passing the machine when it is actually miscalibrated. Alpha caps the probability of a Type I error.",
+      "prompt": "In a quality test, the null hypothesis says a machine is calibrated. Describe a Type I error and a Type II error in this context, and state which error's probability is capped by the significance level alpha."
+    },
+    {
+      "answer": "Reject the null, because 0.012 is smaller than alpha = 0.05",
+      "choices": [
+        "Accept the null, because 0.012 is a small number",
+        "Reject the null, because 0.012 is smaller than alpha = 0.05",
+        "No verdict is possible without knowing the sample size"
+      ],
+      "prompt": "A test at the 5% level returns a p-value of 0.012. What is the correct verdict?"
+    },
+    {
+      "answer": "1. The standard deviation of the sample mean is sigma / root n = 10 / root 100 = 10 / 10 = 1.",
+      "prompt": "A population has standard deviation 10. Find the standard deviation of the sample mean for samples of size n = 100, and state the rule you used."
+    }
+  ],
+  "level": "jc",
+  "subject": "math",
+  "title": "JC H2 statistics: sampling distributions, hypothesis testing, error types",
+  "topic": "h2-statistics"
+}
