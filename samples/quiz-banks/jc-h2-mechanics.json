@@ -1,0 +1,50 @@
+{
+  "items": [
+    {
+      "answer": "No outward fling exists: the body wants to keep going straight while the seat pushes it inward - the inward push is the real force",
+      "choices": [
+        "Nothing - a centrifugal force really does fling passengers outward in a turn",
+        "The outward force exists but it is smaller than the inward force",
+        "No outward fling exists: the body wants to keep going straight while the seat pushes it inward - the inward push is the real force",
+        "The passenger is flung outward by gravity"
+      ],
+      "misconceptionCode": "A centrifugal force flings you outward in a sharp turn.",
+      "prompt": "A passenger in a car that turns sharply says a centrifugal force flings them outward against the door. What is wrong with that claim?"
+    },
+    {
+      "answer": "15 N, from F = mv^2/r = 0.50 x 36 / 1.2",
+      "choices": [
+        "2.5 N, from mv/r",
+        "15 N, from F = mv^2/r = 0.50 x 36 / 1.2",
+        "3.0 N, from mr/v",
+        "36 N, from mv^2"
+      ],
+      "prompt": "A 0.50 kg ball moves in a circle of radius 1.2 m at 6.0 m/s. What is the centripetal force on the ball?"
+    },
+    {
+      "answer": "The force quadruples (factor of 4). F = mv^2/r, so doubling v multiplies v^2 by 4 while m and r stay fixed.",
+      "prompt": "A satellite in a circular orbit doubles its speed while staying at the same orbital radius. By what factor does the required centripetal force change? Explain using F = mv^2/r."
+    },
+    {
+      "answer": "The orbit must be above the equator and travel in the same direction as the Earth's rotation (west to east). With period 24 hours and the same angular speed as the Earth, the satellite stays over the same point on the equator and appears fixed.",
+      "prompt": "State the two conditions, besides a period of 24 hours, that an orbit must satisfy to be geostationary, and explain why the satellite appears fixed in the sky."
+    },
+    {
+      "answer": "24 hours, matching the Earth's rotation",
+      "choices": [
+        "90 minutes, like the space station",
+        "24 hours, matching the Earth's rotation",
+        "28 days, like the Moon"
+      ],
+      "prompt": "What is the period of a geostationary orbit?"
+    },
+    {
+      "answer": "F = mv^2/r = 1200 x 225 / 50 = 5400 N, directed toward the centre of the bend (supplied by friction).",
+      "prompt": "A car of mass 1200 kg rounds a bend of radius 50 m at 15 m/s. Calculate the centripetal force needed and state its direction."
+    }
+  ],
+  "level": "jc",
+  "subject": "science",
+  "title": "JC H2 physics — mechanics: circular motion and gravitation",
+  "topic": "h2-mechanics"
+}
