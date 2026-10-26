@@ -1,0 +1,44 @@
+{
+ "level": "jc",
+ "questions": [
+  {
+   "choices": [
+    {
+     "text": "20 Wb, from A/B"
+    },
+    {
+     "correct": true,
+     "text": "0.0080 Wb, from Φ = BA = 0.40 x 0.020"
+    },
+    {
+     "text": "0.40 Wb, the field itself"
+    },
+    {
+     "text": "0 Wb, because the coil is not moving"
+    }
+   ],
+   "explanation": "Flux is Φ = BA when the field is at right angles to the coil: 0.40 x 0.020 = 0.0080 Wb. A steady flux like this induces no emf on its own - only a change in it does.",
+   "id": "q2",
+   "kind": "multiple-choice",
+   "prompt": "A coil of area 0.020 m^2 sits at right angles to a uniform magnetic field of 0.40 T. What is the magnetic flux through the coil?"
+  },
+  {
+   "answer": "emf = -N ΔΦ/Δt = 200 x 0.020 / 0.50 = 8.0 V (magnitude 8.0 V).",
+   "explanation": "ΔΦ = 0.030 - 0.010 = 0.020 Wb, so emf = 200 x 0.020 / 0.50 = 8.0 V. The minus sign in Faraday's law gives the direction: the induced emf opposes the change that made it (Lenz's law).",
+   "id": "q3",
+   "kind": "short-answer",
+   "prompt": "The flux through a 200-turn coil falls from 0.030 Wb to 0.010 Wb in 0.50 s. Calculate the induced emf, showing your working with Faraday's law."
+  },
+  {
+   "answer": "The emf follows the rate of change of flux, not the flux itself. As the coil turns edge-on the flux passes through zero but is changing fastest there, so the emf peaks; half a turn later the flux changes the other way, so the emf reverses and alternates with the spin.",
+   "explanation": "emf = -N dΦ/dt: the gauge in the animation swings hardest exactly when the flux curve is steepest, which is as the coil passes edge-on, and the sign flips every half turn.",
+   "id": "q4",
+   "kind": "short-answer",
+   "prompt": "In the generator scene the coil spins steadily in a magnetic field. Explain why the induced emf is greatest when the flux through the coil is passing through zero, and why the emf alternates."
+  }
+ ],
+ "subject": "science",
+ "title": "JC H2 physics — electromagnetism: fields, flux and induction",
+ "topic": "h2-em",
+ "variant": "homework"
+}

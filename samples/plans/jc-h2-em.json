@@ -1,0 +1,97 @@
+{
+ "activities": [
+  {
+   "grouping": "whole class",
+   "minutes": 6,
+   "objectiveIds": [
+    "o1"
+   ],
+   "scriptCue": "s1",
+   "title": "Electric field lines run from + to -"
+  },
+  {
+   "grouping": "individual",
+   "minutes": 7,
+   "objectiveIds": [
+    "o1"
+   ],
+   "scriptCue": "s2",
+   "title": "A bar magnet's field loops from N to S"
+  },
+  {
+   "grouping": "pairs",
+   "minutes": 7,
+   "objectiveIds": [
+    "o2"
+   ],
+   "scriptCue": "s3",
+   "title": "Moving the magnet changes the flux"
+  },
+  {
+   "grouping": "whole class",
+   "minutes": 6,
+   "objectiveIds": [
+    "o3"
+   ],
+   "scriptCue": "s4",
+   "title": "A generator spins the coil in the field"
+  },
+  {
+   "grouping": "individual",
+   "minutes": 14,
+   "objectiveIds": [
+    "o1",
+    "o2",
+    "o3"
+   ],
+   "resources": [
+    "worksheet"
+   ],
+   "scriptCue": "s5",
+   "title": "Assemble the toolkit"
+  }
+ ],
+ "durationMinutes": 40,
+ "level": "jc",
+ "objectives": [
+  {
+   "assessmentPoints": [
+    "Field line answers in the electric field lines activity",
+    "Toolkit recap answers"
+   ],
+   "id": "o1",
+   "successCriteria": [
+    "Electric field lines run from positive charges to negative charges; magnetic field lines outside a bar magnet run from the north pole round to the south pole.",
+    "The field is uniform: E has the same size and direction everywhere between the plates"
+   ],
+   "text": "Describe electric and magnetic fields from their field lines: E from + to -, B looping from N to S"
+  },
+  {
+   "assessmentPoints": [
+    "Flux and emf answers in the moving magnet activity",
+    "Toolkit recap answers"
+   ],
+   "id": "o2",
+   "successCriteria": [
+    "emf = -N ΔΦ/Δt = 200 x 0.020 / 0.50 = 8.0 V (magnitude 8.0 V).",
+    "emf = N ΔΦ/Δt = 50 x 0.012 / 0.30 = 2.0 V."
+   ],
+   "text": "Compute flux with Φ = BA and induced emf with Faraday's law, emf = -N ΔΦ/Δt"
+  },
+  {
+   "assessmentPoints": [
+    "Generator answers in the spinning coil activity",
+    "Trap answers in the toolkit activity"
+   ],
+   "id": "o3",
+   "successCriteria": [
+    "The emf follows the rate of change of flux, not the flux itself. As the coil turns edge-on the flux passes through zero but is changing fastest there, so the emf peaks; half a turn later the flux changes the other way, so the emf reverses and alternates with the spin.",
+    "No change in flux, no emf: the magnet sitting still gives zero - only motion makes the meter kick."
+   ],
+   "text": "Explain the generator's alternating emf and avoid the sitting-magnet trap"
+  }
+ ],
+ "subject": "science",
+ "title": "JC H2 physics — electromagnetism: fields, flux and induction",
+ "topic": "h2-em"
+}

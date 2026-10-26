@@ -1,0 +1,44 @@
+{
+ "commonErrors": [
+  {
+   "example": "A learner writes on the worksheet that an emf keeps flowing the whole time the magnet sits inside the coil.",
+   "fixIt": {
+    "corrected": "No change in flux, no emf: the magnet sitting still gives zero - only motion makes the meter kick.",
+    "prompt": "Fix it: state what the meter shows while the magnet sits perfectly still inside the coil, and why."
+   },
+   "misconception": "An emf flows as long as the magnet sits inside the coil."
+  },
+  {
+   "example": "On the exit ticket, a learner picks the statement that a steady voltage appears because the coil is full of flux.",
+   "fixIt": {
+    "corrected": "Zero: the flux is not changing, so no emf is induced",
+    "prompt": "Fix it: explain in one sentence why a coil full of steady flux has no induced emf."
+   },
+   "misconception": "An emf flows as long as the magnet sits inside the coil."
+  }
+ ],
+ "level": "jc",
+ "modelAnswers": [
+  {
+   "answer": "emf = -N ΔΦ/Δt = 200 x 0.020 / 0.50 = 8.0 V (magnitude 8.0 V).",
+   "creditPoints": [],
+   "question": "The flux through a 200-turn coil falls from 0.030 Wb to 0.010 Wb in 0.50 s. Calculate the induced emf, showing your working with Faraday's law."
+  },
+  {
+   "answer": "emf = N ΔΦ/Δt = 50 x 0.012 / 0.30 = 2.0 V.",
+   "creditPoints": [],
+   "question": "A 50-turn coil has the flux through it increase by 0.012 Wb in 0.30 s. Calculate the induced emf."
+  }
+ ],
+ "nextSteps": [
+  "Reteach the sitting-magnet trap from the paired notes trap before any further electromagnetism work: only a change in flux induces an emf.",
+  "Practise showing the flux change step explicitly whenever Faraday's law is used in a calculation."
+ ],
+ "strengths": [
+  "Most of the class can compute the flux through a coil, such as 0.0080 Wb, from Phi = BA = 0.40 x 0.020 on the worksheet.",
+  "The class can state that electric field lines run from positive to negative and magnetic lines loop from N to S on the exit ticket."
+ ],
+ "subject": "science",
+ "title": "JC H2 physics — electromagnetism: fields, flux and induction",
+ "topic": "h2-em"
+}
