@@ -1,0 +1,120 @@
+{
+ "level": "jc",
+ "sets": [
+  {
+   "cloze": [
+    {
+     "answers": [
+      "Function",
+      "Stretch"
+     ],
+     "text": "A ___ assigns exactly one output to each input, and a ___ scales distances from an axis by a fixed factor."
+    },
+    {
+     "answers": [
+      "Translation",
+      "Asymptote"
+     ],
+     "text": "A ___ shifts the whole graph without changing its shape, while an ___ is a line a curve approaches but never touches."
+    }
+   ],
+   "frames": [
+    "A ___ assigns exactly one output to each input.",
+    "A ___ scales distances from an axis by a fixed factor.",
+    "A ___ shifts the whole graph without changing its shape."
+   ],
+   "level": "full",
+   "starters": [
+    "A function is...",
+    "A stretch scales...",
+    "A translation shifts..."
+   ],
+   "wordBank": [
+    {
+     "gloss": "a rule assigning exactly one output to each input",
+     "term": "Function"
+    },
+    {
+     "gloss": "a change to an equation that moves or resizes its graph predictably",
+     "term": "Transformation"
+    },
+    {
+     "gloss": "a scaling of distances from an axis by a fixed factor",
+     "term": "Stretch"
+    },
+    {
+     "gloss": "a shift of the whole graph without changing its shape",
+     "term": "Translation"
+    },
+    {
+     "gloss": "one divided by an expression, with separate branches",
+     "term": "Reciprocal function"
+    },
+    {
+     "gloss": "a line a curve approaches ever more closely but never touches",
+     "term": "Asymptote"
+    }
+   ]
+  },
+  {
+   "cloze": [
+    {
+     "answers": [
+      "Function",
+      "Stretch"
+     ],
+     "text": "A ___ assigns exactly one output to each input, and a ___ scales distances from an axis."
+    }
+   ],
+   "frames": [
+    "A ___ assigns exactly one output to each input.",
+    "A ___ scales distances from an axis by a fixed factor."
+   ],
+   "level": "partial",
+   "starters": [
+    "A function is...",
+    "A stretch scales..."
+   ],
+   "wordBank": [
+    {
+     "gloss": "a rule assigning exactly one output to each input",
+     "term": "Function"
+    },
+    {
+     "gloss": "a scaling of distances from an axis by a fixed factor",
+     "term": "Stretch"
+    },
+    {
+     "gloss": "a shift of the whole graph without changing its shape",
+     "term": "Translation"
+    }
+   ]
+  },
+  {
+   "cloze": [
+    {
+     "answers": [
+      "Function"
+     ],
+     "text": "A ___ assigns exactly one output to each input."
+    }
+   ],
+   "frames": [
+    "A ___ assigns exactly one output to each input."
+   ],
+   "level": "minimal",
+   "starters": [
+    "A function is..."
+   ],
+   "wordBank": [
+    {
+     "gloss": "a rule assigning exactly one output to each input",
+     "term": "Function"
+    }
+   ]
+  }
+ ],
+ "subject": "math",
+ "title": "JC H2 functions and graphs: transformations, reciprocal functions, asymptote behaviour",
+ "topic": "h2-functions-graphs"
+}
