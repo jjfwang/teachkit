@@ -1,0 +1,193 @@
+{
+  "doNow": [
+    {
+      "choices": [
+        {
+          "misconception": "After five heads in a row, tails is due.",
+          "rationale": {
+            "chose": "The learner selected option 1.0, the middle value weighted equally as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: After five heads in a row, tails is due.. The slip: A long run feels like it must balance out.. The fix: The coin never remembers: after five heads the next toss is still 1/2..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "1.0, the middle value weighted equally"
+        },
+        {
+          "correct": true,
+          "text": "1.1, from 0(0.2) + 1(0.5) + 2(0.3)"
+        },
+        {
+          "misconception": "After five heads in a row, tails is due.",
+          "rationale": {
+            "chose": "The learner selected option 0.5, the largest probability as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: After five heads in a row, tails is due.. The slip: A long run feels like it must balance out.. The fix: The coin never remembers: after five heads the next toss is still 1/2..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "0.5, the largest probability"
+        },
+        {
+          "misconception": "After five heads in a row, tails is due.",
+          "rationale": {
+            "chose": "The learner selected option 2, the largest value X can take as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: After five heads in a row, tails is due.. The slip: A long run feels like it must balance out.. The fix: The coin never remembers: after five heads the next toss is still 1/2..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "2, the largest value X can take"
+        }
+      ],
+      "id": "dn1",
+      "kind": "multiple-choice",
+      "prompt": "A discrete random variable X takes values 0, 1, 2 with probabilities 0.2, 0.5, 0.3. What is E(X)?"
+    },
+    {
+      "choices": [
+        {
+          "misconception": "After five heads in a row, tails is due.",
+          "rationale": {
+            "chose": "The learner selected option 0.2 as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: After five heads in a row, tails is due.. The slip: A long run feels like it must balance out.. The fix: The coin never remembers: after five heads the next toss is still 1/2..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "0.2"
+        },
+        {
+          "misconception": "After five heads in a row, tails is due.",
+          "rationale": {
+            "chose": "The learner selected option 0.5 as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: After five heads in a row, tails is due.. The slip: A long run feels like it must balance out.. The fix: The coin never remembers: after five heads the next toss is still 1/2..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "0.5"
+        },
+        {
+          "correct": true,
+          "text": "0.3"
+        },
+        {
+          "misconception": "After five heads in a row, tails is due.",
+          "rationale": {
+            "chose": "The learner selected option 0.7 as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: After five heads in a row, tails is due.. The slip: A long run feels like it must balance out.. The fix: The coin never remembers: after five heads the next toss is still 1/2..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "0.7"
+        }
+      ],
+      "id": "dn2",
+      "kind": "multiple-choice",
+      "prompt": "A probability table for X lists P(X = 0) = 0.2 and P(X = 1) = 0.5, with X = 2 the only other outcome. What is P(X = 2)?"
+    },
+    {
+      "choices": [
+        {
+          "misconception": "After five heads in a row, tails is due.",
+          "rationale": {
+            "chose": "The learner selected option About 68%, because 40 to 60 is one standard deviation each side as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: After five heads in a row, tails is due.. The slip: A long run feels like it must balance out.. The fix: The coin never remembers: after five heads the next toss is still 1/2..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "About 68%, because 40 to 60 is one standard deviation each side"
+        },
+        {
+          "misconception": "After five heads in a row, tails is due.",
+          "rationale": {
+            "chose": "The learner selected option About 99.7%, because the interval looks wide as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: After five heads in a row, tails is due.. The slip: A long run feels like it must balance out.. The fix: The coin never remembers: after five heads the next toss is still 1/2..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "About 99.7%, because the interval looks wide"
+        },
+        {
+          "correct": true,
+          "text": "About 95%, because 40 and 60 are two standard deviations from the mean"
+        },
+        {
+          "misconception": "After five heads in a row, tails is due.",
+          "rationale": {
+            "chose": "The learner selected option About 50%, because half the curve lies above the mean as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: After five heads in a row, tails is due.. The slip: A long run feels like it must balance out.. The fix: The coin never remembers: after five heads the next toss is still 1/2..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "About 50%, because half the curve lies above the mean"
+        }
+      ],
+      "id": "dn3",
+      "kind": "multiple-choice",
+      "prompt": "A normal distribution has mean 50 and standard deviation 5. Using the 68-95-99.7 rule, about what proportion of values lie between 40 and 60?"
+    }
+  ],
+  "hingeQuestions": [
+    {
+      "choices": [
+        {
+          "misconception": "After five heads in a row, tails is due.",
+          "rationale": {
+            "chose": "The learner selected option Nothing - after five heads, tails really is more likely than heads as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: After five heads in a row, tails is due.. The slip: A long run feels like it must balance out.. The fix: The coin never remembers: after five heads the next toss is still 1/2..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "Nothing - after five heads, tails really is more likely than heads"
+        },
+        {
+          "misconception": "After five heads in a row, tails is due.",
+          "rationale": {
+            "chose": "The learner selected option The student is right about the direction but wrong about the size of the effect as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: After five heads in a row, tails is due.. The slip: A long run feels like it must balance out.. The fix: The coin never remembers: after five heads the next toss is still 1/2..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "The student is right about the direction but wrong about the size of the effect"
+        },
+        {
+          "correct": true,
+          "text": "Tosses are independent: the coin never remembers, so the next toss is still 1/2 tails"
+        },
+        {
+          "misconception": "After five heads in a row, tails is due.",
+          "rationale": {
+            "chose": "The learner selected option Heads is now more likely, because the coin is on a hot streak as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: After five heads in a row, tails is due.. The slip: A long run feels like it must balance out.. The fix: The coin never remembers: after five heads the next toss is still 1/2..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "Heads is now more likely, because the coin is on a hot streak"
+        }
+      ],
+      "id": "h1",
+      "kind": "multiple-choice",
+      "prompt": "A student tosses a fair coin, gets five heads in a row, and says the next toss is more likely to be tails because tails is due. What is wrong with that claim?",
+      "scriptCue": "s5"
+    },
+    {
+      "choices": [
+        {
+          "misconception": "After five heads in a row, tails is due.",
+          "rationale": {
+            "chose": "The learner selected option More than 1/2, because tails is due after the run of heads as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: After five heads in a row, tails is due.. The slip: A long run feels like it must balance out.. The fix: The coin never remembers: after five heads the next toss is still 1/2..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "More than 1/2, because tails is due after the run of heads"
+        },
+        {
+          "correct": true,
+          "text": "Exactly 1/2, because the tosses are independent"
+        },
+        {
+          "misconception": "After five heads in a row, tails is due.",
+          "rationale": {
+            "chose": "The learner selected option Less than 1/2, because heads is on a streak as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: After five heads in a row, tails is due.. The slip: A long run feels like it must balance out.. The fix: The coin never remembers: after five heads the next toss is still 1/2..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "Less than 1/2, because heads is on a streak"
+        }
+      ],
+      "id": "h2",
+      "kind": "multiple-choice",
+      "prompt": "A fair coin has landed heads five times in a row. What is the probability of tails on the next toss?",
+      "scriptCue": "s5"
+    }
+  ],
+  "level": "jc",
+  "subject": "math",
+  "title": "JC H2 probability: distributions, binomial, normal, independence",
+  "topic": "h2-probability"
+}
