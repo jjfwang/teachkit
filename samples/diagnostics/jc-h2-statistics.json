@@ -1,0 +1,202 @@
+{
+  "doNow": [
+    {
+      "choices": [
+        {
+          "misconception": "A p-value of 0.03 means there is a 3% chance the null hypothesis is true.",
+          "rationale": {
+            "chose": "The learner selected option 10, the same as the population standard deviation as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: A p-value of 0.03 means there is a 3% chance the null hypothesis is true.. The slip: The p-value is read as a probability about the hypothesis itself.. The fix: The p-value is about the data given the null: if H0 were true, 3% of experiments would give data this extreme..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "10, the same as the population standard deviation"
+        },
+        {
+          "correct": true,
+          "text": "2, from 10 / root 25"
+        },
+        {
+          "misconception": "A p-value of 0.03 means there is a 3% chance the null hypothesis is true.",
+          "rationale": {
+            "chose": "The learner selected option 0.4, from 10 / 25 as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: A p-value of 0.03 means there is a 3% chance the null hypothesis is true.. The slip: The p-value is read as a probability about the hypothesis itself.. The fix: The p-value is about the data given the null: if H0 were true, 3% of experiments would give data this extreme..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "0.4, from 10 / 25"
+        },
+        {
+          "misconception": "A p-value of 0.03 means there is a 3% chance the null hypothesis is true.",
+          "rationale": {
+            "chose": "The learner selected option 50, from 10 x root 25 as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: A p-value of 0.03 means there is a 3% chance the null hypothesis is true.. The slip: The p-value is read as a probability about the hypothesis itself.. The fix: The p-value is about the data given the null: if H0 were true, 3% of experiments would give data this extreme..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "50, from 10 x root 25"
+        }
+      ],
+      "id": "dn1",
+      "kind": "multiple-choice",
+      "prompt": "A population has mean 60 and standard deviation 10. Samples of size n = 25 are taken. What is the standard deviation of the sampling distribution of the sample mean?"
+    },
+    {
+      "choices": [
+        {
+          "misconception": "A p-value of 0.03 means there is a 3% chance the null hypothesis is true.",
+          "rationale": {
+            "chose": "The learner selected option Nothing - a p-value of 0.03 really is the probability that the null hypothesis is true as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: A p-value of 0.03 means there is a 3% chance the null hypothesis is true.. The slip: The p-value is read as a probability about the hypothesis itself.. The fix: The p-value is about the data given the null: if H0 were true, 3% of experiments would give data this extreme..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "Nothing - a p-value of 0.03 really is the probability that the null hypothesis is true"
+        },
+        {
+          "misconception": "A p-value of 0.03 means there is a 3% chance the null hypothesis is true.",
+          "rationale": {
+            "chose": "The learner selected option The student is right about the direction but wrong about the size of the effect as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: A p-value of 0.03 means there is a 3% chance the null hypothesis is true.. The slip: The p-value is read as a probability about the hypothesis itself.. The fix: The p-value is about the data given the null: if H0 were true, 3% of experiments would give data this extreme..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "The student is right about the direction but wrong about the size of the effect"
+        },
+        {
+          "correct": true,
+          "text": "The p-value is about the data given the null: if the null were true, 3% of experiments would give data this extreme"
+        },
+        {
+          "misconception": "A p-value of 0.03 means there is a 3% chance the null hypothesis is true.",
+          "rationale": {
+            "chose": "The learner selected option A p-value of 0.03 means the alternative hypothesis has a 97% chance of being true as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: A p-value of 0.03 means there is a 3% chance the null hypothesis is true.. The slip: The p-value is read as a probability about the hypothesis itself.. The fix: The p-value is about the data given the null: if H0 were true, 3% of experiments would give data this extreme..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "A p-value of 0.03 means the alternative hypothesis has a 97% chance of being true"
+        }
+      ],
+      "id": "dn2",
+      "kind": "multiple-choice",
+      "prompt": "A student runs a hypothesis test, gets a p-value of 0.03, and says this means there is a 3% chance the null hypothesis is true. What is wrong with that claim?"
+    },
+    {
+      "choices": [
+        {
+          "misconception": "A p-value of 0.03 means there is a 3% chance the null hypothesis is true.",
+          "rationale": {
+            "chose": "The learner selected option It halves again from an already halved value, a factor of 4 overall from n = 9 as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: A p-value of 0.03 means there is a 3% chance the null hypothesis is true.. The slip: The p-value is read as a probability about the hypothesis itself.. The fix: The p-value is about the data given the null: if H0 were true, 3% of experiments would give data this extreme..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "It halves again from an already halved value, a factor of 4 overall from n = 9"
+        },
+        {
+          "misconception": "A p-value of 0.03 means there is a 3% chance the null hypothesis is true.",
+          "rationale": {
+            "chose": "The learner selected option It does not change, because the population standard deviation stays 12 as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: A p-value of 0.03 means there is a 3% chance the null hypothesis is true.. The slip: The p-value is read as a probability about the hypothesis itself.. The fix: The p-value is about the data given the null: if H0 were true, 3% of experiments would give data this extreme..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "It does not change, because the population standard deviation stays 12"
+        },
+        {
+          "correct": true,
+          "text": "It halves: from 12 / root 9 = 4 to 12 / root 36 = 2"
+        },
+        {
+          "misconception": "A p-value of 0.03 means there is a 3% chance the null hypothesis is true.",
+          "rationale": {
+            "chose": "The learner selected option It doubles, because bigger samples vary more as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: A p-value of 0.03 means there is a 3% chance the null hypothesis is true.. The slip: The p-value is read as a probability about the hypothesis itself.. The fix: The p-value is about the data given the null: if H0 were true, 3% of experiments would give data this extreme..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "It doubles, because bigger samples vary more"
+        }
+      ],
+      "id": "dn3",
+      "kind": "multiple-choice",
+      "prompt": "A population has standard deviation 12. By what factor does the standard deviation of the sample mean shrink when the sample size grows from n = 9 to n = 36?"
+    }
+  ],
+  "hingeQuestions": [
+    {
+      "choices": [
+        {
+          "misconception": "A p-value of 0.03 means there is a 3% chance the null hypothesis is true.",
+          "rationale": {
+            "chose": "The learner selected option A Type II error - a missed signal; its probability is capped by beta as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: A p-value of 0.03 means there is a 3% chance the null hypothesis is true.. The slip: The p-value is read as a probability about the hypothesis itself.. The fix: The p-value is about the data given the null: if H0 were true, 3% of experiments would give data this extreme..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "A Type II error - a missed signal; its probability is capped by beta"
+        },
+        {
+          "correct": true,
+          "text": "A Type I error - a false alarm; its probability is capped by the significance level alpha"
+        },
+        {
+          "misconception": "A p-value of 0.03 means there is a 3% chance the null hypothesis is true.",
+          "rationale": {
+            "chose": "The learner selected option A Type I error - a false alarm; its probability is capped by the power 1 - beta as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: A p-value of 0.03 means there is a 3% chance the null hypothesis is true.. The slip: The p-value is read as a probability about the hypothesis itself.. The fix: The p-value is about the data given the null: if H0 were true, 3% of experiments would give data this extreme..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "A Type I error - a false alarm; its probability is capped by the power 1 - beta"
+        },
+        {
+          "misconception": "A p-value of 0.03 means there is a 3% chance the null hypothesis is true.",
+          "rationale": {
+            "chose": "The learner selected option A Type II error - a missed signal; its probability is capped by alpha as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: A p-value of 0.03 means there is a 3% chance the null hypothesis is true.. The slip: The p-value is read as a probability about the hypothesis itself.. The fix: The p-value is about the data given the null: if H0 were true, 3% of experiments would give data this extreme..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "A Type II error - a missed signal; its probability is capped by alpha"
+        }
+      ],
+      "id": "h1",
+      "kind": "multiple-choice",
+      "prompt": "A fire-alarm test wrongly rejects a true null hypothesis and triggers an evacuation when there is no fire. Name this type of error, and state the quantity that caps its probability.",
+      "scriptCue": "s4"
+    },
+    {
+      "choices": [
+        {
+          "misconception": "A p-value of 0.03 means there is a 3% chance the null hypothesis is true.",
+          "rationale": {
+            "chose": "The learner selected option Accept the null, because 0.012 is a small number as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: A p-value of 0.03 means there is a 3% chance the null hypothesis is true.. The slip: The p-value is read as a probability about the hypothesis itself.. The fix: The p-value is about the data given the null: if H0 were true, 3% of experiments would give data this extreme..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "Accept the null, because 0.012 is a small number"
+        },
+        {
+          "correct": true,
+          "text": "Reject the null, because 0.012 is smaller than alpha = 0.05"
+        },
+        {
+          "misconception": "A p-value of 0.03 means there is a 3% chance the null hypothesis is true.",
+          "rationale": {
+            "chose": "The learner selected option No verdict is possible without knowing the sample size as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: A p-value of 0.03 means there is a 3% chance the null hypothesis is true.. The slip: The p-value is read as a probability about the hypothesis itself.. The fix: The p-value is about the data given the null: if H0 were true, 3% of experiments would give data this extreme..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "No verdict is possible without knowing the sample size"
+        },
+        {
+          "misconception": "A p-value of 0.03 means there is a 3% chance the null hypothesis is true.",
+          "rationale": {
+            "chose": "The learner selected option Accept the null, because the p-value is not exactly zero as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: A p-value of 0.03 means there is a 3% chance the null hypothesis is true.. The slip: The p-value is read as a probability about the hypothesis itself.. The fix: The p-value is about the data given the null: if H0 were true, 3% of experiments would give data this extreme..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "Accept the null, because the p-value is not exactly zero"
+        }
+      ],
+      "id": "h2",
+      "kind": "multiple-choice",
+      "prompt": "A test at the 5% level returns a p-value of 0.012. What is the correct verdict?",
+      "scriptCue": "s4"
+    }
+  ],
+  "level": "jc",
+  "subject": "math",
+  "title": "JC H2 statistics: sampling distributions, hypothesis testing, error types",
+  "topic": "h2-statistics"
+}
