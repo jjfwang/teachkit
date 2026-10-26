@@ -1,0 +1,69 @@
+{
+ "complete": {
+  "problem": "Trace inorganic chemistry from atoms shrinking across period 3, through melting point and structure, the ionisation-energy rise and its two dips, reactivity down group 2 and oxidising power down group 17, and transition-metal colour, complexes and catalysis, to the zinc-is-a-transition-metal trap.",
+  "selfExplanation": "Explain why atomic radius falls across period 3 at nearly constant shielding, why melting point peaks at silicon's giant covalent lattice, why first ionisation energy rises with two dips at aluminium and sulphur, why reactivity climbs down group 2 while oxidising power falls down group 17, how partially filled d-orbitals give colour, complex formation and catalysis, and why zinc is excluded from the transition metals.",
+  "steps": [
+   {
+    "annotation": "Half the distance between the nuclei of two bonded atoms of the element: across period 3 it falls as nuclear charge rises at constant shielding.",
+    "text": "Step 1 (s1): Across period 3, atoms shrink. Across period 3, atoms shrink. Nuclear charge rises from sodium to argon while shielding barely changes, so each atom holds its outer electrons tighter and smaller. Keep your student notes open at the atomic radius definition for this scene."
+   },
+   {
+    "annotation": "Melting point tells the structure story: metallic structures for sodium to aluminium, a giant covalent lattice peaking at silicon, then simple molecular elements with weak intermolecular forces.",
+    "text": "Step 2 (s2): Melting point tells the structure story. Melting point tells the structure story. Metals first, then the silicon peak from its giant covalent lattice, then the simple molecular elements falling away. Compare the bar heights with the structures listed in your student notes."
+   },
+   {
+    "annotation": "The energy needed to remove one mole of electrons from one mole of gaseous atoms to form gaseous 1+ ions: it rises across period 3, with dips at aluminium and sulphur.",
+    "text": "Step 3 (s3): First ionisation energy: the rise, and two dips. First ionisation energy: the rise, and two dips. The rise is charge and radius; the dips are orbitals - 3p removal at aluminium, paired-electron repulsion at sulphur. Now try the ionisation-energy question on the worksheet in pairs."
+   },
+   {
+    "annotation": "Down group 2: reactivity climbs: atoms grow larger with more shielding down the group, the outer electrons are lost more easily, and reactivity with water climbs from magnesium to barium.",
+    "text": "Step 4 (s4): Down group 2: reactivity climbs. Down group 2: reactivity climbs. Bigger atoms, more shielding, outer electrons lost more easily - magnesium barely reacts with cold water, barium reacts vigorously. Check the group 2 explanation against the definitions in your student notes."
+   },
+   {
+    "annotation": "A species that gains electrons and is itself reduced: the halogens are oxidising agents, strongest at the top of group 17 and weakening down the group.",
+    "text": "Step 5 (s5): Down group 17: oxidising power falls. Down group 17: oxidising power falls. Larger atoms hold an incoming electron less strongly, so chlorine displaces bromide and iodide while iodine displaces neither. Work the displacement question on the worksheet now."
+   },
+   {
+    "annotation": "A d-block element that forms at least one stable ion with a partially filled d subshell: the partial filling gives colour, variable oxidation states, complexes and catalysis.",
+    "text": "Step 6 (s6): Colour comes from partially filled d-orbitals. Colour comes from partially filled d-orbitals. Ligands split the d-orbitals, electrons absorb visible light jumping the gap, and the colour you see is what is left over. Note the condition carefully - partially filled - because the exit ticket will test exactly that word."
+   },
+   {
+    "annotation": "A molecule or ion that donates a lone pair of electrons to a central metal ion, forming a coordinate bond in a complex ion.",
+    "text": "Step 7 (s7): Ligands crowd the metal; catalysts flip oxidation states. Ligands crowd the metal; catalysts flip oxidation states. Ligands donate lone pairs to build complex ions, and variable oxidation states let metals like iron catalyse reactions. Finish the complex-ion question on the worksheet, then check your answer against your student notes."
+   },
+   {
+    "annotation": "Zinc(II) has a full 3d subshell: no partially filled d orbitals, so zinc is not a transition metal. - Zn2+ is [Ar] 3d10: with no partially filled d subshell there are no d-d transitions, which is why zinc compounds are colourless and form no coloured complexes - the behaviour in scenes s6 and s7 is exactly what zinc cannot do.",
+    "text": "Step 8 (s8): A common mistake: zinc is a transition metal. A common mistake: zinc is a transition metal. The definition asks about the ion, not the address: a transition metal forms a stable ion with a partially filled d subshell. Finish the worksheet trap question now, then the exit ticket on your own - its first question revisits exactly this scene."
+   }
+  ]
+ },
+ "faded": {
+  "problem": "The first ionisation energy of magnesium is 738 kJ mol-1 and that of aluminium is 578 kJ mol-1. Aluminium has the greater nuclear charge, yet its first ionisation energy is lower. Explain why, showing the difference in your working.",
+  "selfExplanation": "The first step is shown. Say which orbital each outer electron is removed from, then evaluate the difference 738 - 578, and state why the 3p electron is removed more easily despite the greater nuclear charge.",
+  "steps": [
+   {
+    "annotation": "First ionisation energies: Mg 738 kJ mol-1 (outer electrons in the 3s orbital) and Al 578 kJ mol-1 (one electron in the higher-energy 3p orbital).",
+    "text": "Step 1: identify the values: Mg 738 kJ mol-1 with outer electrons in 3s, and Al 578 kJ mol-1 with one electron in the higher-energy 3p orbital.",
+    "withheld": false
+   },
+   {
+    "annotation": "Subtract: 738 - 578 = 160 kJ mol-1 - aluminium's first ionisation energy is lower by exactly this amount.",
+    "text": "Step 2: evaluate the difference: 738 - 578 = 160 kJ mol-1.",
+    "withheld": true
+   },
+   {
+    "annotation": "The 3p electron sits further from the nucleus and is shielded by the filled 3s orbital, so it is removed more easily - the same orbital logic as the paired notes worked example.",
+    "text": "Step 3: read the landing: the 3p electron is further from the nucleus and shielded by the filled 3s orbital, so it is removed more easily.",
+    "withheld": true
+   }
+  ]
+ },
+ "level": "jc",
+ "paired": {
+  "problem": "The first ionisation energy of phosphorus is 1012 kJ mol-1 and that of sulphur is 1000 kJ mol-1. Explain why sulphur's first ionisation energy is slightly lower, and state the difference.",
+  "solution": "The difference is 1012 - 1000 = 12 kJ mol-1. Sulphur has one paired 3p orbital; the repulsion between the paired electrons makes one of them easier to remove than an unpaired 3p electron in phosphorus, even though sulphur has the greater nuclear charge."
+ },
+ "subject": "science",
+ "title": "JC H2 chemistry \u2014 inorganic: periodicity, groups and transition metals",
+ "topic": "h2-inorganic"
+}

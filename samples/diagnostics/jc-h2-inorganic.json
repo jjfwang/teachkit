@@ -1,0 +1,202 @@
+{
+ "doNow": [
+  {
+   "choices": [
+    {
+     "misconception": "Zinc is a transition metal because it sits in the d-block.",
+     "rationale": {
+      "chose": "The learner selected option Aluminium has one more electron shell than magnesium, so the electron is further away as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: Zinc is a transition metal because it sits in the d-block.. The slip: The d-block label reads as the definition of a transition metal.. The fix: Zinc(II) has a full 3d subshell: no partially filled d orbitals, so zinc is not a transition metal..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "Aluminium has one more electron shell than magnesium, so the electron is further away"
+    },
+    {
+     "correct": true,
+     "text": "Aluminium's outer electron is removed from a higher-energy 3p orbital, further from the nucleus and better shielded than magnesium's 3s electron"
+    },
+    {
+     "misconception": "Zinc is a transition metal because it sits in the d-block.",
+     "rationale": {
+      "chose": "The learner selected option Aluminium has a smaller atomic radius, so its electrons repel each other more as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: Zinc is a transition metal because it sits in the d-block.. The slip: The d-block label reads as the definition of a transition metal.. The fix: Zinc(II) has a full 3d subshell: no partially filled d orbitals, so zinc is not a transition metal..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "Aluminium has a smaller atomic radius, so its electrons repel each other more"
+    },
+    {
+     "misconception": "Zinc is a transition metal because it sits in the d-block.",
+     "rationale": {
+      "chose": "The learner selected option The trend reverses after magnesium for all period 3 properties as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: Zinc is a transition metal because it sits in the d-block.. The slip: The d-block label reads as the definition of a transition metal.. The fix: Zinc(II) has a full 3d subshell: no partially filled d orbitals, so zinc is not a transition metal..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "The trend reverses after magnesium for all period 3 properties"
+    }
+   ],
+   "id": "dn1",
+   "kind": "multiple-choice",
+   "prompt": "The first ionisation energy falls from magnesium to aluminium across period 3, even though nuclear charge increases. Why?"
+  },
+  {
+   "choices": [
+    {
+     "misconception": "Zinc is a transition metal because it sits in the d-block.",
+     "rationale": {
+      "chose": "The learner selected option Zinc is a transition metal, because any d-block element is one by definition as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: Zinc is a transition metal because it sits in the d-block.. The slip: The d-block label reads as the definition of a transition metal.. The fix: Zinc(II) has a full 3d subshell: no partially filled d orbitals, so zinc is not a transition metal..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "Zinc is a transition metal, because any d-block element is one by definition"
+    },
+    {
+     "misconception": "Zinc is a transition metal because it sits in the d-block.",
+     "rationale": {
+      "chose": "The learner selected option Zinc is a transition metal, because Zn2+ is coloured in solution as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: Zinc is a transition metal because it sits in the d-block.. The slip: The d-block label reads as the definition of a transition metal.. The fix: Zinc(II) has a full 3d subshell: no partially filled d orbitals, so zinc is not a transition metal..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "Zinc is a transition metal, because Zn2+ is coloured in solution"
+    },
+    {
+     "correct": true,
+     "text": "Zinc is not a transition metal, because Zn2+ has a full 3d subshell with no partially filled d orbitals"
+    },
+    {
+     "misconception": "Zinc is a transition metal because it sits in the d-block.",
+     "rationale": {
+      "chose": "The learner selected option Zinc is not a transition metal, because it only forms compounds, never ions as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: Zinc is a transition metal because it sits in the d-block.. The slip: The d-block label reads as the definition of a transition metal.. The fix: Zinc(II) has a full 3d subshell: no partially filled d orbitals, so zinc is not a transition metal..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "Zinc is not a transition metal, because it only forms compounds, never ions"
+    }
+   ],
+   "id": "dn2",
+   "kind": "multiple-choice",
+   "prompt": "A student is asked whether zinc is a transition metal. Which statement is correct?"
+  },
+  {
+   "choices": [
+    {
+     "misconception": "Zinc is a transition metal because it sits in the d-block.",
+     "rationale": {
+      "chose": "The learner selected option Copper(II) sulfate contains more water molecules in solution than zinc sulfate as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: Zinc is a transition metal because it sits in the d-block.. The slip: The d-block label reads as the definition of a transition metal.. The fix: Zinc(II) has a full 3d subshell: no partially filled d orbitals, so zinc is not a transition metal..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "Copper(II) sulfate contains more water molecules in solution than zinc sulfate"
+    },
+    {
+     "correct": true,
+     "text": "Cu2+ has a partially filled 3d subshell, so electrons absorb visible light in d-d transitions; Zn2+ is 3d10, so no d-d transitions are possible"
+    },
+    {
+     "misconception": "Zinc is a transition metal because it sits in the d-block.",
+     "rationale": {
+      "chose": "The learner selected option Zinc sulfate is colourless because zinc is not a metal as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: Zinc is a transition metal because it sits in the d-block.. The slip: The d-block label reads as the definition of a transition metal.. The fix: Zinc(II) has a full 3d subshell: no partially filled d orbitals, so zinc is not a transition metal..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "Zinc sulfate is colourless because zinc is not a metal"
+    },
+    {
+     "misconception": "Zinc is a transition metal because it sits in the d-block.",
+     "rationale": {
+      "chose": "The learner selected option The blue colour comes from the sulfate ion, which zinc neutralises as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: Zinc is a transition metal because it sits in the d-block.. The slip: The d-block label reads as the definition of a transition metal.. The fix: Zinc(II) has a full 3d subshell: no partially filled d orbitals, so zinc is not a transition metal..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "The blue colour comes from the sulfate ion, which zinc neutralises"
+    }
+   ],
+   "id": "dn3",
+   "kind": "multiple-choice",
+   "prompt": "Aqueous copper(II) sulfate is blue, but aqueous zinc sulfate is colourless. What best explains the difference?"
+  }
+ ],
+ "hingeQuestions": [
+  {
+   "choices": [
+    {
+     "misconception": "Zinc is a transition metal because it sits in the d-block.",
+     "rationale": {
+      "chose": "The learner selected option It requires the element to sit in the d-block of the periodic table as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: Zinc is a transition metal because it sits in the d-block.. The slip: The d-block label reads as the definition of a transition metal.. The fix: Zinc(II) has a full 3d subshell: no partially filled d orbitals, so zinc is not a transition metal..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "It requires the element to sit in the d-block of the periodic table"
+    },
+    {
+     "correct": true,
+     "text": "It requires at least one stable ion with a partially filled d subshell"
+    },
+    {
+     "misconception": "Zinc is a transition metal because it sits in the d-block.",
+     "rationale": {
+      "chose": "The learner selected option It requires the element to form coloured compounds in solution as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: Zinc is a transition metal because it sits in the d-block.. The slip: The d-block label reads as the definition of a transition metal.. The fix: Zinc(II) has a full 3d subshell: no partially filled d orbitals, so zinc is not a transition metal..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "It requires the element to form coloured compounds in solution"
+    },
+    {
+     "misconception": "Zinc is a transition metal because it sits in the d-block.",
+     "rationale": {
+      "chose": "The learner selected option It requires the neutral atom to have a partially filled d subshell, whatever its ions do as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: Zinc is a transition metal because it sits in the d-block.. The slip: The d-block label reads as the definition of a transition metal.. The fix: Zinc(II) has a full 3d subshell: no partially filled d orbitals, so zinc is not a transition metal..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "It requires the neutral atom to have a partially filled d subshell, whatever its ions do"
+    }
+   ],
+   "id": "h1",
+   "kind": "multiple-choice",
+   "prompt": "In one sentence, what does the definition of a transition metal actually require?",
+   "scriptCue": "s8"
+  },
+  {
+   "choices": [
+    {
+     "misconception": "Zinc is a transition metal because it sits in the d-block.",
+     "rationale": {
+      "chose": "The learner selected option Agree - the d-block address settles the question by definition as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: Zinc is a transition metal because it sits in the d-block.. The slip: The d-block label reads as the definition of a transition metal.. The fix: Zinc(II) has a full 3d subshell: no partially filled d orbitals, so zinc is not a transition metal..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "Agree - the d-block address settles the question by definition"
+    },
+    {
+     "correct": true,
+     "text": "Zinc(II) has a full 3d subshell: no partially filled d orbitals, so zinc is not a transition metal."
+    },
+    {
+     "misconception": "Zinc is a transition metal because it sits in the d-block.",
+     "rationale": {
+      "chose": "The learner selected option Tell them zinc is a transition metal, because Zn2+ is coloured in solution as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: Zinc is a transition metal because it sits in the d-block.. The slip: The d-block label reads as the definition of a transition metal.. The fix: Zinc(II) has a full 3d subshell: no partially filled d orbitals, so zinc is not a transition metal..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "Tell them zinc is a transition metal, because Zn2+ is coloured in solution"
+    },
+    {
+     "misconception": "Zinc is a transition metal because it sits in the d-block.",
+     "rationale": {
+      "chose": "The learner selected option Tell them zinc is not a transition metal, because it only forms compounds, never ions as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: Zinc is a transition metal because it sits in the d-block.. The slip: The d-block label reads as the definition of a transition metal.. The fix: Zinc(II) has a full 3d subshell: no partially filled d orbitals, so zinc is not a transition metal..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "Tell them zinc is not a transition metal, because it only forms compounds, never ions"
+    }
+   ],
+   "id": "h2",
+   "kind": "multiple-choice",
+   "prompt": "How would you correct a classmate who insists the d-block address settles the question?",
+   "scriptCue": "s8"
+  }
+ ],
+ "level": "jc",
+ "subject": "science",
+ "title": "JC H2 chemistry \u2014 inorganic: periodicity, groups and transition metals",
+ "topic": "h2-inorganic"
+}
