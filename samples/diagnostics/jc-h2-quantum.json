@@ -1,0 +1,202 @@
+{
+  "doNow": [
+    {
+      "choices": [
+        {
+          "misconception": "Brighter light ejects faster electrons.",
+          "rationale": {
+            "chose": "The learner selected option 8.8 x 10^-49 J, from f / h as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: Brighter light ejects faster electrons.. The slip: Brightness feels like strength, so more light looks like harder hits.. The fix: Brightness means more photons, not stronger ones: a dim violet beam ejects faster electrons than a bright red one..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "8.8 x 10^-49 J, from f / h"
+        },
+        {
+          "correct": true,
+          "text": "4.97 x 10^-19 J, from E = h f = 6.63 x 10^-34 x 7.5 x 10^14"
+        },
+        {
+          "misconception": "Brighter light ejects faster electrons.",
+          "rationale": {
+            "chose": "The learner selected option 7.5 x 10^14 J, the frequency itself as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: Brighter light ejects faster electrons.. The slip: Brightness feels like strength, so more light looks like harder hits.. The fix: Brightness means more photons, not stronger ones: a dim violet beam ejects faster electrons than a bright red one..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "7.5 x 10^14 J, the frequency itself"
+        },
+        {
+          "misconception": "Brighter light ejects faster electrons.",
+          "rationale": {
+            "chose": "The learner selected option 0 J, because a single photon carries no energy as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: Brighter light ejects faster electrons.. The slip: Brightness feels like strength, so more light looks like harder hits.. The fix: Brightness means more photons, not stronger ones: a dim violet beam ejects faster electrons than a bright red one..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "0 J, because a single photon carries no energy"
+        }
+      ],
+      "id": "dn1",
+      "kind": "multiple-choice",
+      "prompt": "What is the energy of one photon of light of frequency 7.5 x 10^14 Hz? (h = 6.63 x 10^-34 J s)"
+    },
+    {
+      "choices": [
+        {
+          "misconception": "Brighter light ejects faster electrons.",
+          "rationale": {
+            "chose": "The learner selected option The electrons fly off faster, because the brighter beam hits harder as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: Brighter light ejects faster electrons.. The slip: Brightness feels like strength, so more light looks like harder hits.. The fix: Brightness means more photons, not stronger ones: a dim violet beam ejects faster electrons than a bright red one..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "The electrons fly off faster, because the brighter beam hits harder"
+        },
+        {
+          "correct": true,
+          "text": "Brightness means more photons, not stronger ones: a dim violet beam ejects faster electrons than a bright red one."
+        },
+        {
+          "misconception": "Brighter light ejects faster electrons.",
+          "rationale": {
+            "chose": "The learner selected option The electrons fly off more slowly, because they share the extra light as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: Brighter light ejects faster electrons.. The slip: Brightness feels like strength, so more light looks like harder hits.. The fix: Brightness means more photons, not stronger ones: a dim violet beam ejects faster electrons than a bright red one..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "The electrons fly off more slowly, because they share the extra light"
+        },
+        {
+          "misconception": "Brighter light ejects faster electrons.",
+          "rationale": {
+            "chose": "The learner selected option Emission stops, because the plate is overwhelmed by light as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: Brighter light ejects faster electrons.. The slip: Brightness feels like strength, so more light looks like harder hits.. The fix: Brightness means more photons, not stronger ones: a dim violet beam ejects faster electrons than a bright red one..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "Emission stops, because the plate is overwhelmed by light"
+        }
+      ],
+      "id": "dn2",
+      "kind": "multiple-choice",
+      "prompt": "Ultraviolet light shines on a metal plate and electrons are emitted. The lamp is made much brighter at exactly the same frequency. A student claims the electrons now fly off faster. What actually happens?"
+    },
+    {
+      "choices": [
+        {
+          "misconception": "Brighter light ejects faster electrons.",
+          "rationale": {
+            "chose": "The learner selected option 7.96 x 10^-19 J, the full photon energy with nothing paid to escape as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: Brighter light ejects faster electrons.. The slip: Brightness feels like strength, so more light looks like harder hits.. The fix: Brightness means more photons, not stronger ones: a dim violet beam ejects faster electrons than a bright red one..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "7.96 x 10^-19 J, the full photon energy with nothing paid to escape"
+        },
+        {
+          "correct": true,
+          "text": "4.65 x 10^-19 J, from KE_max = E - W = 7.96 x 10^-19 - 3.31 x 10^-19"
+        },
+        {
+          "misconception": "Brighter light ejects faster electrons.",
+          "rationale": {
+            "chose": "The learner selected option 3.31 x 10^-19 J, the work function alone as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: Brighter light ejects faster electrons.. The slip: Brightness feels like strength, so more light looks like harder hits.. The fix: Brightness means more photons, not stronger ones: a dim violet beam ejects faster electrons than a bright red one..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "3.31 x 10^-19 J, the work function alone"
+        },
+        {
+          "misconception": "Brighter light ejects faster electrons.",
+          "rationale": {
+            "chose": "The learner selected option 1.13 x 10^-18 J, from E + W instead of E - W as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: Brighter light ejects faster electrons.. The slip: Brightness feels like strength, so more light looks like harder hits.. The fix: Brightness means more photons, not stronger ones: a dim violet beam ejects faster electrons than a bright red one..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "1.13 x 10^-18 J, from E + W instead of E - W"
+        }
+      ],
+      "id": "dn3",
+      "kind": "multiple-choice",
+      "prompt": "Ultraviolet light of frequency 1.20 x 10^15 Hz strikes a metal of work function 3.31 x 10^-19 J. Calculate the maximum kinetic energy of the emitted electrons, showing your working with Einstein's photoelectric equation."
+    }
+  ],
+  "hingeQuestions": [
+    {
+      "choices": [
+        {
+          "misconception": "Brighter light ejects faster electrons.",
+          "rationale": {
+            "chose": "The learner selected option Each electron leaves with more kinetic energy as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: Brighter light ejects faster electrons.. The slip: Brightness feels like strength, so more light looks like harder hits.. The fix: Brightness means more photons, not stronger ones: a dim violet beam ejects faster electrons than a bright red one..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "Each electron leaves with more kinetic energy"
+        },
+        {
+          "correct": true,
+          "text": "It emits more electrons, each with the same maximum kinetic energy"
+        },
+        {
+          "misconception": "Brighter light ejects faster electrons.",
+          "rationale": {
+            "chose": "The learner selected option Each electron leaves faster in proportion to the brightness as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: Brighter light ejects faster electrons.. The slip: Brightness feels like strength, so more light looks like harder hits.. The fix: Brightness means more photons, not stronger ones: a dim violet beam ejects faster electrons than a bright red one..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "Each electron leaves faster in proportion to the brightness"
+        },
+        {
+          "misconception": "Brighter light ejects faster electrons.",
+          "rationale": {
+            "chose": "The learner selected option The threshold frequency falls so dimmer colours start to work as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: Brighter light ejects faster electrons.. The slip: Brightness feels like strength, so more light looks like harder hits.. The fix: Brightness means more photons, not stronger ones: a dim violet beam ejects faster electrons than a bright red one..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "The threshold frequency falls so dimmer colours start to work"
+        }
+      ],
+      "id": "h1",
+      "kind": "multiple-choice",
+      "prompt": "In one sentence, what does a brighter beam at the same frequency actually change?",
+      "scriptCue": "s5"
+    },
+    {
+      "choices": [
+        {
+          "misconception": "Brighter light ejects faster electrons.",
+          "rationale": {
+            "chose": "The learner selected option Agree - brightness is the strength of each photon as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: Brighter light ejects faster electrons.. The slip: Brightness feels like strength, so more light looks like harder hits.. The fix: Brightness means more photons, not stronger ones: a dim violet beam ejects faster electrons than a bright red one..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "Agree - brightness is the strength of each photon"
+        },
+        {
+          "correct": true,
+          "text": "Brightness means more photons, not stronger ones: a dim violet beam ejects faster electrons than a bright red one."
+        },
+        {
+          "misconception": "Brighter light ejects faster electrons.",
+          "rationale": {
+            "chose": "The learner selected option Tell them brightness raises each photon's energy h f as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: Brighter light ejects faster electrons.. The slip: Brightness feels like strength, so more light looks like harder hits.. The fix: Brightness means more photons, not stronger ones: a dim violet beam ejects faster electrons than a bright red one..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "Tell them brightness raises each photon's energy h f"
+        },
+        {
+          "misconception": "Brighter light ejects faster electrons.",
+          "rationale": {
+            "chose": "The learner selected option Tell them the electrons share the extra light energy and speed up as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: Brighter light ejects faster electrons.. The slip: Brightness feels like strength, so more light looks like harder hits.. The fix: Brightness means more photons, not stronger ones: a dim violet beam ejects faster electrons than a bright red one..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "Tell them the electrons share the extra light energy and speed up"
+        }
+      ],
+      "id": "h2",
+      "kind": "multiple-choice",
+      "prompt": "How would you correct a classmate who insists brighter light must mean faster electrons?",
+      "scriptCue": "s5"
+    }
+  ],
+  "level": "jc",
+  "subject": "science",
+  "title": "JC H2 physics \u2014 quantum: photons and the photoelectric effect",
+  "topic": "h2-quantum"
+}
