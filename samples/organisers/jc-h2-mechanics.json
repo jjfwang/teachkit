@@ -1,0 +1,88 @@
+{
+ "level": "jc",
+ "subject": "science",
+ "templates": [
+  {
+   "kind": "flow",
+   "slots": [
+    {
+     "entries": [
+      "Circular motion needs a centre-seeking push: a satellite stays on its circular path only because a force keeps pulling it towards the centre, and that force arrow always points at the centre wherever the satellite is."
+     ],
+     "label": "Circular motion needs a centre-seeking push",
+     "studentPrompt": "Explain this step in your own words."
+    },
+    {
+     "entries": [
+      "How big is the centre-seeking force: the acceleration is a = v^2/r and the force is F = mv^2/r, so doubling the speed quadruples the force while doubling the radius halves it."
+     ],
+     "label": "How big is the centre-seeking force",
+     "studentPrompt": "Explain this step in your own words."
+    },
+    {
+     "entries": [
+      "Gravity holds the Moon in orbit: Newton's law F = GMm/r^2 supplies exactly the centripetal force the Moon needs, so every orbit is a continuous fall towards the Earth that keeps missing it."
+     ],
+     "label": "Gravity holds the Moon in orbit",
+     "studentPrompt": "Explain this step in your own words."
+    },
+    {
+     "entries": [
+      "Geostationary orbits hover over one spot: with a period of exactly 24 hours above the equator and turning with the Earth, the satellite hangs motionless over one point while a drifting satellite falls behind."
+     ],
+     "label": "Geostationary orbits hover over one spot",
+     "studentPrompt": "Explain this step in your own words."
+    },
+    {
+     "entries": [
+      "Misconception: the fling-off force: there is no outward centrifugal fling - the body keeps going straight on the tangent while the seat pushes it inward, and that inward push is the real force."
+     ],
+     "label": "Misconception: the fling-off force",
+     "studentPrompt": "Explain this step in your own words."
+    }
+   ]
+  },
+  {
+   "kind": "frayer",
+   "slots": [
+    {
+     "entries": [
+      "The resultant force toward the centre of the circle that keeps an object in circular motion: F = mv^2/r. It is a role played by a real force such as tension, friction or gravity, not an extra force."
+     ],
+     "label": "Centripetal force",
+     "studentPrompt": "Give your own example of this term."
+    },
+    {
+     "entries": [
+      "The acceleration toward the centre of the circle, a = v^2/r, caused by the changing direction of the velocity even when the speed is constant."
+     ],
+     "label": "Centripetal acceleration",
+     "studentPrompt": "Give your own example of this term."
+    },
+    {
+     "entries": [
+      "The attractive force between two masses given by Newton's law F = GMm/r^2, with G = 6.67 x 10^-11 N m^2 kg^-2: double the separation and the force falls to one quarter."
+     ],
+     "label": "Gravitation",
+     "studentPrompt": "Give your own example of this term."
+    },
+    {
+     "entries": [
+      "A circular orbit above the equator, travelling west to east with period 24 hours, so the satellite stays fixed over one point on the equator."
+     ],
+     "label": "Geostationary orbit",
+     "studentPrompt": "Give your own example of this term."
+    },
+    {
+     "entries": [
+      "The time for one complete orbit or revolution, T. For a circular orbit T = 2 pi r / v, and a geostationary period is exactly 24 hours."
+     ],
+     "label": "Period",
+     "studentPrompt": "Give your own example of this term."
+    }
+   ]
+  }
+ ],
+ "title": "JC H2 physics — mechanics: circular motion and gravitation",
+ "topic": "h2-mechanics"
+}

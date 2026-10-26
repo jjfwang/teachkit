@@ -1,0 +1,33 @@
+{
+ "entries": [
+  {
+   "example": "Circular motion needs a centre-seeking push: a satellite stays on its circular path only because a force keeps pulling it towards the centre, and that force arrow always points at the centre wherever the satellite is.",
+   "meaning": "The resultant force toward the centre of the circle that keeps an object in circular motion: F = mv^2/r. It is a role played by a real force such as tension, friction or gravity, not an extra force.",
+   "term": "Centripetal force"
+  },
+  {
+   "example": "How big is the centre-seeking force: the acceleration is a = v^2/r and the force is F = mv^2/r, so doubling the speed quadruples the force while doubling the radius halves it.",
+   "meaning": "The acceleration toward the centre of the circle, a = v^2/r, caused by the changing direction of the velocity even when the speed is constant.",
+   "term": "Centripetal acceleration"
+  },
+  {
+   "example": "Gravity holds the Moon in orbit: Newton's law F = GMm/r^2 supplies exactly the centripetal force the Moon needs, so every orbit is a continuous fall towards the Earth that keeps missing it.",
+   "meaning": "The attractive force between two masses given by Newton's law F = GMm/r^2, with G = 6.67 x 10^-11 N m^2 kg^-2: double the separation and the force falls to one quarter.",
+   "term": "Gravitation"
+  },
+  {
+   "example": "State the conditions for a geostationary orbit and avoid the centrifugal fling-off trap",
+   "meaning": "A circular orbit above the equator, travelling west to east with period 24 hours, so the satellite stays fixed over one point on the equator.",
+   "term": "Geostationary orbit"
+  },
+  {
+   "example": "Geostationary orbits hover over one spot: with a period of exactly 24 hours above the equator and turning with the Earth, the satellite hangs motionless over one point while a drifting satellite falls behind.",
+   "meaning": "The time for one complete orbit or revolution, T. For a circular orbit T = 2 pi r / v, and a geostationary period is exactly 24 hours.",
+   "term": "Period"
+  }
+ ],
+ "level": "jc",
+ "subject": "science",
+ "title": "JC H2 physics — mechanics: circular motion and gravitation",
+ "topic": "h2-mechanics"
+}

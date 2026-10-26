@@ -1,0 +1,76 @@
+{
+ "flashcards": [
+  {
+   "back": "The resultant force toward the centre of the circle that keeps an object in circular motion: F = mv^2/r. It is a role played by a real force such as tension, friction or gravity, not an extra force.",
+   "front": "Centripetal force",
+   "source": "definition"
+  },
+  {
+   "back": "The acceleration toward the centre of the circle, a = v^2/r, caused by the changing direction of the velocity even when the speed is constant.",
+   "front": "Centripetal acceleration",
+   "source": "definition"
+  },
+  {
+   "back": "The attractive force between two masses given by Newton's law F = GMm/r^2, with G = 6.67 x 10^-11 N m^2 kg^-2: double the separation and the force falls to one quarter.",
+   "front": "Gravitation",
+   "source": "definition"
+  },
+  {
+   "back": "A circular orbit above the equator, travelling west to east with period 24 hours, so the satellite stays fixed over one point on the equator.",
+   "front": "Geostationary orbit",
+   "source": "definition"
+  },
+  {
+   "back": "The time for one complete orbit or revolution, T. For a circular orbit T = 2 pi r / v, and a geostationary period is exactly 24 hours.",
+   "front": "Period",
+   "source": "definition"
+  },
+  {
+   "back": "Being thrown sideways feels like an outward push. No outward fling exists: your body wants to keep going straight while the seat pushes you inward - the inward push is the real force. In the rotating car your inertia carries you along the tangent; the door and seat must push you inward to bend your path into the circle, and that inward push is the only horizontal force.",
+   "front": "A centrifugal force flings you outward in a sharp turn.",
+   "source": "trap"
+  },
+  {
+   "back": "15 N, from F = mv^2/r = 0.50 x 36 / 1.2",
+   "front": "A 0.50 kg ball moves in a circle of radius 1.2 m at 6.0 m/s. What is the centripetal force on the ball?",
+   "source": "quiz-bank"
+  },
+  {
+   "back": "24 hours, matching the Earth's rotation",
+   "front": "What is the period of a geostationary orbit?",
+   "source": "quiz-bank"
+  }
+ ],
+ "level": "jc",
+ "practiceSets": [
+  {
+   "dayOffset": 1,
+   "items": [
+    {
+     "answer": "No outward fling exists: the body wants to keep going straight while the seat pushes it inward - the inward push is the real force",
+     "prompt": "A passenger in a car that turns sharply says a centrifugal force flings them outward against the door. What is wrong with that claim?"
+    },
+    {
+     "answer": "The force quadruples (factor of 4). F = mv^2/r, so doubling v multiplies v^2 by 4 while m and r stay fixed.",
+     "prompt": "A satellite in a circular orbit doubles its speed while staying at the same orbital radius. By what factor does the required centripetal force change? Explain using F = mv^2/r."
+    }
+   ]
+  },
+  {
+   "dayOffset": 3,
+   "items": [
+    {
+     "answer": "The orbit must be above the equator and travel in the same direction as the Earth's rotation (west to east). With period 24 hours and the same angular speed as the Earth, the satellite stays over the same point on the equator and appears fixed.",
+     "prompt": "State the two conditions, besides a period of 24 hours, that an orbit must satisfy to be geostationary, and explain why the satellite appears fixed in the sky."
+    },
+    {
+     "answer": "F = mv^2/r = 1200 x 225 / 50 = 5400 N, directed toward the centre of the bend (supplied by friction).",
+     "prompt": "A car of mass 1200 kg rounds a bend of radius 50 m at 15 m/s. Calculate the centripetal force needed and state its direction."
+    }
+   ]
+  }
+ ],
+ "subject": "science",
+ "title": "JC H2 physics — mechanics: circular motion and gravitation",
+ "topic": "h2-mechanics"
+}
