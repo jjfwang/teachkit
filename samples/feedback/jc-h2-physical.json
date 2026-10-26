@@ -1,0 +1,44 @@
+{
+ "commonErrors": [
+  {
+   "example": "A learner writes on the worksheet that the equilibrium now makes more product, because the catalyst speeds the reaction up.",
+   "fixIt": {
+    "corrected": "Equilibrium is reached sooner, but the position of equilibrium and Kc are unchanged, because both rates speed up equally",
+    "prompt": "Fix it: state what a catalyst actually changes about an equilibrium, and what it leaves unchanged."
+   },
+   "misconception": "A catalyst pushes the equilibrium toward the products."
+  },
+  {
+   "example": "On the exit ticket, a learner picks the statement that the equilibrium shifts toward the products, so the yield at equilibrium rises.",
+   "fixIt": {
+    "corrected": "It is reached sooner, with the same equilibrium position and the same Kc",
+    "prompt": "Fix it: explain in one sentence why adding a catalyst leaves the equilibrium position and Kc unchanged."
+   },
+   "misconception": "A catalyst pushes the equilibrium toward the products."
+  }
+ ],
+ "level": "jc",
+ "modelAnswers": [
+  {
+   "answer": "The distribution flattens and shifts right, so a larger fraction of molecules has energy at least Ea and more collisions per second can react",
+   "creditPoints": [],
+   "question": "A reaction runs much faster when the temperature is raised by 20 K. Using the Maxwell-Boltzmann distribution, why?"
+  },
+  {
+   "answer": "A dynamic equilibrium is a reversible reaction in a closed system where the forward and reverse rates are equal, so the concentrations stay constant even though both reactions keep running.",
+   "creditPoints": [],
+   "question": "Define a dynamic equilibrium."
+  }
+ ],
+ "nextSteps": [
+  "Reteach the catalyst trap from the paired notes trap before any further equilibrium work: a catalyst speeds the forward and reverse reactions equally, so the position of equilibrium is unchanged and Kc is unchanged.",
+  "Practise paying the bond-breaking cost first and the bond-forming return second whenever ΔH is calculated from bond enthalpies, and check the sign against the reaction profile."
+ ],
+ "strengths": [
+  "Most of the class can calculate the enthalpy change from bond enthalpies, such as -184 kJ mol-1, from ΔH = 678 - 862: exothermic, on the worksheet.",
+  "The class can define a dynamic equilibrium on the exit ticket: forward and reverse rates equal in a closed system, so the concentrations stay constant."
+ ],
+ "subject": "science",
+ "title": "JC H2 chemistry — physical: energetics, kinetics and equilibria",
+ "topic": "h2-physical"
+}

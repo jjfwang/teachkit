@@ -1,0 +1,125 @@
+{
+ "blueprint": [
+  {
+   "assessmentObjective": "AO1 recall and apply",
+   "cognitiveLevel": "apply",
+   "marks": 10,
+   "outcomeCode": "H2-PHYSICAL-EQUILIBRIA"
+  },
+  {
+   "assessmentObjective": "AO2 reason and solve",
+   "cognitiveLevel": "reason",
+   "marks": 10,
+   "outcomeCode": "H2-INORGANIC-TRENDS"
+  }
+ ],
+ "durationMinutes": 60,
+ "items": [
+  {
+   "blueprintRow": 0,
+   "commandWord": "Calculate",
+   "markScheme": {
+    "points": [
+     {
+      "marks": 2,
+      "text": "Computes the energy in to break bonds: 436 + 193 = 629 kJ mol-1"
+     },
+     {
+      "marks": 3,
+      "text": "Computes the energy out when bonds form: 2 x 366 = 732 kJ mol-1, so ΔH = 629 - 732 = -103 kJ mol-1 and the reaction is exothermic"
+     }
+    ]
+   },
+   "marks": 5,
+   "prompt": "Using bond enthalpies H-H 436, Br-Br 193 and H-Br 366 kJ mol-1, calculate the enthalpy change for H2 + Br2 → 2 HBr, showing your working, and state whether the reaction is exothermic or endothermic."
+  },
+  {
+   "blueprintRow": 0,
+   "commandWord": "Calculate",
+   "markScheme": {
+    "points": [
+     {
+      "marks": 2,
+      "text": "Writes the Kc expression with products over reactants, each raised to its stoichiometric power: Kc = [NH3]^2 / ([N2][H2]^3)"
+     },
+     {
+      "marks": 3,
+      "text": "Substitutes the equilibrium concentrations: 0.40^2 / (0.20 x 0.60^3) = 0.16 / 0.0432 = 3.70 dm^6 mol^-2"
+     }
+    ]
+   },
+   "marks": 5,
+   "prompt": "For N2 + 3 H2 ⇌ 2 NH3 at equilibrium, [N2] = 0.20, [H2] = 0.60 and [NH3] = 0.40 mol dm-3. Calculate Kc, showing the expression you use."
+  },
+  {
+   "blueprintRow": 1,
+   "commandWord": "Explain",
+   "markScheme": {
+    "points": [
+     {
+      "marks": 2,
+      "text": "States that down group 2 each atom has more electron shells, so the atomic radius grows and the outer electrons are further from the nucleus and more shielded"
+     },
+     {
+      "marks": 3,
+      "text": "Explains that the attraction on the outer electrons weakens, so they are lost more easily to form M2+ ions, and reactivity rises down the group"
+     }
+    ]
+   },
+   "marks": 5,
+   "prompt": "Magnesium reacts very slowly with cold water, but barium reacts vigorously. Explain this trend down group 2 in terms of atomic structure."
+  },
+  {
+   "blueprintRow": 1,
+   "commandWord": "Explain",
+   "markScheme": {
+    "points": [
+     {
+      "marks": 2,
+      "text": "States that chlorine is a stronger oxidising agent than bromine and iodine, so it displaces bromide (forming orange Br2) and iodide (forming brown I2)"
+     },
+     {
+      "marks": 3,
+      "text": "Explains that iodine is the weakest oxidising agent of the three, so it cannot displace chloride, because oxidising power falls down group 17"
+     }
+    ]
+   },
+   "marks": 5,
+   "prompt": "Chlorine water is added to aqueous potassium bromide and the solution turns orange. Chlorine water added to aqueous potassium iodide turns brown, but iodine does not react with aqueous potassium chloride. Explain all three observations."
+  }
+ ],
+ "level": "jc",
+ "moderation": {
+  "state": "unreviewed"
+ },
+ "review": null,
+ "rubric": {
+  "criteria": [
+   {
+    "levels": [
+     {
+      "descriptor": "Methods are chosen and applied exactly, bond-enthalpy totals and Kc substitutions are stated explicitly, and conclusions are justified without claiming a catalyst shifts the equilibrium position.",
+      "label": "Secure"
+     },
+     {
+      "descriptor": "Method is correct in outline but a bond-enthalpy, Kc or shielding step is skipped.",
+      "label": "Developing"
+     },
+     {
+      "descriptor": "Methods are misapplied - for example claiming a catalyst pushes the equilibrium toward the products - and the working does not support the answer.",
+      "label": "Beginning"
+     }
+    ],
+    "name": "Physical and inorganic chemistry communication"
+   }
+  ]
+ },
+ "subject": "science",
+ "title": "Physical Chemistry and Inorganic Chemistry Unit Test",
+ "topics": [
+  "jc-h2-physical",
+  "jc-h2-inorganic"
+ ],
+ "totalMarks": 20,
+ "unitTitle": "Physical and inorganic chemistry"
+}
