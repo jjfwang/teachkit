@@ -1,0 +1,38 @@
+{
+ "entries": [
+  {
+   "example": "Evaluate the integral of x^2 from 1 to 2. The antiderivative of x^2 is x^3/3, so the integral is [x^3/3] from 1 to 2 = 8/3 - 1/3 = 7/3. The answer is the single number 7/3: no +C is written, because the limits have already fixed which antiderivative difference is meant.",
+   "meaning": "The limit of Riemann sums over a fixed interval [a, b], equal to net signed area and written as a single number such as 7/3 - it never carries a +C.",
+   "term": "Definite integral"
+  },
+  {
+   "example": "The +C trap: only for indefinite integrals: the antiderivative x^3/3 evaluated from 1 to 2 gives 8/3 - 1/3, and any +C would appear at both limits and cancel, leaving 7/3.",
+   "meaning": "The family of all antiderivatives of a function, written with +C because differentiating any constant gives zero: the integral of x^2 is x^3/3 + C.",
+   "term": "Indefinite integral"
+  },
+  {
+   "example": "Riemann sums: slicing area under a curve: four wide rectangles under y = x^2 from 0 to 2 estimate 3.75, eight narrow ones tighten it to 3.1875, and the limit of the sums is the exact area 8/3.",
+   "meaning": "An estimate of the area under a curve made by slicing the interval into rectangles and adding width times height; under y = x^2 from 0 to 2, n = 4 gives 3.75 and the limit is 8/3.",
+   "term": "Riemann sum"
+  },
+  {
+   "example": "Signed area: below the axis counts negative: the triangle above the axis contributes +2 and the triangle below contributes -0.5, so the integral of x from -1 to 2 is the net signed area 3/2.",
+   "meaning": "Area counted positive above the x-axis and negative below it: for y = x from -1 to 2 the triangles give 2 - 0.5 = 3/2.",
+   "term": "Signed area"
+  },
+  {
+   "example": "u-substitution: the chain rule in reverse: setting u = x^2 turns 2x dx into du, so the integral of 2x e^(x^2) from 0 to 1 becomes the integral of e^u from 0 to 1, which is e - 1.",
+   "meaning": "The chain rule in reverse: set u equal to an inner function so its derivative absorbs the remaining factors, as u = x^2 turns the integral of 2x e^(x^2) into the integral of e^u.",
+   "term": "U-substitution"
+  },
+  {
+   "example": "Volumes of revolution: stacking discs: each slice of the rotated solid is a disc of radius x^2 and thickness dx, and stacking them gives V = pi times the integral of x^4 from 0 to 1 = pi/5.",
+   "meaning": "The volume swept when a curve rotates about an axis, built by stacking discs: V = pi times the integral of r^2 dx, which for y = x^2 from 0 to 1 gives pi/5.",
+   "term": "Volume of revolution"
+  }
+ ],
+ "level": "jc",
+ "subject": "math",
+ "title": "JC H2 integration: Riemann sums, u-substitution, volumes of revolution",
+ "topic": "h2-integration"
+}

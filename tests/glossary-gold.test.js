@@ -60,7 +60,8 @@ const STEMS = [
   'secondary-physics-waves',
   'jc-h2-sequences',
   'jc-h2-vectors',
-  'jc-h2-complex'
+  'jc-h2-complex',
+  'jc-h2-integration'
 ];
 
 function load(rel) {
