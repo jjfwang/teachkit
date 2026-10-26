@@ -1,0 +1,116 @@
+{
+ "level": "jc",
+ "sets": [
+  {
+   "cloze": [
+    {
+     "answers": [
+      "Enthalpy change",
+      "Activation energy"
+     ],
+     "text": "The ___ is negative for an exothermic reaction, and a collision needs at least the ___ before reaction can occur."
+    },
+    {
+     "answers": [
+      "Catalyst",
+      "Dynamic equilibrium"
+     ],
+     "text": "A ___ speeds up both directions equally, so a reversible reaction reaches ___ sooner without its position changing."
+    }
+   ],
+   "frames": [
+    "___ is the heat change at constant pressure.",
+    "___ is the minimum energy a collision needs for reaction to occur.",
+    "___ is how fast reactant concentration falls."
+   ],
+   "level": "full",
+   "starters": [
+    "Enthalpy change is the heat change at...",
+    "Activation energy is the minimum energy...",
+    "Rate of reaction is how fast..."
+   ],
+   "wordBank": [
+    {
+     "gloss": "the heat change at constant pressure, \u0394H",
+     "term": "Enthalpy change"
+    },
+    {
+     "gloss": "the minimum energy Ea a collision needs for reaction to occur",
+     "term": "Activation energy"
+    },
+    {
+     "gloss": "how fast reactant concentration falls",
+     "term": "Rate of reaction"
+    },
+    {
+     "gloss": "a substance that speeds up a reaction by providing a lower-activation-energy route",
+     "term": "Catalyst"
+    },
+    {
+     "gloss": "the state of a reversible reaction where the forward and reverse rates are equal and concentrations stay constant",
+     "term": "Dynamic equilibrium"
+    }
+   ]
+  },
+  {
+   "cloze": [
+    {
+     "answers": [
+      "Enthalpy change",
+      "Activation energy"
+     ],
+     "text": "The ___ is negative for an exothermic reaction, and a collision needs at least the ___ before reaction can occur."
+    }
+   ],
+   "frames": [
+    "___ is the heat change at constant pressure.",
+    "___ is the minimum energy a collision needs for reaction to occur."
+   ],
+   "level": "partial",
+   "starters": [
+    "Enthalpy change is the heat change at...",
+    "Activation energy is the minimum energy..."
+   ],
+   "wordBank": [
+    {
+     "gloss": "the heat change at constant pressure, \u0394H",
+     "term": "Enthalpy change"
+    },
+    {
+     "gloss": "the minimum energy Ea a collision needs for reaction to occur",
+     "term": "Activation energy"
+    },
+    {
+     "gloss": "how fast reactant concentration falls",
+     "term": "Rate of reaction"
+    }
+   ]
+  },
+  {
+   "cloze": [
+    {
+     "answers": [
+      "Enthalpy change"
+     ],
+     "text": "The ___ is negative for an exothermic reaction."
+    }
+   ],
+   "frames": [
+    "___ is the heat change at constant pressure."
+   ],
+   "level": "minimal",
+   "starters": [
+    "Enthalpy change is the heat change at..."
+   ],
+   "wordBank": [
+    {
+     "gloss": "the heat change at constant pressure, \u0394H",
+     "term": "Enthalpy change"
+    }
+   ]
+  }
+ ],
+ "subject": "science",
+ "title": "JC H2 chemistry \u2014 physical: energetics, kinetics and equilibria",
+ "topic": "h2-physical"
+}
