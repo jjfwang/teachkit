@@ -1,0 +1,95 @@
+{
+ "level": "jc",
+ "subject": "science",
+ "templates": [
+  {
+   "kind": "flow",
+   "slots": [
+    {
+     "entries": [
+      "Light arrives as a stream of photons: photons rain onto the metal plate one packet at a time, each carrying energy h f fixed by the frequency, and one electron may absorb a whole packet in a single exchange."
+     ],
+     "label": "Light arrives as a stream of photons",
+     "studentPrompt": "Explain this step in your own words."
+    },
+    {
+     "entries": [
+      "Below the threshold frequency, nothing happens: the photons each carry less than the work function, so however many arrive the surface stays silent - only past the threshold do electrons start to fly."
+     ],
+     "label": "Below the threshold frequency, nothing happens",
+     "studentPrompt": "Explain this step in your own words."
+    },
+    {
+     "entries": [
+      "Einstein's photoelectric equation: the photon energy h f first pays the work function W to free the electron, and whatever remains becomes the electron's kinetic energy, h f = W + KE_max."
+     ],
+     "label": "Einstein's photoelectric equation",
+     "studentPrompt": "Explain this step in your own words."
+    },
+    {
+     "entries": [
+      "Brighter light: more photons, more electrons: doubling the intensity doubles the photons arriving per second, so twice as many electrons escape, each with exactly the same speed as before - same-length arrows, twice as many."
+     ],
+     "label": "Brighter light",
+     "studentPrompt": "Explain this step in your own words."
+    },
+    {
+     "entries": [
+      "Misconception: brighter light ejects faster electrons: the brighter beam only raises the electron count, and the dim violet beam still ejects faster electrons than the bright red one, because speed comes from frequency alone."
+     ],
+     "label": "Misconception",
+     "studentPrompt": "Explain this step in your own words."
+    }
+   ]
+  },
+  {
+   "kind": "frayer",
+   "slots": [
+    {
+     "entries": [
+      "A single packet of light energy, carrying E = h f where f is the light\u2019s frequency: one photon is absorbed whole by one electron in the photoelectric effect."
+     ],
+     "label": "Photon",
+     "studentPrompt": "Give your own example of this term."
+    },
+    {
+     "entries": [
+      "The minimum energy W an electron needs to escape a metal surface, a property of the metal: the photon must pay at least W before any kinetic energy is left over."
+     ],
+     "label": "Work function",
+     "studentPrompt": "Give your own example of this term."
+    },
+    {
+     "entries": [
+      "The lowest frequency f0 = W / h whose photons can free an electron: below f0 no emission occurs at any intensity, at f0 the emitted electrons have zero kinetic energy."
+     ],
+     "label": "Threshold frequency",
+     "studentPrompt": "Give your own example of this term."
+    },
+    {
+     "entries": [
+      "The retarding potential V_s that just stops even the fastest emitted electrons, e V_s = KE_max: it measures the maximum kinetic energy and depends on frequency, not intensity."
+     ],
+     "label": "Stopping potential",
+     "studentPrompt": "Give your own example of this term."
+    },
+    {
+     "entries": [
+      "The emission of electrons when light above the threshold frequency strikes a metal, one photon freeing one electron: its frequency threshold and instant emission are evidence that light arrives as photons."
+     ],
+     "label": "Photoelectric effect",
+     "studentPrompt": "Give your own example of this term."
+    },
+    {
+     "entries": [
+      "The two-sided nature of light and matter: light travels as waves but exchanges energy as photons, and moving particles carry a de Broglie wavelength \u03bb = h / (m v)."
+     ],
+     "label": "Wave-particle duality",
+     "studentPrompt": "Give your own example of this term."
+    }
+   ]
+  }
+ ],
+ "title": "JC H2 physics \u2014 quantum: photons and the photoelectric effect",
+ "topic": "h2-quantum"
+}
