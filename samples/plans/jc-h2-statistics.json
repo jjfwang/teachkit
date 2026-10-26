@@ -1,0 +1,109 @@
+{
+ "activities": [
+  {
+   "grouping": "whole class",
+   "minutes": 7,
+   "objectiveIds": [
+    "o1"
+   ],
+   "scriptCue": "s1",
+   "title": "The sampling distribution of the mean shrinks as n grows"
+  },
+  {
+   "grouping": "individual",
+   "minutes": 8,
+   "objectiveIds": [
+    "o2"
+   ],
+   "scriptCue": "s2",
+   "title": "Hypothesis testing: the p-value decides against alpha"
+  },
+  {
+   "grouping": "pairs",
+   "minutes": 8,
+   "objectiveIds": [
+    "o3"
+   ],
+   "scriptCue": "s3",
+   "title": "The p-value trap: it is not the probability the null is true"
+  },
+  {
+   "grouping": "whole class",
+   "minutes": 7,
+   "objectiveIds": [
+    "o4"
+   ],
+   "scriptCue": "s4",
+   "title": "Type I and Type II errors: the two ways to be wrong"
+  },
+  {
+   "grouping": "individual",
+   "minutes": 10,
+   "objectiveIds": [
+    "o1",
+    "o2",
+    "o3",
+    "o4"
+   ],
+   "resources": [
+    "worksheet"
+   ],
+   "title": "Assemble the toolkit"
+  }
+ ],
+ "durationMinutes": 40,
+ "level": "jc",
+ "objectives": [
+  {
+   "assessmentPoints": [
+    "Sample-mean spread answers in the sampling distribution activity",
+    "Toolkit recap answers"
+   ],
+   "id": "o1",
+   "successCriteria": [
+    "2, from 10 / root 25",
+    "1. The standard deviation of the sample mean is sigma / root n = 10 / root 100 = 10 / 10 = 1."
+   ],
+   "text": "Describe the sampling distribution of the sample mean and compute its standard deviation as sigma / root n"
+  },
+  {
+   "assessmentPoints": [
+    "Verdict answers in the hypothesis testing activity",
+    "Toolkit recap answers"
+   ],
+   "id": "o2",
+   "successCriteria": [
+    "Do not reject the null hypothesis. The p-value 0.31 is greater than alpha = 0.05, so the data is not surprising enough under the null to reject it.",
+    "Reject the null, because 0.012 is smaller than alpha = 0.05"
+   ],
+   "text": "Carry out a hypothesis test by comparing the p-value with the significance level alpha"
+  },
+  {
+   "assessmentPoints": [
+    "Trap answers in the p-value trap activity",
+    "Exit responses in the toolkit activity"
+   ],
+   "id": "o3",
+   "successCriteria": [
+    "The p-value is about the data given the null: if the null were true, 3% of experiments would give data this extreme",
+    "If the null were true, 3% of experiments would give data this extreme"
+   ],
+   "text": "State what a p-value does and does not measure, avoiding the trap reading"
+  },
+  {
+   "assessmentPoints": [
+    "Error-type answers in the errors activity",
+    "Toolkit recap answers"
+   ],
+   "id": "o4",
+   "successCriteria": [
+    "A Type I error rejects a true null: declaring the machine miscalibrated when it is actually fine. A Type II error accepts a false null: passing the machine when it is actually miscalibrated. Alpha caps the probability of a Type I error.",
+    "A Type I error - a false alarm. Its probability is capped by the significance level alpha."
+   ],
+   "text": "Distinguish Type I and Type II errors and name what caps or fights each one"
+  }
+ ],
+ "subject": "math",
+ "title": "JC H2 statistics: sampling distributions, hypothesis testing, error types",
+ "topic": "h2-statistics"
+}

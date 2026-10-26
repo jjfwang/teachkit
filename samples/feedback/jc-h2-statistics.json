@@ -1,0 +1,44 @@
+{
+ "commonErrors": [
+  {
+   "example": "A learner writes on the worksheet that a p-value of 0.03 means there is a 3% chance the null hypothesis is true.",
+   "fixIt": {
+    "corrected": "The p-value is about the data given the null: if H0 were true, 3% of experiments would give data this extreme. It never assigns a probability to H0 itself.",
+    "prompt": "Fix it: state what a p-value of 0.03 actually counts, naming the world in which it is computed."
+   },
+   "misconception": "A p-value of 0.03 means there is a 3% chance the null hypothesis is true."
+  },
+  {
+   "example": "On the exit ticket, a learner picks the statement that the probability the null hypothesis is true is 3% as what a p-value of 0.03 measures.",
+   "fixIt": {
+    "corrected": "If the null were true, 3% of experiments would give data this extreme - the 3% counts extreme data under the null, not the chance the null is true.",
+    "prompt": "Fix it: explain in one sentence why a p-value of 0.03 is not a 3% chance that the null hypothesis is true."
+   },
+   "misconception": "A p-value of 0.03 means there is a 3% chance the null hypothesis is true."
+  }
+ ],
+ "level": "jc",
+ "modelAnswers": [
+  {
+   "answer": "Do not reject the null hypothesis. The p-value 0.31 is greater than alpha = 0.05, so the data is not surprising enough under the null to reject it.",
+   "creditPoints": [],
+   "question": "A hypothesis test at the 5% significance level returns a p-value of 0.31. State the test verdict and give the reason."
+  },
+  {
+   "answer": "1. The standard deviation of the sample mean is sigma / root n = 10 / root 100 = 10 / 10 = 1.",
+   "creditPoints": [],
+   "question": "A population has standard deviation 10. Find the standard deviation of the sample mean for samples of size n = 100, and state the rule you used."
+  }
+ ],
+ "nextSteps": [
+  "Reteach the p-value trap from the paired notes trap before any further statistics work: the p-value is computed in the world where H0 is true and never assigns a probability to H0 itself.",
+  "Practise writing the comparison with alpha in the working whenever a test verdict is stated."
+ ],
+ "strengths": [
+  "Most of the class can compute the standard deviation of the sample mean, such as 10 / root 25 = 2 on the worksheet.",
+  "The class can name a Type I error as a false alarm whose probability is capped by alpha on the exit ticket."
+ ],
+ "subject": "math",
+ "title": "JC H2 statistics: sampling distributions, hypothesis testing, error types",
+ "topic": "h2-statistics"
+}
