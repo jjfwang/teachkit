@@ -1,0 +1,44 @@
+{
+ "level": "jc",
+ "questions": [
+  {
+   "choices": [
+    {
+     "text": "2.5 N, from mv/r"
+    },
+    {
+     "correct": true,
+     "text": "15 N, from F = mv^2/r = 0.50 x 36 / 1.2"
+    },
+    {
+     "text": "3.0 N, from mr/v"
+    },
+    {
+     "text": "36 N, from mv^2"
+    }
+   ],
+   "explanation": "Centripetal force is F = mv^2/r: 0.50 x (6.0)^2 / 1.2 = 0.50 x 36 / 1.2 = 15 N, directed toward the centre and supplied here by the string tension.",
+   "id": "q2",
+   "kind": "multiple-choice",
+   "prompt": "A 0.50 kg ball moves in a circle of radius 1.2 m at 6.0 m/s. What is the centripetal force on the ball?"
+  },
+  {
+   "answer": "The force quadruples (factor of 4). F = mv^2/r, so doubling v multiplies v^2 by 4 while m and r stay fixed.",
+   "explanation": "The v-squared dependence is the key scaling in circular motion: double the speed, quadruple the centre-seeking force; double the radius at the same speed and the force halves.",
+   "id": "q3",
+   "kind": "short-answer",
+   "prompt": "A satellite in a circular orbit doubles its speed while staying at the same orbital radius. By what factor does the required centripetal force change? Explain using F = mv^2/r."
+  },
+  {
+   "answer": "The orbit must be above the equator and travel in the same direction as the Earth's rotation (west to east). With period 24 hours and the same angular speed as the Earth, the satellite stays over the same point on the equator and appears fixed.",
+   "explanation": "Period alone is not enough: a 24-hour orbit over the poles or in reverse would drift across the sky. Geostationary needs equatorial, prograde, and T = 24 h together, so the satellite's angular speed matches the Earth's.",
+   "id": "q4",
+   "kind": "short-answer",
+   "prompt": "State the two conditions, besides a period of 24 hours, that an orbit must satisfy to be geostationary, and explain why the satellite appears fixed in the sky."
+  }
+ ],
+ "subject": "science",
+ "title": "JC H2 physics — mechanics: circular motion and gravitation",
+ "topic": "h2-mechanics",
+ "variant": "homework"
+}

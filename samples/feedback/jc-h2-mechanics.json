@@ -1,0 +1,44 @@
+{
+ "commonErrors": [
+  {
+   "example": "A learner writes on the worksheet that a centrifugal force really does fling passengers outward in a turn.",
+   "fixIt": {
+    "corrected": "No outward fling exists: your body wants to keep going straight while the seat pushes you inward - the inward push is the real force. The sensation is inertia, not an outward force.",
+    "prompt": "Fix it: state what actually pushes a passenger in a sharp turn, naming the direction of the real force."
+   },
+   "misconception": "A centrifugal force flings you outward in a sharp turn."
+  },
+  {
+   "example": "On the exit ticket, a learner picks the statement that a centrifugal force pushing outward is the force that acts on the passenger in a sharp turn.",
+   "fixIt": {
+    "corrected": "An inward, centre-seeking push from the seat and door; there is no outward force.",
+    "prompt": "Fix it: explain in one sentence why there is no outward force on a passenger in a sharp turn."
+   },
+   "misconception": "A centrifugal force flings you outward in a sharp turn."
+  }
+ ],
+ "level": "jc",
+ "modelAnswers": [
+  {
+   "answer": "The force quadruples (factor of 4). F = mv^2/r, so doubling v multiplies v^2 by 4 while m and r stay fixed.",
+   "creditPoints": [],
+   "question": "A satellite in a circular orbit doubles its speed while staying at the same orbital radius. By what factor does the required centripetal force change? Explain using F = mv^2/r."
+  },
+  {
+   "answer": "F = mv^2/r = 1200 x 225 / 50 = 5400 N, directed toward the centre of the bend (supplied by friction).",
+   "creditPoints": [],
+   "question": "A car of mass 1200 kg rounds a bend of radius 50 m at 15 m/s. Calculate the centripetal force needed and state its direction."
+  }
+ ],
+ "nextSteps": [
+  "Reteach the fling-off trap from the paired notes trap before any further mechanics work: the only horizontal force on a turning passenger is the inward push from the seat and door.",
+  "Practise stating the direction to the centre in the working whenever a centripetal force is calculated."
+ ],
+ "strengths": [
+  "Most of the class can compute the centripetal force, such as 15 N, from F = mv^2/r = 0.50 x 36 / 1.2 on the worksheet.",
+  "The class can state the period of a geostationary orbit as 24 hours, matching the Earth's rotation on the exit ticket."
+ ],
+ "subject": "science",
+ "title": "JC H2 physics — mechanics: circular motion and gravitation",
+ "topic": "h2-mechanics"
+}
