@@ -1,0 +1,125 @@
+{
+ "blueprint": [
+  {
+   "assessmentObjective": "AO1 recall and apply",
+   "cognitiveLevel": "apply",
+   "marks": 10,
+   "outcomeCode": "H2-INT-OPS"
+  },
+  {
+   "assessmentObjective": "AO2 reason and solve",
+   "cognitiveLevel": "reason",
+   "marks": 10,
+   "outcomeCode": "H2-DIFF-RATES"
+  }
+ ],
+ "durationMinutes": 60,
+ "items": [
+  {
+   "blueprintRow": 0,
+   "commandWord": "Find",
+   "markScheme": {
+    "points": [
+     {
+      "marks": 2,
+      "text": "Integrates directly to get [x^2/2] from -1 to 2 = 2 - 1/2 = 3/2"
+     },
+     {
+      "marks": 3,
+      "text": "States the below-axis triangle counts negative, so the answer is the net signed area 2 - 0.5 = 1.5, not the total area 2.5"
+     }
+    ]
+   },
+   "marks": 5,
+   "prompt": "Find the integral of x from -1 to 2, and explain the role of the part of the graph below the x-axis."
+  },
+  {
+   "blueprintRow": 0,
+   "commandWord": "Find",
+   "markScheme": {
+    "points": [
+     {
+      "marks": 2,
+      "text": "Sets u = x^2 and du = 2x dx, rewriting integrand, differential and limits together, the limits staying 0 and 1"
+     },
+     {
+      "marks": 3,
+      "text": "Evaluates [e^u] from 0 to 1 to give e^1 - e^0 = e - 1"
+     }
+    ]
+   },
+   "marks": 5,
+   "prompt": "Use the substitution u = x^2 to evaluate the integral of 2x e^(x^2) from 0 to 1."
+  },
+  {
+   "blueprintRow": 1,
+   "commandWord": "Find",
+   "markScheme": {
+    "points": [
+     {
+      "marks": 2,
+      "text": "Differentiates to dy/dx = 3x^2 - 12x + 9"
+     },
+     {
+      "marks": 3,
+      "text": "Sets dy/dx = 0 and solves to x = 1 and x = 3"
+     }
+    ]
+   },
+   "marks": 5,
+   "prompt": "A curve has equation y = x^3 - 6x^2 + 9x. Find dy/dx and the x-coordinates of its stationary points."
+  },
+  {
+   "blueprintRow": 1,
+   "commandWord": "Find",
+   "markScheme": {
+    "points": [
+     {
+      "marks": 3,
+      "text": "Writes A = pi r^2 and applies the chain rule dA/dt = 2 pi r dr/dt"
+     },
+     {
+      "marks": 2,
+      "text": "Substitutes r = 4 and dr/dt = 0.5 to give 4 pi cm^2/s"
+     }
+    ]
+   },
+   "marks": 5,
+   "prompt": "The radius of a circle increases at 0.5 cm/s. Find the rate at which its area increases when the radius is 4 cm."
+  }
+ ],
+ "level": "jc",
+ "moderation": {
+  "state": "unreviewed"
+ },
+ "review": null,
+ "rubric": {
+  "criteria": [
+   {
+    "levels": [
+     {
+      "descriptor": "Methods are chosen and applied exactly, limits and substitutions are stated, and conclusions are justified.",
+      "label": "Secure"
+     },
+     {
+      "descriptor": "Method is correct in outline but a limit, substitution or squaring step is skipped.",
+      "label": "Developing"
+     },
+     {
+      "descriptor": "Methods are misapplied - for example adding +C to a definite integral answer - and the working does not support the answer.",
+      "label": "Beginning"
+     }
+    ],
+    "name": "Integration and calculus communication"
+   }
+  ]
+ },
+ "subject": "math",
+ "title": "Integration and Differentiation Unit Test",
+ "topics": [
+  "jc-h2-integration",
+  "jc-h2-differentiation"
+ ],
+ "totalMarks": 20,
+ "unitTitle": "Integration and calculus"
+}

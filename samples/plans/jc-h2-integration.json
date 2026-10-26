@@ -1,0 +1,110 @@
+{
+ "activities": [
+  {
+   "grouping": "whole class",
+   "minutes": 6,
+   "objectiveIds": [
+    "o1"
+   ],
+   "scriptCue": "s1",
+   "title": "Riemann sums: slicing area under a curve"
+  },
+  {
+   "grouping": "individual",
+   "minutes": 6,
+   "objectiveIds": [
+    "o1"
+   ],
+   "scriptCue": "s2",
+   "title": "Signed area: below the axis counts negative"
+  },
+  {
+   "grouping": "pairs",
+   "minutes": 8,
+   "objectiveIds": [
+    "o2"
+   ],
+   "scriptCue": "s3",
+   "title": "U-substitution: the chain rule in reverse"
+  },
+  {
+   "grouping": "whole class",
+   "minutes": 8,
+   "objectiveIds": [
+    "o3"
+   ],
+   "scriptCue": "s4",
+   "title": "Volumes of revolution: stacking discs"
+  },
+  {
+   "grouping": "individual",
+   "minutes": 12,
+   "objectiveIds": [
+    "o1",
+    "o2",
+    "o3",
+    "o4"
+   ],
+   "resources": [
+    "worksheet"
+   ],
+   "scriptCue": "s5",
+   "title": "Assemble the toolkit"
+  }
+ ],
+ "durationMinutes": 40,
+ "level": "jc",
+ "objectives": [
+  {
+   "assessmentPoints": [
+    "Rectangle estimate answers in the Riemann sums activity",
+    "Signed area lines in the toolkit recap"
+   ],
+   "id": "o1",
+   "successCriteria": [
+    "I can state that four rectangles under y = x^2 from 0 to 2 estimate 3.75 and the limit of the sums is the exact area 8/3",
+    "I can find the integral of x from -1 to 2 as 2 - 0.5 = 3/2, the net signed area"
+   ],
+   "text": "Evaluate definite integrals as limits of Riemann sums and as net signed area"
+  },
+  {
+   "assessmentPoints": [
+    "Substitution answers in the u-substitution activity",
+    "Toolkit recap answers"
+   ],
+   "id": "o2",
+   "successCriteria": [
+    "I can set u = x^2 so the integral of 2x e^(x^2) from 0 to 1 becomes the integral of e^u from 0 to 1, which is e - 1",
+    "I can change integrand, differential and limits together when I substitute"
+   ],
+   "text": "Use u-substitution to undo the chain rule, changing integrand, differential and limits together"
+  },
+  {
+   "assessmentPoints": [
+    "Disc volume answers in the volumes of revolution activity",
+    "Exit responses in the toolkit activity"
+   ],
+   "id": "o3",
+   "successCriteria": [
+    "I can write V = pi times the integral of r^2 dx with radius r = x^2",
+    "I can find the volume pi times the integral of x^4 from 0 to 1 = pi/5"
+   ],
+   "text": "Find volumes of revolution with the disc method, V = pi times the integral of r^2 dx"
+  },
+  {
+   "assessmentPoints": [
+    "Trap answers in the toolkit activity",
+    "Exit responses in the toolkit activity"
+   ],
+   "id": "o4",
+   "successCriteria": [
+    "I can state that only indefinite integrals need +C",
+    "I can give the integral of x^2 from 1 to 2 as the single number 7/3, with no +C"
+   ],
+   "text": "State exactly when +C is required: indefinite integrals only"
+  }
+ ],
+ "subject": "math",
+ "title": "JC H2 integration: Riemann sums, u-substitution, volumes of revolution",
+ "topic": "h2-integration"
+}

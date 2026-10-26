@@ -1,0 +1,44 @@
+{
+ "level": "jc",
+ "questions": [
+  {
+   "choices": [
+    {
+     "text": "3"
+    },
+    {
+     "correct": true,
+     "text": "8/3, about 2.67"
+    },
+    {
+     "text": "4"
+    },
+    {
+     "text": "2"
+    }
+   ],
+   "explanation": "The antiderivative of x^2 is x^3/3, so the integral from 0 to 2 is 8/3 - 0 = 8/3. The rectangle estimates sit above the curve and shrink toward 8/3 as n grows.",
+   "id": "q2",
+   "kind": "multiple-choice",
+   "prompt": "Using right-endpoint rectangles with n = 4 on [0, 2] for y = x^2 gives the estimate 3.75, and n = 8 gives 3.1875. What is the exact value the estimates are closing in on?"
+  },
+  {
+   "answer": "3/2. The triangle above the axis contributes +2 and the triangle below the axis contributes -0.5, so the net signed area is 2 - 0.5 = 1.5.",
+   "explanation": "Integrate directly: [x^2/2] from -1 to 2 = 2 - 1/2 = 3/2. Geometrically the below-axis triangle counts negative, which is why the answer is the signed net, not the total area 2.5.",
+   "id": "q3",
+   "kind": "short-answer",
+   "prompt": "Find the integral of x from -1 to 2, and explain the role of the part of the graph below the x-axis."
+  },
+  {
+   "answer": "e - 1. With u = x^2, du = 2x dx, the limits stay 0 and 1, and the integral becomes the integral of e^u from 0 to 1.",
+   "explanation": "The factor 2x is exactly du/dx times dx, so the whole integrand rewrites as e^u du. Evaluating [e^u] from 0 to 1 gives e^1 - e^0 = e - 1.",
+   "id": "q4",
+   "kind": "short-answer",
+   "prompt": "Use the substitution u = x^2 to evaluate the integral of 2x e^(x^2) from 0 to 1."
+  }
+ ],
+ "subject": "math",
+ "title": "JC H2 integration: Riemann sums, u-substitution, volumes of revolution",
+ "topic": "h2-integration",
+ "variant": "homework"
+}
