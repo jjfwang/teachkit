@@ -1,0 +1,125 @@
+{
+ "blueprint": [
+  {
+   "assessmentObjective": "AO1 recall and apply",
+   "cognitiveLevel": "apply",
+   "marks": 10,
+   "outcomeCode": "H2-PROB-OPS"
+  },
+  {
+   "assessmentObjective": "AO2 reason and solve",
+   "cognitiveLevel": "reason",
+   "marks": 10,
+   "outcomeCode": "H2-DIFF-RATES"
+  }
+ ],
+ "durationMinutes": 60,
+ "items": [
+  {
+   "blueprintRow": 0,
+   "commandWord": "Find",
+   "markScheme": {
+    "points": [
+     {
+      "marks": 2,
+      "text": "The probabilities in a discrete distribution sum to 1, so P(X = 2) = 1 - 0.2 - 0.5 = 0.3."
+     },
+     {
+      "marks": 3,
+      "text": "Every discrete probability distribution sums to exactly 1 because something has to happen"
+     }
+    ]
+   },
+   "marks": 5,
+   "prompt": "A probability table for X lists P(X = 0) = 0.2 and P(X = 1) = 0.5, with X = 2 the only other outcome. Find P(X = 2) and state the rule you used."
+  },
+  {
+   "blueprintRow": 0,
+   "commandWord": "Find",
+   "markScheme": {
+    "points": [
+     {
+      "marks": 2,
+      "text": "Choose which 3 of the 10 trials succeed - 120 ways - then multiply by the probability of one such path: 3 successes at 0.3 each and 7 failures at 0.7 each"
+     },
+     {
+      "marks": 3,
+      "text": "P(X = 3) = (10 choose 3)(0.3)^3(0.7)^7 = 120 x (0.3)^3 x (0.7)^7, which is about 0.267."
+     }
+    ]
+   },
+   "marks": 5,
+   "prompt": "Let X be the number of successes in 10 independent trials, each with success probability 0.3. Write down the formula for P(X = 3) and evaluate it."
+  },
+  {
+   "blueprintRow": 1,
+   "commandWord": "Find",
+   "markScheme": {
+    "points": [
+     {
+      "marks": 2,
+      "text": "Differentiates to dy/dx = 3x^2 - 12x + 9"
+     },
+     {
+      "marks": 3,
+      "text": "Sets dy/dx = 0 and solves to x = 1 and x = 3"
+     }
+    ]
+   },
+   "marks": 5,
+   "prompt": "A curve has equation y = x^3 - 6x^2 + 9x. Find dy/dx and the x-coordinates of its stationary points."
+  },
+  {
+   "blueprintRow": 1,
+   "commandWord": "Find",
+   "markScheme": {
+    "points": [
+     {
+      "marks": 3,
+      "text": "Writes A = pi r^2 and applies the chain rule dA/dt = 2 pi r dr/dt"
+     },
+     {
+      "marks": 2,
+      "text": "Substitutes r = 4 and dr/dt = 0.5 to give 4 pi cm^2/s"
+     }
+    ]
+   },
+   "marks": 5,
+   "prompt": "The radius of a circle increases at 0.5 cm/s. Find the rate at which its area increases when the radius is 4 cm."
+  }
+ ],
+ "level": "jc",
+ "moderation": {
+  "state": "unreviewed"
+ },
+ "review": null,
+ "rubric": {
+  "criteria": [
+   {
+    "levels": [
+     {
+      "descriptor": "Methods are chosen and applied exactly, sum checks and formulas are stated, and conclusions are justified.",
+      "label": "Secure"
+     },
+     {
+      "descriptor": "Method is correct in outline but a sum check, coefficient or standard-deviation step is skipped.",
+      "label": "Developing"
+     },
+     {
+      "descriptor": "Methods are misapplied - for example pricing tails above 1/2 after a run of heads - and the working does not support the answer.",
+      "label": "Beginning"
+     }
+    ],
+    "name": "Probability and calculus communication"
+   }
+  ]
+ },
+ "subject": "math",
+ "title": "Probability and Differentiation Unit Test",
+ "topics": [
+  "jc-h2-probability",
+  "jc-h2-differentiation"
+ ],
+ "totalMarks": 20,
+ "unitTitle": "Probability and calculus"
+}

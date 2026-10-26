@@ -1,0 +1,110 @@
+{
+ "activities": [
+  {
+   "grouping": "whole class",
+   "minutes": 6,
+   "objectiveIds": [
+    "o1"
+   ],
+   "scriptCue": "s1",
+   "title": "A probability table must add to 1"
+  },
+  {
+   "grouping": "individual",
+   "minutes": 6,
+   "objectiveIds": [
+    "o2"
+   ],
+   "scriptCue": "s2",
+   "title": "Expectation: the balance point"
+  },
+  {
+   "grouping": "pairs",
+   "minutes": 8,
+   "objectiveIds": [
+    "o3"
+   ],
+   "scriptCue": "s3",
+   "title": "Binomial: n = 10, p = 0.3"
+  },
+  {
+   "grouping": "whole class",
+   "minutes": 8,
+   "objectiveIds": [
+    "o4"
+   ],
+   "scriptCue": "s4",
+   "title": "The 68\u201395\u201399.7 rule"
+  },
+  {
+   "grouping": "individual",
+   "minutes": 12,
+   "objectiveIds": [
+    "o1",
+    "o2",
+    "o3",
+    "o4"
+   ],
+   "resources": [
+    "worksheet"
+   ],
+   "scriptCue": "s5",
+   "title": "Assemble the toolkit"
+  }
+ ],
+ "durationMinutes": 40,
+ "level": "jc",
+ "objectives": [
+  {
+   "assessmentPoints": [
+    "Table sum answers in the probability table activity",
+    "Toolkit recap answers"
+   ],
+   "id": "o1",
+   "successCriteria": [
+    "I can check that 0.2 + 0.5 + 0.3 = 1, so the table for X = 0, 1, 2 is a valid distribution",
+    "I can find P(X = 2) = 1 - 0.2 - 0.5 = 0.3 when X = 2 is the only other outcome"
+   ],
+   "text": "Check a discrete probability distribution by summing its probabilities to 1"
+  },
+  {
+   "assessmentPoints": [
+    "Expectation answers in the balance point activity",
+    "Toolkit recap answers"
+   ],
+   "id": "o2",
+   "successCriteria": [
+    "I can compute E(X) = 0(0.2) + 1(0.5) + 2(0.3) = 1.1",
+    "I can read expectation as the balance point and the long-run average over many repeats, even though X can never equal 1.1"
+   ],
+   "text": "Compute expectation as a probability-weighted average and read it as a balance point"
+  },
+  {
+   "assessmentPoints": [
+    "Binomial answers in the binomial activity",
+    "Exit responses in the toolkit activity"
+   ],
+   "id": "o3",
+   "successCriteria": [
+    "I can write P(X = 3) = (10 choose 3)(0.3)^3(0.7)^7 = 120 x (0.3)^3 x (0.7)^7, which is about 0.267",
+    "I can choose the successful trials, then multiply by one path's probability"
+   ],
+   "text": "Use the binomial formula: choose the successful trials, then multiply by one path's probability"
+  },
+  {
+   "assessmentPoints": [
+    "Estimates in the 68-95-99.7 rule activity",
+    "Trap answers in the toolkit activity"
+   ],
+   "id": "o4",
+   "successCriteria": [
+    "I can state that about 95% lies between 80 and 120 for a normal distribution with mean 100 and standard deviation 10",
+    "I can state that after five heads the next toss is still 1/2 heads, because the tosses are independent"
+   ],
+   "text": "Use the 68-95-99.7 rule for a normal distribution and state what independence means"
+  }
+ ],
+ "subject": "math",
+ "title": "JC H2 probability: distributions, binomial, normal, independence",
+ "topic": "h2-probability"
+}
