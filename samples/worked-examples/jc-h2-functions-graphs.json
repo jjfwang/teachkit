@@ -1,0 +1,53 @@
+{
+  "complete": {
+    "problem": "Trace functions and graphs from outside transformations acting vertically to inside transformations acting horizontally, reciprocal functions ruled by their asymptotes, and the plus-inside trap that the root check springs.",
+    "selfExplanation": "Explain how changes outside f act vertically, how changes inside f act horizontally once b is factored out, how asymptotes rule a reciprocal function, and why plus inside the brackets shifts left.",
+    "steps": [
+      {
+        "annotation": "A transformation outside f acts vertically: y = a·f(x) stretches heights by a factor of a, and adding d lifts the graph by d, as y = 2f(x) + 1 stretches by 2 then lifts by 1.",
+        "text": "Step 1 (s1): Outside f acts vertically. Watch every height of y = f(x) double as we pass to y = 2f(x): that is a stretch by a factor of 2. Now watch the whole curve lift as we add 1: y = 2f(x) + 1, a stretch first and then a translation up. Tell your partner: which change stretched, and which change lifted?"
+      },
+      {
+        "annotation": "A transformation inside f acts horizontally: f(bx + c) must be read as f(b(x + c/b)), so f(2x + 2) is f(2(x + 1)) - a shift left of 1, then a squeeze by a factor of 2.",
+        "text": "Step 2 (s2): Inside f acts horizontally, and it feels backwards. The safe move is to factor: f(bx + c) is f(b(x + c/b)). Watch f(2x + 2) become f(2(x + 1)): a shift left of 1 first, then a squeeze by a factor of 2 toward that new centre. Never read the shift until b is factored out."
+      },
+      {
+        "annotation": "A reciprocal function is ruled by its asymptotes: y = 1/x flattens onto the horizontal asymptote y = 0 as x grows and shoots up the vertical asymptote x = 0, never touching either.",
+        "text": "Step 3 (s3): Reciprocal functions: the asymptotes run the show. For y = 1/x, follow one branch as x grows: it flattens onto the horizontal asymptote y = 0 but never touches it. Now follow it toward x = 0: it shoots up the vertical asymptote x = 0, and across that line the other branch has the opposite sign."
+      },
+      {
+        "annotation": "The trap: f(x + 3) shifts the graph 3 units to the left, not the right, because f(x + 3) is zero where x = -3, to the left of the original root.",
+        "text": "Step 4 (s4): Here is the trap, sprung on purpose: plus inside the brackets does not push the graph right. Watch the wrong rightward shift get crossed out, then watch the graph slide left, exactly where the root check puts it. Now work through the worksheet in pairs, checking each answer against the trap section of your student notes. Last, the exit ticket - on your own, no talking - and remember: if you can run the root check, the plus-inside trap can never catch you."
+      }
+    ]
+  },
+  "faded": {
+    "problem": "Describe fully the transformation that maps y = f(x) onto y = 2f(x) + 1.",
+    "selfExplanation": "The first step is shown. Say how the + 1 lifts the stretched graph, then why both changes act vertically because both are outside f.",
+    "steps": [
+      {
+        "annotation": "The factor 2 outside f stretches every height of y = f(x) by a factor of 2.",
+        "text": "Step 1: the 2 outside f stretches every height of y = f(x) by a factor of 2, giving y = 2f(x).",
+        "withheld": false
+      },
+      {
+        "annotation": "Adding 1 outside f lifts the whole stretched graph up by 1.",
+        "text": "Step 2: the + 1 outside f lifts the stretched graph up by 1, giving y = 2f(x) + 1.",
+        "withheld": true
+      },
+      {
+        "annotation": "Both changes are outside f, so both act vertically: a vertical stretch by a factor of 2, followed by a translation of 1 unit up.",
+        "text": "Step 3: read the landing: a vertical stretch by a factor of 2, followed by a translation of 1 unit up.",
+        "withheld": true
+      }
+    ]
+  },
+  "level": "jc",
+  "paired": {
+    "problem": "Rewrite f(3x + 3) in the form f(3(x + c)) and give the value of c.",
+    "solution": "f(3x + 3) = f(3(x + 1)), so c = 1."
+  },
+  "subject": "math",
+  "title": "JC H2 functions and graphs: transformations, reciprocal functions, asymptote behaviour",
+  "topic": "h2-functions-graphs"
+}

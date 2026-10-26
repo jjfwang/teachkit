@@ -1,0 +1,193 @@
+{
+  "doNow": [
+    {
+      "choices": [
+        {
+          "misconception": "f(x + 3) shifts the graph 3 units to the right.",
+          "rationale": {
+            "chose": "The learner selected option y = f(3x) + 2 as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: f(x + 3) shifts the graph 3 units to the right.. The slip: Plus looks like a move to the right, but the shift undoes the change to x.. The fix: Inside the brackets means shift LEFT: f(x + 3) is zero where x = -3, to the left of the original..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "y = f(3x) + 2"
+        },
+        {
+          "misconception": "f(x + 3) shifts the graph 3 units to the right.",
+          "rationale": {
+            "chose": "The learner selected option y = 3f(x + 2) as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: f(x + 3) shifts the graph 3 units to the right.. The slip: Plus looks like a move to the right, but the shift undoes the change to x.. The fix: Inside the brackets means shift LEFT: f(x + 3) is zero where x = -3, to the left of the original..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "y = 3f(x + 2)"
+        },
+        {
+          "correct": true,
+          "text": "y = 3f(x) + 2"
+        },
+        {
+          "misconception": "f(x + 3) shifts the graph 3 units to the right.",
+          "rationale": {
+            "chose": "The learner selected option y = f(x) + 5 as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: f(x + 3) shifts the graph 3 units to the right.. The slip: Plus looks like a move to the right, but the shift undoes the change to x.. The fix: Inside the brackets means shift LEFT: f(x + 3) is zero where x = -3, to the left of the original..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "y = f(x) + 5"
+        }
+      ],
+      "id": "dn1",
+      "kind": "multiple-choice",
+      "prompt": "Which equation is y = f(x) stretched vertically by a factor of 3 and then lifted up by 2?"
+    },
+    {
+      "choices": [
+        {
+          "misconception": "f(x + 3) shifts the graph 3 units to the right.",
+          "rationale": {
+            "chose": "The learner selected option Vertical asymptote x = 1; horizontal asymptote y = 2 as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: f(x + 3) shifts the graph 3 units to the right.. The slip: Plus looks like a move to the right, but the shift undoes the change to x.. The fix: Inside the brackets means shift LEFT: f(x + 3) is zero where x = -3, to the left of the original..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "Vertical asymptote x = 1; horizontal asymptote y = 2"
+        },
+        {
+          "correct": true,
+          "text": "Vertical asymptote x = 2; horizontal asymptote y = 1"
+        },
+        {
+          "misconception": "f(x + 3) shifts the graph 3 units to the right.",
+          "rationale": {
+            "chose": "The learner selected option Vertical asymptote x = 0; horizontal asymptote y = 0 as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: f(x + 3) shifts the graph 3 units to the right.. The slip: Plus looks like a move to the right, but the shift undoes the change to x.. The fix: Inside the brackets means shift LEFT: f(x + 3) is zero where x = -3, to the left of the original..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "Vertical asymptote x = 0; horizontal asymptote y = 0"
+        },
+        {
+          "misconception": "f(x + 3) shifts the graph 3 units to the right.",
+          "rationale": {
+            "chose": "The learner selected option Vertical asymptote x = -2; horizontal asymptote y = 1 as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: f(x + 3) shifts the graph 3 units to the right.. The slip: Plus looks like a move to the right, but the shift undoes the change to x.. The fix: Inside the brackets means shift LEFT: f(x + 3) is zero where x = -3, to the left of the original..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "Vertical asymptote x = -2; horizontal asymptote y = 1"
+        }
+      ],
+      "id": "dn2",
+      "kind": "multiple-choice",
+      "prompt": "State the equations of the vertical and horizontal asymptotes of y = 1/(x - 2) + 1."
+    },
+    {
+      "choices": [
+        {
+          "misconception": "f(x + 3) shifts the graph 3 units to the right.",
+          "rationale": {
+            "chose": "The learner selected option It flattens onto the line y = 0 as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: f(x + 3) shifts the graph 3 units to the right.. The slip: Plus looks like a move to the right, but the shift undoes the change to x.. The fix: Inside the brackets means shift LEFT: f(x + 3) is zero where x = -3, to the left of the original..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "It flattens onto the line y = 0"
+        },
+        {
+          "correct": true,
+          "text": "It shoots up without bound along the line x = 0"
+        },
+        {
+          "misconception": "f(x + 3) shifts the graph 3 units to the right.",
+          "rationale": {
+            "chose": "The learner selected option It crosses the line x = 0 at a high point as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: f(x + 3) shifts the graph 3 units to the right.. The slip: Plus looks like a move to the right, but the shift undoes the change to x.. The fix: Inside the brackets means shift LEFT: f(x + 3) is zero where x = -3, to the left of the original..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "It crosses the line x = 0 at a high point"
+        },
+        {
+          "misconception": "f(x + 3) shifts the graph 3 units to the right.",
+          "rationale": {
+            "chose": "The learner selected option It settles at y = 1 as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: f(x + 3) shifts the graph 3 units to the right.. The slip: Plus looks like a move to the right, but the shift undoes the change to x.. The fix: Inside the brackets means shift LEFT: f(x + 3) is zero where x = -3, to the left of the original..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "It settles at y = 1"
+        }
+      ],
+      "id": "dn3",
+      "kind": "multiple-choice",
+      "prompt": "As x approaches 0 from the positive side, what does the graph of y = 1/x do?"
+    }
+  ],
+  "hingeQuestions": [
+    {
+      "choices": [
+        {
+          "misconception": "f(x + 3) shifts the graph 3 units to the right.",
+          "rationale": {
+            "chose": "The learner selected option At x = 3, three units to the right as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: f(x + 3) shifts the graph 3 units to the right.. The slip: Plus looks like a move to the right, but the shift undoes the change to x.. The fix: Inside the brackets means shift LEFT: f(x + 3) is zero where x = -3, to the left of the original..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "At x = 3, three units to the right"
+        },
+        {
+          "misconception": "f(x + 3) shifts the graph 3 units to the right.",
+          "rationale": {
+            "chose": "The learner selected option At x = 0, unchanged as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: f(x + 3) shifts the graph 3 units to the right.. The slip: Plus looks like a move to the right, but the shift undoes the change to x.. The fix: Inside the brackets means shift LEFT: f(x + 3) is zero where x = -3, to the left of the original..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "At x = 0, unchanged"
+        },
+        {
+          "correct": true,
+          "text": "At x = -3, three units to the left"
+        },
+        {
+          "misconception": "f(x + 3) shifts the graph 3 units to the right.",
+          "rationale": {
+            "chose": "The learner selected option At x = -3, three units up as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: f(x + 3) shifts the graph 3 units to the right.. The slip: Plus looks like a move to the right, but the shift undoes the change to x.. The fix: Inside the brackets means shift LEFT: f(x + 3) is zero where x = -3, to the left of the original..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "At x = -3, three units up"
+        }
+      ],
+      "id": "h1",
+      "kind": "multiple-choice",
+      "prompt": "The graph of y = f(x) has a root at x = 0. Where is the corresponding root of y = f(x + 3)?",
+      "scriptCue": "s4"
+    },
+    {
+      "choices": [
+        {
+          "misconception": "f(x + 3) shifts the graph 3 units to the right.",
+          "rationale": {
+            "chose": "The learner selected option It is y = f(x) shifted 3 units to the right as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: f(x + 3) shifts the graph 3 units to the right.. The slip: Plus looks like a move to the right, but the shift undoes the change to x.. The fix: Inside the brackets means shift LEFT: f(x + 3) is zero where x = -3, to the left of the original..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "It is y = f(x) shifted 3 units to the right"
+        },
+        {
+          "correct": true,
+          "text": "It is y = f(x) shifted 3 units to the left"
+        },
+        {
+          "misconception": "f(x + 3) shifts the graph 3 units to the right.",
+          "rationale": {
+            "chose": "The learner selected option It is y = f(x) shifted 3 units up as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: f(x + 3) shifts the graph 3 units to the right.. The slip: Plus looks like a move to the right, but the shift undoes the change to x.. The fix: Inside the brackets means shift LEFT: f(x + 3) is zero where x = -3, to the left of the original..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "It is y = f(x) shifted 3 units up"
+        }
+      ],
+      "id": "h2",
+      "kind": "multiple-choice",
+      "prompt": "Which statement about the graph of y = f(x + 3) is correct?",
+      "scriptCue": "s4"
+    }
+  ],
+  "level": "jc",
+  "subject": "math",
+  "title": "JC H2 functions and graphs: transformations, reciprocal functions, asymptote behaviour",
+  "topic": "h2-functions-graphs"
+}
