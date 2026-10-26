@@ -1,0 +1,116 @@
+{
+ "level": "jc",
+ "sets": [
+  {
+   "cloze": [
+    {
+     "answers": [
+      "Probability distribution",
+      "Expectation"
+     ],
+     "text": "A ___ lists every value a random variable can take with its probability, and its ___ is the probability-weighted average."
+    },
+    {
+     "answers": [
+      "Binomial distribution",
+      "Normal distribution"
+     ],
+     "text": "A ___ counts successes in n independent trials, while a ___ is a bell-shaped curve fixed by its mean and standard deviation."
+    }
+   ],
+   "frames": [
+    "A ___ lists every value with its probability, and the probabilities sum to 1.",
+    "The ___ of a random variable is its probability-weighted average.",
+    "___ means one outcome does not change another outcome's probability."
+   ],
+   "level": "full",
+   "starters": [
+    "A probability distribution lists...",
+    "Expectation is...",
+    "The binomial distribution counts..."
+   ],
+   "wordBank": [
+    {
+     "gloss": "every value a discrete random variable can take with its probability, summing to 1",
+     "term": "Probability distribution"
+    },
+    {
+     "gloss": "the probability-weighted average of a random variable, the balance point",
+     "term": "Expectation"
+    },
+    {
+     "gloss": "the count of successes in n independent trials each with success probability p",
+     "term": "Binomial distribution"
+    },
+    {
+     "gloss": "a bell-shaped distribution fixed by its mean and standard deviation",
+     "term": "Normal distribution"
+    },
+    {
+     "gloss": "one outcome does not change another outcome's probability",
+     "term": "Independence"
+    }
+   ]
+  },
+  {
+   "cloze": [
+    {
+     "answers": [
+      "Probability distribution",
+      "Expectation"
+     ],
+     "text": "A ___ lists every value with its probability, and its ___ is the probability-weighted average."
+    }
+   ],
+   "frames": [
+    "A ___ lists every value with its probability.",
+    "The ___ is the probability-weighted average."
+   ],
+   "level": "partial",
+   "starters": [
+    "A probability distribution lists...",
+    "Expectation is..."
+   ],
+   "wordBank": [
+    {
+     "gloss": "every value a discrete random variable can take with its probability, summing to 1",
+     "term": "Probability distribution"
+    },
+    {
+     "gloss": "the probability-weighted average of a random variable, the balance point",
+     "term": "Expectation"
+    },
+    {
+     "gloss": "the count of successes in n independent trials each with success probability p",
+     "term": "Binomial distribution"
+    }
+   ]
+  },
+  {
+   "cloze": [
+    {
+     "answers": [
+      "Probability distribution"
+     ],
+     "text": "A ___ lists every value a random variable can take with its probability."
+    }
+   ],
+   "frames": [
+    "A ___ lists every value with its probability."
+   ],
+   "level": "minimal",
+   "starters": [
+    "A probability distribution lists..."
+   ],
+   "wordBank": [
+    {
+     "gloss": "every value a discrete random variable can take with its probability, summing to 1",
+     "term": "Probability distribution"
+    }
+   ]
+  }
+ ],
+ "subject": "math",
+ "title": "JC H2 probability: distributions, binomial, normal, independence",
+ "topic": "h2-probability"
+}
