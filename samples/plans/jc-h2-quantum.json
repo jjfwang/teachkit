@@ -1,0 +1,97 @@
+{
+ "activities": [
+  {
+   "grouping": "whole class",
+   "minutes": 6,
+   "objectiveIds": [
+    "o1"
+   ],
+   "scriptCue": "s1",
+   "title": "Light arrives as a stream of photons"
+  },
+  {
+   "grouping": "individual",
+   "minutes": 7,
+   "objectiveIds": [
+    "o2"
+   ],
+   "scriptCue": "s2",
+   "title": "Below the threshold frequency, nothing happens"
+  },
+  {
+   "grouping": "pairs",
+   "minutes": 7,
+   "objectiveIds": [
+    "o2"
+   ],
+   "scriptCue": "s3",
+   "title": "Einstein's photoelectric equation"
+  },
+  {
+   "grouping": "whole class",
+   "minutes": 6,
+   "objectiveIds": [
+    "o3"
+   ],
+   "scriptCue": "s4",
+   "title": "Brighter light: more photons, more electrons"
+  },
+  {
+   "grouping": "individual",
+   "minutes": 14,
+   "objectiveIds": [
+    "o1",
+    "o2",
+    "o3"
+   ],
+   "resources": [
+    "worksheet"
+   ],
+   "scriptCue": "s5",
+   "title": "Misconception: brighter light ejects faster electrons"
+  }
+ ],
+ "durationMinutes": 40,
+ "level": "jc",
+ "objectives": [
+  {
+   "assessmentPoints": [
+    "Photon answers in the stream of photons activity",
+    "Trap answers in the misconception activity"
+   ],
+   "id": "o1",
+   "successCriteria": [
+    "4.97 x 10^-19 J, from E = h f = 6.63 x 10^-34 x 7.5 x 10^14",
+    "E = h f = 6.63 x 10^-34 x 1.20 x 10^15 = 7.96 x 10^-19 J, so KE_max = E - W = 7.96 x 10^-19 - 3.31 x 10^-19 = 4.65 x 10^-19 J."
+   ],
+   "text": "Describe light as a stream of photons, each carrying energy E = h f"
+  },
+  {
+   "assessmentPoints": [
+    "Threshold and work function answers in the threshold activity",
+    "Equation and stopping potential answers in the equation and brighter light activities"
+   ],
+   "id": "o2",
+   "successCriteria": [
+    "The work function W is the minimum energy an electron needs to escape the metal surface. The threshold frequency f0 = W / h is the lowest frequency whose photons each carry at least W; below f0 no electrons are emitted, however bright the light.",
+    "V_s = KE_max / e = 4.65 x 10^-19 / 1.60 x 10^-19 = 2.9 V."
+   ],
+   "text": "Use h f = W + KE_max, the threshold frequency f0 = W / h and the stopping potential e V_s = KE_max"
+  },
+  {
+   "assessmentPoints": [
+    "Brighter light answers in the brighter light activity",
+    "Trap answers in the misconception activity"
+   ],
+   "id": "o3",
+   "successCriteria": [
+    "λ = h / (m v) = 6.63 x 10^-34 / (9.11 x 10^-31 x 1.0 x 10^6) = 7.3 x 10^-10 m. A moving electron carries a wavelength just like a photon: matter shows wave-particle duality.",
+    "Brightness means more photons, not stronger ones: a dim violet beam ejects faster electrons than a bright red one."
+   ],
+   "text": "Explain wave-particle duality with de Broglie's λ = h / (m v), and avoid the brighter-means-faster trap"
+  }
+ ],
+ "subject": "science",
+ "title": "JC H2 physics — quantum: photons and the photoelectric effect",
+ "topic": "h2-quantum"
+}
