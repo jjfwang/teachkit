@@ -1,0 +1,57 @@
+{
+  "complete": {
+    "problem": "Trace probability from the distribution sum check to expectation as the balance point 1.1, the binomial formula for exactly 3 successes, the 68-95-99.7 rule, and the independence trap that a fair coin springs.",
+    "selfExplanation": "Explain how a distribution is checked by summing to 1, how expectation weights values by probabilities, how the binomial formula combines choosing trials with one path's probability, how the 68-95-99.7 rule reads a normal curve, and why independent tosses have no memory.",
+    "steps": [
+      {
+        "annotation": "A probability distribution lists every value with its probability and the probabilities sum to 1: 0.2 + 0.5 + 0.3 = 1 for X = 0, 1, 2.",
+        "text": "Step 1 (s1): A probability table must add to 1. Every discrete distribution lists all its outcomes with their probabilities: here X is 0, 1 or 2 with probabilities 0.2, 0.5 and 0.3. Watch the three chips travel into the sum - 0.2 plus 0.5 plus 0.3 makes exactly 1, because something has to happen. Make the sum check your reflex for every table in this topic."
+      },
+      {
+        "annotation": "Expectation is the probability-weighted average: E(X) = 0(0.2) + 1(0.5) + 2(0.3) = 1.1, the balance point and long-run mean.",
+        "text": "Step 2 (s2): Expectation: the balance point. Expectation is the weighted average E(X) = 0(0.2) + 1(0.5) + 2(0.3) = 1.1. The probe slides along the axis and the fulcrum rises exactly at 1.1: picture the distribution balancing there, and read expectation as the long-run average over many repeats. Check your student notes for the balance-point picture before we count successes."
+      },
+      {
+        "annotation": "The binomial formula chooses which trials succeed, then prices one path: (10 choose 3)(0.3)^3(0.7)^7 is about 0.267 for exactly 3 successes in 10 trials.",
+        "text": "Step 3 (s3): Binomial: n = 10, p = 0.3. Exactly 3 successes in 10 trials means choosing which 3 trials succeed: 10 choose 3 is 120 ways. Each path has probability 0.3 cubed times 0.7 to the 7, so the bar grows to about 0.267. Say the recipe aloud: choose the trials, then price one path. Now open the worksheet and try the binomial question in pairs."
+      },
+      {
+        "annotation": "The normal distribution follows the 68-95-99.7 rule: about 68% within one standard deviation of the mean, 95% within two, 99.7% within three.",
+        "text": "Step 4 (s4): The 68\u201395\u201399.7 rule. The normal curve is pinned down by its mean and standard deviation. Watch the shaded band widen from one sigma to three - covering about 68, then 95, then 99.7 percent of the area. The rule gives instant estimates: mean 100, sigma 10 means about 95% between 80 and 120. Compare the rule's three landmarks in your student notes."
+      },
+      {
+        "annotation": "Events are independent when one outcome does not change another's probability: after five heads the next toss is still 1/2 heads.",
+        "text": "Step 5 (s5): A common mistake: tails is due after five heads. Five heads land one by one, the sixth coin travels in, and the memory needle never moves. Independence means each toss starts fresh: the next toss is 1/2 heads whatever came before. Compare the trap section of your student notes one last time. Now the exit ticket - on your own, no talking - covering the sum check, expectation, the binomial formula and the 68-95-99.7 rule."
+      }
+    ]
+  },
+  "faded": {
+    "problem": "For X with probabilities 0.2, 0.5, 0.3 at values 0, 1, 2, verify the table is a valid distribution and compute E(X).",
+    "selfExplanation": "The first step is shown. Say how each value is weighted by its probability, then why the answer 1.1 is a balance point X itself never takes.",
+    "steps": [
+      {
+        "annotation": "The probabilities in a discrete distribution sum to 1, so the table is checked before any further work.",
+        "text": "Step 1: check the table: 0.2 + 0.5 + 0.3 = 1, so it is a valid distribution.",
+        "withheld": false
+      },
+      {
+        "annotation": "Expectation weights each value by its probability: 0(0.2) + 1(0.5) + 2(0.3) = 0 + 0.5 + 0.6 = 1.1.",
+        "text": "Step 2: weight each value by its probability: E(X) = 0(0.2) + 1(0.5) + 2(0.3) = 1.1.",
+        "withheld": true
+      },
+      {
+        "annotation": "The expectation 1.1 is the balance point of the distribution - a value X never takes, but the long-run average over many repeats.",
+        "text": "Step 3: read the landing: 1.1 is the balance point and long-run average, even though X never takes the value 1.1.",
+        "withheld": true
+      }
+    ]
+  },
+  "level": "jc",
+  "paired": {
+    "problem": "Let X be the number of successes in 10 independent trials, each with success probability 0.3. Write down the formula for P(X = 3) and evaluate it.",
+    "solution": "P(X = 3) = (10 choose 3)(0.3)^3(0.7)^7 = 120 x (0.3)^3 x (0.7)^7, which is about 0.267."
+  },
+  "subject": "math",
+  "title": "JC H2 probability: distributions, binomial, normal, independence",
+  "topic": "h2-probability"
+}
