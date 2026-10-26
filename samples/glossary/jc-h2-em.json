@@ -1,0 +1,33 @@
+{
+ "entries": [
+  {
+   "example": "Electric field lines run from + to −: between the charged plates each line draws straight from the positive plate to the negative one, evenly spaced, and the probe dot rides one line down to show the push on a positive charge.",
+   "meaning": "The field around a charge, drawn as lines running from + to -: a positive charge placed in it is pushed along the lines, and E = F/q. Between charged plates the evenly spaced lines mean a uniform field.",
+   "term": "Electric field"
+  },
+  {
+   "example": "A bar magnet's field loops from N to S: the lines leave the north pole, sweep round above and below the magnet and enter the south pole, never crossing and never ending in empty space.",
+   "meaning": "The field around a magnet or current, drawn as lines that loop from N to S outside a bar magnet and never cross: the line direction at a point gives the direction of B there, and closer lines mean a stronger field.",
+   "term": "Magnetic field"
+  },
+  {
+   "example": "Moving the magnet changes the flux: pushing the magnet towards the coil grows the flux threading it and a voltage appears, but holding the magnet still lets the needle fall back to zero, because only the change induces an emf.",
+   "meaning": "The amount of magnetic field threading a coil, Φ = BA cos θ, measured in webers (Wb): it is greatest when the coil faces the field squarely and zero when the coil is edge-on to it.",
+   "term": "Magnetic flux"
+  },
+  {
+   "example": "A generator spins the coil in the field: as the coil turns the flux through it rises and falls between max and zero, and the induced emf alternates with the change, kicking the meter left then right.",
+   "meaning": "The induced voltage around a coil when the flux through it changes, emf = -N ΔΦ/Δt: it exists only while the flux is changing, never from flux merely being present.",
+   "term": "Emf"
+  },
+  {
+   "example": "A 200-turn coil has the flux through it fall from 0.030 Wb to 0.010 Wb in 0.50 s. The change is ΔΦ = 0.020 Wb, so by Faraday's law emf = -N ΔΦ/Δt = 200 x 0.020 / 0.50 = 8.0 V in magnitude. Check the flux itself the same way: for a field of 0.40 T through a coil of area 0.020 m^2 facing it squarely, Φ = BA = 0.40 x 0.020 = 0.0080 Wb - and if that flux then stays exactly the same, ΔΦ = 0 and the induced emf is exactly 0 V, however large the flux is.",
+   "meaning": "The induced emf equals the rate of change of flux linkage, emf = -N ΔΦ/Δt, with the minus sign (Lenz's law) saying the induced effect opposes the change that produces it.",
+   "term": "Faraday's law"
+  }
+ ],
+ "level": "jc",
+ "subject": "science",
+ "title": "JC H2 physics — electromagnetism: fields, flux and induction",
+ "topic": "h2-em"
+}

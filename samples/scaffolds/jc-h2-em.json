@@ -1,0 +1,116 @@
+{
+ "level": "jc",
+ "sets": [
+  {
+   "cloze": [
+    {
+     "answers": [
+      "Electric field",
+      "Magnetic field"
+     ],
+     "text": "An ___ runs from + to -, and a ___ loops from N to S."
+    },
+    {
+     "answers": [
+      "Magnetic flux",
+      "Emf"
+     ],
+     "text": "The ___ through a coil is Φ = BA cos θ, and an ___ appears only while that flux is changing."
+    }
+   ],
+   "frames": [
+    "The ___ is the field around a charge.",
+    "The ___ is the amount of magnetic field threading a coil.",
+    "___ says the induced emf equals the rate of change of flux linkage."
+   ],
+   "level": "full",
+   "starters": [
+    "Electric field lines run...",
+    "Magnetic flux through a coil is...",
+    "Faraday's law says the induced emf..."
+   ],
+   "wordBank": [
+    {
+     "gloss": "the field around a charge, drawn as lines running from + to -",
+     "term": "Electric field"
+    },
+    {
+     "gloss": "the field around a magnet or current, drawn as lines that loop from N to S outside a bar magnet",
+     "term": "Magnetic field"
+    },
+    {
+     "gloss": "the amount of magnetic field threading a coil, Φ = BA cos θ",
+     "term": "Magnetic flux"
+    },
+    {
+     "gloss": "the induced voltage around a coil when the flux through it changes",
+     "term": "Emf"
+    },
+    {
+     "gloss": "the induced emf equals the rate of change of flux linkage",
+     "term": "Faraday's law"
+    }
+   ]
+  },
+  {
+   "cloze": [
+    {
+     "answers": [
+      "Electric field",
+      "Magnetic field"
+     ],
+     "text": "An ___ runs from + to -, and a ___ loops from N to S."
+    }
+   ],
+   "frames": [
+    "The ___ is the field around a charge.",
+    "The ___ is the amount of magnetic field threading a coil."
+   ],
+   "level": "partial",
+   "starters": [
+    "Electric field lines run...",
+    "Magnetic flux through a coil is..."
+   ],
+   "wordBank": [
+    {
+     "gloss": "the field around a charge, drawn as lines running from + to -",
+     "term": "Electric field"
+    },
+    {
+     "gloss": "the field around a magnet or current, drawn as lines that loop from N to S outside a bar magnet",
+     "term": "Magnetic field"
+    },
+    {
+     "gloss": "the amount of magnetic field threading a coil, Φ = BA cos θ",
+     "term": "Magnetic flux"
+    }
+   ]
+  },
+  {
+   "cloze": [
+    {
+     "answers": [
+      "Electric field"
+     ],
+     "text": "An ___ runs from + to -."
+    }
+   ],
+   "frames": [
+    "The ___ is the field around a charge."
+   ],
+   "level": "minimal",
+   "starters": [
+    "Electric field lines run..."
+   ],
+   "wordBank": [
+    {
+     "gloss": "the field around a charge, drawn as lines running from + to -",
+     "term": "Electric field"
+    }
+   ]
+  }
+ ],
+ "subject": "science",
+ "title": "JC H2 physics — electromagnetism: fields, flux and induction",
+ "topic": "h2-em"
+}
