@@ -1,0 +1,51 @@
+{
+  "items": [
+    {
+      "answer": "At x = -3, three units to the left",
+      "choices": [
+        "At x = 3, three units to the right",
+        "At x = 0, unchanged",
+        "At x = -3, three units to the left",
+        "At x = -3, three units up"
+      ],
+      "misconceptionCode": "f(x + 3) shifts the graph 3 units to the right.",
+      "prompt": "The graph of y = f(x) has a root at x = 0. Where is the corresponding root of y = f(x + 3)?"
+    },
+    {
+      "answer": "y = 3f(x) + 2",
+      "choices": [
+        "y = f(3x) + 2",
+        "y = 3f(x + 2)",
+        "y = 3f(x) + 2",
+        "y = f(x) + 5"
+      ],
+      "prompt": "Which equation is y = f(x) stretched vertically by a factor of 3 and then lifted up by 2?"
+    },
+    {
+      "answer": "f(2x + 6) = f(2(x + 3)): a translation of 3 units to the left, then a horizontal squeeze by a factor of 2.",
+      "prompt": "Rewrite f(2x + 6) in the form f(2(x + c)) and state the horizontal translation it shows."
+    },
+    {
+      "answer": "Vertical asymptote x = 2; horizontal asymptote y = 1.",
+      "prompt": "State the equations of the vertical and horizontal asymptotes of y = 1/(x - 2) + 1."
+    },
+    {
+      "answer": "It shoots up without bound along the line x = 0",
+      "choices": [
+        "It flattens onto the line y = 0",
+        "It shoots up without bound along the line x = 0",
+        "It crosses the line x = 0 at a high point",
+        "It settles at y = 1"
+      ],
+      "prompt": "As x approaches 0 from the positive side, what does the graph of y = 1/x do?"
+    },
+    {
+      "answer": "f(3x + 3) = f(3(x + 1)), so c = 1.",
+      "prompt": "Rewrite f(3x + 3) in the form f(3(x + c)) and give the value of c."
+    }
+  ],
+  "level": "jc",
+  "subject": "math",
+  "title": "JC H2 functions and graphs: transformations, reciprocal functions, asymptote behaviour",
+  "topic": "h2-functions-graphs"
+}
