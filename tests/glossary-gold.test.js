@@ -64,7 +64,8 @@ const STEMS = [
   'jc-h2-integration',
   'jc-h2-probability',
   'jc-h2-functions-graphs',
-  'jc-h2-statistics'
+  'jc-h2-statistics',
+  'jc-h2-mechanics'
 ];
 
 function load(rel) {

@@ -1,0 +1,116 @@
+{
+ "level": "jc",
+ "sets": [
+  {
+   "cloze": [
+    {
+     "answers": [
+      "Centripetal force",
+      "Centripetal acceleration"
+     ],
+     "text": "A ___ keeps an object in circular motion, and the ___ is a = v^2/r."
+    },
+    {
+     "answers": [
+      "Geostationary orbit",
+      "Period"
+     ],
+     "text": "A ___ stays fixed over one point on the equator, and its ___ is 24 hours."
+    }
+   ],
+   "frames": [
+    "The ___ is the resultant force toward the centre of the circle.",
+    "The ___ is the acceleration toward the centre of the circle.",
+    "___ is the attractive force between two masses."
+   ],
+   "level": "full",
+   "starters": [
+    "Centripetal force is...",
+    "Centripetal acceleration points...",
+    "Gravitation follows..."
+   ],
+   "wordBank": [
+    {
+     "gloss": "the resultant force toward the centre of the circle",
+     "term": "Centripetal force"
+    },
+    {
+     "gloss": "the acceleration toward the centre of the circle",
+     "term": "Centripetal acceleration"
+    },
+    {
+     "gloss": "the attractive force between two masses",
+     "term": "Gravitation"
+    },
+    {
+     "gloss": "a circular orbit that stays fixed over one point on the equator",
+     "term": "Geostationary orbit"
+    },
+    {
+     "gloss": "the time for one complete orbit or revolution",
+     "term": "Period"
+    }
+   ]
+  },
+  {
+   "cloze": [
+    {
+     "answers": [
+      "Centripetal force",
+      "Centripetal acceleration"
+     ],
+     "text": "A ___ keeps an object in circular motion, and the ___ is a = v^2/r."
+    }
+   ],
+   "frames": [
+    "The ___ is the resultant force toward the centre of the circle.",
+    "The ___ is the acceleration toward the centre of the circle."
+   ],
+   "level": "partial",
+   "starters": [
+    "Centripetal force is...",
+    "Centripetal acceleration points..."
+   ],
+   "wordBank": [
+    {
+     "gloss": "the resultant force toward the centre of the circle",
+     "term": "Centripetal force"
+    },
+    {
+     "gloss": "the acceleration toward the centre of the circle",
+     "term": "Centripetal acceleration"
+    },
+    {
+     "gloss": "the attractive force between two masses",
+     "term": "Gravitation"
+    }
+   ]
+  },
+  {
+   "cloze": [
+    {
+     "answers": [
+      "Centripetal force"
+     ],
+     "text": "A ___ keeps an object in circular motion."
+    }
+   ],
+   "frames": [
+    "The ___ is the resultant force toward the centre of the circle."
+   ],
+   "level": "minimal",
+   "starters": [
+    "Centripetal force is..."
+   ],
+   "wordBank": [
+    {
+     "gloss": "the resultant force toward the centre of the circle",
+     "term": "Centripetal force"
+    }
+   ]
+  }
+ ],
+ "subject": "science",
+ "title": "JC H2 physics — mechanics: circular motion and gravitation",
+ "topic": "h2-mechanics"
+}
