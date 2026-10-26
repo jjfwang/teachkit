@@ -1,0 +1,44 @@
+{
+ "commonErrors": [
+  {
+   "example": "A learner writes on the worksheet that the corresponding root of y = f(x + 3) is at x = 3, three units to the right.",
+   "fixIt": {
+    "corrected": "Inside the brackets means shift LEFT: f(x + 3) is zero where x = -3, to the left of the original root, so the whole graph sits 3 units further left.",
+    "prompt": "Fix it: state where the corresponding root of y = f(x + 3) lies, showing in your working why the plus sign moves it left."
+   },
+   "misconception": "f(x + 3) shifts the graph 3 units to the right."
+  },
+  {
+   "example": "On the exit ticket, a learner picks 'It is y = f(x) shifted 3 units to the right' as the statement about the graph of y = f(x + 3).",
+   "fixIt": {
+    "corrected": "It is y = f(x) shifted 3 units to the left, because f(x + 3) is zero where x = -3, to the left of the original root.",
+    "prompt": "Fix it: explain in one sentence why shifted 3 units to the right is not the correct statement about y = f(x + 3)."
+   },
+   "misconception": "f(x + 3) shifts the graph 3 units to the right."
+  }
+ ],
+ "level": "jc",
+ "modelAnswers": [
+  {
+   "answer": "f(2x + 6) = f(2(x + 3)): a translation of 3 units to the left, then a horizontal squeeze by a factor of 2.",
+   "creditPoints": [],
+   "question": "Rewrite f(2x + 6) in the form f(2(x + c)) and state the horizontal translation it shows."
+  },
+  {
+   "answer": "A vertical stretch by a factor of 2, followed by a translation of 1 unit up.",
+   "creditPoints": [],
+   "question": "Describe fully the transformation that maps y = f(x) onto y = 2f(x) + 1."
+  }
+ ],
+ "nextSteps": [
+  "Reteach the +c trap from the paired notes trap before any further functions and graphs work: inside the brackets means shift LEFT: f(x + 3) is zero where x = -3, to the left of the original.",
+  "Practise factoring out b first whenever a shift inside the brackets is to be read, before stating the translation."
+ ],
+ "strengths": [
+  "Most of the class can rewrite an inside change in factored form, such as f(2x + 6) = f(2(x + 3)) on the worksheet.",
+  "The class can describe a transformation outside f, such as a vertical stretch by a factor of 2 on the exit ticket."
+ ],
+ "subject": "math",
+ "title": "JC H2 functions and graphs: transformations, reciprocal functions, asymptote behaviour",
+ "topic": "h2-functions-graphs"
+}

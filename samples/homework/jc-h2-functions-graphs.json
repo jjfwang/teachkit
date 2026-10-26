@@ -1,0 +1,44 @@
+{
+ "level": "jc",
+ "questions": [
+  {
+   "choices": [
+    {
+     "text": "y = f(3x) + 2"
+    },
+    {
+     "text": "y = 3f(x + 2)"
+    },
+    {
+     "correct": true,
+     "text": "y = 3f(x) + 2"
+    },
+    {
+     "text": "y = f(x) + 5"
+    }
+   ],
+   "explanation": "Both changes act outside f, so both act vertically: multiplying by 3 stretches every height by a factor of 3, and adding 2 at the end lifts the graph by 2. The choice f(3x) squeezes horizontally instead, because the 3 is inside the brackets.",
+   "id": "q2",
+   "kind": "multiple-choice",
+   "prompt": "Which equation is y = f(x) stretched vertically by a factor of 3 and then lifted up by 2?"
+  },
+  {
+   "answer": "f(2x + 6) = f(2(x + 3)): a translation of 3 units to the left, then a horizontal squeeze by a factor of 2.",
+   "explanation": "Factor out the 2 before reading the shift: 2x + 6 = 2(x + 3), so the inside change is x + 3, which shifts the graph left by 3 - reading the 6 directly would give the wrong shift.",
+   "id": "q3",
+   "kind": "short-answer",
+   "prompt": "Rewrite f(2x + 6) in the form f(2(x + c)) and state the horizontal translation it shows."
+  },
+  {
+   "answer": "Vertical asymptote x = 2; horizontal asymptote y = 1.",
+   "explanation": "The denominator is zero at x = 2, so the curve shoots up the line x = 2 and never touches it. As x grows large, 1/(x - 2) shrinks toward 0, so the curve flattens onto y = 0 + 1 = 1.",
+   "id": "q4",
+   "kind": "short-answer",
+   "prompt": "State the equations of the vertical and horizontal asymptotes of y = 1/(x - 2) + 1."
+  }
+ ],
+ "subject": "math",
+ "title": "JC H2 functions and graphs: transformations, reciprocal functions, asymptote behaviour",
+ "topic": "h2-functions-graphs",
+ "variant": "homework"
+}

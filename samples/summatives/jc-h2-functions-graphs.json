@@ -1,0 +1,125 @@
+{
+ "blueprint": [
+  {
+   "assessmentObjective": "AO1 recall and apply",
+   "cognitiveLevel": "apply",
+   "marks": 10,
+   "outcomeCode": "H2-FUNC-OPS"
+  },
+  {
+   "assessmentObjective": "AO2 reason and solve",
+   "cognitiveLevel": "reason",
+   "marks": 10,
+   "outcomeCode": "H2-DIFF-RATES"
+  }
+ ],
+ "durationMinutes": 60,
+ "items": [
+  {
+   "blueprintRow": 0,
+   "commandWord": "Find",
+   "markScheme": {
+    "points": [
+     {
+      "marks": 2,
+      "text": "f(2x + 6) = f(2(x + 3)): a translation of 3 units to the left, then a horizontal squeeze by a factor of 2."
+     },
+     {
+      "marks": 3,
+      "text": "Factor out the 2 before reading the shift: 2x + 6 = 2(x + 3), so the inside change is x + 3, which shifts the graph left by 3 - reading the 6 directly would give the wrong shift."
+     }
+    ]
+   },
+   "marks": 5,
+   "prompt": "Rewrite f(2x + 6) in the form f(2(x + c)) and state the horizontal translation it shows."
+  },
+  {
+   "blueprintRow": 0,
+   "commandWord": "Find",
+   "markScheme": {
+    "points": [
+     {
+      "marks": 2,
+      "text": "Vertical asymptote x = 2; horizontal asymptote y = 1."
+     },
+     {
+      "marks": 3,
+      "text": "The denominator is zero at x = 2, so the curve shoots up the line x = 2 and never touches it. As x grows large, 1/(x - 2) shrinks toward 0, so the curve flattens onto y = 0 + 1 = 1."
+     }
+    ]
+   },
+   "marks": 5,
+   "prompt": "State the equations of the vertical and horizontal asymptotes of y = 1/(x - 2) + 1."
+  },
+  {
+   "blueprintRow": 1,
+   "commandWord": "Find",
+   "markScheme": {
+    "points": [
+     {
+      "marks": 2,
+      "text": "Differentiates to dy/dx = 3x^2 - 12x + 9"
+     },
+     {
+      "marks": 3,
+      "text": "Sets dy/dx = 0 and solves to x = 1 and x = 3"
+     }
+    ]
+   },
+   "marks": 5,
+   "prompt": "A curve has equation y = x^3 - 6x^2 + 9x. Find dy/dx and the x-coordinates of its stationary points."
+  },
+  {
+   "blueprintRow": 1,
+   "commandWord": "Find",
+   "markScheme": {
+    "points": [
+     {
+      "marks": 3,
+      "text": "Writes A = pi r^2 and applies the chain rule dA/dt = 2 pi r dr/dt"
+     },
+     {
+      "marks": 2,
+      "text": "Substitutes r = 4 and dr/dt = 0.5 to give 4 pi cm^2/s"
+     }
+    ]
+   },
+   "marks": 5,
+   "prompt": "The radius of a circle increases at 0.5 cm/s. Find the rate at which its area increases when the radius is 4 cm."
+  }
+ ],
+ "level": "jc",
+ "moderation": {
+  "state": "unreviewed"
+ },
+ "review": null,
+ "rubric": {
+  "criteria": [
+   {
+    "levels": [
+     {
+      "descriptor": "Methods are chosen and applied exactly, factored forms and asymptote equations are stated, and conclusions are justified.",
+      "label": "Secure"
+     },
+     {
+      "descriptor": "Method is correct in outline but a factoring, asymptote or substitution step is skipped.",
+      "label": "Developing"
+     },
+     {
+      "descriptor": "Methods are misapplied - for example shifting f(x + 3) to the right - and the working does not support the answer.",
+      "label": "Beginning"
+     }
+    ],
+    "name": "Functions and calculus communication"
+   }
+  ]
+ },
+ "subject": "math",
+ "title": "Functions and Differentiation Unit Test",
+ "topics": [
+  "jc-h2-functions-graphs",
+  "jc-h2-differentiation"
+ ],
+ "totalMarks": 20,
+ "unitTitle": "Functions and calculus"
+}
