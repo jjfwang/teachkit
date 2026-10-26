@@ -1,0 +1,193 @@
+{
+  "doNow": [
+    {
+      "choices": [
+        {
+          "misconception": "In a hotter gas every molecule moves faster.",
+          "rationale": {
+            "chose": "The learner selected option 4.14 x 10^-21 J, from k T = 1.38 x 10^-23 x 300 as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: In a hotter gas every molecule moves faster.. The slip: Hotter means faster, so every molecule feels faster.. The fix: Hotter means a higher average: the whole spread of speeds shifts up, but some molecules still crawl..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "4.14 x 10^-21 J, from k T = 1.38 x 10^-23 x 300"
+        },
+        {
+          "correct": true,
+          "text": "6.21 x 10^-21 J, from (3/2) k T = 1.5 x 1.38 x 10^-23 x 300"
+        },
+        {
+          "misconception": "In a hotter gas every molecule moves faster.",
+          "rationale": {
+            "chose": "The learner selected option 1.24 x 10^-20 J, from (3/2) k T worked at 600 K instead as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: In a hotter gas every molecule moves faster.. The slip: Hotter means faster, so every molecule feels faster.. The fix: Hotter means a higher average: the whole spread of speeds shifts up, but some molecules still crawl..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "1.24 x 10^-20 J, from (3/2) k T worked at 600 K instead"
+        },
+        {
+          "misconception": "In a hotter gas every molecule moves faster.",
+          "rationale": {
+            "chose": "The learner selected option 0 J, because the molecules move randomly and cancel out as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: In a hotter gas every molecule moves faster.. The slip: Hotter means faster, so every molecule feels faster.. The fix: Hotter means a higher average: the whole spread of speeds shifts up, but some molecules still crawl..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "0 J, because the molecules move randomly and cancel out"
+        }
+      ],
+      "id": "dn1",
+      "kind": "multiple-choice",
+      "prompt": "Calculate the average kinetic energy of a gas molecule at 300 K. (Boltzmann constant k = 1.38 x 10^-23 J K^-1)"
+    },
+    {
+      "choices": [
+        {
+          "misconception": "In a hotter gas every molecule moves faster.",
+          "rationale": {
+            "chose": "The learner selected option Every molecule moves faster than it did at 300 K as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: In a hotter gas every molecule moves faster.. The slip: Hotter means faster, so every molecule feels faster.. The fix: Hotter means a higher average: the whole spread of speeds shifts up, but some molecules still crawl..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "Every molecule moves faster than it did at 300 K"
+        },
+        {
+          "misconception": "In a hotter gas every molecule moves faster.",
+          "rationale": {
+            "chose": "The learner selected option Every molecule ends up moving at exactly the same new speed as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: In a hotter gas every molecule moves faster.. The slip: Hotter means faster, so every molecule feels faster.. The fix: Hotter means a higher average: the whole spread of speeds shifts up, but some molecules still crawl..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "Every molecule ends up moving at exactly the same new speed"
+        },
+        {
+          "correct": true,
+          "text": "Hotter means a higher average: the whole spread of speeds shifts up, but some molecules still crawl."
+        },
+        {
+          "misconception": "In a hotter gas every molecule moves faster.",
+          "rationale": {
+            "chose": "The learner selected option The average kinetic energy halves, because the speeds spread out as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: In a hotter gas every molecule moves faster.. The slip: Hotter means faster, so every molecule feels faster.. The fix: Hotter means a higher average: the whole spread of speeds shifts up, but some molecules still crawl..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "The average kinetic energy halves, because the speeds spread out"
+        }
+      ],
+      "id": "dn2",
+      "kind": "multiple-choice",
+      "prompt": "A gas is heated from 300 K to 600 K at fixed volume. A student claims every molecule in the hotter gas now moves faster than it did. What is actually true?"
+    },
+    {
+      "choices": [
+        {
+          "misconception": "In a hotter gas every molecule moves faster.",
+          "rationale": {
+            "chose": "The learner selected option 1.0 x 10^5 Pa - pressure does not depend on temperature as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: In a hotter gas every molecule moves faster.. The slip: Hotter means faster, so every molecule feels faster.. The fix: Hotter means a higher average: the whole spread of speeds shifts up, but some molecules still crawl..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "1.0 x 10^5 Pa - pressure does not depend on temperature"
+        },
+        {
+          "correct": true,
+          "text": "2.0 x 10^5 Pa, from p proportional to T = 1.0 x 10^5 x 600 / 300"
+        },
+        {
+          "misconception": "In a hotter gas every molecule moves faster.",
+          "rationale": {
+            "chose": "The learner selected option 4.0 x 10^5 Pa, from squaring the temperature ratio as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: In a hotter gas every molecule moves faster.. The slip: Hotter means faster, so every molecule feels faster.. The fix: Hotter means a higher average: the whole spread of speeds shifts up, but some molecules still crawl..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "4.0 x 10^5 Pa, from squaring the temperature ratio"
+        },
+        {
+          "misconception": "In a hotter gas every molecule moves faster.",
+          "rationale": {
+            "chose": "The learner selected option 5.0 x 10^4 Pa, from halving as the gas expands as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: In a hotter gas every molecule moves faster.. The slip: Hotter means faster, so every molecule feels faster.. The fix: Hotter means a higher average: the whole spread of speeds shifts up, but some molecules still crawl..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "5.0 x 10^4 Pa, from halving as the gas expands"
+        }
+      ],
+      "id": "dn3",
+      "kind": "multiple-choice",
+      "prompt": "A sealed gas at fixed volume has pressure 1.0 x 10^5 Pa at 300 K. It is heated to 600 K. What is the new pressure?"
+    }
+  ],
+  "hingeQuestions": [
+    {
+      "choices": [
+        {
+          "misconception": "In a hotter gas every molecule moves faster.",
+          "rationale": {
+            "chose": "The learner selected option Every molecule speeds up by the same amount as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: In a hotter gas every molecule moves faster.. The slip: Hotter means faster, so every molecule feels faster.. The fix: Hotter means a higher average: the whole spread of speeds shifts up, but some molecules still crawl..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "Every molecule speeds up by the same amount"
+        },
+        {
+          "correct": true,
+          "text": "The whole spread shifts up - the average rises, but some molecules still crawl"
+        },
+        {
+          "misconception": "In a hotter gas every molecule moves faster.",
+          "rationale": {
+            "chose": "The learner selected option The spread collapses to a single shared speed as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: In a hotter gas every molecule moves faster.. The slip: Hotter means faster, so every molecule feels faster.. The fix: Hotter means a higher average: the whole spread of speeds shifts up, but some molecules still crawl..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "The spread collapses to a single shared speed"
+        },
+        {
+          "misconception": "In a hotter gas every molecule moves faster.",
+          "rationale": {
+            "chose": "The learner selected option Nothing - temperature is about the container, not the molecules as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: In a hotter gas every molecule moves faster.. The slip: Hotter means faster, so every molecule feels faster.. The fix: Hotter means a higher average: the whole spread of speeds shifts up, but some molecules still crawl..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "Nothing - temperature is about the container, not the molecules"
+        }
+      ],
+      "id": "h1",
+      "kind": "multiple-choice",
+      "prompt": "In one sentence, what happens to the spread of molecular speeds when a gas is heated?",
+      "scriptCue": "s5"
+    },
+    {
+      "choices": [
+        {
+          "misconception": "In a hotter gas every molecule moves faster.",
+          "rationale": {
+            "chose": "The learner selected option The bucket has the higher temperature, because it holds more heat as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: In a hotter gas every molecule moves faster.. The slip: Hotter means faster, so every molecule feels faster.. The fix: Hotter means a higher average: the whole spread of speeds shifts up, but some molecules still crawl..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "The bucket has the higher temperature, because it holds more heat"
+        },
+        {
+          "correct": true,
+          "text": "The cup has the higher temperature (higher average KE per molecule); the bucket holds more total internal energy (far more molecules)"
+        },
+        {
+          "misconception": "In a hotter gas every molecule moves faster.",
+          "rationale": {
+            "chose": "The learner selected option The cup wins on both, because it is hotter as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: In a hotter gas every molecule moves faster.. The slip: Hotter means faster, so every molecule feels faster.. The fix: Hotter means a higher average: the whole spread of speeds shifts up, but some molecules still crawl..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "The cup wins on both, because it is hotter"
+        }
+      ],
+      "id": "h2",
+      "kind": "multiple-choice",
+      "prompt": "A small cup of water is at 80 C and a large bucket of water is at 30 C. Which has the higher temperature, and which holds more total internal energy?",
+      "scriptCue": "s5"
+    }
+  ],
+  "level": "jc",
+  "subject": "science",
+  "title": "JC H2 physics — thermal: kinetic theory, gas laws and temperature",
+  "topic": "h2-thermal"
+}
