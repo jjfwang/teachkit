@@ -1,0 +1,81 @@
+{
+ "flashcards": [
+  {
+   "back": "The distribution of a statistic, such as the sample mean, over many repeated samples of the same size: the sample means cluster around the true mean, with standard deviation sigma / root n.",
+   "front": "Sampling distribution",
+   "source": "definition"
+  },
+  {
+   "back": "A procedure that states a null hypothesis H0 and an alternative H1, then rejects H0 when the observed data would be sufficiently surprising if H0 were true.",
+   "front": "Hypothesis test",
+   "source": "definition"
+  },
+  {
+   "back": "The probability, computed assuming H0 is true, of getting data at least as extreme as the data observed: if H0 were true, a p-value of 0.03 means 3% of experiments would give data this extreme.",
+   "front": "p-value",
+   "source": "definition"
+  },
+  {
+   "back": "The threshold alpha, often 0.05, fixed before the test: reject H0 when the p-value is smaller than alpha. Alpha also caps the probability of a Type I error.",
+   "front": "Significance level",
+   "source": "definition"
+  },
+  {
+   "back": "Rejecting a true null hypothesis - a false alarm. Its probability is alpha, the significance level chosen in advance.",
+   "front": "Type I error",
+   "source": "definition"
+  },
+  {
+   "back": "Accepting a false null hypothesis - a missed signal. Its probability is beta, and the power of the test, 1 - beta, is the chance of avoiding it.",
+   "front": "Type II error",
+   "source": "definition"
+  },
+  {
+   "back": "The p-value is read as a probability about the hypothesis itself. The p-value is about the data given the null: if H0 were true, 3% of experiments would give data this extreme. The p-value is computed in the world where H0 is true, so it measures the data's surprise in that world - repeating the test 100 times under H0, about 3 repeats give data this extreme. It never assigns a probability to H0 itself.",
+   "front": "A p-value of 0.03 means there is a 3% chance the null hypothesis is true.",
+   "source": "trap"
+  },
+  {
+   "back": "2, from 10 / root 25",
+   "front": "A population has mean 60 and standard deviation 10. Samples of size n = 25 are taken. What is the standard deviation of the sampling distribution of the sample mean?",
+   "source": "quiz-bank"
+  },
+  {
+   "back": "Reject the null, because 0.012 is smaller than alpha = 0.05",
+   "front": "A test at the 5% level returns a p-value of 0.012. What is the correct verdict?",
+   "source": "quiz-bank"
+  }
+ ],
+ "level": "jc",
+ "practiceSets": [
+  {
+   "dayOffset": 1,
+   "items": [
+    {
+     "answer": "The p-value is about the data given the null: if the null were true, 3% of experiments would give data this extreme",
+     "prompt": "A student runs a hypothesis test, gets a p-value of 0.03, and says this means there is a 3% chance the null hypothesis is true. What is wrong with that claim?"
+    },
+    {
+     "answer": "Do not reject the null hypothesis. The p-value 0.31 is greater than alpha = 0.05, so the data is not surprising enough under the null to reject it.",
+     "prompt": "A hypothesis test at the 5% significance level returns a p-value of 0.31. State the test verdict and give the reason."
+    }
+   ]
+  },
+  {
+   "dayOffset": 3,
+   "items": [
+    {
+     "answer": "A Type I error rejects a true null: declaring the machine miscalibrated when it is actually fine. A Type II error accepts a false null: passing the machine when it is actually miscalibrated. Alpha caps the probability of a Type I error.",
+     "prompt": "In a quality test, the null hypothesis says a machine is calibrated. Describe a Type I error and a Type II error in this context, and state which error's probability is capped by the significance level alpha."
+    },
+    {
+     "answer": "1. The standard deviation of the sample mean is sigma / root n = 10 / root 100 = 10 / 10 = 1.",
+     "prompt": "A population has standard deviation 10. Find the standard deviation of the sample mean for samples of size n = 100, and state the rule you used."
+    }
+   ]
+  }
+ ],
+ "subject": "math",
+ "title": "JC H2 statistics: sampling distributions, hypothesis testing, error types",
+ "topic": "h2-statistics"
+}

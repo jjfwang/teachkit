@@ -1,0 +1,120 @@
+{
+ "level": "jc",
+ "sets": [
+  {
+   "cloze": [
+    {
+     "answers": [
+      "Sampling distribution",
+      "Hypothesis test"
+     ],
+     "text": "A ___ is the distribution of a statistic over repeated samples, and a ___ states H0 and H1 before deciding."
+    },
+    {
+     "answers": [
+      "Type I error",
+      "Type II error"
+     ],
+     "text": "A ___ rejects a true null, while a ___ accepts a false null."
+    }
+   ],
+   "frames": [
+    "A ___ is the distribution of a statistic over many repeated samples.",
+    "A ___ states H0 and H1 and decides whether to reject H0.",
+    "The ___ is the probability of data this extreme if H0 were true."
+   ],
+   "level": "full",
+   "starters": [
+    "A sampling distribution is...",
+    "A hypothesis test states...",
+    "A p-value measures..."
+   ],
+   "wordBank": [
+    {
+     "gloss": "the distribution of a statistic over many repeated samples",
+     "term": "Sampling distribution"
+    },
+    {
+     "gloss": "a procedure that states H0 and H1 and decides from the data",
+     "term": "Hypothesis test"
+    },
+    {
+     "gloss": "the probability of data this extreme if H0 were true",
+     "term": "p-value"
+    },
+    {
+     "gloss": "the threshold alpha fixed before the test",
+     "term": "Significance level"
+    },
+    {
+     "gloss": "rejecting a true null hypothesis",
+     "term": "Type I error"
+    },
+    {
+     "gloss": "accepting a false null hypothesis",
+     "term": "Type II error"
+    }
+   ]
+  },
+  {
+   "cloze": [
+    {
+     "answers": [
+      "Sampling distribution",
+      "Hypothesis test"
+     ],
+     "text": "A ___ is the distribution of a statistic over repeated samples, and a ___ states H0 and H1 before deciding."
+    }
+   ],
+   "frames": [
+    "A ___ is the distribution of a statistic over many repeated samples.",
+    "A ___ states H0 and H1 and decides whether to reject H0."
+   ],
+   "level": "partial",
+   "starters": [
+    "A sampling distribution is...",
+    "A hypothesis test states..."
+   ],
+   "wordBank": [
+    {
+     "gloss": "the distribution of a statistic over many repeated samples",
+     "term": "Sampling distribution"
+    },
+    {
+     "gloss": "a procedure that states H0 and H1 and decides from the data",
+     "term": "Hypothesis test"
+    },
+    {
+     "gloss": "the probability of data this extreme if H0 were true",
+     "term": "p-value"
+    }
+   ]
+  },
+  {
+   "cloze": [
+    {
+     "answers": [
+      "Sampling distribution"
+     ],
+     "text": "A ___ is the distribution of a statistic over many repeated samples."
+    }
+   ],
+   "frames": [
+    "A ___ is the distribution of a statistic over many repeated samples."
+   ],
+   "level": "minimal",
+   "starters": [
+    "A sampling distribution is..."
+   ],
+   "wordBank": [
+    {
+     "gloss": "the distribution of a statistic over many repeated samples",
+     "term": "Sampling distribution"
+    }
+   ]
+  }
+ ],
+ "subject": "math",
+ "title": "JC H2 statistics: sampling distributions, hypothesis testing, error types",
+ "topic": "h2-statistics"
+}
