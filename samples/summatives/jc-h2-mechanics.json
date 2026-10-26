@@ -1,0 +1,125 @@
+{
+ "blueprint": [
+  {
+   "assessmentObjective": "AO1 recall and apply",
+   "cognitiveLevel": "apply",
+   "marks": 10,
+   "outcomeCode": "H2-MECH-OPS"
+  },
+  {
+   "assessmentObjective": "AO2 reason and solve",
+   "cognitiveLevel": "reason",
+   "marks": 10,
+   "outcomeCode": "H2-CELL-ULTRA"
+  }
+ ],
+ "durationMinutes": 60,
+ "items": [
+  {
+   "blueprintRow": 0,
+   "commandWord": "Explain",
+   "markScheme": {
+    "points": [
+     {
+      "marks": 2,
+      "text": "States the factor: the force quadruples (factor of 4)"
+     },
+     {
+      "marks": 3,
+      "text": "Explains with F = mv^2/r: doubling v multiplies v^2 by 4 while m and r stay fixed"
+     }
+    ]
+   },
+   "marks": 5,
+   "prompt": "A satellite in a circular orbit doubles its speed while staying at the same orbital radius. By what factor does the required centripetal force change? Explain using F = mv^2/r."
+  },
+  {
+   "blueprintRow": 0,
+   "commandWord": "State",
+   "markScheme": {
+    "points": [
+     {
+      "marks": 2,
+      "text": "States one condition: the orbit must be above the equator"
+     },
+     {
+      "marks": 3,
+      "text": "States the second condition - travel in the same direction as the Earth's rotation (west to east) - and explains that with period 24 hours and the same angular speed as the Earth the satellite stays over the same point on the equator and appears fixed"
+     }
+    ]
+   },
+   "marks": 5,
+   "prompt": "State the two conditions, besides a period of 24 hours, that an orbit must satisfy to be geostationary, and explain why the satellite appears fixed in the sky."
+  },
+  {
+   "blueprintRow": 1,
+   "commandWord": "Explain",
+   "markScheme": {
+    "points": [
+     {
+      "marks": 2,
+      "text": "States that chloroplasts trap light energy to make sugar in photosynthesis"
+     },
+     {
+      "marks": 3,
+      "text": "States that mitochondria release energy from that sugar as ATP in aerobic respiration, which continues day and night"
+     }
+    ]
+   },
+   "marks": 5,
+   "prompt": "A leaf cell contains both chloroplasts and mitochondria. Explain, in terms of photosynthesis and respiration, why it needs both."
+  },
+  {
+   "blueprintRow": 1,
+   "commandWord": "Describe",
+   "markScheme": {
+    "points": [
+     {
+      "marks": 3,
+      "text": "Describes a phospholipid bilayer with hydrophilic heads facing outward and hydrophobic tails inside, with proteins drifting through it"
+     },
+     {
+      "marks": 2,
+      "text": "States that channel proteins allow only selected substances to cross, making the membrane selectively permeable"
+     }
+    ]
+   },
+   "marks": 5,
+   "prompt": "Describe the structure of the cell membrane in the fluid mosaic model and explain how that structure makes it selectively permeable."
+  }
+ ],
+ "level": "jc",
+ "moderation": {
+  "state": "unreviewed"
+ },
+ "review": null,
+ "rubric": {
+  "criteria": [
+   {
+    "levels": [
+     {
+      "descriptor": "Methods are chosen and applied exactly, force directions and orbit conditions are stated explicitly, and conclusions are justified without inventing an outward force.",
+      "label": "Secure"
+     },
+     {
+      "descriptor": "Method is correct in outline but a direction, condition or organelle-function link is skipped.",
+      "label": "Developing"
+     },
+     {
+      "descriptor": "Methods are misapplied - for example inventing a centrifugal force that flings a passenger outward - and the working does not support the answer.",
+      "label": "Beginning"
+     }
+    ],
+    "name": "Mechanics and cell biology communication"
+   }
+  ]
+ },
+ "subject": "science",
+ "title": "Mechanics and Cell Biology Unit Test",
+ "topics": [
+  "jc-h2-mechanics",
+  "jc-h2-cell-bio"
+ ],
+ "totalMarks": 20,
+ "unitTitle": "Mechanics and cell biology"
+}

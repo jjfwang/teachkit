@@ -1,0 +1,97 @@
+{
+ "activities": [
+  {
+   "grouping": "whole class",
+   "minutes": 6,
+   "objectiveIds": [
+    "o1"
+   ],
+   "scriptCue": "s1",
+   "title": "Circular motion needs a centre-seeking push"
+  },
+  {
+   "grouping": "individual",
+   "minutes": 7,
+   "objectiveIds": [
+    "o1"
+   ],
+   "scriptCue": "s2",
+   "title": "How big is the centre-seeking force"
+  },
+  {
+   "grouping": "pairs",
+   "minutes": 7,
+   "objectiveIds": [
+    "o2"
+   ],
+   "scriptCue": "s3",
+   "title": "Gravity holds the Moon in orbit"
+  },
+  {
+   "grouping": "whole class",
+   "minutes": 6,
+   "objectiveIds": [
+    "o3"
+   ],
+   "scriptCue": "s4",
+   "title": "Geostationary orbits hover over one spot"
+  },
+  {
+   "grouping": "individual",
+   "minutes": 14,
+   "objectiveIds": [
+    "o1",
+    "o2",
+    "o3"
+   ],
+   "resources": [
+    "worksheet"
+   ],
+   "scriptCue": "s5",
+   "title": "Assemble the toolkit"
+  }
+ ],
+ "durationMinutes": 40,
+ "level": "jc",
+ "objectives": [
+  {
+   "assessmentPoints": [
+    "Centripetal force answers in the centre-seeking push activity",
+    "Toolkit recap answers"
+   ],
+   "id": "o1",
+   "successCriteria": [
+    "15 N, from F = mv^2/r = 0.50 x 36 / 1.2",
+    "F = mv^2/r = 1200 x 225 / 50 = 5400 N, directed toward the centre of the bend (supplied by friction)."
+   ],
+   "text": "Explain why circular motion needs a centripetal force toward the centre and compute it with F = mv^2/r"
+  },
+  {
+   "assessmentPoints": [
+    "Gravitation answers in the gravity holds the Moon activity",
+    "Toolkit recap answers"
+   ],
+   "id": "o2",
+   "successCriteria": [
+    "It would fall to one quarter, from F = GMm/r^2 with r doubled",
+    "F = GMm/r^2. The gravitational attraction toward the Earth is itself the centripetal force holding the Moon on its circular path."
+   ],
+   "text": "Use Newton's law of gravitation F = GMm/r^2 as the centripetal force for orbits"
+  },
+  {
+   "assessmentPoints": [
+    "Geostationary answers in the geostationary orbits activity",
+    "Trap answers in the toolkit activity"
+   ],
+   "id": "o3",
+   "successCriteria": [
+    "The orbit must be above the equator and travel in the same direction as the Earth's rotation (west to east). With period 24 hours and the same angular speed as the Earth, the satellite stays over the same point on the equator and appears fixed.",
+    "No outward fling exists: the body wants to keep going straight while the seat pushes it inward - the inward push is the real force"
+   ],
+   "text": "State the conditions for a geostationary orbit and avoid the centrifugal fling-off trap"
+  }
+ ],
+ "subject": "science",
+ "title": "JC H2 physics — mechanics: circular motion and gravitation",
+ "topic": "h2-mechanics"
+}
