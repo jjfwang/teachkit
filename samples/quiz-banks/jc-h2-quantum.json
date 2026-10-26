@@ -1,0 +1,46 @@
+{
+  "items": [
+    {
+      "answer": "Brightness means more photons, not stronger ones: a dim violet beam ejects faster electrons than a bright red one.",
+      "choices": [
+        "The electrons fly off faster, because the brighter beam hits harder",
+        "The electrons fly off more slowly, because they share the extra light",
+        "Brightness means more photons, not stronger ones: a dim violet beam ejects faster electrons than a bright red one.",
+        "Emission stops, because the plate is overwhelmed by light"
+      ],
+      "misconceptionCode": "Brighter light ejects faster electrons.",
+      "prompt": "Ultraviolet light shines on a metal plate and electrons are emitted. The lamp is made much brighter at exactly the same frequency. A student claims the electrons now fly off faster. What actually happens?"
+    },
+    {
+      "answer": "4.97 x 10^-19 J, from E = h f = 6.63 x 10^-34 x 7.5 x 10^14",
+      "choices": [
+        "8.8 x 10^-49 J, from f / h",
+        "4.97 x 10^-19 J, from E = h f = 6.63 x 10^-34 x 7.5 x 10^14",
+        "7.5 x 10^14 J, the frequency itself",
+        "0 J, because a single photon carries no energy"
+      ],
+      "prompt": "What is the energy of one photon of light of frequency 7.5 x 10^14 Hz? (h = 6.63 x 10^-34 J s)"
+    },
+    {
+      "answer": "E = h f = 6.63 x 10^-34 x 1.20 x 10^15 = 7.96 x 10^-19 J, so KE_max = E - W = 7.96 x 10^-19 - 3.31 x 10^-19 = 4.65 x 10^-19 J.",
+      "prompt": "Ultraviolet light of frequency 1.20 x 10^15 Hz strikes a metal of work function 3.31 x 10^-19 J. Calculate the maximum kinetic energy of the emitted electrons, showing your working with Einstein's photoelectric equation."
+    },
+    {
+      "answer": "\u03bb = h / (m v) = 6.63 x 10^-34 / (9.11 x 10^-31 x 1.0 x 10^6) = 7.3 x 10^-10 m. A moving electron carries a wavelength just like a photon: matter shows wave-particle duality.",
+      "prompt": "An emitted electron moves at 1.0 x 10^6 m s^-1. Calculate its de Broglie wavelength and say what this wave behaviour of matter is evidence for. (m_e = 9.11 x 10^-31 kg, h = 6.63 x 10^-34 J s)"
+    },
+    {
+      "answer": "2.9 V, from V_s = KE_max / e",
+      "choices": [
+        "4.65 V, the KE_max number read directly as volts",
+        "2.9 V, from V_s = KE_max / e",
+        "1.60 V, the electron charge read as volts"
+      ],
+      "prompt": "For the ultraviolet light and metal of the worked example (KE_max = 4.65 x 10^-19 J), what is the stopping potential? (e = 1.60 x 10^-19 C)"
+    }
+  ],
+  "level": "jc",
+  "subject": "science",
+  "title": "JC H2 physics \u2014 quantum: photons and the photoelectric effect",
+  "topic": "h2-quantum"
+}

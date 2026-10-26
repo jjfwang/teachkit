@@ -1,0 +1,57 @@
+{
+  "complete": {
+    "problem": "Trace quantum physics from light arriving as photons, through the threshold frequency silence, Einstein's photoelectric equation, and brighter light making more electrons, to the brighter-means-faster trap.",
+    "selfExplanation": "Explain why one photon is absorbed whole by one electron, why no electrons escape below the threshold frequency however bright the light, how Einstein's equation h f = W + KE_max balances the energy books, why brighter light emits more electrons rather than faster ones, and why a dim violet beam still ejects faster electrons than a bright red one.",
+    "steps": [
+      {
+        "annotation": "A single packet of light energy, carrying E = h f where f is the light's frequency: one photon is absorbed whole by one electron in the photoelectric effect.",
+        "text": "Step 1 (s1): Light arrives as a stream of photons. Light arrives as a stream of photons. Shining light on a metal is like raining tiny packets of energy onto its surface. Each photon carries energy h f, fixed by the light\u2019s frequency, and when a photon strikes, one electron may absorb the whole packet. Keep your student notes open at the photon definition for this scene."
+      },
+      {
+        "annotation": "The lowest frequency f0 = W / h whose photons can free an electron: below f0 no emission occurs at any intensity, at f0 the emitted electrons have zero kinetic energy.",
+        "text": "Step 2 (s2): Below the threshold frequency, nothing happens. Below the threshold frequency, nothing happens. An electron needs a minimum kick to escape the metal - that minimum is the work function. Low-frequency photons, however many arrive, each carry too little energy and nothing escapes. Only when the frequency passes the threshold do electrons start to fly. Compare the threshold frequency definition in your student notes before we balance the energy books."
+      },
+      {
+        "annotation": "Einstein's photoelectric equation: the photon energy h f first pays the work function W to free the electron, and whatever remains becomes the electron's kinetic energy, h f = W + KE_max.",
+        "text": "Step 3 (s3): Einstein's photoelectric equation. Einstein's photoelectric equation. The photon's energy h f first pays the work function W to free the electron, and whatever remains becomes the electron's kinetic energy: h f = W + KE_max. That is why brighter light cannot speed electrons up - each electron gets just one photon. Now try the photon energy computation on the worksheet in pairs."
+      },
+      {
+        "annotation": "The emission of electrons when light above the threshold frequency strikes a metal, one photon freeing one electron: doubling the intensity doubles the photons arriving per second, so twice as many electrons escape, each with exactly the same speed as before.",
+        "text": "Step 4 (s4): Brighter light: more photons, more electrons. Brighter light: more photons, more electrons. Double the intensity at the same frequency and twice as many photons arrive per second. Each still carries the same energy h f, so twice as many electrons escape - but each with exactly the same speed as before: same-length arrows, twice as many. Check the stopping potential definition in your student notes, then look ahead to the exit ticket question on this scene."
+      },
+      {
+        "annotation": "Brightness means more photons, not stronger ones: a dim violet beam ejects faster electrons than a bright red one - the count answers the brightness, the speed answers the frequency.",
+        "text": "Step 5 (s5): Misconception: brighter light ejects faster electrons. Misconception: brighter light ejects faster electrons. The animation holds the frequency fixed as the beam brightens: more electrons stream off, every arrow the same length, and the dim violet beam still wins on speed. Finish the worksheet trap question now, then the exit ticket on your own - the first question revisits exactly this scene."
+      }
+    ]
+  },
+  "faded": {
+    "problem": "Ultraviolet light of frequency 1.20 x 10^15 Hz strikes a metal of work function 3.31 x 10^-19 J. Calculate the maximum kinetic energy of the emitted electrons, showing your working with Einstein's photoelectric equation.",
+    "selfExplanation": "The first step is shown. Say how the photon energy E = h f is evaluated, then how KE_max = E - W is found, and state why a brighter beam would not change the answer.",
+    "steps": [
+      {
+        "annotation": "Einstein's equation is h f = W + KE_max, with h = 6.63 x 10^-34 J s, f = 1.20 x 10^15 Hz and W = 3.31 x 10^-19 J.",
+        "text": "Step 1: identify the values: h f = W + KE_max with h = 6.63 x 10^-34 J s, f = 1.20 x 10^15 Hz and W = 3.31 x 10^-19 J.",
+        "withheld": false
+      },
+      {
+        "annotation": "Multiply it out: 6.63 x 10^-34 x 1.20 x 10^15 = 7.96 x 10^-19 J.",
+        "text": "Step 2: evaluate the photon energy: E = h f = 6.63 x 10^-34 x 1.20 x 10^15 = 7.96 x 10^-19 J.",
+        "withheld": true
+      },
+      {
+        "annotation": "The photon energy first pays the work function: 7.96 x 10^-19 - 3.31 x 10^-19 = 4.65 x 10^-19 J - and a brighter beam would emit more electrons with this same KE_max, never faster ones.",
+        "text": "Step 3: read the landing: KE_max = E - W = 7.96 x 10^-19 - 3.31 x 10^-19 = 4.65 x 10^-19 J.",
+        "withheld": true
+      }
+    ]
+  },
+  "level": "jc",
+  "paired": {
+    "problem": "Ultraviolet light of frequency 1.50 x 10^15 Hz strikes a metal of work function 3.31 x 10^-19 J. Calculate the maximum kinetic energy of the emitted electrons. (h = 6.63 x 10^-34 J s)",
+    "solution": "E = h f = 6.63 x 10^-34 x 1.50 x 10^15 = 9.95 x 10^-19 J, so KE_max = E - W = 9.95 x 10^-19 - 3.31 x 10^-19 = 6.64 x 10^-19 J."
+  },
+  "subject": "science",
+  "title": "JC H2 physics \u2014 quantum: photons and the photoelectric effect",
+  "topic": "h2-quantum"
+}
