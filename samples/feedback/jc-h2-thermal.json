@@ -1,0 +1,44 @@
+{
+ "commonErrors": [
+  {
+   "example": "A learner writes on the worksheet that every molecule in a gas heated from 300 K to 600 K now moves faster than it did before.",
+   "fixIt": {
+    "corrected": "Hotter means a higher average: the whole spread of speeds shifts up, but some molecules still crawl.",
+    "prompt": "Fix it: state what actually happens to the spread of molecular speeds when a gas is heated, and what happens to the slowest molecules."
+   },
+   "misconception": "In a hotter gas every molecule moves faster."
+  },
+  {
+   "example": "On the exit ticket, a learner picks the statement that every molecule moves faster than before when a gas is heated.",
+   "fixIt": {
+    "corrected": "The average speed rises, but some molecules are still slow",
+    "prompt": "Fix it: explain in one sentence why a hotter gas still contains some slow molecules."
+   },
+   "misconception": "In a hotter gas every molecule moves faster."
+  }
+ ],
+ "level": "jc",
+ "modelAnswers": [
+  {
+   "answer": "Atoms at the hot end vibrate with larger amplitude and collide with their neighbours, passing kinetic energy along atom by atom through the lattice; in a metal, free electrons also carry energy rapidly through the rod. No atoms travel the length of the rod - the energy is relayed, and the far end warms as its atoms gain kinetic energy.",
+   "creditPoints": [],
+   "question": "One end of a metal rod is held in a flame. A minute later the far end feels warm. Explain, at the particle level, how the energy got there."
+  },
+  {
+   "answer": "The pressure grows by a factor of 450 / 300 = 1.5, because at fixed volume p is proportional to the kelvin temperature: hotter molecules collide with the walls harder and more often.",
+   "creditPoints": [],
+   "question": "A sealed gas at 300 K is heated to 450 K at fixed volume. By what factor does its pressure change, and why?"
+  }
+ ],
+ "nextSteps": [
+  "Reteach the every-molecule-faster trap from the paired notes trap before any further thermal work: temperature tracks the average kinetic energy only.",
+  "Practise stating average and spread explicitly whenever a temperature change is explained at the particle level."
+ ],
+ "strengths": [
+  "Most of the class can state that the pressure of a sealed gas doubles to 2.0 x 10^5 Pa when it is heated from 300 K to 600 K at fixed volume on the worksheet.",
+  "The class can name conduction as the mechanism that warms the top of a metal spoon handle standing in hot soup on the exit ticket."
+ ],
+ "subject": "science",
+ "title": "JC H2 physics — thermal: kinetic theory, gas laws and temperature",
+ "topic": "h2-thermal"
+}

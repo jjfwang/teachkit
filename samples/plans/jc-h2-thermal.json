@@ -1,0 +1,97 @@
+{
+ "activities": [
+  {
+   "grouping": "whole class",
+   "minutes": 6,
+   "objectiveIds": [
+    "o1"
+   ],
+   "scriptCue": "s1",
+   "title": "Temperature: molecules jiggle faster when hotter"
+  },
+  {
+   "grouping": "individual",
+   "minutes": 7,
+   "objectiveIds": [
+    "o3"
+   ],
+   "scriptCue": "s2",
+   "title": "Conduction: heat travels atom by atom"
+  },
+  {
+   "grouping": "pairs",
+   "minutes": 6,
+   "objectiveIds": [
+    "o3"
+   ],
+   "scriptCue": "s3",
+   "title": "Convection: the fluid loops"
+  },
+  {
+   "grouping": "whole class",
+   "minutes": 7,
+   "objectiveIds": [
+    "o3"
+   ],
+   "scriptCue": "s4",
+   "title": "Radiation: hotter means more packets, faster"
+  },
+  {
+   "grouping": "individual",
+   "minutes": 14,
+   "objectiveIds": [
+    "o1",
+    "o2",
+    "o3"
+   ],
+   "resources": [
+    "worksheet"
+   ],
+   "scriptCue": "s5",
+   "title": "Misconception: a common mistake about heat and temperature"
+  }
+ ],
+ "durationMinutes": 40,
+ "level": "jc",
+ "objectives": [
+  {
+   "assessmentPoints": [
+    "Average kinetic energy answers in the temperature activity",
+    "Trap answers in the misconception activity"
+   ],
+   "id": "o1",
+   "successCriteria": [
+    "The average kinetic energy doubles, but the speeds stay spread out and some molecules are still slow",
+    "average KE = (3/2) k T = 1.5 x 1.38 x 10^-23 x 300 = 6.21 x 10^-21 J at 300 K, doubling to 1.24 x 10^-20 J at 600 K"
+   ],
+   "text": "State that temperature is proportional to the average kinetic energy of the molecules, and calculate average KE = (3/2) k T"
+  },
+  {
+   "assessmentPoints": [
+    "Gas law answers in the misconception activity",
+    "Toolkit recap answers"
+   ],
+   "id": "o2",
+   "successCriteria": [
+    "p = nRT / V = (0.50 x 8.31 x 300) / 0.012 = 1246.5 / 0.012 = 1.04 x 10^5 Pa (to 3 significant figures).",
+    "The pressure grows by a factor of 450 / 300 = 1.5, because at fixed volume p is proportional to the kelvin temperature: hotter molecules collide with the walls harder and more often."
+   ],
+   "text": "Use the ideal-gas law pV = nRT and the fixed-volume rule p proportional to T, always in kelvin"
+  },
+  {
+   "assessmentPoints": [
+    "Conduction answers in the conduction activity",
+    "Convection and radiation answers in the convection and radiation activities"
+   ],
+   "id": "o3",
+   "successCriteria": [
+    "Atoms at the hot end vibrate with larger amplitude and collide with their neighbours, passing kinetic energy along atom by atom through the lattice; in a metal, free electrons also carry energy rapidly through the rod. No atoms travel the length of the rod - the energy is relayed, and the far end warms as its atoms gain kinetic energy.",
+    "It expands, becomes less dense than the cooler water, and is pushed up"
+   ],
+   "text": "Distinguish conduction, convection and radiation, and explain each one at the particle level"
+  }
+ ],
+ "subject": "science",
+ "title": "JC H2 physics — thermal: kinetic theory, gas laws and temperature",
+ "topic": "h2-thermal"
+}
