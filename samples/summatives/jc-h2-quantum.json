@@ -1,0 +1,125 @@
+{
+ "blueprint": [
+  {
+   "assessmentObjective": "AO1 recall and apply",
+   "cognitiveLevel": "apply",
+   "marks": 10,
+   "outcomeCode": "H2-QUANTUM-PHOTO"
+  },
+  {
+   "assessmentObjective": "AO2 reason and solve",
+   "cognitiveLevel": "reason",
+   "marks": 10,
+   "outcomeCode": "H2-EM-INDUCE"
+  }
+ ],
+ "durationMinutes": 60,
+ "items": [
+  {
+   "blueprintRow": 0,
+   "commandWord": "Calculate",
+   "markScheme": {
+    "points": [
+     {
+      "marks": 2,
+      "text": "Computes the photon energy E = h f = 6.63 x 10^-34 x 1.20 x 10^15 = 7.96 x 10^-19 J"
+     },
+     {
+      "marks": 3,
+      "text": "Applies Einstein's equation KE_max = E - W = 7.96 x 10^-19 - 3.31 x 10^-19 = 4.65 x 10^-19 J"
+     }
+    ]
+   },
+   "marks": 5,
+   "prompt": "Ultraviolet light of frequency 1.20 x 10^15 Hz strikes a metal of work function 3.31 x 10^-19 J. Calculate the maximum kinetic energy of the emitted electrons, showing your working with Einstein’s photoelectric equation."
+  },
+  {
+   "blueprintRow": 0,
+   "commandWord": "Calculate",
+   "markScheme": {
+    "points": [
+     {
+      "marks": 2,
+      "text": "Selects de Broglie's relation lambda = h / (m v) with h = 6.63 x 10^-34, m = 9.11 x 10^-31 kg and v = 1.0 x 10^6 m s^-1"
+     },
+     {
+      "marks": 3,
+      "text": "Computes lambda = 6.63 x 10^-34 / (9.11 x 10^-31 x 1.0 x 10^6) = 7.3 x 10^-10 m and states that this wave behaviour of matter is evidence for wave-particle duality"
+     }
+    ]
+   },
+   "marks": 5,
+   "prompt": "An emitted electron moves at 1.0 x 10^6 m s^-1. Calculate its de Broglie wavelength and say what this wave behaviour of matter is evidence for. (m_e = 9.11 x 10^-31 kg, h = 6.63 x 10^-34 J s)"
+  },
+  {
+   "blueprintRow": 1,
+   "commandWord": "Calculate",
+   "markScheme": {
+    "points": [
+     {
+      "marks": 2,
+      "text": "Computes the flux change: 0.030 - 0.010 = 0.020 Wb"
+     },
+     {
+      "marks": 3,
+      "text": "Applies Faraday's law: emf = -N x 0.020 / 0.50 = 8.0 V, the minus sign showing the induced emf opposes the change (Lenz's law)"
+     }
+    ]
+   },
+   "marks": 5,
+   "prompt": "The flux through a 200-turn coil falls from 0.030 Wb to 0.010 Wb in 0.50 s. Calculate the induced emf, showing your working with Faraday's law."
+  },
+  {
+   "blueprintRow": 1,
+   "commandWord": "Explain",
+   "markScheme": {
+    "points": [
+     {
+      "marks": 2,
+      "text": "States that the emf follows the rate of change of flux, not the flux itself"
+     },
+     {
+      "marks": 3,
+      "text": "Explains that as the coil turns edge-on the flux passes through zero but is changing fastest there, so the emf peaks, and half a turn later the flux changes the other way so the emf reverses and alternates"
+     }
+    ]
+   },
+   "marks": 5,
+   "prompt": "In the generator scene the coil spins steadily in a magnetic field. Explain why the induced emf is greatest when the flux through the coil is passing through zero, and why the emf alternates."
+  }
+ ],
+ "level": "jc",
+ "moderation": {
+  "state": "unreviewed"
+ },
+ "review": null,
+ "rubric": {
+  "criteria": [
+   {
+    "levels": [
+     {
+      "descriptor": "Methods are chosen and applied exactly, photon energies and flux changes are stated explicitly, and conclusions are justified without claiming brighter light ejects faster electrons.",
+      "label": "Secure"
+     },
+     {
+      "descriptor": "Method is correct in outline but a work-function, threshold or flux-change step is skipped.",
+      "label": "Developing"
+     },
+     {
+      "descriptor": "Methods are misapplied - for example claiming brighter light ejects faster electrons - and the working does not support the answer.",
+      "label": "Beginning"
+     }
+    ],
+    "name": "Quantum physics and electromagnetism communication"
+   }
+  ]
+ },
+ "subject": "science",
+ "title": "Quantum Physics and Electromagnetism Unit Test",
+ "topics": [
+  "jc-h2-quantum",
+  "jc-h2-em"
+ ],
+ "totalMarks": 20,
+ "unitTitle": "Quantum physics and electromagnetism"
+}

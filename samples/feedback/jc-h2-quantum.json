@@ -1,0 +1,44 @@
+{
+ "commonErrors": [
+  {
+   "example": "A learner writes on the worksheet that the electrons now fly off faster, because the brighter beam hits harder.",
+   "fixIt": {
+    "corrected": "Brightness means more photons, not stronger ones: a dim violet beam ejects faster electrons than a bright red one.",
+    "prompt": "Fix it: state what a brighter beam at the same frequency actually changes, and what it leaves unchanged."
+   },
+   "misconception": "Brighter light ejects faster electrons."
+  },
+  {
+   "example": "On the exit ticket, a learner picks the statement that each electron leaves with twice the kinetic energy when the beam is made twice as bright.",
+   "fixIt": {
+    "corrected": "Twice as many electrons are emitted, each with the same maximum kinetic energy",
+    "prompt": "Fix it: explain in one sentence why doubling the brightness leaves the maximum kinetic energy unchanged."
+   },
+   "misconception": "Brighter light ejects faster electrons."
+  }
+ ],
+ "level": "jc",
+ "modelAnswers": [
+  {
+   "answer": "E = h f = 6.63 x 10^-34 x 1.20 x 10^15 = 7.96 x 10^-19 J, so KE_max = E - W = 7.96 x 10^-19 - 3.31 x 10^-19 = 4.65 x 10^-19 J.",
+   "creditPoints": [],
+   "question": "Ultraviolet light of frequency 1.20 x 10^15 Hz strikes a metal of work function 3.31 x 10^-19 J. Calculate the maximum kinetic energy of the emitted electrons, showing your working with Einstein’s photoelectric equation."
+  },
+  {
+   "answer": "V_s = KE_max / e = 4.65 x 10^-19 / 1.60 x 10^-19 = 2.9 V.",
+   "creditPoints": [],
+   "question": "For the ultraviolet light and metal of the worked example (KE_max = 4.65 x 10^-19 J), calculate the stopping potential. (e = 1.60 x 10^-19 C)"
+  }
+ ],
+ "nextSteps": [
+  "Reteach the brighter-means-faster trap from the paired notes trap before any further quantum work: brightness means more photons, not stronger ones.",
+  "Practise paying the work function first, then reading off KE_max, whenever Einstein's photoelectric equation is used in a calculation."
+ ],
+ "strengths": [
+  "Most of the class can calculate the energy of one photon, such as 4.97 x 10^-19 J from E = h f = 6.63 x 10^-34 x 7.5 x 10^14, on the worksheet.",
+  "The class can define the work function and the threshold frequency, f0 = W / h, on the exit ticket."
+ ],
+ "subject": "science",
+ "title": "JC H2 physics — quantum: photons and the photoelectric effect",
+ "topic": "h2-quantum"
+}
