@@ -1,0 +1,102 @@
+{
+ "level": "jc",
+ "subject": "science",
+ "templates": [
+  {
+   "kind": "flow",
+   "slots": [
+    {
+     "entries": [
+      "Exothermic: products lie below reactants: the profile falls from the reactants level to a lower products level, so \u0394H is negative and heat leaves the system."
+     ],
+     "label": "Exothermic",
+     "studentPrompt": "Explain this step in your own words."
+    },
+    {
+     "entries": [
+      "Endothermic: products lie above reactants: the profile climbs to a higher products level, so \u0394H is positive and heat is absorbed from the surroundings."
+     ],
+     "label": "Endothermic",
+     "studentPrompt": "Explain this step in your own words."
+    },
+    {
+     "entries": [
+      "Rate curves: steeper means faster: the gradient of the concentration-time curve is the rate, and higher temperature or a catalyst makes the curve steeper."
+     ],
+     "label": "Rate curves",
+     "studentPrompt": "Explain this step in your own words."
+    },
+    {
+     "entries": [
+      "Maxwell\u2013Boltzmann: more molecules past Ea at higher T: the distribution flattens and shifts right, so a bigger fraction of molecules can react on collision."
+     ],
+     "label": "Maxwell\u2013Boltzmann",
+     "studentPrompt": "Explain this step in your own words."
+    },
+    {
+     "entries": [
+      "Le Chatelier: the system opposes the change: adding a reactant or raising the pressure shifts the Haber equilibrium to oppose the disturbance, while Kc changes only with temperature."
+     ],
+     "label": "Le Chatelier",
+     "studentPrompt": "Explain this step in your own words."
+    },
+    {
+     "entries": [
+      "A common mistake: a catalyst shifts equilibrium: both rates grow by the same factor, the composition bars never move, and the equilibrium position and Kc stay unchanged."
+     ],
+     "label": "A common mistake",
+     "studentPrompt": "Explain this step in your own words."
+    }
+   ]
+  },
+  {
+   "kind": "frayer",
+   "slots": [
+    {
+     "entries": [
+      "The heat change at constant pressure, \u0394H: products minus reactants on a reaction profile - negative for exothermic, positive for endothermic."
+     ],
+     "label": "Enthalpy change",
+     "studentPrompt": "Give your own example of this term."
+    },
+    {
+     "entries": [
+      "The minimum energy Ea a collision needs for reaction to occur: on a reaction profile it is the climb from the reactants level to the transition state."
+     ],
+     "label": "Activation energy",
+     "studentPrompt": "Give your own example of this term."
+    },
+    {
+     "entries": [
+      "How fast reactant concentration falls, rate = -\u0394[R] / \u0394t: read from the gradient of a concentration-time curve, steeper meaning faster."
+     ],
+     "label": "Rate of reaction",
+     "studentPrompt": "Give your own example of this term."
+    },
+    {
+     "entries": [
+      "A substance that speeds up a reaction by providing a lower-activation-energy route, and is chemically unchanged at the end: it speeds forward and reverse reactions equally."
+     ],
+     "label": "Catalyst",
+     "studentPrompt": "Give your own example of this term."
+    },
+    {
+     "entries": [
+      "The state of a reversible reaction in a closed system where the forward and reverse rates are equal and concentrations stay constant."
+     ],
+     "label": "Dynamic equilibrium",
+     "studentPrompt": "Give your own example of this term."
+    },
+    {
+     "entries": [
+      "The spread of molecular kinetic energies at a temperature: most molecules sit near the average, and only the tail past Ea can react on collision."
+     ],
+     "label": "Maxwell-Boltzmann distribution",
+     "studentPrompt": "Give your own example of this term."
+    }
+   ]
+  }
+ ],
+ "title": "JC H2 chemistry \u2014 physical: energetics, kinetics and equilibria",
+ "topic": "h2-physical"
+}

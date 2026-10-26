@@ -1,0 +1,38 @@
+{
+ "entries": [
+  {
+   "example": "Exothermic: products lie below reactants: the profile falls from the reactants level to a lower products level, so \u0394H is negative and heat leaves the system.",
+   "meaning": "The heat change at constant pressure, \u0394H: products minus reactants on a reaction profile - negative for exothermic, positive for endothermic.",
+   "term": "Enthalpy change"
+  },
+  {
+   "example": "For H2 + Cl2 -> 2 HCl, the energy taken in to break bonds is 436 + 242 = 678 kJ mol-1, and the energy given out when two H-Cl bonds form is 2 x 431 = 862 kJ mol-1, so \u0394H = 678 - 862 = -184 kJ mol-1. The negative sign means the reaction is exothermic: the products lie below the reactants on the reaction profile, as in scene s1. Check the practice reaction the same way: for H2 + Br2 -> 2 HBr, in = 436 + 193 = 629 and out = 2 x 366 = 732, so \u0394H = 629 - 732 = -103 kJ mol-1.",
+   "meaning": "The minimum energy Ea a collision needs for reaction to occur: on a reaction profile it is the climb from the reactants level to the transition state.",
+   "term": "Activation energy"
+  },
+  {
+   "example": "Rate curves: steeper means faster: the gradient of the concentration-time curve is the rate, and higher temperature or a catalyst makes the curve steeper.",
+   "meaning": "How fast reactant concentration falls, rate = -\u0394[R] / \u0394t: read from the gradient of a concentration-time curve, steeper meaning faster.",
+   "term": "Rate of reaction"
+  },
+  {
+   "example": "Read exothermic and endothermic reaction profiles and state the sign of \u0394H",
+   "meaning": "A substance that speeds up a reaction by providing a lower-activation-energy route, and is chemically unchanged at the end: it speeds forward and reverse reactions equally.",
+   "term": "Catalyst"
+  },
+  {
+   "example": "A common mistake: a catalyst shifts equilibrium: both rates grow by the same factor, the composition bars never move, and the equilibrium position and Kc stay unchanged.",
+   "meaning": "The state of a reversible reaction in a closed system where the forward and reverse rates are equal and concentrations stay constant.",
+   "term": "Dynamic equilibrium"
+  },
+  {
+   "example": "Maxwell\u2013Boltzmann: more molecules past Ea at higher T: the distribution flattens and shifts right, so a bigger fraction of molecules can react on collision.",
+   "meaning": "The spread of molecular kinetic energies at a temperature: most molecules sit near the average, and only the tail past Ea can react on collision.",
+   "term": "Maxwell-Boltzmann distribution"
+  }
+ ],
+ "level": "jc",
+ "subject": "science",
+ "title": "JC H2 chemistry \u2014 physical: energetics, kinetics and equilibria",
+ "topic": "h2-physical"
+}

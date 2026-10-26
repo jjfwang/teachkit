@@ -1,0 +1,77 @@
+{
+ "flashcards": [
+  {
+   "back": "The heat change at constant pressure, \u0394H: products minus reactants on a reaction profile - negative for exothermic, positive for endothermic.",
+   "front": "Enthalpy change",
+   "source": "definition"
+  },
+  {
+   "back": "The minimum energy Ea a collision needs for reaction to occur: on a reaction profile it is the climb from the reactants level to the transition state.",
+   "front": "Activation energy",
+   "source": "definition"
+  },
+  {
+   "back": "How fast reactant concentration falls, rate = -\u0394[R] / \u0394t: read from the gradient of a concentration-time curve, steeper meaning faster.",
+   "front": "Rate of reaction",
+   "source": "definition"
+  },
+  {
+   "back": "A substance that speeds up a reaction by providing a lower-activation-energy route, and is chemically unchanged at the end: it speeds forward and reverse reactions equally.",
+   "front": "Catalyst",
+   "source": "definition"
+  },
+  {
+   "back": "The state of a reversible reaction in a closed system where the forward and reverse rates are equal and concentrations stay constant.",
+   "front": "Dynamic equilibrium",
+   "source": "definition"
+  },
+  {
+   "back": "The spread of molecular kinetic energies at a temperature: most molecules sit near the average, and only the tail past Ea can react on collision.",
+   "front": "Maxwell-Boltzmann distribution",
+   "source": "definition"
+  },
+  {
+   "back": "A faster forward reaction looks like the products are winning. A catalyst speeds the forward and reverse reactions equally: the position of equilibrium is unchanged. In the animation both rate arrows grow by the same factor while the equilibrium bars never move: the catalyst shortens the journey to equilibrium, it does not move the destination, and Kc is unchanged.",
+   "front": "A catalyst pushes the equilibrium toward the products.",
+   "source": "trap"
+  },
+  {
+   "back": "Equilibrium is reached sooner, but the position of equilibrium and Kc are unchanged, because both rates speed up equally",
+   "front": "A reversible reaction sits at equilibrium and a catalyst is added. A student claims the equilibrium now makes more product. What actually happens?",
+   "source": "quiz-bank"
+  },
+  {
+   "back": "-184 kJ mol-1, from \u0394H = 678 - 862: exothermic",
+   "front": "For H2 + Cl2 \u2192 2 HCl, with bond enthalpies H-H 436, Cl-Cl 242 and H-Cl 431 kJ mol-1, what is the enthalpy change of the reaction?",
+   "source": "quiz-bank"
+  }
+ ],
+ "level": "jc",
+ "practiceSets": [
+  {
+   "dayOffset": 1,
+   "items": [
+    {
+     "answer": "In = 436 + 193 = 629 kJ mol-1; out = 2 x 366 = 732 kJ mol-1; \u0394H = 629 - 732 = -103 kJ mol-1. The reaction is exothermic.",
+     "prompt": "Using bond enthalpies H-H 436, Br-Br 193 and H-Br 366 kJ mol-1, calculate the enthalpy change for H2 + Br2 \u2192 2 HBr, showing your working, and state whether the reaction is exothermic or endothermic."
+    },
+    {
+     "answer": "Kc = [NH3]^2 / ([N2][H2]^3) = 0.40^2 / (0.20 x 0.60^3) = 0.16 / 0.0432 = 3.70 dm^6 mol^-2.",
+     "prompt": "For N2 + 3 H2 \u21cc 2 NH3 at equilibrium, [N2] = 0.20, [H2] = 0.60 and [NH3] = 0.40 mol dm-3. Calculate Kc, showing the expression you use."
+    }
+   ]
+  },
+  {
+   "dayOffset": 3,
+   "items": [
+    {
+     "answer": "The distribution flattens and shifts right, so a larger fraction of molecules has energy at least Ea and more collisions per second can react",
+     "prompt": "A reaction runs much faster when the temperature is raised by 20 K. Using the Maxwell-Boltzmann distribution, why?"
+    }
+   ]
+  }
+ ],
+ "subject": "science",
+ "title": "JC H2 chemistry \u2014 physical: energetics, kinetics and equilibria",
+ "topic": "h2-physical"
+}
