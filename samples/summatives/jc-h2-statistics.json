@@ -1,0 +1,125 @@
+{
+ "blueprint": [
+  {
+   "assessmentObjective": "AO1 recall and apply",
+   "cognitiveLevel": "apply",
+   "marks": 10,
+   "outcomeCode": "H2-STAT-TESTS"
+  },
+  {
+   "assessmentObjective": "AO2 reason and solve",
+   "cognitiveLevel": "reason",
+   "marks": 10,
+   "outcomeCode": "H2-DIFF-RATES"
+  }
+ ],
+ "durationMinutes": 60,
+ "items": [
+  {
+   "blueprintRow": 0,
+   "commandWord": "State",
+   "markScheme": {
+    "points": [
+     {
+      "marks": 2,
+      "text": "States the verdict: do not reject the null hypothesis"
+     },
+     {
+      "marks": 3,
+      "text": "Gives the reason: the p-value 0.31 is greater than alpha = 0.05, so the data is not surprising enough under the null to reject it"
+     }
+    ]
+   },
+   "marks": 5,
+   "prompt": "A hypothesis test at the 5% significance level returns a p-value of 0.31. State the test verdict and give the reason."
+  },
+  {
+   "blueprintRow": 0,
+   "commandWord": "Describe",
+   "markScheme": {
+    "points": [
+     {
+      "marks": 2,
+      "text": "Describes a Type I error: rejecting a true null - declaring the machine miscalibrated when it is actually fine"
+     },
+     {
+      "marks": 3,
+      "text": "Describes a Type II error: accepting a false null - passing the machine when it is actually miscalibrated - and states alpha caps the probability of a Type I error"
+     }
+    ]
+   },
+   "marks": 5,
+   "prompt": "In a quality test, the null hypothesis says a machine is calibrated. Describe a Type I error and a Type II error in this context, and state which error's probability is capped by the significance level alpha."
+  },
+  {
+   "blueprintRow": 1,
+   "commandWord": "Find",
+   "markScheme": {
+    "points": [
+     {
+      "marks": 2,
+      "text": "Differentiates to dy/dx = 3x^2 - 12x + 9"
+     },
+     {
+      "marks": 3,
+      "text": "Sets dy/dx = 0 and solves to x = 1 and x = 3"
+     }
+    ]
+   },
+   "marks": 5,
+   "prompt": "A curve has equation y = x^3 - 6x^2 + 9x. Find dy/dx and the x-coordinates of its stationary points."
+  },
+  {
+   "blueprintRow": 1,
+   "commandWord": "Find",
+   "markScheme": {
+    "points": [
+     {
+      "marks": 3,
+      "text": "Writes A = pi r^2 and applies the chain rule dA/dt = 2 pi r dr/dt"
+     },
+     {
+      "marks": 2,
+      "text": "Substitutes r = 4 and dr/dt = 0.5 to give 4 pi cm^2/s"
+     }
+    ]
+   },
+   "marks": 5,
+   "prompt": "The radius of a circle increases at 0.5 cm/s. Find the rate at which its area increases when the radius is 4 cm."
+  }
+ ],
+ "level": "jc",
+ "moderation": {
+  "state": "unreviewed"
+ },
+ "review": null,
+ "rubric": {
+  "criteria": [
+   {
+    "levels": [
+     {
+      "descriptor": "Methods are chosen and applied exactly, p-values are compared with alpha explicitly, and conclusions are justified without assigning a probability to the null.",
+      "label": "Secure"
+     },
+     {
+      "descriptor": "Method is correct in outline but a comparison, error-type definition or substitution step is skipped.",
+      "label": "Developing"
+     },
+     {
+      "descriptor": "Methods are misapplied - for example reading a p-value of 0.03 as a 3% chance the null is true - and the working does not support the answer.",
+      "label": "Beginning"
+     }
+    ],
+    "name": "Statistics and calculus communication"
+   }
+  ]
+ },
+ "subject": "math",
+ "title": "Statistics and Differentiation Unit Test",
+ "topics": [
+  "jc-h2-statistics",
+  "jc-h2-differentiation"
+ ],
+ "totalMarks": 20,
+ "unitTitle": "Statistics and calculus"
+}
