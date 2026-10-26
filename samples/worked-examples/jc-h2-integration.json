@@ -1,0 +1,57 @@
+{
+  "complete": {
+    "problem": "Trace integration from Riemann sums to the exact area 8/3, signed area as the net, u-substitution as the chain rule in reverse, volumes of revolution by stacking discs, and the +C trap that only indefinite integrals spring.",
+    "selfExplanation": "Explain how rectangle sums converge to the exact area, how below-axis area counts negative, how u-substitution rewrites integrand, differential and limits together, how discs stack into a volume, and why a definite integral never carries +C.",
+    "steps": [
+      {
+        "annotation": "A Riemann sum estimates area by slicing: rectangles of width times height under y = x^2 from 0 to 2 give 3.75 for n = 4 and 3.1875 for n = 8, and the limit of the sums is the exact area 8/3.",
+        "text": "Step 1 (s1): Riemann sums: slicing area under a curve. An integral begins life as a sum - slice the interval under y = x^2 from 0 to 2, stand a rectangle on each slice, and add. Four rectangles give 3.75, eight give 3.1875, and the exact area 8/3 is what those sums are converging to. Keep that picture in mind all lesson: every integral is a limit of sums first."
+      },
+      {
+        "annotation": "Signed area counts below the axis negative: for y = x from -1 to 2 the triangle above contributes +2 and the triangle below contributes -0.5, so the integral is the net signed area 3/2.",
+        "text": "Step 2 (s2): Signed area: below the axis counts negative. The line y = x from -1 to 2 makes two triangles: +2 above the axis and -0.5 below it, so the integral is 3/2, the net. Say it plainly: an integral reports signed area, and if a question wants total area you split at the crossing and add magnitudes yourself."
+      },
+      {
+        "annotation": "U-substitution is the chain rule in reverse: set u equal to an inner function so its derivative absorbs the remaining factors, as u = x^2 turns the integral of 2x e^(x^2) into the integral of e^u.",
+        "text": "Step 3 (s3): U-substitution: the chain rule in reverse. In the integral of 2x e^(x^2) from 0 to 1, the 2x outside is precisely the derivative of the x^2 inside. Set u = x^2 and du = 2x dx, rewrite the whole line - integrand, differential and limits - and the integral collapses to the integral of e^u, which is e - 1. Check your student notes for the bookkeeping checklist before the worksheet."
+      },
+      {
+        "annotation": "Volumes of revolution stack discs: each slice is a disc of radius x^2 and thickness dx, and stacking them gives V = pi times the integral of x^4 from 0 to 1 = pi/5.",
+        "text": "Step 4 (s4): Volumes of revolution: stacking discs. Rotate y = x^2 about the x-axis from 0 to 1 and the curve sweeps out a solid. Slice it across the axis: every slice is nearly a disc of radius x^2 and thickness dx, volume pi (x^2)^2 dx. Stack the discs - a Riemann sum again - and the volume is pi times the integral of x^4 from 0 to 1, which is pi/5. Now open the worksheet and try the disc question in pairs."
+      },
+      {
+        "annotation": "A common mistake: only indefinite integrals need +C: the antiderivative x^3/3 evaluated from 1 to 2 gives 8/3 - 1/3, and any +C would appear at both limits and cancel, leaving 7/3.",
+        "text": "Step 5 (s5): The +C trap: only for indefinite integrals. An indefinite integral names a family, so it earns its +C. A definite integral evaluates at two limits, and the constant cancels in the subtraction - from 1 to 2 the answer is simply 7/3. Compare the trap section of your student notes one last time. Now the exit ticket - on your own, no talking - covering signed area, substitution and the disc volume."
+      }
+    ]
+  },
+  "faded": {
+    "problem": "Evaluate the integral of x^2 from 1 to 2.",
+    "selfExplanation": "The first step is shown. Say how the antiderivative is evaluated at the two limits, then why the answer is the single number 7/3 with no +C written.",
+    "steps": [
+      {
+        "annotation": "The antiderivative of x^2 is x^3/3, so the definite integral is that antiderivative taken between the two limits.",
+        "text": "Step 1: the antiderivative of x^2 is x^3/3, so write the integral as [x^3/3] from 1 to 2.",
+        "withheld": false
+      },
+      {
+        "annotation": "Evaluate the antiderivative at the upper limit minus the lower limit: 8/3 - 1/3 = 7/3.",
+        "text": "Step 2: evaluate at the limits: 2^3/3 - 1^3/3 = 8/3 - 1/3 = 7/3.",
+        "withheld": true
+      },
+      {
+        "annotation": "A definite integral is a single number: any +C would appear at both limits and cancel, so none is written.",
+        "text": "Step 3: check the landing: 7/3 is a single number, so no +C is written - it cancels at the two limits.",
+        "withheld": true
+      }
+    ]
+  },
+  "level": "jc",
+  "paired": {
+    "problem": "Rotating y = x^2 about the x-axis from 0 to 1 gives discs of radius x^2. Write down the volume integral and its value.",
+    "solution": "V = pi times the integral of (x^2)^2 dx from 0 to 1 = pi times 1/5 = pi/5."
+  },
+  "subject": "math",
+  "title": "JC H2 integration: Riemann sums, u-substitution, volumes of revolution",
+  "topic": "h2-integration"
+}

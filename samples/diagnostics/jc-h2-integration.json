@@ -1,0 +1,202 @@
+{
+  "doNow": [
+    {
+      "choices": [
+        {
+          "misconception": "A definite integral still needs the +C in the answer.",
+          "rationale": {
+            "chose": "The learner selected option 3 as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: A definite integral still needs the +C in the answer.. The slip: The habit of writing +C carries over from indefinite integrals.. The fix: Only indefinite integrals need +C: it cancels at the two limits, so from 1 to 2 the answer is simply 7/3..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "3"
+        },
+        {
+          "correct": true,
+          "text": "8/3"
+        },
+        {
+          "misconception": "A definite integral still needs the +C in the answer.",
+          "rationale": {
+            "chose": "The learner selected option 4 as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: A definite integral still needs the +C in the answer.. The slip: The habit of writing +C carries over from indefinite integrals.. The fix: Only indefinite integrals need +C: it cancels at the two limits, so from 1 to 2 the answer is simply 7/3..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "4"
+        },
+        {
+          "misconception": "A definite integral still needs the +C in the answer.",
+          "rationale": {
+            "chose": "The learner selected option 2 as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: A definite integral still needs the +C in the answer.. The slip: The habit of writing +C carries over from indefinite integrals.. The fix: Only indefinite integrals need +C: it cancels at the two limits, so from 1 to 2 the answer is simply 7/3..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "2"
+        }
+      ],
+      "id": "dn1",
+      "kind": "multiple-choice",
+      "prompt": "Using right-endpoint rectangles with n = 4 on [0, 2] for y = x^2 gives the estimate 3.75, and n = 8 gives 3.1875. What is the exact value the estimates are closing in on?"
+    },
+    {
+      "choices": [
+        {
+          "misconception": "A definite integral still needs the +C in the answer.",
+          "rationale": {
+            "chose": "The learner selected option 5/2 as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: A definite integral still needs the +C in the answer.. The slip: The habit of writing +C carries over from indefinite integrals.. The fix: Only indefinite integrals need +C: it cancels at the two limits, so from 1 to 2 the answer is simply 7/3..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "5/2"
+        },
+        {
+          "correct": true,
+          "text": "3/2"
+        },
+        {
+          "misconception": "A definite integral still needs the +C in the answer.",
+          "rationale": {
+            "chose": "The learner selected option 2 as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: A definite integral still needs the +C in the answer.. The slip: The habit of writing +C carries over from indefinite integrals.. The fix: Only indefinite integrals need +C: it cancels at the two limits, so from 1 to 2 the answer is simply 7/3..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "2"
+        },
+        {
+          "misconception": "A definite integral still needs the +C in the answer.",
+          "rationale": {
+            "chose": "The learner selected option 1/2 as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: A definite integral still needs the +C in the answer.. The slip: The habit of writing +C carries over from indefinite integrals.. The fix: Only indefinite integrals need +C: it cancels at the two limits, so from 1 to 2 the answer is simply 7/3..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "1/2"
+        }
+      ],
+      "id": "dn2",
+      "kind": "multiple-choice",
+      "prompt": "Find the integral of x from -1 to 2."
+    },
+    {
+      "choices": [
+        {
+          "misconception": "A definite integral still needs the +C in the answer.",
+          "rationale": {
+            "chose": "The learner selected option pi/3 as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: A definite integral still needs the +C in the answer.. The slip: The habit of writing +C carries over from indefinite integrals.. The fix: Only indefinite integrals need +C: it cancels at the two limits, so from 1 to 2 the answer is simply 7/3..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "pi/3"
+        },
+        {
+          "correct": true,
+          "text": "pi/5"
+        },
+        {
+          "misconception": "A definite integral still needs the +C in the answer.",
+          "rationale": {
+            "chose": "The learner selected option pi/2 as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: A definite integral still needs the +C in the answer.. The slip: The habit of writing +C carries over from indefinite integrals.. The fix: Only indefinite integrals need +C: it cancels at the two limits, so from 1 to 2 the answer is simply 7/3..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "pi/2"
+        },
+        {
+          "misconception": "A definite integral still needs the +C in the answer.",
+          "rationale": {
+            "chose": "The learner selected option pi as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: A definite integral still needs the +C in the answer.. The slip: The habit of writing +C carries over from indefinite integrals.. The fix: Only indefinite integrals need +C: it cancels at the two limits, so from 1 to 2 the answer is simply 7/3..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "pi"
+        }
+      ],
+      "id": "dn3",
+      "kind": "multiple-choice",
+      "prompt": "The region under y = x^2 from 0 to 1 is rotated about the x-axis. What is the volume of the solid?"
+    }
+  ],
+  "hingeQuestions": [
+    {
+      "choices": [
+        {
+          "misconception": "A definite integral still needs the +C in the answer.",
+          "rationale": {
+            "chose": "The learner selected option Nothing - every integral answer must end with + C as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: A definite integral still needs the +C in the answer.. The slip: The habit of writing +C carries over from indefinite integrals.. The fix: Only indefinite integrals need +C: it cancels at the two limits, so from 1 to 2 the answer is simply 7/3..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "Nothing - every integral answer must end with + C"
+        },
+        {
+          "correct": true,
+          "text": "A definite integral is a single number: the +C cancels at the two limits, so it does not belong in the answer"
+        },
+        {
+          "misconception": "A definite integral still needs the +C in the answer.",
+          "rationale": {
+            "chose": "The learner selected option The +C is needed only when the answer is a fraction like 7/3 as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: A definite integral still needs the +C in the answer.. The slip: The habit of writing +C carries over from indefinite integrals.. The fix: Only indefinite integrals need +C: it cancels at the two limits, so from 1 to 2 the answer is simply 7/3..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "The +C is needed only when the answer is a fraction like 7/3"
+        },
+        {
+          "misconception": "A definite integral still needs the +C in the answer.",
+          "rationale": {
+            "chose": "The learner selected option The +C should be added before evaluating at the limits, not after as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: A definite integral still needs the +C in the answer.. The slip: The habit of writing +C carries over from indefinite integrals.. The fix: Only indefinite integrals need +C: it cancels at the two limits, so from 1 to 2 the answer is simply 7/3..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "The +C should be added before evaluating at the limits, not after"
+        }
+      ],
+      "id": "h1",
+      "kind": "multiple-choice",
+      "prompt": "A student evaluates a definite integral, gets 7/3, and then adds + C to the final answer. Which statement corrects the claim?",
+      "scriptCue": "s5"
+    },
+    {
+      "choices": [
+        {
+          "misconception": "A definite integral still needs the +C in the answer.",
+          "rationale": {
+            "chose": "The learner selected option 7/3 + C as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: A definite integral still needs the +C in the answer.. The slip: The habit of writing +C carries over from indefinite integrals.. The fix: Only indefinite integrals need +C: it cancels at the two limits, so from 1 to 2 the answer is simply 7/3..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "7/3 + C"
+        },
+        {
+          "correct": true,
+          "text": "7/3"
+        },
+        {
+          "misconception": "A definite integral still needs the +C in the answer.",
+          "rationale": {
+            "chose": "The learner selected option 8/3 as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: A definite integral still needs the +C in the answer.. The slip: The habit of writing +C carries over from indefinite integrals.. The fix: Only indefinite integrals need +C: it cancels at the two limits, so from 1 to 2 the answer is simply 7/3..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "8/3"
+        },
+        {
+          "misconception": "A definite integral still needs the +C in the answer.",
+          "rationale": {
+            "chose": "The learner selected option 1/3 as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: A definite integral still needs the +C in the answer.. The slip: The habit of writing +C carries over from indefinite integrals.. The fix: Only indefinite integrals need +C: it cancels at the two limits, so from 1 to 2 the answer is simply 7/3..",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "1/3"
+        }
+      ],
+      "id": "h2",
+      "kind": "multiple-choice",
+      "prompt": "What is the integral of x^2 from 1 to 2?",
+      "scriptCue": "s5"
+    }
+  ],
+  "level": "jc",
+  "subject": "math",
+  "title": "JC H2 integration: Riemann sums, u-substitution, volumes of revolution",
+  "topic": "h2-integration"
+}
