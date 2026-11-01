@@ -1,0 +1,116 @@
+{
+ "level": "jc",
+ "subject": "science",
+ "templates": [
+  {
+   "kind": "flow",
+   "slots": [
+    {
+     "entries": [
+      "Across period 3, atoms shrink: nuclear charge rises from sodium to argon at nearly constant shielding, so the outer electrons are pulled closer and the atoms get smaller."
+     ],
+     "label": "Across period 3",
+     "studentPrompt": "Explain this step in your own words."
+    },
+    {
+     "entries": [
+      "Melting point tells the structure story: metallic structures for sodium to aluminium, a giant covalent lattice peaking at silicon, then simple molecular elements with weak intermolecular forces."
+     ],
+     "label": "Melting point",
+     "studentPrompt": "Explain this step in your own words."
+    },
+    {
+     "entries": [
+      "First ionisation energy: the rise, and two dips: the general rise follows rising nuclear charge and falling radius; the dips are magnesium to aluminium (3p electron removed) and phosphorus to sulphur (paired-electron repulsion)."
+     ],
+     "label": "First ionisation energy",
+     "studentPrompt": "Explain this step in your own words."
+    },
+    {
+     "entries": [
+      "Down group 2: reactivity climbs: atoms grow larger with more shielding down the group, the outer electrons are lost more easily, and reactivity with water climbs from magnesium to barium."
+     ],
+     "label": "Down group 2",
+     "studentPrompt": "Explain this step in your own words."
+    },
+    {
+     "entries": [
+      "Down group 17: oxidising power falls: atoms grow larger down the group, an incoming electron is held less strongly, and oxidising power falls from chlorine to iodine."
+     ],
+     "label": "Down group 17",
+     "studentPrompt": "Explain this step in your own words."
+    },
+    {
+     "entries": [
+      "Colour comes from partially filled d-orbitals: ligands split the d-orbitals into two energy levels, and electrons absorbing visible light as they jump between them give transition-metal ions their colour."
+     ],
+     "label": "Colour",
+     "studentPrompt": "Explain this step in your own words."
+    },
+    {
+     "entries": [
+      "Ligands crowd the metal; catalysts flip oxidation states: ligands donate lone pairs to form complex ions, and variable oxidation states let transition metals catalyse reactions by flipping between states."
+     ],
+     "label": "Ligands and catalysts",
+     "studentPrompt": "Explain this step in your own words."
+    },
+    {
+     "entries": [
+      "A common mistake: zinc is a transition metal: zinc forms only Zn2+, whose 3d subshell is completely filled, so by the ion-based definition zinc is a d-block element but not a transition metal."
+     ],
+     "label": "A common mistake",
+     "studentPrompt": "Explain this step in your own words."
+    }
+   ]
+  },
+  {
+   "kind": "frayer",
+   "slots": [
+    {
+     "entries": [
+      "Half the distance between the nuclei of two bonded atoms of the element: across period 3 it falls as nuclear charge rises at constant shielding."
+     ],
+     "label": "Atomic radius",
+     "studentPrompt": "Give your own example of this term."
+    },
+    {
+     "entries": [
+      "The energy needed to remove one mole of electrons from one mole of gaseous atoms to form gaseous 1+ ions: it rises across period 3, with dips at aluminium and sulphur."
+     ],
+     "label": "First ionisation energy",
+     "studentPrompt": "Give your own example of this term."
+    },
+    {
+     "entries": [
+      "The power of an atom to attract the electrons in a covalent bond: it rises across a period as radius falls and nuclear charge grows."
+     ],
+     "label": "Electronegativity",
+     "studentPrompt": "Give your own example of this term."
+    },
+    {
+     "entries": [
+      "A species that gains electrons and is itself reduced: the halogens are oxidising agents, strongest at the top of group 17 and weakening down the group."
+     ],
+     "label": "Oxidising agent",
+     "studentPrompt": "Give your own example of this term."
+    },
+    {
+     "entries": [
+      "A d-block element that forms at least one stable ion with a partially filled d subshell: the partial filling gives colour, variable oxidation states, complexes and catalysis."
+     ],
+     "label": "Transition metal",
+     "studentPrompt": "Give your own example of this term."
+    },
+    {
+     "entries": [
+      "A molecule or ion that donates a lone pair of electrons to a central metal ion, forming a coordinate bond in a complex ion."
+     ],
+     "label": "Ligand",
+     "studentPrompt": "Give your own example of this term."
+    }
+   ]
+  }
+ ],
+ "title": "JC H2 chemistry \u2014 inorganic: periodicity, groups and transition metals",
+ "topic": "h2-inorganic"
+}
