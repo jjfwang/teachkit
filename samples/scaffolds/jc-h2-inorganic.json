@@ -1,0 +1,120 @@
+{
+ "level": "jc",
+ "sets": [
+  {
+   "cloze": [
+    {
+     "answers": [
+      "Atomic radius",
+      "First ionisation energy"
+     ],
+     "text": "The ___ is half the distance between the nuclei of two bonded atoms, and the ___ is the energy needed to remove one mole of electrons from one mole of gaseous atoms."
+    },
+    {
+     "answers": [
+      "Oxidising agent",
+      "Ligand"
+     ],
+     "text": "A ___ gains electrons and is itself reduced, while a ___ donates a lone pair of electrons to a central metal ion."
+    }
+   ],
+   "frames": [
+    "___ is half the distance between the nuclei of two bonded atoms of the element.",
+    "___ is the energy needed to remove one mole of electrons from one mole of gaseous atoms.",
+    "___ is the power of an atom to attract the electrons in a covalent bond."
+   ],
+   "level": "full",
+   "starters": [
+    "Atomic radius is half the distance between...",
+    "First ionisation energy is the energy needed to...",
+    "Electronegativity is the power of an atom to..."
+   ],
+   "wordBank": [
+    {
+     "gloss": "Half the distance between the nuclei of two bonded atoms of the element: across period 3 it falls as nuclear charge rises at constant shielding.",
+     "term": "Atomic radius"
+    },
+    {
+     "gloss": "The energy needed to remove one mole of electrons from one mole of gaseous atoms to form gaseous 1+ ions: it rises across period 3, with dips at aluminium and sulphur.",
+     "term": "First ionisation energy"
+    },
+    {
+     "gloss": "The power of an atom to attract the electrons in a covalent bond: it rises across a period as radius falls and nuclear charge grows.",
+     "term": "Electronegativity"
+    },
+    {
+     "gloss": "A species that gains electrons and is itself reduced: the halogens are oxidising agents, strongest at the top of group 17 and weakening down the group.",
+     "term": "Oxidising agent"
+    },
+    {
+     "gloss": "A d-block element that forms at least one stable ion with a partially filled d subshell: the partial filling gives colour, variable oxidation states, complexes and catalysis.",
+     "term": "Transition metal"
+    },
+    {
+     "gloss": "A molecule or ion that donates a lone pair of electrons to a central metal ion, forming a coordinate bond in a complex ion.",
+     "term": "Ligand"
+    }
+   ]
+  },
+  {
+   "cloze": [
+    {
+     "answers": [
+      "Atomic radius",
+      "First ionisation energy"
+     ],
+     "text": "The ___ is half the distance between the nuclei of two bonded atoms, and the ___ is the energy needed to remove one mole of electrons from one mole of gaseous atoms."
+    }
+   ],
+   "frames": [
+    "___ is half the distance between the nuclei of two bonded atoms of the element.",
+    "___ is the energy needed to remove one mole of electrons from one mole of gaseous atoms."
+   ],
+   "level": "partial",
+   "starters": [
+    "Atomic radius is half the distance between...",
+    "First ionisation energy is the energy needed to..."
+   ],
+   "wordBank": [
+    {
+     "gloss": "Half the distance between the nuclei of two bonded atoms of the element: across period 3 it falls as nuclear charge rises at constant shielding.",
+     "term": "Atomic radius"
+    },
+    {
+     "gloss": "The energy needed to remove one mole of electrons from one mole of gaseous atoms to form gaseous 1+ ions: it rises across period 3, with dips at aluminium and sulphur.",
+     "term": "First ionisation energy"
+    },
+    {
+     "gloss": "The power of an atom to attract the electrons in a covalent bond: it rises across a period as radius falls and nuclear charge grows.",
+     "term": "Electronegativity"
+    }
+   ]
+  },
+  {
+   "cloze": [
+    {
+     "answers": [
+      "Atomic radius"
+     ],
+     "text": "The ___ is half the distance between the nuclei of two bonded atoms."
+    }
+   ],
+   "frames": [
+    "___ is half the distance between the nuclei of two bonded atoms of the element."
+   ],
+   "level": "minimal",
+   "starters": [
+    "Atomic radius is half the distance between..."
+   ],
+   "wordBank": [
+    {
+     "gloss": "Half the distance between the nuclei of two bonded atoms of the element: across period 3 it falls as nuclear charge rises at constant shielding.",
+     "term": "Atomic radius"
+    }
+   ]
+  }
+ ],
+ "subject": "science",
+ "title": "JC H2 chemistry \u2014 inorganic: periodicity, groups and transition metals",
+ "topic": "h2-inorganic"
+}

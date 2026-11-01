@@ -1,0 +1,38 @@
+{
+ "entries": [
+  {
+   "example": "Across period 3, atoms shrink: nuclear charge rises from sodium to argon at nearly constant shielding, so the outer electrons are pulled closer and the atoms get smaller.",
+   "meaning": "Half the distance between the nuclei of two bonded atoms of the element: across period 3 it falls as nuclear charge rises at constant shielding.",
+   "term": "Atomic radius"
+  },
+  {
+   "example": "Work through the first ionisation energies of magnesium and aluminium. Mg (738 kJ mol-1) has its outer electrons in the 3s orbital; Al (578 kJ mol-1) has one electron in the higher-energy 3p orbital. Aluminium has the greater nuclear charge, yet its first ionisation energy is lower by 738 - 578 = 160 kJ mol-1, because the 3p electron sits further from the nucleus and is shielded by the filled 3s orbital, so it is removed more easily. The same orbital logic explains the second dip: P (1012 kJ mol-1) to S (1000 kJ mol-1), where paired-electron repulsion in sulphur's 3p orbital does the work.",
+   "meaning": "The energy needed to remove one mole of electrons from one mole of gaseous atoms to form gaseous 1+ ions: it rises across period 3, with dips at aluminium and sulphur.",
+   "term": "First ionisation energy"
+  },
+  {
+   "example": "Explain the period 3 trends in atomic radius, melting point and first ionisation energy, including both dips",
+   "meaning": "The power of an atom to attract the electrons in a covalent bond: it rises across a period as radius falls and nuclear charge grows.",
+   "term": "Electronegativity"
+  },
+  {
+   "example": "Down group 17: oxidising power falls: atoms grow larger down the group, an incoming electron is held less strongly, and oxidising power falls from chlorine to iodine.",
+   "meaning": "A species that gains electrons and is itself reduced: the halogens are oxidising agents, strongest at the top of group 17 and weakening down the group.",
+   "term": "Oxidising agent"
+  },
+  {
+   "example": "Colour comes from partially filled d-orbitals: ligands split the d-orbitals into two energy levels, and electrons absorbing visible light as they jump between them give transition-metal ions their colour.",
+   "meaning": "A d-block element that forms at least one stable ion with a partially filled d subshell: the partial filling gives colour, variable oxidation states, complexes and catalysis.",
+   "term": "Transition metal"
+  },
+  {
+   "example": "Ligands crowd the metal; catalysts flip oxidation states: ligands donate lone pairs to form complex ions, and variable oxidation states let transition metals catalyse reactions by flipping between states.",
+   "meaning": "A molecule or ion that donates a lone pair of electrons to a central metal ion, forming a coordinate bond in a complex ion.",
+   "term": "Ligand"
+  }
+ ],
+ "level": "jc",
+ "subject": "science",
+ "title": "JC H2 chemistry \u2014 inorganic: periodicity, groups and transition metals",
+ "topic": "h2-inorganic"
+}

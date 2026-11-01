@@ -1,0 +1,77 @@
+{
+ "flashcards": [
+  {
+   "back": "Half the distance between the nuclei of two bonded atoms of the element: across period 3 it falls as nuclear charge rises at constant shielding.",
+   "front": "Atomic radius",
+   "source": "definition"
+  },
+  {
+   "back": "The energy needed to remove one mole of electrons from one mole of gaseous atoms to form gaseous 1+ ions: it rises across period 3, with dips at aluminium and sulphur.",
+   "front": "First ionisation energy",
+   "source": "definition"
+  },
+  {
+   "back": "The power of an atom to attract the electrons in a covalent bond: it rises across a period as radius falls and nuclear charge grows.",
+   "front": "Electronegativity",
+   "source": "definition"
+  },
+  {
+   "back": "A species that gains electrons and is itself reduced: the halogens are oxidising agents, strongest at the top of group 17 and weakening down the group.",
+   "front": "Oxidising agent",
+   "source": "definition"
+  },
+  {
+   "back": "A d-block element that forms at least one stable ion with a partially filled d subshell: the partial filling gives colour, variable oxidation states, complexes and catalysis.",
+   "front": "Transition metal",
+   "source": "definition"
+  },
+  {
+   "back": "A molecule or ion that donates a lone pair of electrons to a central metal ion, forming a coordinate bond in a complex ion.",
+   "front": "Ligand",
+   "source": "definition"
+  },
+  {
+   "back": "The d-block label reads as the definition of a transition metal. Zinc(II) has a full 3d subshell: no partially filled d orbitals, so zinc is not a transition metal. Zn2+ is [Ar] 3d10: with no partially filled d subshell there are no d-d transitions, which is why zinc compounds are colourless and form no coloured complexes - the behaviour in scenes s6 and s7 is exactly what zinc cannot do.",
+   "front": "Zinc is a transition metal because it sits in the d-block.",
+   "source": "trap"
+  },
+  {
+   "back": "Zinc is not a transition metal, because Zn2+ has a full 3d subshell with no partially filled d orbitals",
+   "front": "A student is asked whether zinc is a transition metal. Which statement is correct?",
+   "source": "quiz-bank"
+  },
+  {
+   "back": "Aluminium's outer electron is removed from a higher-energy 3p orbital, further from the nucleus and better shielded than magnesium's 3s electron",
+   "front": "The first ionisation energy falls from magnesium to aluminium across period 3, even though nuclear charge increases. Why?",
+   "source": "quiz-bank"
+  }
+ ],
+ "level": "jc",
+ "practiceSets": [
+  {
+   "dayOffset": 1,
+   "items": [
+    {
+     "answer": "Down group 2 each atom has more electron shells, so the atomic radius grows and the outer electrons are further from the nucleus and more shielded. The attraction on the outer electrons weakens, so they are lost more easily to form M2+ ions, and reactivity rises down the group.",
+     "prompt": "Magnesium reacts very slowly with cold water, but barium reacts vigorously. Explain this trend down group 2 in terms of atomic structure."
+    },
+    {
+     "answer": "Chlorine is a stronger oxidising agent than bromine and iodine, so it displaces bromide (forming orange Br2) and iodide (forming brown I2). Iodine is the weakest oxidising agent of the three, so it cannot displace chloride. Oxidising power falls down group 17.",
+     "prompt": "Chlorine water is added to aqueous potassium bromide and the solution turns orange. Chlorine water added to aqueous potassium iodide turns brown, but iodine does not react with aqueous potassium chloride. Explain all three observations."
+    }
+   ]
+  },
+  {
+   "dayOffset": 3,
+   "items": [
+    {
+     "answer": "Cu2+ has a partially filled 3d subshell, so electrons absorb visible light in d-d transitions; Zn2+ is 3d10, so no d-d transitions are possible",
+     "prompt": "Aqueous copper(II) sulfate is blue, but aqueous zinc sulfate is colourless. What best explains the difference?"
+    }
+   ]
+  }
+ ],
+ "subject": "science",
+ "title": "JC H2 chemistry \u2014 inorganic: periodicity, groups and transition metals",
+ "topic": "h2-inorganic"
+}
