@@ -1,0 +1,44 @@
+{
+ "level": "jc",
+ "questions": [
+  {
+   "choices": [
+    {
+     "text": "Aluminium has one more electron shell than magnesium, so the electron is further away"
+    },
+    {
+     "correct": true,
+     "text": "Aluminium's outer electron is removed from a higher-energy 3p orbital, further from the nucleus and better shielded than magnesium's 3s electron"
+    },
+    {
+     "text": "Aluminium has a smaller atomic radius, so its electrons repel each other more"
+    },
+    {
+     "text": "The trend reverses after magnesium for all period 3 properties"
+    }
+   ],
+   "explanation": "Both atoms have the same shells and aluminium has the greater nuclear charge, but the electron removed from aluminium comes from the 3p orbital: higher in energy than 3s and shielded by the filled 3s orbital, so it is lost more easily - the first dip in scene s3.",
+   "id": "q2",
+   "kind": "multiple-choice",
+   "prompt": "The first ionisation energy falls from magnesium to aluminium across period 3, even though nuclear charge increases. Why?"
+  },
+  {
+   "answer": "Down group 2 each atom has more electron shells, so the atomic radius grows and the outer electrons are further from the nucleus and more shielded. The attraction on the outer electrons weakens, so they are lost more easily to form M2+ ions, and reactivity rises down the group.",
+   "explanation": "Reactivity down group 2 tracks how easily the two outer electrons are lost: bigger atoms, more shielding, weaker nuclear attraction - the climb shown in scene s4.",
+   "id": "q3",
+   "kind": "short-answer",
+   "prompt": "Magnesium reacts very slowly with cold water, but barium reacts vigorously. Explain this trend down group 2 in terms of atomic structure."
+  },
+  {
+   "answer": "Chlorine is a stronger oxidising agent than bromine and iodine, so it displaces bromide (forming orange Br2) and iodide (forming brown I2). Iodine is the weakest oxidising agent of the three, so it cannot displace chloride. Oxidising power falls down group 17.",
+   "explanation": "Displacement follows oxidising power: down group 17 the atoms grow, an incoming electron is held less strongly, and oxidising power falls - chlorine above bromine above iodine, as in scene s5.",
+   "id": "q4",
+   "kind": "short-answer",
+   "prompt": "Chlorine water is added to aqueous potassium bromide and the solution turns orange. Chlorine water added to aqueous potassium iodide turns brown, but iodine does not react with aqueous potassium chloride. Explain all three observations."
+  }
+ ],
+ "subject": "science",
+ "title": "JC H2 chemistry \u2014 inorganic: periodicity, groups and transition metals",
+ "topic": "h2-inorganic",
+ "variant": "homework"
+}

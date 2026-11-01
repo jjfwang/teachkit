@@ -1,0 +1,124 @@
+{
+ "activities": [
+  {
+   "grouping": "whole class",
+   "minutes": 5,
+   "objectiveIds": [
+    "o1"
+   ],
+   "scriptCue": "s1",
+   "title": "Across period 3, atoms shrink"
+  },
+  {
+   "grouping": "individual",
+   "minutes": 5,
+   "objectiveIds": [
+    "o1"
+   ],
+   "scriptCue": "s2",
+   "title": "Melting point tells the structure story"
+  },
+  {
+   "grouping": "pairs",
+   "minutes": 6,
+   "objectiveIds": [
+    "o1"
+   ],
+   "scriptCue": "s3",
+   "title": "First ionisation energy: the rise, and two dips"
+  },
+  {
+   "grouping": "whole class",
+   "minutes": 5,
+   "objectiveIds": [
+    "o2"
+   ],
+   "scriptCue": "s4",
+   "title": "Down group 2: reactivity climbs"
+  },
+  {
+   "grouping": "pairs",
+   "minutes": 5,
+   "objectiveIds": [
+    "o2"
+   ],
+   "scriptCue": "s5",
+   "title": "Down group 17: oxidising power falls"
+  },
+  {
+   "grouping": "whole class",
+   "minutes": 6,
+   "objectiveIds": [
+    "o3"
+   ],
+   "scriptCue": "s6",
+   "title": "Colour comes from partially filled d-orbitals"
+  },
+  {
+   "grouping": "pairs",
+   "minutes": 6,
+   "objectiveIds": [
+    "o3"
+   ],
+   "scriptCue": "s7",
+   "title": "Ligands crowd the metal; catalysts flip oxidation states"
+  },
+  {
+   "grouping": "individual",
+   "minutes": 7,
+   "objectiveIds": [
+    "o1",
+    "o2",
+    "o3"
+   ],
+   "resources": [
+    "worksheet"
+   ],
+   "scriptCue": "s8",
+   "title": "A common mistake: zinc is a transition metal"
+  }
+ ],
+ "durationMinutes": 45,
+ "level": "jc",
+ "objectives": [
+  {
+   "assessmentPoints": [
+    "Atomic radius answers in the opening activity",
+    "Ionisation energy answers in the third activity"
+   ],
+   "id": "o1",
+   "successCriteria": [
+    "Half the distance between the nuclei of two bonded atoms of the element: across period 3 it falls as nuclear charge rises at constant shielding.",
+    "Aluminium's outer electron is removed from a higher-energy 3p orbital, further from the nucleus and better shielded than magnesium's 3s electron"
+   ],
+   "text": "Explain the period 3 trends in atomic radius, melting point and first ionisation energy, including both dips"
+  },
+  {
+   "assessmentPoints": [
+    "Group 2 answers in the fourth activity",
+    "Group 17 answers in the fifth activity"
+   ],
+   "id": "o2",
+   "successCriteria": [
+    "Down group 2 each atom has more electron shells, so the atomic radius grows and the outer electrons are further from the nucleus and more shielded. The attraction on the outer electrons weakens, so they are lost more easily to form M2+ ions, and reactivity rises down the group.",
+    "Chlorine is a stronger oxidising agent than bromine and iodine, so it displaces bromide (forming orange Br2) and iodide (forming brown I2). Iodine is the weakest oxidising agent of the three, so it cannot displace chloride. Oxidising power falls down group 17."
+   ],
+   "text": "Explain reactivity down group 2 and oxidising power down group 17 using charge, radius and shielding"
+  },
+  {
+   "assessmentPoints": [
+    "Colour answers in the sixth activity",
+    "Trap answers in the closing misconception activity"
+   ],
+   "id": "o3",
+   "successCriteria": [
+    "Zinc is not a transition metal, because Zn2+ has a full 3d subshell with no partially filled d orbitals",
+    "Cu2+ has a partially filled 3d subshell, so electrons absorb visible light in d-d transitions; Zn2+ is 3d10, so no d-d transitions are possible"
+   ],
+   "text": "Define a transition metal by its ions and explain colour, complex formation and catalysis - and why zinc is excluded"
+  }
+ ],
+ "subject": "science",
+ "title": "JC H2 chemistry \u2014 inorganic: periodicity, groups and transition metals",
+ "topic": "h2-inorganic"
+}
