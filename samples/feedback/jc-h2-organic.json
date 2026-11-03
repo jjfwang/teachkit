@@ -1,0 +1,44 @@
+{
+ "commonErrors": [
+  {
+   "example": "A learner writes on the worksheet that curly arrows point from the electron-poor atom toward the electron-rich one.",
+   "fixIt": {
+    "corrected": "Curly arrows follow the electrons: they start at an electron-rich region (a lone pair or pi bond) and point to where the electrons go.",
+    "prompt": "Fix it: state what a curly arrow actually tracks, and where every arrow starts."
+   },
+   "misconception": "Curly arrows point from the electron-poor atom toward the electron-rich one."
+  },
+  {
+   "example": "On the exit ticket, a learner picks the statement that curly arrows point from the electron-poor atom toward the electron-rich one.",
+   "fixIt": {
+    "corrected": "The arrow starts at an electron-rich region, such as a lone pair or a pi bond, and points to where the electron pair goes",
+    "prompt": "Fix it: explain in one sentence why the pi bond, not an electron-poor atom, is where the first arrow of the ethene and HBr mechanism starts."
+   },
+   "misconception": "Curly arrows point from the electron-poor atom toward the electron-rich one."
+  }
+ ],
+ "level": "jc",
+ "modelAnswers": [
+  {
+   "answer": "The mechanism is SN1. The slow first step is the C-Br bond breaking on its own to form a planar carbocation and Br-, and hydroxide plays no part in that step, so the rate depends only on the halogenoalkane: rate = k[(CH3)3CBr]. Hydroxide attacks the carbocation in a second, fast step.",
+   "creditPoints": [],
+   "question": "A tertiary halogenoalkane, (CH3)3CBr, reacts with aqueous hydroxide. The rate is unchanged when the hydroxide concentration is doubled. Name the mechanism and explain the rate evidence."
+  },
+  {
+   "answer": "Hydroxide attacks opposite the C-Br bond so its lone pair can form the new C-O bond as the C-Br pair leaves with bromine, through a single transition state. The rate equation, rate = k[CH3Br][OH-], includes both reactants, which shows both meet in the one slow step.",
+   "creditPoints": [],
+   "question": "In the SN2 reaction of CH3Br with OH-, why must the hydroxide attack from the back, and what does the rate equation tell you about the step?"
+  }
+ ],
+ "nextSteps": [
+  "Reteach the arrow trap from the paired notes trap before any further mechanism work: a curly arrow tracks one electron pair, and atoms stay put.",
+  "Practise explaining SN1 and SN2 from their rate equations, and check each arrow against the pi bond in scene s3 and the carbocation in scene s4."
+ ],
+ "strengths": [
+  "Most of the class can name the SN1 mechanism from the rate evidence on the worksheet: the nucleophile is absent from the slow step, so the rate depends only on the halogenoalkane.",
+  "The class can explain the SN2 backside attack on the exit ticket: hydroxide attacks opposite the C-Br bond through a single transition state, and both reactants appear in the rate equation."
+ ],
+ "subject": "science",
+ "title": "JC H2 chemistry \u2014 organic: mechanisms, synthesis and the arrow language",
+ "topic": "h2-organic"
+}
