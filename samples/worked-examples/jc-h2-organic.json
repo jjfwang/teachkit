@@ -1,0 +1,69 @@
+{
+ "complete": {
+  "problem": "Trace organic chemistry from homologous series and functional groups, through electrophilic addition to ethene, the SN1 and SN2 substitution mechanisms, and a three-step synthesis route, to the curly-arrow trap.",
+  "selfExplanation": "Explain why members of a homologous series share a general formula, why the functional group decides a family's reactions, how the pi pair attacks in electrophilic addition, why SN1 and SN2 have different rate equations, how addition, substitution and partial oxidation chain into a synthesis, and why a curly arrow tracks an electron pair, not an atom.",
+  "steps": [
+   {
+    "annotation": "A family of compounds with the same functional group and the same general formula, where each member differs from the next by one CH2 group, as methane to butane do for the alkanes, CnH2n+2.",
+    "text": "Step 1 (s1): Alkanes: one CH₂ group apart. Alkanes: one CH2 group apart. Methane, ethane, propane and butane climb by one CH2 group each under one general formula. Keep your student notes open at the homologous series definition for this scene."
+   },
+   {
+    "annotation": "The atom or group of atoms that decides a molecule's family and its characteristic reactions: -OH for alcohols, -COOH for carboxylic acids, C=O for carbonyl compounds.",
+    "text": "Step 2 (s2): Functional groups change the family. Functional groups change the family. The same three-carbon skeleton becomes an alcohol or a carboxylic acid depending on the group attached. Compare the two families against the definitions in your student notes."
+   },
+   {
+    "annotation": "An electron-pair acceptor: a species attracted to electron-rich regions such as a pi bond, for example the slightly positive hydrogen of H-Br in addition to ethene.",
+    "text": "Step 3 (s3): Electrophilic addition to alkenes. Electrophilic addition to alkenes. The pi pair attacks the slightly positive hydrogen first, then the H-Br pair leaves on bromine. Now try the addition question on the worksheet in pairs, drawing both curly arrows."
+   },
+   {
+    "annotation": "A positively charged carbon intermediate with only six outer electrons: in SN1 it forms in the slow step when the C-Br bond breaks, and its planar shape lets the nucleophile attack from either side.",
+    "text": "Step 4 (s4): SN1: the slow step comes first. SN1: the slow step comes first. The C-Br bond breaks alone, the carbocation forms, and only then does hydroxide attack. Check the rate equation against the mechanism steps in your student notes."
+   },
+   {
+    "annotation": "SN2: one step, backside attack: OH- attacks a primary halogenoalkane from the back as Br- leaves in a single concerted step, so rate = k[CH3Br][OH-].",
+    "text": "Step 5 (s5): SN2: one step, backside attack. SN2: one step, backside attack. Hydroxide comes in from the back while bromide leaves the front, all through one transition state. Work the SN2 question on the worksheet now."
+   },
+   {
+    "annotation": "One route, three steps: ethene to bromoethane by addition, bromoethane to ethanol by substitution, ethanol to ethanal by partial oxidation - planned backwards by retrosynthesis.",
+    "text": "Step 6 (s6): One route, three steps. One route, three steps. Addition, substitution, partial oxidation: a synthesis is a chain of reactions you already know. Finish the route question on the worksheet, then check your reagents against your student notes."
+   },
+   {
+    "annotation": "The arrow drawn in a mechanism to track one pair of electrons: it starts where the pair starts - a lone pair, a bond or a pi bond - and its head points to where the pair ends up.",
+    "text": "Step 7 (s7): A common mistake: atoms sliding along the arrow. A common mistake: atoms sliding along the arrow. Atoms stay put - the arrow tracks an electron pair from the bond onto bromine. Note this carefully, because the exit ticket will test exactly that reading."
+   },
+   {
+    "annotation": "Curly arrows follow the electrons: they start at an electron-rich region (a lone pair or pi bond) and point to where the electrons go. - The arrow tracks one pair of electrons from where it starts to where it ends up; atoms stay put, so an arrow never shows an atom sliding along it - the behaviour in scenes s3, s4 and s5 is exactly what the trap reading reverses.",
+    "text": "Step 8 (s8): Organic mechanisms in one page. Organic mechanisms in one page. Addition, SN1, SN2 and the route that chains them - every arrow follows the electrons. Finish the worksheet trap question now, then the exit ticket on your own - its first question revisits exactly this arrow."
+   }
+  ]
+ },
+ "faded": {
+  "problem": "Plan the three-step route from ethene to ethanal, naming the product and the reaction type of each step.",
+  "selfExplanation": "The first step is shown. Name the product and reaction type of each later step, then state the key reagent or condition for each step.",
+  "steps": [
+   {
+    "annotation": "Electrophilic addition to alkenes: the electron-rich pi pair of ethene attacks the slightly positive hydrogen of H-Br, the H-Br pair moves onto bromine, and bromoethane forms.",
+    "text": "Step 1: ethene + HBr gives bromoethane by electrophilic addition.",
+    "withheld": false
+   },
+   {
+    "annotation": "Nucleophilic substitution: hydroxide replaces bromine on the carbon; the notes worked example uses aqueous NaOH, heated.",
+    "text": "Step 2: bromoethane + aqueous NaOH, heated, gives ethanol by nucleophilic substitution.",
+    "withheld": true
+   },
+   {
+    "annotation": "Partial oxidation stops at ethanal: the oxidation is stopped there before it runs on to ethanoic acid.",
+    "text": "Step 3: ethanol is partially oxidised to ethanal, CH3CHO, stopping before further oxidation to ethanoic acid.",
+    "withheld": true
+   }
+  ]
+ },
+ "level": "jc",
+ "paired": {
+  "problem": "A primary halogenoalkane, CH3Br, reacts with aqueous hydroxide. The rate doubles when either the halogenoalkane concentration or the hydroxide concentration is doubled. Name the mechanism and explain the rate evidence.",
+  "solution": "The mechanism is SN2. Hydroxide attacks from the back as bromide leaves in a single concerted step, through one transition state, so both reactants meet in the slow step: rate = k[CH3Br][OH-]."
+ },
+ "subject": "science",
+ "title": "JC H2 chemistry — organic: mechanisms, synthesis and the arrow language",
+ "topic": "h2-organic"
+}

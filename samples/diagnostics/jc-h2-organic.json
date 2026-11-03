@@ -1,0 +1,202 @@
+{
+ "doNow": [
+  {
+   "choices": [
+    {
+     "misconception": "Curly arrows point from the electron-poor atom toward the electron-rich one.",
+     "rationale": {
+      "chose": "The learner selected option The arrow points from the electron-poor atom toward the electron-rich one as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: Curly arrows point from the electron-poor atom toward the electron-rich one.. The slip: The arrow is read like a direction pointer instead of tracking the electrons themselves.. The fix: Curly arrows follow the electrons: they start at an electron-rich region (a lone pair or pi bond) and point to where the electrons go..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "The arrow points from the electron-poor atom toward the electron-rich one"
+    },
+    {
+     "misconception": "Curly arrows point from the electron-poor atom toward the electron-rich one.",
+     "rationale": {
+      "chose": "The learner selected option The arrow points from the atom that moves toward the atom it joins as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: Curly arrows point from the electron-poor atom toward the electron-rich one.. The slip: The arrow is read like a direction pointer instead of tracking the electrons themselves.. The fix: Curly arrows follow the electrons: they start at an electron-rich region (a lone pair or pi bond) and point to where the electrons go..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "The arrow points from the atom that moves toward the atom it joins"
+    },
+    {
+     "correct": true,
+     "text": "The arrow starts at an electron-rich region, such as a lone pair or a pi bond, and points to where the electron pair goes"
+    },
+    {
+     "misconception": "Curly arrows point from the electron-poor atom toward the electron-rich one.",
+     "rationale": {
+      "chose": "The learner selected option The arrow points from the product back toward the reactant as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: Curly arrows point from the electron-poor atom toward the electron-rich one.. The slip: The arrow is read like a direction pointer instead of tracking the electrons themselves.. The fix: Curly arrows follow the electrons: they start at an electron-rich region (a lone pair or pi bond) and point to where the electrons go..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "The arrow points from the product back toward the reactant"
+    }
+   ],
+   "id": "dn1",
+   "kind": "multiple-choice",
+   "prompt": "A student is asked which way a curly arrow points in a reaction mechanism. Which statement is correct?"
+  },
+  {
+   "choices": [
+    {
+     "misconception": "Curly arrows point from the electron-poor atom toward the electron-rich one.",
+     "rationale": {
+      "chose": "The learner selected option The H-Br bond pair forms the new C-H bond and the pi pair moves onto bromine as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: Curly arrows point from the electron-poor atom toward the electron-rich one.. The slip: The arrow is read like a direction pointer instead of tracking the electrons themselves.. The fix: Curly arrows follow the electrons: they start at an electron-rich region (a lone pair or pi bond) and point to where the electrons go..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "The H-Br bond pair forms the new C-H bond and the pi pair moves onto bromine"
+    },
+    {
+     "correct": true,
+     "text": "The pi pair forms the new C-H bond and the H-Br bond pair moves onto bromine, giving Br-"
+    },
+    {
+     "misconception": "Curly arrows point from the electron-poor atom toward the electron-rich one.",
+     "rationale": {
+      "chose": "The learner selected option A hydrogen atom slides along the curly arrow onto the carbon as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: Curly arrows point from the electron-poor atom toward the electron-rich one.. The slip: The arrow is read like a direction pointer instead of tracking the electrons themselves.. The fix: Curly arrows follow the electrons: they start at an electron-rich region (a lone pair or pi bond) and point to where the electrons go..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "A hydrogen atom slides along the curly arrow onto the carbon"
+    },
+    {
+     "misconception": "Curly arrows point from the electron-poor atom toward the electron-rich one.",
+     "rationale": {
+      "chose": "The learner selected option The pi pair moves onto hydrogen and stays there as H- as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: Curly arrows point from the electron-poor atom toward the electron-rich one.. The slip: The arrow is read like a direction pointer instead of tracking the electrons themselves.. The fix: Curly arrows follow the electrons: they start at an electron-rich region (a lone pair or pi bond) and point to where the electrons go..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "The pi pair moves onto hydrogen and stays there as H-"
+    }
+   ],
+   "id": "dn2",
+   "kind": "multiple-choice",
+   "prompt": "Ethene reacts with hydrogen bromide to form bromoethane. What happens to the electron pairs in the mechanism?"
+  },
+  {
+   "choices": [
+    {
+     "misconception": "Curly arrows point from the electron-poor atom toward the electron-rich one.",
+     "rationale": {
+      "chose": "The learner selected option SN2: hydroxide attacks in the slow step, so doubling hydroxide doubles the rate as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: Curly arrows point from the electron-poor atom toward the electron-rich one.. The slip: The arrow is read like a direction pointer instead of tracking the electrons themselves.. The fix: Curly arrows follow the electrons: they start at an electron-rich region (a lone pair or pi bond) and point to where the electrons go..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "SN2: hydroxide attacks in the slow step, so doubling hydroxide doubles the rate"
+    },
+    {
+     "correct": true,
+     "text": "SN1: the C-Br bond breaks alone in the slow step to form a planar carbocation, so the rate depends only on the halogenoalkane"
+    },
+    {
+     "misconception": "Curly arrows point from the electron-poor atom toward the electron-rich one.",
+     "rationale": {
+      "chose": "The learner selected option SN1: hydroxide attacks first in the slow step, so the rate depends on both reactants as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: Curly arrows point from the electron-poor atom toward the electron-rich one.. The slip: The arrow is read like a direction pointer instead of tracking the electrons themselves.. The fix: Curly arrows follow the electrons: they start at an electron-rich region (a lone pair or pi bond) and point to where the electrons go..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "SN1: hydroxide attacks first in the slow step, so the rate depends on both reactants"
+    },
+    {
+     "misconception": "Curly arrows point from the electron-poor atom toward the electron-rich one.",
+     "rationale": {
+      "chose": "The learner selected option Free-radical substitution: the C-Br bond breaks into radicals in the slow step as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: Curly arrows point from the electron-poor atom toward the electron-rich one.. The slip: The arrow is read like a direction pointer instead of tracking the electrons themselves.. The fix: Curly arrows follow the electrons: they start at an electron-rich region (a lone pair or pi bond) and point to where the electrons go..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "Free-radical substitution: the C-Br bond breaks into radicals in the slow step"
+    }
+   ],
+   "id": "dn3",
+   "kind": "multiple-choice",
+   "prompt": "A tertiary halogenoalkane, (CH3)3CBr, reacts with aqueous hydroxide. The rate is unchanged when the hydroxide concentration is doubled. Which mechanism is operating, and why?"
+  }
+ ],
+ "hingeQuestions": [
+  {
+   "choices": [
+    {
+     "misconception": "Curly arrows point from the electron-poor atom toward the electron-rich one.",
+     "rationale": {
+      "chose": "The learner selected option At the electron-poor atom, because the arrow points toward the electrons as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: Curly arrows point from the electron-poor atom toward the electron-rich one.. The slip: The arrow is read like a direction pointer instead of tracking the electrons themselves.. The fix: Curly arrows follow the electrons: they start at an electron-rich region (a lone pair or pi bond) and point to where the electrons go..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "At the electron-poor atom, because the arrow points toward the electrons"
+    },
+    {
+     "correct": true,
+     "text": "Curly arrows follow the electrons: they start at an electron-rich region (a lone pair or pi bond) and point to where the electrons go."
+    },
+    {
+     "misconception": "Curly arrows point from the electron-poor atom toward the electron-rich one.",
+     "rationale": {
+      "chose": "The learner selected option At the atom that moves to form the new bond as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: Curly arrows point from the electron-poor atom toward the electron-rich one.. The slip: The arrow is read like a direction pointer instead of tracking the electrons themselves.. The fix: Curly arrows follow the electrons: they start at an electron-rich region (a lone pair or pi bond) and point to where the electrons go..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "At the atom that moves to form the new bond"
+    },
+    {
+     "misconception": "Curly arrows point from the electron-poor atom toward the electron-rich one.",
+     "rationale": {
+      "chose": "The learner selected option At the product, working backwards to the reactant as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: Curly arrows point from the electron-poor atom toward the electron-rich one.. The slip: The arrow is read like a direction pointer instead of tracking the electrons themselves.. The fix: Curly arrows follow the electrons: they start at an electron-rich region (a lone pair or pi bond) and point to where the electrons go..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "At the product, working backwards to the reactant"
+    }
+   ],
+   "id": "h1",
+   "kind": "multiple-choice",
+   "prompt": "In one sentence, where does every curly arrow start?",
+   "scriptCue": "s7"
+  },
+  {
+   "choices": [
+    {
+     "misconception": "Curly arrows point from the electron-poor atom toward the electron-rich one.",
+     "rationale": {
+      "chose": "The learner selected option Agree - the arrow points from the electron-poor atom because that is where the reaction starts as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: Curly arrows point from the electron-poor atom toward the electron-rich one.. The slip: The arrow is read like a direction pointer instead of tracking the electrons themselves.. The fix: Curly arrows follow the electrons: they start at an electron-rich region (a lone pair or pi bond) and point to where the electrons go..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "Agree - the arrow points from the electron-poor atom because that is where the reaction starts"
+    },
+    {
+     "correct": true,
+     "text": "Curly arrows follow the electrons: they start at an electron-rich region (a lone pair or pi bond) and point to where the electrons go."
+    },
+    {
+     "misconception": "Curly arrows point from the electron-poor atom toward the electron-rich one.",
+     "rationale": {
+      "chose": "The learner selected option Tell them the arrow tracks the atom, not the electron pair, so it starts at the moving atom as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: Curly arrows point from the electron-poor atom toward the electron-rich one.. The slip: The arrow is read like a direction pointer instead of tracking the electrons themselves.. The fix: Curly arrows follow the electrons: they start at an electron-rich region (a lone pair or pi bond) and point to where the electrons go..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "Tell them the arrow tracks the atom, not the electron pair, so it starts at the moving atom"
+    },
+    {
+     "misconception": "Curly arrows point from the electron-poor atom toward the electron-rich one.",
+     "rationale": {
+      "chose": "The learner selected option Tell them curly arrows are only drawn for SN1 mechanisms, so the rule does not apply here as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: Curly arrows point from the electron-poor atom toward the electron-rich one.. The slip: The arrow is read like a direction pointer instead of tracking the electrons themselves.. The fix: Curly arrows follow the electrons: they start at an electron-rich region (a lone pair or pi bond) and point to where the electrons go..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "Tell them curly arrows are only drawn for SN1 mechanisms, so the rule does not apply here"
+    }
+   ],
+   "id": "h2",
+   "kind": "multiple-choice",
+   "prompt": "How would you correct a classmate who insists the arrow points from the electron-poor atom toward the electron-rich one?",
+   "scriptCue": "s8"
+  }
+ ],
+ "level": "jc",
+ "subject": "science",
+ "title": "JC H2 chemistry — organic: mechanisms, synthesis and the arrow language",
+ "topic": "h2-organic"
+}

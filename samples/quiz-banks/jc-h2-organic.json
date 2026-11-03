@@ -1,0 +1,49 @@
+{
+ "items": [
+  {
+   "answer": "The arrow starts at an electron-rich region, such as a lone pair or a pi bond, and points to where the electron pair goes",
+   "choices": [
+    "The arrow points from the electron-poor atom toward the electron-rich one",
+    "The arrow points from the atom that moves toward the atom it joins",
+    "The arrow starts at an electron-rich region, such as a lone pair or a pi bond, and points to where the electron pair goes",
+    "The arrow points from the product back toward the reactant"
+   ],
+   "misconceptionCode": "Curly arrows point from the electron-poor atom toward the electron-rich one.",
+   "prompt": "A student is asked which way a curly arrow points in a reaction mechanism. Which statement is correct?"
+  },
+  {
+   "answer": "The pi pair forms the new C-H bond and the H-Br bond pair moves onto bromine, giving Br-",
+   "choices": [
+    "The H-Br bond pair forms the new C-H bond and the pi pair moves onto bromine",
+    "The pi pair forms the new C-H bond and the H-Br bond pair moves onto bromine, giving Br-",
+    "A hydrogen atom slides along the curly arrow onto the carbon",
+    "The pi pair moves onto hydrogen and stays there as H-"
+   ],
+   "misconceptionCode": "Curly arrows point from the electron-poor atom toward the electron-rich one.",
+   "prompt": "Ethene reacts with hydrogen bromide to form bromoethane. What happens to the electron pairs in the mechanism?"
+  },
+  {
+   "answer": "The mechanism is SN1. The slow first step is the C-Br bond breaking on its own to form a planar carbocation and Br-, and hydroxide plays no part in that step, so the rate depends only on the halogenoalkane: rate = k[(CH3)3CBr]. Hydroxide attacks the carbocation in a second, fast step.",
+   "prompt": "A tertiary halogenoalkane, (CH3)3CBr, reacts with aqueous hydroxide. The rate is unchanged when the hydroxide concentration is doubled. Name the mechanism and explain the rate evidence."
+  },
+  {
+   "answer": "Step 1: ethene + HBr gives bromoethane by electrophilic addition. Step 2: bromoethane + aqueous NaOH, heated, gives ethanol by nucleophilic substitution. Step 3: ethanol is partially oxidised with acidified K2Cr2O7 and heat, stopping at ethanal, CH3CHO, before further oxidation to ethanoic acid.",
+   "prompt": "Plan a three-step synthesis of ethanal from ethene, naming the reaction type and the key reagent or condition for each step."
+  },
+  {
+   "answer": "They carry different functional groups, -OH in the alcohol and -COOH in the carboxylic acid, and the functional group decides the family's reactions",
+   "choices": [
+    "Propanoic acid has one more carbon atom than propan-1-ol",
+    "Propan-1-ol is a longer homologous series than propanoic acid",
+    "They carry different functional groups, -OH in the alcohol and -COOH in the carboxylic acid, and the functional group decides the family's reactions",
+    "Propanoic acid has no functional group, so it reacts on its own"
+   ],
+   "misconceptionCode": "Curly arrows point from the electron-poor atom toward the electron-rich one.",
+   "prompt": "Propan-1-ol and propanoic acid share the same three-carbon skeleton but react very differently. What best explains the difference?"
+  }
+ ],
+ "level": "jc",
+ "subject": "science",
+ "title": "JC H2 chemistry — organic: mechanisms, synthesis and the arrow language",
+ "topic": "h2-organic"
+}
