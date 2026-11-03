@@ -1,0 +1,202 @@
+{
+ "doNow": [
+  {
+   "choices": [
+    {
+     "misconception": "Every mutation harms the organism.",
+     "rationale": {
+      "chose": "The learner selected option Every mutation harms the organism, because any change to DNA breaks a protein as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: Every mutation harms the organism.. The slip: Mutation sounds like damage, so every sequence change is read as damage.. The fix: Most mutations are neutral: only some are harmful, and a rare few are the raw material of evolution..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "Every mutation harms the organism, because any change to DNA breaks a protein"
+    },
+    {
+     "misconception": "Every mutation harms the organism.",
+     "rationale": {
+      "chose": "The learner selected option Mutations are harmful only in body cells, never in gametes as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: Every mutation harms the organism.. The slip: Mutation sounds like damage, so every sequence change is read as damage.. The fix: Most mutations are neutral: only some are harmful, and a rare few are the raw material of evolution..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "Mutations are harmful only in body cells, never in gametes"
+    },
+    {
+     "correct": true,
+     "text": "Most mutations are neutral: only some are harmful, and a rare few are beneficial"
+    },
+    {
+     "misconception": "Every mutation harms the organism.",
+     "rationale": {
+      "chose": "The learner selected option Mutations never affect the organism at all as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: Every mutation harms the organism.. The slip: Mutation sounds like damage, so every sequence change is read as damage.. The fix: Most mutations are neutral: only some are harmful, and a rare few are the raw material of evolution..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "Mutations never affect the organism at all"
+    }
+   ],
+   "id": "dn1",
+   "kind": "multiple-choice",
+   "prompt": "A student says every change to a DNA sequence must damage the organism. What is correct?"
+  },
+  {
+   "choices": [
+    {
+     "misconception": "Every mutation harms the organism.",
+     "rationale": {
+      "chose": "The learner selected option 0 as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: Every mutation harms the organism.. The slip: Mutation sounds like damage, so every sequence change is read as damage.. The fix: Most mutations are neutral: only some are harmful, and a rare few are the raw material of evolution..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "0"
+    },
+    {
+     "correct": true,
+     "text": "1 in 4"
+    },
+    {
+     "misconception": "Every mutation harms the organism.",
+     "rationale": {
+      "chose": "The learner selected option 1 in 2 as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: Every mutation harms the organism.. The slip: Mutation sounds like damage, so every sequence change is read as damage.. The fix: Most mutations are neutral: only some are harmful, and a rare few are the raw material of evolution..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "1 in 2"
+    },
+    {
+     "misconception": "Every mutation harms the organism.",
+     "rationale": {
+      "chose": "The learner selected option 3 in 4 as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: Every mutation harms the organism.. The slip: Mutation sounds like damage, so every sequence change is read as damage.. The fix: Most mutations are neutral: only some are harmful, and a rare few are the raw material of evolution..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "3 in 4"
+    }
+   ],
+   "id": "dn2",
+   "kind": "multiple-choice",
+   "prompt": "Two heterozygous parents (Aa x Aa) have a child. What is the probability the child shows the recessive trait?"
+  },
+  {
+   "choices": [
+    {
+     "misconception": "Every mutation harms the organism.",
+     "rationale": {
+      "chose": "The learner selected option 3:1 as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: Every mutation harms the organism.. The slip: Mutation sounds like damage, so every sequence change is read as damage.. The fix: Most mutations are neutral: only some are harmful, and a rare few are the raw material of evolution..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "3:1"
+    },
+    {
+     "misconception": "Every mutation harms the organism.",
+     "rationale": {
+      "chose": "The learner selected option 1:2:1 as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: Every mutation harms the organism.. The slip: Mutation sounds like damage, so every sequence change is read as damage.. The fix: Most mutations are neutral: only some are harmful, and a rare few are the raw material of evolution..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "1:2:1"
+    },
+    {
+     "correct": true,
+     "text": "9:3:3:1"
+    },
+    {
+     "misconception": "Every mutation harms the organism.",
+     "rationale": {
+      "chose": "The learner selected option 1:1:1:1 as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: Every mutation harms the organism.. The slip: Mutation sounds like damage, so every sequence change is read as damage.. The fix: Most mutations are neutral: only some are harmful, and a rare few are the raw material of evolution..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "1:1:1:1"
+    }
+   ],
+   "id": "dn3",
+   "kind": "multiple-choice",
+   "prompt": "A dihybrid cross between two double heterozygotes (RrYy x RrYy), with the genes on different chromosomes, produces offspring. What is the expected phenotype ratio?"
+  }
+ ],
+ "hingeQuestions": [
+  {
+   "choices": [
+    {
+     "misconception": "Every mutation harms the organism.",
+     "rationale": {
+      "chose": "The learner selected option Every mutation harms the organism as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: Every mutation harms the organism.. The slip: Mutation sounds like damage, so every sequence change is read as damage.. The fix: Most mutations are neutral: only some are harmful, and a rare few are the raw material of evolution..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "Every mutation harms the organism"
+    },
+    {
+     "correct": true,
+     "text": "Most mutations are neutral: only some are harmful, and a rare few are the raw material of evolution."
+    },
+    {
+     "misconception": "Every mutation harms the organism.",
+     "rationale": {
+      "chose": "The learner selected option Mutations only happen in gametes as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: Every mutation harms the organism.. The slip: Mutation sounds like damage, so every sequence change is read as damage.. The fix: Most mutations are neutral: only some are harmful, and a rare few are the raw material of evolution..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "Mutations only happen in gametes"
+    },
+    {
+     "misconception": "Every mutation harms the organism.",
+     "rationale": {
+      "chose": "The learner selected option Mutations never affect the organism at all as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: Every mutation harms the organism.. The slip: Mutation sounds like damage, so every sequence change is read as damage.. The fix: Most mutations are neutral: only some are harmful, and a rare few are the raw material of evolution..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "Mutations never affect the organism at all"
+    }
+   ],
+   "id": "h1",
+   "kind": "multiple-choice",
+   "prompt": "In one sentence, what is the correct statement about mutations?",
+   "scriptCue": "s5"
+  },
+  {
+   "choices": [
+    {
+     "misconception": "Every mutation harms the organism.",
+     "rationale": {
+      "chose": "The learner selected option Agree - every change to DNA breaks a protein, so every mutation harms the organism as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: Every mutation harms the organism.. The slip: Mutation sounds like damage, so every sequence change is read as damage.. The fix: Most mutations are neutral: only some are harmful, and a rare few are the raw material of evolution..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "Agree - every change to DNA breaks a protein, so every mutation harms the organism"
+    },
+    {
+     "correct": true,
+     "text": "Most mutations are neutral: only some are harmful, and a rare few are the raw material of evolution."
+    },
+    {
+     "misconception": "Every mutation harms the organism.",
+     "rationale": {
+      "chose": "The learner selected option Tell them mutations only happen in gametes, so the claim does not apply here as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: Every mutation harms the organism.. The slip: Mutation sounds like damage, so every sequence change is read as damage.. The fix: Most mutations are neutral: only some are harmful, and a rare few are the raw material of evolution..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "Tell them mutations only happen in gametes, so the claim does not apply here"
+    },
+    {
+     "misconception": "Every mutation harms the organism.",
+     "rationale": {
+      "chose": "The learner selected option Tell them a mutation never changes the protein, so nothing ever changes as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: Every mutation harms the organism.. The slip: Mutation sounds like damage, so every sequence change is read as damage.. The fix: Most mutations are neutral: only some are harmful, and a rare few are the raw material of evolution..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "Tell them a mutation never changes the protein, so nothing ever changes"
+    }
+   ],
+   "id": "h2",
+   "kind": "multiple-choice",
+   "prompt": "How would you correct a classmate who insists every mutation harms the organism?",
+   "scriptCue": "s5"
+  }
+ ],
+ "level": "jc",
+ "subject": "science",
+ "title": "JC H2 biology -- genetics: from DNA to inheritance",
+ "topic": "h2-genetics"
+}
