@@ -1,0 +1,120 @@
+{
+ "level": "jc",
+ "sets": [
+  {
+   "cloze": [
+    {
+     "answers": [
+      "Homologous series",
+      "Electrophile"
+     ],
+     "text": "The ___ is a family of compounds with the same general formula, and the ___ is an electron-pair acceptor."
+    },
+    {
+     "answers": [
+      "Nucleophile",
+      "Curly arrow"
+     ],
+     "text": "A ___ donates a lone pair to form a new bond to carbon, while a ___ tracks one pair of electrons through a mechanism."
+    }
+   ],
+   "frames": [
+    "___ is a family of compounds with the same functional group and the same general formula.",
+    "___ is the atom or group of atoms that decides a molecule's family and its characteristic reactions.",
+    "___ is an electron-pair acceptor."
+   ],
+   "level": "full",
+   "starters": [
+    "Homologous series is a family of compounds with the same functional group and the same general formula...",
+    "Functional group is the atom or group of atoms that decides a molecule's family and its characteristic reactions...",
+    "Electrophile is an electron-pair acceptor..."
+   ],
+   "wordBank": [
+    {
+     "gloss": "A family of compounds with the same functional group and the same general formula, where each member differs from the next by one CH2 group, as methane to butane do for the alkanes, CnH2n+2.",
+     "term": "Homologous series"
+    },
+    {
+     "gloss": "The atom or group of atoms that decides a molecule's family and its characteristic reactions: -OH for alcohols, -COOH for carboxylic acids, C=O for carbonyl compounds.",
+     "term": "Functional group"
+    },
+    {
+     "gloss": "An electron-pair acceptor: a species attracted to electron-rich regions such as a pi bond, for example the slightly positive hydrogen of H-Br in addition to ethene.",
+     "term": "Electrophile"
+    },
+    {
+     "gloss": "An electron-pair donor: a species with a lone pair that it donates to form a new bond to carbon, for example OH- in the substitution of halogenoalkanes.",
+     "term": "Nucleophile"
+    },
+    {
+     "gloss": "A positively charged carbon intermediate with only six outer electrons: in SN1 it forms in the slow step when the C-Br bond breaks, and its planar shape lets the nucleophile attack from either side.",
+     "term": "Carbocation"
+    },
+    {
+     "gloss": "The arrow drawn in a mechanism to track one pair of electrons: it starts where the pair starts - a lone pair, a bond or a pi bond - and its head points to where the pair ends up.",
+     "term": "Curly arrow"
+    }
+   ]
+  },
+  {
+   "cloze": [
+    {
+     "answers": [
+      "Homologous series",
+      "Electrophile"
+     ],
+     "text": "The ___ is a family of compounds with the same general formula, and the ___ is an electron-pair acceptor."
+    }
+   ],
+   "frames": [
+    "___ is a family of compounds with the same functional group and the same general formula.",
+    "___ is the atom or group of atoms that decides a molecule's family and its characteristic reactions."
+   ],
+   "level": "partial",
+   "starters": [
+    "Homologous series is a family of compounds with the same functional group and the same general formula...",
+    "Functional group is the atom or group of atoms that decides a molecule's family and its characteristic reactions..."
+   ],
+   "wordBank": [
+    {
+     "gloss": "A family of compounds with the same functional group and the same general formula, where each member differs from the next by one CH2 group, as methane to butane do for the alkanes, CnH2n+2.",
+     "term": "Homologous series"
+    },
+    {
+     "gloss": "The atom or group of atoms that decides a molecule's family and its characteristic reactions: -OH for alcohols, -COOH for carboxylic acids, C=O for carbonyl compounds.",
+     "term": "Functional group"
+    },
+    {
+     "gloss": "An electron-pair acceptor: a species attracted to electron-rich regions such as a pi bond, for example the slightly positive hydrogen of H-Br in addition to ethene.",
+     "term": "Electrophile"
+    }
+   ]
+  },
+  {
+   "cloze": [
+    {
+     "answers": [
+      "Homologous series"
+     ],
+     "text": "The ___ is a family of compounds with the same general formula."
+    }
+   ],
+   "frames": [
+    "___ is a family of compounds with the same functional group and the same general formula."
+   ],
+   "level": "minimal",
+   "starters": [
+    "Homologous series is a family of compounds with the same functional group and the same general formula..."
+   ],
+   "wordBank": [
+    {
+     "gloss": "A family of compounds with the same functional group and the same general formula, where each member differs from the next by one CH2 group, as methane to butane do for the alkanes, CnH2n+2.",
+     "term": "Homologous series"
+    }
+   ]
+  }
+ ],
+ "subject": "science",
+ "title": "JC H2 chemistry \u2014 organic: mechanisms, synthesis and the arrow language",
+ "topic": "h2-organic"
+}

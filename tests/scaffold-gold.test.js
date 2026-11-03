@@ -69,7 +69,8 @@ const STEMS = [
   'jc-h2-thermal',
   'jc-h2-quantum',
   'jc-h2-physical',
-  'jc-h2-inorganic'
+  'jc-h2-inorganic',
+  'jc-h2-organic'
 ];
 
 function load(rel) {

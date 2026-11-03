@@ -1,0 +1,38 @@
+{
+ "entries": [
+  {
+   "example": "Alkanes: one CH\u2082 group apart: methane, ethane, propane and butane step up by one CH2 group each, sharing the general formula CnH2n+2 and the same family chemistry.",
+   "meaning": "A family of compounds with the same functional group and the same general formula, where each member differs from the next by one CH2 group, as methane to butane do for the alkanes, CnH2n+2.",
+   "term": "Homologous series"
+  },
+  {
+   "example": "Functional groups change the family: the same carbon skeleton becomes an alcohol with -OH or a carboxylic acid with -COOH, and the functional group decides the reactions.",
+   "meaning": "The atom or group of atoms that decides a molecule's family and its characteristic reactions: -OH for alcohols, -COOH for carboxylic acids, C=O for carbonyl compounds.",
+   "term": "Functional group"
+  },
+  {
+   "example": "Electrophilic addition to alkenes: the electron-rich pi pair of ethene attacks the slightly positive hydrogen of H-Br, the H-Br pair moves onto bromine, and bromoethane forms.",
+   "meaning": "An electron-pair acceptor: a species attracted to electron-rich regions such as a pi bond, for example the slightly positive hydrogen of H-Br in addition to ethene.",
+   "term": "Electrophile"
+  },
+  {
+   "example": "SN2: one step, backside attack: OH- attacks a primary halogenoalkane from the back as Br- leaves in a single concerted step, so rate = k[CH3Br][OH-].",
+   "meaning": "An electron-pair donor: a species with a lone pair that it donates to form a new bond to carbon, for example OH- in the substitution of halogenoalkanes.",
+   "term": "Nucleophile"
+  },
+  {
+   "example": "SN1: the slow step comes first: the C-Br bond of a tertiary halogenoalkane breaks alone to give a planar carbocation, then OH- attacks fast, so rate = k[(CH3)3CBr].",
+   "meaning": "A positively charged carbon intermediate with only six outer electrons: in SN1 it forms in the slow step when the C-Br bond breaks, and its planar shape lets the nucleophile attack from either side.",
+   "term": "Carbocation"
+  },
+  {
+   "example": "A common mistake: atoms sliding along the arrow: atoms stay put in a mechanism; the curly arrow tracks one electron pair from where it starts to where it ends.",
+   "meaning": "The arrow drawn in a mechanism to track one pair of electrons: it starts where the pair starts - a lone pair, a bond or a pi bond - and its head points to where the pair ends up.",
+   "term": "Curly arrow"
+  }
+ ],
+ "level": "jc",
+ "subject": "science",
+ "title": "JC H2 chemistry \u2014 organic: mechanisms, synthesis and the arrow language",
+ "topic": "h2-organic"
+}

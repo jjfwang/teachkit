@@ -1,0 +1,77 @@
+{
+ "flashcards": [
+  {
+   "back": "A family of compounds with the same functional group and the same general formula, where each member differs from the next by one CH2 group, as methane to butane do for the alkanes, CnH2n+2.",
+   "front": "Homologous series",
+   "source": "definition"
+  },
+  {
+   "back": "The atom or group of atoms that decides a molecule's family and its characteristic reactions: -OH for alcohols, -COOH for carboxylic acids, C=O for carbonyl compounds.",
+   "front": "Functional group",
+   "source": "definition"
+  },
+  {
+   "back": "An electron-pair acceptor: a species attracted to electron-rich regions such as a pi bond, for example the slightly positive hydrogen of H-Br in addition to ethene.",
+   "front": "Electrophile",
+   "source": "definition"
+  },
+  {
+   "back": "An electron-pair donor: a species with a lone pair that it donates to form a new bond to carbon, for example OH- in the substitution of halogenoalkanes.",
+   "front": "Nucleophile",
+   "source": "definition"
+  },
+  {
+   "back": "A positively charged carbon intermediate with only six outer electrons: in SN1 it forms in the slow step when the C-Br bond breaks, and its planar shape lets the nucleophile attack from either side.",
+   "front": "Carbocation",
+   "source": "definition"
+  },
+  {
+   "back": "The arrow drawn in a mechanism to track one pair of electrons: it starts where the pair starts - a lone pair, a bond or a pi bond - and its head points to where the pair ends up.",
+   "front": "Curly arrow",
+   "source": "definition"
+  },
+  {
+   "back": "The arrow is read like a direction pointer instead of tracking the electrons themselves. Curly arrows follow the electrons: they start at an electron-rich region (a lone pair or pi bond) and point to where the electrons go. Take the first arrow of the ethene and HBr mechanism: it starts at the pi bond, the electron-rich region, and its head lands on hydrogen - the electrons move toward the electron-poor atom, which is exactly the reverse of the trap reading.",
+   "front": "Curly arrows point from the electron-poor atom toward the electron-rich one.",
+   "source": "trap"
+  },
+  {
+   "back": "The arrow starts at an electron-rich region, such as a lone pair or a pi bond, and points to where the electron pair goes",
+   "front": "A student is asked which way a curly arrow points in a reaction mechanism. Which statement is correct?",
+   "source": "quiz-bank"
+  },
+  {
+   "back": "The pi pair forms the new C-H bond and the H-Br bond pair moves onto bromine, giving Br-",
+   "front": "Ethene reacts with hydrogen bromide to form bromoethane. What happens to the electron pairs in the mechanism?",
+   "source": "quiz-bank"
+  }
+ ],
+ "level": "jc",
+ "practiceSets": [
+  {
+   "dayOffset": 1,
+   "items": [
+    {
+     "answer": "The mechanism is SN1. The slow first step is the C-Br bond breaking on its own to form a planar carbocation and Br-, and hydroxide plays no part in that step, so the rate depends only on the halogenoalkane: rate = k[(CH3)3CBr]. Hydroxide attacks the carbocation in a second, fast step.",
+     "prompt": "A tertiary halogenoalkane, (CH3)3CBr, reacts with aqueous hydroxide. The rate is unchanged when the hydroxide concentration is doubled. Name the mechanism and explain the rate evidence."
+    },
+    {
+     "answer": "Step 1: ethene + HBr gives bromoethane by electrophilic addition. Step 2: bromoethane + aqueous NaOH, heated, gives ethanol by nucleophilic substitution. Step 3: ethanol is partially oxidised with acidified K2Cr2O7 and heat, stopping at ethanal, CH3CHO, before further oxidation to ethanoic acid.",
+     "prompt": "Plan a three-step synthesis of ethanal from ethene, naming the reaction type and the key reagent or condition for each step."
+    }
+   ]
+  },
+  {
+   "dayOffset": 3,
+   "items": [
+    {
+     "answer": "They carry different functional groups, -OH in the alcohol and -COOH in the carboxylic acid, and the functional group decides the family's reactions",
+     "prompt": "Propan-1-ol and propanoic acid share the same three-carbon skeleton but react very differently. What best explains the difference?"
+    }
+   ]
+  }
+ ],
+ "subject": "science",
+ "title": "JC H2 chemistry \u2014 organic: mechanisms, synthesis and the arrow language",
+ "topic": "h2-organic"
+}
