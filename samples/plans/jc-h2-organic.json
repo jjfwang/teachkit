@@ -1,0 +1,125 @@
+{
+ "activities": [
+  {
+   "grouping": "whole class",
+   "minutes": 5,
+   "objectiveIds": [
+    "o1"
+   ],
+   "scriptCue": "s1",
+   "title": "Alkanes: one CH\u2082 group apart"
+  },
+  {
+   "grouping": "individual",
+   "minutes": 5,
+   "objectiveIds": [
+    "o1"
+   ],
+   "scriptCue": "s2",
+   "title": "Functional groups change the family"
+  },
+  {
+   "grouping": "pairs",
+   "minutes": 6,
+   "objectiveIds": [
+    "o2"
+   ],
+   "scriptCue": "s3",
+   "title": "Electrophilic addition to alkenes"
+  },
+  {
+   "grouping": "whole class",
+   "minutes": 5,
+   "objectiveIds": [
+    "o2"
+   ],
+   "scriptCue": "s4",
+   "title": "SN1: the slow step comes first"
+  },
+  {
+   "grouping": "pairs",
+   "minutes": 5,
+   "objectiveIds": [
+    "o2"
+   ],
+   "scriptCue": "s5",
+   "title": "SN2: one step, backside attack"
+  },
+  {
+   "grouping": "whole class",
+   "minutes": 6,
+   "objectiveIds": [
+    "o3"
+   ],
+   "scriptCue": "s6",
+   "title": "One route, three steps"
+  },
+  {
+   "grouping": "pairs",
+   "minutes": 6,
+   "objectiveIds": [
+    "o3"
+   ],
+   "scriptCue": "s7",
+   "title": "A common mistake: atoms sliding along the arrow"
+  },
+  {
+   "grouping": "individual",
+   "minutes": 7,
+   "objectiveIds": [
+    "o1",
+    "o2",
+    "o3"
+   ],
+   "resources": [
+    "worksheet"
+   ],
+   "scriptCue": "s8",
+   "title": "Organic mechanisms in one page"
+  }
+ ],
+ "durationMinutes": 45,
+ "level": "jc",
+ "objectives": [
+  {
+   "assessmentPoints": [
+    "Homologous series answers in the opening activity",
+    "Functional group answers in the second activity"
+   ],
+   "id": "o1",
+   "successCriteria": [
+    "Alkanes: one CH\u2082 group apart: methane, ethane, propane and butane step up by one CH2 group each, sharing the general formula CnH2n+2 and the same family chemistry.",
+    "They carry different functional groups, -OH in the alcohol and -COOH in the carboxylic acid, and the functional group decides the family's reactions"
+   ],
+   "text": "Describe homologous series and functional groups, and name the family a molecule belongs to"
+  },
+  {
+   "assessmentPoints": [
+    "Addition answers in the third activity",
+    "SN1 answers in the fourth activity",
+    "SN2 answers in the fifth activity"
+   ],
+   "id": "o2",
+   "successCriteria": [
+    "The mechanism is SN1. The slow first step is the C-Br bond breaking on its own to form a planar carbocation and Br-, and hydroxide plays no part in that step, so the rate depends only on the halogenoalkane: rate = k[(CH3)3CBr]. Hydroxide attacks the carbocation in a second, fast step.",
+    "Hydroxide attacks opposite the C-Br bond so its lone pair can form the new C-O bond as the C-Br pair leaves with bromine, through a single transition state. The rate equation, rate = k[CH3Br][OH-], includes both reactants, which shows both meet in the one slow step."
+   ],
+   "text": "Explain electrophilic addition to ethene and the SN1 and SN2 substitution mechanisms, including their rate equations"
+  },
+  {
+   "assessmentPoints": [
+    "Route answers in the sixth activity",
+    "Trap answers in the closing misconception activity"
+   ],
+   "id": "o3",
+   "successCriteria": [
+    "Step 1: ethene + HBr gives bromoethane by electrophilic addition. Step 2: bromoethane + aqueous NaOH, heated, gives ethanol by nucleophilic substitution. Step 3: ethanol is partially oxidised with acidified K2Cr2O7 and heat, stopping at ethanal, CH3CHO, before further oxidation to ethanoic acid.",
+    "Curly arrows follow the electrons: they start at an electron-rich region (a lone pair or pi bond) and point to where the electrons go."
+   ],
+   "text": "Use curly arrows correctly and plan a short synthesis route by retrosynthesis"
+  }
+ ],
+ "subject": "science",
+ "title": "JC H2 chemistry \u2014 organic: mechanisms, synthesis and the arrow language",
+ "topic": "h2-organic"
+}
