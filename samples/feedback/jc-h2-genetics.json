@@ -1,0 +1,44 @@
+{
+ "commonErrors": [
+  {
+   "example": "A learner writes on the worksheet that every mutation harms the organism.",
+   "fixIt": {
+    "corrected": "Most mutations are neutral: only some are harmful, and a rare few are the raw material of evolution.",
+    "prompt": "Fix it: state what most mutations do, and why a changed base can leave the protein job unchanged."
+   },
+   "misconception": "Every mutation harms the organism."
+  },
+  {
+   "example": "On the exit ticket, a learner picks the statement that every mutation harms the organism.",
+   "fixIt": {
+    "corrected": "Most mutations are neutral because the protein still does its job, so harm is the exception, not the rule.",
+    "prompt": "Fix it: explain in one sentence why the mutated gene in scene s5 still builds a working protein."
+   },
+   "misconception": "Every mutation harms the organism."
+  }
+ ],
+ "level": "jc",
+ "modelAnswers": [
+  {
+   "answer": "DNA is transcribed into mRNA in the nucleus, and the mRNA is translated into a polypeptide at a ribosome in the cytoplasm.",
+   "creditPoints": [],
+   "question": "Outline the central dogma in one or two sentences, naming where transcription and translation happen."
+  },
+  {
+   "answer": "A son has only one X chromosome, so the recessive h allele has no second allele to mask it and the trait shows; a daughter has a second X carrying H, which masks h, so she is a carrier without symptoms.",
+   "creditPoints": [],
+   "question": "A carrier mother (X^H X^h) and a normal father (X^H Y) have children. Explain why a son who inherits X^h has haemophilia, while a daughter who inherits X^h usually does not."
+  }
+ ],
+ "nextSteps": [
+  "Reteach the mutation trap from the paired notes trap before any further genetics work: most sequence changes are neutral because the protein still does its job.",
+  "Practise sex-linked crosses from scene s4, checking each son against the single X he inherits from his mother."
+ ],
+ "strengths": [
+  "Most of the class can outline the central dogma in the right order, naming transcription in the nucleus and translation at a ribosome.",
+  "The class can work the monohybrid square to the 3:1 phenotype ratio and the 1:2:1 genotype ratio."
+ ],
+ "subject": "science",
+ "title": "JC H2 biology -- genetics: from DNA to inheritance",
+ "topic": "h2-genetics"
+}
