@@ -1,0 +1,44 @@
+{
+ "level": "jc",
+ "questions": [
+  {
+   "choices": [
+    {
+     "text": "0"
+    },
+    {
+     "correct": true,
+     "text": "1 in 4"
+    },
+    {
+     "text": "1 in 2"
+    },
+    {
+     "text": "3 in 4"
+    }
+   ],
+   "explanation": "The Punnett square in scene s2 gives AA, Aa, Aa and aa: only the aa box (1 in 4) shows the recessive trait, while 3 in 4 show the dominant trait.",
+   "id": "q2",
+   "kind": "multiple-choice",
+   "prompt": "Two heterozygous parents (Aa x Aa) have a child. What is the probability the child shows the recessive trait?"
+  },
+  {
+   "answer": "DNA is transcribed into mRNA in the nucleus, and the mRNA is translated into a polypeptide at a ribosome in the cytoplasm.",
+   "explanation": "Scene s1 shows the one-way flow: transcription copies DNA into mRNA in the nucleus, then translation reads the mRNA at a ribosome to build the polypeptide chain.",
+   "id": "q3",
+   "kind": "short-answer",
+   "prompt": "Outline the central dogma in one or two sentences, naming where transcription and translation happen."
+  },
+  {
+   "answer": "A son has only one X chromosome, so the recessive h allele has no second allele to mask it and the trait shows; a daughter has a second X carrying H, which masks h, so she is a carrier without symptoms.",
+   "explanation": "Scene s4 makes the asymmetry explicit: sons receive their only X from their mother and a Y from their father, so there is no second X to mask a recessive allele; daughters receive an X from each parent.",
+   "id": "q4",
+   "kind": "short-answer",
+   "prompt": "A carrier mother (X^H X^h) and a normal father (X^H Y) have children. Explain why a son who inherits X^h has haemophilia, while a daughter who inherits X^h usually does not."
+  }
+ ],
+ "subject": "science",
+ "title": "JC H2 biology -- genetics: from DNA to inheritance",
+ "topic": "h2-genetics",
+ "variant": "homework"
+}
