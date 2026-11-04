@@ -1,0 +1,57 @@
+{
+ "complete": {
+  "problem": "Trace genetics from DNA to inheritance: the central dogma, monohybrid and dihybrid crosses, sex-linked inheritance, and the mutation trap.",
+  "selfExplanation": "Explain why DNA is transcribed into mRNA before translation, why a monohybrid cross gives 3:1 phenotypes from 1:2:1 genotypes, why two genes on different chromosomes give 9:3:3:1, why a carrier mother's sons are at risk while her daughters are usually carriers, and why most mutations are neutral.",
+  "steps": [
+   {
+    "annotation": "Central dogma: DNA makes protein: DNA is transcribed into mRNA in the nucleus, and the mRNA is translated into a polypeptide at a ribosome.",
+    "text": "Step 1 (s1): Central dogma: DNA makes protein. Central dogma: DNA makes protein. Genetic information flows one way. DNA is transcribed into messenger RNA in the nucleus - then the mRNA is translated into protein at a ribosome. Keep your student notes open at the DNA and gene definitions for this scene."
+   },
+   {
+    "annotation": "Monohybrid cross: the 3:1 ratio: Aa x Aa gives genotypes 1 AA : 2 Aa : 1 aa in the Punnett square, which group into phenotypes in the ratio 3:1.",
+    "text": "Step 2 (s2): Monohybrid cross: the 3:1 ratio. Monohybrid cross: the 3:1 ratio. Cross two carriers: each parent passes on either allele with equal chance. Three boxes in four show the dominant trait - a 3:1 phenotype ratio hiding a 1:2:1 genotype ratio. Now try the carrier-cross question on the worksheet in pairs."
+   },
+   {
+    "annotation": "Dihybrid cross: 9:3:3:1: two genes on different chromosomes assort independently, so sixteen boxes give four phenotype classes in the ratio 9:3:3:1.",
+    "text": "Step 3 (s3): Dihybrid cross: 9:3:3:1. Dihybrid cross: 9:3:3:1. Track two genes at once - seed shape and seed colour. Genes on different chromosomes assort independently, so the sixteen Punnett boxes fall into four phenotype classes in the famous ratio 9:3:3:1. Check the worked example in your student notes before attempting the dihybrid worksheet question."
+   },
+   {
+    "annotation": "Sex-linked inheritance: a gene on the X chromosome is passed from a carrier mother to half her sons, who show the trait because the Y cannot mask it.",
+    "text": "Step 4 (s4): Sex-linked inheritance. Sex-linked inheritance. Haemophilia rides on the X chromosome. Cross a carrier mother with a normal father: half her sons inherit the faulty allele and show the trait, while half her daughters become carriers. Finish the sex-linked question on the worksheet now."
+   },
+   {
+    "annotation": "A common mistake: mutations are always harmful: most sequence changes are neutral because the protein still does its job, so harm is the exception, not the rule.",
+    "text": "Step 5 (s5): A common mistake: mutations are always harmful. A common mistake: mutations are always harmful. A common mistake: every mutation harms the organism. Mutation sounds like damage - and some mutations are, when a broken protein causes disease. But most mutations are neutral: only some are harmful, and a rare few are the raw material of evolution. Note this carefully, because the exit ticket will test exactly that reading."
+   }
+  ]
+ },
+ "faded": {
+  "problem": "Work the carrier cross Aa x Aa: state the genotype ratio, the phenotype ratio, and the chance of a carrier child.",
+  "selfExplanation": "The first step is shown. State the genotype ratio and the phenotype ratio, then the carrier probability.",
+  "steps": [
+   {
+    "annotation": "Monohybrid cross: the 3:1 ratio: Aa x Aa gives genotypes 1 AA : 2 Aa : 1 aa in the Punnett square, which group into phenotypes in the ratio 3:1.",
+    "text": "Step 1: Aa x Aa fills four Punnett boxes - AA, Aa, Aa, aa.",
+    "withheld": false
+   },
+   {
+    "annotation": "Genotype: the alleles an organism carries for a gene, such as AA, Aa or aa.",
+    "text": "Step 2: the genotype ratio is 1 AA : 2 Aa : 1 aa.",
+    "withheld": true
+   },
+   {
+    "annotation": "The same square gives each probability directly: 1 in 4 affected (aa), 1 in 2 a carrier (Aa), and 3 in 4 showing the dominant phenotype.",
+    "text": "Step 3: the phenotype ratio is 3:1, because both AA and Aa show the dominant trait, and the chance of a carrier (Aa) child is 1 in 2.",
+    "withheld": true
+   }
+  ]
+ },
+ "level": "jc",
+ "paired": {
+  "problem": "A carrier mother (X^H X^h) and a normal father (X^H Y) have children. Explain why a son who inherits X^h has haemophilia, while a daughter who inherits X^h usually does not.",
+  "solution": "A son has only one X chromosome, so the recessive h allele has no second allele to mask it and the trait shows; a daughter has a second X carrying H, which masks h, so she is a carrier without symptoms."
+ },
+ "subject": "science",
+ "title": "JC H2 biology -- genetics: from DNA to inheritance",
+ "topic": "h2-genetics"
+}

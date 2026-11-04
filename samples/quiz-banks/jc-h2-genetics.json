@@ -1,0 +1,49 @@
+{
+ "items": [
+  {
+   "answer": "Most mutations are neutral: only some are harmful, and a rare few are beneficial",
+   "choices": [
+    "Every mutation harms the organism, because any change to DNA breaks a protein",
+    "Mutations are harmful only in body cells, never in gametes",
+    "Most mutations are neutral: only some are harmful, and a rare few are beneficial",
+    "Mutations never affect the organism at all"
+   ],
+   "misconceptionCode": "Every mutation harms the organism.",
+   "prompt": "A student says every change to a DNA sequence must damage the organism. What is correct?"
+  },
+  {
+   "answer": "1 in 4",
+   "choices": [
+    "0",
+    "1 in 4",
+    "1 in 2",
+    "3 in 4"
+   ],
+   "misconceptionCode": "Every mutation harms the organism.",
+   "prompt": "Two heterozygous parents (Aa x Aa) have a child. What is the probability the child shows the recessive trait?"
+  },
+  {
+   "answer": "DNA is transcribed into mRNA in the nucleus, and the mRNA is translated into a polypeptide at a ribosome in the cytoplasm.",
+   "prompt": "Outline the central dogma in one or two sentences, naming where transcription and translation happen."
+  },
+  {
+   "answer": "A son has only one X chromosome, so the recessive h allele has no second allele to mask it and the trait shows; a daughter has a second X carrying H, which masks h, so she is a carrier without symptoms.",
+   "prompt": "A carrier mother (X^H X^h) and a normal father (X^H Y) have children. Explain why a son who inherits X^h has haemophilia, while a daughter who inherits X^h usually does not."
+  },
+  {
+   "answer": "9:3:3:1",
+   "choices": [
+    "3:1",
+    "1:2:1",
+    "9:3:3:1",
+    "1:1:1:1"
+   ],
+   "misconceptionCode": "Every mutation harms the organism.",
+   "prompt": "A dihybrid cross between two double heterozygotes (RrYy x RrYy), with the genes on different chromosomes, produces offspring. What is the expected phenotype ratio?"
+  }
+ ],
+ "level": "jc",
+ "subject": "science",
+ "title": "JC H2 biology -- genetics: from DNA to inheritance",
+ "topic": "h2-genetics"
+}
