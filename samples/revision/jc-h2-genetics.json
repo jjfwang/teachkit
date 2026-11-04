@@ -1,0 +1,87 @@
+{
+ "flashcards": [
+  {
+   "back": "The molecule that stores genetic instructions as a sequence of bases, organised into genes on chromosomes.",
+   "front": "DNA",
+   "source": "definition"
+  },
+  {
+   "back": "A length of DNA that codes for one polypeptide chain.",
+   "front": "Gene",
+   "source": "definition"
+  },
+  {
+   "back": "One of the alternative forms of a gene, found at the same locus on homologous chromosomes.",
+   "front": "Allele",
+   "source": "definition"
+  },
+  {
+   "back": "The alleles an organism carries for a gene, such as AA, Aa or aa.",
+   "front": "Genotype",
+   "source": "definition"
+  },
+  {
+   "back": "The observable trait an organism shows, produced by its genotype and environment.",
+   "front": "Phenotype",
+   "source": "definition"
+  },
+  {
+   "back": "An allele that shows in the phenotype whenever it is present, even in a heterozygote.",
+   "front": "Dominant allele",
+   "source": "definition"
+  },
+  {
+   "back": "An allele that shows in the phenotype only when no dominant allele is present.",
+   "front": "Recessive allele",
+   "source": "definition"
+  },
+  {
+   "back": "A change in the DNA base sequence; most mutations are neutral, some are harmful, and a rare few are beneficial.",
+   "front": "Mutation",
+   "source": "definition"
+  },
+  {
+   "back": "Mutation sounds like damage. Most mutations are neutral: only some are harmful, and a rare few are the raw material of evolution. In the animation a mutated gene still builds a working protein with the same job: the sequence changed, but nothing that matters did - which is why the blanket claim fails.",
+   "front": "Every mutation harms the organism.",
+   "source": "trap"
+  },
+  {
+   "back": "Most mutations are neutral: only some are harmful, and a rare few are beneficial",
+   "front": "A student says every change to a DNA sequence must damage the organism. What is correct?",
+   "source": "quiz-bank"
+  },
+  {
+   "back": "1 in 4",
+   "front": "Two heterozygous parents (Aa x Aa) have a child. What is the probability the child shows the recessive trait?",
+   "source": "quiz-bank"
+  }
+ ],
+ "level": "jc",
+ "practiceSets": [
+  {
+   "dayOffset": 1,
+   "items": [
+    {
+     "answer": "DNA is transcribed into mRNA in the nucleus, and the mRNA is translated into a polypeptide at a ribosome in the cytoplasm.",
+     "prompt": "Outline the central dogma in one or two sentences, naming where transcription and translation happen."
+    },
+    {
+     "answer": "A son has only one X chromosome, so the recessive h allele has no second allele to mask it and the trait shows; a daughter has a second X carrying H, which masks h, so she is a carrier without symptoms.",
+     "prompt": "A carrier mother (X^H X^h) and a normal father (X^H Y) have children. Explain why a son who inherits X^h has haemophilia, while a daughter who inherits X^h usually does not."
+    }
+   ]
+  },
+  {
+   "dayOffset": 3,
+   "items": [
+    {
+     "answer": "9:3:3:1",
+     "prompt": "A dihybrid cross between two double heterozygotes (RrYy x RrYy), with the genes on different chromosomes, produces offspring. What is the expected phenotype ratio?"
+    }
+   ]
+  }
+ ],
+ "subject": "science",
+ "title": "JC H2 biology -- genetics: from DNA to inheritance",
+ "topic": "h2-genetics"
+}
