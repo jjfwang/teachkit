@@ -15,6 +15,31 @@ This library is an **offline, no-student-data authoring + validation + rendering
 capability. Aceceed remains responsible for student state, source authorization,
 adaptive tutoring, speech, live session orchestration and parental reporting.
 
+## Product decision: pre-generate and reuse by TOPIC
+
+One bundle is authored, reviewed and published **offline per exact curriculum
+TOPIC + level/grade + subject + locale + syllabus revision**. Its blueprint
+contains the **full approved set of objectives for that topic**; slides,
+animation beats and assessment questions reference individual objective IDs
+*inside* the topic bundle. Different students, sessions and selected objectives
+must share this already-approved topic bundle, not fork new full packs.
+
+Aceceed's current lesson-pack scope/build spec is instead keyed by
+`objectiveId`. This is a **real migration gap**: add a topic identity and
+an objective-to-topic index on the existing Core catalog/review/S3 owner,
+preserve the existing six-file objective pack API as a legacy compatibility
+path, and migrate gradually with tests. Do not rewrite approved object keys
+or start a second catalog.
+
+Before sessions, Aceceed's existing admin batch queue enumerates reviewed
+curriculum topics and asks Teachkit to generate any missing topic bundles.
+For known topics whose approved bundle is not yet available, one bounded,
+asynchronous catalog backfill may be queued/joined. **Current teaching continues
+without waiting** using already permitted session tools. Unknown/unmapped
+topics do not automatically become an approved syllabus asset. New approved
+bundle revisions are adopted by future sessions, not hot-swapped into the
+current voice/slide timeline.
+
 ## What beta.2 already provides
 
 - `generateAnimation`, `generateSlides`, `generateLessonPlan`,
