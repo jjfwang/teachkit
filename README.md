@@ -234,6 +234,16 @@ if (problems.length) throw new Error('invalid animath spec: ' + problems.join(';
 mount(el, spec); // el is a DOM element; mount re-validates and throws too
 ```
 
+### Freeze a complete topic blueprint
+
+The additive `@jjfwang/teachkit/lesson-blueprint` subpath defines a versioned,
+deeply frozen authoring contract for one exact curriculum topic and **all** its
+objectives, with grade-safe identity, source provenance, stable teaching beats,
+canonical examples and assessment specifications. It performs no generation or
+publication. The host supplies an approved complete curriculum snapshot;
+independent review remains a separate gate. See the
+[blueprint contract](docs/LESSON_BLUEPRINT.md) and its TypeScript definitions.
+
 ### Generate an animation end-to-end
 
 The headline API is `@jjfwang/teachkit/pipeline`: it unpacks a topic into its

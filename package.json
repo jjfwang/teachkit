@@ -75,7 +75,8 @@
     "./interactive-agent": "./generator/interactive-agent.js",
     "./approved-assets": "./generator/approved-assets.js",
     "./fs-assets": "./generator/fs-object-store.js",
-    "./interactive-service": "./generator/interactive-service.js"
+    "./interactive-service": "./generator/interactive-service.js",
+    "./lesson-blueprint": "./generator/lesson-blueprint.js"
   },
   "files": [
     "generator/",
