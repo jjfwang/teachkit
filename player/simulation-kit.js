@@ -26,6 +26,13 @@
     'erosion': ['primary','geography','erosion']
   };
   var models = Object.freeze(Object.keys(ids));
+  // Registered syllabus home of a model ([level, subject, topic slug]),
+  // the authority the capability resolver checks a topic against (issue
+  // #1641). A copy is returned so callers cannot mutate the registry.
+  function syllabusFor(model) {
+    if (!Object.prototype.hasOwnProperty.call(syllabus, model)) return null;
+    return syllabus[model].slice();
+  }
   function obj(x) { return x !== null && typeof x === 'object' && !Array.isArray(x); }
   function text(x, limit) { return typeof x === 'string' && !!x.trim() && x.length <= limit; }
   function finite(x) { return Number.isFinite(x) && Math.abs(x) <= 1000; }
@@ -282,5 +289,5 @@
       setParameter:session.setParameter,playBeat:session.playBeat,answer:session.answer,reset:session.reset,
       on:session.on,destroy:function(){off();session.destroy();container.textContent='';}};
   }
-  return {version:'0.2',models:models,validate:validate,calculate:calculate,createSession:createSession,svgFor:svgFor,mount:mount,escapeText:esc};
+  return {version:'0.2',models:models,syllabusFor:syllabusFor,validate:validate,calculate:calculate,createSession:createSession,svgFor:svgFor,mount:mount,escapeText:esc};
 });

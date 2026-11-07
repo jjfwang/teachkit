@@ -10,6 +10,16 @@ version section when the release ships.
 
 ## [Unreleased]
 
+- Add the deterministic cross-material validator and explicit capability
+  resolver (`topic-bundle.v1`): objective/beat/slide/visual/assessment
+  coherence against the frozen LessonBlueprint, stale-scope rejection,
+  canonical answer and quantity binding checks, and per-visual decisions
+  across simulation / animation / diagram / slide-first / declared-missing,
+  with explicit fallbacks and actionable problem paths (#1641). Additive
+  and storage-neutral; does not generate, approve or publish a bundle.
+  The simulation registry additionally exposes `syllabusFor(model)` so
+  the resolver checks the registered syllabus home instead of duplicating
+  the allowlist.
 - Add the storage-neutral `lesson-blueprint` authoring contract: complete-topic,
   grade/release/source-safe identity; immutable blueprint revisions; provenance,
   stable objective/beat references, coverage and pacing validation, with P5,
