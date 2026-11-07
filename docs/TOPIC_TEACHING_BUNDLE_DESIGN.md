@@ -2,9 +2,12 @@
 
 Status: **design proposal, not an implemented beta.2 API** (2026-11-07).
 Update (2026-11-07): slice 1 below (LessonBlueprint) has shipped on main after
-beta.2 as `lesson-blueprint.v1` (PR #1643, issue #1640); see "Shipped:
-LessonBlueprint (slice 1)". The unified `generateTopicTeachingBundle` API and
-slices 2-4 remain proposals.
+beta.2 as `lesson-blueprint.v1` (PR #1643, issue #1640); slice 2 (coherence &
+capability) has shipped as `topic-bundle.v1` validation (PR #1644, issue
+#1641); slice 3 (unified API) has shipped as `@jjfwang/teachkit/topic-bundle`
+(`generator/topic-bundle.js`, issue #1642, open for review, not merged) — see
+"Shipped: LessonBlueprint (slice 1)" and `docs/TOPIC_BUNDLE.md`. Slice 4
+(Aceceed integration) remains a separate-repo proposal.
 Related: #743 (teaching-materials umbrella), #1204 (trust/lesson-plan/metadata), and [interactive teaching roadmap](INTERACTIVE_TEACHING_ROADMAP.md).
 
 ## Goal
@@ -397,7 +400,9 @@ Acceptance evidence:
    not publish. Keep beta.2 public subpaths backward compatible.
 3. **Unified API (P1).** `generateTopicTeachingBundle` behind a new
    `./topic-bundle` export, author stages and targeted repair, core/extended
-   modes, stable manifest and per-stage observability.
+   modes, stable manifest and per-stage observability. SHIPPED on a branch
+   for issue #1642 (open for review, not merged); see
+   `docs/TOPIC_BUNDLE.md`.
 4. **Aceceed integration (P1, separate repo).** Pin a verified npm beta
    version, regenerate `pnpm-lock.yaml`, test six-material compatibility,
    remove obsolete animath only after usage audit, and connect objective

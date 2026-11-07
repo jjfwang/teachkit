@@ -77,7 +77,8 @@
     "./fs-assets": "./generator/fs-object-store.js",
     "./interactive-service": "./generator/interactive-service.js",
     "./lesson-blueprint": "./generator/lesson-blueprint.js",
-    "./cross-material-validator": "./generator/cross-material-validator.js"
+    "./cross-material-validator": "./generator/cross-material-validator.js",
+    "./topic-bundle": "./generator/topic-bundle.js"
   },
   "files": [
     "generator/",

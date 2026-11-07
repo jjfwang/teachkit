@@ -244,6 +244,17 @@ publication. The host supplies an approved complete curriculum snapshot;
 independent review remains a separate gate. See the
 [blueprint contract](docs/LESSON_BLUEPRINT.md) and its TypeScript definitions.
 
+### Generate one teaching bundle per topic
+
+The additive `@jjfwang/teachkit/topic-bundle` subpath generates a whole
+coherent bundle from a frozen blueprint: timed lesson plan, slides, chosen
+visual, and diagnostic/formative/exit assessments with answer keys, all
+indexed by objective and beat, cross-validated, with a hash manifest and a
+stable scope-based idempotency key. Core mode needs no animation and no
+misconception bank; extended mode adds an animation and a quiz bank. See the
+[topic-bundle API](docs/TOPIC_BUNDLE.md). A bundle that fails validation
+fails closed and is never returned.
+
 ### Generate an animation end-to-end
 
 The headline API is `@jjfwang/teachkit/pipeline`: it unpacks a topic into its

@@ -29,6 +29,7 @@ const EXPECTED_APIS = {
   './fs-assets': ['createFileStore'],
   './interactive-service': ['prepareAndPublish', 'loadApproved', 'mountApproved'],
   './cross-material-validator': ['schemaVersion', 'resolveVisualCapability', 'validateTopicBundle', 'verifyTopicBundle'],
+  './topic-bundle': ['schemaVersion', 'validateTopicBundleRequest', 'topicBundleScopeKey', 'generateTopicTeachingBundle', 'generateTopicTeachingBundles', 'verifyTopicTeachingBundle'],
   './presenter': ['createPresenter', 'resolveVisual', 'printViews', 'keyAction', 'attachPresenter'],
   './printable': ['renderWorksheet', 'renderWorksheetAnswerKey', 'renderExitTicket', 'renderExitTicketAnswerKey', 'renderNotes', 'renderScript', 'escapeHtml'],
   './export-frames': ['version', 'shapeMarkup', 'sceneShapes', 'renderFrame', 'frameMs', 'sceneFrameCount'],
