@@ -1,6 +1,10 @@
 # Topic-level teaching bundle: beta.2 baseline and next implementation
 
 Status: **design proposal, not an implemented beta.2 API** (2026-11-07).
+Update (2026-11-07): slice 1 below (LessonBlueprint) has shipped on main after
+beta.2 as `lesson-blueprint.v1` (PR #1643, issue #1640); see "Shipped:
+LessonBlueprint (slice 1)". The unified `generateTopicTeachingBundle` API and
+slices 2-4 remain proposals.
 Related: #743 (teaching-materials umbrella), #1204 (trust/lesson-plan/metadata), and [interactive teaching roadmap](INTERACTIVE_TEACHING_ROADMAP.md).
 
 ## Goal
@@ -165,35 +169,97 @@ difficulty; Aceceed currently forces regeneration to work around this.
 The all-material pack requires a misconception-bank match and an animation,
 which is unsuitable for unsupported topics and slide-first subjects.
 
+## Shipped: LessonBlueprint (slice 1)
+
+Slice 1 of "Implementation slices" below is DONE, merged as PR #1643
+(issue #1640) on main after beta.2. The shipped contract is the authority
+where this document's proposal differs from it:
+
+- Export: `@jjfwang/teachkit/lesson-blueprint`
+  (`generator/lesson-blueprint.js`, types in
+  `generator/lesson-blueprint.d.ts`), documented in
+  `docs/LESSON_BLUEPRINT.md`. Schema version `lesson-blueprint.v1`.
+- Request shape: `{ scope, objectives, sources, generation, parameters }`.
+  Scope is `{ country, authority, curriculumReleaseId, syllabus,
+  syllabusVersion, level, grade, subject, topicId, locale }` with an exact
+  grade (broad bands such as `primary` are rejected) and a case-insensitive
+  locale. Objectives are full objects `{ objectiveId, revision, contentHash,
+  text, sourceClaimIds }`, not bare IDs. Sources are `{ sourceId, revision,
+  contentHash, claims: [{ claimId, text }] }`. Generation provenance is
+  `{ generatorVersion, model, promptVersion, validatorVersion }`.
+  Parameters are `{ durationMinutes, difficulty }` only; there is no `mode`
+  field on the blueprint (core/extended mode remains a proposal for the
+  future unified API layer, not part of the shipped blueprint).
+- Blueprint shape: `{ schemaVersion, identity, revision, request, content }`.
+  `identity` is the SHA-256 of the canonical versioned request (the scope
+  key); `revision` is the SHA-256 of the schema version, identity and
+  content. Changing approved objective membership creates a different
+  identity; it does not overwrite the previous blueprint.
+- Content: prerequisites, definitions, misconceptions, examples, beats and
+  assessments. Beat kinds are exactly `activate`, `explain`, `predict`,
+  `practice`, `feedback`, `exit`; the per-beat `visual` field is a
+  recommendation (`simulation` | `animation` | `diagram` | `none`), and a
+  beat can explicitly have no visual. At least one worked example is
+  required, each declaring `quantities: [{ id, value, unit }]`. Beat
+  durations must sum to exactly the requested lesson duration, every
+  objective needs a teaching beat and an assessment item, and an assessment
+  that uses a canonical example must retain its exact answer.
+- Functions: `createLessonBlueprint` (validates, copies, deeply freezes),
+  `validateLessonBlueprint`, `verifyLessonBlueprint` (recomputes both
+  hashes), `validateRequest`, `topicBlueprintIdentity`. Unknown fields are
+  rejected; references are checked against the full snapshot.
+- Gold fixtures: P5 equivalent fractions (two objectives, five beats,
+  30 minutes), Secondary Science and JC Maths in
+  `tests/fixtures/topic-blueprints.json`. They are hand-authored test
+  snapshots under `fixture-authority`, not an approved official curriculum
+  release or evidence of real model generation.
+
 ## Proposed input and output contracts
 
 **API names and shapes below are proposals only. Existing beta.2 exports stay
 unchanged.** Prefer adding a new versioned subpath rather than changing the
-existing `generateLessonPack` behavior in place.
+existing `generateLessonPack` behavior in place. Where the proposal overlaps
+the shipped LessonBlueprint (scope, objectives, sources, generation
+provenance), the shipped shape in "Shipped: LessonBlueprint (slice 1)" above
+governs; the sketch below is already conformed to it.
 
 ```ts
 type TopicBundleRequest = {
   curriculum: {
-    country: string; authority: string; syllabus: string;
-    syllabusVersion: string; grade: string; // e.g. P5 or Sec2, not just primary
+    country: string; authority: string; curriculumReleaseId: string;
+    syllabus: string; syllabusVersion: string;
+    grade: string; // e.g. P5 or Sec2, not just primary
     level: 'primary' | 'secondary' | 'jc';
-    subject: string; topicId: string; objectiveIds: string[];
+    subject: string; topicId: string;
+    locale: string; // e.g. en-SG; explicit to avoid cross-language reuse
   };
-  language: string; // e.g. en-SG; explicit to avoid cross-language reuse
-  approvedSources: Array<{ id: string; revision: string; claimRefs: string[] }>;
+  objectives: Array<{
+    objectiveId: string; revision: string; contentHash: string;
+    text: string; sourceClaimIds: string[];
+  }>;
+  approvedSources: Array<{
+    sourceId: string; revision: string; contentHash: string;
+    claims: Array<{ claimId: string; text: string }>;
+  }>;
+  generation: {
+    generatorVersion: string; model: string;
+    promptVersion: string; validatorVersion: string;
+  };
   parameters: {
     durationMinutes: number; difficulty: 'support' | 'standard' | 'stretch';
-    mode: 'core' | 'extended'; // core: plan, visuals, slides, assessment
+    // mode is a unified-API proposal only; the shipped blueprint has no mode:
+    mode?: 'core' | 'extended'; // core: plan, visuals, slides, assessment
   };
 };
 
 type TopicTeachingBundle = {
   manifest: {
     schemaVersion: string; generatorVersion: string; revision: string;
-    scopeKey: string; sourceRevisions: string[]; status: 'draft' | 'approved';
+    scopeKey: string; // blueprint identity hash
+    sourceRevisions: string[]; status: 'draft' | 'approved';
     artifactHashes: Record<string, string>;
   };
-  blueprint: LessonBlueprint;
+  blueprint: LessonBlueprint; // lesson-blueprint.v1, shipped (PR #1643)
   lessonPlan: object;
   slides: object;
   visual: { kind: 'animation' | 'simulation' | 'diagram' | 'none';
@@ -210,17 +276,22 @@ Generate *one* grounded blueprint before any material. It must include:
 
 - Immutable curriculum identity, approved source/claim references, precise
   prior knowledge and outcome-aligned learning objectives (`objectiveId`).
-- Concept graph with prerequisite nodes, vocabulary and definitions, one
-  canonical worked example (numbers, units, symbols), misconceptions and
-  correct explanations, difficulty/support/stretch strategies.
+- Concept graph with prerequisite nodes, vocabulary and definitions, at
+  least one canonical worked example (numbers, units, symbols, with declared
+  quantities), misconceptions and correct explanations,
+  difficulty/support/stretch strategies.
 - Ordered teaching beats (`beatId`), each mapping to `objectiveId`,
   misconception, explanation, expected student evidence, and recommended
   visual type; a beat can explicitly have **no animation**.
 - Assessment specifications per objective, cognitive level, misconception,
   expected answer, marking criteria and partial-credit rubric.
 - Pedagogical pacing, e.g. activate prior knowledge -> explain -> predict ->
-  visualise/manipulate -> practice -> feedback -> exit check. The author
-  proposes the timing; the validator enforces the stated duration.
+  practice -> feedback -> exit check, using the shipped beat kinds
+  (`activate`, `explain`, `predict`, `practice`, `feedback`, `exit`).
+  Visualisation/manipulation is a per-beat `visual` recommendation
+  (`simulation` | `animation` | `diagram` | `none`), not a beat kind.
+  The author proposes the timing; the validator enforces the stated duration
+  (beat durations must sum to exactly the requested duration).
 
 After validation the blueprint is **frozen**. Individual authors can vary the
 wording, but cannot invent new facts, numeric values, objectives or scene IDs.
@@ -316,9 +387,11 @@ Acceptance evidence:
 
 ## Implementation slices for an agent loop
 
-1. **Blueprint & identity (P0).** A versioned `LessonBlueprint` schema,
-   builder/validator, immutable scope hash and three gold fixtures. No change
-   to the existing `animath:0.1` or beta.2 pack contracts.
+1. **Blueprint & identity (P0).** DONE - shipped as `lesson-blueprint.v1`
+   (PR #1643, issue #1640); see "Shipped: LessonBlueprint (slice 1)" above.
+   A versioned `LessonBlueprint` schema, builder/validator, immutable scope
+   hash and three gold fixtures. No change to the existing `animath:0.1` or
+   beta.2 pack contracts.
 2. **Coherence & capability (P0).** Pack cross-reference checks and explicit
    simulation/animation/diagram/slide-first fallback; failing fixtures must
    not publish. Keep beta.2 public subpaths backward compatible.
