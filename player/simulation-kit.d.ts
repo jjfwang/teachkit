@@ -33,6 +33,8 @@ export interface SimulationController {
 }
 export const version: string;
 export const models: SimulationModel[];
+/** Registered syllabus home of a model as [level, subject, topic slug], or null for an unregistered model. */
+export function syllabusFor(model: string): [string, string, string] | null;
 export function validate(spec: unknown): string[];
 export function calculate(model: SimulationModel, params: Record<string, number>): Record<string, number>;
 export function createSession(spec: SimulationSpec): SimulationController;
