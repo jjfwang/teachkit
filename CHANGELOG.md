@@ -10,6 +10,10 @@ version section when the release ships.
 
 ## [Unreleased]
 
+- Immutable approved learning assets keyed by syllabus path, content SHA-256, atomic
+  revision selection and rollback; durable filesystem adapter and integrated
+  review-to-store-to-tutor service (#802).
+
 - Prepublication interactive teaching review with deterministic checks and an optional
   OpenAI-compatible independent reviewer adapter, plus human escalation (#801).
 
