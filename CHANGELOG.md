@@ -10,6 +10,15 @@ version section when the release ships.
 
 ## [Unreleased]
 
+## [0.2.0-beta.2] - 2026-11-07
+
+First publish under the `@jjfwang/teachkit` name, published under the
+`beta` dist-tag. Ships the interactive teaching chain on top of the
+beta.1 library surface: the experimental water-cycle pilot, the
+multi-subject simulation registry, tutor synchronization, prepublication
+review gates, the immutable approved asset store and the syllabus-model
+expansion, plus the continued gold backfill of syllabus samples.
+
 - Five additional reactive instructional models, expanding the validated registry to eight
   syllabus topic exemplars across Primary, Secondary and JC; curriculum checks and
   capability matrix/documented coverage gaps (#803).

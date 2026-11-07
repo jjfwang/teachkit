@@ -284,12 +284,15 @@ test('JSON downloads remain alongside the in-page rendering (#782)', () => {
 test('README and CHANGELOG document the pack mode', () => {
   assert.ok(readme.includes('lesson-pack mode') && readme.includes('web/index.html'),
     'README Quickstart prose must name lesson-pack mode in web/index.html');
-  const unreleased = changelog.slice(changelog.indexOf('## [Unreleased]'),
-    changelog.indexOf('\n## [', changelog.indexOf('## [Unreleased]') + 1));
-  assert.ok(unreleased.includes('Lesson-pack generation mode in the web app'),
-    'CHANGELOG [Unreleased] Added must carry the pack-mode bullet');
-  assert.ok(unreleased.includes('In-app lesson-pack rendering in the web app'),
-    'CHANGELOG [Unreleased] Added must carry the #782 in-app rendering bullet');
+  // The pack-mode bullets moved out of [Unreleased] into the newest dated
+  // release section when the release was cut, so check that section instead.
+  const latestReleaseStart = changelog.indexOf('\n## [', changelog.indexOf('## [Unreleased]') + 1);
+  const latestRelease = changelog.slice(latestReleaseStart,
+    changelog.indexOf('\n## [', latestReleaseStart + 1));
+  assert.ok(latestRelease.includes('Lesson-pack generation mode in the web app'),
+    'CHANGELOG latest release section must carry the pack-mode bullet');
+  assert.ok(latestRelease.includes('In-app lesson-pack rendering in the web app'),
+    'CHANGELOG latest release section must carry the #782 in-app rendering bullet');
 });
 
 test('renderPackManifest displays the pack metadata block (#1223)', () => {
