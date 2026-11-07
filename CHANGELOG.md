@@ -10,6 +10,23 @@ version section when the release ships.
 
 ## [Unreleased]
 
+- Add the public topic-to-teaching-bundle generation API
+  (`@jjfwang/teachkit/topic-bundle`, `topic-bundle.v1`):
+  `generateTopicTeachingBundle(request, deps)` freezes one LessonBlueprint
+  per topic and full approved objective set, then authors the lesson plan,
+  slides, chosen visual and diagnostic/formative/exit assessments from it,
+  indexed by objective and beat, with core vs extended mode, bounded
+  targeted repairs, a hash manifest with scope-based idempotency, and
+  stage-level cost/token/latency progress; every bundle is checked by the
+  #1641 cross-material validator and fails closed on mismatch. Also
+  `generateTopicTeachingBundles` for bounded admin-scheduled bulk
+  pre-generation with per-topic isolation and duplicate detection, and
+  `verifyTopicTeachingBundle` for re-checking a stored bundle. No
+  misconception bank or animation is required for unsupported subjects
+  (diagram / slide-first fallback via the capability resolver); no S3,
+  database or filesystem library; no student data in the generation path
+  (#1642). Additive: `generateLessonPack` and its slug-only cache are
+  untouched.
 - Add the deterministic cross-material validator and explicit capability
   resolver (`topic-bundle.v1`): objective/beat/slide/visual/assessment
   coherence against the frozen LessonBlueprint, stale-scope rejection,
