@@ -169,6 +169,18 @@ test('verifyTopicBundle accepts the valid bundle and rejects a tampered revision
   assert.ok(result.problems.some(problem => problem.path === 'blueprint.revision'));
 });
 
+test('verifyTopicBundle on a structurally invalid blueprint returns each problem exactly once', async () => {
+  const bundle = await validBundle();
+  bundle.blueprint = { schemaVersion: 'nope' };
+  const result = await api.verifyTopicBundle(bundle);
+  assert.equal(result.valid, false);
+  assert.ok(result.problems.length > 0);
+  assert.ok(result.problems.every(problem => problem.code === 'blueprint-invalid'));
+  const keys = result.problems.map(problem => problem.path + '|' + problem.code + '|' + problem.message);
+  assert.equal(new Set(keys).size, keys.length, 'duplicate blueprint problems: ' + JSON.stringify(result.problems, null, 2));
+  assert.deepEqual(result.problems, api.validateTopicBundle(bundle).problems);
+});
+
 test('bundle without materials or visuals stays valid (beta.2 backward compatibility)', async () => {
   const blueprint = await blueprintApi.createLessonBlueprint(fixtures.p5.request, fixtures.p5.content);
   const result = api.validateTopicBundle({ schemaVersion: 'topic-bundle.v1', scope: copy(blueprint.request.scope), blueprint });

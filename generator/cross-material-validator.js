@@ -454,11 +454,11 @@
     if (record(bundle) && record(bundle.blueprint)) {
       var verified = await blueprintApi.verifyLessonBlueprint(bundle.blueprint, record(options) ? options.expectedRequest : undefined);
       var known = {};
-      result.problems.forEach(function (item) { known[item.message] = true; });
+      result.problems.forEach(function (item) { known[item.path + '|' + item.code + '|' + item.message] = true; });
       verified.forEach(function (error) {
-        var message = String(error);
-        if (known[message]) return;
-        result.problems.push(prefixed(message, 'blueprint', 'blueprint-invalid'));
+        var item = prefixed(String(error), 'blueprint', 'blueprint-invalid');
+        if (known[item.path + '|' + item.code + '|' + item.message]) return;
+        result.problems.push(item);
       });
       result.problems.sort(compareProblems);
       result.valid = result.problems.length === 0;

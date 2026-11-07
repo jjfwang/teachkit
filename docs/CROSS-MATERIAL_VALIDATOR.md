@@ -67,7 +67,7 @@ model-supplied code.
 
 | Requested | Served when | Otherwise |
 |---|---|---|
-| `simulation` | Model is registered **and** registered for this topic family: same level; same subject after the `mathematics` -> `math` synonym; topic equal to the registered slug or a sub-topic of it (`equivalent-fractions` inside `fractions`). The bundle simulation spec, when present, must name the same model and pass registry validation. | Unsupported (rejected, unless an explicit fallback resolves). |
+| `simulation` | Model is registered **and** registered for this topic family: same level; same subject after the `mathematics` -> `math` synonym; topic equal to the registered slug or a sub-topic of it, in either order (`equivalent-fractions` inside `fractions`, or `fractions-equivalent`). The bundle simulation spec, when present, must name the same model and pass registry validation. | Unsupported (rejected, unless an explicit fallback resolves). |
 | `animation` | `sceneId` exists in the bundle animation scenes. | Unsupported. |
 | `diagram` | A non-empty label, or a descriptor whose kind is a slide shape kind. | Unsupported. |
 | `slide-first` | `slideIndex` exists **and** the visual references no animation scene or simulation model. A slide-first visual that still demands an animation is invalid. | Unsupported. |
