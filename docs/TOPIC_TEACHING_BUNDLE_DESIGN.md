@@ -40,6 +40,107 @@ topics do not automatically become an approved syllabus asset. New approved
 bundle revisions are adopted by future sessions, not hot-swapped into the
 current voice/slide timeline.
 
+## Cloud-authoritative storage and explicit version management
+
+**Requirement:** No generated topic kit is durably saved to the developer's
+local filesystem. The local Teachkit runner may compose bounded JSON in memory,
+but must use a pluggable store to upload artifacts into private **AWS S3** as
+they are produced, with a verified manifest before any publish. A failed upload
+is an unfinished/retryable build, never a local canonical release. Test fixtures
+can still reside in the source tree; they are not published teaching content.
+
+**Ownership:** Teachkit defines the versioned JSON schema, blueprint,
+validation and pluggable `ArtifactSink` / `ArtifactSource` interfaces. It
+must not own AC's production database. **Aceceed Core** owns the canonical topic
+registry, approval/version state machine, identity, access control, managed
+PostgreSQL records and production S3 adapter. Prefer **RDS PostgreSQL**, extending
+the existing Prisma/TeachingArtifact/build-job/review owners; do not introduce
+DynamoDB or a second catalog. Local Core services may publish to a private
+development AWS S3 bucket using short-lived IAM credentials; for an authoritative
+managed catalog they must use a private development RDS via SSM tunnel/VPN or an
+authenticated Core publishing endpoint. Do not open PostgreSQL on public 5432.
+Keep dev and production accounts/buckets/IAM/publish authority isolated.
+
+### Four independent version dimensions
+
+- **Curriculum identity:** country, authority, syllabus release/version,
+  precise grade, subject, canonical `topicId`, locale, and complete approved
+  objective set (with source hashes). Distinct scope means distinct catalog
+  identity, not a text-slug match.
+- **Bundle content revision:** monotonic or opaque immutable `revision`,
+  exact manifest hash, component keys/hashes, frozen blueprint and objective IDs.
+- **Schema version:** `topic-bundle.v1`, upgraded through explicit migrations.
+- **Generator provenance:** Teachkit package version, model and prompt/validator
+  revisions, sources, review receipts, content build specification.
+
+S3 bucket Versioning is **recovery**, not product-level teaching revisioning:
+old and new approved teaching bundles have different immutable keys and DB
+revisions even when the bucket is not versioned. S3 Versioning should be
+enabled as defense in depth; optional Object Lock Governance Mode needs a
+specific retention/operational review rather than unbounded default retention.
+
+Suggested storage shape:
+
+```text
+s3://<private-catalog-bucket>/
+  topic-kits/v1/<scope>/<topicId>/
+    revisions/r0001/
+      manifest-<sha256>.json
+      blueprint-<sha256>.json
+      lesson-plan-<sha256>.json
+      slides-<sha256>.json
+      animation-<sha256>.json
+      assessment-<sha256>.json
+      assets/<assetId>-<sha256>.<ext>
+    revisions/r0002/
+      ...
+```
+
+This is an illustrative logical convention; the Core-owned `manifest` and DB
+registry define the authoritative lookup. Do not create an overwritable S3
+`latest` pointer as the sole source of truth, and keep answer keys private.
+
+### Safe publish and rollback
+
+1. Core resolves reviewed topic and claims a durable build in PostgreSQL,
+   idempotent by exact scope + source revision + build specification.
+2. Generator uploads content-addressed objects directly to S3 private draft
+   staging with conditional `If-None-Match: *`; retries re-verify exact SHA-256.
+3. Once all material refs exist, verify hashes, cross-material objective/beat
+   links, current reviewed curriculum/source and capability, then freeze the
+   manifest and independent approval receipt.
+4. Publish by **one PostgreSQL transaction** setting the exact approved
+   revision ACTIVE/current, retaining superseded revisions and history.
+   S3 and PostgreSQL are not atomic together: a recoverable draft/staged/
+   published state machine must handle orphan uploads and interrupted workers.
+5. AC session admission pins artifact id, revision and content hash, verifies
+   publication and material integrity; no live-session hot swap. Rollback
+   changes the current pointer for **future** sessions after current source and
+   review eligibility checks; it does not overwrite old bytes.
+
+Retain complete published revisions to support reproducible past-session
+replay and rollback. Abandoned, never-published drafts may be garbage
+collected after a reviewed interval. Use S3 inventory/lifecycle and RDS
+backups/PITR plus periodic restore drills; maintain DB-to-S3 referential
+integrity audits.
+
+### Deployment trajectory
+
+- **Local generation now:** local service processes; remote dev S3 as the
+  only authoritative material store and private development RDS/managed
+  registry as the version authority; short-lived development credentials.
+- **Public beta:** separate production RDS + private S3, managed auth/secrets,
+  migrations, approved revision promotion and a small measured application host.
+- **Scale:** move Core/AI/reviewer compute to managed containers and Redis to
+  managed service as necessary. Content revision hashes, PostgreSQL logical
+  identities and S3 file formats remain unchanged.
+
+Implement this as an additive schema/adapter change without altering the
+already-shipped `0.2.0-beta.2` behavior. Legacy AC objective-scoped packs
+remain valid during migration to topic-scoped bundles. The new topic library
+is **curriculum content**, not student records or chat history.
+
+
 ## What beta.2 already provides
 
 - `generateAnimation`, `generateSlides`, `generateLessonPlan`,
