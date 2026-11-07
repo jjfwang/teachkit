@@ -10,6 +10,12 @@ version section when the release ships.
 
 ## [Unreleased]
 
+- Add the storage-neutral `lesson-blueprint` authoring contract: complete-topic,
+  grade/release/source-safe identity; immutable blueprint revisions; provenance,
+  stable objective/beat references, coverage and pacing validation, with P5,
+  Secondary and JC fixture coverage (#1640). This does not generate, approve or
+  publish a topic bundle.
+
 ## [0.2.0-beta.2] - 2026-11-07
 
 First publish under the `@jjfwang/teachkit` name, published under the

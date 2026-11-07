@@ -1,0 +1,1004 @@
+{
+  "p5": {
+    "request": {
+      "scope": {
+        "country": "sg",
+        "authority": "fixture-authority",
+        "curriculumReleaseId": "fixture-release-2026",
+        "syllabusVersion": "2026",
+        "locale": "en-SG",
+        "syllabus": "primary-mathematics",
+        "level": "primary",
+        "grade": "P5",
+        "subject": "mathematics",
+        "topicId": "equivalent-fractions"
+      },
+      "sources": [
+        {
+          "sourceId": "fixture-source",
+          "revision": "fixture-1",
+          "contentHash": "510d307cce9768978eac012c7c81d6733f4ffef69f509ead5a915b7e3a97c38c",
+          "claims": [
+            {
+              "claimId": "fractions.same-value",
+              "text": "Equivalent fractions name the same quantity when the whole is the same."
+            },
+            {
+              "claimId": "fractions.scale",
+              "text": "Multiplying numerator and denominator by the same nonzero whole number gives an equivalent fraction."
+            }
+          ]
+        }
+      ],
+      "objectives": [
+        {
+          "objectiveId": "P5-EF-1",
+          "revision": "1",
+          "contentHash": "5073187346e241e1ee0f6857b2b0bfb3b2b044e0eb34dd9496ec983f22d977f5",
+          "text": "Recognise equivalent fractions using equal-sized wholes.",
+          "sourceClaimIds": [
+            "fractions.same-value"
+          ]
+        },
+        {
+          "objectiveId": "P5-EF-2",
+          "revision": "1",
+          "contentHash": "6419200d95de2b10d0b63bc95f3256460cd42eeb4a7dc015a5b5e7b6b4a48373",
+          "text": "Generate equivalent fractions by scaling numerator and denominator together.",
+          "sourceClaimIds": [
+            "fractions.scale"
+          ]
+        }
+      ],
+      "generation": {
+        "generatorVersion": "teachkit-topic-v1",
+        "model": "fixture-model",
+        "promptVersion": "blueprint-prompt.v1",
+        "validatorVersion": "lesson-blueprint.v1"
+      },
+      "parameters": {
+        "durationMinutes": 30,
+        "difficulty": "standard"
+      }
+    },
+    "content": {
+      "prerequisites": [
+        {
+          "id": "equal-parts",
+          "text": "A fraction describes equal parts of one whole.",
+          "sourceClaimIds": [
+            "fractions.same-value"
+          ]
+        }
+      ],
+      "definitions": [
+        {
+          "id": "equivalence",
+          "term": "equivalent fractions",
+          "meaning": "Different fraction names for the same quantity with the same whole.",
+          "sourceClaimIds": [
+            "fractions.same-value"
+          ]
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "scale-both",
+          "objectiveId": "P5-EF-2",
+          "incorrect": "Multiplying only the numerator keeps the value unchanged.",
+          "correction": "Multiply the numerator and denominator by the same nonzero number.",
+          "sourceClaimIds": [
+            "fractions.scale"
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "id": "half-fourths",
+          "objectiveIds": [
+            "P5-EF-1"
+          ],
+          "statement": "Is 1/2 equivalent to 2/4 for the same whole?",
+          "steps": [
+            "Partition two equal-sized bars into 2 and 4 equal parts.",
+            "Shade 1 of 2 parts and 2 of 4 parts.",
+            "The shaded quantities match."
+          ],
+          "answer": "Yes: 1/2 = 2/4.",
+          "unit": "whole",
+          "sourceClaimIds": [
+            "fractions.same-value"
+          ],
+          "quantities": [
+            {
+              "id": "numerator",
+              "value": 1,
+              "unit": ""
+            },
+            {
+              "id": "denominator",
+              "value": 2,
+              "unit": ""
+            },
+            {
+              "id": "equivalentNumerator",
+              "value": 2,
+              "unit": ""
+            },
+            {
+              "id": "equivalentDenominator",
+              "value": 4,
+              "unit": ""
+            }
+          ]
+        },
+        {
+          "id": "thirds-sixths",
+          "objectiveIds": [
+            "P5-EF-2"
+          ],
+          "statement": "Write 2/3 as an equivalent fraction with denominator 6.",
+          "steps": [
+            "6 = 3 × 2.",
+            "Multiply both numerator and denominator by 2.",
+            "2/3 = 4/6."
+          ],
+          "answer": "4/6",
+          "unit": "whole",
+          "sourceClaimIds": [
+            "fractions.scale"
+          ],
+          "quantities": [
+            {
+              "id": "numerator",
+              "value": 2,
+              "unit": ""
+            },
+            {
+              "id": "denominator",
+              "value": 3,
+              "unit": ""
+            },
+            {
+              "id": "equivalentNumerator",
+              "value": 4,
+              "unit": ""
+            },
+            {
+              "id": "equivalentDenominator",
+              "value": 6,
+              "unit": ""
+            }
+          ]
+        }
+      ],
+      "beats": [
+        {
+          "beatId": "activate",
+          "objectiveIds": [
+            "P5-EF-1"
+          ],
+          "kind": "activate",
+          "durationSeconds": 360,
+          "explanation": "Recall equal parts and compare the same whole.",
+          "successCriteria": [
+            "Identifies matching shaded quantities."
+          ],
+          "expectedEvidence": "Identifies matching shaded quantities.",
+          "exampleIds": [
+            "half-fourths"
+          ],
+          "definitionIds": [
+            "equivalence"
+          ],
+          "misconceptionIds": [],
+          "visual": "diagram",
+          "sourceClaimIds": [
+            "fractions.same-value"
+          ]
+        },
+        {
+          "beatId": "explain",
+          "objectiveIds": [
+            "P5-EF-1"
+          ],
+          "kind": "explain",
+          "durationSeconds": 360,
+          "explanation": "Overlay half and fourth fraction bars.",
+          "successCriteria": [
+            "Explains why 1/2 and 2/4 occupy the same amount."
+          ],
+          "expectedEvidence": "Explains why 1/2 and 2/4 occupy the same amount.",
+          "exampleIds": [
+            "half-fourths"
+          ],
+          "definitionIds": [
+            "equivalence"
+          ],
+          "misconceptionIds": [],
+          "visual": "animation",
+          "sourceClaimIds": [
+            "fractions.same-value"
+          ]
+        },
+        {
+          "beatId": "predict",
+          "objectiveIds": [
+            "P5-EF-2"
+          ],
+          "kind": "predict",
+          "durationSeconds": 360,
+          "explanation": "Predict the numerator when thirds become sixths.",
+          "successCriteria": [
+            "States that both numerator and denominator double."
+          ],
+          "expectedEvidence": "States that both numerator and denominator double.",
+          "exampleIds": [
+            "thirds-sixths"
+          ],
+          "definitionIds": [],
+          "misconceptionIds": [
+            "scale-both"
+          ],
+          "visual": "diagram",
+          "sourceClaimIds": [
+            "fractions.scale"
+          ]
+        },
+        {
+          "beatId": "practice",
+          "objectiveIds": [
+            "P5-EF-2"
+          ],
+          "kind": "practice",
+          "durationSeconds": 360,
+          "explanation": "Scale 2/3 to denominator 6.",
+          "successCriteria": [
+            "Produces 4/6 and explains multiplication by 2."
+          ],
+          "expectedEvidence": "Produces 4/6 and explains multiplication by 2.",
+          "exampleIds": [
+            "thirds-sixths"
+          ],
+          "definitionIds": [],
+          "misconceptionIds": [
+            "scale-both"
+          ],
+          "visual": "diagram",
+          "sourceClaimIds": [
+            "fractions.scale"
+          ]
+        },
+        {
+          "beatId": "exit",
+          "objectiveIds": [
+            "P5-EF-1",
+            "P5-EF-2"
+          ],
+          "kind": "exit",
+          "durationSeconds": 360,
+          "explanation": "Explain equivalence using both quantity and scaling.",
+          "successCriteria": [
+            "Connects equal shaded quantity to scaling both numbers."
+          ],
+          "expectedEvidence": "Connects equal shaded quantity to scaling both numbers.",
+          "exampleIds": [
+            "half-fourths",
+            "thirds-sixths"
+          ],
+          "definitionIds": [
+            "equivalence"
+          ],
+          "misconceptionIds": [
+            "scale-both"
+          ],
+          "visual": "none",
+          "sourceClaimIds": [
+            "fractions.same-value",
+            "fractions.scale"
+          ]
+        }
+      ],
+      "assessments": [
+        {
+          "assessmentId": "check-1",
+          "objectiveId": "P5-EF-1",
+          "beatId": "activate",
+          "phase": "diagnostic",
+          "prompt": "Is 1/2 equivalent to 2/4 for the same whole?",
+          "expectedAnswer": "Yes: 1/2 = 2/4.",
+          "rubric": [
+            {
+              "criterion": "Produces the canonical answer and explains the method.",
+              "marks": 1
+            }
+          ],
+          "misconceptionIds": [],
+          "exampleId": "half-fourths",
+          "sourceClaimIds": [
+            "fractions.same-value"
+          ]
+        },
+        {
+          "assessmentId": "check-2",
+          "objectiveId": "P5-EF-2",
+          "beatId": "practice",
+          "phase": "formative",
+          "prompt": "Write 2/3 as an equivalent fraction with denominator 6.",
+          "expectedAnswer": "4/6",
+          "rubric": [
+            {
+              "criterion": "Produces the canonical answer and explains the method.",
+              "marks": 1
+            }
+          ],
+          "misconceptionIds": [],
+          "exampleId": "thirds-sixths",
+          "sourceClaimIds": [
+            "fractions.scale"
+          ]
+        },
+        {
+          "assessmentId": "check-3",
+          "objectiveId": "P5-EF-2",
+          "beatId": "exit",
+          "phase": "exit",
+          "prompt": "Write 2/3 as an equivalent fraction with denominator 6.",
+          "expectedAnswer": "4/6",
+          "rubric": [
+            {
+              "criterion": "Produces the canonical answer and explains the method.",
+              "marks": 1
+            }
+          ],
+          "misconceptionIds": [],
+          "exampleId": "thirds-sixths",
+          "sourceClaimIds": [
+            "fractions.scale"
+          ]
+        }
+      ]
+    }
+  },
+  "secondary": {
+    "request": {
+      "scope": {
+        "country": "sg",
+        "authority": "fixture-authority",
+        "curriculumReleaseId": "fixture-release-2026",
+        "syllabusVersion": "2026",
+        "locale": "en-SG",
+        "syllabus": "secondary-science",
+        "level": "secondary",
+        "grade": "Sec2",
+        "subject": "science",
+        "topicId": "particle-model-heating"
+      },
+      "sources": [
+        {
+          "sourceId": "fixture-source",
+          "revision": "fixture-1",
+          "contentHash": "b17cd37a7549cda064a006cad66edb177c5075b7b0c1ebcd2c93c65cd35f4a8a",
+          "claims": [
+            {
+              "claimId": "particles.arrangement",
+              "text": "Particles in a solid vibrate about fixed positions."
+            },
+            {
+              "claimId": "particles.energy",
+              "text": "Heating a solid increases the energy of its particles; particles themselves do not grow."
+            }
+          ]
+        }
+      ],
+      "objectives": [
+        {
+          "objectiveId": "S2-P-1",
+          "revision": "1",
+          "contentHash": "35d67f3bef2a2d005468e35d2a3fa0b4d846540be8b0fb4c1a6af19311e26331",
+          "text": "Describe particle motion in a solid.",
+          "sourceClaimIds": [
+            "particles.arrangement"
+          ]
+        },
+        {
+          "objectiveId": "S2-P-2",
+          "revision": "1",
+          "contentHash": "fb73e878c49787537c3732d9522037783df0fe85b6e93f181a50b91c4b715ae5",
+          "text": "Explain heating of a solid using particle energy.",
+          "sourceClaimIds": [
+            "particles.energy"
+          ]
+        }
+      ],
+      "generation": {
+        "generatorVersion": "teachkit-topic-v1",
+        "model": "fixture-model",
+        "promptVersion": "blueprint-prompt.v1",
+        "validatorVersion": "lesson-blueprint.v1"
+      },
+      "parameters": {
+        "durationMinutes": 30,
+        "difficulty": "standard"
+      }
+    },
+    "content": {
+      "prerequisites": [
+        {
+          "id": "matter",
+          "text": "Matter is modelled as particles.",
+          "sourceClaimIds": [
+            "particles.arrangement"
+          ]
+        }
+      ],
+      "definitions": [
+        {
+          "id": "vibration",
+          "term": "vibration",
+          "meaning": "Motion about a fixed position.",
+          "sourceClaimIds": [
+            "particles.arrangement"
+          ]
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "particle-size",
+          "objectiveId": "S2-P-2",
+          "incorrect": "Each particle grows when heated.",
+          "correction": "Particle energy increases; individual particle size does not grow.",
+          "sourceClaimIds": [
+            "particles.energy"
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "id": "solid-motion",
+          "objectiveIds": [
+            "S2-P-1"
+          ],
+          "statement": "Describe the motion of particles in a solid.",
+          "steps": [
+            "Identify fixed positions.",
+            "Describe vibration about those positions."
+          ],
+          "answer": "They vibrate about fixed positions.",
+          "unit": "",
+          "sourceClaimIds": [
+            "particles.arrangement"
+          ],
+          "quantities": []
+        },
+        {
+          "id": "heated-solid",
+          "objectiveIds": [
+            "S2-P-2"
+          ],
+          "statement": "What changes about particles when a solid is heated before melting?",
+          "steps": [
+            "Energy is transferred to the solid.",
+            "Particles gain energy and vibrate more.",
+            "Individual particles do not grow."
+          ],
+          "answer": "Particles gain energy and vibrate more; individual particles do not grow.",
+          "unit": "",
+          "sourceClaimIds": [
+            "particles.energy"
+          ],
+          "quantities": []
+        }
+      ],
+      "beats": [
+        {
+          "beatId": "activate",
+          "objectiveIds": [
+            "S2-P-1"
+          ],
+          "kind": "activate",
+          "durationSeconds": 360,
+          "explanation": "Recall the particle model.",
+          "successCriteria": [
+            "Names vibration about fixed positions."
+          ],
+          "expectedEvidence": "Names vibration about fixed positions.",
+          "exampleIds": [
+            "solid-motion"
+          ],
+          "definitionIds": [
+            "vibration"
+          ],
+          "misconceptionIds": [],
+          "visual": "diagram",
+          "sourceClaimIds": [
+            "particles.arrangement"
+          ]
+        },
+        {
+          "beatId": "explain",
+          "objectiveIds": [
+            "S2-P-1"
+          ],
+          "kind": "explain",
+          "durationSeconds": 360,
+          "explanation": "Model motion around fixed positions.",
+          "successCriteria": [
+            "Distinguishes vibration from free translation."
+          ],
+          "expectedEvidence": "Distinguishes vibration from free translation.",
+          "exampleIds": [
+            "solid-motion"
+          ],
+          "definitionIds": [
+            "vibration"
+          ],
+          "misconceptionIds": [],
+          "visual": "animation",
+          "sourceClaimIds": [
+            "particles.arrangement"
+          ]
+        },
+        {
+          "beatId": "predict",
+          "objectiveIds": [
+            "S2-P-2"
+          ],
+          "kind": "predict",
+          "durationSeconds": 360,
+          "explanation": "Predict the effect of adding energy.",
+          "successCriteria": [
+            "Predicts stronger vibration, not larger particles."
+          ],
+          "expectedEvidence": "Predicts stronger vibration, not larger particles.",
+          "exampleIds": [
+            "heated-solid"
+          ],
+          "definitionIds": [],
+          "misconceptionIds": [
+            "particle-size"
+          ],
+          "visual": "diagram",
+          "sourceClaimIds": [
+            "particles.energy"
+          ]
+        },
+        {
+          "beatId": "practice",
+          "objectiveIds": [
+            "S2-P-2"
+          ],
+          "kind": "practice",
+          "durationSeconds": 360,
+          "explanation": "Explain a heated solid with particle energy.",
+          "successCriteria": [
+            "Links heating to greater vibration."
+          ],
+          "expectedEvidence": "Links heating to greater vibration.",
+          "exampleIds": [
+            "heated-solid"
+          ],
+          "definitionIds": [],
+          "misconceptionIds": [
+            "particle-size"
+          ],
+          "visual": "diagram",
+          "sourceClaimIds": [
+            "particles.energy"
+          ]
+        },
+        {
+          "beatId": "exit",
+          "objectiveIds": [
+            "S2-P-1",
+            "S2-P-2"
+          ],
+          "kind": "exit",
+          "durationSeconds": 360,
+          "explanation": "Compare particle motion before and after heating.",
+          "successCriteria": [
+            "Explains fixed positions and increased vibration."
+          ],
+          "expectedEvidence": "Explains fixed positions and increased vibration.",
+          "exampleIds": [
+            "solid-motion",
+            "heated-solid"
+          ],
+          "definitionIds": [
+            "vibration"
+          ],
+          "misconceptionIds": [
+            "particle-size"
+          ],
+          "visual": "none",
+          "sourceClaimIds": [
+            "particles.arrangement",
+            "particles.energy"
+          ]
+        }
+      ],
+      "assessments": [
+        {
+          "assessmentId": "check-1",
+          "objectiveId": "S2-P-1",
+          "beatId": "activate",
+          "phase": "diagnostic",
+          "prompt": "Describe the motion of particles in a solid.",
+          "expectedAnswer": "They vibrate about fixed positions.",
+          "rubric": [
+            {
+              "criterion": "Produces the canonical answer and explains the method.",
+              "marks": 1
+            }
+          ],
+          "misconceptionIds": [],
+          "exampleId": "solid-motion",
+          "sourceClaimIds": [
+            "particles.arrangement"
+          ]
+        },
+        {
+          "assessmentId": "check-2",
+          "objectiveId": "S2-P-2",
+          "beatId": "practice",
+          "phase": "formative",
+          "prompt": "What changes about particles when a solid is heated before melting?",
+          "expectedAnswer": "Particles gain energy and vibrate more; individual particles do not grow.",
+          "rubric": [
+            {
+              "criterion": "Produces the canonical answer and explains the method.",
+              "marks": 1
+            }
+          ],
+          "misconceptionIds": [],
+          "exampleId": "heated-solid",
+          "sourceClaimIds": [
+            "particles.energy"
+          ]
+        },
+        {
+          "assessmentId": "check-3",
+          "objectiveId": "S2-P-2",
+          "beatId": "exit",
+          "phase": "exit",
+          "prompt": "What changes about particles when a solid is heated before melting?",
+          "expectedAnswer": "Particles gain energy and vibrate more; individual particles do not grow.",
+          "rubric": [
+            {
+              "criterion": "Produces the canonical answer and explains the method.",
+              "marks": 1
+            }
+          ],
+          "misconceptionIds": [],
+          "exampleId": "heated-solid",
+          "sourceClaimIds": [
+            "particles.energy"
+          ]
+        }
+      ]
+    }
+  },
+  "jc": {
+    "request": {
+      "scope": {
+        "country": "sg",
+        "authority": "fixture-authority",
+        "curriculumReleaseId": "fixture-release-2026",
+        "syllabusVersion": "2026",
+        "locale": "en-SG",
+        "syllabus": "jc-h2-mathematics",
+        "level": "jc",
+        "grade": "JC1",
+        "subject": "mathematics",
+        "topicId": "differentiation-stationary-points"
+      },
+      "sources": [
+        {
+          "sourceId": "fixture-source",
+          "revision": "fixture-1",
+          "contentHash": "6040c297e9008ce400a7eae620451d5a0776d5963d31895c6a357706b40ee85b",
+          "claims": [
+            {
+              "claimId": "diff.power",
+              "text": "The derivative of x² is 2x."
+            },
+            {
+              "claimId": "diff.stationary",
+              "text": "At a stationary point of a differentiable function the first derivative is zero."
+            }
+          ]
+        }
+      ],
+      "objectives": [
+        {
+          "objectiveId": "JC-D-1",
+          "revision": "1",
+          "contentHash": "0a8cda5d5af86429204208fbb09fcf3fb49f1e6af114d5e8d4acbf41731c4e38",
+          "text": "Differentiate a quadratic polynomial.",
+          "sourceClaimIds": [
+            "diff.power"
+          ]
+        },
+        {
+          "objectiveId": "JC-D-2",
+          "revision": "1",
+          "contentHash": "0c0eaca824692fac35498ca848c4a6344eb653acec5b6d51b462ec41e3e3b796",
+          "text": "Locate a stationary point by solving the first derivative equal to zero.",
+          "sourceClaimIds": [
+            "diff.stationary",
+            "diff.power"
+          ]
+        }
+      ],
+      "generation": {
+        "generatorVersion": "teachkit-topic-v1",
+        "model": "fixture-model",
+        "promptVersion": "blueprint-prompt.v1",
+        "validatorVersion": "lesson-blueprint.v1"
+      },
+      "parameters": {
+        "durationMinutes": 30,
+        "difficulty": "standard"
+      }
+    },
+    "content": {
+      "prerequisites": [
+        {
+          "id": "polynomials",
+          "text": "Simplify and solve linear equations.",
+          "sourceClaimIds": [
+            "diff.stationary"
+          ]
+        }
+      ],
+      "definitions": [
+        {
+          "id": "stationary",
+          "term": "stationary point",
+          "meaning": "A point where a differentiable function has zero first derivative.",
+          "sourceClaimIds": [
+            "diff.stationary"
+          ]
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "function-zero",
+          "objectiveId": "JC-D-2",
+          "incorrect": "A stationary point always has function value zero.",
+          "correction": "The derivative is zero; the function value need not be zero.",
+          "sourceClaimIds": [
+            "diff.stationary"
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "id": "quadratic-derivative",
+          "objectiveIds": [
+            "JC-D-1"
+          ],
+          "statement": "Differentiate y = x² − 4x.",
+          "steps": [
+            "Differentiate x² to 2x.",
+            "Differentiate −4x to −4."
+          ],
+          "answer": "dy/dx = 2x − 4",
+          "unit": "",
+          "sourceClaimIds": [
+            "diff.power"
+          ],
+          "quantities": []
+        },
+        {
+          "id": "quadratic-stationary",
+          "objectiveIds": [
+            "JC-D-2"
+          ],
+          "statement": "Find the stationary point of y = x² − 4x.",
+          "steps": [
+            "Set 2x − 4 = 0.",
+            "Solve x = 2.",
+            "Substitute into y to obtain −4."
+          ],
+          "answer": "(2, −4)",
+          "unit": "",
+          "sourceClaimIds": [
+            "diff.stationary",
+            "diff.power"
+          ],
+          "quantities": []
+        }
+      ],
+      "beats": [
+        {
+          "beatId": "activate",
+          "objectiveIds": [
+            "JC-D-1"
+          ],
+          "kind": "activate",
+          "durationSeconds": 360,
+          "explanation": "Recall the derivative of x².",
+          "successCriteria": [
+            "Differentiates the quadratic term."
+          ],
+          "expectedEvidence": "Differentiates the quadratic term.",
+          "exampleIds": [
+            "quadratic-derivative"
+          ],
+          "definitionIds": [],
+          "misconceptionIds": [],
+          "visual": "none",
+          "sourceClaimIds": [
+            "diff.power"
+          ]
+        },
+        {
+          "beatId": "explain",
+          "objectiveIds": [
+            "JC-D-1"
+          ],
+          "kind": "explain",
+          "durationSeconds": 360,
+          "explanation": "Differentiate each polynomial term.",
+          "successCriteria": [
+            "Obtains 2x − 4."
+          ],
+          "expectedEvidence": "Obtains 2x − 4.",
+          "exampleIds": [
+            "quadratic-derivative"
+          ],
+          "definitionIds": [],
+          "misconceptionIds": [],
+          "visual": "diagram",
+          "sourceClaimIds": [
+            "diff.power"
+          ]
+        },
+        {
+          "beatId": "predict",
+          "objectiveIds": [
+            "JC-D-2"
+          ],
+          "kind": "predict",
+          "durationSeconds": 360,
+          "explanation": "Predict the slope at a turning point.",
+          "successCriteria": [
+            "Sets the derivative equal to zero."
+          ],
+          "expectedEvidence": "Sets the derivative equal to zero.",
+          "exampleIds": [
+            "quadratic-stationary"
+          ],
+          "definitionIds": [
+            "stationary"
+          ],
+          "misconceptionIds": [
+            "function-zero"
+          ],
+          "visual": "diagram",
+          "sourceClaimIds": [
+            "diff.stationary"
+          ]
+        },
+        {
+          "beatId": "practice",
+          "objectiveIds": [
+            "JC-D-2"
+          ],
+          "kind": "practice",
+          "durationSeconds": 360,
+          "explanation": "Solve and substitute for stationary coordinates.",
+          "successCriteria": [
+            "Obtains x = 2 and y = −4."
+          ],
+          "expectedEvidence": "Obtains x = 2 and y = −4.",
+          "exampleIds": [
+            "quadratic-stationary"
+          ],
+          "definitionIds": [
+            "stationary"
+          ],
+          "misconceptionIds": [
+            "function-zero"
+          ],
+          "visual": "diagram",
+          "sourceClaimIds": [
+            "diff.stationary",
+            "diff.power"
+          ]
+        },
+        {
+          "beatId": "exit",
+          "objectiveIds": [
+            "JC-D-1",
+            "JC-D-2"
+          ],
+          "kind": "exit",
+          "durationSeconds": 360,
+          "explanation": "Explain why the stationary point need not lie on the x-axis.",
+          "successCriteria": [
+            "Distinguishes zero derivative from zero function value."
+          ],
+          "expectedEvidence": "Distinguishes zero derivative from zero function value.",
+          "exampleIds": [
+            "quadratic-derivative",
+            "quadratic-stationary"
+          ],
+          "definitionIds": [
+            "stationary"
+          ],
+          "misconceptionIds": [
+            "function-zero"
+          ],
+          "visual": "none",
+          "sourceClaimIds": [
+            "diff.stationary",
+            "diff.power"
+          ]
+        }
+      ],
+      "assessments": [
+        {
+          "assessmentId": "check-1",
+          "objectiveId": "JC-D-1",
+          "beatId": "activate",
+          "phase": "diagnostic",
+          "prompt": "Differentiate y = x² − 4x.",
+          "expectedAnswer": "dy/dx = 2x − 4",
+          "rubric": [
+            {
+              "criterion": "Produces the canonical answer and explains the method.",
+              "marks": 1
+            }
+          ],
+          "misconceptionIds": [],
+          "exampleId": "quadratic-derivative",
+          "sourceClaimIds": [
+            "diff.power"
+          ]
+        },
+        {
+          "assessmentId": "check-2",
+          "objectiveId": "JC-D-2",
+          "beatId": "practice",
+          "phase": "formative",
+          "prompt": "Find the stationary point of y = x² − 4x.",
+          "expectedAnswer": "(2, −4)",
+          "rubric": [
+            {
+              "criterion": "Produces the canonical answer and explains the method.",
+              "marks": 1
+            }
+          ],
+          "misconceptionIds": [],
+          "exampleId": "quadratic-stationary",
+          "sourceClaimIds": [
+            "diff.stationary",
+            "diff.power"
+          ]
+        },
+        {
+          "assessmentId": "check-3",
+          "objectiveId": "JC-D-2",
+          "beatId": "exit",
+          "phase": "exit",
+          "prompt": "Find the stationary point of y = x² − 4x.",
+          "expectedAnswer": "(2, −4)",
+          "rubric": [
+            {
+              "criterion": "Produces the canonical answer and explains the method.",
+              "marks": 1
+            }
+          ],
+          "misconceptionIds": [],
+          "exampleId": "quadratic-stationary",
+          "sourceClaimIds": [
+            "diff.stationary",
+            "diff.power"
+          ]
+        }
+      ]
+    }
+  }
+}
