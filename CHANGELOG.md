@@ -10,6 +10,10 @@ version section when the release ships.
 
 ## [Unreleased]
 
+- Five additional reactive instructional models, expanding the validated registry to eight
+  syllabus topic exemplars across Primary, Secondary and JC; curriculum checks and
+  capability matrix/documented coverage gaps (#803).
+
 - Immutable approved learning assets keyed by syllabus path, content SHA-256, atomic
   revision selection and rollback; durable filesystem adapter and integrated
   review-to-store-to-tutor service (#802).
