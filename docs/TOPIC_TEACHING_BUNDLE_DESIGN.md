@@ -1,13 +1,14 @@
 # Topic-level teaching bundle: beta.2 baseline and next implementation
 
-Status: **design proposal, not an implemented beta.2 API** (2026-11-07).
-Update (2026-11-07): slice 1 below (LessonBlueprint) has shipped on main after
-beta.2 as `lesson-blueprint.v1` (PR #1643, issue #1640); slice 2 (coherence &
-capability) has shipped as `topic-bundle.v1` validation (PR #1644, issue
-#1641); slice 3 (unified API) has shipped as `@jjfwang/teachkit/topic-bundle`
-(`generator/topic-bundle.js`, issue #1642, open for review, not merged) — see
-"Shipped: LessonBlueprint (slice 1)" and `docs/TOPIC_BUNDLE.md`. Slice 4
-(Aceceed integration) remains a separate-repo proposal.
+**Status (2026-11-08):** The topic-first API and validators are **shipped in
+Teachkit v0.2.0**. This document retains the beta.2-era motivation and design
+history; the implemented API authority is [TOPIC_BUNDLE.md](TOPIC_BUNDLE.md)
+and [generator/topic-bundle.d.ts](../generator/topic-bundle.d.ts).
+LessonBlueprint #1640, cross-material validation #1641 and topic API #1642
+are closed following merged PRs #1643–#1645.
+**Aceceed integration is separate work**: [AC #1810–#1814](https://github.com/jjfwang/ac/issues/1812)
+and [Teachkit #1648](https://github.com/jjfwang/teachkit/issues/1648).
+Do not interpret this historical design as a requirement for S3 or RDS.
 Related: #743 (teaching-materials umbrella), #1204 (trust/lesson-plan/metadata), and [interactive teaching roadmap](INTERACTIVE_TEACHING_ROADMAP.md).
 
 ## Goal
@@ -33,7 +34,7 @@ must share this already-approved topic bundle, not fork new full packs.
 
 Aceceed's current lesson-pack scope/build spec is instead keyed by
 `objectiveId`. This is a **real migration gap**: add a topic identity and
-an objective-to-topic index on the existing Core catalog/review/S3 owner,
+an objective-to-topic index on the existing Core curriculum/review owner,
 preserve the existing six-file objective pack API as a legacy compatibility
 path, and migrate gradually with tests. Do not rewrite approved object keys
 or start a second catalog.
@@ -47,106 +48,89 @@ topics do not automatically become an approved syllabus asset. New approved
 bundle revisions are adopted by future sessions, not hot-swapped into the
 current voice/slide timeline.
 
-## Cloud-authoritative storage and explicit version management
+## Current integration/storage decision: storage-neutral generator + host JSONB
 
-**Requirement:** No generated topic kit is durably saved to the developer's
-local filesystem. The local Teachkit runner may compose bounded JSON in memory,
-but must use a pluggable store to upload artifacts into private **AWS S3** as
-they are produced, with a verified manifest before any publish. A failed upload
-is an unfinished/retryable build, never a local canonical release. Test fixtures
-can still reside in the source tree; they are not published teaching content.
+**Canonical as of 2026-11-08. Supersedes the original S3/RDS-first proposals
+in the pre-v0.2.0 design.** The released `generateTopicTeachingBundle` API is
+storage neutral: it returns a deeply frozen `TopicTeachingBundle` in memory.
+Teachkit does not create mandatory files, issue S3 operations, connect to a
+database or approve its own content. The caller supplies `deps.callChat`.
+The existing `generateLessonPack`, browser player and approved-asset utilities
+are separate legacy/specialized APIs and remain backward compatible.
 
-**Ownership:** Teachkit defines the versioned JSON schema, blueprint,
-validation and pluggable `ArtifactSink` / `ArtifactSource` interfaces. It
-must not own AC's production database. **Aceceed Core** owns the canonical topic
-registry, approval/version state machine, identity, access control, managed
-PostgreSQL records and production S3 adapter. Prefer **RDS PostgreSQL**, extending
-the existing Prisma/TeachingArtifact/build-job/review owners; do not introduce
-DynamoDB or a second catalog. Local Core services may publish to a private
-development AWS S3 bucket using short-lived IAM credentials; for an authoritative
-managed catalog they must use a private development RDS via SSM tunnel/VPN or an
-authenticated Core publishing endpoint. Do not open PostgreSQL on public 5432.
-Keep dev and production accounts/buckets/IAM/publish authority isolated.
+**For Aceceed's *new* topic kits**, the sole authoritative teaching-JSON store
+is **Aceceed Core PostgreSQL JSONB** under [AC #1812](https://github.com/jjfwang/ac/issues/1812).
+Aceceed owns validated conversion from Teachkit bundle to a versioned declarative
+scene/interaction/animation schema, immutable full-document content hashes,
+independent review and publication transactions, rollback, learner authorization,
+answer-key redaction, and Live Tutor revision pinning. Codex / Claude Code CLI
+is injected as the caller's background model runner, not part of Teachkit.
+Development may use local PostgreSQL. Remote RDS is **not** a prerequisite.
 
-### Four independent version dimensions
+**No S3 dependency for new Topic Kit JSON**: new structured content, slides,
+supported animation declarations and assessment JSON are stored in Postgres.
+Existing S3-backed Aceceed topic revisions remain **read-only legacy
+compatibility** during a measured migration; unrelated paper/image uploads and
+large optional binaries can still use object storage. Do not delete existing
+S3 blobs or migrations. Do not open a second content registry.
 
-- **Curriculum identity:** country, authority, syllabus release/version,
-  precise grade, subject, canonical `topicId`, locale, and complete approved
-  objective set (with source hashes). Distinct scope means distinct catalog
-  identity, not a text-slug match.
-- **Bundle content revision:** monotonic or opaque immutable `revision`,
-  exact manifest hash, component keys/hashes, frozen blueprint and objective IDs.
-- **Schema version:** `topic-bundle.v1`, upgraded through explicit migrations.
-- **Generator provenance:** Teachkit package version, model and prompt/validator
-  revisions, sources, review receipts, content build specification.
+### Responsibilities and invariant boundaries
 
-S3 bucket Versioning is **recovery**, not product-level teaching revisioning:
-old and new approved teaching bundles have different immutable keys and DB
-revisions even when the bucket is not versioned. S3 Versioning should be
-enabled as defense in depth; optional Object Lock Governance Mode needs a
-specific retention/operational review rather than unbounded default retention.
+| Concern | Teachkit v0.2.0 | Aceceed |
+| --- | --- | --- |
+| Approved curriculum inputs | consumes scoped objectives, source claims | authenticates/reviews the curriculum and selects the exact topic |
+| Bundle generation | author/freeze blueprint, plan, slides, visual, assessments; validate coherence | run offline jobs/CLI, idempotency, retries, constraints |
+| Storage | **none required**; in-memory returned JSON | schema-validated immutable **Postgres JSONB** revisions |
+| Review and publication | draft metadata only, never auto-publish | independent content-hash review and atomic active revision |
+| Scene/animation rendering | supplies optional visual/animation declarations with capability fallback | validate/convert to allowlisted Expo React Native components |
+| Learner delivery | no student data in generator | pin approved revision, strip answer keys/rubrics, drive tutor scene events |
+| Legacy support | preserve old generation exports | preserve S3 read-only path until verified migration |
 
-Suggested storage shape:
+The **generator bundle schema is not the frontend rendering schema**:
+`slides` and `animation` are currently typed `unknown` and
+`visual.declarations` is an array of records in the v0.2.0 public typings.
+Neither coherence validation nor `visual.kind` proves these values are
+renderable on Expo/iOS/Android. Define a versioned Aceceed rendering
+projection; reject unsupported declarations or use an explicit diagram/
+slide-first fallback. Never execute arbitrary generated JavaScript/HTML
+as part of rendering. This compatibility boundary is tracked by
+[Teachkit #1648](https://github.com/jjfwang/teachkit/issues/1648)
+and [AC #1811](https://github.com/jjfwang/ac/issues/1811).
 
-```text
-s3://<private-catalog-bucket>/
-  topic-kits/v1/<scope>/<topicId>/
-    revisions/r0001/
-      manifest-<sha256>.json
-      blueprint-<sha256>.json
-      lesson-plan-<sha256>.json
-      slides-<sha256>.json
-      animation-<sha256>.json
-      assessment-<sha256>.json
-      assets/<assetId>-<sha256>.<ext>
-    revisions/r0002/
-      ...
-```
+### Independent version dimensions
 
-This is an illustrative logical convention; the Core-owned `manifest` and DB
-registry define the authoritative lookup. Do not create an overwritable S3
-`latest` pointer as the sole source of truth, and keep answer keys private.
+- **Curriculum scope**: exact country, authority, release, syllabus, grade,
+  subject, topic, locale, full approved objective IDs and source hashes.
+- **Immutable content revision**: canonical JSONB value and SHA-256, one
+  approved content hash per revision.
+- **Schema revision**: Teachkit generator bundle schema and Aceceed renderer
+  schema evolve independently; conversion must validate both.
+- **Generator provenance**: Teachkit version, CLI/model/prompt/validator
+  versions and authorization evidence, recorded in Core.
+- **Session revision**: exact approved content hash pinned at admission;
+  publication/rollback influences future sessions, never hot-swaps a session.
 
-### Safe publish and rollback
+### Delivery and acceptance
 
-1. Core resolves reviewed topic and claims a durable build in PostgreSQL,
-   idempotent by exact scope + source revision + build specification.
-2. Generator uploads content-addressed objects directly to S3 private draft
-   staging with conditional `If-None-Match: *`; retries re-verify exact SHA-256.
-3. Once all material refs exist, verify hashes, cross-material objective/beat
-   links, current reviewed curriculum/source and capability, then freeze the
-   manifest and independent approval receipt.
-4. Publish by **one PostgreSQL transaction** setting the exact approved
-   revision ACTIVE/current, retaining superseded revisions and history.
-   S3 and PostgreSQL are not atomic together: a recoverable draft/staged/
-   published state machine must handle orphan uploads and interrupted workers.
-5. AC session admission pins artifact id, revision and content hash, verifies
-   publication and material integrity; no live-session hot swap. Rollback
-   changes the current pointer for **future** sessions after current source and
-   review eligibility checks; it does not overwrite old bytes.
+1. Core resolves and authorizes a complete approved topic and schedules
+   one bounded background build for the canonical scope.
+2. Core invokes the released Teachkit API through caller-supplied CLI model
+   adapter and obtains an in-memory bundle.
+3. Core re-verifies the bundle, projects only supported visual/animation
+   structures into its safe rendering protocol, and inserts the complete
+   immutable validated JSON revision **transactionally into PostgreSQL**.
+4. Admin previews actual renderable content, reviews exact content hash
+   independently and publishes a revision transactionally.
+5. Live Tutor retrieves and pins that revision. The client sees no answers,
+   private rubrics, model prompts or unapproved content.
+6. Run a P5-equivalent-fractions `core` and `extended` fixture through
+   this boundary with negative tests for dangling references, unknown
+   component types, mismatched scope and answer-key exposure. This adapter
+   acceptance is **not yet proven** by Teachkit's existing mock-LLM tests.
 
-Retain complete published revisions to support reproducible past-session
-replay and rollback. Abandoned, never-published drafts may be garbage
-collected after a reviewed interval. Use S3 inventory/lifecycle and RDS
-backups/PITR plus periodic restore drills; maintain DB-to-S3 referential
-integrity audits.
-
-### Deployment trajectory
-
-- **Local generation now:** local service processes; remote dev S3 as the
-  only authoritative material store and private development RDS/managed
-  registry as the version authority; short-lived development credentials.
-- **Public beta:** separate production RDS + private S3, managed auth/secrets,
-  migrations, approved revision promotion and a small measured application host.
-- **Scale:** move Core/AI/reviewer compute to managed containers and Redis to
-  managed service as necessary. Content revision hashes, PostgreSQL logical
-  identities and S3 file formats remain unchanged.
-
-Implement this as an additive schema/adapter change without altering the
-already-shipped `0.2.0-beta.2` behavior. Legacy AC objective-scoped packs
-remain valid during migration to topic-scoped bundles. The new topic library
-is **curriculum content**, not student records or chat history.
-
+No change to the Teachkit generation API should be made merely to support a
+database choice; propose a small additive field/export only if conformance
+testing reveals a concrete missing reference.
 
 ## What beta.2 already provides
 
@@ -400,13 +384,16 @@ Acceptance evidence:
    not publish. Keep beta.2 public subpaths backward compatible.
 3. **Unified API (P1).** `generateTopicTeachingBundle` behind a new
    `./topic-bundle` export, author stages and targeted repair, core/extended
-   modes, stable manifest and per-stage observability. SHIPPED on a branch
-   for issue #1642 (open for review, not merged); see
+   modes, stable manifest and per-stage observability. MERGED in PR #1645,
+   shipped in v0.2.0 (issue #1642 closed); see
    `docs/TOPIC_BUNDLE.md`.
-4. **Aceceed integration (P1, separate repo).** Pin a verified npm beta
-   version, regenerate `pnpm-lock.yaml`, test six-material compatibility,
-   remove obsolete animath only after usage audit, and connect objective
-   evidence to Aceceed's tutoring loop. No direct live-session model call.
+4. **Aceceed integration (P1, separate repo).** Pin a verified v0.2.0
+   release commit, test source-claim mapping and legacy compatibility,
+   validate/declaratively project teaching JSON into Postgres JSONB,
+   connect objective evidence to Live Tutor without live generation, and
+   keep historic S3 reads during migration. Follow AC #1810–#1814.
+   No forced npm registry release, new S3 Topic Kit writes, or live-session
+   model call.
 
 **Non-goals for this slice:** inventing a universal simulator, replacing
 Aceceed's learner model, broad syllabus gold backfill, or breaking the current
