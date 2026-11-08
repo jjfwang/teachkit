@@ -235,6 +235,7 @@ and the exporter never renders it).
 | samples per `function_plot` | 2..200 (default 100) |
 | points per `polyline_trace` | 2..200 |
 | coordinate / coefficient / domain / range magnitude | finite, within +/-1,000,000 |
+| ticks per `axes` / `coordinate_system` axis | at most 200 (implied count from range / `tickStep`; default step implies 5) |
 | viewport `w` / `h` | positive, up to 1,000,000 |
 | `draw` / `move_along_path` `dur_ms` | 100..12000 |
 | `fromProgress` / `toProgress` | 0..1, `fromProgress` <= `toProgress` |

@@ -25,7 +25,7 @@ version section when the release ships.
   byte-identical. 0.1 specs are unchanged: a 0.1 spec using any 0.2-only
   shape or verb is rejected. New fixture
   `tests/fixtures/animath-0.2-quadratic.json` (quadratic y = x^2 with a
-  draw reveal and a marker travelling along it) and 59 tests in
+  draw reveal and a marker travelling along it) and 65 tests in
   `tests/animath-0.2.test.js` cover the validator matrix, the path helpers,
   export-frames determinism, and the live player.
 

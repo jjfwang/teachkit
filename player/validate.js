@@ -31,10 +31,11 @@
   // Shapes a draw / move_along_path path may name.
   var PATH_KINDS = ['function_plot', 'polyline_trace'];
   // Safety bounds (SPEC.md "Animation spec v0.2"): degree, samples,
-  // points, coordinate magnitude, step duration.
+  // points, coordinate magnitude, step duration, ticks per axis.
   var MAX_POLY_DEGREE = 5;
   var MAX_SAMPLES = 200;
   var MAX_TRACE_POINTS = 200;
+  var MAX_TICKS = 200;
   var MAX_COORD = 1000000;
   var MIN_STEP_DUR_MS = 100;
   var MAX_STEP_DUR_MS = 12000;
@@ -162,6 +163,30 @@
         checkRange(shape, 'yRange', p + '.yRange');
         if (shape.tickStep !== undefined && (!isNum(shape.tickStep) || shape.tickStep <= 0)) {
           errors.push(p + '.tickStep: must be a positive number when present');
+        }
+        // Tick-count bound (SPEC.md "Animation spec v0.2"): the player
+        // builds one tick mark per step, so a wide range with a tiny
+        // tickStep would hang the player and export-frames. The implied
+        // count is floor(span/step) + 1; the +1e-9 mirrors the player's
+        // own max + 1e-9 loop tolerance, so a boundary float like
+        // 19.9/0.1 = 198.99999999999997 still counts its 200th tick.
+        // The default step (span/5) implies 5 ticks, so the check only
+        // binds when tickStep is given. It runs only when tickStep and
+        // the range are both valid, so a malformed field reports only
+        // its own error.
+        if (isNum(shape.tickStep) && shape.tickStep > 0) {
+          ['xRange', 'yRange'].forEach(function (field) {
+            var r = shape[field];
+            if (r && typeof r === 'object' && !Array.isArray(r) &&
+                isNum(r.min) && isNum(r.max) &&
+                Math.abs(r.min) <= MAX_COORD && Math.abs(r.max) <= MAX_COORD &&
+                r.min < r.max) {
+              var count = Math.floor((r.max - r.min) / shape.tickStep + 1e-9) + 1;
+              if (count > MAX_TICKS) {
+                errors.push(p + '.' + field + '/tickStep: implies more than ' + MAX_TICKS + ' ticks (max ' + MAX_TICKS + ' per axis)');
+              }
+            }
+          });
         }
         ['xLabel', 'yLabel'].forEach(function (f) {
           if (shape[f] !== undefined && typeof shape[f] !== 'string') errors.push(p + '.' + f + ': must be a string when present');

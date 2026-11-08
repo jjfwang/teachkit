@@ -81,6 +81,11 @@ var BAD_CASES = [
   ['axes x out of bound', function (s) { s.scenes[0].steps[0].shape.x = 2000000; }, /\.x: must be within/],
   ['axes width zero', function (s) { s.scenes[0].steps[0].shape.w = 0; }, /\.w: required positive number/],
   ['axes tickStep zero', function (s) { s.scenes[0].steps[0].shape.tickStep = 0; }, /tickStep: must be a positive number/],
+  ['axes tickStep implies too many x ticks', function (s) { s.scenes[0].steps[0].shape.tickStep = 0.000001; }, /xRange\/tickStep: implies more than 200 ticks/],
+  ['axes tickStep implies too many y ticks', function (s) {
+    s.scenes[0].steps[0].shape.xRange = { min: 0, max: 1 };
+    s.scenes[0].steps[0].shape.tickStep = 0.01;
+  }, /yRange\/tickStep: implies more than 200 ticks/],
   ['axes xLabel non-string', function (s) { s.scenes[0].steps[0].shape.xLabel = 5; }, /xLabel: must be a string/],
   ['answer-bearing field on function_plot', function (s) { s.scenes[0].steps[1].shape.answer = '9'; }, /answer-bearing fields are not allowed/],
   ['draw targeting unshown shape', function (s) { s.scenes[0].steps[3].target = 'nope'; }, /must be shown earlier in the same scene/],
@@ -112,6 +117,28 @@ BAD_CASES.forEach(function (entry) {
     assert.ok(errs.some(function (e) { return entry[2].test(e); }),
       'expected /' + entry[2].source + '/, got: ' + errs.join('; '));
   });
+});
+
+test('animath 0.2 validator: exactly 200 ticks per axis passes', () => {
+  var spec = loadFixture();
+  spec.scenes[0].steps[0].shape.xRange = { min: 0, max: 199 };
+  spec.scenes[0].steps[0].shape.tickStep = 1;
+  assert.deepEqual(validate.validateSpec(spec), [], 'range 0..199 with tickStep 1 is 200 ticks, the bound itself');
+});
+
+test('animath 0.2 validator: 201 ticks per axis fails', () => {
+  var spec = loadFixture();
+  spec.scenes[0].steps[0].shape.xRange = { min: 0, max: 200 };
+  spec.scenes[0].steps[0].shape.tickStep = 1;
+  var errs = validate.validateSpec(spec);
+  assert.ok(errs.some(function (e) { return /xRange\/tickStep: implies more than 200 ticks \(max 200 per axis\)/.test(e); }),
+    'range 0..200 with tickStep 1 is 201 ticks, got: ' + errs.join('; '));
+});
+
+test('animath 0.2 validator: axes without tickStep uses the default step', () => {
+  var spec = loadFixture();
+  delete spec.scenes[0].steps[0].shape.tickStep;
+  assert.deepEqual(validate.validateSpec(spec), [], 'default step (span/5) implies 5 ticks, always within the bound');
 });
 
 test('animath 0.2 validator rejects polyline_trace point problems', () => {
