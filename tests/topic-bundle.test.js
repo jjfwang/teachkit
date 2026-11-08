@@ -4,6 +4,18 @@ const fs = require('node:fs');
 const path = require('node:path');
 const { test } = require('node:test');
 const topicBundle = require('../generator/topic-bundle.js');
+// The per-material system templates the topic path must reuse verbatim
+// (issue #1650): the test below asserts each one is appended to its
+// stage prompt, so a mock that ignores the prompt cannot hide the gap.
+const stageTemplates = {
+  lessonPlan: require('../generator/build_lesson_plan_prompt.js').LESSON_PLAN_SYSTEM_TEMPLATE,
+  slides: require('../generator/build_slides_prompt.js').SLIDE_SYSTEM_TEMPLATE,
+  diagnostics: require('../generator/build_diagnostics_prompt.js').DIAGNOSTICS_SYSTEM_TEMPLATE,
+  worksheet: require('../generator/build_worksheet_prompt.js').WORKSHEET_SYSTEM_TEMPLATE,
+  exitTicket: require('../generator/build_exit_ticket_prompt.js').EXIT_TICKET_SYSTEM_TEMPLATE,
+  quizBank: require('../generator/build_quiz_bank_prompt.js').QUIZ_BANK_SYSTEM_TEMPLATE,
+  animation: require('../generator/build_prompt.js').SYSTEM_TEMPLATE
+};
 const fixtures = JSON.parse(fs.readFileSync(path.join(__dirname, 'fixtures', 'topic-blueprints.json'), 'utf8'));
 
 function clone(value) { return JSON.parse(JSON.stringify(value)); }
@@ -491,4 +503,62 @@ test('topic-bundle: bulk isolates a topic whose generation fails', async () => {
   assert.equal(results[0].status, 'failed');
   assert.match(results[0].error, /cross-material validation/);
   assert.ok(results[0].problems.some((p) => p.code === 'answer-mismatch'));
+});
+
+test('topic-bundle: stage prompts carry the fields each validator requires', async () => {
+  // Captures the prompt strings passed to callChat and asserts on them:
+  // a mock that ignores the prompt cannot catch a missing field, so the
+  // assertions below are what fail if a stage prompt omits anything its
+  // validator requires (issue #1650).
+  const request = requestFor('p5');
+  const mock = makeMock('p5');
+  const seen = {};
+  const callChat = async (system, userJson) => {
+    const user = JSON.parse(userJson);
+    seen[user.stage] = { system, user, raw: system + '\n' + userJson };
+    return mock.callChat(system, userJson);
+  };
+  const bundle = await topicBundle.generateTopicTeachingBundle(
+    requestFor('p5', { mode: 'extended' }), { callChat });
+  // Blueprint stage: the request's objectives, source claims and
+  // parameters, the BlueprintContent contract and the duration and
+  // coverage rules the validator enforces.
+  const blueprint = seen.blueprint;
+  assert.ok(blueprint, 'blueprint stage never called callChat');
+  assert.deepEqual(blueprint.user.objectives, request.objectives);
+  assert.deepEqual(blueprint.user.sources, request.sources);
+  assert.equal(blueprint.user.parameters.durationMinutes, 30);
+  for (const objective of request.objectives) {
+    assert.ok(blueprint.raw.includes(objective.objectiveId), 'blueprint prompt omits objective ' + objective.objectiveId);
+  }
+  const claimIds = request.sources.flatMap((source) => source.claims.map((claim) => claim.claimId));
+  assert.ok(claimIds.length > 0);
+  for (const claimId of claimIds) {
+    assert.ok(blueprint.raw.includes(claimId), 'blueprint prompt omits claim ' + claimId);
+  }
+  assert.ok(blueprint.system.includes('BlueprintContent'), 'blueprint prompt omits the BlueprintContent contract');
+  assert.ok(blueprint.system.includes('1800'), 'blueprint prompt omits the 30-minute duration in seconds');
+  assert.ok(blueprint.system.includes('durationSeconds'), 'blueprint prompt omits the beat duration field');
+  assert.ok(blueprint.system.includes('sourceClaimIds'), 'blueprint prompt omits the source-claim rule');
+  assert.ok(blueprint.system.includes('must be taught'), 'blueprint prompt omits the taught-coverage rule');
+  assert.ok(blueprint.system.includes('must be assessed'), 'blueprint prompt omits the assessed-coverage rule');
+  // Material stages: the matching build_*_prompt system template is
+  // appended verbatim, with the frozen blueprint as the source of facts.
+  for (const stage of Object.keys(stageTemplates)) {
+    assert.ok(seen[stage], 'missing prompt for stage ' + stage);
+    assert.ok(seen[stage].system.includes(stageTemplates[stage]),
+      stage + ' prompt omits its build_*_prompt system template');
+  }
+  // Visuals stage: the VisualDeclaration contract, the slide count and
+  // the authored animation scene ids.
+  const visuals = seen.visuals;
+  assert.ok(visuals, 'visuals stage never called callChat');
+  assert.ok(visuals.system.includes('VisualDeclaration'), 'visuals prompt omits the VisualDeclaration contract');
+  assert.ok(visuals.system.includes('slideIndex'), 'visuals prompt omits the slide-first slideIndex rule');
+  assert.ok(visuals.system.includes('fallback'), 'visuals prompt omits the fallback rule');
+  assert.equal(visuals.user.slideCount, 6);
+  assert.deepEqual(visuals.user.animationSceneIds, ['fraction-bar-scene']);
+  // The enriched prompts still produce a bundle that verifies end to end.
+  const problems = await topicBundle.verifyTopicTeachingBundle(bundle, requestFor('p5', { mode: 'extended' }));
+  assert.deepEqual(problems, []);
 });

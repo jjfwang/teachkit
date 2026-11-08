@@ -10,6 +10,16 @@ version section when the release ships.
 
 ## [Unreleased]
 
+- Fix topic-bundle stage prompts omitting what a real model needs to pass
+  validation (#1650): the blueprint stage now sends the request's
+  objectives, source claims and parameters plus the `BlueprintContent`
+  contract and the duration/coverage rules; each material stage appends
+  its matching `build_*_prompt` system template verbatim; the visuals
+  stage sends the `VisualDeclaration` contract, the slide count and the
+  authored animation scene ids. No public API or validator change. New
+  tests capture the prompt strings passed to `callChat` and fail if any
+  stage prompt omits a field its validator requires.
+
 ## [0.2.0] - 2026-11-08
 
 - Promote the `0.2.0` line to a stable release, with the same functional
