@@ -16,6 +16,14 @@
  * - No S3, database or filesystem-as-library: the bundle is returned
  *   in memory; the host owns storage, approval and publication. No
  *   student data is accepted anywhere in the request path.
+ * - Stage prompts carry what each stage's validator requires (#1650):
+ *   the blueprint stage gets the request's objectives, source claims
+ *   and parameters plus the BlueprintContent contract and the
+ *   duration/coverage rules; each material stage appends its matching
+ *   build_*_prompt system template; the visuals stage gets the
+ *   VisualDeclaration contract, the slide count and the authored
+ *   animation scene ids. The frozen blueprint stays the only source
+ *   of facts for material stages.
  * - No slug-only reuse: the idempotency key hashes the full scope,
  *   objective/source revisions, mode and generator provenance via the
  *   blueprint identity (design gate 9). generateLessonPack and its
@@ -62,6 +70,65 @@
     ['materials.quizBank', 'quizBank'], ['visuals', 'visuals'], ['simulation', 'visuals']
   ];
   var ASSESSMENT_STAGES = ['diagnostics', 'worksheet', 'exitTicket'];
+  // Per-material output contracts, reused verbatim from the beta.2
+  // build_*_prompt system templates (issue #1650): the topic path
+  // appends the matching template to the stage system prompt instead of
+  // rewriting it. In Node the modules are required; in the browser the
+  // page must load the matching build_*_prompt.js first, otherwise the
+  // stage is prompted without its contract and the validator stays the
+  // gate. A missing template never fails generation outright.
+  function loadPromptTemplate(path, globalName, exportName) {
+    var mod = null;
+    if (typeof module !== 'undefined' && module.exports && typeof require !== 'undefined') {
+      try { mod = require(path); } catch (error) { mod = null; }
+    }
+    /* node:coverage ignore next 4 */
+    if (mod === null) {
+      var root = typeof window !== 'undefined' ? window : globalThis;
+      mod = root[globalName] || null;
+    }
+    if (mod !== null && typeof mod[exportName] === 'string') return mod[exportName];
+    /* node:coverage ignore next 1 */
+    return null;
+  }
+  var STAGE_CONTRACTS = {
+    lessonPlan: loadPromptTemplate('./build_lesson_plan_prompt.js', 'AnimathLessonPlanPrompt', 'LESSON_PLAN_SYSTEM_TEMPLATE'),
+    slides: loadPromptTemplate('./build_slides_prompt.js', 'AnimathSlidesPrompt', 'SLIDE_SYSTEM_TEMPLATE'),
+    diagnostics: loadPromptTemplate('./build_diagnostics_prompt.js', 'AnimathDiagnosticsPrompt', 'DIAGNOSTICS_SYSTEM_TEMPLATE'),
+    worksheet: loadPromptTemplate('./build_worksheet_prompt.js', 'AnimathWorksheetPrompt', 'WORKSHEET_SYSTEM_TEMPLATE'),
+    exitTicket: loadPromptTemplate('./build_exit_ticket_prompt.js', 'AnimathExitTicketPrompt', 'EXIT_TICKET_SYSTEM_TEMPLATE'),
+    quizBank: loadPromptTemplate('./build_quiz_bank_prompt.js', 'AnimathQuizBankPrompt', 'QUIZ_BANK_SYSTEM_TEMPLATE'),
+    animation: loadPromptTemplate('./build_prompt.js', 'AnimathPrompt', 'SYSTEM_TEMPLATE')
+  };
+  // BlueprintContent contract, mirroring generator/lesson-blueprint.d.ts
+  // (field names only; the validator in lesson-blueprint.js is the gate).
+  var BLUEPRINT_CONTRACT = 'BlueprintContent, return ONLY this JSON object, no other top-level fields:\n' +
+    '{\n' +
+    '  "prerequisites": [{ "id": string, "text": string, "sourceClaimIds": [claim id, ...] }],\n' +
+    '  "definitions": [{ "id": string, "term": string, "meaning": string, "sourceClaimIds": [claim id, ...] }],\n' +
+    '  "misconceptions": [{ "id": string, "objectiveId": objective id, "incorrect": string, "correction": string, "sourceClaimIds": [claim id, ...] }],\n' +
+    '  "examples": [{ "id": string, "objectiveIds": [objective id, ...], "statement": string, "steps": [string, ...],\n' +
+    '    "answer": string, "unit": string, "quantities": [{ "id": string, "value": number, "unit": string }], "sourceClaimIds": [claim id, ...] }],\n' +
+    '  "beats": [{ "beatId": string, "objectiveIds": [objective id, ...], "kind": "activate" | "explain" | "predict" | "practice" | "feedback" | "exit",\n' +
+    '    "durationSeconds": integer, "explanation": string, "successCriteria": [string, ...], "expectedEvidence": string,\n' +
+    '    "exampleIds": [example id, ...], "definitionIds": [definition id, ...], "misconceptionIds": [misconception id, ...],\n' +
+    '    "visual": "simulation" | "animation" | "diagram" | "none", "sourceClaimIds": [claim id, ...] }],\n' +
+    '  "assessments": [{ "assessmentId": string, "objectiveId": objective id, "beatId": beat id, "phase": "diagnostic" | "formative" | "exit",\n' +
+    '    "prompt": string, "expectedAnswer": string, "rubric": [{ "criterion": string, "marks": integer 1..100 }],\n' +
+    '    "misconceptionIds": [misconception id, ...], "exampleId": example id or null, "sourceClaimIds": [claim id, ...] }]\n' +
+    '}';
+  // VisualDeclaration contract, mirroring
+  // generator/cross-material-validator.d.ts (field names only; the
+  // capability resolver is the gate).
+  var VISUAL_CONTRACT = 'VisualDeclaration, return ONLY {"visuals": [...], "simulation"?: ...}:\n' +
+    'Each declaration: { "visualId": string, "beatId": beat id, "requested": "simulation" | "animation" | "diagram" | "slide-first" | "none", ... }.\n' +
+    '- Declare exactly one visual for every beat whose blueprint visual recommendation is not "none"; declare no visual for a beat that recommends "none".\n' +
+    '- simulation: include "model" (a registered model id for this topic) and "exampleId"; the bundle simulation spec, when present, must name the same model.\n' +
+    '- animation: include "sceneId", one of the animation scene ids supplied in this prompt; core mode authors no animation, so no scene ids are supplied and animation beats must fall back.\n' +
+    '- diagram: include "diagram" as a label string or a descriptor { "kind": "text" | "rect" | "circle" | "line" | "arrow" | "polygon" | "latex" | "sector", "label"?: string }.\n' +
+    '- slide-first: include "slideIndex", an integer in 0..(slideCount - 1); never reference an animation scene or a simulation model.\n' +
+    '- none: include "declaredMissing": true and a "reason" string.\n' +
+    '- When the requested capability cannot be served, declare a "fallback" of "animation", "diagram" or "slide-first" (never "simulation", never "none") that itself resolves; the fallback must differ from the requested capability.';
   function record(value) {
     return value !== null && typeof value === 'object' && !Array.isArray(value) && Object.getPrototypeOf(value) === Object.prototype;
   }
@@ -137,15 +204,43 @@
     else if (typeof input === 'number' && typeof output === 'number') into.totalTokens = (into.totalTokens || 0) + input + output;
     return into;
   }
+  // Stage prompts carry what the validator for that stage requires
+  // (issue #1650): the blueprint stage gets the normalized request's
+  // objectives, sources (claims) and parameters plus the
+  // BlueprintContent contract and the duration/coverage rules; each
+  // material stage appends its matching build_*_prompt system
+  // template; the visuals stage gets the VisualDeclaration contract,
+  // the slide count and the authored animation scene ids. The frozen
+  // blueprint stays the only source of facts for material stages.
   function stagePrompt(stage, context) {
-    return {
-      system: 'You author one teaching-bundle artifact as JSON only. Return ONLY a single JSON object, no prose, no code fences. ' +
-        'Every fact, number, objective id, beat id, example id and answer must come from the frozen blueprint context supplied; ' +
-        'never invent objectives, examples, answers or scene ids.',
-      user: { stage: stage, schemaVersion: schemaVersion, mode: context.mode, scope: context.scope,
-        blueprintIdentity: context.blueprintIdentity, blueprint: context.blueprintSummary, problems: context.problems || null,
-        previous: context.previous || null }
-    };
+    var system = 'You author one teaching-bundle artifact as JSON only. Return ONLY a single JSON object, no prose, no code fences. ' +
+      'Every fact, number, objective id, beat id, example id and answer must come from the frozen blueprint context supplied; ' +
+      'never invent objectives, examples, answers or scene ids.';
+    var user = { stage: stage, schemaVersion: schemaVersion, mode: context.mode, scope: context.scope,
+      blueprintIdentity: context.blueprintIdentity, blueprint: context.blueprintSummary, problems: context.problems || null,
+      previous: context.previous || null };
+    if (stage === 'blueprint' && record(context.request)) {
+      user.objectives = context.request.objectives;
+      user.sources = context.request.sources;
+      user.parameters = context.request.parameters;
+      var totalSeconds = context.request.parameters.durationMinutes * 60;
+      system += '\n\nAuthor the BlueprintContent for the request above. Contract:\n' + BLUEPRINT_CONTRACT +
+        '\n\nValidator rules (a violation is repaired, then fails closed):\n' +
+        '- Every sourceClaimIds entry must be a claim id from the sources supplied in this prompt; never invent a claim id.\n' +
+        '- Beat durations must sum to exactly ' + totalSeconds + ' seconds (' + context.request.parameters.durationMinutes + ' minutes requested).\n' +
+        '- Every objective must be taught: each objective id appears in at least one beat objectiveIds list.\n' +
+        '- Every objective must be assessed: each objective id appears in at least one assessment objectiveId.\n' +
+        '- An assessment whose exampleId names an example must carry that example answer as expectedAnswer.\n' +
+        '- Every id is unique within its list; every beat, example, definition and misconception reference resolves to an item defined in this blueprint.';
+    } else if (stage === 'visuals') {
+      user.slideCount = typeof context.slideCount === 'number' ? context.slideCount : 0;
+      user.animationSceneIds = Array.isArray(context.animationSceneIds) ? context.animationSceneIds : [];
+      system += '\n\nDeclare one visual per beat that recommends one. Contract:\n' + VISUAL_CONTRACT;
+    } else if (typeof STAGE_CONTRACTS[stage] === 'string') {
+      system += '\n\nOutput contract for this stage (the matching build_*_prompt system template; ' +
+        'the frozen blueprint above is the only source of facts, never the template exemplar topic):\n' + STAGE_CONTRACTS[stage];
+    }
+    return { system: system, user: user };
   }
   // One authored artifact with bounded targeted repair. validate is a
   // function (doc) -> string[] | Promise<string[]>; an empty array means
@@ -160,8 +255,10 @@
     ctx.progress(stage, { status: 'started', attempt: 0 });
     while (attempts < maxAttempts) {
       attempts += 1;
-      var prompt = stagePrompt(stage, { mode: ctx.mode, scope: ctx.scope, blueprintIdentity: ctx.blueprintIdentity,
-        blueprintSummary: ctx.blueprintSummary, problems: problems, previous: previous });
+      var promptContext = { mode: ctx.mode, scope: ctx.scope, blueprintIdentity: ctx.blueprintIdentity,
+        blueprintSummary: ctx.blueprintSummary, problems: problems, previous: previous };
+      if (record(context)) Object.keys(context).forEach(function (key) { promptContext[key] = context[key]; });
+      var prompt = stagePrompt(stage, promptContext);
       var reply;
       try {
         reply = extractCall(await ctx.deps.callChat(prompt.system, JSON.stringify(prompt.user)));
@@ -312,7 +409,8 @@
     }
     var projection = requestProjection(normalized);
     var ctx = { deps: deps, maxRepairs: maxRepairs, mode: normalized.mode, scope: clone(normalized.scope),
-      blueprintIdentity: null, blueprintSummary: null, progress: progress };
+      blueprintIdentity: null, blueprintSummary: null, progress: progress,
+      request: { objectives: clone(normalized.objectives), sources: clone(normalized.sources), parameters: clone(normalized.parameters) } };
     // Stage 1: freeze the blueprint once per topic + full objective set.
     progress('blueprint', { status: 'started', attempt: 0 });
     var blueprintStarted = Date.now();
@@ -330,7 +428,7 @@
       }
       progress('blueprint', { status: 'completed', attempt: 0, tokens: {}, latencyMs: Date.now() - blueprintStarted });
     } else {
-      var authored = await authorStage(ctx, 'blueprint', null, async function (content) {
+      var authored = await authorStage(ctx, 'blueprint', { request: ctx.request }, async function (content) {
         try { await blueprintApi.createLessonBlueprint(projection, content); return []; }
         catch (error) { return String(error.message).split('\n'); }
       });
@@ -349,6 +447,18 @@
     // Stage 2+: author each material from the frozen blueprint, each
     // validated by its own beta.2 validator with bounded repair.
     var materials = {};
+    // Visuals prompt extras: the slide count and the animation scene
+    // ids authored so far, which the VisualDeclaration contract needs.
+    function visualsPromptContext() {
+      var slideCount = record(materials.slides) && Array.isArray(materials.slides.slides) ? materials.slides.slides.length : 0;
+      var sceneIds = [];
+      if (record(materials.animation) && Array.isArray(materials.animation.scenes)) {
+        materials.animation.scenes.forEach(function (scene) {
+          if (record(scene) && typeof scene.id === 'string' && scene.id) sceneIds.push(scene.id);
+        });
+      }
+      return { slideCount: slideCount, animationSceneIds: sceneIds };
+    }
     async function authorMaterial(stage, validate) {
       var result = await authorStage(ctx, stage, null, function (doc) { return validate(doc); });
       materials[stage] = result.doc;
@@ -361,7 +471,7 @@
     await authorMaterial('worksheet', function (doc) { return validateApi.validateWorksheet(doc); });
     await authorMaterial('exitTicket', function (doc) { return validateApi.validateExitTicket(doc); });
     if (extended) await authorMaterial('quizBank', function (doc) { return validateApi.validateQuizBank(doc); });
-    var visualsDoc = (await authorStage(ctx, 'visuals', null, function (doc) {
+    var visualsDoc = (await authorStage(ctx, 'visuals', visualsPromptContext(), function (doc) {
       return validateVisualsDoc(doc, blueprint, materials);
     })).doc;
     async function assemble() {
@@ -436,7 +546,7 @@
         var name = stageNames[s];
         var repairProblems = stages[name];
         if (name === 'visuals') {
-          visualsDoc = (await authorStage(ctx, 'visuals', null, function (doc) {
+          visualsDoc = (await authorStage(ctx, 'visuals', visualsPromptContext(), function (doc) {
             return validateVisualsDoc(doc, blueprint, materials);
           }, repairProblems)).doc;
         } else {
