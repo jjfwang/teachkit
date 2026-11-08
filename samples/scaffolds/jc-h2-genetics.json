@@ -1,0 +1,132 @@
+{
+ "level": "jc",
+ "sets": [
+  {
+   "cloze": [
+    {
+     "answers": [
+      "DNA",
+      "Allele"
+     ],
+     "text": "The ___ is a molecule that stores genetic instructions, and the ___ is one of the alternative forms of a gene."
+    },
+    {
+     "answers": [
+      "Dominant allele",
+      "Mutation"
+     ],
+     "text": "A ___ is an allele that shows whenever it is present, while a ___ is a change in the DNA base sequence."
+    }
+   ],
+   "frames": [
+    "___ is the molecule that stores genetic instructions as a sequence of bases.",
+    "___ is a length of DNA that codes for one polypeptide chain.",
+    "___ is one of the alternative forms of a gene."
+   ],
+   "level": "full",
+   "starters": [
+    "DNA is the molecule that stores genetic instructions as a sequence of bases...",
+    "Gene is a length of DNA that codes for one polypeptide chain...",
+    "Allele is one of the alternative forms of a gene..."
+   ],
+   "wordBank": [
+    {
+     "gloss": "The molecule that stores genetic instructions as a sequence of bases, organised into genes on chromosomes.",
+     "term": "DNA"
+    },
+    {
+     "gloss": "A length of DNA that codes for one polypeptide chain.",
+     "term": "Gene"
+    },
+    {
+     "gloss": "One of the alternative forms of a gene, found at the same locus on homologous chromosomes.",
+     "term": "Allele"
+    },
+    {
+     "gloss": "The alleles an organism carries for a gene, such as AA, Aa or aa.",
+     "term": "Genotype"
+    },
+    {
+     "gloss": "The observable trait an organism shows, produced by its genotype and environment.",
+     "term": "Phenotype"
+    },
+    {
+     "gloss": "An allele that shows in the phenotype whenever it is present, even in a heterozygote.",
+     "term": "Dominant allele"
+    },
+    {
+     "gloss": "An allele that shows in the phenotype only when no dominant allele is present.",
+     "term": "Recessive allele"
+    },
+    {
+     "gloss": "A change in the DNA base sequence; most mutations are neutral, some are harmful, and a rare few are beneficial.",
+     "term": "Mutation"
+    }
+   ]
+  },
+  {
+   "cloze": [
+    {
+     "answers": [
+      "DNA",
+      "Allele"
+     ],
+     "text": "The ___ is a molecule that stores genetic instructions, and the ___ is one of the alternative forms of a gene."
+    }
+   ],
+   "frames": [
+    "___ is the molecule that stores genetic instructions as a sequence of bases.",
+    "___ is a length of DNA that codes for one polypeptide chain."
+   ],
+   "level": "partial",
+   "starters": [
+    "DNA is the molecule that stores genetic instructions as a sequence of bases...",
+    "Gene is a length of DNA that codes for one polypeptide chain..."
+   ],
+   "wordBank": [
+    {
+     "gloss": "The molecule that stores genetic instructions as a sequence of bases, organised into genes on chromosomes.",
+     "term": "DNA"
+    },
+    {
+     "gloss": "A length of DNA that codes for one polypeptide chain.",
+     "term": "Gene"
+    },
+    {
+     "gloss": "One of the alternative forms of a gene, found at the same locus on homologous chromosomes.",
+     "term": "Allele"
+    },
+    {
+     "gloss": "The alleles an organism carries for a gene, such as AA, Aa or aa.",
+     "term": "Genotype"
+    }
+   ]
+  },
+  {
+   "cloze": [
+    {
+     "answers": [
+      "DNA"
+     ],
+     "text": "The ___ is a molecule that stores genetic instructions."
+    }
+   ],
+   "frames": [
+    "___ is the molecule that stores genetic instructions as a sequence of bases."
+   ],
+   "level": "minimal",
+   "starters": [
+    "DNA is the molecule that stores genetic instructions as a sequence of bases..."
+   ],
+   "wordBank": [
+    {
+     "gloss": "The molecule that stores genetic instructions as a sequence of bases, organised into genes on chromosomes.",
+     "term": "DNA"
+    }
+   ]
+  }
+ ],
+ "subject": "science",
+ "title": "JC H2 biology -- genetics: from DNA to inheritance",
+ "topic": "h2-genetics"
+}

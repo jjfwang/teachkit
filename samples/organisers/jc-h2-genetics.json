@@ -1,0 +1,109 @@
+{
+ "level": "jc",
+ "subject": "science",
+ "templates": [
+  {
+   "kind": "flow",
+   "slots": [
+    {
+     "entries": [
+      "Central dogma: DNA makes protein: DNA is transcribed into mRNA in the nucleus, and the mRNA is translated into a polypeptide at a ribosome."
+     ],
+     "label": "Central dogma",
+     "studentPrompt": "Explain this step in your own words."
+    },
+    {
+     "entries": [
+      "Monohybrid cross: the 3:1 ratio: Aa x Aa gives genotypes 1 AA : 2 Aa : 1 aa in the Punnett square, which group into phenotypes in the ratio 3:1."
+     ],
+     "label": "Monohybrid cross",
+     "studentPrompt": "Explain this step in your own words."
+    },
+    {
+     "entries": [
+      "Dihybrid cross: 9:3:3:1: two genes on different chromosomes assort independently, so sixteen boxes give four phenotype classes in the ratio 9:3:3:1."
+     ],
+     "label": "Dihybrid cross",
+     "studentPrompt": "Explain this step in your own words."
+    },
+    {
+     "entries": [
+      "Sex-linked inheritance: a gene on the X chromosome is passed from a carrier mother to half her sons, who show the trait because the Y cannot mask it."
+     ],
+     "label": "Sex-linked inheritance",
+     "studentPrompt": "Explain this step in your own words."
+    },
+    {
+     "entries": [
+      "A common mistake: mutations are always harmful: most sequence changes are neutral because the protein still does its job, so harm is the exception, not the rule."
+     ],
+     "label": "A common mistake",
+     "studentPrompt": "Explain this step in your own words."
+    }
+   ]
+  },
+  {
+   "kind": "frayer",
+   "slots": [
+    {
+     "entries": [
+      "The molecule that stores genetic instructions as a sequence of bases, organised into genes on chromosomes."
+     ],
+     "label": "DNA",
+     "studentPrompt": "Give your own example of this term."
+    },
+    {
+     "entries": [
+      "A length of DNA that codes for one polypeptide chain."
+     ],
+     "label": "Gene",
+     "studentPrompt": "Give your own example of this term."
+    },
+    {
+     "entries": [
+      "One of the alternative forms of a gene, found at the same locus on homologous chromosomes."
+     ],
+     "label": "Allele",
+     "studentPrompt": "Give your own example of this term."
+    },
+    {
+     "entries": [
+      "The alleles an organism carries for a gene, such as AA, Aa or aa."
+     ],
+     "label": "Genotype",
+     "studentPrompt": "Give your own example of this term."
+    },
+    {
+     "entries": [
+      "The observable trait an organism shows, produced by its genotype and environment."
+     ],
+     "label": "Phenotype",
+     "studentPrompt": "Give your own example of this term."
+    },
+    {
+     "entries": [
+      "An allele that shows in the phenotype whenever it is present, even in a heterozygote."
+     ],
+     "label": "Dominant allele",
+     "studentPrompt": "Give your own example of this term."
+    },
+    {
+     "entries": [
+      "An allele that shows in the phenotype only when no dominant allele is present."
+     ],
+     "label": "Recessive allele",
+     "studentPrompt": "Give your own example of this term."
+    },
+    {
+     "entries": [
+      "A change in the DNA base sequence; most mutations are neutral, some are harmful, and a rare few are beneficial."
+     ],
+     "label": "Mutation",
+     "studentPrompt": "Give your own example of this term."
+    }
+   ]
+  }
+ ],
+ "title": "JC H2 biology -- genetics: from DNA to inheritance",
+ "topic": "h2-genetics"
+}
