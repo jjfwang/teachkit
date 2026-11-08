@@ -10,6 +10,19 @@ version section when the release ships.
 
 ## [Unreleased]
 
+## [0.2.0] - 2026-11-08
+
+- Promote the `0.2.0` line to a stable release, with the same functional
+  API surface as `0.2.0-beta.3`. No API or animation spec contract changes
+  accompany this promotion.
+- Includes topic teaching bundle generation, immutable lesson blueprints,
+  cross-material validation and visual capability resolution, alongside
+  the lesson-pack, interactive simulation, tutor synchronization and
+  approved learning asset APIs. See the beta release sections below for
+  the detailed feature history.
+- Update the package, player and embed versions to `0.2.0` and document
+  installation from the stable GitHub tag.
+
 ## [0.2.0-beta.3] - 2026-11-08
 
 - Add the public topic-to-teaching-bundle generation API

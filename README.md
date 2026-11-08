@@ -208,9 +208,11 @@ Other projects can import the generator modules and the player directly:
 npm install @jjfwang/teachkit
 ```
 
-The first published line is `0.2.0-beta.0` — track the beta channel with
-`npm install @jjfwang/teachkit@beta`, or install from source with
-`npm install github:jjfwang/teachkit`.
+The stable release is `0.2.0`. To install it directly from the GitHub tag:
+
+```sh
+npm install 'git+https://github.com/jjfwang/teachkit.git#v0.2.0'
+```
 
 ```js
 const { buildPrompts } = require('@jjfwang/teachkit/build-prompt');
