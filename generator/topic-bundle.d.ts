@@ -92,6 +92,92 @@ export type TopicBundleBulkResult =
   | { index: number; status: 'generated'; scopeKey: string; idempotencyKey: string; bundle: TopicTeachingBundle }
   | { index: number; status: 'duplicate'; scopeKey: string; idempotencyKey: string; bundle: TopicTeachingBundle }
   | { index: number; status: 'failed'; scopeKey: string | null; idempotencyKey: string | null; error: string; problems?: BundleProblem[] | null };
+/** Learner-safe host projection of a verified bundle (#1648): the JSON
+ * Aceceed's renderer adapter consumes. Blueprint keeps identity,
+ * objectives and beats only (no assessments, expected answers or
+ * rubrics); the assessment keeps prompts, choice texts, marks and ids
+ * with every answer key stripped; the simulation spec keeps its
+ * question and options but not its check's correctIndex or explanation. */
+export interface HostProjectionBeat {
+  beatId: string;
+  objectiveIds: string[];
+  kind: string;
+  durationSeconds: number;
+  /** Blueprint visual recommendation. */
+  visual: 'simulation' | 'animation' | 'diagram' | 'none';
+}
+export interface HostProjectionDeclaration {
+  visualId: string;
+  beatId: string;
+  requested: 'simulation' | 'animation' | 'diagram' | 'slide-first' | 'none';
+  fallback?: 'animation' | 'diagram' | 'slide-first';
+  sceneId?: string;
+  slideIndex?: number;
+  diagram?: unknown;
+  model?: string;
+  exampleId?: string;
+  declaredMissing?: boolean;
+  reason?: string;
+}
+export interface HostTopicBundleProjection {
+  readonly schemaVersion: 'host-projection.v1';
+  readonly compatibilityVersion: 'host-compat.v1';
+  readonly scope: DeepReadonly<TopicBlueprintRequest['scope']>;
+  readonly mode: TopicBundleMode;
+  readonly revision: string;
+  readonly idempotencyKey: string;
+  readonly scopeKey: string;
+  readonly blueprint: {
+    identity: string;
+    objectives: DeepReadonly<TopicBlueprintRequest['objectives']>;
+    beats: HostProjectionBeat[];
+  };
+  readonly lessonPlan: unknown;
+  readonly slides: unknown;
+  readonly animation: unknown;
+  readonly visual: {
+    kind: 'simulation' | 'animation' | 'diagram' | 'slide-first' | 'none';
+    declarations: HostProjectionDeclaration[];
+    simulation: unknown;
+  };
+  /** Assessment with all answer keys stripped; no top-level rubric. */
+  readonly assessment: unknown;
+  readonly index: {
+    byObjective: Record<string, { beatIds: string[]; slideIndexes: number[]; assessmentIds: string[]; visualIds: string[] }>;
+    byBeat: Record<string, { objectiveIds: string[]; slideIndexes: number[]; assessmentIds: string[]; visualIds: string[] }>;
+  };
+  readonly coherence: { capabilities: CapabilityDecision[]; warnings: string[] };
+}
+/** Versioned host compatibility matrix the projection is checked
+ * against: the visual kinds, the fields each declaration shape
+ * carries (plus the fallback field and its per-kind payload), the
+ * animation scene/step fields the renderer needs, and the keys the
+ * assessment projection strips. */
+export interface HostCompatibilityMatrix {
+  readonly version: 'host-compat.v1';
+  readonly schemaVersion: 'topic-bundle.v1';
+  readonly visualKinds: Array<'simulation' | 'animation' | 'diagram' | 'slide-first' | 'none'>;
+  readonly declarationShapes: Record<'simulation' | 'animation' | 'diagram' | 'slide-first' | 'none', string[]>;
+  readonly declarationFallback: {
+    field: 'fallback';
+    values: Array<'animation' | 'diagram' | 'slide-first'>;
+    payloadFields: { animation: 'sceneId'; diagram: 'diagram'; 'slide-first': 'slideIndex' };
+  };
+  readonly animationFields: string[];
+  readonly animationStepFields: string[];
+  readonly assessmentProjection: {
+    strippedFields: string[];
+    choiceStrippedFields: string[];
+    droppedSections: string[];
+  };
+}
+export const HOST_COMPATIBILITY: HostCompatibilityMatrix;
+/** Pure, deterministic, model-free projection of a verified
+ * TopicTeachingBundle into its learner-safe host form. Builds fresh
+ * objects and never mutates the frozen bundle. Throws a clear Error
+ * on a malformed bundle (wrong/missing schemaVersion, missing
+ * manifest/blueprint/materials or any other required part). */
+export function projectTopicBundleForHost(bundle: TopicTeachingBundle): HostTopicBundleProjection;
 export const schemaVersion: 'topic-bundle.v1';
 export function validateTopicBundleRequest(request: unknown): string[];
 /** Stable scope-based idempotency key: hashes the full scope, objective/source revisions, mode and generator provenance via the blueprint identity. */

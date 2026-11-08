@@ -662,7 +662,137 @@
     }
     return results;
   }
+  // Host conformance for #1648 (scope items 2-3): a pure, deterministic,
+  // model-free projection of a verified TopicTeachingBundle into the
+  // learner-safe JSON the Aceceed renderer adapter consumes. The
+  // projection builds fresh objects and never mutates the frozen bundle;
+  // every answer key is stripped from the assessment (and from
+  // multiple-choice choices, whose rationale/misconception leak
+  // correctness by omission), the blueprint keeps identity, objectives
+  // and beats only, and the simulation spec keeps its question and
+  // options but not its check's correctIndex or explanation.
+  var HOST_PROJECTION_VERSION = 'host-projection.v1';
+  var HOST_COMPATIBILITY_VERSION = 'host-compat.v1';
+  var HOST_STRIPPED_KEYS = ['answer', 'answers', 'expectedAnswer', 'correct', 'correctIndex',
+    'rubric', 'feedback', 'markScheme', 'modelAnswer'];
+  var HOST_CHOICE_STRIPPED_KEYS = ['rationale', 'misconception'];
+  var HOST_FALLBACK_PAYLOAD_FIELDS = { animation: 'sceneId', diagram: 'diagram', 'slide-first': 'slideIndex' };
+  var HOST_COMPATIBILITY = freeze({
+    version: HOST_COMPATIBILITY_VERSION,
+    schemaVersion: schemaVersion,
+    visualKinds: ['simulation', 'animation', 'diagram', 'slide-first', 'none'],
+    declarationShapes: {
+      simulation: ['visualId', 'beatId', 'requested', 'model', 'exampleId'],
+      animation: ['visualId', 'beatId', 'requested', 'sceneId'],
+      diagram: ['visualId', 'beatId', 'requested', 'diagram'],
+      'slide-first': ['visualId', 'beatId', 'requested', 'slideIndex'],
+      none: ['visualId', 'beatId', 'requested', 'declaredMissing', 'reason']
+    },
+    declarationFallback: { field: 'fallback', values: ['animation', 'diagram', 'slide-first'],
+      payloadFields: { animation: 'sceneId', diagram: 'diagram', 'slide-first': 'slideIndex' } },
+    animationFields: ['id', 'caption', 'narration', 'duration_ms', 'steps'],
+    animationStepFields: ['at_ms', 'do', 'shape', 'text'],
+    assessmentProjection: {
+      strippedFields: HOST_STRIPPED_KEYS.slice(),
+      choiceStrippedFields: HOST_CHOICE_STRIPPED_KEYS.slice(),
+      droppedSections: ['rubric']
+    }
+  });
+  function requiredRecord(value, label) {
+    if (!record(value)) throw new Error('projectTopicBundleForHost: ' + label + ' is missing or not an object');
+    return value;
+  }
+  function requiredArray(value, label) {
+    if (!Array.isArray(value)) throw new Error('projectTopicBundleForHost: ' + label + ' is missing or not an array');
+    return value;
+  }
+  function stripAssessmentValue(value, parentKey) {
+    if (Array.isArray(value)) {
+      return value.map(function (item) { return stripAssessmentValue(item, parentKey); });
+    }
+    if (!record(value)) return value;
+    var out = {};
+    Object.keys(value).forEach(function (key) {
+      if (HOST_STRIPPED_KEYS.indexOf(key) >= 0) return;
+      if (parentKey === 'choices' && HOST_CHOICE_STRIPPED_KEYS.indexOf(key) >= 0) return;
+      out[key] = stripAssessmentValue(value[key], key);
+    });
+    return out;
+  }
+  function projectDeclaration(visual) {
+    var out = { visualId: visual.visualId, beatId: visual.beatId, requested: visual.requested };
+    if (visual.requested === 'simulation') { out.model = visual.model; out.exampleId = visual.exampleId; }
+    else if (visual.requested === 'animation') { out.sceneId = visual.sceneId; }
+    else if (visual.requested === 'diagram') { out.diagram = clone(visual.diagram); }
+    else if (visual.requested === 'slide-first') { out.slideIndex = visual.slideIndex; }
+    else if (visual.requested === 'none') { out.declaredMissing = visual.declaredMissing; out.reason = visual.reason; }
+    if (visual.fallback !== undefined) {
+      out.fallback = visual.fallback;
+      var payloadField = HOST_FALLBACK_PAYLOAD_FIELDS[visual.fallback];
+      if (payloadField !== undefined && visual[payloadField] !== undefined) out[payloadField] = clone(visual[payloadField]);
+    }
+    return out;
+  }
+  function projectSimulation(simulation) {
+    if (simulation === undefined || simulation === null) return null;
+    var spec = clone(simulation);
+    if (record(spec.check)) { delete spec.check.correctIndex; delete spec.check.explanation; }
+    return spec;
+  }
+  function projectTopicBundleForHost(bundle) {
+    if (!record(bundle)) throw new Error('projectTopicBundleForHost: expected a TopicTeachingBundle object');
+    if (bundle.schemaVersion !== schemaVersion) {
+      throw new Error('projectTopicBundleForHost: expected schemaVersion ' + schemaVersion + ', got ' + String(bundle.schemaVersion));
+    }
+    var manifest = requiredRecord(bundle.manifest, 'bundle.manifest');
+    var blueprint = requiredRecord(bundle.blueprint, 'bundle.blueprint');
+    requiredRecord(bundle.materials, 'bundle.materials');
+    requiredRecord(bundle.scope, 'bundle.scope');
+    var request = requiredRecord(blueprint.request, 'bundle.blueprint.request');
+    var content = requiredRecord(blueprint.content, 'bundle.blueprint.content');
+    var objectives = requiredArray(request.objectives, 'bundle.blueprint.request.objectives');
+    var beats = requiredArray(content.beats, 'bundle.blueprint.content.beats');
+    var lessonPlan = requiredRecord(bundle.lessonPlan, 'bundle.lessonPlan');
+    var slides = requiredRecord(bundle.slides, 'bundle.slides');
+    var visual = requiredRecord(bundle.visual, 'bundle.visual');
+    var declarations = requiredArray(visual.declarations, 'bundle.visual.declarations');
+    var assessment = requiredRecord(bundle.assessment, 'bundle.assessment');
+    var index = requiredRecord(bundle.index, 'bundle.index');
+    var coherence = requiredRecord(bundle.coherence, 'bundle.coherence');
+    var capabilities = requiredArray(coherence.capabilities, 'bundle.coherence.capabilities');
+    var warnings = requiredArray(coherence.warnings, 'bundle.coherence.warnings');
+    return {
+      schemaVersion: HOST_PROJECTION_VERSION,
+      compatibilityVersion: HOST_COMPATIBILITY_VERSION,
+      scope: clone(bundle.scope),
+      mode: bundle.mode,
+      revision: manifest.revision,
+      idempotencyKey: bundle.idempotencyKey,
+      scopeKey: manifest.scopeKey,
+      blueprint: {
+        identity: blueprint.identity,
+        objectives: clone(objectives),
+        beats: beats.map(function (beat) {
+          var objectiveIds = requiredArray(beat.objectiveIds, 'bundle.blueprint.content.beats[].objectiveIds');
+          return { beatId: beat.beatId, objectiveIds: objectiveIds.slice(),
+            kind: beat.kind, durationSeconds: beat.durationSeconds, visual: beat.visual };
+        })
+      },
+      lessonPlan: clone(lessonPlan),
+      slides: clone(slides),
+      animation: clone(bundle.animation),
+      visual: {
+        kind: visual.kind,
+        declarations: declarations.map(projectDeclaration),
+        simulation: projectSimulation(visual.simulation)
+      },
+      assessment: stripAssessmentValue(assessment, null),
+      index: clone(index),
+      coherence: { capabilities: clone(capabilities), warnings: clone(warnings) }
+    };
+  }
   return { schemaVersion: schemaVersion, validateTopicBundleRequest: validateTopicBundleRequest,
     topicBundleScopeKey: topicBundleScopeKey, generateTopicTeachingBundle: generateTopicTeachingBundle,
-    generateTopicTeachingBundles: generateTopicTeachingBundles, verifyTopicTeachingBundle: verifyTopicTeachingBundle };
+    generateTopicTeachingBundles: generateTopicTeachingBundles, verifyTopicTeachingBundle: verifyTopicTeachingBundle,
+    projectTopicBundleForHost: projectTopicBundleForHost, HOST_COMPATIBILITY: HOST_COMPATIBILITY };
 });

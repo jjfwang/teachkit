@@ -20,6 +20,23 @@ version section when the release ships.
   tests capture the prompt strings passed to `callChat` and fail if any
   stage prompt omits a field its validator requires.
 
+- Add the host conformance projection for topic bundles (#1648):
+  `projectTopicBundleForHost(bundle)` projects a verified bundle into
+  the learner-safe `host-projection.v1` JSON Aceceed's renderer adapter
+  consumes, alongside the versioned `HOST_COMPATIBILITY`
+  (`host-compat.v1`) matrix it is checked against. The projection is
+  pure and deterministic, builds fresh objects without mutating the
+  frozen bundle, keeps blueprint identity/objectives/beats, lesson plan,
+  slides, animation scenes and the visual declarations, strips every
+  answer key from the assessment (including `rationale` and
+  `misconception` from multiple-choice choices, and the top-level
+  rubric), and keeps the simulation spec without its check's
+  `correctIndex` or `explanation`. Committed P5 equivalent-fractions
+  fixtures (`tests/fixtures/topic-bundle-host-projection-p5-core.json`
+  and `-extended.json`) pin the projection, and the conformance test
+  fails if regenerating them differs. The deterministic mock moved
+  unchanged into the shared helper `tests/topic-bundle-mock.js`.
+
 ## [0.2.0] - 2026-11-08
 
 - Promote the `0.2.0` line to a stable release, with the same functional

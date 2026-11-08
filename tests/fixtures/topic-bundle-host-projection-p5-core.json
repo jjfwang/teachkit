@@ -1,0 +1,573 @@
+{
+  "schemaVersion": "host-projection.v1",
+  "compatibilityVersion": "host-compat.v1",
+  "scope": {
+    "authority": "fixture-authority",
+    "country": "sg",
+    "curriculumReleaseId": "fixture-release-2026",
+    "grade": "P5",
+    "level": "primary",
+    "locale": "en-sg",
+    "subject": "mathematics",
+    "syllabus": "primary-mathematics",
+    "syllabusVersion": "2026",
+    "topicId": "equivalent-fractions"
+  },
+  "mode": "core",
+  "revision": "8f60d3984f2eb9b4e41d4f8b0a625af695e1eecd4698e0ed2511ff58fd3f47fa",
+  "idempotencyKey": "6c5f41b2774d8cb4ff7519a2b5cfcc63b2f49cfaeec0b9f8b5ff3acd49a6dab3",
+  "scopeKey": "9bd851702e1e7526e516c9254839a287d491512ca35b4e6755cb4638c7e933a9",
+  "blueprint": {
+    "identity": "9bd851702e1e7526e516c9254839a287d491512ca35b4e6755cb4638c7e933a9",
+    "objectives": [
+      {
+        "contentHash": "5073187346e241e1ee0f6857b2b0bfb3b2b044e0eb34dd9496ec983f22d977f5",
+        "objectiveId": "P5-EF-1",
+        "revision": "1",
+        "sourceClaimIds": [
+          "fractions.same-value"
+        ],
+        "text": "Recognise equivalent fractions using equal-sized wholes."
+      },
+      {
+        "contentHash": "6419200d95de2b10d0b63bc95f3256460cd42eeb4a7dc015a5b5e7b6b4a48373",
+        "objectiveId": "P5-EF-2",
+        "revision": "1",
+        "sourceClaimIds": [
+          "fractions.scale"
+        ],
+        "text": "Generate equivalent fractions by scaling numerator and denominator together."
+      }
+    ],
+    "beats": [
+      {
+        "beatId": "activate",
+        "objectiveIds": [
+          "P5-EF-1"
+        ],
+        "kind": "activate",
+        "durationSeconds": 360,
+        "visual": "diagram"
+      },
+      {
+        "beatId": "explain",
+        "objectiveIds": [
+          "P5-EF-1"
+        ],
+        "kind": "explain",
+        "durationSeconds": 360,
+        "visual": "animation"
+      },
+      {
+        "beatId": "predict",
+        "objectiveIds": [
+          "P5-EF-2"
+        ],
+        "kind": "predict",
+        "durationSeconds": 360,
+        "visual": "diagram"
+      },
+      {
+        "beatId": "practice",
+        "objectiveIds": [
+          "P5-EF-2"
+        ],
+        "kind": "practice",
+        "durationSeconds": 360,
+        "visual": "diagram"
+      },
+      {
+        "beatId": "exit",
+        "objectiveIds": [
+          "P5-EF-1",
+          "P5-EF-2"
+        ],
+        "kind": "exit",
+        "durationSeconds": 360,
+        "visual": "none"
+      }
+    ]
+  },
+  "lessonPlan": {
+    "activities": [
+      {
+        "minutes": 6,
+        "objectiveIds": [
+          "P5-EF-1"
+        ],
+        "scriptCue": "Teach beat activate.",
+        "title": "activate beat"
+      },
+      {
+        "minutes": 6,
+        "objectiveIds": [
+          "P5-EF-1"
+        ],
+        "scriptCue": "Teach beat explain.",
+        "title": "explain beat"
+      },
+      {
+        "minutes": 6,
+        "objectiveIds": [
+          "P5-EF-2"
+        ],
+        "scriptCue": "Teach beat predict.",
+        "title": "predict beat"
+      },
+      {
+        "minutes": 6,
+        "objectiveIds": [
+          "P5-EF-2"
+        ],
+        "scriptCue": "Teach beat practice.",
+        "title": "practice beat"
+      },
+      {
+        "minutes": 6,
+        "objectiveIds": [
+          "P5-EF-1",
+          "P5-EF-2"
+        ],
+        "scriptCue": "Teach beat exit.",
+        "title": "exit beat"
+      }
+    ],
+    "durationMinutes": 30,
+    "level": "primary",
+    "objectives": [
+      {
+        "assessmentPoints": [
+          "Answers the check for P5-EF-1."
+        ],
+        "id": "P5-EF-1",
+        "successCriteria": [
+          "Shows P5-EF-1 in work."
+        ],
+        "text": "Recognise equivalent fractions using equal-sized wholes."
+      },
+      {
+        "assessmentPoints": [
+          "Answers the check for P5-EF-2."
+        ],
+        "id": "P5-EF-2",
+        "successCriteria": [
+          "Shows P5-EF-2 in work."
+        ],
+        "text": "Generate equivalent fractions by scaling numerator and denominator together."
+      }
+    ],
+    "subject": "mathematics",
+    "title": "Lesson Plan",
+    "topic": "equivalent-fractions"
+  },
+  "slides": {
+    "level": "primary",
+    "slides": [
+      {
+        "beatId": "activate",
+        "bullets": [
+          "Point for title."
+        ],
+        "heading": "title slide",
+        "kind": "title",
+        "objectiveIds": [
+          "P5-EF-1"
+        ]
+      },
+      {
+        "beatId": "activate",
+        "bullets": [
+          "Point for objective."
+        ],
+        "heading": "objective slide",
+        "kind": "objective",
+        "objectiveIds": [
+          "P5-EF-1"
+        ]
+      },
+      {
+        "beatId": "explain",
+        "bullets": [
+          "Point for concept."
+        ],
+        "heading": "concept slide",
+        "kind": "concept",
+        "objectiveIds": [
+          "P5-EF-1"
+        ]
+      },
+      {
+        "beatId": "explain",
+        "bullets": [
+          "Point for example."
+        ],
+        "heading": "example slide",
+        "kind": "example",
+        "objectiveIds": [
+          "P5-EF-1"
+        ],
+        "visual": {
+          "kind": "rect",
+          "label": "Worked example visual"
+        }
+      },
+      {
+        "beatId": "practice",
+        "bullets": [
+          "Point for practice."
+        ],
+        "heading": "practice slide",
+        "kind": "practice",
+        "objectiveIds": [
+          "P5-EF-2"
+        ]
+      },
+      {
+        "beatId": "exit",
+        "bullets": [
+          "Point for exit-ticket."
+        ],
+        "heading": "exit-ticket slide",
+        "kind": "exit-ticket",
+        "objectiveIds": [
+          "P5-EF-1",
+          "P5-EF-2"
+        ]
+      }
+    ],
+    "subject": "mathematics",
+    "title": "Slides",
+    "topic": "equivalent-fractions"
+  },
+  "animation": null,
+  "visual": {
+    "kind": "diagram",
+    "declarations": [
+      {
+        "visualId": "vis-activate",
+        "beatId": "activate",
+        "requested": "diagram",
+        "diagram": "Diagram for beat activate."
+      },
+      {
+        "visualId": "vis-explain",
+        "beatId": "explain",
+        "requested": "animation",
+        "fallback": "diagram",
+        "diagram": "Diagram fallback for beat explain."
+      },
+      {
+        "visualId": "vis-predict",
+        "beatId": "predict",
+        "requested": "diagram",
+        "diagram": "Diagram for beat predict."
+      },
+      {
+        "visualId": "vis-practice",
+        "beatId": "practice",
+        "requested": "diagram",
+        "diagram": "Diagram for beat practice."
+      }
+    ],
+    "simulation": null
+  },
+  "assessment": {
+    "diagnostic": {
+      "title": "Diagnostics",
+      "level": "primary",
+      "subject": "mathematics",
+      "topic": "equivalent-fractions",
+      "doNow": [
+        {
+          "id": "diag-1",
+          "prompt": "Which option gives the worked answer for half-fourths?",
+          "kind": "multiple-choice",
+          "objectiveId": "P5-EF-1",
+          "exampleId": "half-fourths",
+          "choices": [
+            {
+              "text": "Yes: 1/2 = 2/4."
+            },
+            {
+              "text": "Not the worked answer A"
+            },
+            {
+              "text": "Not the worked answer B"
+            }
+          ]
+        },
+        {
+          "id": "diag-2",
+          "prompt": "Which option gives the worked answer for thirds-sixths?",
+          "kind": "multiple-choice",
+          "objectiveId": "P5-EF-2",
+          "exampleId": "thirds-sixths",
+          "choices": [
+            {
+              "text": "4/6"
+            },
+            {
+              "text": "Not the worked answer A"
+            },
+            {
+              "text": "Not the worked answer B"
+            }
+          ]
+        }
+      ],
+      "hingeQuestions": [
+        {
+          "id": "diag-h1",
+          "prompt": "Which option gives the worked answer for thirds-sixths?",
+          "kind": "multiple-choice",
+          "objectiveId": "P5-EF-2",
+          "exampleId": "thirds-sixths",
+          "scriptCue": "Pause after the worked example.",
+          "choices": [
+            {
+              "text": "4/6"
+            },
+            {
+              "text": "Not the worked answer A"
+            },
+            {
+              "text": "Not the worked answer B"
+            }
+          ]
+        }
+      ]
+    },
+    "formative": {
+      "worksheet": {
+        "title": "Worksheet",
+        "level": "primary",
+        "subject": "mathematics",
+        "topic": "equivalent-fractions",
+        "questions": [
+          {
+            "id": "ws-1",
+            "kind": "short-answer",
+            "prompt": "Work the first example and give the answer.",
+            "objective": "P5-EF-1",
+            "objectiveId": "P5-EF-1",
+            "exampleId": "half-fourths",
+            "explanation": "Follows the frozen worked example.",
+            "marks": 2
+          },
+          {
+            "id": "ws-2",
+            "kind": "short-answer",
+            "prompt": "Work the second example and give the answer.",
+            "objective": "P5-EF-2",
+            "objectiveId": "P5-EF-2",
+            "exampleId": "thirds-sixths",
+            "explanation": "Follows the frozen worked example.",
+            "marks": 2
+          }
+        ]
+      }
+    },
+    "exitTicket": {
+      "title": "Exit Ticket",
+      "level": "primary",
+      "subject": "mathematics",
+      "topic": "equivalent-fractions",
+      "questions": [
+        {
+          "id": "et-1",
+          "kind": "short-answer",
+          "prompt": "Give the first worked answer.",
+          "objectiveId": "P5-EF-1",
+          "exampleId": "half-fourths"
+        },
+        {
+          "id": "et-2",
+          "kind": "short-answer",
+          "prompt": "Give the second worked answer.",
+          "objectiveId": "P5-EF-2",
+          "exampleId": "thirds-sixths"
+        },
+        {
+          "id": "et-3",
+          "kind": "multiple-choice",
+          "prompt": "Which option is the second worked answer?",
+          "objectiveId": "P5-EF-2",
+          "choices": [
+            {
+              "text": "4/6"
+            },
+            {
+              "text": "Not the worked answer"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "index": {
+    "byBeat": {
+      "activate": {
+        "assessmentIds": [
+          "check-1"
+        ],
+        "objectiveIds": [
+          "P5-EF-1"
+        ],
+        "slideIndexes": [
+          0,
+          1
+        ],
+        "visualIds": [
+          "vis-activate"
+        ]
+      },
+      "exit": {
+        "assessmentIds": [
+          "check-3"
+        ],
+        "objectiveIds": [
+          "P5-EF-1",
+          "P5-EF-2"
+        ],
+        "slideIndexes": [
+          5
+        ],
+        "visualIds": []
+      },
+      "explain": {
+        "assessmentIds": [],
+        "objectiveIds": [
+          "P5-EF-1"
+        ],
+        "slideIndexes": [
+          2,
+          3
+        ],
+        "visualIds": [
+          "vis-explain"
+        ]
+      },
+      "practice": {
+        "assessmentIds": [
+          "check-2"
+        ],
+        "objectiveIds": [
+          "P5-EF-2"
+        ],
+        "slideIndexes": [
+          4
+        ],
+        "visualIds": [
+          "vis-practice"
+        ]
+      },
+      "predict": {
+        "assessmentIds": [],
+        "objectiveIds": [
+          "P5-EF-2"
+        ],
+        "slideIndexes": [],
+        "visualIds": [
+          "vis-predict"
+        ]
+      }
+    },
+    "byObjective": {
+      "P5-EF-1": {
+        "assessmentIds": [
+          "check-1",
+          "diag-1",
+          "ws-1",
+          "et-1"
+        ],
+        "beatIds": [
+          "activate",
+          "explain",
+          "exit"
+        ],
+        "slideIndexes": [
+          0,
+          1,
+          2,
+          3,
+          5
+        ],
+        "visualIds": [
+          "vis-activate",
+          "vis-explain"
+        ]
+      },
+      "P5-EF-2": {
+        "assessmentIds": [
+          "check-2",
+          "check-3",
+          "diag-2",
+          "diag-h1",
+          "ws-2",
+          "et-2",
+          "et-3"
+        ],
+        "beatIds": [
+          "predict",
+          "practice",
+          "exit"
+        ],
+        "slideIndexes": [
+          4,
+          5
+        ],
+        "visualIds": [
+          "vis-predict",
+          "vis-practice"
+        ]
+      }
+    }
+  },
+  "coherence": {
+    "capabilities": [
+      {
+        "beatId": "activate",
+        "capability": "diagram",
+        "declaredMissing": false,
+        "reason": null,
+        "requested": "diagram",
+        "supported": true,
+        "visualId": "vis-activate"
+      },
+      {
+        "beatId": "explain",
+        "capability": "diagram",
+        "declaredMissing": false,
+        "fallback": {
+          "from": "animation",
+          "reason": "animation visual requires a sceneId"
+        },
+        "reason": null,
+        "requested": "animation",
+        "supported": true,
+        "visualId": "vis-explain"
+      },
+      {
+        "beatId": "predict",
+        "capability": "diagram",
+        "declaredMissing": false,
+        "reason": null,
+        "requested": "diagram",
+        "supported": true,
+        "visualId": "vis-predict"
+      },
+      {
+        "beatId": "practice",
+        "capability": "diagram",
+        "declaredMissing": false,
+        "reason": null,
+        "requested": "diagram",
+        "supported": true,
+        "visualId": "vis-practice"
+      }
+    ],
+    "warnings": [
+      "visual vis-explain fell back from animation: animation visual requires a sceneId"
+    ]
+  }
+}
