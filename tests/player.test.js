@@ -792,8 +792,10 @@ test634('issue #634: mount() throws Error naming the failing field for a malform
 });
 
 test634('issue #634: mount() rejects a version-mismatched spec naming animath', () => {
+  // animath 0.2 is a valid opt-in version (issue #1648 follow-up), so the
+  // mismatch case is now an unknown version string.
   assert634.throws(
-    function () { player634.mount(inertEl554({}), spec634({ animath: '0.2' })); },
+    function () { player634.mount(inertEl554({}), spec634({ animath: '0.3' })); },
     /animath:/,
     'version mismatch must throw naming the animath field'
   );
