@@ -18,11 +18,18 @@ npm on 2026-10-11 under tag `v0.2.0-beta.0`, with a matching GitHub Release
    section (`## [X.Y.Z] - YYYY-MM-DD`), per the `CHANGELOG.md` header
    convention (Keep a Changelog, semver). Leave an empty `## [Unreleased]`
    section at the top.
-2. **Version bump.** Run `npm version <patch|minor|major>` — it bumps
-   `package.json`, commits, and creates the tag `vX.Y.Z` in one step.
+2. **Version bump.** Run `npm version <patch|minor|major> --no-git-tag-version`
+   to update `package.json` before preparing the release commit.
    (`patch` = fixes, `minor` = new capabilities, `major` = breaking
    `SPEC.md` contract changes.)
-3. **Push.** Push `main` and the tag to GitHub
+   To promote a prerelease to stable, use the explicit version instead
+   (for example, `npm version 0.2.0 --no-git-tag-version` from
+   `0.2.0-beta.3`). Regenerate the
+   browser version literals with `node generator/tooling/regen-version.js`
+   and include them in the release commit before tagging it.
+3. **Commit and tag.** Commit the release changes and merge the release PR
+   into `main`. Tag that release commit with
+   `git tag -a vX.Y.Z -m 'Release X.Y.Z'`. Push `main` and the tag to GitHub
    (`git push && git push vX.Y.Z`).
 4. **Tarball check.** `npm pack --dry-run` and confirm the tarball holds
    `generator/`, `player/`, `web/embed.js`, `web/embed.d.ts`, `README.md`,
@@ -30,6 +37,8 @@ npm on 2026-10-11 under tag `v0.2.0-beta.0`, with a matching GitHub Release
    in `package.json`).
 5. **GitHub Release.** Create a release from tag `vX.Y.Z`; the release notes
    are the new `CHANGELOG.md` version section, copied verbatim.
+   Stable releases are not marked as prereleases and become the latest
+   release. Only versions with a prerelease suffix are marked as such.
 6. **Publish.** `npm publish --access public` (the scoped name needs
    `--access public`; owner action — requires `npm login`). For a
    prerelease (e.g. a beta), publish under its dist-tag instead —
