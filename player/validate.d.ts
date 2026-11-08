@@ -1,5 +1,7 @@
-// TypeScript definitions for player/validate.js — animath spec v0.1 validator.
+// TypeScript definitions for player/validate.js — animath spec v0.1 + v0.2 validator.
 // Returns an array of error strings; empty array = valid.
+// v0.2 (issue #1648 follow-up) is an opt-in extension: animath '0.2' specs
+// may use the bounded curve / trajectory shapes and steps; 0.1 is unchanged.
 export function validateSpec(spec: unknown): string[];
 export function validateSlides(spec: unknown): string[];
 export function validateWorksheet(spec: unknown): string[];

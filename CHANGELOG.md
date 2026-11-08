@@ -10,6 +10,25 @@ version section when the release ships.
 
 ## [Unreleased]
 
+- Add the animath 0.2 bounded curve / trajectory extension (#1648 follow-up,
+  owner comment 6722851874): opt-in `animath: '0.2'` specs may use `axes` /
+  `coordinate_system`, `function_plot` (typed finite polynomial family only)
+  and `polyline_trace` shapes plus `draw` and `move_along_path` steps, with
+  arc-length progress, a bounded easing enum, and the safety bounds in
+  SPEC.md "Animation spec v0.2" (degree 0..5, samples 2..200, trace points
+  2..200, coordinates within +/-1,000,000, step duration 100..12000ms).
+  Shapes are self-contained (no cross-shape axes reference); no expression
+  eval, no JS, no remote assets. The player renders axes, sampled plots and
+  traces, reveals paths progressively and moves markers along them, with
+  reduced motion rendering the final state instantly; export-frames mirrors
+  the same geometry and progress math so frames stay deterministic and
+  byte-identical. 0.1 specs are unchanged: a 0.1 spec using any 0.2-only
+  shape or verb is rejected. New fixture
+  `tests/fixtures/animath-0.2-quadratic.json` (quadratic y = x^2 with a
+  draw reveal and a marker travelling along it) and 65 tests in
+  `tests/animath-0.2.test.js` cover the validator matrix, the path helpers,
+  export-frames determinism, and the live player.
+
 - Fix topic-bundle stage prompts omitting what a real model needs to pass
   validation (#1650): the blueprint stage now sends the request's
   objectives, source claims and parameters plus the `BlueprintContent`

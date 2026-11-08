@@ -1,6 +1,9 @@
-/* animath spec validator v0.1 — reference implementation of SPEC.md.
+/* animath spec validator v0.1 + v0.2 — reference implementation of SPEC.md.
  * Returns an array of error strings; empty means valid.
  * Works in browser and Node (no DOM, no deps).
+ * v0.2 (issue #1648 follow-up) is an opt-in extension: a spec with
+ * animath: '0.2' may use every 0.1 shape/verb plus the bounded curve /
+ * trajectory shapes and steps; a 0.1 spec keeps 0.1 semantics exactly.
  */
 (function (global, factory) {
   var api = factory();
@@ -16,6 +19,26 @@
   var KINDS = ['concept', 'problem'];
   var VERBS = ['show', 'hide', 'move', 'emphasize', 'caption'];
   var SHAPES = ['text', 'rect', 'circle', 'line', 'arrow', 'polygon', 'latex', 'sector'];
+  // animath 0.2 (issue #1648 follow-up): opt-in bounded curve / trajectory
+  // extension. A 0.2 spec may use every 0.1 shape/verb plus the ones below;
+  // a 0.1 spec using any of them is rejected.
+  var SHAPES02 = SHAPES.concat(['axes', 'coordinate_system', 'function_plot', 'polyline_trace']);
+  var VERBS02 = VERBS.concat(['draw', 'move_along_path']);
+  var EASINGS = ['linear', 'ease-in', 'ease-out', 'ease-in-out'];
+  // Shapes a move_along_path marker may name: point-positioned kinds only
+  // (line/arrow need an endpoint pair, sector is not moveable at all).
+  var MARKER_KINDS = ['text', 'circle', 'rect', 'latex'];
+  // Shapes a draw / move_along_path path may name.
+  var PATH_KINDS = ['function_plot', 'polyline_trace'];
+  // Safety bounds (SPEC.md "Animation spec v0.2"): degree, samples,
+  // points, coordinate magnitude, step duration, ticks per axis.
+  var MAX_POLY_DEGREE = 5;
+  var MAX_SAMPLES = 200;
+  var MAX_TRACE_POINTS = 200;
+  var MAX_TICKS = 200;
+  var MAX_COORD = 1000000;
+  var MIN_STEP_DUR_MS = 100;
+  var MAX_STEP_DUR_MS = 12000;
   var MOVEABLE = ['text', 'rect', 'circle', 'line', 'arrow', 'latex', 'polygon'];
   var HEX = /^#[0-9a-fA-F]{3}([0-9a-fA-F]{3})?$/;
   // Dash pattern: one or more numbers separated by whitespace (e.g. "6 4").
@@ -30,16 +53,50 @@
     return Array.isArray(x) && x.length === 2 && isNum(x[0]) && x[0] > 0 && isNum(x[1]) && x[1] > 0;
   }
 
-  function checkShape(shape, errors, where) {
+  // is02: true when the enclosing spec is animath 0.2. The 0.2-only
+  // shapes (axes, coordinate_system, function_plot, polyline_trace) are
+  // rejected in a 0.1 spec by the kind check below.
+  function checkShape(shape, errors, where, is02) {
     var p = where + '.shape';
     if (!shape || typeof shape !== 'object') { errors.push(p + ': must be an object'); return; }
     if (typeof shape.id !== 'string' || !shape.id) errors.push(p + '.id: required non-empty string');
-    if (SHAPES.indexOf(shape.kind) === -1) {
-      errors.push(p + '.kind: must be one of ' + SHAPES.join('|'));
+    var allowed = is02 ? SHAPES02 : SHAPES;
+    if (allowed.indexOf(shape.kind) === -1) {
+      errors.push(p + '.kind: must be one of ' + allowed.join('|'));
       return;
     }
     function num(field) {
       if (!isNum(shape[field])) errors.push(p + '.' + field + ': required number');
+    }
+    // Bounded coordinate check for 0.2 shapes: every coordinate value
+    // must be finite and within +/-MAX_COORD (SPEC.md "Animation spec
+    // v0.2" safety bounds).
+    function boundedNum(field) {
+      if (!isNum(shape[field])) errors.push(p + '.' + field + ': required number');
+      else if (Math.abs(shape[field]) > MAX_COORD) errors.push(p + '.' + field + ': must be within +/-' + MAX_COORD);
+    }
+    function checkRange(obj, field, label) {
+      var r = obj[field];
+      if (!r || typeof r !== 'object' || Array.isArray(r)) {
+        errors.push(label + ': required {min,max} object');
+        return;
+      }
+      if (!isNum(r.min) || Math.abs(r.min) > MAX_COORD) errors.push(label + '.min: required number within +/-' + MAX_COORD);
+      if (!isNum(r.max) || Math.abs(r.max) > MAX_COORD) errors.push(label + '.max: required number within +/-' + MAX_COORD);
+      if (isNum(r.min) && isNum(r.max) && r.min >= r.max) errors.push(label + ': min must be less than max');
+    }
+    function checkViewport(obj, field, label) {
+      var v = obj[field];
+      if (!v || typeof v !== 'object' || Array.isArray(v)) {
+        errors.push(label + ': required {x,y,w,h} object');
+        return;
+      }
+      ['x', 'y'].forEach(function (f) {
+        if (!isNum(v[f]) || Math.abs(v[f]) > MAX_COORD) errors.push(label + '.' + f + ': required number within +/-' + MAX_COORD);
+      });
+      ['w', 'h'].forEach(function (f) {
+        if (!isNum(v[f]) || v[f] <= 0 || v[f] > MAX_COORD) errors.push(label + '.' + f + ': required positive number up to ' + MAX_COORD);
+      });
     }
     switch (shape.kind) {
       case 'text':
@@ -95,6 +152,85 @@
         if (!isNum(shape.r) || shape.r <= 0) errors.push(p + '.r: required positive number');
         num('startAngle'); num('endAngle');
         break;
+      case 'axes':
+      case 'coordinate_system': {
+        // Bounded math domain mapped onto a canvas viewport rect.
+        // coordinate_system is an alias of axes: same fields, same render.
+        boundedNum('x'); boundedNum('y');
+        if (!isNum(shape.w) || shape.w <= 0 || shape.w > MAX_COORD) errors.push(p + '.w: required positive number up to ' + MAX_COORD);
+        if (!isNum(shape.h) || shape.h <= 0 || shape.h > MAX_COORD) errors.push(p + '.h: required positive number up to ' + MAX_COORD);
+        checkRange(shape, 'xRange', p + '.xRange');
+        checkRange(shape, 'yRange', p + '.yRange');
+        if (shape.tickStep !== undefined && (!isNum(shape.tickStep) || shape.tickStep <= 0)) {
+          errors.push(p + '.tickStep: must be a positive number when present');
+        }
+        // Tick-count bound (SPEC.md "Animation spec v0.2"): the player
+        // builds one tick mark per step, so a wide range with a tiny
+        // tickStep would hang the player and export-frames. The implied
+        // count is floor(span/step) + 1; the +1e-9 mirrors the player's
+        // own max + 1e-9 loop tolerance, so a boundary float like
+        // 19.9/0.1 = 198.99999999999997 still counts its 200th tick.
+        // The default step (span/5) implies 5 ticks, so the check only
+        // binds when tickStep is given. It runs only when tickStep and
+        // the range are both valid, so a malformed field reports only
+        // its own error.
+        if (isNum(shape.tickStep) && shape.tickStep > 0) {
+          ['xRange', 'yRange'].forEach(function (field) {
+            var r = shape[field];
+            if (r && typeof r === 'object' && !Array.isArray(r) &&
+                isNum(r.min) && isNum(r.max) &&
+                Math.abs(r.min) <= MAX_COORD && Math.abs(r.max) <= MAX_COORD &&
+                r.min < r.max) {
+              var count = Math.floor((r.max - r.min) / shape.tickStep + 1e-9) + 1;
+              if (count > MAX_TICKS) {
+                errors.push(p + '.' + field + '/tickStep: implies more than ' + MAX_TICKS + ' ticks (max ' + MAX_TICKS + ' per axis)');
+              }
+            }
+          });
+        }
+        ['xLabel', 'yLabel'].forEach(function (f) {
+          if (shape[f] !== undefined && typeof shape[f] !== 'string') errors.push(p + '.' + f + ': must be a string when present');
+        });
+        break;
+      }
+      case 'function_plot': {
+        // Typed finite function family only: polynomial, evaluated by the
+        // player from coefficients — no expression eval, no JS, no code.
+        if (shape.family !== 'polynomial') errors.push(p + '.family: must be "polynomial"');
+        if (!Array.isArray(shape.coefficients) || shape.coefficients.length < 1 ||
+            shape.coefficients.length > MAX_POLY_DEGREE + 1) {
+          errors.push(p + '.coefficients: required array of 1..' + (MAX_POLY_DEGREE + 1) + ' finite numbers (degree 0..' + MAX_POLY_DEGREE + ')');
+        } else {
+          shape.coefficients.forEach(function (c, i) {
+            if (!isNum(c) || Math.abs(c) > MAX_COORD) errors.push(p + '.coefficients[' + i + ']: required finite number within +/-' + MAX_COORD);
+          });
+        }
+        checkRange(shape, 'domain', p + '.domain');
+        checkRange(shape, 'range', p + '.range');
+        checkViewport(shape, 'viewport', p + '.viewport');
+        if (shape.samples !== undefined &&
+            (!Number.isInteger(shape.samples) || shape.samples < 2 || shape.samples > MAX_SAMPLES)) {
+          errors.push(p + '.samples: must be an integer from 2 to ' + MAX_SAMPLES + ' when present');
+        }
+        break;
+      }
+      case 'polyline_trace':
+        if (!Array.isArray(shape.points) || shape.points.length < 2 ||
+            shape.points.length > MAX_TRACE_POINTS ||
+            !shape.points.every(function (pt) {
+              return Array.isArray(pt) && pt.length === 2 && isNum(pt[0]) && isNum(pt[1]) &&
+                Math.abs(pt[0]) <= MAX_COORD && Math.abs(pt[1]) <= MAX_COORD;
+            })) {
+          errors.push(p + '.points: required array of 2..' + MAX_TRACE_POINTS + ' finite [x,y] pairs within +/-' + MAX_COORD);
+        }
+        break;
+    }
+    // The 0.2 shapes carry no answer-bearing fields: an `answer` or
+    // `correct` key on one is rejected so a curve/trajectory spec can
+    // never smuggle an answer key into the learner-visible animation.
+    if (['axes', 'coordinate_system', 'function_plot', 'polyline_trace'].indexOf(shape.kind) !== -1) {
+      if (shape.answer !== undefined) errors.push(p + '.answer: answer-bearing fields are not allowed on 0.2 curve shapes');
+      if (shape.correct !== undefined) errors.push(p + '.correct: answer-bearing fields are not allowed on 0.2 curve shapes');
     }
     // "Explain me this" tooltip text (issue #173): any shape kind may
     // carry it; it must be a string when present. The player shows the
@@ -113,7 +249,10 @@
   function validateSpec(spec) {
     var errors = [];
     if (!spec || typeof spec !== 'object') return ['spec: must be an object'];
-    if (spec.animath !== '0.1') errors.push('animath: must be "0.1"');
+    // animath 0.2 is an opt-in extension: a 0.2 spec may use every 0.1
+    // shape/verb plus the 0.2 ones; a 0.1 spec keeps 0.1 semantics.
+    var is02 = spec.animath === '0.2';
+    if (spec.animath !== '0.1' && !is02) errors.push('animath: must be "0.1" or "0.2"');
     if (typeof spec.title !== 'string' || !spec.title.trim()) errors.push('title: required non-empty string');
     if (LEVELS.indexOf(spec.level) === -1) errors.push('level: must be ' + LEVELS.join('|'));
     if (typeof spec.subject !== 'string' || !spec.subject.trim()) errors.push('subject: required non-empty string');
@@ -157,12 +296,13 @@
         }
         if (step.at_ms < lastAt) errors.push(s + '.at_ms: steps should be ordered ascending');
         lastAt = step.at_ms;
-        if (VERBS.indexOf(step.do) === -1) {
-          errors.push(s + '.do: must be ' + VERBS.join('|'));
+        var verbs = is02 ? VERBS02 : VERBS;
+        if (verbs.indexOf(step.do) === -1) {
+          errors.push(s + '.do: must be ' + verbs.join('|'));
           return;
         }
         if (step.do === 'show') {
-          checkShape(step.shape, errors, s);
+          checkShape(step.shape, errors, s, is02);
           if (step.shape && typeof step.shape.id === 'string') {
             if (shapeIds[step.shape.id]) errors.push(s + '.shape.id: duplicate shape id "' + step.shape.id + '" in scene');
             shapeIds[step.shape.id] = true;
@@ -173,6 +313,60 @@
           }
         } else if (step.do === 'caption') {
           if (typeof step.text !== 'string' || !step.text.trim()) errors.push(s + '.text: required non-empty string');
+        } else if (step.do === 'draw' || step.do === 'move_along_path') {
+          // animath 0.2 steps (SPEC.md "Animation spec v0.2"). These name
+          // shapes by role (target / marker + path), not by `target` alone,
+          // so they are checked here instead of the generic target block.
+          // Shared progress window: 0..1, from <= to, bounded duration,
+          // bounded easing enum. Progress is arc-length progress along the
+          // sampled path, so the reveal / marker motion is deterministic.
+          function checkProgress() {
+            if (!isNum(step.fromProgress) || step.fromProgress < 0 || step.fromProgress > 1) {
+              errors.push(s + '.fromProgress: required number 0..1');
+            }
+            if (!isNum(step.toProgress) || step.toProgress < 0 || step.toProgress > 1) {
+              errors.push(s + '.toProgress: required number 0..1');
+            }
+            if (isNum(step.fromProgress) && isNum(step.toProgress) && step.fromProgress > step.toProgress) {
+              errors.push(s + '.fromProgress: must not exceed toProgress');
+            }
+          }
+          function checkDurEasing() {
+            if (!isNum(step.dur_ms) || step.dur_ms < MIN_STEP_DUR_MS || step.dur_ms > MAX_STEP_DUR_MS) {
+              errors.push(s + '.dur_ms: required number ' + MIN_STEP_DUR_MS + '..' + MAX_STEP_DUR_MS);
+            }
+            if (step.easing !== undefined && EASINGS.indexOf(step.easing) === -1) {
+              errors.push(s + '.easing: must be ' + EASINGS.join('|'));
+            }
+          }
+          function checkShownRef(field) {
+            if (typeof step[field] !== 'string' || !step[field]) {
+              errors.push(s + '.' + field + ': required shape id');
+              return null;
+            }
+            if (!shown[step[field]]) {
+              errors.push(s + '.' + field + ': "' + step[field] + '" must be shown earlier in the same scene');
+              return null;
+            }
+            return shown[step[field]];
+          }
+          if (step.do === 'draw') {
+            var drawKind = checkShownRef('target');
+            if (drawKind && PATH_KINDS.indexOf(drawKind) === -1) {
+              errors.push(s + '.target: kind "' + drawKind + '" is not a path (function_plot|polyline_trace)');
+            }
+          } else {
+            var markerKind = checkShownRef('marker');
+            if (markerKind && MARKER_KINDS.indexOf(markerKind) === -1) {
+              errors.push(s + '.marker: kind "' + markerKind + '" cannot be a move_along_path marker (text|circle|rect|latex)');
+            }
+            var pathKind = checkShownRef('path');
+            if (pathKind && PATH_KINDS.indexOf(pathKind) === -1) {
+              errors.push(s + '.path: kind "' + pathKind + '" is not a path (function_plot|polyline_trace)');
+            }
+          }
+          checkProgress();
+          checkDurEasing();
         } else {
           if (typeof step.target !== 'string' || !step.target) {
             errors.push(s + '.target: required shape id');

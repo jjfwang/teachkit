@@ -1,4 +1,9 @@
-/* animath export frames v0.1 — DOM-free deterministic per-frame SVG (slice 1 of issue #506).
+/* animath export frames v0.1 + v0.2 — DOM-free deterministic per-frame SVG (slice 1 of issue #506).
+ *
+ * v0.2 (issue #1648 follow-up) mirrors the bounded curve / trajectory
+ * extension (axes, function_plot, polyline_trace, draw, move_along_path)
+ * in the same contract: same defaults, same geometry, same progress math
+ * as player.js, so frame N is deterministic and byte-identical across runs.
  *
  * Slice 2's browser recording harness consumes this contract: given a spec +
  * frame index, produce the SVG string for that frame deterministically, so
@@ -29,6 +34,11 @@
  *    nicety; a recorded frame must be a clean still.
  *  - Text content is XML-escaped; numbers serialize with JS String(), which
  *    is deterministic in V8. No Date, no Math.random, no DOM anywhere.
+ *  - animath 0.2: draw renders the path only up to its eased arc-length
+ *    progress (partialPolyline, same math as the player's draw tween);
+ *    move_along_path places the marker at the path point at that progress
+ *    (markerPos). A frame sampled mid-tween matches the player's live
+ *    tween position exactly, because both use applyEasing + arc length.
  */
 (function (global) {
   'use strict';
@@ -88,6 +98,82 @@
   }
 
   // Deterministic SVG markup for one shape — the string twin of drawShape().
+  // A 0.2 path shape carrying the replay's internal _drawFrac renders only
+  // the revealed prefix (partialPolyline); the field is set by sceneShapes
+  // on the cloned shape and never appears in the emitted markup.
+  function pathMarkup(shape) {
+    var pts = player.internals.pathPoints(shape);
+    if (shape._drawFrac !== undefined) pts = player.internals.partialPolyline(pts, shape._drawFrac);
+    return '<path' + attrs([
+      ['d', player.internals.polylinePath(pts)],
+      ['fill', 'none'],
+      ['stroke', shape.stroke || '#1a1a1a'],
+      ['stroke-width', shape.strokeWidth || 3],
+      ['stroke-linejoin', 'round'],
+      ['stroke-linecap', 'round'],
+      ['data-shape-id', shape.id]
+    ]) + '/>';
+  }
+
+  // Axes markup, the string twin of drawShape's axes case: same frame,
+  // zero axes, ticks and labels from the shared axesGeometry helper.
+  function axesMarkup(shape) {
+    var g = player.internals.axesGeometry(shape);
+    var stroke = shape.stroke || '#1a1a1a';
+    var sw = shape.strokeWidth || 2;
+    var out = '<g' + attrs([['data-shape-id', shape.id]]) + '>';
+    out += '<rect' + attrs([
+      ['x', shape.x], ['y', shape.y], ['width', shape.w], ['height', shape.h]
+    ].concat(baseAttrs(shape))) + '/>';
+    out += '<line' + attrs([
+      ['x1', shape.x], ['y1', g.xAxisY], ['x2', shape.x + shape.w], ['y2', g.xAxisY],
+      ['stroke', stroke], ['stroke-width', sw]
+    ]) + '/>';
+    out += '<line' + attrs([
+      ['x1', g.yAxisX], ['y1', shape.y], ['x2', g.yAxisX], ['y2', shape.y + shape.h],
+      ['stroke', stroke], ['stroke-width', sw]
+    ]) + '/>';
+    g.xTicks.forEach(function (v) {
+      var tx = g.mapX(v);
+      out += '<line' + attrs([
+        ['x1', tx], ['y1', g.xAxisY - 5], ['x2', tx], ['y2', g.xAxisY + 5],
+        ['stroke', stroke], ['stroke-width', 2]
+      ]) + '/>';
+      out += '<text' + attrs([
+        ['x', tx], ['y', g.xAxisY + 22],
+        ['font-size', 16], ['fill', '#1a1a1a'], ['text-anchor', 'middle'],
+        ['font-family', 'system-ui, -apple-system, sans-serif']
+      ]) + '>' + esc(String(v)) + '</text>';
+    });
+    g.yTicks.forEach(function (v) {
+      var ty = g.mapY(v);
+      out += '<line' + attrs([
+        ['x1', g.yAxisX - 5], ['y1', ty], ['x2', g.yAxisX + 5], ['y2', ty],
+        ['stroke', stroke], ['stroke-width', 2]
+      ]) + '/>';
+      out += '<text' + attrs([
+        ['x', g.yAxisX - 10], ['y', ty + 6],
+        ['font-size', 16], ['fill', '#1a1a1a'], ['text-anchor', 'end'],
+        ['font-family', 'system-ui, -apple-system, sans-serif']
+      ]) + '>' + esc(String(v)) + '</text>';
+    });
+    if (shape.xLabel) {
+      out += '<text' + attrs([
+        ['x', shape.x + shape.w - 4], ['y', g.xAxisY - 10],
+        ['font-size', 18], ['fill', '#1a1a1a'], ['text-anchor', 'end'],
+        ['font-family', 'system-ui, -apple-system, sans-serif']
+      ]) + '>' + esc(shape.xLabel) + '</text>';
+    }
+    if (shape.yLabel) {
+      out += '<text' + attrs([
+        ['x', g.yAxisX + 10], ['y', shape.y + 16],
+        ['font-size', 18], ['fill', '#1a1a1a'], ['text-anchor', 'start'],
+        ['font-family', 'system-ui, -apple-system, sans-serif']
+      ]) + '>' + esc(shape.yLabel) + '</text>';
+    }
+    return out + '</g>';
+  }
+
   function shapeMarkup(shape) {
     switch (shape.kind) {
       case 'text':
@@ -154,6 +240,12 @@
         return '<path' + attrs([
           ['d', player.internals.sectorPath(shape)]
         ].concat(baseAttrs(shape), [['data-shape-id', shape.id]])) + '/>';
+      case 'axes':
+      case 'coordinate_system':
+        return axesMarkup(shape);
+      case 'function_plot':
+      case 'polyline_trace':
+        return pathMarkup(shape);
       default:
         throw new Error('unknown shape kind: ' + shape.kind);
     }
@@ -198,6 +290,37 @@
           var p = Math.min(1, (ms - step.at_ms) / dur);
           var pos = player.internals.interpFields(rec, step.to, p);
           for (var f in pos) rec[f] = pos[f];
+          break;
+        }
+        case 'draw': {
+          // animath 0.2: progressive reveal — the revealed fraction is the
+          // eased interpolation from fromProgress to toProgress, exactly
+          // like the player's draw tween. Stored on the clone as _drawFrac
+          // so shapeMarkup renders the partial path; the spec is untouched.
+          var drec = visible[step.target];
+          if (!drec) break;
+          var ddur = step.dur_ms || 800;
+          var dp = Math.min(1, (ms - step.at_ms) / ddur);
+          var dfrac = step.fromProgress +
+            (step.toProgress - step.fromProgress) *
+            player.internals.applyEasing(step.easing || 'linear', dp);
+          drec._drawFrac = dfrac;
+          break;
+        }
+        case 'move_along_path': {
+          // animath 0.2: marker at the path point at the eased progress,
+          // exactly like the player's mover tween.
+          var mvRec = visible[step.marker];
+          var pathRec = visible[step.path];
+          if (!mvRec || !pathRec) break;
+          var mdur = step.dur_ms || 800;
+          var mp = Math.min(1, (ms - step.at_ms) / mdur);
+          var mprog = step.fromProgress +
+            (step.toProgress - step.fromProgress) *
+            player.internals.applyEasing(step.easing || 'linear', mp);
+          var mpos = player.internals.markerPos(
+            mvRec, player.internals.pathPoints(pathRec), mprog);
+          for (var mf in mpos) mvRec[mf] = mpos[mf];
           break;
         }
         default:

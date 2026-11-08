@@ -12,7 +12,7 @@ implementation. If code and spec disagree, the code is wrong.
 
 | field     | type                              | notes                                              |
 |-----------|-----------------------------------|----------------------------------------------------|
-| `animath` | string                            | spec version, currently `"0.1"`                    |
+| `animath` | string                            | spec version, `"0.1"` or `"0.2"` (0.2 is the opt-in curve / trajectory extension below) |
 | `title`   | string                            | human title, shown in the player header            |
 | `level`   | `"primary"` \| `"secondary"` \| `"jc"` |                                              |
 | `subject` | string                            | required non-empty string — any school subject; math\|science\|geography are the syllabus-covered subjects |
@@ -60,6 +60,11 @@ Every step has `at_ms` (0 ≤ at_ms < scene `duration_ms`) and a `do` verb.
   shape (scale pulse). Default `dur_ms` 900.
 - `caption`: `{at_ms, do:"caption", text}` — replaces the scene caption bar
   mid-scene.
+- `draw` (0.2 only): `{at_ms, do:"draw", target, fromProgress, toProgress, dur_ms, easing?}` —
+  progressively reveals a path shape (`function_plot` or `polyline_trace`)
+  along its sampled arc length; see "Animation spec v0.2".
+- `move_along_path` (0.2 only): `{at_ms, do:"move_along_path", marker, path, fromProgress, toProgress, dur_ms, easing?}` —
+  moves a marker shape along a path shape; see "Animation spec v0.2".
 
 ## Playback
 
@@ -153,6 +158,93 @@ Every shape has a unique `id` within its scene.
 
 Coordinates are canvas pixels, origin top-left. Colors are CSS hex strings
 (`"#1a1a1a"`). Sensible defaults: 2px `#1a1a1a` strokes, transparent fills.
+
+## Animation spec v0.2
+
+An opt-in extension for bounded curve / trajectory animation (issue #1648
+follow-up). A spec sets `animath: "0.2"` to use it; a 0.2 spec may use every
+0.1 shape and verb plus the ones below, and a 0.1 spec using any 0.2-only
+shape or verb is rejected, so 0.1 semantics are untouched.
+
+### Design decisions
+
+- **Shapes are self-contained.** A `function_plot` carries its own
+  `domain` / `range` / `viewport` — there is no cross-shape axes reference
+  to resolve, and a plot renders the same with or without an `axes` shape
+  on screen. A `polyline_trace` carries canvas-coord points, like
+  `polygon`. An `axes` shape is a visual frame only; it never feeds data
+  into a plot.
+- **No expression eval, no JS, no free-form code, no remote assets, no
+  unrestricted HTML.** The only function family is a finite polynomial,
+  evaluated from an explicit coefficient list. Nothing in a 0.2 spec is
+  executed as code.
+- **Identity rules.** The usual rules hold: stable `scene.id`, unique shape
+  ids within a scene, `draw` / `move_along_path` targets shown earlier in
+  the same scene. The 0.2 shapes carry no answer-bearing fields: `answer`
+  or `correct` on `axes`, `coordinate_system`, `function_plot`, or
+  `polyline_trace` is rejected.
+- **Deterministic progress.** Both new steps measure progress along the
+  sampled arc length of the path (not along the parameter), so a marker
+  riding a drawn path stays exactly on the revealed tip, and a seek or
+  scrub reconstructs the same state the live playback reaches. Reduced
+  motion renders the final state instantly, like `move`.
+
+### New shapes (0.2 only)
+
+- `axes`: `{id, kind:"axes", x, y, w, h, xRange:{min,max}, yRange:{min,max}, tickStep?, xLabel?, yLabel?, fill?, stroke?, strokeWidth?}` —
+  a bounded math domain mapped onto a canvas viewport rect. Renders the
+  frame, the zero axes (clamped to the frame edge when 0 is outside the
+  range), tick marks and labels. `tickStep` (one step for both axes,
+  default a fifth of the span) must be positive; `xLabel` / `yLabel` are
+  optional strings.
+- `coordinate_system`: an alias of `axes` — same fields, same render.
+- `function_plot`: `{id, kind:"function_plot", family:"polynomial", coefficients:[c0,c1,...], domain:{min,max}, range:{min,max}, viewport:{x,y,w,h}, samples?, stroke?, strokeWidth?}` —
+  the graph of `y = c0 + c1*x + ... + ck*x^k`, sampled over `domain`
+  (default 100 samples) and mapped through `viewport` (canvas y-down, so
+  `range.max` sits at the top). `family` must be `"polynomial"`.
+- `polyline_trace`: `{id, kind:"polyline_trace", points:[[x,y],...], stroke?, strokeWidth?}` —
+  a bounded polyline in canvas coords, rendered as a path.
+
+### New steps (0.2 only)
+
+- `draw`: `{at_ms, do:"draw", target, fromProgress, toProgress, dur_ms, easing?}` —
+  progressively reveals the target path shape (`function_plot` or
+  `polyline_trace`, shown earlier in the same scene) from `fromProgress`
+  to `toProgress` of its arc length. Progress 0 shows nothing of the
+  path; progress 1 shows all of it.
+- `move_along_path`: `{at_ms, do:"move_along_path", marker, path, fromProgress, toProgress, dur_ms, easing?}` —
+  moves `marker` (a shown `text`, `circle`, `rect`, or `latex` shape)
+  along `path` (a shown `function_plot` or `polyline_trace`) from
+  `fromProgress` to `toProgress` of its arc length. The marker position
+  is the path point at that progress: `cx`/`cy` for a circle, `x`/`y`
+  otherwise.
+- `easing` (both steps, optional, default `"linear"`): `"linear"` |
+  `"ease-in"` | `"ease-out"` | `"ease-in-out"`. The eased value
+  interpolates between `fromProgress` and `toProgress`.
+
+### Safety bounds (0.2)
+
+The validator rejects anything outside these bounds; a spec that fails
+validation falls back to a still diagram (the player refuses to mount it,
+and the exporter never renders it).
+
+| bound | limit |
+|---|---|
+| scenes, scene `duration_ms`, step `at_ms` | unchanged from 0.1 (1..8 scenes, 4000..12000ms) |
+| polynomial degree | 0..5 (1..6 coefficients) |
+| samples per `function_plot` | 2..200 (default 100) |
+| points per `polyline_trace` | 2..200 |
+| coordinate / coefficient / domain / range magnitude | finite, within +/-1,000,000 |
+| ticks per `axes` / `coordinate_system` axis | at most 200 (implied count from range / `tickStep`; default step implies 5) |
+| viewport `w` / `h` | positive, up to 1,000,000 |
+| `draw` / `move_along_path` `dur_ms` | 100..12000 |
+| `fromProgress` / `toProgress` | 0..1, `fromProgress` <= `toProgress` |
+
+`NaN` / `Infinity` anywhere in a 0.2 shape or step is rejected (the
+validator's finite-number checks apply to every new numeric field).
+`function_plot` and `polyline_trace` are not moveable by `move`
+(they are paths, not positioned shapes); `axes` / `coordinate_system`
+are not moveable either.
 
 ## Math notation (v0.1)
 

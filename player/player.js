@@ -1,4 +1,7 @@
-/* animath player v0.1 — dependency-free SVG renderer for animation specs.
+/* animath player v0.1 + v0.2 — dependency-free SVG renderer for animation specs.
+ * v0.2 (issue #1648 follow-up) adds the opt-in bounded curve / trajectory
+ * extension (axes, function_plot, polyline_trace, draw, move_along_path);
+ * 0.1 specs render exactly as before.
  *
  * Usage (browser):
  *   var player = AnimathPlayer.mount(document.getElementById('stage'), spec);
@@ -317,6 +320,179 @@
            (shape.x1 - nx * wt / 2) + ',' + (shape.y1 - ny * wt / 2);
   }
 
+  // --- animath 0.2 curve / trajectory helpers (issue #1648 follow-up) ---
+  // All pure and DOM-free; the player, export-frames, and Node tests share
+  // them through player.internals so the three render paths cannot drift.
+  // Shapes are self-contained: a function_plot carries its own domain /
+  // range / viewport (no cross-shape axes reference to resolve), and a
+  // polyline_trace carries canvas-coord points like polygon.
+
+  // Easing for draw / move_along_path (SPEC.md "Animation spec v0.2"):
+  // linear, ease-in (p^2), ease-out (1-(1-p)^2), ease-in-out. Progress is
+  // clamped to 0..1; an unknown name falls back to linear (the validator
+  // rejects unknown names first, so this is defensive only).
+  function applyEasing(name, p) {
+    var q = p < 0 ? 0 : (p > 1 ? 1 : p);
+    if (name === 'ease-in') return q * q;
+    if (name === 'ease-out') return 1 - (1 - q) * (1 - q);
+    if (name === 'ease-in-out') {
+      return q < 0.5 ? 2 * q * q : 1 - (-2 * q + 2) * (-2 * q + 2) / 2;
+    }
+    return q;
+  }
+
+  // Sample a polynomial function_plot into canvas-coord [x, y] points:
+  // samples (default 100) evenly spaced over domain, y = sum c[k] * x^k,
+  // mapped through viewport (canvas y-down, so range.max sits at the top).
+  function samplePolynomial(shape) {
+    var n = shape.samples || 100;
+    var d = shape.domain, r = shape.range, v = shape.viewport;
+    var pts = [];
+    for (var i = 0; i < n; i++) {
+      var t = n === 1 ? 0 : i / (n - 1);
+      var xv = d.min + (d.max - d.min) * t;
+      var yv = 0;
+      for (var k = 0; k < shape.coefficients.length; k++) {
+        yv += shape.coefficients[k] * Math.pow(xv, k);
+      }
+      pts.push([
+        v.x + v.w * (xv - d.min) / (d.max - d.min),
+        v.y + v.h * (r.max - yv) / (r.max - r.min)
+      ]);
+    }
+    return pts;
+  }
+
+  // Canvas-coord sample points for a path shape: the sampled polynomial
+  // for function_plot, a copy of the authored points for polyline_trace,
+  // [] for anything else (the validator keeps other kinds out).
+  function pathPoints(shape) {
+    if (!shape) return [];
+    if (shape.kind === 'function_plot') return samplePolynomial(shape);
+    if (shape.kind === 'polyline_trace') {
+      return (shape.points || []).map(function (p) { return [p[0], p[1]]; });
+    }
+    return [];
+  }
+
+  // Total arc length of a polyline (0 for fewer than 2 points).
+  function polylineLength(points) {
+    var total = 0;
+    for (var i = 1; i < points.length; i++) {
+      var dx = points[i][0] - points[i - 1][0];
+      var dy = points[i][1] - points[i - 1][1];
+      total += Math.sqrt(dx * dx + dy * dy);
+    }
+    return total;
+  }
+
+  // Point at arc-length progress (0..1) along a polyline: progress 0 is
+  // the first point, 1 the last, anything else linearly interpolated
+  // along the segment that contains that arc length. Deterministic given
+  // the points, so draw and move_along_path agree on the path.
+  function pointAtProgress(points, progress) {
+    if (!points.length) return [0, 0];
+    if (points.length === 1 || progress <= 0) return [points[0][0], points[0][1]];
+    if (progress >= 1) {
+      var last = points[points.length - 1];
+      return [last[0], last[1]];
+    }
+    var total = polylineLength(points);
+    var target = total * progress;
+    var acc = 0;
+    for (var i = 1; i < points.length; i++) {
+      var dx = points[i][0] - points[i - 1][0];
+      var dy = points[i][1] - points[i - 1][1];
+      var seg = Math.sqrt(dx * dx + dy * dy);
+      if (acc + seg >= target) {
+        var f = seg === 0 ? 0 : (target - acc) / seg;
+        return [points[i - 1][0] + dx * f, points[i - 1][1] + dy * f];
+      }
+      acc += seg;
+    }
+    var end = points[points.length - 1];
+    return [end[0], end[1]];
+  }
+
+  // The leading portion of a polyline up to arc-length fraction frac:
+  // whole segments plus one interpolated endpoint. frac <= 0 yields a
+  // single point (an 'M x,y' path draws nothing), frac >= 1 the full
+  // polyline — so a draw reveal at progress 0 shows nothing of the path
+  // and at progress 1 shows all of it.
+  function partialPolyline(points, frac) {
+    if (!points.length) return [];
+    if (frac <= 0) return [[points[0][0], points[0][1]]];
+    if (frac >= 1) return points.map(function (p) { return [p[0], p[1]]; });
+    var end = pointAtProgress(points, frac);
+    var total = polylineLength(points);
+    var target = total * frac;
+    var acc = 0;
+    var out = [[points[0][0], points[0][1]]];
+    for (var i = 1; i < points.length; i++) {
+      var dx = points[i][0] - points[i - 1][0];
+      var dy = points[i][1] - points[i - 1][1];
+      var seg = Math.sqrt(dx * dx + dy * dy);
+      if (acc + seg >= target) { out.push(end); return out; }
+      acc += seg;
+      out.push([points[i][0], points[i][1]]);
+    }
+    out.push(end);
+    return out;
+  }
+
+  // SVG path data for a polyline: 'M x,y L x,y ...' (a single point is
+  // just 'M x,y', which draws nothing). Numbers go through fmtNum so the
+  // player and export-frames emit identical path strings.
+  function polylinePath(points) {
+    if (!points.length) return '';
+    var d = 'M' + fmtNum(points[0][0]) + ',' + fmtNum(points[0][1]);
+    for (var i = 1; i < points.length; i++) {
+      d += ' L' + fmtNum(points[i][0]) + ',' + fmtNum(points[i][1]);
+    }
+    return d;
+  }
+
+  // Marker position for move_along_path: the path point at arc-length
+  // progress, expressed in the marker shape's own position fields
+  // (cx/cy for circle, x/y for text/rect/latex). Pure; applyPos applies it.
+  function markerPos(shape, points, progress) {
+    var pt = pointAtProgress(points, progress);
+    if (shape.kind === 'circle') return { cx: pt[0], cy: pt[1] };
+    return { x: pt[0], y: pt[1] };
+  }
+
+  // Axes geometry (SPEC.md "Animation spec v0.2"): the frame rect, the
+  // zero axes (clamped into the frame when 0 is outside the range), and
+  // the tick positions/labels. Shared by drawShape and export-frames so
+  // the live player and the exported frames agree exactly. Tick step
+  // defaults to one fifth of the domain/range span.
+  function axesGeometry(shape) {
+    var mapX = function (v) {
+      return shape.x + shape.w * (v - shape.xRange.min) / (shape.xRange.max - shape.xRange.min);
+    };
+    var mapY = function (v) {
+      return shape.y + shape.h * (shape.yRange.max - v) / (shape.yRange.max - shape.yRange.min);
+    };
+    function ticks(min, max, step) {
+      var out = [];
+      var first = Math.ceil(min / step) * step;
+      for (var v = first; v <= max + 1e-9; v += step) {
+        // Round off float accumulation (e.g. 0.30000000000000004).
+        out.push(Math.round(v * 1000) / 1000);
+      }
+      return out;
+    }
+    var xStep = shape.tickStep || (shape.xRange.max - shape.xRange.min) / 5;
+    var yStep = shape.tickStep || (shape.yRange.max - shape.yRange.min) / 5;
+    return {
+      mapX: mapX, mapY: mapY,
+      xAxisY: Math.max(shape.y, Math.min(shape.y + shape.h, mapY(0))),
+      yAxisX: Math.max(shape.x, Math.min(shape.x + shape.w, mapX(0))),
+      xTicks: ticks(shape.xRange.min, shape.xRange.max, xStep),
+      yTicks: ticks(shape.yRange.min, shape.yRange.max, yStep)
+    };
+  }
+
   // "Explain me this" tooltips (issue #173): an optional plain-text
   // `explain` field on any shape becomes a hover / tap / keyboard-focus
   // tooltip in the player. Pure helpers so Node tests can exercise the
@@ -451,6 +627,73 @@
           fill: shape.fill || 'none',
           stroke: shape.stroke || '#1a1a1a',
           'stroke-width': shape.strokeWidth || 2
+        });
+        break;
+      case 'axes':
+      case 'coordinate_system': {
+        // Bounded math domain: frame rect, zero axes (clamped into the
+        // frame when 0 is outside the range), tick marks + labels from
+        // axesGeometry. coordinate_system renders identically to axes.
+        var g = axesGeometry(shape);
+        n = el('g', {});
+        n.appendChild(el('rect', {
+          x: shape.x, y: shape.y, width: shape.w, height: shape.h,
+          fill: shape.fill || 'none',
+          stroke: shape.stroke || '#1a1a1a',
+          'stroke-width': shape.strokeWidth || 2
+        }));
+        n.appendChild(el('line', {
+          x1: shape.x, y1: g.xAxisY, x2: shape.x + shape.w, y2: g.xAxisY,
+          stroke: shape.stroke || '#1a1a1a', 'stroke-width': shape.strokeWidth || 2
+        }));
+        n.appendChild(el('line', {
+          x1: g.yAxisX, y1: shape.y, x2: g.yAxisX, y2: shape.y + shape.h,
+          stroke: shape.stroke || '#1a1a1a', 'stroke-width': shape.strokeWidth || 2
+        }));
+        g.xTicks.forEach(function (v) {
+          var tx = g.mapX(v);
+          n.appendChild(el('line', {
+            x1: tx, y1: g.xAxisY - 5, x2: tx, y2: g.xAxisY + 5,
+            stroke: shape.stroke || '#1a1a1a', 'stroke-width': 2
+          }));
+          n.appendChild(textNode(tx, g.xAxisY + 22, fmtNum(v),
+            { size: 16, color: '#1a1a1a', align: 'middle' }));
+        });
+        g.yTicks.forEach(function (v) {
+          var ty = g.mapY(v);
+          n.appendChild(el('line', {
+            x1: g.yAxisX - 5, y1: ty, x2: g.yAxisX + 5, y2: ty,
+            stroke: shape.stroke || '#1a1a1a', 'stroke-width': 2
+          }));
+          n.appendChild(textNode(g.yAxisX - 10, ty + 6, fmtNum(v),
+            { size: 16, color: '#1a1a1a', align: 'end' }));
+        });
+        if (shape.xLabel) {
+          n.appendChild(textNode(shape.x + shape.w - 4, g.xAxisY - 10, shape.xLabel,
+            { size: 18, color: '#1a1a1a', align: 'end' }));
+        }
+        if (shape.yLabel) {
+          n.appendChild(textNode(g.yAxisX + 10, shape.y + 16, shape.yLabel,
+            { size: 18, color: '#1a1a1a', align: 'start' }));
+        }
+        break;
+      }
+      case 'function_plot':
+        n = el('path', {
+          d: polylinePath(samplePolynomial(shape)),
+          fill: 'none',
+          stroke: shape.stroke || '#1a1a1a',
+          'stroke-width': shape.strokeWidth || 3,
+          'stroke-linejoin': 'round', 'stroke-linecap': 'round'
+        });
+        break;
+      case 'polyline_trace':
+        n = el('path', {
+          d: polylinePath(pathPoints(shape)),
+          fill: 'none',
+          stroke: shape.stroke || '#1a1a1a',
+          'stroke-width': shape.strokeWidth || 3,
+          'stroke-linejoin': 'round', 'stroke-linecap': 'round'
         });
         break;
       default:
@@ -724,6 +967,8 @@
       lastTick: 0,
       fired: {},          // step index -> true (per scene render)
       tweens: [],         // active move interpolations
+      draws: [],          // active draw (progressive reveal) interpolations
+      movers: [],         // active move_along_path interpolations
       pulses: [],         // active emphasize animations
       shapes: {},         // id -> {node, shape}
       listeners: { scene: [] }
@@ -750,6 +995,8 @@
       state.shapes = {};
       state.fired = {};
       state.tweens = [];
+      state.draws = [];
+      state.movers = [];
       state.pulses = [];
     }
 
@@ -809,6 +1056,50 @@
           if (!erec) break;
           if (!instant) {
             state.pulses.push({ rec: erec, start: state.sceneTime, dur: dur });
+          }
+          break;
+        }
+        case 'draw': {
+          // animath 0.2: progressive reveal of a path shape along its
+          // sampled arc length. Instant (seek / scrub / reduced motion)
+          // renders the final state: the path up to toProgress.
+          var drec = state.shapes[step.target];
+          if (!drec) break;
+          var dpts = pathPoints(drec.shape);
+          if (instant) {
+            drec.node.setAttribute('d', polylinePath(partialPolyline(dpts, step.toProgress)));
+          } else {
+            // Start at fromProgress immediately: until the first tick the
+            // node would otherwise show the full path for one frame.
+            drec.node.setAttribute('d', polylinePath(partialPolyline(dpts, step.fromProgress)));
+            state.draws.push({
+              rec: drec, pts: dpts,
+              from: step.fromProgress, to: step.toProgress,
+              start: state.sceneTime, dur: step.dur_ms || 800,
+              easing: step.easing || 'linear'
+            });
+          }
+          break;
+        }
+        case 'move_along_path': {
+          // animath 0.2: a marker shape travels along a path shape; the
+          // marker position is the path point at the eased arc-length
+          // progress. Instant renders the final state (toProgress).
+          var mvRec = state.shapes[step.marker];
+          var pathRec = state.shapes[step.path];
+          if (!mvRec || !pathRec) break;
+          var mpts = pathPoints(pathRec.shape);
+          if (instant) {
+            var finalPos = markerPos(mvRec.shape, mpts, step.toProgress);
+            applyPos(mvRec.node, mvRec.shape, finalPos);
+            mvRec.shape = Object.assign({}, mvRec.shape, finalPos);
+          } else {
+            state.movers.push({
+              rec: mvRec, pts: mpts,
+              from: step.fromProgress, to: step.toProgress,
+              start: state.sceneTime, dur: step.dur_ms || 800,
+              easing: step.easing || 'linear'
+            });
           }
           break;
         }
@@ -877,6 +1168,36 @@
         }
         var pos = interpFields(tw.from, tw.to, p);
         applyPos(tw.rec.node, tw.rec.shape, pos);
+        return true;
+      });
+
+      // Advance draw reveals (animath 0.2): the revealed fraction is the
+      // eased interpolation from fromProgress to toProgress, measured
+      // along the sampled arc length — deterministic given sceneTime.
+      state.draws = state.draws.filter(function (dr) {
+        var p = (state.sceneTime - dr.start) / dr.dur;
+        if (p >= 1) {
+          dr.rec.node.setAttribute('d', polylinePath(partialPolyline(dr.pts, dr.to)));
+          return false;
+        }
+        var frac = dr.from + (dr.to - dr.from) * applyEasing(dr.easing, p);
+        dr.rec.node.setAttribute('d', polylinePath(partialPolyline(dr.pts, frac)));
+        return true;
+      });
+
+      // Advance move_along_path markers (animath 0.2): same eased
+      // progress math as the draw reveal, so a marker riding a drawn
+      // path stays exactly on the revealed tip.
+      state.movers = state.movers.filter(function (mv) {
+        var p = (state.sceneTime - mv.start) / mv.dur;
+        var prog = mv.from + (mv.to - mv.from) * applyEasing(mv.easing, Math.min(1, p));
+        var mpos = markerPos(mv.rec.shape, mv.pts, prog);
+        if (p >= 1) {
+          applyPos(mv.rec.node, mv.rec.shape, mpos);
+          mv.rec.shape = Object.assign({}, mv.rec.shape, mpos);
+          return false;
+        }
+        applyPos(mv.rec.node, mv.rec.shape, mpos);
         return true;
       });
 
@@ -999,7 +1320,7 @@
 
   // Public API surface (issue #707): exactly { mount, version, internals }.
   // Everything else is an internal helper, reachable at player.internals.
-  var internals = { katexAvailable: katexAvailable, latexFallbackText: latexFallbackText, latexFit: latexFit, fitLatex: fitLatex, stripLabels: stripLabels, stripAria: stripAria, fullCaption: fullCaption, keyAction: keyAction, controlButtons: controlButtons, shortcutHint: shortcutHint, prefersReducedMotion: prefersReducedMotion, interpFields: interpFields, applyPos: applyPos, sectorPath: sectorPath, dashAttr: dashAttr, taperShaft: taperShaft, isWidths: isWidths, explainText: explainText, tipPoint: tipPoint };
+  var internals = { katexAvailable: katexAvailable, latexFallbackText: latexFallbackText, latexFit: latexFit, fitLatex: fitLatex, stripLabels: stripLabels, stripAria: stripAria, fullCaption: fullCaption, keyAction: keyAction, controlButtons: controlButtons, shortcutHint: shortcutHint, prefersReducedMotion: prefersReducedMotion, interpFields: interpFields, applyPos: applyPos, sectorPath: sectorPath, dashAttr: dashAttr, taperShaft: taperShaft, isWidths: isWidths, explainText: explainText, tipPoint: tipPoint, applyEasing: applyEasing, samplePolynomial: samplePolynomial, pathPoints: pathPoints, polylineLength: polylineLength, pointAtProgress: pointAtProgress, partialPolyline: partialPolyline, polylinePath: polylinePath, markerPos: markerPos, axesGeometry: axesGeometry };
   var api = { mount: mount, version: '0.2.0', internals: internals };
   global.AnimathPlayer = api;
   if (typeof module !== 'undefined' && module.exports) module.exports = api;

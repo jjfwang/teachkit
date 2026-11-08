@@ -8,11 +8,11 @@ export interface PlayerContainer {
   addEventListener(type: string, listener: (...args: unknown[]) => void): void;
   appendChild(child: unknown): unknown;
 }
-// The animation spec document (see SPEC.md v0.1; player/validate.js is the
-// authoritative runtime checker). Index signature keeps the type honest
-// about author-added fields on shape/step records.
+// The animation spec document (see SPEC.md v0.1 and "Animation spec v0.2";
+// player/validate.js is the authoritative runtime checker). Index signature
+// keeps the type honest about author-added fields on shape/step records.
 export interface AnimathSpec {
-  animath: '0.1';
+  animath: '0.1' | '0.2';
   title: string;
   level: string;
   subject: string;
@@ -45,6 +45,14 @@ export interface TipPoint {
   x: number;
   y: number;
 }
+/** @internal */ export interface AxesGeometry {
+  /** @internal */ mapX(v: number): number;
+  /** @internal */ mapY(v: number): number;
+  /** @internal */ xAxisY: number;
+  /** @internal */ yAxisX: number;
+  /** @internal */ xTicks: number[];
+  /** @internal */ yTicks: number[];
+}
 /** @internal */ export interface PlayerInternals {
 /** @internal */ katexAvailable(katex: unknown): boolean;
 /** @internal */ latexFallbackText(tex: string): string;
@@ -65,5 +73,14 @@ export interface TipPoint {
 /** @internal */ isWidths(x: unknown): boolean;
 /** @internal */ explainText(shape: unknown): string;
 /** @internal */ tipPoint(px: number, py: number, stageW: number, stageH: number): TipPoint;
+/** @internal */ applyEasing(name: string, p: number): number;
+/** @internal */ samplePolynomial(shape: unknown): number[][];
+/** @internal */ pathPoints(shape: unknown): number[][];
+/** @internal */ polylineLength(points: number[][]): number;
+/** @internal */ pointAtProgress(points: number[][], progress: number): number[];
+/** @internal */ partialPolyline(points: number[][], frac: number): number[][];
+/** @internal */ polylinePath(points: number[][]): string;
+/** @internal */ markerPos(shape: unknown, points: number[][], progress: number): Record<string, number>;
+/** @internal */ axesGeometry(shape: unknown): AxesGeometry;
 }
 /** @internal */ export const internals: PlayerInternals;
