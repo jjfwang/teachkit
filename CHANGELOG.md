@@ -10,6 +10,8 @@ version section when the release ships.
 
 ## [Unreleased]
 
+## [0.2.0-beta.3] - 2026-11-08
+
 - Add the public topic-to-teaching-bundle generation API
   (`@jjfwang/teachkit/topic-bundle`, `topic-bundle.v1`):
   `generateTopicTeachingBundle(request, deps)` freezes one LessonBlueprint
