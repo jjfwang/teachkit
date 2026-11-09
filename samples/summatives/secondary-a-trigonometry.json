@@ -1,0 +1,125 @@
+{
+ "blueprint": [
+  {
+   "assessmentObjective": "AO1 recall and apply",
+   "cognitiveLevel": "apply",
+   "marks": 10,
+   "outcomeCode": "A-TRIGONOMETRY-COMPOUND-ANGLES"
+  },
+  {
+   "assessmentObjective": "AO2 reason and solve",
+   "cognitiveLevel": "reason",
+   "marks": 10,
+   "outcomeCode": "A-QUADRATIC-FUNCTIONS"
+  }
+ ],
+ "durationMinutes": 60,
+ "items": [
+  {
+   "blueprintRow": 0,
+   "commandWord": "Find",
+   "markScheme": {
+    "points": [
+     {
+      "marks": 2,
+      "text": "States that cos squared theta = 1 - 9/25 = 16/25"
+     },
+     {
+      "marks": 3,
+      "text": "States that theta is acute so cos theta is positive: cos theta = 4/5"
+     }
+    ]
+   },
+   "marks": 5,
+   "prompt": "Use the identity sin squared theta + cos squared theta = 1 to find cos theta if sin theta = 3/5 and theta is acute."
+  },
+  {
+   "blueprintRow": 0,
+   "commandWord": "Find",
+   "markScheme": {
+    "points": [
+     {
+      "marks": 2,
+      "text": "States that cos theta = 4/5 from the seed identity"
+     },
+     {
+      "marks": 3,
+      "text": "States that tan theta = (3/5) divided by (4/5) = 3/4"
+     }
+    ]
+   },
+   "marks": 5,
+   "prompt": "If sin theta = 3/5 and theta is acute, find tan theta using the seed identities."
+  },
+  {
+   "blueprintRow": 1,
+   "commandWord": "Calculate",
+   "markScheme": {
+    "points": [
+     {
+      "marks": 2,
+      "text": "States that D = b^2 - 4ac = 25 - 24 = 1"
+     },
+     {
+      "marks": 3,
+      "text": "States that a positive discriminant means two real roots"
+     }
+    ]
+   },
+   "marks": 5,
+   "prompt": "For x^2 - 5x + 6 = 0, calculate the discriminant D = b^2 - 4ac and state how many real roots the equation has."
+  },
+  {
+   "blueprintRow": 1,
+   "commandWord": "Explain",
+   "markScheme": {
+    "points": [
+     {
+      "marks": 2,
+      "text": "States that halving the coefficient of x gives 3"
+     },
+     {
+      "marks": 3,
+      "text": "States that adding the missing corner 3^2 = 9 gives x^2 + 6x + 9 = (x+3)^2"
+     }
+    ]
+   },
+   "marks": 5,
+   "prompt": "In one sentence, explain how to complete the square for x^2 + 6x."
+  }
+ ],
+ "level": "secondary",
+ "moderation": {
+  "state": "unreviewed"
+ },
+ "review": null,
+ "rubric": {
+  "criteria": [
+   {
+    "levels": [
+     {
+      "descriptor": "Methods are chosen and applied exactly, the seed-identity and tan-theta steps are stated explicitly, the discriminant and completing-the-square steps are stated explicitly, and conclusions are justified without splitting cos(A + B) across the sum.",
+      "label": "Secure"
+     },
+     {
+      "descriptor": "Method is correct in outline but a seed-identity step, tan-theta step, discriminant step or completing-the-square step is skipped.",
+      "label": "Developing"
+     },
+     {
+      "descriptor": "Methods are misapplied - for example splitting cos(A + B) into cos A + cos B - and the working does not support the answer.",
+      "label": "Beginning"
+     }
+    ],
+    "name": "Trigonometry and quadratics communication"
+   }
+  ]
+ },
+ "subject": "math",
+ "title": "Trigonometry and Quadratics Unit Test",
+ "topics": [
+  "secondary-a-trigonometry",
+  "secondary-a-quadratic-functions"
+ ],
+ "totalMarks": 20,
+ "unitTitle": "Trigonometry and quadratics"
+}
