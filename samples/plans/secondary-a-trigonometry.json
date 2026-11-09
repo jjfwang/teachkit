@@ -1,0 +1,92 @@
+{
+ "activities": [
+  {
+   "grouping": "whole class",
+   "minutes": 7,
+   "objectiveIds": [
+    "o1"
+   ],
+   "scriptCue": "s1",
+   "title": "The two seed identities, on the unit circle"
+  },
+  {
+   "grouping": "whole class",
+   "minutes": 8,
+   "objectiveIds": [
+    "o2"
+   ],
+   "scriptCue": "s2",
+   "title": "Compound angles: computing sin 75 degrees"
+  },
+  {
+   "grouping": "whole class",
+   "minutes": 8,
+   "objectiveIds": [
+    "o3"
+   ],
+   "scriptCue": "s3",
+   "title": "The R-formula: one wobble, not two"
+  },
+  {
+   "grouping": "whole class",
+   "minutes": 7,
+   "objectiveIds": [
+    "o2"
+   ],
+   "scriptCue": "s4",
+   "title": "Misconception: cos(A + B) does not split"
+  },
+  {
+   "grouping": "pairs",
+   "minutes": 9,
+   "objectiveIds": [
+    "o1",
+    "o2",
+    "o3"
+   ],
+   "title": "Worksheet in pairs and exit ticket"
+  }
+ ],
+ "durationMinutes": 39,
+ "level": "secondary",
+ "objectives": [
+  {
+   "assessmentPoints": [
+    "Seed-identities answers in the opening activity",
+    "Worksheet and exit-ticket answers in the closing activity"
+   ],
+   "id": "o1",
+   "successCriteria": [
+    "The two seed identities, on the unit circle - the legs are cos theta and sin theta with hypotenuse 1, so sin squared plus cos squared equals one and tan is sin over cos."
+   ],
+   "text": "Use the seed identities sin squared plus cos squared equals one and tan equals sin over cos"
+  },
+  {
+   "assessmentPoints": [
+    "Compound-angle answers in the second activity",
+    "Trap answers in the fourth activity",
+    "Worksheet and exit-ticket answers in the closing activity"
+   ],
+   "id": "o2",
+   "successCriteria": [
+    "Compound angles: computing sin 75 degrees - split 75 as 45 + 30, expand with sin(A + B), and the four known values give (root 6 + root 2) over 4.",
+    "Misconception: cos(A + B) does not split - cos 60 is 0.5 while cos 30 + cos 30 is about 1.73, so the cosine of a sum is never the sum of cosines."
+   ],
+   "text": "Apply the compound angle formulae to find exact values such as sin 75 degrees"
+  },
+  {
+   "assessmentPoints": [
+    "R-form answers in the third activity",
+    "Worksheet and exit-ticket answers in the closing activity"
+   ],
+   "id": "o3",
+   "successCriteria": [
+    "The R-formula: one wobble, not two - 3 cos x + 4 sin x becomes 5 cos(x - 53.1 degrees) from the 3-4-5 triangle, so max is 5 and min is -5."
+   ],
+   "text": "Rewrite a cos x + b sin x in R-form and read off its maximum, minimum and period"
+  }
+ ],
+ "subject": "math",
+ "title": "A-Math trigonometry: identities, compound angles and the R-formula",
+ "topic": "a-trigonometry"
+}

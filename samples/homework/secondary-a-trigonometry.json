@@ -1,0 +1,44 @@
+{
+ "level": "secondary",
+ "questions": [
+  {
+   "choices": [
+    {
+     "text": "(root 6 - root 2) over 4"
+    },
+    {
+     "correct": true,
+     "text": "(root 6 + root 2) over 4"
+    },
+    {
+     "text": "1 over 2"
+    },
+    {
+     "text": "root 3 over 2"
+    }
+   ],
+   "explanation": "sin 75 = sin(45 + 30) = sin 45 cos 30 + cos 45 sin 30 = (root 6 + root 2) over 4, about 0.966.",
+   "id": "q2",
+   "kind": "multiple-choice",
+   "prompt": "What is the exact value of sin 75 degrees?"
+  },
+  {
+   "answer": "cos theta = 4/5.",
+   "explanation": "cos squared theta = 1 - 9/25 = 16/25, and theta is acute so cos theta is positive: cos theta = 4/5.",
+   "id": "q3",
+   "kind": "short-answer",
+   "prompt": "Use the identity sin squared theta + cos squared theta = 1 to find cos theta if sin theta = 3/5 and theta is acute."
+  },
+  {
+   "answer": "5 cos(x - 53.1 degrees), with R = 5 and alpha = 53.1 degrees.",
+   "explanation": "R is the square root of 3 squared plus 4 squared, which is 5, and tan alpha = 4/3 gives alpha = 53.1 degrees, so the expression is 5 cos(x - 53.1 degrees).",
+   "id": "q4",
+   "kind": "short-answer",
+   "prompt": "Express 3 cos x + 4 sin x in the form R cos(x - alpha), giving R and alpha."
+  }
+ ],
+ "subject": "math",
+ "title": "A-Math trigonometry: identities, compound angles and the R-formula",
+ "topic": "a-trigonometry",
+ "variant": "homework"
+}

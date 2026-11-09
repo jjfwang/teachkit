@@ -1,0 +1,44 @@
+{
+ "commonErrors": [
+  {
+   "example": "A learner writes on the worksheet that cos(30 degrees + 30 degrees) is cos 30 degrees + cos 30 degrees, giving about 1.73.",
+   "fixIt": {
+    "corrected": "The numbers refuse: cos 60 is 0.5 while cos 30 + cos 30 is about 1.73, so cos(A + B) is never cos A + cos B.",
+    "prompt": "Fix it: say in one sentence what the numbers prove about cos(A + B) in scene s4."
+   },
+   "misconception": "cos(A + B) = cos A + cos B."
+  },
+  {
+   "example": "On the exit ticket, a learner picks the statement that cos(30 degrees + 30 degrees) is about 1.73.",
+   "fixIt": {
+    "corrected": "The unit circle gives cos 60 as 0.5: the cosine of a sum is never the sum of cosines.",
+    "prompt": "Fix it: explain in one sentence what cos 60 degrees is in scene s4."
+   },
+   "misconception": "cos(A + B) = cos A + cos B."
+  }
+ ],
+ "level": "secondary",
+ "modelAnswers": [
+  {
+   "answer": "Cosine does not split: cos 60 degrees is 0.5, not about 1.73",
+   "creditPoints": [],
+   "question": "A student writes cos(30 degrees + 30 degrees) = cos 30 degrees + cos 30 degrees. What is wrong?"
+  },
+  {
+   "answer": "cos theta = 4/5.",
+   "creditPoints": [],
+   "question": "Use the identity sin squared theta + cos squared theta = 1 to find cos theta if sin theta = 3/5 and theta is acute."
+  }
+ ],
+ "nextSteps": [
+  "Reteach the cos-does-not-split trap from the paired notes trap before any further trigonometry work: cos 60 is 0.5 while cos 30 + cos 30 is about 1.73.",
+  "Practise the R-form routine from scene s3, reading R from the 3-4-5 triangle and alpha from tan alpha = 4/3 before the next lesson."
+ ],
+ "strengths": [
+  "Most of the class can use the seed identities to find cos theta from sin theta, and can read the R-form maximum and minimum from R.",
+  "The class can compute sin 75 degrees exactly with the compound angle formula, splitting 75 as 45 + 30."
+ ],
+ "subject": "math",
+ "title": "A-Math trigonometry: identities, compound angles and the R-formula",
+ "topic": "a-trigonometry"
+}
