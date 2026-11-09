@@ -1,0 +1,44 @@
+{
+ "commonErrors": [
+  {
+   "example": "A learner writes on the worksheet that D = -4 means the equation has no solution at all.",
+   "fixIt": {
+    "corrected": "D = -4 means no real roots, but two complex roots: x = i and x = -i.",
+    "prompt": "Fix it: say in one sentence what the roots of x^2 + 1 = 0 are when D = -4."
+   },
+   "misconception": "A negative discriminant means the equation has no solution."
+  },
+  {
+   "example": "On the exit ticket, a learner picks the statement that there are no roots and no solution for x^2 + 1 = 0.",
+   "fixIt": {
+    "corrected": "No real roots is not no solution: the equation still has two complex roots.",
+    "prompt": "Fix it: explain in one sentence what the word real adds in scene s4."
+   },
+   "misconception": "A negative discriminant means the equation has no solution."
+  }
+ ],
+ "level": "secondary",
+ "modelAnswers": [
+  {
+   "answer": "The equation has no real roots, but two complex roots",
+   "creditPoints": [],
+   "question": "A quadratic equation has discriminant D = -4. What does that say about its roots?"
+  },
+  {
+   "answer": "D = 25 - 24 = 1, which is positive, so the equation has two real roots.",
+   "creditPoints": [],
+   "question": "For x^2 - 5x + 6 = 0, calculate the discriminant D = b^2 - 4ac and state how many real roots the equation has."
+  }
+ ],
+ "nextSteps": [
+  "Reteach the negative-discriminant trap from the paired notes trap before any further quadratics work: no real roots is not no solution, because the equation still has two complex roots.",
+  "Practise the inequality routine from scene s3, finding the roots first and testing each region before the next lesson."
+ ],
+ "strengths": [
+  "Most of the class can state the three discriminant cases: D positive gives two real roots, D zero gives one repeated root, D negative gives no real roots.",
+  "The class can complete the square for x^2 + 6x, adding the missing corner 9 to get (x + 3)^2 - 9."
+ ],
+ "subject": "math",
+ "title": "A-Math quadratics: completing the square, discriminant and inequalities",
+ "topic": "a-quadratic-functions"
+}
