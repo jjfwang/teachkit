@@ -1,0 +1,49 @@
+{
+  "items": [
+    {
+      "answer": "(root 6 + root 2) over 4",
+      "choices": [
+        "(root 6 - root 2) over 4",
+        "(root 6 + root 2) over 4",
+        "1 over 2",
+        "root 3 over 2"
+      ],
+      "misconceptionCode": "cos(A + B) = cos A + cos B.",
+      "prompt": "What is the exact value of sin 75 degrees?"
+    },
+    {
+      "answer": "Max 5 and min -5, from R = 5",
+      "choices": [
+        "Max 7 and min -7",
+        "Max 3 and min -4",
+        "Max 5 and min -5, from R = 5",
+        "Max 4 and min -3"
+      ],
+      "misconceptionCode": "cos(A + B) = cos A + cos B.",
+      "prompt": "What are the maximum and minimum of 3 cos x + 4 sin x?"
+    },
+    {
+      "answer": "5 cos(x - 53.1 degrees), with R = 5 and alpha = 53.1 degrees.",
+      "prompt": "Express 3 cos x + 4 sin x in the form R cos(x - alpha), giving R and alpha."
+    },
+    {
+      "answer": "tan theta = 3/4.",
+      "prompt": "If sin theta = 3/5 and theta is acute, find tan theta using the seed identities."
+    },
+    {
+      "answer": "cos A cos B - sin A sin B",
+      "choices": [
+        "cos A + cos B",
+        "cos A cos B + sin A sin B",
+        "cos A cos B - sin A sin B",
+        "sin A cos B + cos A sin B"
+      ],
+      "misconceptionCode": "cos(A + B) = cos A + cos B.",
+      "prompt": "Which expansion is correct for cos(A + B)?"
+    }
+  ],
+  "level": "secondary",
+  "subject": "math",
+  "title": "A-Math trigonometry: identities, compound angles and the R-formula",
+  "topic": "a-trigonometry"
+}

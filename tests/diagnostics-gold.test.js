@@ -74,7 +74,8 @@ const STEMS = [
   'jc-h2-ecology',
   'secondary-a-quadratic-functions',
   'secondary-a-differentiation',
-  'secondary-a-binomial'
+  'secondary-a-binomial',
+  'secondary-a-trigonometry'
 ];
 
 function load(rel) {

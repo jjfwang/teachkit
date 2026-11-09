@@ -1,0 +1,202 @@
+{
+  "doNow": [
+    {
+      "choices": [
+        {
+          "misconception": "cos(A + B) = cos A + cos B.",
+          "rationale": {
+            "chose": "The learner selected option (root 6 - root 2) over 4 as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: cos(A + B) = cos A + cos B. The slip: Cosine looks like it splits across the sum. The fix: Use cos A cos B - sin A sin B: cos 60 is 0.5 but cos 30 + cos 30 is about 1.73.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "(root 6 - root 2) over 4"
+        },
+        {
+          "correct": true,
+          "text": "(root 6 + root 2) over 4"
+        },
+        {
+          "misconception": "cos(A + B) = cos A + cos B.",
+          "rationale": {
+            "chose": "The learner selected option 1 over 2 as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: cos(A + B) = cos A + cos B. The slip: Cosine looks like it splits across the sum. The fix: Use cos A cos B - sin A sin B: cos 60 is 0.5 but cos 30 + cos 30 is about 1.73.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "1 over 2"
+        },
+        {
+          "misconception": "cos(A + B) = cos A + cos B.",
+          "rationale": {
+            "chose": "The learner selected option root 3 over 2 as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: cos(A + B) = cos A + cos B. The slip: Cosine looks like it splits across the sum. The fix: Use cos A cos B - sin A sin B: cos 60 is 0.5 but cos 30 + cos 30 is about 1.73.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "root 3 over 2"
+        }
+      ],
+      "id": "dn1",
+      "kind": "multiple-choice",
+      "prompt": "What is the exact value of sin 75 degrees?"
+    },
+    {
+      "choices": [
+        {
+          "misconception": "cos(A + B) = cos A + cos B.",
+          "rationale": {
+            "chose": "The learner selected option Max 7 and min -7 as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: cos(A + B) = cos A + cos B. The slip: Cosine looks like it splits across the sum. The fix: Use cos A cos B - sin A sin B: cos 60 is 0.5 but cos 30 + cos 30 is about 1.73.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "Max 7 and min -7"
+        },
+        {
+          "misconception": "cos(A + B) = cos A + cos B.",
+          "rationale": {
+            "chose": "The learner selected option Max 3 and min -4 as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: cos(A + B) = cos A + cos B. The slip: Cosine looks like it splits across the sum. The fix: Use cos A cos B - sin A sin B: cos 60 is 0.5 but cos 30 + cos 30 is about 1.73.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "Max 3 and min -4"
+        },
+        {
+          "correct": true,
+          "text": "Max 5 and min -5, from R = 5"
+        },
+        {
+          "misconception": "cos(A + B) = cos A + cos B.",
+          "rationale": {
+            "chose": "The learner selected option Max 4 and min -3 as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: cos(A + B) = cos A + cos B. The slip: Cosine looks like it splits across the sum. The fix: Use cos A cos B - sin A sin B: cos 60 is 0.5 but cos 30 + cos 30 is about 1.73.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "Max 4 and min -3"
+        }
+      ],
+      "id": "dn2",
+      "kind": "multiple-choice",
+      "prompt": "What are the maximum and minimum of 3 cos x + 4 sin x?"
+    },
+    {
+      "choices": [
+        {
+          "misconception": "cos(A + B) = cos A + cos B.",
+          "rationale": {
+            "chose": "The learner selected option Nothing is wrong; cosine splits over a sum as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: cos(A + B) = cos A + cos B. The slip: Cosine looks like it splits across the sum. The fix: Use cos A cos B - sin A sin B: cos 60 is 0.5 but cos 30 + cos 30 is about 1.73.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "Nothing is wrong; cosine splits over a sum"
+        },
+        {
+          "misconception": "cos(A + B) = cos A + cos B.",
+          "rationale": {
+            "chose": "The learner selected option cos 60 degrees is about 1.73 as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: cos(A + B) = cos A + cos B. The slip: Cosine looks like it splits across the sum. The fix: Use cos A cos B - sin A sin B: cos 60 is 0.5 but cos 30 + cos 30 is about 1.73.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "cos 60 degrees is about 1.73"
+        },
+        {
+          "correct": true,
+          "text": "Cosine does not split: cos 60 degrees is 0.5, not about 1.73"
+        },
+        {
+          "misconception": "cos(A + B) = cos A + cos B.",
+          "rationale": {
+            "chose": "The learner selected option cos 30 degrees has no exact value as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: cos(A + B) = cos A + cos B. The slip: Cosine looks like it splits across the sum. The fix: Use cos A cos B - sin A sin B: cos 60 is 0.5 but cos 30 + cos 30 is about 1.73.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "cos 30 degrees has no exact value"
+        }
+      ],
+      "id": "dn3",
+      "kind": "multiple-choice",
+      "prompt": "A student writes cos(30 degrees + 30 degrees) = cos 30 degrees + cos 30 degrees. What is wrong?"
+    }
+  ],
+  "hingeQuestions": [
+    {
+      "choices": [
+        {
+          "misconception": "cos(A + B) = cos A + cos B.",
+          "rationale": {
+            "chose": "The learner selected option cos(A + B) = cos A + cos B as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: cos(A + B) = cos A + cos B. The slip: Cosine looks like it splits across the sum. The fix: Use cos A cos B - sin A sin B: cos 60 is 0.5 but cos 30 + cos 30 is about 1.73.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "cos(A + B) = cos A + cos B"
+        },
+        {
+          "correct": true,
+          "text": "Use cos A cos B - sin A sin B: cos 60 is 0.5 but cos 30 + cos 30 is about 1.73."
+        },
+        {
+          "misconception": "cos(A + B) = cos A + cos B.",
+          "rationale": {
+            "chose": "The learner selected option cos A cos B + sin A sin B as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: cos(A + B) = cos A + cos B. The slip: Cosine looks like it splits across the sum. The fix: Use cos A cos B - sin A sin B: cos 60 is 0.5 but cos 30 + cos 30 is about 1.73.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "cos A cos B + sin A sin B"
+        },
+        {
+          "misconception": "cos(A + B) = cos A + cos B.",
+          "rationale": {
+            "chose": "The learner selected option sin A cos B + cos A sin B as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: cos(A + B) = cos A + cos B. The slip: Cosine looks like it splits across the sum. The fix: Use cos A cos B - sin A sin B: cos 60 is 0.5 but cos 30 + cos 30 is about 1.73.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "sin A cos B + cos A sin B"
+        }
+      ],
+      "id": "h1",
+      "kind": "multiple-choice",
+      "prompt": "In one sentence, what is the correct statement about cos(A + B)?",
+      "scriptCue": "s4"
+    },
+    {
+      "choices": [
+        {
+          "misconception": "cos(A + B) = cos A + cos B.",
+          "rationale": {
+            "chose": "The learner selected option Agree - every cosine of a sum splits into a sum of cosines as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: cos(A + B) = cos A + cos B. The slip: Cosine looks like it splits across the sum. The fix: Use cos A cos B - sin A sin B: cos 60 is 0.5 but cos 30 + cos 30 is about 1.73.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "Agree - every cosine of a sum splits into a sum of cosines"
+        },
+        {
+          "correct": true,
+          "text": "Use cos A cos B - sin A sin B: cos 60 is 0.5 but cos 30 + cos 30 is about 1.73."
+        },
+        {
+          "misconception": "cos(A + B) = cos A + cos B.",
+          "rationale": {
+            "chose": "The learner selected option Tell them cos 60 is about 1.73, so there is nothing more to check as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: cos(A + B) = cos A + cos B. The slip: Cosine looks like it splits across the sum. The fix: Use cos A cos B - sin A sin B: cos 60 is 0.5 but cos 30 + cos 30 is about 1.73.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "Tell them cos 60 is about 1.73, so there is nothing more to check"
+        },
+        {
+          "misconception": "cos(A + B) = cos A + cos B.",
+          "rationale": {
+            "chose": "The learner selected option Tell them cos(A + B) is cos A cos B + sin A sin B, so there is nothing more to check as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: cos(A + B) = cos A + cos B. The slip: Cosine looks like it splits across the sum. The fix: Use cos A cos B - sin A sin B: cos 60 is 0.5 but cos 30 + cos 30 is about 1.73.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "Tell them cos(A + B) is cos A cos B + sin A sin B, so there is nothing more to check"
+        }
+      ],
+      "id": "h2",
+      "kind": "multiple-choice",
+      "prompt": "How would you correct a classmate who insists cos(A + B) = cos A + cos B?",
+      "scriptCue": "s4"
+    }
+  ],
+  "level": "secondary",
+  "subject": "math",
+  "title": "A-Math trigonometry: identities, compound angles and the R-formula",
+  "topic": "a-trigonometry"
+}

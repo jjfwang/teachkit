@@ -1,0 +1,58 @@
+{
+  "complete": {
+    "problem": "Work through A-Math trigonometry: identities, compound angles and the R-formula step by step, the exact value of sin 75 degrees, the R-form rewrite of 3 cos x + 4 sin x, and the trap that cos(A + B) does not split.",
+    "selfExplanation": "Explain why the seed identities hold on the unit circle, why sin 75 degrees needs the compound angle formula, why 3 cos x + 4 sin x is one cosine of amplitude 5, and why cos(A + B) is not cos A + cos B.",
+    "steps": [
+      {
+        "annotation": "The unit circle: radius 1, so the hypotenuse is always 1 - a point at angle theta has coordinates (cos theta, sin theta), which is why the seed identity holds.",
+        "text": "Step 1 (s1): The two seed identities, on the unit circle. The legs are cos theta and sin theta with hypotenuse 1, so sin squared plus cos squared equals one and tan is sin over cos."
+      },
+      {
+        "annotation": "sin(A + B) = sin A cos B + cos A sin B: with 45 + 30 the four known values give (root 6 + root 2) over 4, about 0.966.",
+        "text": "Step 2 (s2): Compound angles: computing sin 75 degrees. Split 75 as 45 + 30 and expand sin(45 + 30) = sin 45 cos 30 + cos 45 sin 30. Substitute root 2 over 2 times root 3 over 2 plus root 2 over 2 times 1 over 2, and simplify to (root 6 + root 2) over 4, about 0.966."
+      },
+      {
+        "annotation": "The R-formula: a cos x + b sin x = R cos(x - alpha), where R is the square root of a squared plus b squared and tan alpha = b over a, giving one wave of amplitude R.",
+        "text": "Step 3 (s3): The R-formula: one wobble, not two. 3 cos x + 4 sin x becomes 5 cos(x - 53.1 degrees) from the 3-4-5 triangle, so max is 5 and min is -5."
+      },
+      {
+        "annotation": "Misconception: cos(A + B) does not split - cos 60 is 0.5 while cos 30 + cos 30 is about 1.73, so the cosine of a sum is never the sum of cosines.",
+        "text": "Step 4 (s4): A common mistake: cos(A + B) = cos A + cos B. Spring the trap on purpose with cos 60, which is 0.5, while cos 30 + cos 30 is about 1.73. The cosine of a sum is never the sum of cosines. Note this carefully, because the exit ticket will test exactly that reading."
+      }
+    ]
+  },
+  "faded": {
+    "problem": "If sin theta = 3/5 and theta is acute, find cos theta and tan theta, then express 3 cos x + 4 sin x in the form R cos(x - alpha).",
+    "selfExplanation": "The first step is shown. Say how you find cos theta from the seed identity, how tan follows from sin over cos, and how the R-form gives R and alpha.",
+    "steps": [
+      {
+        "annotation": "Use the seed identity sin squared plus cos squared equals one, with sin theta = 3/5, to find cos theta.",
+        "text": "Step 1: cos squared theta = 1 - 9/25 = 16/25, and theta is acute so cos theta is positive: cos theta = 4/5.",
+        "withheld": false
+      },
+      {
+        "annotation": "tan equals sin over cos, the second seed identity, so tan theta = 3/4.",
+        "text": "Step 2: tan is sin over cos, so tan theta = (3/5) divided by (4/5) = 3/4.",
+        "withheld": true
+      },
+      {
+        "annotation": "From the 3-4-5 triangle, R = 5 and alpha = 53.1 degrees.",
+        "text": "Step 3: R is the square root of 3 squared plus 4 squared, which is 5, and tan alpha = 4/3 gives alpha = 53.1 degrees.",
+        "withheld": true
+      },
+      {
+        "annotation": "In R-form the expression is 5 cos(x - 53.1 degrees), so the maximum is R = 5 and the minimum is -5.",
+        "text": "Step 4: the expression is 5 cos(x - 53.1 degrees), so the maximum is 5 and the minimum is -5.",
+        "withheld": true
+      }
+    ]
+  },
+  "level": "secondary",
+  "paired": {
+    "problem": "Find the exact value of sin 75 degrees and the maximum of 3 cos x + 4 sin x.",
+    "solution": "sin 75 = sin(45 + 30) = sin 45 cos 30 + cos 45 sin 30 = (root 6 + root 2) over 4, about 0.966. 3 cos x + 4 sin x = 5 cos(x - 53.1 degrees), so the maximum is 5."
+  },
+  "subject": "math",
+  "title": "A-Math trigonometry: identities, compound angles and the R-formula",
+  "topic": "a-trigonometry"
+}
