@@ -1,0 +1,125 @@
+{
+ "blueprint": [
+  {
+   "assessmentObjective": "AO1 recall and apply",
+   "cognitiveLevel": "apply",
+   "marks": 10,
+   "outcomeCode": "A-BINOMIAL-EXPANSION"
+  },
+  {
+   "assessmentObjective": "AO2 reason and solve",
+   "cognitiveLevel": "reason",
+   "marks": 10,
+   "outcomeCode": "A-QUADRATIC-FUNCTIONS"
+  }
+ ],
+ "durationMinutes": 60,
+ "items": [
+  {
+   "blueprintRow": 0,
+   "commandWord": "Expand",
+   "markScheme": {
+    "points": [
+     {
+      "marks": 2,
+      "text": "States that the coefficients are 1, 4, 6, 4, 1 from row 4 of Pascal's triangle"
+     },
+     {
+      "marks": 3,
+      "text": "States that the expansion is 16x^4 - 96x^3 + 216x^2 - 216x + 81"
+     }
+    ]
+   },
+   "marks": 5,
+   "prompt": "Expand (2x - 3)^4 in full."
+  },
+  {
+   "blueprintRow": 0,
+   "commandWord": "State",
+   "markScheme": {
+    "points": [
+     {
+      "marks": 2,
+      "text": "States that the x^3 term is C(4, 1) (2x)^3 (-3)"
+     },
+     {
+      "marks": 3,
+      "text": "States that the term simplifies to -96x^3"
+     }
+    ]
+   },
+   "marks": 5,
+   "prompt": "State the term in x^3 in the expansion of (2x - 3)^4."
+  },
+  {
+   "blueprintRow": 1,
+   "commandWord": "Calculate",
+   "markScheme": {
+    "points": [
+     {
+      "marks": 2,
+      "text": "States that D = b^2 - 4ac = 25 - 24 = 1"
+     },
+     {
+      "marks": 3,
+      "text": "States that a positive discriminant means two real roots"
+     }
+    ]
+   },
+   "marks": 5,
+   "prompt": "For x^2 - 5x + 6 = 0, calculate the discriminant D = b^2 - 4ac and state how many real roots the equation has."
+  },
+  {
+   "blueprintRow": 1,
+   "commandWord": "Explain",
+   "markScheme": {
+    "points": [
+     {
+      "marks": 2,
+      "text": "States that halving the coefficient of x gives 3"
+     },
+     {
+      "marks": 3,
+      "text": "States that adding the missing corner 3^2 = 9 gives x^2 + 6x + 9 = (x+3)^2"
+     }
+    ]
+   },
+   "marks": 5,
+   "prompt": "In one sentence, explain how to complete the square for x^2 + 6x."
+  }
+ ],
+ "level": "secondary",
+ "moderation": {
+  "state": "unreviewed"
+ },
+ "review": null,
+ "rubric": {
+  "criteria": [
+   {
+    "levels": [
+     {
+      "descriptor": "Methods are chosen and applied exactly, the binomial expansion and x^3-term steps are stated explicitly, the discriminant and completing-the-square steps are stated explicitly, and conclusions are justified without distributing a power over a sum.",
+      "label": "Secure"
+     },
+     {
+      "descriptor": "Method is correct in outline but a binomial expansion step, x^3-term step, discriminant step or completing-the-square step is skipped.",
+      "label": "Developing"
+     },
+     {
+      "descriptor": "Methods are misapplied - for example distributing a power over a sum and dropping the middle term - and the working does not support the answer.",
+      "label": "Beginning"
+     }
+    ],
+    "name": "Binomial and quadratics communication"
+   }
+  ]
+ },
+ "subject": "math",
+ "title": "Binomial and Quadratics Unit Test",
+ "topics": [
+  "secondary-a-binomial",
+  "secondary-a-quadratic-functions"
+ ],
+ "totalMarks": 20,
+ "unitTitle": "Binomial and quadratics"
+}
