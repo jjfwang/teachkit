@@ -1,0 +1,202 @@
+{
+ "doNow": [
+  {
+   "choices": [
+    {
+     "misconception": "A negative discriminant means the equation has no solution.",
+     "rationale": {
+      "chose": "The learner selected option The equation has no solution at all as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: A negative discriminant means the equation has no solution.. The slip: No real roots is read as no solutions at all. The fix: No real roots is not no solution: the equation still has two complex roots. For x^2 + 1 = 0, D = -4 and the roots are x = i and x = -i..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "The equation has no solution at all"
+    },
+    {
+     "misconception": "A negative discriminant means the equation has no solution.",
+     "rationale": {
+      "chose": "The learner selected option The equation has one repeated real root as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: A negative discriminant means the equation has no solution.. The slip: No real roots is read as no solutions at all. The fix: No real roots is not no solution: the equation still has two complex roots. For x^2 + 1 = 0, D = -4 and the roots are x = i and x = -i..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "The equation has one repeated real root"
+    },
+    {
+     "correct": true,
+     "text": "The equation has no real roots, but two complex roots"
+    },
+    {
+     "misconception": "A negative discriminant means the equation has no solution.",
+     "rationale": {
+      "chose": "The learner selected option The equation has two real roots as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: A negative discriminant means the equation has no solution.. The slip: No real roots is read as no solutions at all. The fix: No real roots is not no solution: the equation still has two complex roots. For x^2 + 1 = 0, D = -4 and the roots are x = i and x = -i..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "The equation has two real roots"
+    }
+   ],
+   "id": "dn1",
+   "kind": "multiple-choice",
+   "prompt": "A quadratic equation has discriminant D = -4. What does that say about its roots?"
+  },
+  {
+   "choices": [
+    {
+     "misconception": "A negative discriminant means the equation has no solution.",
+     "rationale": {
+      "chose": "The learner selected option 36 as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: A negative discriminant means the equation has no solution.. The slip: No real roots is read as no solutions at all. The fix: No real roots is not no solution: the equation still has two complex roots. For x^2 + 1 = 0, D = -4 and the roots are x = i and x = -i..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "36"
+    },
+    {
+     "correct": true,
+     "text": "9"
+    },
+    {
+     "misconception": "A negative discriminant means the equation has no solution.",
+     "rationale": {
+      "chose": "The learner selected option 6 as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: A negative discriminant means the equation has no solution.. The slip: No real roots is read as no solutions at all. The fix: No real roots is not no solution: the equation still has two complex roots. For x^2 + 1 = 0, D = -4 and the roots are x = i and x = -i..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "6"
+    },
+    {
+     "misconception": "A negative discriminant means the equation has no solution.",
+     "rationale": {
+      "chose": "The learner selected option 3 as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: A negative discriminant means the equation has no solution.. The slip: No real roots is read as no solutions at all. The fix: No real roots is not no solution: the equation still has two complex roots. For x^2 + 1 = 0, D = -4 and the roots are x = i and x = -i..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "3"
+    }
+   ],
+   "id": "dn2",
+   "kind": "multiple-choice",
+   "prompt": "What must be added to x^2 + 6x to complete the square?"
+  },
+  {
+   "choices": [
+    {
+     "misconception": "A negative discriminant means the equation has no solution.",
+     "rationale": {
+      "chose": "The learner selected option (x + 6)^2 - 36 as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: A negative discriminant means the equation has no solution.. The slip: No real roots is read as no solutions at all. The fix: No real roots is not no solution: the equation still has two complex roots. For x^2 + 1 = 0, D = -4 and the roots are x = i and x = -i..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "(x + 6)^2 - 36"
+    },
+    {
+     "misconception": "A negative discriminant means the equation has no solution.",
+     "rationale": {
+      "chose": "The learner selected option (x + 3)^2 + 9 as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: A negative discriminant means the equation has no solution.. The slip: No real roots is read as no solutions at all. The fix: No real roots is not no solution: the equation still has two complex roots. For x^2 + 1 = 0, D = -4 and the roots are x = i and x = -i..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "(x + 3)^2 + 9"
+    },
+    {
+     "correct": true,
+     "text": "(x + 3)^2 - 9"
+    },
+    {
+     "misconception": "A negative discriminant means the equation has no solution.",
+     "rationale": {
+      "chose": "The learner selected option (x - 3)^2 - 9 as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: A negative discriminant means the equation has no solution.. The slip: No real roots is read as no solutions at all. The fix: No real roots is not no solution: the equation still has two complex roots. For x^2 + 1 = 0, D = -4 and the roots are x = i and x = -i..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "(x - 3)^2 - 9"
+    }
+   ],
+   "id": "dn3",
+   "kind": "multiple-choice",
+   "prompt": "Which expression is x^2 + 6x rewritten by completing the square?"
+  }
+ ],
+ "hingeQuestions": [
+  {
+   "choices": [
+    {
+     "misconception": "A negative discriminant means the equation has no solution.",
+     "rationale": {
+      "chose": "The learner selected option A negative discriminant means the equation has no solution as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: A negative discriminant means the equation has no solution.. The slip: No real roots is read as no solutions at all. The fix: No real roots is not no solution: the equation still has two complex roots. For x^2 + 1 = 0, D = -4 and the roots are x = i and x = -i..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "A negative discriminant means the equation has no solution"
+    },
+    {
+     "correct": true,
+     "text": "No real roots is not no solution: the equation still has two complex roots."
+    },
+    {
+     "misconception": "A negative discriminant means the equation has no solution.",
+     "rationale": {
+      "chose": "The learner selected option The equation has one repeated real root as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: A negative discriminant means the equation has no solution.. The slip: No real roots is read as no solutions at all. The fix: No real roots is not no solution: the equation still has two complex roots. For x^2 + 1 = 0, D = -4 and the roots are x = i and x = -i..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "The equation has one repeated real root"
+    },
+    {
+     "misconception": "A negative discriminant means the equation has no solution.",
+     "rationale": {
+      "chose": "The learner selected option The equation has two real roots as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: A negative discriminant means the equation has no solution.. The slip: No real roots is read as no solutions at all. The fix: No real roots is not no solution: the equation still has two complex roots. For x^2 + 1 = 0, D = -4 and the roots are x = i and x = -i..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "The equation has two real roots"
+    }
+   ],
+   "id": "h1",
+   "kind": "multiple-choice",
+   "prompt": "In one sentence, what is the correct statement about a negative discriminant?",
+   "scriptCue": "s4"
+  },
+  {
+   "choices": [
+    {
+     "misconception": "A negative discriminant means the equation has no solution.",
+     "rationale": {
+      "chose": "The learner selected option Agree - the equation has no solution at all as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: A negative discriminant means the equation has no solution.. The slip: No real roots is read as no solutions at all. The fix: No real roots is not no solution: the equation still has two complex roots. For x^2 + 1 = 0, D = -4 and the roots are x = i and x = -i..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "Agree - the equation has no solution at all"
+    },
+    {
+     "correct": true,
+     "text": "No real roots is not no solution: the equation still has two complex roots."
+    },
+    {
+     "misconception": "A negative discriminant means the equation has no solution.",
+     "rationale": {
+      "chose": "The learner selected option Tell them the equation has one repeated real root, so the claim does not apply here as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: A negative discriminant means the equation has no solution.. The slip: No real roots is read as no solutions at all. The fix: No real roots is not no solution: the equation still has two complex roots. For x^2 + 1 = 0, D = -4 and the roots are x = i and x = -i..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "Tell them the equation has one repeated real root, so the claim does not apply here"
+    },
+    {
+     "misconception": "A negative discriminant means the equation has no solution.",
+     "rationale": {
+      "chose": "The learner selected option Tell them the equation has two real roots, so nothing ever changes as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: A negative discriminant means the equation has no solution.. The slip: No real roots is read as no solutions at all. The fix: No real roots is not no solution: the equation still has two complex roots. For x^2 + 1 = 0, D = -4 and the roots are x = i and x = -i..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "Tell them the equation has two real roots, so nothing ever changes"
+    }
+   ],
+   "id": "h2",
+   "kind": "multiple-choice",
+   "prompt": "How would you correct a classmate who insists a negative discriminant means the equation has no solution?",
+   "scriptCue": "s4"
+  }
+ ],
+ "level": "secondary",
+ "subject": "math",
+ "title": "A-Math quadratics: completing the square, discriminant and inequalities",
+ "topic": "a-quadratic-functions"
+}

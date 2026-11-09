@@ -1,0 +1,53 @@
+{
+ "complete": {
+  "problem": "Work through A-Math quadratics: completing the square as area, the discriminant deciding the roots, quadratic inequalities on a number line, and the trap that a negative discriminant means no solution.",
+  "selfExplanation": "Explain why half of 6 gives the missing corner 9, why the sign of the discriminant decides how many real roots there are, why the roots split the number line into regions to test, and why a negative discriminant still leaves two complex roots.",
+  "steps": [
+   {
+    "annotation": "Completing the square, as area - x^2 + 6x is an x-by-x square plus two 3-by-x strips, and the missing 3-by-3 corner of area 9 completes the square.",
+    "text": "Step 1 (s1): Completing the square, as area. Start with x^2 + 6x drawn as area: an x-by-x square with two strips. Take x squared plus six x, built as area: an x-by-x square with two three-by-x strips. Slide one strip below the square, then the missing three-by-three corner slides in to complete it. Fill it in and the shape is one big square, (x + 3) by (x + 3): completing the square is literally completing a square."
+   },
+   {
+    "annotation": "The discriminant decides the roots - D = b^2 - 4ac: positive means two crossings, zero means one touch, negative means the curve misses the real axis.",
+    "text": "Step 2 (s2): The discriminant decides the roots. Now the discriminant. For a-x-squared plus b-x plus c, the discriminant D equals b squared minus four a c. Watch one parabola sink: above the axis is D negative, touching is D zero, crossing twice is D positive. Watch the parabola sink: above the axis D is negative and there are no real roots, touching gives D = 0 and one repeated root, crossing twice gives D positive and two real roots."
+   },
+   {
+    "annotation": "Quadratic inequalities on a number line - find the roots -2 and 2 for x squared minus 4 greater than zero, then test each region, giving x less than -2 or x greater than 2 as the solution.",
+    "text": "Step 3 (s3): Quadratic inequalities on a number line. Turn to the inequality x squared minus 4 greater than zero. For x squared minus four greater than zero, first find the roots: negative two and two. A test probe travels the number line - regions where the test passes light up green. Only the outer regions work, so x less than -2 or x greater than 2 is the solution."
+   },
+   {
+    "annotation": "A common mistake: a negative discriminant means no solution - no real roots is not no solution, because the two roots are complex.",
+    "text": "Step 4 (s4): A common mistake: a negative discriminant means no solution. Spring the trap on purpose with x^2 + 1 = 0, where D = -4. A negative discriminant means the equation has no solution. No real roots is read as no solutions at all. But no real roots is not no solution: the equation still has two complex roots. The curve never touches the real axis and the roots dive off the real line: two complex solutions. Note this carefully, because the exit ticket will test exactly that reading."
+   }
+  ]
+ },
+ "faded": {
+  "problem": "Work the completing-the-square payoff: state the missing corner, the completed square, and the rewritten form of x^2 + 6x.",
+  "selfExplanation": "The first step is shown. State the missing corner and the completed square, then the rewritten form of x^2 + 6x.",
+  "steps": [
+   {
+    "annotation": "Completing the square: Rewriting a quadratic as a perfect square plus a constant by adding the missing corner: for x^2 + 6x, half of 6 is 3 and the missing corner is 3^2 = 9.",
+    "text": "Step 1: Draw x^2 + 6x as area, an x-by-x square with two 3-by-x strips, because half of 6 is 3.",
+    "withheld": false
+   },
+   {
+    "annotation": "In scene s1, the missing corner is 3^2 = 9, and filling it in gives x^2 + 6x + 9 = (x+3)^2.",
+    "text": "Step 2: the missing corner is 3^2 = 9.",
+    "withheld": true
+   },
+   {
+    "annotation": "So x^2 + 6x = (x + 3)^2 - 9.",
+    "text": "Step 3: fill it in: x^2 + 6x + 9 = (x+3)^2, so x^2 + 6x = (x + 3)^2 - 9.",
+    "withheld": true
+   }
+  ]
+ },
+ "level": "secondary",
+ "paired": {
+  "problem": "Solve the inequality x squared minus 4 greater than zero.",
+  "solution": "x less than -2 or x greater than 2."
+ },
+ "subject": "math",
+ "title": "A-Math quadratics: completing the square, discriminant and inequalities",
+ "topic": "a-quadratic-functions"
+}

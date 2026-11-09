@@ -71,7 +71,8 @@ const STEMS = [
   'jc-h2-organic',
   'jc-h2-genetics',
   'jc-h2-energetics',
-  'jc-h2-ecology'
+  'jc-h2-ecology',
+  'secondary-a-quadratic-functions'
 ];
 
 function load(rel) {
