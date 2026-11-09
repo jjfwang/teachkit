@@ -1,0 +1,95 @@
+{
+ "level": "secondary",
+ "subject": "math",
+ "templates": [
+  {
+   "kind": "flow",
+   "slots": [
+    {
+     "entries": [
+      "Secant lines close in on the tangent - a secant gives an average gradient between two points; slide the points together and the secant becomes the tangent, whose gradient is dy/dx."
+     ],
+     "label": "Secant lines close in on the tangent",
+     "studentPrompt": "Explain this step in your own words."
+    },
+    {
+     "entries": [
+      "The power rule - differentiate term by term: bring the power down and reduce it by one, so x^3 becomes 3x^2 and x^5 becomes 5x^4, while a constant becomes 0."
+     ],
+     "label": "The power rule",
+     "studentPrompt": "Explain this step in your own words."
+    },
+    {
+     "entries": [
+      "dy/dx from first principles - the secant gradient (f(x + h) - f(x)) / h for y = x^2 simplifies to 2x + h, and letting h tend to 0 gives the exact gradient 2x."
+     ],
+     "label": "First principles",
+     "studentPrompt": "Explain this step in your own words."
+    },
+    {
+     "entries": [
+      "Stationary points: max, min, inflexion - solve dy/dx = 0, then read the sign change of dy/dx either side: positive to negative is a maximum, negative to positive a minimum, no change an inflexion."
+     ],
+     "label": "Stationary points: max, min, inflexion",
+     "studentPrompt": "Explain this step in your own words."
+    },
+    {
+     "entries": [
+      "Stationary is not always max or min - for y = x^3 the gradient reaches 0 at x = 0 yet stays positive on both sides, so the curve climbs through a point of inflexion."
+     ],
+     "label": "Stationary is not always max or min",
+     "studentPrompt": "Explain this step in your own words."
+    }
+   ]
+  },
+  {
+   "kind": "frayer",
+   "slots": [
+    {
+     "entries": [
+      "dy/dx, the gradient function of a curve: it gives the tangent gradient at every point and is found by differentiating."
+     ],
+     "label": "Derivative",
+     "studentPrompt": "Give your own example of this term."
+    },
+    {
+     "entries": [
+      "The steepness of a line or curve at a point. For a curve it changes from point to point and equals the gradient of the tangent there."
+     ],
+     "label": "Gradient",
+     "studentPrompt": "Give your own example of this term."
+    },
+    {
+     "entries": [
+      "The straight line that just touches a curve at one point and has the same gradient as the curve at that point."
+     ],
+     "label": "Tangent",
+     "studentPrompt": "Give your own example of this term."
+    },
+    {
+     "entries": [
+      "A point where dy/dx = 0 and the tangent is horizontal. It may be a maximum, a minimum or a point of inflexion - a sign test decides."
+     ],
+     "label": "Stationary point",
+     "studentPrompt": "Give your own example of this term."
+    },
+    {
+     "entries": [
+      "A straight line joining two points on a curve. Its gradient is an average gradient, and it becomes the tangent as the two points close in."
+     ],
+     "label": "Secant",
+     "studentPrompt": "Give your own example of this term."
+    },
+    {
+     "entries": [
+      "A point where the curve changes its bending direction. A stationary inflexion, like y = x^3 at x = 0, has dy/dx = 0 but is neither a maximum nor a minimum."
+     ],
+     "label": "Point of inflexion",
+     "studentPrompt": "Give your own example of this term."
+    }
+   ]
+  }
+ ],
+ "title": "A-Math differentiation: gradients, the power rule and stationary points",
+ "topic": "a-differentiation"
+}
