@@ -1,0 +1,49 @@
+{
+ "items": [
+  {
+   "answer": "Plants respire around the clock, day and night",
+   "choices": [
+    "Plants only respire at night, because photosynthesis replaces respiration by day",
+    "Plants respire only in bright light, when energy is available",
+    "Plants respire around the clock, day and night",
+    "Plants never respire, because they make their own food"
+   ],
+   "misconceptionCode": "Plants only respire at night.",
+   "prompt": "A student says a green plant only respires when it is dark. What is correct?"
+  },
+  {
+   "answer": "Glucose + oxygen → carbon dioxide + water + energy",
+   "choices": [
+    "Carbon dioxide + water → glucose + oxygen",
+    "Glucose + oxygen → carbon dioxide + water + energy",
+    "Glucose → ethanol + carbon dioxide",
+    "Glucose → lactic acid"
+   ],
+   "misconceptionCode": "Plants only respire at night.",
+   "prompt": "Which is the correct word equation for aerobic respiration?"
+  },
+  {
+   "answer": "The folds give a huge surface area for respiratory enzymes, so more aerobic respiration and more ATP production can happen.",
+   "prompt": "Explain why the folded cristae of a mitochondrion help it make more ATP."
+  },
+  {
+   "answer": "Yeast: ethanol + carbon dioxide. Muscle: lactic acid. Both yield far less ATP than aerobic respiration because glucose is only partly broken down.",
+   "prompt": "Compare anaerobic respiration in yeast and in muscle: name the products of each and state the ATP yield compared with aerobic respiration."
+  },
+  {
+   "answer": "Photolysis, from water",
+   "choices": [
+    "The Calvin cycle, from carbon dioxide",
+    "Photolysis, from water",
+    "Respiration, from glucose",
+    "Photolysis, from carbon dioxide"
+   ],
+   "misconceptionCode": "Plants only respire at night.",
+   "prompt": "In photosynthesis, the oxygen released comes from which process and source?"
+  }
+ ],
+ "level": "jc",
+ "subject": "science",
+ "title": "JC H2 biology — energetics: respiration and photosynthesis",
+ "topic": "h2-energetics"
+}

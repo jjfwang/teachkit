@@ -1,0 +1,61 @@
+{
+ "complete": {
+  "problem": "Trace energetics from respiration to photosynthesis: the cristae, the ATP cycle, aerobic and anaerobic respiration, photolysis and the Calvin cycle, limiting factors, and the respiration trap.",
+  "selfExplanation": "Explain why folded cristae make more ATP, why plants respire around the clock even though photosynthesis dominates by day, why ATP is hydrolysed to release energy and rebuilt by respiration, why anaerobic respiration yields far less ATP than aerobic, why photolysis splits water while the Calvin cycle fixes carbon dioxide, and why the factor in shortest supply caps photosynthesis.",
+  "steps": [
+   {
+    "annotation": "Mitochondria: folded cristae, huge surface area: the inner membrane folds into cristae, packing a huge surface area for the enzymes that make ATP.",
+    "text": "Step 1 (s1): Mitochondria: folded cristae, huge surface area. Mitochondria: folded cristae, huge surface area. The inner membrane folds into shelves called cristae, packing a huge surface area into a tiny space. Watch the energy dot travel the folded path - this is where aerobic respiration makes ATP. Keep your student notes open at the mitochondrion and cristae definitions for this scene."
+   },
+   {
+    "annotation": "A common mistake: plants only respire at night: aerobic respiration runs around the clock, glucose + oxygen → carbon dioxide + water + energy, even while photosynthesis dominates by day.",
+    "text": "Step 2 (s2): A common mistake: plants only respire at night. A common mistake: plants only respire at night. A common mistake: thinking plants only respire at night. During the day photosynthesis dominates, so respiration looks switched off - but plants respire around the clock: at night there is simply no photosynthesis to hide it. Glucose and oxygen travel into the reaction zone and are rebuilt as carbon dioxide and water, releasing energy. The symbol equation balances atom by atom - about 32 ATP per glucose. Note this carefully, because the exit ticket will test exactly that reading."
+   },
+   {
+    "annotation": "ATP hydrolysis releases energy; respiration rebuilds ATP: hydrolysis splits ATP to ADP and releases energy, and respiration in the mitochondrion rebuilds ATP from ADP.",
+    "text": "Step 3 (s3): ATP hydrolysis releases energy; respiration rebuilds ATP. ATP hydrolysis releases energy; respiration rebuilds ATP. Cells never spend glucose directly - they spend ATP, and splitting off its phosphate releases usable energy. Watch ADP travel back to the mitochondrion, pick up a phosphate, and become ATP again. Check the ATP and ADP definitions in your student notes."
+   },
+   {
+    "annotation": "Anaerobic: yeast → ethanol + CO₂; muscle → lactic acid: without enough oxygen glucose is only partly broken down, yielding far less ATP either way.",
+    "text": "Step 4 (s4): Anaerobic: yeast → ethanol + CO₂; muscle → lactic acid. Anaerobic: yeast to ethanol and carbon dioxide; muscle to lactic acid. Without enough oxygen, glucose is only partly broken down: watch it split down two paths. Yeast makes ethanol and carbon dioxide, muscle makes lactic acid - far less ATP either way. Finish the anaerobic comparison question on the worksheet now."
+   },
+   {
+    "annotation": "Photolysis splits water; the Calvin cycle fixes CO₂: light splits water in the thylakoids and releases oxygen, then the Calvin cycle fixes carbon dioxide into glucose in the stroma.",
+    "text": "Step 5 (s5): Photolysis splits water; the Calvin cycle fixes CO₂. Photolysis splits water; the Calvin cycle fixes carbon dioxide. Water travels into the thylakoid, where light energy splits it and oxygen escapes upward. Then carbon dioxide moves into the stroma, and the Calvin cycle builds glucose up piece by piece. Compare this with the mechanism steps in your student notes."
+   },
+   {
+    "annotation": "Photosynthesis is limited by the factor in shortest supply: light intensity, carbon dioxide concentration or temperature - whichever is shortest caps the rate.",
+    "text": "Step 6 (s6): Photosynthesis is limited by the factor in shortest supply. Photosynthesis is limited by the factor in shortest supply. Photosynthesis is capped by whichever factor is in shortest supply - watch the carbon dioxide bar shrink. And note the misconception beat: respiration runs day and night; by day, photosynthesis simply outruns it. Finish by taking the exit ticket on your own - its first question revisits exactly this trap."
+   }
+  ]
+ },
+ "faded": {
+  "problem": "Work the aerobic payoff: state the word equation, the balanced symbol equation, and the ATP yield per glucose.",
+  "selfExplanation": "The first step is shown. State the balanced symbol equation and the ATP yield, then the ATP-ADP cycle that spends and rebuilds it.",
+  "steps": [
+   {
+    "annotation": "Aerobic respiration: The complete breakdown of glucose using oxygen, to carbon dioxide and water, yielding about 32 ATP per glucose.",
+    "text": "Step 1: Aerobic respiration follows the word equation glucose + oxygen → carbon dioxide + water + energy.",
+    "withheld": false
+   },
+   {
+    "annotation": "In scenes s2 and s3, aerobic respiration follows the equation glucose + oxygen → carbon dioxide + water + energy (C6H12O6 + 6O2 → 6CO2 + 6H2O), and complete breakdown yields ~32 ATP per glucose.",
+    "text": "Step 2: the balanced symbol equation is C6H12O6 + 6O2 → 6CO2 + 6H2O.",
+    "withheld": true
+   },
+   {
+    "annotation": "ATP: Adenosine triphosphate, the energy currency of the cell; its hydrolysis releases usable energy.",
+    "text": "Step 3: complete breakdown yields about 32 ATP per glucose, and each ATP is hydrolysed to ADP to release energy for cell work before respiration rebuilds it.",
+    "withheld": true
+   }
+  ]
+ },
+ "level": "jc",
+ "paired": {
+  "problem": "Compare anaerobic respiration in yeast and in muscle: name the products of each and state the ATP yield compared with aerobic respiration.",
+  "solution": "Yeast: ethanol + carbon dioxide. Muscle: lactic acid. Both yield far less ATP than aerobic respiration because glucose is only partly broken down."
+ },
+ "subject": "science",
+ "title": "JC H2 biology — energetics: respiration and photosynthesis",
+ "topic": "h2-energetics"
+}
