@@ -1,0 +1,202 @@
+{
+  "doNow": [
+    {
+      "choices": [
+        {
+          "misconception": "The integral of 2x is x^2.",
+          "rationale": {
+            "chose": "The learner selected option x^2 as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: The integral of 2x is x^2. The slip: The constant term is forgotten. The fix: Never drop the +C: differentiating x^2 + 5 and x^2 + 7 both give 2x.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "x^2"
+        },
+        {
+          "correct": true,
+          "text": "x^2 + C"
+        },
+        {
+          "misconception": "The integral of 2x is x^2.",
+          "rationale": {
+            "chose": "The learner selected option 2 as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: The integral of 2x is x^2. The slip: The constant term is forgotten. The fix: Never drop the +C: differentiating x^2 + 5 and x^2 + 7 both give 2x.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "2"
+        },
+        {
+          "misconception": "The integral of 2x is x^2.",
+          "rationale": {
+            "chose": "The learner selected option x + C as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: The integral of 2x is x^2. The slip: The constant term is forgotten. The fix: Never drop the +C: differentiating x^2 + 5 and x^2 + 7 both give 2x.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "x + C"
+        }
+      ],
+      "id": "dn1",
+      "kind": "multiple-choice",
+      "prompt": "What is the complete indefinite integral of 2x?"
+    },
+    {
+      "choices": [
+        {
+          "misconception": "The integral of 2x is x^2.",
+          "rationale": {
+            "chose": "The learner selected option 1 as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: The integral of 2x is x^2. The slip: The constant term is forgotten. The fix: Never drop the +C: differentiating x^2 + 5 and x^2 + 7 both give 2x.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "1"
+        },
+        {
+          "misconception": "The integral of 2x is x^2.",
+          "rationale": {
+            "chose": "The learner selected option 2 as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: The integral of 2x is x^2. The slip: The constant term is forgotten. The fix: Never drop the +C: differentiating x^2 + 5 and x^2 + 7 both give 2x.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "2"
+        },
+        {
+          "correct": true,
+          "text": "3"
+        },
+        {
+          "misconception": "The integral of 2x is x^2.",
+          "rationale": {
+            "chose": "The learner selected option 4 as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: The integral of 2x is x^2. The slip: The constant term is forgotten. The fix: Never drop the +C: differentiating x^2 + 5 and x^2 + 7 both give 2x.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "4"
+        }
+      ],
+      "id": "dn2",
+      "kind": "multiple-choice",
+      "prompt": "Evaluate the definite integral of 2x from 1 to 2."
+    },
+    {
+      "choices": [
+        {
+          "misconception": "The integral of 2x is x^2.",
+          "rationale": {
+            "chose": "The learner selected option Nothing is wrong; x^2 is the complete answer as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: The integral of 2x is x^2. The slip: The constant term is forgotten. The fix: Never drop the +C: differentiating x^2 + 5 and x^2 + 7 both give 2x.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "Nothing is wrong; x^2 is the complete answer"
+        },
+        {
+          "misconception": "The integral of 2x is x^2.",
+          "rationale": {
+            "chose": "The learner selected option The +C belongs only in definite integrals as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: The integral of 2x is x^2. The slip: The constant term is forgotten. The fix: Never drop the +C: differentiating x^2 + 5 and x^2 + 7 both give 2x.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "The +C belongs only in definite integrals"
+        },
+        {
+          "correct": true,
+          "text": "x^2 alone names only one antiderivative: x^2 + 5 and x^2 - 3 also differentiate to 2x"
+        },
+        {
+          "misconception": "The integral of 2x is x^2.",
+          "rationale": {
+            "chose": "The learner selected option x^2 + 5 and x^2 - 3 have different derivatives from x^2 as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: The integral of 2x is x^2. The slip: The constant term is forgotten. The fix: Never drop the +C: differentiating x^2 + 5 and x^2 + 7 both give 2x.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "x^2 + 5 and x^2 - 3 have different derivatives from x^2"
+        }
+      ],
+      "id": "dn3",
+      "kind": "multiple-choice",
+      "prompt": "A student writes the integral of 2x as x^2 with no +C. What is wrong?"
+    }
+  ],
+  "hingeQuestions": [
+    {
+      "choices": [
+        {
+          "misconception": "The integral of 2x is x^2.",
+          "rationale": {
+            "chose": "The learner selected option The integral of 2x is x^2 as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: The integral of 2x is x^2. The slip: The constant term is forgotten. The fix: Never drop the +C: differentiating x^2 + 5 and x^2 + 7 both give 2x.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "The integral of 2x is x^2"
+        },
+        {
+          "correct": true,
+          "text": "Never drop the +C: differentiating x^2 + 5 and x^2 + 7 both give 2x."
+        },
+        {
+          "misconception": "The integral of 2x is x^2.",
+          "rationale": {
+            "chose": "The learner selected option The integral of 2x is x^2 + 2x as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: The integral of 2x is x^2. The slip: The constant term is forgotten. The fix: Never drop the +C: differentiating x^2 + 5 and x^2 + 7 both give 2x.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "The integral of 2x is x^2 + 2x"
+        },
+        {
+          "misconception": "The integral of 2x is x^2.",
+          "rationale": {
+            "chose": "The learner selected option The integral of 2x is 2x^2 + C as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: The integral of 2x is x^2. The slip: The constant term is forgotten. The fix: Never drop the +C: differentiating x^2 + 5 and x^2 + 7 both give 2x.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "The integral of 2x is 2x^2 + C"
+        }
+      ],
+      "id": "h1",
+      "kind": "multiple-choice",
+      "prompt": "In one sentence, what is the correct statement about the indefinite integral of 2x?",
+      "scriptCue": "s4"
+    },
+    {
+      "choices": [
+        {
+          "misconception": "The integral of 2x is x^2.",
+          "rationale": {
+            "chose": "The learner selected option Agree - x^2 is the whole answer as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: The integral of 2x is x^2. The slip: The constant term is forgotten. The fix: Never drop the +C: differentiating x^2 + 5 and x^2 + 7 both give 2x.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "Agree - x^2 is the whole answer"
+        },
+        {
+          "correct": true,
+          "text": "Never drop the +C: differentiating x^2 + 5 and x^2 + 7 both give 2x."
+        },
+        {
+          "misconception": "The integral of 2x is x^2.",
+          "rationale": {
+            "chose": "The learner selected option Tell them x^2 + 5 differentiates to 2x + 5, so there is nothing more to check as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: The integral of 2x is x^2. The slip: The constant term is forgotten. The fix: Never drop the +C: differentiating x^2 + 5 and x^2 + 7 both give 2x.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "Tell them x^2 + 5 differentiates to 2x + 5, so there is nothing more to check"
+        },
+        {
+          "misconception": "The integral of 2x is x^2.",
+          "rationale": {
+            "chose": "The learner selected option Tell them the +C cancels in every integral, so there is nothing more to check as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: The integral of 2x is x^2. The slip: The constant term is forgotten. The fix: Never drop the +C: differentiating x^2 + 5 and x^2 + 7 both give 2x.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "Tell them the +C cancels in every integral, so there is nothing more to check"
+        }
+      ],
+      "id": "h2",
+      "kind": "multiple-choice",
+      "prompt": "How would you correct a classmate who insists the integral of 2x is x^2?",
+      "scriptCue": "s4"
+    }
+  ],
+  "level": "secondary",
+  "subject": "math",
+  "title": "A-Math integration: area, accumulation and the +C trap",
+  "topic": "a-integration"
+}

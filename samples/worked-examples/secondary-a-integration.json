@@ -1,0 +1,58 @@
+{
+  "complete": {
+    "problem": "Work through A-Math integration: area, accumulation and the +C trap step by step, the antiderivative as accumulated area, the Riemann sum converging on the exact area, the definite integral of 2x from 1 to 2, and the trap of dropping the +C.",
+    "selfExplanation": "Explain why the antiderivative is accumulated area, why thinner rectangles give a better estimate of the area, why the definite integral of 2x from 1 to 2 is 3 square units, and why the indefinite integral of 2x must keep the +C.",
+    "steps": [
+      {
+        "annotation": "Accumulated area: the sweep dot travels right and the shaded strips pile up behind it, so the antiderivative at each x is the area built up so far.",
+        "text": "Step 1 (s1): The antiderivative is accumulated area. As x sweeps right, shaded strips pile up under the curve, and the antiderivative at each x is exactly that accumulated area."
+      },
+      {
+        "annotation": "Riemann sum: 4 wide rectangles give a rough total, 8 narrower ones get closer, and the limit is the exact shaded area, the definite integral.",
+        "text": "Step 2 (s2): Riemann sum: thin rectangles converge on the area. Chop the region into 4 wide rectangles for a rough total, then halve the widths to 8 narrower ones and keep going until the sum closes in on the exact shaded area, which is the definite integral."
+      },
+      {
+        "annotation": "Definite integral: antidifferentiate 2x to x^2, evaluate at each bound, and subtract upper minus lower: 4 - 1 = 3 square units.",
+        "text": "Step 3 (s3): Worked: evaluating a definite integral. Integrate 2x from 1 to 2: antidifferentiate to x^2, evaluate at the bounds, and subtract: at x = 2, x^2 = 4; at x = 1, x^2 = 1; 4 - 1 = 3 square units."
+      },
+      {
+        "annotation": "Misconception: never drop the +C - x^2, x^2 + 5 and x^2 - 3 all have derivative 2x, so the indefinite integral of 2x is the whole family x^2 + C.",
+        "text": "Step 4 (s4): A common mistake: the integral of 2x is x^2. Spring the trap on purpose with the shifted curves: x^2 + 5 and x^2 - 3 have exactly the same slope, 2x, everywhere, so the indefinite integral must keep the +C. Note this carefully, because the exit ticket will test exactly that reading."
+      }
+    ]
+  },
+  "faded": {
+    "problem": "Find the indefinite integral of 2x, and evaluate the definite integral of 2x from 0 to 3.",
+    "selfExplanation": "The first step is shown. Say how you antidifferentiate 2x for a definite integral, how you evaluate at each bound, and why no +C appears in the answer.",
+    "steps": [
+      {
+        "annotation": "An indefinite integral always carries +C: every vertical shift of x^2 differentiates to 2x.",
+        "text": "Step 1: the indefinite integral of 2x is x^2 + C, because differentiating x^2 + C gives 2x for every constant C.",
+        "withheld": false
+      },
+      {
+        "annotation": "Antidifferentiate first: the antiderivative of 2x is x^2.",
+        "text": "Step 2: antidifferentiate 2x to x^2 for the definite integral from 0 to 3.",
+        "withheld": true
+      },
+      {
+        "annotation": "Evaluate the antiderivative at the upper bound 3 and the lower bound 0.",
+        "text": "Step 3: evaluate at the bounds: at x = 3, x^2 = 9; at x = 0, x^2 = 0.",
+        "withheld": true
+      },
+      {
+        "annotation": "Subtract: 9 - 0 = 9, so the area under y = 2x from 0 to 3 is 9 square units.",
+        "text": "Step 4: subtract upper minus lower: 9 - 0 = 9 square units.",
+        "withheld": true
+      }
+    ]
+  },
+  "level": "secondary",
+  "paired": {
+    "problem": "Find the indefinite integral of 6x and evaluate the definite integral of 2x from 1 to 3.",
+    "solution": "The indefinite integral of 6x is 3x^2 + C. The definite integral of 2x from 1 to 3 is 9 - 1 = 8 square units."
+  },
+  "subject": "math",
+  "title": "A-Math integration: area, accumulation and the +C trap",
+  "topic": "a-integration"
+}

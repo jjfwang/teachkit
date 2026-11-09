@@ -75,7 +75,8 @@ const STEMS = [
   'secondary-a-quadratic-functions',
   'secondary-a-differentiation',
   'secondary-a-binomial',
-  'secondary-a-trigonometry'
+  'secondary-a-trigonometry',
+  'secondary-a-integration'
 ];
 
 function load(rel) {
