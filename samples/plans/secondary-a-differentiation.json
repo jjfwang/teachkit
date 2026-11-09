@@ -1,0 +1,95 @@
+{
+ "activities": [
+  {
+   "grouping": "whole class",
+   "minutes": 6,
+   "objectiveIds": [
+    "o1"
+   ],
+   "scriptCue": "s1",
+   "title": "Secant lines close in on the tangent"
+  },
+  {
+   "grouping": "whole class",
+   "minutes": 7,
+   "objectiveIds": [
+    "o2"
+   ],
+   "scriptCue": "s2",
+   "title": "The power rule"
+  },
+  {
+   "grouping": "whole class",
+   "minutes": 7,
+   "objectiveIds": [
+    "o2"
+   ],
+   "scriptCue": "s3",
+   "title": "dy/dx from first principles"
+  },
+  {
+   "grouping": "whole class",
+   "minutes": 7,
+   "objectiveIds": [
+    "o3"
+   ],
+   "scriptCue": "s4",
+   "title": "Stationary points: max, min, inflexion"
+  },
+  {
+   "grouping": "pairs",
+   "minutes": 8,
+   "objectiveIds": [
+    "o1",
+    "o2",
+    "o3"
+   ],
+   "scriptCue": "s5",
+   "title": "Stationary is not always max or min"
+  }
+ ],
+ "durationMinutes": 35,
+ "level": "secondary",
+ "objectives": [
+  {
+   "assessmentPoints": [
+    "Secant-gradient answers in the opening activity",
+    "Worksheet and exit-ticket answers in the fifth activity"
+   ],
+   "id": "o1",
+   "successCriteria": [
+    "Secant lines close in on the tangent - a secant gives an average gradient between two points; slide the points together and the secant becomes the tangent, whose gradient is dy/dx."
+   ],
+   "text": "Explain dy/dx as the gradient of the tangent, the limit of secant gradients"
+  },
+  {
+   "assessmentPoints": [
+    "Power-rule answers in the second activity",
+    "First-principles answers in the third activity",
+    "Worksheet and exit-ticket answers in the fifth activity"
+   ],
+   "id": "o2",
+   "successCriteria": [
+    "The power rule - differentiate term by term: bring the power down and reduce it by one, so x^3 becomes 3x^2 and x^5 becomes 5x^4, while a constant becomes 0.",
+    "dy/dx from first principles - the secant gradient (f(x + h) - f(x)) / h for y = x^2 simplifies to 2x + h, and letting h tend to 0 gives the exact gradient 2x."
+   ],
+   "text": "Use the power rule and first principles to differentiate polynomials"
+  },
+  {
+   "assessmentPoints": [
+    "Stationary-point answers in the fourth activity",
+    "Trap answers in the fifth activity",
+    "Worksheet and exit-ticket answers in the fifth activity"
+   ],
+   "id": "o3",
+   "successCriteria": [
+    "Stationary points: max, min, inflexion - solve dy/dx = 0, then read the sign change of dy/dx either side: positive to negative is a maximum, negative to positive a minimum, no change an inflexion.",
+    "Stationary is not always max or min - for y = x^3 the gradient reaches 0 at x = 0 yet stays positive on both sides, so the curve climbs through a point of inflexion."
+   ],
+   "text": "Find stationary points from dy/dx = 0 and classify them with the sign-change test"
+  }
+ ],
+ "subject": "math",
+ "title": "A-Math differentiation: gradients, the power rule and stationary points",
+ "topic": "a-differentiation"
+}

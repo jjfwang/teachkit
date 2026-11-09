@@ -82,7 +82,8 @@ const STEMS = [
   'jc-h2-genetics',
   'jc-h2-energetics',
   'jc-h2-ecology',
-  'secondary-a-quadratic-functions'
+  'secondary-a-quadratic-functions',
+  'secondary-a-differentiation'
 ];
 
 function load(rel) {

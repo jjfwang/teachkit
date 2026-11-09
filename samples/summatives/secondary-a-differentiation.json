@@ -1,0 +1,125 @@
+{
+ "blueprint": [
+  {
+   "assessmentObjective": "AO1 recall and apply",
+   "cognitiveLevel": "apply",
+   "marks": 10,
+   "outcomeCode": "A-DIFFERENTIATION-STATIONARY-POINTS"
+  },
+  {
+   "assessmentObjective": "AO2 reason and solve",
+   "cognitiveLevel": "reason",
+   "marks": 10,
+   "outcomeCode": "A-QUADRATIC-FUNCTIONS"
+  }
+ ],
+ "durationMinutes": 60,
+ "items": [
+  {
+   "blueprintRow": 0,
+   "commandWord": "Differentiate",
+   "markScheme": {
+    "points": [
+     {
+      "marks": 2,
+      "text": "States that dy/dx = 6x - 5"
+     },
+     {
+      "marks": 3,
+      "text": "States that at x = 2 the gradient is 6 x 2 - 5 = 7"
+     }
+    ]
+   },
+   "marks": 5,
+   "prompt": "Differentiate y = 3x^2 - 5x + 2 and state the gradient of the curve at x = 2."
+  },
+  {
+   "blueprintRow": 0,
+   "commandWord": "Find",
+   "markScheme": {
+    "points": [
+     {
+      "marks": 2,
+      "text": "States that dy/dx = 3x^2 - 3 = 0 at x = -1 and x = 1"
+     },
+     {
+      "marks": 3,
+      "text": "Explains that at x = -1 the gradient changes positive to negative, a maximum, and at x = 1 it changes negative to positive, a minimum"
+     }
+    ]
+   },
+   "marks": 5,
+   "prompt": "Find the stationary points of y = x^3 - 3x and classify each one using the sign change of dy/dx."
+  },
+  {
+   "blueprintRow": 1,
+   "commandWord": "Calculate",
+   "markScheme": {
+    "points": [
+     {
+      "marks": 2,
+      "text": "States that D = b^2 - 4ac = 25 - 24 = 1"
+     },
+     {
+      "marks": 3,
+      "text": "States that a positive discriminant means two real roots"
+     }
+    ]
+   },
+   "marks": 5,
+   "prompt": "For x^2 - 5x + 6 = 0, calculate the discriminant D = b^2 - 4ac and state how many real roots the equation has."
+  },
+  {
+   "blueprintRow": 1,
+   "commandWord": "Explain",
+   "markScheme": {
+    "points": [
+     {
+      "marks": 2,
+      "text": "States that halving the coefficient of x gives 3"
+     },
+     {
+      "marks": 3,
+      "text": "States that adding the missing corner 3^2 = 9 gives x^2 + 6x + 9 = (x+3)^2"
+     }
+    ]
+   },
+   "marks": 5,
+   "prompt": "In one sentence, explain how to complete the square for x^2 + 6x."
+  }
+ ],
+ "level": "secondary",
+ "moderation": {
+  "state": "unreviewed"
+ },
+ "review": null,
+ "rubric": {
+  "criteria": [
+   {
+    "levels": [
+     {
+      "descriptor": "Methods are chosen and applied exactly, the differentiation and stationary-point steps are stated explicitly, the discriminant and completing-the-square steps are stated explicitly, and conclusions are justified without reading dy/dx = 0 as a maximum or minimum.",
+      "label": "Secure"
+     },
+     {
+      "descriptor": "Method is correct in outline but a differentiation step, stationary-point step, discriminant step or completing-the-square step is skipped.",
+      "label": "Developing"
+     },
+     {
+      "descriptor": "Methods are misapplied - for example reading dy/dx = 0 as a maximum or minimum without a sign test - and the working does not support the answer.",
+      "label": "Beginning"
+     }
+    ],
+    "name": "Differentiation and quadratics communication"
+   }
+  ]
+ },
+ "subject": "math",
+ "title": "Differentiation and Quadratics Unit Test",
+ "topics": [
+  "secondary-a-differentiation",
+  "secondary-a-quadratic-functions"
+ ],
+ "totalMarks": 20,
+ "unitTitle": "Differentiation and quadratics"
+}
