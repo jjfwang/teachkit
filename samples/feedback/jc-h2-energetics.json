@@ -1,0 +1,44 @@
+{
+ "commonErrors": [
+  {
+   "example": "A learner writes on the worksheet that plants only respire at night.",
+   "fixIt": {
+    "corrected": "Plants respire around the clock: at night there is simply no photosynthesis to hide it.",
+    "prompt": "Fix it: state when plants respire, and why respiration looks switched off by day."
+   },
+   "misconception": "Plants only respire at night."
+  },
+  {
+   "example": "On the exit ticket, a learner picks the statement that plants only respire at night.",
+   "fixIt": {
+    "corrected": "Plants respire around the clock, day and night: respiration never stops - photosynthesis just masks it by day.",
+    "prompt": "Fix it: explain in one sentence what the respiration dot keeps doing in scene s6 after the sun is replaced by the moon."
+   },
+   "misconception": "Plants only respire at night."
+  }
+ ],
+ "level": "jc",
+ "modelAnswers": [
+  {
+   "answer": "The folds give a huge surface area for respiratory enzymes, so more aerobic respiration and more ATP production can happen.",
+   "creditPoints": [],
+   "question": "Explain why the folded cristae of a mitochondrion help it make more ATP."
+  },
+  {
+   "answer": "Yeast: ethanol + carbon dioxide. Muscle: lactic acid. Both yield far less ATP than aerobic respiration because glucose is only partly broken down.",
+   "creditPoints": [],
+   "question": "Compare anaerobic respiration in yeast and in muscle: name the products of each and state the ATP yield compared with aerobic respiration."
+  }
+ ],
+ "nextSteps": [
+  "Reteach the plant-respiration trap from the paired notes trap before any further energetics work: plants respire around the clock, day and night.",
+  "Practise the anaerobic comparison from scene s4, checking each product against its pathway and the ATP yield against aerobic respiration."
+ ],
+ "strengths": [
+  "Most of the class can state the aerobic respiration equation, glucose + oxygen → carbon dioxide + water + energy, with about 32 ATP per glucose.",
+  "The class can explain why folded cristae help a mitochondrion make more ATP."
+ ],
+ "subject": "science",
+ "title": "JC H2 biology — energetics: respiration and photosynthesis",
+ "topic": "h2-energetics"
+}

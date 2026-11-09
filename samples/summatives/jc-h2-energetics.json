@@ -1,0 +1,125 @@
+{
+ "blueprint": [
+  {
+   "assessmentObjective": "AO1 recall and apply",
+   "cognitiveLevel": "apply",
+   "marks": 10,
+   "outcomeCode": "H2-ENERGETICS-RESPIRATION"
+  },
+  {
+   "assessmentObjective": "AO2 reason and solve",
+   "cognitiveLevel": "reason",
+   "marks": 10,
+   "outcomeCode": "H2-CELL-BIO-ULTRASTRUCTURE"
+  }
+ ],
+ "durationMinutes": 60,
+ "items": [
+  {
+   "blueprintRow": 0,
+   "commandWord": "Explain",
+   "markScheme": {
+    "points": [
+     {
+      "marks": 2,
+      "text": "States that the folds give a huge surface area for respiratory enzymes"
+     },
+     {
+      "marks": 3,
+      "text": "Explains that the huge surface area allows more aerobic respiration and more ATP production"
+     }
+    ]
+   },
+   "marks": 5,
+   "prompt": "Explain why the folded cristae of a mitochondrion help it make more ATP."
+  },
+  {
+   "blueprintRow": 0,
+   "commandWord": "Compare",
+   "markScheme": {
+    "points": [
+     {
+      "marks": 2,
+      "text": "States that yeast makes ethanol and carbon dioxide while muscle makes lactic acid"
+     },
+     {
+      "marks": 3,
+      "text": "Explains that both yield far less ATP than aerobic respiration because glucose is only partly broken down"
+     }
+    ]
+   },
+   "marks": 5,
+   "prompt": "Compare anaerobic respiration in yeast and in muscle: name the products of each and state the ATP yield compared with aerobic respiration."
+  },
+  {
+   "blueprintRow": 1,
+   "commandWord": "Explain",
+   "markScheme": {
+    "points": [
+     {
+      "marks": 2,
+      "text": "States that chloroplasts trap light energy to make sugar in photosynthesis"
+     },
+     {
+      "marks": 3,
+      "text": "Explains that mitochondria release energy from that sugar as ATP in aerobic respiration, which continues day and night"
+     }
+    ]
+   },
+   "marks": 5,
+   "prompt": "A leaf cell contains both chloroplasts and mitochondria. Explain, in terms of photosynthesis and respiration, why it needs both."
+  },
+  {
+   "blueprintRow": 1,
+   "commandWord": "Describe",
+   "markScheme": {
+    "points": [
+     {
+      "marks": 2,
+      "text": "States a phospholipid bilayer with hydrophilic heads facing outward and hydrophobic tails inside, with proteins drifting through it"
+     },
+     {
+      "marks": 3,
+      "text": "Explains that channel proteins allow only selected substances to cross"
+     }
+    ]
+   },
+   "marks": 5,
+   "prompt": "Describe the structure of the cell membrane in the fluid mosaic model and explain how that structure makes it selectively permeable."
+  }
+ ],
+ "level": "jc",
+ "moderation": {
+  "state": "unreviewed"
+ },
+ "review": null,
+ "rubric": {
+  "criteria": [
+   {
+    "levels": [
+     {
+      "descriptor": "Methods are chosen and applied exactly, aerobic equation and ATP payoff are stated explicitly, anaerobic products are named for yeast and muscle, cell membrane structure is described with heads, tails and channel proteins, and conclusions are justified without claiming plants only respire at night.",
+      "label": "Secure"
+     },
+     {
+      "descriptor": "Method is correct in outline but an aerobic step, anaerobic product, ATP payoff or membrane step is skipped.",
+      "label": "Developing"
+     },
+     {
+      "descriptor": "Methods are misapplied - for example claiming plants only respire at night because photosynthesis replaces respiration by day - and the working does not support the answer.",
+      "label": "Beginning"
+     }
+    ],
+    "name": "Energetics and cell biology communication"
+   }
+  ]
+ },
+ "subject": "science",
+ "title": "Energetics and Cell Biology Unit Test",
+ "topics": [
+  "jc-h2-energetics",
+  "jc-h2-cell-bio"
+ ],
+ "totalMarks": 20,
+ "unitTitle": "Energetics and cell biology"
+}
