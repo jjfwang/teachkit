@@ -1,0 +1,202 @@
+{
+ "doNow": [
+  {
+   "choices": [
+    {
+     "misconception": "Energy is recycled through the ecosystem.",
+     "rationale": {
+      "chose": "The learner selected option Energy is recycled through the ecosystem, so producers get it back again as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: Energy is recycled through the ecosystem.. The slip: The 'cycle of life' language makes energy sound like it loops round forever, so energy is read as looping back to the producers. The fix: Energy flows one way - sunlight in, heat out: what is recycled is matter - carbon, nitrogen and water..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "Energy is recycled through the ecosystem, so producers get it back again"
+    },
+    {
+     "misconception": "Energy is recycled through the ecosystem.",
+     "rationale": {
+      "chose": "The learner selected option Energy cycles between producers and decomposers only as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: Energy is recycled through the ecosystem.. The slip: The 'cycle of life' language makes energy sound like it loops round forever, so energy is read as looping back to the producers. The fix: Energy flows one way - sunlight in, heat out: what is recycled is matter - carbon, nitrogen and water..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "Energy cycles between producers and decomposers only"
+    },
+    {
+     "correct": true,
+     "text": "Energy flows one way through the ecosystem and leaves as heat"
+    },
+    {
+     "misconception": "Energy is recycled through the ecosystem.",
+     "rationale": {
+      "chose": "The learner selected option Energy is destroyed at the top of the food chain as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: Energy is recycled through the ecosystem.. The slip: The 'cycle of life' language makes energy sound like it loops round forever, so energy is read as looping back to the producers. The fix: Energy flows one way - sunlight in, heat out: what is recycled is matter - carbon, nitrogen and water..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "Energy is destroyed at the top of the food chain"
+    }
+   ],
+   "id": "dn1",
+   "kind": "multiple-choice",
+   "prompt": "A student says energy keeps cycling round an ecosystem forever, coming back to the producers. What is correct?"
+  },
+  {
+   "choices": [
+    {
+     "misconception": "Energy is recycled through the ecosystem.",
+     "rationale": {
+      "chose": "The learner selected option From feeder to food, predator to prey as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: Energy is recycled through the ecosystem.. The slip: The 'cycle of life' language makes energy sound like it loops round forever, so energy is read as looping back to the producers. The fix: Energy flows one way - sunlight in, heat out: what is recycled is matter - carbon, nitrogen and water..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "From feeder to food, predator to prey"
+    },
+    {
+     "correct": true,
+     "text": "From food to feeder, in the direction of energy flow"
+    },
+    {
+     "misconception": "Energy is recycled through the ecosystem.",
+     "rationale": {
+      "chose": "The learner selected option From the largest animal to the smallest as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: Energy is recycled through the ecosystem.. The slip: The 'cycle of life' language makes energy sound like it loops round forever, so energy is read as looping back to the producers. The fix: Energy flows one way - sunlight in, heat out: what is recycled is matter - carbon, nitrogen and water..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "From the largest animal to the smallest"
+    },
+    {
+     "misconception": "Energy is recycled through the ecosystem.",
+     "rationale": {
+      "chose": "The learner selected option In a circle, back to the producers as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: Energy is recycled through the ecosystem.. The slip: The 'cycle of life' language makes energy sound like it loops round forever, so energy is read as looping back to the producers. The fix: Energy flows one way - sunlight in, heat out: what is recycled is matter - carbon, nitrogen and water..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "In a circle, back to the producers"
+    }
+   ],
+   "id": "dn2",
+   "kind": "multiple-choice",
+   "prompt": "Which direction do arrows point in a food chain?"
+  },
+  {
+   "choices": [
+    {
+     "misconception": "Energy is recycled through the ecosystem.",
+     "rationale": {
+      "chose": "The learner selected option The species moved because energy is recycled elsewhere as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: Energy is recycled through the ecosystem.. The slip: The 'cycle of life' language makes energy sound like it loops round forever, so energy is read as looping back to the producers. The fix: Energy flows one way - sunlight in, heat out: what is recycled is matter - carbon, nitrogen and water..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "The species moved because energy is recycled elsewhere"
+    },
+    {
+     "correct": true,
+     "text": "Habitat loss and fragmentation left fragments too small and isolated to support the species"
+    },
+    {
+     "misconception": "Energy is recycled through the ecosystem.",
+     "rationale": {
+      "chose": "The learner selected option The pyramid of energy inverted in the fragments as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: Energy is recycled through the ecosystem.. The slip: The 'cycle of life' language makes energy sound like it loops round forever, so energy is read as looping back to the producers. The fix: Energy flows one way - sunlight in, heat out: what is recycled is matter - carbon, nitrogen and water..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "The pyramid of energy inverted in the fragments"
+    },
+    {
+     "misconception": "Energy is recycled through the ecosystem.",
+     "rationale": {
+      "chose": "The learner selected option Decomposers stopped cycling carbon in the fragments as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: Energy is recycled through the ecosystem.. The slip: The 'cycle of life' language makes energy sound like it loops round forever, so energy is read as looping back to the producers. The fix: Energy flows one way - sunlight in, heat out: what is recycled is matter - carbon, nitrogen and water..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "Decomposers stopped cycling carbon in the fragments"
+    }
+   ],
+   "id": "dn3",
+   "kind": "multiple-choice",
+   "prompt": "A forest is cleared into small isolated fragments and a wide-ranging species disappears. What is the best explanation?"
+  }
+ ],
+ "hingeQuestions": [
+  {
+   "choices": [
+    {
+     "misconception": "Energy is recycled through the ecosystem.",
+     "rationale": {
+      "chose": "The learner selected option Energy is recycled through the ecosystem as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: Energy is recycled through the ecosystem.. The slip: The 'cycle of life' language makes energy sound like it loops round forever, so energy is read as looping back to the producers. The fix: Energy flows one way - sunlight in, heat out: what is recycled is matter - carbon, nitrogen and water..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "Energy is recycled through the ecosystem"
+    },
+    {
+     "correct": true,
+     "text": "Energy flows one way - sunlight in, heat out: what is recycled is matter - carbon, nitrogen and water."
+    },
+    {
+     "misconception": "Energy is recycled through the ecosystem.",
+     "rationale": {
+      "chose": "The learner selected option Energy cycles between producers and decomposers only as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: Energy is recycled through the ecosystem.. The slip: The 'cycle of life' language makes energy sound like it loops round forever, so energy is read as looping back to the producers. The fix: Energy flows one way - sunlight in, heat out: what is recycled is matter - carbon, nitrogen and water..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "Energy cycles between producers and decomposers only"
+    },
+    {
+     "misconception": "Energy is recycled through the ecosystem.",
+     "rationale": {
+      "chose": "The learner selected option Energy is destroyed at the top of the food chain as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: Energy is recycled through the ecosystem.. The slip: The 'cycle of life' language makes energy sound like it loops round forever, so energy is read as looping back to the producers. The fix: Energy flows one way - sunlight in, heat out: what is recycled is matter - carbon, nitrogen and water..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "Energy is destroyed at the top of the food chain"
+    }
+   ],
+   "id": "h1",
+   "kind": "multiple-choice",
+   "prompt": "In one sentence, what is the correct statement about energy in an ecosystem?",
+   "scriptCue": "s6"
+  },
+  {
+   "choices": [
+    {
+     "misconception": "Energy is recycled through the ecosystem.",
+     "rationale": {
+      "chose": "The learner selected option Agree - energy is recycled through the ecosystem, so producers get it back again as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: Energy is recycled through the ecosystem.. The slip: The 'cycle of life' language makes energy sound like it loops round forever, so energy is read as looping back to the producers. The fix: Energy flows one way - sunlight in, heat out: what is recycled is matter - carbon, nitrogen and water..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "Agree - energy is recycled through the ecosystem, so producers get it back again"
+    },
+    {
+     "correct": true,
+     "text": "Energy flows one way - sunlight in, heat out: what is recycled is matter - carbon, nitrogen and water."
+    },
+    {
+     "misconception": "Energy is recycled through the ecosystem.",
+     "rationale": {
+      "chose": "The learner selected option Tell them energy cycles between producers and decomposers only, so the claim does not apply here as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: Energy is recycled through the ecosystem.. The slip: The 'cycle of life' language makes energy sound like it loops round forever, so energy is read as looping back to the producers. The fix: Energy flows one way - sunlight in, heat out: what is recycled is matter - carbon, nitrogen and water..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "Tell them energy cycles between producers and decomposers only, so the claim does not apply here"
+    },
+    {
+     "misconception": "Energy is recycled through the ecosystem.",
+     "rationale": {
+      "chose": "The learner selected option Tell them energy is destroyed at the top of the food chain, so nothing ever changes as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: Energy is recycled through the ecosystem.. The slip: The 'cycle of life' language makes energy sound like it loops round forever, so energy is read as looping back to the producers. The fix: Energy flows one way - sunlight in, heat out: what is recycled is matter - carbon, nitrogen and water..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "Tell them energy is destroyed at the top of the food chain, so nothing ever changes"
+    }
+   ],
+   "id": "h2",
+   "kind": "multiple-choice",
+   "prompt": "How would you correct a classmate who insists energy is recycled through the ecosystem?",
+   "scriptCue": "s6"
+  }
+ ],
+ "level": "jc",
+ "subject": "science",
+ "title": "JC H2 biology — ecology: energy flow and the carbon cycle",
+ "topic": "h2-ecology"
+}
