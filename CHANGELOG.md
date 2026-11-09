@@ -56,6 +56,8 @@ version section when the release ships.
   fails if regenerating them differs. The deterministic mock moved
   unchanged into the shared helper `tests/topic-bundle-mock.js`.
 
+- Gold backfill slice 2 of #1603 (epic #1204): the study family for jc-h2-genetics - samples/revision/jc-h2-genetics.json (flashcards verbatim from the paired notes definitions and trap plus quiz-bank items, practice sets drawn only from the paired quiz bank, study sheet withholding every back and practice answer), samples/organisers/jc-h2-genetics.json (flow entries deep-equal the paired notes mechanismSteps in order plus a frayer keyed to the definition terms and meanings, student sheet withholding every entry), samples/glossary/jc-h2-genetics.json (entries deep-equal the paired notes definitions in notes order, every example verbatim from the notes workedExample, mechanismSteps or objectives) and samples/scaffolds/jc-h2-genetics.json (full, partial and minimal sets fading non-increasingly, word-bank terms exact notes definition terms, cloze answers from the same set word bank) - derivation pinned verbatim by tests/organisers-gold.test.js, tests/glossary-gold.test.js, tests/scaffold-gold.test.js and tests/revision-gold.test.js via the new jc-h2-genetics STEMS entries; the revision file is derived verbatim from the slice 1 quiz bank (merged as PR #1604). No validator, renderer, pipeline or demo changes. (2026-11-03)
+
 ## [0.2.0] - 2026-11-08
 
 - Promote the `0.2.0` line to a stable release, with the same functional
