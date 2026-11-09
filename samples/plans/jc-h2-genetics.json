@@ -1,0 +1,83 @@
+{
+ "activities": [
+  {
+   "grouping": "whole class",
+   "minutes": 8,
+   "objectiveIds": [
+    "o1"
+   ],
+   "scriptCue": "s1",
+   "title": "Central dogma: DNA makes protein"
+  },
+  {
+   "grouping": "pairs",
+   "minutes": 8,
+   "objectiveIds": [
+    "o1"
+   ],
+   "scriptCue": "s2",
+   "title": "Monohybrid cross: the 3:1 ratio"
+  },
+  {
+   "grouping": "pairs",
+   "minutes": 8,
+   "objectiveIds": [
+    "o1"
+   ],
+   "scriptCue": "s3",
+   "title": "Dihybrid cross: 9:3:3:1"
+  },
+  {
+   "grouping": "whole class",
+   "minutes": 8,
+   "objectiveIds": [
+    "o1"
+   ],
+   "scriptCue": "s4",
+   "title": "Sex-linked inheritance"
+  },
+  {
+   "grouping": "whole class",
+   "minutes": 8,
+   "objectiveIds": [
+    "o2"
+   ],
+   "scriptCue": "s5",
+   "title": "A common mistake: mutations are always harmful"
+  }
+ ],
+ "durationMinutes": 40,
+ "level": "jc",
+ "objectives": [
+  {
+   "assessmentPoints": [
+    "Central dogma answers in the opening activity",
+    "Monohybrid answers in the second activity",
+    "Dihybrid answers in the third activity",
+    "Sex-linked answers in the fourth activity"
+   ],
+   "id": "o1",
+   "successCriteria": [
+    "Central dogma: DNA makes protein: DNA is transcribed into mRNA in the nucleus, and the mRNA is translated into a polypeptide at a ribosome.",
+    "Monohybrid cross: the 3:1 ratio: Aa x Aa gives genotypes 1 AA : 2 Aa : 1 aa in the Punnett square, which group into phenotypes in the ratio 3:1.",
+    "Dihybrid cross: 9:3:3:1: two genes on different chromosomes assort independently, so sixteen boxes give four phenotype classes in the ratio 9:3:3:1.",
+    "Sex-linked inheritance: a gene on the X chromosome is passed from a carrier mother to half her sons, who show the trait because the Y cannot mask it."
+   ],
+   "text": "Describe the central dogma and predict offspring ratios for monohybrid, dihybrid and sex-linked crosses"
+  },
+  {
+   "assessmentPoints": [
+    "Trap answers in the closing misconception activity"
+   ],
+   "id": "o2",
+   "successCriteria": [
+    "Most mutations are neutral: only some are harmful, and a rare few are the raw material of evolution.",
+    "A common mistake: mutations are always harmful: most sequence changes are neutral because the protein still does its job, so harm is the exception, not the rule."
+   ],
+   "text": "Evaluate claims about mutations, distinguishing neutral, harmful and beneficial changes"
+  }
+ ],
+ "subject": "science",
+ "title": "JC H2 biology -- genetics: from DNA to inheritance",
+ "topic": "h2-genetics"
+}
