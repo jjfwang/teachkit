@@ -1,0 +1,72 @@
+{
+ "flashcards": [
+  {
+   "back": "For ax^2 + bx + c, the quantity D = b^2 - 4ac; its sign decides the roots: positive gives two real roots, zero gives one repeated root, negative gives no real roots.",
+   "front": "Discriminant",
+   "source": "definition"
+  },
+  {
+   "back": "Rewriting a quadratic as a perfect square plus a constant by adding the missing corner: for x^2 + 6x, half of 6 is 3 and the missing corner is 3^2 = 9.",
+   "front": "Completing the square",
+   "source": "definition"
+  },
+  {
+   "back": "A value of x that makes the quadratic equal to zero; on the graph it is where the parabola crosses or touches the x-axis, and a negative discriminant still leaves two complex roots.",
+   "front": "Root",
+   "source": "definition"
+  },
+  {
+   "back": "An inequality such as x^2 - 4 > 0, solved by finding the roots that split the number line into regions and testing a value in each region.",
+   "front": "Quadratic inequality",
+   "source": "definition"
+  },
+  {
+   "back": "A root involving i, where i^2 = -1; a quadratic with a negative discriminant has two complex roots, such as x = i and x = -i for x^2 + 1 = 0.",
+   "front": "Complex root",
+   "source": "definition"
+  },
+  {
+   "back": "The slip: No real roots is read as no solutions at all. The fix: No real roots is not no solution: the equation still has two complex roots. For x^2 + 1 = 0, D = -4 and the roots are x = i and x = -i.",
+   "front": "A negative discriminant means the equation has no solution.",
+   "source": "trap"
+  },
+  {
+   "back": "The equation has no real roots, but two complex roots",
+   "front": "A quadratic equation has discriminant D = -4. What does that say about its roots?",
+   "source": "quiz-bank"
+  },
+  {
+   "back": "9",
+   "front": "What must be added to x^2 + 6x to complete the square?",
+   "source": "quiz-bank"
+  }
+ ],
+ "level": "secondary",
+ "practiceSets": [
+  {
+   "dayOffset": 1,
+   "items": [
+    {
+     "answer": "D = 25 - 24 = 1, which is positive, so the equation has two real roots.",
+     "prompt": "For x^2 - 5x + 6 = 0, calculate the discriminant D = b^2 - 4ac and state how many real roots the equation has."
+    },
+    {
+     "answer": "(x + 3)^2 - 9",
+     "prompt": "Which expression is x^2 + 6x rewritten by completing the square?"
+    }
+   ]
+  },
+  {
+   "dayOffset": 3,
+   "items": [
+    {
+     "answer": "x less than -2 or x greater than 2.",
+     "prompt": "Solve the inequality x squared minus 4 greater than zero."
+    }
+   ]
+  }
+ ],
+ "subject": "math",
+ "title": "A-Math quadratics: completing the square, discriminant and inequalities",
+ "topic": "a-quadratic-functions"
+}

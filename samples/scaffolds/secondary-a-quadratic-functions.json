@@ -1,0 +1,116 @@
+{
+ "level": "secondary",
+ "sets": [
+  {
+   "cloze": [
+    {
+     "answers": [
+      "Discriminant",
+      "Completing the square"
+     ],
+     "text": "The ___ is the quantity whose sign decides the roots, and ___ is rewriting a quadratic as a perfect square plus a constant."
+    },
+    {
+     "answers": [
+      "Root",
+      "Complex root"
+     ],
+     "text": "A ___ is a value of x that makes the quadratic equal to zero, while a ___ is a root involving i, where i squared equals negative one."
+    }
+   ],
+   "frames": [
+    "The quantity b squared minus four a c, whose sign decides how many real roots a quadratic has, is the ___.",
+    "Rewriting a quadratic as a perfect square plus a constant, by adding the missing corner, is ___.",
+    "A value of x that makes the quadratic equal to zero is a ___."
+   ],
+   "level": "full",
+   "starters": [
+    "To decide the roots, I first work out D, which is...",
+    "To complete the square for x squared plus six x, I halve six to get...",
+    "To find a root, I look for the value of x that..."
+   ],
+   "wordBank": [
+    {
+     "gloss": "For ax^2 + bx + c, the quantity D = b^2 - 4ac; its sign decides the roots: positive gives two real roots, zero gives one repeated root, negative gives no real roots.",
+     "term": "Discriminant"
+    },
+    {
+     "gloss": "Rewriting a quadratic as a perfect square plus a constant by adding the missing corner: for x^2 + 6x, half of 6 is 3 and the missing corner is 3^2 = 9.",
+     "term": "Completing the square"
+    },
+    {
+     "gloss": "A value of x that makes the quadratic equal to zero; on the graph it is where the parabola crosses or touches the x-axis, and a negative discriminant still leaves two complex roots.",
+     "term": "Root"
+    },
+    {
+     "gloss": "An inequality such as x^2 - 4 > 0, solved by finding the roots that split the number line into regions and testing a value in each region.",
+     "term": "Quadratic inequality"
+    },
+    {
+     "gloss": "A root involving i, where i^2 = -1; a quadratic with a negative discriminant has two complex roots, such as x = i and x = -i for x^2 + 1 = 0.",
+     "term": "Complex root"
+    }
+   ]
+  },
+  {
+   "cloze": [
+    {
+     "answers": [
+      "Discriminant",
+      "Completing the square"
+     ],
+     "text": "The ___ is the quantity whose sign decides the roots, and ___ is rewriting a quadratic as a perfect square plus a constant."
+    }
+   ],
+   "frames": [
+    "The quantity b squared minus four a c, whose sign decides how many real roots a quadratic has, is the ___.",
+    "Rewriting a quadratic as a perfect square plus a constant, by adding the missing corner, is ___."
+   ],
+   "level": "partial",
+   "starters": [
+    "To decide the roots, I first work out D, which is...",
+    "To complete the square for x squared plus six x, I halve six to get..."
+   ],
+   "wordBank": [
+    {
+     "gloss": "For ax^2 + bx + c, the quantity D = b^2 - 4ac; its sign decides the roots: positive gives two real roots, zero gives one repeated root, negative gives no real roots.",
+     "term": "Discriminant"
+    },
+    {
+     "gloss": "Rewriting a quadratic as a perfect square plus a constant by adding the missing corner: for x^2 + 6x, half of 6 is 3 and the missing corner is 3^2 = 9.",
+     "term": "Completing the square"
+    },
+    {
+     "gloss": "A value of x that makes the quadratic equal to zero; on the graph it is where the parabola crosses or touches the x-axis, and a negative discriminant still leaves two complex roots.",
+     "term": "Root"
+    }
+   ]
+  },
+  {
+   "cloze": [
+    {
+     "answers": [
+      "Discriminant"
+     ],
+     "text": "The ___ is the quantity whose sign decides the roots."
+    }
+   ],
+   "frames": [
+    "The quantity b squared minus four a c, whose sign decides how many real roots a quadratic has, is the ___."
+   ],
+   "level": "minimal",
+   "starters": [
+    "To decide the roots, I first work out D, which is..."
+   ],
+   "wordBank": [
+    {
+     "gloss": "For ax^2 + bx + c, the quantity D = b^2 - 4ac; its sign decides the roots: positive gives two real roots, zero gives one repeated root, negative gives no real roots.",
+     "term": "Discriminant"
+    }
+   ]
+  }
+ ],
+ "subject": "math",
+ "title": "A-Math quadratics: completing the square, discriminant and inequalities",
+ "topic": "a-quadratic-functions"
+}
