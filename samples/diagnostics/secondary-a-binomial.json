@@ -1,0 +1,202 @@
+{
+  "doNow": [
+    {
+      "choices": [
+        {
+          "misconception": "(a + b)^2 = a^2 + b^2.",
+          "rationale": {
+            "chose": "The learner selected option a^2 + b^2 as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: (a + b)^2 = a^2 + b^2. The slip: The power is distributed over the sum and the middle term is dropped. The fix: The missing middle term 2ab is the whole trap: (1 + 2)^2 is 9, not 5.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "a^2 + b^2"
+        },
+        {
+          "correct": true,
+          "text": "a^2 + 2ab + b^2"
+        },
+        {
+          "misconception": "(a + b)^2 = a^2 + b^2.",
+          "rationale": {
+            "chose": "The learner selected option a^2 + ab + b^2 as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: (a + b)^2 = a^2 + b^2. The slip: The power is distributed over the sum and the middle term is dropped. The fix: The missing middle term 2ab is the whole trap: (1 + 2)^2 is 9, not 5.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "a^2 + ab + b^2"
+        },
+        {
+          "misconception": "(a + b)^2 = a^2 + b^2.",
+          "rationale": {
+            "chose": "The learner selected option 2ab as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: (a + b)^2 = a^2 + b^2. The slip: The power is distributed over the sum and the middle term is dropped. The fix: The missing middle term 2ab is the whole trap: (1 + 2)^2 is 9, not 5.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "2ab"
+        }
+      ],
+      "id": "dn1",
+      "kind": "multiple-choice",
+      "prompt": "What is the complete expansion of (a + b)^2?"
+    },
+    {
+      "choices": [
+        {
+          "misconception": "(a + b)^2 = a^2 + b^2.",
+          "rationale": {
+            "chose": "The learner selected option 4 as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: (a + b)^2 = a^2 + b^2. The slip: The power is distributed over the sum and the middle term is dropped. The fix: The missing middle term 2ab is the whole trap: (1 + 2)^2 is 9, not 5.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "4"
+        },
+        {
+          "correct": true,
+          "text": "24"
+        },
+        {
+          "misconception": "(a + b)^2 = a^2 + b^2.",
+          "rationale": {
+            "chose": "The learner selected option 6 as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: (a + b)^2 = a^2 + b^2. The slip: The power is distributed over the sum and the middle term is dropped. The fix: The missing middle term 2ab is the whole trap: (1 + 2)^2 is 9, not 5.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "6"
+        },
+        {
+          "misconception": "(a + b)^2 = a^2 + b^2.",
+          "rationale": {
+            "chose": "The learner selected option 12 as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: (a + b)^2 = a^2 + b^2. The slip: The power is distributed over the sum and the middle term is dropped. The fix: The missing middle term 2ab is the whole trap: (1 + 2)^2 is 9, not 5.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "12"
+        }
+      ],
+      "id": "dn2",
+      "kind": "multiple-choice",
+      "prompt": "What is the coefficient of x^2 in the expansion of (x + 2)^4?"
+    },
+    {
+      "choices": [
+        {
+          "misconception": "(a + b)^2 = a^2 + b^2.",
+          "rationale": {
+            "chose": "The learner selected option By multiplying the two entries above it as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: (a + b)^2 = a^2 + b^2. The slip: The power is distributed over the sum and the middle term is dropped. The fix: The missing middle term 2ab is the whole trap: (1 + 2)^2 is 9, not 5.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "By multiplying the two entries above it"
+        },
+        {
+          "correct": true,
+          "text": "By adding the two entries above it"
+        },
+        {
+          "misconception": "(a + b)^2 = a^2 + b^2.",
+          "rationale": {
+            "chose": "The learner selected option By doubling the entry above it as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: (a + b)^2 = a^2 + b^2. The slip: The power is distributed over the sum and the middle term is dropped. The fix: The missing middle term 2ab is the whole trap: (1 + 2)^2 is 9, not 5.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "By doubling the entry above it"
+        },
+        {
+          "misconception": "(a + b)^2 = a^2 + b^2.",
+          "rationale": {
+            "chose": "The learner selected option By subtracting the two entries above it as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: (a + b)^2 = a^2 + b^2. The slip: The power is distributed over the sum and the middle term is dropped. The fix: The missing middle term 2ab is the whole trap: (1 + 2)^2 is 9, not 5.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "By subtracting the two entries above it"
+        }
+      ],
+      "id": "dn3",
+      "kind": "multiple-choice",
+      "prompt": "Each entry of Pascal's triangle is built from the row above. How?"
+    }
+  ],
+  "hingeQuestions": [
+    {
+      "choices": [
+        {
+          "misconception": "(a + b)^2 = a^2 + b^2.",
+          "rationale": {
+            "chose": "The learner selected option (a + b)^2 = a^2 + b^2 as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: (a + b)^2 = a^2 + b^2. The slip: The power is distributed over the sum and the middle term is dropped. The fix: The missing middle term 2ab is the whole trap: (1 + 2)^2 is 9, not 5.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "(a + b)^2 = a^2 + b^2"
+        },
+        {
+          "correct": true,
+          "text": "The missing middle term 2ab is the whole trap: (1 + 2)^2 is 9, not 5."
+        },
+        {
+          "misconception": "(a + b)^2 = a^2 + b^2.",
+          "rationale": {
+            "chose": "The learner selected option a^2 + ab + b^2 as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: (a + b)^2 = a^2 + b^2. The slip: The power is distributed over the sum and the middle term is dropped. The fix: The missing middle term 2ab is the whole trap: (1 + 2)^2 is 9, not 5.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "a^2 + ab + b^2"
+        },
+        {
+          "misconception": "(a + b)^2 = a^2 + b^2.",
+          "rationale": {
+            "chose": "The learner selected option 2ab as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: (a + b)^2 = a^2 + b^2. The slip: The power is distributed over the sum and the middle term is dropped. The fix: The missing middle term 2ab is the whole trap: (1 + 2)^2 is 9, not 5.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "2ab"
+        }
+      ],
+      "id": "h1",
+      "kind": "multiple-choice",
+      "prompt": "In one sentence, what is the correct statement about (a + b)^2?",
+      "scriptCue": "s4"
+    },
+    {
+      "choices": [
+        {
+          "misconception": "(a + b)^2 = a^2 + b^2.",
+          "rationale": {
+            "chose": "The learner selected option Agree - every square of a sum splits into two squares as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: (a + b)^2 = a^2 + b^2. The slip: The power is distributed over the sum and the middle term is dropped. The fix: The missing middle term 2ab is the whole trap: (1 + 2)^2 is 9, not 5.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "Agree - every square of a sum splits into two squares"
+        },
+        {
+          "correct": true,
+          "text": "The missing middle term 2ab is the whole trap: (1 + 2)^2 is 9, not 5."
+        },
+        {
+          "misconception": "(a + b)^2 = a^2 + b^2.",
+          "rationale": {
+            "chose": "The learner selected option Tell them it is a^2 + b^2, so there is nothing more to check as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: (a + b)^2 = a^2 + b^2. The slip: The power is distributed over the sum and the middle term is dropped. The fix: The missing middle term 2ab is the whole trap: (1 + 2)^2 is 9, not 5.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "Tell them it is a^2 + b^2, so there is nothing more to check"
+        },
+        {
+          "misconception": "(a + b)^2 = a^2 + b^2.",
+          "rationale": {
+            "chose": "The learner selected option Tell them it is a^2 + ab + b^2, so there is nothing more to check as their answer to this question.",
+            "reteach": "Reteach from the paired notes trap: (a + b)^2 = a^2 + b^2. The slip: The power is distributed over the sum and the middle term is dropped. The fix: The missing middle term 2ab is the whole trap: (1 + 2)^2 is 9, not 5.",
+            "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+          },
+          "text": "Tell them it is a^2 + ab + b^2, so there is nothing more to check"
+        }
+      ],
+      "id": "h2",
+      "kind": "multiple-choice",
+      "prompt": "How would you correct a classmate who insists (a + b)^2 = a^2 + b^2?",
+      "scriptCue": "s4"
+    }
+  ],
+  "level": "secondary",
+  "subject": "math",
+  "title": "A-Math binomial: Pascal's triangle and the (a+b)^n expansion",
+  "topic": "a-binomial"
+}

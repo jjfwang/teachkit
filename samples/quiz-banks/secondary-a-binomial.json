@@ -1,0 +1,49 @@
+{
+  "items": [
+    {
+      "answer": "a^2 + 2ab + b^2",
+      "choices": [
+        "a^2 + b^2",
+        "a^2 + 2ab + b^2",
+        "a^2 + ab + b^2",
+        "2ab"
+      ],
+      "misconceptionCode": "(a + b)^2 = a^2 + b^2.",
+      "prompt": "What is the complete expansion of (a + b)^2?"
+    },
+    {
+      "answer": "24",
+      "choices": [
+        "4",
+        "24",
+        "6",
+        "12"
+      ],
+      "misconceptionCode": "(a + b)^2 = a^2 + b^2.",
+      "prompt": "What is the coefficient of x^2 in the expansion of (x + 2)^4?"
+    },
+    {
+      "answer": "16x^4 - 96x^3 + 216x^2 - 216x + 81",
+      "prompt": "Expand (2x - 3)^4 in full."
+    },
+    {
+      "answer": "The x^3 term is C(4, 1) (2x)^3 (-3) = -96x^3.",
+      "prompt": "State the term in x^3 in the expansion of (2x - 3)^4."
+    },
+    {
+      "answer": "C(n, r) a^(n - r) b^r",
+      "choices": [
+        "C(n, r) a^r b^(n - r)",
+        "C(n, r) a^n b^n",
+        "C(n, r) a^(n - r) b^r",
+        "n a^(n - r) b^r"
+      ],
+      "misconceptionCode": "(a + b)^2 = a^2 + b^2.",
+      "prompt": "The general term of (a + b)^n, term r + 1, is which expression?"
+    }
+  ],
+  "level": "secondary",
+  "subject": "math",
+  "title": "A-Math binomial: Pascal's triangle and the (a+b)^n expansion",
+  "topic": "a-binomial"
+}
