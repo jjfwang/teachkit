@@ -1,0 +1,44 @@
+{
+ "commonErrors": [
+  {
+   "example": "A learner writes on the worksheet that (a + b)^2 expands to a^2 + b^2, dropping the middle term.",
+   "fixIt": {
+    "corrected": "The numbers refuse: (1 + 2)^2 is 9 while 1^2 + 2^2 is only 5, so the middle term 2ab is always present when a sum is squared.",
+    "prompt": "Fix it: say in one sentence what the numbers prove about (a + b)^2 in scene s4."
+   },
+   "misconception": "(a + b)^2 = a^2 + b^2."
+  },
+  {
+   "example": "On the exit ticket, a learner picks the statement that (a + b)^2 is a^2 + b^2.",
+   "fixIt": {
+    "corrected": "The area picture shows the two a-by-b rectangles: the middle term 2ab is always present when a sum is squared.",
+    "prompt": "Fix it: explain in one sentence what the two a-by-b rectangles add in scene s4."
+   },
+   "misconception": "(a + b)^2 = a^2 + b^2."
+  }
+ ],
+ "level": "secondary",
+ "modelAnswers": [
+  {
+   "answer": "a^2 + 2ab + b^2",
+   "creditPoints": [],
+   "question": "A student expands (a + b)^2. Which expansion is correct?"
+  },
+  {
+   "answer": "16x^4 - 96x^3 + 216x^2 - 216x + 81",
+   "creditPoints": [],
+   "question": "Expand (2x - 3)^4 in full."
+  }
+ ],
+ "nextSteps": [
+  "Reteach the power-does-not-distribute trap from the paired notes trap before any further binomial work: the middle term 2ab is always present, as (1 + 2)^2 = 9 shows.",
+  "Practise the general-term routine from scene s2, reading the coefficient from row n and letting the powers of a fall while the powers of b rise before the next lesson."
+ ],
+ "strengths": [
+  "Most of the class can read row 4 of Pascal's triangle as 1, 4, 6, 4, 1 and use it for the coefficients of (a + b)^4.",
+  "The class can expand (2x - 3)^4 term by term, keeping the -3 in brackets so the signs alternate."
+ ],
+ "subject": "math",
+ "title": "A-Math binomial: Pascal's triangle and the (a+b)^n expansion",
+ "topic": "a-binomial"
+}

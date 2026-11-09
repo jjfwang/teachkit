@@ -1,0 +1,92 @@
+{
+ "activities": [
+  {
+   "grouping": "whole class",
+   "minutes": 6,
+   "objectiveIds": [
+    "o1"
+   ],
+   "scriptCue": "s1",
+   "title": "Pascal's triangle: the coefficients of (a + b)^n"
+  },
+  {
+   "grouping": "whole class",
+   "minutes": 7,
+   "objectiveIds": [
+    "o2"
+   ],
+   "scriptCue": "s2",
+   "title": "(a + b)^n, term by term"
+  },
+  {
+   "grouping": "whole class",
+   "minutes": 8,
+   "objectiveIds": [
+    "o3"
+   ],
+   "scriptCue": "s3",
+   "title": "Worked: expanding (2x - 3)^4"
+  },
+  {
+   "grouping": "whole class",
+   "minutes": 6,
+   "objectiveIds": [
+    "o2"
+   ],
+   "scriptCue": "s4",
+   "title": "Misconception: the power does not distribute"
+  },
+  {
+   "grouping": "pairs",
+   "minutes": 8,
+   "objectiveIds": [
+    "o1",
+    "o2",
+    "o3"
+   ],
+   "title": "Worksheet in pairs and exit ticket"
+  }
+ ],
+ "durationMinutes": 35,
+ "level": "secondary",
+ "objectives": [
+  {
+   "assessmentPoints": [
+    "Pascal's triangle answers in the opening activity",
+    "Worksheet and exit-ticket answers in the closing activity"
+   ],
+   "id": "o1",
+   "successCriteria": [
+    "Pascal's triangle: the coefficients of (a + b)^n - build each row by adding the two entries above, so row 4 is 1, 4, 6, 4, 1."
+   ],
+   "text": "Read row n of Pascal's triangle as the coefficients of (a + b)^n"
+  },
+  {
+   "assessmentPoints": [
+    "Term-by-term answers in the second activity",
+    "Trap answers in the fourth activity",
+    "Worksheet and exit-ticket answers in the closing activity"
+   ],
+   "id": "o2",
+   "successCriteria": [
+    "(a + b)^n, term by term - term r + 1 is C(n, r) a^(n - r) b^r: the power of a falls by one each term while the power of b rises by one.",
+    "Misconception: the power does not distribute - (a + b)^2 splits into a^2, two a-by-b rectangles and b^2 in the area picture, never into a^2 + b^2 alone."
+   ],
+   "text": "Expand a binomial with the binomial theorem and the general term C(n, r) a^(n - r) b^r"
+  },
+  {
+   "assessmentPoints": [
+    "Worked-expansion answers in the third activity",
+    "Worksheet and exit-ticket answers in the closing activity"
+   ],
+   "id": "o3",
+   "successCriteria": [
+    "Worked: expanding (2x - 3)^4 - apply the general term with b = -3 in brackets, so odd powers of (-3) are negative and the signs of the terms alternate."
+   ],
+   "text": "Expand a binomial with a negative second term, keeping the negative part in brackets so the signs alternate"
+  }
+ ],
+ "subject": "math",
+ "title": "A-Math binomial: Pascal's triangle and the (a+b)^n expansion",
+ "topic": "a-binomial"
+}
