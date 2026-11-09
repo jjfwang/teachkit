@@ -1,0 +1,44 @@
+{
+ "commonErrors": [
+  {
+   "example": "A learner writes on the worksheet that energy keeps cycling round an ecosystem forever, coming back to the producers.",
+   "fixIt": {
+    "corrected": "Energy flows one way, sunlight in and heat out; what cycles is matter, carbon included, not energy.",
+    "prompt": "Fix it: say in one sentence what happens to the energy dot in scene s6 and what happens to the carbon dot."
+   },
+   "misconception": "Energy is recycled through the ecosystem."
+  },
+  {
+   "example": "On the exit ticket, a learner picks the statement that energy is recycled through the ecosystem.",
+   "fixIt": {
+    "corrected": "Energy enters as sunlight and leaves as heat, never returning: the dot that loops round and round is carbon, not energy.",
+    "prompt": "Fix it: explain in one sentence what the red energy dot does as it travels from the sun to the heat in scene s6."
+   },
+   "misconception": "Energy is recycled through the ecosystem."
+  }
+ ],
+ "level": "jc",
+ "modelAnswers": [
+  {
+   "answer": "Most energy is lost as heat from respiration, in egestion and excretion, and in uneaten or undigested parts, so only about a tenth is built into new tissue that the next level can eat.",
+   "creditPoints": [],
+   "question": "Explain why only about 10% of the energy at one trophic level reaches the next level, and what happens to the rest."
+  },
+  {
+   "answer": "Energy flows one way: sunlight in, heat out. Carbon cycles: photosynthesis draws CO2 into plants, while respiration, combustion and decomposition return CO2 to the air.",
+   "creditPoints": [],
+   "question": "Compare how energy and carbon move through an ecosystem: state which one cycles and which flows one way, naming the processes involved."
+  }
+ ],
+ "nextSteps": [
+  "Reteach the energy-recycling trap from the paired notes trap before any further ecology work: energy flows one way, sunlight in and heat out, while matter cycles.",
+  "Practise the 10% rule from scene s3, working the 20 000 kJ ticket example level by level before the next lesson."
+ ],
+ "strengths": [
+  "Most of the class can state the 10% rule: only about a tenth of the energy at one level reaches the next.",
+  "The class can tell energy flow apart from the carbon cycle, naming photosynthesis, respiration and combustion."
+ ],
+ "subject": "science",
+ "title": "JC H2 biology — ecology: energy flow and the carbon cycle",
+ "topic": "h2-ecology"
+}

@@ -1,0 +1,93 @@
+{
+ "activities": [
+  {
+   "grouping": "whole class",
+   "minutes": 8,
+   "objectiveIds": [
+    "o1"
+   ],
+   "scriptCue": "s1",
+   "title": "Food chains: arrows follow energy flow"
+  },
+  {
+   "grouping": "pairs",
+   "minutes": 8,
+   "objectiveIds": [
+    "o1"
+   ],
+   "scriptCue": "s2",
+   "title": "Food webs: one dot splits into two"
+  },
+  {
+   "grouping": "whole class",
+   "minutes": 8,
+   "objectiveIds": [
+    "o1"
+   ],
+   "scriptCue": "s3",
+   "title": "Pyramid of energy: only 10% moves up"
+  },
+  {
+   "grouping": "whole class",
+   "minutes": 8,
+   "objectiveIds": [
+    "o2"
+   ],
+   "scriptCue": "s4",
+   "title": "The carbon cycle: one dot, round and round"
+  },
+  {
+   "grouping": "whole class",
+   "minutes": 8,
+   "objectiveIds": [
+    "o2"
+   ],
+   "scriptCue": "s5",
+   "title": "Conservation: when habitat shrinks, species vanish"
+  },
+  {
+   "grouping": "whole class",
+   "minutes": 8,
+   "objectiveIds": [
+    "o2"
+   ],
+   "scriptCue": "s6",
+   "title": "A common mistake: energy is not recycled"
+  }
+ ],
+ "durationMinutes": 48,
+ "level": "jc",
+ "objectives": [
+  {
+   "assessmentPoints": [
+    "Food-chain arrow answers in the opening activity",
+    "Food-web answers in the second activity",
+    "Pyramid answers in the third activity"
+   ],
+   "id": "o1",
+   "successCriteria": [
+    "Food chains: arrows follow energy flow: a chain runs producer to primary consumer to secondary consumer, and arrows point from food to feeder, the way energy moves.",
+    "Food webs: one dot splits into two: one producer can feed several consumers and one consumer can have several foods, so energy splits across interlinked pathways.",
+    "Pyramid of energy: only 10% moves up: most energy is lost as heat and waste, so each level keeps only a tenth and food chains stay short."
+   ],
+   "text": "Describe energy flow through food chains, food webs and pyramids of energy"
+  },
+  {
+   "assessmentPoints": [
+    "Carbon-cycle answers in the fourth activity",
+    "Conservation answers in the fifth activity",
+    "Energy-recycling answers in the closing activity"
+   ],
+   "id": "o2",
+   "successCriteria": [
+    "The carbon cycle: one dot, round and round: photosynthesis draws CO2 into plants, respiration and combustion return it to the air, and decomposers release carbon from dead matter.",
+    "Conservation: when habitat shrinks, species vanish: fragmentation isolates small populations, and protected corridors reconnect fragments so species can move again.",
+    "A common mistake: energy is not recycled: energy flows one way and leaves as heat, while matter such as carbon is what actually cycles."
+   ],
+   "text": "Explain the carbon cycle, conservation and why energy is not recycled"
+  }
+ ],
+ "subject": "science",
+ "title": "JC H2 biology — ecology: energy flow and the carbon cycle",
+ "topic": "h2-ecology"
+}
