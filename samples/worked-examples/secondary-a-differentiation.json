@@ -1,0 +1,62 @@
+{
+ "complete": {
+  "problem": "Work through A-Math differentiation: secant lines closing in on the tangent, the power rule, dy/dx from first principles, stationary points classified by the sign change, and the trap that dy/dx = 0 means a maximum or minimum.",
+  "selfExplanation": "Explain why the secant gradient is only an average, why the power rule brings the power down and reduces it by one, why h must tend to 0 for the exact gradient, why the sign change classifies a stationary point, and why dy/dx = 0 at x = 0 for y = x^3 is a point of inflexion and not a maximum or minimum.",
+  "steps": [
+   {
+    "annotation": "Secant lines close in on the tangent - a secant gives an average gradient between two points; slide the points together and the secant becomes the tangent, whose gradient is dy/dx.",
+    "text": "Step 1 (s1): Secant lines close in on the tangent. Watch the secant PQ join two points on the curve, then watch Q slide in toward P: the secant swings round until it becomes the tangent. That limiting gradient is the derivative, dy/dx. A slider drags Q toward P and the tangent appears with the label tangent at P - gradient dy/dx."
+   },
+   {
+    "annotation": "The power rule - differentiate term by term: bring the power down and reduce it by one, so x^3 becomes 3x^2 and x^5 becomes 5x^4, while a constant becomes 0.",
+    "text": "Step 2 (s2): The power rule. Bring the power down in front and reduce it by one: x^5 becomes 5x^4 and x^3 becomes 3x^2, and a constant becomes 0. Watch the exponent drop down to become the coefficient: y = x^5 gives dy/dx = 5x^4, and y = x^3 gives dy/dx = 3x^2."
+   },
+   {
+    "annotation": "dy/dx from first principles - the secant gradient (f(x + h) - f(x)) / h for y = x^2 simplifies to 2x + h, and letting h tend to 0 gives the exact gradient 2x.",
+    "text": "Step 3 (s3): dy/dx from first principles. The secant gradient (f(x + h) - f(x)) / h for y = x^2 simplifies to 2x + h, and letting h tend to 0 gives the exact gradient 2x. Watch the chord AB shrink as B slides toward A: the change in x and the change in y both shrink, and in the limit the chord becomes the tangent."
+   },
+   {
+    "annotation": "Stationary points: max, min, inflexion - solve dy/dx = 0, then read the sign change of dy/dx either side: positive to negative is a maximum, negative to positive a minimum, no change an inflexion.",
+    "text": "Step 4 (s4): Stationary points: max, min, inflexion. Solve dy/dx = 0 to find them, then classify with the sign change: positive to negative is a maximum, negative to positive is a minimum, and no sign change is a point of inflexion. A marker rides the cubic while its tangent flattens, steepens and flattens again: the readout flips from positive to zero at the max, stays negative through the inflexion, and hits zero again at the min."
+   },
+   {
+    "annotation": "Stationary is not always max or min - for y = x^3 the gradient reaches 0 at x = 0 yet stays positive on both sides, so the curve climbs through a point of inflexion.",
+    "text": "Step 5 (s5): A common mistake: dy/dx = 0 means a maximum or minimum. Spring the trap on purpose with y = x^3 at x = 0, where dy/dx = 0. Watch y = x^3 at x = 0: the gradient falls to 0 but the curve climbs straight through - a point of inflexion. Stationary is not always max or min: check the sign change. y = x^3 at x = 0 is stationary and still climbing. Note this carefully, because the exit ticket will test exactly that reading."
+   }
+  ]
+ },
+ "faded": {
+  "problem": "Trace one curve from derivative to classification: differentiate y = x^3 - 3x, find its stationary points and classify each one.",
+  "selfExplanation": "The first step is shown. State the stationary points of y = x^3 - 3x and classify each one with the sign change, then contrast y = x^3 at x = 0.",
+  "steps": [
+   {
+    "annotation": "The power rule: bring the power down and reduce it by one, so x^3 becomes 3x^2 and 3x becomes 3.",
+    "text": "Step 1: differentiate y = x^3 - 3x with the power rule to get dy/dx = 3x^2 - 3.",
+    "withheld": false
+   },
+   {
+    "annotation": "In scene s4, the stationary points are where dy/dx = 0: 3x^2 - 3 = 0 gives x = 1 and x = -1.",
+    "text": "Step 2: stationary points satisfy dy/dx = 0, so 3x^2 - 3 = 0 gives x = 1 and x = -1.",
+    "withheld": true
+   },
+   {
+    "annotation": "So x = -1 is a maximum with y = 2 and x = 1 is a minimum with y = -2.",
+    "text": "Step 3: sign test - just left of x = -1 the gradient is positive and just right it is negative, so x = -1 is a maximum with y = 2; at x = 1 the change is negative to positive, a minimum with y = -2.",
+    "withheld": true
+   },
+   {
+    "annotation": "In scene s5, y = x^3 at x = 0 is stationary and still climbing: a point of inflexion, not a maximum or minimum.",
+    "text": "Step 4: contrast y = x^3 at x = 0 - the gradient 3x^2 is 0 there but positive on both sides, so that stationary point is a point of inflexion.",
+    "withheld": true
+   }
+  ]
+ },
+ "level": "secondary",
+ "paired": {
+  "problem": "Find the stationary points of y = x^3 - 3x and classify each one using the sign change of dy/dx.",
+  "solution": "dy/dx = 3x^2 - 3 = 0 at x = -1 and x = 1. At x = -1 the gradient changes positive to negative, a maximum (y = 2). At x = 1 it changes negative to positive, a minimum (y = -2)."
+ },
+ "subject": "math",
+ "title": "A-Math differentiation: gradients, the power rule and stationary points",
+ "topic": "a-differentiation"
+}

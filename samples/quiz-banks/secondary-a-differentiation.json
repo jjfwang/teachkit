@@ -1,0 +1,49 @@
+{
+ "items": [
+  {
+   "answer": "The gradient dy/dx is 0 there, but it may be a maximum, a minimum or a point of inflexion",
+   "choices": [
+    "It is a maximum point",
+    "It is a minimum point",
+    "The gradient dy/dx is 0 there, but it may be a maximum, a minimum or a point of inflexion",
+    "The curve crosses the x-axis there"
+   ],
+   "misconceptionCode": "dy/dx = 0 means a maximum or minimum.",
+   "prompt": "At a stationary point of a curve, which statement is always true?"
+  },
+  {
+   "answer": "5x^4",
+   "choices": [
+    "x^4",
+    "5x^4",
+    "5x^5",
+    "4x^5"
+   ],
+   "misconceptionCode": "dy/dx = 0 means a maximum or minimum.",
+   "prompt": "What is dy/dx when y = x^5?"
+  },
+  {
+   "answer": "dy/dx = 6x - 5, so at x = 2 the gradient is 6 x 2 - 5 = 7.",
+   "prompt": "Differentiate y = 3x^2 - 5x + 2 and state the gradient of the curve at x = 2."
+  },
+  {
+   "answer": "dy/dx = 3x^2 - 3 = 0 at x = -1 and x = 1. At x = -1 the gradient changes positive to negative, a maximum (y = 2). At x = 1 it changes negative to positive, a minimum (y = -2).",
+   "prompt": "Find the stationary points of y = x^3 - 3x and classify each one using the sign change of dy/dx."
+  },
+  {
+   "answer": "2x + h, which tends to 2x",
+   "choices": [
+    "2x + h, which tends to x^2",
+    "2x + h, which tends to 2x",
+    "x + h, which tends to x",
+    "h, which tends to 0"
+   ],
+   "misconceptionCode": "dy/dx = 0 means a maximum or minimum.",
+   "prompt": "Using first principles, the gradient of y = x^2 at a general point x is found from the limit of which expression as h tends to 0?"
+  }
+ ],
+ "level": "secondary",
+ "subject": "math",
+ "title": "A-Math differentiation: gradients, the power rule and stationary points",
+ "topic": "a-differentiation"
+}
