@@ -1,0 +1,61 @@
+{
+ "complete": {
+  "problem": "Trace energy and carbon through the ecosystem: food chains, food webs, the pyramid of energy, the carbon cycle, conservation, and the energy-recycling trap.",
+  "selfExplanation": "Explain why food-chain arrows point from food to feeder, why one producer can feed several consumers in a food web, why only about 10% of the energy at one level reaches the next, why carbon cycles while energy flows one way, why shrinking habitat loses species, and why energy is not recycled.",
+  "steps": [
+   {
+    "annotation": "Food chains: arrows follow energy flow: a chain runs producer to primary consumer to secondary consumer, and arrows point from food to feeder, the way energy moves.",
+    "text": "Step 1 (s1): Food chains: arrows follow energy flow. Food chains: arrows follow energy flow. A food chain is a sequence of trophic levels. Follow the red energy dot: it enters the grass, then moves with each feeding step - grass to rabbit to fox - because arrows point the way energy flows: food to feeder. Keep your student notes open at the trophic level and food chain definitions for this scene."
+   },
+   {
+    "annotation": "Food webs: one dot splits into two: one producer can feed several consumers and one consumer can have several foods, so energy splits across interlinked pathways.",
+    "text": "Step 2 (s2): Food webs: one dot splits into two. Food webs: one dot splits into two. Real communities are webs, not chains. One energy dot enters the grass and splits: half travels grass to rabbit to fox, the other grass to mouse to owl. Remove one species and the ripples reach them all. Now try the energy-flow questions on the worksheet in pairs."
+   },
+   {
+    "annotation": "Pyramid of energy: only 10% moves up: most energy is lost as heat and waste, so each level keeps only a tenth and food chains stay short.",
+    "text": "Step 3 (s3): Pyramid of energy: only 10% moves up. Pyramid of energy: only 10% moves up. Draw energy per level and you get a pyramid. The dot shrinks as it climbs - only about a tenth of the energy becomes the next level. That is why food chains stay short. Check the pyramid of energy definition in your student notes."
+   },
+   {
+    "annotation": "The carbon cycle: one dot, round and round: photosynthesis draws CO2 into plants, respiration and combustion return it to the air, and decomposers release carbon from dead matter.",
+    "text": "Step 4 (s4): The carbon cycle: one dot, round and round. The carbon cycle: one dot, round and round. Carbon loops between air and life. The blue dot drops into plants with photosynthesis, rises back with respiration and combustion, and decomposers recycle the dead - fossil fuels burn ancient carbon all at once. Compare this loop with the mechanism steps in your student notes."
+   },
+   {
+    "annotation": "Conservation: when habitat shrinks, species vanish: fragmentation isolates small populations, and protected corridors reconnect fragments so species can move again.",
+    "text": "Step 5 (s5): Conservation: when habitat shrinks, species vanish. Conservation: when habitat shrinks, species vanish. The fastest way to lose species is to lose their habitat. Watch each patch shrink under pressure - and its species label vanishes with it. Protected corridors fight back by reconnecting the fragments. Finish the conservation question on the worksheet now."
+   },
+   {
+    "annotation": "A common mistake: energy is not recycled: energy flows one way and leaves as heat, while matter such as carbon is what actually cycles.",
+    "text": "Step 6 (s6): A common mistake: energy is not recycled. A common mistake: energy is not recycled. A common mistake: energy is recycled through the ecosystem. The 'cycle of life' language makes energy sound like it loops round forever. Energy flows one way - sunlight in, heat out: the red dot enters as sunlight and leaves as heat, never returning. What is recycled is matter - carbon, nitrogen and water: the blue carbon dot loops round and round. Note this carefully, because the exit ticket will test exactly that reading."
+   }
+  ]
+ },
+ "faded": {
+  "problem": "Work the 10% payoff: state the energy reaching primary consumers and secondary consumers when producers hold 10 000 kJ, and the rule that gives it.",
+  "selfExplanation": "The first step is shown. State the energy at the next two levels, then the 10% rule that gives it.",
+  "steps": [
+   {
+    "annotation": "Pyramid of energy: A diagram of the energy at each trophic level, narrowing upwards because only about 10% of energy moves up each level.",
+    "text": "Step 1: The chain grass → rabbit → fox follows the energy arrows, and producers hold 10 000 kJ.",
+    "withheld": false
+   },
+   {
+    "annotation": "In scenes s1 and s3, the chain grass → rabbit → fox follows the energy arrows, and if producers hold 10 000 kJ, only about 1 000 kJ reaches the rabbits and about 100 kJ reaches the foxes.",
+    "text": "Step 2: about 1 000 kJ reaches the primary consumers and about 100 kJ reaches the secondary consumers.",
+    "withheld": true
+   },
+   {
+    "annotation": "Each step multiplies by a tenth - the 10% rule - so the pyramid narrows and there is too little energy left to support longer chains.",
+    "text": "Step 3: the rule is the 10% rule: each step multiplies by a tenth.",
+    "withheld": true
+   }
+  ]
+ },
+ "level": "jc",
+ "paired": {
+  "problem": "Compare how energy and carbon move through an ecosystem: state which one cycles and which flows one way, naming the processes involved.",
+  "solution": "Energy flows one way: sunlight in, heat out. Carbon cycles: photosynthesis draws CO2 into plants, while respiration, combustion and decomposition return CO2 to the air."
+ },
+ "subject": "science",
+ "title": "JC H2 biology — ecology: energy flow and the carbon cycle",
+ "topic": "h2-ecology"
+}
