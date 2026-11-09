@@ -1,0 +1,202 @@
+{
+ "doNow": [
+  {
+   "choices": [
+    {
+     "misconception": "dy/dx = 0 means a maximum or minimum.",
+     "rationale": {
+      "chose": "The learner selected option It is a maximum point as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: dy/dx = 0 means a maximum or minimum.. The slip: Zero gradient is always tied to turning points. The fix: Stationary is not always max or min: check the sign change. y = x^3 at x = 0 is stationary and still climbing..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "It is a maximum point"
+    },
+    {
+     "misconception": "dy/dx = 0 means a maximum or minimum.",
+     "rationale": {
+      "chose": "The learner selected option It is a minimum point as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: dy/dx = 0 means a maximum or minimum.. The slip: Zero gradient is always tied to turning points. The fix: Stationary is not always max or min: check the sign change. y = x^3 at x = 0 is stationary and still climbing..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "It is a minimum point"
+    },
+    {
+     "correct": true,
+     "text": "The gradient dy/dx is 0 there, but it may be a maximum, a minimum or a point of inflexion"
+    },
+    {
+     "misconception": "dy/dx = 0 means a maximum or minimum.",
+     "rationale": {
+      "chose": "The learner selected option The curve crosses the x-axis there as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: dy/dx = 0 means a maximum or minimum.. The slip: Zero gradient is always tied to turning points. The fix: Stationary is not always max or min: check the sign change. y = x^3 at x = 0 is stationary and still climbing..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "The curve crosses the x-axis there"
+    }
+   ],
+   "id": "dn1",
+   "kind": "multiple-choice",
+   "prompt": "At a stationary point of a curve, which statement is always true?"
+  },
+  {
+   "choices": [
+    {
+     "misconception": "dy/dx = 0 means a maximum or minimum.",
+     "rationale": {
+      "chose": "The learner selected option x^4 as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: dy/dx = 0 means a maximum or minimum.. The slip: Zero gradient is always tied to turning points. The fix: Stationary is not always max or min: check the sign change. y = x^3 at x = 0 is stationary and still climbing..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "x^4"
+    },
+    {
+     "correct": true,
+     "text": "5x^4"
+    },
+    {
+     "misconception": "dy/dx = 0 means a maximum or minimum.",
+     "rationale": {
+      "chose": "The learner selected option 5x^5 as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: dy/dx = 0 means a maximum or minimum.. The slip: Zero gradient is always tied to turning points. The fix: Stationary is not always max or min: check the sign change. y = x^3 at x = 0 is stationary and still climbing..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "5x^5"
+    },
+    {
+     "misconception": "dy/dx = 0 means a maximum or minimum.",
+     "rationale": {
+      "chose": "The learner selected option 4x^5 as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: dy/dx = 0 means a maximum or minimum.. The slip: Zero gradient is always tied to turning points. The fix: Stationary is not always max or min: check the sign change. y = x^3 at x = 0 is stationary and still climbing..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "4x^5"
+    }
+   ],
+   "id": "dn2",
+   "kind": "multiple-choice",
+   "prompt": "What is dy/dx when y = x^5?"
+  },
+  {
+   "choices": [
+    {
+     "misconception": "dy/dx = 0 means a maximum or minimum.",
+     "rationale": {
+      "chose": "The learner selected option 2x + h, which tends to x^2 as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: dy/dx = 0 means a maximum or minimum.. The slip: Zero gradient is always tied to turning points. The fix: Stationary is not always max or min: check the sign change. y = x^3 at x = 0 is stationary and still climbing..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "2x + h, which tends to x^2"
+    },
+    {
+     "correct": true,
+     "text": "2x + h, which tends to 2x"
+    },
+    {
+     "misconception": "dy/dx = 0 means a maximum or minimum.",
+     "rationale": {
+      "chose": "The learner selected option x + h, which tends to x as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: dy/dx = 0 means a maximum or minimum.. The slip: Zero gradient is always tied to turning points. The fix: Stationary is not always max or min: check the sign change. y = x^3 at x = 0 is stationary and still climbing..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "x + h, which tends to x"
+    },
+    {
+     "misconception": "dy/dx = 0 means a maximum or minimum.",
+     "rationale": {
+      "chose": "The learner selected option h, which tends to 0 as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: dy/dx = 0 means a maximum or minimum.. The slip: Zero gradient is always tied to turning points. The fix: Stationary is not always max or min: check the sign change. y = x^3 at x = 0 is stationary and still climbing..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "h, which tends to 0"
+    }
+   ],
+   "id": "dn3",
+   "kind": "multiple-choice",
+   "prompt": "Using first principles, the gradient of y = x^2 at a general point x is found from the limit of which expression as h tends to 0?"
+  }
+ ],
+ "hingeQuestions": [
+  {
+   "choices": [
+    {
+     "misconception": "dy/dx = 0 means a maximum or minimum.",
+     "rationale": {
+      "chose": "The learner selected option dy/dx = 0 means a maximum or minimum as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: dy/dx = 0 means a maximum or minimum.. The slip: Zero gradient is always tied to turning points. The fix: Stationary is not always max or min: check the sign change. y = x^3 at x = 0 is stationary and still climbing..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "dy/dx = 0 means a maximum or minimum"
+    },
+    {
+     "correct": true,
+     "text": "Stationary is not always max or min: check the sign change. y = x^3 at x = 0 is stationary and still climbing."
+    },
+    {
+     "misconception": "dy/dx = 0 means a maximum or minimum.",
+     "rationale": {
+      "chose": "The learner selected option It is a maximum point as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: dy/dx = 0 means a maximum or minimum.. The slip: Zero gradient is always tied to turning points. The fix: Stationary is not always max or min: check the sign change. y = x^3 at x = 0 is stationary and still climbing..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "It is a maximum point"
+    },
+    {
+     "misconception": "dy/dx = 0 means a maximum or minimum.",
+     "rationale": {
+      "chose": "The learner selected option It is a minimum point as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: dy/dx = 0 means a maximum or minimum.. The slip: Zero gradient is always tied to turning points. The fix: Stationary is not always max or min: check the sign change. y = x^3 at x = 0 is stationary and still climbing..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "It is a minimum point"
+    }
+   ],
+   "id": "h1",
+   "kind": "multiple-choice",
+   "prompt": "In one sentence, what is the correct statement about a stationary point?",
+   "scriptCue": "s5"
+  },
+  {
+   "choices": [
+    {
+     "misconception": "dy/dx = 0 means a maximum or minimum.",
+     "rationale": {
+      "chose": "The learner selected option Agree - every stationary point is a maximum or a minimum as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: dy/dx = 0 means a maximum or minimum.. The slip: Zero gradient is always tied to turning points. The fix: Stationary is not always max or min: check the sign change. y = x^3 at x = 0 is stationary and still climbing..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "Agree - every stationary point is a maximum or a minimum"
+    },
+    {
+     "correct": true,
+     "text": "Stationary is not always max or min: check the sign change. y = x^3 at x = 0 is stationary and still climbing."
+    },
+    {
+     "misconception": "dy/dx = 0 means a maximum or minimum.",
+     "rationale": {
+      "chose": "The learner selected option Tell them it is a maximum point, so there is nothing more to check as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: dy/dx = 0 means a maximum or minimum.. The slip: Zero gradient is always tied to turning points. The fix: Stationary is not always max or min: check the sign change. y = x^3 at x = 0 is stationary and still climbing..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "Tell them it is a maximum point, so there is nothing more to check"
+    },
+    {
+     "misconception": "dy/dx = 0 means a maximum or minimum.",
+     "rationale": {
+      "chose": "The learner selected option Tell them it is a minimum point, so there is nothing more to check as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: dy/dx = 0 means a maximum or minimum.. The slip: Zero gradient is always tied to turning points. The fix: Stationary is not always max or min: check the sign change. y = x^3 at x = 0 is stationary and still climbing..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "Tell them it is a minimum point, so there is nothing more to check"
+    }
+   ],
+   "id": "h2",
+   "kind": "multiple-choice",
+   "prompt": "How would you correct a classmate who insists dy/dx = 0 means a maximum or minimum?",
+   "scriptCue": "s5"
+  }
+ ],
+ "level": "secondary",
+ "subject": "math",
+ "title": "A-Math differentiation: gradients, the power rule and stationary points",
+ "topic": "a-differentiation"
+}
