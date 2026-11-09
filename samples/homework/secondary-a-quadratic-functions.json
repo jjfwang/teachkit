@@ -1,0 +1,44 @@
+{
+ "level": "secondary",
+ "questions": [
+  {
+   "choices": [
+    {
+     "text": "36"
+    },
+    {
+     "correct": true,
+     "text": "9"
+    },
+    {
+     "text": "6"
+    },
+    {
+     "text": "3"
+    }
+   ],
+   "explanation": "Half of 6 is 3, and the missing corner is 3^2 = 9, so x^2 + 6x + 9 = (x+3)^2.",
+   "id": "q2",
+   "kind": "multiple-choice",
+   "prompt": "What must be added to x^2 + 6x to complete the square?"
+  },
+  {
+   "answer": "D = 25 - 24 = 1, which is positive, so the equation has two real roots.",
+   "explanation": "With a = 1, b = -5 and c = 6, D = b^2 - 4ac = 25 - 24 = 1. A positive discriminant means two real roots.",
+   "id": "q3",
+   "kind": "short-answer",
+   "prompt": "For x^2 - 5x + 6 = 0, calculate the discriminant D = b^2 - 4ac and state how many real roots the equation has."
+  },
+  {
+   "answer": "x < -2 or x > 2.",
+   "explanation": "The roots of x^2 - 4 = 0 are x = -2 and x = 2. Testing x = -3 gives 5 > 0 (true), x = 0 gives -4 > 0 (false) and x = 3 gives 5 > 0 (true), so the solution is x < -2 or x > 2.",
+   "id": "q4",
+   "kind": "short-answer",
+   "prompt": "Solve the inequality x^2 - 4 > 0."
+  }
+ ],
+ "subject": "math",
+ "title": "A-Math quadratics: completing the square, discriminant and inequalities",
+ "topic": "a-quadratic-functions",
+ "variant": "homework"
+}

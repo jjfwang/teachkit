@@ -1,0 +1,92 @@
+{
+ "activities": [
+  {
+   "grouping": "whole class",
+   "minutes": 7,
+   "objectiveIds": [
+    "o1"
+   ],
+   "scriptCue": "s1",
+   "title": "Completing the square, as area"
+  },
+  {
+   "grouping": "whole class",
+   "minutes": 8,
+   "objectiveIds": [
+    "o2"
+   ],
+   "scriptCue": "s2",
+   "title": "The discriminant decides the roots"
+  },
+  {
+   "grouping": "whole class",
+   "minutes": 8,
+   "objectiveIds": [
+    "o3"
+   ],
+   "scriptCue": "s3",
+   "title": "Quadratic inequalities on a number line"
+  },
+  {
+   "grouping": "whole class",
+   "minutes": 7,
+   "objectiveIds": [
+    "o2"
+   ],
+   "scriptCue": "s4",
+   "title": "A common mistake: a negative discriminant means no solution"
+  },
+  {
+   "grouping": "pairs",
+   "minutes": 9,
+   "objectiveIds": [
+    "o1",
+    "o2",
+    "o3"
+   ],
+   "title": "Worksheet in pairs and exit ticket"
+  }
+ ],
+ "durationMinutes": 39,
+ "level": "secondary",
+ "objectives": [
+  {
+   "assessmentPoints": [
+    "Completing-the-square answers in the opening activity",
+    "Worksheet and exit-ticket answers in the closing activity"
+   ],
+   "id": "o1",
+   "successCriteria": [
+    "Completing the square, as area - x^2 + 6x is an x-by-x square plus two 3-by-x strips, and the missing 3-by-3 corner of area 9 completes the square."
+   ],
+   "text": "Complete the square for a quadratic such as x^2 + 6x using the area picture"
+  },
+  {
+   "assessmentPoints": [
+    "Discriminant answers in the second activity",
+    "Trap answers in the fourth activity",
+    "Worksheet and exit-ticket answers in the closing activity"
+   ],
+   "id": "o2",
+   "successCriteria": [
+    "The discriminant decides the roots - D = b^2 - 4ac: positive means two crossings, zero means one touch, negative means the curve misses the real axis.",
+    "A common mistake: a negative discriminant means no solution - no real roots is not no solution, because the two roots are complex."
+   ],
+   "text": "Use the discriminant D = b^2 - 4ac to decide how many real roots a quadratic has"
+  },
+  {
+   "assessmentPoints": [
+    "Inequality answers in the third activity",
+    "Worksheet and exit-ticket answers in the closing activity"
+   ],
+   "id": "o3",
+   "successCriteria": [
+    "Quadratic inequalities on a number line - find the roots -2 and 2 for x^2 - 4 > 0, then test each region to get x < -2 or x > 2."
+   ],
+   "text": "Solve a quadratic inequality by finding the roots and testing each region of the number line"
+  }
+ ],
+ "subject": "math",
+ "title": "A-Math quadratics: completing the square, discriminant and inequalities",
+ "topic": "a-quadratic-functions"
+}
