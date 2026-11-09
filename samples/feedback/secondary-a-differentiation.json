@@ -1,0 +1,44 @@
+{
+ "commonErrors": [
+  {
+   "example": "A learner writes on the worksheet that x = 0 is a maximum point for y = x^3 because dy/dx = 0 there.",
+   "fixIt": {
+    "corrected": "dy/dx = 0 at x = 0 only says the point is stationary: the gradient is positive on both sides, so y = x^3 climbs through a point of inflexion.",
+    "prompt": "Fix it: say in one sentence what the sign test says about y = x^3 at x = 0 in scene s5."
+   },
+   "misconception": "dy/dx = 0 means a maximum or minimum."
+  },
+  {
+   "example": "On the exit ticket, a learner picks the statement that a stationary point is a maximum point.",
+   "fixIt": {
+    "corrected": "A stationary point may be a maximum, a minimum or a point of inflexion: dy/dx = 0 alone decides none of them.",
+    "prompt": "Fix it: explain in one sentence what the word stationary leaves undecided in scene s5."
+   },
+   "misconception": "dy/dx = 0 means a maximum or minimum."
+  }
+ ],
+ "level": "secondary",
+ "modelAnswers": [
+  {
+   "answer": "Nothing yet - the point is stationary, and a sign test is needed to classify it",
+   "creditPoints": [],
+   "question": "A student finds that dy/dx = 0 at x = 0 for the curve y = x^3. What can the student conclude?"
+  },
+  {
+   "answer": "dy/dx = 6x - 5, so at x = 2 the gradient is 6 x 2 - 5 = 7.",
+   "creditPoints": [],
+   "question": "Differentiate y = 3x^2 - 5x + 2 and state the gradient of the curve at x = 2."
+  }
+ ],
+ "nextSteps": [
+  "Reteach the stationary-point trap from the paired notes trap before any further differentiation work: dy/dx = 0 is not a maximum or minimum until the sign change is checked.",
+  "Practise the first-principles routine from scene s3, letting h tend to 0 to get the exact gradient before the next lesson."
+ ],
+ "strengths": [
+  "Most of the class can state the power rule: x^5 differentiates to 5x^4, x^3 differentiates to 3x^2, and a constant differentiates to 0.",
+  "The class can find stationary points from dy/dx = 0 and classify them with the sign change of dy/dx."
+ ],
+ "subject": "math",
+ "title": "A-Math differentiation: gradients, the power rule and stationary points",
+ "topic": "a-differentiation"
+}
