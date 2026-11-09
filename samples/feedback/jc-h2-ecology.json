@@ -12,7 +12,7 @@
    "example": "On the exit ticket, a learner picks the statement that energy is recycled through the ecosystem.",
    "fixIt": {
     "corrected": "Energy enters as sunlight and leaves as heat, never returning: the dot that loops round and round is carbon, not energy.",
-    "prompt": "Fix it: explain in one sentence what the red energy dot does after the sun is replaced by the moon in scene s6."
+    "prompt": "Fix it: explain in one sentence what the red energy dot does as it travels from the sun to the heat in scene s6."
    },
    "misconception": "Energy is recycled through the ecosystem."
   }
