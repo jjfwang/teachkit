@@ -1,0 +1,49 @@
+{
+ "items": [
+  {
+   "answer": "The equation has no real roots, but two complex roots",
+   "choices": [
+    "The equation has no solution at all",
+    "The equation has one repeated real root",
+    "The equation has no real roots, but two complex roots",
+    "The equation has two real roots"
+   ],
+   "misconceptionCode": "A negative discriminant means the equation has no solution.",
+   "prompt": "A quadratic equation has discriminant D = -4. What does that say about its roots?"
+  },
+  {
+   "answer": "9",
+   "choices": [
+    "36",
+    "9",
+    "6",
+    "3"
+   ],
+   "misconceptionCode": "A negative discriminant means the equation has no solution.",
+   "prompt": "What must be added to x^2 + 6x to complete the square?"
+  },
+  {
+   "answer": "D = 25 - 24 = 1, which is positive, so the equation has two real roots.",
+   "prompt": "For x^2 - 5x + 6 = 0, calculate the discriminant D = b^2 - 4ac and state how many real roots the equation has."
+  },
+  {
+   "answer": "x less than -2 or x greater than 2.",
+   "prompt": "Solve the inequality x squared minus 4 greater than zero."
+  },
+  {
+   "answer": "(x + 3)^2 - 9",
+   "choices": [
+    "(x + 6)^2 - 36",
+    "(x + 3)^2 + 9",
+    "(x + 3)^2 - 9",
+    "(x - 3)^2 - 9"
+   ],
+   "misconceptionCode": "A negative discriminant means the equation has no solution.",
+   "prompt": "Which expression is x^2 + 6x rewritten by completing the square?"
+  }
+ ],
+ "level": "secondary",
+ "subject": "math",
+ "title": "A-Math quadratics: completing the square, discriminant and inequalities",
+ "topic": "a-quadratic-functions"
+}
