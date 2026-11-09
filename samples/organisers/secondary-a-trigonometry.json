@@ -1,0 +1,74 @@
+{
+  "level": "secondary",
+  "subject": "math",
+  "templates": [
+    {
+      "kind": "flow",
+      "slots": [
+        {
+          "entries": [
+            "The two seed identities, on the unit circle - the legs are cos theta and sin theta with hypotenuse 1, so sin squared plus cos squared equals one and tan is sin over cos."
+          ],
+          "label": "The two seed identities, on the unit circle",
+          "studentPrompt": "Explain this step in your own words."
+        },
+        {
+          "entries": [
+            "Compound angles: computing sin 75 degrees - split 75 as 45 + 30, expand with sin(A + B), and the four known values give (root 6 + root 2) over 4."
+          ],
+          "label": "Compound angles: computing sin 75 degrees",
+          "studentPrompt": "Explain this step in your own words."
+        },
+        {
+          "entries": [
+            "The R-formula: one wobble, not two - 3 cos x + 4 sin x becomes 5 cos(x - 53.1 degrees) from the 3-4-5 triangle, so max is 5 and min is -5."
+          ],
+          "label": "The R-formula: one wobble, not two",
+          "studentPrompt": "Explain this step in your own words."
+        },
+        {
+          "entries": [
+            "Misconception: cos(A + B) does not split - cos 60 is 0.5 while cos 30 + cos 30 is about 1.73, so the cosine of a sum is never the sum of cosines."
+          ],
+          "label": "Misconception: cos(A + B) does not split",
+          "studentPrompt": "Explain this step in your own words."
+        }
+      ]
+    },
+    {
+      "kind": "frayer",
+      "slots": [
+        {
+          "entries": [
+            "An equation true for every value of the angle, such as sin squared theta + cos squared theta = 1, which comes from the unit circle with hypotenuse 1."
+          ],
+          "label": "Identity",
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "entries": [
+            "An angle formed by adding or subtracting two angles, such as 75 degrees as 45 + 30, handled with formulae like sin(A + B) = sin A cos B + cos A sin B."
+          ],
+          "label": "Compound angle",
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "entries": [
+            "The rewrite a cos x + b sin x = R cos(x - alpha), where R is the square root of a squared plus b squared and tan alpha = b over a, giving one wave of amplitude R."
+          ],
+          "label": "R-formula",
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "entries": [
+            "The circle of radius 1 centred at the origin; a point at angle theta has coordinates (cos theta, sin theta), which is why the seed identity holds."
+          ],
+          "label": "Unit circle",
+          "studentPrompt": "Give your own example of this term."
+        }
+      ]
+    }
+  ],
+  "title": "A-Math trigonometry: identities, compound angles and the R-formula",
+  "topic": "a-trigonometry"
+}

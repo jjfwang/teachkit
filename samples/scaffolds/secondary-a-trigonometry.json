@@ -1,0 +1,114 @@
+{
+  "level": "secondary",
+  "sets": [
+    {
+      "cloze": [
+        {
+          "answers": [
+            "Identity",
+            "Unit circle"
+          ],
+          "text": "The ___ is an equation true for every value of the angle, and the ___ is the circle of radius 1 centred at the origin."
+        },
+        {
+          "answers": [
+            "Compound angle",
+            "R-formula"
+          ],
+          "text": "A ___ is an angle formed by adding or subtracting two angles, and the ___ rewrites a cos x plus b sin x as R cos of x minus alpha."
+        }
+      ],
+      "frames": [
+        "An equation true for every value of the angle, such as sin squared theta plus cos squared theta equals 1, which comes from the unit circle with hypotenuse 1, is the ___.",
+        "An angle formed by adding or subtracting two angles, such as 75 degrees as 45 plus 30, handled with formulae like sin of A plus B, is the ___.",
+        "The rewrite of a cos x plus b sin x as R cos of x minus alpha, where R is the square root of a squared plus b squared and tan alpha is b over a, is the ___.",
+        "The circle of radius 1 centred at the origin, where a point at angle theta has coordinates cos theta and sin theta, is the ___."
+      ],
+      "level": "full",
+      "starters": [
+        "To check an identity, I use the unit circle, which gives...",
+        "To find sin 75 degrees exactly, I split 75 as 45 plus 30, which gives...",
+        "To rewrite 3 cos x plus 4 sin x in R-form, I use the 3-4-5 triangle, which gives...",
+        "To explain why the seed identity holds, I point at the unit circle, which gives..."
+      ],
+      "wordBank": [
+        {
+          "gloss": "An equation true for every value of the angle, such as sin squared theta + cos squared theta = 1, which comes from the unit circle with hypotenuse 1.",
+          "term": "Identity"
+        },
+        {
+          "gloss": "An angle formed by adding or subtracting two angles, such as 75 degrees as 45 + 30, handled with formulae like sin(A + B) = sin A cos B + cos A sin B.",
+          "term": "Compound angle"
+        },
+        {
+          "gloss": "The rewrite a cos x + b sin x = R cos(x - alpha), where R is the square root of a squared plus b squared and tan alpha = b over a, giving one wave of amplitude R.",
+          "term": "R-formula"
+        },
+        {
+          "gloss": "The circle of radius 1 centred at the origin; a point at angle theta has coordinates (cos theta, sin theta), which is why the seed identity holds.",
+          "term": "Unit circle"
+        }
+      ]
+    },
+    {
+      "cloze": [
+        {
+          "answers": [
+            "Identity",
+            "R-formula"
+          ],
+          "text": "The ___ is an equation true for every value of the angle, and the ___ rewrites a cos x plus b sin x as R cos of x minus alpha."
+        }
+      ],
+      "frames": [
+        "An equation true for every value of the angle, such as sin squared theta plus cos squared theta equals 1, which comes from the unit circle with hypotenuse 1, is the ___.",
+        "The rewrite of a cos x plus b sin x as R cos of x minus alpha, where R is the square root of a squared plus b squared and tan alpha is b over a, is the ___."
+      ],
+      "level": "partial",
+      "starters": [
+        "To check an identity, I use the unit circle, which gives...",
+        "To rewrite 3 cos x plus 4 sin x in R-form, I use the 3-4-5 triangle, which gives..."
+      ],
+      "wordBank": [
+        {
+          "gloss": "An equation true for every value of the angle, such as sin squared theta + cos squared theta = 1, which comes from the unit circle with hypotenuse 1.",
+          "term": "Identity"
+        },
+        {
+          "gloss": "An angle formed by adding or subtracting two angles, such as 75 degrees as 45 + 30, handled with formulae like sin(A + B) = sin A cos B + cos A sin B.",
+          "term": "Compound angle"
+        },
+        {
+          "gloss": "The rewrite a cos x + b sin x = R cos(x - alpha), where R is the square root of a squared plus b squared and tan alpha = b over a, giving one wave of amplitude R.",
+          "term": "R-formula"
+        }
+      ]
+    },
+    {
+      "cloze": [
+        {
+          "answers": [
+            "Identity"
+          ],
+          "text": "The ___ is an equation true for every value of the angle."
+        }
+      ],
+      "frames": [
+        "An equation true for every value of the angle, such as sin squared theta plus cos squared theta equals 1, which comes from the unit circle with hypotenuse 1, is the ___."
+      ],
+      "level": "minimal",
+      "starters": [
+        "To check an identity, I use the unit circle, which gives..."
+      ],
+      "wordBank": [
+        {
+          "gloss": "An equation true for every value of the angle, such as sin squared theta + cos squared theta = 1, which comes from the unit circle with hypotenuse 1.",
+          "term": "Identity"
+        }
+      ]
+    }
+  ],
+  "subject": "math",
+  "title": "A-Math trigonometry: identities, compound angles and the R-formula",
+  "topic": "a-trigonometry"
+}
