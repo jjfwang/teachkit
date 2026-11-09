@@ -1,0 +1,120 @@
+{
+ "level": "secondary",
+ "sets": [
+  {
+   "cloze": [
+    {
+     "answers": [
+      "Pascal's triangle",
+      "Binomial coefficient"
+     ],
+     "text": "The ___ is the triangular array whose row n lists the coefficients of a plus b to the n, and the ___ is the coefficient of the term a to the n minus r times b to the r in a plus b to the n."
+    },
+    {
+     "answers": [
+      "Binomial theorem",
+      "General term"
+     ],
+     "text": "The ___ gives every term of the expansion of a plus b to the n at once, while a ___ is term r plus 1 of a plus b to the n."
+    }
+   ],
+   "frames": [
+    "The triangular array whose row n lists the coefficients of a plus b to the n, with each entry the sum of the two entries above it, is the ___.",
+    "The coefficient of the term a to the n minus r times b to the r in a plus b to the n, also read from row n of Pascal's triangle, is the ___.",
+    "The rule giving every term of the expansion of a plus b to the n at once, is the ___.",
+    "Term r plus 1 of a plus b to the n, used to find one chosen term without expanding everything, is the ___.",
+    "The expanded sum with n plus 1 terms whose powers of a fall from n to 0 while the powers of b rise from 0 to n, is the ___."
+   ],
+   "level": "full",
+   "starters": [
+    "To find the coefficients of a plus b to the n, I read row n of Pascal's triangle, which gives...",
+    "To find a binomial coefficient, I use C of n r, which gives...",
+    "To expand a plus b to the n, I use the binomial theorem, which gives...",
+    "To find one chosen term, I use the general term, which gives...",
+    "To write the full expansion, I add all n plus 1 terms, which gives..."
+   ],
+   "wordBank": [
+    {
+     "gloss": "The triangular array whose row n lists the coefficients of (a + b)^n; each entry is the sum of the two entries above it, and the edges are all 1.",
+     "term": "Pascal's triangle"
+    },
+    {
+     "gloss": "C(n, r) = n! / (r! (n - r)!): the coefficient of the term a^(n - r) b^r in (a + b)^n, also read from row n of Pascal's triangle.",
+     "term": "Binomial coefficient"
+    },
+    {
+     "gloss": "The rule (a + b)^n = the sum over r from 0 to n of C(n, r) a^(n - r) b^r, giving every term of the expansion at once.",
+     "term": "Binomial theorem"
+    },
+    {
+     "gloss": "Term r + 1 of (a + b)^n, namely C(n, r) a^(n - r) b^r, used to find one chosen term - such as the coefficient of x^2 - without expanding everything.",
+     "term": "General term"
+    },
+    {
+     "gloss": "The expanded sum produced by the binomial theorem, with n + 1 terms whose powers of a fall from n to 0 while the powers of b rise from 0 to n.",
+     "term": "Binomial expansion"
+    }
+   ]
+  },
+  {
+   "cloze": [
+    {
+     "answers": [
+      "Pascal's triangle",
+      "Binomial coefficient"
+     ],
+     "text": "The ___ is the triangular array whose row n lists the coefficients of a plus b to the n, and the ___ is the coefficient of the term a to the n minus r times b to the r in a plus b to the n."
+    }
+   ],
+   "frames": [
+    "The triangular array whose row n lists the coefficients of a plus b to the n, with each entry the sum of the two entries above it, is the ___.",
+    "The coefficient of the term a to the n minus r times b to the r in a plus b to the n, also read from row n of Pascal's triangle, is the ___."
+   ],
+   "level": "partial",
+   "starters": [
+    "To find the coefficients of a plus b to the n, I read row n of Pascal's triangle, which gives...",
+    "To find a binomial coefficient, I use C of n r, which gives..."
+   ],
+   "wordBank": [
+    {
+     "gloss": "The triangular array whose row n lists the coefficients of (a + b)^n; each entry is the sum of the two entries above it, and the edges are all 1.",
+     "term": "Pascal's triangle"
+    },
+    {
+     "gloss": "C(n, r) = n! / (r! (n - r)!): the coefficient of the term a^(n - r) b^r in (a + b)^n, also read from row n of Pascal's triangle.",
+     "term": "Binomial coefficient"
+    },
+    {
+     "gloss": "The rule (a + b)^n = the sum over r from 0 to n of C(n, r) a^(n - r) b^r, giving every term of the expansion at once.",
+     "term": "Binomial theorem"
+    }
+   ]
+  },
+  {
+   "cloze": [
+    {
+     "answers": [
+      "Pascal's triangle"
+     ],
+     "text": "The ___ is the triangular array whose row n lists the coefficients of a plus b to the n."
+    }
+   ],
+   "frames": [
+    "The triangular array whose row n lists the coefficients of a plus b to the n, with each entry the sum of the two entries above it, is the ___."
+   ],
+   "level": "minimal",
+   "starters": [
+    "To find the coefficients of a plus b to the n, I read row n of Pascal's triangle, which gives..."
+   ],
+   "wordBank": [
+    {
+     "gloss": "The triangular array whose row n lists the coefficients of (a + b)^n; each entry is the sum of the two entries above it, and the edges are all 1.",
+     "term": "Pascal's triangle"
+    }
+   ]
+  }
+ ],
+ "subject": "math",
+ "title": "A-Math binomial: Pascal's triangle and the (a+b)^n expansion",
+ "topic": "a-binomial"
+}

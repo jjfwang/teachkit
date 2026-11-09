@@ -1,0 +1,72 @@
+{
+ "flashcards": [
+  {
+   "back": "The triangular array whose row n lists the coefficients of (a + b)^n; each entry is the sum of the two entries above it, and the edges are all 1.",
+   "front": "Pascal's triangle",
+   "source": "definition"
+  },
+  {
+   "back": "C(n, r) = n! / (r! (n - r)!): the coefficient of the term a^(n - r) b^r in (a + b)^n, also read from row n of Pascal's triangle.",
+   "front": "Binomial coefficient",
+   "source": "definition"
+  },
+  {
+   "back": "The rule (a + b)^n = the sum over r from 0 to n of C(n, r) a^(n - r) b^r, giving every term of the expansion at once.",
+   "front": "Binomial theorem",
+   "source": "definition"
+  },
+  {
+   "back": "Term r + 1 of (a + b)^n, namely C(n, r) a^(n - r) b^r, used to find one chosen term - such as the coefficient of x^2 - without expanding everything.",
+   "front": "General term",
+   "source": "definition"
+  },
+  {
+   "back": "The expanded sum produced by the binomial theorem, with n + 1 terms whose powers of a fall from n to 0 while the powers of b rise from 0 to n.",
+   "front": "Binomial expansion",
+   "source": "definition"
+  },
+  {
+   "back": "The slip: The power is distributed over the sum and the middle term is dropped. The fix: The missing middle term 2ab is the whole trap: (1 + 2)^2 is 9, not 5. So (a + b)^2 = a^2 + 2ab + b^2, with the middle term 2ab always present.",
+   "front": "(a + b)^2 = a^2 + b^2.",
+   "source": "trap"
+  },
+  {
+   "back": "a^2 + 2ab + b^2",
+   "front": "What is the complete expansion of (a + b)^2?",
+   "source": "quiz-bank"
+  },
+  {
+   "back": "24",
+   "front": "What is the coefficient of x^2 in the expansion of (x + 2)^4?",
+   "source": "quiz-bank"
+  }
+ ],
+ "level": "secondary",
+ "practiceSets": [
+  {
+   "dayOffset": 1,
+   "items": [
+    {
+     "answer": "16x^4 - 96x^3 + 216x^2 - 216x + 81",
+     "prompt": "Expand (2x - 3)^4 in full."
+    },
+    {
+     "answer": "C(n, r) a^(n - r) b^r",
+     "prompt": "The general term of (a + b)^n, term r + 1, is which expression?"
+    }
+   ]
+  },
+  {
+   "dayOffset": 3,
+   "items": [
+    {
+     "answer": "The x^3 term is C(4, 1) (2x)^3 (-3) = -96x^3.",
+     "prompt": "State the term in x^3 in the expansion of (2x - 3)^4."
+    }
+   ]
+  }
+ ],
+ "subject": "math",
+ "title": "A-Math binomial: Pascal's triangle and the (a+b)^n expansion",
+ "topic": "a-binomial"
+}
