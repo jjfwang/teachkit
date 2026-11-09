@@ -1,0 +1,67 @@
+{
+  "flashcards": [
+    {
+      "back": "An equation true for every value of the angle, such as sin squared theta + cos squared theta = 1, which comes from the unit circle with hypotenuse 1.",
+      "front": "Identity",
+      "source": "definition"
+    },
+    {
+      "back": "An angle formed by adding or subtracting two angles, such as 75 degrees as 45 + 30, handled with formulae like sin(A + B) = sin A cos B + cos A sin B.",
+      "front": "Compound angle",
+      "source": "definition"
+    },
+    {
+      "back": "The rewrite a cos x + b sin x = R cos(x - alpha), where R is the square root of a squared plus b squared and tan alpha = b over a, giving one wave of amplitude R.",
+      "front": "R-formula",
+      "source": "definition"
+    },
+    {
+      "back": "The circle of radius 1 centred at the origin; a point at angle theta has coordinates (cos theta, sin theta), which is why the seed identity holds.",
+      "front": "Unit circle",
+      "source": "definition"
+    },
+    {
+      "back": "The slip: Cosine looks like it splits across the sum. The fix: Use cos A cos B - sin A sin B: cos 60 is 0.5 but cos 30 + cos 30 is about 1.73.",
+      "front": "cos(A + B) = cos A + cos B.",
+      "source": "trap"
+    },
+    {
+      "back": "(root 6 + root 2) over 4",
+      "front": "What is the exact value of sin 75 degrees?",
+      "source": "quiz-bank"
+    },
+    {
+      "back": "Max 5 and min -5, from R = 5",
+      "front": "What are the maximum and minimum of 3 cos x + 4 sin x?",
+      "source": "quiz-bank"
+    }
+  ],
+  "level": "secondary",
+  "practiceSets": [
+    {
+      "dayOffset": 1,
+      "items": [
+        {
+          "answer": "5 cos(x - 53.1 degrees), with R = 5 and alpha = 53.1 degrees.",
+          "prompt": "Express 3 cos x + 4 sin x in the form R cos(x - alpha), giving R and alpha."
+        },
+        {
+          "answer": "tan theta = 3/4.",
+          "prompt": "If sin theta = 3/5 and theta is acute, find tan theta using the seed identities."
+        }
+      ]
+    },
+    {
+      "dayOffset": 3,
+      "items": [
+        {
+          "answer": "cos A cos B - sin A sin B",
+          "prompt": "Which expansion is correct for cos(A + B)?"
+        }
+      ]
+    }
+  ],
+  "subject": "math",
+  "title": "A-Math trigonometry: identities, compound angles and the R-formula",
+  "topic": "a-trigonometry"
+}
