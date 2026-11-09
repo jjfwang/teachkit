@@ -1,0 +1,77 @@
+{
+ "flashcards": [
+  {
+   "back": "dy/dx, the gradient function of a curve: it gives the tangent gradient at every point and is found by differentiating.",
+   "front": "Derivative",
+   "source": "definition"
+  },
+  {
+   "back": "The steepness of a line or curve at a point. For a curve it changes from point to point and equals the gradient of the tangent there.",
+   "front": "Gradient",
+   "source": "definition"
+  },
+  {
+   "back": "The straight line that just touches a curve at one point and has the same gradient as the curve at that point.",
+   "front": "Tangent",
+   "source": "definition"
+  },
+  {
+   "back": "A point where dy/dx = 0 and the tangent is horizontal. It may be a maximum, a minimum or a point of inflexion - a sign test decides.",
+   "front": "Stationary point",
+   "source": "definition"
+  },
+  {
+   "back": "A straight line joining two points on a curve. Its gradient is an average gradient, and it becomes the tangent as the two points close in.",
+   "front": "Secant",
+   "source": "definition"
+  },
+  {
+   "back": "A point where the curve changes its bending direction. A stationary inflexion, like y = x^3 at x = 0, has dy/dx = 0 but is neither a maximum nor a minimum.",
+   "front": "Point of inflexion",
+   "source": "definition"
+  },
+  {
+   "back": "The slip: Zero gradient is always tied to turning points. The fix: Stationary is not always max or min: check the sign change. y = x^3 at x = 0 is stationary and still climbing.",
+   "front": "dy/dx = 0 means a maximum or minimum.",
+   "source": "trap"
+  },
+  {
+   "back": "The gradient dy/dx is 0 there, but it may be a maximum, a minimum or a point of inflexion",
+   "front": "At a stationary point of a curve, which statement is always true?",
+   "source": "quiz-bank"
+  },
+  {
+   "back": "5x^4",
+   "front": "What is dy/dx when y = x^5?",
+   "source": "quiz-bank"
+  }
+ ],
+ "level": "secondary",
+ "practiceSets": [
+  {
+   "dayOffset": 1,
+   "items": [
+    {
+     "answer": "dy/dx = 6x - 5, so at x = 2 the gradient is 6 x 2 - 5 = 7.",
+     "prompt": "Differentiate y = 3x^2 - 5x + 2 and state the gradient of the curve at x = 2."
+    },
+    {
+     "answer": "2x + h, which tends to 2x",
+     "prompt": "Using first principles, the gradient of y = x^2 at a general point x is found from the limit of which expression as h tends to 0?"
+    }
+   ]
+  },
+  {
+   "dayOffset": 3,
+   "items": [
+    {
+     "answer": "dy/dx = 3x^2 - 3 = 0 at x = -1 and x = 1. At x = -1 the gradient changes positive to negative, a maximum (y = 2). At x = 1 it changes negative to positive, a minimum (y = -2).",
+     "prompt": "Find the stationary points of y = x^3 - 3x and classify each one using the sign change of dy/dx."
+    }
+   ]
+  }
+ ],
+ "subject": "math",
+ "title": "A-Math differentiation: gradients, the power rule and stationary points",
+ "topic": "a-differentiation"
+}

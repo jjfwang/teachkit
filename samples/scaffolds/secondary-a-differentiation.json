@@ -1,0 +1,120 @@
+{
+ "level": "secondary",
+ "sets": [
+  {
+   "cloze": [
+    {
+     "answers": [
+      "Derivative",
+      "Gradient"
+     ],
+     "text": "The ___ is the gradient function of a curve, and the ___ is the steepness of a line or curve at a point."
+    },
+    {
+     "answers": [
+      "Stationary point",
+      "Tangent"
+     ],
+     "text": "A ___ is a point where the gradient is zero and the tangent is horizontal, while a ___ is the straight line that just touches a curve at one point."
+    }
+   ],
+   "frames": [
+    "The gradient function of a curve, giving the tangent gradient at every point, is the ___.",
+    "The steepness of a line or curve at a point, equal to the gradient of the tangent there, is the ___.",
+    "A point where the gradient is zero and the tangent is horizontal is a ___."
+   ],
+   "level": "full",
+   "starters": [
+    "To find the derivative, I differentiate to get...",
+    "To find the gradient at a point, I look at the tangent, which is...",
+    "To find a stationary point, I set the gradient to zero, which gives..."
+   ],
+   "wordBank": [
+    {
+     "gloss": "dy/dx, the gradient function of a curve: it gives the tangent gradient at every point and is found by differentiating.",
+     "term": "Derivative"
+    },
+    {
+     "gloss": "The steepness of a line or curve at a point. For a curve it changes from point to point and equals the gradient of the tangent there.",
+     "term": "Gradient"
+    },
+    {
+     "gloss": "The straight line that just touches a curve at one point and has the same gradient as the curve at that point.",
+     "term": "Tangent"
+    },
+    {
+     "gloss": "A point where dy/dx = 0 and the tangent is horizontal. It may be a maximum, a minimum or a point of inflexion - a sign test decides.",
+     "term": "Stationary point"
+    },
+    {
+     "gloss": "A straight line joining two points on a curve. Its gradient is an average gradient, and it becomes the tangent as the two points close in.",
+     "term": "Secant"
+    },
+    {
+     "gloss": "A point where the curve changes its bending direction. A stationary inflexion, like y = x^3 at x = 0, has dy/dx = 0 but is neither a maximum nor a minimum.",
+     "term": "Point of inflexion"
+    }
+   ]
+  },
+  {
+   "cloze": [
+    {
+     "answers": [
+      "Derivative",
+      "Gradient"
+     ],
+     "text": "The ___ is the gradient function of a curve, and the ___ is the steepness of a line or curve at a point."
+    }
+   ],
+   "frames": [
+    "The gradient function of a curve, giving the tangent gradient at every point, is the ___.",
+    "The steepness of a line or curve at a point, equal to the gradient of the tangent there, is the ___."
+   ],
+   "level": "partial",
+   "starters": [
+    "To find the derivative, I differentiate to get...",
+    "To find the gradient at a point, I look at the tangent, which is..."
+   ],
+   "wordBank": [
+    {
+     "gloss": "dy/dx, the gradient function of a curve: it gives the tangent gradient at every point and is found by differentiating.",
+     "term": "Derivative"
+    },
+    {
+     "gloss": "The steepness of a line or curve at a point. For a curve it changes from point to point and equals the gradient of the tangent there.",
+     "term": "Gradient"
+    },
+    {
+     "gloss": "The straight line that just touches a curve at one point and has the same gradient as the curve at that point.",
+     "term": "Tangent"
+    }
+   ]
+  },
+  {
+   "cloze": [
+    {
+     "answers": [
+      "Derivative"
+     ],
+     "text": "The ___ is the gradient function of a curve."
+    }
+   ],
+   "frames": [
+    "The gradient function of a curve, giving the tangent gradient at every point, is the ___."
+   ],
+   "level": "minimal",
+   "starters": [
+    "To find the derivative, I differentiate to get..."
+   ],
+   "wordBank": [
+    {
+     "gloss": "dy/dx, the gradient function of a curve: it gives the tangent gradient at every point and is found by differentiating.",
+     "term": "Derivative"
+    }
+   ]
+  }
+ ],
+ "subject": "math",
+ "title": "A-Math differentiation: gradients, the power rule and stationary points",
+ "topic": "a-differentiation"
+}
