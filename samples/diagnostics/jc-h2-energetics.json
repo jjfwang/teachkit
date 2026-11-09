@@ -1,0 +1,202 @@
+{
+ "doNow": [
+  {
+   "choices": [
+    {
+     "misconception": "Plants only respire at night.",
+     "rationale": {
+      "chose": "The learner selected option Plants only respire at night, because photosynthesis replaces respiration by day as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: Plants only respire at night.. The slip: During the day photosynthesis dominates, so respiration looks switched off, so respiration is read as a night-only process. The fix: Plants respire around the clock: at night there is simply no photosynthesis to hide it..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "Plants only respire at night, because photosynthesis replaces respiration by day"
+    },
+    {
+     "misconception": "Plants only respire at night.",
+     "rationale": {
+      "chose": "The learner selected option Plants respire only in bright light, when energy is available as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: Plants only respire at night.. The slip: During the day photosynthesis dominates, so respiration looks switched off, so respiration is read as a night-only process. The fix: Plants respire around the clock: at night there is simply no photosynthesis to hide it..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "Plants respire only in bright light, when energy is available"
+    },
+    {
+     "correct": true,
+     "text": "Plants respire around the clock, day and night"
+    },
+    {
+     "misconception": "Plants only respire at night.",
+     "rationale": {
+      "chose": "The learner selected option Plants never respire, because they make their own food as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: Plants only respire at night.. The slip: During the day photosynthesis dominates, so respiration looks switched off, so respiration is read as a night-only process. The fix: Plants respire around the clock: at night there is simply no photosynthesis to hide it..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "Plants never respire, because they make their own food"
+    }
+   ],
+   "id": "dn1",
+   "kind": "multiple-choice",
+   "prompt": "A student says a green plant only respires when it is dark. What is correct?"
+  },
+  {
+   "choices": [
+    {
+     "misconception": "Plants only respire at night.",
+     "rationale": {
+      "chose": "The learner selected option Carbon dioxide + water → glucose + oxygen as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: Plants only respire at night.. The slip: During the day photosynthesis dominates, so respiration looks switched off, so respiration is read as a night-only process. The fix: Plants respire around the clock: at night there is simply no photosynthesis to hide it..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "Carbon dioxide + water → glucose + oxygen"
+    },
+    {
+     "correct": true,
+     "text": "Glucose + oxygen → carbon dioxide + water + energy"
+    },
+    {
+     "misconception": "Plants only respire at night.",
+     "rationale": {
+      "chose": "The learner selected option Glucose → ethanol + carbon dioxide as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: Plants only respire at night.. The slip: During the day photosynthesis dominates, so respiration looks switched off, so respiration is read as a night-only process. The fix: Plants respire around the clock: at night there is simply no photosynthesis to hide it..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "Glucose → ethanol + carbon dioxide"
+    },
+    {
+     "misconception": "Plants only respire at night.",
+     "rationale": {
+      "chose": "The learner selected option Glucose → lactic acid as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: Plants only respire at night.. The slip: During the day photosynthesis dominates, so respiration looks switched off, so respiration is read as a night-only process. The fix: Plants respire around the clock: at night there is simply no photosynthesis to hide it..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "Glucose → lactic acid"
+    }
+   ],
+   "id": "dn2",
+   "kind": "multiple-choice",
+   "prompt": "Which is the correct word equation for aerobic respiration?"
+  },
+  {
+   "choices": [
+    {
+     "misconception": "Plants only respire at night.",
+     "rationale": {
+      "chose": "The learner selected option The Calvin cycle, from carbon dioxide as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: Plants only respire at night.. The slip: During the day photosynthesis dominates, so respiration looks switched off, so respiration is read as a night-only process. The fix: Plants respire around the clock: at night there is simply no photosynthesis to hide it..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "The Calvin cycle, from carbon dioxide"
+    },
+    {
+     "correct": true,
+     "text": "Photolysis, from water"
+    },
+    {
+     "misconception": "Plants only respire at night.",
+     "rationale": {
+      "chose": "The learner selected option Respiration, from glucose as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: Plants only respire at night.. The slip: During the day photosynthesis dominates, so respiration looks switched off, so respiration is read as a night-only process. The fix: Plants respire around the clock: at night there is simply no photosynthesis to hide it..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "Respiration, from glucose"
+    },
+    {
+     "misconception": "Plants only respire at night.",
+     "rationale": {
+      "chose": "The learner selected option Photolysis, from carbon dioxide as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: Plants only respire at night.. The slip: During the day photosynthesis dominates, so respiration looks switched off, so respiration is read as a night-only process. The fix: Plants respire around the clock: at night there is simply no photosynthesis to hide it..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "Photolysis, from carbon dioxide"
+    }
+   ],
+   "id": "dn3",
+   "kind": "multiple-choice",
+   "prompt": "In photosynthesis, the oxygen released comes from which process and source?"
+  }
+ ],
+ "hingeQuestions": [
+  {
+   "choices": [
+    {
+     "misconception": "Plants only respire at night.",
+     "rationale": {
+      "chose": "The learner selected option Plants only respire at night as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: Plants only respire at night.. The slip: During the day photosynthesis dominates, so respiration looks switched off, so respiration is read as a night-only process. The fix: Plants respire around the clock: at night there is simply no photosynthesis to hide it..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "Plants only respire at night"
+    },
+    {
+     "correct": true,
+     "text": "Plants respire around the clock: at night there is simply no photosynthesis to hide it."
+    },
+    {
+     "misconception": "Plants only respire at night.",
+     "rationale": {
+      "chose": "The learner selected option Plants respire only in bright light as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: Plants only respire at night.. The slip: During the day photosynthesis dominates, so respiration looks switched off, so respiration is read as a night-only process. The fix: Plants respire around the clock: at night there is simply no photosynthesis to hide it..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "Plants respire only in bright light"
+    },
+    {
+     "misconception": "Plants only respire at night.",
+     "rationale": {
+      "chose": "The learner selected option Plants never respire at all as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: Plants only respire at night.. The slip: During the day photosynthesis dominates, so respiration looks switched off, so respiration is read as a night-only process. The fix: Plants respire around the clock: at night there is simply no photosynthesis to hide it..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "Plants never respire at all"
+    }
+   ],
+   "id": "h1",
+   "kind": "multiple-choice",
+   "prompt": "In one sentence, what is the correct statement about plant respiration?",
+   "scriptCue": "s2"
+  },
+  {
+   "choices": [
+    {
+     "misconception": "Plants only respire at night.",
+     "rationale": {
+      "chose": "The learner selected option Agree - plants only respire at night, because photosynthesis replaces respiration by day as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: Plants only respire at night.. The slip: During the day photosynthesis dominates, so respiration looks switched off, so respiration is read as a night-only process. The fix: Plants respire around the clock: at night there is simply no photosynthesis to hide it..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "Agree - plants only respire at night, because photosynthesis replaces respiration by day"
+    },
+    {
+     "correct": true,
+     "text": "Plants respire around the clock: at night there is simply no photosynthesis to hide it."
+    },
+    {
+     "misconception": "Plants only respire at night.",
+     "rationale": {
+      "chose": "The learner selected option Tell them plants respire only in bright light, so the claim does not apply here as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: Plants only respire at night.. The slip: During the day photosynthesis dominates, so respiration looks switched off, so respiration is read as a night-only process. The fix: Plants respire around the clock: at night there is simply no photosynthesis to hide it..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "Tell them plants respire only in bright light, so the claim does not apply here"
+    },
+    {
+     "misconception": "Plants only respire at night.",
+     "rationale": {
+      "chose": "The learner selected option Tell them plants never respire, so nothing ever changes as their answer to this question.",
+      "reteach": "Reteach from the paired notes trap: Plants only respire at night.. The slip: During the day photosynthesis dominates, so respiration looks switched off, so respiration is read as a night-only process. The fix: Plants respire around the clock: at night there is simply no photosynthesis to hide it..",
+      "thinks": "They are applying the coded wrong turn instead of checking what each part of the working represents."
+     },
+     "text": "Tell them plants never respire, so nothing ever changes"
+    }
+   ],
+   "id": "h2",
+   "kind": "multiple-choice",
+   "prompt": "How would you correct a classmate who insists plants only respire at night?",
+   "scriptCue": "s2"
+  }
+ ],
+ "level": "jc",
+ "subject": "science",
+ "title": "JC H2 biology — energetics: respiration and photosynthesis",
+ "topic": "h2-energetics"
+}
