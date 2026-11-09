@@ -1,0 +1,132 @@
+{
+  "level": "jc",
+  "sets": [
+    {
+      "cloze": [
+        {
+          "answers": [
+            "Mitochondrion",
+            "Cristae"
+          ],
+          "text": "The ___ is the organelle where aerobic respiration rebuilds ATP, with a folded inner membrane, and the ___ are the folds of the inner mitochondrial membrane, giving a huge surface area for respiratory enzymes."
+        },
+        {
+          "answers": [
+            "ATP",
+            "ADP"
+          ],
+          "text": "___ is adenosine triphosphate, the energy currency of the cell, while ___ is adenosine diphosphate, the spent form left after ATP hydrolysis."
+        }
+      ],
+      "frames": [
+        "___ is the organelle where aerobic respiration rebuilds ATP, with a folded inner membrane.",
+        "___ are the folds of the inner mitochondrial membrane, giving a huge surface area for respiratory enzymes.",
+        "___ is adenosine triphosphate, the energy currency of the cell; its hydrolysis releases usable energy."
+      ],
+      "level": "full",
+      "starters": [
+        "Mitochondrion is the organelle where aerobic respiration rebuilds ATP, with a folded inner membrane...",
+        "Cristae are the folds of the inner mitochondrial membrane, giving a huge surface area for respiratory enzymes...",
+        "ATP is adenosine triphosphate, the energy currency of the cell; its hydrolysis releases usable energy..."
+      ],
+      "wordBank": [
+        {
+          "gloss": "The organelle where aerobic respiration rebuilds ATP, with a folded inner membrane.",
+          "term": "Mitochondrion"
+        },
+        {
+          "gloss": "The folds of the inner mitochondrial membrane, giving a huge surface area for respiratory enzymes.",
+          "term": "Cristae"
+        },
+        {
+          "gloss": "Adenosine triphosphate, the energy currency of the cell; its hydrolysis releases usable energy.",
+          "term": "ATP"
+        },
+        {
+          "gloss": "Adenosine diphosphate, the spent form left after ATP hydrolysis, rebuilt into ATP by respiration.",
+          "term": "ADP"
+        },
+        {
+          "gloss": "The complete breakdown of glucose using oxygen, to carbon dioxide and water, yielding about 32 ATP per glucose.",
+          "term": "Aerobic respiration"
+        },
+        {
+          "gloss": "The partial breakdown of glucose without oxygen: yeast makes ethanol and carbon dioxide, muscle makes lactic acid, with far less ATP.",
+          "term": "Anaerobic respiration"
+        },
+        {
+          "gloss": "The splitting of water by light energy in the thylakoids, releasing oxygen.",
+          "term": "Photolysis"
+        },
+        {
+          "gloss": "The cycle in the stroma that fixes carbon dioxide and builds it up into glucose.",
+          "term": "Calvin cycle"
+        }
+      ]
+    },
+    {
+      "cloze": [
+        {
+          "answers": [
+            "Mitochondrion",
+            "Cristae"
+          ],
+          "text": "The ___ is the organelle where aerobic respiration rebuilds ATP, with a folded inner membrane, and the ___ are the folds of the inner mitochondrial membrane, giving a huge surface area for respiratory enzymes."
+        }
+      ],
+      "frames": [
+        "___ is the organelle where aerobic respiration rebuilds ATP, with a folded inner membrane.",
+        "___ are the folds of the inner mitochondrial membrane, giving a huge surface area for respiratory enzymes."
+      ],
+      "level": "partial",
+      "starters": [
+        "Mitochondrion is the organelle where aerobic respiration rebuilds ATP, with a folded inner membrane...",
+        "Cristae are the folds of the inner mitochondrial membrane, giving a huge surface area for respiratory enzymes..."
+      ],
+      "wordBank": [
+        {
+          "gloss": "The organelle where aerobic respiration rebuilds ATP, with a folded inner membrane.",
+          "term": "Mitochondrion"
+        },
+        {
+          "gloss": "The folds of the inner mitochondrial membrane, giving a huge surface area for respiratory enzymes.",
+          "term": "Cristae"
+        },
+        {
+          "gloss": "Adenosine triphosphate, the energy currency of the cell; its hydrolysis releases usable energy.",
+          "term": "ATP"
+        },
+        {
+          "gloss": "Adenosine diphosphate, the spent form left after ATP hydrolysis, rebuilt into ATP by respiration.",
+          "term": "ADP"
+        }
+      ]
+    },
+    {
+      "cloze": [
+        {
+          "answers": [
+            "Mitochondrion"
+          ],
+          "text": "The ___ is the organelle where aerobic respiration rebuilds ATP, with a folded inner membrane."
+        }
+      ],
+      "frames": [
+        "___ is the organelle where aerobic respiration rebuilds ATP, with a folded inner membrane."
+      ],
+      "level": "minimal",
+      "starters": [
+        "Mitochondrion is the organelle where aerobic respiration rebuilds ATP, with a folded inner membrane..."
+      ],
+      "wordBank": [
+        {
+          "gloss": "The organelle where aerobic respiration rebuilds ATP, with a folded inner membrane.",
+          "term": "Mitochondrion"
+        }
+      ]
+    }
+  ],
+  "subject": "science",
+  "title": "JC H2 biology — energetics: respiration and photosynthesis",
+  "topic": "h2-energetics"
+}

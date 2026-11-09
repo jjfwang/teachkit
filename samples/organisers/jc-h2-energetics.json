@@ -1,0 +1,116 @@
+{
+  "level": "jc",
+  "subject": "science",
+  "templates": [
+    {
+      "kind": "flow",
+      "slots": [
+        {
+          "entries": [
+            "Mitochondria: folded cristae, huge surface area: the inner membrane folds into cristae, packing a huge surface area for the enzymes that make ATP."
+          ],
+          "label": "Mitochondria",
+          "studentPrompt": "Explain this step in your own words."
+        },
+        {
+          "entries": [
+            "A common mistake: plants only respire at night: aerobic respiration runs around the clock, glucose + oxygen -> carbon dioxide + water + energy, even while photosynthesis dominates by day."
+          ],
+          "label": "A common mistake",
+          "studentPrompt": "Explain this step in your own words."
+        },
+        {
+          "entries": [
+            "ATP hydrolysis releases energy; respiration rebuilds ATP: hydrolysis splits ATP to ADP and releases energy, and respiration in the mitochondrion rebuilds ATP from ADP."
+          ],
+          "label": "ATP hydrolysis releases energy; respiration rebuilds ATP",
+          "studentPrompt": "Explain this step in your own words."
+        },
+        {
+          "entries": [
+            "Anaerobic: yeast → ethanol + CO₂; muscle → lactic acid: without enough oxygen glucose is only partly broken down, yielding far less ATP either way."
+          ],
+          "label": "Anaerobic",
+          "studentPrompt": "Explain this step in your own words."
+        },
+        {
+          "entries": [
+            "Photolysis splits water; the Calvin cycle fixes CO₂: light splits water in the thylakoids and releases oxygen, then the Calvin cycle fixes carbon dioxide into glucose in the stroma."
+          ],
+          "label": "Photolysis splits water; the Calvin cycle fixes CO₂",
+          "studentPrompt": "Explain this step in your own words."
+        },
+        {
+          "entries": [
+            "Photosynthesis is limited by the factor in shortest supply: light intensity, carbon dioxide concentration or temperature - whichever is shortest caps the rate."
+          ],
+          "label": "Photosynthesis is limited by the factor in shortest supply",
+          "studentPrompt": "Explain this step in your own words."
+        }
+      ]
+    },
+    {
+      "kind": "frayer",
+      "slots": [
+        {
+          "entries": [
+            "The organelle where aerobic respiration rebuilds ATP, with a folded inner membrane."
+          ],
+          "label": "Mitochondrion",
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "entries": [
+            "The folds of the inner mitochondrial membrane, giving a huge surface area for respiratory enzymes."
+          ],
+          "label": "Cristae",
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "entries": [
+            "Adenosine triphosphate, the energy currency of the cell; its hydrolysis releases usable energy."
+          ],
+          "label": "ATP",
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "entries": [
+            "Adenosine diphosphate, the spent form left after ATP hydrolysis, rebuilt into ATP by respiration."
+          ],
+          "label": "ADP",
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "entries": [
+            "The complete breakdown of glucose using oxygen, to carbon dioxide and water, yielding about 32 ATP per glucose."
+          ],
+          "label": "Aerobic respiration",
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "entries": [
+            "The partial breakdown of glucose without oxygen: yeast makes ethanol and carbon dioxide, muscle makes lactic acid, with far less ATP."
+          ],
+          "label": "Anaerobic respiration",
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "entries": [
+            "The splitting of water by light energy in the thylakoids, releasing oxygen."
+          ],
+          "label": "Photolysis",
+          "studentPrompt": "Give your own example of this term."
+        },
+        {
+          "entries": [
+            "The cycle in the stroma that fixes carbon dioxide and builds it up into glucose."
+          ],
+          "label": "Calvin cycle",
+          "studentPrompt": "Give your own example of this term."
+        }
+      ]
+    }
+  ],
+  "title": "JC H2 biology — energetics: respiration and photosynthesis",
+  "topic": "h2-energetics"
+}

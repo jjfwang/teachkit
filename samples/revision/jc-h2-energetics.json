@@ -1,0 +1,87 @@
+{
+  "flashcards": [
+    {
+      "back": "The organelle where aerobic respiration rebuilds ATP, with a folded inner membrane.",
+      "front": "Mitochondrion",
+      "source": "definition"
+    },
+    {
+      "back": "The folds of the inner mitochondrial membrane, giving a huge surface area for respiratory enzymes.",
+      "front": "Cristae",
+      "source": "definition"
+    },
+    {
+      "back": "Adenosine triphosphate, the energy currency of the cell; its hydrolysis releases usable energy.",
+      "front": "ATP",
+      "source": "definition"
+    },
+    {
+      "back": "Adenosine diphosphate, the spent form left after ATP hydrolysis, rebuilt into ATP by respiration.",
+      "front": "ADP",
+      "source": "definition"
+    },
+    {
+      "back": "The complete breakdown of glucose using oxygen, to carbon dioxide and water, yielding about 32 ATP per glucose.",
+      "front": "Aerobic respiration",
+      "source": "definition"
+    },
+    {
+      "back": "The partial breakdown of glucose without oxygen: yeast makes ethanol and carbon dioxide, muscle makes lactic acid, with far less ATP.",
+      "front": "Anaerobic respiration",
+      "source": "definition"
+    },
+    {
+      "back": "The splitting of water by light energy in the thylakoids, releasing oxygen.",
+      "front": "Photolysis",
+      "source": "definition"
+    },
+    {
+      "back": "The cycle in the stroma that fixes carbon dioxide and builds it up into glucose.",
+      "front": "Calvin cycle",
+      "source": "definition"
+    },
+    {
+      "back": "During the day photosynthesis dominates, so respiration looks switched off. Plants respire around the clock: at night there is simply no photosynthesis to hide it. In the animation the respiration dot keeps moving inside the plant after the sun is replaced by the moon in scene s6: respiration never stops - photosynthesis just masks it by day.",
+      "front": "Plants only respire at night.",
+      "source": "trap"
+    },
+    {
+      "back": "Glucose + oxygen → carbon dioxide + water + energy",
+      "front": "Which is the correct word equation for aerobic respiration?",
+      "source": "quiz-bank"
+    },
+    {
+      "back": "Photolysis, from water",
+      "front": "In photosynthesis, the oxygen released comes from which process and source?",
+      "source": "quiz-bank"
+    }
+  ],
+  "level": "jc",
+  "practiceSets": [
+    {
+      "dayOffset": 1,
+      "items": [
+        {
+          "answer": "Plants respire around the clock, day and night",
+          "prompt": "A student says a green plant only respires when it is dark. What is correct?"
+        },
+        {
+          "answer": "The folds give a huge surface area for respiratory enzymes, so more aerobic respiration and more ATP production can happen.",
+          "prompt": "Explain why the folded cristae of a mitochondrion help it make more ATP."
+        }
+      ]
+    },
+    {
+      "dayOffset": 3,
+      "items": [
+        {
+          "answer": "Yeast: ethanol + carbon dioxide. Muscle: lactic acid. Both yield far less ATP than aerobic respiration because glucose is only partly broken down.",
+          "prompt": "Compare anaerobic respiration in yeast and in muscle: name the products of each and state the ATP yield compared with aerobic respiration."
+        }
+      ]
+    }
+  ],
+  "subject": "science",
+  "title": "JC H2 biology — energetics: respiration and photosynthesis",
+  "topic": "h2-energetics"
+}
