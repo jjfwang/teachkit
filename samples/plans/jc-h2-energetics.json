@@ -1,0 +1,93 @@
+{
+ "activities": [
+  {
+   "grouping": "whole class",
+   "minutes": 8,
+   "objectiveIds": [
+    "o1"
+   ],
+   "scriptCue": "s1",
+   "title": "Mitochondria: folded cristae, huge surface area"
+  },
+  {
+   "grouping": "pairs",
+   "minutes": 8,
+   "objectiveIds": [
+    "o1"
+   ],
+   "scriptCue": "s2",
+   "title": "A common mistake: plants only respire at night"
+  },
+  {
+   "grouping": "pairs",
+   "minutes": 8,
+   "objectiveIds": [
+    "o1"
+   ],
+   "scriptCue": "s3",
+   "title": "ATP hydrolysis releases energy; respiration rebuilds ATP"
+  },
+  {
+   "grouping": "whole class",
+   "minutes": 8,
+   "objectiveIds": [
+    "o1"
+   ],
+   "scriptCue": "s4",
+   "title": "Anaerobic: yeast → ethanol + CO₂; muscle → lactic acid"
+  },
+  {
+   "grouping": "whole class",
+   "minutes": 8,
+   "objectiveIds": [
+    "o2"
+   ],
+   "scriptCue": "s5",
+   "title": "Photolysis splits water; the Calvin cycle fixes CO₂"
+  },
+  {
+   "grouping": "whole class",
+   "minutes": 8,
+   "objectiveIds": [
+    "o2"
+   ],
+   "scriptCue": "s6",
+   "title": "Photosynthesis is limited by the factor in shortest supply"
+  }
+ ],
+ "durationMinutes": 48,
+ "level": "jc",
+ "objectives": [
+  {
+   "assessmentPoints": [
+    "Cristae answers in the opening activity",
+    "Aerobic equation answers in the second activity",
+    "ATP hydrolysis answers in the third activity",
+    "Anaerobic answers in the fourth activity"
+   ],
+   "id": "o1",
+   "successCriteria": [
+    "Mitochondria: folded cristae, huge surface area: the inner membrane folds into cristae, packing a huge surface area for the enzymes that make ATP.",
+    "A common mistake: plants only respire at night: aerobic respiration runs around the clock, glucose + oxygen → carbon dioxide + water + energy, even while photosynthesis dominates by day.",
+    "ATP hydrolysis releases energy; respiration rebuilds ATP: hydrolysis splits ATP to ADP and releases energy, and respiration in the mitochondrion rebuilds ATP from ADP.",
+    "Anaerobic: yeast → ethanol + CO₂; muscle → lactic acid: without enough oxygen glucose is only partly broken down, yielding far less ATP either way."
+   ],
+   "text": "Describe aerobic and anaerobic respiration and the ATP-ADP cycle"
+  },
+  {
+   "assessmentPoints": [
+    "Photolysis and Calvin cycle answers in the fifth activity",
+    "Limiting-factor answers in the closing activity"
+   ],
+   "id": "o2",
+   "successCriteria": [
+    "Photolysis splits water; the Calvin cycle fixes CO₂: light splits water in the thylakoids and releases oxygen, then the Calvin cycle fixes carbon dioxide into glucose in the stroma.",
+    "Photosynthesis is limited by the factor in shortest supply: light intensity, carbon dioxide concentration or temperature - whichever is shortest caps the rate."
+   ],
+   "text": "Explain photolysis, the Calvin cycle and limiting factors in photosynthesis"
+  }
+ ],
+ "subject": "science",
+ "title": "JC H2 biology — energetics: respiration and photosynthesis",
+ "topic": "h2-energetics"
+}
